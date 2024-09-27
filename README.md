@@ -56,3 +56,12 @@ These feeds on hosted in the [`docs/` subdirectory](https://github.com/yinan-c/R
 I will consider hosting more feeds in the future. Email me or submit an issue if there are any questions using the script or any suggestions.
 
 - https://nikonrumors.com/feed -> https://YuhanShi53.github.io/RSS-GPT/nikon-rumors.xml
+- https://spaces.ac.cn/feed -> https://YuhanShi53.github.io/RSS-GPT/science-space-sujianlin.xml
+- http://www.36kr.com/feed -> https://YuhanShi53.github.io/RSS-GPT/36kr.xml
+- https://rsshub.app/huggingface/daily-papers -> https://YuhanShi53.github.io/RSS-GPT/huggingface-daliy-paper.xml
+- https://sspai.com/feed -> https://YuhanShi53.github.io/RSS-GPT/sspai.xml
+- hhttps://v2ex.com/feed/ -> https://YuhanShi53.github.io/RSS-GPT/v2ex.xml
+- https://rsshub.app/meituan/tech/home -> https://YuhanShi53.github.io/RSS-GPT/meituan.xml
+- https://www.macrumors.com/macrumors.xml -> https://YuhanShi53.github.io/RSS-GPT/mac-rumors.xml
+- https://rsshub.app/meituan/tech/home -> https://YuhanShi53.github.io/RSS-GPT/meituan.xml
+- https://plink.anyfeeder.com/weixin/DingXiangYiSheng -> https://YuhanShi53.github.io/RSS-GPT/dingxiangyisheng.xml
