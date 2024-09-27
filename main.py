@@ -1,4 +1,5 @@
 import datetime
+import json
 import os
 import re
 import requests
@@ -170,7 +171,7 @@ def gpt_summary(query, model, language):
     if language == "zh":
         messages = [
             {"role": "user", "content": query},
-            {"role": "assistant", "content": f"请用中文为这篇文章写一个{short_summary_length}字的简短摘要。然后使用<br><br>换行，再使用中文在{summary_length}字内写一个包含所有要点的总结，按顺序分要点输出，接在'摘要:'二字之前。\n如果这是一篇营销广告、促销活动，只输出'ADs'"}
+            {"role": "assistant", "content": f"请用中文为这篇文章重新起一个标题，并对这篇文章进行一个分类，并用中文写一段{short_summary_length}字的简短摘要，再使用中文在{summary_length}字内写一个包含所有要点的总结，按顺序分要点输出，接在'摘要:'二字之前。\n请用JSON格式输出'title','short_summary','summary','type'四个信息，如果这是一篇营销广告、促销活动，'type'为‘ADs‘，"}
         ]
     else:
         messages = [
@@ -193,7 +194,13 @@ def gpt_summary(query, model, language):
         model=model,
         messages=messages,
     )
-    return completion.choices[0].message.content
+
+    response = json.loads(completion.choices[0].message.content)
+    if (response["type"] == "ADs"):
+        raise RuntimeError
+
+    formatted_summary = f"{response['short_summary']}<br><br>摘要：{response['summary']}"
+    return response["title"], formatted_summary
 
 
 def output(sec, language):
@@ -294,6 +301,7 @@ def output(sec, language):
 #            if 'published' in entry:
 #                entry.published = parse(entry.published).strftime('%a, %d %b %Y %H:%M:%S %z')
 
+            new_title = ""
             cnt += 1
             if cnt > max_items:
                 entry.summary = None
@@ -301,7 +309,7 @@ def output(sec, language):
                 token_length = len(cleaned_article)
                 if custom_model:
                     try:
-                        entry.summary = gpt_summary(cleaned_article, model=custom_model, language=language)
+                        new_title, entry.summary = gpt_summary(cleaned_article, model=custom_model, language=language)
                         with open(log_file, 'a') as f:
                             f.write(f"Token length: {token_length}\n")
                             f.write(f"Summarized using {custom_model}\n")
@@ -312,13 +320,13 @@ def output(sec, language):
                             f.write(f"error: {e}\n")
                 else:
                     try:
-                        entry.summary = gpt_summary(cleaned_article, model="gpt-4o-mini", language=language)
+                        new_title, entry.summary = gpt_summary(cleaned_article, model="gpt-4o-mini", language=language)
                         with open(log_file, 'a') as f:
                             f.write(f"Token length: {token_length}\n")
                             f.write("Summarized using gpt-4o-mini\n")
                     except Exception:
                         try:
-                            entry.summary = gpt_summary(cleaned_article, model="gpt-4-turbo-preview", language=language)
+                            new_title, entry.summary = gpt_summary(cleaned_article, model="gpt-4-turbo-preview", language=language)
                             with open(log_file, 'a') as f:
                                 f.write(f"Token length: {token_length}\n")
                                 f.write("Summarized using GPT-4-turbo-preview\n")
@@ -328,8 +336,8 @@ def output(sec, language):
                                 f.write("Summarization failed, append the original article\n")
                                 f.write(f"error: {e}\n")
 
-            if (entry.summary == "ADs"):
-                continue
+            if new_title:
+                entry.title = new_title
             append_entries.append(entry)
             with open(log_file, 'a') as f:
                 f.write(f"Append: [{entry.title}]({entry.link})\n")
