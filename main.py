@@ -1,20 +1,16 @@
-import feedparser
-import configparser
+import datetime
 import os
+import re
+import requests
+
+import configparser
+import feedparser
 import httpx
+from bs4 import BeautifulSoup
+from fake_useragent import UserAgent
 from openai import OpenAI
 from jinja2 import Template
-from bs4 import BeautifulSoup
-import re
-import datetime
-import requests
-from fake_useragent import UserAgent
-#from dateutil.parser import parse
 
-def get_cfg(sec, name, default=None):
-    value=config.get(sec, name, fallback=default)
-    if value:
-        return value.strip('"')
 
 config = configparser.ConfigParser()
 config.read('config.ini')
@@ -22,16 +18,24 @@ secs = config.sections()
 # Maxnumber of entries to in a feed.xml file
 max_entries = 1000
 
+def get_cfg(sec, name, default=None):
+    value = config.get(sec, name, fallback=default)
+    if value:
+        return value.strip('"')
+BASE = get_cfg('cfg', 'BASE')
+keyword_length = int(get_cfg('cfg', 'keyword_length'))
+summary_length = int(get_cfg('cfg', 'summary_length'))
+short_summary_length = int(get_cfg('cfg', 'short_summary_length'))
+language = get_cfg('cfg', 'language')
+
+
 OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
 U_NAME = os.environ.get('U_NAME')
 OPENAI_PROXY = os.environ.get('OPENAI_PROXY')
 OPENAI_BASE_URL = os.environ.get('OPENAI_BASE_URL', 'https://api.openai.com/v1')
 custom_model = os.environ.get('CUSTOM_MODEL')
 deployment_url = f'https://{U_NAME}.github.io/RSS-GPT/'
-BASE =get_cfg('cfg', 'BASE')
-keyword_length = int(get_cfg('cfg', 'keyword_length'))
-summary_length = int(get_cfg('cfg', 'summary_length'))
-language = get_cfg('cfg', 'language')
+
 
 def fetch_feed(url, log_file):
     feed = None
@@ -53,11 +57,15 @@ def fetch_feed(url, log_file):
             f.write(f"Fetch error: {e}\n")
         return {'feed': None, 'status': 'failed'}
 
+
 def generate_untitled(entry):
-    try: return entry.title
-    except: 
-        try: return entry.article[:50]
-        except: return entry.link
+    try:
+        return entry.title
+    except:
+        try:
+            return entry.article[:50]
+        except:
+            return entry.link
 
 
 def clean_html(html_content):
@@ -86,14 +94,15 @@ def clean_html(html_content):
 
     for audio in soup.find_all("audio"):
         audio.decompose()
-    
+
     for iframe in soup.find_all("iframe"):
         iframe.decompose()
-    
+
     for input in soup.find_all("input"):
         input.decompose()
 
     return soup.get_text()
+
 
 def filter_entry(entry, filter_apply, filter_type, filter_rule):
     """
@@ -133,6 +142,7 @@ def filter_entry(entry, filter_apply, filter_type, filter_rule):
     else:
         raise Exception('filter_type not supported')
 
+
 def read_entry_from_file(sec):
     """
     This function is used to read the RSS feed entries from the feed.xml file.
@@ -146,19 +156,21 @@ def read_entry_from_file(sec):
             rss = f.read()
         feed = feedparser.parse(rss)
         return feed.entries
-    except:
+    except Exception:
         return []
+
 
 def truncate_entries(entries, max_entries):
     if len(entries) > max_entries:
         entries = entries[:max_entries]
     return entries
 
-def gpt_summary(query,model,language):
+
+def gpt_summary(query, model, language):
     if language == "zh":
         messages = [
             {"role": "user", "content": query},
-            {"role": "assistant", "content": f"请用中文总结这篇文章，先提取出{keyword_length}个关键词，在同一行内输出，然后换行，用中文在{summary_length}字内写一个包含所有要点的总结，按顺序分要点输出，并按照以下格式输出'<br><br>总结:'，<br>是HTML的换行符，输出时必须保留2个，并且必须在'总结:'二字之前"}
+            {"role": "assistant", "content": f"请用中文为这篇文章写一个{short_summary_length}字的简短摘要。然后使用<br><br>换行，再使用中文在{summary_length}字内写一个包含所有要点的总结，按顺序分要点输出，接在'摘要:'二字之前。\n如果这是一篇营销广告、促销活动，只输出'ADs'"}
         ]
     else:
         messages = [
@@ -175,15 +187,14 @@ def gpt_summary(query,model,language):
             api_key=OPENAI_API_KEY,
             # Or use the `OPENAI_BASE_URL` env var
             base_url=OPENAI_BASE_URL,
-            # example: "http://my.test.server.example.com:8083",
             http_client=httpx.Client(proxy=OPENAI_PROXY),
-            # example:"http://my.test.proxy.example.com",
         )
     completion = client.chat.completions.create(
         model=model,
         messages=messages,
     )
     return completion.choices[0].message.content
+
 
 def output(sec, language):
     """ output
@@ -263,9 +274,11 @@ def output(sec, language):
 
             try:
                 entry.article = entry.content[0].value
-            except:
-                try: entry.article = entry.description
-                except: entry.article = entry.title
+            except Exception:
+                try:
+                    entry.article = entry.description
+                except Exception:
+                    entry.article = entry.title
 
             cleaned_article = clean_html(entry.article)
 
@@ -288,7 +301,7 @@ def output(sec, language):
                 token_length = len(cleaned_article)
                 if custom_model:
                     try:
-                        entry.summary = gpt_summary(cleaned_article,model=custom_model, language=language)
+                        entry.summary = gpt_summary(cleaned_article, model=custom_model, language=language)
                         with open(log_file, 'a') as f:
                             f.write(f"Token length: {token_length}\n")
                             f.write(f"Summarized using {custom_model}\n")
@@ -299,22 +312,24 @@ def output(sec, language):
                             f.write(f"error: {e}\n")
                 else:
                     try:
-                        entry.summary = gpt_summary(cleaned_article,model="gpt-4o-mini", language=language)
+                        entry.summary = gpt_summary(cleaned_article, model="gpt-4o-mini", language=language)
                         with open(log_file, 'a') as f:
                             f.write(f"Token length: {token_length}\n")
-                            f.write(f"Summarized using gpt-4o-mini\n")
-                    except:
+                            f.write("Summarized using gpt-4o-mini\n")
+                    except Exception:
                         try:
-                            entry.summary = gpt_summary(cleaned_article,model="gpt-4-turbo-preview", language=language)
+                            entry.summary = gpt_summary(cleaned_article, model="gpt-4-turbo-preview", language=language)
                             with open(log_file, 'a') as f:
                                 f.write(f"Token length: {token_length}\n")
-                                f.write(f"Summarized using GPT-4-turbo-preview\n")
+                                f.write("Summarized using GPT-4-turbo-preview\n")
                         except Exception as e:
                             entry.summary = None
                             with open(log_file, 'a') as f:
-                                f.write(f"Summarization failed, append the original article\n")
+                                f.write("Summarization failed, append the original article\n")
                                 f.write(f"error: {e}\n")
 
+            if (entry.summary == "ADs"):
+                continue
             append_entries.append(entry)
             with open(log_file, 'a') as f:
                 f.write(f"Append: [{entry.title}]({entry.link})\n")
@@ -323,21 +338,22 @@ def output(sec, language):
         f.write(f'append_entries: {len(append_entries)}\n')
 
     template = Template(open('template.xml').read())
-    
+
     try:
         rss = template.render(feed=feed, append_entries=append_entries, existing_entries=existing_entries)
         with open(out_dir + '.xml', 'w') as f:
             f.write(rss)
         with open(log_file, 'a') as f:
             f.write(f'Finish: {datetime.datetime.now()}\n')
-    except:
-        with open (log_file, 'a') as f:
+    except Exception:
+        with open(log_file, 'a') as f:
             f.write(f"error when rendering xml, skip {out_dir}\n")
             print(f"error when rendering xml, skip {out_dir}\n")
 
+
 try:
     os.mkdir(BASE)
-except:
+except Exception:
     pass
 
 feeds = []
@@ -345,9 +361,10 @@ links = []
 
 for x in secs[1:]:
     output(x, language=language)
-    feed = {"url": get_cfg(x, 'url').replace(',','<br>'), "name": get_cfg(x, 'name')}
+    feed = {"url": get_cfg(x, 'url').replace(',', '<br>'), "name": get_cfg(x, 'name')}
     feeds.append(feed)  # for rendering index.html
-    links.append("- "+ get_cfg(x, 'url').replace(',',', ') + " -> " + deployment_url + feed['name'] + ".xml\n")
+    links.append("- " + get_cfg(x, 'url').replace(',', ', ') + " -> " + deployment_url + feed['name'] + ".xml\n")
+
 
 def append_readme(readme, links):
     with open(readme, 'r') as f:
@@ -358,6 +375,7 @@ def append_readme(readme, links):
     readme_lines.extend(links)
     with open(readme, 'w') as f:
         f.writelines(readme_lines)
+
 
 append_readme("README.md", links)
 append_readme("README-zh.md", links)
