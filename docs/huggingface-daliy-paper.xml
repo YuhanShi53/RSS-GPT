@@ -4,6 +4,7 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+
 <item>
 <title>The Imperative of Conversation Analysis in the Era of LLMs: A Survey of Tasks, Techniques, and Trends</title>
 <link>https://arxiv.org/abs/2409.14195</link>
@@ -11,7 +12,7 @@
 <content:encoded><![CDATA[
 <div> 摘要：本文系统性回顾了对话分析的任务，定义了四个关键步骤，并探讨了在行业和学术界的挑战与未来方向，强调了现阶段研究的局限性与高层次目标的需求。
 
-<br><br>1. 介绍了对话分析（CA）的重要性，特别是在快速发展的语言用户界面条件下。
+<br /><br />1. 介绍了对话分析（CA）的重要性，特别是在快速发展的语言用户界面条件下。
 2. 指出现有对话分析领域的技术散乱，缺乏系统性整合，造成实际应用障碍。
 3. 清晰定义了CA任务，包括对话场景重构、深度归因分析、针对性训练及最终生成特定目标的对话的四个关键步骤。
 4. 展示了相关基准、潜在挑战，并指出行业及学术界的未来发展方向。
@@ -19,7 +20,6 @@
 6. 借助大型语言模型（LLMs），研究趋势正在向因果关系和更高层次的战略任务转变，展现了对话日志在商业运营中的广泛应用价值。 <div>
 In the era of large language models (LLMs), a vast amount of conversation logs will be accumulated thanks to the rapid development trend of language UI. Conversation Analysis (CA) strives to uncover and analyze critical information from conversation data, streamlining manual processes and supporting business insights and decision-making. The need for CA to extract actionable insights and drive empowerment is becoming increasingly prominent and attracting widespread attention. However, the lack of a clear scope for CA leads to a dispersion of various techniques, making it difficult to form a systematic technical synergy to empower business applications. In this paper, we perform a thorough review and systematize CA task to summarize the existing related work. Specifically, we formally define CA task to confront the fragmented and chaotic landscape in this field, and derive four key steps of CA from conversation scene reconstruction, to in-depth attribution analysis, and then to performing targeted training, finally generating conversations based on the targeted training for achieving the specific goals. In addition, we showcase the relevant benchmarks, discuss potential challenges and point out future directions in both industry and academia. In view of current advancements, it is evident that the majority of efforts are still concentrated on the analysis of shallow conversation elements, which presents a considerable gap between the research and business, and with the assist of LLMs, recent work has shown a trend towards research on causality and strategic tasks which are sophisticated and high-level. The analyzed experiences and insights will inevitably have broader application value in business operations that target conversation logs.
 ]]></content:encoded>
-<pubDate>Fri, 27 Sep 2024 11:20:10 GMT</pubDate>
 <pubDate>Fri, 27 Sep 2024 11:20:10 GMT</pubDate>
 </item>
 <item>
@@ -39,7 +39,6 @@ In the era of large language models (LLMs), a vast amount of conversation logs w
 Instruction tuning commonly means finetuning a language model on instruction-response pairs. We discover two forms of adaptation (tuning) that are deficient compared to instruction tuning, yet still yield instruction following; we call this implicit instruction tuning. We first find that instruction-response pairs are not necessary: training solely on responses, without any corresponding instructions, yields instruction following. This suggests pretrained models have an instruction-response mapping which is revealed by teaching the model the desired distribution of responses. However, we then find it's not necessary to teach the desired distribution of responses: instruction-response training on narrow-domain data like poetry still leads to broad instruction-following behavior like recipe generation. In particular, when instructions are very different from those in the narrow finetuning domain, models' responses do not adhere to the style of the finetuning domain. To begin to explain implicit instruction tuning, we hypothesize that very simple changes to a language model's distribution yield instruction following. We support this by hand-writing a rule-based language model which yields instruction following in a product-of-experts with a pretrained model. The rules are to slowly increase the probability of ending the sequence, penalize repetition, and uniformly change 15 words' probabilities. In summary, adaptations made without being designed to yield instruction following can do so implicitly.
 ]]></content:encoded>
 <pubDate>Fri, 27 Sep 2024 10:24:59 GMT</pubDate>
-<pubDate>Fri, 27 Sep 2024 10:24:59 GMT</pubDate>
 </item>
 <item>
 <title>Enhancing Structured-Data Retrieval with GraphRAG: Soccer Data Case Study</title>
@@ -49,7 +48,7 @@ Instruction tuning commonly means finetuning a language model on instruction-res
 <div> 摘要:  
 Structured-GraphRAG是一种提升结构化数据集信息检索的框架，采用多种知识图谱以捕捉复杂关系，增强检索的准确性和相关性，在处理查询时显著提高效率，适用于各种结构化领域。  
 
-<br><br>  
+<br /><br />  
 要点总结:  
 1. 当前从大规模复杂数据集中提取有意义的洞察存在挑战，传统方法如顺序查找和基于索引的检索在复杂数据结构中效果不佳。  
 2. 为解决这些问题，提出Structured-GraphRAG框架，针对自然语言查询优化信息检索。  
@@ -60,7 +59,6 @@ Structured-GraphRAG是一种提升结构化数据集信息检索的框架，采�
 Extracting meaningful insights from large and complex datasets poses significant challenges, particularly in ensuring the accuracy and relevance of retrieved information. Traditional data retrieval methods such as sequential search and index-based retrieval often fail when handling intricate and interconnected data structures, resulting in incomplete or misleading outputs. To overcome these limitations, we introduce Structured-GraphRAG, a versatile framework designed to enhance information retrieval across structured datasets in natural language queries. Structured-GraphRAG utilizes multiple knowledge graphs, which represent data in a structured format and capture complex relationships between entities, enabling a more nuanced and comprehensive retrieval of information. This graph-based approach reduces the risk of errors in language model outputs by grounding responses in a structured format, thereby enhancing the reliability of results. We demonstrate the effectiveness of Structured-GraphRAG by comparing its performance with that of a recently published method using traditional retrieval-augmented generation. Our findings show that Structured-GraphRAG significantly improves query processing efficiency and reduces response times. While our case study focuses on soccer data, the framework's design is broadly applicable, offering a powerful tool for data analysis and enhancing language model applications across various structured domains.
 ]]></content:encoded>
 <pubDate>Fri, 27 Sep 2024 07:22:46 GMT</pubDate>
-<pubDate>Fri, 27 Sep 2024 07:22:46 GMT</pubDate>
 </item>
 <item>
 <title>Reducing the Footprint of Multi-Vector Retrieval with Minimal Performance Impact via Token Pooling</title>
@@ -69,7 +67,7 @@ Extracting meaningful insights from large and complex datasets poses significant
 <content:encoded><![CDATA[
 <div> 摘要: 本文提出一种基于聚类的令牌池化方法，显著减少ColBERT索引的向量存储空间与内存需求，最多可减少75%的向量数量，性能损失保持在5%以内，无需任何架构改动或查询时处理。
 
-<br><br>要点总结：
+<br /><br />要点总结：
 1. 近年来，多向量检索方法（如ColBERT）在神经信息检索中愈发受欢迎，通过在令牌级别存储表示来增强检索性能。
 2. 尽管鉴于其在跨领域设置中的卓越表现，这种方法需要大量存储和内存，成为实际应用的障碍。
 3. 本文提出了一种聚类基础的令牌池化方法，可以减少ColBERT索引的存储空间和内存占用，最高可减少50%。
@@ -77,7 +75,6 @@ Extracting meaningful insights from large and complex datasets poses significant
 5. 此方法无需任何架构变更或查询时处理，可作为ColBERT类模型索引的简单替代方案。 <div>
 Over the last few years, multi-vector retrieval methods, spearheaded by ColBERT, have become an increasingly popular approach to Neural IR. By storing representations at the token level rather than at the document level, these methods have demonstrated very strong retrieval performance, especially in out-of-domain settings. However, the storage and memory requirements necessary to store the large number of associated vectors remain an important drawback, hindering practical adoption. In this paper, we introduce a simple clustering-based token pooling approach to aggressively reduce the number of vectors that need to be stored. This method can reduce the space &amp; memory footprint of ColBERT indexes by 50% with virtually no retrieval performance degradation. This method also allows for further reductions, reducing the vector count by 66%-to-75% , with degradation remaining below 5% on a vast majority of datasets. Importantly, this approach requires no architectural change nor query-time processing, and can be used as a simple drop-in during indexation with any ColBERT-like model.
 ]]></content:encoded>
-<pubDate>Fri, 27 Sep 2024 04:54:39 GMT</pubDate>
 <pubDate>Fri, 27 Sep 2024 04:54:39 GMT</pubDate>
 </item>
 <item>
@@ -97,7 +94,6 @@ Over the last few years, multi-vector retrieval methods, spearheaded by ColBERT,
 Latent diffusion models (LDMs) have made significant advancements in the field of image generation in recent years. One major advantage of LDMs is their ability to operate in a compressed latent space, allowing for more efficient training and deployment. However, despite these advantages, challenges with LDMs still remain. For example, it has been observed that LDMs often generate high-frequency details and complex compositions imperfectly. We hypothesize that one reason for these flaws is due to the fact that all pre- and post-training of LDMs are done in latent space, which is typically 8 times 8 lower spatial-resolution than the output images. To address this issue, we propose adding pixel-space supervision in the post-training process to better preserve high-frequency details. Experimentally, we show that adding a pixel-space objective significantly improves both supervised quality fine-tuning and preference-based post-training by a large margin on a state-of-the-art DiT transformer and U-Net diffusion models in both visual quality and visual flaw metrics, while maintaining the same text alignment quality.
 ]]></content:encoded>
 <pubDate>Fri, 27 Sep 2024 02:58:25 GMT</pubDate>
-<pubDate>Fri, 27 Sep 2024 02:58:25 GMT</pubDate>
 </item>
 <item>
 <title>LLaVA-3D: A Simple yet Effective Pathway to Empowering LMMs with 3D-awareness</title>
@@ -107,7 +103,7 @@ Latent diffusion models (LDMs) have made significant advancements in the field o
 <div> 摘要：  
 本文介绍了LLaVA-3D框架，利用LLaVA的2D理解能力，结合3D Patch表示实现了对3D场景的有效理解。实验表明，LLaVA-3D训练速度快，性能优越，兼顾2D与3D任务。
 
-<br><br>  
+<br /><br />  
 总结：  
 1. 近年来，虽然在2D视觉理解任务的进展显著，但3D场景理解的LMMs发展受到大规模3D视觉-语言数据集的限制。  
 2. 本文提出了LLaVA-3D框架，有效结合了LLaVA在2D理解方面的优势。  
@@ -117,7 +113,6 @@ Latent diffusion models (LDMs) have made significant advancements in the field o
 6. LLaVA-3D在多个3D任务上取得了当前最优性能，同时在2D图像理解和视觉-语言对话能力方面与LLaVA相当。 <div>
 Recent advancements in Large Multimodal Models (LMMs) have greatly enhanced their proficiency in 2D visual understanding tasks, enabling them to effectively process and understand images and videos. However, the development of LMMs with 3D-awareness for 3D scene understanding has been hindered by the lack of large-scale 3D vision-language datasets and powerful 3D encoders. In this paper, we introduce a simple yet effective framework called LLaVA-3D. Leveraging the strong 2D understanding priors from LLaVA, our LLaVA-3D efficiently adapts LLaVA for 3D scene understanding without compromising 2D understanding capabilities. To achieve this, we employ a simple yet effective representation, 3D Patch, which connects 2D CLIP patch features with their corresponding positions in 3D space. By integrating the 3D Patches into 2D LMMs and employing joint 2D and 3D vision-language instruction tuning, we establish a unified architecture for both 2D image understanding and 3D scene understanding. Experimental results show that LLaVA-3D converges 3.5x faster than existing 3D LMMs when trained on 3D vision-language datasets. Moreover, LLaVA-3D not only achieves state-of-the-art performance across various 3D tasks but also maintains comparable 2D image understanding and vision-language conversation capabilities with LLaVA.
 ]]></content:encoded>
-<pubDate>Fri, 27 Sep 2024 02:29:44 GMT</pubDate>
 <pubDate>Fri, 27 Sep 2024 02:29:44 GMT</pubDate>
 </item>
 <item>
@@ -139,7 +134,6 @@ Recent advancements in Large Multimodal Models (LMMs) have greatly enhanced thei
 Leveraging the visual priors of pre-trained text-to-image diffusion models offers a promising solution to enhance zero-shot generalization in dense prediction tasks. However, existing methods often uncritically use the original diffusion formulation, which may not be optimal due to the fundamental differences between dense prediction and image generation. In this paper, we provide a systemic analysis of the diffusion formulation for the dense prediction, focusing on both quality and efficiency. And we find that the original parameterization type for image generation, which learns to predict noise, is harmful for dense prediction; the multi-step noising/denoising diffusion process is also unnecessary and challenging to optimize. Based on these insights, we introduce Lotus, a diffusion-based visual foundation model with a simple yet effective adaptation protocol for dense prediction. Specifically, Lotus is trained to directly predict annotations instead of noise, thereby avoiding harmful variance. We also reformulate the diffusion process into a single-step procedure, simplifying optimization and significantly boosting inference speed. Additionally, we introduce a novel tuning strategy called detail preserver, which achieves more accurate and fine-grained predictions. Without scaling up the training data or model capacity, Lotus achieves SoTA performance in zero-shot depth and normal estimation across various datasets. It also significantly enhances efficiency, being hundreds of times faster than most existing diffusion-based methods.
 ]]></content:encoded>
 <pubDate>Fri, 27 Sep 2024 02:19:47 GMT</pubDate>
-<pubDate>Fri, 27 Sep 2024 02:19:47 GMT</pubDate>
 </item>
 <item>
 <title>Robot See Robot Do: Imitating Articulated Object Manipulation with Monocular 4D Reconstruction</title>
@@ -148,7 +142,7 @@ Leveraging the visual priors of pre-trained text-to-image diffusion models offer
 <content:encoded><![CDATA[
 <div> 摘要: 该研究提出了一种机器人模仿人类操作新物体的方法，称为“Robot See Robot Do (RSRD)”。它利用单目视频和三维多视图对象扫描，通过优化实现了3D部件运动恢复。
 
-<br><br>总结:
+<br /><br />总结:
 1. 提出“Robot See Robot Do (RSRD)”方法，实现机器人从单一静态多视图对象扫描和单目RGB视频中学习模仿人类操作。
 2. 应用4D可微分部件模型(4D-DPM)用于从单目视频中重建3D部件运动。
 3. 采用分析合成方法，通过部件中心特征场的迭代优化来恢复3D运动，结合几何正则化。
@@ -157,7 +151,6 @@ Leveraging the visual priors of pre-trained text-to-image diffusion models offer
 6. 使用的大型预训练视觉模型提取的特征场，无需任务特定训练、微调、数据集收集或标注。 <div>
 Humans can learn to manipulate new objects by simply watching others; providing robots with the ability to learn from such demonstrations would enable a natural interface specifying new behaviors. This work develops Robot See Robot Do (RSRD), a method for imitating articulated object manipulation from a single monocular RGB human demonstration given a single static multi-view object scan. We first propose 4D Differentiable Part Models (4D-DPM), a method for recovering 3D part motion from a monocular video with differentiable rendering. This analysis-by-synthesis approach uses part-centric feature fields in an iterative optimization which enables the use of geometric regularizers to recover 3D motions from only a single video. Given this 4D reconstruction, the robot replicates object trajectories by planning bimanual arm motions that induce the demonstrated object part motion. By representing demonstrations as part-centric trajectories, RSRD focuses on replicating the demonstration's intended behavior while considering the robot's own morphological limits, rather than attempting to reproduce the hand's motion. We evaluate 4D-DPM's 3D tracking accuracy on ground truth annotated 3D part trajectories and RSRD's physical execution performance on 9 objects across 10 trials each on a bimanual YuMi robot. Each phase of RSRD achieves an average of 87% success rate, for a total end-to-end success rate of 60% across 90 trials. Notably, this is accomplished using only feature fields distilled from large pretrained vision models -- without any task-specific training, fine-tuning, dataset collection, or annotation. Project page: https://robot-see-robot-do.github.io
 ]]></content:encoded>
-<pubDate>Fri, 27 Sep 2024 02:03:23 GMT</pubDate>
 <pubDate>Fri, 27 Sep 2024 02:03:23 GMT</pubDate>
 </item>
 <item>
@@ -176,7 +169,6 @@ EMOVA是一种情感全能语音助手，能够实现大型语言模型的端到
 5. 性能成果：EMOVA首次在视觉-语言和语音基准上都实现了最先进的性能，同时支持生动情感的全能对话。   <div>
 GPT-4o, an omni-modal model that enables vocal conversations with diverse emotions and tones, marks a milestone for omni-modal foundation models. However, empowering Large Language Models to perceive and generate images, texts, and speeches end-to-end with publicly available data remains challenging in the open-source community. Existing vision-language models rely on external tools for the speech processing, while speech-language models still suffer from limited or even without vision-understanding abilities. To address this gap, we propose EMOVA (EMotionally Omni-present Voice Assistant), to enable Large Language Models with end-to-end speech capabilities while maintaining the leading vision-language performance. With a semantic-acoustic disentangled speech tokenizer, we notice surprisingly that omni-modal alignment can further enhance vision-language and speech abilities compared with the corresponding bi-modal aligned counterparts. Moreover, a lightweight style module is proposed for flexible speech style controls (e.g., emotions and pitches). For the first time, EMOVA achieves state-of-the-art performance on both the vision-language and speech benchmarks, and meanwhile, supporting omni-modal spoken dialogue with vivid emotions.
 ]]></content:encoded>
-<pubDate>Fri, 27 Sep 2024 01:28:22 GMT</pubDate>
 <pubDate>Fri, 27 Sep 2024 01:28:22 GMT</pubDate>
 </item>
 <item>
@@ -197,7 +189,6 @@ MaskLLM是一种可学习的剪枝方法，通过建立N:M稀疏性来减少大�
 Large Language Models (LLMs) are distinguished by their massive parameter counts, which typically result in significant redundancy. This work introduces MaskLLM, a learnable pruning method that establishes Semi-structured (or ``N:M'') Sparsity in LLMs, aimed at reducing computational overhead during inference. Instead of developing a new importance criterion, MaskLLM explicitly models N:M patterns as a learnable distribution through Gumbel Softmax sampling. This approach facilitates end-to-end training on large-scale datasets and offers two notable advantages: 1) High-quality Masks - our method effectively scales to large datasets and learns accurate masks; 2) Transferability - the probabilistic modeling of mask distribution enables the transfer learning of sparsity across domains or tasks. We assessed MaskLLM using 2:4 sparsity on various LLMs, including LLaMA-2, Nemotron-4, and GPT-3, with sizes ranging from 843M to 15B parameters, and our empirical results show substantial improvements over state-of-the-art methods. For instance, leading approaches achieve a perplexity (PPL) of 10 or greater on Wikitext compared to the dense model's 5.12 PPL, but MaskLLM achieves a significantly lower 6.72 PPL solely by learning the masks with frozen weights. Furthermore, MaskLLM's learnable nature allows customized masks for lossless application of 2:4 sparsity to downstream tasks or domains. Code is available at https://github.com/NVlabs/MaskLLM.
 ]]></content:encoded>
 <pubDate>Fri, 27 Sep 2024 01:18:19 GMT</pubDate>
-<pubDate>Fri, 27 Sep 2024 01:18:19 GMT</pubDate>
 </item>
 <item>
 <title>Discovering the Gems in Early Layers: Accelerating Long-Context LLMs with 1000x Input Token Reduction</title>
@@ -207,7 +198,7 @@ Large Language Models (LLMs) are distinguished by their massive parameter counts
 <div> 摘要：  
 本研究提出了一种新方法GemFilter，通过利用大型语言模型的早期层作为过滤器来选择和压缩输入令牌，从而加速推断、减少GPU内存消耗。  
 
-<br><br>  
+<br /><br />  
 1. LLM在处理长上下文输入时表现出色，但需要大量计算资源和延迟。  
 2. 本研究提出GemFilter，解决长上下文瓶颈，加速LLM推理并减少GPU内存使用。  
 3. GemFilter利用LLM的早期层识别相关令牌，显著减少后续处理的上下文长度。  
@@ -218,7 +209,6 @@ Large Language Models (LLMs) are distinguished by their massive parameter counts
 8. 代码可在https://github.com/SalesforceAIResearch/GemFilter获取。   <div>
 Large Language Models (LLMs) have demonstrated remarkable capabilities in handling long context inputs, but this comes at the cost of increased computational resources and latency. Our research introduces a novel approach for the long context bottleneck to accelerate LLM inference and reduce GPU memory consumption. Our research demonstrates that LLMs can identify relevant tokens in the early layers before generating answers to a query. Leveraging this insight, we propose an algorithm that uses early layers of an LLM as filters to select and compress input tokens, significantly reducing the context length for subsequent processing. Our method, GemFilter, demonstrates substantial improvements in both speed and memory efficiency compared to existing techniques, such as standard attention and SnapKV/H2O. Notably, it achieves a 2.4times speedup and 30\% reduction in GPU memory usage compared to SOTA methods. Evaluation on the Needle in a Haystack task shows that GemFilter significantly outperforms standard attention, SnapKV and demonstrates comparable performance on the LongBench challenge. GemFilter is simple, training-free, and broadly applicable across different LLMs. Crucially, it provides interpretability by allowing humans to inspect the selected input sequence. These findings not only offer practical benefits for LLM deployment, but also enhance our understanding of LLM internal mechanisms, paving the way for further optimizations in LLM design and inference. Our code is available at https://github.com/SalesforceAIResearch/GemFilter.
 ]]></content:encoded>
-<pubDate>Fri, 27 Sep 2024 01:15:22 GMT</pubDate>
 <pubDate>Fri, 27 Sep 2024 01:15:22 GMT</pubDate>
 </item>
 <item>
@@ -239,8 +229,6 @@ Disco4D是一个新颖的4D人类生成与动画框架，通过单张图像实�
 We present Disco4D, a novel Gaussian Splatting framework for 4D human generation and animation from a single image. Different from existing methods, Disco4D distinctively disentangles clothings (with Gaussian models) from the human body (with SMPL-X model), significantly enhancing the generation details and flexibility. It has the following technical innovations. 1) Disco4D learns to efficiently fit the clothing Gaussians over the SMPL-X Gaussians. 2) It adopts diffusion models to enhance the 3D generation process, e.g., modeling occluded parts not visible in the input image. 3) It learns an identity encoding for each clothing Gaussian to facilitate the separation and extraction of clothing assets. Furthermore, Disco4D naturally supports 4D human animation with vivid dynamics. Extensive experiments demonstrate the superiority of Disco4D on 4D human generation and animation tasks. Our visualizations can be found in https://disco-4d.github.io/.
 ]]></content:encoded>
 <pubDate>Fri, 27 Sep 2024 01:10:00 GMT</pubDate>
-<pubDate>Fri, 27 Sep 2024 01:10:00 GMT</pubDate>
 </item>
-
 </channel>
 </rss>
