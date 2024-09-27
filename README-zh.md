@@ -54,13 +54,8 @@
 
 <a href="https://www.buymeacoffee.com/yinan" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
-- https://nikonrumors.com/feed -> https://YuhanShi53.github.io/RSS-GPT/nikon-rumors.xml
-- https://spaces.ac.cn/feed -> https://YuhanShi53.github.io/RSS-GPT/science-space-sujianlin.xml
-- http://www.36kr.com/feed -> https://YuhanShi53.github.io/RSS-GPT/36kr.xml
-- https://rsshub.app/huggingface/daily-papers -> https://YuhanShi53.github.io/RSS-GPT/huggingface-daliy-paper.xml
-- https://sspai.com/feed -> https://YuhanShi53.github.io/RSS-GPT/sspai.xml
-- hhttps://v2ex.com/feed/ -> https://YuhanShi53.github.io/RSS-GPT/v2ex.xml
-- https://rsshub.app/meituan/tech/home -> https://YuhanShi53.github.io/RSS-GPT/meituan.xml
-- https://www.macrumors.com/macrumors.xml -> https://YuhanShi53.github.io/RSS-GPT/mac-rumors.xml
-- https://rsshub.app/meituan/tech/home -> https://YuhanShi53.github.io/RSS-GPT/meituan.xml
-- https://plink.anyfeeder.com/weixin/DingXiangYiSheng -> https://YuhanShi53.github.io/RSS-GPT/dingxiangyisheng.xml
+- https://nikonrumors.com/feed,  -> https://YuhanShi53.github.io/RSS-GPT/Photography.xml
+- https://spaces.ac.cn/feed, https://rsshub.app/huggingface/daily-papers -> https://YuhanShi53.github.io/RSS-GPT/Artificial-Intelligence.xml
+- http://www.36kr.com/feed, https://www.macrumors.com/macrumors.xml -> https://YuhanShi53.github.io/RSS-GPT/News.xml
+- https://sspai.com/feed, https://v2ex.com/feed/, https://rsshub.app/meituan/tech/home -> https://YuhanShi53.github.io/RSS-GPT/Blogs.xml
+- https://plink.anyfeeder.com/weixin/DingXiangYiSheng -> https://YuhanShi53.github.io/RSS-GPT/Health.xml
