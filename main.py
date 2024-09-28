@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import datetime
 import json
 import os
@@ -84,8 +86,12 @@ def clean_html(html_content):
     for style in soup.find_all("style"):
         style.decompose()
 
+    image_urls = []
     for img in soup.find_all("img"):
-        img.decompose()
+        if "src" in img.attrs:
+            image_urls.append(img["src"])
+        else:
+            img.decompose()
 
     for a in soup.find_all("a"):
         a.decompose()
@@ -102,7 +108,7 @@ def clean_html(html_content):
     for input in soup.find_all("input"):
         input.decompose()
 
-    return soup.get_text()
+    return soup.get_text(), image_urls
 
 
 def filter_entry(entry, filter_apply, filter_type, filter_rule):
@@ -167,17 +173,27 @@ def truncate_entries(entries, max_entries):
     return entries
 
 
-def gpt_summary(query, model, language):
-    if language == "zh":
-        messages = [
-            {"role": "user", "content": query},
-            {"role": "assistant", "content": f"请用中文为这篇文章重新起一个标题，并对这篇文章进行一个分类，并用中文写一段{short_summary_length}字的简短摘要，再使用中文在{summary_length}字内写一个包含所有要点的总结，按顺序分要点输出，接在'摘要:'二字之前。\n请用JSON格式输出'title','short_summary','summary','type'四个信息，如果这是一篇营销广告、促销活动，'type'为‘ADs‘，"}
-        ]
-    else:
-        messages = [
-            {"role": "user", "content": query},
-            {"role": "assistant", "content": f"Please summarize this article in {language} language, first extract {keyword_length} keywords, output in the same line, then line break, write a summary containing all the points in {summary_length} words in {language}, output in order by points, and output in the following format '<br><br>Summary:' , <br> is the line break of HTML, 2 must be retained when output, and must be before the word 'Summary:'"}
-        ]
+def gpt_summary(query, image_urls, model, language):
+    content = [
+        {"type": "text", "text": query}
+    ]
+
+    for image_url in image_urls:
+        content.append(
+            {
+                "type": "image_url",
+                "image_url": {
+                    "url": image_url,
+                    "detail": "low",
+                },
+            }
+        )
+
+    messages = [
+        {"role": "user", "content": content},
+        {"role": "assistant", "content": f"请用中文为这篇文章重新起一个标题，并对这篇文章总结几个关键词。请用中文写一段{short_summary_length}字的简短摘要，再使用中文在{summary_length}字内写一个包含所有要点的图文摘要，按顺序分要点输出，接在'摘要:'二字之前。如果原文中有HTML格式的图片链接，其出现顺序和以下图片一致，如果图片和摘要内容相关，请保持原有HTML格式穿插摘要合适的段落中。\n请用JSON格式输出'title','short_summary','summary','keyword'四个信息，输出内容使用``` ```包围。如果这是一篇营销广告或促销活动，'keyword'为‘ADs‘，否则输出文章内容所涉及的关键词，关键词不超过{keyword_length}个。"}
+    ]
+
     if not OPENAI_PROXY:
         client = OpenAI(
             api_key=OPENAI_API_KEY,
@@ -186,21 +202,20 @@ def gpt_summary(query, model, language):
     else:
         client = OpenAI(
             api_key=OPENAI_API_KEY,
-            # Or use the `OPENAI_BASE_URL` env var
             base_url=OPENAI_BASE_URL,
             http_client=httpx.Client(proxy=OPENAI_PROXY),
         )
     completion = client.chat.completions.create(
         model=model,
         messages=messages,
+        max_tokens=1000,
     )
 
-    response = json.loads(completion.choices[0].message.content)
-    if (response["type"] == "ADs"):
-        raise RuntimeError
+    match = re.search(r'```json\n(.*?)```', completion.choices[0].message.content, re.DOTALL)
+    json_str = match.group(1).strip()
+    response = json.loads(json_str)
 
-    formatted_summary = f"{response['short_summary']}<br><br>摘要：{response['summary']}"
-    return response["title"], formatted_summary
+    return response
 
 
 def output(sec, language):
@@ -287,13 +302,12 @@ def output(sec, language):
                 except Exception:
                     entry.article = entry.title
 
-            cleaned_article = clean_html(entry.article)
+            cleaned_article, image_urls = clean_html(entry.article)
 
             if not filter_entry(entry, filter_apply, filter_type, filter_rule):
                 with open(log_file, 'a') as f:
                     f.write(f"Filter: [{entry.title}]({entry.link})\n")
                 continue
-
 
 #            # format to Thu, 27 Jul 2023 13:13:42 +0000
 #            if 'updated' in entry:
@@ -301,7 +315,7 @@ def output(sec, language):
 #            if 'published' in entry:
 #                entry.published = parse(entry.published).strftime('%a, %d %b %Y %H:%M:%S %z')
 
-            new_title = ""
+            gpt_response = {}
             cnt += 1
             if cnt > max_items:
                 entry.summary = None
@@ -309,7 +323,7 @@ def output(sec, language):
                 token_length = len(cleaned_article)
                 if custom_model:
                     try:
-                        new_title, entry.summary = gpt_summary(cleaned_article, model=custom_model, language=language)
+                        gpt_response = gpt_summary(cleaned_article, image_urls, model=custom_model, language=language)
                         with open(log_file, 'a') as f:
                             f.write(f"Token length: {token_length}\n")
                             f.write(f"Summarized using {custom_model}\n")
@@ -320,13 +334,14 @@ def output(sec, language):
                             f.write(f"error: {e}\n")
                 else:
                     try:
-                        new_title, entry.summary = gpt_summary(cleaned_article, model="gpt-4o-mini", language=language)
+                        gpt_response = gpt_summary(cleaned_article, image_urls, model="gpt-4o-mini", language=language)
                         with open(log_file, 'a') as f:
                             f.write(f"Token length: {token_length}\n")
                             f.write("Summarized using gpt-4o-mini\n")
                     except Exception:
                         try:
-                            new_title, entry.summary = gpt_summary(cleaned_article, model="gpt-4-turbo-preview", language=language)
+                            gpt_response = gpt_summary(cleaned_article, image_urls,
+                                                       model="gpt-4-turbo-preview", language=language)
                             with open(log_file, 'a') as f:
                                 f.write(f"Token length: {token_length}\n")
                                 f.write("Summarized using GPT-4-turbo-preview\n")
@@ -336,9 +351,13 @@ def output(sec, language):
                                 f.write("Summarization failed, append the original article\n")
                                 f.write(f"error: {e}\n")
 
-            if new_title:
-                entry.title = new_title
-            append_entries.append(entry)
+            if gpt_response.get("title", ""):
+                entry.title = gpt_response["title"]
+            if gpt_response.get("short_summary", "") and gpt_response.get("summary", ""):
+                entry.summary = f"{gpt_response['short_summary']}<br><br>{gpt_response['summary']}"
+
+            if gpt_response.get("keyword", "") != "ADs":
+                append_entries.append(entry)
             with open(log_file, 'a') as f:
                 f.write(f"Append: [{entry.title}]({entry.link})\n")
 
