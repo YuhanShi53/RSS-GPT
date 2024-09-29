@@ -57,4 +57,4 @@ I will consider hosting more feeds in the future. Email me or submit an issue if
 
 - https://nikonrumors.com/feed -> https://YuhanShi53.github.io/RSS-GPT/Photography.xml
 - https://spaces.ac.cn/feed, https://rsshub.app/huggingface/daily-papers -> https://YuhanShi53.github.io/RSS-GPT/Artificial-Intelligence.xml
-- https://sspai.com/feed, https://v2ex.com/feed -> https://YuhanShi53.github.io/RSS-GPT/Blogs.xml
+- https://sspai.com/feed -> https://YuhanShi53.github.io/RSS-GPT/Blogs.xml
