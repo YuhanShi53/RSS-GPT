@@ -310,18 +310,12 @@ def output(sec, language):
                     f.write(f"Filter: [{entry.title}]({entry.link})\n")
                 continue
 
-            # format to Thu, 27 Jul 2023 13:13:42 +0000
-            # if 'updated' in entry:
-            #     entry.updated = feedparser.parse(entry.updated).strftime('%a, %d %b %Y %H:%M:%S %z')
-            # if 'published' in entry:
-            #     entry.published = feedparser.parse(entry.published).strftime('%a, %d %b %Y %H:%M:%S %z')
-
             gpt_response = {}
+            token_length = len(cleaned_article)
             cnt += 1
             if cnt > max_items:
                 entry.summary = None
-            elif OPENAI_API_KEY:
-                token_length = len(cleaned_article)
+            elif OPENAI_API_KEY and (token_length > summary_length):
                 if custom_model:
                     try:
                         gpt_response = gpt_summary(cleaned_article, image_urls, model=custom_model, language=language)
@@ -331,7 +325,7 @@ def output(sec, language):
                     except Exception as e:
                         entry.summary = None
                         with open(log_file, 'a') as f:
-                            f.write(f"Summarization failed, append the original article\n")
+                            f.write("Summarization failed, append the original article\n")
                             f.write(f"error: {e}\n")
                 else:
                     try:
@@ -355,12 +349,11 @@ def output(sec, language):
             if gpt_response.get("title", ""):
                 entry.title = gpt_response["title"]
             if gpt_response.get("short_summary", "") and gpt_response.get("summary", ""):
-                entry.summary = f"{gpt_response['short_summary']}<br><br>{gpt_response['summary']}"
-
-                entry.summary = (f"<p style='color:gray;'>{gpt_response['short_summary']}</p><br><br>" +
-                                 f"<p><strong>摘要：</strong> {gpt_response['summary']}</p>" +
-                                 f"<p><em>使用 {custom_model} 生成</em></p>")
-
+                short_summary_color = "color:gray;"
+                entry.summary = (f'<p style={short_summary_color}>{gpt_response["short_summary"]}</p><br><br>' +
+                                 f'<p><strong>摘要：</strong> {gpt_response["summary"]}</p><br><br>' +
+                                 f'<p><em>使用 {custom_model} 生成 </em></p>' +
+                                 f'<a href={entry.link} target="_blank">查看原文</a>')
 
             if gpt_response.get("keyword", "") != "ADs":
                 append_entries.append(entry)
