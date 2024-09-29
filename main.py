@@ -192,7 +192,7 @@ def gpt_summary(query, image_urls, model, language):
 
     messages = [
         {"role": "user", "content": content},
-        {"role": "assistant", "content": f"请用中文为这篇文章重新起一个标题，并对这篇文章总结几个关键词。请用中文写一段{short_summary_length}字的简短摘要，再使用中文在{summary_length}字内写一个包含所有要点的图文摘要，使用HTML格式编写。如果原文中有HTML格式的图片链接，其出现顺序和以下图片一致，如果图片和摘要内容相关，请保持原有HTML格式穿插摘要合适的段落中。\n请用JSON格式输出'title','short_summary','summary','keyword'四个信息，输出内容使用``` ```包围。如果这是一篇营销广告或促销活动，'keyword'为‘ADs‘，否则输出文章内容所涉及的关键词，关键词不超过{keyword_length}个。"}
+        {"role": "assistant", "content": f"请用中文为这篇文章重新起一个标题，并对这篇文章总结几个关键词。请用中文写一段{short_summary_length}字的简短摘要，再使用中文在{summary_length}字内写一个包含所有要点的图文摘要，注意：只能对原文编写摘要，不要进行分析；在适当的位置采用HTML格式链接原文提供的图片，如果原文中有HTML格式的图片链接，其出现顺序和以下图片一致。\n请用JSON格式输出'title','short_summary','summary','keyword'四个信息，输出内容使用``` ```包围。如果这是一篇营销广告或促销活动，'keyword'为‘ADs‘，否则输出文章内容所涉及的关键词，关键词不超过{keyword_length}个。"}
     ]
 
     if not OPENAI_PROXY:
