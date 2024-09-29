@@ -90,6 +90,7 @@ def clean_html(html_content):
     for img in soup.find_all("img"):
         if "src" in img.attrs:
             image_urls.append(img["src"])
+            print(image_urls)
         else:
             img.decompose()
 
@@ -191,7 +192,7 @@ def gpt_summary(query, image_urls, model, language):
 
     messages = [
         {"role": "user", "content": content},
-        {"role": "assistant", "content": f"请用中文为这篇文章重新起一个标题，并对这篇文章总结几个关键词。请用中文写一段{short_summary_length}字的简短摘要，再使用中文在{summary_length}字内写一个包含所有要点的图文摘要，按顺序分要点输出，接在'摘要:'二字之前。如果原文中有HTML格式的图片链接，其出现顺序和以下图片一致，如果图片和摘要内容相关，请保持原有HTML格式穿插摘要合适的段落中。\n请用JSON格式输出'title','short_summary','summary','keyword'四个信息，输出内容使用``` ```包围。如果这是一篇营销广告或促销活动，'keyword'为‘ADs‘，否则输出文章内容所涉及的关键词，关键词不超过{keyword_length}个。"}
+        {"role": "assistant", "content": f"请用中文为这篇文章重新起一个标题，并对这篇文章总结几个关键词。请用中文写一段{short_summary_length}字的简短摘要，再使用中文在{summary_length}字内写一个包含所有要点的图文摘要，使用HTML格式编写。如果原文中有HTML格式的图片链接，其出现顺序和以下图片一致，如果图片和摘要内容相关，请保持原有HTML格式穿插摘要合适的段落中。\n请用JSON格式输出'title','short_summary','summary','keyword'四个信息，输出内容使用``` ```包围。如果这是一篇营销广告或促销活动，'keyword'为‘ADs‘，否则输出文章内容所涉及的关键词，关键词不超过{keyword_length}个。"}
     ]
 
     if not OPENAI_PROXY:
@@ -208,7 +209,7 @@ def gpt_summary(query, image_urls, model, language):
     completion = client.chat.completions.create(
         model=model,
         messages=messages,
-        max_tokens=1000,
+        max_tokens=500,
     )
 
     match = re.search(r'```json\n(.*?)```', completion.choices[0].message.content, re.DOTALL)
@@ -309,11 +310,11 @@ def output(sec, language):
                     f.write(f"Filter: [{entry.title}]({entry.link})\n")
                 continue
 
-#            # format to Thu, 27 Jul 2023 13:13:42 +0000
-#            if 'updated' in entry:
-#                entry.updated = parse(entry.updated).strftime('%a, %d %b %Y %H:%M:%S %z')
-#            if 'published' in entry:
-#                entry.published = parse(entry.published).strftime('%a, %d %b %Y %H:%M:%S %z')
+            # format to Thu, 27 Jul 2023 13:13:42 +0000
+            # if 'updated' in entry:
+            #     entry.updated = feedparser.parse(entry.updated).strftime('%a, %d %b %Y %H:%M:%S %z')
+            # if 'published' in entry:
+            #     entry.published = feedparser.parse(entry.published).strftime('%a, %d %b %Y %H:%M:%S %z')
 
             gpt_response = {}
             cnt += 1
@@ -355,6 +356,11 @@ def output(sec, language):
                 entry.title = gpt_response["title"]
             if gpt_response.get("short_summary", "") and gpt_response.get("summary", ""):
                 entry.summary = f"{gpt_response['short_summary']}<br><br>{gpt_response['summary']}"
+
+                entry.summary = (f"<p style='color:gray;'>{gpt_response['short_summary']}</p><br><br>" +
+                                 f"<p><strong>摘要：</strong> {gpt_response['summary']}</p>" +
+                                 f"<p><em>使用 {custom_model} 生成</em></p>")
+
 
             if gpt_response.get("keyword", "") != "ADs":
                 append_entries.append(entry)
