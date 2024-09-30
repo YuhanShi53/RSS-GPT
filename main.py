@@ -88,11 +88,12 @@ def clean_html(html_content):
 
     image_urls = []
     for img in soup.find_all("img"):
-        if "src" in img.attrs:
-            image_urls.append(img["src"])
-            print(image_urls)
-        else:
-            img.decompose()
+        img.decompose()
+        # if "src" in img.attrs:
+        #     image_urls.append(img["src"])
+        #     print(image_urls)
+        # else:
+        #     img.decompose()
 
     for a in soup.find_all("a"):
         a.decompose()
@@ -179,20 +180,20 @@ def gpt_summary(query, image_urls, model, language):
         {"type": "text", "text": query}
     ]
 
-    for image_url in image_urls:
-        content.append(
-            {
-                "type": "image_url",
-                "image_url": {
-                    "url": image_url,
-                    "detail": "low",
-                },
-            }
-        )
+    # for image_url in image_urls:
+    #     content.append(
+    #         {
+    #             "type": "image_url",
+    #             "image_url": {
+    #                 "url": image_url,
+    #                 "detail": "low",
+    #             },
+    #         }
+    #     )
 
     messages = [
         {"role": "user", "content": content},
-        {"role": "assistant", "content": f"请用中文为这篇文章重新起一个标题，并对这篇文章总结几个关键词。请用中文写一段{short_summary_length}字的简短摘要，再使用中文在{summary_length}字内写一个包含所有要点的图文摘要，注意：只能对原文编写摘要，不要进行分析；在适当的位置采用HTML格式链接原文提供的图片，如果原文中有HTML格式的图片链接，其出现顺序和以下图片一致。\n请用JSON格式输出'title','short_summary','summary','keyword'四个信息，输出内容使用``` ```包围。如果这是一篇营销广告或促销活动，'keyword'为‘ADs‘，否则输出文章内容所涉及的关键词，关键词不超过{keyword_length}个。"}
+        {"role": "assistant", "content": f"请用中文为这篇文章重新起一个标题，并对这篇文章总结几个关键词。请用中文写一段{short_summary_length}字的简短摘要，再使用中文在{summary_length}字内写一篇文章摘要，注意：只能对原文内容进行总结，不要进行解读和分析。\n请用JSON格式输出'title','short_summary','summary','keyword'四个信息，输出内容使用``` ```包围。如果这是一篇营销广告或促销活动，'keyword'为‘ADs‘，否则输出文章内容所涉及的关键词，关键词不超过{keyword_length}个。"}
     ]
 
     if not OPENAI_PROXY:
