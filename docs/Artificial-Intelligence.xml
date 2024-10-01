@@ -5,15 +5,28 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>低秩近似之路（二）：SVD</title>
+<link>https://spaces.ac.cn/archives/10407</link>
+<guid>https://spaces.ac.cn/archives/10407</guid>
+<content:encoded><![CDATA[
+
+  <p>上一篇文章中我们介绍了“<a href="https://kexue.fm/archives/10366" target="_blank">伪逆</a>”，它关系到给定矩阵$M$和$A$（或$B$）时优化目标$\Vert AB - M\Vert_F^2$的最优解。这篇文章我们来关注$A,B$都不给出时的最优解，即<br />
+\begin{equation}\mathop{\text{argmin}}_{A,B}\Vert AB - M\Vert_F^2\label{eq:loss-ab}\end{equation}<br />
+其中$A\in\mathbb{R}^{n\times r}, B\in\mathbb{R}^{r\times m}, M\in\mathbb{R}^{n\times m},r < \min(n,m)$。说白了，这就是要寻找矩阵$M$的“最优$r$秩近似（秩不超过$r$的最优近似）”。而要解决这个问题，就需要请出大名鼎鼎的“SVD（奇异值分解）”了。虽然本系列把伪逆作为开篇，但它的“名声”远不如SVD，听过甚至用过SVD但没听说过伪逆的应该大有人在，包括笔者也是先了解SVD后才看到伪逆。</p><p>接下来，我们将围绕着矩阵的最优低秩近似来展开介绍SVD。</p><h2>基本形式</h2><p>对于任意矩阵$M\in\mathbb{R}^{n\times m}$，都可以找到如下形式的奇异值分解（SVD，Singular Value Decomposition）：<br />
+\begin{equation}M = U\Sigma V^{\top}\end{equation}</p><p class="more"><a href="https://spaces.ac.cn/archives/10407" title="低秩近似之路（二）：SVD">[...]</a></p>
+
+]]></content:encoded>
+<pubDate>Tue, 01 Oct 2024 17:45:00 +0800</pubDate>
+<pubDate>Tue, 01 Oct 2024 17:45:00 +0800</pubDate>
+</item>
+
+<item>
 <title>双重嵌入模型的神经音频水印技术研究</title>
 <link>https://arxiv.org/abs/2409.19627</link>
 <guid>https://arxiv.org/abs/2409.19627</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文提出了一种双重嵌入的神经音频水印模型，提升了水印的鲁棒性和定位能力。</p><br><br><p><strong>摘要：</strong> 本文设计了一种双重嵌入的神经音频水印模型，旨在提高水印的定位能力和鲁棒性。随着深度学习的发展，神经音频水印相较传统方法，在水印的嵌入和提取效果上更具优势，但仍存在低容量和不可感知性差的问题。此外，水印定位问题在神经水印中尤为重要，尚未得到充分研究。为此，本文提出的IDEAW模型针对攻击层对可逆神经网络的影响进行优化，加强了模型的合理性和稳定性。实验结果表明，IDEAW模型在抵御各种攻击的能力、容量以及高效的定位功能上均优于现有方法。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2409.19627 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文提出了一种双重嵌入的神经音频水印模型，提升了水印的鲁棒性和定位能力。</p><br /><br /><p><strong>摘要：</strong> 本文设计了一种双重嵌入的神经音频水印模型，旨在提高水印的定位能力和鲁棒性。随着深度学习的发展，神经音频水印相较传统方法，在水印的嵌入和提取效果上更具优势，但仍存在低容量和不可感知性差的问题。此外，水印定位问题在神经水印中尤为重要，尚未得到充分研究。为此，本文提出的IDEAW模型针对攻击层对可逆神经网络的影响进行优化，加强了模型的合理性和稳定性。实验结果表明，IDEAW模型在抵御各种攻击的能力、容量以及高效的定位功能上均优于现有方法。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2409.19627" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 01 Oct 2024 04:52:47 GMT</pubDate>
 <pubDate>Tue, 01 Oct 2024 04:52:47 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +34,8 @@
 <link>https://arxiv.org/abs/2409.18747</link>
 <guid>https://arxiv.org/abs/2409.18747</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>Cottention通过余弦相似度替代softmax，具备线性内存复杂度，适合处理长序列。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种新的注意力机制Cottention，它用余弦相似度替代传统的softmax操作，从而实现了序列长度上原生的线性内存复杂度。这一特性使得Cottention在处理长序列时比softmax注意力显著更为高效。Cottention可以重构为具有有限隐藏状态的递归神经网络（RNN），在推理过程中能够保证常量内存使用。通过在双向BERT和因果GPT任务上的评估，Cottention展现出了与softmax注意力相当的性能，同时显著降低了内存需求。为了确保有效的计算，我们为Cottention开发了一个自定义的CUDA内核。实验结果表明，Cottention是softmax注意力的有希望的替代方案，能在不牺牲性能的情况下处理更长的序列，因为它具备原生线性内存复杂度和在推理时维持常量内存占用的能力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2409.18747 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">Cottention通过余弦相似度替代softmax，具备线性内存复杂度，适合处理长序列。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种新的注意力机制Cottention，它用余弦相似度替代传统的softmax操作，从而实现了序列长度上原生的线性内存复杂度。这一特性使得Cottention在处理长序列时比softmax注意力显著更为高效。Cottention可以重构为具有有限隐藏状态的递归神经网络（RNN），在推理过程中能够保证常量内存使用。通过在双向BERT和因果GPT任务上的评估，Cottention展现出了与softmax注意力相当的性能，同时显著降低了内存需求。为了确保有效的计算，我们为Cottention开发了一个自定义的CUDA内核。实验结果表明，Cottention是softmax注意力的有希望的替代方案，能在不牺牲性能的情况下处理更长的序列，因为它具备原生线性内存复杂度和在推理时维持常量内存占用的能力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2409.18747" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 01 Oct 2024 04:33:45 GMT</pubDate>
 <pubDate>Tue, 01 Oct 2024 04:33:45 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +43,8 @@
 <link>https://arxiv.org/abs/2409.20566</link>
 <guid>https://arxiv.org/abs/2409.20566</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>MM1.5是一种新型多模态大语言模型，专注于文本丰富的图像理解和多图像推理。</p><br><br><p><strong>摘要：</strong> 本文介绍了MM1.5，这是一个新兴的多模态大语言模型（MLLM）系列，旨在提升文本丰富图像理解、视觉参考与定位以及多图像推理的能力。MM1.5在MM1架构的基础上，采用数据中心化的训练方式，系统性地探索了整个模型训练生命周期中不同数据混合对模型性能的影响。这包括高质量的OCR数据和合成描述用于持续预训练，以及针对监督微调的优化视觉指令调优数据混合。我们的模型参数范围从1B到30B，涵盖了密集型和专家混合（MoE）变体，证明了精心的数据策划和训练策略可以在小规模模型（1B和3B）上实现强大的性能。此外，我们还介绍了两个专业变体：MM1.5-Video，专门用于视频理解，以及MM1.5-UI，专为移动用户界面理解而设计。通过广泛的经验研究和消融实验，我们提供了关于训练过程和设计决策的详细洞见，为未来的MLLM开发研究提供了宝贵的指导。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2409.20566 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">MM1.5是一种新型多模态大语言模型，专注于文本丰富的图像理解和多图像推理。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了MM1.5，这是一个新兴的多模态大语言模型（MLLM）系列，旨在提升文本丰富图像理解、视觉参考与定位以及多图像推理的能力。MM1.5在MM1架构的基础上，采用数据中心化的训练方式，系统性地探索了整个模型训练生命周期中不同数据混合对模型性能的影响。这包括高质量的OCR数据和合成描述用于持续预训练，以及针对监督微调的优化视觉指令调优数据混合。我们的模型参数范围从1B到30B，涵盖了密集型和专家混合（MoE）变体，证明了精心的数据策划和训练策略可以在小规模模型（1B和3B）上实现强大的性能。此外，我们还介绍了两个专业变体：MM1.5-Video，专门用于视频理解，以及MM1.5-UI，专为移动用户界面理解而设计。通过广泛的经验研究和消融实验，我们提供了关于训练过程和设计决策的详细洞见，为未来的MLLM开发研究提供了宝贵的指导。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2409.20566" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 01 Oct 2024 04:30:20 GMT</pubDate>
 <pubDate>Tue, 01 Oct 2024 04:30:20 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +52,8 @@
 <link>https://arxiv.org/abs/2409.19606</link>
 <guid>https://arxiv.org/abs/2409.19606</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文介绍了超连接方法，旨在改善残差连接的不足，并在大语言模型及视觉任务中取得显著性能提升。</p><br><br><p><strong>摘要：</strong> 本文提出了一种简单有效的超连接方法，作为残差连接的替代方案，主要解决了残差连接变体中常见的几个缺点，如梯度消失与表征崩溃之间的秋千效应。超连接理论上允许网络调整不同深度特征之间的连接强度，并动态重排列。通过对大语言模型的预训练实验，包括稠密模型与稀疏模型，超连接显示出显著的性能提升。此外，针对视觉任务的附加实验也显示出了类似的改进。我们预期这一方法将在广泛的人工智能问题中得到广泛应用与好处。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2409.19606 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文介绍了超连接方法，旨在改善残差连接的不足，并在大语言模型及视觉任务中取得显著性能提升。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种简单有效的超连接方法，作为残差连接的替代方案，主要解决了残差连接变体中常见的几个缺点，如梯度消失与表征崩溃之间的秋千效应。超连接理论上允许网络调整不同深度特征之间的连接强度，并动态重排列。通过对大语言模型的预训练实验，包括稠密模型与稀疏模型，超连接显示出显著的性能提升。此外，针对视觉任务的附加实验也显示出了类似的改进。我们预期这一方法将在广泛的人工智能问题中得到广泛应用与好处。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2409.19606" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 01 Oct 2024 04:27:44 GMT</pubDate>
 <pubDate>Tue, 01 Oct 2024 04:27:44 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +61,8 @@
 <link>https://arxiv.org/abs/2409.19020</link>
 <guid>https://arxiv.org/abs/2409.19020</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>DiaSynth框架通过大规模语言模型生成丰富的领域特定对话，提升对话系统的训练效果。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为DiaSynth的合成对话生成框架，旨在解决领域特定对话数据集稀缺的问题。当前对话系统的研发受到通用对话数据集和规模小的特定领域数据集的限制。DiaSynth通过动态生成对话，模拟不同的人物角色、子主题和多样的对话特征，利用大规模语言模型及其链式推理能力，生产具有上下文丰富性和真实性的领域特定对话。通过对不同大规模语言模型生成的合成数据进行实验，发现经过合成数据微调的预训练语言模型比基础模型提升了16.47%的表现。此外，合成数据能够捕捉到领域特定数据的90.48%的分布特征，且生成数据的质量会随着大规模语言模型的规模增加而提高。这些结果证实了DiaSynth作为传统数据收集方法的有力替代方案的潜力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2409.19020 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">DiaSynth框架通过大规模语言模型生成丰富的领域特定对话，提升对话系统的训练效果。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种名为DiaSynth的合成对话生成框架，旨在解决领域特定对话数据集稀缺的问题。当前对话系统的研发受到通用对话数据集和规模小的特定领域数据集的限制。DiaSynth通过动态生成对话，模拟不同的人物角色、子主题和多样的对话特征，利用大规模语言模型及其链式推理能力，生产具有上下文丰富性和真实性的领域特定对话。通过对不同大规模语言模型生成的合成数据进行实验，发现经过合成数据微调的预训练语言模型比基础模型提升了16.47%的表现。此外，合成数据能够捕捉到领域特定数据的90.48%的分布特征，且生成数据的质量会随着大规模语言模型的规模增加而提高。这些结果证实了DiaSynth作为传统数据收集方法的有力替代方案的潜力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2409.19020" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 01 Oct 2024 04:22:04 GMT</pubDate>
 <pubDate>Tue, 01 Oct 2024 04:22:04 GMT</pubDate>
 </item>
 <item>
@@ -69,14 +70,10 @@
 <link>https://arxiv.org/abs/2409.19952</link>
 <guid>https://arxiv.org/abs/2409.19952</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文介绍了ICDiff以及D-Rep数据集，用于检测扩散模型生成图像的复制情况。</p><br><br><p><strong>摘要：</strong> 随着扩散模型产生的图像在数字艺术和视觉营销中的受到越来越多的关注，内容原创性的问题也随之而来。现有的图像复制检测（ICD）模型在检测手工制作的复制品方面虽然准确，但忽略了来自扩散模型所产生图像的挑战。为此，本文介绍了ICDiff，这是首个专为扩散模型开发的ICD方法。我们构建了Diffusion-Replication（D-Rep）数据集，并提出了一种新颖的深度嵌入方法。D-Rep基于最先进的扩散模型Stable Diffusion V1.5生成4万对图像复制品，并将这些复制品手动标注为6个复制级别，范围从0（无复制）到5（完全复制）。我们的PDF-Embedding方法将每对图像复制品的复制级别转化为概率密度函数（PDF），作为监督信号。实验结果表明，PDF-Embedding在D-Rep测试集上表现优于基于协议的方法和非PDF选择。此外，通过利用PDF-Embedding，我们发现著名扩散模型与开放源代码图库之间的复制比例介于10%到20%之间。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2409.19952 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文介绍了ICDiff以及D-Rep数据集，用于检测扩散模型生成图像的复制情况。</p><br /><br /><p><strong>摘要：</strong> 随着扩散模型产生的图像在数字艺术和视觉营销中的受到越来越多的关注，内容原创性的问题也随之而来。现有的图像复制检测（ICD）模型在检测手工制作的复制品方面虽然准确，但忽略了来自扩散模型所产生图像的挑战。为此，本文介绍了ICDiff，这是首个专为扩散模型开发的ICD方法。我们构建了Diffusion-Replication（D-Rep）数据集，并提出了一种新颖的深度嵌入方法。D-Rep基于最先进的扩散模型Stable Diffusion V1.5生成4万对图像复制品，并将这些复制品手动标注为6个复制级别，范围从0（无复制）到5（完全复制）。我们的PDF-Embedding方法将每对图像复制品的复制级别转化为概率密度函数（PDF），作为监督信号。实验结果表明，PDF-Embedding在D-Rep测试集上表现优于基于协议的方法和非PDF选择。此外，通过利用PDF-Embedding，我们发现著名扩散模型与开放源代码图库之间的复制比例介于10%到20%之间。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2409.19952" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 01 Oct 2024 03:46:15 GMT</pubDate>
-<pubDate>Tue, 01 Oct 2024 03:46:15 GMT</pubDate>
 </item>
-
 <item>
 <title>HDFlow：一种结合快速与慢速思维的大语言模型复杂推理框架</title>
 <link>https://arxiv.org/abs/2409.17433</link>
