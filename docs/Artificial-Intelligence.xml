@@ -5,21 +5,42 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>Coffee-Gym：用于代码编辑反馈的强化学习环境</title>
+<link>https://arxiv.org/abs/2409.19715</link>
+<guid>https://arxiv.org/abs/2409.19715</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Coffee-Gym是一个RL环境，通过数据集和奖励函数，训练代码编辑反馈模型，提高开源代码LLM的效果。</p><br><br><p><strong>摘要：</strong> 本文介绍了Coffee-Gym，一个针对代码编辑反馈模型培训的综合强化学习(RL)环境。Coffee-Gym主要由两个组成部分构成：首先是Coffee，一个包含人类代码编辑轨迹的数据集，涵盖了编程问题与机器编写的反馈；其次是CoffeeEval，一个奖励函数，能够通过评估修订后代码在单元测试中的表现，真实反映反馈的 helpfulness。Coffee-Gym旨在解决用于RL反馈模型培训的高质量数据集匮乏问题，并且提供比现有最先进的奖励模型（如GPT-4）更准确的奖励。通过应用Coffee-Gym，开发出的反馈模型在提升开源代码LLM的代码编辑能力方面超越了基准，与封闭源LLM的效果相当。我们将数据集和模型检查点公开分享。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2409.19715 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 01 Oct 2024 07:43:58 GMT</pubDate>
+<pubDate>Tue, 01 Oct 2024 07:43:58 GMT</pubDate>
+</item>
+<item>
+<title>Can Models Learn Skill Composition from Examples?</title>
+<link>https://arxiv.org/abs/2409.19808</link>
+<guid>https://arxiv.org/abs/2409.19808</guid>
+<content:encoded><![CDATA[
+
+  As large language models (LLMs) become increasingly advanced, their ability to exhibit compositional generalization -- the capacity to combine learned skills in novel ways not encountered during training -- has garnered significant attention. This type of generalization, particularly in scenarios beyond training data, is also of great interest in the study of AI safety and alignment. A recent study introduced the SKILL-MIX evaluation, where models are tasked with composing a short paragraph demonstrating the use of a specified k-tuple of language skills. While small models struggled with composing even with k=3, larger models like GPT-4 performed reasonably well with k=5 and 6.   In this paper, we employ a setup akin to SKILL-MIX to evaluate the capacity of smaller models to learn compositional generalization from examples. Utilizing a diverse set of language skills -- including rhetorical, literary, reasoning, theory of mind, and common sense -- GPT-4 was used to generate text samples that exhibit random subsets of k skills. Subsequent fine-tuning of 7B and 13B parameter models on these combined skill texts, for increasing values of k, revealed the following findings: (1) Training on combinations of k=2 and 3 skills results in noticeable improvements in the ability to compose texts with k=4 and 5 skills, despite models never having seen such examples during training. (2) When skill categories are split into training and held-out groups, models significantly improve at composing texts with held-out skills during testing despite having only seen training skills during fine-tuning, illustrating the efficacy of the training approach even with previously unseen skills. This study also suggests that incorporating skill-rich (potentially synthetic) text into training can substantially enhance the compositional capabilities of models.
+
+]]></content:encoded>
+<pubDate>Tue, 01 Oct 2024 06:35:36 GMT</pubDate>
+<pubDate>Tue, 01 Oct 2024 06:35:36 GMT</pubDate>
+</item>
+
+<item>
 <title>低秩近似之路（二）：SVD</title>
 <link>https://spaces.ac.cn/archives/10407</link>
 <guid>https://spaces.ac.cn/archives/10407</guid>
 <content:encoded><![CDATA[
-
-  <p>上一篇文章中我们介绍了“<a href="https://kexue.fm/archives/10366" target="_blank">伪逆</a>”，它关系到给定矩阵$M$和$A$（或$B$）时优化目标$\Vert AB - M\Vert_F^2$的最优解。这篇文章我们来关注$A,B$都不给出时的最优解，即<br />
+<p>上一篇文章中我们介绍了“<a href="https://kexue.fm/archives/10366" target="_blank">伪逆</a>”，它关系到给定矩阵$M$和$A$（或$B$）时优化目标$\Vert AB - M\Vert_F^2$的最优解。这篇文章我们来关注$A,B$都不给出时的最优解，即<br />
 \begin{equation}\mathop{\text{argmin}}_{A,B}\Vert AB - M\Vert_F^2\label{eq:loss-ab}\end{equation}<br />
 其中$A\in\mathbb{R}^{n\times r}, B\in\mathbb{R}^{r\times m}, M\in\mathbb{R}^{n\times m},r < \min(n,m)$。说白了，这就是要寻找矩阵$M$的“最优$r$秩近似（秩不超过$r$的最优近似）”。而要解决这个问题，就需要请出大名鼎鼎的“SVD（奇异值分解）”了。虽然本系列把伪逆作为开篇，但它的“名声”远不如SVD，听过甚至用过SVD但没听说过伪逆的应该大有人在，包括笔者也是先了解SVD后才看到伪逆。</p><p>接下来，我们将围绕着矩阵的最优低秩近似来展开介绍SVD。</p><h2>基本形式</h2><p>对于任意矩阵$M\in\mathbb{R}^{n\times m}$，都可以找到如下形式的奇异值分解（SVD，Singular Value Decomposition）：<br />
 \begin{equation}M = U\Sigma V^{\top}\end{equation}</p><p class="more"><a href="https://spaces.ac.cn/archives/10407" title="低秩近似之路（二）：SVD">[...]</a></p>
-
 ]]></content:encoded>
 <pubDate>Tue, 01 Oct 2024 17:45:00 +0800</pubDate>
-<pubDate>Tue, 01 Oct 2024 17:45:00 +0800</pubDate>
 </item>
-
 <item>
 <title>双重嵌入模型的神经音频水印技术研究</title>
 <link>https://arxiv.org/abs/2409.19627</link>
