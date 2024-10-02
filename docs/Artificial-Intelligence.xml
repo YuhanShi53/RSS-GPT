@@ -4,6 +4,102 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>一种基于后验均值的图像恢复算法</title>
+<link>https://arxiv.org/abs/2410.00418</link>
+<guid>https://arxiv.org/abs/2410.00418</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>PMRF算法通过最优运输后验均值实现高质量图像恢复。它在多种任务中超越了前沿技术。</p><br><br><p><strong>摘要：</strong> 本文关注在完美感知指标约束下，最小化均方误差（MSE）的最优估计器。提出的Posterior-Mean Rectified Flow (PMRF)算法通过预先预测后验均值，然后利用直流模型将该结果转移到高质量图像上，近似于理想的最优运输映射。PMRF基于最近的理论结果，能够有效地将后验均值预测搬运至与真实图像相同的分布。通过理论分析和实证研究，PMRF在多种图像恢复任务中表现优于现有方法。该算法的引入为图像恢复领域带来了新的视角，旨在在保持感知质量的同时最小化重建失真。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.00418 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 02 Oct 2024 06:14:13 GMT</pubDate>
+<pubDate>Wed, 02 Oct 2024 06:14:13 GMT</pubDate>
+</item>
+<item>
+<title>VideoLISA：语言指导下的视频多模态大语言模型</title>
+<link>https://arxiv.org/abs/2409.19603</link>
+<guid>https://arxiv.org/abs/2409.19603</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>VideoLISA是一种基于视频的多模态大语言模型，通过语言指令实现视频中对象的时间一致分割。</p><br><br><p><strong>摘要：</strong> VideoLISA是一种新颖的视频多模态大语言模型，旨在解决视频中语言指导下的推理分割问题。该模型结合了大型语言模型的推理能力和世界知识，以及Segment Anything Model的增强，能够根据语言指令生成时间一致的视频分割掩码。现有的基于图像的方法（如LISA）在处理视频任务时遇到困难，因为视频增加了时间维度，要求更强的时间动态理解能力和帧间一致性分割。为解决这些挑战，VideoLISA引入了一种稀疏密集采样策略，以平衡计算约束下的时间上下文和空间细节。此外，模型还提出了一种One-Token-Seg-All方法，利用特殊设计的标记在多个帧中实现对象的分割和跟踪。在我们新推出的ReasonVOS基准及其他多样化基准上的广泛评估显示，VideoLISA在处理复杂推理、时间理解和对象跟踪的视频对象分割任务中表现优越。虽然重点在视频分割，VideoLISA在图像分割上也显示出良好的泛化能力，揭示了其作为语言指导对象分割的统一基础模型的潜力。代码和模型将在https://github.com/showlab/VideoLISA上发布。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2409.19603 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 02 Oct 2024 06:12:40 GMT</pubDate>
+<pubDate>Wed, 02 Oct 2024 06:12:40 GMT</pubDate>
+</item>
+<item>
+<title>Atlas-Chat: Adapting Large Language Models for Low-Resource Moroccan Arabic Dialect</title>
+<link>https://arxiv.org/abs/2409.17912</link>
+<guid>https://arxiv.org/abs/2409.17912</guid>
+<content:encoded><![CDATA[
+
+  We introduce Atlas-Chat, the first-ever collection of large language models specifically developed for dialectal Arabic. Focusing on Moroccan Arabic, also known as Darija, we construct our instruction dataset by consolidating existing Darija language resources, creating novel datasets both manually and synthetically, and translating English instructions with stringent quality control. Atlas-Chat-9B and 2B models, fine-tuned on the dataset, exhibit superior ability in following Darija instructions and performing standard NLP tasks. Notably, our models outperform both state-of-the-art and Arabic-specialized LLMs like LLaMa, Jais, and AceGPT, e.g., achieving a 13% performance boost over a larger 13B model on DarijaMMLU, in our newly introduced evaluation suite for Darija covering both discriminative and generative tasks. Furthermore, we perform an experimental analysis of various fine-tuning strategies and base model choices to determine optimal configurations. All our resources are publicly accessible, and we believe our work offers comprehensive design methodologies of instruction-tuning for low-resource language variants, which are often neglected in favor of data-rich languages by contemporary LLMs.
+
+]]></content:encoded>
+<pubDate>Wed, 02 Oct 2024 05:02:45 GMT</pubDate>
+<pubDate>Wed, 02 Oct 2024 05:02:45 GMT</pubDate>
+</item>
+<item>
+<title>Illustrious：一款先进的动漫图像生成模型</title>
+<link>https://arxiv.org/abs/2409.19946</link>
+<guid>https://arxiv.org/abs/2409.19946</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文介绍了Illustrious模型在生成高质量动漫图像方面的三大关键改进策略。</p><br><br><p><strong>摘要：</strong> 本文分享了在我们文本到图像动漫图像生成模型Illustrious中实现尖端质量的见解。为了实现高分辨率、动态色彩范围图像和强大的恢复能力，我们专注于三种关键改进方法。首先，我们深入探讨了批量大小和 dropout 控制的重要性，这能够加速可控标记概念激活的学习。其次，我们提高了图像的训练分辨率，从而在更高的分辨率下准确描绘角色解剖结构，实现超过20MP的生成能力。最后，我们提出了经过优化的多层次标签覆盖方案，结合各种自然语言标题，作为模型发展的重要因素。通过广泛的分析和实验，Illustrious在动画风格方面展现了尖端表现，在插画领域超越了广泛使用的模型，推动了更容易的定制和个性化，并具备开源特性。我们计划公开发布更新的Illustrious模型系列，并制定持续改进的方案。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2409.19946 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 02 Oct 2024 04:30:24 GMT</pubDate>
+<pubDate>Wed, 02 Oct 2024 04:30:24 GMT</pubDate>
+</item>
+<item>
+<title>Law of the Weakest Link: Cross Capabilities of Large Language Models</title>
+<link>https://arxiv.org/abs/2409.19951</link>
+<guid>https://arxiv.org/abs/2409.19951</guid>
+<content:encoded><![CDATA[
+
+  The development and evaluation of Large Language Models (LLMs) have largely focused on individual capabilities. However, this overlooks the intersection of multiple abilities across different types of expertise that are often required for real-world tasks, which we term cross capabilities. To systematically explore this concept, we first define seven core individual capabilities and then pair them to form seven common cross capabilities, each supported by a manually constructed taxonomy. Building on these definitions, we introduce CrossEval, a benchmark comprising 1,400 human-annotated prompts, with 100 prompts for each individual and cross capability. To ensure reliable evaluation, we involve expert annotators to assess 4,200 model responses, gathering 8,400 human ratings with detailed explanations to serve as reference examples. Our findings reveal that, in both static evaluations and attempts to enhance specific abilities, current LLMs consistently exhibit the "Law of the Weakest Link," where cross-capability performance is significantly constrained by the weakest component. Specifically, across 58 cross-capability scores from 17 models, 38 scores are lower than all individual capabilities, while 20 fall between strong and weak, but closer to the weaker ability. These results highlight the under-performance of LLMs in cross-capability tasks, making the identification and improvement of the weakest capabilities a critical priority for future research to optimize performance in complex, multi-dimensional scenarios.
+
+]]></content:encoded>
+<pubDate>Wed, 02 Oct 2024 02:10:28 GMT</pubDate>
+<pubDate>Wed, 02 Oct 2024 02:10:28 GMT</pubDate>
+</item>
+<item>
+<title>Flex3D：一种灵活的3D内容生成框架</title>
+<link>https://arxiv.org/abs/2410.00890</link>
+<guid>https://arxiv.org/abs/2410.00890</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Flex3D提出了一种新颖的两阶段框架，有效利用任意数量的高质量输入视图生成3D内容。</p><br><br><p><strong>摘要：</strong> Flex3D是一种新型的两阶段框架，旨在克服现有3D生成方法中固定视图数量的局限性。第一阶段采用候选视图生成和选择流程，通过微调的多视图图像扩散模型和视频扩散模型，生成丰富的目标3D对象表示。随后，视图选择流程对这些视图进行质量和一致性筛选，确保只使用高质量、可靠的视图进行重建。第二阶段将经过筛选的视图输入到灵活的重建模型（FlexRM），该模型基于变换器架构，能够有效处理任意数量的输入，并利用三平面表示直接输出3D高斯点，实现高效且详细的3D生成。通过对设计和训练策略的深入探索，我们优化了FlexRM，以在重建和生成任务中获得卓越性能。结果表明，Flex3D在3D生成任务中表现出色，与多种最新的前馈3D生成模型相比，其用户研究胜率超过92%。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.00890 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 02 Oct 2024 01:32:05 GMT</pubDate>
+<pubDate>Wed, 02 Oct 2024 01:32:05 GMT</pubDate>
+</item>
+<item>
+<title>面向边缘设备的TPI-LLM：高效的张量并行推理系统</title>
+<link>https://arxiv.org/abs/2410.00531</link>
+<guid>https://arxiv.org/abs/2410.00531</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>TPI-LLM是一种高效的张量并行推理系统，解决了边缘设备上的大模型推理问题。</p><br><br><p><strong>摘要：</strong> 随着用户隐私数据保护的关注，大型模型推理正逐渐从云端转向边缘设备。然而，边缘设备经常面临计算能力、内存和带宽的限制，需要多设备协作以加快大规模语言模型的推理。本文指出，张量并行在资源有限的设备上相较于流水线并行更具有效性，提出了一种名为TPI-LLM的计算和内存高效的张量并行推理系统，支持70B规模的模型。TPI-LLM允许用户的敏感数据留在本地，并通过滑动窗口内存调度器动态管理推理过程中的层权重，重叠处理磁盘I/O延迟与计算和通信，这样可以使内存受限的设备顺利运行更大的模型。本研究分析了通信瓶颈，发现链接延迟而非带宽是主要问题，因此实施了基于星型结构的全归约算法。通过在仿真和真实测试平台上的大量实验，TPI-LLM显示出比Accelerate缩短80%以上的首个标记生成时间和标记延迟，而与Transformers和Galaxy相比缩短了90%以上，同时将Llama 2-70B的峰值内存占用减少了90%，使其仅需3.1 GB的内存即可处理70B规模模型。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.00531 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 02 Oct 2024 01:25:30 GMT</pubDate>
+<pubDate>Wed, 02 Oct 2024 01:25:30 GMT</pubDate>
+</item>
+<item>
+<title>室内环境中四足机器人移动操控系统的研究</title>
+<link>https://arxiv.org/abs/2410.00231</link>
+<guid>https://arxiv.org/abs/2410.00231</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出了一种四足移动操控系统，能在未见环境中执行任务并进行对象操控。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种新的四足移动操控系统，旨在解决四足机器人在室内环境中学习和执行任务时遇到的挑战。该系统配备了前置抓手用于物体操控，采用在模拟环境中训练的低级控制器，利用自我中心的深度信息完成攀爬和全身倾斜等灵活技能。同时，系统结合了预训练的视觉语言模型（VLM），使用第三人称鱼眼和自我中心的RGB相机进行语义理解和指令生成。我们在两个未见环境中评估了该系统，无需任何真实世界数据收集或训练，系统能以零-shot方式对这些环境进行泛化，并成功完成任务，如根据用户的指令抓取随机放置的玩具，成功率达60%。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.00231 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 02 Oct 2024 01:20:04 GMT</pubDate>
+<pubDate>Wed, 02 Oct 2024 01:20:04 GMT</pubDate>
+</item>
 
 <item>
 <title>基于单目视频的人体模型重建方法</title>
