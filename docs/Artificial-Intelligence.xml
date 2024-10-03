@@ -5,15 +5,73 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>跨语言检索增强生成模型在地缘政治争议中的表现研究</title>
+<link>https://arxiv.org/abs/2410.01171</link>
+<guid>https://arxiv.org/abs/2410.01171</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文研究了跨语言检索增强生成模型在地缘政治争议中的局限性及其数据集构建。</p><br><br><p><strong>摘要：</strong> 本文探讨了跨语言检索增强生成（RAG）模型在处理地缘政治争议时所面临的挑战。尽管大型语言模型在创意生成方面表现出色，但在幻觉和偏见问题上依然存在不足。RAG模型旨在通过依赖准确和最新的信息来源来增强响应的真实性，但如何选择和加权这些信息来源仍是一个重要问题。我们创建了一个数据集，以研究现有系统在回答有关跨语言地缘政治争议的查询时的鲁棒性。该数据集来自于维基百科相关页面，研究了额外上下文的包含及其语言和来源的组成对模型响应的影响。结果表明，现有的RAG系统在跨语言使用案例中依然面临挑战，当提供多种语言的竞争性信息时，响应的连贯性和准确性往往受到影响。文中还展示了一些案例研究，并针对未来研究提出了改进建议。我们将数据集和代码公开提供，网址为https://github.com/manestay/bordIRlines。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.01171 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 03 Oct 2024 14:07:00 GMT</pubDate>
+<pubDate>Thu, 03 Oct 2024 14:07:00 GMT</pubDate>
+</item>
+<item>
+<title>SonicSim：针对移动声源的合成数据生成工具及其应用</title>
+<link>https://arxiv.org/abs/2410.01481</link>
+<guid>https://arxiv.org/abs/2410.01481</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>SonicSim是一种生成移动声源合成数据的工具，旨在提升语音分离与增强模型的效果。</p><br><br><p><strong>摘要：</strong> 在移动声源条件下，语音分离与增强模型的系统评估通常需要丰富多样的数据。然而，真实世界的数据集往往无法满足模型的训练与评估需求，合成数据集虽然数量庞大，但其声学模拟却缺乏真实感。为了解决这些问题，我们提出了SonicSim，一个旨在生成高度可定制化的移动声源合成数据的工具。SonicSim建立在Habitat-sim的基础上，支持场景级、麦克风级和源级的多层次调整，从而生成更为多样的合成数据。基于SonicSim，我们构建了一个移动声源基准数据集SonicSet，结合Librispeech、FSD50K和FMA等数据集，以及来自Matterport3D的90个场景，用于评估语音分离和增强模型。此外，我们随机选取了SonicSet验证集中的5小时无混响原始数据，录制了一个真实世界的语音分离数据集，并与对应的合成数据集进行了比较。同时，我们还利用真实世界的语音增强数据集RealMAN来验证SonicSet与其他合成数据集之间的声学差距。结果表明，SonicSim生成的合成数据能够有效地推广到真实世界场景中。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.01481 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 03 Oct 2024 13:54:50 GMT</pubDate>
+<pubDate>Thu, 03 Oct 2024 13:54:50 GMT</pubDate>
+</item>
+<item>
+<title>Old Optimizer, New Norm: An Anthology</title>
+<link>https://arxiv.org/abs/2409.20325</link>
+<guid>https://arxiv.org/abs/2409.20325</guid>
+<content:encoded><![CDATA[
+
+  Deep learning optimizers are often motivated through a mix of convex and approximate second-order theory. We select three such methods -- Adam, Shampoo and Prodigy -- and argue that each method can instead be understood as a squarely first-order method without convexity assumptions. In fact, after switching off exponential moving averages, each method is equivalent to steepest descent under a particular norm. By generalizing this observation, we chart a new design space for training algorithms. Different operator norms should be assigned to different tensors based on the role that the tensor plays within the network. For example, while linear and embedding layers may have the same weight space of R^{mtimes n}, these layers play different roles and should be assigned different norms. We hope that this idea of carefully metrizing the neural architecture might lead to more stable, scalable and indeed faster training.
+
+]]></content:encoded>
+<pubDate>Thu, 03 Oct 2024 13:04:12 GMT</pubDate>
+<pubDate>Thu, 03 Oct 2024 13:04:12 GMT</pubDate>
+</item>
+<item>
+<title>FactAlign：提升大型语言模型长篇响应的事实准确性</title>
+<link>https://arxiv.org/abs/2410.01691</link>
+<guid>https://arxiv.org/abs/2410.01691</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>FactAlign是一个新框架，用于增强大型语言模型长篇回答的事实准确性，融合细粒度评估方法。</p><br><br><p><strong>摘要：</strong> 本文提出了FactAlign，一个旨在提升大型语言模型（LLMs）长篇响应事实准确性的对齐框架，同时保持其有用性。我们引入了fKTO，一种细粒度句子级对齐算法，扩展了Kahneman-Tversky优化（KTO）对齐方法。FactAlign利用近期在自动事实性评估方面的进展，通过细粒度事实性评估指导对齐过程。实验结果表明，在开放领域提示和信息寻求问题上，FactAlign显著提高了LLM响应的事实准确性和有用性。进一步分析表明，FactAlign能够训练LLM提供更多信息而不损失事实精确性，从而提高事实F1得分。我们的源代码、数据集和训练模型已公开发布。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.01691 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 03 Oct 2024 12:50:05 GMT</pubDate>
+<pubDate>Thu, 03 Oct 2024 12:50:05 GMT</pubDate>
+</item>
+<item>
+<title>InfiniPot：高效管理长输入上下文的框架</title>
+<link>https://arxiv.org/abs/2410.01518</link>
+<guid>https://arxiv.org/abs/2410.01518</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>InfiniPot是一个新颖的KV缓存控制框架，旨在解决LLM在内存受限环境中的长输入上下文处理问题。</p><br><br><p><strong>摘要：</strong> 文章介绍了InfiniPot，一个新颖的KV缓存控制框架，旨在使预训练的大型语言模型（LLMs）在固定内存限制下有效管理长序列。InfiniPot利用持续上下文蒸馏（CCD）技术，这是一种通过新颖的重要性指标压缩和保留关键信息的迭代过程，即使在没有未来上下文的情况下，依然能够保持关键信息。综合评估结果表明，InfiniPot在多种自然语言处理（NLP）任务中明显优于为长上下文训练的模型，证明了其有效性和多样性。这项工作标志着向开发适用于更广泛现实场景的大型语言模型迈出了重要一步。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.01518 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 03 Oct 2024 12:25:16 GMT</pubDate>
+<pubDate>Thu, 03 Oct 2024 12:25:16 GMT</pubDate>
+</item>
+
+<item>
 <title>构建开放源代码的欧盟语言语音基础模型</title>
 <link>https://arxiv.org/abs/2410.01036</link>
 <guid>https://arxiv.org/abs/2410.01036</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>我们收集了950k小时的语音数据，并发布了441k小时的自动转录，为欧盟语言的开放源语音模型奠定基础。</p><br><br><p><strong>摘要：</strong> 随着基础模型的兴起以及针对其风险与影响的监管努力，开源模型引起了广泛关注。然而，目前的语音基础模型并未完全符合开源原则，尽管有相关声明，因为现有模型并不公开可用的权重、代码和训练数据。本文的工作旨在填补这一空白，专注于欧盟的24种官方语言。我们通过调查自动语音识别数据集和符合开源许可的未标记语音语料，收集了950k小时的训练数据。此外，我们还在宽松的CC-BY许可下发布了441k小时未标记数据的自动转录，从而为欧盟语言的开源语音基础模型的创建提供了支持。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.01036 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">我们收集了950k小时的语音数据，并发布了441k小时的自动转录，为欧盟语言的开放源语音模型奠定基础。</p><br /><br /><p><strong>摘要：</strong> 随着基础模型的兴起以及针对其风险与影响的监管努力，开源模型引起了广泛关注。然而，目前的语音基础模型并未完全符合开源原则，尽管有相关声明，因为现有模型并不公开可用的权重、代码和训练数据。本文的工作旨在填补这一空白，专注于欧盟的24种官方语言。我们通过调查自动语音识别数据集和符合开源许可的未标记语音语料，收集了950k小时的训练数据。此外，我们还在宽松的CC-BY许可下发布了441k小时未标记数据的自动转录，从而为欧盟语言的开源语音基础模型的创建提供了支持。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.01036" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 03 Oct 2024 11:00:01 GMT</pubDate>
 <pubDate>Thu, 03 Oct 2024 11:00:01 GMT</pubDate>
 </item>
 <item>
@@ -21,14 +79,10 @@
 <link>https://arxiv.org/abs/2410.01723</link>
 <guid>https://arxiv.org/abs/2410.01723</guid>
 <content:encoded><![CDATA[
-
-  Diffusion Transformers (DiTs) have gained prominence for outstanding scalability and extraordinary performance in generative tasks. However, their considerable inference costs impede practical deployment. The feature cache mechanism, which involves storing and retrieving redundant computations across timesteps, holds promise for reducing per-step inference time in diffusion models. Most existing caching methods for DiT are manually designed. Although the learning-based approach attempts to optimize strategies adaptively, it suffers from discrepancies between training and inference, which hampers both the performance and acceleration ratio. Upon detailed analysis, we pinpoint that these discrepancies primarily stem from two aspects: (1) Prior Timestep Disregard, where training ignores the effect of cache usage at earlier timesteps, and (2) Objective Mismatch, where the training target (align predicted noise in each timestep) deviates from the goal of inference (generate the high-quality image). To alleviate these discrepancies, we propose HarmoniCa, a novel method that Harmonizes training and inference with a novel learning-based Caching framework built upon Step-Wise Denoising Training (SDT) and Image Error Proxy-Guided Objective (IEPO). Compared to the traditional training paradigm, the newly proposed SDT maintains the continuity of the denoising process, enabling the model to leverage information from prior timesteps during training, similar to the way it operates during inference. Furthermore, we design IEPO, which integrates an efficient proxy mechanism to approximate the final image error caused by reusing the cached feature. Therefore, IEPO helps balance final image quality and cache utilization, resolving the issue of training that only considers the impact of cache usage on the predicted output at each timestep.
-
+Diffusion Transformers (DiTs) have gained prominence for outstanding scalability and extraordinary performance in generative tasks. However, their considerable inference costs impede practical deployment. The feature cache mechanism, which involves storing and retrieving redundant computations across timesteps, holds promise for reducing per-step inference time in diffusion models. Most existing caching methods for DiT are manually designed. Although the learning-based approach attempts to optimize strategies adaptively, it suffers from discrepancies between training and inference, which hampers both the performance and acceleration ratio. Upon detailed analysis, we pinpoint that these discrepancies primarily stem from two aspects: (1) Prior Timestep Disregard, where training ignores the effect of cache usage at earlier timesteps, and (2) Objective Mismatch, where the training target (align predicted noise in each timestep) deviates from the goal of inference (generate the high-quality image). To alleviate these discrepancies, we propose HarmoniCa, a novel method that Harmonizes training and inference with a novel learning-based Caching framework built upon Step-Wise Denoising Training (SDT) and Image Error Proxy-Guided Objective (IEPO). Compared to the traditional training paradigm, the newly proposed SDT maintains the continuity of the denoising process, enabling the model to leverage information from prior timesteps during training, similar to the way it operates during inference. Furthermore, we design IEPO, which integrates an efficient proxy mechanism to approximate the final image error caused by reusing the cached feature. Therefore, IEPO helps balance final image quality and cache utilization, resolving the issue of training that only considers the impact of cache usage on the predicted output at each timestep.
 ]]></content:encoded>
 <pubDate>Thu, 03 Oct 2024 10:14:25 GMT</pubDate>
-<pubDate>Thu, 03 Oct 2024 10:14:25 GMT</pubDate>
 </item>
-
 <item>
 <title>E.T. Bench: Towards Open-Ended Event-Level Video-Language Understanding</title>
 <link>https://arxiv.org/abs/2409.18111</link>
