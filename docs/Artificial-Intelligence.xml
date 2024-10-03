@@ -4,16 +4,14 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+
 <item>
 <title>3DGS-DET: Empower 3D Gaussian Splatting with Boundary Guidance and Box-Focused Sampling for 3D Object Detection</title>
 <link>https://arxiv.org/abs/2410.01647</link>
 <guid>https://arxiv.org/abs/2410.01647</guid>
 <content:encoded><![CDATA[
-
-  Neural Radiance Fields (NeRF) are widely used for novel-view synthesis and have been adapted for 3D Object Detection (3DOD), offering a promising approach to 3DOD through view-synthesis representation. However, NeRF faces inherent limitations: (i) limited representational capacity for 3DOD due to its implicit nature, and (ii) slow rendering speeds. Recently, 3D Gaussian Splatting (3DGS) has emerged as an explicit 3D representation that addresses these limitations. Inspired by these advantages, this paper introduces 3DGS into 3DOD for the first time, identifying two main challenges: (i) Ambiguous spatial distribution of Gaussian blobs: 3DGS primarily relies on 2D pixel-level supervision, resulting in unclear 3D spatial distribution of Gaussian blobs and poor differentiation between objects and background, which hinders 3DOD; (ii) Excessive background blobs: 2D images often include numerous background pixels, leading to densely reconstructed 3DGS with many noisy Gaussian blobs representing the background, negatively affecting detection. To tackle the challenge (i), we leverage the fact that 3DGS reconstruction is derived from 2D images, and propose an elegant and efficient solution by incorporating 2D Boundary Guidance to significantly enhance the spatial distribution of Gaussian blobs, resulting in clearer differentiation between objects and their background. To address the challenge (ii), we propose a Box-Focused Sampling strategy using 2D boxes to generate object probability distribution in 3D spaces, allowing effective probabilistic sampling in 3D to retain more object blobs and reduce noisy background blobs. Benefiting from our designs, our 3DGS-DET significantly outperforms the SOTA NeRF-based method, NeRF-Det, achieving improvements of +6.6 on mAP@0.25 and +8.1 on mAP@0.5 for the ScanNet dataset, and impressive +31.5 on mAP@0.25 for the ARKITScenes dataset.
-
+Neural Radiance Fields (NeRF) are widely used for novel-view synthesis and have been adapted for 3D Object Detection (3DOD), offering a promising approach to 3DOD through view-synthesis representation. However, NeRF faces inherent limitations: (i) limited representational capacity for 3DOD due to its implicit nature, and (ii) slow rendering speeds. Recently, 3D Gaussian Splatting (3DGS) has emerged as an explicit 3D representation that addresses these limitations. Inspired by these advantages, this paper introduces 3DGS into 3DOD for the first time, identifying two main challenges: (i) Ambiguous spatial distribution of Gaussian blobs: 3DGS primarily relies on 2D pixel-level supervision, resulting in unclear 3D spatial distribution of Gaussian blobs and poor differentiation between objects and background, which hinders 3DOD; (ii) Excessive background blobs: 2D images often include numerous background pixels, leading to densely reconstructed 3DGS with many noisy Gaussian blobs representing the background, negatively affecting detection. To tackle the challenge (i), we leverage the fact that 3DGS reconstruction is derived from 2D images, and propose an elegant and efficient solution by incorporating 2D Boundary Guidance to significantly enhance the spatial distribution of Gaussian blobs, resulting in clearer differentiation between objects and their background. To address the challenge (ii), we propose a Box-Focused Sampling strategy using 2D boxes to generate object probability distribution in 3D spaces, allowing effective probabilistic sampling in 3D to retain more object blobs and reduce noisy background blobs. Benefiting from our designs, our 3DGS-DET significantly outperforms the SOTA NeRF-based method, NeRF-Det, achieving improvements of +6.6 on mAP@0.25 and +8.1 on mAP@0.5 for the ScanNet dataset, and impressive +31.5 on mAP@0.25 for the ARKITScenes dataset.
 ]]></content:encoded>
-<pubDate>Thu, 03 Oct 2024 05:50:23 GMT</pubDate>
 <pubDate>Thu, 03 Oct 2024 05:50:23 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +19,8 @@
 <link>https://arxiv.org/abs/2410.01769</link>
 <guid>https://arxiv.org/abs/2410.01769</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文提出Scylla框架，量化评估LLMs的泛化与记忆能力，研究任务复杂性对模型表现的影响。</p><br><br><p><strong>摘要：</strong> 本文介绍了Scylla，一个动态评估框架，用于量化大型语言模型（LLMs）的泛化能力。Scylla通过评估模型在同分布（ID）和异分布（OOD）数据上的表现，分析了20个任务在5个复杂度水平下的表现，从而将泛化与记忆分离。研究发现任务复杂性与ID、OOD数据表现之间存在非单调关系，形成了所谓的“泛化谷”。具体而言，揭示了一个关键阈值——被称为关键复杂性——在该点上，模型对不可泛化行为的依赖达到峰值，标志着LLMs泛化能力的上限。随着模型规模的增加，关键复杂性向更高的任务复杂度移动，表明更大规模的模型在复杂推理任务中能够处理更多复杂性，而不依赖于记忆。利用Scylla和关键复杂性概念，本文对28个LLMs进行了基准测试，包括LLaMA和Qwen等开源模型，以及Claude和GPT等闭源模型，从而提供了更为稳健的评估，帮助更清晰地理解LLMs的泛化能力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.01769 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文提出Scylla框架，量化评估LLMs的泛化与记忆能力，研究任务复杂性对模型表现的影响。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了Scylla，一个动态评估框架，用于量化大型语言模型（LLMs）的泛化能力。Scylla通过评估模型在同分布（ID）和异分布（OOD）数据上的表现，分析了20个任务在5个复杂度水平下的表现，从而将泛化与记忆分离。研究发现任务复杂性与ID、OOD数据表现之间存在非单调关系，形成了所谓的“泛化谷”。具体而言，揭示了一个关键阈值——被称为关键复杂性——在该点上，模型对不可泛化行为的依赖达到峰值，标志着LLMs泛化能力的上限。随着模型规模的增加，关键复杂性向更高的任务复杂度移动，表明更大规模的模型在复杂推理任务中能够处理更多复杂性，而不依赖于记忆。利用Scylla和关键复杂性概念，本文对28个LLMs进行了基准测试，包括LLaMA和Qwen等开源模型，以及Claude和GPT等闭源模型，从而提供了更为稳健的评估，帮助更清晰地理解LLMs的泛化能力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.01769" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 03 Oct 2024 03:41:52 GMT</pubDate>
 <pubDate>Thu, 03 Oct 2024 03:41:52 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +28,8 @@
 <link>https://arxiv.org/abs/2410.01440</link>
 <guid>https://arxiv.org/abs/2410.01440</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出了一种自我精炼的规划策略，通过循环优化生成行动序列，提升机器人任务规划能力。</p><br><br><p><strong>摘要：</strong> 在自主机器人行动实施过程中，任务规划是一个主要挑战，需要将高级任务描述转化为长远的行动序列。尽管最近的语言模型代理在此领域取得了一些进展，但仍然存在规划错误和前瞻性有限的问题。为了解决这些局限性，本文提出了一种自我精炼的方案，通过迭代完善草案计划直到达到平衡。这一过程从分析的角度进行端到端优化，无需额外的验证器或奖励模型，简化为监督学习方式训练自我精炼规划器。此外，设计了一种嵌套平衡序列建模程序，实现高效的闭环规划，并从环境（或内部世界模型）中获取有用反馈。我们在VirtualHome-Env基准上评估了该方法，结果显示出先进的表现和更好的推理计算扩展能力。代码已在GitHub上公开。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.01440 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出了一种自我精炼的规划策略，通过循环优化生成行动序列，提升机器人任务规划能力。</p><br /><br /><p><strong>摘要：</strong> 在自主机器人行动实施过程中，任务规划是一个主要挑战，需要将高级任务描述转化为长远的行动序列。尽管最近的语言模型代理在此领域取得了一些进展，但仍然存在规划错误和前瞻性有限的问题。为了解决这些局限性，本文提出了一种自我精炼的方案，通过迭代完善草案计划直到达到平衡。这一过程从分析的角度进行端到端优化，无需额外的验证器或奖励模型，简化为监督学习方式训练自我精炼规划器。此外，设计了一种嵌套平衡序列建模程序，实现高效的闭环规划，并从环境（或内部世界模型）中获取有用反馈。我们在VirtualHome-Env基准上评估了该方法，结果显示出先进的表现和更好的推理计算扩展能力。代码已在GitHub上公开。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.01440" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 03 Oct 2024 03:05:45 GMT</pubDate>
 <pubDate>Thu, 03 Oct 2024 03:05:45 GMT</pubDate>
 </item>
 <item>
@@ -45,14 +37,10 @@
 <link>https://arxiv.org/abs/2410.01744</link>
 <guid>https://arxiv.org/abs/2410.01744</guid>
 <content:encoded><![CDATA[
-
-  Text-rich images, where text serves as the central visual element guiding the overall understanding, are prevalent in real-world applications, such as presentation slides, scanned documents, and webpage snapshots. Tasks involving multiple text-rich images are especially challenging, as they require not only understanding the content of individual images but reasoning about inter-relationships and logical flows across multiple visual inputs. Despite the importance of these scenarios, current multimodal large language models (MLLMs) struggle to handle such tasks due to two key challenges: (1) the scarcity of high-quality instruction tuning datasets for text-rich multi-image scenarios, and (2) the difficulty in balancing image resolution with visual feature sequence length. To address these challenges, we propose \OurMethod, a MLLM designed specifically for handling vision-language tasks involving multiple text-rich images. First, we curated about one million high-quality multimodal instruction-tuning data, tailored to text-rich, multi-image scenarios. Second, we developed an adaptive high-resolution multi-image encoding module to dynamically optimize the allocation of visual sequence length based on the original aspect ratios and resolutions of the input images. Experiments across a wide range of benchmarks demonstrate our model's superior capabilities in text-rich, multi-image evaluations and competitive performance in general domain evaluations.
-
+Text-rich images, where text serves as the central visual element guiding the overall understanding, are prevalent in real-world applications, such as presentation slides, scanned documents, and webpage snapshots. Tasks involving multiple text-rich images are especially challenging, as they require not only understanding the content of individual images but reasoning about inter-relationships and logical flows across multiple visual inputs. Despite the importance of these scenarios, current multimodal large language models (MLLMs) struggle to handle such tasks due to two key challenges: (1) the scarcity of high-quality instruction tuning datasets for text-rich multi-image scenarios, and (2) the difficulty in balancing image resolution with visual feature sequence length. To address these challenges, we propose \OurMethod, a MLLM designed specifically for handling vision-language tasks involving multiple text-rich images. First, we curated about one million high-quality multimodal instruction-tuning data, tailored to text-rich, multi-image scenarios. Second, we developed an adaptive high-resolution multi-image encoding module to dynamically optimize the allocation of visual sequence length based on the original aspect ratios and resolutions of the input images. Experiments across a wide range of benchmarks demonstrate our model's superior capabilities in text-rich, multi-image evaluations and competitive performance in general domain evaluations.
 ]]></content:encoded>
 <pubDate>Thu, 03 Oct 2024 02:55:21 GMT</pubDate>
-<pubDate>Thu, 03 Oct 2024 02:55:21 GMT</pubDate>
 </item>
-
 <item>
 <title>多粒度调试器（MGDebugger）：一种层次化代码调试新方法</title>
 <link>https://arxiv.org/abs/2410.01215</link>
