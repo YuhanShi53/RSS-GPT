@@ -5,15 +5,85 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>自适应投影引导：提高扩散模型生成质量的新方法</title>
+<link>https://arxiv.org/abs/2410.02416</link>
+<guid>https://arxiv.org/abs/2410.02416</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出了自适应投影引导（APG）方法，以改进扩散模型中的无分类器引导，解决过饱和问题。</p><br><br><p><strong>摘要：</strong> 本文回顾了分类器无关引导（CFG）的更新规则，并提出了改进方案以解决生成图像的过饱和和不真实伪影问题。通过将CFG的更新项分解为与条件模型预测的平行和正交分量，发现平行分量导致过饱和，而正交分量增强了图像质量。基于此，本文建议对平行分量进行下调，以便在不出现过饱和的情况下实现高质量生成。此外，本文还将CFG与梯度上升联系起来，提出了一种新的重标定和动量方法，形成自适应投影引导（APG）。APG保持了CFG在提高质量方面的优势，同时能够在无过饱和的情况下使用更高的引导尺度。APG易于实现，并且对采样过程几乎不增加计算开销。通过广泛的实验，验证了APG与各种条件扩散模型和采样器兼容，改进了FID、召回率和饱和度评分，同时保持了与CFG相当的精度，使其成为一种优于传统分类器无关引导的即插即用替代方案。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.02416 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 04 Oct 2024 04:16:57 GMT</pubDate>
+<pubDate>Fri, 04 Oct 2024 04:16:57 GMT</pubDate>
+</item>
+<item>
+<title>基于LintSeq生成编辑数据提升代码合成性能</title>
+<link>https://arxiv.org/abs/2410.02749</link>
+<guid>https://arxiv.org/abs/2410.02749</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>通过LintSeq算法生成编辑序列，提升小型LLM在代码合成任务中的表现。</p><br><br><p><strong>摘要：</strong> 本文提出了一种合成数据生成算法LintSeq，旨在解决现有开源代码编辑数据匮乏的问题。该算法利用代码检查工具将现有代码重构为一系列代码编辑，通过程序增量的方式生成错误-free的插入操作，输出程序差异的文本序列。为验证LintSeq的有效性，研究者将其用于将指令和程序对的数据集重构为指令和程序差异序列元组，并对一系列从2.6B到14B参数的小型LLM进行指令微调，比较其在无零-shot情况下的代码合成基准表现。结果表明，通过多次采样，基于编辑序列微调的模型在输出多样性和基准覆盖的推理时刻表现优异。例如，在HumanEval的pass@50评估中，经过合成编辑序列微调的小型LLM的表现与GPT-4相当，且较基线模型提高了20%（+/-3%）。此外，本研究还展示了预训练的轻量级模型在代码理解上的潜力，微调150M参数的编辑序列模型时，其性能可与代码模型对比，甚至在一些情况下超越Codex和AlphaCode。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.02749 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 04 Oct 2024 04:10:28 GMT</pubDate>
+<pubDate>Fri, 04 Oct 2024 04:10:28 GMT</pubDate>
+</item>
+<item>
+<title>Distilling an End-to-End Voice Assistant Without Instruction Training Data</title>
+<link>https://arxiv.org/abs/2410.02678</link>
+<guid>https://arxiv.org/abs/2410.02678</guid>
+<content:encoded><![CDATA[
+
+  Voice assistants, such as Siri and Google Assistant, typically model audio and text separately, resulting in lost speech information and increased complexity. Recent efforts to address this with end-to-end Speech Large Language Models (LLMs) trained with supervised finetuning (SFT)   have led to models ``forgetting" capabilities from text-only LLMs. Our work proposes an alternative paradigm for training Speech LLMs without instruction data, using the response of a text-only LLM to transcripts as self-supervision. Importantly, this process can be performed without annotated responses. We show that our Distilled Voice Assistant (DiVA) generalizes to Spoken Question Answering, Classification, and Translation. Furthermore, we show that DiVA better meets user preferences, achieving a 72\% win rate compared with state-of-the-art models like Qwen 2 Audio, despite using &gt;100x less training compute.
+
+]]></content:encoded>
+<pubDate>Fri, 04 Oct 2024 03:45:46 GMT</pubDate>
+<pubDate>Fri, 04 Oct 2024 03:45:46 GMT</pubDate>
+</item>
+<item>
+<title>L-CiteEval: 评估长上下文模型理解能力与可信度的全新基准</title>
+<link>https://arxiv.org/abs/2410.02115</link>
+<guid>https://arxiv.org/abs/2410.02115</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本研究推出L-CiteEval基准，评估长上下文模型的理解能力与引用准确性。</p><br><br><p><strong>摘要：</strong> 本研究提出L-CiteEval，一个全面的多任务基准，旨在评估长上下文模型（LCMs）在理解能力和可信度方面的表现。L-CiteEval涵盖了来自不同领域的11个任务，支持的上下文长度从8K到48K，并提供一个完全自动化的评估工具。通过对11个顶尖封闭源和开源LCMs的测试，发现这些模型在生成结果上的差异较小，但开源模型在引用准确性和召回率方面显著落后于封闭源模型，表明当前的开源LCMs倾向于依赖其自身知识而非给定上下文，从而在实际应用中可能影响用户体验。此外，研究还评估了RAG方法，发现RAG可以显著改善LCMs的可信度，尽管生成质量略有下降。最后，研究揭示LCMs的注意力机制与引用生成过程之间存在相关性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.02115 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 04 Oct 2024 03:35:24 GMT</pubDate>
+<pubDate>Fri, 04 Oct 2024 03:35:24 GMT</pubDate>
+</item>
+<item>
+<title>将预训练的大型语言模型应用于医学图像分割的研究</title>
+<link>https://arxiv.org/abs/2410.02458</link>
+<guid>https://arxiv.org/abs/2410.02458</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本研究探索了通过集成预训练LLM来增强医学图像分割的ViT模型，取得了显著性能提升。</p><br><br><p><strong>摘要：</strong> 本研究探讨了将预训练的大型语言模型（LLM）应用于医学图像分割的方法，聚焦于增强视觉变换器（ViT）模型的性能。研究中，我们将一个冻结的LLM变换器模块集成到ViT模型的编码器中，从而在多个医学影像模态上显著提高了分割效果。我们提出了一种混合注意力机制，结合了全局和局部特征学习，并使用多尺度融合模块在不同尺度上聚合特征。经过实验验证，增强模型的平均Dice系数从0.74提升至0.79，同时在准确率、精确度和Jaccard指数等指标上也表现出显著改善。这些结果表明，基于LLM的变换器在提升医学图像分割性能方面的有效性，显示出其在提高模型准确性和鲁棒性方面的潜力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.02458 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 04 Oct 2024 03:07:56 GMT</pubDate>
+<pubDate>Fri, 04 Oct 2024 03:07:56 GMT</pubDate>
+</item>
+<item>
+<title>Depth Pro：无须元数据的零样本测量单目深度估计模型</title>
+<link>https://arxiv.org/abs/2410.02073</link>
+<guid>https://arxiv.org/abs/2410.02073</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Depth Pro是一种快速生成高分辨率深度图的零样本模型，具有绝对尺度和边界精度。</p><br><br><p><strong>摘要：</strong> Depth Pro是一种新型的基础模型，专注于零样本测量单目深度估计。该模型能够合成高分辨率的深度图，具备无与伦比的清晰度和高频细节，且输出的深度预测具有绝对尺度，完全不依赖于摄像头内参等元数据。此外，模型具备高处理速度，能够在标准GPU上以0.3秒生成2.25兆像素深度图。Depth Pro的优越性能源于多项技术创新，包括高效多尺度视觉变换器用于密集预测、结合真实与合成数据集的训练协议以实现高度的度量精度和细致边界跟踪、专门用于评估深度图边界精度的评价指标，以及从单幅图像中实现的最先进的焦距估计。通过大量实验，本文分析了具体的设计选择，并展示了Depth Pro在多个维度上超越以往工作的表现。相关代码和权重已在GitHub上发布。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.02073 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 04 Oct 2024 02:00:44 GMT</pubDate>
+<pubDate>Fri, 04 Oct 2024 02:00:44 GMT</pubDate>
+</item>
+
+<item>
 <title>增强CLIP的区域表征能力：对比定位语言图像预训练的进展</title>
 <link>https://arxiv.org/abs/2410.02746</link>
 <guid>https://arxiv.org/abs/2410.02746</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文提出了一种改进CLIP模型的方法，增强其区域理解能力，以支持多模态大语言模型的下游任务。</p><br><br><p><strong>摘要：</strong> 近年来，对比语言图像预训练（CLIP）方法因其在图像和文本表示生成方面的有效性而备受关注。CLIP的成功使其成为多模态大语言模型（MLLM）的视觉骨干，连接图像输入和语言交互。然而，CLIP的基于网络爬虫的文本注释对图像的对齐方式在需要细粒度视觉表示的下游任务中可能不足，尤其是区域级理解任务。为了解决这一问题，作者提出了对比定位语言图像预训练（CLOC）的方法，通过结合区域-文本对比损失和模块来提高CLIP的定位能力。此外，作者还提出了“可提示嵌入”这一新概念，使编码器可以根据空间提示将图像嵌入轻松转换为区域表示。为支持大规模预训练，设计了一种视觉丰富和空间定位的标注框架，以有效生成区域-文本伪标签。通过扩展到数十亿张带注释的图像，CLOC为图像区域识别和检索任务提供了高质量的区域嵌入，并可以作为CLIP的替代方案，提升MLLM在指代和定位任务上的性能。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.02746 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文提出了一种改进CLIP模型的方法，增强其区域理解能力，以支持多模态大语言模型的下游任务。</p><br /><br /><p><strong>摘要：</strong> 近年来，对比语言图像预训练（CLIP）方法因其在图像和文本表示生成方面的有效性而备受关注。CLIP的成功使其成为多模态大语言模型（MLLM）的视觉骨干，连接图像输入和语言交互。然而，CLIP的基于网络爬虫的文本注释对图像的对齐方式在需要细粒度视觉表示的下游任务中可能不足，尤其是区域级理解任务。为了解决这一问题，作者提出了对比定位语言图像预训练（CLOC）的方法，通过结合区域-文本对比损失和模块来提高CLIP的定位能力。此外，作者还提出了“可提示嵌入”这一新概念，使编码器可以根据空间提示将图像嵌入轻松转换为区域表示。为支持大规模预训练，设计了一种视觉丰富和空间定位的标注框架，以有效生成区域-文本伪标签。通过扩展到数十亿张带注释的图像，CLOC为图像区域识别和检索任务提供了高质量的区域嵌入，并可以作为CLIP的替代方案，提升MLLM在指代和定位任务上的性能。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.02746" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 04 Oct 2024 01:25:38 GMT</pubDate>
 <pubDate>Fri, 04 Oct 2024 01:25:38 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +91,8 @@
 <link>https://arxiv.org/abs/2410.02757</link>
 <guid>https://arxiv.org/abs/2410.02757</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>Loong模型能生成分钟级长视频，采用短至长渐进训练和特殊推断策略，提升视频生成质量。</p><br><br><p><strong>摘要：</strong> 本研究深入分析了自回归大语言模型（LLM）在视频生成领域面临的挑战，尤其是生成长视频的困难。尽管LLM在自然语言处理方面取得了显著成功，但现有研究主要集中在短视频（几秒钟）的生成上。为了解决这一问题，本文提出了一种新的自回归LLM视频生成器Loong，能够生成分钟长的视频。我们将文本和视频标记建模为一个统一的序列进行训练，并提出了一种短至长的渐进训练方式，结合损失重加权策略，缓解长视频训练中的损失不平衡问题。此外，本文还探讨了推断策略，包括视频标记重新编码和采样策略，以减少推断过程中的误差累积。Loong在10秒视频上进行训练，并能够基于文本提示扩展生成分钟级长视频，展现了良好的效果。更多示例可参考： https://epiphqny.github.io/Loong-video</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.02757 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">Loong模型能生成分钟级长视频，采用短至长渐进训练和特殊推断策略，提升视频生成质量。</p><br /><br /><p><strong>摘要：</strong> 本研究深入分析了自回归大语言模型（LLM）在视频生成领域面临的挑战，尤其是生成长视频的困难。尽管LLM在自然语言处理方面取得了显著成功，但现有研究主要集中在短视频（几秒钟）的生成上。为了解决这一问题，本文提出了一种新的自回归LLM视频生成器Loong，能够生成分钟长的视频。我们将文本和视频标记建模为一个统一的序列进行训练，并提出了一种短至长的渐进训练方式，结合损失重加权策略，缓解长视频训练中的损失不平衡问题。此外，本文还探讨了推断策略，包括视频标记重新编码和采样策略，以减少推断过程中的误差累积。Loong在10秒视频上进行训练，并能够基于文本提示扩展生成分钟级长视频，展现了良好的效果。更多示例可参考： https://epiphqny.github.io/Loong-video</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.02757" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 04 Oct 2024 01:25:31 GMT</pubDate>
 <pubDate>Fri, 04 Oct 2024 01:25:31 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +100,8 @@
 <link>https://arxiv.org/abs/2410.02740</link>
 <guid>https://arxiv.org/abs/2410.02740</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文提出了一种新的标题生成流程，以优化多模态模型的预训练效果，探讨合成标题与AltText的关系。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种新颖、可控且可扩展的标题生成流程，旨在生成多种不同格式的标题，以满足各类多模态模型的需求。通过将短合成标题（Short Synthetic Captions，SSC）和密集合成标题（Dense Synthetic Captions，DSC+）作为案例研究，系统性地探讨了这些标题在多模态模型（如CLIP、多模态大语言模型及扩散模型）中的效果及其与原始网页抓取的替代文本（AltTexts）的相互作用。研究结果表明，采用混合方法同时保留合成标题和AltTexts的策略，能够在模型对齐和性能方面超越单独使用合成标题的效果，各个模型对特定标题格式存在独特偏好。这一综合分析为优化标题生成策略提供了宝贵的见解，从而推动多模态基础模型的预训练进程。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.02740 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文提出了一种新的标题生成流程，以优化多模态模型的预训练效果，探讨合成标题与AltText的关系。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种新颖、可控且可扩展的标题生成流程，旨在生成多种不同格式的标题，以满足各类多模态模型的需求。通过将短合成标题（Short Synthetic Captions，SSC）和密集合成标题（Dense Synthetic Captions，DSC+）作为案例研究，系统性地探讨了这些标题在多模态模型（如CLIP、多模态大语言模型及扩散模型）中的效果及其与原始网页抓取的替代文本（AltTexts）的相互作用。研究结果表明，采用混合方法同时保留合成标题和AltTexts的策略，能够在模型对齐和性能方面超越单独使用合成标题的效果，各个模型对特定标题格式存在独特偏好。这一综合分析为优化标题生成策略提供了宝贵的见解，从而推动多模态基础模型的预训练进程。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.02740" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 04 Oct 2024 01:11:19 GMT</pubDate>
 <pubDate>Fri, 04 Oct 2024 01:11:19 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +109,8 @@
 <link>https://arxiv.org/abs/2410.02367</link>
 <guid>https://arxiv.org/abs/2410.02367</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>SageAttention是一种新型的注意力量化方法，相比于传统方法在性能和准确性上显著提升。</p><br><br><p><strong>摘要：</strong> 本文分析了注意力机制的量化可行性，并提出一种名为SageAttention的高效量化方法。该方法在处理长序列时，显著降低了计算复杂度。实验表明，SageAttention在每秒操作次数（OPS）上比FlashAttention2和xformers分别快约2.1倍和2.7倍。此外，SageAttention在准确性方面也优于FlashAttention3。综合实验结果表明，该方法在大型语言处理、图像生成和视频生成等多种模型中，几乎没有造成端到端指标的损失，为加速模型推理提供了有效解决方案。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.02367 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">SageAttention是一种新型的注意力量化方法，相比于传统方法在性能和准确性上显著提升。</p><br /><br /><p><strong>摘要：</strong> 本文分析了注意力机制的量化可行性，并提出一种名为SageAttention的高效量化方法。该方法在处理长序列时，显著降低了计算复杂度。实验表明，SageAttention在每秒操作次数（OPS）上比FlashAttention2和xformers分别快约2.1倍和2.7倍。此外，SageAttention在准确性方面也优于FlashAttention3。综合实验结果表明，该方法在大型语言处理、图像生成和视频生成等多种模型中，几乎没有造成端到端指标的损失，为加速模型推理提供了有效解决方案。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.02367" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 04 Oct 2024 01:08:56 GMT</pubDate>
 <pubDate>Fri, 04 Oct 2024 01:08:56 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +118,8 @@
 <link>https://arxiv.org/abs/2410.02056</link>
 <guid>https://arxiv.org/abs/2410.02056</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>Synthio通过合成音频数据提升小规模音频分类的准确性，克服了传统增强技术的局限。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为Synthio的方法，通过合成音频数据增强小规模音频分类数据集，以提高分类准确性。传统的数据增强技术（如添加随机噪声或遮罩片段）难以捕捉真实音频的多样性。为了解决这一问题，Synthio利用文本到音频（T2A）扩散模型生成合成音频。然而，合成有效的增强数据面临挑战：生成的数据不仅需要与小规模数据集的声学特性保持一致，还需具备足够的组成多样性。为克服第一个挑战，Synthio通过偏好优化对T2A模型生成的数据与小规模数据集进行对齐，从而确保生成的音频在声学特征上与原数据集一致。而为了解决第二个挑战，文章提出了一种新颖的字幕生成技术，利用大型语言模型的推理能力生成多样化且富有意义的音频字幕，并迭代优化其质量。生成的字幕用于提示对齐的T2A模型。通过在十个数据集和四种模拟的有限数据场景中进行广泛评估，结果显示，Synthio在所有基线方法上均提高了0.1%-39%的性能，尽管该T2A模型仅在弱标注的AudioSet上进行训练。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.02056 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">Synthio通过合成音频数据提升小规模音频分类的准确性，克服了传统增强技术的局限。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种名为Synthio的方法，通过合成音频数据增强小规模音频分类数据集，以提高分类准确性。传统的数据增强技术（如添加随机噪声或遮罩片段）难以捕捉真实音频的多样性。为了解决这一问题，Synthio利用文本到音频（T2A）扩散模型生成合成音频。然而，合成有效的增强数据面临挑战：生成的数据不仅需要与小规模数据集的声学特性保持一致，还需具备足够的组成多样性。为克服第一个挑战，Synthio通过偏好优化对T2A模型生成的数据与小规模数据集进行对齐，从而确保生成的音频在声学特征上与原数据集一致。而为了解决第二个挑战，文章提出了一种新颖的字幕生成技术，利用大型语言模型的推理能力生成多样化且富有意义的音频字幕，并迭代优化其质量。生成的字幕用于提示对齐的T2A模型。通过在十个数据集和四种模拟的有限数据场景中进行广泛评估，结果显示，Synthio在所有基线方法上均提高了0.1%-39%的性能，尽管该T2A模型仅在弱标注的AudioSet上进行训练。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.02056" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 04 Oct 2024 01:08:20 GMT</pubDate>
 <pubDate>Fri, 04 Oct 2024 01:08:20 GMT</pubDate>
 </item>
 <item>
@@ -69,11 +127,8 @@
 <link>https://arxiv.org/abs/2410.02103</link>
 <guid>https://arxiv.org/abs/2410.02103</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文提出了一种新的3D高斯优化方法，改善了体积渲染的质量和效率。</p><br><br><p><strong>摘要：</strong> 本文提出了一种新的3D高斯优化方法，旨在解决传统3D高斯渲染在新视图合成中出现的不满意外观和不精确3D几何体等问题。该方法有四个关键创新：第一，转变为多视角训练策略，通过多视角调节优化3D高斯属性，以避免对某些训练视图的过拟合，从而提升多种场景中的整体准确性。第二，借鉴额外视图的益处， propone了一种交叉内在引导方案，推动不同分辨率的粗到细训练过程。第三，基于多视角调节训练，提出了一种交叉射线稠密化策略，在多视角选择中稠密化射线交点区域的高斯内核。第四，通过研究稠密化策略发现，当某些视图存在显著差异时，需增强稠密化效果。为解决此问题，提出了一种新异的多视角增强稠密化策略，鼓励3D高斯根据需要稠密化，从而改善重建准确性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.02103 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文提出了一种新的3D高斯优化方法，改善了体积渲染的质量和效率。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种新的3D高斯优化方法，旨在解决传统3D高斯渲染在新视图合成中出现的不满意外观和不精确3D几何体等问题。该方法有四个关键创新：第一，转变为多视角训练策略，通过多视角调节优化3D高斯属性，以避免对某些训练视图的过拟合，从而提升多种场景中的整体准确性。第二，借鉴额外视图的益处， propone了一种交叉内在引导方案，推动不同分辨率的粗到细训练过程。第三，基于多视角调节训练，提出了一种交叉射线稠密化策略，在多视角选择中稠密化射线交点区域的高斯内核。第四，通过研究稠密化策略发现，当某些视图存在显著差异时，需增强稠密化效果。为解决此问题，提出了一种新异的多视角增强稠密化策略，鼓励3D高斯根据需要稠密化，从而改善重建准确性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.02103" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 04 Oct 2024 01:02:07 GMT</pubDate>
 <pubDate>Fri, 04 Oct 2024 01:02:07 GMT</pubDate>
 </item>
 <item>
@@ -81,11 +136,8 @@
 <link>https://arxiv.org/abs/2410.02712</link>
 <guid>https://arxiv.org/abs/2410.02712</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>LLaVA-Critic是一种开源多模态模型，能有效进行任务评估和偏好学习，推动未来的模型对齐研究。</p><br><br><p><strong>摘要：</strong> 本文介绍了LLaVA-Critic，这是第一个开源的大型多模态模型，旨在作为通用性评估者来评估多种多模态任务的性能。LLaVA-Critic通过一个高质量的评论指令集进行了训练，该数据集涵盖了多种评价标准和场景。实验结果表明，该模型在两个主要领域的有效性：（1）LMM作为评委，LLaVA-Critic提供可靠的评估分数，其表现与多个评估基准上的GPT模型相当或更佳；（2）偏好学习方面，该模型为偏好学习生成奖励信号，增强了模型的对齐能力。这项工作强调了开源多模态模型在自我评价和评估中的潜力，为未来关于可扩展的超人类模型对齐反馈机制的研究奠定了基础。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.02712 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">LLaVA-Critic是一种开源多模态模型，能有效进行任务评估和偏好学习，推动未来的模型对齐研究。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了LLaVA-Critic，这是第一个开源的大型多模态模型，旨在作为通用性评估者来评估多种多模态任务的性能。LLaVA-Critic通过一个高质量的评论指令集进行了训练，该数据集涵盖了多种评价标准和场景。实验结果表明，该模型在两个主要领域的有效性：（1）LMM作为评委，LLaVA-Critic提供可靠的评估分数，其表现与多个评估基准上的GPT模型相当或更佳；（2）偏好学习方面，该模型为偏好学习生成奖励信号，增强了模型的对齐能力。这项工作强调了开源多模态模型在自我评价和评估中的潜力，为未来关于可扩展的超人类模型对齐反馈机制的研究奠定了基础。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.02712" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 04 Oct 2024 00:55:11 GMT</pubDate>
 <pubDate>Fri, 04 Oct 2024 00:55:11 GMT</pubDate>
 </item>
 <item>
@@ -93,14 +145,10 @@
 <link>https://arxiv.org/abs/2410.02713</link>
 <guid>https://arxiv.org/abs/2410.02713</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本研究提出LLaVA-Video-178K数据集，助力视频指令遵循模型LLaVA-Video的训练与性能提升。</p><br><br><p><strong>摘要：</strong> 视频大规模多模态模型（LMMs）在发展中面临从网络获取高质量原始数据的挑战。为了解决这一问题，我们提出了一种替代方法，创建了一个专门用于视频指令遵循的高质量合成数据集——LLaVA-Video-178K。该数据集涵盖了详细的字幕生成、开放式问题回答以及多选题回答等关键任务。通过在该数据集上进行训练，并结合已有的视觉指令调优数据，我们推出了新的视频LMM——LLaVA-Video。我们的实验证明，LLaVA-Video在多个视频基准测试中表现优异，显示出该数据集的有效性。我们计划发布该数据集、其生成管道和模型检查点。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.02713 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本研究提出LLaVA-Video-178K数据集，助力视频指令遵循模型LLaVA-Video的训练与性能提升。</p><br /><br /><p><strong>摘要：</strong> 视频大规模多模态模型（LMMs）在发展中面临从网络获取高质量原始数据的挑战。为了解决这一问题，我们提出了一种替代方法，创建了一个专门用于视频指令遵循的高质量合成数据集——LLaVA-Video-178K。该数据集涵盖了详细的字幕生成、开放式问题回答以及多选题回答等关键任务。通过在该数据集上进行训练，并结合已有的视觉指令调优数据，我们推出了新的视频LMM——LLaVA-Video。我们的实验证明，LLaVA-Video在多个视频基准测试中表现优异，显示出该数据集的有效性。我们计划发布该数据集、其生成管道和模型检查点。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.02713" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Fri, 04 Oct 2024 00:45:02 GMT</pubDate>
-<pubDate>Fri, 04 Oct 2024 00:45:02 GMT</pubDate>
 </item>
-
 <item>
 <title>基于多教师知识蒸馏的视觉模型优化研究</title>
 <link>https://arxiv.org/abs/2410.01680</link>
