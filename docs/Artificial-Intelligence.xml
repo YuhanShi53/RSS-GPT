@@ -5,15 +5,37 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>GSM-Symbolic: Understanding the Limitations of Mathematical Reasoning in Large Language Models</title>
+<link>https://arxiv.org/abs/2410.05229</link>
+<guid>https://arxiv.org/abs/2410.05229</guid>
+<content:encoded><![CDATA[
+
+  Recent advancements in Large Language Models (LLMs) have sparked interest in their formal reasoning capabilities, particularly in mathematics. The GSM8K benchmark is widely used to assess the mathematical reasoning of models on grade-school-level questions. While the performance of LLMs on GSM8K has significantly improved in recent years, it remains unclear whether their mathematical reasoning capabilities have genuinely advanced, raising questions about the reliability of the reported metrics. To address these concerns, we conduct a large-scale study on several SOTA open and closed models. To overcome the limitations of existing evaluations, we introduce GSM-Symbolic, an improved benchmark created from symbolic templates that allow for the generation of a diverse set of questions. GSM-Symbolic enables more controllable evaluations, providing key insights and more reliable metrics for measuring the reasoning capabilities of models.Our findings reveal that LLMs exhibit noticeable variance when responding to different instantiations of the same question. Specifically, the performance of all models declines when only the numerical values in the question are altered in the GSM-Symbolic benchmark. Furthermore, we investigate the fragility of mathematical reasoning in these models and show that their performance significantly deteriorates as the number of clauses in a question increases. We hypothesize that this decline is because current LLMs cannot perform genuine logical reasoning; they replicate reasoning steps from their training data. Adding a single clause that seems relevant to the question causes significant performance drops (up to 65%) across all state-of-the-art models, even though the clause doesn't contribute to the reasoning chain needed for the final answer. Overall, our work offers a more nuanced understanding of LLMs' capabilities and limitations in mathematical reasoning.
+
+]]></content:encoded>
+<pubDate>Tue, 08 Oct 2024 11:36:59 GMT</pubDate>
+<pubDate>Tue, 08 Oct 2024 11:36:59 GMT</pubDate>
+</item>
+<item>
+<title>医疗领域命名实体识别基准报告</title>
+<link>https://arxiv.org/abs/2410.05046</link>
+<guid>https://arxiv.org/abs/2410.05046</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>报告介绍了医疗领域的命名实体识别基准，评估语言模型在临床叙述中提取结构化信息的能力。</p><br><br><p><strong>摘要：</strong> 本技术报告提出了一个命名临床实体识别基准，用于评估语言模型在医疗领域的能力，关键在于从临床叙述中提取结构化信息，以支持自动编码、临床试验人群识别和临床决策支持等应用。该评分榜为不同语言模型，包括编码器和解码器架构，提供了一个标准化的平台，以评估其在多个医疗领域内识别和分类临床实体的能力。报告采用了一系列公开可用的临床数据集，涵盖疾病、症状、药物、程序和实验室测量等实体。这些实体均按照观察医学结果伙伴关系（OMOP）通用数据模型进行标准化，确保不同医疗系统和数据集之间的一致性和互操作性，从而对模型性能进行全面评估。模型性能的主要评估指标为F1分数，并辅以多种评估模式，以提供对模型性能的全面洞察。报告还对迄今为止评估的模型进行了简要分析，突出了观察到的趋势和局限性。通过建立这一基准框架，评分榜旨在促进透明度，促进比较分析，并推动临床实体识别任务的创新，满足医疗NLP领域对稳健评估方法的需求。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.05046 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 08 Oct 2024 09:20:30 GMT</pubDate>
+<pubDate>Tue, 08 Oct 2024 09:20:30 GMT</pubDate>
+</item>
+
+<item>
 <title>LLaMA-Berry: 一种增强大型语言模型数学推理能力的框架</title>
 <link>https://arxiv.org/abs/2410.02884</link>
 <guid>https://arxiv.org/abs/2410.02884</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>LLaMA-Berry框架结合MCTS和自我精炼，优化语言模型的数学推理能力。</p><br><br><p><strong>摘要：</strong> 本文提出了一种新颖的数学问题求解框架LLaMA-Berry，旨在提升大型语言模型（LLMs）的数学推理能力。该框架将蒙特卡洛树搜索（MCTS）与迭代自我精炼（Self-Refine）相结合，以优化推理路径，并使用成对奖励模型（PPRM）对不同路径进行全局评估。通过利用LLM的自我评价和重写能力，SR-MCTS克服了传统逐步和贪婪搜索算法的低效性和局限性，从而更有效地探索解空间。此外，受人类反馈的强化学习（RLHF）启发，PPRM模型根据解决方案之间的成对偏好，并利用增强博尔达计数（EBC）方法将这些偏好合成一个全球排名分数，以寻找更优答案。该方法有效地解决了数学推理任务中的评分变异性和非独立分布挑战。LLaMA-Berry框架在一般与高级基准测试上进行了测试，显示出相较于现有方法（如ToT和rStar）在搜索效率和问题解决能力方面的优越性能，尤其是在复杂的奥林匹克级基准测试中，如GPQA、AIME24和AMC23。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.02884 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">LLaMA-Berry框架结合MCTS和自我精炼，优化语言模型的数学推理能力。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种新颖的数学问题求解框架LLaMA-Berry，旨在提升大型语言模型（LLMs）的数学推理能力。该框架将蒙特卡洛树搜索（MCTS）与迭代自我精炼（Self-Refine）相结合，以优化推理路径，并使用成对奖励模型（PPRM）对不同路径进行全局评估。通过利用LLM的自我评价和重写能力，SR-MCTS克服了传统逐步和贪婪搜索算法的低效性和局限性，从而更有效地探索解空间。此外，受人类反馈的强化学习（RLHF）启发，PPRM模型根据解决方案之间的成对偏好，并利用增强博尔达计数（EBC）方法将这些偏好合成一个全球排名分数，以寻找更优答案。该方法有效地解决了数学推理任务中的评分变异性和非独立分布挑战。LLaMA-Berry框架在一般与高级基准测试上进行了测试，显示出相较于现有方法（如ToT和rStar）在搜索效率和问题解决能力方面的优越性能，尤其是在复杂的奥林匹克级基准测试中，如GPQA、AIME24和AMC23。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.02884" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 08 Oct 2024 06:56:51 GMT</pubDate>
 <pubDate>Tue, 08 Oct 2024 06:56:51 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +43,8 @@
 <link>https://arxiv.org/abs/2410.03187</link>
 <guid>https://arxiv.org/abs/2410.03187</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文提出了一种新框架，能从单一文本指令合成场景感知的人类动作。</p><br><br><p><strong>摘要：</strong> 本文旨在解决在复杂3D环境中合成多阶段人类动作的挑战，如行走、手部伸展和人机交互。为此，提出了一种全面框架，能够直接从单一文本指令和目标位置合成场景感知的互动动作。该方法采用自回归扩散模型合成下一个动作片段，并利用自主调度器预测每个动作阶段的过渡。为了确保合成的动作能够与环境无缝结合，提出了一种场景表示方法，考虑起始点和目标位置的局部感知。此外，通过将帧嵌入与语言输入结合，提升生成动作的连贯性。为了支持模型训练，本文提供了一个包含16小时动作序列的综合动作捕捉数据集，该数据集覆盖120个室内场景和40种不同动作类型，并附有精确的语言描述。实验结果表明，该方法在生成符合环境和文本条件的高质量多阶段动作方面具有显著效果。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.03187 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文提出了一种新框架，能从单一文本指令合成场景感知的人类动作。</p><br /><br /><p><strong>摘要：</strong> 本文旨在解决在复杂3D环境中合成多阶段人类动作的挑战，如行走、手部伸展和人机交互。为此，提出了一种全面框架，能够直接从单一文本指令和目标位置合成场景感知的互动动作。该方法采用自回归扩散模型合成下一个动作片段，并利用自主调度器预测每个动作阶段的过渡。为了确保合成的动作能够与环境无缝结合，提出了一种场景表示方法，考虑起始点和目标位置的局部感知。此外，通过将帧嵌入与语言输入结合，提升生成动作的连贯性。为了支持模型训练，本文提供了一个包含16小时动作序列的综合动作捕捉数据集，该数据集覆盖120个室内场景和40种不同动作类型，并附有精确的语言描述。实验结果表明，该方法在生成符合环境和文本条件的高质量多阶段动作方面具有显著效果。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.03187" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 08 Oct 2024 06:32:51 GMT</pubDate>
 <pubDate>Tue, 08 Oct 2024 06:32:51 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +52,8 @@
 <link>https://arxiv.org/abs/2410.02707</link>
 <guid>https://arxiv.org/abs/2410.02707</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究表明大型语言模型的内部状态能显著增强错误检测，但其通用性有限，并能预测错误类型。</p><br><br><p><strong>摘要：</strong> 本研究揭示大型语言模型（LLMs）内部状态在真相编码方面的丰富信息，并评估其在错误检测与预测中的应用。首先，我们发现真相信息主要集中在特定的标记中，利用这一特性能够显著提升错误检测的性能。然而，我们的研究还表明，这些错误检测器在不同数据集间的泛化能力差，表明真相编码并非普遍适用，而是具有多样性。接着，我们展示了内部表示可以用于预测模型可能产生的错误类型，从而便于制定针对性的减缓策略。最后，我们发现LLMs的内部编码与外部行为之间存在差异：尽管模型可能编码了正确答案，但却可能不断生成错误的答案。这些发现加深了我们对LLM错误的理解，能够为未来的错误分析与缓解研究提供指导。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.02707 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究表明大型语言模型的内部状态能显著增强错误检测，但其通用性有限，并能预测错误类型。</p><br /><br /><p><strong>摘要：</strong> 本研究揭示大型语言模型（LLMs）内部状态在真相编码方面的丰富信息，并评估其在错误检测与预测中的应用。首先，我们发现真相信息主要集中在特定的标记中，利用这一特性能够显著提升错误检测的性能。然而，我们的研究还表明，这些错误检测器在不同数据集间的泛化能力差，表明真相编码并非普遍适用，而是具有多样性。接着，我们展示了内部表示可以用于预测模型可能产生的错误类型，从而便于制定针对性的减缓策略。最后，我们发现LLMs的内部编码与外部行为之间存在差异：尽管模型可能编码了正确答案，但却可能不断生成错误的答案。这些发现加深了我们对LLM错误的理解，能够为未来的错误分析与缓解研究提供指导。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.02707" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 08 Oct 2024 05:52:35 GMT</pubDate>
 <pubDate>Tue, 08 Oct 2024 05:52:35 GMT</pubDate>
 </item>
 <item>
@@ -45,14 +61,10 @@
 <link>https://arxiv.org/abs/2410.04698</link>
 <guid>https://arxiv.org/abs/2410.04698</guid>
 <content:encoded><![CDATA[
-
-  Recent large language models (LLMs) have demonstrated versatile capabilities in long-context scenarios. Although some recent benchmarks have been developed to evaluate the long-context capabilities of LLMs, there is a lack of benchmarks evaluating the mathematical reasoning abilities of LLMs over long contexts, which is crucial for LLMs' application in real-world scenarios. In this paper, we introduce MathHay, an automated benchmark designed to assess the long-context mathematical reasoning capabilities of LLMs. Unlike previous benchmarks like Needle in a Haystack, which focus primarily on information retrieval within long texts, MathHay demands models with both information-seeking and complex mathematical reasoning abilities. We conduct extensive experiments on MathHay to assess the long-context mathematical reasoning abilities of eight top-performing LLMs. Even the best-performing model, Gemini-1.5-Pro-002, still struggles with mathematical reasoning over long contexts, achieving only 51.26% accuracy at 128K tokens. This highlights the significant room for improvement on the MathHay benchmark.
-
+Recent large language models (LLMs) have demonstrated versatile capabilities in long-context scenarios. Although some recent benchmarks have been developed to evaluate the long-context capabilities of LLMs, there is a lack of benchmarks evaluating the mathematical reasoning abilities of LLMs over long contexts, which is crucial for LLMs' application in real-world scenarios. In this paper, we introduce MathHay, an automated benchmark designed to assess the long-context mathematical reasoning capabilities of LLMs. Unlike previous benchmarks like Needle in a Haystack, which focus primarily on information retrieval within long texts, MathHay demands models with both information-seeking and complex mathematical reasoning abilities. We conduct extensive experiments on MathHay to assess the long-context mathematical reasoning abilities of eight top-performing LLMs. Even the best-performing model, Gemini-1.5-Pro-002, still struggles with mathematical reasoning over long contexts, achieving only 51.26% accuracy at 128K tokens. This highlights the significant room for improvement on the MathHay benchmark.
 ]]></content:encoded>
 <pubDate>Tue, 08 Oct 2024 05:33:52 GMT</pubDate>
-<pubDate>Tue, 08 Oct 2024 05:33:52 GMT</pubDate>
 </item>
-
 <item>
 <title>OmniBooth：实现实例级多模态定制的图像生成框架</title>
 <link>https://arxiv.org/abs/2410.04932</link>
