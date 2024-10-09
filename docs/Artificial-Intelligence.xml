@@ -5,18 +5,51 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>基于宏观动作的强化学习人类反馈框架研究</title>
+<link>https://arxiv.org/abs/2410.02743</link>
+<guid>https://arxiv.org/abs/2410.02743</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出MA-RLHF框架，通过宏观动作优化RLHF，提高学习效率和性能。</p><br><br><p><strong>摘要：</strong> 本文提出了一种新的强化学习框架，名为MA-RLHF，旨在改善基于人类反馈的强化学习（RLHF）在大语言模型（LLM）中的应用。现有的token级RLHF面临长序列中的信用分配问题，延迟奖励使得模型难以辨识哪些动作贡献了成功的结果。MA-RLHF框架通过引入宏观动作——即一系列tokens或更高层次的语言构造，降低了动作与奖励之间的时间距离，从而促进更快、更准确的信用分配。这种方法在每个训练过程中提高了策略梯度估计的稳定性与学习效率，而未增加训练或推理的计算复杂性。通过在多个模型规模和任务上进行广泛实验，包括文本摘要、对话生成、问答及程序合成，验证了该方法的有效性。实验结果显示，MA-RLHF在文本摘要和代码生成上实现了高达30%的性能提升，在对话任务中提高了18%，在问答任务中提高了8%。值得注意的是，该方法在训练时间方面以1.7到2倍的速度超过了常规RLHF，并在进一步训练中持续表现优越。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.02743 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 09 Oct 2024 02:29:33 GMT</pubDate>
+<pubDate>Wed, 09 Oct 2024 02:29:33 GMT</pubDate>
+</item>
+<item>
+<title>LongGenBench: Long-context Generation Benchmark</title>
+<link>https://arxiv.org/abs/2410.04199</link>
+<guid>https://arxiv.org/abs/2410.04199</guid>
+<content:encoded><![CDATA[
+
+  Current long-context benchmarks primarily focus on retrieval-based tests, requiring Large Language Models (LLMs) to locate specific information within extensive input contexts, such as the needle-in-a-haystack (NIAH) benchmark. Long-context generation refers to the ability of a language model to generate coherent and contextually accurate text that spans across lengthy passages or documents. While recent studies show strong performance on NIAH and other retrieval-based long-context benchmarks, there is a significant lack of benchmarks for evaluating long-context generation capabilities. To bridge this gap and offer a comprehensive assessment, we introduce a synthetic benchmark, LongGenBench, which allows for flexible configurations of customized generation context lengths. LongGenBench advances beyond traditional benchmarks by redesigning the format of questions and necessitating that LLMs respond with a single, cohesive long-context answer. Upon extensive evaluation using LongGenBench, we observe that: (1) both API accessed and open source models exhibit performance degradation in long-context generation scenarios, ranging from 1.2% to 47.1%; (2) different series of LLMs exhibit varying trends of performance degradation, with the Gemini-1.5-Flash model showing the least degradation among API accessed models, and the Qwen2 series exhibiting the least degradation in LongGenBench among open source models.
+
+]]></content:encoded>
+<pubDate>Wed, 09 Oct 2024 01:11:06 GMT</pubDate>
+<pubDate>Wed, 09 Oct 2024 01:11:06 GMT</pubDate>
+</item>
+<item>
+<title>提升模型泛化能力的关键因素研究</title>
+<link>https://arxiv.org/abs/2410.04717</link>
+<guid>https://arxiv.org/abs/2410.04717</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>探讨数据多样性对指令调优模型泛化能力的影响，分析跨领域数据的优势。</p><br><br><p><strong>摘要：</strong> 本文深入研究了使模型在面对未见指令时能够有效泛化的关键因素，为指令调优的数据收集提供了指导。通过受图灵完备马尔可夫算法启发的控制实验，我们证明了只有当训练数据在语义领域上足够多样化时，模型才可能实现良好的泛化。研究显示，仅在有限领域内进行多样化并不足以确保稳健的泛化能力，而跨领域的数据多样化，即便在数据预算有限的情况下，显著提高了模型的适应性。此外，我们还将分析扩展到实际场景，包括对专业模型和通用模型的微调。在这两种情况下，我们的结果表明：1）在保持数据量不变的情况下降低数据集多样性可以提升性能；2）在扩大数据集规模时，丰富指令的语义内容比仅仅增加相似数据的数量更有效。我们的研究为数据集的整理提供重要见解，强调了战略性多样化在提升数据质量和模型性能方面的关键作用。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.04717 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 09 Oct 2024 00:56:19 GMT</pubDate>
+<pubDate>Wed, 09 Oct 2024 00:56:19 GMT</pubDate>
+</item>
+
+<item>
 <title>基于响应自适应参考的文本生成评估新范式RevisEval</title>
 <link>https://arxiv.org/abs/2410.05193</link>
 <guid>https://arxiv.org/abs/2410.05193</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>RevisEval通过响应自适应参考提升了文本生成评估的可靠性与效果。</p><br><br><p><strong>摘要：</strong> 随着大型语言模型（LLM）在文本生成质量评估中的广泛应用，LLM-as-a-Judge逐渐成为一种高效且经济的替代选择，然而其与人类评估之间仍存在可靠性差距。本文提出了一种新颖的文本生成评估范式RevisEval，旨在通过响应自适应参考提升评估效果。RevisEval的核心思想是，理想的参考需要与待评估的响应保持必要的相关性。具体而言，该方法利用LLM的文本修订能力，动态修订待评估的响应，并将修订后的文本作为后续评估的参考。通过广泛的实验，RevisEval在自然语言生成（NLG）任务及开放式指令跟随任务中，均表现出优于传统的无参考和有参考的评估范式。此外，与传统参考相比，RevisEval的响应自适应参考甚至能够提升经典文本评估指标（如BLEU和BERTScore）的效果，并与LLM-as-a-Judge的表现相媲美。最后，对RevisEval在偏差减少、推理成本影响和参考相关性方面的有效性进行了详细分析。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.05193 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">RevisEval通过响应自适应参考提升了文本生成评估的可靠性与效果。</p><br /><br /><p><strong>摘要：</strong> 随着大型语言模型（LLM）在文本生成质量评估中的广泛应用，LLM-as-a-Judge逐渐成为一种高效且经济的替代选择，然而其与人类评估之间仍存在可靠性差距。本文提出了一种新颖的文本生成评估范式RevisEval，旨在通过响应自适应参考提升评估效果。RevisEval的核心思想是，理想的参考需要与待评估的响应保持必要的相关性。具体而言，该方法利用LLM的文本修订能力，动态修订待评估的响应，并将修订后的文本作为后续评估的参考。通过广泛的实验，RevisEval在自然语言生成（NLG）任务及开放式指令跟随任务中，均表现出优于传统的无参考和有参考的评估范式。此外，与传统参考相比，RevisEval的响应自适应参考甚至能够提升经典文本评估指标（如BLEU和BERTScore）的效果，并与LLM-as-a-Judge的表现相媲美。最后，对RevisEval在偏差减少、推理成本影响和参考相关性方面的有效性进行了详细分析。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.05193" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 09 Oct 2024 00:03:21 GMT</pubDate>
-<pubDate>Wed, 09 Oct 2024 00:03:21 GMT</pubDate>
 </item>
-
 <item>
 <title>框架感知视频扩散模型：一种新型时序变量应用于视频生成</title>
 <link>https://arxiv.org/abs/2410.03160</link>
