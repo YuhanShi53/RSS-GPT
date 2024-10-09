@@ -5,15 +5,37 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>Grounded-VideoLLM：提升细粒度视频理解的新模型</title>
+<link>https://arxiv.org/abs/2410.03290</link>
+<guid>https://arxiv.org/abs/2410.03290</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出Grounded-VideoLLM，专注于细粒度视频时序定位，克服了现有Video-LLM在时间建模方面的不足。</p><br><br><p><strong>摘要：</strong> 当前的视频大语言模型（Video-LLMs）在粗粒度视频理解方面表现出色，但在细粒度时间定位上存在困难。为此，本文提出了一种新颖的模型——Grounded-VideoLLM，该模型能够在细粒度层面上感知和推理视频中的特定时刻。我们发现，现有的Video-LLMs在细粒度视频理解上表现不佳，主要原因在于其缺乏有效的时间建模和时间戳表示。为了解决这一问题，我们对模型进行了优化，具体方法包括：1）增加一个额外的时间流，以编码帧与帧之间的关系；2）用特定时间知识丰富的离散时间标记来表示时间戳。为优化Grounded-VideoLLM的训练，我们采用了多阶段训练方案，先进行简单的视频-captioning任务，然后逐步引入复杂度递增的视频时间定位任务。此外，为了进一步提升模型的时间推理能力，我们还通过自动标注流程整理了一个针对视频问答的基础数据集。实验结果表明，Grounded-VideoLLM在时序句子定位、稠密视频标注和基础视频问答等细粒度定位任务中表现优异，展示了作为通用视频理解助手的巨大潜力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.03290 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 09 Oct 2024 07:40:30 GMT</pubDate>
+<pubDate>Wed, 09 Oct 2024 07:40:30 GMT</pubDate>
+</item>
+<item>
+<title>二维自回归变换器：突破向量量化图像生成的信息损失瓶颈</title>
+<link>https://arxiv.org/abs/2410.01912</link>
+<guid>https://arxiv.org/abs/2410.01912</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文介绍了一种新型模型DnD-Transformer，提升了向量量化自回归图像生成的质量与效率。</p><br><br><p><strong>摘要：</strong> 本文提出了一种新型架构——二维自回归变换器（DnD-Transformer），旨在解决向量量化（VQ）自回归图像生成中的信息损失瓶颈。DnD-Transformer通过引入新的自回归方向、模型深度以及序列长度方向，能够为图像预测更多的代码。与传统的1D自回归模型和类似的2D图像分解模型（如RQ-Transformer）相比，DnD-Transformer是一种端到端的模型，其在保持相同主干模型大小和序列长度的情况下，能够生成更高质量的图像。这为自回归图像生成提供了新的优化视角。此外，实验结果表明，DnD-Transformer的潜力不仅限于生成自然图像，还能以自监督的方式生成富有文本和图形元素的图像，展现出对这些组合模态的理解。这一能力在流行的视觉生成模型（如扩散模型）中尚未得到验证，显示出其在仅使用图像训练时所具有的视觉语言智能。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.01912 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 09 Oct 2024 06:40:12 GMT</pubDate>
+<pubDate>Wed, 09 Oct 2024 06:40:12 GMT</pubDate>
+</item>
+
+<item>
 <title>ControlAR：自回归图像生成中的空间控制框架</title>
 <link>https://arxiv.org/abs/2410.02705</link>
 <guid>https://arxiv.org/abs/2410.02705</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>ControlAR提出了一种在自回归图像生成中高效整合空间控制的新框架。</p><br><br><p><strong>摘要：</strong> 自回归（AR）模型在图像生成中通过下一个标记预测重新定义了过程，并显现出强大的潜力。然而，控制图像生成，类似于ControlNet，在AR模型中仍然鲜有探索。尽管受到大型语言模型的启发，可以将控制图像标记化并预填充到自回归模型中，但生成质量仍未达到ControlNet的水平，且效率较低。本研究提出了一个高效且有效的框架ControlAR，用于将空间控制集成到自回归图像生成模型中。首先，我们探讨了AR模型中的控制编码，提出了一种轻量级控制编码器，将空间输入（如边缘图或深度图）转化为控制标记。然后，ControlAR利用条件解码方法，通过对控制和图像标记的逐标记融合，生成下一个图像标记。该方法显著增强了AR模型的控制能力，同时保持了模型的效率。ControlAR还通过条件解码和特定控制能力，赋予AR模型任意分辨率的图像生成能力。实验结果显示，ControlAR在边缘、深度和分割掩码等多种输入条件下，展现了良好的控制能力，且在定量和定性结果上，都超过了以前的可控扩散模型，如ControlNet++。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.02705 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">ControlAR提出了一种在自回归图像生成中高效整合空间控制的新框架。</p><br /><br /><p><strong>摘要：</strong> 自回归（AR）模型在图像生成中通过下一个标记预测重新定义了过程，并显现出强大的潜力。然而，控制图像生成，类似于ControlNet，在AR模型中仍然鲜有探索。尽管受到大型语言模型的启发，可以将控制图像标记化并预填充到自回归模型中，但生成质量仍未达到ControlNet的水平，且效率较低。本研究提出了一个高效且有效的框架ControlAR，用于将空间控制集成到自回归图像生成模型中。首先，我们探讨了AR模型中的控制编码，提出了一种轻量级控制编码器，将空间输入（如边缘图或深度图）转化为控制标记。然后，ControlAR利用条件解码方法，通过对控制和图像标记的逐标记融合，生成下一个图像标记。该方法显著增强了AR模型的控制能力，同时保持了模型的效率。ControlAR还通过条件解码和特定控制能力，赋予AR模型任意分辨率的图像生成能力。实验结果显示，ControlAR在边缘、深度和分割掩码等多种输入条件下，展现了良好的控制能力，且在定量和定性结果上，都超过了以前的可控扩散模型，如ControlNet++。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.02705" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 09 Oct 2024 06:24:02 GMT</pubDate>
 <pubDate>Wed, 09 Oct 2024 06:24:02 GMT</pubDate>
 </item>
 <item>
@@ -21,14 +43,10 @@
 <link>https://arxiv.org/abs/2410.04422</link>
 <guid>https://arxiv.org/abs/2410.04422</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究长上下文任务难度的根本原因，揭示多匹配检索与逻辑检索问题对LCLM的挑战。</p><br><br><p><strong>摘要：</strong> 长上下文语言模型（LCLM）因其广泛的上下文窗口而受到越来越多的关注。然而，许多长上下文基准测试中存在的挑战性任务，即便是最先进的LCLM也难以完成。针对这些问题，本文进行实验研究，表明长上下文任务的难度主要源自两个基本问题：'多匹配检索'和'逻辑检索'。前者要求同时检索多个条目，后者则需要在检索标准中进行逻辑判断。虽然这两个问题看似简单，但它们实际上超出了LCLM的能力，因其被证明是超多步骤的（需要大量步骤才能解决）。这一发现可能解释了为何大语言模型在更复杂的长上下文任务中表现不佳，从而为重新思考这些任务的解决方案提供了更准确的视角。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.04422 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究长上下文任务难度的根本原因，揭示多匹配检索与逻辑检索问题对LCLM的挑战。</p><br /><br /><p><strong>摘要：</strong> 长上下文语言模型（LCLM）因其广泛的上下文窗口而受到越来越多的关注。然而，许多长上下文基准测试中存在的挑战性任务，即便是最先进的LCLM也难以完成。针对这些问题，本文进行实验研究，表明长上下文任务的难度主要源自两个基本问题：'多匹配检索'和'逻辑检索'。前者要求同时检索多个条目，后者则需要在检索标准中进行逻辑判断。虽然这两个问题看似简单，但它们实际上超出了LCLM的能力，因其被证明是超多步骤的（需要大量步骤才能解决）。这一发现可能解释了为何大语言模型在更复杂的长上下文任务中表现不佳，从而为重新思考这些任务的解决方案提供了更准确的视角。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.04422" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 09 Oct 2024 06:14:32 GMT</pubDate>
-<pubDate>Wed, 09 Oct 2024 06:14:32 GMT</pubDate>
 </item>
-
 <item>
 <title>基于宏观动作的强化学习人类反馈框架研究</title>
 <link>https://arxiv.org/abs/2410.02743</link>
