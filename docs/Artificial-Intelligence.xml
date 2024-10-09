@@ -5,15 +5,37 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>TidalDecode: 一种基于位置持久稀疏注意力的高效解码算法</title>
+<link>https://arxiv.org/abs/2410.05076</link>
+<guid>https://arxiv.org/abs/2410.05076</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>TidalDecode通过位置持久的稀疏注意力显著提高了LLM解码速度，保持生成质量。</p><br><br><p><strong>摘要：</strong> 随着大型语言模型（LLMs）在自然语言处理任务中的广泛应用，长上下文模型因其处理扩展输入的能力而受到关注。然而，变压器架构中的扩展键值（KV）缓存尺寸在解码阶段带来了显著的内存约束，成为瓶颈。现有的稀疏注意力机制虽然旨在解决该瓶颈，但往往无法可靠识别最相关的注意令牌，并且忽略连续变压器层间的令牌选择空间一致性，这可能导致性能下降并增加令牌选择的开销。为此，本文介绍了TidalDecode，一种通过位置持久稀疏注意力实现快速准确LLM解码的简单有效算法和系统。TidalDecode利用现有稀疏注意力方法中令牌选择的空间一致性，引入少量令牌选择层进行全注意力计算，以识别注意力分数最高的令牌，而其他层则使用预选令牌执行稀疏注意力。该设计显著减少了稀疏注意力的令牌选择开销，同时不影响生成结果的质量。在多种LLM和任务的评估中，TidalDecode的生成性能紧密匹配全注意力方法，同时将LLM解码延迟降低了高达2.1倍。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.05076 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 09 Oct 2024 14:56:52 GMT</pubDate>
+<pubDate>Wed, 09 Oct 2024 14:56:52 GMT</pubDate>
+</item>
+<item>
+<title>EBES：针对事件序列的新型基准工具</title>
+<link>https://arxiv.org/abs/2410.03399</link>
+<guid>https://arxiv.org/abs/2410.03399</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>EBES是一个全面的基准工具，旨在标准化事件序列的评估，促进可重复研究并加速进展。</p><br><br><p><strong>摘要：</strong> 事件序列在多个现实世界领域中广泛存在，例如医疗、金融和用户交互日志，其特点是采样间隔不规则，并且包含分类和数值特征。尽管在时间数据建模技术上已有所进展，但目前缺乏标准化的基准测试，这使得不同论文之间的结果比较变得复杂，潜在地误导了该领域的进展。为此，我们推出了EBES，一个综合性的基准工具，提供标准化的评估场景和协议，专注于带有序列级目标的回归和分类问题。我们的库通过统一接口简化了基准测试、数据集添加和方法集成，包含了一种新颖的合成数据集，并提供预处理的真实世界数据集，包括最大公开银行数据集。我们的结果深入分析了数据集，识别出一些数据集不适合模型比较。同时，我们探讨了建模时间和序列组件的重要性，以及模型的鲁棒性和缩放特性。这些发现为未来研究指明了潜在方向。我们的基准旨在促进可重复的研究，加速进展并提高现实世界的影响。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.03399 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 09 Oct 2024 10:45:38 GMT</pubDate>
+<pubDate>Wed, 09 Oct 2024 10:45:38 GMT</pubDate>
+</item>
+
+<item>
 <title>Grounded-VideoLLM：提升细粒度视频理解的新模型</title>
 <link>https://arxiv.org/abs/2410.03290</link>
 <guid>https://arxiv.org/abs/2410.03290</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文提出Grounded-VideoLLM，专注于细粒度视频时序定位，克服了现有Video-LLM在时间建模方面的不足。</p><br><br><p><strong>摘要：</strong> 当前的视频大语言模型（Video-LLMs）在粗粒度视频理解方面表现出色，但在细粒度时间定位上存在困难。为此，本文提出了一种新颖的模型——Grounded-VideoLLM，该模型能够在细粒度层面上感知和推理视频中的特定时刻。我们发现，现有的Video-LLMs在细粒度视频理解上表现不佳，主要原因在于其缺乏有效的时间建模和时间戳表示。为了解决这一问题，我们对模型进行了优化，具体方法包括：1）增加一个额外的时间流，以编码帧与帧之间的关系；2）用特定时间知识丰富的离散时间标记来表示时间戳。为优化Grounded-VideoLLM的训练，我们采用了多阶段训练方案，先进行简单的视频-captioning任务，然后逐步引入复杂度递增的视频时间定位任务。此外，为了进一步提升模型的时间推理能力，我们还通过自动标注流程整理了一个针对视频问答的基础数据集。实验结果表明，Grounded-VideoLLM在时序句子定位、稠密视频标注和基础视频问答等细粒度定位任务中表现优异，展示了作为通用视频理解助手的巨大潜力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.03290 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文提出Grounded-VideoLLM，专注于细粒度视频时序定位，克服了现有Video-LLM在时间建模方面的不足。</p><br /><br /><p><strong>摘要：</strong> 当前的视频大语言模型（Video-LLMs）在粗粒度视频理解方面表现出色，但在细粒度时间定位上存在困难。为此，本文提出了一种新颖的模型——Grounded-VideoLLM，该模型能够在细粒度层面上感知和推理视频中的特定时刻。我们发现，现有的Video-LLMs在细粒度视频理解上表现不佳，主要原因在于其缺乏有效的时间建模和时间戳表示。为了解决这一问题，我们对模型进行了优化，具体方法包括：1）增加一个额外的时间流，以编码帧与帧之间的关系；2）用特定时间知识丰富的离散时间标记来表示时间戳。为优化Grounded-VideoLLM的训练，我们采用了多阶段训练方案，先进行简单的视频-captioning任务，然后逐步引入复杂度递增的视频时间定位任务。此外，为了进一步提升模型的时间推理能力，我们还通过自动标注流程整理了一个针对视频问答的基础数据集。实验结果表明，Grounded-VideoLLM在时序句子定位、稠密视频标注和基础视频问答等细粒度定位任务中表现优异，展示了作为通用视频理解助手的巨大潜力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.03290" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 09 Oct 2024 07:40:30 GMT</pubDate>
 <pubDate>Wed, 09 Oct 2024 07:40:30 GMT</pubDate>
 </item>
 <item>
@@ -21,14 +43,10 @@
 <link>https://arxiv.org/abs/2410.01912</link>
 <guid>https://arxiv.org/abs/2410.01912</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文介绍了一种新型模型DnD-Transformer，提升了向量量化自回归图像生成的质量与效率。</p><br><br><p><strong>摘要：</strong> 本文提出了一种新型架构——二维自回归变换器（DnD-Transformer），旨在解决向量量化（VQ）自回归图像生成中的信息损失瓶颈。DnD-Transformer通过引入新的自回归方向、模型深度以及序列长度方向，能够为图像预测更多的代码。与传统的1D自回归模型和类似的2D图像分解模型（如RQ-Transformer）相比，DnD-Transformer是一种端到端的模型，其在保持相同主干模型大小和序列长度的情况下，能够生成更高质量的图像。这为自回归图像生成提供了新的优化视角。此外，实验结果表明，DnD-Transformer的潜力不仅限于生成自然图像，还能以自监督的方式生成富有文本和图形元素的图像，展现出对这些组合模态的理解。这一能力在流行的视觉生成模型（如扩散模型）中尚未得到验证，显示出其在仅使用图像训练时所具有的视觉语言智能。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.01912 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文介绍了一种新型模型DnD-Transformer，提升了向量量化自回归图像生成的质量与效率。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种新型架构——二维自回归变换器（DnD-Transformer），旨在解决向量量化（VQ）自回归图像生成中的信息损失瓶颈。DnD-Transformer通过引入新的自回归方向、模型深度以及序列长度方向，能够为图像预测更多的代码。与传统的1D自回归模型和类似的2D图像分解模型（如RQ-Transformer）相比，DnD-Transformer是一种端到端的模型，其在保持相同主干模型大小和序列长度的情况下，能够生成更高质量的图像。这为自回归图像生成提供了新的优化视角。此外，实验结果表明，DnD-Transformer的潜力不仅限于生成自然图像，还能以自监督的方式生成富有文本和图形元素的图像，展现出对这些组合模态的理解。这一能力在流行的视觉生成模型（如扩散模型）中尚未得到验证，显示出其在仅使用图像训练时所具有的视觉语言智能。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.01912" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 09 Oct 2024 06:40:12 GMT</pubDate>
-<pubDate>Wed, 09 Oct 2024 06:40:12 GMT</pubDate>
 </item>
-
 <item>
 <title>ControlAR：自回归图像生成中的空间控制框架</title>
 <link>https://arxiv.org/abs/2410.02705</link>
