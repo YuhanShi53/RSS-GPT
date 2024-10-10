@@ -5,15 +5,37 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>MEXA：评估英语为中心的预训练语言模型的多语言能力</title>
+<link>https://arxiv.org/abs/2410.05873</link>
+<guid>https://arxiv.org/abs/2410.05873</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>MEXA是一种评估英语中心大型语言模型多语言能力的方法，展示了语言理解传递的潜力。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为MEXA的方法，用于评估预训练的英语中心大型语言模型（LLMs）在多语言环境中的能力。针对现有多语言性能评估工具关注的语言数量有限及任务范围狭窄的问题，MEXA利用了多个语言的平行句子，这些句子数量较多且可用于多条语言的理解评估。该方法基于英文作为中介语言的特性，计算英文和非英文语言之间的对齐，以此评估模型在非英语语言上的理解能力。研究中，我们使用了FLORES-200和Bible等平行数据集，以及多种模型（如Llama和Mistral等）和已建立的下游任务（例如Belebele及m-MMLU）进行验证。结果表明，默认设置下的MEXA与三个既有下游任务之间的皮尔逊相关系数平均达到了0.90，具有统计学显著性，表明MEXA是一种可靠的评估方法，有助于更清晰地了解英语中心LLMs的多语言潜力及其内部机制。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.05873 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 10 Oct 2024 12:51:34 GMT</pubDate>
+<pubDate>Thu, 10 Oct 2024 12:51:34 GMT</pubDate>
+</item>
+<item>
+<title>RealInstruct：评估LLM在多约束指令下的表现</title>
+<link>https://arxiv.org/abs/2410.06458</link>
+<guid>https://arxiv.org/abs/2410.06458</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究表明LLM在遵循多重约束指令时存在不足，提出DeCRIM改进方案以提高效果。</p><br><br><p><strong>摘要：</strong> 目前大多数评价集中在合成数据上，忽略了真实场景下的指令执行能力。为此，我们推出了RealInstruct，旨在评估LLM在真实用户查询中的多约束指令遵循能力。研究表明，即便是最新的GPT-4模型，也未能满足超过21%的指令约束，揭示了当前技术的局限性。为缩小开放源代码模型和专有模型之间的性能差距，我们提出了Decompose, Critique and Refine（DeCRIM）自我修正流程，该流程通过分解原始指令、利用Critic模型进行批评，帮助LLM更好地遵循约束。结果显示，DeCRIM使Mistral在RealInstruct上的表现提高了7.3%，在IFEval上提高了8.0%。同时，我们也证明了通过强反馈，配合DeCRIM的开源LLM能够在这两个基准测试中超越GPT-4。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.06458 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 10 Oct 2024 12:39:26 GMT</pubDate>
+<pubDate>Thu, 10 Oct 2024 12:39:26 GMT</pubDate>
+</item>
+
+<item>
 <title>Does Spatial Cognition Emerge in Frontier Models?</title>
 <link>https://arxiv.org/abs/2410.06468</link>
 <guid>https://arxiv.org/abs/2410.06468</guid>
 <content:encoded><![CDATA[
-
-  Not yet. We present SPACE, a benchmark that systematically evaluates spatial cognition in frontier models. Our benchmark builds on decades of research in cognitive science. It evaluates large-scale mapping abilities that are brought to bear when an organism traverses physical environments, smaller-scale reasoning about object shapes and layouts, and cognitive infrastructure such as spatial attention and memory. For many tasks, we instantiate parallel presentations via text and images, allowing us to benchmark both large language models and large multimodal models. Results suggest that contemporary frontier models fall short of the spatial intelligence of animals, performing near chance level on a number of classic tests of animal cognition.
-
+Not yet. We present SPACE, a benchmark that systematically evaluates spatial cognition in frontier models. Our benchmark builds on decades of research in cognitive science. It evaluates large-scale mapping abilities that are brought to bear when an organism traverses physical environments, smaller-scale reasoning about object shapes and layouts, and cognitive infrastructure such as spatial attention and memory. For many tasks, we instantiate parallel presentations via text and images, allowing us to benchmark both large language models and large multimodal models. Results suggest that contemporary frontier models fall short of the spatial intelligence of animals, performing near chance level on a number of classic tests of animal cognition.
 ]]></content:encoded>
-<pubDate>Thu, 10 Oct 2024 09:47:28 GMT</pubDate>
 <pubDate>Thu, 10 Oct 2024 09:47:28 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +43,8 @@
 <link>https://arxiv.org/abs/2410.02428</link>
 <guid>https://arxiv.org/abs/2410.02428</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>CritiCS框架通过集体评审机制提升故事创造性和叙事连贯性，促进人机合作写作。</p><br><br><p><strong>摘要：</strong> 本研究提出了一种名为CritiCS的集体评审框架，旨在提升长篇故事生成的创造力和读者的参与感，同时保持叙事连贯性。CritiCS框架由两个主要阶段组成：计划优化阶段（CrPlan）和故事生成阶段（CrText）。在每个阶段中，多个LLM评审者与一位领导者协作，经过多轮逐步完善故事计划和故事文本。研究结果显示，CritiCS框架显著提高了故事的创造力和读者的参与感，而同时保持了故事的叙事连贯性。此外，该框架的设计使人类作者能够在评审过程中积极参与，促进人机互动协作写作。通过整合集体修订机制，CritiCS为长篇故事生成提供了一种新的思路和方法。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.02428 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">CritiCS框架通过集体评审机制提升故事创造性和叙事连贯性，促进人机合作写作。</p><br /><br /><p><strong>摘要：</strong> 本研究提出了一种名为CritiCS的集体评审框架，旨在提升长篇故事生成的创造力和读者的参与感，同时保持叙事连贯性。CritiCS框架由两个主要阶段组成：计划优化阶段（CrPlan）和故事生成阶段（CrText）。在每个阶段中，多个LLM评审者与一位领导者协作，经过多轮逐步完善故事计划和故事文本。研究结果显示，CritiCS框架显著提高了故事的创造力和读者的参与感，而同时保持了故事的叙事连贯性。此外，该框架的设计使人类作者能够在评审过程中积极参与，促进人机互动协作写作。通过整合集体修订机制，CritiCS为长篇故事生成提供了一种新的思路和方法。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.02428" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 10 Oct 2024 09:43:00 GMT</pubDate>
 <pubDate>Thu, 10 Oct 2024 09:43:00 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +52,8 @@
 <link>https://arxiv.org/abs/2410.02465</link>
 <guid>https://arxiv.org/abs/2410.02465</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出响应调优方法，训练只基于响应的模型，可有效回答指令并表现出相似的有用性。</p><br><br><p><strong>摘要：</strong> 文章提出了一种新的训练方法，称为响应调优（Response Tuning，RT），旨在通过删除指令调节步骤，集中于响应空间的监督，从而有效地将预训练的大型语言模型（LLMs）转变为有用且安全的聊天助手。实验结果表明，RT模型在仅用响应进行训练的情况下，能够有效响应多种指令，并展现出与传统指令调优模型相似的有用性。此外，通过控制训练响应分布，能够显著提升用户偏好或诱发目标行为，例如对不安全请求的拒绝响应。这些发现强调了在对齐过程中建立适当的输出空间的重要性，突显了预训练LLMs固有的广泛能力的潜力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.02465 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出响应调优方法，训练只基于响应的模型，可有效回答指令并表现出相似的有用性。</p><br /><br /><p><strong>摘要：</strong> 文章提出了一种新的训练方法，称为响应调优（Response Tuning，RT），旨在通过删除指令调节步骤，集中于响应空间的监督，从而有效地将预训练的大型语言模型（LLMs）转变为有用且安全的聊天助手。实验结果表明，RT模型在仅用响应进行训练的情况下，能够有效响应多种指令，并展现出与传统指令调优模型相似的有用性。此外，通过控制训练响应分布，能够显著提升用户偏好或诱发目标行为，例如对不安全请求的拒绝响应。这些发现强调了在对齐过程中建立适当的输出空间的重要性，突显了预训练LLMs固有的广泛能力的潜力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.02465" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 10 Oct 2024 09:36:37 GMT</pubDate>
 <pubDate>Thu, 10 Oct 2024 09:36:37 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +61,8 @@
 <link>https://arxiv.org/abs/2410.02503</link>
 <guid>https://arxiv.org/abs/2410.02503</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出混合会话对话系统EMMA，通过记忆机制实现多方对话的连续性与流畅性。</p><br><br><p><strong>摘要：</strong> 近年来，新型对话系统虽然在可用性方面取得了进展，但仍未能很好地反映真实的对话场景。当前系统在动态、多方长期交互中的表现不足，主要因未能有效整合复杂的互动层次与参与者网络。为了解决这一问题，我们提出了一种混合会话对话系统，旨在构建多方参与的多会话对话。为实现该系统，我们推出了一个名为MiSC的新数据集，涵盖6个连续会话，每个对话由一名主讲者和三名伙伴共同参与。此外，我们设计了一种新型对话模型，名为自我中心记忆增强混合会话对话代理（EMMA），该模型能够从主讲者的视角收集和保留对话记忆，确保后续互动的顺畅。通过大量的人类评估，发现MiSC中的对话展现了即使在话题和参与者变动时也能保持流畅的对话流。EMMA在MiSC训练后，也展示了全程对话中的高记忆保持能力且无矛盾出现。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.02503 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出混合会话对话系统EMMA，通过记忆机制实现多方对话的连续性与流畅性。</p><br /><br /><p><strong>摘要：</strong> 近年来，新型对话系统虽然在可用性方面取得了进展，但仍未能很好地反映真实的对话场景。当前系统在动态、多方长期交互中的表现不足，主要因未能有效整合复杂的互动层次与参与者网络。为了解决这一问题，我们提出了一种混合会话对话系统，旨在构建多方参与的多会话对话。为实现该系统，我们推出了一个名为MiSC的新数据集，涵盖6个连续会话，每个对话由一名主讲者和三名伙伴共同参与。此外，我们设计了一种新型对话模型，名为自我中心记忆增强混合会话对话代理（EMMA），该模型能够从主讲者的视角收集和保留对话记忆，确保后续互动的顺畅。通过大量的人类评估，发现MiSC中的对话展现了即使在话题和参与者变动时也能保持流畅的对话流。EMMA在MiSC训练后，也展示了全程对话中的高记忆保持能力且无矛盾出现。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.02503" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 10 Oct 2024 09:36:26 GMT</pubDate>
 <pubDate>Thu, 10 Oct 2024 09:36:26 GMT</pubDate>
 </item>
 <item>
@@ -57,14 +70,10 @@
 <link>https://arxiv.org/abs/2410.06084</link>
 <guid>https://arxiv.org/abs/2410.06084</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文提出了一种新颖的无分类引导模型蒸馏方法，以改善生成音乐的多样性和质量。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为多样性奖励的无分类引导模型蒸馏的新型微调程序，该程序旨在克服无分类引导（CFG）在生成音乐时的局限性。通过优化两个训练目标，首先是蒸馏目标，促使模型在没有CFG的情况下模仿增强的预测；其次是强化学习目标，通过多样性奖励来促进相同提示下输出的多样性。我们的微调方法能够学习到高质量和多样化输出的模型权重，而无需在推理时增加额外成本。此外，该方法还利用权重合并策略，通过插值两个模型的权重（一个关注质量，另一个关注多样性），在部署时实现质量与多样性的权衡。我们在MusicLM生成模型上进行广泛实验，结果表明我们的方法在质量和多样性平衡上超过了CFG。在人类评估者看来，经过微调和合并的模型在生成样本的质量和多样性上优于基于CFG的基础模型。探索我们的生成结果可访问 https://google-research.github.io/seanet/musiclm/diverse_music/。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.06084 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文提出了一种新颖的无分类引导模型蒸馏方法，以改善生成音乐的多样性和质量。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种名为多样性奖励的无分类引导模型蒸馏的新型微调程序，该程序旨在克服无分类引导（CFG）在生成音乐时的局限性。通过优化两个训练目标，首先是蒸馏目标，促使模型在没有CFG的情况下模仿增强的预测；其次是强化学习目标，通过多样性奖励来促进相同提示下输出的多样性。我们的微调方法能够学习到高质量和多样化输出的模型权重，而无需在推理时增加额外成本。此外，该方法还利用权重合并策略，通过插值两个模型的权重（一个关注质量，另一个关注多样性），在部署时实现质量与多样性的权衡。我们在MusicLM生成模型上进行广泛实验，结果表明我们的方法在质量和多样性平衡上超过了CFG。在人类评估者看来，经过微调和合并的模型在生成样本的质量和多样性上优于基于CFG的基础模型。探索我们的生成结果可访问 https://google-research.github.io/seanet/musiclm/diverse_music/。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.06084" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Thu, 10 Oct 2024 08:56:39 GMT</pubDate>
-<pubDate>Thu, 10 Oct 2024 08:56:39 GMT</pubDate>
 </item>
-
 <item>
 <title>多视图一致性的PBR文本到纹理建模研究</title>
 <link>https://arxiv.org/abs/2410.06985</link>
