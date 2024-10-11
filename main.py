@@ -26,10 +26,10 @@ def get_cfg(sec, name, default=None):
     if value:
         return value.strip('"')
 BASE = get_cfg('cfg', 'BASE')
-keyword_length = int(get_cfg('cfg', 'keyword_length'))
-summary_length = int(get_cfg('cfg', 'summary_length'))
-short_summary_length = int(get_cfg('cfg', 'short_summary_length'))
-language = get_cfg('cfg', 'language')
+KEYWORD_LENGTH = int(get_cfg('cfg', 'keyword_length'))
+SUMMARY_LENGTH = int(get_cfg('cfg', 'summary_length'))
+SHORT_SUMMARY_LENGTH = int(get_cfg('cfg', 'short_summary_length'))
+LANGUAGE = get_cfg('cfg', 'language')
 
 
 OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
@@ -191,9 +191,17 @@ def gpt_summary(query, image_urls, model, language):
     #         }
     #     )
 
+    prompt = ""
+    with open("prompt.txt", "r", encoding='utf-8') as f:
+        prompt = f.read().format(
+            short_summary_length=SHORT_SUMMARY_LENGTH,
+            summary_length=SUMMARY_LENGTH,
+            keyword_length=KEYWORD_LENGTH
+        )
+
     messages = [
         {"role": "user", "content": content},
-        {"role": "assistant", "content": f"请用中文为这篇文章重新起一个标题，并对这篇文章总结几个关键词。请用中文写一段{short_summary_length}字的简短摘要，再使用中文在{summary_length}字内写一篇文章摘要，注意：只能对原文内容进行总结，不要进行解读和分析。\n请用JSON格式输出'title','short_summary','summary','keyword'四个信息，输出内容使用``` ```包围。如果这是一篇营销广告或促销活动，'keyword'为‘ADs‘，否则输出文章内容所涉及的关键词，关键词不超过{keyword_length}个。"}
+        {"role": "assistant", "content": prompt}
     ]
 
     if not OPENAI_PROXY:
@@ -213,7 +221,7 @@ def gpt_summary(query, image_urls, model, language):
         max_tokens=500,
     )
 
-    match = re.search(r'```json\n(.*?)```', completion.choices[0].message.content, re.DOTALL)
+    match = re.search(r'```(json)?\n(.*?)```', completion.choices[0].message.content, re.DOTALL)
     json_str = match.group(1).strip()
     response = json.loads(json_str)
 
@@ -316,10 +324,10 @@ def output(sec, language):
             cnt += 1
             if cnt > max_items:
                 entry.summary = None
-            elif OPENAI_API_KEY and (token_length > summary_length):
+            elif OPENAI_API_KEY and (token_length > 200):
                 if custom_model:
                     try:
-                        gpt_response = gpt_summary(cleaned_article, image_urls, model=custom_model, language=language)
+                        gpt_response = gpt_summary(cleaned_article, image_urls, model=custom_model, language=LANGUAGE)
                         with open(log_file, 'a') as f:
                             f.write(f"Token length: {token_length}\n")
                             f.write(f"Summarized using {custom_model}\n")
@@ -330,14 +338,14 @@ def output(sec, language):
                             f.write(f"error: {e}\n")
                 else:
                     try:
-                        gpt_response = gpt_summary(cleaned_article, image_urls, model="gpt-4o-mini", language=language)
+                        gpt_response = gpt_summary(cleaned_article, image_urls, model="gpt-4o-mini", language=LANGUAGE)
                         with open(log_file, 'a') as f:
                             f.write(f"Token length: {token_length}\n")
                             f.write("Summarized using gpt-4o-mini\n")
                     except Exception:
                         try:
                             gpt_response = gpt_summary(cleaned_article, image_urls,
-                                                       model="gpt-4-turbo-preview", language=language)
+                                                       model="gpt-4-turbo-preview", language=LANGUAGE)
                             with open(log_file, 'a') as f:
                                 f.write(f"Token length: {token_length}\n")
                                 f.write("Summarized using GPT-4-turbo-preview\n")
@@ -387,7 +395,7 @@ feeds = []
 links = []
 
 for x in secs[1:]:
-    output(x, language=language)
+    output(x, language=LANGUAGE)
     feed = {"url": get_cfg(x, 'url').replace(',', '<br>'), "name": get_cfg(x, 'name')}
     feeds.append(feed)  # for rendering index.html
     links.append("- " + get_cfg(x, 'url').replace(',', ', ') + " -> " + deployment_url + feed['name'] + ".xml\n")
