@@ -5,15 +5,49 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>全面评估视觉语言模型的框架VHELM</title>
+<link>https://arxiv.org/abs/2410.07112</link>
+<guid>https://arxiv.org/abs/2410.07112</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>VHELM框架旨在全面评估视觉语言模型的各方面能力，涵盖九个关键因素。</p><br><br><p><strong>摘要：</strong> 目前对视觉语言模型（VLMs）的评估通常侧重于其感知或问题解决能力，而忽视了公平性、多语言性和有毒性等其他重要方面。此外，现有评估方法和范围各不相同，导致模型之间难以比较。为了解决这些问题，我们扩展了HELM框架，提出了视觉语言模型的全面评估（VHELM）。VHELM整合了多种数据集，涵盖视觉感知、知识、推理、偏见、公平性、多语言性、鲁棒性、有毒性和安全性等九个方面，从而提供一个全面的多维视角。我们还标准化了推理参数、提示方法和评估指标，以实现模型之间的公平比较。我们的框架设计轻便、自动化，使评估运行成本低且快速。初步评估涵盖22个VLMs和21个现有数据集，揭示了关键发现，例如，注重效率的模型在偏见基准上的表现显著差于其完整版。为透明起见，我们在网站上发布了模型生成的原始数据和完整结果。VHELM旨在成为一个持续更新的基准，未来将不断添加新数据集和模型。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.07112 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 10 Oct 2024 17:14:33 GMT</pubDate>
+<pubDate>Thu, 10 Oct 2024 17:14:33 GMT</pubDate>
+</item>
+<item>
+<title>建立通用多模态嵌入模型的新进展</title>
+<link>https://arxiv.org/abs/2410.05160</link>
+<guid>https://arxiv.org/abs/2410.05160</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本研究探讨了多模态嵌入模型的构建，提出了MMEB基准和VLM2Vec框架，显示出明显的性能提升。</p><br><br><p><strong>摘要：</strong> 本研究旨在探索能够处理多种下游任务的通用多模态嵌入模型的构建潜力。我们提出了两个主要贡献：首先是MMEB（Massive Multimodal Embedding Benchmark），涵盖四个元任务：分类、视觉问答、多模态检索和视觉定位，并包含36个数据集，其中20个用于训练，16个用于评估。其次是VLM2Vec（Vision-Language Model -> Vector）框架，它通过在MMEB上进行对比训练，将任何先进的视觉-语言模型转换为嵌入模型。与之前的模型（如CLIP和BLIP）不同，VLM2Vec能够处理任意组合的图像和文本，并根据任务指令生成固定维度的向量。我们在Phi-3.5-V上构建了一系列VLM2Vec模型，并在MMEB的评估集上进行了评估。结果显示，VLM2Vec在MMEB的归属和超出分布数据集上相比于现有的多模态嵌入模型，取得了10%到20%的绝对平均提升。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.05160 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 10 Oct 2024 16:03:35 GMT</pubDate>
+<pubDate>Thu, 10 Oct 2024 16:03:35 GMT</pubDate>
+</item>
+<item>
+<title>Stuffed Mamba: State Collapse and State Capacity of RNN-Based Long-Context Modeling</title>
+<link>https://arxiv.org/abs/2410.07145</link>
+<guid>https://arxiv.org/abs/2410.07145</guid>
+<content:encoded><![CDATA[
+
+  One essential advantage of recurrent neural networks (RNNs) over transformer-based language models is their linear computational complexity concerning the sequence length, which makes them much faster in handling long sequences during inference. However, most publicly available RNNs (e.g., Mamba and RWKV) are trained on sequences with less than 10K tokens, and their effectiveness in longer contexts remains largely unsatisfying so far. In this paper, we study the cause of the inability to process long context for RNNs and suggest critical mitigations. We examine two practical concerns when applying state-of-the-art RNNs to long contexts: (1) the inability to extrapolate to inputs longer than the training length and (2) the upper bound of memory capacity. Addressing the first concern, we first investigate *state collapse* (SC), a phenomenon that causes severe performance degradation on sequence lengths not encountered during training. With controlled experiments, we attribute this to overfitting due to the recurrent state being overparameterized for the training length. For the second concern, we train a series of Mamba-2 models on long documents to empirically estimate the recurrent state capacity in language modeling and passkey retrieval. Then, three SC mitigation methods are proposed to improve Mamba-2's length generalizability, allowing the model to process more than 1M tokens without SC. We also find that the recurrent state capacity in passkey retrieval scales exponentially to the state size, and we empirically train a Mamba-2 370M with near-perfect passkey retrieval accuracy on 256K context length. This suggests a promising future for RNN-based long-context modeling.
+
+]]></content:encoded>
+<pubDate>Thu, 10 Oct 2024 15:04:10 GMT</pubDate>
+<pubDate>Thu, 10 Oct 2024 15:04:10 GMT</pubDate>
+</item>
+
+<item>
 <title>MEXA：评估英语为中心的预训练语言模型的多语言能力</title>
 <link>https://arxiv.org/abs/2410.05873</link>
 <guid>https://arxiv.org/abs/2410.05873</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>MEXA是一种评估英语中心大型语言模型多语言能力的方法，展示了语言理解传递的潜力。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为MEXA的方法，用于评估预训练的英语中心大型语言模型（LLMs）在多语言环境中的能力。针对现有多语言性能评估工具关注的语言数量有限及任务范围狭窄的问题，MEXA利用了多个语言的平行句子，这些句子数量较多且可用于多条语言的理解评估。该方法基于英文作为中介语言的特性，计算英文和非英文语言之间的对齐，以此评估模型在非英语语言上的理解能力。研究中，我们使用了FLORES-200和Bible等平行数据集，以及多种模型（如Llama和Mistral等）和已建立的下游任务（例如Belebele及m-MMLU）进行验证。结果表明，默认设置下的MEXA与三个既有下游任务之间的皮尔逊相关系数平均达到了0.90，具有统计学显著性，表明MEXA是一种可靠的评估方法，有助于更清晰地了解英语中心LLMs的多语言潜力及其内部机制。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.05873 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">MEXA是一种评估英语中心大型语言模型多语言能力的方法，展示了语言理解传递的潜力。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种名为MEXA的方法，用于评估预训练的英语中心大型语言模型（LLMs）在多语言环境中的能力。针对现有多语言性能评估工具关注的语言数量有限及任务范围狭窄的问题，MEXA利用了多个语言的平行句子，这些句子数量较多且可用于多条语言的理解评估。该方法基于英文作为中介语言的特性，计算英文和非英文语言之间的对齐，以此评估模型在非英语语言上的理解能力。研究中，我们使用了FLORES-200和Bible等平行数据集，以及多种模型（如Llama和Mistral等）和已建立的下游任务（例如Belebele及m-MMLU）进行验证。结果表明，默认设置下的MEXA与三个既有下游任务之间的皮尔逊相关系数平均达到了0.90，具有统计学显著性，表明MEXA是一种可靠的评估方法，有助于更清晰地了解英语中心LLMs的多语言潜力及其内部机制。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.05873" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 10 Oct 2024 12:51:34 GMT</pubDate>
 <pubDate>Thu, 10 Oct 2024 12:51:34 GMT</pubDate>
 </item>
 <item>
@@ -21,14 +55,10 @@
 <link>https://arxiv.org/abs/2410.06458</link>
 <guid>https://arxiv.org/abs/2410.06458</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究表明LLM在遵循多重约束指令时存在不足，提出DeCRIM改进方案以提高效果。</p><br><br><p><strong>摘要：</strong> 目前大多数评价集中在合成数据上，忽略了真实场景下的指令执行能力。为此，我们推出了RealInstruct，旨在评估LLM在真实用户查询中的多约束指令遵循能力。研究表明，即便是最新的GPT-4模型，也未能满足超过21%的指令约束，揭示了当前技术的局限性。为缩小开放源代码模型和专有模型之间的性能差距，我们提出了Decompose, Critique and Refine（DeCRIM）自我修正流程，该流程通过分解原始指令、利用Critic模型进行批评，帮助LLM更好地遵循约束。结果显示，DeCRIM使Mistral在RealInstruct上的表现提高了7.3%，在IFEval上提高了8.0%。同时，我们也证明了通过强反馈，配合DeCRIM的开源LLM能够在这两个基准测试中超越GPT-4。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.06458 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究表明LLM在遵循多重约束指令时存在不足，提出DeCRIM改进方案以提高效果。</p><br /><br /><p><strong>摘要：</strong> 目前大多数评价集中在合成数据上，忽略了真实场景下的指令执行能力。为此，我们推出了RealInstruct，旨在评估LLM在真实用户查询中的多约束指令遵循能力。研究表明，即便是最新的GPT-4模型，也未能满足超过21%的指令约束，揭示了当前技术的局限性。为缩小开放源代码模型和专有模型之间的性能差距，我们提出了Decompose, Critique and Refine（DeCRIM）自我修正流程，该流程通过分解原始指令、利用Critic模型进行批评，帮助LLM更好地遵循约束。结果显示，DeCRIM使Mistral在RealInstruct上的表现提高了7.3%，在IFEval上提高了8.0%。同时，我们也证明了通过强反馈，配合DeCRIM的开源LLM能够在这两个基准测试中超越GPT-4。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.06458" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Thu, 10 Oct 2024 12:39:26 GMT</pubDate>
-<pubDate>Thu, 10 Oct 2024 12:39:26 GMT</pubDate>
 </item>
-
 <item>
 <title>Does Spatial Cognition Emerge in Frontier Models?</title>
 <link>https://arxiv.org/abs/2410.06468</link>
