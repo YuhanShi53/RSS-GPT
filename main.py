@@ -335,7 +335,7 @@ def output(sec, language):
                         entry.summary = None
                         with open(log_file, 'a') as f:
                             f.write("Summarization failed, append the original article\n")
-                            f.write(f"error: {e}\n")
+                            f.write(f"error: {e}. Line: {e.__traceback__.tb_lineno}.\n")
                 else:
                     try:
                         gpt_response = gpt_summary(cleaned_article, image_urls, model="gpt-4o-mini", language=LANGUAGE)
@@ -353,7 +353,7 @@ def output(sec, language):
                             entry.summary = None
                             with open(log_file, 'a') as f:
                                 f.write("Summarization failed, append the original article\n")
-                                f.write(f"error: {e}\n")
+                                f.write(f"error: {e}. Line: {e.__traceback__.tb_lineno}.\n")
 
             if gpt_response.get("title", ""):
                 entry.title = gpt_response["title"]
