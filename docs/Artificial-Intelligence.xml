@@ -4,16 +4,14 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+
 <item>
 <title>Data Advisor: Dynamic Data Curation for Safety Alignment of Large Language Models</title>
 <link>https://arxiv.org/abs/2410.05269</link>
 <guid>https://arxiv.org/abs/2410.05269</guid>
 <content:encoded><![CDATA[
-
-  Data is a crucial element in large language model (LLM) alignment. Recent studies have explored using LLMs for efficient data collection. However, LLM-generated data often suffers from quality issues, with underrepresented or absent aspects and low-quality datapoints. To address these problems, we propose Data Advisor, an enhanced LLM-based method for generating data that takes into account the characteristics of the desired dataset. Starting from a set of pre-defined principles in hand, Data Advisor monitors the status of the generated data, identifies weaknesses in the current dataset, and advises the next iteration of data generation accordingly. Data Advisor can be easily integrated into existing data generation methods to enhance data quality and coverage. Experiments on safety alignment of three representative LLMs (i.e., Mistral, Llama2, and Falcon) demonstrate the effectiveness of Data Advisor in enhancing model safety against various fine-grained safety issues without sacrificing model utility.
-
+Data is a crucial element in large language model (LLM) alignment. Recent studies have explored using LLMs for efficient data collection. However, LLM-generated data often suffers from quality issues, with underrepresented or absent aspects and low-quality datapoints. To address these problems, we propose Data Advisor, an enhanced LLM-based method for generating data that takes into account the characteristics of the desired dataset. Starting from a set of pre-defined principles in hand, Data Advisor monitors the status of the generated data, identifies weaknesses in the current dataset, and advises the next iteration of data generation accordingly. Data Advisor can be easily integrated into existing data generation methods to enhance data quality and coverage. Experiments on safety alignment of three representative LLMs (i.e., Mistral, Llama2, and Falcon) demonstrate the effectiveness of Data Advisor in enhancing model safety against various fine-grained safety issues without sacrificing model utility.
 ]]></content:encoded>
-<pubDate>Fri, 11 Oct 2024 19:05:54 GMT</pubDate>
 <pubDate>Fri, 11 Oct 2024 19:05:54 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +19,8 @@
 <link>https://arxiv.org/abs/2410.07484</link>
 <guid>https://arxiv.org/abs/2410.07484</guid>
 <content:encoded><![CDATA[
-
-  Can large language models (LLMs) directly serve as powerful world models for model-based agents? While the gaps between the prior knowledge of LLMs and the specified environment's dynamics do exist, our study reveals that the gaps can be bridged by aligning an LLM with its deployed environment and such "world alignment" can be efficiently achieved by rule learning on LLMs. Given the rich prior knowledge of LLMs, only a few additional rules suffice to align LLM predictions with the specified environment dynamics. To this end, we propose a neurosymbolic approach to learn these rules gradient-free through LLMs, by inducing, updating, and pruning rules based on comparisons of agent-explored trajectories and world model predictions. The resulting world model is composed of the LLM and the learned rules. Our embodied LLM agent "WALL-E" is built upon model-predictive control (MPC). By optimizing look-ahead actions based on the precise world model, MPC significantly improves exploration and learning efficiency. Compared to existing LLM agents, WALL-E's reasoning only requires a few principal rules rather than verbose buffered trajectories being included in the LLM input. On open-world challenges in Minecraft and ALFWorld, WALL-E achieves higher success rates than existing methods, with lower costs on replanning time and the number of tokens used for reasoning. In Minecraft, WALL-E exceeds baselines by 15-30% in success rate while costing 8-20 fewer replanning rounds and only 60-80% of tokens. In ALFWorld, its success rate surges to a new record high of 95% only after 6 iterations.
-
+Can large language models (LLMs) directly serve as powerful world models for model-based agents? While the gaps between the prior knowledge of LLMs and the specified environment's dynamics do exist, our study reveals that the gaps can be bridged by aligning an LLM with its deployed environment and such "world alignment" can be efficiently achieved by rule learning on LLMs. Given the rich prior knowledge of LLMs, only a few additional rules suffice to align LLM predictions with the specified environment dynamics. To this end, we propose a neurosymbolic approach to learn these rules gradient-free through LLMs, by inducing, updating, and pruning rules based on comparisons of agent-explored trajectories and world model predictions. The resulting world model is composed of the LLM and the learned rules. Our embodied LLM agent "WALL-E" is built upon model-predictive control (MPC). By optimizing look-ahead actions based on the precise world model, MPC significantly improves exploration and learning efficiency. Compared to existing LLM agents, WALL-E's reasoning only requires a few principal rules rather than verbose buffered trajectories being included in the LLM input. On open-world challenges in Minecraft and ALFWorld, WALL-E achieves higher success rates than existing methods, with lower costs on replanning time and the number of tokens used for reasoning. In Minecraft, WALL-E exceeds baselines by 15-30% in success rate while costing 8-20 fewer replanning rounds and only 60-80% of tokens. In ALFWorld, its success rate surges to a new record high of 95% only after 6 iterations.
 ]]></content:encoded>
-<pubDate>Fri, 11 Oct 2024 17:14:49 GMT</pubDate>
 <pubDate>Fri, 11 Oct 2024 17:14:49 GMT</pubDate>
 </item>
 <item>
@@ -33,14 +28,10 @@
 <link>https://arxiv.org/abs/2410.05629</link>
 <guid>https://arxiv.org/abs/2410.05629</guid>
 <content:encoded><![CDATA[
-
-  Large language models (LLMs) have shown remarkable in-context learning (ICL) capabilities on textual data. We explore whether these capabilities can be extended to continuous vectors from diverse domains, obtained from black-box pretrained encoders. By aligning input data with an LLM's embedding space through lightweight projectors, we observe that LLMs can effectively process and learn from these projected vectors, which we term Vector-ICL. In particular, we find that pretraining projectors with general language modeling objectives enables Vector-ICL, while task-specific finetuning further enhances performance. In our experiments across various tasks and modalities, including text reconstruction, numerical function regression, text classification, summarization, molecule captioning, time-series classification, graph classification, and fMRI decoding, Vector-ICL often surpasses both few-shot ICL and domain-specific model or tuning. We further conduct analyses and case studies, indicating the potential of LLMs to process vector representations beyond traditional token-based paradigms.
-
+Large language models (LLMs) have shown remarkable in-context learning (ICL) capabilities on textual data. We explore whether these capabilities can be extended to continuous vectors from diverse domains, obtained from black-box pretrained encoders. By aligning input data with an LLM's embedding space through lightweight projectors, we observe that LLMs can effectively process and learn from these projected vectors, which we term Vector-ICL. In particular, we find that pretraining projectors with general language modeling objectives enables Vector-ICL, while task-specific finetuning further enhances performance. In our experiments across various tasks and modalities, including text reconstruction, numerical function regression, text classification, summarization, molecule captioning, time-series classification, graph classification, and fMRI decoding, Vector-ICL often surpasses both few-shot ICL and domain-specific model or tuning. We further conduct analyses and case studies, indicating the potential of LLMs to process vector representations beyond traditional token-based paradigms.
 ]]></content:encoded>
 <pubDate>Fri, 11 Oct 2024 16:04:02 GMT</pubDate>
-<pubDate>Fri, 11 Oct 2024 16:04:02 GMT</pubDate>
 </item>
-
 <item>
 <title>Zebra: In-Context and Generative Pretraining for Solving Parametric PDEs</title>
 <link>https://arxiv.org/abs/2410.03437</link>
