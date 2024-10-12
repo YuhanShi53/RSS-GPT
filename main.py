@@ -221,7 +221,7 @@ def gpt_summary(query, image_urls, model, language):
         max_tokens=500,
     )
 
-    match = re.search(r'```(json)?\n(.*?)```', completion.choices[0].message.content, re.DOTALL)
+    match = re.search(r'```json\n(.*?)```', completion.choices[0].message.content, re.DOTALL)
     json_str = match.group(1).strip()
     response = json.loads(json_str)
 
