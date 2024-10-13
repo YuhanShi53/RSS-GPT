@@ -1,0 +1,321 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Huggingface Daily Papers</title>
+<link>https://huggingface.co/papers</link>
+
+<item>
+<title>利用加速偏好优化加快人类反馈下的强化学习</title>
+<link>https://arxiv.org/abs/2410.06293</link>
+<guid>https://arxiv.org/abs/2410.06293</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出了一种加速偏好优化框架，结合动量技术加速大语言模型的对齐。</p><br><br><p><strong>摘要：</strong> 强化学习中的人类反馈（RLHF）正在成为对齐大型语言模型（LLM）的重要工具。直接偏好优化（DPO）是一种流行的方法，它将RLHF视为一个政策优化问题，而不显式估计奖励函数。此方法克服了两步法所面临的稳定性和效率问题，并展示了可以通过动量技术加速RLHF的潜力。本文首次表明，迭代偏好优化方法可以视为一种近端点方法。基于此观察，提出了一种通用的加速偏好优化（APO）框架，统一了许多现有的偏好优化算法，并采用Nesterov动量技术加速LLM的对齐过程。理论上，APO能够实现比标准迭代偏好优化方法（包括DPO和自我博弈偏好优化（SPPO））更快的收敛速度。实证结果显示，APO在AlpacaEval 2.0基准上相较于DPO、迭代DPO及其他强基线表现出更强的优越性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.06293 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 11 Oct 2024 23:06:15 GMT</pubDate>
+<pubDate>Fri, 11 Oct 2024 23:06:15 GMT</pubDate>
+</item>
+<item>
+<title>Data Advisor：提升数据生成质量的增强LLM方法</title>
+<link>https://arxiv.org/abs/2410.05269</link>
+<guid>https://arxiv.org/abs/2410.05269</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出Data Advisor，优化LLM生成数据，提高数据质量与覆盖率，特别针对安全对齐问题。</p><br><br><p><strong>摘要：</strong> 在大型语言模型 (LLM) 对齐中，数据是至关重要的元素。尽管近期研究探讨了使用LLM进行高效数据收集，但LLM生成的数据常常存在质量问题，如缺乏代表性、某些方面的缺失以及低质量数据点。为了解决这些问题，我们提出了Data Advisor，这是一种增强的LLM方法，用于生成符合特定特征的数据集。Data Advisor基于一组预定义原则，监控生成数据的状态，识别当前数据集的弱点，并据此建议下一轮数据生成的策略。Data Advisor可轻松集成到现有的数据生成方法中，以提升数据的质量和覆盖率。在对三种代表性LLM（即Mistral、Llama2和Falcon）进行的安全对齐实验中，Data Advisor显示了提升模型安全性与应对各种细粒度安全问题的有效性，同时不牺牲模型的实用性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.05269 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 11 Oct 2024 19:05:54 GMT</pubDate>
+<pubDate>Fri, 11 Oct 2024 19:05:54 GMT</pubDate>
+</item>
+<item>
+<title>基于神经符号学习的LLM世界模型对齐与探索</title>
+<link>https://arxiv.org/abs/2410.07484</link>
+<guid>https://arxiv.org/abs/2410.07484</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出WALL-E代理，通过规则学习对LLM进行环境对齐，显著提升在Minecraft和ALFWorld等开放世界中的探索效率与成功率。</p><br><br><p><strong>摘要：</strong> 本文探讨了大语言模型（LLMs）作为模型基础代理的世界模型的潜力，尽管存在LLMs的先验知识与特定环境动态之间的差距，我们的研究表明，这些差距可以通过对LLM与其部署环境进行对齐来弥补。这种“世界对齐”可以通过在LLMs上进行规则学习高效实现。由于LLMs具有丰富的先验知识，通常只需少量额外规则即可使LLM预测与实定环境动态一致。为此，本文提出了一种神经符号方法，通过比较代理探索的轨迹与世界模型预测，诱导、更新和修剪规则，从而以无梯度的方式学习这些规则。最终的世界模型由LLM及学习的规则组成。我们的具身LLM代理“WALL-E”基于模型预测控制（MPC）构建，通过基于精确世界模型优化前瞻性动作，MPC显著提高了探索和学习效率。与现有LLM代理相比，WALL-E的推理只需少量主规则，而不是将冗长的缓冲轨迹纳入LLM输入。在Minecraft和ALFWorld的开放世界挑战中，WALL-E相比现有方法有更高的成功率，且重规划时间和使用的tokens更少。在Minecraft中，WALL-E的成功率超过基线15-30%，重规划轮次减少8-20轮，使用的tokens仅为60-80%。在ALFWorld中，其成功率在仅6次迭代后飙升至95%的新纪录。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.07484 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 11 Oct 2024 17:14:49 GMT</pubDate>
+<pubDate>Fri, 11 Oct 2024 17:14:49 GMT</pubDate>
+</item>
+<item>
+<title>向量-内联学习：扩展大型语言模型的能力</title>
+<link>https://arxiv.org/abs/2410.05629</link>
+<guid>https://arxiv.org/abs/2410.05629</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文探讨大型语言模型如何通过轻量级投影器处理连续向量，实现向量-内联学习能力。</p><br><br><p><strong>摘要：</strong> 大型语言模型（LLMs）在文本数据的上下文学习（ICL）能力方面表现出色。本文探索了这些能力是否可以扩展到来自不同领域的连续向量，这些向量是通过黑箱预训练编码器获得的。我们通过轻量级投影器将输入数据与LLM的嵌入空间对齐，发现LLMs能够有效地处理和学习这些投影向量，称之为向量-内联学习（Vector-ICL）。尤其值得注意的是，使用通用语言建模目标对投影器进行预训练可以实现Vector-ICL，而任务特定的微调则进一步提升了性能。我们在各种任务和模态上进行了实验，包括文本重建、数值函数回归、文本分类、摘要生成、分子描述、时间序列分类、图分类和fMRI解码。结果表明，Vector-ICL在许多情况下超越了少量样本的ICL和领域特定模型或微调。我们还进行了分析和案例研究，表明LLMs在处理向量表示方面的潜力超越了传统的基于标记的范式。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.05629 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 11 Oct 2024 16:04:02 GMT</pubDate>
+<pubDate>Fri, 11 Oct 2024 16:04:02 GMT</pubDate>
+</item>
+<item>
+<title>Zebra：一种新型生成自回归变换器用于解决时间依赖性参数偏微分方程</title>
+<link>https://arxiv.org/abs/2410.03437</link>
+<guid>https://arxiv.org/abs/2410.03437</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Zebra 是一款不需梯度适应的新型变换器，能够灵活应对各种参数 PDE，展示卓越的性能。</p><br><br><p><strong>摘要：</strong> 解决时间依赖性参数偏微分方程（PDEs）是一项具有挑战性的任务，因为模型必须适应系数、强迫项和边界条件等参数的变化。数据驱动的神经网络求解器通常依赖于从PDE参数分布中采样的数据进行训练，以期在新的实例上实现泛化，或依靠基于梯度的适应和元学习，隐式编码来自观察的数据动态。然而，这通常会增加推理复杂性。受到大型语言模型（LLMs）在上下文学习能力的启发，我们提出了Zebra，一种新型生成自回归变换器，旨在解决参数PDEs，而无需在推理时进行梯度适应。Zebra通过在预训练和推理过程中利用上下文信息，能够动态适应新任务，条件依赖于包含上下文轨迹或先前状态的输入序列。这种方法使得Zebra能够灵活处理任意大小的上下文输入，并通过采样多个解轨迹支持不确定性量化。我们在多种挑战性的PDE场景中评估了Zebra，展示了其适应性、鲁棒性以及相较于现有方法的优越性能。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.03437 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 11 Oct 2024 15:11:34 GMT</pubDate>
+<pubDate>Fri, 11 Oct 2024 15:11:34 GMT</pubDate>
+</item>
+<item>
+<title>DART：一种新型的非马尔可夫扩散模型</title>
+<link>https://arxiv.org/abs/2410.08159</link>
+<guid>https://arxiv.org/abs/2410.08159</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>DART提出了一种统一自回归与扩散框架的图像生成模型，提升了训练与推理效率。</p><br><br><p><strong>摘要：</strong> 扩散模型已成为视觉生成的主流方法，但其基于马尔可夫过程的特性限制了模型充分利用生成轨迹的能力，导致在训练和推理时效率低下。为此，本文提出了一种新的模型DART，基于变换器架构，将自回归（AR）和扩散过程结合在一个非马尔可夫的框架内。DART通过空间和光谱的方式迭代去噪图像块，采用与标准语言模型相同的架构。DART不依赖于图像量化，增强了图像建模的有效性，保持了灵活性。同时，DART能够在一个统一模型中无缝地训练文本和图像数据。我们的实验结果表明，DART在类别条件和文本到图像生成任务上表现出色，提供了一种可扩展、高效的替代方案。通过这一统一框架，DART为高质量图像合成设立了新的基准。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.08159 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 11 Oct 2024 13:56:02 GMT</pubDate>
+<pubDate>Fri, 11 Oct 2024 13:56:02 GMT</pubDate>
+</item>
+<item>
+<title>大型语言模型的任务超叠现象及其内在机制研究</title>
+<link>https://arxiv.org/abs/2410.05603</link>
+<guid>https://arxiv.org/abs/2410.05603</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文探讨大型语言模型在单次推理过程中同时执行多个不同任务的能力，称为任务超叠现象。</p><br><br><p><strong>摘要：</strong> 本文研究了大型语言模型（LLMs）在上下文学习（ICL）方面的一个惊人现象：模型能够在单次推理调用中同时执行多个计算上独立的ICL任务，这一能力被称为‘任务超叠’。我们提供了针对不同LLM家族和规模的实证证据，表明即使在模型训练时仅学习一个任务，也能出现这一现象。此外，我们提供了理论解释，认为这一能力在变换器的表达能力范围内。我们还探讨了LLMs如何在超叠过程中内部组合任务向量的机制。研究表明，较大的模型能够并行解决更多ICL任务，并更好地校准其输出分布。这些发现为LLMs潜在能力提供了新的见解，进一步支持了‘LLMs作为模拟器的超叠’的观点，并引发了关于实现同时任务执行的机制的思考。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.05603 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 11 Oct 2024 13:27:35 GMT</pubDate>
+<pubDate>Fri, 11 Oct 2024 13:27:35 GMT</pubDate>
+</item>
+<item>
+<title>自动化基准测试中的作弊现象及其影响</title>
+<link>https://arxiv.org/abs/2410.07137</link>
+<guid>https://arxiv.org/abs/2410.07137</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究显示，常量输出模型可在自动化基准测试中作弊，表现异常优异，呼吁开发反作弊机制。</p><br><br><p><strong>摘要：</strong> 本文探讨了在自动化大语言模型（LLM）基准测试中存在的作弊问题。研究表明，即使是一个始终输出固定响应（与输入无关）的“空模型”，也能在多个基准测试上取得高分，如在 AlpacaEval 2.0 上获得 86.5% 的 LC 胜率，在 Arena-Hard-Auto 上获得 83.0 分，而在 MT-Bench 上获得 9.55 分。这些作弊输出展示出了可转移性，因为假设测试指令是私有且不可访问的。尽管本研究主要作为概念验证，但某些对手可以利用 LLM 生成更不易察觉的作弊回复，从而从高胜率和推广影响中不道德地获利。因此，本文呼吁开发可靠的反作弊机制，以确保自动化基准测试的可信度及其在评估语言模型时的有效性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.07137 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 11 Oct 2024 12:28:45 GMT</pubDate>
+<pubDate>Fri, 11 Oct 2024 12:28:45 GMT</pubDate>
+</item>
+<item>
+<title>LPZero：自动设计零成本代理的框架</title>
+<link>https://arxiv.org/abs/2410.04808</link>
+<guid>https://arxiv.org/abs/2410.04808</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>LPZero是一个框架，能够自动设计零成本（ZC）代理，提升NLP任务中的性能和排名一致性。</p><br><br><p><strong>摘要：</strong> 在神经架构搜索（NAS）面临的大量计算开销的背景下，零成本（ZC）代理作为一种有前途的方法逐渐受到关注。然而，现有的ZC代理往往依赖于专家知识，且存在显著的试错成本，尤其在自然语言处理（NLP）任务中，许多ZC代理无法超越简单基线表现。为了解决这些问题，我们提出了一个新颖的框架LPZero，这是首个能够为各种任务自动设计ZC代理的系统，且其排名一致性优于人工设计的代理。具体而言，我们将ZC代理建模为符号方程，并整合了一个统一的代理搜索空间，该空间涵盖了由预定义的数学符号构成的现有ZC代理。LPZero利用遗传编程进行启发式搜索，以找到最佳的符号组合。同时，我们提出了一种基于规则的剪枝策略（RPS），该策略可以预先消除不太有前景的代理，从而降低代理降低性能的风险。通过对FlexiBERT、GPT-2和LLaMA-7B的广泛实验，LPZero在下游任务中的排名能力和性能均优于现有方法。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.04808 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 11 Oct 2024 12:09:02 GMT</pubDate>
+<pubDate>Fri, 11 Oct 2024 12:09:02 GMT</pubDate>
+</item>
+<item>
+<title>GLOV：利用大语言模型优化视觉语言模型的隐式优化方法</title>
+<link>https://arxiv.org/abs/2410.06154</link>
+<guid>https://arxiv.org/abs/2410.06154</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出GLOV方法，利用大语言模型作为隐式优化器提升视觉任务性能。</p><br><br><p><strong>摘要：</strong> 在这项研究中，我们提出了一种新颖的方法（GLOV），使大语言模型（LLMs）能够作为隐式优化器，提升视觉语言模型（VLMs）在下游视觉任务中的表现。通过对下游任务描述的元提示，GLOV查询出适合的VLM提示（如使用CLIP进行零-shot分类），并根据适应性函数获得的纯度度量对这些提示进行排名。在每个优化步骤中，排名后的提示及其准确性作为上下文示例被送入LLM，帮助LLM了解下游VLM所偏爱的文本提示类型。此外，我们在每个优化步骤中明确引导LLM生成过程，通过将来自上一步中正负解的嵌入差异向量添加至网络的中间层，从而在下一步的生成过程中引导LLM朝向下游VLM所偏好的语言类型。这一策略显著提升了下游视觉任务的表现。我们在16个多样化的数据集上全面评估了GLOV，使用两类VLM（即双编码器模型如CLIP和编码器-解码器模型如LLaVa），结果显示，所发现的解决方案能在识别性能上提升高达15.0%和57.5%（平均分别提升3.8%和21.6%）。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.06154 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 11 Oct 2024 07:34:00 GMT</pubDate>
+<pubDate>Fri, 11 Oct 2024 07:34:00 GMT</pubDate>
+</item>
+<item>
+<title>WorFBench：一个用于评估工作流生成能力的统一基准</title>
+<link>https://arxiv.org/abs/2410.07869</link>
+<guid>https://arxiv.org/abs/2410.07869</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出了WorFBench工作流生成基准及WorFEval评估协议，揭示LLM在序列和图规划间的能力差异。</p><br><br><p><strong>摘要：</strong> 大型语言模型（LLMs）在解决推理和规划任务方面取得了显著进展，其中将复杂问题分解为可执行工作流是关键步骤。现有的工作流评估框架存在局限，不能全面反映LLM的能力。为此，我们引入了WorFBench，这是一种统一的工作流生成基准，涵盖多样化场景和复杂图形工作流结构。同时，我们提出了WorFEval，一种系统的评估协议，利用子序列和子图匹配算法来准确量化LLM代理的工作流生成能力。通过对不同类型的LLMs进行综合评估，我们发现LLM代理在序列规划能力和图规划能力之间存在显著差距，即使是GPT-4，二者之间的差距约为15%。此外，我们训练了两个开源模型，并评估了它们在持出任务上的泛化能力。值得注意的是，生成的工作流能够提高下游任务的表现，使得推理过程所需时间减少，从而达到更优秀的性能。代码和数据集将发布于https://github.com/zjunlp/WorFBench。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.07869 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 11 Oct 2024 06:48:20 GMT</pubDate>
+<pubDate>Fri, 11 Oct 2024 06:48:20 GMT</pubDate>
+</item>
+<item>
+<title>基于运动先验的变形3D高斯点云重建框架MotionGS</title>
+<link>https://arxiv.org/abs/2410.07707</link>
+<guid>https://arxiv.org/abs/2410.07707</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本研究提出了MotionGS，一个通过运动先验引导变形的3D高斯点云重建框架，显著提升动态场景重建效果。</p><br><br><p><strong>摘要：</strong> 动态场景重建在3D视觉领域一直是一个长期挑战。最近，3D高斯点云技术的兴起为这一问题提供了新的视角。尽管后续工作迅速将静态3D高斯扩展到动态场景，但往往缺乏对物体运动的明确约束，导致优化困难和性能下降。为了解决这些问题，本文提出了一个新颖的变形3D高斯点云框架——MotionGS，旨在探索明确的运动先验以引导3D高斯的变形。具体而言，我们首先引入了一种光流解耦模块，该模块将光流解耦为相机流和运动流，分别对应于相机移动和物体运动。然后，运动流可以有效约束3D高斯的变形，从而模拟动态物体的运动。此外，还提出了一种相机姿态优化模块，以交替优化3D高斯和相机姿态，减轻不准确相机姿态的影响。在单目动态场景中的广泛实验验证了MotionGS在定性和定量结果上都超越了最新的技术。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.07707 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 11 Oct 2024 06:17:59 GMT</pubDate>
+<pubDate>Fri, 11 Oct 2024 06:17:59 GMT</pubDate>
+</item>
+<item>
+<title>基于数学推理和代码生成的数学继续预训练方法</title>
+<link>https://arxiv.org/abs/2410.08196</link>
+<guid>https://arxiv.org/abs/2410.08196</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出了一种新的数学继续预训练方法，通过生成代码和推理步骤提升语言模型的数学能力。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种新的数学继续预训练方法，通过生成数学代码及其相应的推理步骤，提升大型语言模型的数学推理能力。最初，我们构建了一个高质量的数学继续预训练数据集，融合了数学相关的网络数据、使用数学包的代码、数学教科书以及合成数据。接着，我们通过提取LaTeX表达式、这些表达式所需的条件及其结果，生成推理步骤。基于提取的信息，我们生成了相应的代码，以准确捕捉数学推理过程。在每个推理步骤后附加生成的代码，形成了自然语言推理步骤与其对应代码的配对数据。将这些数据与原始数据集结合，形成了一个包含19.2B标记的高性能数学预训练语料库，命名为MathCode-Pile。使用该语料库训练几种流行的基础模型显著提升了它们的数学能力，最终形成了MathCoder2模型系列。为了确保透明性和易于重现，我们将所有数据处理和训练代码开源，代码可在https://github.com/mathllm/MathCoder2获取。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.08196 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 11 Oct 2024 04:16:58 GMT</pubDate>
+<pubDate>Fri, 11 Oct 2024 04:16:58 GMT</pubDate>
+</item>
+<item>
+<title>SFTMix: 基于Mixup的指令调优方法研究</title>
+<link>https://arxiv.org/abs/2410.05248</link>
+<guid>https://arxiv.org/abs/2410.05248</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本研究提出SFTMix，通过Mixup正则化提高指令调优性能，降低对高质量数据集的依赖。</p><br><br><p><strong>摘要：</strong> 在大型语言模型（LLMs）交互驱动任务的指令调优阶段，通常通过下一个标记预测（NTP）损失对指令-响应对进行训练。以往旨在提升指令调优表现的研究往往强调需要更高质量的监督微调（SFT）数据集，这通常伴随高昂的数据过滤成本或人工标注的劳动力。然而，这些方法未能充分利用数据集的内在特性，导致高计算和劳动成本，限制了可扩展性和性能提升。本文提出了SFTMix，一种新颖的策略，通过Mixup正则化提升指令调优性能，而无需精心策划的数据集。我们观察到LLMs在语义表示空间中的信心不均匀，认为不同信心水平的示例在指令调优过程中应发挥不同角色。在此基础上，SFTMix利用训练动态识别不同信心水平的示例，减轻对高信心示例的过拟合，同时增强对低信心示例的学习信号。这一方法显著提升了在多种指令跟随和医疗领域特定SFT任务中的表现，证明了SFTMix对不同LLM家族的适应性以及对任何规模数据集的可扩展性。全面的消融研究进一步验证了SFTMix设计选择的稳健性，强调其在语言处理应用中提升性能的通用性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.05248 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 11 Oct 2024 03:19:15 GMT</pubDate>
+<pubDate>Fri, 11 Oct 2024 03:19:15 GMT</pubDate>
+</item>
+<item>
+<title>Agent S: 基于多模态大语言模型的自主交互框架</title>
+<link>https://arxiv.org/abs/2410.08164</link>
+<guid>https://arxiv.org/abs/2410.08164</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Agent S 是一种开放的自主代理框架，可通过GUI自动化复杂任务，实现人机交互的变革。</p><br><br><p><strong>摘要：</strong> 本文介绍了Agent S，一个开放的自主代理框架，旨在通过图形用户界面与计算机进行自主交互，从而实现人机交互的变革，自动化复杂和多步骤的任务。Agent S解决了自动化计算机任务的三个主要挑战：获取领域特定知识、规划长期任务及处理动态非均匀界面。为此，Agent S 引入了经验增强层次规划，能够在多个层次上从外部知识搜索和内部经验检索中学习，从而促进高效的任务规划和子任务执行。此外，Agent S 采用了代理-计算机接口（ACI），更好地充分发挥基于多模态大语言模型（MLLMs）的GUI代理的推理和控制能力。根据OSWorld基准的评估结果，Agent S 在成功率上超过了基线水平9.37%，实现了83.6%的相对改进，并且取得了新的最先进成果。全面分析展示了各个组件的有效性，并为未来的改进提供了洞见。此外，Agent S 在新发布的WindowsAgentArena基准上展现出良好的广泛泛化能力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.08164 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 11 Oct 2024 03:06:26 GMT</pubDate>
+<pubDate>Fri, 11 Oct 2024 03:06:26 GMT</pubDate>
+</item>
+<item>
+<title>大语言与视觉模型（LLVMs）的感知能力研究</title>
+<link>https://arxiv.org/abs/2410.04751</link>
+<guid>https://arxiv.org/abs/2410.04751</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文系统探讨了LLVMs在感知任务中的表现及其内在机制。</p><br><br><p><strong>摘要：</strong> 本文系统地研究了大语言与视觉模型（LLVMs），特别是它们在基础感知任务（如MMVP）上的低表现。通过对几种LLVMs家族（如LLaVA）的10个评估基准进行评估，我们发现多个有趣的特性：1）即便视觉块序列随机排列，它们仍以全局方式处理图像；2）在解决数学问题时，模型并不总是需要详细的数字信息；3）交叉模态的对齐在复杂推理任务中存在过拟合现象，从而导致模型失去部分视觉编码器的原始感知能力；4）模型较低层次的表示空间（低于25%）在性能和增强视觉理解中起着关键作用。基于这些观察，本文提出了未来改进LLVMs及构建更具挑战性评估基准的潜在方向。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.04751 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 11 Oct 2024 03:01:45 GMT</pubDate>
+<pubDate>Fri, 11 Oct 2024 03:01:45 GMT</pubDate>
+</item>
+<item>
+<title>AlphaLLM-CPL：一种基于MCTS行为蒸馏的自我改进框架</title>
+<link>https://arxiv.org/abs/2410.06508</link>
+<guid>https://arxiv.org/abs/2410.06508</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出AlphaLLM-CPL框架，利用MCTS生成的轨迹对LLM进行自我改进，显著提升推理能力。</p><br><br><p><strong>摘要：</strong> 在本文中，我们提出了一种新的框架，AlphaLLM-CPL，用于通过蒙特卡洛树搜索（MCTS）行为蒸馏来提升大语言模型（LLM）的推理能力。尽管现有的蒸馏方法利用MCTS生成的轨迹，但仍然未能充分利用这些丰富的信息，限制了LLM推理性能的提升。AlphaLLM-CPL引入了两个关键创新：首先，它从共享同一父节点的子节点构造逐步轨迹对，以提供更有效的逐步信息用于MCTS行为蒸馏。其次，AlphaLLM-CPL采用了课程偏好学习，在每个离线训练周期中动态调整轨迹对的训练顺序，优先考虑关键学习步骤，从而减轻过拟合。通过在数学推理任务上的实验结果表明，AlphaLLM-CPL显著优于以往的MCTS行为蒸馏方法，极大地提升了LLM的推理能力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.06508 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 11 Oct 2024 02:06:42 GMT</pubDate>
+<pubDate>Fri, 11 Oct 2024 02:06:42 GMT</pubDate>
+</item>
+<item>
+<title>自回归视频扩散模型的进展及应用</title>
+<link>https://arxiv.org/abs/2410.08151</link>
+<guid>https://arxiv.org/abs/2410.08151</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出扩展现有视频扩散模型的方法，实现长达1分钟的视频生成。</p><br><br><p><strong>摘要：</strong> 当前最前沿的视频扩散模型在生成高质量视频方面表现出色。然而，由于计算限制，这些模型通常只能生成时长约为10秒（240帧）的视频。本文展示了如何在不改变现有架构的情况下，将这些模型自然扩展为自回归视频扩散模型。我们的关键思想是为潜在帧分配逐渐增加的噪声水平，而不是使用单一的噪声水平，从而允许潜在帧之间的细粒度条件及注意窗口之间的大重叠。这种渐进的视频去噪方法使我们的模型在自回归生成视频帧时，能够避免质量下降或突发场景变化。我们在长视频生成任务上取得了最先进的结果，生成了长达1分钟（1440帧、24帧每秒）的视频。本文视频可在https://desaixie.github.io/pa-vdm/上查看。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.08151 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 11 Oct 2024 02:02:23 GMT</pubDate>
+<pubDate>Fri, 11 Oct 2024 02:02:23 GMT</pubDate>
+</item>
+<item>
+<title>大卷积核在现代卷积神经网络设计中的应用</title>
+<link>https://arxiv.org/abs/2410.08049</link>
+<guid>https://arxiv.org/abs/2410.08049</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出大卷积核作为设计现代卷积神经网络（ConvNets）的新范式，并引入UniRepLKNet架构。</p><br><br><p><strong>摘要：</strong> 本文提出了大卷积核作为现代卷积神经网络（ConvNets）设计的新范式。研究表明，使用少量大卷积核，而非堆叠多个小卷积核，可能是一种更优的设计策略。我们提出了一套专门针对大卷积核ConvNets的架构设计指南，以优化其效率和性能。UniRepLKNet架构的设计原则特别强调大卷积核ConvNets在无需深层堆叠的情况下捕捉广泛空间信息的能力。实验结果表明，该模型在ImageNet上达到了88.0%的准确率，ADE20K数据集上获得了55.6%的mIoU，以及在COCO检测上取得了56.4%的AP，表现出显著的可扩展性及在多种场景下的优异性能，包括时间序列预测、音频、点云及视频识别。与视觉Transformer相比，大卷积核ConvNets具有更大的有效感受野和更高的形状偏置，克服了小卷积核CNN的纹理偏置。这些结果展示了大卷积核ConvNets的通用建模能力。所有代码和模型已在https://github.com/AILab-CVC/UniRepLKNet上公开，促进社区的进一步研究与发展。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.08049 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 11 Oct 2024 01:49:57 GMT</pubDate>
+<pubDate>Fri, 11 Oct 2024 01:49:57 GMT</pubDate>
+</item>
+<item>
+<title>简化和扩展扩散模型 rectification 的新策略</title>
+<link>https://arxiv.org/abs/2410.07303</link>
+<guid>https://arxiv.org/abs/2410.07303</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>我们提出了 Rectified Diffusion，简化了 rectification 方法并验证其在 Stable Diffusion 上的效果。</p><br><br><p><strong>摘要：</strong> 扩散模型在视觉生成方面取得了显著进展，但由于解决生成常微分方程（ODE）的计算密集性，生成速度仍然较慢。本文提出的 Rectified Diffusion 方法，通过使用预训练的扩散模型获取噪声和样本的匹配对，简化了训练程序。我们认为，以往方法中包含的流匹配和 v 预测等组件并非必要，主要目标应是实现一阶近似 ODE 路径，而非强求路径的直线性。我们的方法不再局限于流匹配模型，而是广泛适用于各种扩散模型。经过在 Stable Diffusion v1-5 和 Stable Diffusion XL 上的验证，我们的方法不仅降低了训练成本，还提升了性能。我们的代码已开放在 GitHub 上。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.07303 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 11 Oct 2024 01:27:35 GMT</pubDate>
+<pubDate>Fri, 11 Oct 2024 01:27:35 GMT</pubDate>
+</item>
+<item>
+<title>基于偏好学习的多模态轨迹检索增强方法</title>
+<link>https://arxiv.org/abs/2410.03450</link>
+<guid>https://arxiv.org/abs/2410.03450</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出MART方法，通过偏好学习优化轨迹检索，提升机器人在未见场景中的任务成功率。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种新方法MLLM as ReTriever (MART)，旨在提升机器人执行复杂任务的能力。当前的检索方法多关注表面相似性，未充分考虑轨迹对特定任务的有效性。MART利用交互数据，通过偏好学习对大型语言模型（MLLM）进行微调，使检索过程能够更好地评估和优先选择适用于未见任务的轨迹。为进一步加强理解，文章引入Trajectory Abstraction机制，利用MLLM的摘要能力将轨迹用更少的符号表示，并保留关键身分信息，这帮助代理更好地抓住轨迹中的重要里程碑。实验结果显示，在不同环境下，MART方法显著提升了代理在未见场景中的任务成功率，表明其在多模态轨迹检索与代理行为的研究中具有重要意义。所有基准任务集和模拟器代码修改将公开发布。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.03450 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 11 Oct 2024 01:21:00 GMT</pubDate>
+<pubDate>Fri, 11 Oct 2024 01:21:00 GMT</pubDate>
+</item>
+<item>
+<title>PrefixQuant：一种高效的稀疏化量化技术用于大型语言模型的推理加速</title>
+<link>https://arxiv.org/abs/2410.05265</link>
+<guid>https://arxiv.org/abs/2410.05265</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>PrefixQuant通过离线隔离高频稀疏令牌，实现了高效的静态量化，显著提升推理速度与准确性。</p><br><br><p><strong>摘要：</strong> 量化在大型语言模型（LLM）部署中尤为重要，因为它能提高内存效率和推理速度。目前的激活量化方法主要处理通道级别的离群点，往往忽视令牌级别的离群点，因此依赖于昂贵的每令牌动态量化技术。为了解决这个问题，我们提出了PrefixQuant，一种独特的技术，能够离线识别高频离群令牌，并将其前缀存储在KV缓存中，从而防止推理时生成离群令牌，并简化量化。根据我们的知识，PrefixQuant首次实现了高效的每张量静态量化，超过了昂贵的每令牌动态量化。以W4A4KV4（4位权重、4位激活和4位KV缓存）上的Llama-3-8B为例，PrefixQuant结合每张量静态量化实现了7.43的WikiText2困惑度以及71.08%的常识推理任务平均准确率，分别比之前的动态量化方法QuaRot提升了0.98困惑度与5.98准确率。此外，使用PrefixQuant的W4A4量化模型的推理速度比FP16模型快1.60至2.81倍，相较于QuaRot模型快1.2至1.3倍。我们的代码已发布在https://github.com/ChenMnZ/PrefixQuant。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.05265 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 11 Oct 2024 01:13:37 GMT</pubDate>
+<pubDate>Fri, 11 Oct 2024 01:13:37 GMT</pubDate>
+</item>
+<item>
+<title>Optima：提升大语言模型多智能体系统通信效率与任务有效性的框架</title>
+<link>https://arxiv.org/abs/2410.08115</link>
+<guid>https://arxiv.org/abs/2410.08115</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Optima通过提高通信效率和任务有效性，解决大语言模型多智能体系统中的关键挑战。</p><br><br><p><strong>摘要：</strong> 本文介绍了Optima，一个新颖的框架，旨在解决大语言模型（LLM）基础的多智能体系统（MAS）面临的低通信效率、较差的可扩展性和缺乏有效参数更新优化方法等关键挑战。Optima通过对LLM进行训练，采用迭代的生成、排名、选择和训练模式，结合一个平衡任务性能、 tokens 效率和交流可读性的奖励函数，大幅增强了通信效率和任务有效性。我们探索了多种强化学习算法，包括监督微调（Supervised Fine-Tuning）、直接偏好优化（Direct Preference Optimization）及其混合方法，提供了它们的有效性与效率权衡的深入见解。此外，我们结合受蒙特卡洛树搜索启发的技术生成DPO数据，将对话回合视为树节点，以探索多样的互动路径。在信息不对称问答和复杂推理等常见多智能体任务上评估后，Optima相较于单智能体基线和基于Llama 3 8B的传统MAS表现出一致而显著的提升，在需要大量信息交换的任务中实现了多达2.8倍的性能提升，同时消耗的tokens少于10%。此外，Optima的效率提升为更有效利用推理计算开辟了新可能，推动了推理时间的规模法则的改进。通过解决大语言模型基础多智能体系统中的基本挑战，Optima展示了朝着可扩展、高效和有效的多智能体系统发展的潜力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.08115 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 11 Oct 2024 01:11:50 GMT</pubDate>
+<pubDate>Fri, 11 Oct 2024 01:11:50 GMT</pubDate>
+</item>
+<item>
+<title>重复训练示例在变压器模型中的效益研究</title>
+<link>https://arxiv.org/abs/2410.07041</link>
+<guid>https://arxiv.org/abs/2410.07041</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究表明，在固定训练步数下，重复训练的示例效果优于单次使用的示例。</p><br><br><p><strong>摘要：</strong> 本文研究了变压器模型在算法生成数据集上的性能表现，重点关注训练示例重复使用的问题。在处理最大公约数、模乘法和矩阵特征值这三种数学问题时，我们发现，在固定的训练步数下，使用重复的示例的小规模训练集的模型性能优于使用单次示例的大规模训练集的模型。这表明，重复训练的益处超越了数据多样性带来的优势。此外，我们还展示了两集训练的方法，即对小随机子集的重复使用与对训练集其余部分的正常采样相结合，可以加速学习并提升模型性能。这项研究在受控环境下提供了关于深度学习中泛化与记忆之间尚不清晰的相互关系的洞察。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.07041 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 11 Oct 2024 00:59:17 GMT</pubDate>
+<pubDate>Fri, 11 Oct 2024 00:59:17 GMT</pubDate>
+</item>
+<item>
+<title>基于局部对抗负例损失的视觉语言模型增强方法</title>
+<link>https://arxiv.org/abs/2410.05210</link>
+<guid>https://arxiv.org/abs/2410.05210</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本研究提出了一种新方法FSC-CLIP，通过局部硬负例损失提升视觉语言模型的组合理解能力，保持多模态任务表现。</p><br><br><p><strong>摘要：</strong> 本文提出了一种新方法——Fine-grained Selective Calibrated CLIP (FSC-CLIP)，旨在提升预训练视觉语言模型（VLMs）的组合理解能力，同时不影响零-shot多模态任务的性能。传统的微调方法通常在提高组合推理的同时降低多模态能力，其主要原因是使用全局硬负例（HN）损失，导致图像和文本的全局表示受到影响。这种全局HN损失会推送与原始文本高度相似的HN文本，从而损害模型的多模态表示。为克服这一限制，FSC-CLIP整合了局部硬负例损失和选择性校准正则化。这些创新提供了精细的负向监督，同时保持了模型的表示完整性。我们的广泛评估显示，FSC-CLIP在多项组合性和多模态任务基准上不仅达到了与最先进模型相当的组合能力，而且保持了强大的多模态能力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.05210 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 11 Oct 2024 00:47:13 GMT</pubDate>
+<pubDate>Fri, 11 Oct 2024 00:47:13 GMT</pubDate>
+</item>
+<item>
+<title>DICE：用于可控编辑的离散反演方法</title>
+<link>https://arxiv.org/abs/2410.08207</link>
+<guid>https://arxiv.org/abs/2410.08207</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>DICE是首个用于离散扩散模型的精确反演方法，支持灵活的内容编辑。</p><br><br><p><strong>摘要：</strong> 离散扩散模型在图像生成和掩蔽语言建模等任务中取得了成功，但在可控内容编辑方面存在局限性。我们提出了DICE（Discrete Inversion for Controllable Editing），这是第一个支持离散扩散模型（包括多项式扩散和掩蔽生成模型）的精确反演方法。通过在反向扩散过程中记录噪声序列和掩蔽模式，DICE实现了对离散数据的准确重建和灵活编辑，无需预定义掩蔽或注意力操作。我们在图像和文本领域展示了DICE的有效性，并在VQ-Diffusion、Paella和RoBERTa等模型上进行了评估。结果显示，DICE在提高编辑能力的同时，也保持了高数据保真度，为离散空间中的精细内容操控提供了新的机遇。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.08207 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 11 Oct 2024 00:32:24 GMT</pubDate>
+<pubDate>Fri, 11 Oct 2024 00:32:24 GMT</pubDate>
+</item>
+
+</channel>
+</rss>
