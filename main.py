@@ -110,7 +110,27 @@ def clean_html(html_content):
     for input in soup.find_all("input"):
         input.decompose()
 
-    return soup.get_text(), image_urls
+    feed_content = soup.get_text()
+
+    # 尝试多种常见的标签来抓取文章内容
+    possible_selectors = [
+        'article',            # HTML5 标准 <article> 标签
+        'div[class*="content"]',  # class 包含 "content" 的 div
+        'section',            # HTML5 标准 <section> 标签
+        'div[class*="post"]',  # class 包含 "post" 的 div
+        'div[id*="article"]',  # id 包含 "article" 的 div
+        'div[class*="entry"]'  # class 包含 "entry" 的 div
+    ]
+
+    full_content = ""
+    for selector in possible_selectors:
+        content = soup.select_one(selector)
+        if content:
+            full_content = content.get_text(separator="\n", strip=True)
+
+    articicle = f"{feed_content}<br>{full_content}"
+
+    return articicle, image_urls
 
 
 def filter_entry(entry, filter_apply, filter_type, filter_rule):
