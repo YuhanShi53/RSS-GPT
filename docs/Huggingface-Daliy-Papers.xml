@@ -5,15 +5,49 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>多智能体协作数据选择机制在大型语言模型预训练中的应用</title>
+<link>https://arxiv.org/abs/2410.08102</link>
+<guid>https://arxiv.org/abs/2410.08102</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种多智能体协作框架，以提高大型语言模型预训练的数据效率。</p><br><br><p><strong>摘要：</strong> 大型语言模型（LLMs）预训练的有效数据选择至关重要。虽然已有多种方法致力于提升数据效率，但很少有研究关注这些方法之间的固有冲突，以实现最优数据选择。为了解决这一问题，我们提出了一种新颖的多智能体协作数据选择机制。在该框架中，每种数据选择方法作为独立代理工作，设计了一个代理控制台，以动态整合所有代理在整个LLM训练过程中的信息。我们通过广泛的实证研究评估了我们的多智能体框架。实验结果表明，我们的方法显著提高了数据效率，加速了LLM训练的收敛，并在多个语言模型基准上实现了平均10.5%的性能提升，相比于最先进的方法。有了这样的机制，数据选择的冲突问题得以更好地解决，进一步推动了大型语言模型的研究和应用。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.08102 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 14 Oct 2024 04:56:36 GMT</pubDate>
+<pubDate>Mon, 14 Oct 2024 04:56:36 GMT</pubDate>
+</item>
+<item>
+<title>StructRAG：基于结构化知识增强大语言模型的推理能力</title>
+<link>https://arxiv.org/abs/2410.08815</link>
+<guid>https://arxiv.org/abs/2410.08815</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本研究提出StructRAG框架，通过结构化知识增强LLMs在知识密集任务中的推理能力。</p><br><br><p><strong>摘要：</strong> Retrieval-augmented generation (RAG) 是一种增强大型语言模型 (LLMs) 在知识密集任务中表现的关键方法，但现有RAG方法在处理知识密集推理任务时面临挑战。这是因为相关信息往往散布不均，使得现有方法难以准确识别关键信息并进行全局推理。为了解决这个问题，本文提出了一种新框架StructRAG，它基于人类在处理知识密集推理任务时将原始信息转换为多种结构化知识的认知理论，能够识别适合特定任务的最佳结构类型，将原始文档重构为该结构格式，并基于结果结构推理出答案。在各种知识密集任务上的广泛实验表明，StructRAG在复杂情境中表现出色，达到了最先进的性能，展示了其在复杂现实世界应用中增强LLMs作为有效解决方案的潜力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.08815 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 14 Oct 2024 04:14:19 GMT</pubDate>
+<pubDate>Mon, 14 Oct 2024 04:14:19 GMT</pubDate>
+</item>
+<item>
+<title>通过KV预测减少变换器模型的首次输出时间</title>
+<link>https://arxiv.org/abs/2410.08391</link>
+<guid>https://arxiv.org/abs/2410.08391</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>我们提出KV预测方法，通过辅助模型生成KV缓存，提高变换器模型的推理效率。</p><br><br><p><strong>摘要：</strong> 推理过程中的prompt处理步骤通常会消耗大量时间，尤其是在边缘设备上使用亿级参数模型时。为了解决首次输出时间（TTFT）过长的问题，我们提出了一种名为KV预测的新方法。通过使用一个小型辅助模型处理prompt，生成近似的KV缓存，从而减少基模型在自回归生成时对计算资源的需求。该方法在维持相对准确性的同时显著提高了效率，相比基线方法，KV预测在TriviaQA上准确度提升了15%-50%，在HumanEval的Python代码补全任务中提升了最多30%。此外，我们在Apple M2 Pro CPU上进行了基准测试，验证了FLOPs的改善直接转化为TTFT的速度提升。本研究展示了在多种TTFT计算预算下的有效性，为变换器模型的应用提供了新的可能。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.08391 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 14 Oct 2024 02:41:21 GMT</pubDate>
+<pubDate>Mon, 14 Oct 2024 02:41:21 GMT</pubDate>
+</item>
+
+<item>
 <title>VITask：提升大型视觉语言模型任务适应性的框架</title>
 <link>https://arxiv.org/abs/2410.06456</link>
 <guid>https://arxiv.org/abs/2410.06456</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>VITask通过集成任务特定模型，提升视觉语言模型的任务适应能力，展示在医学诊断中的有效性。</p><br><br><p><strong>摘要：</strong> 该研究提出了一种名为VITask的创新框架，旨在提升大型视觉语言模型（VLMs）在特定任务中的适应能力。由于预训练与微调之间的领域差异，传统VLMs在任务特定应用中往往表现不佳。VITask通过引入任务特定模型（TSMs）并实施三种关键策略，即示例提示（EP）、响应分布对齐（RDA）和对比响应调整（CRT），有效改善任务特定表现。EP使TSM特征能够引导VLMs，而RDA则在推理过程中通过借鉴示例提示模型的经验，使VLMs能够适应而不需TSMs。CRT进一步优化了正确图像-响应对的排名，从而降低了生成不当响应的风险。在12个医学诊断数据集和9种成像模式下的实验结果表明，VITask的表现超越了传统的指令调优VLMs和TSMs，证明了其有效整合两种模型互补特性的能力。此外，VITask在TSM集成的灵活性和对不完整指令的鲁棒性方面也展现了实际优势，成为任务特定VLM微调的多功能和高效解决方案。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.06456 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">VITask通过集成任务特定模型，提升视觉语言模型的任务适应能力，展示在医学诊断中的有效性。</p><br /><br /><p><strong>摘要：</strong> 该研究提出了一种名为VITask的创新框架，旨在提升大型视觉语言模型（VLMs）在特定任务中的适应能力。由于预训练与微调之间的领域差异，传统VLMs在任务特定应用中往往表现不佳。VITask通过引入任务特定模型（TSMs）并实施三种关键策略，即示例提示（EP）、响应分布对齐（RDA）和对比响应调整（CRT），有效改善任务特定表现。EP使TSM特征能够引导VLMs，而RDA则在推理过程中通过借鉴示例提示模型的经验，使VLMs能够适应而不需TSMs。CRT进一步优化了正确图像-响应对的排名，从而降低了生成不当响应的风险。在12个医学诊断数据集和9种成像模式下的实验结果表明，VITask的表现超越了传统的指令调优VLMs和TSMs，证明了其有效整合两种模型互补特性的能力。此外，VITask在TSM集成的灵活性和对不完整指令的鲁棒性方面也展现了实际优势，成为任务特定VLM微调的多功能和高效解决方案。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.06456" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 14 Oct 2024 02:10:18 GMT</pubDate>
 <pubDate>Mon, 14 Oct 2024 02:10:18 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +55,8 @@
 <link>https://arxiv.org/abs/2410.07035</link>
 <guid>https://arxiv.org/abs/2410.07035</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出新的方法提升大型语言模型的长度控制与复制粘贴能力，显著改进性能。</p><br><br><p><strong>摘要：</strong> 大型语言模型（LLMs）在角色扮演、创意写作、数学推理和编码等领域显示出强大的能力，然而在长度控制方面仍然面临挑战。这一问题主要源于模型在生成文本时缺乏位置意识，导致难以遵循特定的长度限制。为了解决这一问题，我们提出了两种新方法：PositionID Prompting和PositionID Fine-Tuning，使模型能够持续监控和管理生成文本的长度。此外，我们还引入了PositionID CP Prompting，使LLMs能够准确地执行复制和粘贴操作。为了评估长度控制和复制粘贴功能，我们开发了两个基准测试。实验结果表明，我们的方法显著提高了模型对长度限制的遵守程度和复制粘贴的准确性，同时不牺牲响应质量。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.07035 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出新的方法提升大型语言模型的长度控制与复制粘贴能力，显著改进性能。</p><br /><br /><p><strong>摘要：</strong> 大型语言模型（LLMs）在角色扮演、创意写作、数学推理和编码等领域显示出强大的能力，然而在长度控制方面仍然面临挑战。这一问题主要源于模型在生成文本时缺乏位置意识，导致难以遵循特定的长度限制。为了解决这一问题，我们提出了两种新方法：PositionID Prompting和PositionID Fine-Tuning，使模型能够持续监控和管理生成文本的长度。此外，我们还引入了PositionID CP Prompting，使LLMs能够准确地执行复制和粘贴操作。为了评估长度控制和复制粘贴功能，我们开发了两个基准测试。实验结果表明，我们的方法显著提高了模型对长度限制的遵守程度和复制粘贴的准确性，同时不牺牲响应质量。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.07035" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 14 Oct 2024 02:03:18 GMT</pubDate>
 <pubDate>Mon, 14 Oct 2024 02:03:18 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +64,8 @@
 <link>https://arxiv.org/abs/2410.08261</link>
 <guid>https://arxiv.org/abs/2410.08261</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>Meissonic 提升非自回归图像建模，生成高质量、高分辨率图像。</p><br><br><p><strong>摘要：</strong> 在视觉生成领域，扩散模型如 Stable Diffusion 取得了重要进展，但其和自回归语言模型的根本不同，使得统一语言-视觉模型的开发面临挑战。针对这一问题，我们提出了 Meissonic，它将非自回归的遮蔽图像建模（MIM）文本到图像生成技术提升至与先进扩散模型（如 SDXL）相当的水平。通过综合采用一系列架构创新、先进的位置信息编码策略以及优化的采样条件，Meissonic 显著提高了 MIM 的性能和效率。同时，我们利用高质量的训练数据，集成了基于人类偏好评分的信息微调条件，并采用特征压缩层来进一步提升图像的真实感和分辨率。我们的模型不仅在生成高质量、高分辨率图像方面与现有模型如 SDXL 相匹配，且往往超过其性能。大量实验验证了 Meissonic 的能力，展示了它作为文本到图像合成新标准的潜力。我们发布了一个能够生成 1024x1024 分辨率图像的模型检查点。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.08261 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">Meissonic 提升非自回归图像建模，生成高质量、高分辨率图像。</p><br /><br /><p><strong>摘要：</strong> 在视觉生成领域，扩散模型如 Stable Diffusion 取得了重要进展，但其和自回归语言模型的根本不同，使得统一语言-视觉模型的开发面临挑战。针对这一问题，我们提出了 Meissonic，它将非自回归的遮蔽图像建模（MIM）文本到图像生成技术提升至与先进扩散模型（如 SDXL）相当的水平。通过综合采用一系列架构创新、先进的位置信息编码策略以及优化的采样条件，Meissonic 显著提高了 MIM 的性能和效率。同时，我们利用高质量的训练数据，集成了基于人类偏好评分的信息微调条件，并采用特征压缩层来进一步提升图像的真实感和分辨率。我们的模型不仅在生成高质量、高分辨率图像方面与现有模型如 SDXL 相匹配，且往往超过其性能。大量实验验证了 Meissonic 的能力，展示了它作为文本到图像合成新标准的潜力。我们发布了一个能够生成 1024x1024 分辨率图像的模型检查点。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.08261" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 14 Oct 2024 01:19:46 GMT</pubDate>
 <pubDate>Mon, 14 Oct 2024 01:19:46 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +73,8 @@
 <link>https://arxiv.org/abs/2410.08565</link>
 <guid>https://arxiv.org/abs/2410.08565</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本研究提出Baichuan-Omni，这是一个开源的7B多模态大语言模型，具备图像、视频、音频与文本的处理能力。</p><br><br><p><strong>摘要：</strong> 在本文中，我们介绍了Baichuan-Omni，首个开源的7B多模态大语言模型（MLLM），它能够同时处理和分析图像、视频、音频和文本等多种信息模式，以提供先进的多模态交互体验及出色的性能。我们提出了一种有效的多模态训练方案，从7B模型开始，经过两个阶段的多模态对齐和多任务微调，以处理音频、图像、视频和文本等多种模式。这一方法使语言模型具备有效处理视觉和音频数据的能力。Baichuan-Omni在多个全模态和多模态基准测试中表现出色。我们的目标是希望这一贡献为开放源代码社区提供一个具有竞争力的基准，促进多模态理解和实时交互的进步。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.08565 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本研究提出Baichuan-Omni，这是一个开源的7B多模态大语言模型，具备图像、视频、音频与文本的处理能力。</p><br /><br /><p><strong>摘要：</strong> 在本文中，我们介绍了Baichuan-Omni，首个开源的7B多模态大语言模型（MLLM），它能够同时处理和分析图像、视频、音频和文本等多种信息模式，以提供先进的多模态交互体验及出色的性能。我们提出了一种有效的多模态训练方案，从7B模型开始，经过两个阶段的多模态对齐和多任务微调，以处理音频、图像、视频和文本等多种模式。这一方法使语言模型具备有效处理视觉和音频数据的能力。Baichuan-Omni在多个全模态和多模态基准测试中表现出色。我们的目标是希望这一贡献为开放源代码社区提供一个具有竞争力的基准，促进多模态理解和实时交互的进步。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.08565" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 14 Oct 2024 00:29:48 GMT</pubDate>
 <pubDate>Mon, 14 Oct 2024 00:29:48 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +82,8 @@
 <link>https://arxiv.org/abs/2410.09009</link>
 <guid>https://arxiv.org/abs/2410.09009</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文提出了一种新的SDS方法，SemanticSDS，通过语义嵌入提高复杂3D场景生成的表现力和准确性。</p><br><br><p><strong>摘要：</strong> 生成高质量的3D资产仍然是计算机图形学和视觉研究中的关键挑战。由于3D数据的稀缺，当前的前沿方法利用预训练的2D扩散先验，通过得分蒸馏采样（SDS）进行优化。尽管技术有所进步，然而，制作複杂3D场景及多个物体或复杂交互仍然困难。为了解决这一问题，近期方法逐渐引入了框或布局引导，但这些布局引导的组合方法通常在提供细粒度控制方面表现不佳，较为粗糙且缺乏表现力。为此，我们提出了一种新的得分蒸馏采样方法——语义得分蒸馏采样（SemanticSDS），旨在有效提高组合文本到3D生成的表现力与准确性。我们的做法整合了新的语义嵌入，这些嵌入在不同渲染视图间保持一致，并且能够清晰地区分不同的物体和部分。通过将这些嵌入转化为一个语义图，我们引导了区域特定的SDS过程，从而实现精确的优化与组合生成。通过利用显式的语义引导，我们的方法解锁了现有预训练扩散模型的组合能力，在复杂物体和场景的3D内容生成方面达到了优秀的质量。实验结果表明，我们的SemanticSDS框架在生成尖端复杂3D内容方面非常有效。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.09009 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文提出了一种新的SDS方法，SemanticSDS，通过语义嵌入提高复杂3D场景生成的表现力和准确性。</p><br /><br /><p><strong>摘要：</strong> 生成高质量的3D资产仍然是计算机图形学和视觉研究中的关键挑战。由于3D数据的稀缺，当前的前沿方法利用预训练的2D扩散先验，通过得分蒸馏采样（SDS）进行优化。尽管技术有所进步，然而，制作複杂3D场景及多个物体或复杂交互仍然困难。为了解决这一问题，近期方法逐渐引入了框或布局引导，但这些布局引导的组合方法通常在提供细粒度控制方面表现不佳，较为粗糙且缺乏表现力。为此，我们提出了一种新的得分蒸馏采样方法——语义得分蒸馏采样（SemanticSDS），旨在有效提高组合文本到3D生成的表现力与准确性。我们的做法整合了新的语义嵌入，这些嵌入在不同渲染视图间保持一致，并且能够清晰地区分不同的物体和部分。通过将这些嵌入转化为一个语义图，我们引导了区域特定的SDS过程，从而实现精确的优化与组合生成。通过利用显式的语义引导，我们的方法解锁了现有预训练扩散模型的组合能力，在复杂物体和场景的3D内容生成方面达到了优秀的质量。实验结果表明，我们的SemanticSDS框架在生成尖端复杂3D内容方面非常有效。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.09009" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 14 Oct 2024 00:24:03 GMT</pubDate>
 <pubDate>Mon, 14 Oct 2024 00:24:03 GMT</pubDate>
 </item>
 <item>
@@ -69,11 +91,8 @@
 <link>https://arxiv.org/abs/2410.09008</link>
 <guid>https://arxiv.org/abs/2410.09008</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>我们提出SuperCorrect框架，通过大模型的监督，提高小模型的推理与自我纠错能力。</p><br><br><p><strong>摘要：</strong> 近年来，大型语言模型（LLMs）如GPT-4和PaLM在推理任务中表现出显著的改进。然而，较小的模型例如Llama-3-8B和DeepSeekMath-Base在复杂数学推理中仍面临挑战，尤其在独立检测和纠正推理错误方面。为了解决这一问题，我们提出了一个名为SuperCorrect的创新两阶段框架，利用大型教师模型来监督和纠正小型学生模型的推理和反思过程。在第一阶段，我们从教师模型中提取层次化的高层次和详细思维模板，以指导学生模型更好地引导细致的推理思考。在第二阶段，我们引入跨模型的协作直接偏好优化（DPO）方法，以增强学生模型的自我纠错能力，学生模型在训练过程中跟随教师的纠正轨迹。这个跨模型DPO方法教会学生模型有效定位和解决错误思维，突破思维瓶颈，获取新的技能和知识，从而应对挑战性的问题。大量实验证明，SuperCorrect优于以前的方法，尤其是我们的SuperCorrect-7B模型在MATH和GSM8K基准上分别比DeepSeekMath-7B提升了7.8%/5.3%和比Qwen2.5-Math-7B提升了15.1%/6.3%，在所有7B模型中达到了新的SOTA性能。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.09008 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">我们提出SuperCorrect框架，通过大模型的监督，提高小模型的推理与自我纠错能力。</p><br /><br /><p><strong>摘要：</strong> 近年来，大型语言模型（LLMs）如GPT-4和PaLM在推理任务中表现出显著的改进。然而，较小的模型例如Llama-3-8B和DeepSeekMath-Base在复杂数学推理中仍面临挑战，尤其在独立检测和纠正推理错误方面。为了解决这一问题，我们提出了一个名为SuperCorrect的创新两阶段框架，利用大型教师模型来监督和纠正小型学生模型的推理和反思过程。在第一阶段，我们从教师模型中提取层次化的高层次和详细思维模板，以指导学生模型更好地引导细致的推理思考。在第二阶段，我们引入跨模型的协作直接偏好优化（DPO）方法，以增强学生模型的自我纠错能力，学生模型在训练过程中跟随教师的纠正轨迹。这个跨模型DPO方法教会学生模型有效定位和解决错误思维，突破思维瓶颈，获取新的技能和知识，从而应对挑战性的问题。大量实验证明，SuperCorrect优于以前的方法，尤其是我们的SuperCorrect-7B模型在MATH和GSM8K基准上分别比DeepSeekMath-7B提升了7.8%/5.3%和比Qwen2.5-Math-7B提升了15.1%/6.3%，在所有7B模型中达到了新的SOTA性能。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.09008" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 14 Oct 2024 00:22:21 GMT</pubDate>
 <pubDate>Mon, 14 Oct 2024 00:22:21 GMT</pubDate>
 </item>
 <item>
@@ -81,14 +100,10 @@
 <link>https://arxiv.org/abs/2410.07133</link>
 <guid>https://arxiv.org/abs/2410.07133</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>EvolveDirector框架利用公共API生成的数据训练文本到图像生成模型，显著降低数据需求，实现优越的生成能力。</p><br><br><p><strong>摘要：</strong> 随着生成模型的快速进步，文本到图像生成表现出惊人的内容创作能力。然而，大多数先进模型依赖于专有数据，并提供有限的开放API，限制了其在下游任务中的应用。为探讨利用公共资源训练一个可与先进模型媲美的文本到图像生成模型的可行性，我们提出了EvolveDirector框架。该框架通过公共API与先进模型交互，获得文本-图像数据对以训练基础模型。实验显示，尽管通过生成数据训练的模型能接近先进模型的生成能力，但需要大量的样本（1000万个或更多），这会带来高昂的时间和计算资源成本，尤其是API调用费用。为了解决这一问题，EvolveDirector利用预训练的大型视觉-语言模型（VLM）来指导基础模型的演化，持续评估基础模型，并通过判别、扩展、删除和变异等操作动态更新和优化训练数据集。实验结果表明，这种方法显著减少了所需的数据量。EvolveDirector还能够在面对多个高级模型时选择其生成的最佳样本，以学习强大且均衡的能力。最终训练出的模型Edgen显示出优于这些先进模型的效果。代码和模型权重可在https://github.com/showlab/EvolveDirector获取。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.07133 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">EvolveDirector框架利用公共API生成的数据训练文本到图像生成模型，显著降低数据需求，实现优越的生成能力。</p><br /><br /><p><strong>摘要：</strong> 随着生成模型的快速进步，文本到图像生成表现出惊人的内容创作能力。然而，大多数先进模型依赖于专有数据，并提供有限的开放API，限制了其在下游任务中的应用。为探讨利用公共资源训练一个可与先进模型媲美的文本到图像生成模型的可行性，我们提出了EvolveDirector框架。该框架通过公共API与先进模型交互，获得文本-图像数据对以训练基础模型。实验显示，尽管通过生成数据训练的模型能接近先进模型的生成能力，但需要大量的样本（1000万个或更多），这会带来高昂的时间和计算资源成本，尤其是API调用费用。为了解决这一问题，EvolveDirector利用预训练的大型视觉-语言模型（VLM）来指导基础模型的演化，持续评估基础模型，并通过判别、扩展、删除和变异等操作动态更新和优化训练数据集。实验结果表明，这种方法显著减少了所需的数据量。EvolveDirector还能够在面对多个高级模型时选择其生成的最佳样本，以学习强大且均衡的能力。最终训练出的模型Edgen显示出优于这些先进模型的效果。代码和模型权重可在https://github.com/showlab/EvolveDirector获取。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.07133" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Mon, 14 Oct 2024 00:17:02 GMT</pubDate>
-<pubDate>Mon, 14 Oct 2024 00:17:02 GMT</pubDate>
 </item>
-
 <item>
 <title>利用加速偏好优化加快人类反馈下的强化学习</title>
 <link>https://arxiv.org/abs/2410.06293</link>
