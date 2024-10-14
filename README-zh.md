@@ -59,5 +59,5 @@
 - https://sspai.com/feed -> https://YuhanShi53.github.io/RSS-GPT/Sspai.xml
 - https://spaces.ac.cn/feed -> https://YuhanShi53.github.io/RSS-GPT/Science-Spaces.xml
 - https://openai.com/news/rss.xml -> https://YuhanShi53.github.io/RSS-GPT/OpenAI.xml
-- https://36kr.com/rss-center -> https://YuhanShi53.github.io/RSS-GPT/36kr.xml
+- https://36kr.com/feed -> https://YuhanShi53.github.io/RSS-GPT/36kr.xml
 - https://deepmind.com/blog/feed/basic -> https://YuhanShi53.github.io/RSS-GPT/DeepMind.xml
