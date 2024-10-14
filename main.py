@@ -74,7 +74,7 @@ def fetch_feed(url, log_file):
             feed = feedparser.parse(response.text)
             return {'feed': feed, 'status': 'success'}
         elif url.endswith(".xml"):  # OpenAI 的 RSS Feed 地址为 https://openai.com/news/rss.xml，可以直接解析
-            feed = feedparser.parse(response.text)
+            feed = feedparser.parse(url)
             return {'feed': feed, 'status': 'success'}
         else:
             with open(log_file, 'a') as f:
