@@ -21,16 +21,19 @@ secs = config.sections()
 # Maxnumber of entries to in a feed.xml file
 max_entries = 1000
 
+
 def get_cfg(sec, name, default=None):
     value = config.get(sec, name, fallback=default)
     if value:
         return value.strip('"')
+
+
 BASE = get_cfg('cfg', 'BASE')
 KEYWORD_LENGTH = int(get_cfg('cfg', 'keyword_length'))
 SUMMARY_LENGTH = int(get_cfg('cfg', 'summary_length'))
 SHORT_SUMMARY_LENGTH = int(get_cfg('cfg', 'short_summary_length'))
 LANGUAGE = get_cfg('cfg', 'language')
-
+LENGTH_LOWER_BOUND = 200
 
 OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
 U_NAME = os.environ.get('U_NAME')
@@ -38,6 +41,25 @@ OPENAI_PROXY = os.environ.get('OPENAI_PROXY')
 OPENAI_BASE_URL = os.environ.get('OPENAI_BASE_URL', 'https://api.openai.com/v1')
 custom_model = os.environ.get('CUSTOM_MODEL')
 deployment_url = f'https://{U_NAME}.github.io/RSS-GPT/'
+
+
+def fetch_url(url, log_file):
+    response = None
+    headers = {}
+    try:
+        ua = UserAgent()
+        headers['User-Agent'] = ua.random.strip()
+        response = requests.get(url, headers=headers, timeout=30)
+        if response.status_code == 200:
+            return response.content
+        else:
+            with open(log_file, 'a') as f:
+                f.write(f"Fetch url error: {response.status_code}\n")
+            return None
+    except requests.RequestException as e:
+        with open(log_file, 'a') as f:
+            f.write(f"Fetch url error: {e}\n")
+        return None
 
 
 def fetch_feed(url, log_file):
@@ -49,6 +71,9 @@ def fetch_feed(url, log_file):
         headers['User-Agent'] = ua.random.strip()
         response = requests.get(url, headers=headers, timeout=30)
         if response.status_code == 200:
+            feed = feedparser.parse(response.text)
+            return {'feed': feed, 'status': 'success'}
+        elif url.endswith(".xml"):  # OpenAI 的 RSS Feed 地址为 https://openai.com/news/rss.xml，可以直接解析
             feed = feedparser.parse(response.text)
             return {'feed': feed, 'status': 'success'}
         else:
@@ -112,25 +137,7 @@ def clean_html(html_content):
 
     feed_content = soup.get_text()
 
-    # 尝试多种常见的标签来抓取文章内容
-    possible_selectors = [
-        'article',            # HTML5 标准 <article> 标签
-        'div[class*="content"]',  # class 包含 "content" 的 div
-        'section',            # HTML5 标准 <section> 标签
-        'div[class*="post"]',  # class 包含 "post" 的 div
-        'div[id*="article"]',  # id 包含 "article" 的 div
-        'div[class*="entry"]'  # class 包含 "entry" 的 div
-    ]
-
-    full_content = ""
-    for selector in possible_selectors:
-        content = soup.select_one(selector)
-        if content:
-            full_content = content.get_text(separator="\n", strip=True)
-
-    articicle = f"{feed_content}<br>{full_content}"
-
-    return articicle, image_urls
+    return feed_content, image_urls
 
 
 def filter_entry(entry, filter_apply, filter_type, filter_rule):
@@ -248,7 +255,7 @@ def gpt_summary(query, image_urls, model, language):
     return response
 
 
-def output(sec, language):
+def process(sec, language):
     """ output
     This function is used to output the summary of the RSS feed.
 
@@ -333,6 +340,12 @@ def output(sec, language):
                     entry.article = entry.title
 
             cleaned_article, image_urls = clean_html(entry.article)
+            # 如果 RSS Feed 文章太短，直接从链接拉取原文
+            if (len(cleaned_article) < LENGTH_LOWER_BOUND):
+                original_content = fetch_url(entry.link, log_file)
+
+                if original_content:
+                    cleaned_article, image_urls = clean_html(original_content)
 
             if not filter_entry(entry, filter_apply, filter_type, filter_rule):
                 with open(log_file, 'a') as f:
@@ -344,7 +357,7 @@ def output(sec, language):
             cnt += 1
             if cnt > max_items:
                 entry.summary = None
-            elif OPENAI_API_KEY and (token_length > 200):
+            elif OPENAI_API_KEY and (token_length > LENGTH_LOWER_BOUND):
                 if custom_model:
                     try:
                         gpt_response = gpt_summary(cleaned_article, image_urls, model=custom_model, language=LANGUAGE)
@@ -415,7 +428,7 @@ feeds = []
 links = []
 
 for x in secs[1:]:
-    output(x, language=LANGUAGE)
+    process(x, language=LANGUAGE)
     feed = {"url": get_cfg(x, 'url').replace(',', '<br>'), "name": get_cfg(x, 'name')}
     feeds.append(feed)  # for rendering index.html
     links.append("- " + get_cfg(x, 'url').replace(',', ', ') + " -> " + deployment_url + feed['name'] + ".xml\n")
