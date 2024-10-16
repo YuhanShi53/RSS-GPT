@@ -5,18 +5,63 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>MTU-Bench：一种多粒度的大语言模型工具使用基准</title>
+<link>https://arxiv.org/abs/2410.11710</link>
+<guid>https://arxiv.org/abs/2410.11710</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>MTU-Bench通过多样化场景和无需GPT或人类评估的基础指标，提升大语言模型的工具使用能力评估。</p><br><br><p><strong>摘要：</strong> 本文提出了一种多粒度工具使用基准，称为MTU-Bench，旨在针对大语言模型（LLMs）的工具使用能力进行评估。现有的工具使用基准存在评估场景不足和高昂的评估成本等局限性。为了克服这些问题，MTU-Bench覆盖了五种工具使用场景，包括单轮单工具、单轮多工具、多轮单工具、多轮多工具以及超出分布的任务。此外，MTU-Bench的所有评估指标均基于预测结果与真实值的比较，无需依赖GPT或人类评估。该基准数据集通过转换现有高质量数据集，模拟了真实世界的工具使用场景。我们还提出了一个指令数据集MTU-Instruct，以增强现有LLMs的工具使用能力。通过实验结果表明，MTU-Bench在评估工具使用能力方面有效，相关的代码和数据将会在GitHub上公开。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.11710 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 16 Oct 2024 01:14:22 GMT</pubDate>
+<pubDate>Wed, 16 Oct 2024 01:14:22 GMT</pubDate>
+</item>
+<item>
+<title>SecCodePLT：全面评估代码生成AI安全风险的平台</title>
+<link>https://arxiv.org/abs/2410.11096</link>
+<guid>https://arxiv.org/abs/2410.11096</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文介绍SecCodePLT平台，全面评估代码生成AI的安全风险，包括不安全编码和网络攻击的可行性。</p><br><br><p><strong>摘要：</strong> 已有研究确立了多个基准，揭示了代码生成AI（Code GenAI）的安全风险，主要集中在两个方面：模型生成不安全代码的潜力和其在网络攻击中的应用效用。虽然现有基准取得了显著进展，但仍有进一步改进的机会。目前的一些基准主要关注模型提供攻击建议的能力，而忽视了生成可执行攻击的能力。此外，大多数基准过于依赖静态评估指标，而动态指标如通过测试案例的能力可能更为准确。而专家验证的基准虽然提供了高质量数据，但多以小规模运作。为了解决这些问题，我们开发了SecCodePLT，这是一个统一且全面的评估平台，用于检测代码生成AI的风险。在不安全编码方面，我们推出了一种新数据创建方法，将专家与自动生成结合，确保数据质量的同时实现大规模生成。我们还将样本与测试案例关联，以进行代码相关的动态评估。在网络攻击有用性方面，我们设置了真实的评估环境，并构建样本以引导模型生成实际攻击，同时在该环境中应用动态指标。经过广泛实验，我们展示了SecCodePLT在安全相关性上优于现有的SOTA基准CyberSecEval，并能更好地识别SOTA模型面临的不安全编码和网络攻击有用性方面的风险。最后，我们将SecCodePLT应用于SOTA代码代理Cursor，首次识别出该高级编码代理的非平凡安全风险。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.11096 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 16 Oct 2024 01:10:40 GMT</pubDate>
+<pubDate>Wed, 16 Oct 2024 01:10:40 GMT</pubDate>
+</item>
+<item>
+<title>利用多语言大模型解决低资源语言医疗数据稀缺问题</title>
+<link>https://arxiv.org/abs/2410.10626</link>
+<guid>https://arxiv.org/abs/2410.10626</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究提出了一种新型的MoE路由方法，以提高多语言医疗模型对低资源语言的适应性。</p><br><br><p><strong>摘要：</strong> 在医疗领域，多语言大模型（LLMs）可以打破语言障碍，提高医疗服务的获取率，但数据稀缺问题依然突出，特别是在低资源语言中。为了解决这一挑战，本文首先构建了一个高质量的医疗数据集，并进行了质量分析。接着，我们从多语言视角探索LLMs的内部信息流，采用专家混合（MoE）模块化。技术上，我们提出了一种新型的MoE路由方法，利用语言特定的专家与跨语言路由。受电路理论的启发，我们的路由分析揭示了一种信息流机制：早期层集中跨语言信息流，而后期层则表现出语言特定的分歧。基于此，我们发展了后MoE架构，仅在后期层应用稀疏路由，同时保持其他层的密集性。实验结果表明，该方法提升了多语言模型对其他语言的泛化能力，同时保持了解释性。最后，为了高效扩展模型至50种语言，我们引入了语言家族专家的概念，借助语言学先验，能够在不增加额外参数的情况下扩展语言数量。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.10626 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 16 Oct 2024 01:01:31 GMT</pubDate>
+<pubDate>Wed, 16 Oct 2024 01:01:31 GMT</pubDate>
+</item>
+<item>
+<title>基于空间和角度高斯表示的实时高质量照明与视图合成</title>
+<link>https://arxiv.org/abs/2410.11419</link>
+<guid>https://arxiv.org/abs/2410.11419</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出了一种结合高斯表示和三重溅射过程的技术，实现多视角图像的实时照明与视图合成。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种基于空间和角度高斯表示的技术，以及一种三重溅射过程，旨在实现实时、高质量的新照明和视图合成。为了描述复杂的外观，我们为每个空间高斯引入了一种效果良好的反射函数，即兰伯特反射与角度高斯的混合模型。生成自阴影的过程是通过将所有空间高斯溅射向光源，并计算阴影值，随后利用小型多层感知网络进行精细化处理。此外，为了补偿全局照明等其他效果，我们训练了另一个网络，以计算和添加每个空间高斯对应的RGB元组。本文展示的结果在30个样本上进行了验证，样本涵盖了几何形状（从坚固到松散）和外观（从半透明到各向异性）的广泛变化，并使用了多种输入数据，包括合成/重建对象的渲染图像、手持相机拍摄的照片、以及来自专业灯台的图像。我们在单个普通GPU上的训练时间为40-70分钟，并达到了每秒90帧的渲染速度。与现有技术相比，我们的结果在质量和性能上均表现优异。代码和数据已公开。</summary></p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.11419 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 16 Oct 2024 00:26:35 GMT</pubDate>
+<pubDate>Wed, 16 Oct 2024 00:26:35 GMT</pubDate>
+</item>
+
+<item>
 <title>探索去规范化解码器中激活函数的优化</title>
 <link>https://arxiv.org/abs/2410.09637</link>
 <guid>https://arxiv.org/abs/2410.09637</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本研究发现ReLU在去LayerNorm模型中超越GELU，改善学习动态和信息保留。</p><br><br><p><strong>摘要：</strong> 本研究探讨了在去LayerNorm的解码器中选择激活函数的问题，发现ReLU在性能上显著优于GELU。传统上，变换器模型偏爱GELU，但我们的实证研究显示ReLU在这类架构中提供了8.2%的困惑度改善。我们分析了GELU在早期层中所产生的熵过载现象，导致注意力头的表现能力未能充分利用。这表明，像GELU这样平滑的激活函数不适合去LayerNorm架构，而ReLU的几何特性则在缺乏LayerNorm的情况下改善学习动态和信息保留。这项研究为优化具有显著挑战的变换器架构提供了重要见解。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.09637 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本研究发现ReLU在去LayerNorm模型中超越GELU，改善学习动态和信息保留。</p><br /><br /><p><strong>摘要：</strong> 本研究探讨了在去LayerNorm的解码器中选择激活函数的问题，发现ReLU在性能上显著优于GELU。传统上，变换器模型偏爱GELU，但我们的实证研究显示ReLU在这类架构中提供了8.2%的困惑度改善。我们分析了GELU在早期层中所产生的熵过载现象，导致注意力头的表现能力未能充分利用。这表明，像GELU这样平滑的激活函数不适合去LayerNorm架构，而ReLU的几何特性则在缺乏LayerNorm的情况下改善学习动态和信息保留。这项研究为优化具有显著挑战的变换器架构提供了重要见解。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.09637" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 15 Oct 2024 20:33:34 GMT</pubDate>
-<pubDate>Tue, 15 Oct 2024 20:33:34 GMT</pubDate>
 </item>
-
 <item>
 <title>大语言模型中的语言结构与内部电路的对应关系研究</title>
 <link>https://arxiv.org/abs/2410.09223</link>
