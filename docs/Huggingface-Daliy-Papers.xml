@@ -5,15 +5,37 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>ChroKnowBench：评估大规模语言模型的时间知识积累</title>
+<link>https://arxiv.org/abs/2410.09870</link>
+<guid>https://arxiv.org/abs/2410.09870</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出ChroKnowBench基准和ChroKnowledge框架，以评估大规模语言模型的时间知识及其更新效果。</p><br><br><p><strong>摘要：</strong> 本研究提出了ChroKnowBench，一个用于评估大规模语言模型（LLMs）时间知识积累的新基准数据集，旨在解决知识的累积性质与时间依赖性。该基准涵盖多个领域，区分了随着时间演变的知识（如科学发现、修订法律）与不变的知识（如数学真理、公理事实）。基于此基准，研究者们引入了ChroKnowledge（Chronological Categorization of Knowledge），一个用于评价和更新LLMs非参数时间知识的采样框架。评估结果显示，模型在提取时间知识的能力上与训练数据格式有关，并且往往在时间边界处出现知识回忆的截断。为此，研究者提出了ChroKnowPrompt，通过逐步引导模型穿越时间跨度，来有效地引发时间知识的提取。结果表明，该框架在生物医学领域和通用领域成功更新了整体知识，分别提升了11.9%和2.8%。该非参数方法适用于开源模型和专有LLMs，确保了其全面适用性，展示了通过此方法提取内在时间知识的潜力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.09870 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 17 Oct 2024 11:56:11 GMT</pubDate>
+<pubDate>Thu, 17 Oct 2024 11:56:11 GMT</pubDate>
+</item>
+<item>
+<title>可控安全对齐框架：满足多样化安全需求的语言模型适应性</title>
+<link>https://arxiv.org/abs/2410.08968</link>
+<guid>https://arxiv.org/abs/2410.08968</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出可控安全对齐（CoSA）框架，使语言模型根据安全配置灵活适应用户需求。</p><br><br><p><strong>摘要：</strong> 当前大型语言模型（LLM）的安全对齐方法采用一刀切的方式，模型对任何被提供者认定为不安全的内容拒绝交互。这种方法在面对不同文化和地区的社会规范时缺乏灵活性。此外，由于用户的安全需求各不相同，静态的安全标准可能过于严格，影响模型的实用性，并且重新对齐的成本也较高。为此，我们提出可控安全对齐（CoSA）框架，旨在在不重新训练的情况下，使模型适应多样化的安全要求。CoSA通过将安全配置作为系统提示的一部分，使模型遵循自由形式的自然语言描述来调整安全行为。通过在推理过程中由授权用户修改安全配置，可以简单地调整模型的安全行为。我们还提出了CoSAlign，一种数据中心的方法，使得LLM能够轻松适应多样化的安全配置。此外，我们设计了一个新颖的可控性评估协议，考虑了有用性和配置安全，并将其总结为CoSA评分。我们构建了CoSApien，这是一个包含真实世界LLM用例及其评估提示的人类创作基准。实验证明，CoSAlign在可控性方面相较强基线，包括上下文对齐，获得了显著提升。我们的框架鼓励更好地表现和适应多元化的人类价值观，从而增加LLM的实用性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.08968 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 17 Oct 2024 11:46:21 GMT</pubDate>
+<pubDate>Thu, 17 Oct 2024 11:46:21 GMT</pubDate>
+</item>
+
+<item>
 <title>动态词汇头（DyVo）提升稀疏检索模型的实体识别效果</title>
 <link>https://arxiv.org/abs/2410.07722</link>
 <guid>https://arxiv.org/abs/2410.07722</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本研究通过动态词汇头（DyVo）与维基百科概念结合，提升了稀疏检索模型对实体的识别与检索能力。</p><br><br><p><strong>摘要：</strong> 学习型稀疏检索（LSR）模型使用预训练变换器的词汇，但往往将实体拆分成不合理的片段，从而降低检索准确性，并限制模型吸纳最新的世界知识。为此，本研究通过结合维基百科的概念和实体，增强了LSR的词汇，从而更有效地解决歧义并保持与不断发展的知识保持同步。我们的方法核心在于动态词汇（DyVo）头，该头利用现有实体嵌入和实体检索组件，识别与查询或文档相关的实体。DyVo头用于生成实体权重，随后将这些权重与词片权重合并，以创建高效编码和检索的联合表征，并使用倒排索引进行检索。实验结果显示，在三个富含实体的文档排序数据集上，DyVo模型的表现显著优于最先进的基线模型。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.07722 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本研究通过动态词汇头（DyVo）与维基百科概念结合，提升了稀疏检索模型对实体的识别与检索能力。</p><br /><br /><p><strong>摘要：</strong> 学习型稀疏检索（LSR）模型使用预训练变换器的词汇，但往往将实体拆分成不合理的片段，从而降低检索准确性，并限制模型吸纳最新的世界知识。为此，本研究通过结合维基百科的概念和实体，增强了LSR的词汇，从而更有效地解决歧义并保持与不断发展的知识保持同步。我们的方法核心在于动态词汇（DyVo）头，该头利用现有实体嵌入和实体检索组件，识别与查询或文档相关的实体。DyVo头用于生成实体权重，随后将这些权重与词片权重合并，以创建高效编码和检索的联合表征，并使用倒排索引进行检索。实验结果显示，在三个富含实体的文档排序数据集上，DyVo模型的表现显著优于最先进的基线模型。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.07722" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 17 Oct 2024 10:24:44 GMT</pubDate>
 <pubDate>Thu, 17 Oct 2024 10:24:44 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +43,8 @@
 <link>https://arxiv.org/abs/2410.12391</link>
 <guid>https://arxiv.org/abs/2410.12391</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究特征如何在不同文本领域的模型中出现、消失和持续。</p><br><br><p><strong>摘要：</strong> 本文研究了特征在不同领域文本的模型中的表现及其稳定性，聚焦于对一个基础的一层Transformer语言模型进行适应和测试。该基础模型是基于BabyLM语料库和来自The Stack的Python代码集训练的。我们将该基础模型适应于两个新的文本领域：TinyStories和Lua编程语言。随后，通过球面线性插值方法将这两个模型合并。我们的探索旨在揭示在小规模模型和稀疏自编码器的典型迁移学习场景中，特征的稳定性和转变过程。这为理解不同领域间特征的演变提供了更深入的见解，进而有助于提高迁移学习和模型适应能力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.12391 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究特征如何在不同文本领域的模型中出现、消失和持续。</p><br /><br /><p><strong>摘要：</strong> 本文研究了特征在不同领域文本的模型中的表现及其稳定性，聚焦于对一个基础的一层Transformer语言模型进行适应和测试。该基础模型是基于BabyLM语料库和来自The Stack的Python代码集训练的。我们将该基础模型适应于两个新的文本领域：TinyStories和Lua编程语言。随后，通过球面线性插值方法将这两个模型合并。我们的探索旨在揭示在小规模模型和稀疏自编码器的典型迁移学习场景中，特征的稳定性和转变过程。这为理解不同领域间特征的演变提供了更深入的见解，进而有助于提高迁移学习和模型适应能力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.12391" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 17 Oct 2024 10:10:35 GMT</pubDate>
 <pubDate>Thu, 17 Oct 2024 10:10:35 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +52,8 @@
 <link>https://arxiv.org/abs/2410.12491</link>
 <guid>https://arxiv.org/abs/2410.12491</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本研究运用逆向强化学习解析毒性对齐的LLM隐性奖励，探讨模型大小与可解释性等关键问题。</p><br><br><p><strong>摘要：</strong> 本文提出了一种新的方法，通过逆向强化学习(Inverse Reinforcement Learning, IRL)恢复大型语言模型(LLMs)的隐性奖励函数，以理解它们的决策过程。研究聚焦于毒性对齐的LLM，采用多种规模的模型进行实验，提取奖励模型的预测准确率达到80.40%。分析中揭示了奖励函数的非可识别性、模型规模与可解释性之间的关系以及RLHF过程中的潜在问题。结果表明，通过IRL提取的奖励模型能够用于新LLM的微调，在毒性基准测试上实现了相当或更优的性能。这项工作为理解和改进大型语言模型的对齐提供了新的视角，并且对这些强大系统的负责任开发与部署具有重要意义。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.12491 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本研究运用逆向强化学习解析毒性对齐的LLM隐性奖励，探讨模型大小与可解释性等关键问题。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种新的方法，通过逆向强化学习(Inverse Reinforcement Learning, IRL)恢复大型语言模型(LLMs)的隐性奖励函数，以理解它们的决策过程。研究聚焦于毒性对齐的LLM，采用多种规模的模型进行实验，提取奖励模型的预测准确率达到80.40%。分析中揭示了奖励函数的非可识别性、模型规模与可解释性之间的关系以及RLHF过程中的潜在问题。结果表明，通过IRL提取的奖励模型能够用于新LLM的微调，在毒性基准测试上实现了相当或更优的性能。这项工作为理解和改进大型语言模型的对齐提供了新的视角，并且对这些强大系统的负责任开发与部署具有重要意义。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.12491" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 17 Oct 2024 08:37:56 GMT</pubDate>
 <pubDate>Thu, 17 Oct 2024 08:37:56 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +61,8 @@
 <link>https://arxiv.org/abs/2410.11878</link>
 <guid>https://arxiv.org/abs/2410.11878</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>NeuMeta提出了一种新学习范式，实现自适应神经网络，并在不同配置下无缝生成权重。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种新的学习范式，即神经形态变换（NeuMeta），旨在构建可自我变换的神经网络。与为不同架构或规模制造单独模型不同，NeuMeta直接学习神经网络的连续权重流形。训练后，可以直接从流形中为任何大小的网络采样权重，甚至在先前未见过的配置中，无需重新训练。为了实现这一雄心勃勃的目标，NeuMeta将神经隐式函数作为超网络进行训练，接受模型空间内的坐标作为输入，并生成相应的不变权重值。训练过程中，发现最终性能与学习流形的平滑性密切相关。为提高平滑性，我们采用了两种策略：首先，通过解决最短哈密顿路径问题对权重矩阵进行置换以实现模型内部平滑性。其次，在训练隐式函数时对输入坐标添加噪声，以确保不同大小的模型均表现一致。因此，NeuMeta在合成多种网络配置的参数方面显示出良好效果。我们的广泛测试表明，NeuMeta在图像分类、语义分割和图像生成任务中，即使在75%的压缩率下，也能保持全尺寸性能。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.11878 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">NeuMeta提出了一种新学习范式，实现自适应神经网络，并在不同配置下无缝生成权重。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种新的学习范式，即神经形态变换（NeuMeta），旨在构建可自我变换的神经网络。与为不同架构或规模制造单独模型不同，NeuMeta直接学习神经网络的连续权重流形。训练后，可以直接从流形中为任何大小的网络采样权重，甚至在先前未见过的配置中，无需重新训练。为了实现这一雄心勃勃的目标，NeuMeta将神经隐式函数作为超网络进行训练，接受模型空间内的坐标作为输入，并生成相应的不变权重值。训练过程中，发现最终性能与学习流形的平滑性密切相关。为提高平滑性，我们采用了两种策略：首先，通过解决最短哈密顿路径问题对权重矩阵进行置换以实现模型内部平滑性。其次，在训练隐式函数时对输入坐标添加噪声，以确保不同大小的模型均表现一致。因此，NeuMeta在合成多种网络配置的参数方面显示出良好效果。我们的广泛测试表明，NeuMeta在图像分类、语义分割和图像生成任务中，即使在75%的压缩率下，也能保持全尺寸性能。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.11878" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 17 Oct 2024 08:23:01 GMT</pubDate>
 <pubDate>Thu, 17 Oct 2024 08:23:01 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +70,8 @@
 <link>https://arxiv.org/abs/2410.11081</link>
 <guid>https://arxiv.org/abs/2410.11081</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种新方法，优化基于扩散的生成模型，在连续时间上实现稳定快速采样。</p><br><br><p><strong>摘要：</strong> 一致性模型（Consistency Models, CMs）是一类强大的基于扩散的生成模型，旨在实现快速采样。虽然现有的CMs大多采用离散时间步训练，这带来了额外的超参数并易受到离散化误差影响。但连续时间形式可以缓解这些问题，然而其成功受到训练不稳定性的限制。为了解决这一问题，我们提出了一个简化的理论框架，用于统一以前的扩散模型和CMs的参数化，找出了不稳定性的根本原因。在此分析的基础上，我们引入了扩散过程参数化、网络架构和训练目标的关键改进。这些改变使我们能够在前所未有的规模上训练连续时间CMs，达到1.5亿参数在ImageNet 512x512上。我们的训练算法仅使用两个采样步骤，即在CIFAR-10上实现了2.06的FID分数，在ImageNet 64x64上为1.48，在ImageNet 512x512上为1.88，FID分数与最佳扩散模型之间的差距缩小到10%以内。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.11081 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种新方法，优化基于扩散的生成模型，在连续时间上实现稳定快速采样。</p><br /><br /><p><strong>摘要：</strong> 一致性模型（Consistency Models, CMs）是一类强大的基于扩散的生成模型，旨在实现快速采样。虽然现有的CMs大多采用离散时间步训练，这带来了额外的超参数并易受到离散化误差影响。但连续时间形式可以缓解这些问题，然而其成功受到训练不稳定性的限制。为了解决这一问题，我们提出了一个简化的理论框架，用于统一以前的扩散模型和CMs的参数化，找出了不稳定性的根本原因。在此分析的基础上，我们引入了扩散过程参数化、网络架构和训练目标的关键改进。这些改变使我们能够在前所未有的规模上训练连续时间CMs，达到1.5亿参数在ImageNet 512x512上。我们的训练算法仅使用两个采样步骤，即在CIFAR-10上实现了2.06的FID分数，在ImageNet 64x64上为1.48，在ImageNet 512x512上为1.88，FID分数与最佳扩散模型之间的差距缩小到10%以内。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.11081" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 17 Oct 2024 07:42:04 GMT</pubDate>
 <pubDate>Thu, 17 Oct 2024 07:42:04 GMT</pubDate>
 </item>
 <item>
@@ -69,14 +79,10 @@
 <link>https://arxiv.org/abs/2410.12722</link>
 <guid>https://arxiv.org/abs/2410.12722</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>WorldMedQA-V是一个更新的多语言多模态基准数据集，旨在评估医疗领域的视觉语言模型。</p><br><br><p><strong>摘要：</strong> 随着多模态/视觉语言模型（VLMs）在全球医疗环境中的广泛应用，确保其安全性、有效性和公平性变得日益重要。本研究提出了WorldMedQA-V，一个更新的多语言多模态基准测试数据集，旨在评估VLMs在医疗领域的表现。该数据集包括568个标记的多项选择题和568个医学图像，覆盖来自巴西、以色列、日本和西班牙的四个国家，提供了原语言及经过本地临床医生验证的英文翻译。我们还提供了常见开源和闭源模型的基准性能测试结果，涵盖本地语言和英文翻译，并针对模型在有无图像的情况下的表现进行了对比。WorldMedQA-V基准旨在更好地匹配AI系统与其所处的多样化医疗环境，促进更公平、高效和具代表性的应用。该数据集为未来在多语言和多模态的医疗场景中的模型发展和应用提供了重要的基准依据。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.12722 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">WorldMedQA-V是一个更新的多语言多模态基准数据集，旨在评估医疗领域的视觉语言模型。</p><br /><br /><p><strong>摘要：</strong> 随着多模态/视觉语言模型（VLMs）在全球医疗环境中的广泛应用，确保其安全性、有效性和公平性变得日益重要。本研究提出了WorldMedQA-V，一个更新的多语言多模态基准测试数据集，旨在评估VLMs在医疗领域的表现。该数据集包括568个标记的多项选择题和568个医学图像，覆盖来自巴西、以色列、日本和西班牙的四个国家，提供了原语言及经过本地临床医生验证的英文翻译。我们还提供了常见开源和闭源模型的基准性能测试结果，涵盖本地语言和英文翻译，并针对模型在有无图像的情况下的表现进行了对比。WorldMedQA-V基准旨在更好地匹配AI系统与其所处的多样化医疗环境，促进更公平、高效和具代表性的应用。该数据集为未来在多语言和多模态的医疗场景中的模型发展和应用提供了重要的基准依据。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.12722" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Thu, 17 Oct 2024 07:19:55 GMT</pubDate>
-<pubDate>Thu, 17 Oct 2024 07:19:55 GMT</pubDate>
 </item>
-
 <item>
 <title>Large Language Model Evaluation via Matrix Nuclear-Norm</title>
 <link>https://arxiv.org/abs/2410.10672</link>
