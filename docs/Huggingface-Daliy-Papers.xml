@@ -5,15 +5,85 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>Large Language Model Evaluation via Matrix Nuclear-Norm</title>
+<link>https://arxiv.org/abs/2410.10672</link>
+<guid>https://arxiv.org/abs/2410.10672</guid>
+<content:encoded><![CDATA[
+
+  As large language models (LLMs) continue to evolve, efficient evaluation metrics are vital for assessing their ability to compress information and reduce redundancy. While traditional metrics like Matrix Entropy offer valuable insights, they are computationally intensive for large-scale models due to their \( O(n^3) \) time complexity with Singular Value Decomposition (SVD). To mitigate this issue, we introduce the Matrix Nuclear-Norm, which not only serves as a metric to quantify the data compression proficiency of LLM but also provides a convex approximation of matrix rank to capture both predictive discriminability and diversity. By employing the \( L_{1,2}-norm \) to further approximate the nuclear norm, we can effectively assess the model's information compression capabilities. This approach reduces the time complexity to \( O(n^2) \) and eliminates the need for SVD computation. Consequently, the Matrix Nuclear-Norm achieves speeds 8 to 24 times faster than Matrix Entropy for the CEREBRAS-GPT model as sizes increase from 111M to 6.7B. This performance gap becomes more pronounced with larger models, as validated in tests with other models like Pythia. Additionally, evaluations on benchmarks and model responses confirm that our proposed Matrix Nuclear-Norm is a reliable, scalable, and efficient tool for assessing LLMs' performance, striking a balance between accuracy and computational efficiency. The code is available at https://github.com/MLGroupJLU/MatrixNuclearNorm.
+
+]]></content:encoded>
+<pubDate>Thu, 17 Oct 2024 05:44:04 GMT</pubDate>
+<pubDate>Thu, 17 Oct 2024 05:44:04 GMT</pubDate>
+</item>
+<item>
+<title>VidEgoThink：评估自我视角视频理解能力的综合基准</title>
+<link>https://arxiv.org/abs/2410.11623</link>
+<guid>https://arxiv.org/abs/2410.11623</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>VidEgoThink基准评估自我视角视频理解能力，揭示多模态大语言模型在此领域的局限性。</p><br><br><p><strong>摘要：</strong> 近年来，多模态大语言模型（MLLMs）的进步为具身人工智能应用开辟了新方向。在之前工作EgoThink的基础上，我们提出了VidEgoThink，这是一个用于评估自我视角视频理解能力的综合基准。为了弥合MLLMs与具身AI低级控制之间的差距，我们设计了四个相互关联的关键任务：视频问答、层次规划、视觉定位和奖励建模。为降低手动标注成本，我们基于Ego4D数据集开发了一种自动数据生成管道，利用GPT-4o的先验知识和多模态能力，随后三位人工标注者过滤生成的数据，以确保多样性和质量，最终形成了VidEgoThink基准。我们对三种类型的模型进行了广泛实验：基于API的MLLMs、开源图像基MLLMs和开源视频基MLLMs。实验结果表明，包括GPT-4o在内的所有MLLMs在自我视角视频理解相关任务上表现较差。这些发现表明，基础模型仍需重大进展才能有效应用于具身人工智能中的第一人称场景。总体而言，VidEgoThink反映了将MLLMs应用于自我视角视觉的研究趋势，旨在实现与人类能力相似的主动观察与互动，探究复杂现实环境中的行为。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.11623 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 17 Oct 2024 05:23:48 GMT</pubDate>
+<pubDate>Thu, 17 Oct 2024 05:23:48 GMT</pubDate>
+</item>
+<item>
+<title>ZipVL：针对大规模视觉语言模型的高效推理框架</title>
+<link>https://arxiv.org/abs/2410.08584</link>
+<guid>https://arxiv.org/abs/2410.08584</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>ZipVL通过动态重要令牌比例分配策略，提高大规模视觉语言模型的推理效率，减小计算和内存瓶颈。</p><br><br><p><strong>摘要：</strong> 本文提出了ZipVL，一个高效的推理框架，旨在解决大规模视觉语言模型（LVLMs）在预填充阶段的计算瓶颈和解码阶段的内存瓶颈。ZipVL采用动态重要令牌比例分配策略，该比例依据层特定的注意力分数分布自适应确定，以优化较低复杂性任务的效率，同时保持高复杂性任务的表现。我们通过标准化注意力分数选择重要令牌，并仅对这些重要令牌执行注意力机制，从而加速预填充阶段。此外，在解码阶段，我们对键值（KV）缓存采用混合精度量化，对重要令牌的缓存使用高位量化，对不太重要的缓存应用低位量化。实验结果显示，ZipVL能够将预填充阶段的速度提升2.6倍，同时将GPU内存使用减少50.0%，在LongVA-7B模型上，在Video-MME基准上仅有0.2%的准确率下降，从而有效增强了LVLMs的生成效率。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.08584 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 17 Oct 2024 03:40:12 GMT</pubDate>
+<pubDate>Thu, 17 Oct 2024 03:40:12 GMT</pubDate>
+</item>
+<item>
+<title>多模态模型中的幻觉问题研究：挑战与前景</title>
+<link>https://arxiv.org/abs/2410.12787</link>
+<guid>https://arxiv.org/abs/2410.12787</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>该研究系统分析了大规模多模态模型中的幻觉现象，提出评估基准并探讨解决方案。</p><br><br><p><strong>摘要：</strong> 近期大规模多模态模型（LMMs）的进展显著提升了在多种任务中的表现，且仍在持续研究如何整合视频和音频等附加模态。然而，现有LMMs仍然易受幻觉影响，即实际的多模态输入与生成的文本输出之间的差异，这限制了它们在各种实际场景中的应用。本研究首次系统性地调查了涉及语言、视觉和音频这三种最常见模态的LMMs中的幻觉现象。我们的研究揭示了两个关键原因：对单一模态先验的过度依赖及模态间虚假的关联。为了解决这些挑战，我们推出了基准The Curse of Multi-Modalities (CMM)，全面评估LMMs中的幻觉，并深入分析其根本问题。研究结果突显出关键脆弱点，包括模态整合的不平衡和来自训练数据的偏见，强调了平衡的跨模态学习和增强幻觉减轻策略的必要性。基于我们的观察和发现，我们提出了可能增强LMMs可靠性的研究方向。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.12787 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 17 Oct 2024 02:21:58 GMT</pubDate>
+<pubDate>Thu, 17 Oct 2024 02:21:58 GMT</pubDate>
+</item>
+<item>
+<title>HumanEval-V：评估大型多模态模型的视觉理解与编程能力的基准</title>
+<link>https://arxiv.org/abs/2410.12381</link>
+<guid>https://arxiv.org/abs/2410.12381</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>HumanEval-V是一个新基准，评估大型多模态模型的编码与视觉推理能力。</p><br><br><p><strong>摘要：</strong> 随着大型语言模型（LLMs）在编码任务上的评估成为人工智能进步的重要工具，视觉感知能力的引入使得大型多模态模型（LMMs）变得愈发重要。然而，目前对于LMMs在视觉推理和代码生成方面的评估基准相对缺乏，为此我们提出了HumanEval-V。该基准包含108个精心设计的初级Python编码任务，来源于CodeForces和Stack Overflow，并经过适当调整以保证其独创性。每个任务都包括视觉元素和预定义的函数签名，模型需要基于这些内容生成代码解决方案，并通过手工编写的测试用例进行评估。在对19个先进的LMM进行评测后，我们发现目前LMM在视觉推理和编码能力上存在显著挑战，与商用模型如GPT-4o相比，其通过率仅为13%（pass@1）和36.4%（pass@10），而一些开源模型的通过率更低于4%。这些结果为未来的研究指明了增强LMM能力的关键方向。我们的代码和基准已开源，链接为：https://github.com/HumanEval-V/HumanEval-V-Benchmark。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.12381 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 17 Oct 2024 01:49:58 GMT</pubDate>
+<pubDate>Thu, 17 Oct 2024 01:49:58 GMT</pubDate>
+</item>
+<item>
+<title>跨模态时间理解的新模型与数据集研究</title>
+<link>https://arxiv.org/abs/2410.12109</link>
+<guid>https://arxiv.org/abs/2410.12109</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出OCTAV数据集及OMCAT模型，提升音视频跨模态时间理解的能力。</p><br><br><p><strong>摘要：</strong> 大型语言模型（LLMs）在文本生成与理解方面取得了显著进展，最近的研究扩展到了整合视觉和音频输入的多模态LLMs。然而，这些模型在细粒度的跨模态时间理解，特别是在音频与视频流之间相关事件的关联上仍然面临挑战。为了解决这些问题，我们提出了两个关键贡献：一个新的数据集OCTAV（Omni Context and Temporal Audio Video），旨在捕捉音视频之间的事件过渡；以及OMCAT（Omni Context Aware Transformer）模型，该模型利用RoTE（Rotary Time Embeddings），对RoPE进行创新扩展，提升了时间锚定任务的时效性和计算效率。通过强大的三阶段训练管道——特征对齐、指令调优和OCTAV特定训练——OMCAT在跨模态时间理解上表现卓越。我们的模型在音频视觉问答（AVQA）任务和OCTAV基准上展现了先进的性能，并通过全面的实验和消融研究验证了其在时间推理和跨模态对齐方面的显著提升。我们的数据集和代码将公开发布，演示页面链接为：https://om-cat.github.io。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.12109 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 17 Oct 2024 01:18:30 GMT</pubDate>
+<pubDate>Thu, 17 Oct 2024 01:18:30 GMT</pubDate>
+</item>
+
+<item>
 <title>ProSA：评估大型语言模型提示敏感性的框架</title>
 <link>https://arxiv.org/abs/2410.12405</link>
 <guid>https://arxiv.org/abs/2410.12405</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>ProSA框架评估大型语言模型在不同提示下的性能敏感性，提出新的度量指标并揭示其内在机制。</p><br><br><p><strong>摘要：</strong> 大型语言模型（LLMs）在多项任务中展现出令人印象深刻的能力，但其表现对所使用的提示高度敏感。这种可变性给准确评估和用户满意度带来了挑战。目前的研究常常忽视实例级提示变异及其对主观评估的影响。为了解决这些问题，我们提出了ProSA框架，该框架旨在评估和理解LLMs的提示敏感性。ProSA引入了一种新的敏感性度量指标PromptSensiScore，并利用解码置信度来阐明其内在机制。我们的广泛研究涵盖多项任务，揭示提示敏感性在不同数据集和模型间的波动状况，发现较大的模型表现出更强的鲁棒性。此外，我们观察到少量示例能够缓解这一敏感性问题，主观评估也受到提示敏感性的影响，特别是在复杂的推理任务中。值得注意的是，模型的更高置信度与提示鲁棒性之间呈正相关。我们相信这项工作将成为研究LLMs提示敏感性的重要工具。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.12405 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">ProSA框架评估大型语言模型在不同提示下的性能敏感性，提出新的度量指标并揭示其内在机制。</p><br /><br /><p><strong>摘要：</strong> 大型语言模型（LLMs）在多项任务中展现出令人印象深刻的能力，但其表现对所使用的提示高度敏感。这种可变性给准确评估和用户满意度带来了挑战。目前的研究常常忽视实例级提示变异及其对主观评估的影响。为了解决这些问题，我们提出了ProSA框架，该框架旨在评估和理解LLMs的提示敏感性。ProSA引入了一种新的敏感性度量指标PromptSensiScore，并利用解码置信度来阐明其内在机制。我们的广泛研究涵盖多项任务，揭示提示敏感性在不同数据集和模型间的波动状况，发现较大的模型表现出更强的鲁棒性。此外，我们观察到少量示例能够缓解这一敏感性问题，主观评估也受到提示敏感性的影响，特别是在复杂的推理任务中。值得注意的是，模型的更高置信度与提示鲁棒性之间呈正相关。我们相信这项工作将成为研究LLMs提示敏感性的重要工具。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.12405" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 17 Oct 2024 01:00:15 GMT</pubDate>
 <pubDate>Thu, 17 Oct 2024 01:00:15 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +91,8 @@
 <link>https://arxiv.org/abs/2410.12613</link>
 <guid>https://arxiv.org/abs/2410.12613</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出模型亲缘关系，优化大语言模型合并策略，提升性能。</p><br><br><p><strong>摘要：</strong> 本文提出了模型亲缘关系（Model Kinship）的概念，旨在衡量大型语言模型（LLMs）之间的相似性和相关性。通过综合实证分析，我们发现模型亲缘关系与模型合并后性能增益之间存在一定的关系，这可以帮助我们在选择候选模型时做出更明智的判断。基于这一发现，我们提出了一种新的合并策略——基于模型亲缘关系的Top-k贪婪合并。这种方法在基准数据集上的表现更佳，并且我们发现利用模型亲缘关系作为标准可以促进持续的模型合并，缓解模型进化过程中的性能退化（局部最优）问题。此外，模型亲缘关系还可以帮助我们摆脱陷阱，实现更有效的模型演化。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.12613 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出模型亲缘关系，优化大语言模型合并策略，提升性能。</p><br /><br /><p><strong>摘要：</strong> 本文提出了模型亲缘关系（Model Kinship）的概念，旨在衡量大型语言模型（LLMs）之间的相似性和相关性。通过综合实证分析，我们发现模型亲缘关系与模型合并后性能增益之间存在一定的关系，这可以帮助我们在选择候选模型时做出更明智的判断。基于这一发现，我们提出了一种新的合并策略——基于模型亲缘关系的Top-k贪婪合并。这种方法在基准数据集上的表现更佳，并且我们发现利用模型亲缘关系作为标准可以促进持续的模型合并，缓解模型进化过程中的性能退化（局部最优）问题。此外，模型亲缘关系还可以帮助我们摆脱陷阱，实现更有效的模型演化。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.12613" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 17 Oct 2024 00:55:42 GMT</pubDate>
 <pubDate>Thu, 17 Oct 2024 00:55:42 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +100,8 @@
 <link>https://arxiv.org/abs/2410.12628</link>
 <guid>https://arxiv.org/abs/2410.12628</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文介绍了一种名为DocLayout-YOLO的新方法，旨在提升文档布局分析的速度和准确性。</p><br><br><p><strong>摘要：</strong> 在文档理解系统中，文档布局分析至关重要，但面临速度与准确性之间的权衡。针对这一问题，本文提出DocLayout-YOLO，一种通过文档特定优化在预训练和模型设计上提高准确性并保持速度优势的新方法。我们提出Mesh-candidate BestFit算法，将文档合成视为二维装箱问题，从而生成大规模、多样化的DocSynth-300K数据集，实现稳健的文档预训练。使用DocSynth-300K进行预训练显著提升了各种文档类型的微调性能。在模型优化方面，我们提出了Global-to-Local可控感受野模块，能够更好地处理文档元素的多尺度变化。此外，为验证不同文档类型的性能，我们引入了复杂且具挑战性的基准测试DocStructBench。大量实验证明，DocLayout-YOLO在速度和准确性方面均表现优异。代码、数据和模型可在https://github.com/opendatalab/DocLayout-YOLO获取。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.12628 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文介绍了一种名为DocLayout-YOLO的新方法，旨在提升文档布局分析的速度和准确性。</p><br /><br /><p><strong>摘要：</strong> 在文档理解系统中，文档布局分析至关重要，但面临速度与准确性之间的权衡。针对这一问题，本文提出DocLayout-YOLO，一种通过文档特定优化在预训练和模型设计上提高准确性并保持速度优势的新方法。我们提出Mesh-candidate BestFit算法，将文档合成视为二维装箱问题，从而生成大规模、多样化的DocSynth-300K数据集，实现稳健的文档预训练。使用DocSynth-300K进行预训练显著提升了各种文档类型的微调性能。在模型优化方面，我们提出了Global-to-Local可控感受野模块，能够更好地处理文档元素的多尺度变化。此外，为验证不同文档类型的性能，我们引入了复杂且具挑战性的基准测试DocStructBench。大量实验证明，DocLayout-YOLO在速度和准确性方面均表现优异。代码、数据和模型可在https://github.com/opendatalab/DocLayout-YOLO获取。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.12628" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 17 Oct 2024 00:44:41 GMT</pubDate>
 <pubDate>Thu, 17 Oct 2024 00:44:41 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +109,8 @@
 <link>https://arxiv.org/abs/2410.11817</link>
 <guid>https://arxiv.org/abs/2410.11817</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文提出LongAlign方法，通过分段编码和偏好优化提高长文本的图像生成对齐效果。</p><br><br><p><strong>摘要：</strong> 随着文本到图像（T2I）扩散模型的快速发展，它们能够根据给定文本生成前所未有的结果。然而，对于长文本的输入，现有的编码方法（如CLIP）面临限度，导致生成的图像与长文本的对齐变得具有挑战性。为了解决这些问题，本文提出了LongAlign方法，包括一种分段级编码方法，用于处理长文本，以及一种分解的偏好优化方法，以实现有效的对齐训练。在分段级编码中，长文本被拆分为多个段落并单独处理，从而克服了预训练编码模型的最大输入长度限制。在偏好优化方面，我们提供了基于CLIP的分解偏好模型来微调扩散模型。我们深入研究了CLIP-based偏好模型的评分机制，并发现偏好分数可以分解为两个组件：一个与文本相关的部分用于测量T2I对齐程度，另一个与文本无关的部分评估人类偏好的其他视觉方面。通过提出重加权策略，分配这两个组件不同的权重，我们减少了过拟合现象，提高了对齐效果。经过大约20小时的微调，512x512的Stable Diffusion (SD) v1.5显著超越了PixArt-alpha和Kandinsky v2.2等更强大的基础模型。相关代码已发布于https://github.com/luping-liu/LongAlign。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.11817 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文提出LongAlign方法，通过分段编码和偏好优化提高长文本的图像生成对齐效果。</p><br /><br /><p><strong>摘要：</strong> 随着文本到图像（T2I）扩散模型的快速发展，它们能够根据给定文本生成前所未有的结果。然而，对于长文本的输入，现有的编码方法（如CLIP）面临限度，导致生成的图像与长文本的对齐变得具有挑战性。为了解决这些问题，本文提出了LongAlign方法，包括一种分段级编码方法，用于处理长文本，以及一种分解的偏好优化方法，以实现有效的对齐训练。在分段级编码中，长文本被拆分为多个段落并单独处理，从而克服了预训练编码模型的最大输入长度限制。在偏好优化方面，我们提供了基于CLIP的分解偏好模型来微调扩散模型。我们深入研究了CLIP-based偏好模型的评分机制，并发现偏好分数可以分解为两个组件：一个与文本相关的部分用于测量T2I对齐程度，另一个与文本无关的部分评估人类偏好的其他视觉方面。通过提出重加权策略，分配这两个组件不同的权重，我们减少了过拟合现象，提高了对齐效果。经过大约20小时的微调，512x512的Stable Diffusion (SD) v1.5显著超越了PixArt-alpha和Kandinsky v2.2等更强大的基础模型。相关代码已发布于https://github.com/luping-liu/LongAlign。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.11817" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 17 Oct 2024 00:20:12 GMT</pubDate>
 <pubDate>Thu, 17 Oct 2024 00:20:12 GMT</pubDate>
 </item>
 <item>
@@ -57,14 +118,10 @@
 <link>https://arxiv.org/abs/2410.12409</link>
 <guid>https://arxiv.org/abs/2410.12409</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文研究语言智能体在自主规划中面临的限制因素及其影响，包括约束条件作用有限与问题效应减弱。</p><br><br><p><strong>摘要：</strong> 自主规划自人工智能诞生以来一直是一个重要研究领域。早期的规划智能体主要针对特定任务提供精准解决方案，但缺乏通用能力。随着大型语言模型（LLMs）及其强大推理能力的出现，自动生成合适方案的兴趣重新涌现。然而，现有研究表明，目前的语言智能体仍未达到人类级别的规划能力，OpenAI的o1模型在复杂真实世界规划基准上仅获得15.6%的成绩。本文探讨了阻碍语言智能体实现人类级规划的深层次原因，并通过特征归因研究识别了两个关键因素：约束条件的有限作用和问题的减弱影响。虽然目前的解决策略在一定程度上减轻了这些挑战，但并未完全解决，显示出智能体在达到人类级智能方面仍然任重道远。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.12409 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文研究语言智能体在自主规划中面临的限制因素及其影响，包括约束条件作用有限与问题效应减弱。</p><br /><br /><p><strong>摘要：</strong> 自主规划自人工智能诞生以来一直是一个重要研究领域。早期的规划智能体主要针对特定任务提供精准解决方案，但缺乏通用能力。随着大型语言模型（LLMs）及其强大推理能力的出现，自动生成合适方案的兴趣重新涌现。然而，现有研究表明，目前的语言智能体仍未达到人类级别的规划能力，OpenAI的o1模型在复杂真实世界规划基准上仅获得15.6%的成绩。本文探讨了阻碍语言智能体实现人类级规划的深层次原因，并通过特征归因研究识别了两个关键因素：约束条件的有限作用和问题的减弱影响。虽然目前的解决策略在一定程度上减轻了这些挑战，但并未完全解决，显示出智能体在达到人类级智能方面仍然任重道远。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.12409" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Thu, 17 Oct 2024 00:09:59 GMT</pubDate>
-<pubDate>Thu, 17 Oct 2024 00:09:59 GMT</pubDate>
 </item>
-
 <item>
 <title>MultiVENT 2.0：多语言事件驱动的视频检索基准</title>
 <link>https://arxiv.org/abs/2410.11619</link>
