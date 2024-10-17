@@ -4,16 +4,14 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+
 <item>
 <title>Large Language Model Evaluation via Matrix Nuclear-Norm</title>
 <link>https://arxiv.org/abs/2410.10672</link>
 <guid>https://arxiv.org/abs/2410.10672</guid>
 <content:encoded><![CDATA[
-
-  As large language models (LLMs) continue to evolve, efficient evaluation metrics are vital for assessing their ability to compress information and reduce redundancy. While traditional metrics like Matrix Entropy offer valuable insights, they are computationally intensive for large-scale models due to their \( O(n^3) \) time complexity with Singular Value Decomposition (SVD). To mitigate this issue, we introduce the Matrix Nuclear-Norm, which not only serves as a metric to quantify the data compression proficiency of LLM but also provides a convex approximation of matrix rank to capture both predictive discriminability and diversity. By employing the \( L_{1,2}-norm \) to further approximate the nuclear norm, we can effectively assess the model's information compression capabilities. This approach reduces the time complexity to \( O(n^2) \) and eliminates the need for SVD computation. Consequently, the Matrix Nuclear-Norm achieves speeds 8 to 24 times faster than Matrix Entropy for the CEREBRAS-GPT model as sizes increase from 111M to 6.7B. This performance gap becomes more pronounced with larger models, as validated in tests with other models like Pythia. Additionally, evaluations on benchmarks and model responses confirm that our proposed Matrix Nuclear-Norm is a reliable, scalable, and efficient tool for assessing LLMs' performance, striking a balance between accuracy and computational efficiency. The code is available at https://github.com/MLGroupJLU/MatrixNuclearNorm.
-
+As large language models (LLMs) continue to evolve, efficient evaluation metrics are vital for assessing their ability to compress information and reduce redundancy. While traditional metrics like Matrix Entropy offer valuable insights, they are computationally intensive for large-scale models due to their \( O(n^3) \) time complexity with Singular Value Decomposition (SVD). To mitigate this issue, we introduce the Matrix Nuclear-Norm, which not only serves as a metric to quantify the data compression proficiency of LLM but also provides a convex approximation of matrix rank to capture both predictive discriminability and diversity. By employing the \( L_{1,2}-norm \) to further approximate the nuclear norm, we can effectively assess the model's information compression capabilities. This approach reduces the time complexity to \( O(n^2) \) and eliminates the need for SVD computation. Consequently, the Matrix Nuclear-Norm achieves speeds 8 to 24 times faster than Matrix Entropy for the CEREBRAS-GPT model as sizes increase from 111M to 6.7B. This performance gap becomes more pronounced with larger models, as validated in tests with other models like Pythia. Additionally, evaluations on benchmarks and model responses confirm that our proposed Matrix Nuclear-Norm is a reliable, scalable, and efficient tool for assessing LLMs' performance, striking a balance between accuracy and computational efficiency. The code is available at https://github.com/MLGroupJLU/MatrixNuclearNorm.
 ]]></content:encoded>
-<pubDate>Thu, 17 Oct 2024 05:44:04 GMT</pubDate>
 <pubDate>Thu, 17 Oct 2024 05:44:04 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +19,8 @@
 <link>https://arxiv.org/abs/2410.11623</link>
 <guid>https://arxiv.org/abs/2410.11623</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>VidEgoThink基准评估自我视角视频理解能力，揭示多模态大语言模型在此领域的局限性。</p><br><br><p><strong>摘要：</strong> 近年来，多模态大语言模型（MLLMs）的进步为具身人工智能应用开辟了新方向。在之前工作EgoThink的基础上，我们提出了VidEgoThink，这是一个用于评估自我视角视频理解能力的综合基准。为了弥合MLLMs与具身AI低级控制之间的差距，我们设计了四个相互关联的关键任务：视频问答、层次规划、视觉定位和奖励建模。为降低手动标注成本，我们基于Ego4D数据集开发了一种自动数据生成管道，利用GPT-4o的先验知识和多模态能力，随后三位人工标注者过滤生成的数据，以确保多样性和质量，最终形成了VidEgoThink基准。我们对三种类型的模型进行了广泛实验：基于API的MLLMs、开源图像基MLLMs和开源视频基MLLMs。实验结果表明，包括GPT-4o在内的所有MLLMs在自我视角视频理解相关任务上表现较差。这些发现表明，基础模型仍需重大进展才能有效应用于具身人工智能中的第一人称场景。总体而言，VidEgoThink反映了将MLLMs应用于自我视角视觉的研究趋势，旨在实现与人类能力相似的主动观察与互动，探究复杂现实环境中的行为。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.11623 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">VidEgoThink基准评估自我视角视频理解能力，揭示多模态大语言模型在此领域的局限性。</p><br /><br /><p><strong>摘要：</strong> 近年来，多模态大语言模型（MLLMs）的进步为具身人工智能应用开辟了新方向。在之前工作EgoThink的基础上，我们提出了VidEgoThink，这是一个用于评估自我视角视频理解能力的综合基准。为了弥合MLLMs与具身AI低级控制之间的差距，我们设计了四个相互关联的关键任务：视频问答、层次规划、视觉定位和奖励建模。为降低手动标注成本，我们基于Ego4D数据集开发了一种自动数据生成管道，利用GPT-4o的先验知识和多模态能力，随后三位人工标注者过滤生成的数据，以确保多样性和质量，最终形成了VidEgoThink基准。我们对三种类型的模型进行了广泛实验：基于API的MLLMs、开源图像基MLLMs和开源视频基MLLMs。实验结果表明，包括GPT-4o在内的所有MLLMs在自我视角视频理解相关任务上表现较差。这些发现表明，基础模型仍需重大进展才能有效应用于具身人工智能中的第一人称场景。总体而言，VidEgoThink反映了将MLLMs应用于自我视角视觉的研究趋势，旨在实现与人类能力相似的主动观察与互动，探究复杂现实环境中的行为。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.11623" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 17 Oct 2024 05:23:48 GMT</pubDate>
 <pubDate>Thu, 17 Oct 2024 05:23:48 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +28,8 @@
 <link>https://arxiv.org/abs/2410.08584</link>
 <guid>https://arxiv.org/abs/2410.08584</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>ZipVL通过动态重要令牌比例分配策略，提高大规模视觉语言模型的推理效率，减小计算和内存瓶颈。</p><br><br><p><strong>摘要：</strong> 本文提出了ZipVL，一个高效的推理框架，旨在解决大规模视觉语言模型（LVLMs）在预填充阶段的计算瓶颈和解码阶段的内存瓶颈。ZipVL采用动态重要令牌比例分配策略，该比例依据层特定的注意力分数分布自适应确定，以优化较低复杂性任务的效率，同时保持高复杂性任务的表现。我们通过标准化注意力分数选择重要令牌，并仅对这些重要令牌执行注意力机制，从而加速预填充阶段。此外，在解码阶段，我们对键值（KV）缓存采用混合精度量化，对重要令牌的缓存使用高位量化，对不太重要的缓存应用低位量化。实验结果显示，ZipVL能够将预填充阶段的速度提升2.6倍，同时将GPU内存使用减少50.0%，在LongVA-7B模型上，在Video-MME基准上仅有0.2%的准确率下降，从而有效增强了LVLMs的生成效率。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.08584 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">ZipVL通过动态重要令牌比例分配策略，提高大规模视觉语言模型的推理效率，减小计算和内存瓶颈。</p><br /><br /><p><strong>摘要：</strong> 本文提出了ZipVL，一个高效的推理框架，旨在解决大规模视觉语言模型（LVLMs）在预填充阶段的计算瓶颈和解码阶段的内存瓶颈。ZipVL采用动态重要令牌比例分配策略，该比例依据层特定的注意力分数分布自适应确定，以优化较低复杂性任务的效率，同时保持高复杂性任务的表现。我们通过标准化注意力分数选择重要令牌，并仅对这些重要令牌执行注意力机制，从而加速预填充阶段。此外，在解码阶段，我们对键值（KV）缓存采用混合精度量化，对重要令牌的缓存使用高位量化，对不太重要的缓存应用低位量化。实验结果显示，ZipVL能够将预填充阶段的速度提升2.6倍，同时将GPU内存使用减少50.0%，在LongVA-7B模型上，在Video-MME基准上仅有0.2%的准确率下降，从而有效增强了LVLMs的生成效率。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.08584" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 17 Oct 2024 03:40:12 GMT</pubDate>
 <pubDate>Thu, 17 Oct 2024 03:40:12 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +37,8 @@
 <link>https://arxiv.org/abs/2410.12787</link>
 <guid>https://arxiv.org/abs/2410.12787</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>该研究系统分析了大规模多模态模型中的幻觉现象，提出评估基准并探讨解决方案。</p><br><br><p><strong>摘要：</strong> 近期大规模多模态模型（LMMs）的进展显著提升了在多种任务中的表现，且仍在持续研究如何整合视频和音频等附加模态。然而，现有LMMs仍然易受幻觉影响，即实际的多模态输入与生成的文本输出之间的差异，这限制了它们在各种实际场景中的应用。本研究首次系统性地调查了涉及语言、视觉和音频这三种最常见模态的LMMs中的幻觉现象。我们的研究揭示了两个关键原因：对单一模态先验的过度依赖及模态间虚假的关联。为了解决这些挑战，我们推出了基准The Curse of Multi-Modalities (CMM)，全面评估LMMs中的幻觉，并深入分析其根本问题。研究结果突显出关键脆弱点，包括模态整合的不平衡和来自训练数据的偏见，强调了平衡的跨模态学习和增强幻觉减轻策略的必要性。基于我们的观察和发现，我们提出了可能增强LMMs可靠性的研究方向。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.12787 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">该研究系统分析了大规模多模态模型中的幻觉现象，提出评估基准并探讨解决方案。</p><br /><br /><p><strong>摘要：</strong> 近期大规模多模态模型（LMMs）的进展显著提升了在多种任务中的表现，且仍在持续研究如何整合视频和音频等附加模态。然而，现有LMMs仍然易受幻觉影响，即实际的多模态输入与生成的文本输出之间的差异，这限制了它们在各种实际场景中的应用。本研究首次系统性地调查了涉及语言、视觉和音频这三种最常见模态的LMMs中的幻觉现象。我们的研究揭示了两个关键原因：对单一模态先验的过度依赖及模态间虚假的关联。为了解决这些挑战，我们推出了基准The Curse of Multi-Modalities (CMM)，全面评估LMMs中的幻觉，并深入分析其根本问题。研究结果突显出关键脆弱点，包括模态整合的不平衡和来自训练数据的偏见，强调了平衡的跨模态学习和增强幻觉减轻策略的必要性。基于我们的观察和发现，我们提出了可能增强LMMs可靠性的研究方向。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.12787" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 17 Oct 2024 02:21:58 GMT</pubDate>
 <pubDate>Thu, 17 Oct 2024 02:21:58 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +46,8 @@
 <link>https://arxiv.org/abs/2410.12381</link>
 <guid>https://arxiv.org/abs/2410.12381</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>HumanEval-V是一个新基准，评估大型多模态模型的编码与视觉推理能力。</p><br><br><p><strong>摘要：</strong> 随着大型语言模型（LLMs）在编码任务上的评估成为人工智能进步的重要工具，视觉感知能力的引入使得大型多模态模型（LMMs）变得愈发重要。然而，目前对于LMMs在视觉推理和代码生成方面的评估基准相对缺乏，为此我们提出了HumanEval-V。该基准包含108个精心设计的初级Python编码任务，来源于CodeForces和Stack Overflow，并经过适当调整以保证其独创性。每个任务都包括视觉元素和预定义的函数签名，模型需要基于这些内容生成代码解决方案，并通过手工编写的测试用例进行评估。在对19个先进的LMM进行评测后，我们发现目前LMM在视觉推理和编码能力上存在显著挑战，与商用模型如GPT-4o相比，其通过率仅为13%（pass@1）和36.4%（pass@10），而一些开源模型的通过率更低于4%。这些结果为未来的研究指明了增强LMM能力的关键方向。我们的代码和基准已开源，链接为：https://github.com/HumanEval-V/HumanEval-V-Benchmark。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.12381 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">HumanEval-V是一个新基准，评估大型多模态模型的编码与视觉推理能力。</p><br /><br /><p><strong>摘要：</strong> 随着大型语言模型（LLMs）在编码任务上的评估成为人工智能进步的重要工具，视觉感知能力的引入使得大型多模态模型（LMMs）变得愈发重要。然而，目前对于LMMs在视觉推理和代码生成方面的评估基准相对缺乏，为此我们提出了HumanEval-V。该基准包含108个精心设计的初级Python编码任务，来源于CodeForces和Stack Overflow，并经过适当调整以保证其独创性。每个任务都包括视觉元素和预定义的函数签名，模型需要基于这些内容生成代码解决方案，并通过手工编写的测试用例进行评估。在对19个先进的LMM进行评测后，我们发现目前LMM在视觉推理和编码能力上存在显著挑战，与商用模型如GPT-4o相比，其通过率仅为13%（pass@1）和36.4%（pass@10），而一些开源模型的通过率更低于4%。这些结果为未来的研究指明了增强LMM能力的关键方向。我们的代码和基准已开源，链接为：https://github.com/HumanEval-V/HumanEval-V-Benchmark。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.12381" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 17 Oct 2024 01:49:58 GMT</pubDate>
 <pubDate>Thu, 17 Oct 2024 01:49:58 GMT</pubDate>
 </item>
 <item>
@@ -69,14 +55,10 @@
 <link>https://arxiv.org/abs/2410.12109</link>
 <guid>https://arxiv.org/abs/2410.12109</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文提出OCTAV数据集及OMCAT模型，提升音视频跨模态时间理解的能力。</p><br><br><p><strong>摘要：</strong> 大型语言模型（LLMs）在文本生成与理解方面取得了显著进展，最近的研究扩展到了整合视觉和音频输入的多模态LLMs。然而，这些模型在细粒度的跨模态时间理解，特别是在音频与视频流之间相关事件的关联上仍然面临挑战。为了解决这些问题，我们提出了两个关键贡献：一个新的数据集OCTAV（Omni Context and Temporal Audio Video），旨在捕捉音视频之间的事件过渡；以及OMCAT（Omni Context Aware Transformer）模型，该模型利用RoTE（Rotary Time Embeddings），对RoPE进行创新扩展，提升了时间锚定任务的时效性和计算效率。通过强大的三阶段训练管道——特征对齐、指令调优和OCTAV特定训练——OMCAT在跨模态时间理解上表现卓越。我们的模型在音频视觉问答（AVQA）任务和OCTAV基准上展现了先进的性能，并通过全面的实验和消融研究验证了其在时间推理和跨模态对齐方面的显著提升。我们的数据集和代码将公开发布，演示页面链接为：https://om-cat.github.io。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.12109 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文提出OCTAV数据集及OMCAT模型，提升音视频跨模态时间理解的能力。</p><br /><br /><p><strong>摘要：</strong> 大型语言模型（LLMs）在文本生成与理解方面取得了显著进展，最近的研究扩展到了整合视觉和音频输入的多模态LLMs。然而，这些模型在细粒度的跨模态时间理解，特别是在音频与视频流之间相关事件的关联上仍然面临挑战。为了解决这些问题，我们提出了两个关键贡献：一个新的数据集OCTAV（Omni Context and Temporal Audio Video），旨在捕捉音视频之间的事件过渡；以及OMCAT（Omni Context Aware Transformer）模型，该模型利用RoTE（Rotary Time Embeddings），对RoPE进行创新扩展，提升了时间锚定任务的时效性和计算效率。通过强大的三阶段训练管道——特征对齐、指令调优和OCTAV特定训练——OMCAT在跨模态时间理解上表现卓越。我们的模型在音频视觉问答（AVQA）任务和OCTAV基准上展现了先进的性能，并通过全面的实验和消融研究验证了其在时间推理和跨模态对齐方面的显著提升。我们的数据集和代码将公开发布，演示页面链接为：https://om-cat.github.io。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.12109" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Thu, 17 Oct 2024 01:18:30 GMT</pubDate>
-<pubDate>Thu, 17 Oct 2024 01:18:30 GMT</pubDate>
 </item>
-
 <item>
 <title>ProSA：评估大型语言模型提示敏感性的框架</title>
 <link>https://arxiv.org/abs/2410.12405</link>
