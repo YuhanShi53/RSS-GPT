@@ -5,15 +5,37 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>语言模型校准：应对RLHF中的过度自信现象</title>
+<link>https://arxiv.org/abs/2410.09724</link>
+<guid>https://arxiv.org/abs/2410.09724</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文探讨了模型过度自信的原因，并提出两种强化学习变种以改善模型校准。</p><br><br><p><strong>摘要：</strong> 本文研究语言模型的校准问题，特别是强化学习中的人类反馈（RLHF）如何导致模型在自身响应上的过度自信现象。我们指出，RLHF训练的奖励模型在实际响应质量与高置信度分数之间存在固有偏差。为此，本文提出了两种改进的近端策略优化（PPO）方法：PPO-M和PPO-C。PPO-M通过在奖励模型训练中整合显式置信度分数来校准奖励模型，而PPO-C则是在PPO过程中根据当前奖励与过去奖励的移动平均差异调节奖励分数。这两种方法可以无缝集成到现有的PPO流程中，且不需要额外的黄金标签。我们在Llama3-8B和Mistral-7B模型上，对六个多样化的数据集进行了评估，包括多选择题和开放式生成。实验结果表明，这两种方法能有效减少校准误差，同时维持与标准PPO相当的性能，并且在开放式对话场景中不影响模型能力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.09724 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 17 Oct 2024 14:29:03 GMT</pubDate>
+<pubDate>Thu, 17 Oct 2024 14:29:03 GMT</pubDate>
+</item>
+<item>
+<title>优化潜在空间的图像生成模型：DiGIT的探索</title>
+<link>https://arxiv.org/abs/2410.12490</link>
+<guid>https://arxiv.org/abs/2410.12490</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本研究提出DiGIT，提升图像自回归生成模型的性能，首次 outperform LDMs。</p><br><br><p><strong>摘要：</strong> 本文探讨了潜在空间在图像生成模型中的稳定性，特别是自回归模型与潜在扩散模型（LDMs）和掩模图像模型（MIMs）之间的差异。尽管自回归模型在自然语言处理（NLP）中表现卓越，但在图像生成领域存在明显劣势。为解决这一问题，提出了一种简单有效的离散图像标记器（DiGIT），旨在稳定图像生成中的潜在空间。通过实验验证，DiGIT 在图像理解和生成上均显著提升了自回归模型的性能，显示出基于下一个标记预测原则的优势。值得注意的是，DiGIT 的实现首次使自回归图像模型超越了 LDMs，并展示了随模型规模扩大而带来的显著改进。这一发现强调了优化潜在空间和离散标记化的结合对于推动图像生成模型能力的潜力。代码可在 https://github.com/DAMO-NLP-SG/DiGIT 中获取。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.12490 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 17 Oct 2024 13:58:54 GMT</pubDate>
+<pubDate>Thu, 17 Oct 2024 13:58:54 GMT</pubDate>
+</item>
+
+<item>
 <title>ChroKnowBench：评估大规模语言模型的时间知识积累</title>
 <link>https://arxiv.org/abs/2410.09870</link>
 <guid>https://arxiv.org/abs/2410.09870</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出ChroKnowBench基准和ChroKnowledge框架，以评估大规模语言模型的时间知识及其更新效果。</p><br><br><p><strong>摘要：</strong> 本研究提出了ChroKnowBench，一个用于评估大规模语言模型（LLMs）时间知识积累的新基准数据集，旨在解决知识的累积性质与时间依赖性。该基准涵盖多个领域，区分了随着时间演变的知识（如科学发现、修订法律）与不变的知识（如数学真理、公理事实）。基于此基准，研究者们引入了ChroKnowledge（Chronological Categorization of Knowledge），一个用于评价和更新LLMs非参数时间知识的采样框架。评估结果显示，模型在提取时间知识的能力上与训练数据格式有关，并且往往在时间边界处出现知识回忆的截断。为此，研究者提出了ChroKnowPrompt，通过逐步引导模型穿越时间跨度，来有效地引发时间知识的提取。结果表明，该框架在生物医学领域和通用领域成功更新了整体知识，分别提升了11.9%和2.8%。该非参数方法适用于开源模型和专有LLMs，确保了其全面适用性，展示了通过此方法提取内在时间知识的潜力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.09870 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出ChroKnowBench基准和ChroKnowledge框架，以评估大规模语言模型的时间知识及其更新效果。</p><br /><br /><p><strong>摘要：</strong> 本研究提出了ChroKnowBench，一个用于评估大规模语言模型（LLMs）时间知识积累的新基准数据集，旨在解决知识的累积性质与时间依赖性。该基准涵盖多个领域，区分了随着时间演变的知识（如科学发现、修订法律）与不变的知识（如数学真理、公理事实）。基于此基准，研究者们引入了ChroKnowledge（Chronological Categorization of Knowledge），一个用于评价和更新LLMs非参数时间知识的采样框架。评估结果显示，模型在提取时间知识的能力上与训练数据格式有关，并且往往在时间边界处出现知识回忆的截断。为此，研究者提出了ChroKnowPrompt，通过逐步引导模型穿越时间跨度，来有效地引发时间知识的提取。结果表明，该框架在生物医学领域和通用领域成功更新了整体知识，分别提升了11.9%和2.8%。该非参数方法适用于开源模型和专有LLMs，确保了其全面适用性，展示了通过此方法提取内在时间知识的潜力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.09870" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 17 Oct 2024 11:56:11 GMT</pubDate>
 <pubDate>Thu, 17 Oct 2024 11:56:11 GMT</pubDate>
 </item>
 <item>
@@ -21,14 +43,10 @@
 <link>https://arxiv.org/abs/2410.08968</link>
 <guid>https://arxiv.org/abs/2410.08968</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出可控安全对齐（CoSA）框架，使语言模型根据安全配置灵活适应用户需求。</p><br><br><p><strong>摘要：</strong> 当前大型语言模型（LLM）的安全对齐方法采用一刀切的方式，模型对任何被提供者认定为不安全的内容拒绝交互。这种方法在面对不同文化和地区的社会规范时缺乏灵活性。此外，由于用户的安全需求各不相同，静态的安全标准可能过于严格，影响模型的实用性，并且重新对齐的成本也较高。为此，我们提出可控安全对齐（CoSA）框架，旨在在不重新训练的情况下，使模型适应多样化的安全要求。CoSA通过将安全配置作为系统提示的一部分，使模型遵循自由形式的自然语言描述来调整安全行为。通过在推理过程中由授权用户修改安全配置，可以简单地调整模型的安全行为。我们还提出了CoSAlign，一种数据中心的方法，使得LLM能够轻松适应多样化的安全配置。此外，我们设计了一个新颖的可控性评估协议，考虑了有用性和配置安全，并将其总结为CoSA评分。我们构建了CoSApien，这是一个包含真实世界LLM用例及其评估提示的人类创作基准。实验证明，CoSAlign在可控性方面相较强基线，包括上下文对齐，获得了显著提升。我们的框架鼓励更好地表现和适应多元化的人类价值观，从而增加LLM的实用性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.08968 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出可控安全对齐（CoSA）框架，使语言模型根据安全配置灵活适应用户需求。</p><br /><br /><p><strong>摘要：</strong> 当前大型语言模型（LLM）的安全对齐方法采用一刀切的方式，模型对任何被提供者认定为不安全的内容拒绝交互。这种方法在面对不同文化和地区的社会规范时缺乏灵活性。此外，由于用户的安全需求各不相同，静态的安全标准可能过于严格，影响模型的实用性，并且重新对齐的成本也较高。为此，我们提出可控安全对齐（CoSA）框架，旨在在不重新训练的情况下，使模型适应多样化的安全要求。CoSA通过将安全配置作为系统提示的一部分，使模型遵循自由形式的自然语言描述来调整安全行为。通过在推理过程中由授权用户修改安全配置，可以简单地调整模型的安全行为。我们还提出了CoSAlign，一种数据中心的方法，使得LLM能够轻松适应多样化的安全配置。此外，我们设计了一个新颖的可控性评估协议，考虑了有用性和配置安全，并将其总结为CoSA评分。我们构建了CoSApien，这是一个包含真实世界LLM用例及其评估提示的人类创作基准。实验证明，CoSAlign在可控性方面相较强基线，包括上下文对齐，获得了显著提升。我们的框架鼓励更好地表现和适应多元化的人类价值观，从而增加LLM的实用性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.08968" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Thu, 17 Oct 2024 11:46:21 GMT</pubDate>
-<pubDate>Thu, 17 Oct 2024 11:46:21 GMT</pubDate>
 </item>
-
 <item>
 <title>动态词汇头（DyVo）提升稀疏检索模型的实体识别效果</title>
 <link>https://arxiv.org/abs/2410.07722</link>
