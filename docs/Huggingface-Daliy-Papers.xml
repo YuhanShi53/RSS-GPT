@@ -5,15 +5,25 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>大语言模型的自我预测：内省能力的探索</title>
+<link>https://arxiv.org/abs/2410.13787</link>
+<guid>https://arxiv.org/abs/2410.13787</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本研究探讨了大语言模型是否具备内省能力，实验结果表明经过微调的模型可以更好地预测自身行为。</p><br><br><p><strong>摘要：</strong> 本研究旨在探索大语言模型（LLMs）的内省能力，即模型是否能够获取并报告其内部状态所反映的知识，从而增强模型的可解释性。我们通过微调模型，使其能够预测在假设场景下自己行为的特征。例如，当输入为P时，模型会预测其输出是倾向短期还是长期选项。如果模型M1具备内省能力，它在预测自身行为方面应优于模型M2，即使M2在训练上更为强大。我们的实验使用了GPT-4、GPT-4o和Llama-3模型，结果表明，经过微调的模型M1在自我预测中表现优于其他模型，并且即使在我们故意修改其真实行为后，M1仍能准确预测自身行为。然而，尽管在简单任务上成功获取内省能力，在更复杂的任务或需要超出训练分布的推广能力上，我们的探索则表现不佳。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.13787 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 21 Oct 2024 11:27:51 GMT</pubDate>
+<pubDate>Mon, 21 Oct 2024 11:27:51 GMT</pubDate>
+</item>
+
+<item>
 <title>训练方法对神经网络层重要性的影响</title>
 <link>https://arxiv.org/abs/2410.14470</link>
 <guid>https://arxiv.org/abs/2410.14470</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究表明，训练方法影响神经网络不同层的关键性，改善的训练方式增加了早期层的重要性。</p><br><br><p><strong>摘要：</strong> 本研究探讨了在恒定架构和训练数据的情况下，不同训练管道对神经网络决策函数中各层参数重要性的影响。通过对多种ImageNet-1k分类模型的实验评估，我们发现训练方法显著影响各层对任务的重要性。例如，改进的训练策略和自监督训练提升了早期层的关键性，而较少利用深层层次。相反，像对抗训练这样的策略则显示出与之相反的趋势。这些初步结果进一步扩展了以往研究，提供了对神经网络内部机制更加细致的理解。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.14470 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究表明，训练方法影响神经网络不同层的关键性，改善的训练方式增加了早期层的重要性。</p><br /><br /><p><strong>摘要：</strong> 本研究探讨了在恒定架构和训练数据的情况下，不同训练管道对神经网络决策函数中各层参数重要性的影响。通过对多种ImageNet-1k分类模型的实验评估，我们发现训练方法显著影响各层对任务的重要性。例如，改进的训练策略和自监督训练提升了早期层的关键性，而较少利用深层层次。相反，像对抗训练这样的策略则显示出与之相反的趋势。这些初步结果进一步扩展了以往研究，提供了对神经网络内部机制更加细致的理解。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.14470" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 21 Oct 2024 08:23:59 GMT</pubDate>
 <pubDate>Mon, 21 Oct 2024 08:23:59 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +31,8 @@
 <link>https://arxiv.org/abs/2410.14669</link>
 <guid>https://arxiv.org/abs/2410.14669</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文探讨了视觉语言模型在自然图像和人类易答问题上的不足，提出自然基准评估方法。</p><br><br><p><strong>摘要：</strong> 近年来，视觉语言模型（VLMs）在复杂的视觉问答（VQA）基准测试中取得了显著进展。然而，本研究显示，VLMs 在处理普通图像和人类易于回答的问题时仍面临挑战，这类样本被称为自然对抗样本。我们发现，通过使用 CLIP 和 ChatGPT 等现成模型，相对简单地生成这些 VQA 样本。为此，我们提出了一种半自动的方法，收集了一个新的基准数据集，NaturalBench，包含 10,000 个经过人类验证的 VQA 样本。该基准设计优先考虑视觉元素，通过将每个问题与两幅不同答案的图像配对，有效防止了模型的盲目解答，提升了挑战性。对 53 个先进的 VLMs 的评估结果显示，包括 LLaVA-OneVision、Cambrian-1、Llama3.2-Vision、Molmo、Qwen2-VL 和 GPT-4o 在内的模型相较于人类表现，落后 50%-70%。分析表明，NaturalBench 的难点主要体现在组合性和偏见两个方面，这些发现为后续研究提供了启示。此外，借助我们的方法，NaturalBench 的框架也可应用于多样的数据源，包括长标题和非英语语言，展示了其动态评估 VLMs 的潜力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.14669 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文探讨了视觉语言模型在自然图像和人类易答问题上的不足，提出自然基准评估方法。</p><br /><br /><p><strong>摘要：</strong> 近年来，视觉语言模型（VLMs）在复杂的视觉问答（VQA）基准测试中取得了显著进展。然而，本研究显示，VLMs 在处理普通图像和人类易于回答的问题时仍面临挑战，这类样本被称为自然对抗样本。我们发现，通过使用 CLIP 和 ChatGPT 等现成模型，相对简单地生成这些 VQA 样本。为此，我们提出了一种半自动的方法，收集了一个新的基准数据集，NaturalBench，包含 10,000 个经过人类验证的 VQA 样本。该基准设计优先考虑视觉元素，通过将每个问题与两幅不同答案的图像配对，有效防止了模型的盲目解答，提升了挑战性。对 53 个先进的 VLMs 的评估结果显示，包括 LLaVA-OneVision、Cambrian-1、Llama3.2-Vision、Molmo、Qwen2-VL 和 GPT-4o 在内的模型相较于人类表现，落后 50%-70%。分析表明，NaturalBench 的难点主要体现在组合性和偏见两个方面，这些发现为后续研究提供了启示。此外，借助我们的方法，NaturalBench 的框架也可应用于多样的数据源，包括长标题和非英语语言，展示了其动态评估 VLMs 的潜力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.14669" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 21 Oct 2024 06:33:45 GMT</pubDate>
 <pubDate>Mon, 21 Oct 2024 06:33:45 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +40,8 @@
 <link>https://arxiv.org/abs/2410.13726</link>
 <guid>https://arxiv.org/abs/2410.13726</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>DAWN框架通过非自回归扩散模型生成高质量动态头像视频，解决了传统方法的生成速度慢和错误积累等问题。</p><br><br><p><strong>摘要：</strong> DAWN（Dynamic frame Avatar With Non-autoregressive diffusion）是一种创新的框架，旨在通过单一的肖像和语音音频生成生动而逼真的动态视频。传统的扩散基础的动态头像生成方法大多数依赖于自回归策略，导致在生成过程中效用有限、错误累积和生成速度较慢等问题。为了克服这些挑战，DAWN提出了一套新的生成方式，其主要由两个组件组成：音频驱动的整体面部动态生成和音频驱动的头部姿态和眨眼生成。大量实验表明，DAWN能生成真实且生动的视频，同时具有准确的口型运动和自然的姿态/眨眼动作。此外，DAWN实现了高速度生成，并显示出强大的外推能力，能够确保高质量长期视频的稳定生成。这一成果展示了DAWN在动态头像视频生成领域的巨大潜力和影响力，也期待其能够引发在扩散模型中的更多非自回归方法的探索。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.13726 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">DAWN框架通过非自回归扩散模型生成高质量动态头像视频，解决了传统方法的生成速度慢和错误积累等问题。</p><br /><br /><p><strong>摘要：</strong> DAWN（Dynamic frame Avatar With Non-autoregressive diffusion）是一种创新的框架，旨在通过单一的肖像和语音音频生成生动而逼真的动态视频。传统的扩散基础的动态头像生成方法大多数依赖于自回归策略，导致在生成过程中效用有限、错误累积和生成速度较慢等问题。为了克服这些挑战，DAWN提出了一套新的生成方式，其主要由两个组件组成：音频驱动的整体面部动态生成和音频驱动的头部姿态和眨眼生成。大量实验表明，DAWN能生成真实且生动的视频，同时具有准确的口型运动和自然的姿态/眨眼动作。此外，DAWN实现了高速度生成，并显示出强大的外推能力，能够确保高质量长期视频的稳定生成。这一成果展示了DAWN在动态头像视频生成领域的巨大潜力和影响力，也期待其能够引发在扩散模型中的更多非自回归方法的探索。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.13726" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 21 Oct 2024 06:31:06 GMT</pubDate>
 <pubDate>Mon, 21 Oct 2024 06:31:06 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +49,8 @@
 <link>https://arxiv.org/abs/2410.13828</link>
 <guid>https://arxiv.org/abs/2410.13828</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文探讨了边际损失方法在语言模型对齐中的不足及其带来的潜在问题。</p><br><br><p><strong>摘要：</strong> 本文探讨了强化学习从人为反馈（RLHF）在语言模型对齐中的主导地位，特别是边际损失方法的不足之处。我们发现，这种方法在偏好和反偏好响应的单独理想行为上存在不足，可能导致两种不良后果：一是不偏好的响应（如不安全响应）的概率增加，二是理想的偏好响应的概率降低。这种现象的根源在于边际损失将偏好概率的变化与反偏好概率的梯度耦合，阻碍了偏好概率的提高。因此，我们提出了“梯度纠缠”的概念，阐明了在对齐语言模型时，偏好和反偏好对数概率的梯度内积相对单独梯度范数过大时，梯度纠缠的问题会变得显著。我们理论上探讨了这种内积为何会导致训练动态的差异，并通过实证研究验证了这些发现。最后，本文为改进边际损失法设计了潜在算法方案，以缓解此类不足，从而提升语言模型对齐的效果。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.13828 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文探讨了边际损失方法在语言模型对齐中的不足及其带来的潜在问题。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了强化学习从人为反馈（RLHF）在语言模型对齐中的主导地位，特别是边际损失方法的不足之处。我们发现，这种方法在偏好和反偏好响应的单独理想行为上存在不足，可能导致两种不良后果：一是不偏好的响应（如不安全响应）的概率增加，二是理想的偏好响应的概率降低。这种现象的根源在于边际损失将偏好概率的变化与反偏好概率的梯度耦合，阻碍了偏好概率的提高。因此，我们提出了“梯度纠缠”的概念，阐明了在对齐语言模型时，偏好和反偏好对数概率的梯度内积相对单独梯度范数过大时，梯度纠缠的问题会变得显著。我们理论上探讨了这种内积为何会导致训练动态的差异，并通过实证研究验证了这些发现。最后，本文为改进边际损失法设计了潜在算法方案，以缓解此类不足，从而提升语言模型对齐的效果。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.13828" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 21 Oct 2024 05:50:33 GMT</pubDate>
 <pubDate>Mon, 21 Oct 2024 05:50:33 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +58,8 @@
 <link>https://arxiv.org/abs/2410.14059</link>
 <guid>https://arxiv.org/abs/2410.14059</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文介绍UCFE基准，评估大型语言模型在复杂金融任务中的表现，结合人类专家反馈。</p><br><br><p><strong>摘要：</strong> 本文介绍了UCFE（User-Centric Financial Expertise）基准，这是一个创新框架，旨在评估大型语言模型（LLMs）处理复杂现实金融任务的能力。UCFE基准采用了一种混合方法，结合了人类专家评估和动态、任务特定的交互，以模拟不断发展的金融场景的复杂性。首先，我们进行了包含804名参与者的用户研究，收集他们对金融任务的反馈。其次，根据这些反馈，我们创建了包含广泛用户意图和交互的数据集。该数据集作为基准测试12个LLM服务的基础，采用了LLM-as-Judge方法论。我们的结果显示基准分数与人类偏好之间存在显著的一致性，Pearson相关系数为0.78，验证了UCFE数据集和我们评估方法的有效性。UCFE基准不仅揭示了LLM在金融领域的潜力，还提供了一个评估其性能和用户满意度的稳健框架。基准数据集和评估代码已公开。 </p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.14059 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文介绍UCFE基准，评估大型语言模型在复杂金融任务中的表现，结合人类专家反馈。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了UCFE（User-Centric Financial Expertise）基准，这是一个创新框架，旨在评估大型语言模型（LLMs）处理复杂现实金融任务的能力。UCFE基准采用了一种混合方法，结合了人类专家评估和动态、任务特定的交互，以模拟不断发展的金融场景的复杂性。首先，我们进行了包含804名参与者的用户研究，收集他们对金融任务的反馈。其次，根据这些反馈，我们创建了包含广泛用户意图和交互的数据集。该数据集作为基准测试12个LLM服务的基础，采用了LLM-as-Judge方法论。我们的结果显示基准分数与人类偏好之间存在显著的一致性，Pearson相关系数为0.78，验证了UCFE数据集和我们评估方法的有效性。UCFE基准不仅揭示了LLM在金融领域的潜力，还提供了一个评估其性能和用户满意度的稳健框架。基准数据集和评估代码已公开。 </p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.14059" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 21 Oct 2024 05:46:41 GMT</pubDate>
 <pubDate>Mon, 21 Oct 2024 05:46:41 GMT</pubDate>
 </item>
 <item>
@@ -69,11 +67,8 @@
 <link>https://arxiv.org/abs/2410.13782</link>
 <guid>https://arxiv.org/abs/2410.13782</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>DPLM-2是一个多模态蛋白质模型，实现了序列和结构的联合生成。</p><br><br><p><strong>摘要：</strong> 本文提出了DPLM-2，一种多模态蛋白质基础模型，扩展了离散扩散蛋白质语言模型（DPLM），同时考虑了序列和结构。为了实现结构学习，3D坐标通过无查找量化的标记器转换为离散标记。DPLM-2在实验和高质量合成结构数据上进行训练，学习序列与结构的联合分布及其边际和条件分布。我们还实施了高效的预热策略，以利用大规模进化数据与经过预训练的基于序列的蛋白质语言模型的结构归纳偏差之间的关联。实证评估表明，DPLM-2能够同时生成高度兼容的氨基酸序列及其对应的3D结构，消除了两阶段生成方法的需要。同时，DPLM-2在多种条件生成任务中表现出竞争力，包括折叠、反折叠及 scaffolding 与多模态基序输入，并为预测任务提供结构感知表示。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.13782 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">DPLM-2是一个多模态蛋白质模型，实现了序列和结构的联合生成。</p><br /><br /><p><strong>摘要：</strong> 本文提出了DPLM-2，一种多模态蛋白质基础模型，扩展了离散扩散蛋白质语言模型（DPLM），同时考虑了序列和结构。为了实现结构学习，3D坐标通过无查找量化的标记器转换为离散标记。DPLM-2在实验和高质量合成结构数据上进行训练，学习序列与结构的联合分布及其边际和条件分布。我们还实施了高效的预热策略，以利用大规模进化数据与经过预训练的基于序列的蛋白质语言模型的结构归纳偏差之间的关联。实证评估表明，DPLM-2能够同时生成高度兼容的氨基酸序列及其对应的3D结构，消除了两阶段生成方法的需要。同时，DPLM-2在多种条件生成任务中表现出竞争力，包括折叠、反折叠及 scaffolding 与多模态基序输入，并为预测任务提供结构感知表示。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.13782" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 21 Oct 2024 05:42:52 GMT</pubDate>
 <pubDate>Mon, 21 Oct 2024 05:42:52 GMT</pubDate>
 </item>
 <item>
@@ -81,11 +76,8 @@
 <link>https://arxiv.org/abs/2410.14677</link>
 <guid>https://arxiv.org/abs/2410.14677</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>随着LLMs的发展，生成文本质量显著提高，机器生成文本检测器的可靠性亟待加强。</p><br><br><p><strong>摘要：</strong> 本文探讨了在自回归大型语言模型（LLMs）快速发展的背景下，机器生成文本检测器的评估方法。尽管许多检测器在基准数据集上表现出高达99.9%的识别质量，但在实际应用中，检测器的性能显著下降。这引发了关于现有检测器的可信度及其高评分是否受到评估数据集质量低下的影响的讨论。为此，本文强调了发展稳健且高质量的生成数据评估方法的必要性，以抵御未来模型的偏见和低泛化能力。我们系统性地回顾了致力于AI生成内容检测的比赛数据集，并提出了评估含有AI生成片段的数据集质量的方法。此外，我们还讨论了利用高质量生成数据来提升检测模型训练和训练数据集本身质量的可能性。我们希望通过本研究，增进对人类与机器文本之间动态关系的理解，同时支持在日益自动化的世界中信息的完整性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.14677 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">随着LLMs的发展，生成文本质量显著提高，机器生成文本检测器的可靠性亟待加强。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了在自回归大型语言模型（LLMs）快速发展的背景下，机器生成文本检测器的评估方法。尽管许多检测器在基准数据集上表现出高达99.9%的识别质量，但在实际应用中，检测器的性能显著下降。这引发了关于现有检测器的可信度及其高评分是否受到评估数据集质量低下的影响的讨论。为此，本文强调了发展稳健且高质量的生成数据评估方法的必要性，以抵御未来模型的偏见和低泛化能力。我们系统性地回顾了致力于AI生成内容检测的比赛数据集，并提出了评估含有AI生成片段的数据集质量的方法。此外，我们还讨论了利用高质量生成数据来提升检测模型训练和训练数据集本身质量的可能性。我们希望通过本研究，增进对人类与机器文本之间动态关系的理解，同时支持在日益自动化的世界中信息的完整性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.14677" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 21 Oct 2024 05:20:23 GMT</pubDate>
 <pubDate>Mon, 21 Oct 2024 05:20:23 GMT</pubDate>
 </item>
 <item>
@@ -93,11 +85,8 @@
 <link>https://arxiv.org/abs/2410.13276</link>
 <guid>https://arxiv.org/abs/2410.13276</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>SeerAttention通过学习门控机制自适应选择重要块，实现了稀疏注意力的动态捕捉，提升了长上下文处理效率。</p><br><br><p><strong>摘要：</strong> Attention是现代大语言模型（LLMs）的基础，但其平方复杂性限制了效率和扩展性，尤其是在长上下文窗口中。本文提出了SeerAttention，一种新型注意力机制，通过引入可学习的门控，动态选择注意力图中的重要块，达成块级稀疏化。这种方法有效平衡了准确性与加速性能。为了高效地学习该门控网络，作者开发了一种定制的FlashAttention实现，能够以最低开销提取块级注意力图的真实值。在后训练阶段，SeerAttention显著超过了现有的基于静态或启发式的稀疏注意力方法，且更能灵活适应不同的上下文长度和稀疏比例。在长上下文微调中，SeerAttention在32k的上下文长度下，可以实现90%的稀疏率，且仅有最小的困惑度损失，相较FlashAttention-2实现了5.67倍的加速。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.13276 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">SeerAttention通过学习门控机制自适应选择重要块，实现了稀疏注意力的动态捕捉，提升了长上下文处理效率。</p><br /><br /><p><strong>摘要：</strong> Attention是现代大语言模型（LLMs）的基础，但其平方复杂性限制了效率和扩展性，尤其是在长上下文窗口中。本文提出了SeerAttention，一种新型注意力机制，通过引入可学习的门控，动态选择注意力图中的重要块，达成块级稀疏化。这种方法有效平衡了准确性与加速性能。为了高效地学习该门控网络，作者开发了一种定制的FlashAttention实现，能够以最低开销提取块级注意力图的真实值。在后训练阶段，SeerAttention显著超过了现有的基于静态或启发式的稀疏注意力方法，且更能灵活适应不同的上下文长度和稀疏比例。在长上下文微调中，SeerAttention在32k的上下文长度下，可以实现90%的稀疏率，且仅有最小的困惑度损失，相较FlashAttention-2实现了5.67倍的加速。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.13276" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 21 Oct 2024 05:11:11 GMT</pubDate>
 <pubDate>Mon, 21 Oct 2024 05:11:11 GMT</pubDate>
 </item>
 <item>
@@ -105,11 +94,8 @@
 <link>https://arxiv.org/abs/2410.12791</link>
 <guid>https://arxiv.org/abs/2410.12791</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文提出了一种新的主题建模方法KeyNMF，并应用于研究中国媒体的信息动态。</p><br><br><p><strong>摘要：</strong> 本研究探讨了中华人民共和国（PRC）通过华人媒体干预欧洲选举的问题，特别是针对2024年欧洲议会选举。论文首先提出了一种新颖的主题建模方法KeyNMF，该方法结合了变换器（transformer）基础的上下文嵌入模型，实现了对静态和动态主题的有效建模。通过基准评估，验证了KeyNMF在多种中国数据集和指标上具有竞争力。接着，我们将KeyNMF与现有复杂系统信息动态描述方法结合，形成了一条研究信息动态的完整流程。本文应用该流程于五个新闻网站的数据，专注于2024年欧洲议会选举前的时间段。研究方法和结果表明，KeyNMF在研究中国媒体中的信息动态方面表现出色，为后续更广泛的研究奠定了基础。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.12791 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文提出了一种新的主题建模方法KeyNMF，并应用于研究中国媒体的信息动态。</p><br /><br /><p><strong>摘要：</strong> 本研究探讨了中华人民共和国（PRC）通过华人媒体干预欧洲选举的问题，特别是针对2024年欧洲议会选举。论文首先提出了一种新颖的主题建模方法KeyNMF，该方法结合了变换器（transformer）基础的上下文嵌入模型，实现了对静态和动态主题的有效建模。通过基准评估，验证了KeyNMF在多种中国数据集和指标上具有竞争力。接着，我们将KeyNMF与现有复杂系统信息动态描述方法结合，形成了一条研究信息动态的完整流程。本文应用该流程于五个新闻网站的数据，专注于2024年欧洲议会选举前的时间段。研究方法和结果表明，KeyNMF在研究中国媒体中的信息动态方面表现出色，为后续更广泛的研究奠定了基础。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.12791" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 21 Oct 2024 05:00:34 GMT</pubDate>
 <pubDate>Mon, 21 Oct 2024 05:00:34 GMT</pubDate>
 </item>
 <item>
@@ -117,14 +103,10 @@
 <link>https://arxiv.org/abs/2410.13232</link>
 <guid>https://arxiv.org/abs/2410.13232</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本研究提出一种世界模型增强的自主网络代理，以改善长时间任务中的决策能力。</p><br><br><p><strong>摘要：</strong> 大型语言模型（LLMs）在构建自主代理方面引起了广泛关注，但当前基于LLM的网络代理在长时间任务中的表现仍然不尽如人意，常常导致例如重复购买不可退票的机票等错误。相比之下，人类能够通过对潜在结果（例如失去金钱）的意识，避免这类不可逆转的错误，这种能力被称为“世界模型”。本研究首先通过初步分析确认了当前LLM（如GPT-4o、Claude-3.5-Sonnet等）缺乏世界模型。随后，我们提出了一种世界模型增强（WMA）的网络代理，它通过模拟动作结果来改善决策能力。为了解决将LLM训练为世界模型时面临的挑战，如观察之间的重复元素和冗长HTML输入，我们提出了一种聚焦过渡的观测抽象，其中预测目标是自由形式的自然语言描述，专门突出时间步之间的重要状态差异。在WebArena和Mind2Web上的实验表明，我们的世界模型提高了代理的策略选择能力且无需训练，同时展示出我们的代理在成本和时间上的效率相较于近期基于树搜索的代理。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.13232 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本研究提出一种世界模型增强的自主网络代理，以改善长时间任务中的决策能力。</p><br /><br /><p><strong>摘要：</strong> 大型语言模型（LLMs）在构建自主代理方面引起了广泛关注，但当前基于LLM的网络代理在长时间任务中的表现仍然不尽如人意，常常导致例如重复购买不可退票的机票等错误。相比之下，人类能够通过对潜在结果（例如失去金钱）的意识，避免这类不可逆转的错误，这种能力被称为“世界模型”。本研究首先通过初步分析确认了当前LLM（如GPT-4o、Claude-3.5-Sonnet等）缺乏世界模型。随后，我们提出了一种世界模型增强（WMA）的网络代理，它通过模拟动作结果来改善决策能力。为了解决将LLM训练为世界模型时面临的挑战，如观察之间的重复元素和冗长HTML输入，我们提出了一种聚焦过渡的观测抽象，其中预测目标是自由形式的自然语言描述，专门突出时间步之间的重要状态差异。在WebArena和Mind2Web上的实验表明，我们的世界模型提高了代理的策略选择能力且无需训练，同时展示出我们的代理在成本和时间上的效率相较于近期基于树搜索的代理。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.13232" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Mon, 21 Oct 2024 04:41:07 GMT</pubDate>
-<pubDate>Mon, 21 Oct 2024 04:41:07 GMT</pubDate>
 </item>
-
 <item>
 <title>自我演化的AI训练：借助扩散模型改善低质量数据学习</title>
 <link>https://arxiv.org/abs/2410.13674</link>
