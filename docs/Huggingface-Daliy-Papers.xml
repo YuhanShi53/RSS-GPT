@@ -5,15 +5,61 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>简约模型与上下文学习：关联探索与改进建议</title>
+<link>https://arxiv.org/abs/2410.14086</link>
+<guid>https://arxiv.org/abs/2410.14086</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文探讨了简约模型在上下文学习中的重要性，提出了通过预先编码法优化学习过程的方法。</p><br><br><p><strong>摘要：</strong> 文章探讨了机器学习中通用性的目标，以及在实践中观察到的简单模型常常能够更好地泛化的现象，即奥卡姆剃刀原则。尽管简单模型的重要性显而易见，当前的大多数机器学习方法仅仅关注于最小化训练误差，偶尔通过正则化或架构设计间接促进简约性。在这篇文章中，我们将奥卡姆剃刀原则与上下文学习联系起来，深入分析了某些序列模型（如Transformer）在推理时从过去的观察中学习的能力。特别是，我们展示了用于训练上下文学习者的下一个标记预测损失与一种称为预先编码（prequential coding）的数据压缩技术是直接等价的，最小化此损失实际上等同于同时最小化训练误差与基于上下文隐含学习的模型复杂性。我们的理论和实证实验不仅为上下文学习提供了规范性的分析，也揭示了现有上下文学习方法的不足之处，并提出了改进建议。代码已在 https://github.com/3rdCore/PrequentialCode 提供。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.14086 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 22 Oct 2024 12:21:20 GMT</pubDate>
+<pubDate>Tue, 22 Oct 2024 12:21:20 GMT</pubDate>
+</item>
+<item>
+<title>基于动态深度的混合层跳过模型</title>
+<link>https://arxiv.org/abs/2410.13184</link>
+<guid>https://arxiv.org/abs/2410.13184</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出了一种通过Router-Tuning和MindSkip优化Mixture of Depths的训练成本和性能。</p><br><br><p><strong>摘要：</strong> 传统的Transformer模型在处理每个输入标记时分配固定的计算资源，造成低效和不必要的计算。为了解决这一问题，本文提出了Mixture of Depths (MoD)的动态深度调整方法，通过跳过不重要的层来提高计算效率。然而，现有的MoD方法仍需进一步探索，主要面临两个挑战：(1) 由于需要训练整个模型及其路由器，导致高昂的训练成本；(2) 跳过重要层可能导致性能下降。为应对第一个问题，本文提出了Router-Tuning方法，仅在小数据集上微调路由器，从而显著降低全模型训练的计算开销。针对第二个挑战，本文提出了MindSkip，采用动态深度的注意力机制，确保在保留模型性能的同时，显著提升计算和内存效率。通过大量实验，验证了我们的方法在实现竞争性结果的同时，显著提高了计算效率，如21%的速度提升和仅0.2%的性能下降。相关代码已在https://github.com/CASE-Lab-UMD/Router-Tuning发布。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.13184 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 22 Oct 2024 12:16:10 GMT</pubDate>
+<pubDate>Tue, 22 Oct 2024 12:16:10 GMT</pubDate>
+</item>
+<item>
+<title>Hallucination Detox: Sensitive Neuron Dropout (SeND) for Large Language Model Training</title>
+<link>https://arxiv.org/abs/2410.15460</link>
+<guid>https://arxiv.org/abs/2410.15460</guid>
+<content:encoded><![CDATA[
+
+  As large language models (LLMs) become increasingly deployed across various industries, concerns regarding their reliability, particularly due to hallucinations-outputs that are factually inaccurate or irrelevant to user input-have grown. Our research investigates the relationship between the training process and the emergence of hallucinations to address a key gap in existing research that focuses primarily on post hoc detection and mitigation strategies. Using models from the Pythia suite (70M-12B parameters) and several hallucination detection metrics, we analyze hallucination trends throughout training and explore LLM internal dynamics. We introduce SEnsitive Neuron Dropout (SeND), a novel training protocol designed to mitigate hallucinations by reducing variance during training. SeND achieves this by deterministically dropping neurons with significant variability on a dataset, referred to as Sensitive Neurons. In addition, we develop an unsupervised hallucination detection metric, Efficient EigenScore (EES), which approximates the traditional EigenScore in 2x speed. This efficient metric is integrated into our protocol, allowing SeND to be both computationally scalable and effective at reducing hallucinations. Our empirical evaluation demonstrates that our approach improves LLM reliability at test time by up to 40% compared to normal training while also providing an efficient method to improve factual accuracy when adapting LLMs to domains such as Wikipedia and Medical datasets.
+
+]]></content:encoded>
+<pubDate>Tue, 22 Oct 2024 11:59:59 GMT</pubDate>
+<pubDate>Tue, 22 Oct 2024 11:59:59 GMT</pubDate>
+</item>
+<item>
+<title>Ichigo：一种基于混合模态的语音与文本处理模型</title>
+<link>https://arxiv.org/abs/2410.15316</link>
+<guid>https://arxiv.org/abs/2410.15316</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文介绍了Ichigo，一个混合模态模型，通过统一的transformer架构高效处理语音和文本。</p><br><br><p><strong>摘要：</strong> Large Language Models（LLMs）在自然语言处理领域取得了显著突破。然而，将其应用于语音任务依然面临挑战，特别是在音频和文本模态的整合方面。本文提出了Ichigo，一种混合模态模型，能够无缝处理交替序列的语音和文本。Ichigo采用了令牌化的早期融合方法，将语音量化为离散令牌，并对语音和文本模态使用统一的transformer架构。这种方法使得跨模态的联合推理与生成成为可能，而无需单独的适配器。我们详细介绍了包括在多语言语音识别数据集上进行预训练和在精心策划的指令数据集上进行微调的综合训练方法。实验结果显示，Ichigo在语音问答基准测试中表现出色，超越了现有的开源语音语言模型，同时与级联系统的结果相当。值得注意的是，Ichigo的首次令牌生成延迟仅为111毫秒，显著低于其他现有模型。我们的方法不仅推动了多模态人工智能的发展，也为小型研究团队有效贡献于开源语音语言模型提供了框架。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.15316 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 22 Oct 2024 11:40:31 GMT</pubDate>
+<pubDate>Tue, 22 Oct 2024 11:40:31 GMT</pubDate>
+</item>
+
+<item>
 <title>基于大型语言模型的连续马尔可夫决策过程动态预测</title>
 <link>https://arxiv.org/abs/2410.11711</link>
 <guid>https://arxiv.org/abs/2410.11711</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文提出了一种利用预训练大型语言模型进行连续马尔可夫决策过程动态预测的方法。</p><br><br><p><strong>摘要：</strong> 随着大型语言模型（LLMs）零-shot 能力的不断提升，其应用领域已扩展至自然语言处理之外的多个领域。在强化学习中，尽管 LLMs 在文本环境中得到了广泛应用，但其在连续状态空间中的整合仍然尚未得到充分研究。本文探讨如何利用预训练的 LLMs 进行连续马尔可夫决策过程的动态预测。我们确定了处理多元数据和引入控制信号这两个关键挑战，这些挑战限制了 LLMs 在此设置下的潜力，并提出了解决方案——解耦式上下文学习（Disentangled In-Context Learning, DICL）。我们在模型驱动策略评估和数据增强的离线强化学习两个设置中展示了该方法的概念性应用，并提供了对相关方法的理论分析。实验结果进一步验证了我们的方法能够生成良好校准的置信度估计。代码已发布在 https://github.com/abenechehab/dicl。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.11711 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文提出了一种利用预训练大型语言模型进行连续马尔可夫决策过程动态预测的方法。</p><br /><br /><p><strong>摘要：</strong> 随着大型语言模型（LLMs）零-shot 能力的不断提升，其应用领域已扩展至自然语言处理之外的多个领域。在强化学习中，尽管 LLMs 在文本环境中得到了广泛应用，但其在连续状态空间中的整合仍然尚未得到充分研究。本文探讨如何利用预训练的 LLMs 进行连续马尔可夫决策过程的动态预测。我们确定了处理多元数据和引入控制信号这两个关键挑战，这些挑战限制了 LLMs 在此设置下的潜力，并提出了解决方案——解耦式上下文学习（Disentangled In-Context Learning, DICL）。我们在模型驱动策略评估和数据增强的离线强化学习两个设置中展示了该方法的概念性应用，并提供了对相关方法的理论分析。实验结果进一步验证了我们的方法能够生成良好校准的置信度估计。代码已发布在 https://github.com/abenechehab/dicl。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.11711" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 22 Oct 2024 08:05:14 GMT</pubDate>
 <pubDate>Tue, 22 Oct 2024 08:05:14 GMT</pubDate>
 </item>
 <item>
@@ -21,14 +67,10 @@
 <link>https://arxiv.org/abs/2410.15748</link>
 <guid>https://arxiv.org/abs/2410.15748</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文提出Alchemy，一个通过符号变换合成形式化定理的框架，显著扩充Mathlib中的定理数量。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为Alchemy的通用框架，该框架旨在通过符号变换构建形式化定理，以解决神经定理证明（NTP）面临的数据稀缺问题。聚焦于Mathlib中的候选定理，Alchemy识别出所有可以应用于这些定理的可调用定理，并通过将相关术语替换为其等价形式或前提进行变换，从而显著增加定理数量，将Mathlib中的定理数量从11万增长至600万。此外，本文对扩充后的语料库进行了持续预训练和监督微调，实验结果表明该方法的有效性，在Leandojo基准上实现了5%的绝对性能提升，并在具有一定出分布的数据集miniF2F上提升了2.5%的绝对性能。最后，本文还对合成数据的组成和训练范式进行了全面分析，为强大的定理证明器的开发提供了有价值的指导。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.15748 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文提出Alchemy，一个通过符号变换合成形式化定理的框架，显著扩充Mathlib中的定理数量。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种名为Alchemy的通用框架，该框架旨在通过符号变换构建形式化定理，以解决神经定理证明（NTP）面临的数据稀缺问题。聚焦于Mathlib中的候选定理，Alchemy识别出所有可以应用于这些定理的可调用定理，并通过将相关术语替换为其等价形式或前提进行变换，从而显著增加定理数量，将Mathlib中的定理数量从11万增长至600万。此外，本文对扩充后的语料库进行了持续预训练和监督微调，实验结果表明该方法的有效性，在Leandojo基准上实现了5%的绝对性能提升，并在具有一定出分布的数据集miniF2F上提升了2.5%的绝对性能。最后，本文还对合成数据的组成和训练范式进行了全面分析，为强大的定理证明器的开发提供了有价值的指导。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.15748" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 22 Oct 2024 06:55:29 GMT</pubDate>
-<pubDate>Tue, 22 Oct 2024 06:55:29 GMT</pubDate>
 </item>
-
 <item>
 <title>面向长指令的长距离依赖样本选择框架 GATEAU</title>
 <link>https://arxiv.org/abs/2410.15633</link>
