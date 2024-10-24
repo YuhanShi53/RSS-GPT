@@ -5,15 +5,49 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>多图像增强直接偏好优化(MIA-DPO)在视觉偏好对齐中的应用</title>
+<link>https://arxiv.org/abs/2410.17637</link>
+<guid>https://arxiv.org/abs/2410.17637</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出MIA-DPO方法，通过网格拼贴等方式增强多图像数据，优化视觉偏好对齐。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种新的视觉偏好对齐方法——多图像增强直接偏好优化(MIA-DPO)，旨在处理多图像输入的复杂性。现有的视觉对齐方法主要针对单幅图像，难以有效应对多图像任务的挑战，原因包括多样化训练数据的稀缺与多图像数据标注的高成本。MIA-DPO方法通过将单幅图像数据扩展为网格拼贴或画中画形式的非相关图像，显著降低了多图像数据标注的成本。我们观察到LVLMs的注意力值在不同图像之间变化显著，利用这些注意力值来识别和过滤出可能被模型错误关注的拒绝响应。MIA-DPO在构建选择/拒绝对时，不依赖（i）人工标注，（ii）额外数据或（iii）外部模型或API，确保了方法的高效性和适应性。该方法适用于多种架构，并在五个多图像基准测试中表现优于现有方法，在LLaVA-v1.5上实现了平均3.0%的性能提升，在最新的InternLM-XC2.5上提升4.3%。此外，MIA-DPO对模型理解单幅图像的能力影响甚微。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.17637 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 24 Oct 2024 04:23:39 GMT</pubDate>
+<pubDate>Thu, 24 Oct 2024 04:23:39 GMT</pubDate>
+</item>
+<item>
+<title>基于自回归语言模型的扩散语言模型构建与评估</title>
+<link>https://arxiv.org/abs/2410.17891</link>
+<guid>https://arxiv.org/abs/2410.17891</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种利用自回归模型构建扩散模型的方法，生成流畅文本并进行有效评估。</p><br><br><p><strong>摘要：</strong> 扩散语言模型（DLMs）作为文本生成建模的新范式，可能解决自回归（AR）模型的局限性。然而，目前的DLMs在规模上与AR模型相比仍存在不足，且在语言建模基准上的比较不够公平。同时，从头训练时，大规模扩散模型面临挑战。鉴于开源自回归语言模型的普遍性，本文提出了一种适应这些模型以构建文本扩散模型的方法。我们阐明了自回归模型与扩散建模目标之间的关系，并引入了一种简单的持续预训练方法来训练扩散模型。通过系统评估语言建模、推理和常识基准，我们展示了可以将从127M到7B参数的自回归模型（如GPT2和LLaMA）转换为扩散模型DiffuGPT和DiffuLLaMA，训练使用不到200B的tokens。实验结果表明，这些模型超越了早期的DLMs，并在性能上与自回归模型竞争。我们发布了一套DLMs（包括127M、355M和7B参数），能够生成流畅文本，进行上下文学习，填补中间内容且不重新排序提示，并能遵循指令。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.17891 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 24 Oct 2024 04:21:03 GMT</pubDate>
+<pubDate>Thu, 24 Oct 2024 04:21:03 GMT</pubDate>
+</item>
+<item>
+<title>面向世界模拟器的双重评估框架：WorldSimBench</title>
+<link>https://arxiv.org/abs/2410.18072</link>
+<guid>https://arxiv.org/abs/2410.18072</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出WorldSimBench评估框架，分类预测模型功能并评估世界模拟器的效果。 </p><br><br><p><strong>摘要：</strong> 近年来，预测模型在预测物体和场景的未来状态方面表现出色。然而，基于内在特征的分类方式尚缺乏，导致预测模型发展受限。此外，现有基准不能有效评估具高度能力的具身预测模型。从这一角度出发，本文将预测模型的功能分为等级，并首次提出一个名为WorldSimBench的双重评估框架。该框架包括显性感知评估和隐性操作评估，涵盖了来自视觉角度的人类偏好评估和在具身任务中的动作级评估，涉及开放式具身环境、自动驾驶和机器人操作三种具有代表性的具身场景。在显性感知评估中，我们引入HF-Embodied 数据集，这是一个基于精细人类反馈的视频评估数据集，用于训练符合人类认知标准的人类偏好评估器，以显式评估世界模拟器的视觉真实感。在隐性操作评估中，我们通过评估生成的视频是否能够准确转化为动态环境中的正确控制信号，来评估世界模拟器的视频动作一致性。我们的综合评估为推动视频生成模型的进一步创新提供了重要见解，标志着世界模拟器朝向具身人工智能的重要进展。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.18072 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 24 Oct 2024 04:15:52 GMT</pubDate>
+<pubDate>Thu, 24 Oct 2024 04:15:52 GMT</pubDate>
+</item>
+
+<item>
 <title>基于大型语言模型的复合人工智能系统优化研究</title>
 <link>https://arxiv.org/abs/2410.16392</link>
 <guid>https://arxiv.org/abs/2410.16392</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文调查了使用LLM优化复合AI系统的原则和新兴趋势。</p><br><br><p><strong>摘要：</strong> 本文通过调查基于大型语言模型（LLM）的复合人工智能系统优化的最新进展，探讨了几种复合AI系统的原型，以及LLM驱动的端到端优化方法。尤其强调了LLM作为优化器的优势，它能够有效避免梯度计算，并生成复杂的代码和指令，从而简化优化过程。研究还结合程序分析的概念，为如何提示LLM优化复合AI系统提供了统一的视角。论文总结了当前的挑战和未来方向，展望LLM在复合AI系统中的广泛影响。完整参考文献列表可在指定链接中找到。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.16392 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文调查了使用LLM优化复合AI系统的原则和新兴趋势。</p><br /><br /><p><strong>摘要：</strong> 本文通过调查基于大型语言模型（LLM）的复合人工智能系统优化的最新进展，探讨了几种复合AI系统的原型，以及LLM驱动的端到端优化方法。尤其强调了LLM作为优化器的优势，它能够有效避免梯度计算，并生成复杂的代码和指令，从而简化优化过程。研究还结合程序分析的概念，为如何提示LLM优化复合AI系统提供了统一的视角。论文总结了当前的挑战和未来方向，展望LLM在复合AI系统中的广泛影响。完整参考文献列表可在指定链接中找到。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.16392" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 23 Oct 2024 23:12:07 GMT</pubDate>
 <pubDate>Wed, 23 Oct 2024 23:12:07 GMT</pubDate>
 </item>
 <item>
@@ -21,14 +55,10 @@
 <link>https://arxiv.org/abs/2410.17241</link>
 <guid>https://arxiv.org/abs/2410.17241</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本研究探讨智能内窥镜技术在结肠镜检查中的应用与挑战，提出多模态解决方案。</p><br><br><p><strong>摘要：</strong> 结肠镜检查是目前检测结直肠癌最敏感的筛查方法之一。本研究旨在探索智能结肠镜技术的前沿及其在多模态医学应用中的潜力。首先，通过分类、检测、分割和视觉语言理解四个任务评估结肠镜场景感知的当前数据驱动和模型驱动格局。这一评估帮助我们识别特定领域的挑战，并揭示结肠镜检查中的多模态研究仍有待深入探索。为迎接多模态时代的到来，我们建立了三个基础性举措：大规模多模态指令调优数据集ColonINST、专为结肠镜设计的多模态语言模型ColonGPT，以及一个多模态基准测试。为了持续关注该快速发展领域的最新动态，我们提供了一个公共网站，供用户获取最新信息： https://github.com/ai4colonoscopy/IntelliScope。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.17241 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本研究探讨智能内窥镜技术在结肠镜检查中的应用与挑战，提出多模态解决方案。</p><br /><br /><p><strong>摘要：</strong> 结肠镜检查是目前检测结直肠癌最敏感的筛查方法之一。本研究旨在探索智能结肠镜技术的前沿及其在多模态医学应用中的潜力。首先，通过分类、检测、分割和视觉语言理解四个任务评估结肠镜场景感知的当前数据驱动和模型驱动格局。这一评估帮助我们识别特定领域的挑战，并揭示结肠镜检查中的多模态研究仍有待深入探索。为迎接多模态时代的到来，我们建立了三个基础性举措：大规模多模态指令调优数据集ColonINST、专为结肠镜设计的多模态语言模型ColonGPT，以及一个多模态基准测试。为了持续关注该快速发展领域的最新动态，我们提供了一个公共网站，供用户获取最新信息： https://github.com/ai4colonoscopy/IntelliScope。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.17241" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 23 Oct 2024 20:17:31 GMT</pubDate>
-<pubDate>Wed, 23 Oct 2024 20:17:31 GMT</pubDate>
 </item>
-
 <item>
 <title>3DGS-增强器：提升3D高斯点云渲染质量的创新管道</title>
 <link>https://arxiv.org/abs/2410.16266</link>
