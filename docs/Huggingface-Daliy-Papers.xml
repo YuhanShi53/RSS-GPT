@@ -5,15 +5,25 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>数据扩展在机器人操控中的应用研究</title>
+<link>https://arxiv.org/abs/2410.18647</link>
+<guid>https://arxiv.org/abs/2410.18647</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本研究探讨了数据扩展在机器人操控中的影响，展示了一种高效的数据收集策略。</p><br><br><p><strong>摘要：</strong> 本论文调查了数据扩展法在机器人领域，特别是在机器人操控中的有效性，旨在了解是否能产生针对任何对象和环境的单任务机器人策略。通过系统性地收集跨多个环境和对象的数据，我们研究了政策的泛化性能与训练环境、对象及演示数量之间的关系。我们的研究共收集了40,000多条演示，并在严格的评估标准下进行了15,000多次真实机器人运行。结果显示，策略的泛化性能与环境和对象的数量呈现出大致的幂律关系。环境和对象的多样性对性能影响远大于绝对训练演示数量；一旦每个环境或对象的演示数量达到一定阈值，额外演示的贡献就微乎其微。基于这些发现，我们提出了一种高效的数据收集策略。经过四个数据收集者一个下午的努力，我们为两个任务收集了足够的数据，使得策略在新环境下对见过的对象达到约90%的成功率。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.18647 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 25 Oct 2024 12:49:33 GMT</pubDate>
+<pubDate>Fri, 25 Oct 2024 12:49:33 GMT</pubDate>
+</item>
+
+<item>
 <title>Taipan：高效处理超长上下文的混合架构</title>
 <link>https://arxiv.org/abs/2410.18572</link>
 <guid>https://arxiv.org/abs/2410.18572</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>Taipan结合了Mamba-2和选择性注意力层，解决了长上下文语言建模的效率与性能问题。</p><br><br><p><strong>摘要：</strong> 高效的长上下文语言建模仍然是自然语言处理中的一大挑战。尽管Transformer在语言任务中占据主导地位，但在训练时面临二次计算复杂度的问题，同时推理时的内存消耗呈线性增长。近期的状态空间模型（State Space Models, SSMs）如Mamba提供了常量内存使用的替代方案，然而在需要广泛上下文检索的任务中表现欠佳。为此，我们提出了Taipan，一个新颖的混合架构，结合了Mamba-2和选择性注意力层（Selective Attention Layers, SALs）。SALs能够识别需要长距离交互的标记，去除次要特征，并通过注意力模块增强其表征。这种方法在保留Mamba效率的同时，在内存密集型任务中取得了类似Transformer的性能，通过控制注意力预算，Taipan将准确预测的上下文长度扩展到100万标记，同时保持计算效率。实验结果表明，Taipan在不同规模和任务上表现优越，为高效的长上下文语言建模提供了有前景的解决方案。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.18572 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">Taipan结合了Mamba-2和选择性注意力层，解决了长上下文语言建模的效率与性能问题。</p><br /><br /><p><strong>摘要：</strong> 高效的长上下文语言建模仍然是自然语言处理中的一大挑战。尽管Transformer在语言任务中占据主导地位，但在训练时面临二次计算复杂度的问题，同时推理时的内存消耗呈线性增长。近期的状态空间模型（State Space Models, SSMs）如Mamba提供了常量内存使用的替代方案，然而在需要广泛上下文检索的任务中表现欠佳。为此，我们提出了Taipan，一个新颖的混合架构，结合了Mamba-2和选择性注意力层（Selective Attention Layers, SALs）。SALs能够识别需要长距离交互的标记，去除次要特征，并通过注意力模块增强其表征。这种方法在保留Mamba效率的同时，在内存密集型任务中取得了类似Transformer的性能，通过控制注意力预算，Taipan将准确预测的上下文长度扩展到100万标记，同时保持计算效率。实验结果表明，Taipan在不同规模和任务上表现优越，为高效的长上下文语言建模提供了有前景的解决方案。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.18572" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 25 Oct 2024 08:53:46 GMT</pubDate>
 <pubDate>Fri, 25 Oct 2024 08:53:46 GMT</pubDate>
 </item>
 <item>
@@ -21,14 +31,10 @@
 <link>https://arxiv.org/abs/2410.17897</link>
 <guid>https://arxiv.org/abs/2410.17897</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>ResFormer通过残差连接缓解注意力集中问题，SVFormer显著提升训练速度与性能。</p><br><br><p><strong>摘要：</strong> Transformer能够通过自注意力机制捕捉长距离依赖关系，但在堆叠多个注意力层时，会导致注意力集中现象。为了解决这一问题，提出了跨层注意力的方法，使得早期层的信息能够直接传递给后续层，但该方法计算开销较大。为此，本文提出了基于残差值的变换器（ResFormer），通过将第一层的值与后续所有层相加，来近似跨层注意力。一个变体是单层值变换器（SVFormer），该模型使所有层共享第一层的值嵌入，从而使KV缓存减少近50%。通过大量实验结果表明，ResFormer能够缓解深层中的注意力集中问题，且在大多数层中增强了表示能力，训练误差和下游任务性能均优于传统Transformer、DenseFormer和NeuTRENO。SVFormer训练速度明显快于传统Transformer，并且在序列长度和累计学习率的影响下，表现出优于其他方法（如GQA和CLA）的性能。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.17897 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">ResFormer通过残差连接缓解注意力集中问题，SVFormer显著提升训练速度与性能。</p><br /><br /><p><strong>摘要：</strong> Transformer能够通过自注意力机制捕捉长距离依赖关系，但在堆叠多个注意力层时，会导致注意力集中现象。为了解决这一问题，提出了跨层注意力的方法，使得早期层的信息能够直接传递给后续层，但该方法计算开销较大。为此，本文提出了基于残差值的变换器（ResFormer），通过将第一层的值与后续所有层相加，来近似跨层注意力。一个变体是单层值变换器（SVFormer），该模型使所有层共享第一层的值嵌入，从而使KV缓存减少近50%。通过大量实验结果表明，ResFormer能够缓解深层中的注意力集中问题，且在大多数层中增强了表示能力，训练误差和下游任务性能均优于传统Transformer、DenseFormer和NeuTRENO。SVFormer训练速度明显快于传统Transformer，并且在序列长度和累计学习率的影响下，表现出优于其他方法（如GQA和CLA）的性能。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.17897" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Fri, 25 Oct 2024 08:04:10 GMT</pubDate>
-<pubDate>Fri, 25 Oct 2024 08:04:10 GMT</pubDate>
 </item>
-
 <item>
 <title>ADEM-VL：一种高效的视觉语言模型融合方法</title>
 <link>https://arxiv.org/abs/2410.17779</link>
