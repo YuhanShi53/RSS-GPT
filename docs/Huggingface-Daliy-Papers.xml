@@ -5,15 +5,37 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>Taipan：高效处理超长上下文的混合架构</title>
+<link>https://arxiv.org/abs/2410.18572</link>
+<guid>https://arxiv.org/abs/2410.18572</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Taipan结合了Mamba-2和选择性注意力层，解决了长上下文语言建模的效率与性能问题。</p><br><br><p><strong>摘要：</strong> 高效的长上下文语言建模仍然是自然语言处理中的一大挑战。尽管Transformer在语言任务中占据主导地位，但在训练时面临二次计算复杂度的问题，同时推理时的内存消耗呈线性增长。近期的状态空间模型（State Space Models, SSMs）如Mamba提供了常量内存使用的替代方案，然而在需要广泛上下文检索的任务中表现欠佳。为此，我们提出了Taipan，一个新颖的混合架构，结合了Mamba-2和选择性注意力层（Selective Attention Layers, SALs）。SALs能够识别需要长距离交互的标记，去除次要特征，并通过注意力模块增强其表征。这种方法在保留Mamba效率的同时，在内存密集型任务中取得了类似Transformer的性能，通过控制注意力预算，Taipan将准确预测的上下文长度扩展到100万标记，同时保持计算效率。实验结果表明，Taipan在不同规模和任务上表现优越，为高效的长上下文语言建模提供了有前景的解决方案。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.18572 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 25 Oct 2024 08:53:46 GMT</pubDate>
+<pubDate>Fri, 25 Oct 2024 08:53:46 GMT</pubDate>
+</item>
+<item>
+<title>基于残差值的变换器：ResFormer与SVFormer</title>
+<link>https://arxiv.org/abs/2410.17897</link>
+<guid>https://arxiv.org/abs/2410.17897</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>ResFormer通过残差连接缓解注意力集中问题，SVFormer显著提升训练速度与性能。</p><br><br><p><strong>摘要：</strong> Transformer能够通过自注意力机制捕捉长距离依赖关系，但在堆叠多个注意力层时，会导致注意力集中现象。为了解决这一问题，提出了跨层注意力的方法，使得早期层的信息能够直接传递给后续层，但该方法计算开销较大。为此，本文提出了基于残差值的变换器（ResFormer），通过将第一层的值与后续所有层相加，来近似跨层注意力。一个变体是单层值变换器（SVFormer），该模型使所有层共享第一层的值嵌入，从而使KV缓存减少近50%。通过大量实验结果表明，ResFormer能够缓解深层中的注意力集中问题，且在大多数层中增强了表示能力，训练误差和下游任务性能均优于传统Transformer、DenseFormer和NeuTRENO。SVFormer训练速度明显快于传统Transformer，并且在序列长度和累计学习率的影响下，表现出优于其他方法（如GQA和CLA）的性能。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.17897 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 25 Oct 2024 08:04:10 GMT</pubDate>
+<pubDate>Fri, 25 Oct 2024 08:04:10 GMT</pubDate>
+</item>
+
+<item>
 <title>ADEM-VL：一种高效的视觉语言模型融合方法</title>
 <link>https://arxiv.org/abs/2410.17779</link>
 <guid>https://arxiv.org/abs/2410.17779</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出ADEM-VL，提高视觉语言模型的效率，减少参数、加速训练和推理。</p><br><br><p><strong>摘要：</strong> 近年来，多模态融合的快速发展使视觉语言（VL）模型在图像描述和视觉问答等多模态应用中表现出色。然而，构建VL模型需要大量硬件资源，其效率受到两个关键因素的制约：语言模型输入序列的扩展增加了计算操作，同时大量额外的可学习参数提高了内存复杂性。这些挑战显著限制了此类模型的更广泛应用。为此，我们提出了ADEM-VL，这是一种基于预训练大语言模型（LLM）的高效视觉语言方法，通过采用无参数交叉注意力机制进行多模态融合的相似性测量。该方法仅需将视觉特征嵌入语言空间，显著减少训练参数数量，加速训练和推理速度。为了增强融合模块中的表示学习，我们引入了一种高效的多尺度特征生成方案，只需通过视觉编码器进行一次正向传递。此外，我们提出了一种自适应融合方案，动态丢弃与每个文本令牌相关性较低的视觉信息，确保融合过程优先考虑最相关的视觉特征。通过在视觉问答、图像描述和指令跟随等各种任务上的实验，我们演示了我们的框架优于现有方法。在ScienceQA数据集上，我们的方法平均准确率提高了0.77%，并减少了训练和推理延迟，证明了框架的优越性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.17779 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出ADEM-VL，提高视觉语言模型的效率，减少参数、加速训练和推理。</p><br /><br /><p><strong>摘要：</strong> 近年来，多模态融合的快速发展使视觉语言（VL）模型在图像描述和视觉问答等多模态应用中表现出色。然而，构建VL模型需要大量硬件资源，其效率受到两个关键因素的制约：语言模型输入序列的扩展增加了计算操作，同时大量额外的可学习参数提高了内存复杂性。这些挑战显著限制了此类模型的更广泛应用。为此，我们提出了ADEM-VL，这是一种基于预训练大语言模型（LLM）的高效视觉语言方法，通过采用无参数交叉注意力机制进行多模态融合的相似性测量。该方法仅需将视觉特征嵌入语言空间，显著减少训练参数数量，加速训练和推理速度。为了增强融合模块中的表示学习，我们引入了一种高效的多尺度特征生成方案，只需通过视觉编码器进行一次正向传递。此外，我们提出了一种自适应融合方案，动态丢弃与每个文本令牌相关性较低的视觉信息，确保融合过程优先考虑最相关的视觉特征。通过在视觉问答、图像描述和指令跟随等各种任务上的实验，我们演示了我们的框架优于现有方法。在ScienceQA数据集上，我们的方法平均准确率提高了0.77%，并减少了训练和推理延迟，证明了框架的优越性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.17779" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 25 Oct 2024 05:49:27 GMT</pubDate>
 <pubDate>Fri, 25 Oct 2024 05:49:27 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +43,8 @@
 <link>https://arxiv.org/abs/2410.18976</link>
 <guid>https://arxiv.org/abs/2410.18976</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文开发了针对阿拉伯语的大型多模态模型评估基准CAMEL-Bench，涵盖多领域任务。结果显示现有模型表现需大幅改善。</p><br><br><p><strong>摘要：</strong> 近年来，开发大型多模态模型（LMM）以执行各种视觉推理和理解任务受到广泛关注。这促使了多项LMM评估基准的出台，评估模型在不同任务上的表现。然而，现有的LMM评估基准多数集中于英语。本研究开发了一个全面的阿拉伯语LMM评估基准，名为CAMEL-Bench，以代表超过4亿人的大群体。该基准涵盖八个不同领域和38个子领域，包括多图像理解、复杂视觉感知、手写文档理解、视频理解、医学影像、植物病害和基于遥感的土地利用理解，旨在评估广泛场景的通用性。CAMEL-Bench包含约29,036个问题，经过从更大样本池中筛选，并由母语人士手动验证质量，以确保模型评估的可靠性。我们还对闭源模型（如GPT-4系列）和开源LMM进行了评估。分析结果表明，尤其是开源模型的性能需要显著提升，即使是闭源的GPT-4o，其整体得分也仅为62%。我们的基准和评估脚本已开源，供其他研究者使用。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.18976 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文开发了针对阿拉伯语的大型多模态模型评估基准CAMEL-Bench，涵盖多领域任务。结果显示现有模型表现需大幅改善。</p><br /><br /><p><strong>摘要：</strong> 近年来，开发大型多模态模型（LMM）以执行各种视觉推理和理解任务受到广泛关注。这促使了多项LMM评估基准的出台，评估模型在不同任务上的表现。然而，现有的LMM评估基准多数集中于英语。本研究开发了一个全面的阿拉伯语LMM评估基准，名为CAMEL-Bench，以代表超过4亿人的大群体。该基准涵盖八个不同领域和38个子领域，包括多图像理解、复杂视觉感知、手写文档理解、视频理解、医学影像、植物病害和基于遥感的土地利用理解，旨在评估广泛场景的通用性。CAMEL-Bench包含约29,036个问题，经过从更大样本池中筛选，并由母语人士手动验证质量，以确保模型评估的可靠性。我们还对闭源模型（如GPT-4系列）和开源LMM进行了评估。分析结果表明，尤其是开源模型的性能需要显著提升，即使是闭源的GPT-4o，其整体得分也仅为62%。我们的基准和评估脚本已开源，供其他研究者使用。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.18976" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 25 Oct 2024 05:21:52 GMT</pubDate>
 <pubDate>Fri, 25 Oct 2024 05:21:52 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +52,8 @@
 <link>https://arxiv.org/abs/2410.18798</link>
 <guid>https://arxiv.org/abs/2410.18798</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种新方法CIT，通过代码作为中介，合成复杂图表问答数据以提升多模态推理能力。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为Code-as-Intermediary Translation (CIT) 的新方法，旨在通过高效且可扩展的数据合成来提升多模态大语言模型 (MLLMs) 的视觉推理能力。CIT采用代码作为中介，将视觉图表表示转换为文本表示，从而让语言模型能够理解跨模态信息。我们通过基于文本的合成技术构建图表绘制代码，生成了ReachQA数据集，包含了3000个推理密集型图表和20000个问答对，以增强模型的识别和推理能力。实验结果表明，在使用我们的数据集进行微调后，模型在与图表相关的基准测试中表现良好，并且在像MathVista这样的通用数学基准上也显著提升了多模态推理能力。本文的代码和数据集已公开发布，供研究者使用。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.18798 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种新方法CIT，通过代码作为中介，合成复杂图表问答数据以提升多模态推理能力。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种名为Code-as-Intermediary Translation (CIT) 的新方法，旨在通过高效且可扩展的数据合成来提升多模态大语言模型 (MLLMs) 的视觉推理能力。CIT采用代码作为中介，将视觉图表表示转换为文本表示，从而让语言模型能够理解跨模态信息。我们通过基于文本的合成技术构建图表绘制代码，生成了ReachQA数据集，包含了3000个推理密集型图表和20000个问答对，以增强模型的识别和推理能力。实验结果表明，在使用我们的数据集进行微调后，模型在与图表相关的基准测试中表现良好，并且在像MathVista这样的通用数学基准上也显著提升了多模态推理能力。本文的代码和数据集已公开发布，供研究者使用。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.18798" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 25 Oct 2024 03:55:54 GMT</pubDate>
 <pubDate>Fri, 25 Oct 2024 03:55:54 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +61,8 @@
 <link>https://arxiv.org/abs/2410.18362</link>
 <guid>https://arxiv.org/abs/2410.18362</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>Waffle是一种新的微调策略，通过结构感知注意机制提升LLMs的HTML理解能力。</p><br><br><p><strong>摘要：</strong> Web开发需要将UI设计转化为功能网页，然而HTML的层次结构和样式的复杂性常常对开发者造成挑战。尽管大型语言模型（LLMs）在生成源代码方面表现出了潜力，但在UI到HTML代码生成的过程中，依然面临两大挑战：首先是如何有效地表示HTML的层次结构，其次是如何弥合UI设计的视觉性质与HTML代码的文本格式之间的鸿沟。为了解决这些问题，我们提出了Waffle，这是一种新的微调策略，采用结构感知注意机制，以提高LLMs对于HTML结构的理解能力；同时通过对比微调的方法，使LLMs能更好地理解UI图像与HTML代码之间的关系。经过Waffle微调的模型在我们新推出的基准WebSight-Test和现有基准Design2Code上，显示出比当前微调方法高出最多9.00个百分点的HTML匹配度，CW-SSIM提高0.0982，CLIP提高32.99，LLEM提高27.12个百分点，表现出色。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.18362 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">Waffle是一种新的微调策略，通过结构感知注意机制提升LLMs的HTML理解能力。</p><br /><br /><p><strong>摘要：</strong> Web开发需要将UI设计转化为功能网页，然而HTML的层次结构和样式的复杂性常常对开发者造成挑战。尽管大型语言模型（LLMs）在生成源代码方面表现出了潜力，但在UI到HTML代码生成的过程中，依然面临两大挑战：首先是如何有效地表示HTML的层次结构，其次是如何弥合UI设计的视觉性质与HTML代码的文本格式之间的鸿沟。为了解决这些问题，我们提出了Waffle，这是一种新的微调策略，采用结构感知注意机制，以提高LLMs对于HTML结构的理解能力；同时通过对比微调的方法，使LLMs能更好地理解UI图像与HTML代码之间的关系。经过Waffle微调的模型在我们新推出的基准WebSight-Test和现有基准Design2Code上，显示出比当前微调方法高出最多9.00个百分点的HTML匹配度，CW-SSIM提高0.0982，CLIP提高32.99，LLEM提高27.12个百分点，表现出色。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.18362" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 25 Oct 2024 03:50:58 GMT</pubDate>
 <pubDate>Fri, 25 Oct 2024 03:50:58 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +70,8 @@
 <link>https://arxiv.org/abs/2410.16251</link>
 <guid>https://arxiv.org/abs/2410.16251</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>HalluEditBench提供了一种方法，对知识编辑技术在纠正大型语言模型中的幻觉进行全面评估。</p><br><br><p><strong>摘要：</strong> 大型语言模型（LLMs）在生成内容时存在幻觉问题，即产生非事实信息。知识编辑作为一种新兴的修正错误事实知识的范式，避免了从头开始重新训练的成本。然而，现有的知识编辑评估数据集存在一个共同问题，即无法确保在评估之前，LLMs确实生成了幻觉回答。因此，考量不同知识编辑技术的有效性变得困难。本研究提出了HalluEditBench，以全面基准化知识编辑方法在纠正真实世界幻觉方面的表现。我们细致构建了一个包含9个领域、26个主题和6000多个幻觉实例的大型幻觉数据集。然后，从有效性、泛化性、可移植性、本地性和稳健性五个维度综合评估知识编辑方法的性能。通过HalluEditBench，我们提供了对不同知识编辑方法在纠正幻觉方面的潜力和限制的新见解，这将激励未来的改进，并促进知识编辑领域的进步。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.16251 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">HalluEditBench提供了一种方法，对知识编辑技术在纠正大型语言模型中的幻觉进行全面评估。</p><br /><br /><p><strong>摘要：</strong> 大型语言模型（LLMs）在生成内容时存在幻觉问题，即产生非事实信息。知识编辑作为一种新兴的修正错误事实知识的范式，避免了从头开始重新训练的成本。然而，现有的知识编辑评估数据集存在一个共同问题，即无法确保在评估之前，LLMs确实生成了幻觉回答。因此，考量不同知识编辑技术的有效性变得困难。本研究提出了HalluEditBench，以全面基准化知识编辑方法在纠正真实世界幻觉方面的表现。我们细致构建了一个包含9个领域、26个主题和6000多个幻觉实例的大型幻觉数据集。然后，从有效性、泛化性、可移植性、本地性和稳健性五个维度综合评估知识编辑方法的性能。通过HalluEditBench，我们提供了对不同知识编辑方法在纠正幻觉方面的潜力和限制的新见解，这将激励未来的改进，并促进知识编辑领域的进步。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.16251" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 25 Oct 2024 03:32:14 GMT</pubDate>
 <pubDate>Fri, 25 Oct 2024 03:32:14 GMT</pubDate>
 </item>
 <item>
@@ -69,11 +79,8 @@
 <link>https://arxiv.org/abs/2410.18977</link>
 <guid>https://arxiv.org/abs/2410.18977</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本研究提出MotionCLR模型，通过注意力机制提升运动生成的编辑能力与可解释性。</p><br><br><p><strong>摘要：</strong> 本文研究了人类运动生成的交互编辑问题，针对现有运动扩散模型在词级文本与运动对应建模及可解释性方面的不足，提出了一种基于注意力机制的运动扩散模型MotionCLR。该模型通过自注意力和跨注意力机制分别建模模态内和模态间的交互。自注意力机制用于衡量帧之间的顺序相似性，影响运动特征的顺序；而跨注意力机制则用于寻找细粒度的词序对应，并激活运动序列中的相应时间步。基于这些关键特性，本文开发了一系列简单有效的运动编辑方法，如运动的（去）强调、就地运动替换及基于示例的运动生成等。为了验证注意力机制的可解释性，我们还探讨了基于注意力图的动作计数和依赖于基础的运动生成能力。实验结果表明，我们的方法在生成和编辑能力上表现出色且具有良好的可解释性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.18977 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本研究提出MotionCLR模型，通过注意力机制提升运动生成的编辑能力与可解释性。</p><br /><br /><p><strong>摘要：</strong> 本文研究了人类运动生成的交互编辑问题，针对现有运动扩散模型在词级文本与运动对应建模及可解释性方面的不足，提出了一种基于注意力机制的运动扩散模型MotionCLR。该模型通过自注意力和跨注意力机制分别建模模态内和模态间的交互。自注意力机制用于衡量帧之间的顺序相似性，影响运动特征的顺序；而跨注意力机制则用于寻找细粒度的词序对应，并激活运动序列中的相应时间步。基于这些关键特性，本文开发了一系列简单有效的运动编辑方法，如运动的（去）强调、就地运动替换及基于示例的运动生成等。为了验证注意力机制的可解释性，我们还探讨了基于注意力图的动作计数和依赖于基础的运动生成能力。实验结果表明，我们的方法在生成和编辑能力上表现出色且具有良好的可解释性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.18977" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 25 Oct 2024 03:25:06 GMT</pubDate>
 <pubDate>Fri, 25 Oct 2024 03:25:06 GMT</pubDate>
 </item>
 <item>
@@ -81,14 +88,10 @@
 <link>https://arxiv.org/abs/2410.15580</link>
 <guid>https://arxiv.org/abs/2410.15580</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究表明LLMs在算术学习中是一种纯符号学习者，发现学习使用的子组复杂性对结果有显著影响。</p><br><br><p><strong>摘要：</strong> 本文通过双侧实验探讨大型语言模型（LLMs）在算术学习中的表现。首先，我们调查LLMs是否能够在算术学习中利用部分积，发现尽管经过学习后LLMs可以识别一些部分积，但未能有效地应用于具体的算术任务。随后，我们考察LLMs如何符号性地处理算术，假设其困难源自子组的复杂性和选择。研究结果显示，当固定子组复杂性时，LLMs对不同算术运算的处理呈现出相似性。进一步分析位置级别的准确率，发现其遵循U型模式：LLMs在第一和最后位置快速学习最简单的模式，而在中间位置逐渐掌握较难的模式。这表明LLMs在学习过程中遵循从容易到困难的子组选择策略。我们的研究确认LLMs在算术任务中是纯符号学习者，并强调通过子组水平量化深入理解其学习过程的重要性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.15580 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究表明LLMs在算术学习中是一种纯符号学习者，发现学习使用的子组复杂性对结果有显著影响。</p><br /><br /><p><strong>摘要：</strong> 本文通过双侧实验探讨大型语言模型（LLMs）在算术学习中的表现。首先，我们调查LLMs是否能够在算术学习中利用部分积，发现尽管经过学习后LLMs可以识别一些部分积，但未能有效地应用于具体的算术任务。随后，我们考察LLMs如何符号性地处理算术，假设其困难源自子组的复杂性和选择。研究结果显示，当固定子组复杂性时，LLMs对不同算术运算的处理呈现出相似性。进一步分析位置级别的准确率，发现其遵循U型模式：LLMs在第一和最后位置快速学习最简单的模式，而在中间位置逐渐掌握较难的模式。这表明LLMs在学习过程中遵循从容易到困难的子组选择策略。我们的研究确认LLMs在算术任务中是纯符号学习者，并强调通过子组水平量化深入理解其学习过程的重要性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.15580" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Fri, 25 Oct 2024 03:22:03 GMT</pubDate>
-<pubDate>Fri, 25 Oct 2024 03:22:03 GMT</pubDate>
 </item>
-
 <item>
 <title>W-Bench：评估图像水印在高级编辑技巧下的鲁棒性与VINE方法</title>
 <link>https://arxiv.org/abs/2410.18775</link>
