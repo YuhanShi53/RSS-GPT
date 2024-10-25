@@ -4,6 +4,150 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>W-Bench：评估图像水印在高级编辑技巧下的鲁棒性与VINE方法</title>
+<link>https://arxiv.org/abs/2410.18775</link>
+<guid>https://arxiv.org/abs/2410.18775</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出W-Bench基准，评估水印在编辑技术下的鲁棒性，提出VINE方法强化水印能力。</p><br><br><p><strong>摘要：</strong> 当前的图像水印方法对大型文本到图像模型所启用的高级编辑技术具有脆弱性，这些技术会在编辑过程中扭曲嵌入的水印，给版权保护带来显著挑战。为了解决这一问题，我们引入了W-Bench，这是首个全面的基准，用于评估水印方法在多种图像编辑技术（如图像再生、全局编辑、局部编辑和图像到视频生成）下的鲁棒性。通过对十一种代表性水印方法与常见编辑技术的广泛评估，我们证明大多数方法在经过编辑后无法检测到水印。为了解决这一局限性，我们提出了VINE，一种显著增强水印在各种图像编辑技术下鲁棒性的水印方法，同时保持高图像质量。我们的方法包含两项关键创新：（1）分析图像编辑的频率特征，识别模糊失真具有相似的频率特性，从而可以在训练中将其用作替代攻击，以增强水印鲁棒性；（2）利用大型预训练的扩散模型SDXL-Turbo，调整它以适应水印任务，实现更不易察觉且稳健的水印嵌入。实验结果表明，方法在各种图像编辑技术下表现优秀，超越了现有方法，在图像质量和鲁棒性方面均有显著提升。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.18775 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 25 Oct 2024 02:40:26 GMT</pubDate>
+<pubDate>Fri, 25 Oct 2024 02:40:26 GMT</pubDate>
+</item>
+<item>
+<title>多草稿投机采样的优化选择方案研究</title>
+<link>https://arxiv.org/abs/2410.18234</link>
+<guid>https://arxiv.org/abs/2410.18234</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出了一种优化的投机采样方案，通过两步选择过程提高接受概率和效率。</p><br><br><p><strong>摘要：</strong> 本文探讨了多草稿投机采样中最优选择方案的分解方法。我们提出一种两步解决方案，其中第一步使用重要性采样（IS）选择一个中间token，第二步应用单草稿投机采样生成最终output token。在两个相同草稿模型的情况下，我们确定了目标模型与草稿模型分布之间的必要和充分条件，以确保接受概率等于1，并提供了最优接受概率的明确表达式。此外，我们的理论分析激发了一种基于加权重要性采样的新型token选择方案。实验结果显示，在多种场景下，该方案在块效率和token速率方面均优于基线方案，验证了其有效性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.18234 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 25 Oct 2024 02:32:27 GMT</pubDate>
+<pubDate>Fri, 25 Oct 2024 02:32:27 GMT</pubDate>
+</item>
+<item>
+<title>ScaleQuest: 可扩展的数学推理数据合成方法</title>
+<link>https://arxiv.org/abs/2410.18693</link>
+<guid>https://arxiv.org/abs/2410.18693</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>ScaleQuest是一种新颖的数据合成方法，自动生成数学推理问题，提升LLMs推理能力。</p><br><br><p><strong>摘要：</strong> 高质量数据是提升大语言模型（LLMs）推理能力的重要因素。当前研究表明，利用强大模型（如GPT-4）持续扩展数据合成能够更有效地提升推理性能。然而，开源社区在规模化和可负担的数据合成方法方面仍存在不足。为了解决这一问题，我们提出了ScaleQuest，这是一种可扩展的新数据合成方法，使用“小型”（如7B）开源模型无需种子数据，系统地生成问题。通过高效的ScaleQuest，我们自动构建了一个包含100万个问题-解决方案对的数学推理数据集，证明其有效性超过了现有的开源数据集。该数据集可普遍提升主流开源模型（如Mistral、Llama3、DeepSeekMath和Qwen2-Math）的性能，MATH上的提升幅度达到29.2%至46.4%。特别是，仅对Qwen2-Math-7B-Base模型进行微调，即可超过经过良好对齐的Qwen2-Math-7B-Instruct和封闭源数据的强大模型，如GPT-4-Turbo和Claude-3.5 Sonnet。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.18693 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 25 Oct 2024 01:44:14 GMT</pubDate>
+<pubDate>Fri, 25 Oct 2024 01:44:14 GMT</pubDate>
+</item>
+<item>
+<title>LOGO：通过高效偏好优化实现长上下文对齐的训练策略</title>
+<link>https://arxiv.org/abs/2410.18533</link>
+<guid>https://arxiv.org/abs/2410.18533</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本研究提出LOGO，一种高效的长上下文对齐训练策略，通过偏好优化提升生成能力。</p><br><br><p><strong>摘要：</strong> 在处理长输入序列方面，长上下文模型（LCMs）表现出巨大的潜力，能够有效地处理超过100M的token输入。尽管在定位上下文中的关键token信息方面取得了显著进展，但当前LCMs的生成性能仍不尽如人意，经常出现不对齐的响应，比如幻觉现象。为了提升LCMs的生成能力，现有研究探讨了数据规模和质量在预训练和指令微调中的影响。尽管取得了一定程度的改进，前述方法在有效性和效率上依然存在不足。本文提出了一种新的训练策略LOGO（长上下文对齐通过高效偏好优化），首先引入偏好优化来进行长上下文对齐。为了解决由于长序列带来的GPU内存限制问题，LOGO采用了一种无参考的偏好优化策略，并运用位置合成方法构建训练数据。通过在单个8timesA800 GPU机器上训练0.3B的数据，LOGO使Llama-3-8B-Instruct-80K模型在处理实际长上下文任务时达到了与GPT-4相媲美的性能，同时保持了模型在其他任务（如语言建模和MMLU）上的原有能力。此外，LOGO可以扩展模型的上下文窗口大小，同时增强其生成性能。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.18533 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 25 Oct 2024 01:32:39 GMT</pubDate>
+<pubDate>Fri, 25 Oct 2024 01:32:39 GMT</pubDate>
+</item>
+<item>
+<title>基于分块计算的对比损失优化策略</title>
+<link>https://arxiv.org/abs/2410.17243</link>
+<guid>https://arxiv.org/abs/2410.17243</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出了一种新型的分块计算策略，显著提升对比损失训练性能，支持更大批量尺寸，降低显存消耗。</p><br><br><p><strong>摘要：</strong> 在对比损失的表示学习中，较大的批量尺寸通过提供更多负样本来提升模型性能。然而，批量尺寸的扩展受到GPU显存消耗的限制，主要是因为相似度矩阵的完全实例化。为了解决这一问题，本文提出了一种基于分块计算的策略，将对比损失的计算划分为任意小的块，从而避免完全物化相似度矩阵。此外，引入多层次分块策略，利用分布式系统的层次结构，在GPU层面采用基于环的通信优化同步，使用CUDA核心级别的融合核函数以减少I/O开销。实验结果表明，该方法可将批量尺寸扩展到前所未有的水平，例如，在8或32块A800 80GB上对CLIP-ViT-L/14模型进行对比训练时，支持4M或12M的批量尺寸而不损失准确性。与现有记忆高效解决方案相比，该方法在内存消耗上实现了两个数量级的减少，同时保持了相当的速度。代码将公开发布。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.17243 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 25 Oct 2024 00:57:09 GMT</pubDate>
+<pubDate>Fri, 25 Oct 2024 00:57:09 GMT</pubDate>
+</item>
+<item>
+<title>STRING：提升大语言模型长上下文有效性的新方法</title>
+<link>https://arxiv.org/abs/2410.18745</link>
+<guid>https://arxiv.org/abs/2410.18745</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本研究提出STRING以改善大语言模型有效上下文长度，通过重写无效位置显著提升性能。</p><br><br><p><strong>摘要：</strong> 随着分布式训练和高效注意力机制的进步，大型语言模型（LLMs）的上下文窗口大小显著扩大。然而，最近的研究表明，开源LLMs的有效上下文长度通常低于训练长度的一半。本文将这一限制归因于LLMs在预训练和后期训练阶段形成的左偏相对位置频率分布，这妨碍了模型有效获取远距离信息。为了解决这一挑战，本文提出了一种新的位置嵌入方法：ShifTed Rotray position embeddING（STRING）。STRING在推理过程中，将经过良好训练的位置移至无效位置，从而在不增加额外训练的情况下，提升现有训练长度内的性能。实验结果显示，STRING显著改善了最新大型模型，如Llama3.1 70B和Qwen2 72B在流行长上下文基准RULER和InfiniteBench上的表现，分别提升了10分以上，并在开源LLMs中创造了新的最先进的结果。与商业模型相比，采用STRING的方法的Llama 3.1 70B甚至在性能上超越了GPT-4-128K，并明显胜过Claude 2和Kimi-chat。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.18745 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 25 Oct 2024 00:47:25 GMT</pubDate>
+<pubDate>Fri, 25 Oct 2024 00:47:25 GMT</pubDate>
+</item>
+<item>
+<title>Framer：互动帧插值与创意过渡</title>
+<link>https://arxiv.org/abs/2410.18978</link>
+<guid>https://arxiv.org/abs/2410.18978</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Framer为图像间插值提供交互方式，支持用户选择关键点，提升插值效果与控制。</p><br><br><p><strong>摘要：</strong> 我们提出Framer用于交互式帧插值，旨在根据用户创意在两幅图像之间产生平滑过渡。我们的设计允许用户定制过渡过程，通过关键点的选择来调整运动轨迹。这一机制带来了两个显著的好处：首先，引入人机交互有助于缓解从一幅图像转换到另一幅图像时产生的多种可能性问题，从而增强局部动作的细致控制；其次，关键点作为最基本的交互形式，有助于建立帧间的对应关系，使模型能够处理更具挑战性的情况，例如起始和结束帧中的对象具有不同的形状和风格。此外，我们的系统还提供了“自动驾驶”模式，引入模块自动估计关键点并优化轨迹，以简化实际使用。大量实验结果表明，Framer在多种应用上表现出色，如图像变换、延时视频生成、卡通插值等。我们将发布代码、模型和接口以促进进一步的研究。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.18978 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 25 Oct 2024 00:41:55 GMT</pubDate>
+<pubDate>Fri, 25 Oct 2024 00:41:55 GMT</pubDate>
+</item>
+<item>
+<title>通过数据中心化技术提升大语言模型的奖励建模</title>
+<link>https://arxiv.org/abs/2410.18451</link>
+<guid>https://arxiv.org/abs/2410.18451</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出了一系列数据中心化技术来增强LLMs的奖励建模，结果显著提高了模型表现。</p><br><br><p><strong>摘要：</strong> 本报告介绍了一系列用于提升大语言模型（LLMs）奖励建模的方法，重点关注数据中心化技术。我们提出了高效的数据选择与过滤策略，以策划高质量的开源偏好数据集，最终形成了Skywork-Reward数据集合，该数据集仅包含8万个偏好对，显著小于现有的数据集。利用这一策划后的数据集，我们开发了Skywork-Reward模型系列，包含Skywork-Reward-Gemma-27B和Skywork-Reward-Llama-3.1-8B，其中前者在RewardBench排行榜上当前占据第一的位置。值得注意的是，我们的技术和数据集直接提升了许多顶级模型在RewardBench上的表现，凸显了我们在实际偏好学习应用中所作贡献的现实影响。通过本研究，我们展示了数据质量对模型性能的重要性，进一步指导将来在奖励建模领域的数据策划工作。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.18451 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 25 Oct 2024 00:22:37 GMT</pubDate>
+<pubDate>Fri, 25 Oct 2024 00:22:37 GMT</pubDate>
+</item>
+<item>
+<title>CCI3.0-HQ：优化数据质量的高质量汉语语料库</title>
+<link>https://arxiv.org/abs/2410.18505</link>
+<guid>https://arxiv.org/abs/2410.18505</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>CCI3.0-HQ 是一个高质量的中文数据集，提升了语言模型的性能。</p><br><br><p><strong>摘要：</strong> 我们介绍了 CCI3.0-HQ（https://huggingface.co/datasets/BAAI/CCI3-HQ），这是一个 500GB 的高质量子集，来源于中文语料库 Internet 3.0（CCI3.0）（https://huggingface.co/datasets/BAAI/CCI3-Data）。该数据集采用了新颖的两阶段混合过滤流程，以显著提升数据质量。为了评估其有效性，我们在 100B 标记的多个数据集上，从头开始训练了一个 0.5B 参数的模型，结果在 10 个基准测试中，在零-shot 设置下，表现超越了 CCI3.0、SkyPile 和 WanjuanV1。高质量的过滤过程有效地提炼了 Qwen2-72B-instruct 模型的能力，最终使得紧凑的 0.5B 模型在中文网页数据分类任务中达到了最佳 F1 分数。我们相信，这个开放获取的数据集将促进高质量语言模型的广泛可用性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.18505 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 25 Oct 2024 00:18:10 GMT</pubDate>
+<pubDate>Fri, 25 Oct 2024 00:18:10 GMT</pubDate>
+</item>
+<item>
+<title>模型编辑对语言模型表现的影响评估</title>
+<link>https://arxiv.org/abs/2410.18785</link>
+<guid>https://arxiv.org/abs/2410.18785</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文评估了模型编辑方法对语言模型的影响，发现编辑会导致性能下降，且安全性受损。</p><br><br><p><strong>摘要：</strong> 本文对不同模型的编辑方法进行了全面评估，发现现有编辑方式在小规模知识更新时表现良好，但在编辑数量增加时容易导致模型性能下降和知识结构的破坏。研究结果显示，现有编辑方法在一般基准测试中导致了不可避免的性能下降，且当编辑数量稍多时，模型的内在知识结构会受到显著影响。此外，指令调优的模型在编辑后对通用知识的性能下降更少，大规模模型相较于小规模模型在编辑时更具抵抗力。然而，编辑后的模型安全性普遍减弱，即便是经过安全对齐的模型。研究表明当前的编辑方法更适合于小规模知识更新，激励着对更实用和可靠的编辑方法的进一步研究。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.18785 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 25 Oct 2024 00:14:39 GMT</pubDate>
+<pubDate>Fri, 25 Oct 2024 00:14:39 GMT</pubDate>
+</item>
+<item>
+<title>一致性模型的稳定一致性调优</title>
+<link>https://arxiv.org/abs/2410.18958</link>
+<guid>https://arxiv.org/abs/2410.18958</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出了稳定一致性调优（SCT）框架，显著提升一致性模型的生成性能。</p><br><br><p><strong>摘要：</strong> 本文提出了一种新的框架，通过将扩散模型的去噪过程建模为马尔可夫决策过程（MDP），并将一致性模型训练视为通过时序差分（TD）学习进行价值估计，从而更好地理解一致性模型。我们首先分析了现有一致性训练/调整策略的局限性，基于简单一致性调优（ECT）提出了稳定一致性调优（SCT），该方法通过利用得分恒等式进行方差减少学习。实验证明，SCT在CIFAR-10和ImageNet-64等基准数据集上表现出明显的性能提升。其中，SCT在ImageNet-64上的1步FID为2.42，2步FID为1.55，创下了一致性模型的最新一阶段技术（SoTA）成绩。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.18958 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 25 Oct 2024 00:12:23 GMT</pubDate>
+<pubDate>Fri, 25 Oct 2024 00:12:23 GMT</pubDate>
+</item>
+<item>
+<title>无界：基于生成模型的无尽角色生活模拟游戏</title>
+<link>https://arxiv.org/abs/2410.18975</link>
+<guid>https://arxiv.org/abs/2410.18975</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>无界是一款使用生成模型的角色生活模拟游戏，提供开放式互动体验。</p><br><br><p><strong>摘要：</strong> 本文介绍了一款名为《无界》的生成无限游戏，该游戏通过生成模型超越了传统有限游戏的界限，灵感来源于James P. Carse对有限与无限游戏的分类。《无界》是一个角色生活模拟的沙盒游戏，玩家可以通过喂养、玩耍和引导自主虚拟角色，与其在虚拟世界中互动。为实现《无界》的开发，我们提出了在大型语言模型(LLM)和视觉生成领域的技术创新。具体而言，我们展示了(1)一个专业化、精炼的大型语言模型，该模型实时动态生成游戏机制、叙事和角色互动；(2)一种新的动态区域图像提示适配器(IP-Adapter)，确保角色在多个环境中的一致且灵活的视觉生成。我们通过定性和定量分析评价了我们的系统，显示出角色生活模拟、用户指令跟随、叙事连贯性以及角色和环境视觉一致性等方面相比传统相关方法有显著提升。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.18975 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 25 Oct 2024 00:08:39 GMT</pubDate>
+<pubDate>Fri, 25 Oct 2024 00:08:39 GMT</pubDate>
+</item>
 
 <item>
 <title>基于价值引导的策略引导：提升通用机器人政策的部署性能</title>
