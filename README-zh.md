@@ -61,3 +61,4 @@
 - https://openai.com/news/rss.xml -> https://YuhanShi53.github.io/RSS-GPT/OpenAI.xml
 - https://36kr.com/feed -> https://YuhanShi53.github.io/RSS-GPT/36kr.xml
 - https://deepmind.com/blog/feed/basic -> https://YuhanShi53.github.io/RSS-GPT/DeepMind.xml
+- https://www.microsoft.com/en-us/research/feed/ -> https://YuhanShi53.github.io/RSS-GPT/Microsoft-Research.xml
