@@ -1,0 +1,315 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:atom="http://www.w3.org/2005/Atom">
+<channel>
+<title>Microsoft Research</title>
+<link>https://www.microsoft.com/en-us/research/</link>
+
+<item>
+<title>Angela Busheska's Journey in Microsoft Research: Merging Sustainability with Technology</title>
+<link>https://www.microsoft.com/en-us/research/podcast/intern-insights-vaishnavi-ranganathan-with-angela-busheska/</link>
+<guid>https://www.microsoft.com/en-us/research/podcast/intern-insights-vaishnavi-ranganathan-with-angela-busheska/</guid>
+<content:encoded><![CDATA[
+
+  <div><p>Undergrad Angela Busheska has a passion for sustainability. She talks with researcher Vaishnavi Ranganathan about the why behind her drive, the work she did at Microsoft on a platform for tracking land use, and her advice for making the internship experience count. </p>
+<p>The post <a href="https://www.microsoft.com/en-us/research/podcast/intern-insights-vaishnavi-ranganathan-with-angela-busheska/">Intern Insights: Vaishnavi Ranganathan with Angela Busheska</a> appeared first on <a href="https://www.microsoft.com/en-us/research">Microsoft Research</a>.</p></div>
+
+]]></content:encoded>
+<pubDate>Thu, 24 Oct 2024 15:14:56 +0000</pubDate>
+<pubDate>Thu, 24 Oct 2024 15:14:56 +0000</pubDate>
+</item>
+<item>
+<title>Research Focus: Week of October 7, 2024</title>
+<link>https://www.microsoft.com/en-us/research/blog/research-focus-week-of-october-7-2024/</link>
+<guid>https://www.microsoft.com/en-us/research/blog/research-focus-week-of-october-7-2024/</guid>
+<content:encoded><![CDATA[
+
+  <figure class="wp-block-pullquote"><blockquote><p>Welcome to Research Focus, a series of blog posts that highlights notable publications, events, code/datasets, new hires and other milestones from across the research community at Microsoft.</p></blockquote></figure>
+
+
+
+<figure class="wp-block-image aligncenter size-full"><img alt="Research Focus | October 7, 2024" class="wp-image-1089057" height="788" src="https://www.microsoft.com/en-us/research/uploads/prod/2024/09/RF51-BlogHeroFeature-1400x788-1.jpg" width="1400" /></figure>
+
+
+
+<div class="wp-block-group is-layout-constrained wp-block-group-is-layout-constrained">
+<h2 class="wp-block-heading h6 has-blue-color has-text-color has-link-color wp-elements-e734c6e9609233ab051742bb3beeed63" id="new-research">NEW RESEARCH</h2>
+
+
+
+<h2 class="wp-block-heading" id="heading">Securely Training Decision Trees Efficiently</h2>
+
+
+
+<p>In a recent paper: <a href="https://www.microsoft.com/en-us/research/publication/securely-training-decision-trees-efficiently/" rel="noreferrer noopener" target="_blank">Securely Training Decision Trees Efficiently</a> that will appear at ACM CCS 2024, researchers from Microsoft significantly reduce the communication complexity of secure decision tree training. Decision trees are an important class of supervised learning algorithms. In this approach, a classification or regression tree is built based on a set of features or attributes present in the training dataset. As with many learning algorithms, the accuracy of decision trees can be greatly improved with larger volumes of data. However, this can be a challenge, since data may come from multiple independent sources and require attention to data privacy concerns. In this case, the use of a privacy-enhancing technology, such as secure multi-party computation (MPC), can help protect the underlying training data. &nbsp;</p>
+
+
+
+<p>When the number of elements in the dataset is 𝑁, the number of attributes is 𝑚 and the height of the tree to be built is ℎ, the researchers construct a protocol with communication complexity O(𝑚𝑁 log 𝑁 + ℎ𝑚𝑁 + ℎ𝑁 log 𝑁 ), thereby achieving an improvement of ≈ min(ℎ, 𝑚, log 𝑁 ) over the previous state of the art. The essential feature is an improved protocol to regroup sorted private elements further into additional groups (according to a flag vector) while maintaining their relative ordering. Implementing this protocol in the MP-SPDZ framework shows that it requires 10× lesser communication and is 9× faster than existing approaches.</p>
+
+
+
+<div class="wp-block-buttons is-content-justification-center is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-1 wp-block-buttons-is-layout-flex">
+<div class="wp-block-button is-style-outline is-style-outline--a28a27984e036278ebc05191119983a1"><a class="wp-block-button__link wp-element-button" href="https://www.microsoft.com/en-us/research/publication/securely-training-decision-trees-efficiently/">Read the paper</a></div>
+</div>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-dots" />
+</div>
+
+
+
+<div class="wp-block-group is-layout-constrained wp-block-group-is-layout-constrained">
+<h2 class="wp-block-heading h6 has-blue-color has-text-color has-link-color wp-elements-e734c6e9609233ab051742bb3beeed63" id="new-research">NEW RESEARCH</h2>
+
+
+
+<h2 class="wp-block-heading" id="heading">Multi-label audio classification with a noisy zero-shot teacher</h2>
+
+
+
+<p>Improving the real-world accuracy of audio content detection (ACD) is an important problem for streaming platforms, operating systems and playback devices. It’s similar to audio tagging, i.e., labeling sounds present in a given audio segment of several seconds length or longer. However, ACD may consist of a small number of higher-level labels or super-classes, e.g. speech, music, traffic, machines, animals, etc., where each label can include a multitude of specific sounds.</p>
+
+
+
+<p>In a recent paper: <a href="https://www.microsoft.com/en-us/research/publication/multi-label-audio-classification-with-a-noisy-zero-shot-teacher/" rel="noreferrer noopener" target="_blank">Multi-label audio classification with a noisy zero-shot teacher</a>, researchers from Microsoft propose a novel training scheme using self-label correction and data augmentation methods to deal with noisy labels and improve real-world accuracy on a polyphonic audio content detection task. The augmentation method reduces label noise by mixing multiple audio clips and joining their labels, while being compatible with multiple active labels. The researchers show that performance can be improved by a self-label correction method using the same pretrained model. They also show that it is feasible to use a strong zero-shot model such as CLAP to generate labels for unlabeled data and improve the results using the proposed training and label enhancement methods. The resulting model performs similar to CLAP while providing an efficient mobile device friendly architecture which can be quickly adapted to unlabeled sound classes. </p>
+
+
+
+<div class="wp-block-buttons is-content-justification-center is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-2 wp-block-buttons-is-layout-flex">
+<div class="wp-block-button is-style-outline is-style-outline--29b4c779811ee36404edbdf8b92745f4"><a class="wp-block-button__link wp-element-button" href="https://www.microsoft.com/en-us/research/publication/multi-label-audio-classification-with-a-noisy-zero-shot-teacher/">Read the paper</a></div>
+</div>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-dots" />
+</div>
+
+
+
+<div class="wp-block-group is-layout-constrained wp-block-group-is-layout-constrained">
+<h2 class="wp-block-heading h6 has-blue-color has-text-color has-link-color wp-elements-e734c6e9609233ab051742bb3beeed63" id="new-research">NEW RESEARCH</h2>
+
+
+
+<h2 class="wp-block-heading" id="heading">Tabularis Revilio: Converting Text to Tables</h2>
+
+
+
+<p>Tables are commonly used to store and present data. These tables are often moved as free-form text when copied from documents and applications without proper tabular support like PDF documents, web pages, or images. Users are dependent on manual effort or programming abilities to parse this free-form text back into structured tables.</p>
+
+
+
+<p>In a recent paper: <a href="https://www.microsoft.com/en-us/research/publication/tabularis-revilio-converting-text-to-tables/" rel="noreferrer noopener" target="_blank">Tabularis Revilio: Converting Text to Tables</a>, researchers from Microsoft present a novel neurosymbolic system for reconstructing tables when their column boundaries have been lost. Revilio addresses this task by detecting headers, generating an initial table sketch using a large language model (LLM), and using that sketch as a guiding representation during an enumerate-and-test strategy that evaluates syntactic and semantic table structures. Revilio was evaluated on a diverse set of datasets, demonstrating significant improvements over existing table parsing methods. Revilio outperforms traditional techniques in both accuracy and scalability, handling large tables with over 100,000 rows. The researchers’ experiments using publicly available datasets show an increase in reconstruction accuracy by 5.8–11.3% over both neural and symbolic baseline state-of-the-art systems.&nbsp;</p>
+
+
+
+<div class="wp-block-buttons is-content-justification-center is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-3 wp-block-buttons-is-layout-flex">
+<div class="wp-block-button is-style-outline is-style-outline--902a546be15a65958650e2c444046582"><a class="wp-block-button__link wp-element-button" href="https://www.microsoft.com/en-us/research/publication/tabularis-revilio-converting-text-to-tables/">Read the paper</a></div>
+</div>
+
+
+
+	<div class="border-bottom border-top border-gray-300 mt-5 mb-5 msr-promo text-center text-md-left alignwide">
+		
+
+		<p class="msr-promo__label text-gray-800 text-center text-uppercase">
+		<span class="px-4 bg-white display-inline-block font-weight-semibold small">Spotlight: Event Series</span>
+	</p>
+	
+	<div class="row pt-3 pb-4 align-items-center">
+						<div class="msr-promo__media col-12 col-md-5">
+				<a class="bg-gray-300" href="https://researchforum.microsoft.com/?OCID=msr_researchforum_MCR_Blog_Promo" target="_blank">
+					<img alt="various abstract 3D shapes on a light blue background" class="w-100 display-block" src="https://www.microsoft.com/en-us/research/uploads/prod/2024/01/MRF-24_WebImage_1400x788.png" />
+				</a>
+			</div>
+			
+			<div class="msr-promo__content p-3 px-5 col-12 col-md">
+
+									<h2 class="h4">Microsoft Research Forum</h2>
+				
+								<p class="large">Join us for a continuous exchange of ideas about research in the era of general AI. Watch the first four episodes on demand.</p>
+				
+								<div class="wp-block-buttons justify-content-center justify-content-md-start">
+					<div class="wp-block-button">
+						<a class="btn btn-brand glyph-append glyph-append-chevron-right" href="https://researchforum.microsoft.com/?OCID=msr_researchforum_MCR_Blog_Promo" target="_blank">
+							Register for series						</a>
+					</div>
+				</div>
+							</div><!--/.msr-promo__content-->
+	</div><!--/.msr-promo__inner-wrap-->
+<span class="sr-only" id="label-external-link">Opens in a new tab</span>	</div><!--/.msr-promo-->
+	</div>
+
+
+
+<div class="wp-block-group is-layout-constrained wp-block-group-is-layout-constrained">
+<h2 class="wp-block-heading h6 has-blue-color has-text-color has-link-color wp-elements-e734c6e9609233ab051742bb3beeed63" id="new-research">NEW RESEARCH</h2>
+
+
+
+<h2 class="wp-block-heading" id="heading">Confidential Container Groups: Implementing Confidential Computing on Azure Container Instances</h2>
+
+
+
+<p>Container-based technologies empower cloud tenants to develop highly portable software and deploy services in the cloud at a rapid pace. Cloud privacy, meanwhile, is important as a large number of container deployments operate on privacy-sensitive data, but challenging due to the increasing frequency and sophistication of attacks. State-of-the-art confidential container-based designs leverage process-based trusted execution environments (TEEs), but face security and compatibility issues that limit their practical deployment.</p>
+
+
+
+<p>In a recent article in <em>Communications of the ACM</em>: <a class="msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall" href="https://cacm.acm.org/practice/confidential-container-groups/" rel="noreferrer noopener" target="_blank">Confidential Container Groups: Implementing Confidential Computing on Azure Container Instances<span class="sr-only"> (opens in new tab)</span></a>, researchers from Microsoft with external colleagues present the Parma architecture, which provides lift-and-shift deployment of unmodified containers while providing strong security protection against a powerful attacker who controls the untrusted host and hypervisor. Parma leverages VM-level isolation to execute a container group within a unique VM-based TEE. Besides container integrity and user data confidentiality and integrity, Parma also offers container attestation and execution integrity based on an attested execution policy. This policy, which is specified by the customer, delimits the actions that the cloud service provider is allowed to take on their behalf when managing the container group. </p>
+
+
+
+<p>The result is that customers receive the security protections of TEEs for their container workloads with minimal costs to perfromance. To learn more, check out <a class="msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall" href="https://learn.microsoft.com/en-us/azure/container-instances/container-instances-confidential-overview" rel="noreferrer noopener" target="_blank">Confidential Containers on Azure Container Instances<span class="sr-only"> (opens in new tab)</span></a>, which is based on Microsoft’s Parma architecture.&nbsp;</p>
+
+
+
+<div class="wp-block-buttons is-content-justification-center is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-4 wp-block-buttons-is-layout-flex">
+<div class="wp-block-button is-style-outline is-style-outline--7569fbe7e93f6805e979617de8526d87"><a class="wp-block-button__link wp-element-button" href="https://www.microsoft.com/en-us/research/publication/confidential-container-groups/">Read the paper</a></div>
+</div>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-dots" />
+</div>
+
+
+
+<div class="wp-block-group is-layout-constrained wp-block-group-is-layout-constrained">
+<h2 class="wp-block-heading h6 has-blue-color has-text-color has-link-color wp-elements-67f03dda6c961ae118dd159cd334a203" id="new-research">NEW VIDEO SERIES</h2>
+
+
+
+<h2 class="wp-block-heading" id="heading">AI for Business Transformation with Peter Lee and Vijay Mital</h2>
+
+
+
+<p>Generative AI is changing how businesses operate and how stakeholders talk to each other. The building blocks for large scale AI transformation are now in place, but we are only beginning to imagine how it will unfold. Learn what Microsoft research leaders discovered from some early AI innovation in healthcare, and how businesses can prepare for what’s ahead.</p>
+
+
+
+<p>In this new three-part video series, Microsoft Research President Peter Lee and Corporate Vice President Vijay Mital discuss how Microsoft is helping businesses navigate this transformation, along with the critical role of data and how emerging multimodal AI models could turbocharge business innovation.</p>
+
+
+
+<div class="wp-block-buttons is-content-justification-center is-content-justification-center is-layout-flex wp-container-core-buttons-is-layout-5 wp-block-buttons-is-layout-flex">
+<div class="wp-block-button is-style-outline is-style-outline--b294bcefe3f8699fd86cc98f9120f747"><a class="wp-block-button__link wp-element-button" href="https://www.microsoft.com/en-us/research/video/ai-for-business-transformation-lessons-from-healthcare/" rel="noreferrer noopener" target="_blank">Watch the video</a></div>
+</div>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity is-style-dots" />
+</div>
+<span class="sr-only" id="label-external-link">Opens in a new tab</span><p>The post <a href="https://www.microsoft.com/en-us/research/blog/research-focus-week-of-october-7-2024/">Research Focus: Week of October 7, 2024</a> appeared first on <a href="https://www.microsoft.com/en-us/research">Microsoft Research</a>.</p>
+
+]]></content:encoded>
+<pubDate>Wed, 09 Oct 2024 16:00:00 +0000</pubDate>
+<pubDate>Wed, 09 Oct 2024 16:00:00 +0000</pubDate>
+</item>
+<item>
+<title>利用AI推动数据可视化的新进展</title>
+<link>https://www.microsoft.com/en-us/research/blog/data-formulator-exploring-how-ai-can-help-analysts-create-rich-data-visualizations/</link>
+<guid>https://www.microsoft.com/en-us/research/blog/data-formulator-exploring-how-ai-can-help-analysts-create-rich-data-visualizations/</guid>
+<content:encoded><![CDATA[
+
+  <div><p>Data Formulator investigates combining UI interactions with natural language input. Powered by AI, it can help users create or adapt visualizations and supports continuous refinement through an iterative process. Now available on GitHub.</p>
+<p>The post <a href="https://www.microsoft.com/en-us/research/blog/data-formulator-exploring-how-ai-can-help-analysts-create-rich-data-visualizations/">Data Formulator: Exploring how AI can help analysts create rich data visualizations </a> appeared first on <a href="https://www.microsoft.com/en-us/research">Microsoft Research</a>.</p></div>
+
+]]></content:encoded>
+<pubDate>Tue, 01 Oct 2024 16:00:00 +0000</pubDate>
+<pubDate>Tue, 01 Oct 2024 16:00:00 +0000</pubDate>
+</item>
+<item>
+<title>RadEdit: Enhancing Biomedical Image Editing for Reliable Model Testing</title>
+<link>https://www.microsoft.com/en-us/research/blog/stress-testing-biomedical-vision-models-with-radedit-a-synthetic-data-approach-for-robust-model-deployment/</link>
+<guid>https://www.microsoft.com/en-us/research/blog/stress-testing-biomedical-vision-models-with-radedit-a-synthetic-data-approach-for-robust-model-deployment/</guid>
+<content:encoded><![CDATA[
+
+  <div><p>RadEdit stress-tests biomedical vision models by simulating dataset shifts through precise image editing. It uses diffusion models to create realistic, synthetic datasets, helping to identify model weaknesses and evaluate robustness.</p>
+<p>The post <a href="https://www.microsoft.com/en-us/research/blog/stress-testing-biomedical-vision-models-with-radedit-a-synthetic-data-approach-for-robust-model-deployment/">Stress-testing biomedical vision models with RadEdit: A synthetic data approach for robust model deployment</a> appeared first on <a href="https://www.microsoft.com/en-us/research">Microsoft Research</a>.</p></div>
+
+]]></content:encoded>
+<pubDate>Mon, 30 Sep 2024 19:00:00 +0000</pubDate>
+<pubDate>Mon, 30 Sep 2024 19:00:00 +0000</pubDate>
+</item>
+<item>
+<title>Find My Things: Microsoft’s AI-Powered Object Recognition for the Visually Impaired</title>
+<link>https://www.microsoft.com/en-us/research/podcast/abstracts-september-30-2024/</link>
+<guid>https://www.microsoft.com/en-us/research/podcast/abstracts-september-30-2024/</guid>
+<content:encoded><![CDATA[
+
+  <div><p>The personalizable object recognizer Find My Things was recently recognized for accessible design. Researcher Daniela Massiceti and software development engineer Martin Grayson talk about the research project’s origins and the tech advances making it possible.</p>
+<p>The post <a href="https://www.microsoft.com/en-us/research/podcast/abstracts-september-30-2024/">Abstracts: September 30, 2024</a> appeared first on <a href="https://www.microsoft.com/en-us/research">Microsoft Research</a>.</p></div>
+
+]]></content:encoded>
+<pubDate>Mon, 30 Sep 2024 13:02:05 +0000</pubDate>
+<pubDate>Mon, 30 Sep 2024 13:02:05 +0000</pubDate>
+</item>
+<item>
+<title>微软研究论坛：多模态AI模型与未来计算技术</title>
+<link>https://www.microsoft.com/en-us/research/blog/microsoft-research-forum-episode-4-the-future-of-multimodal-models-a-new-small-language-model-and-other-ai-updates/</link>
+<guid>https://www.microsoft.com/en-us/research/blog/microsoft-research-forum-episode-4-the-future-of-multimodal-models-a-new-small-language-model-and-other-ai-updates/</guid>
+<content:encoded><![CDATA[
+
+  <div><p>Explore multimodal &#038; small language models, plus advanced benchmarks for AI evaluation. Microsoft researchers are working on breakthroughs in weather prediction, materials design, even a new kind of computer for AI inference and hard optimization problems.</p>
+<p>The post <a href="https://www.microsoft.com/en-us/research/blog/microsoft-research-forum-episode-4-the-future-of-multimodal-models-a-new-small-language-model-and-other-ai-updates/">Microsoft Research Forum Episode 4: The future of multimodal models, a new “small” language model, and other AI updates</a> appeared first on <a href="https://www.microsoft.com/en-us/research">Microsoft Research</a>.</p></div>
+
+]]></content:encoded>
+<pubDate>Thu, 26 Sep 2024 12:15:00 +0000</pubDate>
+<pubDate>Thu, 26 Sep 2024 12:15:00 +0000</pubDate>
+</item>
+<item>
+<title>Research Highlights from Microsoft: Recent Advancements and Opportunities</title>
+<link>https://www.microsoft.com/en-us/research/blog/research-focus-week-of-september-23-2024/</link>
+<guid>https://www.microsoft.com/en-us/research/blog/research-focus-week-of-september-23-2024/</guid>
+<content:encoded><![CDATA[
+
+  <div><p>Welcome to Research Focus, a series of blog posts that highlights notable publications, events, code/datasets, new hires and other milestones from across the research community at Microsoft. Time-series forecasting is a technique used to predict future values based on previously observed data points over time. It has extensive applications for traffic flow, renewable energy, retail, [&#8230;]</p>
+<p>The post <a href="https://www.microsoft.com/en-us/research/blog/research-focus-week-of-september-23-2024/">Research Focus: Week of September 23, 2024</a> appeared first on <a href="https://www.microsoft.com/en-us/research">Microsoft Research</a>.</p></div>
+
+]]></content:encoded>
+<pubDate>Wed, 25 Sep 2024 16:00:00 +0000</pubDate>
+<pubDate>Wed, 25 Sep 2024 16:00:00 +0000</pubDate>
+</item>
+<item>
+<title>Eureka: Evaluating State-of-the-Art AI Models Beyond Rankings</title>
+<link>https://www.microsoft.com/en-us/research/blog/eureka-evaluating-and-understanding-progress-in-ai/</link>
+<guid>https://www.microsoft.com/en-us/research/blog/eureka-evaluating-and-understanding-progress-in-ai/</guid>
+<content:encoded><![CDATA[
+
+  <div><p>How can we rigorously evaluate and understand state-of-the-art progress in AI? Eureka is an open-source framework for standardizing evaluations of large foundation models, beyond single-score reporting and rankings. Learn more about the extended findings.</p>
+<p>The post <a href="https://www.microsoft.com/en-us/research/blog/eureka-evaluating-and-understanding-progress-in-ai/">Eureka: Evaluating and understanding progress in AI</a> appeared first on <a href="https://www.microsoft.com/en-us/research">Microsoft Research</a>.</p></div>
+
+]]></content:encoded>
+<pubDate>Tue, 17 Sep 2024 16:00:00 +0000</pubDate>
+<pubDate>Tue, 17 Sep 2024 16:00:00 +0000</pubDate>
+</item>
+<item>
+<title>微软研究聚焦：探索大型语言模型与文本语音系统的新进展</title>
+<link>https://www.microsoft.com/en-us/research/blog/research-focus-week-of-september-9-2024/</link>
+<guid>https://www.microsoft.com/en-us/research/blog/research-focus-week-of-september-9-2024/</guid>
+<content:encoded><![CDATA[
+
+  <div><p>Investigating vulnerabilities in LLMs; A novel total-duration-aware (TDA) duration model for text-to-speech (TTS); Generative expert metric system through iterative prompt priming; Integrity protection in 5G fronthaul networks:</p>
+<p>The post <a href="https://www.microsoft.com/en-us/research/blog/research-focus-week-of-september-9-2024/">Research Focus: Week of September 9, 2024</a> appeared first on <a href="https://www.microsoft.com/en-us/research">Microsoft Research</a>.</p></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Sep 2024 16:00:00 +0000</pubDate>
+<pubDate>Thu, 12 Sep 2024 16:00:00 +0000</pubDate>
+</item>
+<item>
+<title>MedFuzz: Enhancing LLM Performance in Medical Question-Answering</title>
+<link>https://www.microsoft.com/en-us/research/blog/medfuzz-exploring-the-robustness-of-llms-on-medical-challenge-problems/</link>
+<guid>https://www.microsoft.com/en-us/research/blog/medfuzz-exploring-the-robustness-of-llms-on-medical-challenge-problems/</guid>
+<content:encoded><![CDATA[
+
+  <div><p>Medfuzz tests LLMs by breaking benchmark assumptions, exposing vulnerabilities to bolster real-world accuracy.</p>
+<p>The post <a href="https://www.microsoft.com/en-us/research/blog/medfuzz-exploring-the-robustness-of-llms-on-medical-challenge-problems/">MedFuzz: Exploring the robustness of LLMs on medical challenge problems</a> appeared first on <a href="https://www.microsoft.com/en-us/research">Microsoft Research</a>.</p></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Sep 2024 16:00:00 +0000</pubDate>
+<pubDate>Tue, 10 Sep 2024 16:00:00 +0000</pubDate>
+</item>
+
+</channel>
+</rss>
