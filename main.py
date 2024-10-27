@@ -227,8 +227,14 @@ def gpt_summary(query, image_urls, model, language):
         )
 
     messages = [
-        {"role": "user", "content": content},
-        {"role": "assistant", "content": prompt}
+        {
+            "role": "system",
+            "content": prompt
+        },
+        {
+            "role": "user",
+            "content": content
+        },
     ]
 
     if not OPENAI_PROXY:
