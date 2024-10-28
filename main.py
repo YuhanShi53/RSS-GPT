@@ -284,7 +284,7 @@ def gpt_summary(query, image_urls, model, language, log_file):
     json_str = preprocess_json(json_str)
     try:
         response = json.loads(json_str)
-    except json.JSONDecodeError as e:
+    except Exception as e:
         with open(log_file, "a") as f:
             f.write(f"Json decode failed:\n{json_str}")
         raise e
