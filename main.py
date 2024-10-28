@@ -264,11 +264,17 @@ def gpt_summary(query, image_urls, model, language, log_file):
             base_url=OPENAI_BASE_URL,
             http_client=httpx.Client(proxy=OPENAI_PROXY),
         )
-    completion = client.chat.completions.create(
-        model=model,
-        messages=messages,
-        max_tokens=2000,
-    )
+
+    try:
+        completion = client.chat.completions.create(
+            model=model,
+            messages=messages,
+            max_tokens=2000,
+        )
+    except Exception as e:
+        with open(log_file, "a") as f:
+            f.write(f"Unexpected error happened when requesting. Prompt:\n{messages}")
+        raise e
 
     try:
         match = re.search(r'```json\n(.*?)```', completion.choices[0].message.content, re.DOTALL)
