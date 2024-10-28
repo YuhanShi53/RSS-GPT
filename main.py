@@ -202,7 +202,23 @@ def truncate_entries(entries, max_entries):
     return entries
 
 
-def gpt_summary(query, image_urls, model, language):
+def preprocess_json(json_str):
+    # 1. 替换单引号为双引号
+    json_str = re.sub(r"(?<!\\)'", '"', json_str)
+
+    # 2. 去除末尾多余逗号
+    json_str = re.sub(r",\s*([}\]])", r"\1", json_str)
+
+    # 3. 去除注释
+    json_str = re.sub(r"//.*|/\*[\s\S]*?\*/", "", json_str)
+
+    # 4. 给属性名称加上双引号
+    json_str = re.sub(r'(?<=\{|,)\s*([a-zA-Z_]\w*)\s*:', r'"\1":', json_str)
+
+    return json_str
+
+
+def gpt_summary(query, image_urls, model, language, log_file):
     content = [
         {"type": "text", "text": query}
     ]
@@ -251,12 +267,27 @@ def gpt_summary(query, image_urls, model, language):
     completion = client.chat.completions.create(
         model=model,
         messages=messages,
-        max_tokens=500,
+        max_tokens=2000,
     )
 
-    match = re.search(r'```json\n(.*?)```', completion.choices[0].message.content, re.DOTALL)
-    json_str = match.group(1).strip()
-    response = json.loads(json_str)
+    try:
+        match = re.search(r'```json\n(.*?)```', completion.choices[0].message.content, re.DOTALL)
+        json_str = match.group(1).strip()
+    except AttributeError:
+        match = re.search(r'```\n(.*?)```', completion.choices[0].message.content, re.DOTALL)
+        json_str = match.group(1).strip()
+    except Exception as e:
+        with open(log_file, "a") as f:
+            f.write(f"Cannot match json result:\n{completion.choices[0].message.content}")
+        raise e
+
+    json_str = preprocess_json(json_str)
+    try:
+        response = json.loads(json_str)
+    except json.JSONDecodeError as e:
+        with open(log_file, "a") as f:
+            f.write(f"Json decode failed:\n{json_str}")
+        raise e
 
     return response
 
@@ -366,7 +397,11 @@ def process(sec, language):
             elif OPENAI_API_KEY and (token_length > LENGTH_LOWER_BOUND):
                 if custom_model:
                     try:
-                        gpt_response = gpt_summary(cleaned_article, image_urls, model=custom_model, language=LANGUAGE)
+                        gpt_response = gpt_summary(cleaned_article,
+                                                   image_urls,
+                                                   model=custom_model,
+                                                   language=LANGUAGE,
+                                                   log_file=log_file)
                         with open(log_file, 'a') as f:
                             f.write(f"Token length: {token_length}\n")
                             f.write(f"Summarized using {custom_model}\n")
@@ -377,14 +412,21 @@ def process(sec, language):
                             f.write(f"error: {e}. Line: {e.__traceback__.tb_lineno}.\n")
                 else:
                     try:
-                        gpt_response = gpt_summary(cleaned_article, image_urls, model="gpt-4o-mini", language=LANGUAGE)
+                        gpt_response = gpt_summary(cleaned_article,
+                                                   image_urls,
+                                                   model=custom_model,
+                                                   language=LANGUAGE,
+                                                   log_file=log_file)
                         with open(log_file, 'a') as f:
                             f.write(f"Token length: {token_length}\n")
                             f.write("Summarized using gpt-4o-mini\n")
                     except Exception:
                         try:
-                            gpt_response = gpt_summary(cleaned_article, image_urls,
-                                                       model="gpt-4-turbo-preview", language=LANGUAGE)
+                            gpt_response = gpt_summary(cleaned_article,
+                                                       image_urls,
+                                                       model=custom_model,
+                                                       language=LANGUAGE,
+                                                       log_file=log_file)
                             with open(log_file, 'a') as f:
                                 f.write(f"Token length: {token_length}\n")
                                 f.write("Summarized using GPT-4-turbo-preview\n")
