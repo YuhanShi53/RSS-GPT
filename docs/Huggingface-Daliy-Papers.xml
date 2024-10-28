@@ -4,6 +4,54 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>视觉-语言模型在身体决策中的应用和挑战</title>
+<link>https://arxiv.org/abs/2410.17856</link>
+<guid>https://arxiv.org/abs/2410.17856</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出视觉-时空上下文提示以提升VLM在复杂决策中的表现。</p><br><br><p><strong>摘要：</strong> 本文探讨了视觉-语言模型（VLM）在开放世界环境中进行身体决策的挑战，尤其是如何将低级观测中的个体实体与抽象概念有效连接。针对语言无法准确传达空间信息的局限性，提出了一种新的通信协议——视觉-时空上下文提示，通过利用过去和现在的物体分割来指导政策与环境的互动。我们训练了ROCKET-1，这是一个低级政策模型，能够基于视觉观测和分割掩膜预测动作。实验结果表明，该方法显著提升了VLM在创造性任务中的表现，尤其是在空间理解方面，从而使得代理能够完成以往难以实现的任务。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.17856 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 28 Oct 2024 02:54:44 GMT</pubDate>
+<pubDate>Mon, 28 Oct 2024 02:54:44 GMT</pubDate>
+</item>
+<item>
+<title>基于Prereq-Tune的LLM幻觉减少策略研究</title>
+<link>https://arxiv.org/abs/2410.19290</link>
+<guid>https://arxiv.org/abs/2410.19290</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出Prereq-Tune策略，以减少LLM中的幻觉现象。</p><br><br><p><strong>摘要：</strong> 近期研究表明，LLM幻觉的一个加剧因素是预训练与微调之间的知识不一致，这导致模型在处理不熟悉的微调数据时生成错误的、看似合理的输出。为解决这一问题，本文提出了一种新颖的微调策略——Prereq-Tune，旨在减少知识不一致对模型的影响。该策略通过引入额外的前置学习阶段，专注于学习必要的知识，使后续的微调过程只关注任务技能。Prereq-Tune还能够与虚构的合成数据结合，增强LLM输出与其内部知识之间的关联性。实验结果表明，Prereq-Tune在提高LLM的真实性方面优于现有的基线方法，尤其是在短问答和长文本生成任务中。此外，该策略为LLM中知识控制生成开辟了新的可能性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.19290 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 28 Oct 2024 02:46:08 GMT</pubDate>
+<pubDate>Mon, 28 Oct 2024 02:46:08 GMT</pubDate>
+</item>
+<item>
+<title>结合人类反馈与语言模型提升偏好注释质量的路由框架</title>
+<link>https://arxiv.org/abs/2410.19133</link>
+<guid>https://arxiv.org/abs/2410.19133</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种路由框架，结合人类与LM输入，提升偏好注释质量。</p><br><br><p><strong>摘要：</strong> 本研究提出了一种新的路由框架，可有效结合人类与语言模型（LM）的输入，以提高偏好注释的质量，并降低人类注释的整体成本。通过优化问题，我们训练了一个性能预测模型来预测奖励模型在任意人类与LM注释组合上的表现，并采用路由策略最大化预测性能。使用新的偏好数据集MultiPref进行训练，本方法展示了在使用路由框架的混合策略时，奖励模型的性能较单独使用人类或LM注释均有提高。此外，我们将选择性人类偏好收集应用于三个其他数据集，结果表明方法具备良好的泛化能力。我们还分析了路由模型的特征，以识别哪些实例更适合人类反馈，以期未来推动偏好收集的高效与准确性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.19133 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 28 Oct 2024 02:40:29 GMT</pubDate>
+<pubDate>Mon, 28 Oct 2024 02:40:29 GMT</pubDate>
+</item>
+<item>
+<title>FasterCache：加速视频扩散模型推断的新策略</title>
+<link>https://arxiv.org/abs/2410.19355</link>
+<guid>https://arxiv.org/abs/2410.19355</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出FasterCache，通过特征重用加速视频扩散模型的推断且不损失质量。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为FasterCache的新策略，旨在无训练地加速视频扩散模型的推断，并实现高质量生成。通过分析现有的基于缓存的方法，发现直接重用相邻步骤特征会因为细微变动的损失而降低视频质量。研究表明，在相同时间步内，条件与无条件特征之间存在显著冗余，这为有效加速提供了可能。FasterCache引入了动态特征重用策略，既保留了特征的区分性，又维持了时间连续性。同时，CFG-Cache优化了条件输出与无条件输出的重用，进一步提升推断速度而不影响视频质量。实验证明，FasterCache在视频扩散模型中的应用能显著加速视频生成（例如在Vchitect-2.0上实现1.67倍的加速），并在视频质量上与基线模型相当，且在推断速度和视频质量上持续超越现有方法。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.19355 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 28 Oct 2024 02:14:39 GMT</pubDate>
+<pubDate>Mon, 28 Oct 2024 02:14:39 GMT</pubDate>
+</item>
 
 <item>
 <title>通过未标记轨迹数据学习强化学习中的高效探索策略</title>
