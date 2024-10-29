@@ -5,18 +5,87 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>MarDini：融合影片扩散模型与受限自回归的创新方法</title>
+<link>https://arxiv.org/abs/2410.20280</link>
+<guid>https://arxiv.org/abs/2410.20280</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>MarDini通过结合受限自回归与扩散模型，提升视频生成效率和质量。</p><br><br><p><strong>摘要：</strong> MarDini是一种新型的视频扩散模型，结合了受限自回归（MAR）与统一扩散模型（DM）框架的优点。该模型采用不对称网络设计，MAR负责时序规划，而DM专注于空间生成。具体而言，MAR基于低分辨率输入生成各个遮挡帧的规划信号，而轻量级生成模型则利用这些信号通过扩散去噪生成高分辨率帧。MarDini支持在任意帧位置和数量的遮挡帧上进行视频生成，能够处理视频插值、图像转视频和视频扩展等任务。该设计高效地分配了计算资源，使得在低分辨率规划模型中的计算密集型时空注意力得以在大规模上实现。MarDini在视频插值方面创造了全新状态，同时在几次推理步骤内，其生成的视频质量与更为复杂的图像转视频模型相匹配。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.20280 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 29 Oct 2024 02:06:53 GMT</pubDate>
+<pubDate>Tue, 29 Oct 2024 02:06:53 GMT</pubDate>
+</item>
+<item>
+<title>基于双重策略的图像恢复研究</title>
+<link>https://arxiv.org/abs/2410.18666</link>
+<guid>https://arxiv.org/abs/2410.18666</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出GenIR和DreamClear，解决图像恢复中的数据集和模型挑战。</p><br><br><p><strong>摘要：</strong> 本研究针对图像恢复领域面临的数据集不足和高容量模型缺乏的挑战，提出了一种双重策略：GenIR和DreamClear。GenIR是一个创新的数据策划管道，通过三阶段流程（图像-文本对构建、双提示微调与数据生成及过滤）解决现有数据集的局限，最终构建出一个包含一百万张高质量图像的大规模数据集。DreamClear则是一种基于Diffusion Transformer的图像恢复模型，利用文本到图像（T2I）扩散模型的生成先验和多模态大语言模型的感知能力，达到逼真的图像恢复效果。为了增加模型的适应性，我们引入了混合自适应调制器（MoAM），该模块通过动态整合多种恢复专家，扩展了模型针对多种实际退化的处理能力。实验结果验证了DreamClear在实际图像恢复中的卓越表现，彰显了我们双重策略的有效性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.18666 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 29 Oct 2024 01:55:51 GMT</pubDate>
+<pubDate>Tue, 29 Oct 2024 01:55:51 GMT</pubDate>
+</item>
+<item>
+<title>视觉搜索助手：提升视觉语言模型的信息检索能力</title>
+<link>https://arxiv.org/abs/2410.21220</link>
+<guid>https://arxiv.org/abs/2410.21220</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出视觉搜索助手，以增强视觉语言模型对新视觉内容的理解和响应能力。</p><br><br><p><strong>摘要：</strong> 传统的信息检索方法在处理未知视觉内容时存在局限，尤其是在大规模视觉语言模型（VLMs）未见过的物体识别方面。为解决这一问题，本文提出了视觉搜索助手框架，促进VLMs与网络代理之间的协作，利用VLMs的视觉理解能力及网络代理的实时信息访问，进行开放世界的检索增强生成。通过整合视觉和文本表示，即使在处理新颖图像时，模型也能提供有效响应。实验证明，视觉搜索助手在开放集和闭合集的问答基准上显著优于其他模型，具有广泛的应用潜力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.21220 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 29 Oct 2024 01:12:04 GMT</pubDate>
+<pubDate>Tue, 29 Oct 2024 01:12:04 GMT</pubDate>
+</item>
+<item>
+<title>LongReward：提升长上下文模型性能的重强化学习方法</title>
+<link>https://arxiv.org/abs/2410.21252</link>
+<guid>https://arxiv.org/abs/2410.21252</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>LongReward方法通过多维度评估显著提升了长上下文模型的性能。</p><br><br><p><strong>摘要：</strong> 尽管在开发长上下文的大型语言模型（LLMs）方面取得了显著进展，但LLM合成数据质量的下降对监督微调（SFT）模型的长上下文性能产生了负面影响。为了应对这一挑战，本文提出了LongReward，一种利用现成的LLM为长上下文模型响应提供奖励的新方法，关注四个重要维度：有用性、逻辑性、可信性和完整性。通过结合LongReward和离线增强学习算法DPO，我们能够有效提高长上下文SFT模型的表现。实验结果表明，LongReward显著改善了模型的长上下文性能，同时增强了其执行短指令的能力。此外，LongReward与传统短上下文DPO的长上下文DPO可以一起使用，而不影响各自的性能。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.21252 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 29 Oct 2024 00:45:41 GMT</pubDate>
+<pubDate>Tue, 29 Oct 2024 00:45:41 GMT</pubDate>
+</item>
+<item>
+<title>小型语言模型的全面综述</title>
+<link>https://arxiv.org/abs/2410.20011</link>
+<guid>https://arxiv.org/abs/2410.20011</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文对小型语言模型的架构和优化方法进行综述。</p><br><br><p><strong>摘要：</strong> 本文对小型语言模型（SLMs）进行了全面的综述，探讨其在各种语言任务中的重要性和效率，适用于移动设备和边缘计算等场景。文章重点介绍了SLMs的架构、训练技术及模型压缩方法，提出了一种新的分类法来描述优化SLMs的技术，包括模型压缩、剪枝和量化等。此外，文中总结了用于评估SLMs的基准数据集及常用评估指标，并指出了当前面临的主要挑战，旨在为研究人员和实践者提供开发和部署高效小型语言模型的重要资源。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.20011 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 29 Oct 2024 00:38:22 GMT</pubDate>
+<pubDate>Tue, 29 Oct 2024 00:38:22 GMT</pubDate>
+</item>
+<item>
+<title>LARP: 一种新型视频标记化工具提升自回归生成模型性能</title>
+<link>https://arxiv.org/abs/2410.21264</link>
+<guid>https://arxiv.org/abs/2410.21264</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>LARP通过全局标记化改进视频生成的自回归模型性能。</p><br><br><p><strong>摘要：</strong> 本文介绍了LARP，一种新型视频标记化工具，旨在克服现有视频标记化方法在自回归生成模型中的局限。与传统的逐块标记方法不同，LARP采用一种整体标记方案，通过学习的整体查询来获取视觉内容信息，从而捕获更全球性和语义性的表示。LARP支持可变数量的离散标记，使其能够根据任务需求灵活有效地进行标记。通过集成轻量级自回归变换器，LARP在训练过程中优化离散标记空间，使其更适合视频重构和自回归生成。此外，LARP在训练中定义离散标记的顺序，推动其逐渐朝向最佳配置，从而在推理时实现更平滑、准确的自回归生成。实验结果显示，LARP在UCF101类条件视频生成基准中实现了最先进的FVD，证明了其在视频自回归生成领域的兼容性和潜力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.21264 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 29 Oct 2024 00:36:00 GMT</pubDate>
+<pubDate>Tue, 29 Oct 2024 00:36:00 GMT</pubDate>
+</item>
+
+<item>
 <title>Read-ME: Refactorizing LLMs as Router-Decoupled Mixture of Experts with System Co-Design</title>
 <link>https://arxiv.org/abs/2410.19123</link>
 <guid>https://arxiv.org/abs/2410.19123</guid>
 <content:encoded><![CDATA[
-
-  The proliferation of large language models (LLMs) has led to the adoption of Mixture-of-Experts (MoE) architectures that dynamically leverage specialized subnetworks for improved efficiency and performance. Despite their benefits, MoE models face significant challenges during inference, including inefficient memory management and suboptimal batching, due to misaligned design choices between the model architecture and the system policies. Furthermore, the conventional approach of training MoEs from scratch is increasingly prohibitive in terms of cost. In this paper, we propose a novel framework Read-ME that transforms pre-trained dense LLMs into smaller MoE models (in contrast to "upcycling" generalist MoEs), avoiding the high costs of ground-up training. Our approach employs activation sparsity to extract experts. To compose experts, we examine the widely-adopted layer-wise router design and show its redundancy, and thus we introduce the pre-gating router decoupled from the MoE backbone that facilitates system-friendly pre-computing and lookahead scheduling, enhancing expert-aware batching and caching. Our codesign therefore addresses critical gaps on both the algorithmic and system fronts, establishing a scalable and efficient alternative for LLM inference in resource-constrained settings. Read-ME outperforms other popular open-source dense models of similar scales, achieving improvements of up to 10.1% on MMLU, and improving mean end-to-end latency up to 6.1%. Codes are available at: https://github.com/VITA-Group/READ-ME.
-
+The proliferation of large language models (LLMs) has led to the adoption of Mixture-of-Experts (MoE) architectures that dynamically leverage specialized subnetworks for improved efficiency and performance. Despite their benefits, MoE models face significant challenges during inference, including inefficient memory management and suboptimal batching, due to misaligned design choices between the model architecture and the system policies. Furthermore, the conventional approach of training MoEs from scratch is increasingly prohibitive in terms of cost. In this paper, we propose a novel framework Read-ME that transforms pre-trained dense LLMs into smaller MoE models (in contrast to "upcycling" generalist MoEs), avoiding the high costs of ground-up training. Our approach employs activation sparsity to extract experts. To compose experts, we examine the widely-adopted layer-wise router design and show its redundancy, and thus we introduce the pre-gating router decoupled from the MoE backbone that facilitates system-friendly pre-computing and lookahead scheduling, enhancing expert-aware batching and caching. Our codesign therefore addresses critical gaps on both the algorithmic and system fronts, establishing a scalable and efficient alternative for LLM inference in resource-constrained settings. Read-ME outperforms other popular open-source dense models of similar scales, achieving improvements of up to 10.1% on MMLU, and improving mean end-to-end latency up to 6.1%. Codes are available at: https://github.com/VITA-Group/READ-ME.
 ]]></content:encoded>
 <pubDate>Mon, 28 Oct 2024 18:48:54 GMT</pubDate>
-<pubDate>Mon, 28 Oct 2024 18:48:54 GMT</pubDate>
 </item>
-
 <item>
 <title>大型语言模型中的知识冲突检测与管理</title>
 <link>https://arxiv.org/abs/2410.16090</link>
