@@ -5,15 +5,25 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>TokenFormer：一种可扩展的变换器架构解决方案</title>
+<link>https://arxiv.org/abs/2410.23168</link>
+<guid>https://arxiv.org/abs/2410.23168</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>TokenFormer通过新的参数-令牌注意机制减少训练成本，提升变换器架构的灵活性。</p><br><br><p><strong>摘要：</strong> TokenFormer是一种新型的可扩展架构，旨在解决当前变换器模型在扩展过程中面临的高计算成本问题。传统变换器模型的扩展依赖于固定参数数量，进行架构修改时需要从头重新训练，导致成本高昂且不可持续。TokenFormer通过引入参数-令牌注意机制，使模型参数被视为令牌，替代了变换器中的线性投影，从而在不重新训练的情况下实现高效扩展。该模型支持从124M扩展到1.4B参数，并可以逐步添加新的键-值参数对，性能与完全从头训练的变换器相当，同时显著降低了训练成本。相关代码和模型可在GitHub上获取。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.23168 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 31 Oct 2024 09:59:54 GMT</pubDate>
+<pubDate>Thu, 31 Oct 2024 09:59:54 GMT</pubDate>
+</item>
+
+<item>
 <title>通过专家选择路由攻击Mixture-of-Experts模型以披露用户提示</title>
 <link>https://arxiv.org/abs/2410.22884</link>
 <guid>https://arxiv.org/abs/2410.22884</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出了一种新攻击，利用MoE模型的结构缺陷提取用户提示。</p><br><br><p><strong>摘要：</strong> 本文展示了一种对Mixture-of-Experts (MoE)模型的攻击方法，该方法通过将恶意查询与受害者的查询放在同一批次中，成功利用了专家选择路由（Expert-Choice-Routing），从而完全披露受害者的提示。我们在一个两层的Mixtral模型上成功演示了这一攻击，利用torch.topk的tie-handling行为。研究表明，通过O({VM}^2)个查询（其中V为词汇大小，M为提示长度），或者在我们考虑的设置中平均每个令牌100个查询，可以提取整个提示。这是首次利用架构缺陷提取用户提示的攻击，从而引入了一类新的大语言模型（LLM）漏洞。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.22884 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出了一种新攻击，利用MoE模型的结构缺陷提取用户提示。</p><br /><br /><p><strong>摘要：</strong> 本文展示了一种对Mixture-of-Experts (MoE)模型的攻击方法，该方法通过将恶意查询与受害者的查询放在同一批次中，成功利用了专家选择路由（Expert-Choice-Routing），从而完全披露受害者的提示。我们在一个两层的Mixtral模型上成功演示了这一攻击，利用torch.topk的tie-handling行为。研究表明，通过O({VM}^2)个查询（其中V为词汇大小，M为提示长度），或者在我们考虑的设置中平均每个令牌100个查询，可以提取整个提示。这是首次利用架构缺陷提取用户提示的攻击，从而引入了一类新的大语言模型（LLM）漏洞。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.22884" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 31 Oct 2024 07:03:18 GMT</pubDate>
 <pubDate>Thu, 31 Oct 2024 07:03:18 GMT</pubDate>
 </item>
 <item>
@@ -21,14 +31,10 @@
 <link>https://arxiv.org/abs/2410.22391</link>
 <guid>https://arxiv.org/abs/2410.22391</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文提出一种基于xLSTM的大型重复动作模型，具备快速推理和优良表现。</p><br><br><p><strong>摘要：</strong> 近年来，强化学习领域出现了一种趋势，旨在通过序列建模在大规模数据集上离线训练大动作模型。现有模型主要基于Transformer架构，尽管能产生强大的智能体，但由于推理速度较慢，Transformer方法在实际应用中受到限制，尤其是在机器人领域。为此，研究者提出现代递归架构，如xLSTM和Mamba，这些架构在训练中具备类似于Transformer的并行化优势，同时提供快速推理能力。本文研究了这些现代递归架构在大型动作模型中的适应性，并提出了一种以xLSTM为核心的大型递归动作模型（LRAM），其具有线性时间的推理复杂度和自然的序列长度外推能力。通过在6个领域的432个任务上进行实验，LRAM在性能和速度上都表现出色，优于传统的Transformer方法。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.22391 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文提出一种基于xLSTM的大型重复动作模型，具备快速推理和优良表现。</p><br /><br /><p><strong>摘要：</strong> 近年来，强化学习领域出现了一种趋势，旨在通过序列建模在大规模数据集上离线训练大动作模型。现有模型主要基于Transformer架构，尽管能产生强大的智能体，但由于推理速度较慢，Transformer方法在实际应用中受到限制，尤其是在机器人领域。为此，研究者提出现代递归架构，如xLSTM和Mamba，这些架构在训练中具备类似于Transformer的并行化优势，同时提供快速推理能力。本文研究了这些现代递归架构在大型动作模型中的适应性，并提出了一种以xLSTM为核心的大型递归动作模型（LRAM），其具有线性时间的推理复杂度和自然的序列长度外推能力。通过在6个领域的432个任务上进行实验，LRAM在性能和速度上都表现出色，优于传统的Transformer方法。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.22391" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Thu, 31 Oct 2024 06:40:34 GMT</pubDate>
-<pubDate>Thu, 31 Oct 2024 06:40:34 GMT</pubDate>
 </item>
-
 <item>
 <title>CORAL: 针对多轮对话的检索增强生成基准</title>
 <link>https://arxiv.org/abs/2410.23090</link>
