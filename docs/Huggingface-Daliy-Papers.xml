@@ -5,15 +5,25 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>SelfCodeAlign：透明的自我对齐代码语言模型训练管道</title>
+<link>https://arxiv.org/abs/2410.24198</link>
+<guid>https://arxiv.org/abs/2410.24198</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>SelfCodeAlign 提供了一种无需大量人类标注的透明自对齐代码 LLM 训练方法。</p><br><br><p><strong>摘要：</strong> SelfCodeAlign 是一种监督性微调方法，可显著提升大型语言模型（LLMs）遵循人类指令的能力。该管道实现了代码 LLM 的自我对齐，且无需广泛的人类标注或蒸馏。SelfCodeAlign 利用相同的基础模型进行推理，首先从高质量的种子代码片段中提取多样化的编码概念，生成新任务。随后为每个任务采样多个响应，并配对测试用例进行验证，最终选取通过示例进行指令调优。在实验中，使用 SelfCodeAlign 和 CodeQwen1.5-7B 生成了 74,000 个指令-响应对的数据集，基于此数据集微调后的模型在 HumanEval+ 上达到了 67.1 的 pass@1，超越了 CodeLlama-70B-Instruct，尽管其体量小十倍。该方法在不同大小的 LLM 中表现出色，表明基础模型在自身数据分布下的对齐效果更佳。同时，SelfCodeAlign 的效果优于直接从其他领先模型进行蒸馏的方法，进一步推动了 StarCoder2-Instruct 的诞生，这是一款完全透明且具有许可证的自我对齐代码 LLM。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.24198 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 01 Nov 2024 10:52:22 GMT</pubDate>
+<pubDate>Fri, 01 Nov 2024 10:52:22 GMT</pubDate>
+</item>
+
+<item>
 <title>BitStack：一种新型训练无关权重压缩方法</title>
 <link>https://arxiv.org/abs/2410.23918</link>
 <guid>https://arxiv.org/abs/2410.23918</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>BitStack 提供了一种高效的权重压缩技术，优化内存使用与模型性能之间的平衡。</p><br><br><p><strong>摘要：</strong> 本文介绍了 BitStack，一种新颖的训练无关权重压缩方法，旨在优化大型语言模型（LLMs）的内存使用与性能。随着 LLMs 的广泛应用，内存限制成为部署的主要挑战。传统的压缩方法多依赖预设的压缩比，且需要为每种环境单独进行压缩，导致应用复杂。BitStack 通过权重分解，能够动态调整模型大小，并最小化内存与存储设备之间的传输。该方法在每次分解迭代中考虑参数的重要性，实现每个参数约 1 位的残差块，能够根据当前内存的可用性加载不同数量的块。大量实验表明，在极端压缩比下，BitStack 在保持灵活的大小控制的同时，性能与量化基线相当甚至更优。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.23918 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">BitStack 提供了一种高效的权重压缩技术，优化内存使用与模型性能之间的平衡。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了 BitStack，一种新颖的训练无关权重压缩方法，旨在优化大型语言模型（LLMs）的内存使用与性能。随着 LLMs 的广泛应用，内存限制成为部署的主要挑战。传统的压缩方法多依赖预设的压缩比，且需要为每种环境单独进行压缩，导致应用复杂。BitStack 通过权重分解，能够动态调整模型大小，并最小化内存与存储设备之间的传输。该方法在每次分解迭代中考虑参数的重要性，实现每个参数约 1 位的残差块，能够根据当前内存的可用性加载不同数量的块。大量实验表明，在极端压缩比下，BitStack 在保持灵活的大小控制的同时，性能与量化基线相当甚至更优。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.23918" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 01 Nov 2024 08:24:16 GMT</pubDate>
 <pubDate>Fri, 01 Nov 2024 08:24:16 GMT</pubDate>
 </item>
 <item>
@@ -21,14 +31,10 @@
 <link>https://arxiv.org/abs/2410.22476</link>
 <guid>https://arxiv.org/abs/2410.22476</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本研究提出了一种多意图检测的新方法及数据集。</p><br><br><p><strong>摘要：</strong> 在任务导向的对话系统中，意图检测是理解用户查询和提供适当响应的关键。现有研究主要集中于简单查询的单一意图，未能有效处理复杂的多意图查询并提取不同的意图范围。此外，缺乏多语言、多意图的数据集。本研究针对多意图提取、意图检测和开发多语言多标签意图数据集这三项关键任务进行了探讨。我们引入了一种新的多标签多类意图检测数据集（MLMCID-dataset），该数据集从现有基准数据集中整理而来。同时，我们提出了一种基于指针网络的架构（MLMCID），用于提取意图范围并检测具有粗细粒度标签的多意图，形成六元组。综合分析表明，我们的指针网络系统在各类数据集的准确率和F1分数方面优于基准方法。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.22476 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本研究提出了一种多意图检测的新方法及数据集。</p><br /><br /><p><strong>摘要：</strong> 在任务导向的对话系统中，意图检测是理解用户查询和提供适当响应的关键。现有研究主要集中于简单查询的单一意图，未能有效处理复杂的多意图查询并提取不同的意图范围。此外，缺乏多语言、多意图的数据集。本研究针对多意图提取、意图检测和开发多语言多标签意图数据集这三项关键任务进行了探讨。我们引入了一种新的多标签多类意图检测数据集（MLMCID-dataset），该数据集从现有基准数据集中整理而来。同时，我们提出了一种基于指针网络的架构（MLMCID），用于提取意图范围并检测具有粗细粒度标签的多意图，形成六元组。综合分析表明，我们的指针网络系统在各类数据集的准确率和F1分数方面优于基准方法。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.22476" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Fri, 01 Nov 2024 06:28:48 GMT</pubDate>
-<pubDate>Fri, 01 Nov 2024 06:28:48 GMT</pubDate>
 </item>
-
 <item>
 <title>CARE系统：提升大语言模型个性化探索能力</title>
 <link>https://arxiv.org/abs/2410.24032</link>
