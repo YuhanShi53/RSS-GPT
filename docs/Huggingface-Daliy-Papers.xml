@@ -5,15 +5,49 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>CityGaussianV2：大型场景重建的新方法</title>
+<link>https://arxiv.org/abs/2411.00771</link>
+<guid>https://arxiv.org/abs/2411.00771</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出CityGaussianV2，解决大型场景重建中的几何精度和效率问题。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种新方法CityGaussianV2，用于解决3D Gaussian Splatting在大型场景重建中的几何精度和效率问题。尽管3DGS在辐射场重建和新视角合成中表现出色，但在复杂场景中的表面表现仍是一个重大挑战。该方法通过实现分解梯度加密和深度回归技术，消除模糊伪影并加快收敛，同时引入延长滤波器以减少由于2D Gaussian Splatting退化引起的高斯计数爆炸。此外，CityGaussianV2优化了并行训练管道，在存储和训练时间方面实现了显著的提升，达到10倍压缩，节省至少25%的训练时间，并减少50%的内存使用。实验结果表明，该方法在视觉质量、几何精度以及存储与训练成本之间取得了良好的平衡。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.00771 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 04 Nov 2024 13:49:30 GMT</pubDate>
+<pubDate>Mon, 04 Nov 2024 13:49:30 GMT</pubDate>
+</item>
+<item>
+<title>基于扩散模型的人脸匿名化技术研究</title>
+<link>https://arxiv.org/abs/2411.00762</link>
+<guid>https://arxiv.org/abs/2411.00762</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新的人脸匿名化方法，不依赖人脸识别模型。</p><br><br><p><strong>摘要：</strong> 当前的人脸匿名化技术通常依赖于通过人脸识别模型计算的身份丧失，但这种方法往往不够准确且不可靠。此外，许多方法需要额外的数据如人脸特征点和面具来指导合成过程。与此不同，我们的方法采用扩散模型，仅依赖重建损失，消除了对面部特征点或面具的需求，同时仍能生成细致入微的图像。通过对两个公共基准的量化和定性评估，我们的模型在身份匿名化、面部属性保留和图像质量三大关键领域达到了领先水平。除了其主要的匿名化功能外，我们的模型还可以通过添加额外的面部图像进行换脸任务，展示了其多功能性和广泛的应用潜力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.00762 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 04 Nov 2024 12:50:06 GMT</pubDate>
+<pubDate>Mon, 04 Nov 2024 12:50:06 GMT</pubDate>
+</item>
+<item>
+<title>结合掩蔽语言建模与因果语言建模的混合训练方法</title>
+<link>https://arxiv.org/abs/2410.24159</link>
+<guid>https://arxiv.org/abs/2410.24159</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出了一种结合掩蔽与因果语言建模的混合训练方法，效果优于单一模型。</p><br><br><p><strong>摘要：</strong> 本文提出了一种将掩蔽语言建模与因果语言建模融合的简单方法，即GPT-BERT模型。该混合训练目标使得模型能够在单一的Transformer架构中，灵活地像标准的因果或掩蔽语言模型一样使用。我们在BabyLM Challenge 2024上对这种灵活行为的预训练过程进行了测试，结果表明，该混合预训练方式在性能上超越了仅使用掩蔽模型或因果模型的单一模型。我们将模型、训练语料和代码公开发布，供相关研究者使用。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.24159 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 04 Nov 2024 12:48:14 GMT</pubDate>
+<pubDate>Mon, 04 Nov 2024 12:48:14 GMT</pubDate>
+</item>
+
+<item>
 <title>基于词频的embedding空间校正提升任务性能</title>
 <link>https://arxiv.org/abs/2411.00680</link>
 <guid>https://arxiv.org/abs/2411.00680</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>利用Zipf法则加权的PCA白化方法可显著提升任务性能。</p><br><br><p><strong>摘要：</strong> 本文探讨了神经模型中词嵌入空间的偏斜问题，并指出现有方法在建模和纠正这一空间对称性时，普遍假设词频是均匀分布的，然而实际词频遵循非均匀的Zipf法则。出人意料的是，使用基于实际词频进行加权的PCA白化显著提升了任务性能，超过了现有的基线。理论上，我们的方法和现有方法可以被明确分类：词表示根据指数族分布，基础度量可以是均匀或Zipfian。采用后者后，我们可以自然强调低频词的重要性，从信息几何和不平衡分类的损失函数中均可显现。此外，我们的理论支持了流行的自然语言处理方法，如skip-gram负采样、WhiteningBERT和无头语言模型，它们的词嵌入能够将实际词频编码到基础的概率模型中，从而取得良好效果。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.00680 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">利用Zipf法则加权的PCA白化方法可显著提升任务性能。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了神经模型中词嵌入空间的偏斜问题，并指出现有方法在建模和纠正这一空间对称性时，普遍假设词频是均匀分布的，然而实际词频遵循非均匀的Zipf法则。出人意料的是，使用基于实际词频进行加权的PCA白化显著提升了任务性能，超过了现有的基线。理论上，我们的方法和现有方法可以被明确分类：词表示根据指数族分布，基础度量可以是均匀或Zipfian。采用后者后，我们可以自然强调低频词的重要性，从信息几何和不平衡分类的损失函数中均可显现。此外，我们的理论支持了流行的自然语言处理方法，如skip-gram负采样、WhiteningBERT和无头语言模型，它们的词嵌入能够将实际词频编码到基础的概率模型中，从而取得良好效果。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2411.00680" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 04 Nov 2024 10:46:08 GMT</pubDate>
 <pubDate>Mon, 04 Nov 2024 10:46:08 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +55,8 @@
 <link>https://arxiv.org/abs/2411.00322</link>
 <guid>https://arxiv.org/abs/2411.00322</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出常加速度流（CAF）框架，提升图像生成性能。</p><br><br><p><strong>摘要：</strong> 本文提出了常加速度流（CAF）框架，以解决目前直流和再流程序在快速生成中的局限性。CAF基于简单的常加速度方程，引入了可学习的加速度变量，从而更加精确和丰富地估计常微分方程（ODE）流。为进一步提升估计精度，本文还提出了初始速度条件化和初始速度再流处理两种技术。通过在玩具数据集、CIFAR-10和ImageNet 64x64上的全面研究，CAF在单步生成方面显著优于最先进的基础线，并在少步耦合保留和反演方面显示出显著提升。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.00322 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出常加速度流（CAF）框架，提升图像生成性能。</p><br /><br /><p><strong>摘要：</strong> 本文提出了常加速度流（CAF）框架，以解决目前直流和再流程序在快速生成中的局限性。CAF基于简单的常加速度方程，引入了可学习的加速度变量，从而更加精确和丰富地估计常微分方程（ODE）流。为进一步提升估计精度，本文还提出了初始速度条件化和初始速度再流处理两种技术。通过在玩具数据集、CIFAR-10和ImageNet 64x64上的全面研究，CAF在单步生成方面显著优于最先进的基础线，并在少步耦合保留和反演方面显示出显著提升。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2411.00322" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 04 Nov 2024 08:53:22 GMT</pubDate>
 <pubDate>Mon, 04 Nov 2024 08:53:22 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +64,8 @@
 <link>https://arxiv.org/abs/2411.00030</link>
 <guid>https://arxiv.org/abs/2411.00030</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文探讨了WikiNER语料库的质量及其法语修订版本WikiNER-fr-gold。</p><br><br><p><strong>摘要：</strong> 本文讨论了多语言命名实体识别语料库WikiNER的质量，并提供了其修订版WikiNER-fr-gold。WikiNER的注释采用半监督方式生成，未进行后期手动验证，因此被称为银标标准。我们随机抽取了原法语子语料库的20%（26,818句，700k标记），并总结了每类实体类型，以制定注释指南。接着，进行了语料库的修订。最后，分析了WikiNER-fr语料库中的错误和不一致，并探讨了未来研究的发展方向。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.00030 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文探讨了WikiNER语料库的质量及其法语修订版本WikiNER-fr-gold。</p><br /><br /><p><strong>摘要：</strong> 本文讨论了多语言命名实体识别语料库WikiNER的质量，并提供了其修订版WikiNER-fr-gold。WikiNER的注释采用半监督方式生成，未进行后期手动验证，因此被称为银标标准。我们随机抽取了原法语子语料库的20%（26,818句，700k标记），并总结了每类实体类型，以制定注释指南。接着，进行了语料库的修订。最后，分析了WikiNER-fr语料库中的错误和不一致，并探讨了未来研究的发展方向。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2411.00030" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 04 Nov 2024 08:34:23 GMT</pubDate>
 <pubDate>Mon, 04 Nov 2024 08:34:23 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +73,8 @@
 <link>https://arxiv.org/abs/2410.23218</link>
 <guid>https://arxiv.org/abs/2410.23218</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>OS-Atlas是一个开源GUI行动模型，通过数据与建模创新提升性能。</p><br><br><p><strong>摘要：</strong> OS-Atlas是一种先进的开源GUI行动模型，旨在提升GUI对接和应对新环境场景的能力。传统的商业视觉语言模型（VLMs）如GPT-4o与GeminiProVision被广泛运用，但研究人员因其显著的性能差异而不愿采用开源VLM。为推动此领域的研究，OS-Atlas在多平台上合成GUI对接数据，提供了超过1300万个GUI元素的跨平台开源数据集。此外，通过针对模型训练的创新，OS-Atlas在理解GUI屏幕截图及应用于未见界面方面表现出色。经过在移动、桌面和网络等六个基准测试中的广泛评估，OS-Atlas展现出相较于以往最先进模型的显著性能提升，同时为不断提高和拓展开源VLM的能力提供了宝贵的见解。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.23218 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">OS-Atlas是一个开源GUI行动模型，通过数据与建模创新提升性能。</p><br /><br /><p><strong>摘要：</strong> OS-Atlas是一种先进的开源GUI行动模型，旨在提升GUI对接和应对新环境场景的能力。传统的商业视觉语言模型（VLMs）如GPT-4o与GeminiProVision被广泛运用，但研究人员因其显著的性能差异而不愿采用开源VLM。为推动此领域的研究，OS-Atlas在多平台上合成GUI对接数据，提供了超过1300万个GUI元素的跨平台开源数据集。此外，通过针对模型训练的创新，OS-Atlas在理解GUI屏幕截图及应用于未见界面方面表现出色。经过在移动、桌面和网络等六个基准测试中的广泛评估，OS-Atlas展现出相较于以往最先进模型的显著性能提升，同时为不断提高和拓展开源VLM的能力提供了宝贵的见解。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.23218" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 04 Nov 2024 05:04:10 GMT</pubDate>
 <pubDate>Mon, 04 Nov 2024 05:04:10 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +82,8 @@
 <link>https://arxiv.org/abs/2411.00233</link>
 <guid>https://arxiv.org/abs/2411.00233</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出SambaMixer模型用于高精度预测锂离子电池的健康状态。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为SambaMixer的新型结构化状态空间模型(SSM)，用于预测锂离子电池的健康状态(SOH)。该模型基于MambaMixer架构，专为处理多变量时间信号而设计。我们在NASA电池放电数据集上评估了SambaMixer的性能，结果显示该模型在该数据集上的表现优于现有技术。此外，本文还引入了一种新颖的基于锚点的重采样方法，以确保时间信号的期望长度，同时作为增强技术。通过使用位置编码对样本时间和循环时间差进行条件预测，我们进一步提升了模型性能，学习了电池的恢复效应。实验结果证明，SambaMixer能够以高准确性和鲁棒性预测锂离子电池的健康状态。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.00233 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出SambaMixer模型用于高精度预测锂离子电池的健康状态。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种名为SambaMixer的新型结构化状态空间模型(SSM)，用于预测锂离子电池的健康状态(SOH)。该模型基于MambaMixer架构，专为处理多变量时间信号而设计。我们在NASA电池放电数据集上评估了SambaMixer的性能，结果显示该模型在该数据集上的表现优于现有技术。此外，本文还引入了一种新颖的基于锚点的重采样方法，以确保时间信号的期望长度，同时作为增强技术。通过使用位置编码对样本时间和循环时间差进行条件预测，我们进一步提升了模型性能，学习了电池的恢复效应。实验结果证明，SambaMixer能够以高准确性和鲁棒性预测锂离子电池的健康状态。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2411.00233" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 04 Nov 2024 04:55:37 GMT</pubDate>
 <pubDate>Mon, 04 Nov 2024 04:55:37 GMT</pubDate>
 </item>
 <item>
@@ -69,11 +91,8 @@
 <link>https://arxiv.org/abs/2410.22370</link>
 <guid>https://arxiv.org/abs/2410.22370</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文调查用户与生成式AI的交互模式，关注用户引导的交互。</p><br><br><p><strong>摘要：</strong> 随着生成式AI应用的迅猛发展，人机交互的复杂性也随之提高。现有文献虽然探讨了人类如何与生成式AI互动，但缺乏对用户界面设计及模式的具体分析。本文提供了一项全面的调查，展示了人类与AI交互的分类，以及为满足各种相关用例而设计的用户交互模式。特别关注用户引导的交互，调查用户主动发起的互动，未考虑用户暗示的信号。通过本调查，我们希望为设计师和开发者提供不同交互模式的汇编，降低学习生成式AI应用设计的门槛。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.22370 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文调查用户与生成式AI的交互模式，关注用户引导的交互。</p><br /><br /><p><strong>摘要：</strong> 随着生成式AI应用的迅猛发展，人机交互的复杂性也随之提高。现有文献虽然探讨了人类如何与生成式AI互动，但缺乏对用户界面设计及模式的具体分析。本文提供了一项全面的调查，展示了人类与AI交互的分类，以及为满足各种相关用例而设计的用户交互模式。特别关注用户引导的交互，调查用户主动发起的互动，未考虑用户暗示的信号。通过本调查，我们希望为设计师和开发者提供不同交互模式的汇编，降低学习生成式AI应用设计的门槛。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.22370" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 04 Nov 2024 02:47:59 GMT</pubDate>
 <pubDate>Mon, 04 Nov 2024 02:47:59 GMT</pubDate>
 </item>
 <item>
@@ -81,11 +100,8 @@
 <link>https://arxiv.org/abs/2411.00369</link>
 <guid>https://arxiv.org/abs/2411.00369</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>GRS-QA数据集通过图结构显著提升了多跳问答性能的评估。</p><br><br><p><strong>摘要：</strong> 本文介绍了图推理结构问答数据集（GRS-QA），旨在解决现有多跳问答（M-QA）数据集中推理结构不明确的问题。GRS-QA数据集为问答对提供了语义背景和推理结构，明确捕捉推理路径，通过构建推理图节点和逻辑流的边，提供了细致的推理结构评估。这些不同结构的推理图使得对大语言模型（LLMs）在不同推理结构下的表现进行精细评估成为可能。实证分析表明，LLMs在处理不同推理结构的问题时表现差异，推动了对文本结构与语义关系的进一步探讨。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.00369 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">GRS-QA数据集通过图结构显著提升了多跳问答性能的评估。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了图推理结构问答数据集（GRS-QA），旨在解决现有多跳问答（M-QA）数据集中推理结构不明确的问题。GRS-QA数据集为问答对提供了语义背景和推理结构，明确捕捉推理路径，通过构建推理图节点和逻辑流的边，提供了细致的推理结构评估。这些不同结构的推理图使得对大语言模型（LLMs）在不同推理结构下的表现进行精细评估成为可能。实证分析表明，LLMs在处理不同推理结构的问题时表现差异，推动了对文本结构与语义关系的进一步探讨。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2411.00369" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 04 Nov 2024 02:47:03 GMT</pubDate>
 <pubDate>Mon, 04 Nov 2024 02:47:03 GMT</pubDate>
 </item>
 <item>
@@ -93,11 +109,8 @@
 <link>https://arxiv.org/abs/2411.00027</link>
 <guid>https://arxiv.org/abs/2411.00027</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文探讨个性化大语言模型的分类及其面临的挑战。</p><br><br><p><strong>摘要：</strong> 本文首次将个性化大语言模型（LLMs）在文本生成与个性化应用之间进行整合，提出了个性化LLMs使用的分类法。文章系统化总结了个性化LLMs的基础定义，讨论了个性化的各个新颖面向及其应用，旨在统一相关文献，明确不同使用场景下的个性化技术、数据集和评估方法。同时，论文还强调了现有研究中尚未解决的挑战和重要问题，旨在为研究人员和实践者提供清晰的指南，以促进个性化LLMs的发展与应用。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.00027 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文探讨个性化大语言模型的分类及其面临的挑战。</p><br /><br /><p><strong>摘要：</strong> 本文首次将个性化大语言模型（LLMs）在文本生成与个性化应用之间进行整合，提出了个性化LLMs使用的分类法。文章系统化总结了个性化LLMs的基础定义，讨论了个性化的各个新颖面向及其应用，旨在统一相关文献，明确不同使用场景下的个性化技术、数据集和评估方法。同时，论文还强调了现有研究中尚未解决的挑战和重要问题，旨在为研究人员和实践者提供清晰的指南，以促进个性化LLMs的发展与应用。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2411.00027" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 04 Nov 2024 02:45:46 GMT</pubDate>
 <pubDate>Mon, 04 Nov 2024 02:45:46 GMT</pubDate>
 </item>
 <item>
@@ -105,14 +118,10 @@
 <link>https://arxiv.org/abs/2410.22901</link>
 <guid>https://arxiv.org/abs/2410.22901</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文提出一种有效的适配器插入方法，以提升文本到图像模型的任务执行能力。</p><br><br><p><strong>摘要：</strong> 本文提出了一种高效的适配器插入方法，用于文本到图像基础模型，旨在执行复杂的下游任务并保持基本模型的泛化能力。该方法的核心思想是优化与2D特征图相关的注意力机制，从而提升适配器的性能。通过在表情视频生成任务中的验证，该方法取得了显著的结果。本研究希望能为大型文本到图像模型的后训练任务提供新的见解。此外，由于该方法与SD1.5衍生模型具有良好的兼容性，因而对开源社区也具有一定的价值。相关代码将会公开发布。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.22901 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文提出一种有效的适配器插入方法，以提升文本到图像模型的任务执行能力。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种高效的适配器插入方法，用于文本到图像基础模型，旨在执行复杂的下游任务并保持基本模型的泛化能力。该方法的核心思想是优化与2D特征图相关的注意力机制，从而提升适配器的性能。通过在表情视频生成任务中的验证，该方法取得了显著的结果。本研究希望能为大型文本到图像模型的后训练任务提供新的见解。此外，由于该方法与SD1.5衍生模型具有良好的兼容性，因而对开源社区也具有一定的价值。相关代码将会公开发布。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.22901" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Mon, 04 Nov 2024 02:37:38 GMT</pubDate>
-<pubDate>Mon, 04 Nov 2024 02:37:38 GMT</pubDate>
 </item>
-
 <item>
 <title>M2RC-EVAL: 多语言代码补全基准与数据集</title>
 <link>https://arxiv.org/abs/2410.21157</link>
