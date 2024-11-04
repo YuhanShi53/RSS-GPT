@@ -4,6 +4,54 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>M2RC-EVAL: 多语言代码补全基准与数据集</title>
+<link>https://arxiv.org/abs/2410.21157</link>
+<guid>https://arxiv.org/abs/2410.21157</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出了M2RC-EVAL基准，以提升多语言代码补全能力。</p><br><br><p><strong>摘要：</strong> 现有的代码补全基准通常只关注有限的编程语言，难以全面评估大型语言模型在多语言场景下的表现。为此，本文提出了M2RC-EVAL基准，覆盖18种编程语言，并提供两种细粒度注释（桶级别和语义级别），以便在不同的补全场景中进行分析。同时，本文还整理了M2RC-INSTRUCT数据集，以提高现有代码大型语言模型的代码补全能力。通过 umfassenden 实验结果证明了M2RC-EVAL 和 M2RC-INSTRUCT 的有效性，为多语言代码补全的研究提供了新的工具。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.21157 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 04 Nov 2024 02:05:25 GMT</pubDate>
+<pubDate>Mon, 04 Nov 2024 02:05:25 GMT</pubDate>
+</item>
+<item>
+<title>Randomized Autoregressive Visual Generation</title>
+<link>https://arxiv.org/abs/2411.00776</link>
+<guid>https://arxiv.org/abs/2411.00776</guid>
+<content:encoded><![CDATA[
+
+  This paper presents Randomized AutoRegressive modeling (RAR) for visual generation, which sets a new state-of-the-art performance on the image generation task while maintaining full compatibility with language modeling frameworks. The proposed RAR is simple: during a standard autoregressive training process with a next-token prediction objective, the input sequence-typically ordered in raster form-is randomly permuted into different factorization orders with a probability r, where r starts at 1 and linearly decays to 0 over the course of training. This annealing training strategy enables the model to learn to maximize the expected likelihood over all factorization orders and thus effectively improve the model's capability of modeling bidirectional contexts. Importantly, RAR preserves the integrity of the autoregressive modeling framework, ensuring full compatibility with language modeling while significantly improving performance in image generation. On the ImageNet-256 benchmark, RAR achieves an FID score of 1.48, not only surpassing prior state-of-the-art autoregressive image generators but also outperforming leading diffusion-based and masked transformer-based methods. Code and models will be made available at https://github.com/bytedance/1d-tokenizer
+
+]]></content:encoded>
+<pubDate>Mon, 04 Nov 2024 01:26:28 GMT</pubDate>
+<pubDate>Mon, 04 Nov 2024 01:26:28 GMT</pubDate>
+</item>
+<item>
+<title>利用IC-LoRA优化文本到图像的生成能力</title>
+<link>https://arxiv.org/abs/2410.23775</link>
+<guid>https://arxiv.org/abs/2410.23775</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究提出通过IC-LoRA提升文本到图像的生成质量。</p><br><br><p><strong>摘要：</strong> 近期研究探讨了扩散变换器（DiTs）在任务无关的图像生成中的应用，但生成图像的保真度仍不理想。本文重新评估并简化了该框架，假设文本到图像的DiTs具有内在的上下文生成能力，仅需进行最小调优。通过多种任务实验，我们展示了现有的文本到图像DiTs可在无需调优的情况下有效进行上下文生成。基于此，我们提出了一种简单的管道IC-LoRA，利用DiTs的上下文能力：1）连接图像而非令牌，2）对多个图像进行联合标注，3）使用小数据集（如20sim，100样本）进行任务特定的LoRA调优，而不是大数据集的全参数调优。此方法无需修改原有的DiT模型，只需改动训练数据，显著生成更高保真度的图像集，更好地遵循提示。尽管调优数据具有任务特定性，但我们的框架在架构和流程上保持任务无关，为社区提供了一种强大的工具，并为未来的产品级任务无关生成系统的研究提供了重要启示。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2410.23775 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 04 Nov 2024 01:19:58 GMT</pubDate>
+<pubDate>Mon, 04 Nov 2024 01:19:58 GMT</pubDate>
+</item>
+<item>
+<title>基于人类问题解决过程的双组件微调方法提升大型语言模型的科学问题解答能力</title>
+<link>https://arxiv.org/abs/2411.00412</link>
+<guid>https://arxiv.org/abs/2411.00412</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出双组件微调方法，提升LLM在科学问题解答中的准确性和工具使用精度。</p><br><br><p><strong>摘要：</strong> 大型语言模型（LLMs）在解决简单科学问题时显示出良好的能力，但在处理复杂问题时常出现幻觉。为了解决这一问题，本文提出了一种双组件微调的方法。第一部分是世界知识蒸馏（WKD），LLMs通过学习工具信息生成的解决方案来内化领域知识；第二部分是工具使用适应（TUA），我们根据模型直接回答的准确性将问题划分为简单和复杂两类。在处理简单问题时，模型保持WKD的对齐目标，而在面对复杂问题时，则学习智能切换使用工具。我们在六个科学基准数据集上验证了该方法，结果表明模型的回答准确率平均提高了28.18%，工具使用精度平均提升了13.89%，超越了包括GPT-4o和Claude-3.5在内的最先进模型。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.00412 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 04 Nov 2024 00:32:14 GMT</pubDate>
+<pubDate>Mon, 04 Nov 2024 00:32:14 GMT</pubDate>
+</item>
 
 <item>
 <title>NeuZip: 一种新型神经网络权重压缩方案</title>
