@@ -5,18 +5,51 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>MVPaint：一种新型的3D纹理生成与优化框架</title>
+<link>https://arxiv.org/abs/2411.02336</link>
+<guid>https://arxiv.org/abs/2411.02336</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>MVPaint是一种提高3D纹理生成质量的新框架，强调多视图一致性。</p><br><br><p><strong>摘要：</strong> MVPaint是一个新提出的3D纹理生成与优化框架，旨在解决当前纹理生成方法中存在的局部不连续性和多视图一致性差等问题。该框架主要由三个关键模块组成：同步多视图生成（SMG）用于生成粗略的多视图图像；空间意识3D修补（S3I）用于有效填补未观测到的纹理区域；以及UV优化（UVR），通过UV空间超分辨率和空间意识接缝平滑算法，改善纹理质量并消除纹理不连续性。此外，MVPaint还建立了两个T2T评估基准，Objaverse T2T和GSO T2T，以实验验证其优越性。实验结果表明，与现有方法相比，MVPaint在生成高保真纹理和增强跨视图一致性方面具有显著优势。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.02336 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 05 Nov 2024 14:06:50 GMT</pubDate>
+<pubDate>Tue, 05 Nov 2024 14:06:50 GMT</pubDate>
+</item>
+<item>
+<title>PPLLaVA：一种适用于长短视频理解的新型模型</title>
+<link>https://arxiv.org/abs/2411.02327</link>
+<guid>https://arxiv.org/abs/2411.02327</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出PPLLaVA模型，实现短长视频的有效理解。</p><br><br><p><strong>摘要：</strong> 在过去一年中，视频基础的大型语言模型取得了显著进展，但如何开发一个适用于短和长视频理解的统一模型仍是一大挑战。现有大多数视频LLM无法处理长达一小时的视频，而针对长视频的方法在短视频或图像上效果不佳。本文针对视频中的冗余内容问题，提出了一种新的池化策略——PPLLaVA（Prompt-guided Pooling LLaVA），该模型包括三个核心组件：基于CLIP的视觉提示对齐、提示引导池化以及用于扩展长提示的上下文设计。此外，代码库整合了最先进的视频直接偏好优化（DPO）和视觉交叉训练。通过大量实验验证，PPLLaVA在图像基准测试和视频任务中表现出色，能有效处理从秒到小时的视频，展现出卓越的性能。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.02327 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 05 Nov 2024 13:39:45 GMT</pubDate>
+<pubDate>Tue, 05 Nov 2024 13:39:45 GMT</pubDate>
+</item>
+<item>
+<title>量化大语言模型的准确性与性能权衡研究</title>
+<link>https://arxiv.org/abs/2411.02355</link>
+<guid>https://arxiv.org/abs/2411.02355</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本研究分析了不同量化格式对大语言模型的准确性与性能影响。</p><br><br><p><strong>摘要：</strong> 本文对量化大语言模型（LLM）的准确性与性能权衡进行了全面的实证研究，评估了FP8、INT8和INT4等流行的量化格式在Llama-3.1模型家族上的表现。研究表明，FP8权重和激活量化在所有模型规模上均为无损，INT8格式经过适当调优后其准确性仅有1-3%的轻微下降，而INT4的权重量化在与8位整数权重和激活量化相竞争的同时也表现不俗。此外，通过对各种GPU架构进行推断性能分析，发现W4A16格式在同步部署中提供最佳的性价比，而W8A8格式则在高端GPU上进行异步连续批处理时表现优越。研究结果为不同规模和性能需求的量化大语言模型的部署提供了实用指导。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.02355 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 05 Nov 2024 12:31:24 GMT</pubDate>
+<pubDate>Tue, 05 Nov 2024 12:31:24 GMT</pubDate>
+</item>
+
+<item>
 <title>Swan and ArabicMTEB: Dialect-Aware, Arabic-Centric, Cross-Lingual, and Cross-Cultural Embedding Models and Benchmarks</title>
 <link>https://arxiv.org/abs/2411.01192</link>
 <guid>https://arxiv.org/abs/2411.01192</guid>
 <content:encoded><![CDATA[
-
-  We introduce Swan, a family of embedding models centred around the Arabic language, addressing both small-scale and large-scale use cases. Swan includes two variants: Swan-Small, based on ARBERTv2, and Swan-Large, built on ArMistral, a pretrained Arabic large language model. To evaluate these models, we propose ArabicMTEB, a comprehensive benchmark suite that assesses cross-lingual, multi-dialectal, multi-domain, and multi-cultural Arabic text embedding performance, covering eight diverse tasks and spanning 94 datasets. Swan-Large achieves state-of-the-art results, outperforming Multilingual-E5-large in most Arabic tasks, while the Swan-Small consistently surpasses Multilingual-E5 base. Our extensive evaluations demonstrate that Swan models are both dialectally and culturally aware, excelling across various Arabic domains while offering significant monetary efficiency. This work significantly advances the field of Arabic language modelling and provides valuable resources for future research and applications in Arabic natural language processing. Our models and benchmark will be made publicly accessible for research.
-
+We introduce Swan, a family of embedding models centred around the Arabic language, addressing both small-scale and large-scale use cases. Swan includes two variants: Swan-Small, based on ARBERTv2, and Swan-Large, built on ArMistral, a pretrained Arabic large language model. To evaluate these models, we propose ArabicMTEB, a comprehensive benchmark suite that assesses cross-lingual, multi-dialectal, multi-domain, and multi-cultural Arabic text embedding performance, covering eight diverse tasks and spanning 94 datasets. Swan-Large achieves state-of-the-art results, outperforming Multilingual-E5-large in most Arabic tasks, while the Swan-Small consistently surpasses Multilingual-E5 base. Our extensive evaluations demonstrate that Swan models are both dialectally and culturally aware, excelling across various Arabic domains while offering significant monetary efficiency. This work significantly advances the field of Arabic language modelling and provides valuable resources for future research and applications in Arabic natural language processing. Our models and benchmark will be made publicly accessible for research.
 ]]></content:encoded>
 <pubDate>Tue, 05 Nov 2024 08:19:26 GMT</pubDate>
-<pubDate>Tue, 05 Nov 2024 08:19:26 GMT</pubDate>
 </item>
-
 <item>
 <title>Survey of Cultural Awareness in Language Models: Text and Beyond</title>
 <link>https://arxiv.org/abs/2411.00860</link>
