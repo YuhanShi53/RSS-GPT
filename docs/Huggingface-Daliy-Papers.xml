@@ -4,6 +4,78 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>SALSA：改进大语言模型的强化学习人类反馈方法</title>
+<link>https://arxiv.org/abs/2411.01798</link>
+<guid>https://arxiv.org/abs/2411.01798</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>SALSA通过灵活模型参考提升大语言模型的探索和性能。</p><br><br><p><strong>摘要：</strong> 本文介绍了SALSA（基于模型汤的对齐学习），旨在克服传统人类反馈强化学习中的限制。RLHF通常使用KL散度作为参考，以限制模型偏离初始策略，然而这限制了对奖励空间的探索。SALSA通过对两个独立的监督微调模型进行权重空间平均，构建了一个更灵活的参考模型，允许在KL散度上有更大偏差，助力模型探索解决方案的有前景区域。通过在多个流行开源模型（如Llama2-7B、Mistral-7B和Gemma-2B）及各类基准测试中进行广泛实验，SALSA在促进更深层次探索及实现更优的对齐性方面显著优于传统的Proximal Policy Optimization（PPO）方法，提高了模型的稳健性和超分布外泛化能力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.01798 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 05 Nov 2024 20:23:08 GMT</pubDate>
+<pubDate>Tue, 05 Nov 2024 20:23:08 GMT</pubDate>
+</item>
+<item>
+<title>AutoVFX：基于自然语言的自动化视觉特效生成框架</title>
+<link>https://arxiv.org/abs/2411.02394</link>
+<guid>https://arxiv.org/abs/2411.02394</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>AutoVFX框架实现了基于自然语言的自动视觉特效生成。</p><br><br><p><strong>摘要：</strong> AutoVFX是一个创新的框架，旨在通过单个视频和自然语言指令自动创建逼真且动态的视觉特效（VFX）视频。通过整合神经场景建模、基于大语言模型的代码生成以及物理模拟，AutoVFX能够提供物理基础、照片级真实感的编辑效果，并可直接使用自然语言进行控制。我们进行了广泛的实验以验证AutoVFX在各类视频和指令下的有效性，定量和定性结果表明，在生成质量、指令对齐、编辑多样性和物理合理性方面，AutoVFX显著优于所有竞争方法。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.02394 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 05 Nov 2024 19:07:10 GMT</pubDate>
+<pubDate>Tue, 05 Nov 2024 19:07:10 GMT</pubDate>
+</item>
+<item>
+<title>基于预训练扩散模型的高效噪声线性逆问题求解算法</title>
+<link>https://arxiv.org/abs/2411.00359</link>
+<guid>https://arxiv.org/abs/2411.00359</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出了一种高效算法，通过预训练扩散模型解决噪声线性逆问题。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种使用预训练的扩散模型来高效解决噪声线性逆问题的新算法。我们扩展了去噪扩散隐式模型（DDIM）的范式，提出了约束扩散隐式模型（CDIM），其修改了扩散更新，以强制最终输出满足特定约束。在无噪声逆问题中，CDIM能够精确满足约束；而在有噪声的情况下，我们对CDIM进行了推广，以确保噪声残差分布的确切约束。通过多种任务和指标的实验结果表明，CDIM在性能上表现优异，其推理速度与无约束的DDIM相当，达到了比之前条件扩散方法快10到50倍的效果。我们展示了该方法在超分辨率、去噪、填补、去模糊和3D点云重建等问题上的广泛适用性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.00359 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 05 Nov 2024 18:10:16 GMT</pubDate>
+<pubDate>Tue, 05 Nov 2024 18:10:16 GMT</pubDate>
+</item>
+<item>
+<title>图像目标表征 (IGOR)：跨人机学习的统一动作空间</title>
+<link>https://arxiv.org/abs/2411.00785</link>
+<guid>https://arxiv.org/abs/2411.00785</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>IGOR实现了人类与机器人间的统一语义动作空间学习。</p><br><br><p><strong>摘要：</strong> 本文介绍了图像目标表征（IGOR），旨在学习一个统一、语义一致的人类与各种机器人间的动作空间。通过这个统一的潜在动作空间，IGOR实现了大规模机器人和人类活动数据之间的知识转移。我们通过将初始图像和目标状态之间的视觉变化压缩成潜在动作来实现这一目标。IGOR能够生成互联网规模的视频数据的潜在动作标签，支持多种任务的基础策略和世界模型训练。我们展示了：（1）IGOR为人类和机器人学习了一个语义一致的动作空间，表征了物体的各种可能运动；（2）IGOR能够将视频中物体的运动迁移到其他视频中，跨越人类和机器人，利用潜在动作模型和世界模型的联合使用；（3）IGOR能够通过基础策略模型将潜在动作与自然语言对齐，并与低级策略模型整合，以实现高效的机器人控制。我们相信IGOR为人机知识转移和控制开辟了新的可能性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.00785 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 05 Nov 2024 17:36:36 GMT</pubDate>
+<pubDate>Tue, 05 Nov 2024 17:36:36 GMT</pubDate>
+</item>
+<item>
+<title>LoCAL：增强大型多模态模型的长文档理解能力</title>
+<link>https://arxiv.org/abs/2411.01106</link>
+<guid>https://arxiv.org/abs/2411.01106</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>LoCAL框架提升了多模态模型对长文档的理解能力。</p><br><br><p><strong>摘要：</strong> 本文介绍了名为LoCAL的框架，旨在增强大型多模态模型（LMMs）对复杂、长文档的理解能力。传统的方法在处理多页视觉丰富文档时效率低下，而将所有页面直接呈现给LMM则导致性能问题。LoCAL通过实现两个特定的LMM适配器，一个用于证据页面检索，另一个用于问题回答，使LMM能够有效作为多模态检索器，根据用户的问题获取相关页面。实验证明，LoCAL在公共基准测试上展示了尖端性能，展示了该框架的有效性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.01106 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 05 Nov 2024 16:19:49 GMT</pubDate>
+<pubDate>Tue, 05 Nov 2024 16:19:49 GMT</pubDate>
+</item>
+<item>
+<title>多专家提示：提升大语言模型生成效果的新方法</title>
+<link>https://arxiv.org/abs/2411.00492</link>
+<guid>https://arxiv.org/abs/2411.00492</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>文章提出多专家提示法，显著提升大语言模型的生成效果。</p><br><br><p><strong>摘要：</strong> 本文介绍了多专家提示（Multi-expert Prompting），这是对ExpertPrompting（Xu et al., 2023）的新增强设计，旨在提升大语言模型（LLM）的生成能力。该方法通过模拟多个专家的响应并聚合这些响应，选择其中最佳的结果，以满足输入指令。该过程通过我们设计的七个子任务进行，这些子任务源自名义小组技术（Ven和Delbecq, 1974），一种成熟的决策框架。评估结果表明，多专家提示法在提升生成的真实度、准确性、信息量和实用性方面显著优于ExpertPrompting和其他基线方法，同时降低了生成内容的毒性和伤害性。在与ChatGPT的对比中，其真实度比最佳基线高出8.69%。此外，多专家提示高效、可解释，并能灵活适应不同场景，无需人工构建提示。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.00492 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 05 Nov 2024 14:47:35 GMT</pubDate>
+<pubDate>Tue, 05 Nov 2024 14:47:35 GMT</pubDate>
+</item>
 
 <item>
 <title>MVPaint：一种新型的3D纹理生成与优化框架</title>
