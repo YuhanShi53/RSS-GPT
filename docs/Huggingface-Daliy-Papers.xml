@@ -5,15 +5,37 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>GitChameleon: 适应版本变化的Python代码生成基准</title>
+<link>https://arxiv.org/abs/2411.05830</link>
+<guid>https://arxiv.org/abs/2411.05830</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>GitChameleon为评估版本条件下的Python代码生成提供了新基准。</p><br><br><p><strong>摘要：</strong> 随着软件库的快速演变，代码生成模型面临着适应频繁版本更新的挑战。现有的代码完成基准往往忽视这一动态特性，且现有考虑此问题的基准主要依赖于静态代码预测任务，缺乏基于执行的评估。为此，我们推出了GitChameleon，一个手动策划的数据集，包含116个Python代码完成问题，以特定库版本为条件，并配有可执行单元测试。该数据集旨在严谨评估现代大语言模型（LLMs）生成版本特定代码的能力。评估结果表明，现有的最先进的LLMs在此任务上表现不佳，如GPT-4o的通过率仅为39.9%，指出了当前模型的局限性。GitChameleon为动态代码库提供了执行基础的基准，成为推动可适应和可靠代码生成模型发展的重要工具，相关代码仓库也已公开访问。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.05830 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 12 Nov 2024 12:37:05 GMT</pubDate>
+<pubDate>Tue, 12 Nov 2024 12:37:05 GMT</pubDate>
+</item>
+<item>
+<title>混合专家模型在多任务纠错中的应用与性能提升</title>
+<link>https://arxiv.org/abs/2411.05945</link>
+<guid>https://arxiv.org/abs/2411.05945</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出了一种新颖的混合专家模型用于多任务的后纠错，显著提升了性能。</p><br><br><p><strong>摘要：</strong> 本文提出了一种新颖的混合专家模型（Mixture-of-Experts，MoE），旨在有效解决如何在大型混合领域数据集上训练模型以纠正后识别错误的问题。不同于以往通过独立的修正语言模型来增加参数数量的方法，我们提出的多任务修正MoE能针对语音、语言和视觉等数据集进行学习，在各自的专家中路由数据。实验结果表明，在Open ASR Leaderboard上，所提方法实现了平均5.0%的相对WER（Word Error Rate）减少，并在语音及翻译任务上显著提高了BLEU得分。在零样本评估中，NeKo模型在Hyporadise基准上相较于GPT-3.5和Claude-Opus分别实现了15.5%到27.6%的相对WER减少，且在语法及后OCR纠错任务上展现了竞争力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.05945 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 12 Nov 2024 12:24:23 GMT</pubDate>
+<pubDate>Tue, 12 Nov 2024 12:24:23 GMT</pubDate>
+</item>
+
+<item>
 <title>深度学习水印模型WAM实现局部图像水印嵌入</title>
 <link>https://arxiv.org/abs/2411.07231</link>
 <guid>https://arxiv.org/abs/2411.07231</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文介绍了WAM模型，能有效处理局部图像水印嵌入与提取。</p><br><br><p><strong>摘要：</strong> 现有的图像水印方法未能有效处理小范围水印，这限制了其在现实场景中的应用。为此，本文提出了一种名为水印任何模型（WAM）的深度学习模型，实现局部图像水印的隐蔽嵌入与提取。WAM通过嵌入器对输入图像进行不显眼的修改，同时提取器将接收的图像分割为水印区和非水印区，恢复隐藏消息。该模型在低分辨率下联合训练，并进行后期训练以确保不可感知性和多重水印提取。实验结果表明，WAM在不可感知性和鲁棒性方面与最先进的方法相比具有竞争力，尤其在图像修复和拼接攻击中表现出色。WAM的新能力还包括能够在拼接图像中定位水印区域，从多个小区域提取独特的32位消息，误差小于1比特，且适用于小于10%图像面积的小区域，即使在256x256的小图像上也能有效实现。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.07231 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文介绍了WAM模型，能有效处理局部图像水印嵌入与提取。</p><br /><br /><p><strong>摘要：</strong> 现有的图像水印方法未能有效处理小范围水印，这限制了其在现实场景中的应用。为此，本文提出了一种名为水印任何模型（WAM）的深度学习模型，实现局部图像水印的隐蔽嵌入与提取。WAM通过嵌入器对输入图像进行不显眼的修改，同时提取器将接收的图像分割为水印区和非水印区，恢复隐藏消息。该模型在低分辨率下联合训练，并进行后期训练以确保不可感知性和多重水印提取。实验结果表明，WAM在不可感知性和鲁棒性方面与最先进的方法相比具有竞争力，尤其在图像修复和拼接攻击中表现出色。WAM的新能力还包括能够在拼接图像中定位水印区域，从多个小区域提取独特的32位消息，误差小于1比特，且适用于小于10%图像面积的小区域，即使在256x256的小图像上也能有效实现。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2411.07231" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 12 Nov 2024 07:51:09 GMT</pubDate>
 <pubDate>Tue, 12 Nov 2024 07:51:09 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +43,8 @@
 <link>https://arxiv.org/abs/2411.06424</link>
 <guid>https://arxiv.org/abs/2411.06424</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究表明直接偏好优化通过多组神经元的协同作用降低语言模型的毒性。</p><br><br><p><strong>摘要：</strong> 虽然安全微调算法常用于语言模型以减少有害输出，但其内部机制仍不明晰。研究发现，直接偏好优化（DPO）并非仅仅通过抑制最具毒性的多层感知器神经元来避免毒性输出，如目前的解释所述。相反，DPO通过多个神经元组的累积效应实现毒性降低，既减少了朝向毒性内容的写作，又在残差流中增强了抗毒性。此外，DPO给予神经元激活的调整是嘈杂的，许多神经元的毒性实际上是增加的。这表明DPO是一个在对抗神经元效应之间达到毒性降低的平衡过程。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.06424 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究表明直接偏好优化通过多组神经元的协同作用降低语言模型的毒性。</p><br /><br /><p><strong>摘要：</strong> 虽然安全微调算法常用于语言模型以减少有害输出，但其内部机制仍不明晰。研究发现，直接偏好优化（DPO）并非仅仅通过抑制最具毒性的多层感知器神经元来避免毒性输出，如目前的解释所述。相反，DPO通过多个神经元组的累积效应实现毒性降低，既减少了朝向毒性内容的写作，又在残差流中增强了抗毒性。此外，DPO给予神经元激活的调整是嘈杂的，许多神经元的毒性实际上是增加的。这表明DPO是一个在对抗神经元效应之间达到毒性降低的平衡过程。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2411.06424" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 12 Nov 2024 07:31:45 GMT</pubDate>
 <pubDate>Tue, 12 Nov 2024 07:31:45 GMT</pubDate>
 </item>
 <item>
@@ -33,14 +52,10 @@
 <link>https://arxiv.org/abs/2411.06481</link>
 <guid>https://arxiv.org/abs/2411.06481</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文提出KMM架构，旨在解决Mamba在动作生成中的关键挑战。</p><br><br><p><strong>摘要：</strong> 人类动作生成是生成计算机视觉领域的前沿研究，旨在在视频创作、游戏开发和机器人操作等方面应用。尽管Mamba架构在建模复杂序列方面展现出良好的效果，但它在扩展动作生成和多模态融合方面仍面临挑战。为了解决这些问题，本文提出了三项关键贡献：首先，推出了关键帧掩蔽模型KMM，增强Mamba对动作段关键动作的聚焦，以应对记忆衰退问题；其次，设计了一种对比学习范式，以改善多模态融合和运动-文本对齐；最后，通过在BABEL数据集上进行广泛实验，取得了超过57%的FID降低和70%参数减少的优秀表现，超越了之前的方法。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.06481 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文提出KMM架构，旨在解决Mamba在动作生成中的关键挑战。</p><br /><br /><p><strong>摘要：</strong> 人类动作生成是生成计算机视觉领域的前沿研究，旨在在视频创作、游戏开发和机器人操作等方面应用。尽管Mamba架构在建模复杂序列方面展现出良好的效果，但它在扩展动作生成和多模态融合方面仍面临挑战。为了解决这些问题，本文提出了三项关键贡献：首先，推出了关键帧掩蔽模型KMM，增强Mamba对动作段关键动作的聚焦，以应对记忆衰退问题；其次，设计了一种对比学习范式，以改善多模态融合和运动-文本对齐；最后，通过在BABEL数据集上进行广泛实验，取得了超过57%的FID降低和70%参数减少的优秀表现，超越了之前的方法。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2411.06481" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 12 Nov 2024 07:20:07 GMT</pubDate>
-<pubDate>Tue, 12 Nov 2024 07:20:07 GMT</pubDate>
 </item>
-
 <item>
 <title>Add-it：无须训练的语义图像编辑新方法</title>
 <link>https://arxiv.org/abs/2411.07232</link>
