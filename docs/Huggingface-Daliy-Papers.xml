@@ -5,15 +5,37 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>Cut Cross-Entropy：优化大型语言模型的内存使用</title>
+<link>https://arxiv.org/abs/2411.09009</link>
+<guid>https://arxiv.org/abs/2411.09009</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出Cut Cross-Entropy方法，显著减少语言模型训练中的内存消耗。</p><br><br><p><strong>摘要：</strong> 针对大型语言模型在训练过程中内存开销剧增的问题，本文提出了Cut Cross-Entropy（CCE）方法。这一创新方法在计算交叉熵损失时，无需将所有的logits实现在全局内存中，而是实时计算正确token的logit并评估所有logits的log-sum-exp。这一策略通过采用自定义内核在闪存中执行矩阵乘法与log-sum-exp降维，大幅降低了全局内存的消耗。以Gemma 2（2B）模型为例，CCE将损失计算的内存占用从24 GB减少到仅1 MB，同时分类头的总训练内存消耗从28 GB降至1 GB。此外，通过利用softmax的固有稀疏性，CCE方法还跳过了对梯度计算中贡献微不足道的元素，使得内存使用得以进一步优化。实验结果表明，内存消耗的显著降低并未牺牲训练速度或收敛性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.09009 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 15 Nov 2024 03:25:44 GMT</pubDate>
+<pubDate>Fri, 15 Nov 2024 03:25:44 GMT</pubDate>
+</item>
+<item>
+<title>LLaMA-Mesh：整合文本与3D网格生成的统一模型</title>
+<link>https://arxiv.org/abs/2411.09595</link>
+<guid>https://arxiv.org/abs/2411.09595</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本研究提出LLaMA-Mesh，通过文本生成3D网格，展现了LLM的空间知识能力。</p><br><br><p><strong>摘要：</strong> 本研究探索了如何扩展大规模语言模型（LLMs）的能力，使其在统一模型中生成3D网格。这一方法的关键优势在于（1）利用已嵌入LLMs中的空间知识，这些知识来自于3D教程等文本源；（2）实现对话式的3D生成和网格理解。主要挑战是如何将3D网格数据有效地标记为LLMs可以无缝处理的离散标记。为此，我们提出了LLaMA-Mesh，一种新的方法通过将3D网格的顶点坐标和面定义表示为普通文本，允许与LLMs直接集成而无需扩展词汇。我们构建了一个监督微调（SFT）数据集，使得预训练的LLMs能够（1）从文本提示生成3D网格，（2）根据需求生成交错的文本和3D网格输出，以及（3）理解和解释3D网格。我们的工作首次证明LLMs可以微调以获得复杂的空间知识，从而实现基于文本格式的3D网格生成，真正实现3D和文本模态的统一。LLaMA-Mesh在网格生成质量上与从零开始训练的模型相当，同时保持了强大的文本生成性能。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.09595 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 15 Nov 2024 03:11:57 GMT</pubDate>
+<pubDate>Fri, 15 Nov 2024 03:11:57 GMT</pubDate>
+</item>
+
+<item>
 <title>大语言模型在临床预测中的表现：对传统机器学习模型的比较</title>
 <link>https://arxiv.org/abs/2411.06469</link>
 <guid>https://arxiv.org/abs/2411.06469</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究大语言模型与传统机器学习在临床预测中的比较，结果显示LLMs尚无法超越传统模型。</p><br><br><p><strong>摘要：</strong> 本文构建了一个新的基准测试ClinicalBench，旨在全面研究多种大语言模型（LLMs）在临床预测建模中的能力，并与传统机器学习模型进行比较。该研究涉及三种常见的临床预测任务、两个数据库、14种通用LLMs、8种医疗LLMs和11种传统机器学习模型。通过广泛的实证调查，发现无论是通用LLMs还是医疗LLMs，即使在不同模型规模和多样的提示或微调策略下，仍然无法在临床预测任务中超越传统机器学习模型。这一发现突显了LLMs在临床推理和决策中的潜在不足，也提醒从业者在临床应用中谨慎采用LLMs。ClinicalBench的构建可为LLMs在医疗领域的发展与真实临床实践之间架起桥梁。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.06469 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究大语言模型与传统机器学习在临床预测中的比较，结果显示LLMs尚无法超越传统模型。</p><br /><br /><p><strong>摘要：</strong> 本文构建了一个新的基准测试ClinicalBench，旨在全面研究多种大语言模型（LLMs）在临床预测建模中的能力，并与传统机器学习模型进行比较。该研究涉及三种常见的临床预测任务、两个数据库、14种通用LLMs、8种医疗LLMs和11种传统机器学习模型。通过广泛的实证调查，发现无论是通用LLMs还是医疗LLMs，即使在不同模型规模和多样的提示或微调策略下，仍然无法在临床预测任务中超越传统机器学习模型。这一发现突显了LLMs在临床推理和决策中的潜在不足，也提醒从业者在临床应用中谨慎采用LLMs。ClinicalBench的构建可为LLMs在医疗领域的发展与真实临床实践之间架起桥梁。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2411.06469" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 15 Nov 2024 01:51:08 GMT</pubDate>
 <pubDate>Fri, 15 Nov 2024 01:51:08 GMT</pubDate>
 </item>
 <item>
@@ -21,14 +43,10 @@
 <link>https://arxiv.org/abs/2411.09703</link>
 <guid>https://arxiv.org/abs/2411.09703</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>MagicQuill是一个集成的图像编辑系统，支持快速精确的编辑操作。</p><br><br><p><strong>摘要：</strong> 本文介绍了MagicQuill，一个集成的图像编辑系统，旨在提高创意实现的效率。该系统拥有简洁而强大的界面，用户可以通过最少的输入完成编辑操作，比如插入元素、擦除物体和改变颜色。其背后依托多模态大型语言模型（MLLM），实时监测用户的编辑意图，无需明确的提示输入。此外，MagicQuill还应用了强化学习的双分支插件模块通过强大的扩散先验处理编辑请求，以实现精确控制。实验结果表明，MagicQuill在高质量图像编辑方面表现出色。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.09703 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">MagicQuill是一个集成的图像编辑系统，支持快速精确的编辑操作。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了MagicQuill，一个集成的图像编辑系统，旨在提高创意实现的效率。该系统拥有简洁而强大的界面，用户可以通过最少的输入完成编辑操作，比如插入元素、擦除物体和改变颜色。其背后依托多模态大型语言模型（MLLM），实时监测用户的编辑意图，无需明确的提示输入。此外，MagicQuill还应用了强化学习的双分支插件模块通过强大的扩散先验处理编辑请求，以实现精确控制。实验结果表明，MagicQuill在高质量图像编辑方面表现出色。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2411.09703" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Fri, 15 Nov 2024 01:13:21 GMT</pubDate>
-<pubDate>Fri, 15 Nov 2024 01:13:21 GMT</pubDate>
 </item>
-
 <item>
 <title>PerceiverS架构：提升符号音乐生成的长结构与表现力</title>
 <link>https://arxiv.org/abs/2411.08307</link>
