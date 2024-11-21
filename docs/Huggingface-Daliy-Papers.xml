@@ -5,18 +5,51 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>WebDreamer: 利用语言模型优化网络代理的模型驱动规划</title>
+<link>https://arxiv.org/abs/2411.06559</link>
+<guid>https://arxiv.org/abs/2411.06559</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>WebDreamer通过利用语言模型改善网络代理的自动化任务性能。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为WebDreamer的新范式，通过模型驱动规划增强语言代理的能力，以应对复杂的网络环境。尽管现有的语言代理在自动化网络任务方面表现良好，但与人类相比，其反应性方法仍然存在不足。WebDreamer利用大型语言模型（LLMs）作为世界模型，模拟每个候选动作的结果，从而在执行每一步时评估这些想象的结果并选择最优动作。通过在VisualWebArena和Mind2Web-live等代表性基准上的实证结果，WebDreamer相比于反应基线展示了显著提高。这一研究为未来的网络互动自动化提供了新的视角，并开启了更多优化LLMs用于复杂动态环境建模和语言代理的模型驱动规划的研究方向。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.06559 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 21 Nov 2024 02:27:14 GMT</pubDate>
+<pubDate>Thu, 21 Nov 2024 02:27:14 GMT</pubDate>
+</item>
+<item>
+<title>SageAttention2: 通过低精度矩阵乘法加速注意力计算</title>
+<link>https://arxiv.org/abs/2411.10958</link>
+<guid>https://arxiv.org/abs/2411.10958</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>SageAttention2通过4位矩阵乘法实现高效的注意力计算，速度提升显著。</p><br><br><p><strong>摘要：</strong> SageAttention2引入了4位矩阵乘法技术，通过量化矩阵（Q, K）至INT4和（P, V）至FP8，以提升注意力计算的效率，同时保持精度。该方法包含了平滑Q和V的技术，以增强INT4 QK和FP8 PV的注意力精度。此外，研究分析了不同时间步和层级的量化精度，并提出了一种自适应量化的方法，以保障多种模型的端到端度量表现。实验表明，SageAttention2在RTX4090上的每秒操作次数（OPS）相比FlashAttention2和xformers分别超过3倍和5倍，同时在多种模型中，包括大语言处理、图像生成和视频生成方面，几乎没有端到端度量损失。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.10958 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 21 Nov 2024 01:43:24 GMT</pubDate>
+<pubDate>Thu, 21 Nov 2024 01:43:24 GMT</pubDate>
+</item>
+<item>
+<title>SAMURAI：面向视觉目标跟踪的SAM 2增强模型</title>
+<link>https://arxiv.org/abs/2411.11922</link>
+<guid>https://arxiv.org/abs/2411.11922</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>SAMURAI在复杂场景中显著提升了视觉目标跟踪能力。</p><br><br><p><strong>摘要：</strong> 本论文介绍了SAMURAI，一个专为视觉目标跟踪设计的扩展版本的SAM 2模型。SAMURAI通过引入时间运动线索以及运动感知记忆选择机制，能够有效预测物体运动并优化掩模选择，从而在复杂快速移动或自遮挡物体的场景中实现准确、稳健的跟踪。与现有的跟踪器相比，SAMURAI在成功率和精度上得到显著提升，在LaSOT_{ext}上获得了7.1%的AUC提升，而在GOT-10k上实现了3.5%的AO提升。该模型在多个基准数据集上展示了强大的零样本性能，证明其无需微调即可广泛泛化。SIDURAI在复杂跟踪场景中的表现与完全监督方法相竞争，突显了其在动态环境中实际应用的潜力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.11922 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 21 Nov 2024 01:12:45 GMT</pubDate>
+<pubDate>Thu, 21 Nov 2024 01:12:45 GMT</pubDate>
+</item>
+
+<item>
 <title>提高大规模多模态模型的学习能力：符号演示直接偏好优化方法</title>
 <link>https://arxiv.org/abs/2411.11909</link>
 <guid>https://arxiv.org/abs/2411.11909</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出SymDPO方法，以增强多模态模型在理解视觉上下文中的能力。</p><br><br><p><strong>摘要：</strong> 随着大规模语言模型（LLMs）的发展，研究者们将其技术扩展到大规模多模态模型（LMMs），以实现上下文学习（ICL）。然而，现有的LMMs在有效利用多模态演示中的视觉上下文方面存在显著问题，常常仅仅追随文本模式。这表明LMMs未能有效对齐多模态演示与模型输出。为了解决这一问题，我们提出了符号演示直接偏好优化（SymDPO）方法，以传统的多模态演示构建方式为基础，使用随机符号代替实例中的文本答案，使模型更深入理解演示图像，建立图像与符号之间的关系，从而正确回答问题。通过在多个基准测试中的验证，SymDPO方法证明了其在帮助LMMs有效理解多模态上下文及提高问答准确性方面的有效性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.11909 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出SymDPO方法，以增强多模态模型在理解视觉上下文中的能力。</p><br /><br /><p><strong>摘要：</strong> 随着大规模语言模型（LLMs）的发展，研究者们将其技术扩展到大规模多模态模型（LMMs），以实现上下文学习（ICL）。然而，现有的LMMs在有效利用多模态演示中的视觉上下文方面存在显著问题，常常仅仅追随文本模式。这表明LMMs未能有效对齐多模态演示与模型输出。为了解决这一问题，我们提出了符号演示直接偏好优化（SymDPO）方法，以传统的多模态演示构建方式为基础，使用随机符号代替实例中的文本答案，使模型更深入理解演示图像，建立图像与符号之间的关系，从而正确回答问题。通过在多个基准测试中的验证，SymDPO方法证明了其在帮助LMMs有效理解多模态上下文及提高问答准确性方面的有效性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2411.11909" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 20 Nov 2024 23:54:42 GMT</pubDate>
-<pubDate>Wed, 20 Nov 2024 23:54:42 GMT</pubDate>
 </item>
-
 <item>
 <title>FlipSketch：简化素描动画创作的创新系统</title>
 <link>https://arxiv.org/abs/2411.10818</link>
