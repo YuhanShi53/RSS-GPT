@@ -4,6 +4,18 @@
 <title>科学空间|Scientific Spaces</title>
 <link>https://kexue.fm/</link>
 
+<item>
+<title>生成扩散模型漫谈（二十六）：基于恒等式的蒸馏（下）</title>
+<link>https://spaces.ac.cn/archives/10567</link>
+<guid>https://spaces.ac.cn/archives/10567</guid>
+<content:encoded><![CDATA[
+
+  <p>继续回到我们的扩散系列。在<a href="https://kexue.fm/archives/10085" target="_blank">《生成扩散模型漫谈（二十五）：基于恒等式的蒸馏（上）》</a>中，我们介绍了SiD（Score identity Distillation），这是一种不需要真实数据、也不需要从教师模型采样的扩散模型蒸馏方案，其形式类似GAN，但有着比GAN更好的训练稳定性。</p><p>SiD的核心是通过恒等变换来为学生模型构建更好的损失函数，这一点是开创性的，同时也遗留了一些问题。比如，SiD对损失函数的恒等变换是不完全的，如果完全变换会如何？如何从理论上解释SiD引入的$\lambda$的必要性？上个月放出的<a href="https://arxiv.org/abs/2410.19310" target="_blank">《Flow Generator Matching》</a>（简称FGM）成功从更本质的梯度角度解释了$\lambda=0.5$的选择，而受到FGM启发，笔者则进一步发现了$\lambda = 1$的一种解释。</p><p>接下来我们将详细介绍SiD的上述理论进展。</p><p class="more"><a href="https://spaces.ac.cn/archives/10567" title="生成扩散模型漫谈（二十六）：基于恒等式的蒸馏（下）">[...]</a></p>
+
+]]></content:encoded>
+<pubDate>Fri, 22 Nov 2024 17:43:00 +0800</pubDate>
+<pubDate>Fri, 22 Nov 2024 17:43:00 +0800</pubDate>
+</item>
 
 <item>
 <title>探索Adam优化器中ε对学习率与Batch Size比例规律的影响</title>
