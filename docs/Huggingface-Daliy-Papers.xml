@@ -4,6 +4,66 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>Cautious Optimizers: Improving Training with One Line of Code</title>
+<link>https://arxiv.org/abs/2411.16085</link>
+<guid>https://arxiv.org/abs/2411.16085</guid>
+<content:encoded><![CDATA[
+
+  AdamW has been the default optimizer for transformer pretraining. For many years, our community searches for faster and more stable optimizers with only constraint positive outcomes. In this work, we propose a single-line modification in Pytorch to any momentum-based optimizer, which we rename Cautious Optimizer, e.g. C-AdamW and C-Lion. Our theoretical result shows that this modification preserves Adam's Hamiltonian function and it does not break the convergence guarantee under the Lyapunov analysis. In addition, a whole new family of optimizers is revealed by our theoretical insight. Among them, we pick the simplest one for empirical experiments, showing speed-up on Llama and MAE pretraining up to 1.47times. Code is available at https://github.com/kyleliang919/C-Optim
+
+]]></content:encoded>
+<pubDate>Tue, 26 Nov 2024 01:39:48 GMT</pubDate>
+<pubDate>Tue, 26 Nov 2024 01:39:48 GMT</pubDate>
+</item>
+<item>
+<title>DreamRunner：一种创新的故事视频生成方法</title>
+<link>https://arxiv.org/abs/2411.16657</link>
+<guid>https://arxiv.org/abs/2411.16657</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>DreamRunner 提出了一种新颖的故事到视频生成方法，解决多场景复杂动作生成的挑战。</p><br><br><p><strong>摘要：</strong> DreamRunner 是一种新兴的故事视频生成（SVG）方法，旨在生成复杂的多场景视频，以一致地表现输入文本脚本中描述的故事。该方法首先利用大型语言模型（LLM）对输入脚本进行结构化，以支持粗略场景规划和细粒度的对象布局及运动规划。接着，DreamRunner 引入了基于检索增强的测试时间适应方法，以捕捉目标对象在每个场景中的运动先验，支持基于检索视频的多样化运动定制，从而生成具有复杂规划动作的新视频。此外，DreamRunner 提出了新颖的基于空间-时间区域的 3D 注意力和先验注入模块 SR3AI，实现了细粒度的对象运动绑定和逐帧语义控制。与多种 SVG 基准相比，DreamRunner 在角色一致性、文本对齐和平滑过渡方面展现了先进的性能，并在 T2V-ComBench 基准上显著优于其他方法，验证了其在多对象交互生成任务中的强大能力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.16657 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 26 Nov 2024 01:32:36 GMT</pubDate>
+<pubDate>Tue, 26 Nov 2024 01:32:36 GMT</pubDate>
+</item>
+<item>
+<title>Diptych Prompting：一种新颖的零-shot图像生成方法</title>
+<link>https://arxiv.org/abs/2411.15466</link>
+<guid>https://arxiv.org/abs/2411.15466</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Diptych Prompting是一种让图像生成更精准的新方法。</p><br><br><p><strong>摘要：</strong> 本文介绍了Diptych Prompting，一种创新的零-shot图像生成方法，旨在在特定上下文中生成新主题的图像。与传统需耗时调优的技术不同，该方法通过将不完整的双联画安排在参考图像的左侧，并在右侧进行文本条件的图像修复，从而实现精确的主题对齐。该方法防止了内容泄漏并通过增强注意权重提高生成图像的细节。实验结果显示，Diptych Prompting显著优于传统的零-shot图像提示，不仅支持主题驱动的图像生成，还适用于风格化图像生成和主题驱动的图像编辑，展示了其在多样化图像生成应用中的灵活性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.15466 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 26 Nov 2024 00:56:52 GMT</pubDate>
+<pubDate>Tue, 26 Nov 2024 00:56:52 GMT</pubDate>
+</item>
+<item>
+<title>评估语言模型不确定性承认能力的新框架</title>
+<link>https://arxiv.org/abs/2411.14486</link>
+<guid>https://arxiv.org/abs/2411.14486</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本研究提出了评估语言模型不确定性承认能力的框架，分析了675个难以解决的问题。</p><br><br><p><strong>摘要：</strong> 本研究提出了一种新颖的评估框架，旨在评估大型语言模型（LLMs）在675个根本无法解决问题上的不确定性承认能力。研究使用了一组精心策划的研究生水平重大挑战问题数据集，这些问题故意设计为无可知答案。我们评估了包括开放和封闭源模型在内的十二个先进LLM，重点观察它们承认无知的倾向。最佳模型在承认问题解决方案未知的准确率范围为62-68%。此外，我们发现问题难度与模型准确性存在反向关系，GPT-4在处理更具挑战性的问题时（承认不确定性比例为35.8%）表现出更高的承认率，而在简单问题内容中仅为20.0%。研究还揭示，各问题类别之间存在显著差异模型在回答发明及NP困难问题时承认不确定性较难，而在哲学与心理挑战上表现更佳。此研究为人工通用智能（AGI）的评估提供了新的方向，强调了不确定性识别作为未来机器智能评估的关键组成部分的重要性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.14486 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 26 Nov 2024 00:53:46 GMT</pubDate>
+<pubDate>Tue, 26 Nov 2024 00:53:46 GMT</pubDate>
+</item>
+<item>
+<title>Material Anything：自动化生成3D物体物理基础材料的统一扩散框架</title>
+<link>https://arxiv.org/abs/2411.15138</link>
+<guid>https://arxiv.org/abs/2411.15138</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>介绍一种自动化解决方案，用于生成3D物体的物理基础材料。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为Material Anything的全自动统一扩散框架，旨在为3D物体生成物理基础材料。与现有方法依赖复杂流程或特定优化不同，Material Anything提供了一种鲁棒的端到端解决方案，适应不同光照条件下的物体。该方法利用经过预训练的图像扩散模型，通过三头架构和渲染损失改善材料的稳定性和质量。此外，本文引入了信心水平掩码，作为扩散模型中的动态开关，使其能够有效处理带纹理和无纹理的物体。在这种信心水平掩码的指导下，实施渐进式材料生成策略以及UV空间材料细化器，确保了输出材料的一致性和UV就绪性。广泛的实验结果表明，该方法在各种物体类别和光照条件下均优于现有技术。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.15138 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 26 Nov 2024 00:04:35 GMT</pubDate>
+<pubDate>Tue, 26 Nov 2024 00:04:35 GMT</pubDate>
+</item>
 
 <item>
 <title>Adapting Vision Foundation Models for Robust Cloud Segmentation in Remote Sensing Images</title>
