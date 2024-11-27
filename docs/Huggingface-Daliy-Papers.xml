@@ -5,15 +5,37 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>BootComp：基于扩散模型的人像生成框架</title>
+<link>https://arxiv.org/abs/2411.16801</link>
+<guid>https://arxiv.org/abs/2411.16801</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>BootComp是一个基于扩散模型的可控人像生成框架，利用合成数据提高生成质量。</p><br><br><p><strong>摘要：</strong> BootComp是一个使用文本到图像扩散模型的创新框架，旨在通过多个参考服装生成可控的人像。主要挑战在于收集大规模高质量的参考服装图像以进行训练，因此我们提出了一种数据生成管道，通过模型从每个人像提取参考服装图像，构建了一个包含人和多件服装对的合成数据集。为确保数据质量，我们设计了一种过滤策略，以衡量人像中展现的服装与提取服装之间的感知相似性，从而去除不良生成数据。利用构建的合成数据集，我们训练了一个具有两个并行去噪路径的扩散模型，使用多件服装图像作为条件来生成保留细节的人像。此外，我们还展示了该框架在时尚领域的广泛适用性，包括虚拟试衣和其他条件下的人像生成。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.16801 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 27 Nov 2024 11:03:53 GMT</pubDate>
+<pubDate>Wed, 27 Nov 2024 11:03:53 GMT</pubDate>
+</item>
+<item>
+<title>VLRewardBench: A Challenging Benchmark for Vision-Language Generative Reward Models</title>
+<link>https://arxiv.org/abs/2411.17451</link>
+<guid>https://arxiv.org/abs/2411.17451</guid>
+<content:encoded><![CDATA[
+
+  Vision-language generative reward models (VL-GenRMs) play a crucial role in aligning and evaluating multimodal AI systems, yet their own evaluation remains under-explored. Current assessment methods primarily rely on AI-annotated preference labels from traditional VL tasks, which can introduce biases and often fail to effectively challenge state-of-the-art models. To address these limitations, we introduce VL-RewardBench, a comprehensive benchmark spanning general multimodal queries, visual hallucination detection, and complex reasoning tasks. Through our AI-assisted annotation pipeline combining sample selection with human verification, we curate 1,250 high-quality examples specifically designed to probe model limitations. Comprehensive evaluation across 16 leading large vision-language models, demonstrates VL-RewardBench's effectiveness as a challenging testbed, where even GPT-4o achieves only 65.4% accuracy, and state-of-the-art open-source models such as Qwen2-VL-72B, struggle to surpass random-guessing. Importantly, performance on VL-RewardBench strongly correlates (Pearson's r &gt; 0.9) with MMMU-Pro accuracy using Best-of-N sampling with VL-GenRMs. Analysis experiments uncover three critical insights for improving VL-GenRMs: (i) models predominantly fail at basic visual perception tasks rather than reasoning tasks; (ii) inference-time scaling benefits vary dramatically by model capacity; and (iii) training VL-GenRMs to learn to judge substantially boosts judgment capability (+14.7% accuracy for a 7B VL-GenRM). We believe VL-RewardBench along with the experimental insights will become a valuable resource for advancing VL-GenRMs.
+
+]]></content:encoded>
+<pubDate>Wed, 27 Nov 2024 09:22:41 GMT</pubDate>
+<pubDate>Wed, 27 Nov 2024 09:22:41 GMT</pubDate>
+</item>
+
+<item>
 <title>MolReFlect: 基于教师-学生框架的分子与描述文本对齐方法</title>
 <link>https://arxiv.org/abs/2411.14721</link>
 <guid>https://arxiv.org/abs/2411.14721</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>MolReFlect方法提升了分子与文本描述的对齐精度。</p><br><br><p><strong>摘要：</strong> 分子发现是影响药物和材料的重要研究领域，近年来大语言模型（LLMs）在分子理解与生成中应用广泛。然而，将分子与其对应的描述之间进行精细对齐仍是一个重大挑战。本文介绍了MolReFlect，该方法采用教师-学生框架，旨在以细粒度的方式实现分子与描述文本间的对齐。我们首先利用大型教师模型，从分子描述中提取关键短语，并将其映射到相应的分子子结构上。接着，通过上下文选择性反射来优化对齐过程，使学生模型从上下文反射和先前提取的结果中进行选择。最后，通过链式思维上下文分子调优，提升学生模型的学习过程，整合细粒度对齐和推理过程。实验结果表明，MolReFlect使Mistral-7B等LLMs在ChEBI-20数据集上显著超越了之前的基线，推动了分子-文本翻译任务中的生成能力，并增强了模型框架的可解释性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.14721 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">MolReFlect方法提升了分子与文本描述的对齐精度。</p><br /><br /><p><strong>摘要：</strong> 分子发现是影响药物和材料的重要研究领域，近年来大语言模型（LLMs）在分子理解与生成中应用广泛。然而，将分子与其对应的描述之间进行精细对齐仍是一个重大挑战。本文介绍了MolReFlect，该方法采用教师-学生框架，旨在以细粒度的方式实现分子与描述文本间的对齐。我们首先利用大型教师模型，从分子描述中提取关键短语，并将其映射到相应的分子子结构上。接着，通过上下文选择性反射来优化对齐过程，使学生模型从上下文反射和先前提取的结果中进行选择。最后，通过链式思维上下文分子调优，提升学生模型的学习过程，整合细粒度对齐和推理过程。实验结果表明，MolReFlect使Mistral-7B等LLMs在ChEBI-20数据集上显著超越了之前的基线，推动了分子-文本翻译任务中的生成能力，并增强了模型框架的可解释性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2411.14721" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 27 Nov 2024 07:03:21 GMT</pubDate>
 <pubDate>Wed, 27 Nov 2024 07:03:21 GMT</pubDate>
 </item>
 <item>
@@ -21,14 +43,10 @@
 <link>https://arxiv.org/abs/2411.16819</link>
 <guid>https://arxiv.org/abs/2411.16819</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本研究提出使用图像到视频模型改善图像编辑效果。</p><br><br><p><strong>摘要：</strong> 近年来，图像编辑领域在图像扩散模型的推动下取得了显著进步，但仍面临挑战，尤其是在复杂编辑指令的执行和原图的保真度上。视频生成技术亦在不断进展，本论文提出将图像编辑与视频生成结合，采用图像到视频模型重构图像编辑过程，将其视为一个时间动态过程。利用预训练的视频模型，本文实现了从原始图像到所需编辑的平滑过渡，确保编辑的一致性，同时保留了原始图像的关键元素。经过验证，该方法在基于文本的图像编辑中达到了最先进的结果，显著提高了编辑的准确性及图像内容的保留。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2411.16819 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本研究提出使用图像到视频模型改善图像编辑效果。</p><br /><br /><p><strong>摘要：</strong> 近年来，图像编辑领域在图像扩散模型的推动下取得了显著进步，但仍面临挑战，尤其是在复杂编辑指令的执行和原图的保真度上。视频生成技术亦在不断进展，本论文提出将图像编辑与视频生成结合，采用图像到视频模型重构图像编辑过程，将其视为一个时间动态过程。利用预训练的视频模型，本文实现了从原始图像到所需编辑的平滑过渡，确保编辑的一致性，同时保留了原始图像的关键元素。经过验证，该方法在基于文本的图像编辑中达到了最先进的结果，显著提高了编辑的准确性及图像内容的保留。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2411.16819" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 27 Nov 2024 05:38:35 GMT</pubDate>
-<pubDate>Wed, 27 Nov 2024 05:38:35 GMT</pubDate>
 </item>
-
 <item>
 <title>AI图像生成技术的检测挑战与新 Benchmark 的提出</title>
 <link>https://arxiv.org/abs/2411.16754</link>
