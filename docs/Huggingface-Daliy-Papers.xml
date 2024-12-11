@@ -5,15 +5,25 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>ACDiT：基于自回归和扩散的可调节多模态模型</title>
+<link>https://arxiv.org/abs/2412.07720</link>
+<guid>https://arxiv.org/abs/2412.07720</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出ACDiT模型，结合自回归与扩散方法进行视觉信息建模。</p><br><br><p><strong>摘要：</strong> 随着对综合多模态模型的兴趣激增，本文提出了ACDiT（Autoregressive blockwise Conditional Diffusion Transformer）模型，旨在克服自回归和全序扩散在多模态融合中的不同方法。ACDiT允许灵活调整扩散的块大小，以便在基于token的自回归和全序扩散之间进行插值。我们展示了ACDiT在图像和视频生成任务中的有效性，并提出其在视觉理解任务中的无缝应用。通过分析自回归建模与扩散之间的权衡，ACDiT展现出了在长时间视觉生成任务中的潜力，成为未来统一模型的有力支撑。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.07720 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 11 Dec 2024 13:10:37 GMT</pubDate>
+<pubDate>Wed, 11 Dec 2024 13:10:37 GMT</pubDate>
+</item>
+
+<item>
 <title>基于模块化方法的文本到图像生成改进</title>
 <link>https://arxiv.org/abs/2412.06089</link>
 <guid>https://arxiv.org/abs/2412.06089</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出了一种模块化的文本到图像生成方法，提升复杂指令的处理能力。</p><br><br><p><strong>摘要：</strong> 本文提出了一种改进的文本到图像生成(T2I)方法，通过将复杂的多步生成任务分解为三个步骤：生成、规划和编辑，使得系统能够更好地遵循复杂的文本提示。首先，利用现有的扩散模型生成初步图像；其次，使用多模态大型语言模型(MLLM)识别生成图像中的错误以及需要的更正步骤，形成编辑计划；最后，通过现有的文本引导图像编辑模型执行编辑计划，最终生成准确反映原始指令的图像。这种方法具有模块化、免训练的优点，适用于任何组合的生成和编辑模型。同时，我们还开发了一个可进行组合编辑的模型，进一步提高了整体准确性。通过在三项基准测试和十种T2I模型（包括DALLE-3和SD-3.5-Large）上进行广泛的实验评估，结果表明，该方法不仅提升了SOTA模型的性能，差距缩小达到3个点，同时也降低了较弱和较强模型之间的性能差异。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.06089 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出了一种模块化的文本到图像生成方法，提升复杂指令的处理能力。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种改进的文本到图像生成(T2I)方法，通过将复杂的多步生成任务分解为三个步骤：生成、规划和编辑，使得系统能够更好地遵循复杂的文本提示。首先，利用现有的扩散模型生成初步图像；其次，使用多模态大型语言模型(MLLM)识别生成图像中的错误以及需要的更正步骤，形成编辑计划；最后，通过现有的文本引导图像编辑模型执行编辑计划，最终生成准确反映原始指令的图像。这种方法具有模块化、免训练的优点，适用于任何组合的生成和编辑模型。同时，我们还开发了一个可进行组合编辑的模型，进一步提高了整体准确性。通过在三项基准测试和十种T2I模型（包括DALLE-3和SD-3.5-Large）上进行广泛的实验评估，结果表明，该方法不仅提升了SOTA模型的性能，差距缩小达到3个点，同时也降低了较弱和较强模型之间的性能差异。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2412.06089" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 11 Dec 2024 09:09:05 GMT</pubDate>
 <pubDate>Wed, 11 Dec 2024 09:09:05 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +31,8 @@
 <link>https://arxiv.org/abs/2412.07282</link>
 <guid>https://arxiv.org/abs/2412.07282</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>HARP通过优化推理计算，提高大语言模型的性能。</p><br><br><p><strong>摘要：</strong> 本文提出了HARP，一种旨在改善大语言模型推理性能的简单方法。普通的Transformer前向传递在某些token的计算需求高于其他token时，HARP采取动态计算策略，模仿人类在面临困难决策时的认知过程，通过选择性地在不确定性时增加计算量来执行。HARP是一种与模型无关、无需训练且易于实现的方法。经过在不同下游任务和模型规模上的严谨评估，HARP显示出性能提升高达5.16%，且推理时间相比于束搜索快了两倍。HARP的简单性与显著的性能提升，使其成为一种对Transformer语言模型性能进行有效增强的实用解决方案，且对计算资源影响最小。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.07282 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">HARP通过优化推理计算，提高大语言模型的性能。</p><br /><br /><p><strong>摘要：</strong> 本文提出了HARP，一种旨在改善大语言模型推理性能的简单方法。普通的Transformer前向传递在某些token的计算需求高于其他token时，HARP采取动态计算策略，模仿人类在面临困难决策时的认知过程，通过选择性地在不确定性时增加计算量来执行。HARP是一种与模型无关、无需训练且易于实现的方法。经过在不同下游任务和模型规模上的严谨评估，HARP显示出性能提升高达5.16%，且推理时间相比于束搜索快了两倍。HARP的简单性与显著的性能提升，使其成为一种对Transformer语言模型性能进行有效增强的实用解决方案，且对计算资源影响最小。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2412.07282" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 11 Dec 2024 08:12:13 GMT</pubDate>
 <pubDate>Wed, 11 Dec 2024 08:12:13 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +40,8 @@
 <link>https://arxiv.org/abs/2412.07583</link>
 <guid>https://arxiv.org/abs/2412.07583</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文提出了首个移动优化的视频扩散模型MobileVD，显著降低计算需求。</p><br><br><p><strong>摘要：</strong> 本文介绍了在移动设备上实现视频扩散模型的挑战，并提出了首个移动优化的视频扩散模型MobileVD。基于Stable Video Diffusion（SVD）的时空UNet架构，模型通过降低帧分辨率、引入多尺度时间表征以及通过两种新颖的剪枝方案来减小内存和计算开销。此外，采用对抗微调的方式，在去噪过程中将步骤减少至单步。实验表明，MobileVD的效率提升达到523倍（1817.2 vs. 4.34 TFLOPs），在小米14 Pro上生成一个14x512x256 px的剪辑仅需1.7秒，质量稍有下降（FVD 149 vs. 171）。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.07583 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文提出了首个移动优化的视频扩散模型MobileVD，显著降低计算需求。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了在移动设备上实现视频扩散模型的挑战，并提出了首个移动优化的视频扩散模型MobileVD。基于Stable Video Diffusion（SVD）的时空UNet架构，模型通过降低帧分辨率、引入多尺度时间表征以及通过两种新颖的剪枝方案来减小内存和计算开销。此外，采用对抗微调的方式，在去噪过程中将步骤减少至单步。实验表明，MobileVD的效率提升达到523倍（1817.2 vs. 4.34 TFLOPs），在小米14 Pro上生成一个14x512x256 px的剪辑仅需1.7秒，质量稍有下降（FVD 149 vs. 171）。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2412.07583" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 11 Dec 2024 07:33:14 GMT</pubDate>
 <pubDate>Wed, 11 Dec 2024 07:33:14 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +49,8 @@
 <link>https://arxiv.org/abs/2412.06578</link>
 <guid>https://arxiv.org/abs/2412.06578</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本研究提出了一系列优化，使移动设备上的视频编辑成为可能。</p><br><br><p><strong>摘要：</strong> 随着扩散基础视频编辑技术的进步，其在实际应用中的潜力显著，但在移动设备上的部署仍存在高成本和技术挑战。为了解决这一问题，本文提出了一系列优化措施，使移动视频编辑具备可行性。首先，在现有图像编辑模型的基础上，优化了其架构并引入了轻量级自编码器。其次，将无分类器引导蒸馏扩展到多种模式，实现了设备上的三倍加速。最后，通过引入新颖的对抗蒸馏方案，将采样步骤减少到一步，同时保持编辑过程的可控性。这些优化措施使得在移动设备上视频编辑达到每秒12帧的速度，同时保持高质量。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.06578 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本研究提出了一系列优化，使移动设备上的视频编辑成为可能。</p><br /><br /><p><strong>摘要：</strong> 随着扩散基础视频编辑技术的进步，其在实际应用中的潜力显著，但在移动设备上的部署仍存在高成本和技术挑战。为了解决这一问题，本文提出了一系列优化措施，使移动视频编辑具备可行性。首先，在现有图像编辑模型的基础上，优化了其架构并引入了轻量级自编码器。其次，将无分类器引导蒸馏扩展到多种模式，实现了设备上的三倍加速。最后，通过引入新颖的对抗蒸馏方案，将采样步骤减少到一步，同时保持编辑过程的可控性。这些优化措施使得在移动设备上视频编辑达到每秒12帧的速度，同时保持高质量。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2412.06578" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 11 Dec 2024 07:30:52 GMT</pubDate>
 <pubDate>Wed, 11 Dec 2024 07:30:52 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +58,8 @@
 <link>https://arxiv.org/abs/2412.05148</link>
 <guid>https://arxiv.org/abs/2412.05148</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>LoRA.rar 提供了一种高效的个性化图像生成方法，速度提升超过4000倍。</p><br><br><p><strong>摘要：</strong> 随着图像生成模型的进步，个性化图像创作变得愈加可行，但现有的优化方法计算负担沉重，不适合在资源受限的设备上使用。为了解决这一问题，我们提出了 LoRA.rar 方法，不仅提升图像质量，同时在合并过程中实现超过4000倍的速度提升。该方法在多样的内容-风格 LoRA 对上预训练超网络，学习出一种高效的合并策略，能够快速适应新的内容-风格组合。此外，我们还识别出现有评价指标在内容-风格质量评估上的局限性，并提出一种新的使用多模态大语言模型的评估协议，从而实现更准确的评估。通过 MLLM 评估和人工评估，我们的办法在内容和风格保真度上显著超越了现有的最优方案。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.05148 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">LoRA.rar 提供了一种高效的个性化图像生成方法，速度提升超过4000倍。</p><br /><br /><p><strong>摘要：</strong> 随着图像生成模型的进步，个性化图像创作变得愈加可行，但现有的优化方法计算负担沉重，不适合在资源受限的设备上使用。为了解决这一问题，我们提出了 LoRA.rar 方法，不仅提升图像质量，同时在合并过程中实现超过4000倍的速度提升。该方法在多样的内容-风格 LoRA 对上预训练超网络，学习出一种高效的合并策略，能够快速适应新的内容-风格组合。此外，我们还识别出现有评价指标在内容-风格质量评估上的局限性，并提出一种新的使用多模态大语言模型的评估协议，从而实现更准确的评估。通过 MLLM 评估和人工评估，我们的办法在内容和风格保真度上显著超越了现有的最优方案。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2412.05148" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 11 Dec 2024 06:54:05 GMT</pubDate>
 <pubDate>Wed, 11 Dec 2024 06:54:05 GMT</pubDate>
 </item>
 <item>
@@ -69,14 +67,10 @@
 <link>https://arxiv.org/abs/2412.07338</link>
 <guid>https://arxiv.org/abs/2412.07338</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究表明个性化的AI反言论能有效减少在线毒性，是内容管理的新策略。</p><br><br><p><strong>摘要：</strong> 本研究探讨了个性化AI生成的反言论作为减少在线毒性的策略，通过与常规的一刀切反言论进行比较，提出多种适应性和个性化的生成策略。研究采用LLaMA2-13B模型生成反言论，并尝试不同的上下文信息配置和微调策略。结果显示，在充足性和劝服力上，个性化的上下文反言论显著优于当前的通用反言论。此外，实证还发现量化指标与人类评估之间存在较差的相关性，表明它们评估的是不同的方面。因此，研究强调在内容管理中增加人机协作的重要性，以实现更有效的线上互动和言论规范。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.07338 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究表明个性化的AI反言论能有效减少在线毒性，是内容管理的新策略。</p><br /><br /><p><strong>摘要：</strong> 本研究探讨了个性化AI生成的反言论作为减少在线毒性的策略，通过与常规的一刀切反言论进行比较，提出多种适应性和个性化的生成策略。研究采用LLaMA2-13B模型生成反言论，并尝试不同的上下文信息配置和微调策略。结果显示，在充足性和劝服力上，个性化的上下文反言论显著优于当前的通用反言论。此外，实证还发现量化指标与人类评估之间存在较差的相关性，表明它们评估的是不同的方面。因此，研究强调在内容管理中增加人机协作的重要性，以实现更有效的线上互动和言论规范。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2412.07338" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 11 Dec 2024 06:12:48 GMT</pubDate>
-<pubDate>Wed, 11 Dec 2024 06:12:48 GMT</pubDate>
 </item>
-
 <item>
 <title>OmniDocBench：提升文档内容提取的多源基准</title>
 <link>https://arxiv.org/abs/2412.07626</link>
