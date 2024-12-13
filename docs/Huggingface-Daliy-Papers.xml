@@ -4,6 +4,150 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>phi-4语言模型：以数据质量为核心的创新</title>
+<link>https://arxiv.org/abs/2412.08905</link>
+<guid>https://arxiv.org/abs/2412.08905</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>phi-4是一款注重数据质量的14亿参数语言模型，超越传统模型。</p><br><br><p><strong>摘要：</strong> phi-4是一款具有140亿参数的语言模型，其训练方法主要聚焦于数据质量。与大多数语言模型主要依赖自然数据来源（如网络内容或代码）不同，phi-4在整个训练过程中战略性地融入了合成数据。与之前的Phi家族模型相比，phi-4在STEM相关的问答能力上显著超越其教师模型（特别是GPT-4），证明其数据生成和后训练技术超越了单纯的蒸馏。尽管phi-4的架构与phi-3变化不大，但由于数据的改进、训练课程的优化及后训练方案的创新，其在推理导向基准测试中的表现相较于模型大小而言十分强劲。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.08905 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Dec 2024 23:41:26 GMT</pubDate>
+<pubDate>Thu, 12 Dec 2024 23:41:26 GMT</pubDate>
+</item>
+<item>
+<title>WaLLoC：高效的压缩领域学习神经编解码器</title>
+<link>https://arxiv.org/abs/2412.09405</link>
+<guid>https://arxiv.org/abs/2412.09405</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>WaLLoC 是一种结合线性变换编码的高效神经编解码器，提升压缩领域学习性能。</p><br><br><p><strong>摘要：</strong> 现代传感器产生大量高分辨率数据，但机器学习系统因资源限制往往通过降低分辨率丢弃大量信息。为此，WaLLoC（Wavelet Learned Lossy Compression）被提出，结合线性变换编码和非线性降维自编码器，采用可逆小波包变换，在压缩率和高频细节保留方面优于现有方法。WaLLoC 经过测试在多项任务中表现优越，包括图像分类、上色、文档理解和音乐源分离等。其编码器主要由线性运算构成，使其在移动计算和远程传感中尤为高效，无需感知损失或对抗损失，适用于 RGB 图像及立体音频以外的多种模式。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.09405 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Dec 2024 23:09:53 GMT</pubDate>
+<pubDate>Thu, 12 Dec 2024 23:09:53 GMT</pubDate>
+</item>
+<item>
+<title>EasyRef: 一种用于扩散模型的多参考图像自适应方法</title>
+<link>https://arxiv.org/abs/2412.09618</link>
+<guid>https://arxiv.org/abs/2412.09618</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>EasyRef是一种新颖的方法，提升了扩散模型对多参考图像的适应性。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为EasyRef的新型插拔式自适应方法，旨在提升扩散模型对多个参考图像和文本提示的条件反应能力。传统的调优方法难以捕捉多个图像之间的一致视觉元素，而EasyRef利用多模态大型语言模型（MLLM）的理解能力，通过指导其提取一致的视觉元素。我们还在扩散过程中注入MLLM的表示，并采用高效的参考聚合策略与渐进训练方案，以降低计算成本并增强细节保留。实验结果表明，EasyRef在美学质量和零样本泛化能力方面优于调优free方法和调优based方法，并引入了新的多参考图像生成基准MRBench，进一步验证了其在多个领域的有效性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.09618 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Dec 2024 22:44:37 GMT</pubDate>
+<pubDate>Thu, 12 Dec 2024 22:44:37 GMT</pubDate>
+</item>
+<item>
+<title>提升多模态大语言模型在几何感知中的表现</title>
+<link>https://arxiv.org/abs/2412.08737</link>
+<guid>https://arxiv.org/abs/2412.08737</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文介绍Geoperception基准，探讨改进MLLM几何任务表现的策略。</p><br><br><p><strong>摘要：</strong> 随着多模态大语言模型（MLLM）在近年来的快速进展，它们在低级视觉感知（LLVP）方面仍然面临挑战，尤其是在准确描述图像几何细节的能力上。本文首先引入Geoperception基准，以评估MLLM准确转录二维几何信息的能力。通过这一基准，我们展示了当前领先MLLM的局限性，并进行了全面的实证研究，探索提高其几何任务表现的策略。研究结果强调了特定模型架构、训练技巧和数据策略的优势，包括使用高保真合成数据和数据级课程的多阶段训练。特别地，我们发现数据课程帮助模型学习那些从零开始无法掌握的复杂几何理解任务。基于这些见解，我们开发了Euclid模型系列，专门优化低级几何感知能力。虽然仅用合成多模态数据训练，Euclid在新几何形状上展现了强大的泛化能力，某些Geoperception基准任务上，其表现超越最佳封闭源模型Gemini-1.5-Pro，提升幅度最高达58.56%。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.08737 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Dec 2024 22:40:30 GMT</pubDate>
+<pubDate>Thu, 12 Dec 2024 22:40:30 GMT</pubDate>
+</item>
+<item>
+<title>构建高质量多语种平行语料库以提升印地语言NMT模型性能</title>
+<link>https://arxiv.org/abs/2412.09025</link>
+<guid>https://arxiv.org/abs/2412.09025</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本研究创建了针对科学技术领域的印地语言翻译平行语料库，以提升NMT模型表现。</p><br><br><p><strong>摘要：</strong> 神经机器翻译(NMT)模型在处理科学、技术和教育领域时，因数据集的限制而表现不佳，尤其是在低资源的印度语言中。为解决这一问题，本文构建了一个包含超过280万对英印及印印高质量翻译对的多语种平行语料库，数据源来自NPTEL视频讲座的人译文本。通过调优与评估NMT模型，我们在领域内任务中超越了所有其他公开可用的模型。此外，我们还展示了通过提升基线模型在Flores+基准上平均提高2 BLEU的潜力，表明模型能用于领域外翻译任务。研究团队高兴地发布了他们的模型和数据集。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.09025 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Dec 2024 22:31:53 GMT</pubDate>
+<pubDate>Thu, 12 Dec 2024 22:31:53 GMT</pubDate>
+</item>
+<item>
+<title>基于DINOv2的Gaze-LLE框架推广人眼注视目标估计</title>
+<link>https://arxiv.org/abs/2412.09586</link>
+<guid>https://arxiv.org/abs/2412.09586</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出Gaze-LLE框架，通过DINOv2 encoder提升注视目标估计性能。</p><br><br><p><strong>摘要：</strong> 本文解决了人眼注视目标估计的问题，旨在预测个体在场景中的注视位置。传统方法依赖复杂的手工设计流水线，融合来自场景编码器、头部编码器以及深度与姿态等辅助模型的特征。为此，我们提出了一种新颖的Transformer框架Gaze-LLE，通过利用冻结的DINOv2编码器的特征，简化了注视目标估计过程。该方法提取场景的单一特征表示，并应用特定于个体的位置提示来解码注视方向。通过多项注视基准测试，我们展示了该框架的最前沿性能，并进行了广泛分析以验证我们的设计选择。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.09586 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Dec 2024 22:08:34 GMT</pubDate>
+<pubDate>Thu, 12 Dec 2024 22:08:34 GMT</pubDate>
+</item>
+<item>
+<title>Latent语言建模：统一的多模态生成模型</title>
+<link>https://arxiv.org/abs/2412.08635</link>
+<guid>https://arxiv.org/abs/2412.08635</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出的LatentLM模型在多模态生成方面表现出色，整合了离散与连续数据。</p><br><br><p><strong>摘要：</strong> 本研究提出了Latent语言建模（LatentLM），旨在通过因果变换器有效地整合离散数据（如文本和代码）与连续数据（如图像、音频、视频）。我们采用变分自编码器（VAE）将连续数据表示为潜在向量，并引入下一个标记扩散以实现自回归生成。此外，开发了sigma-VAE以解决方差崩溃的挑战，这对自回归建模至关重要。实验结果表明，LatentLM在图像生成、文本到语音合成等多模态任务中表现优越，尤其在图像生成方面超越了Diffusion Transformers，并在文本生成和理解中为大规模语言模型提供了统一的接口。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.08635 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Dec 2024 22:04:42 GMT</pubDate>
+<pubDate>Thu, 12 Dec 2024 22:04:42 GMT</pubDate>
+</item>
+<item>
+<title>基于流式感知和推理机制的多模态语言模型框架</title>
+<link>https://arxiv.org/abs/2412.09596</link>
+<guid>https://arxiv.org/abs/2412.09596</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本项目提出了一种模拟人类认知的多模态语言模型框架，支持实时交互。</p><br><br><p><strong>摘要：</strong> 本项目致力于开发一种基于流式感知、推理和记忆机制的多模态大型语言模型（MLLM），以克服传统模型在连续和同时处理感知、记忆与推理方面的局限。提出的InternLM-XComposer2.5-OmniLive (IXC2.5-OL)框架包含三个关键模块：流式感知模块实时处理多模态信息，存储重要细节并在用户请求时触发推理；多模态长记忆模块整合短期与长期记忆，高效压缩短期记忆以提升检索和准确性；推理模块负责响应查询和执行推理任务，与感知和记忆模块协调工作。该框架模拟人类认知能力，使得多模态大型语言模型能够提供持续和自适应的服务。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.09596 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Dec 2024 21:57:19 GMT</pubDate>
+<pubDate>Thu, 12 Dec 2024 21:57:19 GMT</pubDate>
+</item>
+<item>
+<title>OLA-VLM：优化多模态大语言模型的视觉理解能力</title>
+<link>https://arxiv.org/abs/2412.09585</link>
+<guid>https://arxiv.org/abs/2412.09585</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出OLA-VLM，通过视觉优化增强多模态语言模型的表现。</p><br><br><p><strong>摘要：</strong> 文章中提出了一种新的方法，OLA-VLM，旨在通过视觉角度优化多模态语言模型（MLLM）的中间表示。这种方法认为，仅依赖自然语言监督对于改进MLLM的视觉理解能力是亚优的。通过将视觉嵌入的预测与文本-token预测结合优化，作者在预训练阶段制定了新目标。研究发现，单纯依赖自然语言监督的MLLM在视觉表示质量与下游性能之间存在正相关关系。实验表明，OLA-VLM在各项基准测试中，相较于传统的单一和多编码器方法，平均提升了2.5%的性能，尤其在CV-Bench的Depth任务上提升了8.7%。这证明了该方法在视觉特征优化方面的有效性。相关代码已开源。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.09585 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Dec 2024 21:53:04 GMT</pubDate>
+<pubDate>Thu, 12 Dec 2024 21:53:04 GMT</pubDate>
+</item>
+<item>
+<title>FreeSplatter：高效的稀疏视图重建框架</title>
+<link>https://arxiv.org/abs/2412.09573</link>
+<guid>https://arxiv.org/abs/2412.09573</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>FreeSplatter用于从未校准的稀疏视图图像生成高质量三维高斯。</p><br><br><p><strong>摘要：</strong> FreeSplatter是一个高效且可扩展的前馈重建框架，专门用于处理未校准的稀疏视图图像。该框架基于精简的变压器架构，利用顺序自注意力块促进多视图图像标记之间的信息交换，将其解码为逐像素的三维高斯原语。在一个统一的参考框架中预测的高斯原语，使得高保真三维建模和快速相机参数估计成为可能，且这些都能够通过现成的求解器实现。为适应目标中心和场景级重建需求，我们在大量数据集上训练了FreeSplatter的两个模型变体，并在重建质量和姿态估计精度上超越了最先进的基线模型。此外，本研究还展示了FreeSplatter在提高后续应用生产力方面的潜力，例如文本/图像到三维内容的创建。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.09573 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Dec 2024 21:49:49 GMT</pubDate>
+<pubDate>Thu, 12 Dec 2024 21:49:49 GMT</pubDate>
+</item>
+<item>
+<title>Neural LightRig：基于多重照明条件的物体几何与材料恢复</title>
+<link>https://arxiv.org/abs/2412.09593</link>
+<guid>https://arxiv.org/abs/2412.09593</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出了一个新框架，通过多重照明条件提升物体几何和材料的估计。</p><br><br><p><strong>摘要：</strong> 在本文中，我们提出了一种名为Neural LightRig的新框架，以应对从单幅图像恢复物体几何和材料的挑战。该方法通过利用来自2D扩散先验的辅助多重照明条件来增强内在估计。具体来说，我们首先从大规模扩散模型中获取照明先验，构建了一个基于合成重光照数据集的多光照扩散模型，生成多幅一致的图像，每幅图像由不同方向的点光源照亮。然后，利用这些多样的照明图像减少估计的不确定性，我们用U-Net骨架训练了一个大型G-buffer模型，准确预测表面法线和材料。大量实验验证了我们的方法显著超过了现有的最先进技术，实现了准确的表面法线和PBR材料估计，并赋予生动的重光照效果。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.09593 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Dec 2024 21:41:19 GMT</pubDate>
+<pubDate>Thu, 12 Dec 2024 21:41:19 GMT</pubDate>
+</item>
+<item>
+<title>基于语言指导的视觉导航任务统一框架研究</title>
+<link>https://arxiv.org/abs/2412.05552</link>
+<guid>https://arxiv.org/abs/2412.05552</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本研究提出一种新模型以解决视觉导航任务中的语言指导问题。</p><br><br><p><strong>摘要：</strong> 本文将学习指令指导的视觉导航领域划分为高层类别特定搜索和低层语言指导导航，探讨了不同语言指令粒度下的导航需求。尽管这两类任务关注点不同，但对指令解读、环境理解和决策推理的基础要求仍然一致。研究提出了一种新的状态自适应专家混合模型（SAME），该模型能够基于不同粒度的语言和动态观察有效推断决策。基于SAME，研究团队构建了一种多功能代理，可以同时处理七项导航任务，其性能超过或与特定任务代理相当。该框架为学习导航任务的通用性和适应性提供了重要启示。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.05552 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Dec 2024 21:41:15 GMT</pubDate>
+<pubDate>Thu, 12 Dec 2024 21:41:15 GMT</pubDate>
+</item>
 
 <item>
 <title>Track4Gen：一种提高视频生成一致性的空间感知模型</title>
