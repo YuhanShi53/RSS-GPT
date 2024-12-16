@@ -5,15 +5,49 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>FluxSpace：基于修正流模型的图像语义编辑方法</title>
+<link>https://arxiv.org/abs/2412.09611</link>
+<guid>https://arxiv.org/abs/2412.09611</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>FluxSpace方法利用修正流模型实现高效的图像语义编辑。</p><br><br><p><strong>摘要：</strong> 修正流模型在高质量图像合成方面表现出色，但在图像的解耦编辑上存在局限性。本文提出了一种新的图像编辑方法FluxSpace，利用一个域无关的表示空间，能够控制由修正流变换器生成的图像的语义。通过修正流模型中变换器块学习到的表示，FluxSpace提供了一系列语义可解释的表示，支持从细粒度图像编辑到艺术创作的广泛图像编辑任务。这项工作展示了一种可扩展且有效的图像编辑方法及其解耦能力，解决了传统修正流模型在图像编辑中的不足。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.09611 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 16 Dec 2024 05:22:02 GMT</pubDate>
+<pubDate>Mon, 16 Dec 2024 05:22:02 GMT</pubDate>
+</item>
+<item>
+<title>SynerGen-VL：一种简单高效的无编码多模态大型语言模型</title>
+<link>https://arxiv.org/abs/2412.09604</link>
+<guid>https://arxiv.org/abs/2412.09604</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>SynerGen-VL是一种新型的无编码多模态大型语言模型，简化了训练过程并提高了性能。</p><br><br><p><strong>摘要：</strong> 本文提出了SynerGen-VL，一种简单而强大的无编码多模态大型语言模型，能够同时进行图像理解和生成。针对现有无编码统一多模态大型语言模型面临的挑战，本文引入了token折叠机制和视觉专家基础的渐进对齐预训练策略，有效支持高分辨率图像理解，并降低训练复杂性。通过在大规模混合图像-文本数据上进行统一的下一个token预测目标训练，SynerGen-VL实现或超过了现有同类模型的性能，同时参数规模相当或更小，并缩小了与任务特定先进模型的差距，展示了未来统一多模态大型语言模型的有希望发展方向。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.09604 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 16 Dec 2024 04:48:18 GMT</pubDate>
+<pubDate>Mon, 16 Dec 2024 04:48:18 GMT</pubDate>
+</item>
+<item>
+<title>无调优对象插入与主题驱动生成的新方法</title>
+<link>https://arxiv.org/abs/2412.08645</link>
+<guid>https://arxiv.org/abs/2412.08645</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出了一种无调优的对象插入与主题驱动生成方法，实现更优秀的图像合成。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种无调优的对象插入与主题驱动生成方法，旨在将多个视角的对象合成到由图像或文本指定的场景中。现有方法在实现无缝合成和保持对象身份方面面临挑战，且需要大量监督数据，而手动收集这些数据代价高昂。本文观察到大量重复生产的对象在大规模未标记数据集中的多个图像中呈现，这一现象使得我们能够通过检索相同对象的多样化视角来创造大规模监督数据集。基于这一数据集，本文训练了一个简单的文本到图像扩散架构，能够将对象和场景描述映射到合成图像。与现有最先进的方法相比，ObjectMate在对象身份保持和摄影现实主义合成方面表现更优，并且与许多其他多参考方法不同，ObjectMate在测试时不需要缓慢的调优过程。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.08645 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 16 Dec 2024 04:37:52 GMT</pubDate>
+<pubDate>Mon, 16 Dec 2024 04:37:52 GMT</pubDate>
+</item>
+
+<item>
 <title>SmolTulu-1.7b-Instruct模型的优化与性能分析</title>
 <link>https://arxiv.org/abs/2412.08347</link>
 <guid>https://arxiv.org/abs/2412.08347</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>SmolTulu-1.7b-Instruct模型通过优化学习率与批量大小的关系显著提升了性能。</p><br><br><p><strong>摘要：</strong> 本文介绍了SmolTulu-1.7b-Instruct模型（简称SmolTulu-DPO-1130），它是基于AllenAI的Tulu 3后训练管道，旨在增强Huggingface的SmolLM2-1.7B基础模型。通过对一个135M参数模型的全面实证分析，我们发现学习率与批量大小之间的关系在任务依赖性上显著影响模型性能。研究表明，推理任务（如ARC和GSM8K）在较高的学习率与批量大小比率下表现更佳，而模式识别任务（如HellaSwag和IFEval）则在较低的比率下达到最佳性能。这些发现促进了SmolTulu的发展，使其在指令跟随任务中以67.7%（Delta11%）和数学推理任务中以51.6%（Delta3.4%）的性能成为子2B参数模型的最新标杆，同时另一个版本在ARC任务中取得了57.1%（Delta5.4%）。我们公布了模型、训练配方和消融研究，以推动高效模型对齐的进一步研究，表明优化动态的细致调整能帮助缩小小型与大型语言模型的能力差距。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.08347 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">SmolTulu-1.7b-Instruct模型通过优化学习率与批量大小的关系显著提升了性能。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了SmolTulu-1.7b-Instruct模型（简称SmolTulu-DPO-1130），它是基于AllenAI的Tulu 3后训练管道，旨在增强Huggingface的SmolLM2-1.7B基础模型。通过对一个135M参数模型的全面实证分析，我们发现学习率与批量大小之间的关系在任务依赖性上显著影响模型性能。研究表明，推理任务（如ARC和GSM8K）在较高的学习率与批量大小比率下表现更佳，而模式识别任务（如HellaSwag和IFEval）则在较低的比率下达到最佳性能。这些发现促进了SmolTulu的发展，使其在指令跟随任务中以67.7%（Delta11%）和数学推理任务中以51.6%（Delta3.4%）的性能成为子2B参数模型的最新标杆，同时另一个版本在ARC任务中取得了57.1%（Delta5.4%）。我们公布了模型、训练配方和消融研究，以推动高效模型对齐的进一步研究，表明优化动态的细致调整能帮助缩小小型与大型语言模型的能力差距。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2412.08347" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 16 Dec 2024 03:27:09 GMT</pubDate>
 <pubDate>Mon, 16 Dec 2024 03:27:09 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +55,8 @@
 <link>https://arxiv.org/abs/2412.09910</link>
 <guid>https://arxiv.org/abs/2412.09910</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>Prompt2Perturb方法提升了乳腺癌影像中对抗攻击的效果与安全性。</p><br><br><p><strong>摘要：</strong> 本文提出了一种新的语言引导对抗攻击方法Prompt2Perturb (P2P)，旨在改善乳腺癌诊断中的深度神经网络(DNN)的安全性和可靠性。传统的对抗攻击方法由于依赖固定范数扰动而无法有效配合人类感知，而扩散模型要求预训练，在数据稀缺的医疗影像场景中应用受到限制。P2P通过学习提示生成有意义的攻击示例，采用文本指令引导，利用可学习的提示在文本编码器中创建细微扰动，确保这些扰动对超声图像影响深远却不易察觉。与当前的提示学习方法不同，本方法直接更新文本嵌入，无需重新训练扩散模型。我们还发现，仅优化早期反向扩散步骤可以提高效率，同时确保生成的对抗示例噪声微妙，保持超声图像质量。实验结果表明，该方法在FID和LPIPS指标上优于三种乳腺超声数据集中的最新攻击技术，生成的图像在自然外观和有效性方面均表现更佳。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.09910 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">Prompt2Perturb方法提升了乳腺癌影像中对抗攻击的效果与安全性。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种新的语言引导对抗攻击方法Prompt2Perturb (P2P)，旨在改善乳腺癌诊断中的深度神经网络(DNN)的安全性和可靠性。传统的对抗攻击方法由于依赖固定范数扰动而无法有效配合人类感知，而扩散模型要求预训练，在数据稀缺的医疗影像场景中应用受到限制。P2P通过学习提示生成有意义的攻击示例，采用文本指令引导，利用可学习的提示在文本编码器中创建细微扰动，确保这些扰动对超声图像影响深远却不易察觉。与当前的提示学习方法不同，本方法直接更新文本嵌入，无需重新训练扩散模型。我们还发现，仅优化早期反向扩散步骤可以提高效率，同时确保生成的对抗示例噪声微妙，保持超声图像质量。实验结果表明，该方法在FID和LPIPS指标上优于三种乳腺超声数据集中的最新攻击技术，生成的图像在自然外观和有效性方面均表现更佳。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2412.09910" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 16 Dec 2024 03:09:42 GMT</pubDate>
 <pubDate>Mon, 16 Dec 2024 03:09:42 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +64,8 @@
 <link>https://arxiv.org/abs/2412.07769</link>
 <guid>https://arxiv.org/abs/2412.07769</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>BiMediX2是一个双语医学多模态大模型，支持英文和阿拉伯文的医疗应用。</p><br><br><p><strong>摘要：</strong> 本文介绍了BiMediX2，这是一个双语（阿拉伯语-英语）医学多模态专家大模型（LMM），它集成了文本和视觉模态，能够增强图像理解和医学应用。BiMediX2基于Llama3.1架构，支持阿拉伯语和英语的无缝交互，能处理文本输入和涉及医学图像的多轮对话。模型训练于一个包含160万个样本的丰富双语医疗数据集，涵盖多样的医学交互。此外，本文提出了第一个双语GPT-4o基础的医学LMM基准BiMed-MBench。BiMediX2在文本和图像任务上取得了最新的优异表现，尤其在多模态医学评估中，英语成绩提升超过9%，阿拉伯语提升超过20%。该模型在多个医学视觉问答、报告生成和总结任务中表现卓越，并在UPHILL事实准确性评估中超越GPT-4约9%。项目源代码和训练模型可在其官方页面找到。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.07769 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">BiMediX2是一个双语医学多模态大模型，支持英文和阿拉伯文的医疗应用。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了BiMediX2，这是一个双语（阿拉伯语-英语）医学多模态专家大模型（LMM），它集成了文本和视觉模态，能够增强图像理解和医学应用。BiMediX2基于Llama3.1架构，支持阿拉伯语和英语的无缝交互，能处理文本输入和涉及医学图像的多轮对话。模型训练于一个包含160万个样本的丰富双语医疗数据集，涵盖多样的医学交互。此外，本文提出了第一个双语GPT-4o基础的医学LMM基准BiMed-MBench。BiMediX2在文本和图像任务上取得了最新的优异表现，尤其在多模态医学评估中，英语成绩提升超过9%，阿拉伯语提升超过20%。该模型在多个医学视觉问答、报告生成和总结任务中表现卓越，并在UPHILL事实准确性评估中超越GPT-4约9%。项目源代码和训练模型可在其官方页面找到。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2412.07769" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 16 Dec 2024 02:36:29 GMT</pubDate>
 <pubDate>Mon, 16 Dec 2024 02:36:29 GMT</pubDate>
 </item>
 <item>
@@ -45,14 +73,10 @@
 <link>https://arxiv.org/abs/2412.09428</link>
 <guid>https://arxiv.org/abs/2412.09428</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出视觉音乐桥方法，提升多模态音乐生成的对齐和可控性。</p><br><br><p><strong>摘要：</strong> 多模态音乐生成旨在通过文本、视频和图像等多种输入模式生成音乐。现有方法在处理这些多模态融合时面临数据稀缺、跨模态对齐弱以及可控性有限等挑战。本文提出了一种新方法——视觉音乐桥（VMB），通过明确的文本与音乐之间的桥梁实现多模态对齐。具体而言，Multimodal Music Description Model将视觉输入转换为详细的文本描述以提供文本桥，Dual-track Music Retrieval模块结合广泛和针对性的检索策略提供音乐桥并实现用户控制。最后，设计了显式条件音乐生成框架，以基于这两种桥梁生成音乐。在视频对音乐、图像对音乐、文本对音乐及可控音乐生成等任务上进行实验，结果表明VMB在音乐质量、模态和定制对齐方面显著优于之前的方法，为可解释和富有表现力的多模态音乐生成树立了新标准，具有广泛的多媒体应用前景。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.09428 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出视觉音乐桥方法，提升多模态音乐生成的对齐和可控性。</p><br /><br /><p><strong>摘要：</strong> 多模态音乐生成旨在通过文本、视频和图像等多种输入模式生成音乐。现有方法在处理这些多模态融合时面临数据稀缺、跨模态对齐弱以及可控性有限等挑战。本文提出了一种新方法——视觉音乐桥（VMB），通过明确的文本与音乐之间的桥梁实现多模态对齐。具体而言，Multimodal Music Description Model将视觉输入转换为详细的文本描述以提供文本桥，Dual-track Music Retrieval模块结合广泛和针对性的检索策略提供音乐桥并实现用户控制。最后，设计了显式条件音乐生成框架，以基于这两种桥梁生成音乐。在视频对音乐、图像对音乐、文本对音乐及可控音乐生成等任务上进行实验，结果表明VMB在音乐质量、模态和定制对齐方面显著优于之前的方法，为可解释和富有表现力的多模态音乐生成树立了新标准，具有广泛的多媒体应用前景。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2412.09428" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Mon, 16 Dec 2024 01:16:48 GMT</pubDate>
-<pubDate>Mon, 16 Dec 2024 01:16:48 GMT</pubDate>
 </item>
-
 <item>
 <title>深入探究大规模多模态模型的视频理解机制</title>
 <link>https://arxiv.org/abs/2412.10360</link>
