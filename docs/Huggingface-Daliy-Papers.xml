@@ -4,6 +4,54 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>SepLLM：一种加速推理的大型语言模型框架</title>
+<link>https://arxiv.org/abs/2412.12094</link>
+<guid>https://arxiv.org/abs/2412.12094</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>SepLLM通过压缩无意义分隔符信息来加速大型语言模型的推理。</p><br><br><p><strong>摘要：</strong> 大型语言模型（LLMs）在自然语言处理任务中表现出色，但其庞大规模导致了计算需求和推理速度的挑战。本文提出了一种新颖的模式，即某些看似无意义的特殊分隔符在注意力分数中的贡献远大于语义丰富的标记。这一发现表明，分隔符之间的段落信息可以有效地压缩到分隔符中而不显著损失信息。基于这一洞察，我们介绍了SepLLM，这是一个增强推理效率的可插拔框架，通过压缩无冗余的段落和高效的内核实现训练加速。实验结果显示，使用Llama-3-8B基础模型，SepLLM在GSM8K-CoT基准上实现了KV缓存减半，且在流式设置中可处理超过400万标记的序列，维持一致的语言建模能力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.12094 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 17 Dec 2024 06:16:29 GMT</pubDate>
+<pubDate>Tue, 17 Dec 2024 06:16:29 GMT</pubDate>
+</item>
+<item>
+<title>WHISPER-GPT：融合连续音频表示与离散音频令牌的生成大语言模型</title>
+<link>https://arxiv.org/abs/2412.11449</link>
+<guid>https://arxiv.org/abs/2412.11449</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>WHISPER-GPT结合连续音频与离散令牌，提升语音和音乐生成效果。</p><br><br><p><strong>摘要：</strong> 本文提出了WHISPER-GPT，一种生成大语言模型（LLM），旨在同时处理连续音频表示和离散令牌。近年来，基于神经压缩算法生成的离散音频令牌如ENCODEC在语音和音乐生成领域取得了显著进展，但其在处理长上下文时面临挑战，尤其是在高保真生成架构中。通过结合声谱图等连续音频表示与离散音频令牌，WHISPER-GPT能够在单一架构中获取特定时刻音频所需的信息，同时支持未来令牌的预测，从而实现抽样等离散空间的优势。研究表明，与基于令牌的LLM相比，该架构在下一令牌预测的困惑度和负对数似然分数方面均有所改善。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.11449 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 17 Dec 2024 06:13:52 GMT</pubDate>
+<pubDate>Tue, 17 Dec 2024 06:13:52 GMT</pubDate>
+</item>
+<item>
+<title>基于模仿学习的灵活移动操控机器人设计</title>
+<link>https://arxiv.org/abs/2412.10447</link>
+<guid>https://arxiv.org/abs/2412.10447</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出了一种新型、经济的移动操控机器人，以支持模仿学习。</p><br><br><p><strong>摘要：</strong> 本文提出了一种开放源代码设计的经济实用型移动操控机器人，旨在支持人类指导的示范数据的采集，以便于模仿学习的应用。该设计支持任意机械臂，并通过动力轮使移动基座具有完全的全局自由度，能够独立且同时控制所有平面自由度。这一特性提高了机动性，简化了许多移动操控任务，消除了非全局移动基座所带来的运动约束，避免了复杂且耗时的操作。我们为机器人配备了直观的手机遥控接口，便于数据采集。在实验中，我们使用该接口收集数据，并表明训练出的策略能够成功执行各种常见的家庭移动操控任务。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.10447 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 17 Dec 2024 05:21:11 GMT</pubDate>
+<pubDate>Tue, 17 Dec 2024 05:21:11 GMT</pubDate>
+</item>
+<item>
+<title>提升垂直联邦学习中输入数据保护的模型架构转变研究</title>
+<link>https://arxiv.org/abs/2412.11689</link>
+<guid>https://arxiv.org/abs/2412.11689</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究表明，模型架构转变可有效保护VFL中的输入数据免受攻击。</p><br><br><p><strong>摘要：</strong> 垂直联邦学习（VFL）通过合作训练深度学习模型，同时保护隐私。然而，VFL过程仍有组件容易受到恶意攻击，特别是特征重构攻击，这种攻击旨在侵害输入数据。我们理论上认为，特征重构攻击的成功依赖于对数据先验分布的了解。因此，我们展示了即使是简单的模型架构转换，也可以显著增强VFL期间输入数据的保护。通过实验结果确认这一发现，我们表明基于多层感知器（MLP）的模型对最先进的特征重构攻击具有抵抗力，确保了输入数据的安全。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.11689 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 17 Dec 2024 05:18:39 GMT</pubDate>
+<pubDate>Tue, 17 Dec 2024 05:18:39 GMT</pubDate>
+</item>
 
 <item>
 <title>Byte Latent Transformer：新型字节级LLM架构提升推理效率</title>
