@@ -5,15 +5,85 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>Agent-SafetyBench: Evaluating the Safety of LLM Agents</title>
+<link>https://arxiv.org/abs/2412.14470</link>
+<guid>https://arxiv.org/abs/2412.14470</guid>
+<content:encoded><![CDATA[
+
+  As large language models (LLMs) are increasingly deployed as agents, their integration into interactive environments and tool use introduce new safety challenges beyond those associated with the models themselves. However, the absence of comprehensive benchmarks for evaluating agent safety presents a significant barrier to effective assessment and further improvement. In this paper, we introduce Agent-SafetyBench, a comprehensive benchmark designed to evaluate the safety of LLM agents. Agent-SafetyBench encompasses 349 interaction environments and 2,000 test cases, evaluating 8 categories of safety risks and covering 10 common failure modes frequently encountered in unsafe interactions. Our evaluation of 16 popular LLM agents reveals a concerning result: none of the agents achieves a safety score above 60%. This highlights significant safety challenges in LLM agents and underscores the considerable need for improvement. Through quantitative analysis, we identify critical failure modes and summarize two fundamental safety detects in current LLM agents: lack of robustness and lack of risk awareness. Furthermore, our findings suggest that reliance on defense prompts alone is insufficient to address these safety issues, emphasizing the need for more advanced and robust strategies. We release Agent-SafetyBench at https://github.com/thu-coai/Agent-SafetyBench to facilitate further research and innovation in agent safety evaluation and improvement.
+
+]]></content:encoded>
+<pubDate>Tue, 24 Dec 2024 04:00:22 GMT</pubDate>
+<pubDate>Tue, 24 Dec 2024 04:00:22 GMT</pubDate>
+</item>
+<item>
+<title>Friends-MMC：多模态多方会话数据集及关键任务研究</title>
+<link>https://arxiv.org/abs/2412.17295</link>
+<guid>https://arxiv.org/abs/2412.17295</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文介绍了Friends-MMC数据集及其在多方对话中的应用研究。</p><br><br><p><strong>摘要：</strong> 多模态多方会话（MMC）是一个重要却相对少见的研究主题，适应现实场景并具有广泛应用潜力。为推动这一领域的发展，本文提出了Friends-MMC数据集，该数据集包含超过24,000个独特的对话语句，并配有视频上下文。我们注释了每个语句的发言者及视频中的面孔信息，旨在深入探讨对话的角色中心理解。本研究进一步考察了两个基本的MMC任务：交谈发言者识别和交谈响应预测，并分析了当前方法的效率不足。我们提出了一种基于优化求解器的简单有效的基线方法，结合视频和文本的多模态信息，以提高发言者识别的性能。此外，针对响应预测任务，我们对生成对话模型进行了微调，分析了发言者信息的益处。代码和数据集已公开，呼吁更多关注在理解会话时建模发言者信息的重要性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.17295 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 24 Dec 2024 03:56:19 GMT</pubDate>
+<pubDate>Tue, 24 Dec 2024 03:56:19 GMT</pubDate>
+</item>
+<item>
+<title>解析生成式AI在教育中的教学行为注入</title>
+<link>https://arxiv.org/abs/2412.16429</link>
+<guid>https://arxiv.org/abs/2412.16429</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文探讨生成式AI系统在教育中的交互能力及其提升方法。</p><br><br><p><strong>摘要：</strong> 当前的生成式AI系统主要以信息展示为主，而非像人类导师那样进行有效的学习引导。为应对这些系统在教育使用场景中面临的挑战，本文将教学行为注入重新构建为一种教学指令跟随的过程，通过系统级指令明确期望的教学属性。这种方法避免了对教学的狭义定义，使教师和开发者能够指定所需的模型行为，并为Gemini模型的学习能力提升开辟了新的方式。通过在模型训练后添加教师数据，我们训练出了一种LearnLM模型，其在多种学习场景中获得了专家评审员的高度认可，偏好程度平均超出GPT-4o 31%、Claude 3.5 11%、Gemini 1.5 Pro 13%。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.16429 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 24 Dec 2024 02:25:15 GMT</pubDate>
+<pubDate>Tue, 24 Dec 2024 02:25:15 GMT</pubDate>
+</item>
+<item>
+<title>引入DRT-o1：长链思维在神经机器翻译中的应用</title>
+<link>https://arxiv.org/abs/2412.17498</link>
+<guid>https://arxiv.org/abs/2412.17498</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文介绍了DRT-o1模型在文学翻译中的长链思维应用，显著提升翻译效果。</p><br><br><p><strong>摘要：</strong> 本文提出了DRT-o1模型，旨在将长期链式思维的成功应用于神经机器翻译（MT）中。针对文学作品中的比喻和隐喻，传统翻译往往因文化差异而难以有效传达原意。为此，我们从现有文献中挖掘包含比喻的句子，并建立了一个多代理框架，通过长思维过程翻译这些句子。在该框架中，翻译器在顾问的建议下迭代翻译源句，并由评估者判断当前翻译是否优于之前的版本。基于收集到的数万条长思维MT数据，我们训练了DRT-o1。实验结果显示，使用Qwen2.5-7B和Qwen2.5-14B作为基础模型的DRT-o1在文学翻译任务上实现了7.33~8.26的BLEU评分，以及1.66~3.36的CometScore。此外，DRT-o1-7B在BLEU和CometScore上分别超过QwQ-32B-Preview 7.82和1.46，证明了其有效性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.17498 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 24 Dec 2024 02:18:55 GMT</pubDate>
+<pubDate>Tue, 24 Dec 2024 02:18:55 GMT</pubDate>
+</item>
+<item>
+<title>OpenAI o1模型系列的安全性与健壮性研究</title>
+<link>https://arxiv.org/abs/2412.16720</link>
+<guid>https://arxiv.org/abs/2412.16720</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>OpenAI o1模型系列通过强化学习提升了安全性与健壮性。</p><br><br><p><strong>摘要：</strong> OpenAI o1模型系列采用大规模强化学习技术，增强其推理能力，并重点关注模型在潜在不安全提示时的安全政策。这种深思熟虑的对齐方式使得模型在生成不良建议、选择刻板回应和抵御已知攻击等风险基准上表现优异。尽管链式思维训练可带来显著益处，但同时也增加潜在风险。报告强调了构建稳健对齐方法的必要性，并对其有效性进行全面压力测试，以维护严谨的风险管理协议。本文还详细介绍了OpenAI o1及o1-mini模型的安全工作，包括安全评估、外部红队测试和准备框架评估。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.16720 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 24 Dec 2024 02:15:11 GMT</pubDate>
+<pubDate>Tue, 24 Dec 2024 02:15:11 GMT</pubDate>
+</item>
+<item>
+<title>高保真视频变分自编码器的创新与应用</title>
+<link>https://arxiv.org/abs/2412.17805</link>
+<guid>https://arxiv.org/abs/2412.17805</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出了一种创新的视频变分自编码器，显著提升视频压缩与生成效果。</p><br><br><p><strong>摘要：</strong> 本研究提出了一种新型视频变分自编码器(VAE)，旨在有效减少视频冗余并提高视频生成效率。通过引入时序感知的空间压缩和轻量化运动压缩模型，解决了传统方法中的时间压缩不足和重构性能差的问题。此外，我们整合了文本引导，这显著提高了重构质量，尤其在细节保留和时间稳定性方面表现出色。我们的模型通过联合训练图像与视频的方式，进一步提升了其多功能性，能够同时执行图像和视频的自编码。大量的实验验证了我们方法的优越性能，展示了在视频编码领域的巨大潜力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.17805 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 24 Dec 2024 02:03:44 GMT</pubDate>
+<pubDate>Tue, 24 Dec 2024 02:03:44 GMT</pubDate>
+</item>
+
+<item>
 <title>基于结果精炼的过程监督：解决复杂编程任务的新方法</title>
 <link>https://arxiv.org/abs/2412.15118</link>
 <guid>https://arxiv.org/abs/2412.15118</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种新方法，通过结果精炼提升复杂编程任务的解决能力。</p><br><br><p><strong>摘要：</strong> 大型语言模型在代码生成方面展现了卓越能力，但在需要深度算法推理的复杂编程任务上常常显得力不从心。本文提出了一种新的监督学习范式——结果精炼过程监督（Outcome-Refining Process Supervision），旨在将结果精炼本身作为监督的过程。我们的方法利用具体执行信号来引导推理步骤的监督，同时采用树结构探索以同时维持多个解决路径。实验结果表明，该框架能够使得较小模型在竞争性编程任务上显著提高成功准确率和性能指标，平均正确率提升26.9%，效率提升42.2%。这一结果表明，为复杂编程任务提供结构化的推理空间和具体的验证信号至关重要。所有代码和数据已在开源平台上发布，供研究者使用。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.15118 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种新方法，通过结果精炼提升复杂编程任务的解决能力。</p><br /><br /><p><strong>摘要：</strong> 大型语言模型在代码生成方面展现了卓越能力，但在需要深度算法推理的复杂编程任务上常常显得力不从心。本文提出了一种新的监督学习范式——结果精炼过程监督（Outcome-Refining Process Supervision），旨在将结果精炼本身作为监督的过程。我们的方法利用具体执行信号来引导推理步骤的监督，同时采用树结构探索以同时维持多个解决路径。实验结果表明，该框架能够使得较小模型在竞争性编程任务上显著提高成功准确率和性能指标，平均正确率提升26.9%，效率提升42.2%。这一结果表明，为复杂编程任务提供结构化的推理空间和具体的验证信号至关重要。所有代码和数据已在开源平台上发布，供研究者使用。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2412.15118" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 24 Dec 2024 00:41:11 GMT</pubDate>
 <pubDate>Tue, 24 Dec 2024 00:41:11 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +91,8 @@
 <link>https://arxiv.org/abs/2412.17747</link>
 <guid>https://arxiv.org/abs/2412.17747</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文提出通过缓存增强技术提升大型语言模型的推理能力。</p><br><br><p><strong>摘要：</strong> 本研究探讨了一种增强大型语言模型（LLMs）推理能力的新方法，利用离线协处理器对模型的键值（kv）缓存进行扩展。该协处理器为缓存增添了一组潜在嵌入，以提高后续解码的精度。通过在保持解码器冻结的情况下，基于标准预训练数据训练协处理器的语言建模损失，使得模型能够以端到端可微分的方式学习如何将额外计算浓缩到其kv缓存中。此外，即使协处理器不可用，语言模型仍能正常运行。实验证明，通过缓存增强后，解码器在多项后续令牌上达到了更低的困惑度，且这种方法在多个推理密集任务中展示了稳定的性能提升，尽管未进行特定任务的训练。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.17747 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文提出通过缓存增强技术提升大型语言模型的推理能力。</p><br /><br /><p><strong>摘要：</strong> 本研究探讨了一种增强大型语言模型（LLMs）推理能力的新方法，利用离线协处理器对模型的键值（kv）缓存进行扩展。该协处理器为缓存增添了一组潜在嵌入，以提高后续解码的精度。通过在保持解码器冻结的情况下，基于标准预训练数据训练协处理器的语言建模损失，使得模型能够以端到端可微分的方式学习如何将额外计算浓缩到其kv缓存中。此外，即使协处理器不可用，语言模型仍能正常运行。实验证明，通过缓存增强后，解码器在多项后续令牌上达到了更低的困惑度，且这种方法在多个推理密集任务中展示了稳定的性能提升，尽管未进行特定任务的训练。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2412.17747" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 24 Dec 2024 00:05:04 GMT</pubDate>
 <pubDate>Tue, 24 Dec 2024 00:05:04 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +100,8 @@
 <link>https://arxiv.org/abs/2412.17153</link>
 <guid>https://arxiv.org/abs/2412.17153</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出了一种蒸馏解码方法，实现自回归模型的快速生成。</p><br><br><p><strong>摘要：</strong> 自回归（AR）模型在文本和图像生成方面表现优越，但因逐步生成而导致速度较慢。本文提出蒸馏解码（DD）方法，通过流匹配创建高斯分布与预训练AR模型输出分布间的确定性映射，成功实现了快速生成。DD不需要原AR模型的训练数据，具有实用性。实验结果显示，DD在多个前沿图像AR模型上表现出色，如VAR模型将生成步骤从10步缩短至1步，实现6.3倍的速度提升，FID从4.19增至9.96；LlamaGen从256步降至1步，速度提升217.8倍，FID从4.11升高至11.35。此外，DD在文本到图像生成方面也表现良好，将LlamaGen的生成步骤从256降至2，FID仅轻微上升。DD展示了一步生成的可能性，挑战了AR模型本质上速度慢的传统观点，为高效AR生成开辟了新机遇。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.17153 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出了一种蒸馏解码方法，实现自回归模型的快速生成。</p><br /><br /><p><strong>摘要：</strong> 自回归（AR）模型在文本和图像生成方面表现优越，但因逐步生成而导致速度较慢。本文提出蒸馏解码（DD）方法，通过流匹配创建高斯分布与预训练AR模型输出分布间的确定性映射，成功实现了快速生成。DD不需要原AR模型的训练数据，具有实用性。实验结果显示，DD在多个前沿图像AR模型上表现出色，如VAR模型将生成步骤从10步缩短至1步，实现6.3倍的速度提升，FID从4.19增至9.96；LlamaGen从256步降至1步，速度提升217.8倍，FID从4.11升高至11.35。此外，DD在文本到图像生成方面也表现良好，将LlamaGen的生成步骤从256降至2，FID仅轻微上升。DD展示了一步生成的可能性，挑战了AR模型本质上速度慢的传统观点，为高效AR生成开辟了新机遇。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2412.17153" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 23 Dec 2024 23:23:30 GMT</pubDate>
 <pubDate>Mon, 23 Dec 2024 23:23:30 GMT</pubDate>
 </item>
 <item>
@@ -45,14 +109,10 @@
 <link>https://arxiv.org/abs/2412.16686</link>
 <guid>https://arxiv.org/abs/2412.16686</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>NILE框架通过优化IFT数据集显著提升LLMs性能。</p><br><br><p><strong>摘要：</strong> 为了提升大型语言模型（LLMs）与人类意图的对齐性，本文提出了NILE（iNternal consIstency aLignmEnt）框架，旨在优化指令微调（IFT）数据集的质量。现有的IFT数据集常常包含与LLMs在预训练阶段习得的内部知识不一致的信息，影响了IFT的有效性。NILE框架通过引导目标预训练LLMs的内部知识与指令数据对应，利用该内部知识修正IFT数据集中答案，并提出了一种新的内部一致性过滤（ICF）方法，用于筛选训练样本，确保其与LLMs内部知识高度一致。实验结果显示，NILE对齐的IFT数据集在多个评估数据集上显著提高了LLMs的表现，Arena-Hard的增益高达66.6%，Alpaca-Eval V2则达到了68.5%。进一步分析表明，NILE框架的每个组件都对性能提升做出了重要贡献，且数据集与预训练内部知识的一致性对最大化LLMs潜力至关重要。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.16686 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">NILE框架通过优化IFT数据集显著提升LLMs性能。</p><br /><br /><p><strong>摘要：</strong> 为了提升大型语言模型（LLMs）与人类意图的对齐性，本文提出了NILE（iNternal consIstency aLignmEnt）框架，旨在优化指令微调（IFT）数据集的质量。现有的IFT数据集常常包含与LLMs在预训练阶段习得的内部知识不一致的信息，影响了IFT的有效性。NILE框架通过引导目标预训练LLMs的内部知识与指令数据对应，利用该内部知识修正IFT数据集中答案，并提出了一种新的内部一致性过滤（ICF）方法，用于筛选训练样本，确保其与LLMs内部知识高度一致。实验结果显示，NILE对齐的IFT数据集在多个评估数据集上显著提高了LLMs的表现，Arena-Hard的增益高达66.6%，Alpaca-Eval V2则达到了68.5%。进一步分析表明，NILE框架的每个组件都对性能提升做出了重要贡献，且数据集与预训练内部知识的一致性对最大化LLMs潜力至关重要。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2412.16686" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Mon, 23 Dec 2024 22:18:25 GMT</pubDate>
-<pubDate>Mon, 23 Dec 2024 22:18:25 GMT</pubDate>
 </item>
-
 <item>
 <title>自我演化训练在多模态推理中的应用与优化</title>
 <link>https://arxiv.org/abs/2412.17451</link>
