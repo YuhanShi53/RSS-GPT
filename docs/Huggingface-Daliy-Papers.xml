@@ -5,15 +5,61 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>基于结果精炼的过程监督：解决复杂编程任务的新方法</title>
+<link>https://arxiv.org/abs/2412.15118</link>
+<guid>https://arxiv.org/abs/2412.15118</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新方法，通过结果精炼提升复杂编程任务的解决能力。</p><br><br><p><strong>摘要：</strong> 大型语言模型在代码生成方面展现了卓越能力，但在需要深度算法推理的复杂编程任务上常常显得力不从心。本文提出了一种新的监督学习范式——结果精炼过程监督（Outcome-Refining Process Supervision），旨在将结果精炼本身作为监督的过程。我们的方法利用具体执行信号来引导推理步骤的监督，同时采用树结构探索以同时维持多个解决路径。实验结果表明，该框架能够使得较小模型在竞争性编程任务上显著提高成功准确率和性能指标，平均正确率提升26.9%，效率提升42.2%。这一结果表明，为复杂编程任务提供结构化的推理空间和具体的验证信号至关重要。所有代码和数据已在开源平台上发布，供研究者使用。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.15118 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 24 Dec 2024 00:41:11 GMT</pubDate>
+<pubDate>Tue, 24 Dec 2024 00:41:11 GMT</pubDate>
+</item>
+<item>
+<title>提升大型语言模型推理能力的缓存增强方法</title>
+<link>https://arxiv.org/abs/2412.17747</link>
+<guid>https://arxiv.org/abs/2412.17747</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出通过缓存增强技术提升大型语言模型的推理能力。</p><br><br><p><strong>摘要：</strong> 本研究探讨了一种增强大型语言模型（LLMs）推理能力的新方法，利用离线协处理器对模型的键值（kv）缓存进行扩展。该协处理器为缓存增添了一组潜在嵌入，以提高后续解码的精度。通过在保持解码器冻结的情况下，基于标准预训练数据训练协处理器的语言建模损失，使得模型能够以端到端可微分的方式学习如何将额外计算浓缩到其kv缓存中。此外，即使协处理器不可用，语言模型仍能正常运行。实验证明，通过缓存增强后，解码器在多项后续令牌上达到了更低的困惑度，且这种方法在多个推理密集任务中展示了稳定的性能提升，尽管未进行特定任务的训练。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.17747 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 24 Dec 2024 00:05:04 GMT</pubDate>
+<pubDate>Tue, 24 Dec 2024 00:05:04 GMT</pubDate>
+</item>
+<item>
+<title>基于蒸馏解码的自回归模型一键生成方法</title>
+<link>https://arxiv.org/abs/2412.17153</link>
+<guid>https://arxiv.org/abs/2412.17153</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出了一种蒸馏解码方法，实现自回归模型的快速生成。</p><br><br><p><strong>摘要：</strong> 自回归（AR）模型在文本和图像生成方面表现优越，但因逐步生成而导致速度较慢。本文提出蒸馏解码（DD）方法，通过流匹配创建高斯分布与预训练AR模型输出分布间的确定性映射，成功实现了快速生成。DD不需要原AR模型的训练数据，具有实用性。实验结果显示，DD在多个前沿图像AR模型上表现出色，如VAR模型将生成步骤从10步缩短至1步，实现6.3倍的速度提升，FID从4.19增至9.96；LlamaGen从256步降至1步，速度提升217.8倍，FID从4.11升高至11.35。此外，DD在文本到图像生成方面也表现良好，将LlamaGen的生成步骤从256降至2，FID仅轻微上升。DD展示了一步生成的可能性，挑战了AR模型本质上速度慢的传统观点，为高效AR生成开辟了新机遇。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.17153 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 23 Dec 2024 23:23:30 GMT</pubDate>
+<pubDate>Mon, 23 Dec 2024 23:23:30 GMT</pubDate>
+</item>
+<item>
+<title>NILE框架：提升LLMs与人类意图对齐的内部一致性优化</title>
+<link>https://arxiv.org/abs/2412.16686</link>
+<guid>https://arxiv.org/abs/2412.16686</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>NILE框架通过优化IFT数据集显著提升LLMs性能。</p><br><br><p><strong>摘要：</strong> 为了提升大型语言模型（LLMs）与人类意图的对齐性，本文提出了NILE（iNternal consIstency aLignmEnt）框架，旨在优化指令微调（IFT）数据集的质量。现有的IFT数据集常常包含与LLMs在预训练阶段习得的内部知识不一致的信息，影响了IFT的有效性。NILE框架通过引导目标预训练LLMs的内部知识与指令数据对应，利用该内部知识修正IFT数据集中答案，并提出了一种新的内部一致性过滤（ICF）方法，用于筛选训练样本，确保其与LLMs内部知识高度一致。实验结果显示，NILE对齐的IFT数据集在多个评估数据集上显著提高了LLMs的表现，Arena-Hard的增益高达66.6%，Alpaca-Eval V2则达到了68.5%。进一步分析表明，NILE框架的每个组件都对性能提升做出了重要贡献，且数据集与预训练内部知识的一致性对最大化LLMs潜力至关重要。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.16686 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 23 Dec 2024 22:18:25 GMT</pubDate>
+<pubDate>Mon, 23 Dec 2024 22:18:25 GMT</pubDate>
+</item>
+
+<item>
 <title>自我演化训练在多模态推理中的应用与优化</title>
 <link>https://arxiv.org/abs/2412.17451</link>
 <guid>https://arxiv.org/abs/2412.17451</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究自我演化训练在多模态推理中的关键因素与优化实践。</p><br><br><p><strong>摘要：</strong> 本文探讨了自我演化训练在多模态推理中的重要性，分析了训练方法、奖励模型和提示变异等三个关键因素。通过系统性研究这些因素的不同配置对训练效果的影响，提出了各自的最佳实践，以优化多模态推理的效果。此外，我们还研究了训练过程中的自我演化动态，以及自动平衡机制对性能的提升作用。最终，我们提出了MSTaR（Multimodal Self-evolving Training for Reasoning）框架，展示了这一框架在多个基准测试中对于不同大小模型的普适有效性，尤其是在五个多模态推理基准上显著超越了预先训练模型。研究为多模态推理中的自我演化训练提供了重要的见解和未来研究的基础。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.17451 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究自我演化训练在多模态推理中的关键因素与优化实践。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了自我演化训练在多模态推理中的重要性，分析了训练方法、奖励模型和提示变异等三个关键因素。通过系统性研究这些因素的不同配置对训练效果的影响，提出了各自的最佳实践，以优化多模态推理的效果。此外，我们还研究了训练过程中的自我演化动态，以及自动平衡机制对性能的提升作用。最终，我们提出了MSTaR（Multimodal Self-evolving Training for Reasoning）框架，展示了这一框架在多个基准测试中对于不同大小模型的普适有效性，尤其是在五个多模态推理基准上显著超越了预先训练模型。研究为多模态推理中的自我演化训练提供了重要的见解和未来研究的基础。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2412.17451" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 23 Dec 2024 22:09:53 GMT</pubDate>
 <pubDate>Mon, 23 Dec 2024 22:09:53 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +67,8 @@
 <link>https://arxiv.org/abs/2412.17256</link>
 <guid>https://arxiv.org/abs/2412.17256</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文提出B-STaR框架，优化模型在自我改善中的探索与开发能力。</p><br><br><p><strong>摘要：</strong> 在缺乏大规模人工标注数据的情况下，自我改善成为提升复杂推理任务性能的主要方法。本文关注于自我改善中的关键因素，特别是模型生成多样化响应的能力（探索）和外部奖励有效性（开发）。通过对数学推理任务的量化分析，发现模型探索能力在迭代过程中迅速减弱，且外部奖励的效用同样下降。为此，我们提出B-STaR框架，该框架能够自动调整配置，平衡探索和开发，从而优化自我改善效果。在数学推理、编程和常识推理实验中，B-STaR显著增强了模型的探索能力，实现了更有效的探索与开发平衡，进而提升模型性能。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.17256 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文提出B-STaR框架，优化模型在自我改善中的探索与开发能力。</p><br /><br /><p><strong>摘要：</strong> 在缺乏大规模人工标注数据的情况下，自我改善成为提升复杂推理任务性能的主要方法。本文关注于自我改善中的关键因素，特别是模型生成多样化响应的能力（探索）和外部奖励有效性（开发）。通过对数学推理任务的量化分析，发现模型探索能力在迭代过程中迅速减弱，且外部奖励的效用同样下降。为此，我们提出B-STaR框架，该框架能够自动调整配置，平衡探索和开发，从而优化自我改善效果。在数学推理、编程和常识推理实验中，B-STaR显著增强了模型的探索能力，实现了更有效的探索与开发平衡，进而提升模型性能。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2412.17256" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 23 Dec 2024 22:04:28 GMT</pubDate>
 <pubDate>Mon, 23 Dec 2024 22:04:28 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +76,8 @@
 <link>https://arxiv.org/abs/2412.14922</link>
 <guid>https://arxiv.org/abs/2412.14922</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出RobustFT框架以增强模型对噪声数据的鲁棒性。</p><br><br><p><strong>摘要：</strong> 监督微调（SFT）在将大规模语言模型（LLMs）适应特定领域或任务中至关重要。然而，实验表明，在实际应用中收集的数据必然包含噪声，这对下游任务的模型性能构成了重大挑战。因此，急需一种鲁棒的SFT框架来提高模型在下游任务中的能力。为此，我们提出了一种名为RobustFT的鲁棒SFT框架，该框架对下游任务数据进行噪声检测和重新标注。在噪声识别阶段，我们采用多专家协作系统结合推理增强模型以实现更优的噪声检测。在去噪阶段，我们利用上下文强化策略，结合最相关且可信的知识，并经过仔细评估生成可靠的标注。此外，我们引入了一种基于响应熵的有效数据选择机制，确保仅保留高质量样本进行微调。广泛的实验证明，RobustFT在多种数据集上的表现出色，尤其在噪声场景中。 </p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.14922 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出RobustFT框架以增强模型对噪声数据的鲁棒性。</p><br /><br /><p><strong>摘要：</strong> 监督微调（SFT）在将大规模语言模型（LLMs）适应特定领域或任务中至关重要。然而，实验表明，在实际应用中收集的数据必然包含噪声，这对下游任务的模型性能构成了重大挑战。因此，急需一种鲁棒的SFT框架来提高模型在下游任务中的能力。为此，我们提出了一种名为RobustFT的鲁棒SFT框架，该框架对下游任务数据进行噪声检测和重新标注。在噪声识别阶段，我们采用多专家协作系统结合推理增强模型以实现更优的噪声检测。在去噪阶段，我们利用上下文强化策略，结合最相关且可信的知识，并经过仔细评估生成可靠的标注。此外，我们引入了一种基于响应熵的有效数据选择机制，确保仅保留高质量样本进行微调。广泛的实验证明，RobustFT在多种数据集上的表现出色，尤其在噪声场景中。 </p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2412.14922" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 23 Dec 2024 22:03:04 GMT</pubDate>
 <pubDate>Mon, 23 Dec 2024 22:03:04 GMT</pubDate>
 </item>
 <item>
@@ -45,14 +85,10 @@
 <link>https://arxiv.org/abs/2412.16926</link>
 <guid>https://arxiv.org/abs/2412.16926</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究长上下文语言模型中的示例选择对ICL性能的影响。</p><br><br><p><strong>摘要：</strong> 本文探讨了在长上下文语言模型（LCLMs）中，示例选择技术对上下文学习（ICL）性能的影响。研究表明，过去的复杂示例选择方法在面对LCLMs时并未显著提升性能，相反，随机选择的简单方法同样有效。通过对18个数据集和4个任务进行广泛实验，我们发现ICL性能更多地依赖于在上下文窗口中收集足够的示例，而不是挑选最有效的示例。具体来说，某些数据集中即使包含所有提供的示例，也不能充分利用上下文窗口。然而，通过采用简单的数据增强方法，我们能够将ICL性能提升5%。这一发现强调了在LCLMs中提高ICL性能的新策略。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.16926 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究长上下文语言模型中的示例选择对ICL性能的影响。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了在长上下文语言模型（LCLMs）中，示例选择技术对上下文学习（ICL）性能的影响。研究表明，过去的复杂示例选择方法在面对LCLMs时并未显著提升性能，相反，随机选择的简单方法同样有效。通过对18个数据集和4个任务进行广泛实验，我们发现ICL性能更多地依赖于在上下文窗口中收集足够的示例，而不是挑选最有效的示例。具体来说，某些数据集中即使包含所有提供的示例，也不能充分利用上下文窗口。然而，通过采用简单的数据增强方法，我们能够将ICL性能提升5%。这一发现强调了在LCLMs中提高ICL性能的新策略。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2412.16926" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Mon, 23 Dec 2024 21:55:42 GMT</pubDate>
-<pubDate>Mon, 23 Dec 2024 21:55:42 GMT</pubDate>
 </item>
-
 <item>
 <title>TRecViT：一种新型视频建模架构</title>
 <link>https://arxiv.org/abs/2412.14294</link>
