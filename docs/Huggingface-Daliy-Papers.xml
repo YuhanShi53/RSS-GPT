@@ -5,18 +5,63 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>DiTCtrl：基于MM-DiT架构的无训练多提示视频生成方法</title>
+<link>https://arxiv.org/abs/2412.18597</link>
+<guid>https://arxiv.org/abs/2412.18597</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>DiTCtrl是一种新颖的无训练多提示视频生成方法，解决了多提示场景生成的挑战。</p><br><br><p><strong>摘要：</strong> 本文提出了DiTCtrl，一种基于MM-DiT架构的无训练多提示视频生成方法，旨在解决当前视频生成模型在多提示场景生成中的诸多挑战。已有的多提示视频生成模型往往对训练数据要求严格，提示遵循能力不足且切换不自然。通过将多提示视频生成视为时间视频编辑，DiTCtrl实现了平滑的过渡和一致的物体运动，无需额外的训练。我们深入分析了MM-DiT的注意力机制，并发现其3D全注意力类似于UNet型扩散模型中的交叉/自我注意力块，支持在多提示视频生成中实现掩膜引导的语义控制。此外，本文还介绍了MPVBench，一个专为多提示视频生成设计的新基准，旨在评估模型性能。实验结果表明，DiTCtrl在多提示视频生成中达到了最佳性能。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.18597 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 25 Dec 2024 00:47:02 GMT</pubDate>
+<pubDate>Wed, 25 Dec 2024 00:47:02 GMT</pubDate>
+</item>
+<item>
+<title>基于傅里叶位置嵌入的语言模型上下文长度扩展方法</title>
+<link>https://arxiv.org/abs/2412.17739</link>
+<guid>https://arxiv.org/abs/2412.17739</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出了一种新方法FoPE以改善RoPE在语言模型中的上下文长度泛化。</p><br><br><p><strong>摘要：</strong> 本文分析了旋转位置嵌入（RoPE）在语言模型（LMs）中长短期泛化的局限性，并提出了基于傅里叶位置嵌入（FoPE）的方法。通过离散信号处理理论，研究表明RoPE隐含地实现了非均匀离散傅里叶变换，从而支持周期性注意力机制。然而，线性层和激活函数的影响以及时间域截断导致频率成分训练不足，削弱了这种周期性。FoPE通过构建傅里叶级数并去除破坏性的频率成分，提升了注意力机制在频域的特性，增强了其对频谱损害的鲁棒性。实验表明，FoPE在不同上下文窗口内，相较于RoPE和ALiBi，更能维持稳定的困惑度和一致的准确性，特别是在针筒任务中。通过多项分析与消融研究，进一步支持了该方法和理论模型的有效性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.17739 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 24 Dec 2024 23:37:35 GMT</pubDate>
+<pubDate>Tue, 24 Dec 2024 23:37:35 GMT</pubDate>
+</item>
+<item>
+<title>ReMoE：可微分的混合专家模型架构</title>
+<link>https://arxiv.org/abs/2412.14711</link>
+<guid>https://arxiv.org/abs/2412.14711</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>ReMoE是一种可微分的混合专家模型，提升了性能和可扩展性。</p><br><br><p><strong>摘要：</strong> Sparsely activated Mixture-of-Experts (MoE) 模型广泛应用于在不增加计算预算的情况下扩大模型容量。然而，传统的 TopK 路由器训练方法为非连续、不可微分，限制了其性能和可扩展性。为了解决这一问题，本文提出了 ReMoE，作为一种完全可微分的 MoE 架构，提供了一种简单而有效的替代方案，通过使用 ReLU 作为路由器。我们进一步提出了一些方法来调节路由器的稀疏性，同时平衡专家之间的负载。ReMoE 的连续特性使得在不同的令牌和层之间动态分配计算得以高效实现，并展现了领域专业化。实验结果表明，ReMoE 在各种模型规模、专家数量和细粒度级别上 consistently 优于传统的 TopK 路由 MoE。此外，ReMoE 在专家数量的可扩展性方面也优于传统的 MoE 架构。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.14711 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 24 Dec 2024 22:42:12 GMT</pubDate>
+<pubDate>Tue, 24 Dec 2024 22:42:12 GMT</pubDate>
+</item>
+<item>
+<title>DepthLab：基于图像扩散的深度数据填补模型</title>
+<link>https://arxiv.org/abs/2412.18153</link>
+<guid>https://arxiv.org/abs/2412.18153</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>DepthLab模型有效解决深度数据缺失问题，提升多项下游任务表现。</p><br><br><p><strong>摘要：</strong> 本文介绍了DepthLab，一个基于图像扩散先验的深度填补模型，旨在解决深度数据在应用中常见的缺失问题。该模型具有两个显著优势：一是能够在深度缺失区域提供可靠的填补，适用于连续区域和孤立点；二是确保在填补缺失值时，能够忠实保持已知深度的尺度一致性。凭借这些优势，DepthLab在多个下游任务中表现出色，包括3D场景填补、文本到3D场景生成、基于DUST3R的稀疏视图重建和LiDAR深度补全，且在数值性能和视觉质量上超过现有解决方案。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.18153 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 24 Dec 2024 22:37:30 GMT</pubDate>
+<pubDate>Tue, 24 Dec 2024 22:37:30 GMT</pubDate>
+</item>
+
+<item>
 <title>SKETCH：一种增强检索-生成系统的新方法</title>
 <link>https://arxiv.org/abs/2412.15443</link>
 <guid>https://arxiv.org/abs/2412.15443</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>SKETCH通过知识图谱提升检索性能，显著提高回答相关性和上下文完整性。</p><br><br><p><strong>摘要：</strong> 本文介绍了SKETCH，一种新颖的方法，通过将语义文本检索与知识图谱整合，改善检索-生成(RAG)系统。这种方法结合了结构化和非结构化数据，提升了对大型数据集的处理效率，同时保持了对上下文的全面理解。研究表明，SKETCH在四个不同的数据集上进行评估时，在回答相关性、忠实性、上下文精度和上下文召回等关键RAGAS指标上均优于传统方法，尤其在意大利美食数据集中，SKETCH的回答相关性达到了0.94，上下文精度则高达0.99，展现了其在提供更准确和具有上下文相关性响应方面的能力。这些结果标志着SKETCH为未来的检索系统设定了新的基准。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.15443 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">SKETCH通过知识图谱提升检索性能，显著提高回答相关性和上下文完整性。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了SKETCH，一种新颖的方法，通过将语义文本检索与知识图谱整合，改善检索-生成(RAG)系统。这种方法结合了结构化和非结构化数据，提升了对大型数据集的处理效率，同时保持了对上下文的全面理解。研究表明，SKETCH在四个不同的数据集上进行评估时，在回答相关性、忠实性、上下文精度和上下文召回等关键RAGAS指标上均优于传统方法，尤其在意大利美食数据集中，SKETCH的回答相关性达到了0.94，上下文精度则高达0.99，展现了其在提供更准确和具有上下文相关性响应方面的能力。这些结果标志着SKETCH为未来的检索系统设定了新的基准。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2412.15443" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 24 Dec 2024 22:25:12 GMT</pubDate>
-<pubDate>Tue, 24 Dec 2024 22:25:12 GMT</pubDate>
 </item>
-
 <item>
 <title>ResearchTown: 基于大语言模型的科研社区仿真框架</title>
 <link>https://arxiv.org/abs/2412.17767</link>
