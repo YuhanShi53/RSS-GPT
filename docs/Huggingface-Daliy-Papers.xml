@@ -5,15 +5,25 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>高效的语言适应：学习嵌入传播（LEP）方法的提出</title>
+<link>https://arxiv.org/abs/2412.21140</link>
+<guid>https://arxiv.org/abs/2412.21140</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>介绍了一种新的学习嵌入传播方法以降低语言适应的成本。</p><br><br><p><strong>摘要：</strong> 随着大语言模型技术的快速发展，出现了强大的开源指令调优的大语言模型，这些模型的文本生成质量可与最先进的模型媲美。然而，这些模型的训练数据没有公开，导致其成果仅限于特定模型，阻碍了多语言模型和语言特定模型的高效训练。为了解决这些问题，本文提出了一种新方法——学习嵌入传播（LEP），它降低了训练数据的需求，通过独特的嵌入传播程序直接将新的语言知识植入现有指令调优模型中，无需传统的指令调优步骤。我们对四个俄罗斯词汇适应案例进行了评估，结果显示LEP在性能上与传统的方法相媲美，并通过自我校准和持续调优进一步提升了解决任务的能力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.21140 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 31 Dec 2024 05:22:56 GMT</pubDate>
+<pubDate>Tue, 31 Dec 2024 05:22:56 GMT</pubDate>
+</item>
+
+<item>
 <title>自调用代码生成评估新任务与基准的发展</title>
 <link>https://arxiv.org/abs/2412.21199</link>
 <guid>https://arxiv.org/abs/2412.21199</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出自调用代码生成评估新任务，并分析LLMs的表现。</p><br><br><p><strong>摘要：</strong> 本文介绍了自调用代码生成这一新任务，旨在评估大语言模型（LLMs）的推理和问题解决能力。模型需先解决基础问题，再利用其解答处理更复杂的问题。文章做出了三项重要贡献：首先，提出了一种生成更具挑战性基准的新方法，并开发了三个新基准：HumanEval Pro、MBPP Pro和BigCodeBench-Lite Pro，专门评估自调用代码生成能力。其次，通过对二十个LLMs在基准上的实验结果分析，发现大部分模型在传统代码生成基准（如HumanEval和MBPP）上表现优异，但在自调用任务中性能显著下降。此外，指令调优模型在自调用代码生成任务中的提升幅度微乎其微。最后，文章揭示了在评估结果中出现的失败模式。这些发现表明自调用代码生成任务的进一步发展迫在眉睫，为增强LLMs代码推理能力的未来研究提供了新方向。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.21199 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出自调用代码生成评估新任务，并分析LLMs的表现。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了自调用代码生成这一新任务，旨在评估大语言模型（LLMs）的推理和问题解决能力。模型需先解决基础问题，再利用其解答处理更复杂的问题。文章做出了三项重要贡献：首先，提出了一种生成更具挑战性基准的新方法，并开发了三个新基准：HumanEval Pro、MBPP Pro和BigCodeBench-Lite Pro，专门评估自调用代码生成能力。其次，通过对二十个LLMs在基准上的实验结果分析，发现大部分模型在传统代码生成基准（如HumanEval和MBPP）上表现优异，但在自调用任务中性能显著下降。此外，指令调优模型在自调用代码生成任务中的提升幅度微乎其微。最后，文章揭示了在评估结果中出现的失败模式。这些发现表明自调用代码生成任务的进一步发展迫在眉睫，为增强LLMs代码推理能力的未来研究提供了新方向。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2412.21199" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 31 Dec 2024 01:26:05 GMT</pubDate>
 <pubDate>Tue, 31 Dec 2024 01:26:05 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +31,8 @@
 <link>https://arxiv.org/abs/2412.20422</link>
 <guid>https://arxiv.org/abs/2412.20422</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种基于文本的4D生成方法，实现用户提供3D对象的动画。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种新方法，通过文本提示控制4D内容生成，从而对用户提供的3D对象进行动画制作。首先，我们将3D网格转换为静态的4D神经辐射场（NeRF），以保留输入对象的视觉属性。随后，利用图像到视频的扩散模型进行动画处理。为提升动作真实感，我们引入了增量视角选择协议以采样多样的视角，并采用掩蔽得分蒸馏采样损失（SDS），利用注意力图聚焦于相关区域进行优化。通过对模型进行时间一致性、提示遵循性和视觉保真度的评估，我们发现该方法在身份保留上较其他基线方法提升了达三倍的表现，成功在视觉质量与动态内容之间取得平衡。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.20422 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种基于文本的4D生成方法，实现用户提供3D对象的动画。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种新方法，通过文本提示控制4D内容生成，从而对用户提供的3D对象进行动画制作。首先，我们将3D网格转换为静态的4D神经辐射场（NeRF），以保留输入对象的视觉属性。随后，利用图像到视频的扩散模型进行动画处理。为提升动作真实感，我们引入了增量视角选择协议以采样多样的视角，并采用掩蔽得分蒸馏采样损失（SDS），利用注意力图聚焦于相关区域进行优化。通过对模型进行时间一致性、提示遵循性和视觉保真度的评估，我们发现该方法在身份保留上较其他基线方法提升了达三倍的表现，成功在视觉质量与动态内容之间取得平衡。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2412.20422" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 31 Dec 2024 01:20:42 GMT</pubDate>
 <pubDate>Tue, 31 Dec 2024 01:20:42 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +40,8 @@
 <link>https://arxiv.org/abs/2412.21139</link>
 <guid>https://arxiv.org/abs/2412.21139</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>SWE-Gym是用于训练软件工程代理的首个真实环境，包含2438个Python任务实例。</p><br><br><p><strong>摘要：</strong> 本文介绍了SWE-Gym，这是首个用于训练实际软件工程代理的环境，包含2438个真实的Python任务实例，具体包括可执行的运行环境、单元测试及自然语言指定的任务。利用SWE-Gym，我们训练的基于语言模型的软件工程代理在流行的SWE-Bench Verified和Lite测试集上实现了高达19%的绝对解决率提升。此外，我们还通过对从SWE-Gym中采样的代理轨迹训练的验证器进行推理时间扩展的实验，结合精细调优的软件工程代理，实现了在SWE-Bench Verified和Lite上分别达到32.0%和26.0%的新状态，标志着开放权重软件工程代理的新进展。为促进进一步研究，我们公开发布了SWE-Gym、模型和代理轨迹。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.21139 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">SWE-Gym是用于训练软件工程代理的首个真实环境，包含2438个Python任务实例。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了SWE-Gym，这是首个用于训练实际软件工程代理的环境，包含2438个真实的Python任务实例，具体包括可执行的运行环境、单元测试及自然语言指定的任务。利用SWE-Gym，我们训练的基于语言模型的软件工程代理在流行的SWE-Bench Verified和Lite测试集上实现了高达19%的绝对解决率提升。此外，我们还通过对从SWE-Gym中采样的代理轨迹训练的验证器进行推理时间扩展的实验，结合精细调优的软件工程代理，实现了在SWE-Bench Verified和Lite上分别达到32.0%和26.0%的新状态，标志着开放权重软件工程代理的新进展。为促进进一步研究，我们公开发布了SWE-Gym、模型和代理轨迹。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2412.21139" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 30 Dec 2024 23:56:15 GMT</pubDate>
 <pubDate>Mon, 30 Dec 2024 23:56:15 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +49,8 @@
 <link>https://arxiv.org/abs/2412.18525</link>
 <guid>https://arxiv.org/abs/2412.18525</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文提出了解释性指令，以提高计算机视觉的零-shot任务泛化能力。</p><br><br><p><strong>摘要：</strong> 尽管计算机视觉（CV）已经在大型变换模型、广泛预训练和自回归范式等方面取得了一些与自然语言处理（NLP）相似的里程碑，但其零-shot任务泛化能力仍未完全实现。本文探讨了CV领域使用离散的术语定义（如“图像分割”）可能成为零-shot任务泛化的关键障碍。我们假设，由于这些术语定义，深度模型在理解已见任务时存在困难，从而影响对新任务的泛化能力。为验证此假设，我们引入了解释性指令，提供一种直观的方法来通过详细的语言转换来定义CV任务目标。我们创建了一个包含1200万“图像输入到解释性指令再到输出”的三元组的大型数据集，并训练了一种基于自回归的视觉-语言模型（AR-based VLM），使其能够接受图像和解释性指令作为输入。通过学习跟随这些指令，AR-based VLM在已见任务上实现了指令级的零-shot能力，并在未见CV任务上展现了强大的零-shot泛化能力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.18525 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文提出了解释性指令，以提高计算机视觉的零-shot任务泛化能力。</p><br /><br /><p><strong>摘要：</strong> 尽管计算机视觉（CV）已经在大型变换模型、广泛预训练和自回归范式等方面取得了一些与自然语言处理（NLP）相似的里程碑，但其零-shot任务泛化能力仍未完全实现。本文探讨了CV领域使用离散的术语定义（如“图像分割”）可能成为零-shot任务泛化的关键障碍。我们假设，由于这些术语定义，深度模型在理解已见任务时存在困难，从而影响对新任务的泛化能力。为验证此假设，我们引入了解释性指令，提供一种直观的方法来通过详细的语言转换来定义CV任务目标。我们创建了一个包含1200万“图像输入到解释性指令再到输出”的三元组的大型数据集，并训练了一种基于自回归的视觉-语言模型（AR-based VLM），使其能够接受图像和解释性指令作为输入。通过学习跟随这些指令，AR-based VLM在已见任务上实现了指令级的零-shot能力，并在未见CV任务上展现了强大的零-shot泛化能力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2412.18525" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 30 Dec 2024 23:38:03 GMT</pubDate>
 <pubDate>Mon, 30 Dec 2024 23:38:03 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +58,8 @@
 <link>https://arxiv.org/abs/2412.20993</link>
 <guid>https://arxiv.org/abs/2412.20993</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>Dynasor通过动态计算优化，提升大型语言模型推理查询的效率和准确性。</p><br><br><p><strong>摘要：</strong> 本文介绍了Dynasor系统，它旨在优化大型语言模型推理查询的推理时计算。根据推理算法的扩展行为和查询难度，Dynasor通过跟踪和调度推理查询中的请求，动态分配计算资源。该系统使用Certaindex代理来测量基于模型确定性的统计推理进度，确保对复杂查询分配更多计算，对简单查询减少计算，并提前终止不具前景的查询。经过实验证明，Dynasor在多种数据集和算法上能够将批处理计算需求降低高达50%，同时在在线服务中实现3.3倍的查询速率提升或4.7倍的延迟缩短，达到更高的性能和成本效率。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.20993 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">Dynasor通过动态计算优化，提升大型语言模型推理查询的效率和准确性。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了Dynasor系统，它旨在优化大型语言模型推理查询的推理时计算。根据推理算法的扩展行为和查询难度，Dynasor通过跟踪和调度推理查询中的请求，动态分配计算资源。该系统使用Certaindex代理来测量基于模型确定性的统计推理进度，确保对复杂查询分配更多计算，对简单查询减少计算，并提前终止不具前景的查询。经过实验证明，Dynasor在多种数据集和算法上能够将批处理计算需求降低高达50%，同时在在线服务中实现3.3倍的查询速率提升或4.7倍的延迟缩短，达到更高的性能和成本效率。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2412.20993" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 30 Dec 2024 23:33:22 GMT</pubDate>
 <pubDate>Mon, 30 Dec 2024 23:33:22 GMT</pubDate>
 </item>
 <item>
@@ -69,11 +67,8 @@
 <link>https://arxiv.org/abs/2412.21037</link>
 <guid>https://arxiv.org/abs/2412.21037</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>TangoFlux是一个高效的文本到音频生成模型，性能卓越。</p><br><br><p><strong>摘要：</strong> TangoFlux是一种拥有515M参数的高效文本到音频（TTA）生成模型，能够在单个A40 GPU上仅用3.7秒生成最多30秒的44.1kHz音频。TTA模型面临的一个关键挑战是生成偏好对的难度，因为TTA缺乏类似大型语言模型（LLMs）那样的结构化机制，如可验证的奖励或标准答案。为了解决这一问题，我们提出了CLAP排名偏好优化（CRPO）框架，该框架通过迭代生成和优化偏好数据来增强TTA模型的对齐性能。我们展示了使用CRPO生成的音频偏好数据集相较于现有替代方案的优越性。借助这一框架，TangoFlux在客观和主观基准测试中实现了领先的性能。此外，我们将所有代码和模型开源，以支持TTA生成领域的进一步研究。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.21037 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">TangoFlux是一个高效的文本到音频生成模型，性能卓越。</p><br /><br /><p><strong>摘要：</strong> TangoFlux是一种拥有515M参数的高效文本到音频（TTA）生成模型，能够在单个A40 GPU上仅用3.7秒生成最多30秒的44.1kHz音频。TTA模型面临的一个关键挑战是生成偏好对的难度，因为TTA缺乏类似大型语言模型（LLMs）那样的结构化机制，如可验证的奖励或标准答案。为了解决这一问题，我们提出了CLAP排名偏好优化（CRPO）框架，该框架通过迭代生成和优化偏好数据来增强TTA模型的对齐性能。我们展示了使用CRPO生成的音频偏好数据集相较于现有替代方案的优越性。借助这一框架，TangoFlux在客观和主观基准测试中实现了领先的性能。此外，我们将所有代码和模型开源，以支持TTA生成领域的进一步研究。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2412.21037" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 30 Dec 2024 23:03:45 GMT</pubDate>
 <pubDate>Mon, 30 Dec 2024 23:03:45 GMT</pubDate>
 </item>
 <item>
@@ -81,11 +76,8 @@
 <link>https://arxiv.org/abs/2412.20005</link>
 <guid>https://arxiv.org/abs/2412.20005</guid>
 <content:encoded><![CDATA[
-
-  We introduce OneKE, a dockerized schema-guided knowledge extraction system, which can extract knowledge from the Web and raw PDF Books, and support various domains (science, news, etc.). Specifically, we design OneKE with multiple agents and a configure knowledge base. Different agents perform their respective roles, enabling support for various extraction scenarios. The configure knowledge base facilitates schema configuration, error case debugging and correction, further improving the performance. Empirical evaluations on benchmark datasets demonstrate OneKE's efficacy, while case studies further elucidate its adaptability to diverse tasks across multiple domains, highlighting its potential for broad applications. We have open-sourced the Code at https://github.com/zjunlp/OneKE and released a Video at http://oneke.openkg.cn/demo.mp4.
-
+We introduce OneKE, a dockerized schema-guided knowledge extraction system, which can extract knowledge from the Web and raw PDF Books, and support various domains (science, news, etc.). Specifically, we design OneKE with multiple agents and a configure knowledge base. Different agents perform their respective roles, enabling support for various extraction scenarios. The configure knowledge base facilitates schema configuration, error case debugging and correction, further improving the performance. Empirical evaluations on benchmark datasets demonstrate OneKE's efficacy, while case studies further elucidate its adaptability to diverse tasks across multiple domains, highlighting its potential for broad applications. We have open-sourced the Code at https://github.com/zjunlp/OneKE and released a Video at http://oneke.openkg.cn/demo.mp4.
 ]]></content:encoded>
-<pubDate>Mon, 30 Dec 2024 22:51:09 GMT</pubDate>
 <pubDate>Mon, 30 Dec 2024 22:51:09 GMT</pubDate>
 </item>
 <item>
@@ -93,11 +85,8 @@
 <link>https://arxiv.org/abs/2412.20070</link>
 <guid>https://arxiv.org/abs/2412.20070</guid>
 <content:encoded><![CDATA[
-
-  Multimodal large language models (MLLMs) hold significant potential in the medical field, but their capabilities are often limited by insufficient data in certain medical domains, highlighting the need for understanding what kinds of images can be used by MLLMs for generalization. Current research suggests that multi-task training outperforms single-task as different tasks can benefit each other, but they often overlook the internal relationships within these tasks, providing limited guidance on selecting datasets to enhance specific tasks. To analyze this phenomenon, we attempted to employ compositional generalization (CG)-the ability of models to understand novel combinations by recombining learned elements-as a guiding framework. Since medical images can be precisely defined by Modality, Anatomical area, and Task, naturally providing an environment for exploring CG. Therefore, we assembled 106 medical datasets to create Med-MAT for comprehensive experiments. The experiments confirmed that MLLMs can use CG to understand unseen medical images and identified CG as one of the main drivers of the generalization observed in multi-task training. Additionally, further studies demonstrated that CG effectively supports datasets with limited data and delivers consistent performance across different backbones, highlighting its versatility and broad applicability. Med-MAT is publicly available at https://github.com/FreedomIntelligence/Med-MAT.
-
+Multimodal large language models (MLLMs) hold significant potential in the medical field, but their capabilities are often limited by insufficient data in certain medical domains, highlighting the need for understanding what kinds of images can be used by MLLMs for generalization. Current research suggests that multi-task training outperforms single-task as different tasks can benefit each other, but they often overlook the internal relationships within these tasks, providing limited guidance on selecting datasets to enhance specific tasks. To analyze this phenomenon, we attempted to employ compositional generalization (CG)-the ability of models to understand novel combinations by recombining learned elements-as a guiding framework. Since medical images can be precisely defined by Modality, Anatomical area, and Task, naturally providing an environment for exploring CG. Therefore, we assembled 106 medical datasets to create Med-MAT for comprehensive experiments. The experiments confirmed that MLLMs can use CG to understand unseen medical images and identified CG as one of the main drivers of the generalization observed in multi-task training. Additionally, further studies demonstrated that CG effectively supports datasets with limited data and delivers consistent performance across different backbones, highlighting its versatility and broad applicability. Med-MAT is publicly available at https://github.com/FreedomIntelligence/Med-MAT.
 ]]></content:encoded>
-<pubDate>Mon, 30 Dec 2024 22:29:50 GMT</pubDate>
 <pubDate>Mon, 30 Dec 2024 22:29:50 GMT</pubDate>
 </item>
 <item>
@@ -105,14 +94,10 @@
 <link>https://arxiv.org/abs/2412.21079</link>
 <guid>https://arxiv.org/abs/2412.21079</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>Edicho 提供了一种无训练的方法解决一致性图片编辑问题。</p><br><br><p><strong>摘要：</strong> 在处理实际拍摄图像时，由于物体姿势、光照条件和摄影环境等因素的影响，实现一致性编辑仍然是一个技术挑战。Edicho 提出了一个基于扩散模型的无训练解决方案，其核心设计原则是利用明确的图像对应关系来引导编辑。关键组件包括注意力操作模块和精心优化的无分类器引导（CFG）去噪策略，这两个模块均考虑了先验的对应关系。该推理时算法具有即插即用的特性，能够与大多数基于扩散的编辑方法兼容，如 ControlNet 和 BrushNet。广泛的实验结果表明，Edicho 在多种设置下实现了一致的跨图像编辑效果。我们将发布代码以促进未来的研究。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2412.21079 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">Edicho 提供了一种无训练的方法解决一致性图片编辑问题。</p><br /><br /><p><strong>摘要：</strong> 在处理实际拍摄图像时，由于物体姿势、光照条件和摄影环境等因素的影响，实现一致性编辑仍然是一个技术挑战。Edicho 提出了一个基于扩散模型的无训练解决方案，其核心设计原则是利用明确的图像对应关系来引导编辑。关键组件包括注意力操作模块和精心优化的无分类器引导（CFG）去噪策略，这两个模块均考虑了先验的对应关系。该推理时算法具有即插即用的特性，能够与大多数基于扩散的编辑方法兼容，如 ControlNet 和 BrushNet。广泛的实验结果表明，Edicho 在多种设置下实现了一致的跨图像编辑效果。我们将发布代码以促进未来的研究。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2412.21079" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Mon, 30 Dec 2024 22:14:42 GMT</pubDate>
-<pubDate>Mon, 30 Dec 2024 22:14:42 GMT</pubDate>
 </item>
-
 <item>
 <title>提高大型语言模型检索效率的属性图视图研究</title>
 <link>https://arxiv.org/abs/2412.18702</link>
