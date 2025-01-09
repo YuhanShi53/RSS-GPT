@@ -4,19 +4,16 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+
 <item>
 <title>提升检索增强生成应用的通用性与效率</title>
 <link>https://arxiv.org/abs/2501.04652</link>
 <guid>https://arxiv.org/abs/2501.04652</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文提出了一种通过微调检索编码器增强RAG应用的策略。</p><br><br><p><strong>摘要：</strong> 随着大语言模型（LLMs）中检索增强生成（RAG）技术的广泛应用，传统的生成模型在面对生成虚假或过时信息时显得不足。因此，本文针对实际应用中的问题提出了一种解决方案。首先，信息检索通常是领域特定的，因而微调检索器的可行性更高。其次，随着多个应用在同一系统中的部署，成本和效率也变得至关重要。我们建议对小型检索编码器进行指令微调，使其能够处理多种特定领域任务，从而通过单个编码器服务多个用例，达成低成本、可扩展性及较高速度的目标。研究结果表明，这一编码器在超出领域的设置及以前未见的检索任务中也能够良好泛化，证明其在实际企业用例中的有效性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.04652 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文提出了一种通过微调检索编码器增强RAG应用的策略。</p><br /><br /><p><strong>摘要：</strong> 随着大语言模型（LLMs）中检索增强生成（RAG）技术的广泛应用，传统的生成模型在面对生成虚假或过时信息时显得不足。因此，本文针对实际应用中的问题提出了一种解决方案。首先，信息检索通常是领域特定的，因而微调检索器的可行性更高。其次，随着多个应用在同一系统中的部署，成本和效率也变得至关重要。我们建议对小型检索编码器进行指令微调，使其能够处理多种特定领域任务，从而通过单个编码器服务多个用例，达成低成本、可扩展性及较高速度的目标。研究结果表明，这一编码器在超出领域的设置及以前未见的检索任务中也能够良好泛化，证明其在实际企业用例中的有效性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2501.04652" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Thu, 09 Jan 2025 09:23:18 GMT</pubDate>
-<pubDate>Thu, 09 Jan 2025 09:23:18 GMT</pubDate>
 </item>
-
 <item>
 <title>基于特征树的代码生成框架提升LLM性能</title>
 <link>https://arxiv.org/abs/2501.04694</link>
@@ -9011,15 +9008,6 @@ Large language models have demonstrated impressive performance when integrated w
 <div><p style="color: gray;">Zebra 是一款不需梯度适应的新型变换器，能够灵活应对各种参数 PDE，展示卓越的性能。</p><br /><br /><p><strong>摘要：</strong> 解决时间依赖性参数偏微分方程（PDEs）是一项具有挑战性的任务，因为模型必须适应系数、强迫项和边界条件等参数的变化。数据驱动的神经网络求解器通常依赖于从PDE参数分布中采样的数据进行训练，以期在新的实例上实现泛化，或依靠基于梯度的适应和元学习，隐式编码来自观察的数据动态。然而，这通常会增加推理复杂性。受到大型语言模型（LLMs）在上下文学习能力的启发，我们提出了Zebra，一种新型生成自回归变换器，旨在解决参数PDEs，而无需在推理时进行梯度适应。Zebra通过在预训练和推理过程中利用上下文信息，能够动态适应新任务，条件依赖于包含上下文轨迹或先前状态的输入序列。这种方法使得Zebra能够灵活处理任意大小的上下文输入，并通过采样多个解轨迹支持不确定性量化。我们在多种挑战性的PDE场景中评估了Zebra，展示了其适应性、鲁棒性以及相较于现有方法的优越性能。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.03437" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Fri, 11 Oct 2024 15:11:34 GMT</pubDate>
-</item>
-<item>
-<title>DART：一种新型的非马尔可夫扩散模型</title>
-<link>https://arxiv.org/abs/2410.08159</link>
-<guid>https://arxiv.org/abs/2410.08159</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">DART提出了一种统一自回归与扩散框架的图像生成模型，提升了训练与推理效率。</p><br /><br /><p><strong>摘要：</strong> 扩散模型已成为视觉生成的主流方法，但其基于马尔可夫过程的特性限制了模型充分利用生成轨迹的能力，导致在训练和推理时效率低下。为此，本文提出了一种新的模型DART，基于变换器架构，将自回归（AR）和扩散过程结合在一个非马尔可夫的框架内。DART通过空间和光谱的方式迭代去噪图像块，采用与标准语言模型相同的架构。DART不依赖于图像量化，增强了图像建模的有效性，保持了灵活性。同时，DART能够在一个统一模型中无缝地训练文本和图像数据。我们的实验结果表明，DART在类别条件和文本到图像生成任务上表现出色，提供了一种可扩展、高效的替代方案。通过这一统一框架，DART为高质量图像合成设立了新的基准。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.08159" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 11 Oct 2024 13:56:02 GMT</pubDate>
 </item>
 </channel>
 </rss>
