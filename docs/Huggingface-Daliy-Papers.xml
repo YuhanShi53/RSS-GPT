@@ -5,18 +5,63 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>VAR模型的计算效率研究与低秩近似优化</title>
+<link>https://arxiv.org/abs/2501.04377</link>
+<guid>https://arxiv.org/abs/2501.04377</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文探讨了VAR模型的计算效率，并提出低秩近似优化方法。</p><br><br><p><strong>摘要：</strong> 本文分析了视觉自回归(VAR)模型在图像生成过程中的计算效率问题，特别是其最先进算法的O(n^4)时间复杂度的不足之处。我们从细粒度复杂性理论的视角出发，识别了VAR模型在达到次二次时间复杂度所需的条件，并建立了输入矩阵范数的关键阈值。超出该阈值后，根据强指数时间假说（SETH），我们证明了VAR模型不可能实现次四次时间算法。此外，本文还提出了利用低秩近似的方法来优化计算效率，证明了这些构造符合所导出的标准。本研究为VAR模型的计算效率提供了理论基础，并为图像生成的可扩展性与高效性奠定了基础。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.04377 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 09 Jan 2025 23:55:24 GMT</pubDate>
+<pubDate>Thu, 09 Jan 2025 23:55:24 GMT</pubDate>
+</item>
+<item>
+<title>优化私有推理的非线性解码器架构</title>
+<link>https://arxiv.org/abs/2501.03489</link>
+<guid>https://arxiv.org/abs/2501.03489</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文探讨如何优化语言模型中的非线性以提高私有推理性能。</p><br><br><p><strong>摘要：</strong> 文章讨论了专有语言模型带来的隐私问题，强调了私有推理（PI）的重要性，即在加密数据上执行计算而不泄露用户信息。然而，PI的实际应用面临通信和延迟的挑战，尤其是来自非线性操作的负担。为此，研究提出了一个信息论框架，以界定非线性在解码器-only语言模型中的作用，并为PI需求优化变换器架构奠定基础。通过利用香农熵作为定量测量工具，发现非线性不仅确保训练稳定性，还是维护注意力头多样性的重要因素。具体而言，去除非线性会导致深层出现“熵崩溃”和早期层的“熵过载”问题。为了解决这些问题，作者提出了一种熵引导的注意机制及新颖的熵正则化技术，并探讨了面向PI的层归一化替代方案，旨在防止熵崩溃并稳定低非线性大模型的训练。研究将信息论与架构设计相结合，确立了熵动态在高效PI架构开发中的原则性指导作用。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.03489 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 09 Jan 2025 23:35:15 GMT</pubDate>
+<pubDate>Thu, 09 Jan 2025 23:35:15 GMT</pubDate>
+</item>
+<item>
+<title>基于视频的自回归预训练研究：Toto模型的探索</title>
+<link>https://arxiv.org/abs/2501.05453</link>
+<guid>https://arxiv.org/abs/2501.05453</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文探讨了自回归视频模型Toto在多个任务中的预训练表现。</p><br><br><p><strong>摘要：</strong> 本文通过构建自回归视频模型Toto，研究视频的自回归预训练。我们将视频视为视觉符号序列，并训练变换器模型以自回归方式预测未来符号。在超过1万亿视觉符号的多样化视频和图像数据集上进行预训练后，探索了不同的架构、训练和推理设计选择。研究结果表明，尽管缺乏强烈的归纳偏倚，采用自回归预训练的模型在图像识别、视频分类、物体追踪和机器人等多项下游任务中表现竞争。最后，发现我们的视频模型的扩展与语言模型呈现出相似的扩展曲线，但速率不同。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.05453 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 09 Jan 2025 23:07:34 GMT</pubDate>
+<pubDate>Thu, 09 Jan 2025 23:07:34 GMT</pubDate>
+</item>
+<item>
+<title>简化现代GAN训练：R3GAN的提出与优势</title>
+<link>https://arxiv.org/abs/2501.05441</link>
+<guid>https://arxiv.org/abs/2501.05441</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出R3GAN，展示了现代GAN的简化训练方法与显著效果。</p><br><br><p><strong>摘要：</strong> 本文挑战了“GAN训练困难”的普遍看法，并以更系统的方法建立了现代GAN的基线。我们提出了一种新的正则化相对GAN损失，解决传统方法中常见的模式丢失和非收敛问题，并提供了数学分析以证明其局部收敛性。此损失替代了传统GAN中依赖的临时技巧，并允许使用现代架构替代过时的基础结构。以StyleGAN2为例，我们展示了简化与现代化的路线图，成功提出了新基线R3GAN。实验表明，虽然方法简单，但在FFHQ、ImageNet、CIFAR和Stacked MNIST数据集上，R3GAN的表现优于StyleGAN2，并与最先进的GAN和扩散模型相媲美。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.05441 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 09 Jan 2025 22:24:36 GMT</pubDate>
+<pubDate>Thu, 09 Jan 2025 22:24:36 GMT</pubDate>
+</item>
+
+<item>
 <title>Search-o1: 提升大型推理模型的知识检索与生成能力</title>
 <link>https://arxiv.org/abs/2501.05366</link>
 <guid>https://arxiv.org/abs/2501.05366</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>介绍Search-o1框架，提升大型推理模型在复杂推理中的表现。</p><br><br><p><strong>摘要：</strong> 大型推理模型（LRMs）如OpenAI-o1在长步骤推理方面展现了卓越的能力，但其延长的推理过程常常因知识不足而产生不确定性和潜在错误。为了解决这一问题，我们提出了Search-o1框架，该框架通过引入具有主动检索机制的生成模型和深入分析文档的Reason-in-Documents模块，增强了LRMs的性能。Search-o1的主动检索工作流程可以在模型遇到不确定知识点时动态获取外部知识。此外，由于检索文档通常内容冗长，我们设计了一个独立的Reason-in-Documents模块，以便在将信息注入推理链之前，深入分析检索到的信息，从而减少噪声并保持推理的连贯性。大量关于科学、数学和编程等复杂推理任务的实验，尤其六个开放域QA基准测试，均显示了Search-o1的强大性能。这一方法提高了LRMs在复杂推理任务中的可信性和适用性，为更可靠和多元化的智能系统铺平了道路。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.05366 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">介绍Search-o1框架，提升大型推理模型在复杂推理中的表现。</p><br /><br /><p><strong>摘要：</strong> 大型推理模型（LRMs）如OpenAI-o1在长步骤推理方面展现了卓越的能力，但其延长的推理过程常常因知识不足而产生不确定性和潜在错误。为了解决这一问题，我们提出了Search-o1框架，该框架通过引入具有主动检索机制的生成模型和深入分析文档的Reason-in-Documents模块，增强了LRMs的性能。Search-o1的主动检索工作流程可以在模型遇到不确定知识点时动态获取外部知识。此外，由于检索文档通常内容冗长，我们设计了一个独立的Reason-in-Documents模块，以便在将信息注入推理链之前，深入分析检索到的信息，从而减少噪声并保持推理的连贯性。大量关于科学、数学和编程等复杂推理任务的实验，尤其六个开放域QA基准测试，均显示了Search-o1的强大性能。这一方法提高了LRMs在复杂推理任务中的可信性和适用性，为更可靠和多元化的智能系统铺平了道路。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2501.05366" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Thu, 09 Jan 2025 21:24:30 GMT</pubDate>
-<pubDate>Thu, 09 Jan 2025 21:24:30 GMT</pubDate>
 </item>
-
 <item>
 <title>提升检索增强生成应用的通用性与效率</title>
 <link>https://arxiv.org/abs/2501.04652</link>
@@ -9011,15 +9056,6 @@ Large language models have demonstrated impressive performance when integrated w
 <div><p style="color: gray;">本文探讨大型语言模型如何通过轻量级投影器处理连续向量，实现向量-内联学习能力。</p><br /><br /><p><strong>摘要：</strong> 大型语言模型（LLMs）在文本数据的上下文学习（ICL）能力方面表现出色。本文探索了这些能力是否可以扩展到来自不同领域的连续向量，这些向量是通过黑箱预训练编码器获得的。我们通过轻量级投影器将输入数据与LLM的嵌入空间对齐，发现LLMs能够有效地处理和学习这些投影向量，称之为向量-内联学习（Vector-ICL）。尤其值得注意的是，使用通用语言建模目标对投影器进行预训练可以实现Vector-ICL，而任务特定的微调则进一步提升了性能。我们在各种任务和模态上进行了实验，包括文本重建、数值函数回归、文本分类、摘要生成、分子描述、时间序列分类、图分类和fMRI解码。结果表明，Vector-ICL在许多情况下超越了少量样本的ICL和领域特定模型或微调。我们还进行了分析和案例研究，表明LLMs在处理向量表示方面的潜力超越了传统的基于标记的范式。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.05629" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Fri, 11 Oct 2024 16:04:02 GMT</pubDate>
-</item>
-<item>
-<title>Zebra：一种新型生成自回归变换器用于解决时间依赖性参数偏微分方程</title>
-<link>https://arxiv.org/abs/2410.03437</link>
-<guid>https://arxiv.org/abs/2410.03437</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">Zebra 是一款不需梯度适应的新型变换器，能够灵活应对各种参数 PDE，展示卓越的性能。</p><br /><br /><p><strong>摘要：</strong> 解决时间依赖性参数偏微分方程（PDEs）是一项具有挑战性的任务，因为模型必须适应系数、强迫项和边界条件等参数的变化。数据驱动的神经网络求解器通常依赖于从PDE参数分布中采样的数据进行训练，以期在新的实例上实现泛化，或依靠基于梯度的适应和元学习，隐式编码来自观察的数据动态。然而，这通常会增加推理复杂性。受到大型语言模型（LLMs）在上下文学习能力的启发，我们提出了Zebra，一种新型生成自回归变换器，旨在解决参数PDEs，而无需在推理时进行梯度适应。Zebra通过在预训练和推理过程中利用上下文信息，能够动态适应新任务，条件依赖于包含上下文轨迹或先前状态的输入序列。这种方法使得Zebra能够灵活处理任意大小的上下文输入，并通过采样多个解轨迹支持不确定性量化。我们在多种挑战性的PDE场景中评估了Zebra，展示了其适应性、鲁棒性以及相较于现有方法的优越性能。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.03437" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 11 Oct 2024 15:11:34 GMT</pubDate>
 </item>
 </channel>
 </rss>
