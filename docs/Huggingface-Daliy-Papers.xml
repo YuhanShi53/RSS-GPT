@@ -5,15 +5,25 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>DriveBench：评估视觉语言模型在自动驾驶中的可靠性</title>
+<link>https://arxiv.org/abs/2501.04003</link>
+<guid>https://arxiv.org/abs/2501.04003</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>DriveBench是用于评估VLM在自动驾驶中可靠性的基准数据集。</p><br><br><p><strong>摘要：</strong> 随着视觉语言模型（VLMs）的进步，它们在自动驾驶中的应用引起关注，特别是在通过自然语言生成可解释的驾驶决策方面。然而，VLM是否能够提供可靠且基于视觉的解释尚未得到充分检验。为此，本文发布了DriveBench，这是一个旨在评估VLM可靠性的基准数据集，涵盖17种设置（包括干净、损坏和仅文本输入），包含19,200帧和20,498个问答对，涉及四个主流驾驶任务及12个流行的VLM。研究发现，VLM常常依赖一般知识或文本线索生成看似合理的回应，而非真实的视觉基础，尤其是在视觉输入受损或缺失的情况下。这种行为的隐蔽性源于数据集的不平衡和评估指标的不足，这在安全关键情境下如自动驾驶中构成重大风险。此外，VLM在多模态推理上表现不佳，对输入损坏高度敏感，从而导致性能不一致。为此，我们建议采用改进的评估指标，以强调稳健的视觉基础和多模态理解。同时，我们指出利用VLM对损坏的感知来提升其可靠性的潜力，提供了一条增强现实世界中自动驾驶决策系统可靠性和可解释性的路线图。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.04003 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 10 Jan 2025 01:47:59 GMT</pubDate>
+<pubDate>Fri, 10 Jan 2025 01:47:59 GMT</pubDate>
+</item>
+
+<item>
 <title>VAR模型的计算效率研究与低秩近似优化</title>
 <link>https://arxiv.org/abs/2501.04377</link>
 <guid>https://arxiv.org/abs/2501.04377</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文探讨了VAR模型的计算效率，并提出低秩近似优化方法。</p><br><br><p><strong>摘要：</strong> 本文分析了视觉自回归(VAR)模型在图像生成过程中的计算效率问题，特别是其最先进算法的O(n^4)时间复杂度的不足之处。我们从细粒度复杂性理论的视角出发，识别了VAR模型在达到次二次时间复杂度所需的条件，并建立了输入矩阵范数的关键阈值。超出该阈值后，根据强指数时间假说（SETH），我们证明了VAR模型不可能实现次四次时间算法。此外，本文还提出了利用低秩近似的方法来优化计算效率，证明了这些构造符合所导出的标准。本研究为VAR模型的计算效率提供了理论基础，并为图像生成的可扩展性与高效性奠定了基础。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.04377 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文探讨了VAR模型的计算效率，并提出低秩近似优化方法。</p><br /><br /><p><strong>摘要：</strong> 本文分析了视觉自回归(VAR)模型在图像生成过程中的计算效率问题，特别是其最先进算法的O(n^4)时间复杂度的不足之处。我们从细粒度复杂性理论的视角出发，识别了VAR模型在达到次二次时间复杂度所需的条件，并建立了输入矩阵范数的关键阈值。超出该阈值后，根据强指数时间假说（SETH），我们证明了VAR模型不可能实现次四次时间算法。此外，本文还提出了利用低秩近似的方法来优化计算效率，证明了这些构造符合所导出的标准。本研究为VAR模型的计算效率提供了理论基础，并为图像生成的可扩展性与高效性奠定了基础。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2501.04377" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 09 Jan 2025 23:55:24 GMT</pubDate>
 <pubDate>Thu, 09 Jan 2025 23:55:24 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +31,8 @@
 <link>https://arxiv.org/abs/2501.03489</link>
 <guid>https://arxiv.org/abs/2501.03489</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文探讨如何优化语言模型中的非线性以提高私有推理性能。</p><br><br><p><strong>摘要：</strong> 文章讨论了专有语言模型带来的隐私问题，强调了私有推理（PI）的重要性，即在加密数据上执行计算而不泄露用户信息。然而，PI的实际应用面临通信和延迟的挑战，尤其是来自非线性操作的负担。为此，研究提出了一个信息论框架，以界定非线性在解码器-only语言模型中的作用，并为PI需求优化变换器架构奠定基础。通过利用香农熵作为定量测量工具，发现非线性不仅确保训练稳定性，还是维护注意力头多样性的重要因素。具体而言，去除非线性会导致深层出现“熵崩溃”和早期层的“熵过载”问题。为了解决这些问题，作者提出了一种熵引导的注意机制及新颖的熵正则化技术，并探讨了面向PI的层归一化替代方案，旨在防止熵崩溃并稳定低非线性大模型的训练。研究将信息论与架构设计相结合，确立了熵动态在高效PI架构开发中的原则性指导作用。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.03489 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文探讨如何优化语言模型中的非线性以提高私有推理性能。</p><br /><br /><p><strong>摘要：</strong> 文章讨论了专有语言模型带来的隐私问题，强调了私有推理（PI）的重要性，即在加密数据上执行计算而不泄露用户信息。然而，PI的实际应用面临通信和延迟的挑战，尤其是来自非线性操作的负担。为此，研究提出了一个信息论框架，以界定非线性在解码器-only语言模型中的作用，并为PI需求优化变换器架构奠定基础。通过利用香农熵作为定量测量工具，发现非线性不仅确保训练稳定性，还是维护注意力头多样性的重要因素。具体而言，去除非线性会导致深层出现“熵崩溃”和早期层的“熵过载”问题。为了解决这些问题，作者提出了一种熵引导的注意机制及新颖的熵正则化技术，并探讨了面向PI的层归一化替代方案，旨在防止熵崩溃并稳定低非线性大模型的训练。研究将信息论与架构设计相结合，确立了熵动态在高效PI架构开发中的原则性指导作用。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2501.03489" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 09 Jan 2025 23:35:15 GMT</pubDate>
 <pubDate>Thu, 09 Jan 2025 23:35:15 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +40,8 @@
 <link>https://arxiv.org/abs/2501.05453</link>
 <guid>https://arxiv.org/abs/2501.05453</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文探讨了自回归视频模型Toto在多个任务中的预训练表现。</p><br><br><p><strong>摘要：</strong> 本文通过构建自回归视频模型Toto，研究视频的自回归预训练。我们将视频视为视觉符号序列，并训练变换器模型以自回归方式预测未来符号。在超过1万亿视觉符号的多样化视频和图像数据集上进行预训练后，探索了不同的架构、训练和推理设计选择。研究结果表明，尽管缺乏强烈的归纳偏倚，采用自回归预训练的模型在图像识别、视频分类、物体追踪和机器人等多项下游任务中表现竞争。最后，发现我们的视频模型的扩展与语言模型呈现出相似的扩展曲线，但速率不同。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.05453 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文探讨了自回归视频模型Toto在多个任务中的预训练表现。</p><br /><br /><p><strong>摘要：</strong> 本文通过构建自回归视频模型Toto，研究视频的自回归预训练。我们将视频视为视觉符号序列，并训练变换器模型以自回归方式预测未来符号。在超过1万亿视觉符号的多样化视频和图像数据集上进行预训练后，探索了不同的架构、训练和推理设计选择。研究结果表明，尽管缺乏强烈的归纳偏倚，采用自回归预训练的模型在图像识别、视频分类、物体追踪和机器人等多项下游任务中表现竞争。最后，发现我们的视频模型的扩展与语言模型呈现出相似的扩展曲线，但速率不同。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2501.05453" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 09 Jan 2025 23:07:34 GMT</pubDate>
 <pubDate>Thu, 09 Jan 2025 23:07:34 GMT</pubDate>
 </item>
 <item>
@@ -45,14 +49,10 @@
 <link>https://arxiv.org/abs/2501.05441</link>
 <guid>https://arxiv.org/abs/2501.05441</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文提出R3GAN，展示了现代GAN的简化训练方法与显著效果。</p><br><br><p><strong>摘要：</strong> 本文挑战了“GAN训练困难”的普遍看法，并以更系统的方法建立了现代GAN的基线。我们提出了一种新的正则化相对GAN损失，解决传统方法中常见的模式丢失和非收敛问题，并提供了数学分析以证明其局部收敛性。此损失替代了传统GAN中依赖的临时技巧，并允许使用现代架构替代过时的基础结构。以StyleGAN2为例，我们展示了简化与现代化的路线图，成功提出了新基线R3GAN。实验表明，虽然方法简单，但在FFHQ、ImageNet、CIFAR和Stacked MNIST数据集上，R3GAN的表现优于StyleGAN2，并与最先进的GAN和扩散模型相媲美。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.05441 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文提出R3GAN，展示了现代GAN的简化训练方法与显著效果。</p><br /><br /><p><strong>摘要：</strong> 本文挑战了“GAN训练困难”的普遍看法，并以更系统的方法建立了现代GAN的基线。我们提出了一种新的正则化相对GAN损失，解决传统方法中常见的模式丢失和非收敛问题，并提供了数学分析以证明其局部收敛性。此损失替代了传统GAN中依赖的临时技巧，并允许使用现代架构替代过时的基础结构。以StyleGAN2为例，我们展示了简化与现代化的路线图，成功提出了新基线R3GAN。实验表明，虽然方法简单，但在FFHQ、ImageNet、CIFAR和Stacked MNIST数据集上，R3GAN的表现优于StyleGAN2，并与最先进的GAN和扩散模型相媲美。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2501.05441" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Thu, 09 Jan 2025 22:24:36 GMT</pubDate>
-<pubDate>Thu, 09 Jan 2025 22:24:36 GMT</pubDate>
 </item>
-
 <item>
 <title>Search-o1: 提升大型推理模型的知识检索与生成能力</title>
 <link>https://arxiv.org/abs/2501.05366</link>
@@ -9020,42 +9020,6 @@ Large language models have demonstrated impressive performance when integrated w
 <div><p style="color: gray;">EvolveDirector框架利用公共API生成的数据训练文本到图像生成模型，显著降低数据需求，实现优越的生成能力。</p><br /><br /><p><strong>摘要：</strong> 随着生成模型的快速进步，文本到图像生成表现出惊人的内容创作能力。然而，大多数先进模型依赖于专有数据，并提供有限的开放API，限制了其在下游任务中的应用。为探讨利用公共资源训练一个可与先进模型媲美的文本到图像生成模型的可行性，我们提出了EvolveDirector框架。该框架通过公共API与先进模型交互，获得文本-图像数据对以训练基础模型。实验显示，尽管通过生成数据训练的模型能接近先进模型的生成能力，但需要大量的样本（1000万个或更多），这会带来高昂的时间和计算资源成本，尤其是API调用费用。为了解决这一问题，EvolveDirector利用预训练的大型视觉-语言模型（VLM）来指导基础模型的演化，持续评估基础模型，并通过判别、扩展、删除和变异等操作动态更新和优化训练数据集。实验结果表明，这种方法显著减少了所需的数据量。EvolveDirector还能够在面对多个高级模型时选择其生成的最佳样本，以学习强大且均衡的能力。最终训练出的模型Edgen显示出优于这些先进模型的效果。代码和模型权重可在https://github.com/showlab/EvolveDirector获取。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.07133" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Mon, 14 Oct 2024 00:17:02 GMT</pubDate>
-</item>
-<item>
-<title>利用加速偏好优化加快人类反馈下的强化学习</title>
-<link>https://arxiv.org/abs/2410.06293</link>
-<guid>https://arxiv.org/abs/2410.06293</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文提出了一种加速偏好优化框架，结合动量技术加速大语言模型的对齐。</p><br /><br /><p><strong>摘要：</strong> 强化学习中的人类反馈（RLHF）正在成为对齐大型语言模型（LLM）的重要工具。直接偏好优化（DPO）是一种流行的方法，它将RLHF视为一个政策优化问题，而不显式估计奖励函数。此方法克服了两步法所面临的稳定性和效率问题，并展示了可以通过动量技术加速RLHF的潜力。本文首次表明，迭代偏好优化方法可以视为一种近端点方法。基于此观察，提出了一种通用的加速偏好优化（APO）框架，统一了许多现有的偏好优化算法，并采用Nesterov动量技术加速LLM的对齐过程。理论上，APO能够实现比标准迭代偏好优化方法（包括DPO和自我博弈偏好优化（SPPO））更快的收敛速度。实证结果显示，APO在AlpacaEval 2.0基准上相较于DPO、迭代DPO及其他强基线表现出更强的优越性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.06293" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 11 Oct 2024 23:06:15 GMT</pubDate>
-</item>
-<item>
-<title>Data Advisor：提升数据生成质量的增强LLM方法</title>
-<link>https://arxiv.org/abs/2410.05269</link>
-<guid>https://arxiv.org/abs/2410.05269</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出Data Advisor，优化LLM生成数据，提高数据质量与覆盖率，特别针对安全对齐问题。</p><br /><br /><p><strong>摘要：</strong> 在大型语言模型 (LLM) 对齐中，数据是至关重要的元素。尽管近期研究探讨了使用LLM进行高效数据收集，但LLM生成的数据常常存在质量问题，如缺乏代表性、某些方面的缺失以及低质量数据点。为了解决这些问题，我们提出了Data Advisor，这是一种增强的LLM方法，用于生成符合特定特征的数据集。Data Advisor基于一组预定义原则，监控生成数据的状态，识别当前数据集的弱点，并据此建议下一轮数据生成的策略。Data Advisor可轻松集成到现有的数据生成方法中，以提升数据的质量和覆盖率。在对三种代表性LLM（即Mistral、Llama2和Falcon）进行的安全对齐实验中，Data Advisor显示了提升模型安全性与应对各种细粒度安全问题的有效性，同时不牺牲模型的实用性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.05269" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 11 Oct 2024 19:05:54 GMT</pubDate>
-</item>
-<item>
-<title>基于神经符号学习的LLM世界模型对齐与探索</title>
-<link>https://arxiv.org/abs/2410.07484</link>
-<guid>https://arxiv.org/abs/2410.07484</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文提出WALL-E代理，通过规则学习对LLM进行环境对齐，显著提升在Minecraft和ALFWorld等开放世界中的探索效率与成功率。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了大语言模型（LLMs）作为模型基础代理的世界模型的潜力，尽管存在LLMs的先验知识与特定环境动态之间的差距，我们的研究表明，这些差距可以通过对LLM与其部署环境进行对齐来弥补。这种“世界对齐”可以通过在LLMs上进行规则学习高效实现。由于LLMs具有丰富的先验知识，通常只需少量额外规则即可使LLM预测与实定环境动态一致。为此，本文提出了一种神经符号方法，通过比较代理探索的轨迹与世界模型预测，诱导、更新和修剪规则，从而以无梯度的方式学习这些规则。最终的世界模型由LLM及学习的规则组成。我们的具身LLM代理“WALL-E”基于模型预测控制（MPC）构建，通过基于精确世界模型优化前瞻性动作，MPC显著提高了探索和学习效率。与现有LLM代理相比，WALL-E的推理只需少量主规则，而不是将冗长的缓冲轨迹纳入LLM输入。在Minecraft和ALFWorld的开放世界挑战中，WALL-E相比现有方法有更高的成功率，且重规划时间和使用的tokens更少。在Minecraft中，WALL-E的成功率超过基线15-30%，重规划轮次减少8-20轮，使用的tokens仅为60-80%。在ALFWorld中，其成功率在仅6次迭代后飙升至95%的新纪录。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.07484" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 11 Oct 2024 17:14:49 GMT</pubDate>
-</item>
-<item>
-<title>向量-内联学习：扩展大型语言模型的能力</title>
-<link>https://arxiv.org/abs/2410.05629</link>
-<guid>https://arxiv.org/abs/2410.05629</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文探讨大型语言模型如何通过轻量级投影器处理连续向量，实现向量-内联学习能力。</p><br /><br /><p><strong>摘要：</strong> 大型语言模型（LLMs）在文本数据的上下文学习（ICL）能力方面表现出色。本文探索了这些能力是否可以扩展到来自不同领域的连续向量，这些向量是通过黑箱预训练编码器获得的。我们通过轻量级投影器将输入数据与LLM的嵌入空间对齐，发现LLMs能够有效地处理和学习这些投影向量，称之为向量-内联学习（Vector-ICL）。尤其值得注意的是，使用通用语言建模目标对投影器进行预训练可以实现Vector-ICL，而任务特定的微调则进一步提升了性能。我们在各种任务和模态上进行了实验，包括文本重建、数值函数回归、文本分类、摘要生成、分子描述、时间序列分类、图分类和fMRI解码。结果表明，Vector-ICL在许多情况下超越了少量样本的ICL和领域特定模型或微调。我们还进行了分析和案例研究，表明LLMs在处理向量表示方面的潜力超越了传统的基于标记的范式。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.05629" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 11 Oct 2024 16:04:02 GMT</pubDate>
 </item>
 </channel>
 </rss>
