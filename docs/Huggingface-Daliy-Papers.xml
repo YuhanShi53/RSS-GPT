@@ -4,19 +4,16 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+
 <item>
 <title>基于Mimic Score的数据选择框架提升模型训练效果</title>
 <link>https://arxiv.org/abs/2501.06708</link>
 <guid>https://arxiv.org/abs/2501.06708</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文提出Mimic Score，通过数据质量评估优化模型训练效果。</p><br><br><p><strong>摘要：</strong> 随着基础模型依赖于大规模网络爬取数据集，这些数据集常常存在噪声和偏差的问题。现有的数据选择技术通常依赖人工启发式方法、下游评估数据集或专业评分模型，但这些方法可能忽视样本在训练过程中的实用性。为此，本文提出一种新的方法——Mimic Score，这是一种数据质量指标，利用预训练参考模型评估数据样本对新模型训练的有效性。Mimic Score通过新模型参数的梯度与权重空间中指向参考模型的向量之间的对齐程度进行评估，偏离该方向的样本被认为价值低，可以被过滤掉。本文进一步开发了Grad-Mimic数据选择框架，自动识别和优先考虑有用样本，创建有效的过滤器。实验证明，使用Mimic Score引导模型训练能在六个图像数据集上实现一致的性能提升，并改善CLIP模型的表现，且Mimic Score及其相关过滤器优于现有的过滤方法，提供了数据集质量的准确估计。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.06708 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文提出Mimic Score，通过数据质量评估优化模型训练效果。</p><br /><br /><p><strong>摘要：</strong> 随着基础模型依赖于大规模网络爬取数据集，这些数据集常常存在噪声和偏差的问题。现有的数据选择技术通常依赖人工启发式方法、下游评估数据集或专业评分模型，但这些方法可能忽视样本在训练过程中的实用性。为此，本文提出一种新的方法——Mimic Score，这是一种数据质量指标，利用预训练参考模型评估数据样本对新模型训练的有效性。Mimic Score通过新模型参数的梯度与权重空间中指向参考模型的向量之间的对齐程度进行评估，偏离该方向的样本被认为价值低，可以被过滤掉。本文进一步开发了Grad-Mimic数据选择框架，自动识别和优先考虑有用样本，创建有效的过滤器。实验证明，使用Mimic Score引导模型训练能在六个图像数据集上实现一致的性能提升，并改善CLIP模型的表现，且Mimic Score及其相关过滤器优于现有的过滤方法，提供了数据集质量的准确估计。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2501.06708" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 14 Jan 2025 09:41:28 GMT</pubDate>
-<pubDate>Tue, 14 Jan 2025 09:41:28 GMT</pubDate>
 </item>
-
 <item>
 <title>针对大语言模型训练的梯度尖峰问题及其优化策略</title>
 <link>https://arxiv.org/abs/2501.06842</link>
@@ -9011,15 +9008,6 @@ While scaling Transformer-based large language models (LLMs) has demonstrated pr
 <div><p style="color: gray;">本文介绍了TemporalBench，一个新的基准，用于评估视频的细粒度时间理解能力。</p><br /><br /><p><strong>摘要：</strong> 理解细粒度时间动态对于多模态视频的理解和生成至关重要。由于缺乏细粒度时间标注，现有视频基准多类似静态图像基准，无法有效评估模型的时间理解能力。为此，本文介绍了TemporalBench，一个专为评估视频的细粒度时间理解而设计的新基准。TemporalBench包含约10,000对视频问答对，源于约2,000个高质量的人类标注，这些标注详细描述了视频片段中的时间动态。该基准提供了一个独特的测试平台，以评估各种时间理解和推理能力，如动作频率、运动幅度、事件顺序等，支持视频问答、视频字幕生成、短视频和长视频理解等多项任务，以及多种模型，如多模态视频嵌入模型和文本生成模型。结果显示，诸如GPT-4o等最先进模型在TemporalBench上的问答准确率仅为38.5%，表明人类与AI在时间理解上存在显著差距（约30%）。此外，我们注意到多选QA的一个关键缺陷，即大型语言模型（LLMs）能够检测负面描述中的微妙变化，并将中心化描述作为预测线索，因此我们提出了多个二元准确度（MBA）来纠正这种偏差。我们希望TemporalBench能够促进研究，提高模型的时间推理能力。数据集和评估代码将公开发布。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.10818" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 15 Oct 2024 02:16:22 GMT</pubDate>
-</item>
-<item>
-<title>自主操作的改进型3D扩散政策（iDP3）在多样化环境下的应用</title>
-<link>https://arxiv.org/abs/2410.10803</link>
-<guid>https://arxiv.org/abs/2410.10803</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文介绍了一种改进型3D扩散政策（iDP3），使人形机器人在多样环境中自主执行技能。</p><br /><br /><p><strong>摘要：</strong> 自主操作的人形机器人一直是机器人研究者追求的目标。然而，由于获取可泛化技能的难度，自主操作的人形机器人往往只能在特定的场景中进行有效操作。近年来，3D视动政策（如3D Diffusion Policy, DP3）的进展为拓展这些能力到多样化环境提供了希望。然而，3D视动政策通常依赖于相机标定和点云分割，这对移动机器人（如人形机器人）的应用造成了挑战。为了解决这些问题，本文提出了一种新的3D视动政策——改进型3D扩散政策（iDP3），它利用自我中心的3D视觉表示，消除了上述限制。我们展示了iDP3能够使全尺寸人形机器人在多样的真实场景中自主执行技能，并使用仅在实验室收集的数据进行训练。相关视频可以在: https://humanoid-manipulation.github.io 获取。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.10803" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 15 Oct 2024 02:14:57 GMT</pubDate>
 </item>
 </channel>
 </rss>
