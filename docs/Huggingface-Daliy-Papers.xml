@@ -4,19 +4,16 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+
 <item>
 <title>GameFactory：游戏视频生成中的场景泛化框架</title>
 <link>https://arxiv.org/abs/2501.08325</link>
 <guid>https://arxiv.org/abs/2501.08325</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>GameFactory旨在通过场景泛化推动游戏视频生成的进步。</p><br><br><p><strong>摘要：</strong> 本文介绍了GameFactory，一个专注于在游戏视频生成中探索场景泛化的框架。现有的视频游戏生成方法未能有效解决场景泛化的关键问题，限制了其在现有固定风格和场景游戏中的适用性。为此，GameFactory利用在开放域视频数据上训练的预训练视频扩散模型，并提出了一种多阶段训练策略，旨在将游戏风格学习与动作控制解耦合，从而在保持开放域泛化的同时实现动作可控性。以Minecraft作为数据源，研究团队发布了高质量、多样化的游戏动作注释视频数据集GF-Minecraft。此外，框架的扩展使得自回归可控动作游戏视频生成成为可能，允许无缝创建无限长度的互动游戏视频。实验结果表明，GameFactory能够有效生成开放域、多样且可控的游戏视频，标志着AI驱动游戏生成的重要进步。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.08325 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">GameFactory旨在通过场景泛化推动游戏视频生成的进步。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了GameFactory，一个专注于在游戏视频生成中探索场景泛化的框架。现有的视频游戏生成方法未能有效解决场景泛化的关键问题，限制了其在现有固定风格和场景游戏中的适用性。为此，GameFactory利用在开放域视频数据上训练的预训练视频扩散模型，并提出了一种多阶段训练策略，旨在将游戏风格学习与动作控制解耦合，从而在保持开放域泛化的同时实现动作可控性。以Minecraft作为数据源，研究团队发布了高质量、多样化的游戏动作注释视频数据集GF-Minecraft。此外，框架的扩展使得自回归可控动作游戏视频生成成为可能，允许无缝创建无限长度的互动游戏视频。实验结果表明，GameFactory能够有效生成开放域、多样且可控的游戏视频，标志着AI驱动游戏生成的重要进步。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2501.08325" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Mon, 20 Jan 2025 22:21:50 GMT</pubDate>
-<pubDate>Mon, 20 Jan 2025 22:21:50 GMT</pubDate>
 </item>
-
 <item>
 <title>多语言医疗知识大语言模型的挑战与发展</title>
 <link>https://arxiv.org/abs/2501.09825</link>
@@ -9011,15 +9008,6 @@ Generative Error Correction (GEC) has emerged as a powerful post-processing meth
 Recently, quantization has been widely used for the compression and acceleration of large language models~(LLMs). Due to the outliers in LLMs, it is crucial to flatten weights and activations to minimize quantization error with the equally spaced quantization points. Prior research explores various pre-quantization transformations to suppress outliers, such as per-channel scaling and Hadamard transformation. However, we observe that these transformed weights and activations can still remain steep and outspread. In this paper, we propose FlatQuant (Fast and Learnable Affine Transformation), a new post-training quantization approach to enhance flatness of weights and activations. Our approach identifies optimal affine transformations tailored to each linear layer, calibrated in hours via a lightweight objective. To reduce runtime overhead, we apply Kronecker decomposition to the transformation matrices, and fuse all operations in FlatQuant into a single kernel. Extensive experiments show that FlatQuant sets up a new state-of-the-art quantization benchmark. For instance, it achieves less than 1% accuracy drop for W4A4 quantization on the LLaMA-3-70B model, surpassing SpinQuant by 7.5%. For inference latency, FlatQuant reduces the slowdown induced by pre-quantization transformation from 0.26x of QuaRot to merely 0.07x, bringing up to 2.3x speedup for prefill and 1.7x speedup for decoding, respectively. Code is available at: https://github.com/ruikangliu/FlatQuant.
 ]]></content:encoded>
 <pubDate>Fri, 18 Oct 2024 00:05:54 GMT</pubDate>
-</item>
-<item>
-<title>From Commands to Prompts: LLM-based Semantic File System for AIOS</title>
-<link>https://arxiv.org/abs/2410.11843</link>
-<guid>https://arxiv.org/abs/2410.11843</guid>
-<content:encoded><![CDATA[
-Large language models (LLMs) have demonstrated significant potential in the development of intelligent applications and systems such as LLM-based agents and agent operating systems (AIOS). However, when these applications and systems interact with the underlying file system, the file system still remains the traditional paradigm: reliant on manual navigation through precise commands. This paradigm poses a bottleneck to the usability of these systems as users are required to navigate complex folder hierarchies and remember cryptic file names. To address this limitation, we propose an LLM-based semantic file system ( LSFS ) for prompt-driven file management. Unlike conventional approaches, LSFS incorporates LLMs to enable users or agents to interact with files through natural language prompts, facilitating semantic file management. At the macro-level, we develop a comprehensive API set to achieve semantic file management functionalities, such as semantic file retrieval, file update monitoring and summarization, and semantic file rollback). At the micro-level, we store files by constructing semantic indexes for them, design and implement syscalls of different semantic operations (e.g., CRUD, group by, join) powered by vector database. Our experiments show that LSFS offers significant improvements over traditional file systems in terms of user convenience, the diversity of supported functions, and the accuracy and efficiency of file operations. Additionally, with the integration of LLM, our system enables more intelligent file management tasks, such as content summarization and version comparison, further enhancing its capabilities.
-]]></content:encoded>
-<pubDate>Thu, 17 Oct 2024 23:07:33 GMT</pubDate>
 </item>
 </channel>
 </rss>
