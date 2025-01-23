@@ -4,19 +4,16 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+
 <item>
 <title>Pairwise RM: Perform Best-of-N Sampling with Knockout Tournament</title>
 <link>https://arxiv.org/abs/2501.13007</link>
 <guid>https://arxiv.org/abs/2501.13007</guid>
 <content:encoded><![CDATA[
-
-  Best-of-N (BoN) sampling, a common strategy for test-time scaling of Large Language Models (LLMs), relies on reward models to select the best candidate solution from multiple generations. However, traditional reward models often assign arbitrary and inconsistent scores, limiting their effectiveness. To address this, we propose a Pairwise Reward Model (Pairwise RM) combined with a knockout tournament for BoN sampling. Instead of assigning absolute scores, given one math problem, Pairwise RM evaluates two candidate solutions' correctness simultaneously. This approach eliminates the need for arbitrary scoring and enables cross-validation of solutions through parallel comparison. In the knockout tournament, Pairwise RM conducts pairwise comparisons between candidate solutions and eliminates the incorrect ones iteratively. We construct \ourdataset, a large-scale dataset of 443K pairwise comparisons derived from NumiaMath and annotated using gemini-1.5-flash, and train the Pairwise RM via supervised fine-tuning. Experiments on MATH-500 and the Olympiad Bench demonstrate significant improvements over traditional discriminative reward models. And a 40\% to 60\% relative improvement is achieved on the top 50\% challenging problems.
-
+Best-of-N (BoN) sampling, a common strategy for test-time scaling of Large Language Models (LLMs), relies on reward models to select the best candidate solution from multiple generations. However, traditional reward models often assign arbitrary and inconsistent scores, limiting their effectiveness. To address this, we propose a Pairwise Reward Model (Pairwise RM) combined with a knockout tournament for BoN sampling. Instead of assigning absolute scores, given one math problem, Pairwise RM evaluates two candidate solutions' correctness simultaneously. This approach eliminates the need for arbitrary scoring and enables cross-validation of solutions through parallel comparison. In the knockout tournament, Pairwise RM conducts pairwise comparisons between candidate solutions and eliminates the incorrect ones iteratively. We construct \ourdataset, a large-scale dataset of 443K pairwise comparisons derived from NumiaMath and annotated using gemini-1.5-flash, and train the Pairwise RM via supervised fine-tuning. Experiments on MATH-500 and the Olympiad Bench demonstrate significant improvements over traditional discriminative reward models. And a 40\% to 60\% relative improvement is achieved on the top 50\% challenging problems.
 ]]></content:encoded>
 <pubDate>Thu, 23 Jan 2025 01:07:44 GMT</pubDate>
-<pubDate>Thu, 23 Jan 2025 01:07:44 GMT</pubDate>
 </item>
-
 <item>
 <title>测试时间偏好优化框架：实时调整大型语言模型输出</title>
 <link>https://arxiv.org/abs/2501.12895</link>
@@ -9011,15 +9008,6 @@ Reward models are critical in techniques like Reinforcement Learning from Human 
 <div><p style="color: gray;">提出JudgeBench评估框架，以客观方式评估LLM基础评判者的能力。</p><br /><br /><p><strong>摘要：</strong> 随着LLM（大语言模型）基础评判者在模型评估中的应用日益广泛，其自身的可靠性问题却鲜有关注。现有评估基准多集中在评判与人类偏好的对齐，常常忽视了更具挑战性的任务中众包人类偏好带来的局限。为此，本文提出了一种新颖的评估框架，旨在客观地评估LLM基础评判者。基于这一框架，我们推出了JudgeBench，作为一项新基准，用于在知识、推理、数学和编码等领域评估LLM基础评判者的能力。JudgeBench通过将现有的困难数据集转换为带有客观正确性偏好的挑战响应对，利用一套新颖的管道进行构建。我们的综合评估结果显示，JudgeBench相较于以往基准提供了更具挑战性的任务，许多强大的模型（如GPT-4o）表现仅略高于随机猜测。总的来说，JudgeBench为日益先进的LLM基础评判者的评估提供了一套可靠平台。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.12784" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Fri, 18 Oct 2024 17:25:57 GMT</pubDate>
-</item>
-<item>
-<title>WorldCuisines：多元文化的视觉问答基准</title>
-<link>https://arxiv.org/abs/2410.12705</link>
-<guid>https://arxiv.org/abs/2410.12705</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">WorldCuisines是一个针对多语言和多文化的视觉问答基准，包含超过100万个饮食相关的数据点。</p><br /><br /><p><strong>摘要：</strong> Vision Language Models (VLMs) 在处理文化特定知识时面临挑战，尤其是对于非英语语言和缺失代表性的文化背景。为此，我们推出了WorldCuisines，这是一个针对多语言和多文化的视觉理解基准。该基准包含一个视觉问答（VQA）数据集，涵盖30种语言和方言，跨越9个语言家族，并拥有超过100万的数据点，是迄今为止最大规模的多文化VQA基准。数据集任务包括识别菜品名称及其来源。我们提供了两种规模的评估数据集（12k和60k实例）以及一个训练数据集（100万实例）。我们的研究表明，虽然VLMs在正确的地理上下文中表现较好，但在敌对上下文中和预测特定地方菜系及语言时却存在困难。为了支持未来的研究，我们还发布了一个包含注释食品条目和图像的知识库，配合VQA数据一起提供。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.12705" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 18 Oct 2024 14:10:54 GMT</pubDate>
 </item>
 </channel>
 </rss>
