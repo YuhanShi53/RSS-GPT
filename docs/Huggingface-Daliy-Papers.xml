@@ -5,15 +5,25 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>Pairwise RM: Perform Best-of-N Sampling with Knockout Tournament</title>
+<link>https://arxiv.org/abs/2501.13007</link>
+<guid>https://arxiv.org/abs/2501.13007</guid>
+<content:encoded><![CDATA[
+
+  Best-of-N (BoN) sampling, a common strategy for test-time scaling of Large Language Models (LLMs), relies on reward models to select the best candidate solution from multiple generations. However, traditional reward models often assign arbitrary and inconsistent scores, limiting their effectiveness. To address this, we propose a Pairwise Reward Model (Pairwise RM) combined with a knockout tournament for BoN sampling. Instead of assigning absolute scores, given one math problem, Pairwise RM evaluates two candidate solutions' correctness simultaneously. This approach eliminates the need for arbitrary scoring and enables cross-validation of solutions through parallel comparison. In the knockout tournament, Pairwise RM conducts pairwise comparisons between candidate solutions and eliminates the incorrect ones iteratively. We construct \ourdataset, a large-scale dataset of 443K pairwise comparisons derived from NumiaMath and annotated using gemini-1.5-flash, and train the Pairwise RM via supervised fine-tuning. Experiments on MATH-500 and the Olympiad Bench demonstrate significant improvements over traditional discriminative reward models. And a 40\% to 60\% relative improvement is achieved on the top 50\% challenging problems.
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jan 2025 01:07:44 GMT</pubDate>
+<pubDate>Thu, 23 Jan 2025 01:07:44 GMT</pubDate>
+</item>
+
+<item>
 <title>测试时间偏好优化框架：实时调整大型语言模型输出</title>
 <link>https://arxiv.org/abs/2501.12895</link>
 <guid>https://arxiv.org/abs/2501.12895</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出了一种新框架，通过测试时间偏好优化提升LLM与人类偏好的对齐。</p><br><br><p><strong>摘要：</strong> 本文介绍了测试时间偏好优化（TPO）框架，该框架旨在在推理过程中使大型语言模型（LLM）的输出与人类偏好保持一致，而无需重新训练模型参数。TPO通过将奖励信号转化为文本批评，利用这些文本奖励逐步改进模型的响应。对各种基准的评估显示，TPO能够显著提升人类偏好的对齐度，且在经过少量的TPO步骤后，初始未对齐的Llama-3.1-70B-SFT模型可超越已对齐的Llama-3.1-70B-Instruct模型。此外，TPO在推理中对搜索宽度和深度的扩展具有效率。通过案例研究，文章展示了TPO如何利用LLM内在的解读和响应奖励信号的能力。研究结果确立了TPO作为一种实用且轻量的解决方案，实现实时偏好优化。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.12895 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出了一种新框架，通过测试时间偏好优化提升LLM与人类偏好的对齐。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了测试时间偏好优化（TPO）框架，该框架旨在在推理过程中使大型语言模型（LLM）的输出与人类偏好保持一致，而无需重新训练模型参数。TPO通过将奖励信号转化为文本批评，利用这些文本奖励逐步改进模型的响应。对各种基准的评估显示，TPO能够显著提升人类偏好的对齐度，且在经过少量的TPO步骤后，初始未对齐的Llama-3.1-70B-SFT模型可超越已对齐的Llama-3.1-70B-Instruct模型。此外，TPO在推理中对搜索宽度和深度的扩展具有效率。通过案例研究，文章展示了TPO如何利用LLM内在的解读和响应奖励信号的能力。研究结果确立了TPO作为一种实用且轻量的解决方案，实现实时偏好优化。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2501.12895" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 23 Jan 2025 00:01:12 GMT</pubDate>
 <pubDate>Thu, 23 Jan 2025 00:01:12 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +31,8 @@
 <link>https://arxiv.org/abs/2501.13106</link>
 <guid>https://arxiv.org/abs/2501.13106</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>VideoLLaMA3是一个以视觉为中心的高级多模态模型，提升图像和视频理解能力。</p><br><br><p><strong>摘要：</strong> 本文提出了VideoLLaMA3，一种更先进的多模态基础模型，专注于图像与视频理解。该模型的设计理念是以视觉为中心，包括视觉中心化的训练范式和框架设计。核心思想是高质量的图像-文本数据对图像和视频理解至关重要，因此模型在训练过程中主要利用大规模的高质量图像-文本数据，而不是海量的视频-文本数据。VideoLLaMA3的训练分为四个阶段：视觉中心化对齐阶段、视觉语言预训练阶段、多任务微调阶段以及视频中心化微调阶段。此外，为了更好地捕捉图像中的细节，预训练的视觉编码器被调整以适应不同大小的图像。得益于这些设计，VideoLLaMA3在图像和视频理解的基准测试中表现出色。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.13106 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">VideoLLaMA3是一个以视觉为中心的高级多模态模型，提升图像和视频理解能力。</p><br /><br /><p><strong>摘要：</strong> 本文提出了VideoLLaMA3，一种更先进的多模态基础模型，专注于图像与视频理解。该模型的设计理念是以视觉为中心，包括视觉中心化的训练范式和框架设计。核心思想是高质量的图像-文本数据对图像和视频理解至关重要，因此模型在训练过程中主要利用大规模的高质量图像-文本数据，而不是海量的视频-文本数据。VideoLLaMA3的训练分为四个阶段：视觉中心化对齐阶段、视觉语言预训练阶段、多任务微调阶段以及视频中心化微调阶段。此外，为了更好地捕捉图像中的细节，预训练的视觉编码器被调整以适应不同大小的图像。得益于这些设计，VideoLLaMA3在图像和视频理解的基准测试中表现出色。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2501.13106" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 23 Jan 2025 00:00:51 GMT</pubDate>
 <pubDate>Thu, 23 Jan 2025 00:00:51 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +40,8 @@
 <link>https://arxiv.org/abs/2501.11067</link>
 <guid>https://arxiv.org/abs/2501.11067</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>IntellAgent是一个评估对话式人工智能的创新框架，旨在解决传统方法的局限性。</p><br><br><p><strong>摘要：</strong> IntellAgent是一个开源的多代理框架，专为全面评估对话式人工智能系统而设计。它通过结合基于策略的图模型、真实事件生成和用户-代理互动模拟，自动创建多样化的合成基准。此方法提供了细致的诊断，克服了静态和人工整理基准的局限，同时捕捉代理能力与政策约束的微妙互动。IntellAgent采用图模型来表示政策交互的关系和复杂性，能够识别关键性能差距，提供优化的可操作见解。其模块化设计支持新领域、政策与API的无缝集成，促进了再现性和社区合作。我们的研究表明，IntellAgent有效推动了对话式人工智能的发展，解决了研究和应用之间的挑战。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.11067 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">IntellAgent是一个评估对话式人工智能的创新框架，旨在解决传统方法的局限性。</p><br /><br /><p><strong>摘要：</strong> IntellAgent是一个开源的多代理框架，专为全面评估对话式人工智能系统而设计。它通过结合基于策略的图模型、真实事件生成和用户-代理互动模拟，自动创建多样化的合成基准。此方法提供了细致的诊断，克服了静态和人工整理基准的局限，同时捕捉代理能力与政策约束的微妙互动。IntellAgent采用图模型来表示政策交互的关系和复杂性，能够识别关键性能差距，提供优化的可操作见解。其模块化设计支持新领域、政策与API的无缝集成，促进了再现性和社区合作。我们的研究表明，IntellAgent有效推动了对话式人工智能的发展，解决了研究和应用之间的挑战。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2501.11067" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 22 Jan 2025 23:28:09 GMT</pubDate>
 <pubDate>Wed, 22 Jan 2025 23:28:09 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +49,8 @@
 <link>https://arxiv.org/abs/2501.13074</link>
 <guid>https://arxiv.org/abs/2501.13074</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出自主专家选择（AoE）解决传统MoE模型的专家选取问题。</p><br><br><p><strong>摘要：</strong> 本文提出了自主专家选择（AoE），一种新的混合专家（MoE）范式，旨在解决传统MoE模型中路由器决策与专家执行分离带来的问题。该研究表明，这种分离导致次优的专家选择和学习效果下降。AoE通过让专家自主选择处理输入，提升专家选取的有效性。每个专家根据自身的内部激活程度预计算输入的激活，按照激活规范进行排名，只有排名前列的专家会参与前向传播，其余则中止。通过低秩权重因式分解减轻预计算激活的开销，AoE确保了更优秀的专家选择和学习效果。实验中，AoE在700M到4B参数的语言模型预训练中表现超越传统MoE模型，展现了其在效率上的优势。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.13074 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出自主专家选择（AoE）解决传统MoE模型的专家选取问题。</p><br /><br /><p><strong>摘要：</strong> 本文提出了自主专家选择（AoE），一种新的混合专家（MoE）范式，旨在解决传统MoE模型中路由器决策与专家执行分离带来的问题。该研究表明，这种分离导致次优的专家选择和学习效果下降。AoE通过让专家自主选择处理输入，提升专家选取的有效性。每个专家根据自身的内部激活程度预计算输入的激活，按照激活规范进行排名，只有排名前列的专家会参与前向传播，其余则中止。通过低秩权重因式分解减轻预计算激活的开销，AoE确保了更优秀的专家选择和学习效果。实验中，AoE在700M到4B参数的语言模型预训练中表现超越传统MoE模型，展现了其在效率上的优势。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2501.13074" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 22 Jan 2025 22:53:01 GMT</pubDate>
 <pubDate>Wed, 22 Jan 2025 22:53:01 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +58,8 @@
 <link>https://arxiv.org/abs/2501.12948</link>
 <guid>https://arxiv.org/abs/2501.12948</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>介绍了DeepSeek-R1-Zero和DeepSeek-R1模型及其推理能力。</p><br><br><p><strong>摘要：</strong> 本文介绍了首代推理模型DeepSeek-R1-Zero和DeepSeek-R1。DeepSeek-R1-Zero通过大规模强化学习（RL）训练，无需监督微调（SFT）作为初步步骤，展现出卓越的推理能力。然而，该模型在可读性和语言混合方面存在挑战。为了克服这些问题并进一步提高推理性能，DeepSeek-R1采用了多阶段训练和冷启动数据，在进行强化学习前进行处理。DeepSeek-R1在推理任务上表现出与OpenAI-o1-1217相当的性能。为了支持研究社区，我们还开源了DeepSeek-R1-Zero、DeepSeek-R1以及六个基于Qwen和Llama的稠密模型（1.5B, 7B, 8B, 14B, 32B, 70B），以便更广泛的使用及研究。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.12948 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">介绍了DeepSeek-R1-Zero和DeepSeek-R1模型及其推理能力。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了首代推理模型DeepSeek-R1-Zero和DeepSeek-R1。DeepSeek-R1-Zero通过大规模强化学习（RL）训练，无需监督微调（SFT）作为初步步骤，展现出卓越的推理能力。然而，该模型在可读性和语言混合方面存在挑战。为了克服这些问题并进一步提高推理性能，DeepSeek-R1采用了多阶段训练和冷启动数据，在进行强化学习前进行处理。DeepSeek-R1在推理任务上表现出与OpenAI-o1-1217相当的性能。为了支持研究社区，我们还开源了DeepSeek-R1-Zero、DeepSeek-R1以及六个基于Qwen和Llama的稠密模型（1.5B, 7B, 8B, 14B, 32B, 70B），以便更广泛的使用及研究。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2501.12948" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 22 Jan 2025 22:27:48 GMT</pubDate>
 <pubDate>Wed, 22 Jan 2025 22:27:48 GMT</pubDate>
 </item>
 <item>
@@ -69,11 +67,8 @@
 <link>https://arxiv.org/abs/2501.12909</link>
 <guid>https://arxiv.org/abs/2501.12909</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>FilmAgent通过多代理合作优化虚拟电影制作流程，实现自动化。</p><br><br><p><strong>摘要：</strong> 本文介绍了FilmAgent，一个基于大型语言模型的多代理协作框架，旨在实现端到端的电影自动化制作。FilmAgent模拟了多个剧组角色，包括导演、编剧、演员和摄影师，覆盖电影制作的关键阶段，包括理念开发、剧本编写和镜头摄影。团队中的代理通过迭代反馈和修订合作，确保中间剧本的验证，从而降低幻觉的发生率。在对15个创意和4个关键方面的生成视频进行评估时，人类评价显示FilmAgent在各个方面均优于所有基线，平均得分为3.98，展示了多代理合作在电影制作中的可行性。进一步分析表明，尽管FilmAgent使用的是较少先进的GPT-4o模型，但其性能仍超越了单一代理o1，显示出协调良好的多代理系统的优势。最后，本文讨论了OpenAI的文本到视频模型Sora与FilmAgent在电影制作中的互补优缺点。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.12909 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">FilmAgent通过多代理合作优化虚拟电影制作流程，实现自动化。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了FilmAgent，一个基于大型语言模型的多代理协作框架，旨在实现端到端的电影自动化制作。FilmAgent模拟了多个剧组角色，包括导演、编剧、演员和摄影师，覆盖电影制作的关键阶段，包括理念开发、剧本编写和镜头摄影。团队中的代理通过迭代反馈和修订合作，确保中间剧本的验证，从而降低幻觉的发生率。在对15个创意和4个关键方面的生成视频进行评估时，人类评价显示FilmAgent在各个方面均优于所有基线，平均得分为3.98，展示了多代理合作在电影制作中的可行性。进一步分析表明，尽管FilmAgent使用的是较少先进的GPT-4o模型，但其性能仍超越了单一代理o1，显示出协调良好的多代理系统的优势。最后，本文讨论了OpenAI的文本到视频模型Sora与FilmAgent在电影制作中的互补优缺点。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2501.12909" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 22 Jan 2025 22:25:11 GMT</pubDate>
 <pubDate>Wed, 22 Jan 2025 22:25:11 GMT</pubDate>
 </item>
 <item>
@@ -81,11 +76,8 @@
 <link>https://arxiv.org/abs/2501.12599</link>
 <guid>https://arxiv.org/abs/2501.12599</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>Kimi k1.5通过强化学习显著提升多模态大语言模型的推理性能。</p><br><br><p><strong>摘要：</strong> 本文介绍了Kimi k1.5的训练实践，这是我们最新的多模态大语言模型，使用强化学习 (RL) 进行训练。我们详细阐述了RL训练技术、多模态数据配方和基础设施优化。我们的方法侧重于长期上下文扩展和改进的策略优化，建立了一个简单有效的RL框架，而不依赖于更复杂的技术如Monte Carlo树搜索和价值函数。我们的系统在多个基准和模态上实现了最先进的推理性能，示例包括在AIME上获得77.5，MATH 500上获得96.2，以及在Codeforces上达到94百分位，MathVista上74.9，匹配OpenAI的o1。同时，我们还提出了有效的long2short方法，利用long-CoT技术来提升短-CoT模型的表现，取得了AIME上60.8，MATH500上94.6，LiveCodeBench上47.3的短-CoT推理结果，超越了现有的短-CoT模型如GPT-4o和Claude Sonnet 3.5，提升幅度高达550%。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.12599 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">Kimi k1.5通过强化学习显著提升多模态大语言模型的推理性能。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了Kimi k1.5的训练实践，这是我们最新的多模态大语言模型，使用强化学习 (RL) 进行训练。我们详细阐述了RL训练技术、多模态数据配方和基础设施优化。我们的方法侧重于长期上下文扩展和改进的策略优化，建立了一个简单有效的RL框架，而不依赖于更复杂的技术如Monte Carlo树搜索和价值函数。我们的系统在多个基准和模态上实现了最先进的推理性能，示例包括在AIME上获得77.5，MATH 500上获得96.2，以及在Codeforces上达到94百分位，MathVista上74.9，匹配OpenAI的o1。同时，我们还提出了有效的long2short方法，利用long-CoT技术来提升短-CoT模型的表现，取得了AIME上60.8，MATH500上94.6，LiveCodeBench上47.3的短-CoT推理结果，超越了现有的短-CoT模型如GPT-4o和Claude Sonnet 3.5，提升幅度高达550%。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2501.12599" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 22 Jan 2025 22:23:27 GMT</pubDate>
 <pubDate>Wed, 22 Jan 2025 22:23:27 GMT</pubDate>
 </item>
 <item>
@@ -93,14 +85,10 @@
 <link>https://arxiv.org/abs/2501.12570</link>
 <guid>https://arxiv.org/abs/2501.12570</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出O1-Pruner，以减少长思考推理模型的推理开销。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种新的方法O1-Pruner，旨在降低长思考推理模型在处理复杂问题时的推理时间，同时保持模型的准确性。尽管长思考推理提高了模型的解题能力，但导致推理时间显著增加。在此次研究中，通过实验发现，长思考推理模型在根据问题难度和推理冗余分配令牌预算方面存在困难。为了解决这一问题，O1-Pruner采用长度和谐微调技术，首先通过预采样估计模型的基线性能，然后使用类强化学习的微调方法，以鼓励模型在准确性约束下生成更短的推理过程。实验结果表明，O1-Pruner不仅显著减少了推理开销，还提高了准确性，提供了一种新颖且有效的解决方案。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.12570 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出O1-Pruner，以减少长思考推理模型的推理开销。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种新的方法O1-Pruner，旨在降低长思考推理模型在处理复杂问题时的推理时间，同时保持模型的准确性。尽管长思考推理提高了模型的解题能力，但导致推理时间显著增加。在此次研究中，通过实验发现，长思考推理模型在根据问题难度和推理冗余分配令牌预算方面存在困难。为了解决这一问题，O1-Pruner采用长度和谐微调技术，首先通过预采样估计模型的基线性能，然后使用类强化学习的微调方法，以鼓励模型在准确性约束下生成更短的推理过程。实验结果表明，O1-Pruner不仅显著减少了推理开销，还提高了准确性，提供了一种新颖且有效的解决方案。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2501.12570" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 22 Jan 2025 22:03:17 GMT</pubDate>
-<pubDate>Wed, 22 Jan 2025 22:03:17 GMT</pubDate>
 </item>
-
 <item>
 <title>MAGI：创新的混合视频生成框架</title>
 <link>https://arxiv.org/abs/2501.12389</link>
@@ -9032,78 +9020,6 @@ Reward models are critical in techniques like Reinforcement Learning from Human 
 <div><p style="color: gray;">WorldCuisines是一个针对多语言和多文化的视觉问答基准，包含超过100万个饮食相关的数据点。</p><br /><br /><p><strong>摘要：</strong> Vision Language Models (VLMs) 在处理文化特定知识时面临挑战，尤其是对于非英语语言和缺失代表性的文化背景。为此，我们推出了WorldCuisines，这是一个针对多语言和多文化的视觉理解基准。该基准包含一个视觉问答（VQA）数据集，涵盖30种语言和方言，跨越9个语言家族，并拥有超过100万的数据点，是迄今为止最大规模的多文化VQA基准。数据集任务包括识别菜品名称及其来源。我们提供了两种规模的评估数据集（12k和60k实例）以及一个训练数据集（100万实例）。我们的研究表明，虽然VLMs在正确的地理上下文中表现较好，但在敌对上下文中和预测特定地方菜系及语言时却存在困难。为了支持未来的研究，我们还发布了一个包含注释食品条目和图像的知识库，配合VQA数据一起提供。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.12705" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Fri, 18 Oct 2024 14:10:54 GMT</pubDate>
-</item>
-<item>
-<title>Open Materials 2024: 大规模开放数据集及预训练模型的发布</title>
-<link>https://arxiv.org/abs/2410.12771</link>
-<guid>https://arxiv.org/abs/2410.12771</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">我们发布了OMat24数据集和EquiformerV2模型，以推动AI辅助材料科学的发展。</p><br /><br /><p><strong>摘要：</strong> 随着对新材料发现与设计能力的日益重视，人工智能（AI）在材料科学中的应用得到广泛关注。为了解决材料发现中的数据短缺问题，我们推出了Open Materials 2024 (OMat24)大规模开放数据集及一系列预训练模型。OMat24包含超过1.1亿个集中于结构和组成多样性的密度泛函理论（DFT）计算。我们的EquiformerV2模型在Matbench Discovery排行榜上实现了最先进的性能，能够以高达0.9的F1分数和每个原子20 meV的精度预测基态稳定性和形成能。我们还探讨了模型规模、辅助去噪目标以及微调对不同数据集（包括OMat24、MPtraj和Alexandria）上性能的影响。OMat24数据集和模型的开放发布将使研究界能够在我们的研究基础上继续开展工作，推动AI辅助材料科学的进一步进展。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.12771" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 18 Oct 2024 13:03:29 GMT</pubDate>
-</item>
-<item>
-<title>推进语音大语言模型的五级发展路线图与评估基准</title>
-<link>https://arxiv.org/abs/2410.13268</link>
-<guid>https://arxiv.org/abs/2410.13268</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文提出一套五级路线图，旨在指导语音大语言模型的发展，并设计评估基准以揭示其当前局限性。</p><br /><br /><p><strong>摘要：</strong> 随着大型语言模型（LLMs）的成功，结合语音和音频数据的努力日益增多，旨在创建能够处理文本和非文本输入的一般基础模型。最近的进展，如GPT-4o，突显了端到端语音LLMs的潜力，这种模型可以保留非语义信息和世界知识，以实现更深层次的语音理解。为了引导语音LLMs的发展，本文提出了一种五级路线图，涵盖从基础的自动语音识别（ASR）到能够整合非语义信息和抽象声学知识以完成复杂任务的先进超人模型。此外，我们设计了SAGI基准，标准化了各个任务在这五个级别上的关键方面，以揭示利用抽象声学知识和能力完整性的挑战。研究结果显示在处理副语言线索和抽象声学知识方面存在不足，并提出了未来的研究方向。本论文概述了推进语音LLMs的路线图，引入了评估基准，并提供了对其当前局限性和潜能的关键见解。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.13268" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 18 Oct 2024 12:46:43 GMT</pubDate>
-</item>
-<item>
-<title>MobA：基于多模态大语言模型的移动助手</title>
-<link>https://arxiv.org/abs/2410.13757</link>
-<guid>https://arxiv.org/abs/2410.13757</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">MobA是一种新型移动助手，通过多模态大语言模型提升理解与规划能力，解决复杂指令处理问题。</p><br /><br /><p><strong>摘要：</strong> 当前移动助手因依赖系统API以及对复杂用户指令和多样化界面的理解能力有限而面临挑战。为此，我们提出MobA，这是一种新型的移动助手，采用多模态大语言模型（MLLM），通过复杂的两级代理架构增强理解和规划能力。高层的全局代理（Global Agent, GA）负责理解用户命令、追踪历史记忆并规划任务，而低层的局部代理（Local Agent, LA）根据GA提供的子任务和记忆，预测详细行动（以函数调用形式呈现）。集成的反思模块则提高了任务完成的效率，使系统能处理未见过的复杂任务。在真实评估中，MobA在任务执行效率和完成率方面表现出了显著改善，彰显了基于MLLM的移动助手的潜力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.13757" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 18 Oct 2024 09:41:59 GMT</pubDate>
-</item>
-<item>
-<title>gamma-MoD: 提升多模态大语言模型计算效率的新策略</title>
-<link>https://arxiv.org/abs/2410.13859</link>
-<guid>https://arxiv.org/abs/2410.13859</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出gamma-MoD策略，通过激活度指标优化大语言模型计算，显著提高效率。</p><br /><br /><p><strong>摘要：</strong> 尽管多模态大语言模型（MLLMs）取得了显著进展，但其高计算成本仍是实际应用的障碍。受到自然语言处理中的深度混合（MoD）启发，本文旨在从“激活token”的角度解决这一问题。我们的关键见解是，如果大多数token在层计算中是冗余的，则可以通过MoD层直接跳过。然而，直接将MLLMs的密集层转换为MoD层会导致性能显著下降。为了解决这一问题，我们提出了一种名为gamma-MoD的创新MoD适应策略。在gamma-MoD中，提出了一种新指标：注意力图的排序（ARank），以引导MLLM中MoD的部署。通过ARank，我们能够有效识别哪些层是冗余的并应替换为MoD层。基于ARank，我们进一步提出两种新设计，以最大化MLLM的计算稀疏性，同时保持性能，即共享视角-语言路由器和掩码路由学习。通过这些设计，超过90%的MLLM稠密层可以有效转换为MoD层。为了验证我们的方法，我们将其应用于三种流行的MLLM，并在9个基准数据集上进行了广泛的实验。实验结果不仅验证了gamma-MoD对现有MLLM的显著效率提升，还确认了其在不同MLLM上的泛化能力。例如，gamma-MoD可以在略微性能下降（-1.5%）的情况下，将LLaVA-HR的训练和推理时间分别减少31.0%和53.2%。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.13859" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 18 Oct 2024 08:06:48 GMT</pubDate>
-</item>
-<item>
-<title>基于高质量数据的长输出能力模型调优研究</title>
-<link>https://arxiv.org/abs/2410.10210</link>
-<guid>https://arxiv.org/abs/2410.10210</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本研究探讨了调优模型以实现长输出能力的方法，强调数据质量的重要性。</p><br /><br /><p><strong>摘要：</strong> 随着大型语言模型的快速发展，它们在生成长输出方面的能力存在显著差异。近期研究表明，模型在对齐训练过程中缺乏长输出数据是导致这一不平衡的主要原因。为了解决这一问题，我们尝试通过用填补数据缺口的数据重新对齐基础模型，从而使模型在接到指令时能够生成长篇输出。本文探讨了数据质量在模型长输出调优过程中的影响，以及如何从人类对齐的模型（如指令或聊天模型）出发进行调优。通过精心的数据策划，我们展示了在仅用少量训练数据实例和计算资源的情况下，能够实现与我们调优模型相似的性能提升。此外，我们通过尝试将我们的调优方案应用于几种不同模型，评估了此方法的通用性。研究结果表明，尽管不同模型在未经过调整时生成长输出的能力差异较大，但通过高质量数据和轻量计算资源进行调优的方法，能够在我们实验的所有模型中一致性地实现显著改善。我们公开了用于调优长写作能力的数据集、模型调优和评估的实现方案以及微调后的模型，这些都可供公众访问。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.10210" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 18 Oct 2024 08:01:07 GMT</pubDate>
-</item>
-<item>
-<title>无指导自回归视觉生成的条件对比对齐方法</title>
-<link>https://arxiv.org/abs/2410.09347</link>
-<guid>https://arxiv.org/abs/2410.09347</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出Condition Contrastive Alignment，提升自回归视觉生成性能，减少对指导抽样的依赖。</p><br /><br /><p><strong>摘要：</strong> Classifier-Free Guidance (CFG) 是提高视觉生成模型样本质量的重要技术。然而，在自回归（AR）多模态生成中，CFG导致语言和视觉内容之间设计不一致，违背了对不同模态进行统一设计的理念。为了解决这个问题，我们提出Condition Contrastive Alignment (CCA) 方法，旨在促进高性能的无指导自回归视觉生成，并分析其与指导抽样方法的理论联系。不同于通过改变抽样过程以达到理想抽样分布的指导方法，CCA直接对预训练模型进行微调，以适应相同的分布目标。实验结果表明，CCA能够在仅进行一个epoch的微调（相当于约1%的预训练周期）后，显著增强所有测试模型的无指导性能，其表现与指导抽样方法相当。这大大减少了AR视觉生成中的指导抽样需求，并将采样成本降低了一半。此外，通过调整训练参数，CCA能够在样本多样性与真实性之间实现类似于CFG的权衡。这一研究实验性地确认了语言目标对齐与视觉目标指导方法之间的紧密理论联系，从而统一了两个之前独立的研究领域。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.09347" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 18 Oct 2024 07:42:08 GMT</pubDate>
-</item>
-<item>
-<title>TransAgent：通过多源知识蒸馏提升视觉-语言基础模型</title>
-<link>https://arxiv.org/abs/2410.12183</link>
-<guid>https://arxiv.org/abs/2410.12183</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">TransAgent 框架通过多源知识蒸馏提升 CLIP 等视觉-语言基础模型在多样化数据上的表现。</p><br /><br /><p><strong>摘要：</strong> 视觉-语言基础模型（如 CLIP）在迁移学习方面展现了巨大的潜力，得益于大规模的图像-文本预训练。然而，目标域数据在下游任务中可能与预训练阶段存在较大差异，这使得模型的泛化能力受到限制。为了解决这一问题，我们提出了一个通用且简洁的 TransAgent 框架，它以统一的方式传输孤立代理的知识，有效引导 CLIP 模型通过多源知识蒸馏进行泛化。通过该框架，我们灵活地与 11 个异构代理进行合作，增强视觉-语言基础模型，而在推理阶段没有额外的成本。最终，TransAgent 在 11 个视觉识别数据集上达到了最先进的性能。在相同的低样本设置下，它在平均上比流行的 CoOp 超出约 10%，在包含较大领域偏移的 EuroSAT 数据集上则超过了 20%。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.12183" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 18 Oct 2024 07:10:06 GMT</pubDate>
-</item>
-<item>
-<title>Long-LRM：基于3D高斯重建的长序列图像大场景重建模型</title>
-<link>https://arxiv.org/abs/2410.12781</link>
-<guid>https://arxiv.org/abs/2410.12781</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">Long-LRM是一种高效的3D高斯重建模型，能快速重建大场景。</p><br /><br /><p><strong>摘要：</strong> Long-LRM是一种通用的3D高斯重建模型，能够从长序列的输入图像中重建大场景。该模型可处理32张960x540分辨率的源图像，且在单个A100 80G GPU上仅需1.3秒。我们的架构结合了最新的Mamba2模块和经典的Transformer模块，使得能够处理比以往更多的tokens，同时通过高效的token合并和高斯剪枝步骤来平衡质量和效率。与之前只能处理1到4张输入图像并仅能重建小部分大场景的前馈模型不同，Long-LRM在一次前馈步骤中便可重建整个场景。在DL3DV-140和Tanks and Temples等大规模场景数据集上，我们的方法在性能上可与基于优化的方法相媲美，同时效率提升两个数量级。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.12781" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 18 Oct 2024 06:59:14 GMT</pubDate>
 </item>
 </channel>
 </rss>
