@@ -4,19 +4,16 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+
 <item>
 <title>Control LLM: 一种有效应对灾难性遗忘的方法</title>
 <link>https://arxiv.org/abs/2501.10979</link>
 <guid>https://arxiv.org/abs/2501.10979</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出Control LLM方法，以提高大语言模型的持续学习能力。</p><br><br><p><strong>摘要：</strong> Control LLM是一种新颖的方法，它通过利用平行预训练和扩展的变换器块，并通过插值策略对齐其隐藏状态，从而有效应对大语言模型在连续预训练（CPT）和连续监督微调（CSFT）中的灾难性遗忘（CF）问题。通过广泛的实验验证，Control LLM在Llama3.1-8B-Instruct上在数学推理和编码性能上均有显著提升，分别提高14.4%和10%。此外，还在多语言能力上表现出色，在多个评测中均有所提高。与现有方法相比，该方法在保持原有能力强大的同时，显著减少了所需数据和计算资源，所造成的能力降级仅为4.3%。该方法已成功应用于LinkedIn的智能求职与广告产品中，同时公开发布了相关代码和模型供社区进一步研究使用。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.10979 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出Control LLM方法，以提高大语言模型的持续学习能力。</p><br /><br /><p><strong>摘要：</strong> Control LLM是一种新颖的方法，它通过利用平行预训练和扩展的变换器块，并通过插值策略对齐其隐藏状态，从而有效应对大语言模型在连续预训练（CPT）和连续监督微调（CSFT）中的灾难性遗忘（CF）问题。通过广泛的实验验证，Control LLM在Llama3.1-8B-Instruct上在数学推理和编码性能上均有显著提升，分别提高14.4%和10%。此外，还在多语言能力上表现出色，在多个评测中均有所提高。与现有方法相比，该方法在保持原有能力强大的同时，显著减少了所需数据和计算资源，所造成的能力降级仅为4.3%。该方法已成功应用于LinkedIn的智能求职与广告产品中，同时公开发布了相关代码和模型供社区进一步研究使用。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2501.10979" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Fri, 24 Jan 2025 14:50:16 GMT</pubDate>
-<pubDate>Fri, 24 Jan 2025 14:50:16 GMT</pubDate>
 </item>
-
 <item>
 <title>幻觉在药物发现中的应用潜力：大型语言模型的研究</title>
 <link>https://arxiv.org/abs/2501.13824</link>
@@ -9011,15 +9008,6 @@ Reward models are critical in techniques like Reinforcement Learning from Human 
 <div><p style="color: gray;">本研究提出了平衡式说服训练（PBT），提升模型对正负说服的适应性，增强其在多代理辩论中的表现。</p><br /><br /><p><strong>摘要：</strong> 大型语言模型（LLMs）在面对对立的对话者时易受到说服，这可能带来风险。本文首次探讨了如何增强模型抵抗负面说服的能力，同时强调模型也应能接受有益的正面说服。单纯优化某一类说服会导致模型在另一类上的表现不佳。为此，我们引入了平衡式说服训练（PBT），通过多代理递归对话树创建数据，并通过偏好优化训练模型，以恰当地接受说服。PBT在抵御误信息和应对挑战方面表现良好，同时在包含正负说服的整体数据上提升了模型表现。尤其是在多代理辩论中，PBT模型表现出更好的合作性。在没有PBT的情况下，强模型和弱模型的组合在表现上不稳定，其表现受呈现顺序影响。然而，PBT使得团队合作更平稳，强模型能 consistently 提升弱模型的表现。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.14596" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Mon, 21 Oct 2024 12:28:08 GMT</pubDate>
-</item>
-<item>
-<title>大语言模型的自我预测：内省能力的探索</title>
-<link>https://arxiv.org/abs/2410.13787</link>
-<guid>https://arxiv.org/abs/2410.13787</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本研究探讨了大语言模型是否具备内省能力，实验结果表明经过微调的模型可以更好地预测自身行为。</p><br /><br /><p><strong>摘要：</strong> 本研究旨在探索大语言模型（LLMs）的内省能力，即模型是否能够获取并报告其内部状态所反映的知识，从而增强模型的可解释性。我们通过微调模型，使其能够预测在假设场景下自己行为的特征。例如，当输入为P时，模型会预测其输出是倾向短期还是长期选项。如果模型M1具备内省能力，它在预测自身行为方面应优于模型M2，即使M2在训练上更为强大。我们的实验使用了GPT-4、GPT-4o和Llama-3模型，结果表明，经过微调的模型M1在自我预测中表现优于其他模型，并且即使在我们故意修改其真实行为后，M1仍能准确预测自身行为。然而，尽管在简单任务上成功获取内省能力，在更复杂的任务或需要超出训练分布的推广能力上，我们的探索则表现不佳。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.13787" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 21 Oct 2024 11:27:51 GMT</pubDate>
 </item>
 </channel>
 </rss>
