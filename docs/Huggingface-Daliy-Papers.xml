@@ -5,15 +5,25 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>基于RWKV的高效混合注意力模型研究</title>
+<link>https://arxiv.org/abs/2501.15570</link>
+<guid>https://arxiv.org/abs/2501.15570</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>文章介绍了一系列基于RWKV注意力的模型，提升了表达能力和效率。</p><br><br><p><strong>摘要：</strong> 本文讨论了一系列基于RWKV-7注意力的混合模型，这些模型在多头架构中表现优于Transformer和线性RNN，主要集中在降低KV复杂度和提升效率方面。研究引入了基于RWKV-6架构的QRWK 32B模型，该模型使用16个AMD MI300X GPU将整个知识处理时间缩短至仅8小时，同时保持了Qwen 2.5的性能。此外，蒸馏过程不仅限于Qwen 2.5，可以使用任何大型语言模型进行知识转移，助力从较大模型向小型模型的迁移，减少了所需的token数量。作者将详细解释模型构建过程，并分享数据以帮助构建更强大的基础模型。请注意，这项工作仍在进行中，未来将持续更新，模型检查点和源代码已在相关链接中提供。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.15570 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 28 Jan 2025 03:02:56 GMT</pubDate>
+<pubDate>Tue, 28 Jan 2025 03:02:56 GMT</pubDate>
+</item>
+
+<item>
 <title>iFormer：一种优化移动应用延迟与准确性的混合视觉网络</title>
 <link>https://arxiv.org/abs/2501.15369</link>
 <guid>https://arxiv.org/abs/2501.15369</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>iFormer是一种优化移动应用延迟和准确性的视觉网络，表现优异。</p><br><br><p><strong>摘要：</strong> 我们提出了一种新的移动混合视觉网络家族——iFormer，旨在优化移动应用的延迟和准确性。iFormer有效整合了卷积的快速局部表示能力与自注意力的高效全局建模能力。通过改造标准卷积网络ConvNeXt，我们设计了一种更轻量的移动网络。此外，我们的新型移动调制注意力机制去除了多头自注意力中的内存密集型操作，并采用高效的调制机制，以增强动态全局表示能力。实验结果表明，iFormer在多个任务中优于现有的轻量级网络，尤其是在ImageNet-1k上以仅1.10毫秒的延迟达到80.4%的Top-1准确率，超越了近年来提出的MobileNetV4。同时，我们的方法在COCO目标检测、实例分割和ADE20k语义分割等下游任务中也表现出显著改善，能够在高分辨率输入情况下保持低延迟。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.15369 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">iFormer是一种优化移动应用延迟和准确性的视觉网络，表现优异。</p><br /><br /><p><strong>摘要：</strong> 我们提出了一种新的移动混合视觉网络家族——iFormer，旨在优化移动应用的延迟和准确性。iFormer有效整合了卷积的快速局部表示能力与自注意力的高效全局建模能力。通过改造标准卷积网络ConvNeXt，我们设计了一种更轻量的移动网络。此外，我们的新型移动调制注意力机制去除了多头自注意力中的内存密集型操作，并采用高效的调制机制，以增强动态全局表示能力。实验结果表明，iFormer在多个任务中优于现有的轻量级网络，尤其是在ImageNet-1k上以仅1.10毫秒的延迟达到80.4%的Top-1准确率，超越了近年来提出的MobileNetV4。同时，我们的方法在COCO目标检测、实例分割和ADE20k语义分割等下游任务中也表现出显著改善，能够在高分辨率输入情况下保持低延迟。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2501.15369" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 28 Jan 2025 00:51:51 GMT</pubDate>
 <pubDate>Tue, 28 Jan 2025 00:51:51 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +31,8 @@
 <link>https://arxiv.org/abs/2501.14912</link>
 <guid>https://arxiv.org/abs/2501.14912</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>可行学习通过优化每个样本的表现，挑战传统的经验风险最小化方法。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种新兴的学习范式，称为可行学习（Feasible Learning, FL），该方法围绕样本展开训练，要求模型解决一个约束每个训练样本损失的可行性问题。与常见的经验风险最小化（ERM）方法不同，FL关注每个数据点的表现，确保其符合规定的性能阈值。我们探讨了一种原始-对偶方法，该方法在训练过程中动态调整每个样本的重要性。此外，为了设置合理的阈值，我们引入了一种轻松处理的FL松弛，采用最小范数的松弛变量。我们在图像分类、年龄回归和大型语言模型的偏好优化等多个领域进行了实证分析，结果表明，通过FL训练的模型在学习数据的同时，展示了相较于ERM更优的尾部行为，同时对平均性能的影响较小。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.14912 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">可行学习通过优化每个样本的表现，挑战传统的经验风险最小化方法。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种新兴的学习范式，称为可行学习（Feasible Learning, FL），该方法围绕样本展开训练，要求模型解决一个约束每个训练样本损失的可行性问题。与常见的经验风险最小化（ERM）方法不同，FL关注每个数据点的表现，确保其符合规定的性能阈值。我们探讨了一种原始-对偶方法，该方法在训练过程中动态调整每个样本的重要性。此外，为了设置合理的阈值，我们引入了一种轻松处理的FL松弛，采用最小范数的松弛变量。我们在图像分类、年龄回归和大型语言模型的偏好优化等多个领域进行了实证分析，结果表明，通过FL训练的模型在学习数据的同时，展示了相较于ERM更优的尾部行为，同时对平均性能的影响较小。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2501.14912" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 28 Jan 2025 00:39:11 GMT</pubDate>
 <pubDate>Tue, 28 Jan 2025 00:39:11 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +40,8 @@
 <link>https://arxiv.org/abs/2501.16295</link>
 <guid>https://arxiv.org/abs/2501.16295</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出Mixture-of-Mamba架构，通过模态感知稀疏性提升多模态预训练效率。</p><br><br><p><strong>摘要：</strong> 状态空间模型（SSMs）作为序列建模的有效替代方案，但在多模态预训练中由于无法利用特定模态特征而限制了性能。本文提出Mixture-of-Mamba，一种新颖的SSM架构，通过Mamba模块的模态特定参数化引入模态感知稀疏性，借鉴了Mixture-of-Transformers的思想。我们在三种多模态预训练设置中评估Mixture-of-Mamba的性能，包括Transfusion和Chameleon，以及扩展的三模态框架。在Transfusion设置下，Mixture-of-Mamba以仅34.76%的计算成本达到相同的图像损失；Chameleon设置下，仅用42.50%的FLOPs达到类似的图像损失，65.40%的FLOPs实现类似的文本损失；在三模态设置中，仅需24.80%的FLOPs就能匹配语音损失。消融实验显示，解耦投影组件的协同效应显著，联合解耦的增益优于单独修改。这些结果证明模态感知稀疏性是一种多功能有效的设计原则，有助于从Transformers扩展到SSMs，设定了多模态预训练的新基准。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.16295 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出Mixture-of-Mamba架构，通过模态感知稀疏性提升多模态预训练效率。</p><br /><br /><p><strong>摘要：</strong> 状态空间模型（SSMs）作为序列建模的有效替代方案，但在多模态预训练中由于无法利用特定模态特征而限制了性能。本文提出Mixture-of-Mamba，一种新颖的SSM架构，通过Mamba模块的模态特定参数化引入模态感知稀疏性，借鉴了Mixture-of-Transformers的思想。我们在三种多模态预训练设置中评估Mixture-of-Mamba的性能，包括Transfusion和Chameleon，以及扩展的三模态框架。在Transfusion设置下，Mixture-of-Mamba以仅34.76%的计算成本达到相同的图像损失；Chameleon设置下，仅用42.50%的FLOPs达到类似的图像损失，65.40%的FLOPs实现类似的文本损失；在三模态设置中，仅需24.80%的FLOPs就能匹配语音损失。消融实验显示，解耦投影组件的协同效应显著，联合解耦的增益优于单独修改。这些结果证明模态感知稀疏性是一种多功能有效的设计原则，有助于从Transformers扩展到SSMs，设定了多模态预训练的新基准。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2501.16295" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 28 Jan 2025 00:36:31 GMT</pubDate>
 <pubDate>Tue, 28 Jan 2025 00:36:31 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +49,8 @@
 <link>https://arxiv.org/abs/2501.16142</link>
 <guid>https://arxiv.org/abs/2501.16142</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文提出MR.Q算法，旨在实现统一的无模型深度强化学习。</p><br><br><p><strong>摘要：</strong> 本文探讨了一种名为MR.Q的无模型深度强化学习算法，试图为多样化的领域和问题设置提供统一的解决方案。通过使用近似线性化值函数的模型表示，MR.Q充分利用了模型基RL方法中更密集的任务目标，同时避免了规划或模拟轨迹所带来的复杂性和高运行时间。作者将MR.Q算法在一系列常见的强化学习基准上进行了评估，并仅使用一组超参数，展现出与领域特定及通用基准相竞争的性能。这为构建通用的无模型深度强化学习算法迈出了实质性的一步。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.16142 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文提出MR.Q算法，旨在实现统一的无模型深度强化学习。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了一种名为MR.Q的无模型深度强化学习算法，试图为多样化的领域和问题设置提供统一的解决方案。通过使用近似线性化值函数的模型表示，MR.Q充分利用了模型基RL方法中更密集的任务目标，同时避免了规划或模拟轨迹所带来的复杂性和高运行时间。作者将MR.Q算法在一系列常见的强化学习基准上进行了评估，并仅使用一组超参数，展现出与领域特定及通用基准相竞争的性能。这为构建通用的无模型深度强化学习算法迈出了实质性的一步。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2501.16142" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 28 Jan 2025 00:36:09 GMT</pubDate>
 <pubDate>Tue, 28 Jan 2025 00:36:09 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +58,8 @@
 <link>https://arxiv.org/abs/2501.15383</link>
 <guid>https://arxiv.org/abs/2501.15383</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>Qwen2.5-1M系列模型显著增强了长上下文能力，支持超长文本处理。</p><br><br><p><strong>摘要：</strong> Qwen2.5-1M是一系列新模型，将上下文长度扩展至100万标记，较之前的128K版本在长上下文能力上显著增强。通过长数据合成、渐进式预训练和多阶段监督微调等关键技术，减少了训练成本并提升性能。同时，我们开源了推理框架，包括长度外推方法，能在不额外训练情况下将模型上下文扩展至至少四倍。为降低推理成本，我们实施了稀疏注意力机制与分块预填充优化，并在推理引擎中进行了核优化和调度优化，使得Qwen2.5-1M模型在1百万标记上下文场景中的预填充速度提高了3到7倍。当前，Qwen2.5-1M系列包括Qwen2.5-7B-Instruct-1M和Qwen2.5-14B-Instruct-1M等开源模型，在长上下文任务中表现优异，且不影响短上下文场景的性能。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.15383 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">Qwen2.5-1M系列模型显著增强了长上下文能力，支持超长文本处理。</p><br /><br /><p><strong>摘要：</strong> Qwen2.5-1M是一系列新模型，将上下文长度扩展至100万标记，较之前的128K版本在长上下文能力上显著增强。通过长数据合成、渐进式预训练和多阶段监督微调等关键技术，减少了训练成本并提升性能。同时，我们开源了推理框架，包括长度外推方法，能在不额外训练情况下将模型上下文扩展至至少四倍。为降低推理成本，我们实施了稀疏注意力机制与分块预填充优化，并在推理引擎中进行了核优化和调度优化，使得Qwen2.5-1M模型在1百万标记上下文场景中的预填充速度提高了3到7倍。当前，Qwen2.5-1M系列包括Qwen2.5-7B-Instruct-1M和Qwen2.5-14B-Instruct-1M等开源模型，在长上下文任务中表现优异，且不影响短上下文场景的性能。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2501.15383" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 28 Jan 2025 00:35:46 GMT</pubDate>
 <pubDate>Tue, 28 Jan 2025 00:35:46 GMT</pubDate>
 </item>
 <item>
@@ -69,14 +67,10 @@
 <link>https://arxiv.org/abs/2501.15368</link>
 <guid>https://arxiv.org/abs/2501.15368</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>Baichuan-Omni-1.5是一个具备多模态理解和音频生成能力的先进模型。</p><br><br><p><strong>摘要：</strong> Baichuan-Omni-1.5是一款新开发的多模态模型，它不仅具备卓越的多模态理解能力，还可以进行端到端的音频生成。为确保各个模态之间的流畅、高质量互动而不削弱任何模态的能力，我们优化了三个关键方面：首先，建立了一个全面的数据清洗和合成流程，收集了约500B的高质量多模态数据（文本、音频和视觉）。其次，设计了一款音频标记器（Baichuan-Audio-Tokenizer），该工具可以提取音频中的语义和声学信息，从而实现无缝集成，增强与多模态大语言模型（MLLM）的兼容性。最后，我们实施了多阶段训练策略，逐步实现多模态对齐和多任务微调，确保了各模态之间的有效协同。Baichuan-Omni-1.5在当前模型中处于领先地位，其在多个多模态医疗基准测试中的表现与领先模型如Qwen2-VL-72B相当。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.15368 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">Baichuan-Omni-1.5是一个具备多模态理解和音频生成能力的先进模型。</p><br /><br /><p><strong>摘要：</strong> Baichuan-Omni-1.5是一款新开发的多模态模型，它不仅具备卓越的多模态理解能力，还可以进行端到端的音频生成。为确保各个模态之间的流畅、高质量互动而不削弱任何模态的能力，我们优化了三个关键方面：首先，建立了一个全面的数据清洗和合成流程，收集了约500B的高质量多模态数据（文本、音频和视觉）。其次，设计了一款音频标记器（Baichuan-Audio-Tokenizer），该工具可以提取音频中的语义和声学信息，从而实现无缝集成，增强与多模态大语言模型（MLLM）的兼容性。最后，我们实施了多阶段训练策略，逐步实现多模态对齐和多任务微调，确保了各模态之间的有效协同。Baichuan-Omni-1.5在当前模型中处于领先地位，其在多个多模态医疗基准测试中的表现与领先模型如Qwen2-VL-72B相当。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2501.15368" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 28 Jan 2025 00:34:49 GMT</pubDate>
-<pubDate>Tue, 28 Jan 2025 00:34:49 GMT</pubDate>
 </item>
-
 <item>
 <title>CatV2TON：一种高效的图像与视频虚拟试穿方法</title>
 <link>https://arxiv.org/abs/2501.11325</link>
@@ -9026,60 +9020,6 @@ As large language models (LLMs) become increasingly deployed across various indu
 <div><p style="color: gray;">本文探讨了在预训练阶段应用知识蒸馏的方法，验证了模型间的学习效能。</p><br /><br /><p><strong>摘要：</strong> 知识蒸馏（KD）旨在将大教师模型的知识传递给更小的学生模型。以往在大语言模型（LLMs）领域的KD研究主要集中在后训练阶段，学生LLM直接从教师模型生成的指令及相应响应中学习。本文通过在LLMs的预训练阶段扩展KD，提出了预训练蒸馏（PD）的方法。首先，我们使用GLM-4-9B作为教师LLM进行了一项初步实验，验证了PD在1.9B参数的学生LLM上的有效性。考虑到蒸馏的关键影响因素，我们系统地探讨了预训练蒸馏中的设计空间，包括四个方面：logits处理、损失选择、缩放法则及离线或在线logits。我们的广泛实验探索了预训练蒸馏的设计空间，找到了更优的配置及一些有趣的结论，如更大的学生LLM通常能更从预训练蒸馏中受益，而更大的教师LLM并不一定能保证更好的效果。我们希望本研究对未来的预训练蒸馏实践提供指导。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.16215" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 22 Oct 2024 04:09:39 GMT</pubDate>
-</item>
-<item>
-<title>SAM2Long：面向复杂长视频的改进训练自由视频目标分割策略</title>
-<link>https://arxiv.org/abs/2410.16268</link>
-<guid>https://arxiv.org/abs/2410.16268</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">SAM2Long策略通过约束树搜索选择最佳分割路径，有效减少了错误积累，提高了长视频目标分割性能。</p><br /><br /><p><strong>摘要：</strong> Segment Anything Model 2 (SAM 2)在图像和视频的目标分割领域表现出色，但其贪婪选择记忆设计导致了错误积累问题，限制了在复杂长视频中的性能。为此，我们提出了SAM2Long，一个改进的训练自由视频目标分割策略。该策略考虑帧内分割不确定性，并通过约束树搜索选择多条分割路径中的最佳视频级别结果。在实际操作中，我们对整个视频保持固定数量的分割路径。每帧提出多个掩码，根据现有路径创建不同候选分支，然后选择累计得分较高的固定数量分支作为下一帧的新路径。在处理完最后一帧后，选择累计得分最高的路径作为最终分割结果。得益于其启发式搜索设计，SAM2Long在处理遮挡和物体重现方面表现出色，能够有效地对复杂长视频中的对象进行分割和跟踪。实验结果表明，SAM2Long在24组对比中平均提高了3.0个点，在SA-V和LVOS等长视频目标分割基准上提升了多达5.3个点。代码已在https://github.com/Mark12Ding/SAM2Long发布。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.16268" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 22 Oct 2024 03:38:14 GMT</pubDate>
-</item>
-<item>
-<title>RM-Bench: Benchmarking Reward Models of Language Models with Subtlety and Style</title>
-<link>https://arxiv.org/abs/2410.16184</link>
-<guid>https://arxiv.org/abs/2410.16184</guid>
-<content:encoded><![CDATA[
-Reward models are critical in techniques like Reinforcement Learning from Human Feedback (RLHF) and Inference Scaling Laws, where they guide language model alignment and select optimal responses. Despite their importance, existing reward model benchmarks often evaluate models by asking them to distinguish between responses generated by models of varying power. However, this approach fails to assess reward models on subtle but critical content changes and variations in style, resulting in a low correlation with policy model performance. To this end, we introduce RM-Bench, a novel benchmark designed to evaluate reward models based on their sensitivity to subtle content differences and resistance to style biases. Extensive experiments demonstrate that RM-Bench strongly correlates with policy model performance, making it a reliable reference for selecting reward models to align language models effectively. We evaluate nearly 40 reward models on RM-Bench. Our results reveal that even state-of-the-art models achieve an average performance of only 46.6%, which falls short of random-level accuracy (50%) when faced with style bias interference. These findings highlight the significant room for improvement in current reward models. Related code and data are available at https://github.com/THU-KEG/RM-Bench.
-]]></content:encoded>
-<pubDate>Tue, 22 Oct 2024 02:51:09 GMT</pubDate>
-</item>
-<item>
-<title>FrugalNeRF：高效的少样本神经辐射场框架</title>
-<link>https://arxiv.org/abs/2410.16271</link>
-<guid>https://arxiv.org/abs/2410.16271</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">FrugalNeRF通过跨尺度几何适配方案优化少样本NeRF，提升3D重建精度和训练效率。</p><br /><br /><p><strong>摘要：</strong> 神经辐射场（NeRF）在少样本场景下面临显著挑战，主要表现在过拟合及高保真渲染所需的长训练时间。现有方法如FreeNeRF和SparseNeRF虽然采用了频率正则化或预训练先验，但在复杂调度和偏差问题上仍显得无力。为此，我们提出了FrugalNeRF，这是一种新的少样本NeRF框架，通过在多个尺度间共享权重体素，高效地表示场景细节。我们的关键贡献是一种跨尺度几何适配方案，该方案基于重投影误差选择伪地面真实深度，从而在不依赖外部学习先验的情况下引导训练，充分利用训练数据。同时，FrugalNeRF也可集成预训练的先验，提升质量而不影响收敛速度。在LLFF、DTU和RealEstate-10K数据集上的实验表明，FrugalNeRF在超越其他少样本NeRF方法的同时，显著减少了训练时间，是一种实用的高效准确的3D场景重建解决方案。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.16271" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 22 Oct 2024 02:26:36 GMT</pubDate>
-</item>
-<item>
-<title>Meta-Chunking: 基于深层语义关系的文本分块方法</title>
-<link>https://arxiv.org/abs/2410.12788</link>
-<guid>https://arxiv.org/abs/2410.12788</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文提出Meta-Chunking概念，通过两种新策略提升RAG在知识密集任务中的表现。</p><br /><br /><p><strong>摘要：</strong> 本文提出了Meta-Chunking的概念，以填补Retrieval-Augmented Generation (RAG) 中文本分块的重要缺失，影响知识密集型任务的质量。Meta-Chunking是介于句子与段落之间的一种分块方法，涉及段落内具有深层次语言逻辑关系的一系列句子。为此，本文设计了两种基于大语言模型（LLMs）的分块策略：Margin Sampling Chunking和Perplexity Chunking。前者利用LLMs对连续句子进行二元分类，以判断是否需要分割，基于边际抽样获得的概率差异做出决策；后者通过分析困惑度分布的特征精确识别文本分块边界。考虑到不同文本的复杂性，本文还提出了一种将Meta-Chunking与动态合并相结合的策略，以实现细粒度和粗粒度文本分块之间的平衡。在11个数据集上进行的实验表明，Meta-Chunking能够更有效地提升基于RAG的单跳和多跳问答性能。例如，在2WikiMultihopQA数据集上，Meta-Chunking的表现比相似分块高出1.32，同时时间消耗仅为45.8%。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.12788" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 22 Oct 2024 02:24:32 GMT</pubDate>
-</item>
-<item>
-<title>Pangea：面向多语言和多文化背景的多模态大语言模型</title>
-<link>https://arxiv.org/abs/2410.16153</link>
-<guid>https://arxiv.org/abs/2410.16153</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文介绍了Pangea及其多语言多模态训练数据集PangeaIns，展示了在跨文化情境下的评估优势。</p><br /><br /><p><strong>摘要：</strong> 尽管近年来多模态大型语言模型（MLLMs）取得了显著进展，但其开发主要集中在英语和西方中心的数据集与任务上，导致世界大部分语言和文化背景被忽视。本文提出了Pangea，这是一个多语言多模态的LLM，基于PangeaIns训练，后者是一个多达600万条指令的多样化数据集，涵盖39种语言。PangeaIns的特点包括：1）高质量的英语指令，2）精心机器翻译的指令，以及3）具有文化相关性的多模态任务，以确保跨文化的覆盖。为全面评估模型的能力，我们引入了PangeaBench，这是一个涵盖47种语言的综合评估套件，包含14个数据集。结果显示，Pangea在多语言环境和多样文化背景下显著超越现有的开放源代码模型。消融研究进一步揭示了英语数据比例、语言普及度和多模态训练样本数量对整体性能的重要性。我们全面开源我们的数据、代码和训练检查点，以促进包容性和强大的多语言MLLM的发展，推动更广泛的语言和文化范围的公平性和可及性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.16153" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 22 Oct 2024 02:07:31 GMT</pubDate>
-</item>
-<item>
-<title>跨语言自动评估套件：Hercule的设计与实现</title>
-<link>https://arxiv.org/abs/2410.13394</link>
-<guid>https://arxiv.org/abs/2410.13394</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文提出了CIA套件，包含Hercule模型和Recon测试集，以实现多语言评估。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了跨语言自动评估(CIA)套件及其组成部分，包括评估模型Hercule和多语言测试集Recon。此框架旨在解决当前自然语言处理(NLP)领域在非英语语言中的评估挑战。测试集包含500条人类注释的指令，涵盖多种任务能力，并提供六种语言的人类评分。这一套件可以用于基准评估通用多语言大型语言模型(LLMs)，并促成评估模型的元评估。Hercule模型通过学习使用英语参考答案为目标语言的响应评分，克服了在低资源场景中目标语言参考答案不足的问题。实验结果表明，Hercule模型在与人工评判对比中，表现出更高的一致性，显示了其在见未见语言上的零样本评估能力。这项研究是对跨语言评估的首次全面探讨，提出了一种可扩展且有效的多语言评估方法。所有代码、数据集和模型将在公开平台上发布，以推动该领域的进一步研究。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.13394" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 22 Oct 2024 01:37:42 GMT</pubDate>
 </item>
 </channel>
 </rss>
