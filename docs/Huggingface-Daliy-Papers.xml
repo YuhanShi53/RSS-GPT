@@ -5,15 +5,49 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>CodeMonkeys：基于多轮迭代编辑的代码问题解决系统</title>
+<link>https://arxiv.org/abs/2501.14723</link>
+<guid>https://arxiv.org/abs/2501.14723</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>CodeMonkeys系统通过迭代编辑解决GitHub问题，提高了模型效率。</p><br><br><p><strong>摘要：</strong> 本文介绍了CodeMonkeys系统，该系统旨在解决来自SWE-bench数据集的真实GitHub问题。通过与生成和运行测试脚本相结合，CodeMonkeys能够对代码库进行迭代编辑，从而生成候选编辑的集合。该系统采用串行和并行两种方式来扩展测试时间计算，利用多轮轨迹增加每个问题的迭代次数，并通过增加每个问题的轨迹数量来实现并行扩展。最终，CodeMonkeys在约2300美元的预算内解决了57.4%的SWE-bench Verified问题。此外，通过结合来自不同来源的候选编辑，系统在现有顶级SWE-bench Verified提交的集成选择中达到了66.2%的得分，超越了单个最佳编辑的表现。所有代码和数据都已公开发布。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.14723 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 28 Jan 2025 15:00:51 GMT</pubDate>
+<pubDate>Tue, 28 Jan 2025 15:00:51 GMT</pubDate>
+</item>
+<item>
+<title>Visual Generation Without Guidance</title>
+<link>https://arxiv.org/abs/2501.15420</link>
+<guid>https://arxiv.org/abs/2501.15420</guid>
+<content:encoded><![CDATA[
+
+  Classifier-Free Guidance (CFG) has been a default technique in various visual generative models, yet it requires inference from both conditional and unconditional models during sampling. We propose to build visual models that are free from guided sampling. The resulting algorithm, Guidance-Free Training (GFT), matches the performance of CFG while reducing sampling to a single model, halving the computational cost. Unlike previous distillation-based approaches that rely on pretrained CFG networks, GFT enables training directly from scratch. GFT is simple to implement. It retains the same maximum likelihood objective as CFG and differs mainly in the parameterization of conditional models. Implementing GFT requires only minimal modifications to existing codebases, as most design choices and hyperparameters are directly inherited from CFG. Our extensive experiments across five distinct visual models demonstrate the effectiveness and versatility of GFT. Across domains of diffusion, autoregressive, and masked-prediction modeling, GFT consistently achieves comparable or even lower FID scores, with similar diversity-fidelity trade-offs compared with CFG baselines, all while being guidance-free. Code will be available at https://github.com/thu-ml/GFT.
+
+]]></content:encoded>
+<pubDate>Tue, 28 Jan 2025 14:17:04 GMT</pubDate>
+<pubDate>Tue, 28 Jan 2025 14:17:04 GMT</pubDate>
+</item>
+<item>
+<title>视觉语言模型中的视觉偏差研究</title>
+<link>https://arxiv.org/abs/2403.09193</link>
+<guid>https://arxiv.org/abs/2403.09193</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究视觉语言模型中的形状偏差与人类视觉的关系。</p><br><br><p><strong>摘要：</strong> 本文探讨了视觉语言模型（VLMs）在模态融合过程中是否会继承或调节人类的视觉偏差，特别是纹理与形状偏差的影响。研究发现，与纯视觉模型相比，VLMs 在形状偏差上往往表现得更明显，这表明文本在多模态模型中在一定程度上调节了视觉偏差。通过实验，我们能够将形状偏差从49%提升至72%，验证了语言可以影响视觉偏差的假设。然而，所有测试的VLMs仍未能达到人类对形状的强烈偏好（96%）。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2403.09193 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 28 Jan 2025 14:06:36 GMT</pubDate>
+<pubDate>Tue, 28 Jan 2025 14:06:36 GMT</pubDate>
+</item>
+
+<item>
 <title>大语言模型中的角色定制化与合成数据研究</title>
 <link>https://arxiv.org/abs/2501.15427</link>
 <guid>https://arxiv.org/abs/2501.15427</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文探讨了通过合成数据实现大语言模型的角色通用化能力。</p><br><br><p><strong>摘要：</strong> 随着角色扮演对话代理的开发需求增加，定制化角色扮演在大语言模型（LLMs）中得到了广泛关注。该研究通过大规模数据合成，旨在赋予LLMs角色通用化的能力。研究首先利用Persona Hub合成了大规模的角色档案，并探讨了两种策略：响应重写和响应生成，以创建与角色对齐的指令性响应。通过使用LLaMA-3 8B模型进行监督微调，研究验证了合成指令调优数据在角色通用化方面的有效性。最终成果显示，改进后的模型在角色对话任务上的表现与GPT-4o模型相当。我们发布了合成角色和指令调优对话，以支持公共研究。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.15427 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文探讨了通过合成数据实现大语言模型的角色通用化能力。</p><br /><br /><p><strong>摘要：</strong> 随着角色扮演对话代理的开发需求增加，定制化角色扮演在大语言模型（LLMs）中得到了广泛关注。该研究通过大规模数据合成，旨在赋予LLMs角色通用化的能力。研究首先利用Persona Hub合成了大规模的角色档案，并探讨了两种策略：响应重写和响应生成，以创建与角色对齐的指令性响应。通过使用LLaMA-3 8B模型进行监督微调，研究验证了合成指令调优数据在角色通用化方面的有效性。最终成果显示，改进后的模型在角色对话任务上的表现与GPT-4o模型相当。我们发布了合成角色和指令调优对话，以支持公共研究。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2501.15427" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 28 Jan 2025 12:39:34 GMT</pubDate>
 <pubDate>Tue, 28 Jan 2025 12:39:34 GMT</pubDate>
 </item>
 <item>
@@ -21,14 +55,10 @@
 <link>https://arxiv.org/abs/2501.16273</link>
 <guid>https://arxiv.org/abs/2501.16273</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究表明编码器-解码器架构在小型语言模型中明显优于解码器仅模型。</p><br><br><p><strong>摘要：</strong> 本文对小型语言模型（参数在10亿以下）的编码器-解码器架构与解码器仅模型进行了系统分析。结果显示，编码器-解码器架构在边缘设备上实现了47%的首次令牌延迟降低和4.7倍的吞吐量提升，这主要得益于其一次性输入处理和理解与生成阶段的有效分离。我们还提出了一种新的知识蒸馏框架，使得编码器-解码器模型能够借用大型解码器教师的能力，同时保持其架构优势，平均性能提升达到6个百分点，尤其在输入和输出分布可以采用不同处理方式的非对称序列任务中表现明显。结合现代进展如旋转位置嵌入（RoPE）和视觉编码器，研究表明编码器-解码器架构提供了在资源受限环境中部署高效语言模型的可行路径，挑战了当前对解码器仅扩展的趋势，强调了在参数预算降低时架构选择的重要性，尤其是在需要计算效率的设备和边缘部署中。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.16273 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究表明编码器-解码器架构在小型语言模型中明显优于解码器仅模型。</p><br /><br /><p><strong>摘要：</strong> 本文对小型语言模型（参数在10亿以下）的编码器-解码器架构与解码器仅模型进行了系统分析。结果显示，编码器-解码器架构在边缘设备上实现了47%的首次令牌延迟降低和4.7倍的吞吐量提升，这主要得益于其一次性输入处理和理解与生成阶段的有效分离。我们还提出了一种新的知识蒸馏框架，使得编码器-解码器模型能够借用大型解码器教师的能力，同时保持其架构优势，平均性能提升达到6个百分点，尤其在输入和输出分布可以采用不同处理方式的非对称序列任务中表现明显。结合现代进展如旋转位置嵌入（RoPE）和视觉编码器，研究表明编码器-解码器架构提供了在资源受限环境中部署高效语言模型的可行路径，挑战了当前对解码器仅扩展的趋势，强调了在参数预算降低时架构选择的重要性，尤其是在需要计算效率的设备和边缘部署中。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2501.16273" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 28 Jan 2025 12:09:18 GMT</pubDate>
-<pubDate>Tue, 28 Jan 2025 12:09:18 GMT</pubDate>
 </item>
-
 <item>
 <title>稀疏专家混合模型中的参数稀疏性对性能的影响研究</title>
 <link>https://arxiv.org/abs/2501.12370</link>
@@ -9014,24 +9044,6 @@ As large language models (LLMs) become increasingly deployed across various indu
 <div><p style="color: gray;">本文介绍了Ichigo，一个混合模态模型，通过统一的transformer架构高效处理语音和文本。</p><br /><br /><p><strong>摘要：</strong> Large Language Models（LLMs）在自然语言处理领域取得了显著突破。然而，将其应用于语音任务依然面临挑战，特别是在音频和文本模态的整合方面。本文提出了Ichigo，一种混合模态模型，能够无缝处理交替序列的语音和文本。Ichigo采用了令牌化的早期融合方法，将语音量化为离散令牌，并对语音和文本模态使用统一的transformer架构。这种方法使得跨模态的联合推理与生成成为可能，而无需单独的适配器。我们详细介绍了包括在多语言语音识别数据集上进行预训练和在精心策划的指令数据集上进行微调的综合训练方法。实验结果显示，Ichigo在语音问答基准测试中表现出色，超越了现有的开源语音语言模型，同时与级联系统的结果相当。值得注意的是，Ichigo的首次令牌生成延迟仅为111毫秒，显著低于其他现有模型。我们的方法不仅推动了多模态人工智能的发展，也为小型研究团队有效贡献于开源语音语言模型提供了框架。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.15316" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 22 Oct 2024 11:40:31 GMT</pubDate>
-</item>
-<item>
-<title>基于大型语言模型的连续马尔可夫决策过程动态预测</title>
-<link>https://arxiv.org/abs/2410.11711</link>
-<guid>https://arxiv.org/abs/2410.11711</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文提出了一种利用预训练大型语言模型进行连续马尔可夫决策过程动态预测的方法。</p><br /><br /><p><strong>摘要：</strong> 随着大型语言模型（LLMs）零-shot 能力的不断提升，其应用领域已扩展至自然语言处理之外的多个领域。在强化学习中，尽管 LLMs 在文本环境中得到了广泛应用，但其在连续状态空间中的整合仍然尚未得到充分研究。本文探讨如何利用预训练的 LLMs 进行连续马尔可夫决策过程的动态预测。我们确定了处理多元数据和引入控制信号这两个关键挑战，这些挑战限制了 LLMs 在此设置下的潜力，并提出了解决方案——解耦式上下文学习（Disentangled In-Context Learning, DICL）。我们在模型驱动策略评估和数据增强的离线强化学习两个设置中展示了该方法的概念性应用，并提供了对相关方法的理论分析。实验结果进一步验证了我们的方法能够生成良好校准的置信度估计。代码已发布在 https://github.com/abenechehab/dicl。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.11711" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 22 Oct 2024 08:05:14 GMT</pubDate>
-</item>
-<item>
-<title>Alchemy：通过符号变换合成形式化定理的框架</title>
-<link>https://arxiv.org/abs/2410.15748</link>
-<guid>https://arxiv.org/abs/2410.15748</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文提出Alchemy，一个通过符号变换合成形式化定理的框架，显著扩充Mathlib中的定理数量。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种名为Alchemy的通用框架，该框架旨在通过符号变换构建形式化定理，以解决神经定理证明（NTP）面临的数据稀缺问题。聚焦于Mathlib中的候选定理，Alchemy识别出所有可以应用于这些定理的可调用定理，并通过将相关术语替换为其等价形式或前提进行变换，从而显著增加定理数量，将Mathlib中的定理数量从11万增长至600万。此外，本文对扩充后的语料库进行了持续预训练和监督微调，实验结果表明该方法的有效性，在Leandojo基准上实现了5%的绝对性能提升，并在具有一定出分布的数据集miniF2F上提升了2.5%的绝对性能。最后，本文还对合成数据的组成和训练范式进行了全面分析，为强大的定理证明器的开发提供了有价值的指导。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.15748" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 22 Oct 2024 06:55:29 GMT</pubDate>
 </item>
 </channel>
 </rss>
