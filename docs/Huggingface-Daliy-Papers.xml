@@ -5,15 +5,25 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>大型语言模型的安全性与有害微调攻击风险</title>
+<link>https://arxiv.org/abs/2501.17433</link>
+<guid>https://arxiv.org/abs/2501.17433</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究表明，依赖护栏过滤的微调方法对有害样本防护不可靠。</p><br><br><p><strong>摘要：</strong> 近期研究发现，大型语言模型（LLMs）在有害微调攻击下存在脆弱性，模型在微调后丧失了安全对齐能力。为降低风险，通常采用护栏过滤有害样本。然而，本文提出的新型红队方法表明，单纯依赖护栏并不可靠，优化后的有害数据通过轻微修改能够成功规避护栏的检测。实验结果显示，经过病毒攻击优化的有害数据在护栏下的泄露率高达100%，并且攻击效果显著。本文强调，盲目认为护栏可以有效防止有害微调攻击是极其危险的，因为这无法解决预训练大型语言模型内在的安全问题。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.17433 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 30 Jan 2025 01:30:18 GMT</pubDate>
+<pubDate>Thu, 30 Jan 2025 01:30:18 GMT</pubDate>
+</item>
+
+<item>
 <title>批评微调：一种增强语言模型推理的新策略</title>
 <link>https://arxiv.org/abs/2501.17703</link>
 <guid>https://arxiv.org/abs/2501.17703</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文提出批评微调策略，促进模型更深层次的分析与理解。</p><br><br><p><strong>摘要：</strong> 本文挑战传统的有监督微调（SFT）方法，提出批评微调（CFT）策略，该策略让模型学习如何对噪声响应进行批评，而非仅仅模仿正确回答。CFT受到人类学习过程的启发，强调批判性思维的培养，从而鼓励模型进行更深层次的分析和细致的理解。通过构建一个包含50K样本的数据集，我们验证CFT的有效性，在六个不同基础模型上的数学基准测试中，相比于SFT，我们的CFT方法表现出4-10%的持续提升。我们进一步在MetaMath和NuminaMath数据集上扩展，相似的结果再次验证了CFT的优势。尤其是，使用仅50K样本训练的Qwen2.5-Math-CFT模型在大多数基准测试中与AceMath和Qwen2.5-Math-Instruct等使用超过200万样本的竞争模型相媲美或超越。消融研究显示CFT对噪声响应的源头和教师批评模型表现出强大的鲁棒性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.17703 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文提出批评微调策略，促进模型更深层次的分析与理解。</p><br /><br /><p><strong>摘要：</strong> 本文挑战传统的有监督微调（SFT）方法，提出批评微调（CFT）策略，该策略让模型学习如何对噪声响应进行批评，而非仅仅模仿正确回答。CFT受到人类学习过程的启发，强调批判性思维的培养，从而鼓励模型进行更深层次的分析和细致的理解。通过构建一个包含50K样本的数据集，我们验证CFT的有效性，在六个不同基础模型上的数学基准测试中，相比于SFT，我们的CFT方法表现出4-10%的持续提升。我们进一步在MetaMath和NuminaMath数据集上扩展，相似的结果再次验证了CFT的优势。尤其是，使用仅50K样本训练的Qwen2.5-Math-CFT模型在大多数基准测试中与AceMath和Qwen2.5-Math-Instruct等使用超过200万样本的竞争模型相媲美或超越。消融研究显示CFT对噪声响应的源头和教师批评模型表现出强大的鲁棒性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2501.17703" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 29 Jan 2025 21:51:11 GMT</pubDate>
 <pubDate>Wed, 29 Jan 2025 21:51:11 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +31,8 @@
 <link>https://arxiv.org/abs/2501.17195</link>
 <guid>https://arxiv.org/abs/2501.17195</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>Atla Selene Mini是一款高性能的小型评估模型，超越现有最佳模型。</p><br><br><p><strong>摘要：</strong> Atla Selene Mini是一款先进的小型语言模型评估者，表现优于现有最佳模型和GPT-4o-mini，在11个超分布基准上均展现出卓越的表现，包括绝对评分、分类和成对偏好任务。该模型是RewardBench上得分最高的8B生成模型，超越了GPT-4o等强基线。这一成就得益于我们采用的严谨数据策划策略，通过增加合成生成的评估数据并确保数据高质量。此外，模型训练结合了直接偏好优化（DPO）与监督微调（SFT）损失，令其在真实场景中表现稳定。Selene Mini在金融和医疗行业数据集上与人类专家评估的零样本一致性显著提高，且对提示格式的变化展现出良好的鲁棒性。初步结果表明，Selene Mini在社区驱动的Judge Arena中名列前茅。我们已在HuggingFace和Ollama上发布模型权重，以促进社区的广泛采用。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.17195 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">Atla Selene Mini是一款高性能的小型评估模型，超越现有最佳模型。</p><br /><br /><p><strong>摘要：</strong> Atla Selene Mini是一款先进的小型语言模型评估者，表现优于现有最佳模型和GPT-4o-mini，在11个超分布基准上均展现出卓越的表现，包括绝对评分、分类和成对偏好任务。该模型是RewardBench上得分最高的8B生成模型，超越了GPT-4o等强基线。这一成就得益于我们采用的严谨数据策划策略，通过增加合成生成的评估数据并确保数据高质量。此外，模型训练结合了直接偏好优化（DPO）与监督微调（SFT）损失，令其在真实场景中表现稳定。Selene Mini在金融和医疗行业数据集上与人类专家评估的零样本一致性显著提高，且对提示格式的变化展现出良好的鲁棒性。初步结果表明，Selene Mini在社区驱动的Judge Arena中名列前茅。我们已在HuggingFace和Ollama上发布模型权重，以促进社区的广泛采用。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2501.17195" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 29 Jan 2025 21:44:37 GMT</pubDate>
 <pubDate>Wed, 29 Jan 2025 21:44:37 GMT</pubDate>
 </item>
 <item>
@@ -33,14 +40,10 @@
 <link>https://arxiv.org/abs/2501.17749</link>
 <guid>https://arxiv.org/abs/2501.17749</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>文章探讨了大型语言模型的安全性测试及其潜在风险。</p><br><br><p><strong>摘要：</strong> 大型语言模型(LLMs)已成为日常生活的重要组成部分，但它们存在隐私风险、偏见和错误信息传播等问题。这些风险显示出对强大安全机制、伦理指导以及详尽测试的需求。本文汇报了来自蒙德拉贡大学和塞维利亚大学的研究人员在OpenAI的o3-mini LLM上实施的外部安全测试经验。研究使用工具ASTRAL自动生成最新的安全测试输入，进行10,080次测试，并通过手动验证，识别出87个实际的不安全模型行为实例。文章强调了在部署前外部测试阶段的关键见解和发现，为大型语言模型的负责任部署提供了有益的参考。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.17749 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">文章探讨了大型语言模型的安全性测试及其潜在风险。</p><br /><br /><p><strong>摘要：</strong> 大型语言模型(LLMs)已成为日常生活的重要组成部分，但它们存在隐私风险、偏见和错误信息传播等问题。这些风险显示出对强大安全机制、伦理指导以及详尽测试的需求。本文汇报了来自蒙德拉贡大学和塞维利亚大学的研究人员在OpenAI的o3-mini LLM上实施的外部安全测试经验。研究使用工具ASTRAL自动生成最新的安全测试输入，进行10,080次测试，并通过手动验证，识别出87个实际的不安全模型行为实例。文章强调了在部署前外部测试阶段的关键见解和发现，为大型语言模型的负责任部署提供了有益的参考。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2501.17749" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 29 Jan 2025 21:38:42 GMT</pubDate>
-<pubDate>Wed, 29 Jan 2025 21:38:42 GMT</pubDate>
 </item>
-
 <item>
 <title>构建与人类价值观一致的法语数据集</title>
 <link>https://arxiv.org/abs/2501.17117</link>
@@ -9017,33 +9020,6 @@ The ability to adapt beliefs or behaviors in response to unexpected outcomes, re
 <div><p style="color: gray;">本研究通过细化训练数据和强化学习提升视觉语言模型的推理能力。</p><br /><br /><p><strong>摘要：</strong> 在视觉语言模型（VLMs）中，链式推理（CoT）对于提升可解释性和可信度至关重要。然而，目前的训练方法缺乏丰富的CoT推理数据，主要依赖于短小的注释和最低限度的推理。我们展示了仅用短答案训练VLM在需要更详细回应的推理任务中的泛化能力不足。为了解决此问题，我们提出了一种双重方法。首先，利用GPT-4o模型提取推理过程，从而丰富训练数据，并对VLM进行微调，提升其CoT性能。其次，我们应用强化学习进一步校准推理质量。具体而言，通过将模型生成的推理链与注释的短答案进行比较，构建正负样本对，进而使用Direct Preference Optimization算法来提升模型的推理能力。实验结果显示，在基准数据集上CoT推理有显著提升，并且在直接答案预测的泛化能力上也表现良好。本工作强调在训练中融入详细推理的重要性，并利用强化学习来增强VLM的推理能力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.16198" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 23 Oct 2024 13:48:55 GMT</pubDate>
-</item>
-<item>
-<title>数学推理参数的隔离与干预：Math Neurosurgery 方法</title>
-<link>https://arxiv.org/abs/2410.16930</link>
-<guid>https://arxiv.org/abs/2410.16930</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文提出一种新的方法 MathNeuro，用于隔离大语言模型中的数学推理参数，以改进模型的数学表现。</p><br /><br /><p><strong>摘要：</strong> 数学推理是大型语言模型（LLM）研究的关键领域，但关于其在模型参数中的编码及是否可独立于其他技能进行干预的研究较少。为了改善数学能力而不影响模型的其他功能，我们提出了数学神经外科（Math Neurosurgery，MathNeuro）方法。该方法通过前向传播，利用权重和激活值计算参数重要性，从而识别数学专用参数。MathNeuro通过删除非数学行为中重要的参数，成功地剔除了LLM的数学推理能力，但保留了其一般语言能力。我们的实验表明，在GSM8K数据集上，按照MathNeuro识别的参数进行修剪，能够提升预训练或指令调优的LLM性能4%-17%。此外，MathNeuro在数据利用效率方面表现良好，只需一个样本即可有效识别数学专用参数。此研究展示了未来在数学专用参数干预领域的潜力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.16930" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 23 Oct 2024 09:15:06 GMT</pubDate>
-</item>
-<item>
-<title>减轻长距离视觉-指令交互影响的新方法：同心因果注意力</title>
-<link>https://arxiv.org/abs/2410.15926</link>
-<guid>https://arxiv.org/abs/2410.15926</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">研究揭示RoPE在LVLM中导致视觉信息误导的问题，并提出同心因果注意力（CCA）作为解决方案。</p><br /><br /><p><strong>摘要：</strong> 近年来，大型视觉语言模型（LVLM）表现出卓越的零样本对话和推理能力，尤其是在处理多模态查询时。然而，它们仍然面临着物体幻觉的问题，即生成的文本回应与输入图像不一致。我们的初步研究表明，物体幻觉与RoPE（旋转位置编码）密切相关，RoPE作为一种广泛采用的位置信息建模设计，因其长期衰减特性，使得LVLM在视觉线索与指令标记之间的距离较大时更易出现幻觉。此外，我们观察到在多模态对齐中颠倒视觉标记的顺序会产生相似的效果。测试结果显示，RoPE的长期衰减对捕捉视觉与指令交互带来挑战。为此，我们提出了一种简单而有效的定位对齐策略——同心因果注意力（CCA），旨在减轻RoPE的长期衰减影响，进一步缩短视觉标记与指令标记之间的相对距离。通过CCA，视觉标记能够更好地与指令标记交互，从而增强模型的感知能力，降低物体幻觉的发生率。我们的定位对齐方法在多个物体幻觉基准测试中显著优于现有的幻觉缓解策略。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.15926" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 23 Oct 2024 08:54:06 GMT</pubDate>
-</item>
-<item>
-<title>自我引导优化：一种无人工标注的偏好信号生成方法</title>
-<link>https://arxiv.org/abs/2410.17131</link>
-<guid>https://arxiv.org/abs/2410.17131</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文介绍了一种新算法SSO，能够无人工干预生成高质量的偏好信号，提升自动化对齐效率。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种新算法，自我引导优化（Self-Steering Optimization, SSO），旨在通过最小化人工干预生成高质量的偏好信号，以提升自动化对齐的效果。SSO在迭代训练过程中依据预定义原则自动生成偏好信号，进而消除了对人工标注的需求。该算法在保持选择与拒绝响应之间准确间隔的同时，确保它们均符合当前策略模型的学习能力。SSO不仅支持策略模型的在线和离线训练，还能增强奖励模型的训练效果。我们通过两个基础模型Qwen2和Llama3.1验证了SSO的有效性，结果表明SSO在整个迭代训练过程中产生了准确的、符合政策的偏好信号。SSO在没有任何人工标注或外部模型的情况下，在六个主观或客观基准上显著提升了性能。此外，通过SSO生成的偏好数据还显著改善了奖励模型在Rewardbench上的表现。我们的研究为偏好优化提供了一种可扩展的方法，为更高效、更有效的自动化对齐奠定了基础。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.17131" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 23 Oct 2024 05:49:09 GMT</pubDate>
 </item>
 </channel>
 </rss>
