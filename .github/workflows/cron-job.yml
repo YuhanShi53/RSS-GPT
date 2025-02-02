@@ -47,6 +47,7 @@ jobs:
           pwd
           git config --local user.name "github-actions[bot]"
           git config --local user.email "github-actions[bot]@users.noreply.github.com"
+          git config set advice.addIgnoredFile false
         
           git status -s
           git add docs/*
