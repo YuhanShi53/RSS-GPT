@@ -4,6 +4,42 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>Reward-Guided Speculative Decoding for Efficient LLM Reasoning</title>
+<link>https://arxiv.org/abs/2501.19324</link>
+<guid>https://arxiv.org/abs/2501.19324</guid>
+<content:encoded><![CDATA[
+
+  We introduce Reward-Guided Speculative Decoding (RSD), a novel framework aimed at improving the efficiency of inference in large language models (LLMs). RSD synergistically combines a lightweight draft model with a more powerful target model, incorporating a controlled bias to prioritize high-reward outputs, in contrast to existing speculative decoding methods that enforce strict unbiasedness. RSD employs a process reward model to evaluate intermediate decoding steps and dynamically decide whether to invoke the target model, optimizing the trade-off between computational cost and output quality. We theoretically demonstrate that a threshold-based mixture strategy achieves an optimal balance between resource utilization and performance. Extensive evaluations on challenging reasoning benchmarks, including Olympiad-level tasks, show that RSD delivers significant efficiency gains against decoding with the target model only (up to 4.4x fewer FLOPs), while achieving significant better accuracy than parallel decoding method on average (up to +3.5). These results highlight RSD as a robust and cost-effective approach for deploying LLMs in resource-intensive scenarios.
+
+]]></content:encoded>
+<pubDate>Sun, 02 Feb 2025 23:10:16 GMT</pubDate>
+<pubDate>Sun, 02 Feb 2025 23:10:16 GMT</pubDate>
+</item>
+<item>
+<title>s1: Simple test-time scaling</title>
+<link>https://arxiv.org/abs/2501.19393</link>
+<guid>https://arxiv.org/abs/2501.19393</guid>
+<content:encoded><![CDATA[
+
+  Test-time scaling is a promising new approach to language modeling that uses extra test-time compute to improve performance. Recently, OpenAI's o1 model showed this capability but did not publicly share its methodology, leading to many replication efforts. We seek the simplest approach to achieve test-time scaling and strong reasoning performance. First, we curate a small dataset s1K of 1,000 questions paired with reasoning traces relying on three criteria we validate through ablations: difficulty, diversity, and quality. Second, we develop budget forcing to control test-time compute by forcefully terminating the model's thinking process or lengthening it by appending "Wait" multiple times to the model's generation when it tries to end. This can lead the model to double-check its answer, often fixing incorrect reasoning steps. After supervised finetuning the Qwen2.5-32B-Instruct language model on s1K and equipping it with budget forcing, our model s1 exceeds o1-preview on competition math questions by up to 27% (MATH and AIME24). Further, scaling s1 with budget forcing allows extrapolating beyond its performance without test-time intervention: from 50% to 57% on AIME24. Our model, data, and code are open-source at https://github.com/simplescaling/s1.
+
+]]></content:encoded>
+<pubDate>Sun, 02 Feb 2025 21:45:49 GMT</pubDate>
+<pubDate>Sun, 02 Feb 2025 21:45:49 GMT</pubDate>
+</item>
+<item>
+<title>Trading Inference-Time Compute for Adversarial Robustness</title>
+<link>https://arxiv.org/abs/2501.18841</link>
+<guid>https://arxiv.org/abs/2501.18841</guid>
+<content:encoded><![CDATA[
+
+  We conduct experiments on the impact of increasing inference-time compute in reasoning models (specifically OpenAI o1-preview and o1-mini) on their robustness to adversarial attacks. We find that across a variety of attacks, increased inference-time compute leads to improved robustness. In many cases (with important exceptions), the fraction of model samples where the attack succeeds tends to zero as the amount of test-time compute grows. We perform no adversarial training for the tasks we study, and we increase inference-time compute by simply allowing the models to spend more compute on reasoning, independently of the form of attack. Our results suggest that inference-time compute has the potential to improve adversarial robustness for Large Language Models. We also explore new attacks directed at reasoning models, as well as settings where inference-time compute does not improve reliability, and speculate on the reasons for these as well as ways to address them.
+
+]]></content:encoded>
+<pubDate>Sun, 02 Feb 2025 21:40:11 GMT</pubDate>
+<pubDate>Sun, 02 Feb 2025 21:40:11 GMT</pubDate>
+</item>
 
 <item>
 <title>SANA-1.5：文本到图像生成中的高效线性扩展变换器</title>
