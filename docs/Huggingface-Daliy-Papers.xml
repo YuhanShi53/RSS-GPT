@@ -4,6 +4,54 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>SAeUron：通过稀疏自编码器优化扩散模型中的不当内容去除</title>
+<link>https://arxiv.org/abs/2501.18052</link>
+<guid>https://arxiv.org/abs/2501.18052</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>SAeUron利用稀疏自编码器有效去除扩散模型中的不当内容。</p><br><br><p><strong>摘要：</strong> SAeUron是一种新方法，旨在通过稀疏自编码器（SAE）去除扩散模型中的不当内容，解决当前模型在生成有害或不良内容方面的伦理和安全问题。该方法展示了SAE在无监督条件下，通过训练多个去噪时间步的激活，能够有效捕捉对应特定概念的稀疏和可解释特征。SAeUron提出了一种特征选择方法，用于精确干预模型激活，从而阻挡目标内容的生成，同时保持整体性能。评估结果显示，在UnlearnCanvas基准测试中，SAeUron在物体和风格的去除任务上表现出色，并能够利用单个SAE同时移除多个概念。此外，SAeUron在面对攻击时，降低了生成不良内容的风险，展现了其在这一领域的领先地位。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.18052 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 03 Feb 2025 15:09:16 GMT</pubDate>
+<pubDate>Mon, 03 Feb 2025 15:09:16 GMT</pubDate>
+</item>
+<item>
+<title>基于扩散模型的多视点图像和深度图生成方法</title>
+<link>https://arxiv.org/abs/2501.18804</link>
+<guid>https://arxiv.org/abs/2501.18804</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出了一种新型扩散架构MVGD，实现多视点图像和深度图的生成。</p><br><br><p><strong>摘要：</strong> 本文介绍了MVGD，一种基于扩散的架构，能够从任意数量的输入视图直接生成图像和深度图。这种方法利用光线图条件增强视觉特征，并指导图像和深度图的生成。重要的是，我们通过可学习的任务嵌入的多任务生成来引导扩散过程，以满足特定模态的需求。该模型在超过6000万多视图样本上进行训练，并提出了在多样化条件下实现高效和一致学习的技术。此外，我们还提出了一种新的策略，通过逐步微调较小模型，以实现对更大模型的高效训练，展示出良好的扩展行为。实验结果表明，在多个新视点合成基准测试以及多视图立体和视频深度估计中，该方法达到最先进的结果。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.18804 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 03 Feb 2025 13:32:45 GMT</pubDate>
+<pubDate>Mon, 03 Feb 2025 13:32:45 GMT</pubDate>
+</item>
+<item>
+<title>MatAnyone: 一种针对特定目标的视频抠图框架</title>
+<link>https://arxiv.org/abs/2501.14677</link>
+<guid>https://arxiv.org/abs/2501.14677</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>MatAnyone框架通过记忆传播实现视频抠图的稳健性与准确性。</p><br><br><p><strong>摘要：</strong> MatAnyone是一个为目标指定视频抠图而设计的强大框架，旨在解决复杂背景下的挑战。它基于记忆的范式，引入一致的记忆传播模块，通过区域自适应记忆融合方法，适应性地整合来自前一帧的记忆，确保核心区域的语义稳定，同时保留物体边界的细致特征。为提高训练的鲁棒性，我们提出了一个更大、高质量和多样化的视频抠图数据集，并采用了一种新颖的训练策略，利用大规模分割数据，提升抠图的稳定性。该框架在多样化的真实场景下表现出色，超越了现有方法，提供了可靠和准确的视频抠图结果。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.14677 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 03 Feb 2025 13:15:59 GMT</pubDate>
+<pubDate>Mon, 03 Feb 2025 13:15:59 GMT</pubDate>
+</item>
+<item>
+<title>SSMax：一种提升Transformer模型长文本处理能力的可扩展Softmax方法</title>
+<link>https://arxiv.org/abs/2501.19399</link>
+<guid>https://arxiv.org/abs/2501.19399</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>SSMax替代传统Softmax以提升Transformer在长文本中的性能。</p><br><br><p><strong>摘要：</strong> 随着输入向量尺寸的增加，传统Softmax函数的最大元素趋近于零，这导致基于Transformer的语言模型在计算注意力分布时，注意力的聚焦效果减弱，难以有效优先考虑关键信息。为了解决此问题，我们提出了Scalable-Softmax（SSMax），该方法能够在输入向量尺寸变化的情况下替代Softmax，并可以无缝集成至现有的Transformer架构中。实验结果表明，采用SSMax的方法在语言建模中不仅预训练期间损失降低速度更快，而且在处理长上下文及关键信息检索方面表现显著提升。同时，注意力得分的分析显示，SSMax能够在长上下文中帮助模型更好地聚焦于关键信息。此外，即使在预训练已开始的情况下，通过将注意力层中的Softmax替换为SSMax，模型也能够获得一定的长度泛化能力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.19399 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 03 Feb 2025 13:01:15 GMT</pubDate>
+<pubDate>Mon, 03 Feb 2025 13:01:15 GMT</pubDate>
+</item>
 
 <item>
 <title>学习率调度在大模型训练中的优化理论应用</title>
