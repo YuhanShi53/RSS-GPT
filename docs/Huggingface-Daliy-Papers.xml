@@ -4,6 +4,66 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>通过过程监督提升长文生成质量</title>
+<link>https://arxiv.org/abs/2502.02095</link>
+<guid>https://arxiv.org/abs/2502.02095</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出了一种基于过程监督的长文生成改进方法。</p><br><br><p><strong>摘要：</strong> 长文生成在学术写作和代码生成中至关重要，但当前模型如GPT-4o仍存在性能不足的问题。现有方法利用偏好学习与结果监督，常常无法为扩展上下文提供详细反馈，导致内容不完全符合查询要求，出现长度偏差和质量下降。本文提出通过过程监督来增强长文生成，采用蒙特卡洛树搜索收集逐步偏好对，同时利用全局记忆池保持一致性。为了解决候选选择的次优性，整合外部评价来优化偏好对的质量。实验结果表明，该方法在长文生成基准上改善了长度和质量，在各种模型基础上在一般基准上表现接近无损。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.02095 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 04 Feb 2025 21:09:41 GMT</pubDate>
+<pubDate>Tue, 04 Feb 2025 21:09:41 GMT</pubDate>
+</item>
+<item>
+<title>MakeAnything：针对多域程序生成的创新框架</title>
+<link>https://arxiv.org/abs/2502.01572</link>
+<guid>https://arxiv.org/abs/2502.01572</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本研究提出MakeAnything框架，有效解决程序生成中的关键挑战。</p><br><br><p><strong>摘要：</strong> 人类智能的一大特点是通过结构化的多步骤过程创造复杂的工艺。生成程序教程一直是AI研究的一个困难目标，面临多任务程序数据集匮乏、步骤之间的逻辑连续性和视觉一致性维护以及跨多个领域的泛化能力等三大挑战。为此，本文提出了一个涵盖21项任务、超过24,000个程序序列的多域数据集，作为基础，介绍了基于扩散变换器（DIT）的MakeAnything框架，通过微调来激活DIT在上下文中的能力，从而生成一致的程序序列。此外，我们引入了不对称低秩自适应（LoRA）用于图像生成，通过冻结编码器参数并自适应调整解码器层的方式，实现了一般化能力与任务特定性能的平衡。我们的ReCraft模型则通过时空一致性约束使图像到过程的生成得以实现，允许静态图像被分解为合理的创建序列。大量实验表明，MakeAnything在程序生成任务上超越了现有方法，设立了新的性能基准。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.01572 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 04 Feb 2025 20:45:38 GMT</pubDate>
+<pubDate>Tue, 04 Feb 2025 20:45:38 GMT</pubDate>
+</item>
+<item>
+<title>RandLoRA：克服低秩适应的局限性并提高模型性能</title>
+<link>https://arxiv.org/abs/2502.00987</link>
+<guid>https://arxiv.org/abs/2502.00987</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>RandLoRA通过全秩更新改善低秩适应的性能，提高大规模模型的有效性。</p><br><br><p><strong>摘要：</strong> 本文探讨了低秩适应（LoRA）及其变体在大规模变换器网络中减少可训练参数和内存需求的效果，同时保持微调性能。然而，低秩权重更新的特性限制了微调模型的表示能力，可能影响复杂任务的表现。为了解决性能差距问题，本文提出RandLoRA，这是一种利用低秩非可训练随机矩阵的线性组合进行全秩更新的参数高效方法。我们通过限制对固定随机矩阵施加对角缩放矩阵的优化，从而有效克服了低秩限制，同时在训练过程中保持了参数和内存的高效性。通过对多个视觉、语言和视觉-语言基准的广泛实验评估，我们发现RandLoRA在各个任务中均显著减少了标准微调与LoRA之间的性能差距，证明了其有效性，特别是在视觉-语言任务中效果尤为显著。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.00987 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 04 Feb 2025 20:34:37 GMT</pubDate>
+<pubDate>Tue, 04 Feb 2025 20:34:37 GMT</pubDate>
+</item>
+<item>
+<title>UTGen: 提高单位测试生成与调试的有效性</title>
+<link>https://arxiv.org/abs/2502.01619</link>
+<guid>https://arxiv.org/abs/2502.01619</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出UTGen以改善单位测试生成和代码调试的效果。</p><br><br><p><strong>摘要：</strong> 单位测试在评估代码正确性和为大型语言模型提供反馈中起着重要作用，但生成的测试用例在揭示错误和预测输出方面存在折衷。为了解决这一问题，本文提出了UTGen，通过任务描述和候选代码，指导大型语言模型生成能揭示错误的单位测试输入及其正确的预期输出。UTGen被集成到UTDebug调试流程中，该流程利用生成的测试以帮助大型语言模型有效调试。由于模型生成的测试可能会提供噪声信号，UTDebug通过测试时计算提高UT输出预测精确度，并基于多个生成的单位测试验证和回溯修改以避免过拟合。实验表明，UTGen在生成同时包含错误揭示输入和正确输出的单位测试方面，比基准方法提高了7.59%。与UTDebug结合使用时，UTGen的反馈提高了Qwen-2.5 7B模型在HumanEvalFix和MBPP+调试任务中的准确度，分别超过了其他基于大型语言模型的测试生成基准，提升幅度达3%和12.35%。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.01619 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 04 Feb 2025 16:10:18 GMT</pubDate>
+<pubDate>Tue, 04 Feb 2025 16:10:18 GMT</pubDate>
+</item>
+<item>
+<title>相对信心估计在语言模型中的应用研究</title>
+<link>https://arxiv.org/abs/2502.01126</link>
+<guid>https://arxiv.org/abs/2502.01126</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文探讨了相对信心估计如何提高语言模型的输出可靠性。</p><br><br><p><strong>摘要：</strong> 语言模型(LMs)需提供可靠的信心估计，帮助用户识别输出中的错误。传统上，语言模型在评估自身信心方面存在困难，尤其是绝对信心评估效果不佳。本文提出了相对信心估计方法，通过对比不同问题之间的信心判断来实现，使用Elo评分和Bradley-Terry方法将模型的信心偏好转化为信心分数。我们在五个先进的语言模型上评估该方法，结果显示，相对信心估计在可靠性上优于绝对信心评估，选择性分类的AUC平均提高了3.5%。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.01126 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 04 Feb 2025 15:56:40 GMT</pubDate>
+<pubDate>Tue, 04 Feb 2025 15:56:40 GMT</pubDate>
+</item>
 
 <item>
 <title>AlignVLM: 视觉文本对齐的新方法</title>
