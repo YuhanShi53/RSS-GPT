@@ -5,18 +5,99 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>基于潜在离散令牌的混合推理表示方法</title>
+<link>https://arxiv.org/abs/2502.03275</link>
+<guid>https://arxiv.org/abs/2502.03275</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出了一种通过潜在离散令牌简化推理过程的方法。</p><br><br><p><strong>摘要：</strong> 本文提出了一种新的混合推理表示方法，通过使用VQ-VAE生成的潜在离散令牌，部分抽象化推理过程，从而显著减少推理追踪的长度。我们在两种场景中探索潜在追踪抽象的应用：一是从零开始训练模型解决钥匙寻路问题；二是针对逻辑和数学推理问题对大型语言模型进行微调，使用扩展的词汇表，包括未见的潜在令牌。为了实现高效的学习，我们引入了一种简单的训练程序，即随机混合潜在令牌和文本令牌，这能使模型快速适应新的潜在令牌。结果表明，我们的方法在多个基准测试中稳定胜出，显示出良好的性能提升。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.03275 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 06 Feb 2025 00:29:44 GMT</pubDate>
+<pubDate>Thu, 06 Feb 2025 00:29:44 GMT</pubDate>
+</item>
+<item>
+<title>挑战传统认知：LIMO模型在复杂推理中的突破</title>
+<link>https://arxiv.org/abs/2502.03387</link>
+<guid>https://arxiv.org/abs/2502.03387</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>LIMO模型以少量样本展现卓越数学推理能力，挑战传统训练观念。</p><br><br><p><strong>摘要：</strong> 本研究揭示了一项基本发现，挑战了我们对大型语言模型中复杂推理出现机制的理解。传统观点认为，复杂推理任务需要大量训练数据（超过100,000个样本），而我们通过全面实验发现，复杂的数学推理能力可以在极少的样本下有效引发。我们的模型LIMO在仅使用817个经过精心挑选的训练样本的情况下，在AIME和MATH任务上分别取得了57.1%和94.8%的准确率，相比之前基于SFT模型的6.5%和59.2%有了显著提升。LIMO在实现数据高效推理上表现出色，提出了“少即是多推理假说”，指出在经过充分预训练的基础模型中，通过精心设计的示例，复杂推理能力可以得到有效激发。为促进后续研究，我们将LIMO作为一个全面的开源工具发布。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.03387 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 06 Feb 2025 00:26:02 GMT</pubDate>
+<pubDate>Thu, 06 Feb 2025 00:26:02 GMT</pubDate>
+</item>
+<item>
+<title>SmolLM2：高效的小型语言模型开发</title>
+<link>https://arxiv.org/abs/2502.02737</link>
+<guid>https://arxiv.org/abs/2502.02737</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>SmolLM2是一个先进的小型语言模型，凭借高效的数据处理技术实现优越性能。</p><br><br><p><strong>摘要：</strong> 本文介绍了SmolLM2的开发，这是一种参数量为17亿的小型语言模型。为了达到优秀的性能，我们对SmolLM2进行了约11万亿个标记的过度训练，采用多阶段训练过程，结合网络文本、专业数学、代码和指令跟随数据。此外，我们还在发现现有数据集小或质量低下的阶段引入了新的专业数据集（FineMath, Stack-Edu 和 SmolTalk）。我们进行了小规模的消融实验并手动调整每个阶段的数据集混合比例，以优化模型性能。最终，SmolLM2超越了其他一些近期的小型语言模型，包括Qwen2.5-1.5B和Llama3.2-1B。为促进未来语言模型开发和小型模型应用的研究，我们将发布SmolLM2及其开发过程中使用的所有数据集。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.02737 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 06 Feb 2025 00:20:51 GMT</pubDate>
+<pubDate>Thu, 06 Feb 2025 00:20:51 GMT</pubDate>
+</item>
+<item>
+<title>基于粒子蒙特卡洛方法的推理时间缩放新方法</title>
+<link>https://arxiv.org/abs/2502.01618</link>
+<guid>https://arxiv.org/abs/2502.01618</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出了一种新颖的推理时间缩放方法，通过粒子蒙特卡洛方法提升性能。</p><br><br><p><strong>摘要：</strong> 大型语言模型通过扩大模型规模和数据获得显著性能提升，但这种方法最近表现出边际效应递减的趋势。本文提出了一种新的推理时间缩放方法，将推理时间的缩放视为一个概率推断任务，采用基于采样的技术来探索状态空间模型的状态分布的典型集合。通过调整粒子蒙特卡洛方法，我们的实证评估显示，该方法在各种复杂数学推理任务中相比于传统的确定性搜索方法，其缩放率提升了4-16倍。使用我们的方案，Qwen2.5-Math-1.5B-Instruct在仅4次滚动中超过GPT-4o的准确性，而Qwen2.5-Math-7B-Instruct在仅32次滚动中达到o1级准确性。此研究不仅提供了一种有效的推理时间缩放方法，还将概率推断的丰富文献与LLM的推理时间缩放连接起来，为未来研究开发更强健的算法奠定基础。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.01618 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 05 Feb 2025 23:23:08 GMT</pubDate>
+<pubDate>Wed, 05 Feb 2025 23:23:08 GMT</pubDate>
+</item>
+<item>
+<title>增强大语言模型推理能力的长链思维研究</title>
+<link>https://arxiv.org/abs/2502.03373</link>
+<guid>https://arxiv.org/abs/2502.03373</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本研究揭示了增强大语言模型长链思维的关键因素和训练策略。</p><br><br><p><strong>摘要：</strong> 本文系统研究了长链思维推理的机制，识别出模型生成长链思维轨迹的关键因素。通过广泛的监督微调(SFT)和强化学习(RL)实验，我们得出四项主要发现：(1) 尽管SFT并非绝对必要，但它简化了训练过程并提高了效率；(2) 推理能力随着训练计算资源的增加而出现，但这种发展并不保证，因此奖励塑造对于稳定链长增长至关重要；(3) 扩展可验证奖励信号对于强化学习的成功至关重要，利用噪声来源的、经过过滤的解决方案对处理分布外（OOD）任务如科学、技术、工程和数学（STEM）推理表现出强大潜力；(4) 基础模型中固有具有的核心能力如错误修正，对于复杂任务通过强化学习有效激励这些技能需要相当的计算资源。因此，对它们的测量需要细致的方法。这些见解为优化训练策略以增强大语言模型中的长链思维推理提供了实际指南。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.03373 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 05 Feb 2025 22:27:48 GMT</pubDate>
+<pubDate>Wed, 05 Feb 2025 22:27:48 GMT</pubDate>
+</item>
+<item>
+<title>AStar：基于蒙特卡洛树搜索的多模态推理新范式</title>
+<link>https://arxiv.org/abs/2502.02339</link>
+<guid>https://arxiv.org/abs/2502.02339</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>AStar通过蒙特卡洛树搜索提升多模态模型的推理效率与准确性。</p><br><br><p><strong>摘要：</strong> 本文提出了一种新的多模态推理范式AStar，旨在解决现有多模态大语言模型（MLLMs）在复杂视觉推理中的效率与性能问题。传统方法依赖大量数据和搜索空间，导致隐性洞察提取效率低下。AStar通过蒙特卡洛树搜索（MCTS）自动推导高层次认知推理模式，从而利用有限数据构建层级结构，并设计统一的推理框架，将模型内部推理能力与外部推理指引无缝整合。研究表明，AStar在MathVerse基准测试中以7B模型达成54.0%的准确率，超越GPT-4o（50.2%），且保持了较高的数据与计算效率，展现出优异的性能和效率平衡。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.02339 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 05 Feb 2025 21:45:32 GMT</pubDate>
+<pubDate>Wed, 05 Feb 2025 21:45:32 GMT</pubDate>
+</item>
+<item>
+<title>利用大型语言模型模拟社会经济系统的多智能体框架</title>
+<link>https://arxiv.org/abs/2502.01506</link>
+<guid>https://arxiv.org/abs/2502.01506</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文介绍TwinMarket框架，利用LLM模拟社会经济系统的集体动态。</p><br><br><p><strong>摘要：</strong> 本文探讨了社会新生现象在社会科学中的重要性，指出传统的基于规则的智能体模型在模拟人类行为的多样性和复杂性方面存在局限。通过引入大型语言模型（LLM）作为新工具，TwinMarket框架展示了如何利用LLM模拟个体行为及其相互作用所引发的集体动态。在模拟的股票市场实验中，我们展示了个体行为如何触发群体行为，进而导致金融泡沫与经济衰退等新生现象。本研究为个体决策与集体社会经济模式间的复杂互动提供了重要的见解。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.01506 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 05 Feb 2025 21:44:36 GMT</pubDate>
+<pubDate>Wed, 05 Feb 2025 21:44:36 GMT</pubDate>
+</item>
+
+<item>
 <title>CADFusion：基于大型语言模型的文本到CAD转换框架</title>
 <link>https://arxiv.org/abs/2501.19054</link>
 <guid>https://arxiv.org/abs/2501.19054</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>CADFusion框架通过交替训练增强文本到CAD模型的生成能力。</p><br><br><p><strong>摘要：</strong> CADFusion是一个创新框架，旨在提高文本到CAD模型的生成效率。该框架基于大型语言模型（LLMs），通过两个阶段交替训练：序列学习（SL）阶段和视觉反馈（VF）阶段。在SL阶段，LLMs利用真实的参数序列进行训练，确保生成的参数序列逻辑一致；而在VF阶段，参数序列的生成受到视觉效果的奖惩机制影响，这使得模型能够理解渲染对象的视觉评估。双阶段的交替训练不仅促进了模型的平衡学习，还兼顾了参数序列与视觉对象之间的多模态关系。实验结果表明，CADFusion在定性和定量性能上均显著优于现有方法。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2501.19054 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">CADFusion框架通过交替训练增强文本到CAD模型的生成能力。</p><br /><br /><p><strong>摘要：</strong> CADFusion是一个创新框架，旨在提高文本到CAD模型的生成效率。该框架基于大型语言模型（LLMs），通过两个阶段交替训练：序列学习（SL）阶段和视觉反馈（VF）阶段。在SL阶段，LLMs利用真实的参数序列进行训练，确保生成的参数序列逻辑一致；而在VF阶段，参数序列的生成受到视觉效果的奖惩机制影响，这使得模型能够理解渲染对象的视觉评估。双阶段的交替训练不仅促进了模型的平衡学习，还兼顾了参数序列与视觉对象之间的多模态关系。实验结果表明，CADFusion在定性和定量性能上均显著优于现有方法。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2501.19054" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 05 Feb 2025 21:08:28 GMT</pubDate>
-<pubDate>Wed, 05 Feb 2025 21:08:28 GMT</pubDate>
 </item>
-
 <item>
 <title>大型语言模型激活近似的安全性评估</title>
 <link>https://arxiv.org/abs/2502.00840</link>
@@ -9011,15 +9092,6 @@ This research tests the role of Large Language Models (LLMs) as formal second op
 <div><p style="color: gray;">MarDini通过结合受限自回归与扩散模型，提升视频生成效率和质量。</p><br /><br /><p><strong>摘要：</strong> MarDini是一种新型的视频扩散模型，结合了受限自回归（MAR）与统一扩散模型（DM）框架的优点。该模型采用不对称网络设计，MAR负责时序规划，而DM专注于空间生成。具体而言，MAR基于低分辨率输入生成各个遮挡帧的规划信号，而轻量级生成模型则利用这些信号通过扩散去噪生成高分辨率帧。MarDini支持在任意帧位置和数量的遮挡帧上进行视频生成，能够处理视频插值、图像转视频和视频扩展等任务。该设计高效地分配了计算资源，使得在低分辨率规划模型中的计算密集型时空注意力得以在大规模上实现。MarDini在视频插值方面创造了全新状态，同时在几次推理步骤内，其生成的视频质量与更为复杂的图像转视频模型相匹配。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.20280" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 29 Oct 2024 02:06:53 GMT</pubDate>
-</item>
-<item>
-<title>基于双重策略的图像恢复研究</title>
-<link>https://arxiv.org/abs/2410.18666</link>
-<guid>https://arxiv.org/abs/2410.18666</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出GenIR和DreamClear，解决图像恢复中的数据集和模型挑战。</p><br /><br /><p><strong>摘要：</strong> 本研究针对图像恢复领域面临的数据集不足和高容量模型缺乏的挑战，提出了一种双重策略：GenIR和DreamClear。GenIR是一个创新的数据策划管道，通过三阶段流程（图像-文本对构建、双提示微调与数据生成及过滤）解决现有数据集的局限，最终构建出一个包含一百万张高质量图像的大规模数据集。DreamClear则是一种基于Diffusion Transformer的图像恢复模型，利用文本到图像（T2I）扩散模型的生成先验和多模态大语言模型的感知能力，达到逼真的图像恢复效果。为了增加模型的适应性，我们引入了混合自适应调制器（MoAM），该模块通过动态整合多种恢复专家，扩展了模型针对多种实际退化的处理能力。实验结果验证了DreamClear在实际图像恢复中的卓越表现，彰显了我们双重策略的有效性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.18666" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 29 Oct 2024 01:55:51 GMT</pubDate>
 </item>
 </channel>
 </rss>
