@@ -5,15 +5,61 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>深度的诅咒：改善大语言模型训练效能的层归一化缩放</title>
+<link>https://arxiv.org/abs/2502.05795</link>
+<guid>https://arxiv.org/abs/2502.05795</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出层归一化缩放法以改善大语言模型深层的训练效能。</p><br><br><p><strong>摘要：</strong> 本文介绍了‘深度的诅咒’这一概念，说明现代大语言模型中近一半的层效能低于预期的现象。通过对Llama、Mistral、DeepSeek和Qwen等主流大语言模型的理论和实证分析，我们发现，造成深层效能低下的根本原因在于普遍使用的预层归一化（Pre-LN）。虽然Pre-LN在一定程度上稳定了Transformer LLM的训练，但其输出方差随着模型深度的增加呈指数级增长，从而使得深层Transformer块的导数近似为单位矩阵，几乎不对训练贡献。为了解决这一训练困境，我们提出了层归一化缩放方法，通过以深度平方根的倒数来缩放层归一化的输出方差。这一简单的修改有效降低了深层Transformer层的输出方差激增，增强了它们的贡献。我们的实验结果表明，在130M到1B的各种模型规模中，层归一化缩放显著提升了模型的预训练性能，并在监督微调中无缝继承了这一改进。所有这些提升归因于层归一化缩放使得更深的层在训练期间更有效地贡献。 </p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.05795 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 11 Feb 2025 04:30:30 GMT</pubDate>
+<pubDate>Tue, 11 Feb 2025 04:30:30 GMT</pubDate>
+</item>
+<item>
+<title>通过自然语言训练多智能体有效沟通</title>
+<link>https://arxiv.org/abs/2502.06060</link>
+<guid>https://arxiv.org/abs/2502.06060</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>该研究培训智能体在无人工示范下进行有效的自然语言沟通。</p><br><br><p><strong>摘要：</strong> 该研究探讨了如何通过自然语言提升多智能体在复杂社交环境中的沟通能力。研究人员将沟通问题分解为倾听和发言两个部分，利用智能体的目标预测环境信息，以此作为指导沟通的密集奖励信号。通过在游戏‘Among Us’中进行实验，分析了智能体如何在社交推理中表现出指控嫌疑人和提供证据等行为。研究结果表明，结合多智能体强化学习的方法显著提高了讨论质量，使胜率比标准强化学习翻倍。整个研究的代码和模型已公开发布。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.06060 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 11 Feb 2025 04:08:55 GMT</pubDate>
+<pubDate>Tue, 11 Feb 2025 04:08:55 GMT</pubDate>
+</item>
+<item>
+<title>生成多语种平行文本去毒化数据的新方法</title>
+<link>https://arxiv.org/abs/2502.06394</link>
+<guid>https://arxiv.org/abs/2502.06394</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本研究提出了一种高质量的多语言文本去毒化数据生成方法。</p><br><br><p><strong>摘要：</strong> 现有的多语言文本去毒化方法受到平行多语言数据集稀缺的限制。本文介绍了一种生成多语言平行去毒化数据的管道，并推出了SynthDetoxM数据集，该数据集由16,000对高质量去毒化句子成对而成，覆盖德语、法语、西班牙语和俄语。数据来源于不同的毒性评估数据集，并通过九个现代开源大语言模型以少量样本的方式进行重写。实验表明，使用合成数据集训练的模型在数据有限的情况下表现优于人类注释的MultiParaDetox数据集中的模型。而在少量样本设置下，使用SynthDetoxM训练的模型超越了所有评估的大语言模型。我们将发布数据集及代码以支持多语言文本去毒化的进一步研究。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.06394 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 11 Feb 2025 03:03:12 GMT</pubDate>
+<pubDate>Tue, 11 Feb 2025 03:03:12 GMT</pubDate>
+</item>
+<item>
+<title>DreamDPO：基于人类偏好的3D内容生成框架</title>
+<link>https://arxiv.org/abs/2502.04370</link>
+<guid>https://arxiv.org/abs/2502.04370</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>DreamDPO框架通过人类偏好优化3D内容生成，实现更高质量和可控性。</p><br><br><p><strong>摘要：</strong> 本文提出了DreamDPO，一个与人类偏好相结合的优化框架，旨在改善现有文本到3D生成方法的不足。该框架通过构建成对示例，利用奖励或大规模多模态模型对生成内容进行偏好对比，最后采用偏好驱动的损失函数来优化3D表示。DreamDPO减少了对精确点对点质量评估的依赖，同时通过偏好引导优化实现了更细致的可控性。实验结果表明，DreamDPO在3D内容生成任务中表现出色，提供了比现有方法更高质量和更可控的3D内容。此外，相关代码和模型将开源，促进研究与应用的进一步发展。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.04370 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 11 Feb 2025 02:46:33 GMT</pubDate>
+<pubDate>Tue, 11 Feb 2025 02:46:33 GMT</pubDate>
+</item>
+
+<item>
 <title>Show-o Turbo：提升多模态生成模型的效率</title>
 <link>https://arxiv.org/abs/2502.05415</link>
 <guid>https://arxiv.org/abs/2502.05415</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>Show-o Turbo 通过统一去噪方法提升了多模态生成效率。</p><br><br><p><strong>摘要：</strong> 随着对统一多模态理解和生成模型的研究兴趣增加，Show-o作为一个重要代表，展现了在文本到图像和图像到文本生成方面的巨大潜力。然而，其推理过程面临低效的问题。本文提出了Show-o Turbo，以弥补这种不足。我们首次基于文本标记的并行解码，确定了图像和文本生成的一种统一去噪视角，并将一致性蒸馏（CD）方法扩展到Show-o的多模态去噪过程中。我们引入了轨迹分割策略和课程学习流程，以提升训练收敛性。实验证明，在文本到图像生成中，Show-o Turbo在4个采样步骤下显示了0.625的GenEval分数，超越了使用8个步骤和无分类器自由引导（CFG）的原版Show-o；而在图像到文本生成中，Show-o Turbo则展现出1.5倍的速度提升，且性能未显著下降。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.05415 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">Show-o Turbo 通过统一去噪方法提升了多模态生成效率。</p><br /><br /><p><strong>摘要：</strong> 随着对统一多模态理解和生成模型的研究兴趣增加，Show-o作为一个重要代表，展现了在文本到图像和图像到文本生成方面的巨大潜力。然而，其推理过程面临低效的问题。本文提出了Show-o Turbo，以弥补这种不足。我们首次基于文本标记的并行解码，确定了图像和文本生成的一种统一去噪视角，并将一致性蒸馏（CD）方法扩展到Show-o的多模态去噪过程中。我们引入了轨迹分割策略和课程学习流程，以提升训练收敛性。实验证明，在文本到图像生成中，Show-o Turbo在4个采样步骤下显示了0.625的GenEval分数，超越了使用8个步骤和无分类器自由引导（CFG）的原版Show-o；而在图像到文本生成中，Show-o Turbo则展现出1.5倍的速度提升，且性能未显著下降。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.05415" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 11 Feb 2025 02:09:27 GMT</pubDate>
 <pubDate>Tue, 11 Feb 2025 02:09:27 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +67,8 @@
 <link>https://arxiv.org/abs/2502.05957</link>
 <guid>https://arxiv.org/abs/2502.05957</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>MetaChain 使每个人都可以通过自然语言轻松构建 LLM 代理。</p><br><br><p><strong>摘要：</strong> MetaChain 是一个全自动的框架，旨在通过自然语言使所有用户能够构建和部署 LLM 代理，而不需要编程技能。该系统作为自主的代理操作系统，包含四个关键组件：代理系统实用工具、基于 LLM 的可执行引擎、自我管理文件系统和自我演练代理自定义模块。MetaChain 的轻量级设计使得用户在无需编码或人工干预的情况下能够高效动态地创建和修改工具、代理和工作流程。此外，MetaChain 还作为通用 AI 助手的多代理系统，在 GAIA 基准测试中的综合评估显示，其在通用多代理任务上超越了现有的最先进方法，且其与检索增强生成 (RAG) 相关的能力在许多 LLM 解决方案中表现出色。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.05957 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">MetaChain 使每个人都可以通过自然语言轻松构建 LLM 代理。</p><br /><br /><p><strong>摘要：</strong> MetaChain 是一个全自动的框架，旨在通过自然语言使所有用户能够构建和部署 LLM 代理，而不需要编程技能。该系统作为自主的代理操作系统，包含四个关键组件：代理系统实用工具、基于 LLM 的可执行引擎、自我管理文件系统和自我演练代理自定义模块。MetaChain 的轻量级设计使得用户在无需编码或人工干预的情况下能够高效动态地创建和修改工具、代理和工作流程。此外，MetaChain 还作为通用 AI 助手的多代理系统，在 GAIA 基准测试中的综合评估显示，其在通用多代理任务上超越了现有的最先进方法，且其与检索增强生成 (RAG) 相关的能力在许多 LLM 解决方案中表现出色。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.05957" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 11 Feb 2025 01:33:35 GMT</pubDate>
 <pubDate>Tue, 11 Feb 2025 01:33:35 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +76,8 @@
 <link>https://arxiv.org/abs/2502.06786</link>
 <guid>https://arxiv.org/abs/2502.06786</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出了一种新的Matryoshka量化技术以提升低精度模型的质量。</p><br><br><p><strong>摘要：</strong> 本研究提出了一种名为Matryoshka量化（MatQuant）的新型多尺度量化技术，以解决传统低精度量化模型（如int2和int4）所面临的质量退化问题。MatQuant允许通过保持单一模型来实现不同精度水平的服务，避免了维护多个量化模型的需求。得益于共训练和共蒸馏的正则化效果，MatQuant提取的int2精度模型的准确性比标准的int2量化技术（如QAT或OmniQuant）提高了高达10%。这一进展使得在相同条件下，使用int2 FFN量化的Gemma-2 9B模型的准确性超过了使用int8 FFN量化的Gemma-2 2B模型，显示出MatQuant在模型量化领域的重要突破。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.06786 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出了一种新的Matryoshka量化技术以提升低精度模型的质量。</p><br /><br /><p><strong>摘要：</strong> 本研究提出了一种名为Matryoshka量化（MatQuant）的新型多尺度量化技术，以解决传统低精度量化模型（如int2和int4）所面临的质量退化问题。MatQuant允许通过保持单一模型来实现不同精度水平的服务，避免了维护多个量化模型的需求。得益于共训练和共蒸馏的正则化效果，MatQuant提取的int2精度模型的准确性比标准的int2量化技术（如QAT或OmniQuant）提高了高达10%。这一进展使得在相同条件下，使用int2 FFN量化的Gemma-2 9B模型的准确性超过了使用int8 FFN量化的Gemma-2 2B模型，显示出MatQuant在模型量化领域的重要突破。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.06786" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 11 Feb 2025 01:07:50 GMT</pubDate>
 <pubDate>Tue, 11 Feb 2025 01:07:50 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +85,8 @@
 <link>https://arxiv.org/abs/2502.06782</link>
 <guid>https://arxiv.org/abs/2502.06782</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>Lumina-Video通过多尺度Next-DiT架构实现高质量视频生成。</p><br><br><p><strong>摘要：</strong> Lumina-Video是一个新颖的视频生成框架，建立在Diffusion Transformers（DiTs）和Next-DiT的成功基础上，旨在发挥Next-DiT在生成模型中的优势，同时解决视频数据固有的时空复杂性问题。该框架采用多尺度Next-DiT架构，联合学习多种切片方式，提高了效率与灵活性。此外，Lumina-Video通过引入运动评分作为显式条件，实现了对生成视频动态程度的直接控制。结合渐进训练方案，逐步提高分辨率及帧率，以及混合自然和合成数据的多源训练方案，Lumina-Video在高效的训练与推理下实现了显著的美学质量与运动流畅性。此外，Lumina-V2A模型还基于Next-DiT可同步生成视频声音。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.06782 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">Lumina-Video通过多尺度Next-DiT架构实现高质量视频生成。</p><br /><br /><p><strong>摘要：</strong> Lumina-Video是一个新颖的视频生成框架，建立在Diffusion Transformers（DiTs）和Next-DiT的成功基础上，旨在发挥Next-DiT在生成模型中的优势，同时解决视频数据固有的时空复杂性问题。该框架采用多尺度Next-DiT架构，联合学习多种切片方式，提高了效率与灵活性。此外，Lumina-Video通过引入运动评分作为显式条件，实现了对生成视频动态程度的直接控制。结合渐进训练方案，逐步提高分辨率及帧率，以及混合自然和合成数据的多源训练方案，Lumina-Video在高效的训练与推理下实现了显著的美学质量与运动流畅性。此外，Lumina-V2A模型还基于Next-DiT可同步生成视频声音。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.06782" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 11 Feb 2025 01:00:25 GMT</pubDate>
 <pubDate>Tue, 11 Feb 2025 01:00:25 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +94,8 @@
 <link>https://arxiv.org/abs/2502.06764</link>
 <guid>https://arxiv.org/abs/2502.06764</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出DFoT架构以改善视频生成的历史框架条件指导。</p><br><br><p><strong>摘要：</strong> 本文提出了一种新的视频扩散框架——Diffusion Forcing Transformer (DFoT)，旨在解决视频生成过程中对可变长度历史帧指导的挑战。传统架构通常只支持固定大小的条件输入，而实验表明，使用基于CFG的历史丢弃策略表现不佳。对策是DFoT架构的设计，允许根据灵活的历史帧数量进行条件生成。此外，本文还引入了一系列新的指导方法，即历史指导，特别是最简单的形式——优质历史指导，已经显著提高了视频生成的质量和时间一致性。更高级的方法——跨时空的历史指导，进一步提升了运动动力学，增强了对分布外历史的组合泛化能力，并可以稳定生成超长视频。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.06764 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出DFoT架构以改善视频生成的历史框架条件指导。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种新的视频扩散框架——Diffusion Forcing Transformer (DFoT)，旨在解决视频生成过程中对可变长度历史帧指导的挑战。传统架构通常只支持固定大小的条件输入，而实验表明，使用基于CFG的历史丢弃策略表现不佳。对策是DFoT架构的设计，允许根据灵活的历史帧数量进行条件生成。此外，本文还引入了一系列新的指导方法，即历史指导，特别是最简单的形式——优质历史指导，已经显著提高了视频生成的质量和时间一致性。更高级的方法——跨时空的历史指导，进一步提升了运动动力学，增强了对分布外历史的组合泛化能力，并可以稳定生成超长视频。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.06764" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 11 Feb 2025 00:55:33 GMT</pubDate>
 <pubDate>Tue, 11 Feb 2025 00:55:33 GMT</pubDate>
 </item>
 <item>
@@ -69,11 +103,8 @@
 <link>https://arxiv.org/abs/2502.06527</link>
 <guid>https://arxiv.org/abs/2502.06527</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>CustomVideoX框架在个性化视频生成中显著提高了视频一致性和质量。</p><br><br><p><strong>摘要：</strong> 本文提出了CustomVideoX，一个基于视频扩散变换器的创新框架，旨在解决个性化视频生成中的时间一致性和质量降级问题。该框架通过专门训练LoRA参数，从参考图像中提取特征，并利用3D参考注意力实现参考图像特征与所有视频帧的直接交互。同时，采用时间感知参考注意力偏置（TAB）策略，动态调整参考偏置，缓解参考图像特征和文本指导在推理期间对生成视频内容的过度影响。此外，介绍了实体区域感知增强（ERAE）模块，通过调整注意力偏置，使关键实体令牌的高激活区域与参考特征注入对齐。为全面评估个性化视频生成效果，建立了一个新基准VideoBench，涵盖50多个对象和100个提示，实验结果表明CustomVideoX在视频一致性和质量方面显著优于现有方法。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.06527 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">CustomVideoX框架在个性化视频生成中显著提高了视频一致性和质量。</p><br /><br /><p><strong>摘要：</strong> 本文提出了CustomVideoX，一个基于视频扩散变换器的创新框架，旨在解决个性化视频生成中的时间一致性和质量降级问题。该框架通过专门训练LoRA参数，从参考图像中提取特征，并利用3D参考注意力实现参考图像特征与所有视频帧的直接交互。同时，采用时间感知参考注意力偏置（TAB）策略，动态调整参考偏置，缓解参考图像特征和文本指导在推理期间对生成视频内容的过度影响。此外，介绍了实体区域感知增强（ERAE）模块，通过调整注意力偏置，使关键实体令牌的高激活区域与参考特征注入对齐。为全面评估个性化视频生成效果，建立了一个新基准VideoBench，涵盖50多个对象和100个提示，实验结果表明CustomVideoX在视频一致性和质量方面显著优于现有方法。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.06527" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 11 Feb 2025 00:46:11 GMT</pubDate>
 <pubDate>Tue, 11 Feb 2025 00:46:11 GMT</pubDate>
 </item>
 <item>
@@ -81,11 +112,8 @@
 <link>https://arxiv.org/abs/2502.06703</link>
 <guid>https://arxiv.org/abs/2502.06703</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究测试时间扩展在不同模型中的影响，发现小模型可优于大模型。</p><br><br><p><strong>摘要：</strong> 本文研究了测试时间扩展（TTS）对大型语言模型（LLMs）性能的影响，分析了不同策略在策略模型、过程奖励模型（PRMs）及问题难度上的适应性。通过对MATH-500和AIME24等复杂任务的综合实验，发现计算最优的TTS策略依赖于模型选择与问题难度，且在该策略下，小型模型能在性能上超越大型模型。例如，一个10亿参数的LLM在MATH-500任务中表现超过了一个4050亿参数的模型。另外，在MATH-500和AIME24任务上，0.5亿参数的LLM击败了GPT-4o，3亿参数的LLM超越了405亿参数的模型，且7亿参数的LLM也展示了更高的推理效率。这些发现强调了根据每个任务的特性和模型调整TTS策略的重要性，并指出TTS在提升LLM推理能力方面的潜力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.06703 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究测试时间扩展在不同模型中的影响，发现小模型可优于大模型。</p><br /><br /><p><strong>摘要：</strong> 本文研究了测试时间扩展（TTS）对大型语言模型（LLMs）性能的影响，分析了不同策略在策略模型、过程奖励模型（PRMs）及问题难度上的适应性。通过对MATH-500和AIME24等复杂任务的综合实验，发现计算最优的TTS策略依赖于模型选择与问题难度，且在该策略下，小型模型能在性能上超越大型模型。例如，一个10亿参数的LLM在MATH-500任务中表现超过了一个4050亿参数的模型。另外，在MATH-500和AIME24任务上，0.5亿参数的LLM击败了GPT-4o，3亿参数的LLM超越了405亿参数的模型，且7亿参数的LLM也展示了更高的推理效率。这些发现强调了根据每个任务的特性和模型调整TTS策略的重要性，并指出TTS在提升LLM推理能力方面的潜力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.06703" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 11 Feb 2025 00:36:11 GMT</pubDate>
 <pubDate>Tue, 11 Feb 2025 00:36:11 GMT</pubDate>
 </item>
 <item>
@@ -93,14 +121,10 @@
 <link>https://arxiv.org/abs/2502.06781</link>
 <guid>https://arxiv.org/abs/2502.06781</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文提出OREAL框架，提升数学推理任务的强化学习性能。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种新的强化学习框架OREAL，旨在通过结果奖励来提升数学推理任务的性能，特别是在只有二元结果奖励易于获得的环境中。我们理论证明，来自最佳样本的正轨迹行为克隆足以学习在二元反馈环境中KL正则化的最优策略。此外，我们提出重新塑形负样本的奖励，以确保正负样本之间的梯度一致性。为应对强化学习中稀疏奖励带来的挑战，本文引入了一个基于token的奖励模型，从推理轨迹中抽样重要tokens进行学习。实验结果显示，39B模型在MATH-500上首次实现了94.0的pass@1准确率，与32B模型相当，而OREAL-32B在相同测试集上以95.0的pass@1准确率超越先前的32B模型。研究还强调了初始策略模型和训练查询在强化学习中的重要性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.06781 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文提出OREAL框架，提升数学推理任务的强化学习性能。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种新的强化学习框架OREAL，旨在通过结果奖励来提升数学推理任务的性能，特别是在只有二元结果奖励易于获得的环境中。我们理论证明，来自最佳样本的正轨迹行为克隆足以学习在二元反馈环境中KL正则化的最优策略。此外，我们提出重新塑形负样本的奖励，以确保正负样本之间的梯度一致性。为应对强化学习中稀疏奖励带来的挑战，本文引入了一个基于token的奖励模型，从推理轨迹中抽样重要tokens进行学习。实验结果显示，39B模型在MATH-500上首次实现了94.0的pass@1准确率，与32B模型相当，而OREAL-32B在相同测试集上以95.0的pass@1准确率超越先前的32B模型。研究还强调了初始策略模型和训练查询在强化学习中的重要性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.06781" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Mon, 10 Feb 2025 23:18:11 GMT</pubDate>
-<pubDate>Mon, 10 Feb 2025 23:18:11 GMT</pubDate>
 </item>
-
 <item>
 <title>层次化草拟方法加速大型语言模型推理</title>
 <link>https://arxiv.org/abs/2502.05609</link>
@@ -9030,78 +9054,6 @@ Autonomous agents have become increasingly important for interacting with the re
 <div><p style="color: gray;">提出AdaCache方法，显著提升视频生成速度且保持质量。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种名为自适应缓存（AdaCache）的训练无关方法，旨在加速视频生成过程，尤其是在处理时间跨度较长的视频时。传统的扩散变换器（DiTs）因模型规模和注意力机制的加重导致推理速度缓慢，AdaCache通过缓存计算和制定适合每个视频生成的缓存计划，显著提高了质量与延迟之间的权衡。此外，文中还引入了运动正则化（MoReg）方案，根据视频内容中的运动信息调控计算分配，从而进一步提升生成效率。实验表明，该方法在多个视频DiT基准上实现了显著的推理速度提升，高达4.7倍，同时不牺牲生成质量。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2411.02397" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 05 Nov 2024 02:09:03 GMT</pubDate>
-</item>
-<item>
-<title>专用稀疏自编码器：揭示基础模型中的关键概念</title>
-<link>https://arxiv.org/abs/2411.00743</link>
-<guid>https://arxiv.org/abs/2411.00743</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">介绍专用稀疏自编码器以捕捉基础模型中的稀有概念。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种新型的专用稀疏自编码器（SSAEs），旨在通过聚焦特定子领域，揭示基础模型（FMs）中的稀有但重要的概念。与传统的稀疏自编码器相比，SSAEs能更有效地捕捉数据稀疏性及尾部概念。我们阐述了SSAEs的训练方法，强调密集检索在数据选择中的有效性以及倾斜经验风险最小化这一训练目标对提高概念回忆的益处。在对SSAEs进行的评估中，结果显示其在下游困惑度和L_0稀疏性等标准指标上，均优于通用稀疏自编码器。在“Bias in Bios”数据集的案例研究中，SSAEs在去除虚假的性别信息后，达到了最低组分类准确率提高12.5%的显著效果，展示了SSAEs在揭示基础模型内部机制方面的强大实用价值。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2411.00743" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 05 Nov 2024 01:40:29 GMT</pubDate>
-</item>
-<item>
-<title>视频生成模型对物理规律的学习与评估</title>
-<link>https://arxiv.org/abs/2411.02385</link>
-<guid>https://arxiv.org/abs/2411.02385</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">研究视频生成模型如何从视觉数据学习物理规律的能力。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了视频生成模型在无须人类先验知识的情况下，能否从视觉数据中发现基本物理规律。通过建立一个二维模拟测试平台，研究对象运动和碰撞的生成视频，评估模型在不同场景下的表现，包括相同分布、不同分布和组合一般化。实验结果显示，尽管模型在相同分布内具有完美的一般化能力，但在不同分布场景中表现失败。进一步研究揭示模型在一般化过程中偏向于特定的训练样本和特征，未能抽象出一般物理规律。本研究表明，单靠模型规模的扩大不足以使视频生成模型发现基本的物理规律。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2411.02385" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 05 Nov 2024 01:33:34 GMT</pubDate>
-</item>
-<item>
-<title>LibMoE: 提升混合专家算法在大语言模型中的可访问性</title>
-<link>https://arxiv.org/abs/2411.00918</link>
-<guid>https://arxiv.org/abs/2411.00918</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">LibMoE为混合专家算法研究提供了模块化和高效的框架。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了LibMoE，一个全面的模块化框架，旨在简化混合专家（MoE）算法的研究、训练和评估。LibMoE遵循模块化设计、高效训练和全面评估三大核心原则，使得MoE在大语言模型（LLM）中的应用更加普及。通过LibMoE，我们对五种最先进的MoE算法在三个不同的LLM和11个数据集上进行了广泛的基准测试，研究结果显示，尽管各MoE算法特性不同，但在广泛任务上的平均表现相似。我们相信，LibMoE将为研究人员在下一代MoE和LLM的研究进展提供重要帮助。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2411.00918" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 05 Nov 2024 00:57:15 GMT</pubDate>
-</item>
-<item>
-<title>探讨视觉语言模型的数学推理能力及DynaMath基准的开发</title>
-<link>https://arxiv.org/abs/2411.00836</link>
-<guid>https://arxiv.org/abs/2411.00836</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本研究探讨视觉语言模型在数学推理中的局限性，并介绍了新的DynaMath基准。</p><br /><br /><p><strong>摘要：</strong> 本文研究了视觉语言模型（VLMs）在处理涉及视觉背景的数学推理任务中的表现，发现当前的领先模型如GPT-4o在面临相似问题的变化时常常失败，显示出其推理能力的局限性。为了评估VLM在不同问题变体下的鲁棒性，我们引入了DynaMath，一个动态的视觉数学基准，旨在深入评估VLM的能力。DynaMath包含501个高质量的多主题种子问题，通过Python程序形式呈现，基于这些程序自动生成了超过5000个具体问题。评估结果表明，最坏情况模型的准确性明显低于平均准确性。这强调了对VLM推理能力的鲁棒性研究的必要性，DynaMath为开发更可靠的数学推理模型提供了宝贵的见解。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2411.00836" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 05 Nov 2024 00:47:47 GMT</pubDate>
-</item>
-<item>
-<title>Fashion-VDM：视频虚拟试穿的新方法</title>
-<link>https://arxiv.org/abs/2411.00225</link>
-<guid>https://arxiv.org/abs/2411.00225</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">Fashion-VDM模型实现了高质量视频虚拟试穿效果。</p><br /><br /><p><strong>摘要：</strong> Fashion-VDM是一种新的视频扩散模型，旨在生成高质量的虚拟试穿视频。该方法通过输入服装图像和人物视频，生成展示用户穿着指定服装的动态视频，同时保持用户的身份和动作一致性。尽管以图像为基础的虚拟试穿技术已取得显著成绩，但现有的视频虚拟试穿方法在服装细节和时间一致性方面仍存在不足。为此，Fashion-VDM引入了基于扩散的架构，采用分裂的无分类器引导，以增强对条件输入的控制，并实施渐进的时间训练策略，实现单次处理64帧、512像素的视频生成。此外，实验证明联合图像-视频训练在视频数据有限时尤为有效。本研究的定性与定量实验表明，Fashion-VDM在视频虚拟试穿领域树立了新的标杆。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2411.00225" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 04 Nov 2024 20:18:24 GMT</pubDate>
-</item>
-<item>
-<title>Physics in Next-token Prediction</title>
-<link>https://arxiv.org/abs/2411.00660</link>
-<guid>https://arxiv.org/abs/2411.00660</guid>
-<content:encoded><![CDATA[
-We discovered the underlying physics in Next-token Prediction (NTP). We identified the law of information conservation within NTP and proposed the First Law of Information Capacity (IC-1), demonstrating that the essence of intelligence emergence in auto-regressive models is fundamentally a process of information transfer. We also introduced Landauer's Principle into NTP, formulating the Second Law of Information Capacity (IC-2), which establishes the relationship between auto-regressive model training and energy consumption. Additionally, we presented several corollaries, which hold practical significance for production practices. Finally, we validated the compatibility and complementarity of our findings with existing theories.
-]]></content:encoded>
-<pubDate>Mon, 04 Nov 2024 16:14:19 GMT</pubDate>
-</item>
-<item>
-<title>TOMATO：评估多模态基础模型在视频理解中的时间推理能力</title>
-<link>https://arxiv.org/abs/2410.23266</link>
-<guid>https://arxiv.org/abs/2410.23266</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">研究表明当前多模态基础模型在视频时间推理上的能力被高估，提出了新评测基准TOMATO。</p><br /><br /><p><strong>摘要：</strong> 尽管现有基准显示多模态基础模型（MFMs）在视频理解中表现卓越，但我们的研究表明，它们在视觉时间推理能力上可能被高估。许多问题可通过单个、少量或无序帧解决，因此，我们提出三项原则和相应指标，以系统地评估当前视觉时间推理任务：多帧增益、帧顺序敏感性和帧信息差异。基于这些原则，我们引入了TOMATO（Temporal Reasoning Multimodal Evaluation），一个新的基准，用于严格评估MFMs在视频理解中的时间推理能力。TOMATO包含1484个精心策划的人类标注问题，涵盖六个任务，应用于1417个视频。我们的综合评估显示，最佳模型的表现与人类之间存在57.3%的差距，深入分析发现MFMs在理解连续帧的动态关系方面存在更根本的局限性。TOMATO将为评估下一代MFMs提供关键的平台，并呼吁社区开发能够更好理解人类世界动态的AI系统。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.23266" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 04 Nov 2024 15:02:37 GMT</pubDate>
-</item>
-<item>
-<title>CityGaussianV2：大型场景重建的新方法</title>
-<link>https://arxiv.org/abs/2411.00771</link>
-<guid>https://arxiv.org/abs/2411.00771</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文提出CityGaussianV2，解决大型场景重建中的几何精度和效率问题。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种新方法CityGaussianV2，用于解决3D Gaussian Splatting在大型场景重建中的几何精度和效率问题。尽管3DGS在辐射场重建和新视角合成中表现出色，但在复杂场景中的表面表现仍是一个重大挑战。该方法通过实现分解梯度加密和深度回归技术，消除模糊伪影并加快收敛，同时引入延长滤波器以减少由于2D Gaussian Splatting退化引起的高斯计数爆炸。此外，CityGaussianV2优化了并行训练管道，在存储和训练时间方面实现了显著的提升，达到10倍压缩，节省至少25%的训练时间，并减少50%的内存使用。实验结果表明，该方法在视觉质量、几何精度以及存储与训练成本之间取得了良好的平衡。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2411.00771" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 04 Nov 2024 13:49:30 GMT</pubDate>
 </item>
 </channel>
 </rss>
