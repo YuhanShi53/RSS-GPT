@@ -5,15 +5,121 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>层次化草拟方法加速大型语言模型推理</title>
+<link>https://arxiv.org/abs/2502.05609</link>
+<guid>https://arxiv.org/abs/2502.05609</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出层次化草拟方法以提升大型语言模型的推理速度。</p><br><br><p><strong>摘要：</strong> 在大型语言模型（LLMs）中，加速推理对于实时交互至关重要。本文介绍了一种新的无损草拟方法——层次化草拟（HD），该方法依托于时间局部性原则，将多个令牌来源组织成多个数据库的层次化框架。HD在草拟步骤中按局部性从高到低依次访问这些数据库，以获取草拟令牌，从而确保在不同任务中的一致加速，并最小化草拟延迟。通过在Spec-Bench上的实验，使用7B和13B参数的LLMs，结果显示HD在推理速度上优于现有的数据库草拟方法，实现了跨模型大小、任务和温度的强健加速效果。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.05609 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 10 Feb 2025 22:58:41 GMT</pubDate>
+<pubDate>Mon, 10 Feb 2025 22:58:41 GMT</pubDate>
+</item>
+<item>
+<title>ReasonFlux-32B：通过层次化思维模板优化推理能力</title>
+<link>https://arxiv.org/abs/2502.06772</link>
+<guid>https://arxiv.org/abs/2502.06772</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>ReasonFlux-32B模型通过创新的思维模板提高数学推理能力。</p><br><br><p><strong>摘要：</strong> 本文介绍了ReasonFlux-32B模型的开发，该模型通过层次化思维模板的扩展优化了推理搜索空间，超越了包括OpenAI o1-preview和DeepSeek V3在内的强大LLM的数学推理能力。模型引入三个创新：一是建立了一个包含约500个高级思维模板的结构化通用模板库；二是采用层次化强化学习对思维模板序列进行优化，规划出处理复杂问题的最佳模板轨迹；三是开发出一种新的推理扩展系统，在推理过程中自适应地扩展思维模板。ReasonFlux-32B在MATH基准测试中达到91.2%的准确率，超越o1-preview 6.7%。在美国数学奥林匹克（AIME）测试中，ReasonFlux-32B解决了56.7%的问题，比o1-preview和DeepSeek-V3分别超出27%和45%。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.06772 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 10 Feb 2025 22:49:56 GMT</pubDate>
+<pubDate>Mon, 10 Feb 2025 22:49:56 GMT</pubDate>
+</item>
+<item>
+<title>EVEv2.0：高效的无编码视觉语言模型</title>
+<link>https://arxiv.org/abs/2502.06788</link>
+<guid>https://arxiv.org/abs/2502.06788</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>EVEv2.0展示了无编码视觉语言模型的高效性和优秀的视觉推理能力。</p><br><br><p><strong>摘要：</strong> 本文系统分析了无编码视觉语言模型（VLMs）与编码型模型的性能差距，强调了无编码系统在结构简约和高效部署中的潜力。通过深入研究，我们开发了EVEv2.0，这是改进后的无编码VLM系列。研究结果表明，通过有效地分解与分层关联视觉与语言，减少了模态间的干扰，同时合理的训练策略也有助于提升模型优化效果。EVEv2.0在数据效率和视觉推理能力方面表现优异，代表了跨模态解码器架构发展的全面探索。相关代码可在GitHub上获取，推动了无编码视觉语言模型的发展。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.06788 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 10 Feb 2025 22:40:39 GMT</pubDate>
+<pubDate>Mon, 10 Feb 2025 22:40:39 GMT</pubDate>
+</item>
+<item>
+<title>双重标题偏好优化：提升文本到图像扩散模型的图像质量</title>
+<link>https://arxiv.org/abs/2502.06023</link>
+<guid>https://arxiv.org/abs/2502.06023</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出DCPO方法以提升文本到图像扩散模型的图像相关性及质量。</p><br><br><p><strong>摘要：</strong> 本文提出了一种新颖的双重标题偏好优化（DCPO）方法，旨在提高文本到图像扩散模型的图像质量和相关性。研究指出，目前的偏好数据集在偏好样本和非偏好样本之间存在重叠，导致冲突分布；同时，输入提示常包含对非偏好图像无关的信息，限制了去噪网络在偏好优化方法中的效果。为此，DCPO采用了两个独立的标题来减轻无关提示问题，并引入了Pick-Double Caption数据集，改进了Pick-a-Pic v2，以便为偏好和非偏好图像提供独立的标题。此外，文章提出了三种生成独特标题的策略，包括标题生成、扰动和混合方法。实验结果表明，DCPO在多个指标上，如Pickscore和CLIPscore，显著优于现有的多个模型，包括Stable Diffusion 2.1和Diffusion-DPO等。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.06023 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 10 Feb 2025 22:33:17 GMT</pubDate>
+<pubDate>Mon, 10 Feb 2025 22:33:17 GMT</pubDate>
+</item>
+<item>
+<title>自适应并行编码技术提升上下文增强生成的效率</title>
+<link>https://arxiv.org/abs/2502.05431</link>
+<guid>https://arxiv.org/abs/2502.05431</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>自适应并行编码（APE）技术显著提高了上下文增强生成的性能与效率。</p><br><br><p><strong>摘要：</strong> 本文探讨了上下文增强生成（CAG）技术（包括RAG和ICL）的效率问题，提出自适应并行编码（APE）方法。传统方法通过序列输入多个上下文会导致显著的计算负担，而APE通过独立预计算和缓存每个上下文的KV状态，实现在推理过程中直接加载缓存状态，从而提高了上下文的处理能力。然而，直接应用并行编码会因注意力分布的不匹配而导致性能下降。为了解决这一问题，APE引入了共享前缀、注意力温度和缩放因子，以更好地对齐并行编码与序列编码的分布。实验证明，在RAG和ICL任务中，APE分别保持了98%和93%的序列编码性能，并在性能上优于并行编码3.6%和7.9%。此外，APE在许多上下文的编码中也展现出良好的扩展性，能够有效处理数百个上下文。效率评估结果显示，APE在处理128K长度上下文时，实现了端到端4.5倍的加速，以及28倍的预填充时间减少。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.05431 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 10 Feb 2025 22:29:36 GMT</pubDate>
+<pubDate>Mon, 10 Feb 2025 22:29:36 GMT</pubDate>
+</item>
+<item>
+<title>Steel-LLM:From Scratch to Open Source -- A Personal Journey in Building a Chinese-Centric LLM</title>
+<link>https://arxiv.org/abs/2502.06635</link>
+<guid>https://arxiv.org/abs/2502.06635</guid>
+<content:encoded><![CDATA[
+
+  Steel-LLM is a Chinese-centric language model developed from scratch with the goal of creating a high-quality, open-source model despite limited computational resources. Launched in March 2024, the project aimed to train a 1-billion-parameter model on a large-scale dataset, prioritizing transparency and the sharing of practical insights to assist others in the community. The training process primarily focused on Chinese data, with a small proportion of English data included, addressing gaps in existing open-source LLMs by providing a more detailed and practical account of the model-building journey. Steel-LLM has demonstrated competitive performance on benchmarks such as CEVAL and CMMLU, outperforming early models from larger institutions. This paper provides a comprehensive summary of the project's key contributions, including data collection, model design, training methodologies, and the challenges encountered along the way, offering a valuable resource for researchers and practitioners looking to develop their own LLMs. The model checkpoints and training script are available at https://github.com/zhanshijinwat/Steel-LLM.
+
+]]></content:encoded>
+<pubDate>Mon, 10 Feb 2025 22:20:38 GMT</pubDate>
+<pubDate>Mon, 10 Feb 2025 22:20:38 GMT</pubDate>
+</item>
+<item>
+<title>LM2: 一种增强记忆模块的变压器架构</title>
+<link>https://arxiv.org/abs/2502.06049</link>
+<guid>https://arxiv.org/abs/2502.06049</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出了大型记忆模型LM2，旨在提升变压器在多步推理中的表现。</p><br><br><p><strong>摘要：</strong> 本文介绍了大型记忆模型（LM2），这是一个仅解码的变压器架构，增强了辅助记忆模块，以解决标准变压器在多步推理、关系论证和长上下文信息整合中的局限性。LM2通过跨注意力与输入标记交互，并通过门控机制进行更新，维护原有信息流的基础上，整合了补充的记忆路径。实验结果表明，LM2在BABILong基准测试中，平均优于记忆增强的RMT模型37.1%及基准Llama-3.2模型86.3%。LM2在多跳推理、数值推理和大上下文问答方面表现卓越，并在MMLU数据集上相较于预训练的普通模型提升了5.0%。此外，本文还分析了记忆的可解释性、记忆模块的有效性及测试时行为，强调了显性记忆在提升变压器架构中的重要性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.06049 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 10 Feb 2025 22:13:17 GMT</pubDate>
+<pubDate>Mon, 10 Feb 2025 22:13:17 GMT</pubDate>
+</item>
+<item>
+<title>提升Diffusion Transformers视频生成效率的方法</title>
+<link>https://arxiv.org/abs/2502.06155</link>
+<guid>https://arxiv.org/abs/2502.06155</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出提升Diffusion Transformers视频生成效率的两种新方法。</p><br><br><p><strong>摘要：</strong> 本文聚焦于提高Diffusion Transformers（DiTs）在视频生成中的效率，针对其在复杂注意力计算和采样步骤众多方面的低效问题，提出了两种解决方案。首先，利用视频数据内的冗余，通过剪枝3D全注意力，识别出视频数据中普遍存在的瓦片式重复模式，倡导一种具有线性复杂度的稀疏3D注意力。其次，采用现有的多步一致性蒸馏缩短采样过程，将整个采样轨迹划分为几个段落，在每个段落内进行一致性蒸馏，从而激活少步生成能力。通过这两种方法，再结合三阶段训练流水线，Open-Sora-Plan-1.2模型在仅使用0.1%的预训练数据后，生成29帧和93帧720p视频的速度提高了7.4到7.8倍，且在VBench上性能损失极小。此外，本文的方法适用于分布式推理，在4个GPU上采用序列并行运行时，进一步实现了3.91倍的加速。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.06155 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 10 Feb 2025 22:09:58 GMT</pubDate>
+<pubDate>Mon, 10 Feb 2025 22:09:58 GMT</pubDate>
+</item>
+<item>
+<title>VISTA：减轻大规模视觉语言模型的幻觉现象</title>
+<link>https://arxiv.org/abs/2502.03628</link>
+<guid>https://arxiv.org/abs/2502.03628</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>VISTA通过增强视觉信息，减少视觉语言模型的幻觉现象。</p><br><br><p><strong>摘要：</strong> 本文探讨了大规模视觉语言模型（LVLMs）在生成过程中出现幻觉的内在机制，发现其在信息处理上有三种关键模式：视觉信息逐步丧失、早期激活的语义有效性以及隐藏的真实信息。在此基础上，提出了一种无训练的推断干预框架VISTA（视觉信息引导与标记-logit增强），旨在减少幻觉并促进真实信息。VISTA通过在激活空间中增强视觉信息以及利用早期层激活来促进语义有效解码，显示出相较于现有方法不需要外部监督，并适用于多种解码策略。大量实验表明，VISTA在开放式生成任务中平均减少了约40%的幻觉现象，且在四个基准测试中针对三种解码策略一致优于现有方法。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.03628 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 10 Feb 2025 21:38:53 GMT</pubDate>
+<pubDate>Mon, 10 Feb 2025 21:38:53 GMT</pubDate>
+</item>
+
+<item>
 <title>VectorQ：动态阈值框架提升语义缓存的效率</title>
 <link>https://arxiv.org/abs/2502.03771</link>
 <guid>https://arxiv.org/abs/2502.03771</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>VectorQ框架通过学习嵌入自适应阈值，提高了语义缓存的命中率及降低了错误率。</p><br><br><p><strong>摘要：</strong> 本文介绍了VectorQ框架，该框架旨在提升大型语言模型（LLM）推理的效率和经济性，方法是重用缓存中与新提示语义相似的响应。当前系统使用静态阈值来判定相似性得分是否足够高，从而进行缓存命中，但此方法对不同的提示并不适用。我们提出VectorQ，通过学习嵌入特定的阈值区域，适应嵌入的复杂性和不确定性。通过对四个不同数据集的评估，结果表明VectorQ在所有静态阈值下均表现优于现有的最新系统，缓存命中率提高了12倍，错误率降低了92%。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.03771 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">VectorQ框架通过学习嵌入自适应阈值，提高了语义缓存的命中率及降低了错误率。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了VectorQ框架，该框架旨在提升大型语言模型（LLM）推理的效率和经济性，方法是重用缓存中与新提示语义相似的响应。当前系统使用静态阈值来判定相似性得分是否足够高，从而进行缓存命中，但此方法对不同的提示并不适用。我们提出VectorQ，通过学习嵌入特定的阈值区域，适应嵌入的复杂性和不确定性。通过对四个不同数据集的评估，结果表明VectorQ在所有静态阈值下均表现优于现有的最新系统，缓存命中率提高了12倍，错误率降低了92%。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.03771" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 10 Feb 2025 19:59:41 GMT</pubDate>
 <pubDate>Mon, 10 Feb 2025 19:59:41 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +127,8 @@
 <link>https://arxiv.org/abs/2502.02909</link>
 <guid>https://arxiv.org/abs/2502.02909</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>SPARC框架通过低维空间中的提示调优实现高效持续学习。</p><br><br><p><strong>摘要：</strong> 我们提出了SPARC，一个轻量级持续学习框架，旨在通过在低维空间中进行提示调优，实现对大语言模型的高效任务适应。通过利用主成分分析(PCA)，我们识别出训练数据的一个紧凑子空间。在这一低维空间中优化提示，提高了训练效率，聚焦于最相关的特征，同时减少了计算开销。此外，由于模型的内部结构保持不变，预训练阶段获得的丰富知识得以完整保留，确保在适应过程中之前学习的信息不会受到损害。我们的研究表明，该方法在任务增量和领域增量的持续学习设置中，都能实现高知识保留，并且仅微调0.04%的模型参数。通过整合LoRA，我们增强了对计算约束的适应性，从而在准确性和训练成本之间实现了平衡。在SuperGLUE基准上的实验表明，我们的PCA基础提示调优方法结合LoRA在保持完全知识保留的同时，提高了准确性，仅利用1%的模型参数。这些结果显示了我们的方法在大语言模型持续学习中的可扩展性和资源高效性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.02909 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">SPARC框架通过低维空间中的提示调优实现高效持续学习。</p><br /><br /><p><strong>摘要：</strong> 我们提出了SPARC，一个轻量级持续学习框架，旨在通过在低维空间中进行提示调优，实现对大语言模型的高效任务适应。通过利用主成分分析(PCA)，我们识别出训练数据的一个紧凑子空间。在这一低维空间中优化提示，提高了训练效率，聚焦于最相关的特征，同时减少了计算开销。此外，由于模型的内部结构保持不变，预训练阶段获得的丰富知识得以完整保留，确保在适应过程中之前学习的信息不会受到损害。我们的研究表明，该方法在任务增量和领域增量的持续学习设置中，都能实现高知识保留，并且仅微调0.04%的模型参数。通过整合LoRA，我们增强了对计算约束的适应性，从而在准确性和训练成本之间实现了平衡。在SuperGLUE基准上的实验表明，我们的PCA基础提示调优方法结合LoRA在保持完全知识保留的同时，提高了准确性，仅利用1%的模型参数。这些结果显示了我们的方法在大语言模型持续学习中的可扩展性和资源高效性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.02909" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 10 Feb 2025 18:55:57 GMT</pubDate>
 <pubDate>Mon, 10 Feb 2025 18:55:57 GMT</pubDate>
 </item>
 <item>
@@ -33,14 +136,10 @@
 <link>https://arxiv.org/abs/2502.02692</link>
 <guid>https://arxiv.org/abs/2502.02692</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>探讨自主边缘计算如何在动态环境中提升机器人和智能城市的效率。</p><br><br><p><strong>摘要：</strong> 本文讨论了在机器人、智能城市及自主车辆中，自主边缘计算如何通过无缝整合感知、处理和执行，实现实时决策。核心是感知-行动循环，该循环协调传感器输入与计算模型，以驱动自适应控制策略，并能够适应极小的本地条件，提升资源效率与响应能力。然而，资源限制、多模态数据融合中的同步延迟和反馈循环中的级联错误风险等挑战依然存在。文章探讨了可上下文感知的感知-行动适应策略，动态调整传感与计算以满足任务需求。此外，多智能体感知-行动循环通过协调感知和行动，优化资源使用。受生物系统启发的神经形态计算提供了一种高效的平台，支持能量节约、低延迟的事件驱动处理。最后，强调了算法模型与硬件和环境动态之间的共同设计策略，以提高 throughput、精确性和适应性，推动复杂环境中的能源效率的边缘自主。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.02692 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">探讨自主边缘计算如何在动态环境中提升机器人和智能城市的效率。</p><br /><br /><p><strong>摘要：</strong> 本文讨论了在机器人、智能城市及自主车辆中，自主边缘计算如何通过无缝整合感知、处理和执行，实现实时决策。核心是感知-行动循环，该循环协调传感器输入与计算模型，以驱动自适应控制策略，并能够适应极小的本地条件，提升资源效率与响应能力。然而，资源限制、多模态数据融合中的同步延迟和反馈循环中的级联错误风险等挑战依然存在。文章探讨了可上下文感知的感知-行动适应策略，动态调整传感与计算以满足任务需求。此外，多智能体感知-行动循环通过协调感知和行动，优化资源使用。受生物系统启发的神经形态计算提供了一种高效的平台，支持能量节约、低延迟的事件驱动处理。最后，强调了算法模型与硬件和环境动态之间的共同设计策略，以提高 throughput、精确性和适应性，推动复杂环境中的能源效率的边缘自主。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.02692" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Mon, 10 Feb 2025 18:54:04 GMT</pubDate>
-<pubDate>Mon, 10 Feb 2025 18:54:04 GMT</pubDate>
 </item>
-
 <item>
 <title>CUT3R: 持续更新的3D重建框架</title>
 <link>https://arxiv.org/abs/2501.12387</link>
@@ -9015,33 +9114,6 @@ We discovered the underlying physics in Next-token Prediction (NTP). We identifi
 <div><p style="color: gray;">GRS-QA数据集通过图结构显著提升了多跳问答性能的评估。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了图推理结构问答数据集（GRS-QA），旨在解决现有多跳问答（M-QA）数据集中推理结构不明确的问题。GRS-QA数据集为问答对提供了语义背景和推理结构，明确捕捉推理路径，通过构建推理图节点和逻辑流的边，提供了细致的推理结构评估。这些不同结构的推理图使得对大语言模型（LLMs）在不同推理结构下的表现进行精细评估成为可能。实证分析表明，LLMs在处理不同推理结构的问题时表现差异，推动了对文本结构与语义关系的进一步探讨。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2411.00369" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Mon, 04 Nov 2024 02:47:03 GMT</pubDate>
-</item>
-<item>
-<title>个性化大语言模型的使用与挑战</title>
-<link>https://arxiv.org/abs/2411.00027</link>
-<guid>https://arxiv.org/abs/2411.00027</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文探讨个性化大语言模型的分类及其面临的挑战。</p><br /><br /><p><strong>摘要：</strong> 本文首次将个性化大语言模型（LLMs）在文本生成与个性化应用之间进行整合，提出了个性化LLMs使用的分类法。文章系统化总结了个性化LLMs的基础定义，讨论了个性化的各个新颖面向及其应用，旨在统一相关文献，明确不同使用场景下的个性化技术、数据集和评估方法。同时，论文还强调了现有研究中尚未解决的挑战和重要问题，旨在为研究人员和实践者提供清晰的指南，以促进个性化LLMs的发展与应用。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2411.00027" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 04 Nov 2024 02:45:46 GMT</pubDate>
-</item>
-<item>
-<title>高效适配器插入方案提升文本到图像模型性能</title>
-<link>https://arxiv.org/abs/2410.22901</link>
-<guid>https://arxiv.org/abs/2410.22901</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文提出一种有效的适配器插入方法，以提升文本到图像模型的任务执行能力。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种高效的适配器插入方法，用于文本到图像基础模型，旨在执行复杂的下游任务并保持基本模型的泛化能力。该方法的核心思想是优化与2D特征图相关的注意力机制，从而提升适配器的性能。通过在表情视频生成任务中的验证，该方法取得了显著的结果。本研究希望能为大型文本到图像模型的后训练任务提供新的见解。此外，由于该方法与SD1.5衍生模型具有良好的兼容性，因而对开源社区也具有一定的价值。相关代码将会公开发布。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.22901" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 04 Nov 2024 02:37:38 GMT</pubDate>
-</item>
-<item>
-<title>M2RC-EVAL: 多语言代码补全基准与数据集</title>
-<link>https://arxiv.org/abs/2410.21157</link>
-<guid>https://arxiv.org/abs/2410.21157</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出了M2RC-EVAL基准，以提升多语言代码补全能力。</p><br /><br /><p><strong>摘要：</strong> 现有的代码补全基准通常只关注有限的编程语言，难以全面评估大型语言模型在多语言场景下的表现。为此，本文提出了M2RC-EVAL基准，覆盖18种编程语言，并提供两种细粒度注释（桶级别和语义级别），以便在不同的补全场景中进行分析。同时，本文还整理了M2RC-INSTRUCT数据集，以提高现有代码大型语言模型的代码补全能力。通过 umfassenden 实验结果证明了M2RC-EVAL 和 M2RC-INSTRUCT 的有效性，为多语言代码补全的研究提供了新的工具。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.21157" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 04 Nov 2024 02:05:25 GMT</pubDate>
 </item>
 </channel>
 </rss>
