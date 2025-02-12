@@ -5,15 +5,49 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>Hypencoder：一种新型学习相关性评分的检索模型</title>
+<link>https://arxiv.org/abs/2502.05364</link>
+<guid>https://arxiv.org/abs/2502.05364</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Hypencoder通过小型神经网络显著提升文档检索的相关性评分。</p><br><br><p><strong>摘要：</strong> 文章提出了一种新的检索模型Hypencoder，替代传统的向量内积方法以提高相关性评分的表现。Hypencoder通过小型神经网络作为学习相关性函数，输入文档的表示并输出一个标量相关性得分。采用超网络（hypernetwork）生成该神经网络的权重，实验表明Hypencoder在领域内部检索任务中表现优于强大的密集检索模型，并且在重排名模型和更大型模型中评测效果也更佳。Hypencoder在领域外检索任务中同样表现良好。此外，针对一些难度较大的检索任务，如“舌尖上的检索”和“指令跟随检索”，Hypencoder的表现差距更为显著。为了验证其实际应用能力，作者还实现了一个近似检索算法，展示该模型能在60毫秒内对880万文档进行搜索。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.05364 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 12 Feb 2025 10:35:08 GMT</pubDate>
+<pubDate>Wed, 12 Feb 2025 10:35:08 GMT</pubDate>
+</item>
+<item>
+<title>Goedel-Prover：开源数学自动证明生成的新标杆</title>
+<link>https://arxiv.org/abs/2502.07640</link>
+<guid>https://arxiv.org/abs/2502.07640</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Goedel-Prover在数学自动证明生成领域实现了最新的性能突破。</p><br><br><p><strong>摘要：</strong> Goedel-Prover是一个开源的大型语言模型，旨在实现数学问题的自动正式证明生成，并在此领域取得了领先的性能。面对正式化数学声明和证明稀缺的挑战，我们训练了声明形式化工具，将自然语言数学问题转换为形式语言（Lean 4），并创建了一个包含164万条正式声明的数据集。通过使用大型语言模型检查这些正式声明的准确性，我们迭代训练多个证明工具，逐步构建出大量正式证明。最终的证明者在完整证明生成上超越了所有现有开源模型，miniF2F基准测试中成功率达到57.6%，比之前最好的开源模型高出7.6%。在PutnamBench上，Goedel-Prover成功解决7个问题，排名榜首。此外，它为Lean Workbook问题生成了29.7K条正式证明，几乎是之前工作的15.7K的两倍。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.07640 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 12 Feb 2025 09:56:56 GMT</pubDate>
+<pubDate>Wed, 12 Feb 2025 09:56:56 GMT</pubDate>
+</item>
+<item>
+<title>利用稀疏自编码器理解与操控视觉模型</title>
+<link>https://arxiv.org/abs/2502.06755</link>
+<guid>https://arxiv.org/abs/2502.06755</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出了一种通过稀疏自编码器理解和操控视觉模型的方法。</p><br><br><p><strong>摘要：</strong> 为了深入理解视觉模型的特性，本文提出了一种新的统一框架，利用稀疏自编码器（SAEs）来发现和操作可解释的视觉特征，进而通过控制实验验证这些解释。现有方法要么提供可解释特征但无法测试其因果关系，要么可以编辑模型但缺乏可解释的控制。我们的方法能够有效识别不同预训练目标导致的模型语义抽象上的差异，并通过多个视觉任务进行控制干预实验展示其实用性。研究表明，SAEs能够在不重新训练模型的情况下可靠地识别和操作可解释的视觉特征，成为理解与控制视觉模型行为的强大工具。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.06755 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 12 Feb 2025 09:54:39 GMT</pubDate>
+<pubDate>Wed, 12 Feb 2025 09:54:39 GMT</pubDate>
+</item>
+
+<item>
 <title>Chain-of-Shot提示框架提升长视频理解能力</title>
 <link>https://arxiv.org/abs/2502.06428</link>
 <guid>https://arxiv.org/abs/2502.06428</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出Chain-of-Shot提示方法，解决长视频理解中的镜头选择问题。</p><br><br><p><strong>摘要：</strong> 长视频的理解对多模态大语言模型（MLLMs）构成挑战，主要由于需处理的视觉标记数量超出模型的上下文限制，从而导致冗余的非相关镜头填充。为了解决镜头选择的关键问题，本文提出了Chain-of-Shot提示（CoS），将镜头选择视为测试时视觉提示优化。CoS由两个关键部分组成：首先是二元视频摘要机制，通过伪时间定位识别与任务相关的镜头；其次是视频共同推理模块，利用二元编码将任务相关的正镜头与无关的负镜头进行配对和对齐。实验结果显示，CoS在五个数据集上的适应性和有效性，证明其能够优化长视频的理解能力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.06428 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出Chain-of-Shot提示方法，解决长视频理解中的镜头选择问题。</p><br /><br /><p><strong>摘要：</strong> 长视频的理解对多模态大语言模型（MLLMs）构成挑战，主要由于需处理的视觉标记数量超出模型的上下文限制，从而导致冗余的非相关镜头填充。为了解决镜头选择的关键问题，本文提出了Chain-of-Shot提示（CoS），将镜头选择视为测试时视觉提示优化。CoS由两个关键部分组成：首先是二元视频摘要机制，通过伪时间定位识别与任务相关的镜头；其次是视频共同推理模块，利用二元编码将任务相关的正镜头与无关的负镜头进行配对和对齐。实验结果显示，CoS在五个数据集上的适应性和有效性，证明其能够优化长视频的理解能力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.06428" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 12 Feb 2025 07:51:18 GMT</pubDate>
 <pubDate>Wed, 12 Feb 2025 07:51:18 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +55,8 @@
 <link>https://arxiv.org/abs/2502.06857</link>
 <guid>https://arxiv.org/abs/2502.06857</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究表明超参数选择对比例法则的影响显著。</p><br><br><p><strong>摘要：</strong> 本研究通过广泛的模型架构和超参数选择来探讨比例法则，突出其对最终结果的影响。我们发布了Gemstones，这是迄今为止最全面的开源比例法则数据集，包含来自超过4000个检查点的变压器模型，参数高达20亿，采用了不同的学习率、降温调度和架构形状。这些检查点使得对比例法则的复杂研究成为可能，比如预测语言建模性能与模型宽度和深度的关系。我们的研究发现，比例法则的结果高度依赖于实验设计过程以及在拟合时使用的特定模型检查点。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.06857 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究表明超参数选择对比例法则的影响显著。</p><br /><br /><p><strong>摘要：</strong> 本研究通过广泛的模型架构和超参数选择来探讨比例法则，突出其对最终结果的影响。我们发布了Gemstones，这是迄今为止最全面的开源比例法则数据集，包含来自超过4000个检查点的变压器模型，参数高达20亿，采用了不同的学习率、降温调度和架构形状。这些检查点使得对比例法则的复杂研究成为可能，比如预测语言建模性能与模型宽度和深度的关系。我们的研究发现，比例法则的结果高度依赖于实验设计过程以及在拟合时使用的特定模型检查点。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.06857" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 12 Feb 2025 07:18:08 GMT</pubDate>
 <pubDate>Wed, 12 Feb 2025 07:18:08 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +64,8 @@
 <link>https://arxiv.org/abs/2502.05878</link>
 <guid>https://arxiv.org/abs/2502.05878</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出了一种新的框架，以提高金融时间序列预测的准确性。</p><br><br><p><strong>摘要：</strong> 本文提出了一种创新的检索增强生成（RAG）框架，以解决金融时间序列预测中的信息检索问题。该框架的核心在于采用调优后的1B参数大语言模型（StockLLM），并辅以一种新颖的候选选择方法，利用LLM反馈进行优化，目标是最大化查询与历史重要序列之间的相似性。我们的检索器FinSeer能够有效揭示复杂金融数据中的有意义模式，同时减少噪音。此外，本文构建了新数据集，整合了金融指标和历史股价，以便对FinSeer进行训练并确保评估的可靠性。实验结果表明，该RAG框架在准确性上超越了传统的StockLLM和随机检索，且FinSeer的表现亦优于现有检索方法，在BIGDATA22数据集上达到了8%的更高准确率，并成功检索到了更多有影响力的序列。这项研究强调了金融预测领域中量身定制的检索模型的重要性，为未来的研究提供了新框架。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.05878 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出了一种新的框架，以提高金融时间序列预测的准确性。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种创新的检索增强生成（RAG）框架，以解决金融时间序列预测中的信息检索问题。该框架的核心在于采用调优后的1B参数大语言模型（StockLLM），并辅以一种新颖的候选选择方法，利用LLM反馈进行优化，目标是最大化查询与历史重要序列之间的相似性。我们的检索器FinSeer能够有效揭示复杂金融数据中的有意义模式，同时减少噪音。此外，本文构建了新数据集，整合了金融指标和历史股价，以便对FinSeer进行训练并确保评估的可靠性。实验结果表明，该RAG框架在准确性上超越了传统的StockLLM和随机检索，且FinSeer的表现亦优于现有检索方法，在BIGDATA22数据集上达到了8%的更高准确率，并成功检索到了更多有影响力的序列。这项研究强调了金融预测领域中量身定制的检索模型的重要性，为未来的研究提供了新框架。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.05878" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 12 Feb 2025 07:10:24 GMT</pubDate>
 <pubDate>Wed, 12 Feb 2025 07:10:24 GMT</pubDate>
 </item>
 <item>
@@ -45,14 +73,10 @@
 <link>https://arxiv.org/abs/2502.07490</link>
 <guid>https://arxiv.org/abs/2502.07490</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出MEAP以改进大型语言模型的信息检索和上下文推理能力。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为掩码增强自回归预测（MEAP）的新颖训练范式，旨在提升大型语言模型在关键信息检索中的表现。MEAP通过在自回归的下一个Token预测中无缝集成掩码语言建模，在预训练阶段随机掩盖少量输入Token，从而直接进行下一个Token的预测。相比于传统的需要双向注意力或编码-解码结构的掩码语言建模，MEAP在计算开销上更具优势，且通过大量实验显示，在关键信息检索及长上下文推理任务上显著超过了标准的下一个Token预测方法，在常识推理任务上则表现持平或更佳。此外，MEAP在监督微调中表现出色，尤其在信息丢失的情况下，其表现比下一个Token预测超出11.77个百分点。这些结果表明MEAP通过集中关注非掩码Token，提升了模型对任务相关信号的聚焦程度，同时减小了外围上下文的干扰，为大型语言模型的训练提供了一个有前景的方向。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.07490 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出MEAP以改进大型语言模型的信息检索和上下文推理能力。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种名为掩码增强自回归预测（MEAP）的新颖训练范式，旨在提升大型语言模型在关键信息检索中的表现。MEAP通过在自回归的下一个Token预测中无缝集成掩码语言建模，在预训练阶段随机掩盖少量输入Token，从而直接进行下一个Token的预测。相比于传统的需要双向注意力或编码-解码结构的掩码语言建模，MEAP在计算开销上更具优势，且通过大量实验显示，在关键信息检索及长上下文推理任务上显著超过了标准的下一个Token预测方法，在常识推理任务上则表现持平或更佳。此外，MEAP在监督微调中表现出色，尤其在信息丢失的情况下，其表现比下一个Token预测超出11.77个百分点。这些结果表明MEAP通过集中关注非掩码Token，提升了模型对任务相关信号的聚焦程度，同时减小了外围上下文的干扰，为大型语言模型的训练提供了一个有前景的方向。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.07490" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 12 Feb 2025 06:55:30 GMT</pubDate>
-<pubDate>Wed, 12 Feb 2025 06:55:30 GMT</pubDate>
 </item>
-
 <item>
 <title>参数化技能扩展与组合框架的研究</title>
 <link>https://arxiv.org/abs/2502.05932</link>
@@ -9018,42 +9042,6 @@ Transformers have found extensive applications across various domains due to the
 <div><p style="color: gray;">提出一种基于图像信息量学习可变长度标记表示的新方法。</p><br /><br /><p><strong>摘要：</strong> 当前的视觉系统通常为图像分配固定长度的表示，这与人类智能和大型语言模型的动态表示能力形成对比。本文提出了一种新方法，通过编码-解码架构对2D图像进行可变长度标记表示的学习。该方法使用递归处理方式，将2D图像标记精炼为1D潜在标记，并在多个迭代中增加表示能力。每一次迭代都更新已有的潜在标记，并以适应图像的复杂性和上下文信息变化的方式增加新的标记。通过重建损失和FID指标验证了该标记策略的有效性，表明标记数量与图像的信息量和下游任务要求相匹配。此外，递归处理的方式显示出标记专门化的潜力，进一步揭示了物体或部分发现的可能性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2411.02393" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 06 Nov 2024 15:16:58 GMT</pubDate>
-</item>
-<item>
-<title>视觉语言模型中的输入令牌压缩与推理优化</title>
-<link>https://arxiv.org/abs/2411.03312</link>
-<guid>https://arxiv.org/abs/2411.03312</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">研究视觉语言模型中输入令牌压缩与推理性能的最佳权衡。</p><br /><br /><p><strong>摘要：</strong> 本文探讨视觉语言模型（VLM）在推理时面临的高延迟问题，并提出通过减少输入图像令牌数来降低推理成本的方案。我们建立了一个模型，表征视觉令牌数量与语言模型参数之间的最佳权衡，并发现对于视觉推理任务，在给定推理计算预算下，使用最大化语言模型（LLM）并将视觉令牌数压缩至最低（通常为单个令牌）可以实现推理性能的最佳化。这一发现表明，计算优化的推理环境需要显著更高的令牌压缩比。我们还为适应高令牌压缩设置的解决方案奠定了初步基础。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2411.03312" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 06 Nov 2024 12:57:50 GMT</pubDate>
-</item>
-<item>
-<title>GarVerseLOD：高保真3D服装重建的新数据集与框架</title>
-<link>https://arxiv.org/abs/2411.03047</link>
-<guid>https://arxiv.org/abs/2411.03047</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出GarVerseLOD数据集，提升单幅图像服装重建质量与泛化能力。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了GarVerseLOD，一个新型数据集和框架，旨在提高从单幅非约束图像中进行高保真3D服装重建的鲁棒性。尽管神经隐式函数在多图像服装数字化方面取得了进展，但在面对复杂布料变形和体态时，现有方法仍面临泛化困难。GarVerseLOD收集了6000个高质量服装模型，细致的几何细节由专业艺术家手动创建，并通过层次化的数据集结构，提高模型的泛化能力和推理准确性。此外，采用基于条件扩散模型的新标记范式，为每个服装模型生成大量高光真实感的配对图像，确保GarVerseLOD在实图生成鸥等实际图像中表现优异。实验结果显示，GarVerseLOD相较于之前的方法，在生成独立服装作品的质量上显著提升。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2411.03047" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 06 Nov 2024 10:19:13 GMT</pubDate>
-</item>
-<item>
-<title>视觉显著性与物体检测准确性的关系研究</title>
-<link>https://arxiv.org/abs/2411.02844</link>
-<guid>https://arxiv.org/abs/2411.02844</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">研究发现视觉显著性与物体检测准确性关系更紧密。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了物体检测准确性与深度预测和视觉显著性预测之间的关系，通过使用最新模型（DeepGaze IIE、Depth Anything、DPT-Large 和 Itti 模型）在 COCO 和 Pascal VOC 数据集上进行的全面实验，发现视觉显著性与物体检测准确性之间的相关性明显高于深度预测。具体而言，在 Pascal VOC 数据集中，视觉显著性的 mArho 高达 0.459，而深度预测的 mArho 仅为 0.283。此外，分析显示不同物体类别之间的相关性存在显著差异，大型物体的相关性值可高达小型物体的三倍。这些发现表明，将视觉显著性特征融入物体检测架构可能比深度信息更具优势，尤其对特定物体类别而言，同时这些类别特定的变化为特征工程和数据集设计改进提供了重要的见解，可能促使更高效和更准确的物体检测系统的开发。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2411.02844" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 06 Nov 2024 09:16:37 GMT</pubDate>
-</item>
-<item>
-<title>基于激活传输的模型生成控制框架</title>
-<link>https://arxiv.org/abs/2410.23054</link>
-<guid>https://arxiv.org/abs/2410.23054</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文提出了一种新框架AcT，有效控制生成模型的行为。</p><br /><br /><p><strong>摘要：</strong> 随着大型生成模型能力的提升及其广泛应用，关于其可靠性、安全性及潜在误用的担忧逐渐增加。针对这些问题，本文介绍了一种新颖的激活传输（AcT）框架，通过最优运输理论引导模型激活，从而实现精细化的行为控制，且对计算开销影响极小。实验结果表明，在大型语言模型和文本到图像的扩散模型中，AcT有效缓解了有害内容，诱导了任意概念，并提高了模型的真实性。同时，AcT在图像生成中实现了精细的风格控制和概念否定，展示了其广泛的适用性和有效性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2410.23054" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 06 Nov 2024 09:15:03 GMT</pubDate>
 </item>
 </channel>
 </rss>
