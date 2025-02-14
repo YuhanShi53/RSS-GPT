@@ -5,15 +5,97 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>ProbeLog：提高分类模型检索效率的新方法</title>
+<link>https://arxiv.org/abs/2502.09619</link>
+<guid>https://arxiv.org/abs/2502.09619</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出ProbeLog，一种高效检索分类模型的方法。</p><br><br><p><strong>摘要：</strong> 随着公开可用模型数量的增加，用户对 pretrained 模型的需求不断上升，但现有的模型搜索方法主要依赖于文档中的文本搜索，限制了用户找到相关模型的能力。本文介绍了一种新方法ProbeLog，它能够在没有访问模型元数据或训练数据的情况下，检索识别目标概念（如“狗”）的分类模型。与以往的探测方法不同，ProbeLog通过观测每个模型的输出维度（logit）对固定输入集（探针）的响应，计算出一个描述符。该方法支持基于 logit 的检索和零-shot、基于文本的检索。为降低编码存储库的成本，本文还开发了一种基于协同过滤的方法，使得编码成本降低三倍。实验结果表明，ProbeLog在实际应用和细粒度搜索任务中都实现了高检索准确率，并且能扩展到全尺寸的模型存储库。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.09619 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 14 Feb 2025 02:58:25 GMT</pubDate>
+<pubDate>Fri, 14 Feb 2025 02:58:25 GMT</pubDate>
+</item>
+<item>
+<title>CoSER: 高质量角色扮演语言模型数据集及评估协议</title>
+<link>https://arxiv.org/abs/2502.09082</link>
+<guid>https://arxiv.org/abs/2502.09082</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>CoSER提供高质量角色扮演语言模型的数据集及评估方法。</p><br><br><p><strong>摘要：</strong> 本文介绍了CoSER，一个为角色扮演语言代理(RPLA)提供的高质量数据集、开放模型及评估协议。CoSER数据集包含来自771部著名书籍的17,966个角色，并提供真实对话及多样化的数据类型，如对话设置、角色体验和内心想法。我们引入了基于表演方法的给定情境表演，来训练和评估角色扮演的语言模型，LLMs能顺序展现书中多个角色。通过该数据集，我们开发了基于LLaMA-3.1的CoSER 8B和CoSER 70B先进的开放角色扮演语言模型。大量实验表明，CoSER数据集在RPLA的训练、评估和检索中具有重要价值，其中CoSER 70B在我们的评估及现有三个基准上表现优异，超越或匹配了GPT-4o，在InCharacter和LifeChoice基准上分别达到了75.80%和93.47%的准确率。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.09082 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 14 Feb 2025 02:50:35 GMT</pubDate>
+<pubDate>Fri, 14 Feb 2025 02:50:35 GMT</pubDate>
+</item>
+<item>
+<title>SQuARE: Sequential Question Answering Reasoning Engine for Enhanced Chain-of-Thought in Large Language Models</title>
+<link>https://arxiv.org/abs/2502.09390</link>
+<guid>https://arxiv.org/abs/2502.09390</guid>
+<content:encoded><![CDATA[
+
+  In the rapidly evolving field of Natural Language Processing, Large Language Models (LLMs) are tasked with increasingly complex reasoning challenges. Traditional methods like chain-of-thought prompting have shown promise but often fall short in fully leveraging a model's reasoning capabilities. This paper introduces SQuARE (Sequential Question Answering Reasoning Engine), a novel prompting technique designed to improve reasoning through a self-interrogation paradigm. Building upon CoT frameworks, SQuARE prompts models to generate and resolve multiple auxiliary questions before tackling the main query, promoting a more thorough exploration of various aspects of a topic. Our expansive evaluations, conducted with Llama 3 and GPT-4o models across multiple question-answering datasets, demonstrate that SQuARE significantly surpasses traditional CoT prompts and existing rephrase-and-respond methods. By systematically decomposing queries, SQuARE advances LLM capabilities in reasoning tasks. The code is publicly available at https://github.com/IntelLabs/RAG-FiT/tree/square.
+
+]]></content:encoded>
+<pubDate>Fri, 14 Feb 2025 02:35:53 GMT</pubDate>
+<pubDate>Fri, 14 Feb 2025 02:35:53 GMT</pubDate>
+</item>
+<item>
+<title>无编码器架构在3D理解中的应用探索</title>
+<link>https://arxiv.org/abs/2502.09620</link>
+<guid>https://arxiv.org/abs/2502.09620</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文首次探讨无编码器架构在3D理解中的有效性。</p><br><br><p><strong>摘要：</strong> 本文对无编码器架构在3D理解的应用潜力进行了全面研究，解决了现有基于编码器的3D大多模态模型所面临的挑战，例如无法适应不同的点云分辨率以及编码器输出的特征无法满足大型语言模型的语义需求。我们提出了两个关键策略：一是在预训练阶段采用LLM嵌入的语义编码策略，并使用混合语义损失提取高级语义；二是在指令调优阶段引入层次化几何聚合策略，帮助LLM关注点云的局部细节。最终，我们提出了首个无编码器的3D大多模态模型ENEL，表现出色，与当前最先进的模型ShapeLLM-13B相竞争，分别在分类、描述和视觉问答任务中取得55.0%、50.92%和42.7%的成绩。这些结果表明，无编码器架构在3D理解领域具有替代基于编码器的架构的巨大潜力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.09620 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 14 Feb 2025 02:27:45 GMT</pubDate>
+<pubDate>Fri, 14 Feb 2025 02:27:45 GMT</pubDate>
+</item>
+<item>
+<title>MME-CoT：评估大型多模态模型的链式思维推理性能</title>
+<link>https://arxiv.org/abs/2502.09621</link>
+<guid>https://arxiv.org/abs/2502.09621</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文介绍了MME-CoT基准，评估多模态模型的链式思维推理能力。</p><br><br><p><strong>摘要：</strong> 本文提出MME-CoT，一个专门评估大型多模态模型（LMMs）链式思维（CoT）推理性能的基准，涵盖数学、科学、光学字符识别、逻辑、时空和常规场景等六个领域。作为该领域的首个综合研究，MME-CoT包含三项新颖的评估指标，细致评估推理质量、鲁棒性和效率。通过高质量数据和独特的评估策略，我们深入分析了最先进的LMMs，发现几个关键见解：拥有反思机制的模型在CoT质量上表现优异，其中Kimi k1.5表现优于GPT-4o并取得最高质量结果；CoT提示在感知性任务中通常会降低LMM性能，这表明可能存在有害的过度思考行为；尽管CoT质量较高，但拥有反思机制的LMMs在正常响应和自我修正阶段效率明显不足。我们希望MME-CoT能够为推进LMMs的多模态推理奠定基础。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.09621 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 14 Feb 2025 01:34:58 GMT</pubDate>
+<pubDate>Fri, 14 Feb 2025 01:34:58 GMT</pubDate>
+</item>
+<item>
+<title>Typhoon T1：开放的泰语推理模型开发</title>
+<link>https://arxiv.org/abs/2502.09042</link>
+<guid>https://arxiv.org/abs/2502.09042</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文介绍了Typhoon T1，一个新型泰语推理模型的开放开发项目。</p><br><br><p><strong>摘要：</strong> 本文介绍了Typhoon T1，这是一个旨在开发开放泰语推理模型的项目。推理模型是一种新型的生成模型，基于大型语言模型（LLMs）之上，通过生成长链思维来得到最终答案，已被发现能够提高复杂任务的性能。然而，关于如何开发此类模型的细节相对有限，特别是在低资源语言的推理模型方面。Typhoon T1以更具成本效益的方式进行开发，采用监督微调和开放数据集，而非强化学习。文章分享了合成数据生成与训练的细节，以及我们的数据集和模型权重。此外，我们提供了跨领域通用推理模型的开发见解，能够生成低资源语言中的推理痕迹，以泰语为例。我们希望这一开放努力能为该领域的进一步研究奠定基础。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.09042 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 14 Feb 2025 01:29:44 GMT</pubDate>
+<pubDate>Fri, 14 Feb 2025 01:29:44 GMT</pubDate>
+</item>
+<item>
+<title>CoT-Valve: 动态控制推理链长度的方法</title>
+<link>https://arxiv.org/abs/2502.09601</link>
+<guid>https://arxiv.org/abs/2502.09601</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>CoT-Valve方法动态调节推理链长度，优化推理效率。</p><br><br><p><strong>摘要：</strong> 本文提出了一种新的方法CoT-Valve，用于动态控制推理链的长度，以应对不同任务的难度，降低推理模型的推理成本。研究表明，在简单任务中推理路径容易压缩，而在困难任务中则存在挑战。为此，我们引入了一种新的调整和推理策略，使模型能够生成不同长度的推理链。我们在参数空间中识别出一个能够有效控制生成CoT长度的方向，并构建了从长到短的推理链数据集。实验结果表明，CoT-Valve在控制能力和压缩能力上表现优越，相较于传统的提示控制方法，在减少GSM8K和AIME任务中的推理链长短时，仅带来了轻微的性能下降。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.09601 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 14 Feb 2025 00:16:30 GMT</pubDate>
+<pubDate>Fri, 14 Feb 2025 00:16:30 GMT</pubDate>
+</item>
+
+<item>
 <title>高质量合成多模态数据及其在mmE5模型中的应用</title>
 <link>https://arxiv.org/abs/2502.08468</link>
 <guid>https://arxiv.org/abs/2502.08468</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文探讨了高质量合成多模态数据的标准及其在mmE5模型中的应用。</p><br><br><p><strong>摘要：</strong> 多模态嵌入模型因能够将文本和图像等不同模态的数据映射到统一的表示空间而备受关注。然而，有限的标注多模态数据常常限制了嵌入性能。本文提出了高质量合成多模态数据的三个标准：广泛的范围、稳健的跨模态对齐和高保真度。我们基于这些原则合成了涵盖多任务、多模态和多语言的高质量数据集，并通过多模态大语言模型进行深度思考生成。同时，该数据集结合了真实世界的图像与准确的文本，确保保真度，经过自我评估和精炼。利用这些高质量合成和标注数据，我们训练了多模态多语言E5模型mmE5，并在MMEB基准测试上取得了最先进的表现，在XTD基准测试中展现了卓越的多语言性能。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.08468 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文探讨了高质量合成多模态数据的标准及其在mmE5模型中的应用。</p><br /><br /><p><strong>摘要：</strong> 多模态嵌入模型因能够将文本和图像等不同模态的数据映射到统一的表示空间而备受关注。然而，有限的标注多模态数据常常限制了嵌入性能。本文提出了高质量合成多模态数据的三个标准：广泛的范围、稳健的跨模态对齐和高保真度。我们基于这些原则合成了涵盖多任务、多模态和多语言的高质量数据集，并通过多模态大语言模型进行深度思考生成。同时，该数据集结合了真实世界的图像与准确的文本，确保保真度，经过自我评估和精炼。利用这些高质量合成和标注数据，我们训练了多模态多语言E5模型mmE5，并在MMEB基准测试上取得了最先进的表现，在XTD基准测试中展现了卓越的多语言性能。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.08468" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 13 Feb 2025 23:32:15 GMT</pubDate>
 <pubDate>Thu, 13 Feb 2025 23:32:15 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +103,8 @@
 <link>https://arxiv.org/abs/2502.09560</link>
 <guid>https://arxiv.org/abs/2502.09560</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出EmbodiedBench评估框架以提升多模态代理的实际应用能力。</p><br><br><p><strong>摘要：</strong> 本文介绍了EmbodiedBench，一个旨在评估基于多模态大型语言模型（MLLM）的体感代理的全面评估框架。虽然语言为中心的体感代理得到了较多关注，但基于MLLM的代理仍未得到充分探索。EmbodiedBench覆盖了1,128个任务，任务内容多样，从高层的语义任务到低层的原子操作，包括空间意识、视觉感知等六个核心能力的评估。通过对13个领先的MLLM进行测试，我们发现尽管MLLM在高层任务中表现良好，但在低层操作中面临挑战，最佳模型GPT-4o的平均得分仅为28.9%。EmbodiedBench为研究人员提供了一个标准化的评估平台，不仅揭示了当前的挑战，也为提升MLLM-based体感代理的研究提供了宝贵的见解。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.09560 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出EmbodiedBench评估框架以提升多模态代理的实际应用能力。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了EmbodiedBench，一个旨在评估基于多模态大型语言模型（MLLM）的体感代理的全面评估框架。虽然语言为中心的体感代理得到了较多关注，但基于MLLM的代理仍未得到充分探索。EmbodiedBench覆盖了1,128个任务，任务内容多样，从高层的语义任务到低层的原子操作，包括空间意识、视觉感知等六个核心能力的评估。通过对13个领先的MLLM进行测试，我们发现尽管MLLM在高层任务中表现良好，但在低层操作中面临挑战，最佳模型GPT-4o的平均得分仅为28.9%。EmbodiedBench为研究人员提供了一个标准化的评估平台，不仅揭示了当前的挑战，也为提升MLLM-based体感代理的研究提供了宝贵的见解。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.09560" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 13 Feb 2025 23:23:42 GMT</pubDate>
 <pubDate>Thu, 13 Feb 2025 23:23:42 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +112,8 @@
 <link>https://arxiv.org/abs/2502.08690</link>
 <guid>https://arxiv.org/abs/2502.08690</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>Skrr通过选择性跳过和重用层来优化文本编码器的内存使用。</p><br><br><p><strong>摘要：</strong> 在文本到图像（T2I）扩散模型中，文本编码器在从文本提示生成高质量图像方面表现出色，但其内存消耗却是去噪模块的八倍。本研究提出了一种名为Skip and Re-use layers (Skrr)的修剪策略，旨在针对T2I任务优化文本编码器的内存使用。Skrr通过选择性地跳过或重用变换器块中的某些层，利用其固有冗余，显著减少内存占用而不影响性能。实验结果表明，Skrr在高稀疏级别下仍能维持与原始模型相当的图像质量，且在多个评估指标（包括FID、CLIP、DreamSim和GenEval分数）上实现了最先进的内存效率，超越了现有的逐块修剪方法。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.08690 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">Skrr通过选择性跳过和重用层来优化文本编码器的内存使用。</p><br /><br /><p><strong>摘要：</strong> 在文本到图像（T2I）扩散模型中，文本编码器在从文本提示生成高质量图像方面表现出色，但其内存消耗却是去噪模块的八倍。本研究提出了一种名为Skip and Re-use layers (Skrr)的修剪策略，旨在针对T2I任务优化文本编码器的内存使用。Skrr通过选择性地跳过或重用变换器块中的某些层，利用其固有冗余，显著减少内存占用而不影响性能。实验结果表明，Skrr在高稀疏级别下仍能维持与原始模型相当的图像质量，且在多个评估指标（包括FID、CLIP、DreamSim和GenEval分数）上实现了最先进的内存效率，超越了现有的逐块修剪方法。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.08690" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 13 Feb 2025 23:10:44 GMT</pubDate>
 <pubDate>Thu, 13 Feb 2025 23:10:44 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +121,8 @@
 <link>https://arxiv.org/abs/2502.08910</link>
 <guid>https://arxiv.org/abs/2502.08910</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出InfiniteHiP框架，提高长序列处理速度和效率。</p><br><br><p><strong>摘要：</strong> 在现代的大型语言模型中，处理超长上下文面临诸多挑战，如推理速度缓慢和内存消耗增加。为此，我们提出了InfiniteHiP，一个新的高效推理框架，采用模块化的层次化token剪枝算法，动态去除无关的上下文token，从而加速处理。此外，该方法允许通过根据内部注意模式选择性地应用不同的RoPE调整方法，来实现更长序列的概括。我们还在推理过程中将键值缓存转移至主内存，显著降低了GPU内存压力，实现了在单个L40s 48GB GPU上处理高达300万token的能力，相比之下是原本的3倍，无任何上下文信息的永久丢失。InfinityHiP在处理100万token上下文时，实现了18.95倍的注意力解码加速，并且不需要额外的训练。通过在SGLang框架中的实现，我们通过广泛评估展示了其有效性和实用性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.08910 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出InfiniteHiP框架，提高长序列处理速度和效率。</p><br /><br /><p><strong>摘要：</strong> 在现代的大型语言模型中，处理超长上下文面临诸多挑战，如推理速度缓慢和内存消耗增加。为此，我们提出了InfiniteHiP，一个新的高效推理框架，采用模块化的层次化token剪枝算法，动态去除无关的上下文token，从而加速处理。此外，该方法允许通过根据内部注意模式选择性地应用不同的RoPE调整方法，来实现更长序列的概括。我们还在推理过程中将键值缓存转移至主内存，显著降低了GPU内存压力，实现了在单个L40s 48GB GPU上处理高达300万token的能力，相比之下是原本的3倍，无任何上下文信息的永久丢失。InfinityHiP在处理100万token上下文时，实现了18.95倍的注意力解码加速，并且不需要额外的训练。通过在SGLang框架中的实现，我们通过广泛评估展示了其有效性和实用性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.08910" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 13 Feb 2025 22:57:03 GMT</pubDate>
 <pubDate>Thu, 13 Feb 2025 22:57:03 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +130,8 @@
 <link>https://arxiv.org/abs/2502.06608</link>
 <guid>https://arxiv.org/abs/2502.06608</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>TripoSG通过扩散技术实现高保真3D形状生成，提升生成质量与通用性。</p><br><br><p><strong>摘要：</strong> 随着扩散技术的进步，图像和视频生成质量得以显著提升，但3D形状生成技术仍面临规模和复杂性限制。本文提出TripoSG，一个新型的形状扩散范式，能生成高保真的3D网格，并精准对应输入图像。TripoSG的关键创新包括：1) 一种针对3D形状生成的大规模规范流变换器，基于大量高质量数据进行训练，以达到最佳保真度；2) 结合SDF、法向量和Eikonal损失的混合监督训练策略，显著提升3D重建性能；3) 一条生成200万高质量3D样本的数据处理管道，强调数据质量和数量在训练3D生成模型中的重要性。实验验证了各组成部分的有效性，使TripoSG在3D形状生成方面实现了领先性能，3D形状细节更为丰富，且对输入图像的保真度极高。此外，TripoSG能从多样的图像风格和内容中生成3D模型，展示了强大的通用性。为了推动3D生成领域的发展，我们将公开该模型。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.06608 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">TripoSG通过扩散技术实现高保真3D形状生成，提升生成质量与通用性。</p><br /><br /><p><strong>摘要：</strong> 随着扩散技术的进步，图像和视频生成质量得以显著提升，但3D形状生成技术仍面临规模和复杂性限制。本文提出TripoSG，一个新型的形状扩散范式，能生成高保真的3D网格，并精准对应输入图像。TripoSG的关键创新包括：1) 一种针对3D形状生成的大规模规范流变换器，基于大量高质量数据进行训练，以达到最佳保真度；2) 结合SDF、法向量和Eikonal损失的混合监督训练策略，显著提升3D重建性能；3) 一条生成200万高质量3D样本的数据处理管道，强调数据质量和数量在训练3D生成模型中的重要性。实验验证了各组成部分的有效性，使TripoSG在3D形状生成方面实现了领先性能，3D形状细节更为丰富，且对输入图像的保真度极高。此外，TripoSG能从多样的图像风格和内容中生成3D模型，展示了强大的通用性。为了推动3D生成领域的发展，我们将公开该模型。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.06608" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 13 Feb 2025 22:56:23 GMT</pubDate>
 <pubDate>Thu, 13 Feb 2025 22:56:23 GMT</pubDate>
 </item>
 <item>
@@ -69,11 +139,8 @@
 <link>https://arxiv.org/abs/2502.09056</link>
 <guid>https://arxiv.org/abs/2502.09056</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本研究探讨了增强泰语大语言模型推理能力的方法。</p><br><br><p><strong>摘要：</strong> 本文研究了数据选择和模型合并的方法，旨在将先进的推理能力（如DeepSeek R1）融入语言特定的大语言模型（LLMs），特别关注泰语LLM。我们的目标是在保持语言特性的同时，提升语言特定LLMs的推理能力。DeepSeek R1在推理方面表现出色，但主要集中于英语和中文等高资源语言，导致低资源语言的表现受限。文章展示了仅使用公开数据集和120美元的计算预算，就能提升语言特定LLMs的推理能力，使其水平与DeepSeek R1相当，同时不影响其在目标语言任务上的表现。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.09056 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本研究探讨了增强泰语大语言模型推理能力的方法。</p><br /><br /><p><strong>摘要：</strong> 本文研究了数据选择和模型合并的方法，旨在将先进的推理能力（如DeepSeek R1）融入语言特定的大语言模型（LLMs），特别关注泰语LLM。我们的目标是在保持语言特性的同时，提升语言特定LLMs的推理能力。DeepSeek R1在推理方面表现出色，但主要集中于英语和中文等高资源语言，导致低资源语言的表现受限。文章展示了仅使用公开数据集和120美元的计算预算，就能提升语言特定LLMs的推理能力，使其水平与DeepSeek R1相当，同时不影响其在目标语言任务上的表现。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.09056" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 13 Feb 2025 22:01:48 GMT</pubDate>
 <pubDate>Thu, 13 Feb 2025 22:01:48 GMT</pubDate>
 </item>
 <item>
@@ -81,11 +148,8 @@
 <link>https://arxiv.org/abs/2502.08946</link>
 <guid>https://arxiv.org/abs/2502.08946</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究表明，LLMs在理解物理概念任务上落后于人类约40%。</p><br><br><p><strong>摘要：</strong> 本文系统性地探讨了大型语言模型（LLMs）是否真正理解其所表达的内容，提出了一项名为PhysiCo的物理概念理解任务。该任务通过网格格式输入减轻了记忆化问题，网格表示不同层次的理解，包括核心现象、应用示例以及与其他抽象模式的类比。研究结果表明，尽管当前最先进的LLMs（如GPT-4o、o1和Gemini 2.0）在自然语言中能够描述和识别相关概念，但在此网格任务中表现显著低于人类，落后约40%。此外，LLMs的表现不佳源于任务的内在难度，而非网格格式的陌生性，因为在相同格式的数据上进行的上下文学习和微调对其表现几乎没有提升。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.08946 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究表明，LLMs在理解物理概念任务上落后于人类约40%。</p><br /><br /><p><strong>摘要：</strong> 本文系统性地探讨了大型语言模型（LLMs）是否真正理解其所表达的内容，提出了一项名为PhysiCo的物理概念理解任务。该任务通过网格格式输入减轻了记忆化问题，网格表示不同层次的理解，包括核心现象、应用示例以及与其他抽象模式的类比。研究结果表明，尽管当前最先进的LLMs（如GPT-4o、o1和Gemini 2.0）在自然语言中能够描述和识别相关概念，但在此网格任务中表现显著低于人类，落后约40%。此外，LLMs的表现不佳源于任务的内在难度，而非网格格式的陌生性，因为在相同格式的数据上进行的上下文学习和微调对其表现几乎没有提升。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.08946" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 13 Feb 2025 21:59:28 GMT</pubDate>
 <pubDate>Thu, 13 Feb 2025 21:59:28 GMT</pubDate>
 </item>
 <item>
@@ -93,11 +157,8 @@
 <link>https://arxiv.org/abs/2502.09100</link>
 <guid>https://arxiv.org/abs/2502.09100</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文综述了大型语言模型在逻辑推理方面的最新进展。</p><br><br><p><strong>摘要：</strong> 随着OpenAI o3和DeepSeek-R1等先进推理模型的出现，大型语言模型（LLMs）展示了显著的推理能力，但其进行严谨逻辑推理的能力仍然存在疑问。本文综述了LLMs中逻辑推理的最新进展，探讨了其理论基础及评估推理能力的基准。我们分析了在不同推理范式（包括演绎、归纳、溯因和类比）下的现有能力，并评估了提升推理表现的策略，包括数据中心调优、强化学习、解码策略和神经-符号方法。最后，本文提出了未来的研究方向，强调进一步探索以增强人工智能系统中的逻辑推理能力的必要性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.09100 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文综述了大型语言模型在逻辑推理方面的最新进展。</p><br /><br /><p><strong>摘要：</strong> 随着OpenAI o3和DeepSeek-R1等先进推理模型的出现，大型语言模型（LLMs）展示了显著的推理能力，但其进行严谨逻辑推理的能力仍然存在疑问。本文综述了LLMs中逻辑推理的最新进展，探讨了其理论基础及评估推理能力的基准。我们分析了在不同推理范式（包括演绎、归纳、溯因和类比）下的现有能力，并评估了提升推理表现的策略，包括数据中心调优、强化学习、解码策略和神经-符号方法。最后，本文提出了未来的研究方向，强调进一步探索以增强人工智能系统中的逻辑推理能力的必要性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.09100" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 13 Feb 2025 21:55:58 GMT</pubDate>
 <pubDate>Thu, 13 Feb 2025 21:55:58 GMT</pubDate>
 </item>
 <item>
@@ -105,14 +166,10 @@
 <link>https://arxiv.org/abs/2502.09604</link>
 <guid>https://arxiv.org/abs/2502.09604</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>SelfCite以自监督方式提升LLMs生成高质量引用的能力。</p><br><br><p><strong>摘要：</strong> SelfCite是一种新颖的自监督方法，旨在提高大型语言模型(LLMs)生成高质量细粒度句子级引用的能力。该方法依赖于LLM自身提供的奖励信号，通过上下文的消融实验来判断引用的必要性。当引用文本被移除时，若应答变化则说明引用必要；而保留引用文本时，应答不变则说明已提供足够的信息。这一奖励信号可以有效指导推理过程中最佳抽样策略的实施，从而显著改善引用质量。此外，该信号也可以用于偏好优化，直接对模型进行微调，以生成更好的引用。在LongBench-Cite基准测试中，SelfCite在五个长文本问答任务上使引用F1值提升了多达5.3个百分点，展现了其有效性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.09604 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">SelfCite以自监督方式提升LLMs生成高质量引用的能力。</p><br /><br /><p><strong>摘要：</strong> SelfCite是一种新颖的自监督方法，旨在提高大型语言模型(LLMs)生成高质量细粒度句子级引用的能力。该方法依赖于LLM自身提供的奖励信号，通过上下文的消融实验来判断引用的必要性。当引用文本被移除时，若应答变化则说明引用必要；而保留引用文本时，应答不变则说明已提供足够的信息。这一奖励信号可以有效指导推理过程中最佳抽样策略的实施，从而显著改善引用质量。此外，该信号也可以用于偏好优化，直接对模型进行微调，以生成更好的引用。在LongBench-Cite基准测试中，SelfCite在五个长文本问答任务上使引用F1值提升了多达5.3个百分点，展现了其有效性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.09604" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Thu, 13 Feb 2025 21:42:37 GMT</pubDate>
-<pubDate>Thu, 13 Feb 2025 21:42:37 GMT</pubDate>
 </item>
-
 <item>
 <title>基于GEMINI学习的医疗图像密集对比表示学习</title>
 <link>https://arxiv.org/abs/2502.05282</link>
