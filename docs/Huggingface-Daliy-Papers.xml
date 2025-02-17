@@ -5,15 +5,73 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>高效多级卷积架构在3D视觉定位中的应用</title>
+<link>https://arxiv.org/abs/2502.10392</link>
+<guid>https://arxiv.org/abs/2502.10392</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种高效的多级卷积架构，优化3D视觉定位性能。</p><br><br><p><strong>摘要：</strong> 本文提出了一种高效的多级卷积架构，用于3D视觉定位，旨在克服传统方法因双阶段或点基础架构导致实时推理困难的问题。受3D物体检测中稀疏卷积架构成功的启发，结合文本特征，使3D场景表示与文本特征有效互动，采用文本引导剪枝（TGP）与基于补全的加法（CBA）方法，通过逐渐区域剪枝与目标补全高度融合信息。TGP通过交叉注意力有效地稀疏化3D场景表示，CBA则解决了过度剪枝对几何信息影响的问题，以微小的计算开销修复被过度剪枝区域。实验显示，与以往单阶段方法相比，该方法在推理速度上领先，且在ScanRefer、NR3D和SR3D上存在显著的准确率提升。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.10392 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 17 Feb 2025 09:25:39 GMT</pubDate>
+<pubDate>Mon, 17 Feb 2025 09:25:39 GMT</pubDate>
+</item>
+<item>
+<title>DarwinLM: Evolutionary Structured Pruning of Large Language Models</title>
+<link>https://arxiv.org/abs/2502.07780</link>
+<guid>https://arxiv.org/abs/2502.07780</guid>
+<content:encoded><![CDATA[
+
+  Large Language Models (LLMs) have achieved significant success across various NLP tasks. However, their massive computational costs limit their widespread use, particularly in real-time applications. Structured pruning offers an effective solution by compressing models and directly providing end-to-end speed improvements, regardless of the hardware environment. Meanwhile, different components of the model exhibit varying sensitivities towards pruning, calling for non-uniform model compression. However, a pruning method should not only identify a capable substructure, but also account for post-compression training. To this end, we propose \sysname, a method for training-aware structured pruning. \sysname builds upon an evolutionary search process, generating multiple offspring models in each generation through mutation, and selecting the fittest for survival. To assess the effect of post-training, we incorporate a lightweight, multistep training process within the offspring population, progressively increasing the number of tokens and eliminating poorly performing models in each selection stage. We validate our method through extensive experiments on Llama-2-7B, Llama-3.1-8B and Qwen-2.5-14B-Instruct, achieving state-of-the-art performance for structured pruning. For instance, \sysname surpasses ShearedLlama while requiring 5times less training data during post-compression training.
+
+]]></content:encoded>
+<pubDate>Mon, 17 Feb 2025 08:54:04 GMT</pubDate>
+<pubDate>Mon, 17 Feb 2025 08:54:04 GMT</pubDate>
+</item>
+<item>
+<title>ImageRAG：基于检索增强生成的图像合成方法</title>
+<link>https://arxiv.org/abs/2502.09411</link>
+<guid>https://arxiv.org/abs/2502.09411</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>ImageRAG通过动态检索图像提高了图像生成质量，特别是在稀有概念的合成方面。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为ImageRAG的方法，它结合了图像生成模型与检索增强生成技术，以解决现有扩散模型在生成稀有或未见概念时的挑战。ImageRAG会根据给定的文本提示动态检索相关图像，并将这些图像作为上下文来指导图像生成过程。与之前专门针对检索生成训练的模型不同，ImageRAG不需要专门的训练，而是利用现有图像条件模型的能力。这种方法具有高度的适应性，能够在多种基础模型中应用，显著提高了稀有和细粒度概念的生成效果。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.09411 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 17 Feb 2025 08:41:41 GMT</pubDate>
+<pubDate>Mon, 17 Feb 2025 08:41:41 GMT</pubDate>
+</item>
+<item>
+<title>小型多语言模型在低资源语言处理中的适应性研究</title>
+<link>https://arxiv.org/abs/2502.10140</link>
+<guid>https://arxiv.org/abs/2502.10140</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本研究 explores 小型多语言模型在低资源语言下的适应性与性能提升。</p><br><br><p><strong>摘要：</strong> 本研究系统探讨了如何有效地使用参数高效的适配器方法，将小型多语言模型（mLMs）适应于低资源语言（LRLs）。研究评估了三种适配器架构：顺序瓶颈、可逆瓶颈和低秩适配方法。结果显示，使用来自GlotCC的非结构化文本和ConceptNet的结构化知识的小型适配数据集（如最多1GB的自由文本或几MB的知识图数据）能显著提升模型在内部（掩码语言建模）和外部任务（主题分类、情感分析和命名实体识别）的表现。研究发现，顺序瓶颈适配器在语言建模方面表现出色，而可逆瓶颈适配器在下游任务上由于更好的嵌入对齐和更多的参数数量略有凌驾于其他方法之上。适配器方法在使用更少参数的情况下，实现了与完整微调相当或更优的性能，而与大型语言模型（如LLaMA-3、GPT-4及DeepSeek-R1基于的蒸馏模型）相比，小型mLMs在低资源语言任务中更为有效。尽管适应性提高了性能，但预训练数据规模仍是决定因素，特别是对于预训练覆盖面广的语言。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.10140 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 17 Feb 2025 08:29:25 GMT</pubDate>
+<pubDate>Mon, 17 Feb 2025 08:29:25 GMT</pubDate>
+</item>
+<item>
+<title>CAPI：一种基于聚类的纯MIM框架及其在图像识别中的应用</title>
+<link>https://arxiv.org/abs/2502.08769</link>
+<guid>https://arxiv.org/abs/2502.08769</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>CAPI框架通过聚类预测提升了自监督学习的表现，达到了高准确率。</p><br><br><p><strong>摘要：</strong> 本文介绍了CAPI，一个新颖的纯蒙面图像建模（MIM）框架，旨在提升自监督表示学习的性能。我们系统分析了目标表示、损失函数和架构，提出了一种基于聚类的损失函数，以提高模型的训练稳定性和扩展性。CAPI使用ViT-L骨干网络，在ImageNet数据集上取得了83.8%的准确率，ADE20K数据集上实现了32.1%的mIoU，相较于现有的MIM方法大幅提升，并接近当前最先进的方法DINOv2。我们将所有代码和模型发布，促进后续研究和应用。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.08769 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 17 Feb 2025 07:24:28 GMT</pubDate>
+<pubDate>Mon, 17 Feb 2025 07:24:28 GMT</pubDate>
+</item>
+
+<item>
 <title>AdaPTS: Adapting Univariate Foundation Models to Probabilistic Multivariate Time Series Forecasting</title>
 <link>https://arxiv.org/abs/2502.10235</link>
 <guid>https://arxiv.org/abs/2502.10235</guid>
 <content:encoded><![CDATA[
-
-  Pre-trained foundation models (FMs) have shown exceptional performance in univariate time series forecasting tasks. However, several practical challenges persist, including managing intricate dependencies among features and quantifying uncertainty in predictions. This study aims to tackle these critical limitations by introducing adapters; feature-space transformations that facilitate the effective use of pre-trained univariate time series FMs for multivariate tasks. Adapters operate by projecting multivariate inputs into a suitable latent space and applying the FM independently to each dimension. Inspired by the literature on representation learning and partially stochastic Bayesian neural networks, we present a range of adapters and optimization/inference strategies. Experiments conducted on both synthetic and real-world datasets confirm the efficacy of adapters, demonstrating substantial enhancements in forecasting accuracy and uncertainty quantification compared to baseline methods. Our framework, AdaPTS, positions adapters as a modular, scalable, and effective solution for leveraging time series FMs in multivariate contexts, thereby promoting their wider adoption in real-world applications. We release the code at https://github.com/abenechehab/AdaPTS.
-
+Pre-trained foundation models (FMs) have shown exceptional performance in univariate time series forecasting tasks. However, several practical challenges persist, including managing intricate dependencies among features and quantifying uncertainty in predictions. This study aims to tackle these critical limitations by introducing adapters; feature-space transformations that facilitate the effective use of pre-trained univariate time series FMs for multivariate tasks. Adapters operate by projecting multivariate inputs into a suitable latent space and applying the FM independently to each dimension. Inspired by the literature on representation learning and partially stochastic Bayesian neural networks, we present a range of adapters and optimization/inference strategies. Experiments conducted on both synthetic and real-world datasets confirm the efficacy of adapters, demonstrating substantial enhancements in forecasting accuracy and uncertainty quantification compared to baseline methods. Our framework, AdaPTS, positions adapters as a modular, scalable, and effective solution for leveraging time series FMs in multivariate contexts, thereby promoting their wider adoption in real-world applications. We release the code at https://github.com/abenechehab/AdaPTS.
 ]]></content:encoded>
-<pubDate>Mon, 17 Feb 2025 05:36:23 GMT</pubDate>
 <pubDate>Mon, 17 Feb 2025 05:36:23 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +79,8 @@
 <link>https://arxiv.org/abs/2502.10173</link>
 <guid>https://arxiv.org/abs/2502.10173</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>VibeGen是一种基于动态特性的蛋白质生成AI设计框架。</p><br><br><p><strong>摘要：</strong> VibeGen是一个新颖的蛋白质生成AI框架，旨在通过正常模式振动进行蛋白质的端到端设计。它采用双模型架构，包括一个基于指定振动模式生成序列候选者的蛋白质设计器和一个评估其动态准确性的蛋白质预测器。通过全原子分子模拟确认，设计的蛋白质能够准确再现规定的正常模式幅度，并在此基础上采用多种稳定、功能相关的结构。显著的是，生成的序列为全新设计，与自然蛋白质没有显著相似性，拓展了可及的蛋白质空间，突破了进化限制。本研究将蛋白质动态性引入生成设计过程，建立了序列与振动行为之间的双向联系，为工程化具有定制动态和功能特性的生物分子开辟了新的路径，具有重要的应用潜力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.10173 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">VibeGen是一种基于动态特性的蛋白质生成AI设计框架。</p><br /><br /><p><strong>摘要：</strong> VibeGen是一个新颖的蛋白质生成AI框架，旨在通过正常模式振动进行蛋白质的端到端设计。它采用双模型架构，包括一个基于指定振动模式生成序列候选者的蛋白质设计器和一个评估其动态准确性的蛋白质预测器。通过全原子分子模拟确认，设计的蛋白质能够准确再现规定的正常模式幅度，并在此基础上采用多种稳定、功能相关的结构。显著的是，生成的序列为全新设计，与自然蛋白质没有显著相似性，拓展了可及的蛋白质空间，突破了进化限制。本研究将蛋白质动态性引入生成设计过程，建立了序列与振动行为之间的双向联系，为工程化具有定制动态和功能特性的生物分子开辟了新的路径，具有重要的应用潜力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.10173" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 17 Feb 2025 05:09:33 GMT</pubDate>
 <pubDate>Mon, 17 Feb 2025 05:09:33 GMT</pubDate>
 </item>
 <item>
@@ -33,14 +88,10 @@
 <link>https://arxiv.org/abs/2502.07586</link>
 <guid>https://arxiv.org/abs/2502.07586</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>为有效理解AI，需构建新词汇以弥补现有语言的不足。</p><br><br><p><strong>摘要：</strong> 本文立论认为，要理解人工智能（AI），我们不能仅依赖现有的人类词汇。相反，我们应努力开发新词汇，以准确表达人类概念或机器概念，从而实现更好的理解。人类与机器的概念不同，因此可将可解释性视为一种沟通问题：人类需要能够参考和控制机器概念，同时将人类概念传达给机器。通过创建共享的人机语言，借助新词汇的发展，可解决这一沟通难题。成功的新词汇应当在抽象程度上适中，既不过于细化，以便于在多个语境中重用，又不太高层，以便于传达精确信息。作为概念验证，文章展示了如何通过“长度新词”控制大型语言模型的回答长度，以及使用“多样性新词”促进更加多变的响应。总体来说，我们认为，无法仅用现有词汇理解AI，而通过新词汇的扩展可为控制和理解机器创造新的机会。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.07586 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">为有效理解AI，需构建新词汇以弥补现有语言的不足。</p><br /><br /><p><strong>摘要：</strong> 本文立论认为，要理解人工智能（AI），我们不能仅依赖现有的人类词汇。相反，我们应努力开发新词汇，以准确表达人类概念或机器概念，从而实现更好的理解。人类与机器的概念不同，因此可将可解释性视为一种沟通问题：人类需要能够参考和控制机器概念，同时将人类概念传达给机器。通过创建共享的人机语言，借助新词汇的发展，可解决这一沟通难题。成功的新词汇应当在抽象程度上适中，既不过于细化，以便于在多个语境中重用，又不太高层，以便于传达精确信息。作为概念验证，文章展示了如何通过“长度新词”控制大型语言模型的回答长度，以及使用“多样性新词”促进更加多变的响应。总体来说，我们认为，无法仅用现有词汇理解AI，而通过新词汇的扩展可为控制和理解机器创造新的机会。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.07586" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Mon, 17 Feb 2025 04:28:55 GMT</pubDate>
-<pubDate>Mon, 17 Feb 2025 04:28:55 GMT</pubDate>
 </item>
-
 <item>
 <title>通过局部化关注层提升扩散模型文本生成能力</title>
 <link>https://arxiv.org/abs/2502.09935</link>
