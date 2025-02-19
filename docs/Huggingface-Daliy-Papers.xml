@@ -4,6 +4,78 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>Decomposed Reward Models: 提取人类偏好的新方法</title>
+<link>https://arxiv.org/abs/2502.13131</link>
+<guid>https://arxiv.org/abs/2502.13131</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>DRMs通过二元比较提取人类偏好，为个性化AI提供了新视角。</p><br><br><p><strong>摘要：</strong> 本文提出了一种新颖的奖赏模型——分解奖赏模型（DRMs），旨在有效提取多样化的人类偏好。传统奖励模型在捕捉偏好的复杂性方面存在局限性。DRMs不需要细粒度的注释，而是通过二元比较来分析人类偏好，并将其表示为向量。采用主成分分析（PCA）对偏好的数据进行分析，构造了偏好与拒绝响应之间的嵌入差异数据集。通过识别正交基向量，DRMs能够捕捉偏好的不同维度，如有帮助性、安全性和幽默感等。这些分解的奖励可以灵活组合，以适应不同用户的需求，从而提供一个可解释且可扩展的替代方案。我们的结果表明，DRMs不仅有效提取偏好维度，还能在无额外训练的情况下适应新用户，展示了其在个性化和可解释性大型语言模型对齐中的强大能力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.13131 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 18 Feb 2025 21:59:45 GMT</pubDate>
+<pubDate>Tue, 18 Feb 2025 21:59:45 GMT</pubDate>
+</item>
+<item>
+<title>HEADINFER: 一种高效的长序列推理策略</title>
+<link>https://arxiv.org/abs/2502.12574</link>
+<guid>https://arxiv.org/abs/2502.12574</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>HEADINFER通过头部级别的KV缓存卸载，显著降低推理内存占用。</p><br><br><p><strong>摘要：</strong> 本文提出了HEADINFER，一种优化长序列生成模型的推理内存使用的新策略。通过将关键值缓存（KV缓存）卸载到CPU RAM，HEADINFER避免了在GPU上完全存储Transformer层的KV缓存。该方法采用细粒度的头部级别卸载策略，仅在GPU上维护选择性的注意力头的KV缓存，同时动态计算注意力输出。通过Roofline分析，我们展示了HEADINFER在保持计算效率的同时，大幅降低了内存占用。在对Llama-3-8B模型进行评估时，HEADINFER能够将KV缓存的GPU内存占用从128 GB减少到1 GB，总体GPU内存使用从207 GB减少到17 GB，相比BF16基线推理实现了92%的减少。值得一提的是，HEADINFER使得在单个24GB显存的消费级GPU（如NVIDIA RTX 4090）上实现4百万令牌的推理成为可能，而无需采用近似方法。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.12574 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 18 Feb 2025 21:57:00 GMT</pubDate>
+<pubDate>Tue, 18 Feb 2025 21:57:00 GMT</pubDate>
+</item>
+<item>
+<title>Phantom: Subject-consistent video generation via cross-modal alignment</title>
+<link>https://arxiv.org/abs/2502.11079</link>
+<guid>https://arxiv.org/abs/2502.11079</guid>
+<content:encoded><![CDATA[
+
+  The continuous development of foundational models for video generation is evolving into various applications, with subject-consistent video generation still in the exploratory stage. We refer to this as Subject-to-Video, which extracts subject elements from reference images and generates subject-consistent video through textual instructions. We believe that the essence of subject-to-video lies in balancing the dual-modal prompts of text and image, thereby deeply and simultaneously aligning both text and visual content. To this end, we propose Phantom, a unified video generation framework for both single and multi-subject references. Building on existing text-to-video and image-to-video architectures, we redesign the joint text-image injection model and drive it to learn cross-modal alignment via text-image-video triplet data. In particular, we emphasize subject consistency in human generation, covering existing ID-preserving video generation while offering enhanced advantages. The project homepage is here https://phantom-video.github.io/Phantom/.
+
+]]></content:encoded>
+<pubDate>Tue, 18 Feb 2025 21:56:39 GMT</pubDate>
+<pubDate>Tue, 18 Feb 2025 21:56:39 GMT</pubDate>
+</item>
+<item>
+<title>基于人群比较评估的LLM自动评价方法的改进</title>
+<link>https://arxiv.org/abs/2502.12501</link>
+<guid>https://arxiv.org/abs/2502.12501</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出基于人群比较的评估方法以提升LLM判断的可靠性。</p><br><br><p><strong>摘要：</strong> 随着LLM-as-a-Judge逐渐成为自动评估的主流方法，其基于链式推理（CoT）所产生的判断却存在可靠性不足的问题，主要由于CoT推理无法捕捉到深入且全面的细节而导致的输出不完整。现有方法多依赖于多数投票或标准扩展，这未能有效解决CoT的局限性。为此，我们提出了一种人群比较评估方法，增加了额外的人群反馈来与候选回应进行比较，从而揭示候选回应中的更深层次和更全面的细节。这一过程有效地引导LLM-as-a-Judge提供更详尽的CoT判断。通过大量实验，我们的方法在五个基准测试中平均提高了6.7%的评估准确性，并产生了更高质量的CoT，进一步推动了判断蒸馏与在监督微调过程中的更高效表现。我们的分析表明，所生成的CoT在全面性和质量上优于现有方法，并且随着推理规模的扩大，评估准确性不断改善。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.12501 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 18 Feb 2025 21:55:26 GMT</pubDate>
+<pubDate>Tue, 18 Feb 2025 21:55:26 GMT</pubDate>
+</item>
+<item>
+<title>RealSyn：用于视觉-语言表示学习的真实与合成文本数据集</title>
+<link>https://arxiv.org/abs/2502.12513</link>
+<guid>https://arxiv.org/abs/2502.12513</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>RealSyn数据集通过真实与合成文本增强视觉-语言表示学习。</p><br><br><p><strong>摘要：</strong> 本文介绍了RealSyn数据集的构建，该数据集结合了高质量的真实文本和合成文本，以提升视觉-语言表示学习的性能。通过建立一条真实世界数据提取管道，提取高质量图像和文本，并设计层次检索方法有效关联图像与多个语义相关的文本，本文充分利用了未配对的数据。此外，为了增强细粒度视觉信息，提出了图像语义增强生成模块用于合成文本的生产，同时采用了语义均衡抽样策略以提高数据集多样性，从而更好地学习长尾概念。RealSyn可在15M、30M和100M三个规模上使用，实验表明，基于RealSyn预训练的模型在多个下游任务上达到了最新的性能，极大推动了视觉-语言表示学习的发展。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.12513 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 18 Feb 2025 21:52:22 GMT</pubDate>
+<pubDate>Tue, 18 Feb 2025 21:52:22 GMT</pubDate>
+</item>
+<item>
+<title>利用自然语言定义物体方向以增强机器人操作能力</title>
+<link>https://arxiv.org/abs/2502.13143</link>
+<guid>https://arxiv.org/abs/2502.13143</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本研究通过自然语言定义物体方向，以提升机器人的操作能力。</p><br><br><p><strong>摘要：</strong> 空间智能是具身AI的关键组成部分，使机器人能够理解并与环境互动。尽管现有视觉语言模型在理解物体位置和关系方面已取得进展，但仍缺乏对物体方向的精确理解，尤其是在细致操作任务中的需求。为解决这一限制，本文提出通过自然语言来定义语义方向，形成了一种更灵活的表示方式。我们构建了OrienText300K数据集，包含带有语义方向的3D模型，旨在将几何理解与功能语义连接。通过整合语义方向进VLM系统，我们的研究使机器人能够在操作中同时考虑位置和方向的约束，实验表明，模型在仿真和真实场景中显著提升了操作准确率，如在Open6DOR上达到48.7%的准确率，SIMPLER上达到74.9%。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.13143 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 18 Feb 2025 21:51:33 GMT</pubDate>
+<pubDate>Tue, 18 Feb 2025 21:51:33 GMT</pubDate>
+</item>
 
 <item>
 <title>EQ-VAE：提升潜在生成模型的等变性</title>
