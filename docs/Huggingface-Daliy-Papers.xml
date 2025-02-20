@@ -5,18 +5,51 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>基于3DGS的闭环强化学习在自动驾驶中的应用</title>
+<link>https://arxiv.org/abs/2502.13144</link>
+<guid>https://arxiv.org/abs/2502.13144</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>该研究提出了一个基于3DGS的闭环强化学习方法提升自动驾驶性能。</p><br><br><p><strong>摘要：</strong> 现有的端到端自动驾驶算法通常采用模仿学习（IL）范式，但面临因果混淆和开放环路差距等挑战。本文建立了基于3DGS的闭环强化学习（RL）训练范式，通过利用3DGS技术，我们构建了现实物理世界的光学真实数字复制品，使自动驾驶策略能够广泛探索状态空间，并通过大规模试错来应对分布外场景。为了提高安全性，我们设计了专门的奖励，以指导策略有效应对安全关键事件并理解现实世界中的因果关系。此外，我们在RL训练中将IL纳入作为正则化项，以更好地与人类驾驶行为对齐。最后，我们引入了一个闭环评估基准，由多样化且之前未见过的3DGS环境组成。与基于IL的方法相比，RAD在大多数闭环指标上表现更强，尤其是碰撞率降低了3倍。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.13144 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Feb 2025 22:13:49 GMT</pubDate>
+<pubDate>Wed, 19 Feb 2025 22:13:49 GMT</pubDate>
+</item>
+<item>
+<title>克服小模型学习差距的混合蒸馏策略</title>
+<link>https://arxiv.org/abs/2502.12143</link>
+<guid>https://arxiv.org/abs/2502.12143</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出混合蒸馏策略以提高小模型的推理能力。</p><br><br><p><strong>摘要：</strong> 本研究揭示了小模型学习能力的特殊现象，即小模型在长链推理或来自大模型的蒸馏中并未稳定受益，反而在较短、简单的推理链上表现更佳。为应对这一问题，本文提出了混合蒸馏（Mix Distillation）策略，该策略通过结合长短推理示例，或从大模型与小模型的推理中进行平衡，取得了显著的效果。实验表明，混合蒸馏能有效提升小模型的推理表现，远超单独训练长或短数据的表现。这些发现强调了直接强模型蒸馏的局限性，并突出了在有效转移推理能力时，适应推理复杂性的重要性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.12143 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Feb 2025 21:38:13 GMT</pubDate>
+<pubDate>Wed, 19 Feb 2025 21:38:13 GMT</pubDate>
+</item>
+<item>
+<title>通过LongPO提升短文档LLM在长文档任务中的表现</title>
+<link>https://arxiv.org/abs/2502.13922</link>
+<guid>https://arxiv.org/abs/2502.13922</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>LongPO方法使短文档LLM在长文档任务中表现优异。</p><br><br><p><strong>摘要：</strong> Large Language Models (LLMs)在短文档任务中表现出色，但在长文档场景中常常由于长文档对齐不足而导致性能下降。本文提出的LongPO方法，通过自我演化，使短文档LLM能够在长文档任务中表现出色。该方法通过生成的短到长偏好数据，包含对于相同指令的长文档输入和其压缩短文档对应的成对响应，帮助LLM在长文档任务中学习和适应。同时，LongPO采用短到长的KL约束，旨在减轻长文档对齐过程中短文档性能的下降。经过应用于Mistral-7B-Instruct-v0.2模型，LongPO在128K到512K上下文长度的实验中，充分保留了短文档性能，并在长短文档任务中表现显著优于传统策略，取得的长文档基准结果可与需大量长文档标注的高级LLM（如GPT-4-128K）相媲美，甚至在某些情况下超越其表现。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.13922 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Feb 2025 21:35:20 GMT</pubDate>
+<pubDate>Wed, 19 Feb 2025 21:35:20 GMT</pubDate>
+</item>
+
+<item>
 <title>提升大型语言模型决策能力的自动化奖励模型框架</title>
 <link>https://arxiv.org/abs/2502.12130</link>
 <guid>https://arxiv.org/abs/2502.12130</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种无人工标注学习奖励模型框架，以改善LLM代理的决策能力。</p><br><br><p><strong>摘要：</strong> 大型语言模型在文本生成任务上表现优异，但在需要多步骤决策和环境反馈的任务上仍显不足。为了解决LLM代理的局限性，本文提出了一种自动学习奖励模型的框架，该模型无需人工标注数据。通过让一个LLM代理随机导航环境，生成多种动作轨迹，随后利用另一个LLM为每个轨迹分配任务意图，并生成正向和负向响应，构建任务意图-正向响应-负向响应的三元组，作为训练数据来优化奖励模型。此模型能够评分动作轨迹，进而为任务规划提供启发式指导。研究表明该框架在不同代理基准测试中的有效性和普遍性，标志着在复杂互动环境中提升LLM代理决策能力的重要进展。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.12130 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种无人工标注学习奖励模型框架，以改善LLM代理的决策能力。</p><br /><br /><p><strong>摘要：</strong> 大型语言模型在文本生成任务上表现优异，但在需要多步骤决策和环境反馈的任务上仍显不足。为了解决LLM代理的局限性，本文提出了一种自动学习奖励模型的框架，该模型无需人工标注数据。通过让一个LLM代理随机导航环境，生成多种动作轨迹，随后利用另一个LLM为每个轨迹分配任务意图，并生成正向和负向响应，构建任务意图-正向响应-负向响应的三元组，作为训练数据来优化奖励模型。此模型能够评分动作轨迹，进而为任务规划提供启发式指导。研究表明该框架在不同代理基准测试中的有效性和普遍性，标志着在复杂互动环境中提升LLM代理决策能力的重要进展。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.12130" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 19 Feb 2025 18:20:05 GMT</pubDate>
-<pubDate>Wed, 19 Feb 2025 18:20:05 GMT</pubDate>
 </item>
-
 <item>
 <title>基于注意力机制的YOLOv12框架提升目标检测性能</title>
 <link>https://arxiv.org/abs/2502.12524</link>
