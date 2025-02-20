@@ -4,6 +4,66 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>REFIND框架：改进大语言模型输出中的幻觉检测</title>
+<link>https://arxiv.org/abs/2502.13622</link>
+<guid>https://arxiv.org/abs/2502.13622</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>REFIND框架通过提取文档检测大语言模型的幻觉现象，提高可靠性。</p><br><br><p><strong>摘要：</strong> 针对大语言模型（LLM）输出中的幻觉现象，REFIND（检索增强事实性幻觉检测）框架应运而生。该框架通过直接利用检索到的文档，检测LLM输出中的幻觉段落。REFIND引入了上下文敏感度比（CSR）这一新指标，量化LLM输出对检索证据的敏感度，使得幻觉检测更为高效准确。在评估过程中，REFIND在九种语言中展现出良好的鲁棒性，尤其是在低资源环境下，相比于基线模型，其在识别幻觉段落时显著提高了IoU分数。本研究强调了量化上下文敏感度在幻觉检测中的有效性，为不同语言环境下更可靠的LLM应用铺平了道路。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.13622 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 20 Feb 2025 07:25:12 GMT</pubDate>
+<pubDate>Thu, 20 Feb 2025 07:25:12 GMT</pubDate>
+</item>
+<item>
+<title>LoRAM：高效的低秩适应训练方案</title>
+<link>https://arxiv.org/abs/2502.13533</link>
+<guid>https://arxiv.org/abs/2502.13533</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>LoRAM通过小模型训练提高LLM的内存效率与性能。</p><br><br><p><strong>摘要：</strong> 本研究提出了一种新的内存高效的低秩适应训练方案LoRAM，旨在解决传统Low-Rank Adaption (LoRA)在内存占用方面的限制。LoRAM的核心思想是针对过度参数化的大型语言模型，许多神经元的训练效用较低但在推理中必不可少。该方案通过训练一个经过剪枝的小模型，以获得剪枝的低秩矩阵，然后将其恢复并与原始大型模型结合用于推理。此外，为了调和剪枝模型和原模型之间的知识差异，模型发布者在训练前进行最小成本的持续预训练。通过大量实验，LoRAM在多种剪枝策略和下游任务中表现出色，特别适用于具有700亿参数的模型，使得在只有20G HBM的GPU上进行训练成为可能，替代了用于LoRA训练的A100-80G GPU以及全微调所需的15个GPU。实现的QLoRAM通过结构化剪枝结合4位量化，显著减少了低秩矩阵训练中占主导地位的参数存储成本，且实现了优于原始和LoRA训练模型的性能提升。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.13533 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 20 Feb 2025 06:45:40 GMT</pubDate>
+<pubDate>Thu, 20 Feb 2025 06:45:40 GMT</pubDate>
+</item>
+<item>
+<title>半监督异构领域适应中的可转移知识探讨</title>
+<link>https://arxiv.org/abs/2502.13573</link>
+<guid>https://arxiv.org/abs/2502.13573</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究表明在半监督异构领域适应中，源样本的类别和特征信息对目标领域性能影响不大。</p><br><br><p><strong>摘要：</strong> 本研究探讨了半监督异构领域适应（SHDA）中可转移知识的性质，通过对约330个SHDA任务的广泛实验，使用了两种监督学习方法和七种代表性的SHDA方法。结果表明，源样本的类别和特征信息对目标领域的性能影响不显著。此外，简单分布的噪声作为源样本时，也可能蕴含可转移知识。基于这一发现，我们设计了统一的知识转移框架（KTF）用于SHDA，并发现可转移知识的主要来源是源域的可转移性和可区分性。因此，确保源样本具备这些属性，无论其来源（如图像、文本或噪声），都能提高SHDA任务中的知识转移效果。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.13573 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 20 Feb 2025 05:38:39 GMT</pubDate>
+<pubDate>Thu, 20 Feb 2025 05:38:39 GMT</pubDate>
+</item>
+<item>
+<title>全球文化知识评估：GIMMICK多模态基准研究</title>
+<link>https://arxiv.org/abs/2502.13766</link>
+<guid>https://arxiv.org/abs/2502.13766</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>GIMMICK是一个评估全球文化知识的多模态基准，涵盖144个国家的文化特色。</p><br><br><p><strong>摘要：</strong> 本文介绍了GIMMICK，一个旨在评估大型视觉语言模型（LVLM）在不同文化知识方面表现的多模态基准。GIMMICK包含六项任务及三个新数据集，覆盖144个国家的728个独特的文化事件。我们对20个LVLM和11个大型语言模型进行了系统评估。分析发现，模型表现出强烈的西方文化偏见，同时模型大小与性能之间存在显著关联。研究还显示，多模态输入和外部地理线索显著提升了模型的表现。此外，模型在识别具体文化特征（如食物）方面优于理解抽象概念（如仪式），反映出它们更擅长识别广泛文化起源而在细微理解上存在挑战。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.13766 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 20 Feb 2025 05:19:11 GMT</pubDate>
+<pubDate>Thu, 20 Feb 2025 05:19:11 GMT</pubDate>
+</item>
+<item>
+<title>InfiR : Crafting Effective Small Language Models and Multimodal Small Language Models in Reasoning</title>
+<link>https://arxiv.org/abs/2502.11573</link>
+<guid>https://arxiv.org/abs/2502.11573</guid>
+<content:encoded><![CDATA[
+
+  Large Language Models (LLMs) and Multimodal Large Language Models (MLLMs) have made significant advancements in reasoning capabilities. However, they still face challenges such as high computational demands and privacy concerns. This paper focuses on developing efficient Small Language Models (SLMs) and Multimodal Small Language Models (MSLMs) that retain competitive reasoning abilities. We introduce a novel training pipeline that enhances reasoning capabilities and facilitates deployment on edge devices, achieving state-of-the-art performance while minimizing development costs. \InfR~ aims to advance AI systems by improving reasoning, reducing adoption barriers, and addressing privacy concerns through smaller model sizes. Resources are available at https://github. com/Reallm-Labs/InfiR.
+
+]]></content:encoded>
+<pubDate>Thu, 20 Feb 2025 04:32:22 GMT</pubDate>
+<pubDate>Thu, 20 Feb 2025 04:32:22 GMT</pubDate>
+</item>
 
 <item>
 <title>ActionPiece: 通过上下文增强的动作序列标记方法</title>
