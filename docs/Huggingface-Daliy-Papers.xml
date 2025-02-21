@@ -5,15 +5,61 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>LLM-based User Profile Management for Recommender System</title>
+<link>https://arxiv.org/abs/2502.14541</link>
+<guid>https://arxiv.org/abs/2502.14541</guid>
+<content:encoded><![CDATA[
+
+  The rapid advancement of Large Language Models (LLMs) has opened new opportunities in recommender systems by enabling zero-shot recommendation without conventional training. Despite their potential, most existing works rely solely on users' purchase histories, leaving significant room for improvement by incorporating user-generated textual data, such as reviews and product descriptions. Addressing this gap, we propose PURE, a novel LLM-based recommendation framework that builds and maintains evolving user profiles by systematically extracting and summarizing key information from user reviews. PURE consists of three core components: a Review Extractor for identifying user preferences and key product features, a Profile Updater for refining and updating user profiles, and a Recommender for generating personalized recommendations using the most current profile. To evaluate PURE, we introduce a continuous sequential recommendation task that reflects real-world scenarios by adding reviews over time and updating predictions incrementally. Our experimental results on Amazon datasets demonstrate that PURE outperforms existing LLM-based methods, effectively leveraging long-term user information while managing token limitations.
+
+]]></content:encoded>
+<pubDate>Fri, 21 Feb 2025 07:16:00 GMT</pubDate>
+<pubDate>Fri, 21 Feb 2025 07:16:00 GMT</pubDate>
+</item>
+<item>
+<title>How Much Knowledge Can You Pack into a LoRA Adapter without Harming LLM?</title>
+<link>https://arxiv.org/abs/2502.14502</link>
+<guid>https://arxiv.org/abs/2502.14502</guid>
+<content:encoded><![CDATA[
+
+  The performance of Large Language Models (LLMs) on many tasks is greatly limited by the knowledge learned during pre-training and stored in the model's parameters. Low-rank adaptation (LoRA) is a popular and efficient training technique for updating or domain-specific adaptation of LLMs. In this study, we investigate how new facts can be incorporated into the LLM using LoRA without compromising the previously learned knowledge. We fine-tuned Llama-3.1-8B-instruct using LoRA with varying amounts of new knowledge. Our experiments have shown that the best results are obtained when the training data contains a mixture of known and new facts. However, this approach is still potentially harmful because the model's performance on external question-answering benchmarks declines after such fine-tuning. When the training data is biased towards certain entities, the model tends to regress to few overrepresented answers. In addition, we found that the model becomes more confident and refuses to provide an answer in only few cases. These findings highlight the potential pitfalls of LoRA-based LLM updates and underscore the importance of training data composition and tuning parameters to balance new knowledge integration and general model capabilities.
+
+]]></content:encoded>
+<pubDate>Fri, 21 Feb 2025 05:29:18 GMT</pubDate>
+<pubDate>Fri, 21 Feb 2025 05:29:18 GMT</pubDate>
+</item>
+<item>
+<title>How Much Do LLMs Hallucinate across Languages? On Multilingual Estimation of LLM Hallucination in the Wild</title>
+<link>https://arxiv.org/abs/2502.12769</link>
+<guid>https://arxiv.org/abs/2502.12769</guid>
+<content:encoded><![CDATA[
+
+  In the age of misinformation, hallucination -- the tendency of Large Language Models (LLMs) to generate non-factual or unfaithful responses -- represents the main risk for their global utility. Despite LLMs becoming increasingly multilingual, the vast majority of research on detecting and quantifying LLM hallucination are (a) English-centric and (b) focus on machine translation (MT) and summarization, tasks that are less common ``in the wild'' than open information seeking. In contrast, we aim to quantify the extent of LLM hallucination across languages in knowledge-intensive long-form question answering. To this end, we train a multilingual hallucination detection model and conduct a large-scale study across 30 languages and 6 open-source LLM families. We start from an English hallucination detection dataset and rely on MT to generate (noisy) training data in other languages. We also manually annotate gold data for five high-resource languages; we then demonstrate, for these languages, that the estimates of hallucination rates are similar between silver (LLM-generated) and gold test sets, validating the use of silver data for estimating hallucination rates for other languages. For the final rates estimation, we build a knowledge-intensive QA dataset for 30 languages with LLM-generated prompts and Wikipedia articles as references. We find that, while LLMs generate longer responses with more hallucinated tokens for higher-resource languages, there is no correlation between length-normalized hallucination rates of languages and their digital representation. Further, we find that smaller LLMs exhibit larger hallucination rates than larger models.
+
+]]></content:encoded>
+<pubDate>Fri, 21 Feb 2025 05:28:42 GMT</pubDate>
+<pubDate>Fri, 21 Feb 2025 05:28:42 GMT</pubDate>
+</item>
+<item>
+<title>S$^2$R: Teaching LLMs to Self-verify and Self-correct via Reinforcement Learning</title>
+<link>https://arxiv.org/abs/2502.12853</link>
+<guid>https://arxiv.org/abs/2502.12853</guid>
+<content:encoded><![CDATA[
+
+  Recent studies have demonstrated the effectiveness of LLM test-time scaling. However, existing approaches to incentivize LLMs' deep thinking abilities generally require large-scale data or significant training efforts. Meanwhile, it remains unclear how to improve the thinking abilities of less powerful base models. In this work, we introduce S^2R, an efficient framework that enhances LLM reasoning by teaching models to self-verify and self-correct during inference. Specifically, we first initialize LLMs with iterative self-verification and self-correction behaviors through supervised fine-tuning on carefully curated data. The self-verification and self-correction skills are then further strengthened by both outcome-level and process-level reinforcement learning, with minimized resource requirements, enabling the model to adaptively refine its reasoning process during inference. Our results demonstrate that, with only 3.1k self-verifying and self-correcting behavior initialization samples, Qwen2.5-math-7B achieves an accuracy improvement from 51.0\% to 81.6\%, outperforming models trained on an equivalent amount of long-CoT distilled data. Extensive experiments and analysis based on three base models across both in-domain and out-of-domain benchmarks validate the effectiveness of S^2R. Our code and data are available at https://github.com/NineAbyss/S2R.
+
+]]></content:encoded>
+<pubDate>Fri, 21 Feb 2025 05:00:18 GMT</pubDate>
+<pubDate>Fri, 21 Feb 2025 05:00:18 GMT</pubDate>
+</item>
+
+<item>
 <title>改进长文本摘要的无结构证据引用方法</title>
 <link>https://arxiv.org/abs/2502.14409</link>
 <guid>https://arxiv.org/abs/2502.14409</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究提出改进长文本摘要的方法，通过无结构证据引用提升透明度与一致性。</p><br><br><p><strong>摘要：</strong> 本文探讨了当前大语言模型（LLMs）在长文本上下文中生成摘要时的局限性，尤其是在证据引用方面。现有研究主要集中在使用预定义的粒度（如句子、段落等）进行证据引用，而我们提出了一种新的任务——侧重于用户查询的长文本摘要，结合无结构证据引用。通过创建一个名为SUnsET的合成数据集，我们展示了不同规模的LLMs在经过该数据适应后，能更有效地引用长文本中的证据，提取更广泛的信息位置，从而生成更具相关性和事实一致性的摘要。实验结果表明，适应后模型在多个测试集上表现优于基础模型，显示出显著的提升。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.14409 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究提出改进长文本摘要的方法，通过无结构证据引用提升透明度与一致性。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了当前大语言模型（LLMs）在长文本上下文中生成摘要时的局限性，尤其是在证据引用方面。现有研究主要集中在使用预定义的粒度（如句子、段落等）进行证据引用，而我们提出了一种新的任务——侧重于用户查询的长文本摘要，结合无结构证据引用。通过创建一个名为SUnsET的合成数据集，我们展示了不同规模的LLMs在经过该数据适应后，能更有效地引用长文本中的证据，提取更广泛的信息位置，从而生成更具相关性和事实一致性的摘要。实验结果表明，适应后模型在多个测试集上表现优于基础模型，显示出显著的提升。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.14409" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 21 Feb 2025 03:33:40 GMT</pubDate>
 <pubDate>Fri, 21 Feb 2025 03:33:40 GMT</pubDate>
 </item>
 <item>
@@ -21,14 +67,10 @@
 <link>https://arxiv.org/abs/2502.13759</link>
 <guid>https://arxiv.org/abs/2502.13759</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出了一种新框架，通过大规模数据集和推理方法提升图像地理定位精度。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种综合的地理定位框架，旨在解决当前地理定位方法中存在的精度低、解释性差的问题。框架由三个核心组件组成：GeoComp（大规模数据集）、GeoCoT（新型推理方法）和GeoEval（评估指标）。GeoComp是一个由740K用户在两年内通过地理定位游戏平台收集的大规模数据集，包含2500万条元数据和300万个地理标签位置，提供各种难度的样本以供详细分析。基于此数据集，GeoCoT是一个多步骤推理框架，旨在提升大规模视觉模型在地理定位任务中的推理能力。通过整合上下文和空间线索，GeoCoT的推理方式更接近人类思维，最终表明GeoEval指标显示其精度提高了多达25%，并提升了模型的可解释性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.13759 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出了一种新框架，通过大规模数据集和推理方法提升图像地理定位精度。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种综合的地理定位框架，旨在解决当前地理定位方法中存在的精度低、解释性差的问题。框架由三个核心组件组成：GeoComp（大规模数据集）、GeoCoT（新型推理方法）和GeoEval（评估指标）。GeoComp是一个由740K用户在两年内通过地理定位游戏平台收集的大规模数据集，包含2500万条元数据和300万个地理标签位置，提供各种难度的样本以供详细分析。基于此数据集，GeoCoT是一个多步骤推理框架，旨在提升大规模视觉模型在地理定位任务中的推理能力。通过整合上下文和空间线索，GeoCoT的推理方式更接近人类思维，最终表明GeoEval指标显示其精度提高了多达25%，并提升了模型的可解释性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.13759" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Fri, 21 Feb 2025 03:33:28 GMT</pubDate>
-<pubDate>Fri, 21 Feb 2025 03:33:28 GMT</pubDate>
 </item>
-
 <item>
 <title>基于强化学习的量子码权重优化方法研究</title>
 <link>https://arxiv.org/abs/2502.14372</link>
