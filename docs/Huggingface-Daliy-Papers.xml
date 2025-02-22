@@ -5,15 +5,61 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>S-VCO：提升大规模视觉语言模型对细粒度图像细节的敏感性</title>
+<link>https://arxiv.org/abs/2502.13928</link>
+<guid>https://arxiv.org/abs/2502.13928</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>S-VCO通过细粒度图像细节训练，显著提升视觉语言模型性能。</p><br><br><p><strong>摘要：</strong> 最新研究表明，大规模视觉语言模型（VLMs）在视觉基础任务中常常忽略图像内容，过度依赖语言模型先验，导致错误和幻觉。为了解决这一问题，本文提出了一种新的微调目标S-VCO（对称视觉对比优化），旨在增强VLM训练中的视觉反馈，帮助模型捕捉重要的视觉细节并与相应的文本标记对齐。我们还介绍了MVC，一个通过自动过滤和增强视觉反事实数据建立的配对图像-文本数据集，以挑战模型并实现更为精准的对比训练。实验结果显示，我们的方法在多个基准测试中一致提升VLM性能，尤其在视觉依赖性较高的测试中，幻觉减少了最高达22%，并且在视觉中心和一般任务中也取得显著进展。总之，S-VCO不仅显著提升了VLM在视觉任务中的表现，还保留或改善了模型的通用能力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.13928 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 21 Feb 2025 13:42:50 GMT</pubDate>
+<pubDate>Fri, 21 Feb 2025 13:42:50 GMT</pubDate>
+</item>
+<item>
+<title>Generating $π$-Functional Molecules Using STGG+ with Active Learning</title>
+<link>https://arxiv.org/abs/2502.14842</link>
+<guid>https://arxiv.org/abs/2502.14842</guid>
+<content:encoded><![CDATA[
+
+  Generating novel molecules with out-of-distribution properties is a major challenge in molecular discovery. While supervised learning methods generate high-quality molecules similar to those in a dataset, they struggle to generalize to out-of-distribution properties. Reinforcement learning can explore new chemical spaces but often conducts 'reward-hacking' and generates non-synthesizable molecules. In this work, we address this problem by integrating a state-of-the-art supervised learning method, STGG+, in an active learning loop. Our approach iteratively generates, evaluates, and fine-tunes STGG+ to continuously expand its knowledge. We denote this approach STGG+AL. We apply STGG+AL to the design of organic pi-functional materials, specifically two challenging tasks: 1) generating highly absorptive molecules characterized by high oscillator strength and 2) designing absorptive molecules with reasonable oscillator strength in the near-infrared (NIR) range. The generated molecules are validated and rationalized in-silico with time-dependent density functional theory. Our results demonstrate that our method is highly effective in generating novel molecules with high oscillator strength, contrary to existing methods such as reinforcement learning (RL) methods. We open-source our active-learning code along with our Conjugated-xTB dataset containing 2.9 million pi-conjugated molecules and the function for approximating the oscillator strength and absorption wavelength (based on sTDA-xTB).
+
+]]></content:encoded>
+<pubDate>Fri, 21 Feb 2025 13:05:36 GMT</pubDate>
+<pubDate>Fri, 21 Feb 2025 13:05:36 GMT</pubDate>
+</item>
+<item>
+<title>CHASE框架：无人工参与的挑战性问题生成</title>
+<link>https://arxiv.org/abs/2502.14678</link>
+<guid>https://arxiv.org/abs/2502.14678</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出了CHASE框架，以无人工参与的方式合成具有挑战性的问题。</p><br><br><p><strong>摘要：</strong> 本文介绍了CHASE，一个新的框架，用于合成生成具有挑战性的问题，以应对大型语言模型（LLMs）评估的不断变化的需求。传统的人力标注方法在面对复杂、高质量问题时变得难以实施，因此我们开发了一个无人工干预的自下而上的生成方法，通过更简单的组件构建复杂问题。同时，CHASE框架将生成过程拆分为可独立验证的子任务，以确保高质量和正确性。我们在三个不同领域（文档问答、代码补全和数学推理）验证了CHASE的有效性，结果显示最先进的LLMs在这些合成基准上的准确率在40-60%之间，突显了该框架生成挑战性问题的能力。我们会公开发布这些基准和代码。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.14678 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 21 Feb 2025 11:36:30 GMT</pubDate>
+<pubDate>Fri, 21 Feb 2025 11:36:30 GMT</pubDate>
+</item>
+<item>
+<title>Multimodal RewardBench: Holistic Evaluation of Reward Models for Vision Language Models</title>
+<link>https://arxiv.org/abs/2502.14191</link>
+<guid>https://arxiv.org/abs/2502.14191</guid>
+<content:encoded><![CDATA[
+
+  Reward models play an essential role in training vision-language models (VLMs) by assessing output quality to enable aligning with human preferences. Despite their importance, the research community lacks comprehensive open benchmarks for evaluating multimodal reward models in VLMs. To address this gap, we introduce Multimodal RewardBench, an expert-annotated benchmark covering six domains: general correctness, preference, knowledge, reasoning, safety, and visual question-answering. Our dataset comprises 5,211 annotated (prompt, chosen response, rejected response) triplets collected from various VLMs. In evaluating a range of VLM judges, we find that even the top-performing models, Gemini 1.5 Pro and Claude 3.5 Sonnet, achieve only 72% overall accuracy. Notably, most models struggle in the reasoning and safety domains. These findings suggest that Multimodal RewardBench offers a challenging testbed for advancing reward model development across multiple domains. We release the benchmark at https://github.com/facebookresearch/multimodal_rewardbench.
+
+]]></content:encoded>
+<pubDate>Fri, 21 Feb 2025 11:34:53 GMT</pubDate>
+<pubDate>Fri, 21 Feb 2025 11:34:53 GMT</pubDate>
+</item>
+
+<item>
 <title>LServe：基于混合稀疏注意力的长序列大语言模型高效服务</title>
 <link>https://arxiv.org/abs/2502.14866</link>
 <guid>https://arxiv.org/abs/2502.14866</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>LServe通过混合稀疏注意力加速长序列大语言模型的服务效率。</p><br><br><p><strong>摘要：</strong> 大语言模型在处理长序列时表现出色，但由于前填充阶段的注意力计算复杂度及解码阶段的KV缓存内存开销，服务这些模型仍面临挑战。为了解决这些问题，我们提出了LServe，一个高效系统，通过混合稀疏注意力加速长序列大语言模型的服务。该方法将不同的硬件友好结构稀疏模式统一到一个框架内，省略对不重要标记的计算，显示出静态和动态稀疏在长上下文模型中兼容性。通过将一半的注意力头转换为几乎免费的流式头，LServe在前填充和解码阶段实现乘法加速。此外，我们发现保持长上下文能力只需固定数量的KV页面，并设计了一个层级KV页面选择策略，根据查询的相似性动态修剪KV页面。总体而言，LServe在保持长上下文准确度的同时，使LLM的前填充加速达到2.9倍，解码加速达到1.3-2.1倍。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.14866 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">LServe通过混合稀疏注意力加速长序列大语言模型的服务效率。</p><br /><br /><p><strong>摘要：</strong> 大语言模型在处理长序列时表现出色，但由于前填充阶段的注意力计算复杂度及解码阶段的KV缓存内存开销，服务这些模型仍面临挑战。为了解决这些问题，我们提出了LServe，一个高效系统，通过混合稀疏注意力加速长序列大语言模型的服务。该方法将不同的硬件友好结构稀疏模式统一到一个框架内，省略对不重要标记的计算，显示出静态和动态稀疏在长上下文模型中兼容性。通过将一半的注意力头转换为几乎免费的流式头，LServe在前填充和解码阶段实现乘法加速。此外，我们发现保持长上下文能力只需固定数量的KV页面，并设计了一个层级KV页面选择策略，根据查询的相似性动态修剪KV页面。总体而言，LServe在保持长上下文准确度的同时，使LLM的前填充加速达到2.9倍，解码加速达到1.3-2.1倍。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.14866" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 21 Feb 2025 09:39:36 GMT</pubDate>
 <pubDate>Fri, 21 Feb 2025 09:39:36 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +67,8 @@
 <link>https://arxiv.org/abs/2502.14044</link>
 <guid>https://arxiv.org/abs/2502.14044</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种新框架，增强大型多模态模型的视觉推理与解释能力。</p><br><br><p><strong>摘要：</strong> 本文提出了一种新的视觉拒绝采样框架，旨在提高大型多模态模型（LMMs）在视觉任务中的认知能力和可解释性。当前LMMs在细粒度视觉推理中表现不佳，常常无法识别特定领域的目标，也无法对其预测提供合理的解释。我们的框架通过自合成数据来解决这些问题，具体方法包括合成可解释的答案，答案中包含可供人验证的视觉特征，这些特征基于专家定义的概念，经过精心选择以与图像内容对齐。在每次微调后，我们应用无奖励模型的过滤机制，筛选出最高质量的可解释答案用于下一轮的调优。实验结果显示，该方法在提高专业视觉分类任务的准确性和可解释性方面显著有效。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.14044 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种新框架，增强大型多模态模型的视觉推理与解释能力。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种新的视觉拒绝采样框架，旨在提高大型多模态模型（LMMs）在视觉任务中的认知能力和可解释性。当前LMMs在细粒度视觉推理中表现不佳，常常无法识别特定领域的目标，也无法对其预测提供合理的解释。我们的框架通过自合成数据来解决这些问题，具体方法包括合成可解释的答案，答案中包含可供人验证的视觉特征，这些特征基于专家定义的概念，经过精心选择以与图像内容对齐。在每次微调后，我们应用无奖励模型的过滤机制，筛选出最高质量的可解释答案用于下一轮的调优。实验结果显示，该方法在提高专业视觉分类任务的准确性和可解释性方面显著有效。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.14044" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 21 Feb 2025 08:26:31 GMT</pubDate>
 <pubDate>Fri, 21 Feb 2025 08:26:31 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +76,8 @@
 <link>https://arxiv.org/abs/2502.14638</link>
 <guid>https://arxiv.org/abs/2502.14638</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本研究提出NaviClues数据集和Navig框架，提升影像地理定位精度。</p><br><br><p><strong>摘要：</strong> 本研究聚焦影像地理定位任务，提出了新的高质量数据集NaviClues，来源于流行的地理游戏GeoGuessr，旨在提供语言方面专家推理的示例。我们还提出了Navig，一个综合的影像地理定位框架，该框架整合了全球和细粒度的影像信息。通过语言推理，Navig相较于以往的最先进模型减少了14%的平均距离误差，同时训练样本不足1000。本文贡献不仅提升了影像地理定位的精确性，也为相关研究提供了数据集和代码。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.14638 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本研究提出NaviClues数据集和Navig框架，提升影像地理定位精度。</p><br /><br /><p><strong>摘要：</strong> 本研究聚焦影像地理定位任务，提出了新的高质量数据集NaviClues，来源于流行的地理游戏GeoGuessr，旨在提供语言方面专家推理的示例。我们还提出了Navig，一个综合的影像地理定位框架，该框架整合了全球和细粒度的影像信息。通过语言推理，Navig相较于以往的最先进模型减少了14%的平均距离误差，同时训练样本不足1000。本文贡献不仅提升了影像地理定位的精确性，也为相关研究提供了数据集和代码。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.14638" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 21 Feb 2025 08:18:34 GMT</pubDate>
 <pubDate>Fri, 21 Feb 2025 08:18:34 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +85,8 @@
 <link>https://arxiv.org/abs/2502.14802</link>
 <guid>https://arxiv.org/abs/2502.14802</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>HippoRAG 2 提出了一种新框架，提升了长短期记忆任务的表现。</p><br><br><p><strong>摘要：</strong> HippoRAG 2 是针对持续学习中的大语言模型（LLMs）优化的一种新框架，旨在增强其知识获取与组织能力。传统的检索增强生成（RAG）方法由于依赖于向量检索，未能有效模拟人类动态的长期记忆。为解决这一问题，HippoRAG 2 引入了个性化的 PageRank 算法并改进了段落集成和 LLM 的在线使用。实验结果显示，HippoRAG 2 在事实、认知和关联记忆任务上的表现均优于传统的 RAG 方法，尤其在关联记忆任务上实现了 7% 的提升。此外，该框架拓展了非参数持续学习的可能性，推动了大语言模型的发展。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.14802 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">HippoRAG 2 提出了一种新框架，提升了长短期记忆任务的表现。</p><br /><br /><p><strong>摘要：</strong> HippoRAG 2 是针对持续学习中的大语言模型（LLMs）优化的一种新框架，旨在增强其知识获取与组织能力。传统的检索增强生成（RAG）方法由于依赖于向量检索，未能有效模拟人类动态的长期记忆。为解决这一问题，HippoRAG 2 引入了个性化的 PageRank 算法并改进了段落集成和 LLM 的在线使用。实验结果显示，HippoRAG 2 在事实、认知和关联记忆任务上的表现均优于传统的 RAG 方法，尤其在关联记忆任务上实现了 7% 的提升。此外，该框架拓展了非参数持续学习的可能性，推动了大语言模型的发展。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.14802" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 21 Feb 2025 08:00:41 GMT</pubDate>
 <pubDate>Fri, 21 Feb 2025 08:00:41 GMT</pubDate>
 </item>
 <item>
@@ -57,14 +94,10 @@
 <link>https://arxiv.org/abs/2502.14854</link>
 <guid>https://arxiv.org/abs/2502.14854</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>CLIPPER通过压缩方法生成更高质量的叙述主张验证合成数据。</p><br><br><p><strong>摘要：</strong> 随着大型语言模型开发者越来越依赖合成数据，生成高质量的数据以应对复杂的长上下文推理任务仍然具有挑战性。本文介绍了CLIPPER，这是一种基于压缩的方法，专门用于生成适合叙述主张验证的合成数据。CLIPPER首先将书籍压缩为章节大纲和书籍摘要，然后利用这些中间表示生成复杂的主张及其推理链。与直接从原文生成主张相比，CLIPPER能够生成更有效、扎实和复杂的主张。我们利用CLIPPER构建了19K条合成书籍主张的数据集，并将其与源文本和推理链配对，进一步调整了三个开放权重模型，使得最佳模型在叙述主张验证任务上取得了突破性的结果，将准确率从28%提升至76%。此外，我们的分析表明，模型生成的推理链更加详尽和扎实，同时在其他叙述理解任务上（如NarrativeQA）性能也有所提升。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2502.14854 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">CLIPPER通过压缩方法生成更高质量的叙述主张验证合成数据。</p><br /><br /><p><strong>摘要：</strong> 随着大型语言模型开发者越来越依赖合成数据，生成高质量的数据以应对复杂的长上下文推理任务仍然具有挑战性。本文介绍了CLIPPER，这是一种基于压缩的方法，专门用于生成适合叙述主张验证的合成数据。CLIPPER首先将书籍压缩为章节大纲和书籍摘要，然后利用这些中间表示生成复杂的主张及其推理链。与直接从原文生成主张相比，CLIPPER能够生成更有效、扎实和复杂的主张。我们利用CLIPPER构建了19K条合成书籍主张的数据集，并将其与源文本和推理链配对，进一步调整了三个开放权重模型，使得最佳模型在叙述主张验证任务上取得了突破性的结果，将准确率从28%提升至76%。此外，我们的分析表明，模型生成的推理链更加详尽和扎实，同时在其他叙述理解任务上（如NarrativeQA）性能也有所提升。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.14854" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Fri, 21 Feb 2025 07:52:55 GMT</pubDate>
-<pubDate>Fri, 21 Feb 2025 07:52:55 GMT</pubDate>
 </item>
-
 <item>
 <title>LLM-based User Profile Management for Recommender System</title>
 <link>https://arxiv.org/abs/2502.14541</link>
