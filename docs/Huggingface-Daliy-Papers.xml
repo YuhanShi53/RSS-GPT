@@ -4,6 +4,66 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>高效的KV缓存压缩方法Q-Filters在自回归语言模型中的应用</title>
+<link>https://arxiv.org/abs/2503.02812</link>
+<guid>https://arxiv.org/abs/2503.02812</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出Q-Filters，提升KV缓存压缩效率，优化文本生成过程。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种新的KV缓存压缩方法Q-Filters，该方法通过对Query和Key向量的特性进行探索，有效近似注意力分数，而无需计算完整的注意力图。Q-Filters通过一个上下文无关的投影过滤掉不重要的Key-Value对，避免了对注意权重的直接访问，因此与FlashAttention兼容。在长上下文设置下的实验表明，Q-Filters在检索任务上与基于注意力的压缩方法SnapKV具有竞争力，并在文本生成任务中显著优于Streaming-LLM等高效压缩方案，尤其是在针对复杂任务的情况下，Q-Filters以x32的压缩比例实现了99%的准确率，并将生成过程中的困惑度降低了65%。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.02812 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 05 Mar 2025 11:29:36 GMT</pubDate>
+<pubDate>Wed, 05 Mar 2025 11:29:36 GMT</pubDate>
+</item>
+<item>
+<title>味觉信息与音乐生成模型的关系研究</title>
+<link>https://arxiv.org/abs/2503.02823</link>
+<guid>https://arxiv.org/abs/2503.02823</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本研究探讨了味觉信息如何转化为音乐，以促进多感官交互。</p><br><br><p><strong>摘要：</strong> 近年来，神经科学和心理学研究发现味觉与听觉之间存在直接关系。本文探讨了能够将味觉信息转化为音乐的多模态生成模型，基于此研究背景，我们回顾了该领域的现状，并强调了关键发现和方法。此外，我们设计了一项实验，通过对生成音乐模型（MusicGEN）的精细调优，生成基于详细味觉描述的音乐作品。结果显示，参与者（n=111）的评估认为，经过调优的模型比未调优的模型所生成的音乐更能体现输入的味觉描述。这项研究在理解和开发人工智能、声音与味觉之间的具身交互方面迈出了重要一步，为生成式人工智能领域开启了新的可能性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.02823 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 05 Mar 2025 11:04:04 GMT</pubDate>
+<pubDate>Wed, 05 Mar 2025 11:04:04 GMT</pubDate>
+</item>
+<item>
+<title>Tabby: 一种用于合成表格数据的强大Transformer后训练方法</title>
+<link>https://arxiv.org/abs/2503.02152</link>
+<guid>https://arxiv.org/abs/2503.02152</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Tabby是一种改进Transformer架构以合成高质量表格数据的方法。</p><br><br><p><strong>摘要：</strong> 随着大型语言模型技术的发展，合成文本数据的质量显著提高，但对表格数据的合成关注相对较少。我们提出了Tabby，这是一种简洁而强大的后训练修改，适用于标准Transformer语言模型架构，以实现表格数据的合成。Tabby通过Gated Mixture-of-Experts来表示列间差异，采用列特定的参数集合。实证结果显示，Tabby生成的数据质量与真实数据相当。通过将我们的新型表格训练技术Plain与Tabby配对，我们观察到质量较之前方法提高了多达44%。此外，Tabby的应用范围超越表格数据，针对嵌套JSON数据集也达到了与真实数据相当的表现。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.02152 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 05 Mar 2025 11:03:42 GMT</pubDate>
+<pubDate>Wed, 05 Mar 2025 11:03:42 GMT</pubDate>
+</item>
+<item>
+<title>TokenOCR：一种针对文本图像任务的首个 token 级视觉基础模型</title>
+<link>https://arxiv.org/abs/2503.02304</link>
+<guid>https://arxiv.org/abs/2503.02304</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>TokenOCR 是首个针对文本图像任务的 token 级视觉基础模型，能提高模型预测准确性。</p><br><br><p><strong>摘要：</strong> 近年来，视觉基础模型（VFM）在多模态大语言模型（MLLM）中的应用不断增加，但在处理含小密集文本的图像时仍存在基本预测错误。为解决这一问题，本文开发了 TokenOCR，这是一个专门针对文本图像任务的 token 级视觉基础模型，旨在支持多种传统下游应用程序。为促进 TokenOCR 的预训练，研究团队还设计了一个高质量数据生产管道，构建了首个 token 级图像文本数据集 TokenIT，包含2千万张图像和18亿对 token-mask。此外，利用其卓越的图像文本能力，团队无缝替换了以往的 VFM，构建了一种文档级 MLLM，即 TokenVL，用于基于 VQA 的文档理解任务。实验结果证明了 TokenOCR 和 TokenVL 的有效性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.02304 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 05 Mar 2025 11:03:27 GMT</pubDate>
+<pubDate>Wed, 05 Mar 2025 11:03:27 GMT</pubDate>
+</item>
+<item>
+<title>基于强化学习的离散时间混合自动机学习框架</title>
+<link>https://arxiv.org/abs/2503.01842</link>
+<guid>https://arxiv.org/abs/2503.01842</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出了一种新颖的框架，通过强化学习识别模式切换，实现无轨迹分割的学习。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种离散时间混合自动机学习（DHAL）框架，该框架使用基于策略的强化学习技术，在不进行轨迹分割或事件函数学习的情况下，识别和执行模式切换。混合动态系统结合了连续流动与离散模式切换，能够有效建模像四足机器人行走等复杂机器人任务。传统的基于模型的方法依赖于预定义的步态，而无模型方法在显式模式切换知识方面存在不足。现有方法通过轨迹分割来识别离散模式，但在没有轨迹标签或分割的条件下，学习高维复杂的刚体动力学仍然是一个具有挑战性的开放问题。我们的方法结合了β策略分布和多重批评者架构，以模拟接触引导的运动，特别是在四足机器人滑板任务中表现出色。通过仿真和现实世界测试，我们验证了该方法在混合动态系统中的强大性能。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.01842 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 05 Mar 2025 10:37:18 GMT</pubDate>
+<pubDate>Wed, 05 Mar 2025 10:37:18 GMT</pubDate>
+</item>
 
 <item>
 <title>平衡回归中的均匀性学习方法</title>
