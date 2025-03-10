@@ -5,15 +5,85 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>基于低秩适应的代码检索参数高效微调方法</title>
+<link>https://arxiv.org/abs/2503.05315</link>
+<guid>https://arxiv.org/abs/2503.05315</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种基于低秩适应的微调方法，提高代码检索效率。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种基于低秩适应（LoRA）的参数高效微调方法，旨在增强代码检索系统的性能。当前的开源模型如CodeBERT和UniXcoder在捕捉代码的语法和上下文细微差别上存在局限，而高性能的专有系统又带来了较高的计算成本。我们的研究通过构建任务特定的适配器，将可训练参数减少至基模型的不到2%，从而实现了在大规模代码语料库上快速微调（在两台H100 GPU上，2百万样本在25分钟内完成）。实验结果显示，对于Code2Code检索，平均倒数排名（MRR）提升高达9.1%；而在Text2Code检索任务中，各种编程语言下的表现提升可达86.69%。任务和语言的适应性差异则有助于深入探讨代码检索对语法和语言变体的敏感性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.05315 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 10 Mar 2025 00:51:02 GMT</pubDate>
+<pubDate>Mon, 10 Mar 2025 00:51:02 GMT</pubDate>
+</item>
+<item>
+<title>R1-Searcher：提升大型语言模型推理能力的新方法</title>
+<link>https://arxiv.org/abs/2503.05592</link>
+<guid>https://arxiv.org/abs/2503.05592</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>R1-Searcher通过引入外部搜索提升大型语言模型的推理能力。</p><br><br><p><strong>摘要：</strong> 现有的大型推理模型（LRMs）展示了强化学习（RL）在增强大型语言模型（LLMs）复杂推理能力方面的潜力，但在处理时间敏感或知识密集型问题时，常依赖内部知识，导致不准确和幻觉现象。为解决此问题，本文提出了R1-Searcher，一种新颖的基于结果的两阶段强化学习方法，旨在提升LLMs的搜索能力。此方法允许LLMs在推理过程中自动调用外部搜索系统，以获取额外知识。我们的框架完全依赖于强化学习，不需要冷启动时的过程奖励或提取。实验表明，R1-Searcher显著超越了以往的强大检索增强生成（RAG）方法，并且在与封闭源的GPT-4o-mini的比较中也表现出色。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.05592 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 09 Mar 2025 23:43:27 GMT</pubDate>
+<pubDate>Sun, 09 Mar 2025 23:43:27 GMT</pubDate>
+</item>
+<item>
+<title>基于可验证奖励的强化学习在多模态情感识别中的应用</title>
+<link>https://arxiv.org/abs/2503.05379</link>
+<guid>https://arxiv.org/abs/2503.05379</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文首次将可验证奖励的强化学习应用于多模态情感识别，提升了模型性能。</p><br><br><p><strong>摘要：</strong> 本文介绍了将可验证奖励的强化学习（RLVR）首次应用于多模态大型语言模型（Omni模型）进行情感识别的研究。该方法有效增强了模型在推理能力、情感识别准确性和泛化能力等三方面的表现。通过引入RLVR，不仅提升了模型在同分布数据上的整体性能，还在评估非同分布数据集时展现出更强的鲁棒性。此外，优化后的推理能力使得可以清晰分析视觉和音频信息在情感识别过程中的贡献，为优化多模态大型语言模型提供了重要见解。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.05379 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 09 Mar 2025 23:40:46 GMT</pubDate>
+<pubDate>Sun, 09 Mar 2025 23:40:46 GMT</pubDate>
+</item>
+<item>
+<title>DeepSeek R1在多模态推理中的成功应用与挑战</title>
+<link>https://arxiv.org/abs/2503.05132</link>
+<guid>https://arxiv.org/abs/2503.05132</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本报告展示了DeepSeek R1成功实现多模态推理的特征及其挑战。</p><br><br><p><strong>摘要：</strong> 本报告描述了DeepSeek R1在多模态推理中首次成功复制复杂推理特征的过程，强调通过强化学习在非SFT的2B模型Qwen2-VL-2B上直接应用于SAT数据集。该模型在CVBench上达到59.47%的准确率，提升约30%，超过了两个SFT设置的表现。此外，报告还讨论了在尝试使用强化学习促成R1类推理时所遇到的挑战，指出在指令模型上应用强化学习常常导致的推理轨迹简单化，以及简单的长度奖励对推理能力的激发无效。项目代码已公开，供进一步研究使用。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.05132 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 09 Mar 2025 23:39:12 GMT</pubDate>
+<pubDate>Sun, 09 Mar 2025 23:39:12 GMT</pubDate>
+</item>
+<item>
+<title>分支合并蒸馏法：提升大语言模型压缩与性能的创新策略</title>
+<link>https://arxiv.org/abs/2503.04872</link>
+<guid>https://arxiv.org/abs/2503.04872</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出分支合并蒸馏法，实现高效的大语言模型压缩与性能提升。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种新的分支合并蒸馏法，该方法旨在在减少大语言模型（LLMs）尺寸时保持其性能。传统的模型蒸馏和迁移学习方法常常无法达到高精度，而我们提出的分支合并蒸馏法包含两个阶段：分支阶段通过领域特定的监督微调从大型教师模型中选择性提取知识到专门的学生模型；合并阶段则将这些学生模型合并，以实现跨领域的知识转移，提高模型的泛化能力。通过以DeepSeek-R1为教师模型，DeepSeek-R1-Distill-Qwen-32B为学生模型进行验证，最终合并的模型TinyR1-32B-Preview在多个基准测试中超越了其对应的学生模型，特别是在数学（提升5.5分）、编码（提升4.4分）和科学（提升2.9分）领域，且在AIME 2024测试中几乎与DeepSeek-R1表现持平。该方法为创建更小且高效的大语言模型提供了可扩展的解决方案，显著降低了计算成本和时间。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.04872 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 09 Mar 2025 23:35:58 GMT</pubDate>
+<pubDate>Sun, 09 Mar 2025 23:35:58 GMT</pubDate>
+</item>
+<item>
+<title>多尝试任务提升大型语言模型推理能力的研究</title>
+<link>https://arxiv.org/abs/2503.04808</link>
+<guid>https://arxiv.org/abs/2503.04808</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>多尝试任务的强化学习方法显著提升了大型语言模型的数学推理能力。</p><br><br><p><strong>摘要：</strong> 近期在大型语言模型（LLMs）强化学习（RL）方面的进展，特别是DeepSeek R1的应用，表明即使是简单的问答任务也能显著提升模型的推理能力。本文通过将任务修改为多尝试设置，推动了这一方法的扩展。在这种新设置中，模型对每个问题提供多个回答，并在错误回答后给予反馈。这种多尝试任务不仅鼓励模型改进以往的回答，还提高了搜索效率。实验结果显示，即使是小型LLM在多尝试任务上训练，其准确率从1次尝试的45.6%提升至2次尝试的52.5%，而在标准单轮任务下，仅从42.3%提高到43.2%。这些结果表明，与传统的单轮任务相比，多尝试任务训练的LLM在数学基准测试中表现更佳，能够更加有效地基于用户反馈完善其回答。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.04808 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 09 Mar 2025 23:29:35 GMT</pubDate>
+<pubDate>Sun, 09 Mar 2025 23:29:35 GMT</pubDate>
+</item>
+
+<item>
 <title>BEHAVIOR机器人套件：应对家庭任务的全面机器人控制框架</title>
 <link>https://arxiv.org/abs/2503.05652</link>
 <guid>https://arxiv.org/abs/2503.05652</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文介绍了BEHAVIOR机器人套件，旨在提升机器人在家庭任务中的操作能力。</p><br><br><p><strong>摘要：</strong> 现实世界的家庭任务对移动操作机器人提出了重要挑战，成功地完成这些任务依赖于三项关键的全身控制能力：双手协调、稳定精确的导航和广泛的末端执行器操作能力。为了应对这些挑战，文章介绍了BEHAVIOR机器人套件（BRS），这是一个为家庭任务设计的全面操控框架。BRS基于一个具有双手和4自由度躯干的轮式机器人架构，集成了高性价比的全身遥操作界面用于数据收集，并引入了一种学习全身视觉运动策略的新算法。针对五个具有挑战性的家庭任务进行评估，BRS不仅强化了核心能力，同时还应对长距离导航、与可动和可变形物体的互动以及在狭小空间中的操作等复杂性，为实现日常家庭任务的全身操作提供了重要的解决方案。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.05652 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文介绍了BEHAVIOR机器人套件，旨在提升机器人在家庭任务中的操作能力。</p><br /><br /><p><strong>摘要：</strong> 现实世界的家庭任务对移动操作机器人提出了重要挑战，成功地完成这些任务依赖于三项关键的全身控制能力：双手协调、稳定精确的导航和广泛的末端执行器操作能力。为了应对这些挑战，文章介绍了BEHAVIOR机器人套件（BRS），这是一个为家庭任务设计的全面操控框架。BRS基于一个具有双手和4自由度躯干的轮式机器人架构，集成了高性价比的全身遥操作界面用于数据收集，并引入了一种学习全身视觉运动策略的新算法。针对五个具有挑战性的家庭任务进行评估，BRS不仅强化了核心能力，同时还应对长距离导航、与可动和可变形物体的互动以及在狭小空间中的操作等复杂性，为实现日常家庭任务的全身操作提供了重要的解决方案。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.05652" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Sun, 09 Mar 2025 22:51:04 GMT</pubDate>
 <pubDate>Sun, 09 Mar 2025 22:51:04 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +91,8 @@
 <link>https://arxiv.org/abs/2503.05179</link>
 <guid>https://arxiv.org/abs/2503.05179</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>Sketch-of-Thought框架通过减少令牌使用优化语言模型的推理过程。</p><br><br><p><strong>摘要：</strong> 近年来，大型语言模型展现了卓越的推理能力，特别是在链式思维提示（CoT）方面，但这一过程常常导致冗长的中间输出，从而增加计算开销。我们提出了Sketch-of-Thought（SoT）框架，结合了认知启发式推理范式和语言约束，旨在以最小的令牌使用保持推理的准确性。SoT框架灵活，可根据认知科学整合任意自定义推理范式，并动态选择对应的概念链、分块符号和专家词汇等三种方法。在对15个多语言和多模态场景的推理数据集进行全面评估后，结果表明SoT能将令牌使用减少76%，且几乎没有影响准确性。在某些领域，如数学和多步推理，SoT甚至在使用显著较少令牌的情况下提高了推理准确性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.05179 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">Sketch-of-Thought框架通过减少令牌使用优化语言模型的推理过程。</p><br /><br /><p><strong>摘要：</strong> 近年来，大型语言模型展现了卓越的推理能力，特别是在链式思维提示（CoT）方面，但这一过程常常导致冗长的中间输出，从而增加计算开销。我们提出了Sketch-of-Thought（SoT）框架，结合了认知启发式推理范式和语言约束，旨在以最小的令牌使用保持推理的准确性。SoT框架灵活，可根据认知科学整合任意自定义推理范式，并动态选择对应的概念链、分块符号和专家词汇等三种方法。在对15个多语言和多模态场景的推理数据集进行全面评估后，结果表明SoT能将令牌使用减少76%，且几乎没有影响准确性。在某些领域，如数学和多步推理，SoT甚至在使用显著较少令牌的情况下提高了推理准确性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.05179" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Sun, 09 Mar 2025 22:25:52 GMT</pubDate>
 <pubDate>Sun, 09 Mar 2025 22:25:52 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +100,8 @@
 <link>https://arxiv.org/abs/2503.05236</link>
 <guid>https://arxiv.org/abs/2503.05236</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文提出UnifiedReward，一种用于多模态生成和理解的统一奖励模型。</p><br><br><p><strong>摘要：</strong> 随着人类偏好对齐的最新进展，多模态生成和理解得到了显著提升。本文提出UnifiedReward，这是首个针对多模态理解和生成评估的统一奖励模型，能够实现成对排名和点评分。模型的开发基于构建的大规模人类偏好数据集，涵盖图像和视频生成及理解任务。通过对视觉模型的输出进行成对排名和点筛选，自动构建高质量偏好对数据，以实现直接偏好优化（DPO）。实验结果表明，联合评估不同视觉任务的学习能够带来显著的互惠益处，并且应用于图像和视频理解/生成任务，显著提升了各领域的表现。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.05236 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文提出UnifiedReward，一种用于多模态生成和理解的统一奖励模型。</p><br /><br /><p><strong>摘要：</strong> 随着人类偏好对齐的最新进展，多模态生成和理解得到了显著提升。本文提出UnifiedReward，这是首个针对多模态理解和生成评估的统一奖励模型，能够实现成对排名和点评分。模型的开发基于构建的大规模人类偏好数据集，涵盖图像和视频生成及理解任务。通过对视觉模型的输出进行成对排名和点筛选，自动构建高质量偏好对数据，以实现直接偏好优化（DPO）。实验结果表明，联合评估不同视觉任务的学习能够带来显著的互惠益处，并且应用于图像和视频理解/生成任务，显著提升了各领域的表现。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.05236" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Sun, 09 Mar 2025 22:20:09 GMT</pubDate>
 <pubDate>Sun, 09 Mar 2025 22:20:09 GMT</pubDate>
 </item>
 <item>
@@ -45,14 +109,10 @@
 <link>https://arxiv.org/abs/2503.02130</link>
 <guid>https://arxiv.org/abs/2503.02130</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出了一种新的变换器模型，利用遗忘门提升长上下文任务表现。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为遗忘变换器（FoX）的新模型，该模型通过在变换器中自然地引入遗忘门，优化上下文信息的利用。FoX通过以数据依赖的方式降低未归一化注意力得分的权重，展现出在长上下文语言建模、长度外推及短上下游任务中的优势表现，且在长上下游任务上与传统变换器表现持平。此外，该模型兼容FlashAttention算法，并且不需要任何位置信息嵌入。多项分析结果表明，FoX在长上下文能力上优于如Mamba-2、HGRN2和DeltaNet等递归序列模型。研究中还引入了“Pro”模块设计，结合递归模型常见的架构组件，显著提升了FoX及变换器的性能。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.02130 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出了一种新的变换器模型，利用遗忘门提升长上下文任务表现。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种名为遗忘变换器（FoX）的新模型，该模型通过在变换器中自然地引入遗忘门，优化上下文信息的利用。FoX通过以数据依赖的方式降低未归一化注意力得分的权重，展现出在长上下文语言建模、长度外推及短上下游任务中的优势表现，且在长上下游任务上与传统变换器表现持平。此外，该模型兼容FlashAttention算法，并且不需要任何位置信息嵌入。多项分析结果表明，FoX在长上下文能力上优于如Mamba-2、HGRN2和DeltaNet等递归序列模型。研究中还引入了“Pro”模块设计，结合递归模型常见的架构组件，显著提升了FoX及变换器的性能。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.02130" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Sun, 09 Mar 2025 22:02:39 GMT</pubDate>
-<pubDate>Sun, 09 Mar 2025 22:02:39 GMT</pubDate>
 </item>
-
 <item>
 <title>双语模型训练对跨语言结构启动的影响研究</title>
 <link>https://arxiv.org/abs/2503.03962</link>
