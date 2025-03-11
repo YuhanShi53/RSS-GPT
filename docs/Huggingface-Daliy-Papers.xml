@@ -5,15 +5,49 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>VACE：全能视频生成与编辑框架</title>
+<link>https://arxiv.org/abs/2503.07598</link>
+<guid>https://arxiv.org/abs/2503.07598</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>VACE提供一个统一的视频生成与编辑解决方案，处理多种视频任务。</p><br><br><p><strong>摘要：</strong> VACE是一种新的平台，旨在整合视频生成和编辑任务，克服视频合成中的空间和时间一致性挑战。该框架支持参考视频生成、视频编辑和带掩膜的视频编辑等多种功能，用户可以通过统一的界面（视频条件单元）进行操作。通过采用上下文适配器结构，VACE能够灵活处理各种视频合成任务，并将不同任务概念正式化地注入模型。实验结果表明，VACE在多种子任务上的表现与专用模型相当，同时支持多样化的应用组合，展现了其在视频内容创作领域的强大潜力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.07598 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 10 Mar 2025 13:57:04 GMT</pubDate>
+<pubDate>Mon, 10 Mar 2025 13:57:04 GMT</pubDate>
+</item>
+<item>
+<title>提升模型领域泛化能力的方法研究</title>
+<link>https://arxiv.org/abs/2503.06698</link>
+<guid>https://arxiv.org/abs/2503.06698</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种利用预训练特征提升领域泛化能力的方法。</p><br><br><p><strong>摘要：</strong> 本研究关注于如何提高模型在新颖且未见数据分布下的泛化能力，探讨模型架构和预训练目标对特征丰富性的影响。我们提出通过发现潜在的伪域结构，从而在无监督的方式下捕捉特定领域的变化，并利用这些伪域表示增强现有分类器，使其更适应未见测试领域。通过对不同预训练特征空间的分析，发现扩散模型的特征在没有显式领域标签的情况下，能有效区分领域并捕捉细致的领域特征。在五个数据集上的实证研究显示，我们的方法较标准基线（经验风险最小化）在未见领域的泛化能力提升了超过4%的测试准确率，并且显著超越绝大多数训练过程中使用领域标签的算法。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.06698 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 09 Mar 2025 13:29:01 GMT</pubDate>
+<pubDate>Sun, 09 Mar 2025 13:29:01 GMT</pubDate>
+</item>
+<item>
+<title>Promote, Suppress, Iterate: How Language Models Answer One-to-Many Factual Queries</title>
+<link>https://arxiv.org/abs/2502.20475</link>
+<guid>https://arxiv.org/abs/2502.20475</guid>
+<content:encoded><![CDATA[
+
+  To answer one-to-many factual queries (e.g., listing cities of a country), a language model (LM) must simultaneously recall knowledge and avoid repeating previous answers. How are these two subtasks implemented and integrated internally? Across multiple datasets and models, we identify a promote-then-suppress mechanism: the model first recalls all answers, and then suppresses previously generated ones. Specifically, LMs use both the subject and previous answer tokens to perform knowledge recall, with attention propagating subject information and MLPs promoting the answers. Then, attention attends to and suppresses previous answer tokens, while MLPs amplify the suppression signal. Our mechanism is corroborated by extensive experimental evidence: in addition to using early decoding and causal tracing, we analyze how components use different tokens by introducing both Token Lens, which decodes aggregated attention updates from specified tokens, and a knockout method that analyzes changes in MLP outputs after removing attention to specified tokens. Overall, we provide new insights into how LMs' internal components interact with different input tokens to support complex factual recall. Code is available at https://github.com/Lorenayannnnn/how-lms-answer-one-to-many-factual-queries.
+
+]]></content:encoded>
+<pubDate>Thu, 27 Feb 2025 14:23:15 GMT</pubDate>
+<pubDate>Thu, 27 Feb 2025 14:23:15 GMT</pubDate>
+</item>
+
+<item>
 <title>REF-VLM：统一视觉解码任务的多模态大型语言模型框架</title>
 <link>https://arxiv.org/abs/2503.07413</link>
 <guid>https://arxiv.org/abs/2503.07413</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>REF-VLM框架提升了多模态解码任务的性能与适应性。</p><br><br><p><strong>摘要：</strong> REF-VLM是一种端到端框架，旨在统一训练各种视觉解码任务。针对稠密预测任务的挑战，我们提出了三元组引用范式（TRP），通过三元组结构明确解耦视觉解码任务中的概念、解码类型和目标。同时，构建了VTInstruct数据集，包含超过1亿条多模态对话样本，涵盖25种任务类型，结合文本输入和多种视觉提示，如点、框、涂鸦和掩膜。REF-VLM的优越性通过定性和定量实验得以验证，超越了现有的多模态大型语言模型，展示了其在复杂视觉解码场景下的强大适应性和性能。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.07413 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">REF-VLM框架提升了多模态解码任务的性能与适应性。</p><br /><br /><p><strong>摘要：</strong> REF-VLM是一种端到端框架，旨在统一训练各种视觉解码任务。针对稠密预测任务的挑战，我们提出了三元组引用范式（TRP），通过三元组结构明确解耦视觉解码任务中的概念、解码类型和目标。同时，构建了VTInstruct数据集，包含超过1亿条多模态对话样本，涵盖25种任务类型，结合文本输入和多种视觉提示，如点、框、涂鸦和掩膜。REF-VLM的优越性通过定性和定量实验得以验证，超越了现有的多模态大型语言模型，展示了其在复杂视觉解码场景下的强大适应性和性能。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.07413" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 10 Mar 2025 10:59:14 GMT</pubDate>
 <pubDate>Mon, 10 Mar 2025 10:59:14 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +55,8 @@
 <link>https://arxiv.org/abs/2503.07389</link>
 <guid>https://arxiv.org/abs/2503.07389</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>TRCE通过两阶段策略有效抹除文本生成中的恶意概念。</p><br><br><p><strong>摘要：</strong> 随着文本生成模型在照片现实主义图像生成中的进步，如何防止恶意内容的产生成为一个重要课题。本研究提出TRCE，一种采用两阶段策略的概念抹除方法，旨在实现可靠的恶意概念抹除与模型知识保留之间的有效权衡。首先，TRCE识别并优化跨注意力层，将隐含的恶意语义映射为包含安全概念的相似提示，以减少模型在去噪过程中受到恶意语义的影响。其次，TRCE利用扩散模型的采样轨迹特性，通过对比学习引导早期去噪预测朝向安全方向，避免生成恶意内容。通过对多个恶意概念抹除基准的全面评估，结果表明TRCE在抹除恶意概念的同时，更好地保留了模型的原始生成能力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.07389 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">TRCE通过两阶段策略有效抹除文本生成中的恶意概念。</p><br /><br /><p><strong>摘要：</strong> 随着文本生成模型在照片现实主义图像生成中的进步，如何防止恶意内容的产生成为一个重要课题。本研究提出TRCE，一种采用两阶段策略的概念抹除方法，旨在实现可靠的恶意概念抹除与模型知识保留之间的有效权衡。首先，TRCE识别并优化跨注意力层，将隐含的恶意语义映射为包含安全概念的相似提示，以减少模型在去噪过程中受到恶意语义的影响。其次，TRCE利用扩散模型的采样轨迹特性，通过对比学习引导早期去噪预测朝向安全方向，避免生成恶意内容。通过对多个恶意概念抹除基准的全面评估，结果表明TRCE在抹除恶意概念的同时，更好地保留了模型的原始生成能力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.07389" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 10 Mar 2025 10:37:53 GMT</pubDate>
 <pubDate>Mon, 10 Mar 2025 10:37:53 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +64,8 @@
 <link>https://arxiv.org/abs/2503.07334</link>
 <guid>https://arxiv.org/abs/2503.07334</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>ARRA框架通过对齐隐藏状态实现文本到图像生成的全局一致性。</p><br><br><p><strong>摘要：</strong> 本文介绍了自回归表示对齐（ARRA）训练框架，旨在实现自回归大型语言模型（LLMs）中全局一致的文本到图像生成，而无需对架构进行复杂修改。与以往需要大规模架构重设计的工作不同，ARRA通过全局视觉对齐损失和混合标记将LLM的隐藏状态与外部视觉基础模型的视觉表示对齐。该框架在保留自回归范式的同时，通过强制局部下一个标记预测和全局语义蒸馏的双重约束，使大型语言模型能够隐式学习空间和上下文一致性。广泛的实验结果验证了ARRA的灵活性，显示在从文本生成的LLM或随机初始化的情况下训练时，ARRA能够分别在高级自回归LLM如Chameleon和LlamaGen上减少25.5%的FID（MIMIC-CXR）、8.8%（DeepEyeNet）和7.5%（ImageNet）。在领域适应方面，ARRA还成功地将通用LLM与专用模型对齐，以在医学成像（MIMIC-CXR）上实现18.6%的FID减少。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.07334 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">ARRA框架通过对齐隐藏状态实现文本到图像生成的全局一致性。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了自回归表示对齐（ARRA）训练框架，旨在实现自回归大型语言模型（LLMs）中全局一致的文本到图像生成，而无需对架构进行复杂修改。与以往需要大规模架构重设计的工作不同，ARRA通过全局视觉对齐损失和混合标记将LLM的隐藏状态与外部视觉基础模型的视觉表示对齐。该框架在保留自回归范式的同时，通过强制局部下一个标记预测和全局语义蒸馏的双重约束，使大型语言模型能够隐式学习空间和上下文一致性。广泛的实验结果验证了ARRA的灵活性，显示在从文本生成的LLM或随机初始化的情况下训练时，ARRA能够分别在高级自回归LLM如Chameleon和LlamaGen上减少25.5%的FID（MIMIC-CXR）、8.8%（DeepEyeNet）和7.5%（ImageNet）。在领域适应方面，ARRA还成功地将通用LLM与专用模型对齐，以在医学成像（MIMIC-CXR）上实现18.6%的FID减少。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.07334" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 10 Mar 2025 09:49:28 GMT</pubDate>
 <pubDate>Mon, 10 Mar 2025 09:49:28 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +73,8 @@
 <link>https://arxiv.org/abs/2503.06960</link>
 <guid>https://arxiv.org/abs/2503.06960</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本研究提出SlotMIM方法以优化视觉模型在机器人学习中的表现。</p><br><br><p><strong>摘要：</strong> 预训练视觉模型（PVMs）在现代机器人中扮演重要角色，但其最佳配置仍不明确。通过系统评估，我们发现DINO和iBOT在视觉运动控制和感知任务上表现优于MAE，但在非单对象中心（NOC）数据上训练时存在困难，影响其学习对象中心表示的能力。为此，我们设计了SlotMIM方法，利用语义瓶颈减少原型数量，促进对象性出现，并引入跨视图一致性正则化以鼓励多视图不变性。我们的实验涵盖对象中心、场景中心、网络抓取及自我中心数据的预训练，结果表明该方法在图像识别、场景理解和机器人学习评估方面显著优于现有研究，且在百万规模数据集上展现出优良的数据效率和可扩展性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.06960 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本研究提出SlotMIM方法以优化视觉模型在机器人学习中的表现。</p><br /><br /><p><strong>摘要：</strong> 预训练视觉模型（PVMs）在现代机器人中扮演重要角色，但其最佳配置仍不明确。通过系统评估，我们发现DINO和iBOT在视觉运动控制和感知任务上表现优于MAE，但在非单对象中心（NOC）数据上训练时存在困难，影响其学习对象中心表示的能力。为此，我们设计了SlotMIM方法，利用语义瓶颈减少原型数量，促进对象性出现，并引入跨视图一致性正则化以鼓励多视图不变性。我们的实验涵盖对象中心、场景中心、网络抓取及自我中心数据的预训练，结果表明该方法在图像识别、场景理解和机器人学习评估方面显著优于现有研究，且在百万规模数据集上展现出优良的数据效率和可扩展性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.06960" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 10 Mar 2025 02:18:31 GMT</pubDate>
 <pubDate>Mon, 10 Mar 2025 02:18:31 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +82,8 @@
 <link>https://arxiv.org/abs/2503.06626</link>
 <guid>https://arxiv.org/abs/2503.06626</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>DiffCLIP模型通过差分注意力机制提升视觉-语言理解性能。</p><br><br><p><strong>摘要：</strong> DiffCLIP是一种新颖的视觉-语言模型，通过将差分注意力机制扩展到CLIP架构中，显著提升了图像与文本理解的能力。差分注意力最初是为大型语言模型开发的，旨在放大相关上下文并消除噪声信息。通过将这一机制集成到CLIP的双编码器框架中，DiffCLIP在零-shot分类、检索和鲁棒性基准测试中表现优越，持续超越传统CLIP模型。研究表明，这些性能提升伴随着微不足道的计算开销，表明差分注意力能显著增强多模态表示，而不牺牲效率。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.06626 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">DiffCLIP模型通过差分注意力机制提升视觉-语言理解性能。</p><br /><br /><p><strong>摘要：</strong> DiffCLIP是一种新颖的视觉-语言模型，通过将差分注意力机制扩展到CLIP架构中，显著提升了图像与文本理解的能力。差分注意力最初是为大型语言模型开发的，旨在放大相关上下文并消除噪声信息。通过将这一机制集成到CLIP的双编码器框架中，DiffCLIP在零-shot分类、检索和鲁棒性基准测试中表现优越，持续超越传统CLIP模型。研究表明，这些性能提升伴随着微不足道的计算开销，表明差分注意力能显著增强多模态表示，而不牺牲效率。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.06626" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Sun, 09 Mar 2025 10:04:09 GMT</pubDate>
 <pubDate>Sun, 09 Mar 2025 10:04:09 GMT</pubDate>
 </item>
 <item>
@@ -69,14 +91,10 @@
 <link>https://arxiv.org/abs/2503.05641</link>
 <guid>https://arxiv.org/abs/2503.05641</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>Symbolic-MoE通过实例级专家选择显著提升了预训练LLM的性能。</p><br><br><p><strong>摘要：</strong> Symbolic-MoE是一个基于技能的Mixture-of-Experts框架，旨在通过实例级别的细粒度专家选择来提升预训练大语言模型（LLM）的性能。该方法关注于根据不同任务的专业技能，如数学中的代数或生物医学推理中的分子生物学，动态选择最合适的LLM专家。通过实施批量推理策略，有效减少了模型的加载开销，使得在单个GPU上能够整合16个专家模型，性能超越此前多代理基线。经过在多个基准（如MMLU-Pro、GPQA、AIME和MedMCQA）的广泛评估，Symbolic-MoE在精度上提升了8.15%，并且比基于讨论的基线方法在计算上更加高效，去除了昂贵的多轮讨论需求。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.05641 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">Symbolic-MoE通过实例级专家选择显著提升了预训练LLM的性能。</p><br /><br /><p><strong>摘要：</strong> Symbolic-MoE是一个基于技能的Mixture-of-Experts框架，旨在通过实例级别的细粒度专家选择来提升预训练大语言模型（LLM）的性能。该方法关注于根据不同任务的专业技能，如数学中的代数或生物医学推理中的分子生物学，动态选择最合适的LLM专家。通过实施批量推理策略，有效减少了模型的加载开销，使得在单个GPU上能够整合16个专家模型，性能超越此前多代理基线。经过在多个基准（如MMLU-Pro、GPQA、AIME和MedMCQA）的广泛评估，Symbolic-MoE在精度上提升了8.15%，并且比基于讨论的基线方法在计算上更加高效，去除了昂贵的多轮讨论需求。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.05641" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Fri, 07 Mar 2025 13:03:13 GMT</pubDate>
-<pubDate>Fri, 07 Mar 2025 13:03:13 GMT</pubDate>
 </item>
-
 <item>
 <title>基于多镜头视频的人类动作重建框架</title>
 <link>https://arxiv.org/abs/2503.07597</link>
