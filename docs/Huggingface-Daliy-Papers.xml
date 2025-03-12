@@ -4,16 +4,14 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+
 <item>
 <title>VACE：全能视频生成与编辑框架</title>
 <link>https://arxiv.org/abs/2503.07598</link>
 <guid>https://arxiv.org/abs/2503.07598</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>VACE提供一个统一的视频生成与编辑解决方案，处理多种视频任务。</p><br><br><p><strong>摘要：</strong> VACE是一种新的平台，旨在整合视频生成和编辑任务，克服视频合成中的空间和时间一致性挑战。该框架支持参考视频生成、视频编辑和带掩膜的视频编辑等多种功能，用户可以通过统一的界面（视频条件单元）进行操作。通过采用上下文适配器结构，VACE能够灵活处理各种视频合成任务，并将不同任务概念正式化地注入模型。实验结果表明，VACE在多种子任务上的表现与专用模型相当，同时支持多样化的应用组合，展现了其在视频内容创作领域的强大潜力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.07598 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">VACE提供一个统一的视频生成与编辑解决方案，处理多种视频任务。</p><br /><br /><p><strong>摘要：</strong> VACE是一种新的平台，旨在整合视频生成和编辑任务，克服视频合成中的空间和时间一致性挑战。该框架支持参考视频生成、视频编辑和带掩膜的视频编辑等多种功能，用户可以通过统一的界面（视频条件单元）进行操作。通过采用上下文适配器结构，VACE能够灵活处理各种视频合成任务，并将不同任务概念正式化地注入模型。实验结果表明，VACE在多种子任务上的表现与专用模型相当，同时支持多样化的应用组合，展现了其在视频内容创作领域的强大潜力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.07598" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 10 Mar 2025 13:57:04 GMT</pubDate>
 <pubDate>Mon, 10 Mar 2025 13:57:04 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +19,8 @@
 <link>https://arxiv.org/abs/2503.06698</link>
 <guid>https://arxiv.org/abs/2503.06698</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种利用预训练特征提升领域泛化能力的方法。</p><br><br><p><strong>摘要：</strong> 本研究关注于如何提高模型在新颖且未见数据分布下的泛化能力，探讨模型架构和预训练目标对特征丰富性的影响。我们提出通过发现潜在的伪域结构，从而在无监督的方式下捕捉特定领域的变化，并利用这些伪域表示增强现有分类器，使其更适应未见测试领域。通过对不同预训练特征空间的分析，发现扩散模型的特征在没有显式领域标签的情况下，能有效区分领域并捕捉细致的领域特征。在五个数据集上的实证研究显示，我们的方法较标准基线（经验风险最小化）在未见领域的泛化能力提升了超过4%的测试准确率，并且显著超越绝大多数训练过程中使用领域标签的算法。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.06698 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种利用预训练特征提升领域泛化能力的方法。</p><br /><br /><p><strong>摘要：</strong> 本研究关注于如何提高模型在新颖且未见数据分布下的泛化能力，探讨模型架构和预训练目标对特征丰富性的影响。我们提出通过发现潜在的伪域结构，从而在无监督的方式下捕捉特定领域的变化，并利用这些伪域表示增强现有分类器，使其更适应未见测试领域。通过对不同预训练特征空间的分析，发现扩散模型的特征在没有显式领域标签的情况下，能有效区分领域并捕捉细致的领域特征。在五个数据集上的实证研究显示，我们的方法较标准基线（经验风险最小化）在未见领域的泛化能力提升了超过4%的测试准确率，并且显著超越绝大多数训练过程中使用领域标签的算法。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.06698" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Sun, 09 Mar 2025 13:29:01 GMT</pubDate>
 <pubDate>Sun, 09 Mar 2025 13:29:01 GMT</pubDate>
 </item>
 <item>
@@ -33,14 +28,10 @@
 <link>https://arxiv.org/abs/2502.20475</link>
 <guid>https://arxiv.org/abs/2502.20475</guid>
 <content:encoded><![CDATA[
-
-  To answer one-to-many factual queries (e.g., listing cities of a country), a language model (LM) must simultaneously recall knowledge and avoid repeating previous answers. How are these two subtasks implemented and integrated internally? Across multiple datasets and models, we identify a promote-then-suppress mechanism: the model first recalls all answers, and then suppresses previously generated ones. Specifically, LMs use both the subject and previous answer tokens to perform knowledge recall, with attention propagating subject information and MLPs promoting the answers. Then, attention attends to and suppresses previous answer tokens, while MLPs amplify the suppression signal. Our mechanism is corroborated by extensive experimental evidence: in addition to using early decoding and causal tracing, we analyze how components use different tokens by introducing both Token Lens, which decodes aggregated attention updates from specified tokens, and a knockout method that analyzes changes in MLP outputs after removing attention to specified tokens. Overall, we provide new insights into how LMs' internal components interact with different input tokens to support complex factual recall. Code is available at https://github.com/Lorenayannnnn/how-lms-answer-one-to-many-factual-queries.
-
+To answer one-to-many factual queries (e.g., listing cities of a country), a language model (LM) must simultaneously recall knowledge and avoid repeating previous answers. How are these two subtasks implemented and integrated internally? Across multiple datasets and models, we identify a promote-then-suppress mechanism: the model first recalls all answers, and then suppresses previously generated ones. Specifically, LMs use both the subject and previous answer tokens to perform knowledge recall, with attention propagating subject information and MLPs promoting the answers. Then, attention attends to and suppresses previous answer tokens, while MLPs amplify the suppression signal. Our mechanism is corroborated by extensive experimental evidence: in addition to using early decoding and causal tracing, we analyze how components use different tokens by introducing both Token Lens, which decodes aggregated attention updates from specified tokens, and a knockout method that analyzes changes in MLP outputs after removing attention to specified tokens. Overall, we provide new insights into how LMs' internal components interact with different input tokens to support complex factual recall. Code is available at https://github.com/Lorenayannnnn/how-lms-answer-one-to-many-factual-queries.
 ]]></content:encoded>
 <pubDate>Thu, 27 Feb 2025 14:23:15 GMT</pubDate>
-<pubDate>Thu, 27 Feb 2025 14:23:15 GMT</pubDate>
 </item>
-
 <item>
 <title>REF-VLM：统一视觉解码任务的多模态大型语言模型框架</title>
 <link>https://arxiv.org/abs/2503.07413</link>
