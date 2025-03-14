@@ -4,6 +4,66 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>文本到图像模型在分类概念生成中的应用研究</title>
+<link>https://arxiv.org/abs/2503.10357</link>
+<guid>https://arxiv.org/abs/2503.10357</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文研究了在零样本设置下使用文本到图像模型为分类概念生成图像的可行性。</p><br><br><p><strong>摘要：</strong> 本文探讨了文本到图像模型在零样本设置下生成分类概念图像的可行性，提出了一项全面的分类图像生成基准，评估模型理解分类概念并生成相关高质量图像的能力。基准包括常识和随机抽样的WordNet概念，以及大语言模型生成的预测。12个模型通过9种新颖的与分类相关的文本到图像指标和人类反馈进行评估。此外，本文首次采用与GPT-4反馈的成对评估方式。实验结果表明，模型的排名与标准的文本到图像任务明显不同，Playground-v2和FLUX在各指标和子集上始终表现优异，而检索基础方法的效果较差。这一发现突显了自动化结构化数据资源整理的潜力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.10357 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 13 Mar 2025 09:37:54 GMT</pubDate>
+<pubDate>Thu, 13 Mar 2025 09:37:54 GMT</pubDate>
+</item>
+<item>
+<title>VisualPRM：增强多模态推理能力的过程奖励模型</title>
+<link>https://arxiv.org/abs/2503.10291</link>
+<guid>https://arxiv.org/abs/2503.10291</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>VisualPRM模型提升了多模态大语言模型的推理能力。</p><br><br><p><strong>摘要：</strong> 本文介绍了VisualPRM，一个拥有80亿参数的先进多模态过程奖励模型，显著提升了现有多模态大语言模型（MLLMs）的推理能力。我们的模型在三种类型的MLLMs与四种不同规模的模型上表现优异，尤其是在高能力的InternVL2.5-78B模型上，跨七个多模态推理基准提升了5.9分。通过实验结果，我们证明了VisualPRM在Best-of-N（BoN）评估策略中相较于结果奖励模型和自一致性具有更强的性能。此外，我们构建了一个多模态过程监督数据集VisualPRM400K，并提出了VisualProcessBench基准，以人类标注的逐步正确性标签来评估PRMs在多模态推理任务中识别错误步骤的能力。希望我们的研究能够启发未来的研究工作，并为MLLMs的发展做出贡献。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.10291 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 13 Mar 2025 08:03:37 GMT</pubDate>
+<pubDate>Thu, 13 Mar 2025 08:03:37 GMT</pubDate>
+</item>
+<item>
+<title>探究视觉语言模型在图像理解中的不足</title>
+<link>https://arxiv.org/abs/2503.09837</link>
+<guid>https://arxiv.org/abs/2503.09837</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究发现，视觉语言模型在图像级增强理解方面存在缺陷。</p><br><br><p><strong>摘要：</strong> 本文重点探讨视觉语言模型（VLMs）在图像理解中的局限性，特别是OpenAI的CLIP和Google的SigLIP。虽然这些模型在多个下游任务上表现良好，如图像/视频生成、视觉问答、多模态聊天机器人及视频理解，但它们在基本图像变换方面表现不佳。为此，我们创建了增强版Flickr8k数据集，将每张图像与所应用变换的详细描述配对。研究结果表明，这些模型对多种图像增强缺乏理解，进而影响了下游任务，尤其是在图像编辑中。此外，我们还评估了最先进的图像转图像模型在简单变换上的表现，以提供更深入的见解。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.09837 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 12 Mar 2025 16:58:16 GMT</pubDate>
+<pubDate>Wed, 12 Mar 2025 16:58:16 GMT</pubDate>
+</item>
+<item>
+<title>CoRe²: 高效且有效的文本到图像生成模型推理框架</title>
+<link>https://arxiv.org/abs/2503.09662</link>
+<guid>https://arxiv.org/abs/2503.09662</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>CoRe² 提出了一个新颖的文本到图像生成推理方法，兼顾效率与效果。</p><br><br><p><strong>摘要：</strong> 本文介绍了新颖的推理模式 CoRe²，用于提升文本到图像生成模型的采样效率与视觉质量。以往研究通常在提高图像合成质量和加速采样之间做出取舍，且难以确保在扩散模型和自回归模型上表现一致。CoRe² 包括三个子过程：Collect、Reflect 和 Refine。首先，收集无分类器引导轨迹；然后利用这些数据训练一个反映易学内容的弱模型，从而在推理过程中将函数评估次数减少一半。最后，通过弱到强的引导方法来细化条件输出，提高生成高频真实内容的能力。CoRe² 在多个生成模型上展示了显著的性能提升，并且可以无缝集成至现有的最先进模型 Z-Sampling 上。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.09662 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 12 Mar 2025 11:15:25 GMT</pubDate>
+<pubDate>Wed, 12 Mar 2025 11:15:25 GMT</pubDate>
+</item>
+<item>
+<title>PerCoV2: Improved Ultra-Low Bit-Rate Perceptual Image Compression with Implicit Hierarchical Masked Image Modeling</title>
+<link>https://arxiv.org/abs/2503.09368</link>
+<guid>https://arxiv.org/abs/2503.09368</guid>
+<content:encoded><![CDATA[
+
+  We introduce PerCoV2, a novel and open ultra-low bit-rate perceptual image compression system designed for bandwidth- and storage-constrained applications. Building upon prior work by Careil et al., PerCoV2 extends the original formulation to the Stable Diffusion 3 ecosystem and enhances entropy coding efficiency by explicitly modeling the discrete hyper-latent image distribution. To this end, we conduct a comprehensive comparison of recent autoregressive methods (VAR and MaskGIT) for entropy modeling and evaluate our approach on the large-scale MSCOCO-30k benchmark. Compared to previous work, PerCoV2 (i) achieves higher image fidelity at even lower bit-rates while maintaining competitive perceptual quality, (ii) features a hybrid generation mode for further bit-rate savings, and (iii) is built solely on public components. Code and trained models will be released at https://github.com/Nikolai10/PerCoV2.
+
+]]></content:encoded>
+<pubDate>Wed, 12 Mar 2025 09:14:51 GMT</pubDate>
+<pubDate>Wed, 12 Mar 2025 09:14:51 GMT</pubDate>
+</item>
 
 <item>
 <title>探索Hugging Face模型的初步图谱及其潜力</title>
