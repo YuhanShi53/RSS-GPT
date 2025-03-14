@@ -5,15 +5,61 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>探索Hugging Face模型的初步图谱及其潜力</title>
+<link>https://arxiv.org/abs/2503.10633</link>
+<guid>https://arxiv.org/abs/2503.10633</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>文章构建了Hugging Face模型的初步图谱，并探讨其应用和未文档区域的映射方法。</p><br><br><p><strong>摘要：</strong> 随着公共神经网络数量的激增，搜索和分析大型模型库变得愈加重要。本文构建了一幅初步的Hugging Face模型图谱，展示了模型的文档化比例，并提供了模型景观及其演变的可视化。我们展示了该图谱的若干应用，包括准确性预测和计算机视觉模型趋势分析。鉴于目前图谱仍不完整，我们提出了一种映射未文档区域的方法，通过识别基于主流模型训练实践的高置信度结构先验，准确地映射之前未记录的区域。最终，我们公开发布了相关数据集、代码和交互图谱，为推动模型研究提供支持。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.10633 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 13 Mar 2025 13:59:53 GMT</pubDate>
+<pubDate>Thu, 13 Mar 2025 13:59:53 GMT</pubDate>
+</item>
+<item>
+<title>动态Tanh：非标准化变压器的性能提升</title>
+<link>https://arxiv.org/abs/2503.10622</link>
+<guid>https://arxiv.org/abs/2503.10622</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>动态Tanh替代标准化层，变压器性能可比或优于传统方法。</p><br><br><p><strong>摘要：</strong> 本研究提出了动态Tanh（DyT）作为变压器中标准化层的替代方案，表明不使用标准化层的变压器依然能够达到相同或更好的性能。DyT操作为DyT(x) = tanh(alpha x)，其灵感来自于变压器中层归一化的S型输入输出映射特性。实验结果表明，在多种任务设置下，使用DyT的变压器能够匹敌或超越传统标准化变压器的性能，且大多数情况下无需进行超参数调优。这一发现挑战了传统观点，即标准化层在现代神经网络中是不可或缺的，对深度网络中的标准化作用提供了新的洞见。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.10622 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 13 Mar 2025 13:59:06 GMT</pubDate>
+<pubDate>Thu, 13 Mar 2025 13:59:06 GMT</pubDate>
+</item>
+<item>
+<title>Diffusion Transformers在文本到图像生成中的应用研究</title>
+<link>https://arxiv.org/abs/2503.10618</link>
+<guid>https://arxiv.org/abs/2503.10618</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本研究评估Diffusion Transformers在文本到图像生成中的表现和效率。</p><br><br><p><strong>摘要：</strong> 本研究针对Diffusion Transformers（DiTs）在文本到图像生成中的应用进行实证研究，重点考察其架构选择、文本条件策略和训练协议。我们评估了多种基于DiT的架构，包括PixArt风格和MMDiT变种，并与标准DiT变种进行比较。令人惊讶的是，标准DiT的性能与这些专用模型相当，并在参数效率上表现出色，尤其在模型规模扩大时。通过利用层级参数共享策略，我们相比于MMDiT架构进一步降低了66%的模型大小，且对性能影响甚微。基于对文本编码器和变分自编码器的深入分析，我们提出了DiT-Air和DiT-Air-Lite模型。其中，DiT-Air在有监督和奖励微调下，在GenEval和T2I CompBench上实现了最先进的性能，而DiT-Air-Lite凭借其紧凑的尺寸依然具有强竞争力，超越了大多数现有模型。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.10618 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 13 Mar 2025 13:57:25 GMT</pubDate>
+<pubDate>Thu, 13 Mar 2025 13:57:25 GMT</pubDate>
+</item>
+<item>
+<title>SANA-Sprint：高效的文本到图像生成模型</title>
+<link>https://arxiv.org/abs/2503.09641</link>
+<guid>https://arxiv.org/abs/2503.09641</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>SANA-Sprint是一种超快速的文本到图像生成模型，显著提高生成效率。</p><br><br><p><strong>摘要：</strong> 本文介绍了SANA-Sprint，一种高效的扩散模型，用于超快速的文本到图像（T2I）生成。该模型基于预训练基础模型，通过混合蒸馏显著降低推理步骤，从20步减少至1-4步。我们提出三大创新：第一，采用无训练的方法，将预训练的流匹配模型转化为连续时间一致性蒸馏，消除从头训练的高成本，提升训练效率；第二，SANA-Sprint是统一的步自适应模型，可以在1-4步中实现高质量生成，无需步骤特定训练，进一步提高效率；第三，SANA-Sprint与ControlNet结合，实现实时交互图像生成，为用户交互提供即时视觉反馈。SANA-Sprint在速度和质量的权衡上建立了新的Pareto前沿，在仅需1步的情况下达到7.59的FID值和0.74的GenEval，表现优于FLUX-schnell，同时速度快10倍。可在H100上实现1024 x 1024图像的0.1秒（T2I）和0.25秒（ControlNet）延迟，并在RTX 4090上达到0.31秒，展现了其出色的效率及在AI驱动消费者应用中的潜力。代码和预训练模型将开源发布。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.09641 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 12 Mar 2025 00:53:07 GMT</pubDate>
+<pubDate>Wed, 12 Mar 2025 00:53:07 GMT</pubDate>
+</item>
+
+<item>
 <title>Generation Chain-of-Thought: 提升图像生成与编辑的推理驱动框架</title>
 <link>https://arxiv.org/abs/2503.10639</link>
 <guid>https://arxiv.org/abs/2503.10639</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>GoT通过推理链改进图像生成和编辑，提升图像与人类意图的契合度。</p><br><br><p><strong>摘要：</strong> 本文提出了Generation Chain-of-Thought（GoT）框架，通过明确的语言推理过程改进图像生成和编辑方式，区别于传统的文本直接输入处理。GoT分析语义关系和空间布局，构建了超过900万个样本的大规模数据集，捕捉语义-空间关系的详细推理链。我们结合Qwen2.5-VL构建统一框架，将推理链生成与端到端的扩散模型整合，并引入新的语义空间引导模块。实验表明，GoT在生成和编辑任务中均显著超越基线，表现出优异性能。同时，此方法支持交互式视觉生成，用户可显性交互修改推理步骤，以精确调整图像。这一研究为推理驱动的视觉生成和编辑开辟了新方向，生成的图像更符合人类意图，并将数据集、代码和预训练模型公开，以促进未来的研究。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.10639 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">GoT通过推理链改进图像生成和编辑，提升图像与人类意图的契合度。</p><br /><br /><p><strong>摘要：</strong> 本文提出了Generation Chain-of-Thought（GoT）框架，通过明确的语言推理过程改进图像生成和编辑方式，区别于传统的文本直接输入处理。GoT分析语义关系和空间布局，构建了超过900万个样本的大规模数据集，捕捉语义-空间关系的详细推理链。我们结合Qwen2.5-VL构建统一框架，将推理链生成与端到端的扩散模型整合，并引入新的语义空间引导模块。实验表明，GoT在生成和编辑任务中均显著超越基线，表现出优异性能。同时，此方法支持交互式视觉生成，用户可显性交互修改推理步骤，以精确调整图像。这一研究为推理驱动的视觉生成和编辑开辟了新方向，生成的图像更符合人类意图，并将数据集、代码和预训练模型公开，以促进未来的研究。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.10639" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 13 Mar 2025 13:59:59 GMT</pubDate>
 <pubDate>Thu, 13 Mar 2025 13:59:59 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +67,8 @@
 <link>https://arxiv.org/abs/2503.10637</link>
 <guid>https://arxiv.org/abs/2503.10637</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文探讨通过控制蒸馏与混合推理提升蒸馏模型的样本多样性。</p><br><br><p><strong>摘要：</strong> 蒸馏扩散模型存在样本多样性降低的限制。本文揭示尽管存在多样性损失，蒸馏模型依然保留基础模型的概念表示。通过引入控制蒸馏，我们展示了控制机制如Concept Sliders与LoRAs能够无缝转移到蒸馏模型及其反向。为理解蒸馏如何影响多样性，我们引入Diffusion Target (DT) 可视化工具，揭示模型在中间步骤的输出预测。通过DT可视化，识别生成伪影和不一致性，发现初始扩散时间步对输出多样性影响巨大，而后期步骤主要细化细节。基于此，我们提出了多样性蒸馏的混合推理方法，先在关键时刻使用基础模型，然后再切换到高效的蒸馏模型。实验表明，此方法不仅恢复了多样性能力，还超越了基础模型，同时保持了蒸馏推理的计算效率，无需额外训练或修改模型。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.10637 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文探讨通过控制蒸馏与混合推理提升蒸馏模型的样本多样性。</p><br /><br /><p><strong>摘要：</strong> 蒸馏扩散模型存在样本多样性降低的限制。本文揭示尽管存在多样性损失，蒸馏模型依然保留基础模型的概念表示。通过引入控制蒸馏，我们展示了控制机制如Concept Sliders与LoRAs能够无缝转移到蒸馏模型及其反向。为理解蒸馏如何影响多样性，我们引入Diffusion Target (DT) 可视化工具，揭示模型在中间步骤的输出预测。通过DT可视化，识别生成伪影和不一致性，发现初始扩散时间步对输出多样性影响巨大，而后期步骤主要细化细节。基于此，我们提出了多样性蒸馏的混合推理方法，先在关键时刻使用基础模型，然后再切换到高效的蒸馏模型。实验表明，此方法不仅恢复了多样性能力，还超越了基础模型，同时保持了蒸馏推理的计算效率，无需额外训练或修改模型。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.10637" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 13 Mar 2025 13:59:56 GMT</pubDate>
 <pubDate>Thu, 13 Mar 2025 13:59:56 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +76,8 @@
 <link>https://arxiv.org/abs/2503.10636</link>
 <guid>https://arxiv.org/abs/2503.10636</guid>
 <content:encoded><![CDATA[
-
-  Minibatch optimal transport coupling straightens paths in unconditional flow matching. This leads to computationally less demanding inference as fewer integration steps and less complex numerical solvers can be employed when numerically solving an ordinary differential equation at test time. However, in the conditional setting, minibatch optimal transport falls short. This is because the default optimal transport mapping disregards conditions, resulting in a conditionally skewed prior distribution during training. In contrast, at test time, we have no access to the skewed prior, and instead sample from the full, unbiased prior distribution. This gap between training and testing leads to a subpar performance. To bridge this gap, we propose conditional optimal transport C^2OT that adds a conditional weighting term in the cost matrix when computing the optimal transport assignment. Experiments demonstrate that this simple fix works with both discrete and continuous conditions in 8gaussians-to-moons, CIFAR-10, ImageNet-32x32, and ImageNet-256x256. Our method performs better overall compared to the existing baselines across different function evaluation budgets. Code is available at https://hkchengrex.github.io/C2OT
-
+Minibatch optimal transport coupling straightens paths in unconditional flow matching. This leads to computationally less demanding inference as fewer integration steps and less complex numerical solvers can be employed when numerically solving an ordinary differential equation at test time. However, in the conditional setting, minibatch optimal transport falls short. This is because the default optimal transport mapping disregards conditions, resulting in a conditionally skewed prior distribution during training. In contrast, at test time, we have no access to the skewed prior, and instead sample from the full, unbiased prior distribution. This gap between training and testing leads to a subpar performance. To bridge this gap, we propose conditional optimal transport C^2OT that adds a conditional weighting term in the cost matrix when computing the optimal transport assignment. Experiments demonstrate that this simple fix works with both discrete and continuous conditions in 8gaussians-to-moons, CIFAR-10, ImageNet-32x32, and ImageNet-256x256. Our method performs better overall compared to the existing baselines across different function evaluation budgets. Code is available at https://hkchengrex.github.io/C2OT
 ]]></content:encoded>
-<pubDate>Thu, 13 Mar 2025 13:59:56 GMT</pubDate>
 <pubDate>Thu, 13 Mar 2025 13:59:56 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +85,8 @@
 <link>https://arxiv.org/abs/2503.10630</link>
 <guid>https://arxiv.org/abs/2503.10630</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种通用零样本导航框架，利用统一图表示不同目标。</p><br><br><p><strong>摘要：</strong> 本文提出一个通用的零样本目标导向导航框架，旨在解决现有方法在处理不同导航目标时的局限性。现有的零样本方法通常依赖特定任务的推理框架，缺乏泛化能力。为此，我们提出统一图表示，将目标统一为对象类别、实例图像和文本描述，并将代理的观察转化为在线维护的场景图。通过一致的场景和目标表示，我们保留了大部分结构信息，能够有效利用大型语言模型进行图基础推理。具体而言，我们在每个时刻进行场景图与目标图的匹配，采取不同策略生成长期探索目标。实验结果表明，UniGoal在三个导航任务上实现了最先进的零样本性能，超越了任务特定的零样本方法和监督通用方法。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.10630 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种通用零样本导航框架，利用统一图表示不同目标。</p><br /><br /><p><strong>摘要：</strong> 本文提出一个通用的零样本目标导向导航框架，旨在解决现有方法在处理不同导航目标时的局限性。现有的零样本方法通常依赖特定任务的推理框架，缺乏泛化能力。为此，我们提出统一图表示，将目标统一为对象类别、实例图像和文本描述，并将代理的观察转化为在线维护的场景图。通过一致的场景和目标表示，我们保留了大部分结构信息，能够有效利用大型语言模型进行图基础推理。具体而言，我们在每个时刻进行场景图与目标图的匹配，采取不同策略生成长期探索目标。实验结果表明，UniGoal在三个导航任务上实现了最先进的零样本性能，超越了任务特定的零样本方法和监督通用方法。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.10630" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 13 Mar 2025 13:59:48 GMT</pubDate>
 <pubDate>Thu, 13 Mar 2025 13:59:48 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +94,8 @@
 <link>https://arxiv.org/abs/2503.10615</link>
 <guid>https://arxiv.org/abs/2503.10615</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>R1-Onevision模型提升了视觉与文本的推理能力，显示出卓越的性能。</p><br><br><p><strong>摘要：</strong> 本文介绍了R1-Onevision，一种新型的跨模态推理模型，旨在解决视觉内容分析和推理中的挑战。通过将图像转换为正式的文本表示，R1-Onevision能实现精确的语言基础推理。此外，我们构建了R1-Onevision数据集，提供跨多个领域的详细推理注释，以支持复杂的多模态推理任务。为了训练R1-Onevision模型，我们采用了监督微调和强化学习的方法，从而培养其先进的推理能力和强大的泛化能力。为全面评估多模态推理性能，本文还推出了R1-Onevision-Bench基准，覆盖了从初中到大学人类教育阶段的考试内容。实验结果表明，R1-Onevision在多个多模态推理基准测试中表现出色，超越了GPT-4o和Qwen2.5-VL等模型。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.10615 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">R1-Onevision模型提升了视觉与文本的推理能力，显示出卓越的性能。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了R1-Onevision，一种新型的跨模态推理模型，旨在解决视觉内容分析和推理中的挑战。通过将图像转换为正式的文本表示，R1-Onevision能实现精确的语言基础推理。此外，我们构建了R1-Onevision数据集，提供跨多个领域的详细推理注释，以支持复杂的多模态推理任务。为了训练R1-Onevision模型，我们采用了监督微调和强化学习的方法，从而培养其先进的推理能力和强大的泛化能力。为全面评估多模态推理性能，本文还推出了R1-Onevision-Bench基准，覆盖了从初中到大学人类教育阶段的考试内容。实验结果表明，R1-Onevision在多个多模态推理基准测试中表现出色，超越了GPT-4o和Qwen2.5-VL等模型。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.10615" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 13 Mar 2025 13:56:05 GMT</pubDate>
 <pubDate>Thu, 13 Mar 2025 13:56:05 GMT</pubDate>
 </item>
 <item>
@@ -69,11 +103,8 @@
 <link>https://arxiv.org/abs/2503.10613</link>
 <guid>https://arxiv.org/abs/2503.10613</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>CoSTA*，通过结合LLMs与图搜索，优化多回合图像编辑。</p><br><br><p><strong>摘要：</strong> 文章提出了一个新方法CoSTA*，旨在优化多回合图像编辑任务。传统的图像生成模型在处理复杂的多回合编辑时表现不佳，本文通过将任务分解为代理工作流，利用LLMs生成子任务树，从而合理修剪AI工具的图，并采用A*搜索在小型子图中寻找工具路径。CoSTA*不仅平衡了各任务的成本和质量，还能自动在子任务之间切换不同的模式以获得更优的成本-质量权衡。此外，模型在每个子任务中使用视觉语言模型进行评估，在发生失败时更新工具的成本和质量，从而实现快速恢复。实验结果表明，CoSTA*在新构建的多回合图像编辑基准上，成本和质量均优于现有最先进的图像编辑模型，能够根据用户偏好进行灵活调节。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.10613 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">CoSTA*，通过结合LLMs与图搜索，优化多回合图像编辑。</p><br /><br /><p><strong>摘要：</strong> 文章提出了一个新方法CoSTA*，旨在优化多回合图像编辑任务。传统的图像生成模型在处理复杂的多回合编辑时表现不佳，本文通过将任务分解为代理工作流，利用LLMs生成子任务树，从而合理修剪AI工具的图，并采用A*搜索在小型子图中寻找工具路径。CoSTA*不仅平衡了各任务的成本和质量，还能自动在子任务之间切换不同的模式以获得更优的成本-质量权衡。此外，模型在每个子任务中使用视觉语言模型进行评估，在发生失败时更新工具的成本和质量，从而实现快速恢复。实验结果表明，CoSTA*在新构建的多回合图像编辑基准上，成本和质量均优于现有最先进的图像编辑模型，能够根据用户偏好进行灵活调节。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.10613" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 13 Mar 2025 13:55:45 GMT</pubDate>
 <pubDate>Thu, 13 Mar 2025 13:55:45 GMT</pubDate>
 </item>
 <item>
@@ -81,11 +112,8 @@
 <link>https://arxiv.org/abs/2503.10596</link>
 <guid>https://arxiv.org/abs/2503.10596</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>GroundingSuite通过自动数据标注框架提升视觉与语言处理性能。</p><br><br><p><strong>摘要：</strong> Pixel grounding，特别是参考表达分割（RES）任务，在视觉与语言结合上展现出巨大潜力，但现有数据集的局限性制约了这一领域的发展。为克服这些限制，本文提出了GroundingSuite，包括：1）利用多个视觉-语言模型（VLM）代理的自动数据标注框架；2）包含956万多样化参考表达及其对应分割的大规模训练数据集；3）由3,800幅图像组成的精心策划的评估基准。GroundingSuite的训练数据集显著提高了模型的性能，使其在gRefCOCO上达到68.9的cIoU，在RefCOCOm上达到55.3的gIoU。此外，GroundingSuite的数据标注框架相比于目前领先的标注方法，效率表现优越，速度是GLaMM的4.5倍。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.10596 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">GroundingSuite通过自动数据标注框架提升视觉与语言处理性能。</p><br /><br /><p><strong>摘要：</strong> Pixel grounding，特别是参考表达分割（RES）任务，在视觉与语言结合上展现出巨大潜力，但现有数据集的局限性制约了这一领域的发展。为克服这些限制，本文提出了GroundingSuite，包括：1）利用多个视觉-语言模型（VLM）代理的自动数据标注框架；2）包含956万多样化参考表达及其对应分割的大规模训练数据集；3）由3,800幅图像组成的精心策划的评估基准。GroundingSuite的训练数据集显著提高了模型的性能，使其在gRefCOCO上达到68.9的cIoU，在RefCOCOm上达到55.3的gIoU。此外，GroundingSuite的数据标注框架相比于目前领先的标注方法，效率表现优越，速度是GLaMM的4.5倍。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.10596" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 13 Mar 2025 13:43:10 GMT</pubDate>
 <pubDate>Thu, 13 Mar 2025 13:43:10 GMT</pubDate>
 </item>
 <item>
@@ -93,11 +121,8 @@
 <link>https://arxiv.org/abs/2503.10589</link>
 <guid>https://arxiv.org/abs/2503.10589</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种新方法，提升视频生成的场景一致性。</p><br><br><p><strong>摘要：</strong> 近期视频生成技术虽能生成逼真的单镜头视频，但真实的叙事视频需要在多个镜头间保持视觉和动态的一致性。为此，本文提出了长上下文调优（LCT）训练范式，旨在扩展预训练单镜头视频扩散模型的上下文窗口，从数据中直接学习场景级一致性。该方法将全注意力机制从单个镜头扩展到包括场景内所有镜头，引入交错的三维位置嵌入和异步噪声策略，使得在不增加额外参数的情况下实现共同和自回归镜头生成。经过LCT后，具有双向注意力的模型可以进一步通过上下文因果注意力进行微调，促进自回归生成，并高效利用KV缓存。实验结果表明，经过LCT的单镜头模型能够生成连贯的多镜头场景，展现出组合生成和交互式镜头扩展等新兴能力，为更实用的视觉内容创作铺平了道路。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.10589 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种新方法，提升视频生成的场景一致性。</p><br /><br /><p><strong>摘要：</strong> 近期视频生成技术虽能生成逼真的单镜头视频，但真实的叙事视频需要在多个镜头间保持视觉和动态的一致性。为此，本文提出了长上下文调优（LCT）训练范式，旨在扩展预训练单镜头视频扩散模型的上下文窗口，从数据中直接学习场景级一致性。该方法将全注意力机制从单个镜头扩展到包括场景内所有镜头，引入交错的三维位置嵌入和异步噪声策略，使得在不增加额外参数的情况下实现共同和自回归镜头生成。经过LCT后，具有双向注意力的模型可以进一步通过上下文因果注意力进行微调，促进自回归生成，并高效利用KV缓存。实验结果表明，经过LCT的单镜头模型能够生成连贯的多镜头场景，展现出组合生成和交互式镜头扩展等新兴能力，为更实用的视觉内容创作铺平了道路。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.10589" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 13 Mar 2025 13:40:07 GMT</pubDate>
 <pubDate>Thu, 13 Mar 2025 13:40:07 GMT</pubDate>
 </item>
 <item>
@@ -105,11 +130,8 @@
 <link>https://arxiv.org/abs/2503.10582</link>
 <guid>https://arxiv.org/abs/2503.10582</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文提出VisualWebInstruct数据集，提升视觉语言模型的推理能力。</p><br><br><p><strong>摘要：</strong> 随着视觉语言模型（VLMs）在视觉感知任务上取得显著进展，其在推理任务上的表现却因高质量训练数据的不足而受限。为了解决推理聚焦多模态数据集的稀缺问题，本文提出了一种名为VisualWebInstruct的新方法，利用搜索引擎创建涵盖多个学科（如数学、物理、金融、化学等）的多样化高质量数据集。通过从精心挑选的30000张种子图像开始，通过谷歌图片搜索找到相关网站，并处理来自70万个独特URL源的HTML数据，最终建立了约90万个问答对的数据集，其中40%为视觉问答对。对比实验中，基于VisualWebInstruct进行微调的模型表现显著提升，其中MAmmoTH-VL2模型在10B参数分类中达到MMM-pro-std（40.7%）、MathVerse（42.6%）、DynaMath（55.7%）等基准测试的最优表现。这些显著成果突显了该数据集在增强VLM给复杂多模态任务的推理能力方面的有效性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.10582 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文提出VisualWebInstruct数据集，提升视觉语言模型的推理能力。</p><br /><br /><p><strong>摘要：</strong> 随着视觉语言模型（VLMs）在视觉感知任务上取得显著进展，其在推理任务上的表现却因高质量训练数据的不足而受限。为了解决推理聚焦多模态数据集的稀缺问题，本文提出了一种名为VisualWebInstruct的新方法，利用搜索引擎创建涵盖多个学科（如数学、物理、金融、化学等）的多样化高质量数据集。通过从精心挑选的30000张种子图像开始，通过谷歌图片搜索找到相关网站，并处理来自70万个独特URL源的HTML数据，最终建立了约90万个问答对的数据集，其中40%为视觉问答对。对比实验中，基于VisualWebInstruct进行微调的模型表现显著提升，其中MAmmoTH-VL2模型在10B参数分类中达到MMM-pro-std（40.7%）、MathVerse（42.6%）、DynaMath（55.7%）等基准测试的最优表现。这些显著成果突显了该数据集在增强VLM给复杂多模态任务的推理能力方面的有效性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.10582" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 13 Mar 2025 13:32:48 GMT</pubDate>
 <pubDate>Thu, 13 Mar 2025 13:32:48 GMT</pubDate>
 </item>
 <item>
@@ -117,11 +139,8 @@
 <link>https://arxiv.org/abs/2503.10568</link>
 <guid>https://arxiv.org/abs/2503.10568</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>ARPG模型通过随机生成和并行处理，提高了生成效率与零-shot泛化能力。</p><br><br><p><strong>摘要：</strong> ARPG是一种新出现的视觉自回归模型，专注于解决传统栅格顺序方法在推理效率和零-shot泛化中的固有限制。其核心思想是有效的随机顺序建模需要明确的下一预测标记的位置引导。为此，ARPG提出了一种新颖的引导解码框架，将位置信息与内容表示分离编码，形成查询和键值对。通过将这种引导直接纳入因果注意机制，ARPG实现了完全的随机顺序训练与生成，消除了双向注意力的需求。此模型在图像修复、外延和分辨率扩展等零-shot任务上表现出色，同时通过共享KV缓存并行处理多个查询，支持快速推理。在ImageNet-1K 256基准上，ARPG在仅用64个采样步骤的情况下，取得了1.94的FID，相较于同规模的自回归模型提高了20倍以上的吞吐量，并将内存消耗减少了超过75%。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.10568 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">ARPG模型通过随机生成和并行处理，提高了生成效率与零-shot泛化能力。</p><br /><br /><p><strong>摘要：</strong> ARPG是一种新出现的视觉自回归模型，专注于解决传统栅格顺序方法在推理效率和零-shot泛化中的固有限制。其核心思想是有效的随机顺序建模需要明确的下一预测标记的位置引导。为此，ARPG提出了一种新颖的引导解码框架，将位置信息与内容表示分离编码，形成查询和键值对。通过将这种引导直接纳入因果注意机制，ARPG实现了完全的随机顺序训练与生成，消除了双向注意力的需求。此模型在图像修复、外延和分辨率扩展等零-shot任务上表现出色，同时通过共享KV缓存并行处理多个查询，支持快速推理。在ImageNet-1K 256基准上，ARPG在仅用64个采样步骤的情况下，取得了1.94的FID，相较于同规模的自回归模型提高了20倍以上的吞吐量，并将内存消耗减少了超过75%。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.10568" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 13 Mar 2025 13:19:51 GMT</pubDate>
 <pubDate>Thu, 13 Mar 2025 13:19:51 GMT</pubDate>
 </item>
 <item>
@@ -129,11 +148,8 @@
 <link>https://arxiv.org/abs/2503.10480</link>
 <guid>https://arxiv.org/abs/2503.10480</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出双偏好优化框架，提升视觉语言模型的任务规划能力与效率。</p><br><br><p><strong>摘要：</strong> 最近大型视觉语言模型（LVLMs）在身体任务规划方面表现出色，但仍面临依赖约束和效率等基本挑战。现有方法主要优化动作选择或在推理过程中利用世界模型，未能充分利用通过建模世界来提升规划能力的优势。我们提出了一种名为双偏好优化（D^2PO）的新学习框架，通过偏好学习共同优化状态预测和动作选择，使LVLMs能够理解环境动态，从而更好地进行规划。为无人工注释自动收集轨迹和逐步偏好数据，我们引入了一种树搜索机制，通过试错法进行广泛探索。在VoTa-Bench的广泛实验中，我们基于D^2PO的方法显著超越现有方法和GPT-4o，并在应用于Qwen2-VL（7B）、LLaVA-1.6（7B）和LLaMA-3.2（11B）时，实现了更高的任务成功率和更高效的执行路径。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.10480 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出双偏好优化框架，提升视觉语言模型的任务规划能力与效率。</p><br /><br /><p><strong>摘要：</strong> 最近大型视觉语言模型（LVLMs）在身体任务规划方面表现出色，但仍面临依赖约束和效率等基本挑战。现有方法主要优化动作选择或在推理过程中利用世界模型，未能充分利用通过建模世界来提升规划能力的优势。我们提出了一种名为双偏好优化（D^2PO）的新学习框架，通过偏好学习共同优化状态预测和动作选择，使LVLMs能够理解环境动态，从而更好地进行规划。为无人工注释自动收集轨迹和逐步偏好数据，我们引入了一种树搜索机制，通过试错法进行广泛探索。在VoTa-Bench的广泛实验中，我们基于D^2PO的方法显著超越现有方法和GPT-4o，并在应用于Qwen2-VL（7B）、LLaVA-1.6（7B）和LLaMA-3.2（11B）时，实现了更高的任务成功率和更高效的执行路径。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.10480" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 13 Mar 2025 11:49:56 GMT</pubDate>
 <pubDate>Thu, 13 Mar 2025 11:49:56 GMT</pubDate>
 </item>
 <item>
@@ -141,11 +157,8 @@
 <link>https://arxiv.org/abs/2503.10460</link>
 <guid>https://arxiv.org/abs/2503.10460</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文介绍了Light-R1系列模型的训练过程及其卓越表现。</p><br><br><p><strong>摘要：</strong> 本文展示了我们在Light-R1系列模型上的研究工作，所有模型、数据和代码均已公开。我们重点训练了从不具备长COT能力的初始模型开始的长COT模型。通过采用包括两阶段的SFT和半在线DPO的课程训练方法，我们训练的Light-R1-32B模型在数学任务上表现优于DeepSeek-R1-Distill-Qwen-32B。尽管仅使用数学数据进行训练，Light-R1-32B在其他领域也展现了强大的泛化能力。此外，我们强调了为第二阶段SFT构建的3k数据集在增强其他模型中的显著效果，通过对DeepSeek-R1-Distilled模型进行微调，获得了7B和14B的新SOTA模型。最后，我们通过强化学习（GRPO）进一步提升了长COT模型的推理性能，训练的Light-R1-14B-DS在14B模型中实现了SOTA性能，AIME24和25得分分别为74.0和60.2，超越了许多32B模型。该系列工作验证了从头训练长COT模型的可行性，并展示了在SFT数据上的创新成果。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.10460 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文介绍了Light-R1系列模型的训练过程及其卓越表现。</p><br /><br /><p><strong>摘要：</strong> 本文展示了我们在Light-R1系列模型上的研究工作，所有模型、数据和代码均已公开。我们重点训练了从不具备长COT能力的初始模型开始的长COT模型。通过采用包括两阶段的SFT和半在线DPO的课程训练方法，我们训练的Light-R1-32B模型在数学任务上表现优于DeepSeek-R1-Distill-Qwen-32B。尽管仅使用数学数据进行训练，Light-R1-32B在其他领域也展现了强大的泛化能力。此外，我们强调了为第二阶段SFT构建的3k数据集在增强其他模型中的显著效果，通过对DeepSeek-R1-Distilled模型进行微调，获得了7B和14B的新SOTA模型。最后，我们通过强化学习（GRPO）进一步提升了长COT模型的推理性能，训练的Light-R1-14B-DS在14B模型中实现了SOTA性能，AIME24和25得分分别为74.0和60.2，超越了许多32B模型。该系列工作验证了从头训练长COT模型的可行性，并展示了在SFT数据上的创新成果。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.10460" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 13 Mar 2025 11:29:22 GMT</pubDate>
 <pubDate>Thu, 13 Mar 2025 11:29:22 GMT</pubDate>
 </item>
 <item>
@@ -153,11 +166,8 @@
 <link>https://arxiv.org/abs/2503.10437</link>
 <guid>https://arxiv.org/abs/2503.10437</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>4D LangSplat实现了动态场景中时间敏感的语言查询。</p><br><br><p><strong>摘要：</strong> 本文提出了4D LangSplat，一个用于动态场景中的4D语言场学习的模型。相较于传统的CLIP特征，4D LangSplat能够更好地处理时间敏感和时间无关的开放词汇查询，通过直接从多模态大语言模型生成的对象级视频字幕中学习。该模型利用视觉和文本提示的多模态对象视频提示方法生成高质量、一致性的对象字幕，为开放词汇文本查询提供了像素对齐的特征监督。此外，作者还引入了状态可变形网络，旨在有效地建模动态场景中对象状态的连续变化。实验证明，4D LangSplat在多个基准测试中表现出色，显示出其在处理复杂动态场景中的高效性和精准性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.10437 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">4D LangSplat实现了动态场景中时间敏感的语言查询。</p><br /><br /><p><strong>摘要：</strong> 本文提出了4D LangSplat，一个用于动态场景中的4D语言场学习的模型。相较于传统的CLIP特征，4D LangSplat能够更好地处理时间敏感和时间无关的开放词汇查询，通过直接从多模态大语言模型生成的对象级视频字幕中学习。该模型利用视觉和文本提示的多模态对象视频提示方法生成高质量、一致性的对象字幕，为开放词汇文本查询提供了像素对齐的特征监督。此外，作者还引入了状态可变形网络，旨在有效地建模动态场景中对象状态的连续变化。实验证明，4D LangSplat在多个基准测试中表现出色，显示出其在处理复杂动态场景中的高效性和精准性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.10437" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 13 Mar 2025 10:58:22 GMT</pubDate>
 <pubDate>Thu, 13 Mar 2025 10:58:22 GMT</pubDate>
 </item>
 <item>
@@ -165,11 +175,8 @@
 <link>https://arxiv.org/abs/2503.10391</link>
 <guid>https://arxiv.org/abs/2503.10391</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出CINEMA框架，增强多主体视频生成的连贯性与一致性。</p><br><br><p><strong>摘要：</strong> 随着深度生成模型的发展，视频生成取得了显著进展，但个性化的多主体视频生成仍然面临诸多挑战。现有方法通常依赖于将主体图像映射到文本提示中的关键字，这一过程带来了歧义，并限制了主体间关系的建模能力。本文提出了CINEMA，一个创新的方案，通过多模态大语言模型（MLLM）实现一致的多主体视频生成。其方法消除了主体图像与文本实体之间的显式对应需求，从而减少了歧义和标注工作量。通过利用MLLM理解主体关系，该方法提高了可扩展性，便于使用大量多样化的数据集进行训练。此外，CINEMA框架能够适应不同数量的主体条件，提供了个性化内容创作的更大灵活性。经过广泛评估，结果显示该方法在主体一致性和整体视频连贯性上显著改进，为故事讲述、互动媒体及个性化视频生成的高级应用铺平了道路。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.10391 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出CINEMA框架，增强多主体视频生成的连贯性与一致性。</p><br /><br /><p><strong>摘要：</strong> 随着深度生成模型的发展，视频生成取得了显著进展，但个性化的多主体视频生成仍然面临诸多挑战。现有方法通常依赖于将主体图像映射到文本提示中的关键字，这一过程带来了歧义，并限制了主体间关系的建模能力。本文提出了CINEMA，一个创新的方案，通过多模态大语言模型（MLLM）实现一致的多主体视频生成。其方法消除了主体图像与文本实体之间的显式对应需求，从而减少了歧义和标注工作量。通过利用MLLM理解主体关系，该方法提高了可扩展性，便于使用大量多样化的数据集进行训练。此外，CINEMA框架能够适应不同数量的主体条件，提供了个性化内容创作的更大灵活性。经过广泛评估，结果显示该方法在主体一致性和整体视频连贯性上显著改进，为故事讲述、互动媒体及个性化视频生成的高级应用铺平了道路。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.10391" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 13 Mar 2025 10:07:58 GMT</pubDate>
 <pubDate>Thu, 13 Mar 2025 10:07:58 GMT</pubDate>
 </item>
 <item>
@@ -177,11 +184,8 @@
 <link>https://arxiv.org/abs/2503.10351</link>
 <guid>https://arxiv.org/abs/2503.10351</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>大型推理模型通过动态推理重塑机器翻译的传统模式。</p><br><br><p><strong>摘要：</strong> 近期大型推理模型（LRMs）特别是链式推理（CoT）的进展，为机器翻译（MT）开辟了新可能性。本文讨论LRMs如何通过重新定义翻译为需要上下文、文化和语言理解的动态推理任务，显著改变了传统神经MT和基于LLMs的MT范式。LRMs在翻译中的三个基础转变包括：1) 上下文连贯性，通过跨句子和复杂上下文的显性推理解决歧义；2) 文化意图，通过推测说话者意图、听众期待和社会语言规范来调整输出；3) 自我反思，LRMs在推理时进行自我反思，校正潜在翻译错误，提高了鲁棒性。文章还探讨了风格化翻译、文档级翻译和多模态翻译的各种场景，展示了LRMs在这些领域的优势，以及自动中介翻译和过度本地化等挑战。总之，LRMs重新定义了翻译系统，使其不仅仅是文本转换器，而是能够超越文本理解含义的多语言认知主体。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.10351 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">大型推理模型通过动态推理重塑机器翻译的传统模式。</p><br /><br /><p><strong>摘要：</strong> 近期大型推理模型（LRMs）特别是链式推理（CoT）的进展，为机器翻译（MT）开辟了新可能性。本文讨论LRMs如何通过重新定义翻译为需要上下文、文化和语言理解的动态推理任务，显著改变了传统神经MT和基于LLMs的MT范式。LRMs在翻译中的三个基础转变包括：1) 上下文连贯性，通过跨句子和复杂上下文的显性推理解决歧义；2) 文化意图，通过推测说话者意图、听众期待和社会语言规范来调整输出；3) 自我反思，LRMs在推理时进行自我反思，校正潜在翻译错误，提高了鲁棒性。文章还探讨了风格化翻译、文档级翻译和多模态翻译的各种场景，展示了LRMs在这些领域的优势，以及自动中介翻译和过度本地化等挑战。总之，LRMs重新定义了翻译系统，使其不仅仅是文本转换器，而是能够超越文本理解含义的多语言认知主体。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.10351" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 13 Mar 2025 09:27:53 GMT</pubDate>
 <pubDate>Thu, 13 Mar 2025 09:27:53 GMT</pubDate>
 </item>
 <item>
@@ -189,11 +193,8 @@
 <link>https://arxiv.org/abs/2503.10072</link>
 <guid>https://arxiv.org/abs/2503.10072</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究显示错误报告讨论中的毒性对开源开发合作有重大影响。</p><br><br><p><strong>摘要：</strong> 本研究分析了GitHub上203个错误报告线程，探讨了毒性在错误报告讨论中的表现及影响。尽管错误报告对于识别和解决缺陷至关重要，但其问题导向的特性和情感因素使其易受毒性互动的影响。研究发现，毒性常常源于对错误严重性和优先级的误解、对工具的不满以及职业沟通的缺失。这些毒性互动不仅干扰了有效的讨论，还降低了产出可行结果的可能性。为缓解这种毒性，我们提出了一些切实可行的建议，以促进错误的解决。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.10072 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究显示错误报告讨论中的毒性对开源开发合作有重大影响。</p><br /><br /><p><strong>摘要：</strong> 本研究分析了GitHub上203个错误报告线程，探讨了毒性在错误报告讨论中的表现及影响。尽管错误报告对于识别和解决缺陷至关重要，但其问题导向的特性和情感因素使其易受毒性互动的影响。研究发现，毒性常常源于对错误严重性和优先级的误解、对工具的不满以及职业沟通的缺失。这些毒性互动不仅干扰了有效的讨论，还降低了产出可行结果的可能性。为缓解这种毒性，我们提出了一些切实可行的建议，以促进错误的解决。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.10072" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 13 Mar 2025 01:39:29 GMT</pubDate>
 <pubDate>Thu, 13 Mar 2025 01:39:29 GMT</pubDate>
 </item>
 <item>
@@ -201,11 +202,8 @@
 <link>https://arxiv.org/abs/2503.09905</link>
 <guid>https://arxiv.org/abs/2503.09905</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究Whisper模型及其变体在语音转录中的表现与量化影响。</p><br><br><p><strong>摘要：</strong> 本文研究了自动语音识别(ASR)模型Whisper及其两个变体，分别针对实时语音流和离线转录进行优化。研究发现，这些模型生成的幻觉内容降低了转录的可靠性，同时较大模型变体的延迟增加，对资源受限设备的部署构成挑战。本文通过定性分析三种Whisper模型的相似性与差异，接着量化模型量化对延迟的影响，并评估其在边缘设备部署的可行性。使用开源LibriSpeech数据集，评估了whispercpp在三种量化方法(INT4、INT5、INT8)下的字错误率(WER)及延迟分析。结果表明，量化可将延迟降低19%并将模型大小减少45%，同时保持转录准确率。这些发现为不同Whisper模型的最佳应用场景及边缘设备的部署可能性提供了洞见。所有代码、数据集和实现细节已在公共GitHub库中发布。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.09905 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究Whisper模型及其变体在语音转录中的表现与量化影响。</p><br /><br /><p><strong>摘要：</strong> 本文研究了自动语音识别(ASR)模型Whisper及其两个变体，分别针对实时语音流和离线转录进行优化。研究发现，这些模型生成的幻觉内容降低了转录的可靠性，同时较大模型变体的延迟增加，对资源受限设备的部署构成挑战。本文通过定性分析三种Whisper模型的相似性与差异，接着量化模型量化对延迟的影响，并评估其在边缘设备部署的可行性。使用开源LibriSpeech数据集，评估了whispercpp在三种量化方法(INT4、INT5、INT8)下的字错误率(WER)及延迟分析。结果表明，量化可将延迟降低19%并将模型大小减少45%，同时保持转录准确率。这些发现为不同Whisper模型的最佳应用场景及边缘设备的部署可能性提供了洞见。所有代码、数据集和实现细节已在公共GitHub库中发布。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.09905" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 12 Mar 2025 19:50:35 GMT</pubDate>
 <pubDate>Wed, 12 Mar 2025 19:50:35 GMT</pubDate>
 </item>
 <item>
@@ -213,11 +211,8 @@
 <link>https://arxiv.org/abs/2503.09669</link>
 <guid>https://arxiv.org/abs/2503.09669</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种新的数据中毒方法，悄然植入品牌标志于生成图像中。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种静默品牌攻击的方法，这是一种针对文本生成图像扩散模型的新型数据中毒技术。我们发现，通过在训练数据中反复使用特定的视觉模式，模型能够自然生成包含这些模式的图像，即使没有文本提示。我们开发了一种自动化的数据中毒算法，能够无缝地将品牌标志注入原始图像中，并确保其与背景自然融合，不易被检测。经过实验验证，该方法在大规模高质量图像数据集和风格个性化数据集上表现出色，成功将标志嵌入生成的图像中，而不会影响图像质量和文本对齐。人类评估和定量指标（包括标志检测）显示，该方法能够隐秘地嵌入品牌标志，具有高成功率。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.09669 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种新的数据中毒方法，悄然植入品牌标志于生成图像中。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种静默品牌攻击的方法，这是一种针对文本生成图像扩散模型的新型数据中毒技术。我们发现，通过在训练数据中反复使用特定的视觉模式，模型能够自然生成包含这些模式的图像，即使没有文本提示。我们开发了一种自动化的数据中毒算法，能够无缝地将品牌标志注入原始图像中，并确保其与背景自然融合，不易被检测。经过实验验证，该方法在大规模高质量图像数据集和风格个性化数据集上表现出色，成功将标志嵌入生成的图像中，而不会影响图像质量和文本对齐。人类评估和定量指标（包括标志检测）显示，该方法能够隐秘地嵌入品牌标志，具有高成功率。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.09669" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 12 Mar 2025 13:21:57 GMT</pubDate>
 <pubDate>Wed, 12 Mar 2025 13:21:57 GMT</pubDate>
 </item>
 <item>
@@ -225,11 +220,8 @@
 <link>https://arxiv.org/abs/2503.09642</link>
 <guid>https://arxiv.org/abs/2503.09642</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>Open-Sora 2.0是一个成本可控的高效视频生成模型，促进内容创作的创新。</p><br><br><p><strong>摘要：</strong> 在过去一年，视频生成模型取得显著进展，但与此同时，模型规模、数据量及训练计算需求也显著增加。本报告介绍了Open-Sora 2.0，一个仅用20万美元训练的商业级视频生成模型。我们展示了如何通过数据整理、模型架构、训练策略和系统优化等技术，实现高效的成本控制。根据人类评估结果和VBench评分，Open-Sora 2.0的表现与全球顶尖的视频生成模型相媲美，包括开源的HunyuanVideo和闭源的Runway Gen-3 Alpha。我们将Open-Sora 2.0完全开源，以此来民主化访问先进的视频生成技术，促进内容创作的更广泛创新与创造性。所有相关资源已在GitHub上公开。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.09642 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">Open-Sora 2.0是一个成本可控的高效视频生成模型，促进内容创作的创新。</p><br /><br /><p><strong>摘要：</strong> 在过去一年，视频生成模型取得显著进展，但与此同时，模型规模、数据量及训练计算需求也显著增加。本报告介绍了Open-Sora 2.0，一个仅用20万美元训练的商业级视频生成模型。我们展示了如何通过数据整理、模型架构、训练策略和系统优化等技术，实现高效的成本控制。根据人类评估结果和VBench评分，Open-Sora 2.0的表现与全球顶尖的视频生成模型相媲美，包括开源的HunyuanVideo和闭源的Runway Gen-3 Alpha。我们将Open-Sora 2.0完全开源，以此来民主化访问先进的视频生成技术，促进内容创作的更广泛创新与创造性。所有相关资源已在GitHub上公开。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.09642" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 12 Mar 2025 01:00:07 GMT</pubDate>
 <pubDate>Wed, 12 Mar 2025 01:00:07 GMT</pubDate>
 </item>
 <item>
@@ -237,14 +229,10 @@
 <link>https://arxiv.org/abs/2503.04723</link>
 <guid>https://arxiv.org/abs/2503.04723</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>探讨长输出生成在长文本理解中的重要性和研究缺口。</p><br><br><p><strong>摘要：</strong> 近年来，长上下文大语言模型（LLMs）的进展主要集中在处理扩展输入上下文上，长文本理解取得了显著成绩。然而，生成长文本输出的能力却受到较少关注。本文呼吁自然语言处理（NLP）研究转向应对长输出生成的挑战，这对于小说创作、长期规划和复杂推理等任务尤为重要，需要模型理解广泛的上下文并生成连贯、富有情境感和逻辑一致的扩展文本。由此，当前LLM能力中存在的关键缺口得到凸显，强调了这一未被充分探索领域的重要性，并呼吁针对开发能够生成高质量长输出的基础LLM进行更深入的研究，这在实际应用中具有巨大潜力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.04723 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">探讨长输出生成在长文本理解中的重要性和研究缺口。</p><br /><br /><p><strong>摘要：</strong> 近年来，长上下文大语言模型（LLMs）的进展主要集中在处理扩展输入上下文上，长文本理解取得了显著成绩。然而，生成长文本输出的能力却受到较少关注。本文呼吁自然语言处理（NLP）研究转向应对长输出生成的挑战，这对于小说创作、长期规划和复杂推理等任务尤为重要，需要模型理解广泛的上下文并生成连贯、富有情境感和逻辑一致的扩展文本。由此，当前LLM能力中存在的关键缺口得到凸显，强调了这一未被充分探索领域的重要性，并呼吁针对开发能够生成高质量长输出的基础LLM进行更深入的研究，这在实际应用中具有巨大潜力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.04723" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Thu, 06 Mar 2025 13:59:37 GMT</pubDate>
-<pubDate>Thu, 06 Mar 2025 13:59:37 GMT</pubDate>
 </item>
-
 <item>
 <title>Search-R1：通过强化学习优化的大型语言模型检索能力</title>
 <link>https://arxiv.org/abs/2503.09516</link>
