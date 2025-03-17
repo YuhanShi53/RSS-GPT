@@ -5,15 +5,97 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>VGGT：高效的3D场景属性推断网络</title>
+<link>https://arxiv.org/abs/2503.11651</link>
+<guid>https://arxiv.org/abs/2503.11651</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>VGGT网络实现高效推断3D场景的关键属性，提升多个3D任务表现。</p><br><br><p><strong>摘要：</strong> VGGT是一个前馈神经网络，能够从单个或多个视图中直接推断3D场景的所有关键属性，包括摄像机参数、点图、深度图和3D点轨迹。这一方法使得3D计算机视觉取得进展，打破了以往模型专注于单一任务的局限性。VGGT不仅重建图像速度快，耗时不足一秒，还在无需后处理的情况下超越了依赖视觉几何优化技术的替代方案。此外，该网络在摄像机参数估计、多视图深度估计、密集点云重构和3D点跟踪等多个3D任务中达到了最先进的效果。使用预训练的VGGT作为特征骨干网络显著提升下游任务的表现，如非刚体点跟踪和前馈新视图合成。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.11651 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 14 Mar 2025 13:59:47 GMT</pubDate>
+<pubDate>Fri, 14 Mar 2025 13:59:47 GMT</pubDate>
+</item>
+<item>
+<title>TreeMeshGPT：高质量艺术网格生成的新方法</title>
+<link>https://arxiv.org/abs/2503.11629</link>
+<guid>https://arxiv.org/abs/2503.11629</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>TreeMeshGPT通过动态树结构生成高质量艺术网格，改善点云匹配。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种新型自回归变换器TreeMeshGPT，旨在生成与输入点云对齐的高质量艺术网格。与传统的下一个标记预测不同，TreeMeshGPT采用了一种新颖的自回归树序列策略，在这种策略下，下一输入标记是通过基于网格面之间三角形邻接关系的动态增长树结构检索而来。这种序列化方法使得每一步的网格扩展局限于最后生成的三角形面，从而降低了训练难度并提高了网格质量。该模型以两个标记表示每个三角形面，与标准面标记化相比，实现了约22%的压缩率。通过这种高效的标记化方法，TreeMeshGPT能够在强点云条件下生成高度细致的艺术网格，在容量和保真度上超越了以往的方法。此外，本文的方法还生成具有强法线方向约束的网格，减少了常见的翻转法线问题。实验表明，TreeMeshGPT有效提升了网格生成的质量，细节更加精细，法线方向一致性更强。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.11629 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 14 Mar 2025 13:48:06 GMT</pubDate>
+<pubDate>Fri, 14 Mar 2025 13:48:06 GMT</pubDate>
+</item>
+<item>
+<title>VAMBA：高效处理长视频的混合变换器模型</title>
+<link>https://arxiv.org/abs/2503.11579</link>
+<guid>https://arxiv.org/abs/2503.11579</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>VAMBA模型通过线性复杂度编码长视频，提高效率和准确性。</p><br><br><p><strong>摘要：</strong> 本论文提出了一种名为VAMBA的混合Mamba-Transformer模型，旨在高效处理长达数小时的视频输入。传统的基于变换器的多模态模型由于因果自注意力操作的平方复杂性而面临训练和推断时的高计算成本。通过采用线性复杂度的Mamba-2块，VAMBA能够在不减少视频Token的情况下，在单个GPU上编码超过1024帧（640x360）。与只能处理256帧的传统变换器模型相比，VAMBA在训练和推断期间的GPU内存使用减少了至少50%，训练步骤速度几乎翻倍。此外，VAMBA在挑战性的小时级视频理解基准LVBench上，准确率提高了4.3%，同时在多种长短视频理解任务中保持了较强的性能。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.11579 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 14 Mar 2025 12:45:23 GMT</pubDate>
+<pubDate>Fri, 14 Mar 2025 12:45:23 GMT</pubDate>
+</item>
+<item>
+<title>SmolDocling：超紧凑的文档转换视觉语言模型</title>
+<link>https://arxiv.org/abs/2503.11576</link>
+<guid>https://arxiv.org/abs/2503.11576</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>SmolDocling是一种新型文档转换模型，能够高效处理全页内容。</p><br><br><p><strong>摘要：</strong> SmolDocling是一种超紧凑的视觉语言模型，专注于文档的端到端转换。它生成一种新的通用标记格式DocTags，能够全面处理整个页面上的所有元素，并保留其上下文和位置信息。与依赖大型基础模型或多个专用模型的传统方法不同，SmolDocling以256M参数的规模，实现了内容、结构与空间位置的精确捕捉。该模型在重现包括代码清单、表格、方程式、图表和列表等文档特征上表现出色，适用于商业文档、学术论文、技术报告、专利和表单等多种文档类型。实验结果显示，SmolDocling在性能上与其他高达27倍模型体积的视觉语言模型相抗衡，同时显著降低了计算需求。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.11576 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 14 Mar 2025 12:44:14 GMT</pubDate>
+<pubDate>Fri, 14 Mar 2025 12:44:14 GMT</pubDate>
+</item>
+<item>
+<title>将多语言大型语言模型扩展至语音模态的研究</title>
+<link>https://arxiv.org/abs/2503.10620</link>
+<guid>https://arxiv.org/abs/2503.10620</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究将多语言大型语言模型扩展到语音模态的可行性。</p><br><br><p><strong>摘要：</strong> 本文探讨了如何将大型语言模型（LLMs）扩展至语音模态，尤以多语言模型为重点。我们通过语音离散化和持续预训练的方式，将现有的多语言大型语言模型TOWER扩展至能够处理语音输入的模型SPIRE。该模型不仅能够转录和翻译英语语音输入，还保持了原有TOWER模型在翻译相关任务中的性能表现。研究表明，将离散语音输入作为额外的翻译语言进行集成，在大型语言模型的适应过程中是可行的。我们将代码和模型开源，推动该领域的进一步研究。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.10620 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 13 Mar 2025 13:57:32 GMT</pubDate>
+<pubDate>Thu, 13 Mar 2025 13:57:32 GMT</pubDate>
+</item>
+<item>
+<title>群体鲁棒的机器遗忘：解决非均匀分布遗忘集的问题</title>
+<link>https://arxiv.org/abs/2503.09330</link>
+<guid>https://arxiv.org/abs/2503.09330</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出一种新的机器遗忘方法，解决非均匀遗忘集引发的公平性问题。</p><br><br><p><strong>摘要：</strong> 在机器遗忘的研究中，传统方法假设遗忘数据均匀分布，但当遗忘数据在某一群体中占主导时，模型性能会显著下降，导致公平性问题。本文提出了一种名为群体鲁棒机器遗忘的新策略，采用样本分布重加权方法来减轻主导群体的性能损失。此外，我们引入了MIU（互信息感知机器遗忘），这是首个针对近似机器遗忘中的群体鲁棒性的方法。MIU通过最小化模型特征与群体信息之间的互信息，实现遗忘的同时减少主导群体的性能下降。实验表明，MIU优于标准方法，实现了不损害模型鲁棒性的遗忘效果，并确保了群体的鲁棒性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.09330 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 12 Mar 2025 08:24:05 GMT</pubDate>
+<pubDate>Wed, 12 Mar 2025 08:24:05 GMT</pubDate>
+</item>
+<item>
+<title>基于自监督学习的视频技能边界检测</title>
+<link>https://arxiv.org/abs/2503.10684</link>
+<guid>https://arxiv.org/abs/2503.10684</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种自监督方法，对视频进行技能边界检测和分割，提升任务性能。</p><br><br><p><strong>摘要：</strong> 在开放世界环境中学习技能是开发能够执行多种任务的代理的重要环节。我们提出一种基于自监督学习的技能边界检测（SBD）算法，无需人工标注即可将长视频分割成具有语义一致性的片段。通过分析从预训练的无条件动作预测模型中获取的预测误差，SBD可以检测到技能执行中的边界变化。我们在Minecraft上进行了评估，结果表明，SBD生成的片段在短期原子技能任务中的表现提升了63.7%和52.1%，而在长期任务中的层次代理表现提升了11.3%和20.8%。这一方法可利用多样化的YouTube视频来训练遵循指令的代理。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.10684 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 11 Mar 2025 14:51:40 GMT</pubDate>
+<pubDate>Tue, 11 Mar 2025 14:51:40 GMT</pubDate>
+</item>
+
+<item>
 <title>基于密集边界框的视频字幕生成与物体定位新方法</title>
 <link>https://arxiv.org/abs/2503.10781</link>
 <guid>https://arxiv.org/abs/2503.10781</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种新方法，通过密集边界框实现视频中的物体定位与字幕生成。</p><br><br><p><strong>摘要：</strong> 本文提出了一种新的视频字幕生成与物体定位的方法，利用时间密集的边界框将字幕中的物体与视频中的对象相结合。我们首先介绍了一种大规模的自动注释方法，通过在单帧上聚合边界框的字幕，构建出时间一致的密集边界框注释数据集HowToGround1M。在此基础上，我们推出了GROVE模型，并进行预训练。此外，我们还创建了一个新的数据集iGround，包含3500个手动注释的视频及其密集的时空定位边界框，以衡量在这一领域的进展。我们的研究证明，该方法在iGround、VidSTG及ActivityNet-Entities等数据集上均实现了领先的结果，验证了在自动注释数据集上进行预训练并在手动注释小规模数据集上微调的重要性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.10781 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种新方法，通过密集边界框实现视频中的物体定位与字幕生成。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种新的视频字幕生成与物体定位的方法，利用时间密集的边界框将字幕中的物体与视频中的对象相结合。我们首先介绍了一种大规模的自动注释方法，通过在单帧上聚合边界框的字幕，构建出时间一致的密集边界框注释数据集HowToGround1M。在此基础上，我们推出了GROVE模型，并进行预训练。此外，我们还创建了一个新的数据集iGround，包含3500个手动注释的视频及其密集的时空定位边界框，以衡量在这一领域的进展。我们的研究证明，该方法在iGround、VidSTG及ActivityNet-Entities等数据集上均实现了领先的结果，验证了在自动注释数据集上进行预训练并在手动注释小规模数据集上微调的重要性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.10781" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 13 Mar 2025 14:21:07 GMT</pubDate>
 <pubDate>Thu, 13 Mar 2025 14:21:07 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +103,8 @@
 <link>https://arxiv.org/abs/2503.10624</link>
 <guid>https://arxiv.org/abs/2503.10624</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>ETC方法通过局部SE(3)等变性提升衣着人类的身体拟合效果。</p><br><br><p><strong>摘要：</strong> 本文提出了一种新颖的身体拟合管道，称为等变紧密度拟合（ETCH），旨在通过局部近似SE(3)等变性来估计衣物与身体之间的表面映射。该方法将紧密度编码为从衣物表面对基础身体的位移向量，通过这一映射，依据姿势不变的身体特征回归稀疏的身体标记，简化了衣着人类的拟合过程。通过在CAPE和4D-Dress数据集上的广泛实验，ETCH在松散衣物的身体拟合准确性上显著超过了现有的最先进方法，精度提升范围为16.7%至69.5%，形状准确性平均提高49.9%。在一次性（或离群）设置中，我们的等变紧密度设计甚至将方向性错误减少了67.2%至89.8%。定性结果证明，ETCH在应对困难姿势、未见形状、松散衣物和非刚性动态方面展现了强大的泛化能力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.10624 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">ETC方法通过局部SE(3)等变性提升衣着人类的身体拟合效果。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种新颖的身体拟合管道，称为等变紧密度拟合（ETCH），旨在通过局部近似SE(3)等变性来估计衣物与身体之间的表面映射。该方法将紧密度编码为从衣物表面对基础身体的位移向量，通过这一映射，依据姿势不变的身体特征回归稀疏的身体标记，简化了衣着人类的拟合过程。通过在CAPE和4D-Dress数据集上的广泛实验，ETCH在松散衣物的身体拟合准确性上显著超过了现有的最先进方法，精度提升范围为16.7%至69.5%，形状准确性平均提高49.9%。在一次性（或离群）设置中，我们的等变紧密度设计甚至将方向性错误减少了67.2%至89.8%。定性结果证明，ETCH在应对困难姿势、未见形状、松散衣物和非刚性动态方面展现了强大的泛化能力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.10624" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 13 Mar 2025 13:59:14 GMT</pubDate>
 <pubDate>Thu, 13 Mar 2025 13:59:14 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +112,8 @@
 <link>https://arxiv.org/abs/2503.10696</link>
 <guid>https://arxiv.org/abs/2503.10696</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种新颖的邻接自回归建模方法，实现高效的视觉生成。</p><br><br><p><strong>摘要：</strong> 本文提出了一种新的邻接自回归建模（NAR）方法，通过近邻预测机制对视觉内容进行自回归生成。与传统的光栅顺序“下一个令牌预测”不同，NAR采用进步外推程序，从初始令牌出发，按曼哈顿距离逐步解码其余令牌，扩展解码区域边界。为实现空间-时间域内多个相邻令牌的并行预测，NAR引入了一组维度导向的解码头，分别沿正交维度预测下一个令牌。这种并行处理方法显著减少了生成过程中的模型前向步骤。在ImageNet和UCF101实验中，NAR分别实现了2.4倍和8.6倍的吞吐量，并在图像与视频生成任务中获得了优于PAR-4X方法的FID/FVD评分。同时，在文本到图像生成基准GenEval中，具有0.8B参数的NAR在使用仅0.4倍训练数据的情况下超越了Chameleon-7B。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.10696 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种新颖的邻接自回归建模方法，实现高效的视觉生成。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种新的邻接自回归建模（NAR）方法，通过近邻预测机制对视觉内容进行自回归生成。与传统的光栅顺序“下一个令牌预测”不同，NAR采用进步外推程序，从初始令牌出发，按曼哈顿距离逐步解码其余令牌，扩展解码区域边界。为实现空间-时间域内多个相邻令牌的并行预测，NAR引入了一组维度导向的解码头，分别沿正交维度预测下一个令牌。这种并行处理方法显著减少了生成过程中的模型前向步骤。在ImageNet和UCF101实验中，NAR分别实现了2.4倍和8.6倍的吞吐量，并在图像与视频生成任务中获得了优于PAR-4X方法的FID/FVD评分。同时，在文本到图像生成基准GenEval中，具有0.8B参数的NAR在使用仅0.4倍训练数据的情况下超越了Chameleon-7B。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.10696" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 12 Mar 2025 01:52:27 GMT</pubDate>
 <pubDate>Wed, 12 Mar 2025 01:52:27 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +121,8 @@
 <link>https://arxiv.org/abs/2503.08111</link>
 <guid>https://arxiv.org/abs/2503.08111</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>MaRI框架通过对比学习提升材料检索的准确性和真实感。</p><br><br><p><strong>摘要：</strong> 准确的材料检索对创建真实的3D资产至关重要。现有方法依赖于捕捉材料形状不变及光照变量的稀缺数据集，但由于缺乏多样性和真实世界的泛化能力，这些方法面临挑战。大部分现有方案采用传统的图像搜索技术，但无法有效捕捉材料空间的独特属性，从而导致检索性能不佳。为了解决这些问题，我们提出了MaRI框架，旨在弥合合成材料与真实材料之间的特征空间差距。MaRI通过联合训练图像编码器和材料编码器，构建一个共享的嵌入空间，并使用对比学习策略来和谐视觉与材料属性，使相似的材料与图像更接近，同时将不同的配对分隔开。为了支持这个框架，我们构建了一个高质量的综合数据集，该数据集包含在控制形状变化和多样化光照条件下渲染的合成材料，以及经过材料转移技术处理和标准化的真实材料。广泛的实验表明，MaRI在复杂的材料检索任务中展现出卓越的性能、准确性和泛化能力，优于现有方法。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.08111 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">MaRI框架通过对比学习提升材料检索的准确性和真实感。</p><br /><br /><p><strong>摘要：</strong> 准确的材料检索对创建真实的3D资产至关重要。现有方法依赖于捕捉材料形状不变及光照变量的稀缺数据集，但由于缺乏多样性和真实世界的泛化能力，这些方法面临挑战。大部分现有方案采用传统的图像搜索技术，但无法有效捕捉材料空间的独特属性，从而导致检索性能不佳。为了解决这些问题，我们提出了MaRI框架，旨在弥合合成材料与真实材料之间的特征空间差距。MaRI通过联合训练图像编码器和材料编码器，构建一个共享的嵌入空间，并使用对比学习策略来和谐视觉与材料属性，使相似的材料与图像更接近，同时将不同的配对分隔开。为了支持这个框架，我们构建了一个高质量的综合数据集，该数据集包含在控制形状变化和多样化光照条件下渲染的合成材料，以及经过材料转移技术处理和标准化的真实材料。广泛的实验表明，MaRI在复杂的材料检索任务中展现出卓越的性能、准确性和泛化能力，优于现有方法。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.08111" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 11 Mar 2025 03:23:11 GMT</pubDate>
 <pubDate>Tue, 11 Mar 2025 03:23:11 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +130,8 @@
 <link>https://arxiv.org/abs/2503.06553</link>
 <guid>https://arxiv.org/abs/2503.06553</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>ProJudgeBench为多模态大语言模型的过程评估提供了一个系统性的基准测试。</p><br><br><p><strong>摘要：</strong> 为了解决多模态大语言模型（MLLMs）在解决科学问题时常出现的错误的问题，我们提出了ProJudgeBench，这是第一个专门用于评估MLLMs过程评判能力的全面基准。该基准包含2400个测试案例和50118个步骤级标签，涵盖四个科学学科，具备多样的难度与内容。每个步骤由人类专家仔细标注其正确性、错误类型及解释，使得对模型评判能力的系统评估成为可能。评估结果显示，开源模型与专有模型之间存在显著性能差距。为缩小这一差距，我们进一步提出了ProJudge-173k，一个大规模的指令微调数据集，以及动态双相微调策略，鼓励模型在解决问题之前进行明确推理。这些贡献显著提升了开源模型的过程评估能力，所有资源将对外发布以促进未来的可靠多模态过程评估研究。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.06553 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">ProJudgeBench为多模态大语言模型的过程评估提供了一个系统性的基准测试。</p><br /><br /><p><strong>摘要：</strong> 为了解决多模态大语言模型（MLLMs）在解决科学问题时常出现的错误的问题，我们提出了ProJudgeBench，这是第一个专门用于评估MLLMs过程评判能力的全面基准。该基准包含2400个测试案例和50118个步骤级标签，涵盖四个科学学科，具备多样的难度与内容。每个步骤由人类专家仔细标注其正确性、错误类型及解释，使得对模型评判能力的系统评估成为可能。评估结果显示，开源模型与专有模型之间存在显著性能差距。为缩小这一差距，我们进一步提出了ProJudge-173k，一个大规模的指令微调数据集，以及动态双相微调策略，鼓励模型在解决问题之前进行明确推理。这些贡献显著提升了开源模型的过程评估能力，所有资源将对外发布以促进未来的可靠多模态过程评估研究。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.06553" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Sun, 09 Mar 2025 06:55:51 GMT</pubDate>
 <pubDate>Sun, 09 Mar 2025 06:55:51 GMT</pubDate>
 </item>
 <item>
@@ -69,14 +139,10 @@
 <link>https://arxiv.org/abs/2503.06542</link>
 <guid>https://arxiv.org/abs/2503.06542</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>ARMOR是一个资源高效的自回归框架，提升多模态模型的生成能力。</p><br><br><p><strong>摘要：</strong> ARMOR是一个全新的资源高效的自回归框架，旨在改善现有多模态大语言模型（MLLMs）的理解与生成能力。通过引入不对称的编码-解码架构和前向切换机制，ARMOR可以在不显著增加计算开销的情况下，实现文本与图像的自然交织生成。此外，它使用精心策划的高质量交织数据集对MLLMs进行微调。ARMOR的训练算法采用了“生成什么或如何生成”的方法，通过三个渐进的训练阶段，赋予现有MLLMs多模态生成能力的同时保持其理解能力。实验结果表明，ARMOR能够在有限的训练资源下有效地提升现有MLLMs的图像生成能力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.06542 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">ARMOR是一个资源高效的自回归框架，提升多模态模型的生成能力。</p><br /><br /><p><strong>摘要：</strong> ARMOR是一个全新的资源高效的自回归框架，旨在改善现有多模态大语言模型（MLLMs）的理解与生成能力。通过引入不对称的编码-解码架构和前向切换机制，ARMOR可以在不显著增加计算开销的情况下，实现文本与图像的自然交织生成。此外，它使用精心策划的高质量交织数据集对MLLMs进行微调。ARMOR的训练算法采用了“生成什么或如何生成”的方法，通过三个渐进的训练阶段，赋予现有MLLMs多模态生成能力的同时保持其理解能力。实验结果表明，ARMOR能够在有限的训练资源下有效地提升现有MLLMs的图像生成能力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.06542" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Sun, 09 Mar 2025 06:15:39 GMT</pubDate>
-<pubDate>Sun, 09 Mar 2025 06:15:39 GMT</pubDate>
 </item>
-
 <item>
 <title>ReCamMaster：一种新的视频重渲染框架实现动态镜头控制</title>
 <link>https://arxiv.org/abs/2503.11647</link>
