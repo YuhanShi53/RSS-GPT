@@ -4,6 +4,54 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>GASP：自主驾驶中的几何与语义自监督预训练方法</title>
+<link>https://arxiv.org/abs/2503.15672</link>
+<guid>https://arxiv.org/abs/2503.15672</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>GASP方法通过4D占据预测提升了自主驾驶性能。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为GASP的几何与语义自监督预训练方法，旨在通过预测任意未来时空点的占据信息来学习环境的统一表示。GASP主要关注三个方面：一般占据，以捕捉3D场景的演变结构；自我占据，建模自我车辆在环境中的路径；以及从视觉基础模型中提炼的高级特征。通过建模几何和语义4D占据场，而非原始传感器测量，该模型能够学习环境及其随时间演变的结构化、可推广的表示。我们在多个自主驾驶基准测试中验证了GASP，结果显示在语义占据预测、在线地图构建和自我轨迹预测方面显著提高。这一研究展示了连续的4D几何与语义占据预测为自主驾驶提供了一种可扩展和有效的预训练范式。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.15672 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Mar 2025 16:00:27 GMT</pubDate>
+<pubDate>Wed, 19 Mar 2025 16:00:27 GMT</pubDate>
+</item>
+<item>
+<title>基于深度学习的代码补全工具的组织和开发者特定微调研究</title>
+<link>https://arxiv.org/abs/2503.14201</link>
+<guid>https://arxiv.org/abs/2503.14201</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究了深度学习代码补全工具在组织和开发者特定微调中的效果。</p><br><br><p><strong>摘要：</strong> 本文探讨了基于深度学习的代码补全工具通过针对特定组织或开发者的微调提高性能的可能性。通过对来自两家组织（Apache和Spring）的136名开发者进行实验，比较了两种模型架构（T5和Code Llama）和三种模型规模（60M, 750M和7B可训练参数）的表现。结果表明，组织特定和开发者特定的微调显著提高了预测能力，尤其是组织特定微调显示出更强的性能。这一发现适用于不同组织和不同规模的模型。此外，组织特定数据集微调的深度学习模型，其完成性能达到了比起使用更大预训练模型的相同效果，从而在部署和推理成本上实现节约，降低了对GPU资源的需求。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.14201 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 18 Mar 2025 08:26:06 GMT</pubDate>
+<pubDate>Tue, 18 Mar 2025 08:26:06 GMT</pubDate>
+</item>
+<item>
+<title>Where do Large Vision-Language Models Look at when Answering Questions?</title>
+<link>https://arxiv.org/abs/2503.13891</link>
+<guid>https://arxiv.org/abs/2503.13891</guid>
+<content:encoded><![CDATA[
+
+  Large Vision-Language Models (LVLMs) have shown promising performance in vision-language understanding and reasoning tasks. However, their visual understanding behaviors remain underexplored. A fundamental question arises: to what extent do LVLMs rely on visual input, and which image regions contribute to their responses? It is non-trivial to interpret the free-form generation of LVLMs due to their complicated visual architecture (e.g., multiple encoders and multi-resolution) and variable-length outputs. In this paper, we extend existing heatmap visualization methods (e.g., iGOS++) to support LVLMs for open-ended visual question answering. We propose a method to select visually relevant tokens that reflect the relevance between generated answers and input image. Furthermore, we conduct a comprehensive analysis of state-of-the-art LVLMs on benchmarks designed to require visual information to answer. Our findings offer several insights into LVLM behavior, including the relationship between focus region and answer correctness, differences in visual attention across architectures, and the impact of LLM scale on visual understanding. The code and data are available at https://github.com/bytedance/LVLM_Interpretation.
+
+]]></content:encoded>
+<pubDate>Tue, 18 Mar 2025 00:34:43 GMT</pubDate>
+<pubDate>Tue, 18 Mar 2025 00:34:43 GMT</pubDate>
+</item>
+<item>
+<title>DeCapBench与DCScore：细节图像标注的新标准</title>
+<link>https://arxiv.org/abs/2503.07906</link>
+<guid>https://arxiv.org/abs/2503.07906</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文介绍DeCapBench和DCScore，提升细节图像标注评估效果。</p><br><br><p><strong>摘要：</strong> 图像标注一直是视觉理解的重要任务，近期视觉语言模型(VLM)的发展显著提升了图像标注的能力。然而，细节图像标注的评估仍存在不足，主要由于评价指标过时和注释粗糙。本文介绍了DeCapBench及其新指标DCScore，专为细节标注任务设计，DCScore通过将响应拆解为最小的自洽单元（基础信息单元）来评估幻觉现象和细微的全面性。实验表明，DCScore与人类判断的吻合度高于其他评估指标。同时，DeCapBench在描述性任务中的表现与VLM竞技场结果高度相关，超越了现有的视觉语言模型基准。此外，文章还提出了一种自动细粒度反馈收集方法FeedQuill，基于新指标进行偏好优化，展现出强大的泛化能力。通过对多种VLM的广泛实验，证明该方法显著减少了幻觉现象，并在各项基准测试中提升了性能，达到优越的细节图像标注表现，超越了GPT-4o。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.07906 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 10 Mar 2025 18:53:56 GMT</pubDate>
+<pubDate>Mon, 10 Mar 2025 18:53:56 GMT</pubDate>
+</item>
 
 <item>
 <title>Sonata：高效自监督点云学习模型的创新与应用</title>
