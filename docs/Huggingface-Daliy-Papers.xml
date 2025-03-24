@@ -4,6 +4,114 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>深度视觉语言模型OpenVLThinker的推理能力提升研究</title>
+<link>https://arxiv.org/abs/2503.17352</link>
+<guid>https://arxiv.org/abs/2503.17352</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究表明，OpenVLThinker在复杂推理任务中表现出色。</p><br><br><p><strong>摘要：</strong> 本研究基于DeepSeek-R1的最新成果，探讨将复杂推理能力融入大型视觉语言模型（LVLMs）的可行性，并评估其在多模态推理任务中的影响。研究采用逐步监督微调（SFT）和强化学习（RL）相结合的方法，首先从纯文本R1模型中提炼出推理能力，通过多样化视觉数据集中的高质量图像标题生成推理步骤。然后，经过迭代的RL训练不断提升推理技能，每轮RL改进的模型生成精炼的SFT数据集供下一轮使用。最终，推出的OpenVLThinker在MathVista、MathVerse和MathVision等挑战性基准测试中展现了显著的推理性能提升，证明了本策略在增强视觉语言推理中的潜力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.17352 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 21 Mar 2025 13:52:43 GMT</pubDate>
+<pubDate>Fri, 21 Mar 2025 13:52:43 GMT</pubDate>
+</item>
+<item>
+<title>FastCuRL：高效的课程强化学习方法提升推理模型性能</title>
+<link>https://arxiv.org/abs/2503.17287</link>
+<guid>https://arxiv.org/abs/2503.17287</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出FastCuRL，通过扩展上下文窗口加速推理模型训练，提升性能。</p><br><br><p><strong>摘要：</strong> 本文提出了FastCuRL，一种简单而高效的课程强化学习方法，旨在提高R1类推理模型在处理复杂推理任务时的训练效率，特别是在拥有15亿参数的语言模型上。FastCuRL包括两个主要过程：长度感知的训练数据分段和上下文窗口的扩展训练。具体而言，前者首先根据输入提示长度将原始训练数据分为三个不同的层次，后者则利用分段的训练数据集，通过逐步增加上下文窗口的长度来训练推理模型。实验结果表明，FastCuRL-1.5B-Preview在五个数据集（包括MATH 500、AIME 2024、AMC 2023、Minerva Math和OlympiadBench）上均优于DeepScaleR-1.5B-Preview，同时训练步骤仅使用50%。此外，FastCuRL-1.5B-Preview的所有训练阶段均在单节点8 GPU的环境下完成。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.17287 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 21 Mar 2025 12:35:31 GMT</pubDate>
+<pubDate>Fri, 21 Mar 2025 12:35:31 GMT</pubDate>
+</item>
+<item>
+<title>提升创意写作生成的多样性与质量</title>
+<link>https://arxiv.org/abs/2503.17126</link>
+<guid>https://arxiv.org/abs/2503.17126</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文探讨了如何在创意写作生成中提高输出的多样性与质量。</p><br><br><p><strong>摘要：</strong> 本文研究了如何在创意写作任务中提升输出的多样性及质量，探讨了后训练方法的有效性。核心思想是将偏差概念融入训练目标，这样可以通过学习高质量的稀有实例来促进模型的多样性。采用直接偏好优化（DPO）和几率比偏好优化（ORPO）的方法，我们的模型在输出多样性上达到了与人类创作数据集相媲美的水平，同时保持与最佳指令调优模型相似的输出质量。研究中还通过人类评估、消融实验以及与现有多样性方法DivPO的比较来验证所提出的方法。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.17126 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 21 Mar 2025 09:21:45 GMT</pubDate>
+<pubDate>Fri, 21 Mar 2025 09:21:45 GMT</pubDate>
+</item>
+<item>
+<title>VCtrl：提升视频生成中的细粒度控制能力</title>
+<link>https://arxiv.org/abs/2503.16983</link>
+<guid>https://arxiv.org/abs/2503.16983</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>VCtrl框架提升了视频生成过程中的细粒度控制与质量。</p><br><br><p><strong>摘要：</strong> 在视频生成研究中，尽管文本到视频生成取得了显著进展，但对细粒度时空属性的精确和灵活控制仍是一个未解决的重要挑战。为应对这些限制，本文提出了VCtrl（也称为PP-VCtrl）这一新框架，旨在以统一的方式实现对预训练视频扩散模型的细粒度控制。VCtrl通过一个通用的条件模块，将多种用户指定的控制信号（如Canny边缘、分割掩码和人体关键点）集成到预训练的视频扩散模型中，而无需修改底层生成器。此外，设计了一个统一的控制信号编码管道以及一种稀疏残差连接机制，以高效地整合控制表示。全面的实验和人类评估显示，VCtrl有效提高了可控性和生成质量，源代码和预训练模型可在PaddlePaddle框架下公开获得。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.16983 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 21 Mar 2025 05:48:00 GMT</pubDate>
+<pubDate>Fri, 21 Mar 2025 05:48:00 GMT</pubDate>
+</item>
+<item>
+<title>基于适应性DPO的图像生成模型偏好数据研究</title>
+<link>https://arxiv.org/abs/2503.16921</link>
+<guid>https://arxiv.org/abs/2503.16921</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>探讨适应性DPO在图像生成模型训练中的作用。</p><br><br><p><strong>摘要：</strong> 近年来，图像生成领域的进展显著，特别是在调整模型以符合人类普遍偏好的方法上。本文研究了偏好数据在扩散模型训练中的关键作用，特别是Diffusion-DPO及其后续适应情况。我们探讨了图像生成中普遍人类偏好的复杂性，强调了这些偏好的主观特点及偏好数据集中少数样本所带来的挑战。通过试验，我们证明了少数样本的存在及其对模型性能的负面影响。为此，我们提出了一种新方法Adaptive-DPO，采用了少数样本意识度量来优化DPO目标函数。此度量结合了标注者内部信心和标注者间稳定性，区分了多数和少数样本，最终引入了Adaptive-DPO损失函数。此方法不仅增强了模型对多数标签的学习能力，同时也减轻了少数样本的负面影响，通过实验验证了其对合成少数数据和真实偏好数据的有效处理，推动了图像生成任务中更有效的训练方法的发展。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.16921 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 21 Mar 2025 03:33:44 GMT</pubDate>
+<pubDate>Fri, 21 Mar 2025 03:33:44 GMT</pubDate>
+</item>
+<item>
+<title>基于多智能体框架的多模态科学问题解决策略</title>
+<link>https://arxiv.org/abs/2503.16905</link>
+<guid>https://arxiv.org/abs/2503.16905</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出基于多智能体框架的解决策略，显著提高多模态科学问题的处理能力。</p><br><br><p><strong>摘要：</strong> 本文针对多模态科学问题（MSPs）的复杂性，提出了一种基于多智能体框架的解决策略。传统科学问题的解决尽管已有进展，但MSPs在多模态综合推理和反思能力方面仍面临挑战。为此，我们引入了Big Seven Personality与苏格拉底指导原则（MAPS），利用七个不同的智能体通过反馈机制和苏格拉底方法来引导问题解决。我们提出四种智能体的逐步解决策略，聚焦于问题解决过程的不同阶段，并引入批判智能体，激发批判性思维和自主学习。通过在EMMA、Olympiad和MathVista数据集上的大量实验证明，该方法在所有任务上较现有最优模型提升了15.84%的表现，同时也验证了模型的进步及其泛化能力。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.16905 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 21 Mar 2025 03:13:45 GMT</pubDate>
+<pubDate>Fri, 21 Mar 2025 03:13:45 GMT</pubDate>
+</item>
+<item>
+<title>基于多智能体框架的自动化提示优化方法</title>
+<link>https://arxiv.org/abs/2503.16874</link>
+<guid>https://arxiv.org/abs/2503.16874</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出MARS框架，通过多代理系统优化提示，提高问答模型的响应质量。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为MARS（多智能体框架结合苏格拉底指导）的自动化提示优化方法，以解决传统手动设计提示的认知偏见和现有方法在提示空间搜索中的灵活性不足等问题。MARS框架包含七个功能各异的智能代理，通过规划者自主设计优化路径，实现了优化过程的灵活性。此外，采用教师-批评者-学生的苏格拉底对话模式，MARS能够迭代优化提示并进行有效的搜索。我们在多个数据集上进行了广泛实验，以验证该方法的有效性，并进行附加分析实验以评估模型的进展和可解释性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.16874 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 21 Mar 2025 02:19:55 GMT</pubDate>
+<pubDate>Fri, 21 Mar 2025 02:19:55 GMT</pubDate>
+</item>
+<item>
+<title>TokenBridge：结合离散与连续Token的视觉生成模型</title>
+<link>https://arxiv.org/abs/2503.16430</link>
+<guid>https://arxiv.org/abs/2503.16430</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出TokenBridge，通过后训练量化优化视觉生成模型。</p><br><br><p><strong>摘要：</strong> 本文提出了一种新的视觉生成模型TokenBridge，旨在解决离散和连续Token表示之间的矛盾。离散Token虽然易于用标准交叉熵损失进行建模，但却存在信息丢失和训练不稳定的问题；而连续Token虽然能更好地保留视觉细节，却需要复杂的分布建模，增加了生成管道的复杂性。TokenBridge通过后训练量化将离散化与tokenizer训练过程解耦，使得可以从连续表示中直接获得离散Token。具体来说，采用维度独立的量化策略，将每个特征维度独立离散化，并配合轻量级的自回归预测机制，有效建模生成的大Token空间。实验结果表明，该方法在重建和生成质量上与连续方法相当，同时采用标准的分类预测。此研究展示了离散与连续模型的结合能有效发挥两者的优势，为高质量视觉生成开辟了新的方向。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.16430 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 20 Mar 2025 13:59:59 GMT</pubDate>
+<pubDate>Thu, 20 Mar 2025 13:59:59 GMT</pubDate>
+</item>
+<item>
+<title>多智能体系统的组合约束与自动数据收集框架设计</title>
+<link>https://arxiv.org/abs/2503.16408</link>
+<guid>https://arxiv.org/abs/2503.16408</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出组合约束与自动化数据收集，推动多智能体系统发展。</p><br><br><p><strong>摘要：</strong> 本文提出了一种针对多智能体系统的组合约束概念，解决了现有方法在生成安全高效训练数据时面临的挑战。通过设计针对不同类型约束的多个接口，实现了与物理世界的无缝互动。基于这一理念，开发了一种自动数据收集框架，并推出了首个多智能体操作基准RoboFactory。此外，本文探讨了多智能体模仿学习的架构与训练策略，以期建立安全且高效的多智能体系统。在RoboFactory基准上，适配并评估了模仿学习方法，分析了其在不同难度任务中的表现。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.16408 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 20 Mar 2025 13:58:38 GMT</pubDate>
+<pubDate>Thu, 20 Mar 2025 13:58:38 GMT</pubDate>
+</item>
 
 <item>
 <title>GASP：自主驾驶中的几何与语义自监督预训练方法</title>
