@@ -5,15 +5,37 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>Vision-Language奖励模型的评估与进展</title>
+<link>https://arxiv.org/abs/2503.20271</link>
+<guid>https://arxiv.org/abs/2503.20271</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文探索视觉语言领域中奖励模型的评估，提出了ViLBench基准。</p><br><br><p><strong>摘要：</strong> 本文探讨了过程监督奖励模型（PRM）在视觉语言领域的应用与挑战，尤其是在评估方面的不足。通过对当前视觉大型语言模型（VLLM）进行基准测试，研究发现输出奖励模型（ORM）和过程奖励模型（PRM）在多个视觉语言基准中的表现并不稳定，且更优的VLLM并不一定带来更好的奖励表现。为提升评估能力，本文引入了ViLBench，一个要求强烈过程奖励信号的视觉语言基准，显示了当前VLLM在此基准下挑战性极高，OpenAI的GPT-4o仅达到27.3%的准确率。此外，通过使用增强的树搜索算法收集73.6K视觉语言过程奖励数据，研究表明我们的3B模型在ViLBench上相比于标准的Chain-of-Thought（CoT）平均提高了3.3%。本文的研究成果及实现代码已开放，助力未来的奖励模型研究与应用。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.20271 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 26 Mar 2025 02:38:31 GMT</pubDate>
+<pubDate>Wed, 26 Mar 2025 02:38:31 GMT</pubDate>
+</item>
+<item>
+<title>利用运动模糊进行稳健的相机运动估计</title>
+<link>https://arxiv.org/abs/2503.17358</link>
+<guid>https://arxiv.org/abs/2503.17358</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新方法，通过运动模糊进行相机运动估计。</p><br><br><p><strong>摘要：</strong> 本文提出了一种新颖的框架，将运动模糊视为运动估计的有效信息，而非不必要的伪影。该方法通过单张运动模糊图像直接预测密集运动流场和单目深度图，并在小运动假设下，通过解决线性最小二乘问题来恢复瞬时相机速度。这一方法有效捕捉快速相机运动，产生类似于IMU的测量。为训练模型，构建了一个大规模数据集，并通过全微分管道在真实数据上进行端到端训练。大量的实地评估表明，该方法在角速度和位移估计方面均达到了最先进的水平，表现优于现有方法如MASt3R和COLMAP。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.17358 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 21 Mar 2025 13:58:56 GMT</pubDate>
+<pubDate>Fri, 21 Mar 2025 13:58:56 GMT</pubDate>
+</item>
+
+<item>
 <title>Qwen2.5-Omni：多模态流处理模型的创新与应用</title>
 <link>https://arxiv.org/abs/2503.20215</link>
 <guid>https://arxiv.org/abs/2503.20215</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>Qwen2.5-Omni是一个先进的多模态流处理模型，支持文本、图像、音频和视频。</p><br><br><p><strong>摘要：</strong> Qwen2.5-Omni是一个端到端的多模态模型，旨在处理文本、图像、音频和视频等多种输入，同时以流式方式生成文本和自然语音响应。为实现多模态信息的流式处理，音频和视频编码器采用块级处理方法，并通过交错组织音视频序列来同步时间戳，同时提出新的位置嵌入方法TMRoPE（时间对齐的多模态RoPE）。在生成文本和语音的同时，避免两者间的干扰，Qwen2.5-Omni采用了Thinker-Talker架构，其中Thinker作为大型语言模型负责文本生成，而Talker是一个双轨自回归模型，直接利用Thinker的隐表示生成音频标记。此模型在多模态基准测试中尤为突出，表现出与其他模型相媲美的性能，尤其在语音跟随指令和语音生成方面展现出卓越的自然度与稳健性。该模型不仅在Qwen2.5-VL的基础上具备竞争力，还在Omni-Bench等多模态基准上达到了最先进的水平。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.20215 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">Qwen2.5-Omni是一个先进的多模态流处理模型，支持文本、图像、音频和视频。</p><br /><br /><p><strong>摘要：</strong> Qwen2.5-Omni是一个端到端的多模态模型，旨在处理文本、图像、音频和视频等多种输入，同时以流式方式生成文本和自然语音响应。为实现多模态信息的流式处理，音频和视频编码器采用块级处理方法，并通过交错组织音视频序列来同步时间戳，同时提出新的位置嵌入方法TMRoPE（时间对齐的多模态RoPE）。在生成文本和语音的同时，避免两者间的干扰，Qwen2.5-Omni采用了Thinker-Talker架构，其中Thinker作为大型语言模型负责文本生成，而Talker是一个双轨自回归模型，直接利用Thinker的隐表示生成音频标记。此模型在多模态基准测试中尤为突出，表现出与其他模型相媲美的性能，尤其在语音跟随指令和语音生成方面展现出卓越的自然度与稳健性。该模型不仅在Qwen2.5-VL的基础上具备竞争力，还在Omni-Bench等多模态基准上达到了最先进的水平。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.20215" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 26 Mar 2025 00:17:55 GMT</pubDate>
 <pubDate>Wed, 26 Mar 2025 00:17:55 GMT</pubDate>
 </item>
 <item>
@@ -21,14 +43,10 @@
 <link>https://arxiv.org/abs/2503.19990</link>
 <guid>https://arxiv.org/abs/2503.19990</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>通过LEGO-Puzzles基准测试评估多模态大语言模型的空间推理能力。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种新的基准测试LEGO-Puzzles，用于评估多模态大语言模型（MLLMs）在空间理解和顺序推理方面的能力。该基准包含1100个视觉问答样本，涵盖从基本空间理解到复杂多步推理的11个任务。评估结果显示，当前最先进的MLLMs在空间推理方面存在显著局限性，尽管性能最强的模型仅能回答约一半的测试案例，而人类参与者准确率超过90%。此外，针对生成LEGO图像的测试中，仅有Gemini-2.0-Flash和GPT-4o表现出有限的指令跟随能力，其余模型要么重复输入图像，要么产生完全不相关的输出。总体来看，LEGO-Puzzles揭示了现有MLLMs在空间理解和顺序推理方面的关键缺陷，强调了进一步提升多模态空间推理能力的必要性。</p><br><br><p><em>使用 gpt-4o-mini 生成 </em></p><a href=https://arxiv.org/abs/2503.19990 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">通过LEGO-Puzzles基准测试评估多模态大语言模型的空间推理能力。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种新的基准测试LEGO-Puzzles，用于评估多模态大语言模型（MLLMs）在空间理解和顺序推理方面的能力。该基准包含1100个视觉问答样本，涵盖从基本空间理解到复杂多步推理的11个任务。评估结果显示，当前最先进的MLLMs在空间推理方面存在显著局限性，尽管性能最强的模型仅能回答约一半的测试案例，而人类参与者准确率超过90%。此外，针对生成LEGO图像的测试中，仅有Gemini-2.0-Flash和GPT-4o表现出有限的指令跟随能力，其余模型要么重复输入图像，要么产生完全不相关的输出。总体来看，LEGO-Puzzles揭示了现有MLLMs在空间理解和顺序推理方面的关键缺陷，强调了进一步提升多模态空间推理能力的必要性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.19990" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 25 Mar 2025 14:21:07 GMT</pubDate>
-<pubDate>Tue, 25 Mar 2025 14:21:07 GMT</pubDate>
 </item>
-
 <item>
 <title>MCTS-RAG：提升小型语言模型推理能力的新方法</title>
 <link>https://arxiv.org/abs/2503.20757</link>
