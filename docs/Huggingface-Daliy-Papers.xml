@@ -4,6 +4,66 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>Effectively Controlling Reasoning Models through Thinking Intervention</title>
+<link>https://arxiv.org/abs/2503.24370</link>
+<guid>https://arxiv.org/abs/2503.24370</guid>
+<content:encoded><![CDATA[
+
+  Reasoning-enhanced large language models (LLMs) explicitly generate intermediate reasoning steps prior to generating final answers, helping the model excel in complex problem-solving. In this paper, we demonstrate that this emerging generation framework offers a unique opportunity for more fine-grained control over model behavior. We propose Thinking Intervention, a novel paradigm designed to explicitly guide the internal reasoning processes of LLMs by strategically inserting or revising specific thinking tokens. We conduct comprehensive evaluations across multiple tasks, including instruction following on IFEval, instruction hierarchy on SEP, and safety alignment on XSTest and SORRY-Bench. Our results demonstrate that Thinking Intervention significantly outperforms baseline prompting approaches, achieving up to 6.7% accuracy gains in instruction-following scenarios, 15.4% improvements in reasoning about instruction hierarchies, and a 40.0% increase in refusal rates for unsafe prompts using open-source DeepSeek R1 models. Overall, our work opens a promising new research avenue for controlling reasoning LLMs.
+
+]]></content:encoded>
+<pubDate>Mon, 31 Mar 2025 13:50:13 GMT</pubDate>
+<pubDate>Mon, 31 Mar 2025 13:50:13 GMT</pubDate>
+</item>
+<item>
+<title>TeleAntiFraud-28k: A Audio-Text Slow-Thinking Dataset for Telecom Fraud Detection</title>
+<link>https://arxiv.org/abs/2503.24115</link>
+<guid>https://arxiv.org/abs/2503.24115</guid>
+<content:encoded><![CDATA[
+
+  The detection of telecom fraud faces significant challenges due to the lack of high-quality multimodal training data that integrates audio signals with reasoning-oriented textual analysis. To address this gap, we present TeleAntiFraud-28k, the first open-source audio-text slow-thinking dataset specifically designed for automated telecom fraud analysis. Our dataset is constructed through three strategies: (1) Privacy-preserved text-truth sample generation using automatically speech recognition (ASR)-transcribed call recordings (with anonymized original audio), ensuring real-world consistency through text-to-speech (TTS) model regeneration; (2) Semantic enhancement via large language model (LLM)-based self-instruction sampling on authentic ASR outputs to expand scenario coverage; (3) Multi-agent adversarial synthesis that simulates emerging fraud tactics through predefined communication scenarios and fraud typologies. The generated dataset contains 28,511 rigorously processed speech-text pairs, complete with detailed annotations for fraud reasoning. The dataset is divided into three tasks: scenario classification, fraud detection, fraud type classification. Furthermore, we construct TeleAntiFraud-Bench, a standardized evaluation benchmark comprising proportionally sampled instances from the dataset, to facilitate systematic testing of model performance on telecom fraud detection tasks. We also contribute a production-optimized supervised fine-tuning (SFT) model trained on hybrid real/synthetic data, while open-sourcing the data processing framework to enable community-driven dataset expansion. This work establishes a foundational framework for multimodal anti-fraud research while addressing critical challenges in data privacy and scenario diversity. The project will be released at https://github.com/JimmyMa99/TeleAntiFraud.
+
+]]></content:encoded>
+<pubDate>Mon, 31 Mar 2025 10:06:17 GMT</pubDate>
+<pubDate>Mon, 31 Mar 2025 10:06:17 GMT</pubDate>
+</item>
+<item>
+<title>MoCha: Towards Movie-Grade Talking Character Synthesis</title>
+<link>https://arxiv.org/abs/2503.23307</link>
+<guid>https://arxiv.org/abs/2503.23307</guid>
+<content:encoded><![CDATA[
+
+  Recent advancements in video generation have achieved impressive motion realism, yet they often overlook character-driven storytelling, a crucial task for automated film, animation generation. We introduce Talking Characters, a more realistic task to generate talking character animations directly from speech and text. Unlike talking head, Talking Characters aims at generating the full portrait of one or more characters beyond the facial region. In this paper, we propose MoCha, the first of its kind to generate talking characters. To ensure precise synchronization between video and speech, we propose a speech-video window attention mechanism that effectively aligns speech and video tokens. To address the scarcity of large-scale speech-labeled video datasets, we introduce a joint training strategy that leverages both speech-labeled and text-labeled video data, significantly improving generalization across diverse character actions. We also design structured prompt templates with character tags, enabling, for the first time, multi-character conversation with turn-based dialogue-allowing AI-generated characters to engage in context-aware conversations with cinematic coherence. Extensive qualitative and quantitative evaluations, including human preference studies and benchmark comparisons, demonstrate that MoCha sets a new standard for AI-generated cinematic storytelling, achieving superior realism, expressiveness, controllability and generalization.
+
+]]></content:encoded>
+<pubDate>Sun, 30 Mar 2025 00:22:09 GMT</pubDate>
+<pubDate>Sun, 30 Mar 2025 00:22:09 GMT</pubDate>
+</item>
+<item>
+<title>Bridging Evolutionary Multiobjective Optimization and GPU Acceleration via Tensorization</title>
+<link>https://arxiv.org/abs/2503.20286</link>
+<guid>https://arxiv.org/abs/2503.20286</guid>
+<content:encoded><![CDATA[
+
+  Evolutionary multiobjective optimization (EMO) has made significant strides over the past two decades. However, as problem scales and complexities increase, traditional EMO algorithms face substantial performance limitations due to insufficient parallelism and scalability. While most work has focused on algorithm design to address these challenges, little attention has been given to hardware acceleration, thereby leaving a clear gap between EMO algorithms and advanced computing devices, such as GPUs. To bridge the gap, we propose to parallelize EMO algorithms on GPUs via the tensorization methodology. By employing tensorization, the data structures and operations of EMO algorithms are transformed into concise tensor representations, which seamlessly enables automatic utilization of GPU computing. We demonstrate the effectiveness of our approach by applying it to three representative EMO algorithms: NSGA-III, MOEA/D, and HypE. To comprehensively assess our methodology, we introduce a multiobjective robot control benchmark using a GPU-accelerated physics engine. Our experiments show that the tensorized EMO algorithms achieve speedups of up to 1113x compared to their CPU-based counterparts, while maintaining solution quality and effectively scaling population sizes to hundreds of thousands. Furthermore, the tensorized EMO algorithms efficiently tackle complex multiobjective robot control tasks, producing high-quality solutions with diverse behaviors. Source codes are available at https://github.com/EMI-Group/evomo.
+
+]]></content:encoded>
+<pubDate>Wed, 26 Mar 2025 03:30:23 GMT</pubDate>
+<pubDate>Wed, 26 Mar 2025 03:30:23 GMT</pubDate>
+</item>
+<item>
+<title>Classical Planning with LLM-Generated Heuristics: Challenging the State of the Art with Python Code</title>
+<link>https://arxiv.org/abs/2503.18809</link>
+<guid>https://arxiv.org/abs/2503.18809</guid>
+<content:encoded><![CDATA[
+
+  In recent years, large language models (LLMs) have shown remarkable capabilities in various artificial intelligence problems. However, they fail to plan reliably, even when prompted with a detailed definition of the planning task. Attempts to improve their planning capabilities, such as chain-of-thought prompting, fine-tuning, and explicit "reasoning" still yield incorrect plans and usually fail to generalize to larger tasks. In this paper, we show how to use LLMs to generate correct plans, even for out-of-distribution tasks of increasing size. For a given planning domain, we ask an LLM to generate several domain-dependent heuristic functions in the form of Python code, evaluate them on a set of training tasks within a greedy best-first search, and choose the strongest one. The resulting LLM-generated heuristics solve many more unseen test tasks than state-of-the-art domain-independent heuristics for classical planning. They are even competitive with the strongest learning algorithm for domain-dependent planning. These findings are especially remarkable given that our proof-of-concept implementation is based on an unoptimized Python planner and the baselines all build upon highly optimized C++ code. In some domains, the LLM-generated heuristics expand fewer states than the baselines, revealing that they are not only efficiently computable, but sometimes even more informative than the state-of-the-art heuristics. Overall, our results show that sampling a set of planning heuristic function programs can significantly improve the planning capabilities of LLMs.
+
+]]></content:encoded>
+<pubDate>Mon, 24 Mar 2025 11:50:20 GMT</pubDate>
+<pubDate>Mon, 24 Mar 2025 11:50:20 GMT</pubDate>
+</item>
 
 <item>
 <title>SWI: Speaking with Intent in Large Language Models</title>
