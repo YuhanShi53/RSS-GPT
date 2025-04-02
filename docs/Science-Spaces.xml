@@ -4,20 +4,17 @@
 <title>科学空间|Scientific Spaces</title>
 <link>https://kexue.fm/</link>
 
+
 <item>
 <title>通过梯度近似寻找Normalization的替代品</title>
 <link>https://spaces.ac.cn/archives/10831</link>
 <guid>https://spaces.ac.cn/archives/10831</guid>
 <content:encoded><![CDATA[
-
-  <p>不知道大家有没有留意到前段时间的<a href="https://arxiv.org/abs/2503.10622" target="_blank">《Transformers without Normalization》</a>？这篇论文试图将Transformer模型中的Normalization层用一个Element-wise的运算DyT替代，以期能提高速度并保持效果。这种基础架构的主题本身自带一点吸引力，加之Kaiming He和Yann LeCun两位大佬挂名，所以这篇论文发布之时就引起了不少围观，评价也是有褒有贬。</p><p>无独有偶，上周的一篇新论文<a href="https://arxiv.org/abs/2503.21708" target="_blank">《The Mathematical Relationship Between Layer Normalization and Dynamic Activation Functions》</a>从梯度分析和微分方程的视角解读了DyT，并提出了新的替代品。个人感觉这个理解角度非常本质，遂学习和分享一波。</p><h2>写在前面</h2><p>DyT全称是Dynamic Tanh，它通过如下运算来替代Normalization层：<br />
+<p>不知道大家有没有留意到前段时间的<a href="https://arxiv.org/abs/2503.10622" target="_blank">《Transformers without Normalization》</a>？这篇论文试图将Transformer模型中的Normalization层用一个Element-wise的运算DyT替代，以期能提高速度并保持效果。这种基础架构的主题本身自带一点吸引力，加之Kaiming He和Yann LeCun两位大佬挂名，所以这篇论文发布之时就引起了不少围观，评价也是有褒有贬。</p><p>无独有偶，上周的一篇新论文<a href="https://arxiv.org/abs/2503.21708" target="_blank">《The Mathematical Relationship Between Layer Normalization and Dynamic Activation Functions》</a>从梯度分析和微分方程的视角解读了DyT，并提出了新的替代品。个人感觉这个理解角度非常本质，遂学习和分享一波。</p><h2>写在前面</h2><p>DyT全称是Dynamic Tanh，它通过如下运算来替代Normalization层：<br />
 \begin{equation}\mathop{\text{DyT}}(\boldsymbol{x}) = \boldsymbol{\gamma} \odot \tanh(\alpha \boldsymbol{x}) + \boldsymbol{\beta}\end{equation}</p><p class="more"><a href="https://spaces.ac.cn/archives/10831" title="通过梯度近似寻找Normalization的替代品">[...]</a></p>
-
 ]]></content:encoded>
 <pubDate>Wed, 02 Apr 2025 20:33:00 +0800</pubDate>
-<pubDate>Wed, 02 Apr 2025 20:33:00 +0800</pubDate>
 </item>
-
 <item>
 <title>利用Bias自由度优化MoE模型以提升Token分配效率</title>
 <link>https://spaces.ac.cn/archives/10815</link>

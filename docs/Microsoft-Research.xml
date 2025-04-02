@@ -4,6 +4,207 @@
 <title>Microsoft Research</title>
 <link>https://www.microsoft.com/en-us/research/</link>
 
+<item>
+<title>VidTok introduces compact, efficient tokenization to enhance AI video processing</title>
+<link>https://www.microsoft.com/en-us/research/blog/vidtok-introduces-compact-efficient-tokenization-to-enhance-ai-video-processing/</link>
+<guid>https://www.microsoft.com/en-us/research/blog/vidtok-introduces-compact-efficient-tokenization-to-enhance-ai-video-processing/</guid>
+<content:encoded><![CDATA[
+
+  <figure class="wp-block-image size-large"><img alt="Diagram showing an overview of how video tokenizers work with stages labeled as Input, Encoder, Regularizer (Latent Space), Decoder, and Output. " class="wp-image-1135333" height="576" src="https://www.microsoft.com/en-us/research/wp-content/uploads/2025/03/VidTok-BlogHeroFeature-1400x788-1-1024x576.png" width="1024" /></figure>
+
+
+
+<p>Every day, countless videos are uploaded and processed online, putting enormous strain on computational resources. The problem isn’t just the sheer volume of data—it’s how this data is structured. Videos consist of raw pixel data, where neighboring pixels often store nearly identical information. This redundancy wastes resources, making it harder for systems to process visual content effectively and efficiently.</p>
+
+
+
+<p>To tackle this, we’ve developed a new approach to compress visual data into a more compact and manageable form. In our paper “<a href="https://www.microsoft.com/en-us/research/publication/vidtok-a-versatile-and-open-source-video-tokenizer/" rel="noreferrer noopener" target="_blank">VidTok: A Versatile and Open-Source Video Tokenizer</a>,” we introduce a method that converts video data into smaller, structured units, or <em>tokens</em>. This technique provides researchers and developers in visual world modeling—a field dedicated to teaching machines to interpret images and videos—with a flexible and efficient tool for advancing their work.&nbsp;</p>
+
+
+
+<h2 class="wp-block-heading" id="how-vidtok-works">How VidTok works<strong></strong></h2>
+
+
+
+<p>VidTok is a technique that converts raw video footage into a format that AI can easily work with and understand, a process called <em>video tokenization</em>. This process converts complex visual information into compact, structured tokens, as shown in Figure 1.</p>
+
+
+
+<figure class="wp-block-image aligncenter size-full"><img alt="Diagram showing an overview of how video tokenizers work with stages labeled as Input, Encoder, Regularizer (Latent Space), Decoder, and Output. " class="wp-image-1135323" height="213" src="https://www.microsoft.com/en-us/research/wp-content/uploads/2025/03/figure-1.png" width="692" /><figcaption class="wp-element-caption">Figure 1. An overview of how video tokenizers work, which form the basis of VidTok.</figcaption></figure>
+
+
+
+<p>By simplifying videos into manageable chunks, VidTok can enable AI systems to learn from, analyze, and generate video content more efficiently. VidTok offers several potential advantages over previous solutions:</p>
+
+
+
+<p><strong>Supports both discrete and continuous tokens.</strong> Not all AI models use the same “language” for video generation. Some perform best with continuous tokens—ideal for high-quality diffusion models—while others rely on discrete tokens, which are better suited for step-by-step generation, like language models for video. VidTok is a tokenizer that has demonstrated seamless support for both, making it adaptable across a range of AI applications.</p>
+
+
+
+<p><strong>Operates in both causal and noncausal modes. </strong>In some scenarios, video understanding depends solely on past frames (causal), while in others, it benefits from access to both past and future frames (noncausal). VidTok can accommodate both modes, making it suitable for real-time use cases like robotics and video streaming, as well as for high-quality offline video generation.</p>
+
+
+
+<p><strong>Efficient training with high performance.</strong> AI-powered video generation typically requires substantial computational resources. VidTok can reduce training costs by half through a two-stage training process—delivering high performance and lowering costs.</p>
+
+
+
+	<div class="border-bottom border-top border-gray-300 mt-5 mb-5 msr-promo text-center text-md-left alignwide">
+		
+
+		<p class="msr-promo__label text-gray-800 text-center text-uppercase">
+		<span class="px-4 bg-white display-inline-block font-weight-semibold small">Microsoft research blog</span>
+	</p>
+	
+	<div class="row pt-3 pb-4 align-items-center">
+						<div class="msr-promo__media col-12 col-md-5">
+				<a class="bg-gray-300" href="https://www.microsoft.com/en-us/research/blog/promptwizard-the-future-of-prompt-optimization-through-feedback-driven-self-evolving-prompts/" target="_blank">
+					<img alt="A diagram illustrating the joint optimization process of instructions and in-context examples in PromptWizard. The figure demonstrates how the framework iteratively refines both components, integrating feedback to enhance the overall prompt effectiveness and adaptability across tasks." class="w-100 display-block" src="https://www.microsoft.com/en-us/research/wp-content/uploads/2024/12/PromptWizard-BlogHeroFeature-1400x788-1.png" />
+				</a>
+			</div>
+			
+			<div class="msr-promo__content p-3 px-5 col-12 col-md">
+
+									<h2 class="h4">PromptWizard: The future of prompt optimization through feedback-driven self-evolving prompts</h2>
+				
+								<p class="large">PromptWizard from Microsoft Research is now open source. It is designed to automate and simplify AI prompt optimization, combining iterative LLM feedback with efficient exploration and refinement techniques to create highly effective prompts in minutes.</p>
+				
+								<div class="wp-block-buttons justify-content-center justify-content-md-start">
+					<div class="wp-block-button">
+						<a class="btn btn-brand glyph-append glyph-append-chevron-right" href="https://www.microsoft.com/en-us/research/blog/promptwizard-the-future-of-prompt-optimization-through-feedback-driven-self-evolving-prompts/" target="_blank">
+							Read more						</a>
+					</div>
+				</div>
+							</div><!--/.msr-promo__content-->
+	</div><!--/.msr-promo__inner-wrap-->
+<span class="sr-only" id="label-external-link">Opens in a new tab</span>	</div><!--/.msr-promo-->
+	
+
+
+<h2 class="wp-block-heading" id="architecture">Architecture</h2>
+
+
+
+<p>The VidTok framework builds on a classic 3D encoder-decoder structure but introduces 2D and 1D processing techniques to handle spatial and temporal information more efficiently. Because 3D architectures are computationally intensive, VidTok combines them with less resource-intensive 2D and 1D methods to reduce computational costs while maintaining video quality.</p>
+
+
+
+<p><strong>Spatial processing.</strong> Rather than treating video frames solely as 3D volumes, VidTok applies 2D convolutions—pattern-recognition operations commonly used in image processing—to handle spatial information within each frame more efficiently.</p>
+
+
+
+<p><strong>Temporal processing.</strong> To model motion over time, VidTok introduces the <em>AlphaBlender</em> operator, which blends frames smoothly using a learnable parameter. Combined with 1D convolutions—similar operations applied over sequences—this approach captures temporal dynamics without abrupt transitions.</p>
+
+
+
+<p>Figure 2 illustrates VidTok’s architecture in detail.</p>
+
+
+
+<figure class="wp-block-image aligncenter size-full"><img alt="A diagram illustrating VidTok’s architecture, which integrates 2D+1D operations instead of relying solely on 3D techniques. The left side represents the encoder pathway, starting with a 3D InputBlock, followed by multiple 2D+1D DownBlocks and AlphaBlender Temporal DownBlocks. The right side shows the decoder pathway, mirroring the encoder with 2D+1D UpBlocks and AlphaBlender Temporal UpBlocks before reaching the 3D OutputBlock. A Regularizer module is connected at the bottom.  This approach strikes a balance between computational speed and high-quality video output. " class="wp-image-1135324" height="523" src="https://www.microsoft.com/en-us/research/wp-content/uploads/2025/03/VidTok_Fig2.png" width="1269" /><figcaption class="wp-element-caption">Figure 2. VidTok’s architecture. It uses a combination of 2D and 1D operations instead of solely relying on 3D techniques, improving efficiency. For smooth frame transitions, VidTok employs the AlphaBlender operator in its temporal processing modules. This approach strikes a balance between computational speed and high-quality video output.</figcaption></figure>
+
+
+
+<h2 class="wp-block-heading" id="quantization">Quantization</h2>
+
+
+
+<p>To efficiently compress video data, AI systems often use quantization to reduce the amount of information that needs to be stored or transmitted. A traditional method for doing this is vector quantization (VQ), which groups values together and matches them to a fixed set of patterns (known as a codebook). However, this can lead to an inefficient use of patterns and lower video quality.</p>
+
+
+
+<p>For VidTok, we use an approach called finite scalar quantization (FSQ). Instead of grouping values, FSQ treats each value separately. This makes the compression process more flexible and accurate, helping preserve video quality while keeping the file size small. Figure 3 shows the difference between the VQ and FSQ approaches.</p>
+
+
+
+<figure class="wp-block-image aligncenter size-full"><img alt="A diagram comparing Vector Quantization (VQ) and Finite Scalar Quantization (FSQ). VQ maps input z to a learned codebook, selecting the closest entry, while FSQ quantizes z using fixed sets independently for each value. FSQ simplifies optimization and improves training stability. " class="wp-image-1135319" height="179" src="https://www.microsoft.com/en-us/research/wp-content/uploads/2025/03/image-17.png" width="831" /><figcaption class="wp-element-caption">Figure 3. VQ (left) relies on learning a codebook, while FSQ (right) simplifies the process by independently grouping values into fixed sets, making optimization easier. VidTok adopts FSQ to enhance training stability and reconstruction quality.</figcaption></figure>
+
+
+
+<h2 class="wp-block-heading" id="training">Training</h2>
+
+
+
+<p>Training video tokenizers requires significant computing power. VidTok uses a two-stage process:</p>
+
+
+
+<ol class="wp-block-list">
+<li>It first trains the full model on low-resolution videos.</li>
+
+
+
+<li>Then, it fine-tunes only the decoder using high-resolution videos.</li>
+</ol>
+
+
+
+<p>This approach cuts training costs in half—from 3,072 to 1,536 GPU hours—while maintaining video quality. Older tokenizers, trained on full-resolution videos from the start, were slower and more computationally intensive.&nbsp;</p>
+
+
+
+<p>VidTok&#8217;s method allows the model to quickly adapt to new types of videos without affecting its token distribution. Additionally, it trains on lower-frame-rate data to better capture motion, improving how it represents movement in videos.</p>
+
+
+
+<h2 class="wp-block-heading" id="evaluating-vidtok">Evaluating VidTok</h2>
+
+
+
+<p>VidTok&#8217;s performance evaluation using the MCL-JCV benchmark—a comprehensive video quality assessment dataset—and an internal dataset demonstrates its superiority over existing state-of-the-art models in video tokenization. The assessment, which covered approximately 5,000 videos of various types, employed four standard metrics to measure video quality:</p>
+
+
+
+<ol class="wp-block-list">
+<li>Peak Signal-to-Noise Ratio (PSNR)</li>
+
+
+
+<li>Structural Similarity Index Measure (SSIM)</li>
+
+
+
+<li>Learned Perceptual Image Patch Similarity (LPIPS)</li>
+
+
+
+<li>Fréchet Video Distance (FVD)</li>
+</ol>
+
+
+
+<p>The following table and Figure 4 illustrate VidTok’s performance:</p>
+
+
+
+<figure class="wp-block-image aligncenter size-full"><img alt="Result table showing VidTok's performance compared to other models (MAGVIT-v2, OmniTokenizer, Cosmos-DV, CV-VAE, Open-Sora-v1.2, Open-Sora-Plan-v1.2, CogVideoX, Cosmos-CV) on two datasets (MCL-JCV and Internal-Val) with metrics including PSNR, SSIM, LPIPS, and FVD." class="wp-image-1135326" height="680" src="https://www.microsoft.com/en-us/research/wp-content/uploads/2025/03/table-1.png" width="1651" /><figcaption class="wp-element-caption">Table 1</figcaption></figure>
+
+
+
+<p>The results indicate that VidTok outperforms existing models in both discrete and continuous tokenization scenarios. This improved performance is achieved even when using a smaller model or a more compact set of reference patterns, highlighting VidTok&#8217;s efficiency.</p>
+
+
+
+<figure class="wp-block-image aligncenter size-full"><img alt="Radar charts comparing the performance of discrete and continuous tokenization methods in VidTok and state-of-the-art methods using four metrics: PSNR, SSIM, LPIPS, and FVD. Larger chart areas indicate better overall performance. " class="wp-image-1135327" height="372" src="https://www.microsoft.com/en-us/research/wp-content/uploads/2025/03/figure-2.png" width="1181" /><figcaption class="wp-element-caption">Figure 4. Quantitative comparison of discrete and continuous tokenization performance in VidTok and state-of-the-art methods, evaluated using four metrics: PSNR, SSIM, LPIPS, and FVD. Larger chart areas indicate better overall performance.</figcaption></figure>
+
+
+
+<h2 class="wp-block-heading" id="looking-ahead">Looking ahead</h2>
+
+
+
+<p>VidTok represents a significant development in video tokenization and processing. Its innovative architecture and training approach enable improved performance across various video quality metrics, making it a valuable tool for video analysis and compression tasks. Its capacity to model complex visual dynamics could improve the efficiency of video systems by enabling AI processing on more compact units rather than raw pixels.</p>
+
+
+
+<p>VidTok serves as a promising foundation for further research in video processing and representation. The code for VidTok is available on <a class="msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall" href="https://github.com/microsoft/VidTok" rel="noreferrer noopener" target="_blank">GitHub<span class="sr-only"> (opens in new tab)</span></a>, and we invite the research community to build on this work and help advance the broader field of video modeling and generation.</p>
+<span class="sr-only" id="label-external-link">Opens in a new tab</span><p>The post <a href="https://www.microsoft.com/en-us/research/blog/vidtok-introduces-compact-efficient-tokenization-to-enhance-ai-video-processing/">VidTok introduces compact, efficient tokenization to enhance AI video processing</a> appeared first on <a href="https://www.microsoft.com/en-us/research">Microsoft Research</a>.</p>
+
+]]></content:encoded>
+<pubDate>Wed, 02 Apr 2025 16:00:00 +0000</pubDate>
+<pubDate>Wed, 02 Apr 2025 16:00:00 +0000</pubDate>
+</item>
 
 <item>
 <title>Ideas: Accelerating Foundation Models Research: AI for all</title>
