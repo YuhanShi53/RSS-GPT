@@ -5,15 +5,49 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>VerifiAgent: a Unified Verification Agent in Language Model Reasoning</title>
+<link>https://arxiv.org/abs/2504.00406</link>
+<guid>https://arxiv.org/abs/2504.00406</guid>
+<content:encoded><![CDATA[
+
+  Large language models demonstrate remarkable reasoning capabilities but often produce unreliable or incorrect responses. Existing verification methods are typically model-specific or domain-restricted, requiring significant computational resources and lacking scalability across diverse reasoning tasks. To address these limitations, we propose VerifiAgent, a unified verification agent that integrates two levels of verification: meta-verification, which assesses completeness and consistency in model responses, and tool-based adaptive verification, where VerifiAgent autonomously selects appropriate verification tools based on the reasoning type, including mathematical, logical, or commonsense reasoning. This adaptive approach ensures both efficiency and robustness across different verification scenarios. Experimental results show that VerifiAgent outperforms baseline verification methods (e.g., deductive verifier, backward verifier) among all reasoning tasks. Additionally, it can further enhance reasoning accuracy by leveraging feedback from verification results. VerifiAgent can also be effectively applied to inference scaling, achieving better results with fewer generated samples and costs compared to existing process reward models in the mathematical reasoning domain. Code is available at https://github.com/Jiuzhouh/VerifiAgent
+
+]]></content:encoded>
+<pubDate>Tue, 01 Apr 2025 00:05:03 GMT</pubDate>
+<pubDate>Tue, 01 Apr 2025 00:05:03 GMT</pubDate>
+</item>
+<item>
+<title>Enhanced OoD Detection through Cross-Modal Alignment of Multi-Modal Representations</title>
+<link>https://arxiv.org/abs/2503.18817</link>
+<guid>https://arxiv.org/abs/2503.18817</guid>
+<content:encoded><![CDATA[
+
+  Prior research on out-of-distribution detection (OoDD) has primarily focused on single-modality models. Recently, with the advent of large-scale pretrained vision-language models such as CLIP, OoDD methods utilizing such multi-modal representations through zero-shot and prompt learning strategies have emerged. However, these methods typically involve either freezing the pretrained weights or only partially tuning them, which can be suboptimal for downstream datasets. In this paper, we highlight that multi-modal fine-tuning (MMFT) can achieve notable OoDD performance. Despite some recent works demonstrating the impact of fine-tuning methods for OoDD, there remains significant potential for performance improvement. We investigate the limitation of na\"ive fine-tuning methods, examining why they fail to fully leverage the pretrained knowledge. Our empirical analysis suggests that this issue could stem from the modality gap within in-distribution (ID) embeddings. To address this, we propose a training objective that enhances cross-modal alignment by regularizing the distances between image and text embeddings of ID data. This adjustment helps in better utilizing pretrained textual information by aligning similar semantics from different modalities (i.e., text and image) more closely in the hyperspherical representation space. We theoretically demonstrate that the proposed regularization corresponds to the maximum likelihood estimation of an energy-based model on a hypersphere. Utilizing ImageNet-1k OoD benchmark datasets, we show that our method, combined with post-hoc OoDD approaches leveraging pretrained knowledge (e.g., NegLabel), significantly outperforms existing methods, achieving state-of-the-art OoDD performance and leading ID accuracy.
+
+]]></content:encoded>
+<pubDate>Mon, 24 Mar 2025 12:00:21 GMT</pubDate>
+<pubDate>Mon, 24 Mar 2025 12:00:21 GMT</pubDate>
+</item>
+<item>
+<title>Boost Your Own Human Image Generation Model via Direct Preference Optimization with AI Feedback</title>
+<link>https://arxiv.org/abs/2405.20216</link>
+<guid>https://arxiv.org/abs/2405.20216</guid>
+<content:encoded><![CDATA[
+
+  The generation of high-quality human images through text-to-image (T2I) methods is a significant yet challenging task. Distinct from general image generation, human image synthesis must satisfy stringent criteria related to human pose, anatomy, and alignment with textual prompts, making it particularly difficult to achieve realistic results. Recent advancements in T2I generation based on diffusion models have shown promise, yet challenges remain in meeting human-specific preferences. In this paper, we introduce a novel approach tailored specifically for human image generation utilizing Direct Preference Optimization (DPO). Specifically, we introduce an efficient method for constructing a specialized DPO dataset for training human image generation models without the need for costly human feedback. We also propose a modified loss function that enhances the DPO training process by minimizing artifacts and improving image fidelity. Our method demonstrates its versatility and effectiveness in generating human images, including personalized text-to-image generation. Through comprehensive evaluations, we show that our approach significantly advances the state of human image generation, achieving superior results in terms of natural anatomies, poses, and text-image alignment.
+
+]]></content:encoded>
+<pubDate>Thu, 30 May 2024 12:18:05 GMT</pubDate>
+<pubDate>Thu, 30 May 2024 12:18:05 GMT</pubDate>
+</item>
+
+<item>
 <title>VideoScene: Distilling Video Diffusion Model to Generate 3D Scenes in One Step</title>
 <link>https://arxiv.org/abs/2504.01956</link>
 <guid>https://arxiv.org/abs/2504.01956</guid>
 <content:encoded><![CDATA[
-
-  Recovering 3D scenes from sparse views is a challenging task due to its inherent ill-posed problem. Conventional methods have developed specialized solutions (e.g., geometry regularization or feed-forward deterministic model) to mitigate the issue. However, they still suffer from performance degradation by minimal overlap across input views with insufficient visual information. Fortunately, recent video generative models show promise in addressing this challenge as they are capable of generating video clips with plausible 3D structures. Powered by large pretrained video diffusion models, some pioneering research start to explore the potential of video generative prior and create 3D scenes from sparse views. Despite impressive improvements, they are limited by slow inference time and the lack of 3D constraint, leading to inefficiencies and reconstruction artifacts that do not align with real-world geometry structure. In this paper, we propose VideoScene to distill the video diffusion model to generate 3D scenes in one step, aiming to build an efficient and effective tool to bridge the gap from video to 3D. Specifically, we design a 3D-aware leap flow distillation strategy to leap over time-consuming redundant information and train a dynamic denoising policy network to adaptively determine the optimal leap timestep during inference. Extensive experiments demonstrate that our VideoScene achieves faster and superior 3D scene generation results than previous video diffusion models, highlighting its potential as an efficient tool for future video to 3D applications. Project Page: https://hanyang-21.github.io/VideoScene
-
+Recovering 3D scenes from sparse views is a challenging task due to its inherent ill-posed problem. Conventional methods have developed specialized solutions (e.g., geometry regularization or feed-forward deterministic model) to mitigate the issue. However, they still suffer from performance degradation by minimal overlap across input views with insufficient visual information. Fortunately, recent video generative models show promise in addressing this challenge as they are capable of generating video clips with plausible 3D structures. Powered by large pretrained video diffusion models, some pioneering research start to explore the potential of video generative prior and create 3D scenes from sparse views. Despite impressive improvements, they are limited by slow inference time and the lack of 3D constraint, leading to inefficiencies and reconstruction artifacts that do not align with real-world geometry structure. In this paper, we propose VideoScene to distill the video diffusion model to generate 3D scenes in one step, aiming to build an efficient and effective tool to bridge the gap from video to 3D. Specifically, we design a 3D-aware leap flow distillation strategy to leap over time-consuming redundant information and train a dynamic denoising policy network to adaptively determine the optimal leap timestep during inference. Extensive experiments demonstrate that our VideoScene achieves faster and superior 3D scene generation results than previous video diffusion models, highlighting its potential as an efficient tool for future video to 3D applications. Project Page: https://hanyang-21.github.io/VideoScene
 ]]></content:encoded>
-<pubDate>Wed, 02 Apr 2025 13:59:21 GMT</pubDate>
 <pubDate>Wed, 02 Apr 2025 13:59:21 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +55,8 @@
 <link>https://arxiv.org/abs/2504.01934</link>
 <guid>https://arxiv.org/abs/2504.01934</guid>
 <content:encoded><![CDATA[
-
-  We present ILLUME+ that leverages dual visual tokenization and a diffusion decoder to improve both deep semantic understanding and high-fidelity image generation. Existing unified models have struggled to simultaneously handle the three fundamental capabilities in a unified model: understanding, generation, and editing. Models like Chameleon and EMU3 utilize VQGAN for image discretization, due to the lack of deep semantic interaction, they lag behind specialist models like LLaVA in visual understanding tasks. To mitigate this, LaViT and ILLUME employ semantic encoders for tokenization, but they struggle with image editing due to poor texture preservation. Meanwhile, Janus series decouples the input and output image representation, limiting their abilities to seamlessly handle interleaved image-text understanding and generation. In contrast, ILLUME+ introduces a unified dual visual tokenizer, DualViTok, which preserves both fine-grained textures and text-aligned semantics while enabling a coarse-to-fine image representation strategy for multimodal understanding and generation. Additionally, we employ a diffusion model as the image detokenizer for enhanced generation quality and efficient super-resolution. ILLUME+ follows a continuous-input, discrete-output scheme within the unified MLLM and adopts a progressive training procedure that supports dynamic resolution across the vision tokenizer, MLLM, and diffusion decoder. This design allows for flexible and efficient context-aware image editing and generation across diverse tasks. ILLUME+ (3B) exhibits competitive performance against existing unified MLLMs and specialized models across multimodal understanding, generation, and editing benchmarks. With its strong performance, ILLUME+ provides a scalable and versatile foundation for future multimodal applications. Project Page: https://illume-unified-mllm.github.io/.
-
+We present ILLUME+ that leverages dual visual tokenization and a diffusion decoder to improve both deep semantic understanding and high-fidelity image generation. Existing unified models have struggled to simultaneously handle the three fundamental capabilities in a unified model: understanding, generation, and editing. Models like Chameleon and EMU3 utilize VQGAN for image discretization, due to the lack of deep semantic interaction, they lag behind specialist models like LLaVA in visual understanding tasks. To mitigate this, LaViT and ILLUME employ semantic encoders for tokenization, but they struggle with image editing due to poor texture preservation. Meanwhile, Janus series decouples the input and output image representation, limiting their abilities to seamlessly handle interleaved image-text understanding and generation. In contrast, ILLUME+ introduces a unified dual visual tokenizer, DualViTok, which preserves both fine-grained textures and text-aligned semantics while enabling a coarse-to-fine image representation strategy for multimodal understanding and generation. Additionally, we employ a diffusion model as the image detokenizer for enhanced generation quality and efficient super-resolution. ILLUME+ follows a continuous-input, discrete-output scheme within the unified MLLM and adopts a progressive training procedure that supports dynamic resolution across the vision tokenizer, MLLM, and diffusion decoder. This design allows for flexible and efficient context-aware image editing and generation across diverse tasks. ILLUME+ (3B) exhibits competitive performance against existing unified MLLMs and specialized models across multimodal understanding, generation, and editing benchmarks. With its strong performance, ILLUME+ provides a scalable and versatile foundation for future multimodal applications. Project Page: https://illume-unified-mllm.github.io/.
 ]]></content:encoded>
-<pubDate>Wed, 02 Apr 2025 13:45:00 GMT</pubDate>
 <pubDate>Wed, 02 Apr 2025 13:45:00 GMT</pubDate>
 </item>
 <item>
@@ -33,14 +64,10 @@
 <link>https://arxiv.org/abs/2503.20783</link>
 <guid>https://arxiv.org/abs/2503.20783</guid>
 <content:encoded><![CDATA[
-
-  DeepSeek-R1-Zero has shown that reinforcement learning (RL) at scale can directly enhance the reasoning capabilities of LLMs without supervised fine-tuning. In this work, we critically examine R1-Zero-like training by analyzing its two core components: base models and RL. We investigate a wide range of base models, including DeepSeek-V3-Base, to understand how pretraining characteristics influence RL performance. Our analysis reveals that DeepSeek-V3-Base already exhibit ''Aha moment'', while Qwen2.5 base models demonstrate strong reasoning capabilities even without prompt templates, suggesting potential pretraining biases. Additionally, we identify an optimization bias in Group Relative Policy Optimization (GRPO), which artificially increases response length (especially for incorrect outputs) during training. To address this, we introduce Dr. GRPO, an unbiased optimization method that improves token efficiency while maintaining reasoning performance. Leveraging these insights, we present a minimalist R1-Zero recipe that achieves 43.3% accuracy on AIME 2024 with a 7B base model, establishing a new state-of-the-art. Our code is available at https://github.com/sail-sg/understand-r1-zero.
-
+DeepSeek-R1-Zero has shown that reinforcement learning (RL) at scale can directly enhance the reasoning capabilities of LLMs without supervised fine-tuning. In this work, we critically examine R1-Zero-like training by analyzing its two core components: base models and RL. We investigate a wide range of base models, including DeepSeek-V3-Base, to understand how pretraining characteristics influence RL performance. Our analysis reveals that DeepSeek-V3-Base already exhibit ''Aha moment'', while Qwen2.5 base models demonstrate strong reasoning capabilities even without prompt templates, suggesting potential pretraining biases. Additionally, we identify an optimization bias in Group Relative Policy Optimization (GRPO), which artificially increases response length (especially for incorrect outputs) during training. To address this, we introduce Dr. GRPO, an unbiased optimization method that improves token efficiency while maintaining reasoning performance. Leveraging these insights, we present a minimalist R1-Zero recipe that achieves 43.3% accuracy on AIME 2024 with a 7B base model, establishing a new state-of-the-art. Our code is available at https://github.com/sail-sg/understand-r1-zero.
 ]]></content:encoded>
 <pubDate>Wed, 26 Mar 2025 13:59:14 GMT</pubDate>
-<pubDate>Wed, 26 Mar 2025 13:59:14 GMT</pubDate>
 </item>
-
 <item>
 <title>PaperBench: Evaluating AI's Ability to Replicate AI Research</title>
 <link>https://arxiv.org/abs/2504.01848</link>
@@ -9013,33 +9040,6 @@ Direct Preference Optimization (DPO) and its variants have become increasingly p
 <div><p style="color: gray;">本研究提出了一种新的金融基准FailSafeQA，旨在测试LLM的鲁棒性与上下文意识。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一个新的长上下文金融基准FailSafeQA，旨在测试大型语言模型（LLM）在面对六种人机交互变化时的鲁棒性和上下文意识。我们聚焦于查询失败和上下文失败这两个案例研究，分别通过改变查询的领域专业性、完整性和语言准确性，及模拟上传降级、无关和空文档来进行测试。使用LLM-as-a-Judge方法及Qwen2.5-72B-Instruct模型，定义并计算24种现成模型的鲁棒性、上下文基础和合规性评分。结果表明，尽管某些模型在应对输入扰动方面表现出色，但在提供鲁棒答案时必须谨慎避免虚构信息的出现。Palmyra-Fin-128k-Instruct在合规性上表现最优，但在17%的测试案例中难以维持鲁棒预测；而OpenAI o3-mini则在41%案例中虚构了信息。这些结果表明，即使是高表现的模型仍有显著改进空间，并强调了FailSafeQA在金融应用中优化LLM可靠性的潜力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.06329" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 12 Feb 2025 02:51:41 GMT</pubDate>
-</item>
-<item>
-<title>FocalCodec：一种高效的低比特率语音编解码器</title>
-<link>https://arxiv.org/abs/2502.04465</link>
-<guid>https://arxiv.org/abs/2502.04465</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">FocalCodec是一种低比特率语音编解码器，解决现有方法的信息损失问题。</p><br /><br /><p><strong>摘要：</strong> 大型语言模型通过自监督预训练在海量数据集上推动了自然语言处理的革命。受此启发，研究者开始将这种方法应用于语音，通过使用神经音频编解码器将连续音频离散为令牌。然而，现有方法面临高比特率、语义或声学信息损失等限制，并且为了同时捕获这两者，常常依赖于多代码簿设计，增加了下游任务的复杂性。为此，我们提出了FocalCodec，这是一种基于焦点调制的高效低比特率编解码器，利用单一二进制代码簿在0.16到0.65 kbps之间压缩语音。FocalCodec在语音重合成和声音转换方面提供与当前最先进技术相媲美的性能，同时有效处理多语言语音和噪声环境。在下游任务的评估中，FocalCodec能够保持足够的语义和声学信息，且非常适合生成建模。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.04465" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 12 Feb 2025 01:31:44 GMT</pubDate>
-</item>
-<item>
-<title>通过强化学习提升大语言模型的代码生成能力</title>
-<link>https://arxiv.org/abs/2502.03492</link>
-<guid>https://arxiv.org/abs/2502.03492</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本研究提出CTRL框架以提升代码生成模型的输出效果。</p><br /><br /><p><strong>摘要：</strong> 本研究探讨了大型语言模型（LLMs）在代码生成中的自我批评能力，提出了一种名为CTRL的框架，用于通过强化学习训练批评模型生成反馈，旨在最大化针对固定生成模型的修正效果，而无需人工干预。实验结果表明，使用CTRL训练的批评模型显著提高了通过率，并有效减轻了基础和更强生成模型的错误叠加。此外，这些批评模型还作为准确的生成奖励模型，支持测试时通过迭代批评修正进行扩展，在挑战性的代码生成基准上实现了高达106.1%的相对提升。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.03492" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 11 Feb 2025 23:55:37 GMT</pubDate>
-</item>
-<item>
-<title>Magic 1-For-1: Generating One Minute Video Clips within One Minute</title>
-<link>https://arxiv.org/abs/2502.07701</link>
-<guid>https://arxiv.org/abs/2502.07701</guid>
-<content:encoded><![CDATA[
-In this technical report, we present Magic 1-For-1 (Magic141), an efficient video generation model with optimized memory consumption and inference latency. The key idea is simple: factorize the text-to-video generation task into two separate easier tasks for diffusion step distillation, namely text-to-image generation and image-to-video generation. We verify that with the same optimization algorithm, the image-to-video task is indeed easier to converge over the text-to-video task. We also explore a bag of optimization tricks to reduce the computational cost of training the image-to-video (I2V) models from three aspects: 1) model convergence speedup by using a multi-modal prior condition injection; 2) inference latency speed up by applying an adversarial step distillation, and 3) inference memory cost optimization with parameter sparsification. With those techniques, we are able to generate 5-second video clips within 3 seconds. By applying a test time sliding window, we are able to generate a minute-long video within one minute with significantly improved visual quality and motion dynamics, spending less than 1 second for generating 1 second video clips on average. We conduct a series of preliminary explorations to find out the optimal tradeoff between computational cost and video quality during diffusion step distillation and hope this could be a good foundation model for open-source explorations. The code and the model weights are available at https://github.com/DA-Group-PKU/Magic-1-For-1.
-]]></content:encoded>
-<pubDate>Tue, 11 Feb 2025 23:27:13 GMT</pubDate>
 </item>
 </channel>
 </rss>
