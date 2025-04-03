@@ -5,15 +5,49 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>VideoScene: Distilling Video Diffusion Model to Generate 3D Scenes in One Step</title>
+<link>https://arxiv.org/abs/2504.01956</link>
+<guid>https://arxiv.org/abs/2504.01956</guid>
+<content:encoded><![CDATA[
+
+  Recovering 3D scenes from sparse views is a challenging task due to its inherent ill-posed problem. Conventional methods have developed specialized solutions (e.g., geometry regularization or feed-forward deterministic model) to mitigate the issue. However, they still suffer from performance degradation by minimal overlap across input views with insufficient visual information. Fortunately, recent video generative models show promise in addressing this challenge as they are capable of generating video clips with plausible 3D structures. Powered by large pretrained video diffusion models, some pioneering research start to explore the potential of video generative prior and create 3D scenes from sparse views. Despite impressive improvements, they are limited by slow inference time and the lack of 3D constraint, leading to inefficiencies and reconstruction artifacts that do not align with real-world geometry structure. In this paper, we propose VideoScene to distill the video diffusion model to generate 3D scenes in one step, aiming to build an efficient and effective tool to bridge the gap from video to 3D. Specifically, we design a 3D-aware leap flow distillation strategy to leap over time-consuming redundant information and train a dynamic denoising policy network to adaptively determine the optimal leap timestep during inference. Extensive experiments demonstrate that our VideoScene achieves faster and superior 3D scene generation results than previous video diffusion models, highlighting its potential as an efficient tool for future video to 3D applications. Project Page: https://hanyang-21.github.io/VideoScene
+
+]]></content:encoded>
+<pubDate>Wed, 02 Apr 2025 13:59:21 GMT</pubDate>
+<pubDate>Wed, 02 Apr 2025 13:59:21 GMT</pubDate>
+</item>
+<item>
+<title>ILLUME+: Illuminating Unified MLLM with Dual Visual Tokenization and Diffusion Refinement</title>
+<link>https://arxiv.org/abs/2504.01934</link>
+<guid>https://arxiv.org/abs/2504.01934</guid>
+<content:encoded><![CDATA[
+
+  We present ILLUME+ that leverages dual visual tokenization and a diffusion decoder to improve both deep semantic understanding and high-fidelity image generation. Existing unified models have struggled to simultaneously handle the three fundamental capabilities in a unified model: understanding, generation, and editing. Models like Chameleon and EMU3 utilize VQGAN for image discretization, due to the lack of deep semantic interaction, they lag behind specialist models like LLaVA in visual understanding tasks. To mitigate this, LaViT and ILLUME employ semantic encoders for tokenization, but they struggle with image editing due to poor texture preservation. Meanwhile, Janus series decouples the input and output image representation, limiting their abilities to seamlessly handle interleaved image-text understanding and generation. In contrast, ILLUME+ introduces a unified dual visual tokenizer, DualViTok, which preserves both fine-grained textures and text-aligned semantics while enabling a coarse-to-fine image representation strategy for multimodal understanding and generation. Additionally, we employ a diffusion model as the image detokenizer for enhanced generation quality and efficient super-resolution. ILLUME+ follows a continuous-input, discrete-output scheme within the unified MLLM and adopts a progressive training procedure that supports dynamic resolution across the vision tokenizer, MLLM, and diffusion decoder. This design allows for flexible and efficient context-aware image editing and generation across diverse tasks. ILLUME+ (3B) exhibits competitive performance against existing unified MLLMs and specialized models across multimodal understanding, generation, and editing benchmarks. With its strong performance, ILLUME+ provides a scalable and versatile foundation for future multimodal applications. Project Page: https://illume-unified-mllm.github.io/.
+
+]]></content:encoded>
+<pubDate>Wed, 02 Apr 2025 13:45:00 GMT</pubDate>
+<pubDate>Wed, 02 Apr 2025 13:45:00 GMT</pubDate>
+</item>
+<item>
+<title>Understanding R1-Zero-Like Training: A Critical Perspective</title>
+<link>https://arxiv.org/abs/2503.20783</link>
+<guid>https://arxiv.org/abs/2503.20783</guid>
+<content:encoded><![CDATA[
+
+  DeepSeek-R1-Zero has shown that reinforcement learning (RL) at scale can directly enhance the reasoning capabilities of LLMs without supervised fine-tuning. In this work, we critically examine R1-Zero-like training by analyzing its two core components: base models and RL. We investigate a wide range of base models, including DeepSeek-V3-Base, to understand how pretraining characteristics influence RL performance. Our analysis reveals that DeepSeek-V3-Base already exhibit ''Aha moment'', while Qwen2.5 base models demonstrate strong reasoning capabilities even without prompt templates, suggesting potential pretraining biases. Additionally, we identify an optimization bias in Group Relative Policy Optimization (GRPO), which artificially increases response length (especially for incorrect outputs) during training. To address this, we introduce Dr. GRPO, an unbiased optimization method that improves token efficiency while maintaining reasoning performance. Leveraging these insights, we present a minimalist R1-Zero recipe that achieves 43.3% accuracy on AIME 2024 with a 7B base model, establishing a new state-of-the-art. Our code is available at https://github.com/sail-sg/understand-r1-zero.
+
+]]></content:encoded>
+<pubDate>Wed, 26 Mar 2025 13:59:14 GMT</pubDate>
+<pubDate>Wed, 26 Mar 2025 13:59:14 GMT</pubDate>
+</item>
+
+<item>
 <title>PaperBench: Evaluating AI's Ability to Replicate AI Research</title>
 <link>https://arxiv.org/abs/2504.01848</link>
 <guid>https://arxiv.org/abs/2504.01848</guid>
 <content:encoded><![CDATA[
-
-  We introduce PaperBench, a benchmark evaluating the ability of AI agents to replicate state-of-the-art AI research. Agents must replicate 20 ICML 2024 Spotlight and Oral papers from scratch, including understanding paper contributions, developing a codebase, and successfully executing experiments. For objective evaluation, we develop rubrics that hierarchically decompose each replication task into smaller sub-tasks with clear grading criteria. In total, PaperBench contains 8,316 individually gradable tasks. Rubrics are co-developed with the author(s) of each ICML paper for accuracy and realism. To enable scalable evaluation, we also develop an LLM-based judge to automatically grade replication attempts against rubrics, and assess our judge's performance by creating a separate benchmark for judges. We evaluate several frontier models on PaperBench, finding that the best-performing tested agent, Claude 3.5 Sonnet (New) with open-source scaffolding, achieves an average replication score of 21.0\%. Finally, we recruit top ML PhDs to attempt a subset of PaperBench, finding that models do not yet outperform the human baseline. We https://github.com/openai/preparedness{open-source our code} to facilitate future research in understanding the AI engineering capabilities of AI agents.
-
+We introduce PaperBench, a benchmark evaluating the ability of AI agents to replicate state-of-the-art AI research. Agents must replicate 20 ICML 2024 Spotlight and Oral papers from scratch, including understanding paper contributions, developing a codebase, and successfully executing experiments. For objective evaluation, we develop rubrics that hierarchically decompose each replication task into smaller sub-tasks with clear grading criteria. In total, PaperBench contains 8,316 individually gradable tasks. Rubrics are co-developed with the author(s) of each ICML paper for accuracy and realism. To enable scalable evaluation, we also develop an LLM-based judge to automatically grade replication attempts against rubrics, and assess our judge's performance by creating a separate benchmark for judges. We evaluate several frontier models on PaperBench, finding that the best-performing tested agent, Claude 3.5 Sonnet (New) with open-source scaffolding, achieves an average replication score of 21.0\%. Finally, we recruit top ML PhDs to attempt a subset of PaperBench, finding that models do not yet outperform the human baseline. We https://github.com/openai/preparedness{open-source our code} to facilitate future research in understanding the AI engineering capabilities of AI agents.
 ]]></content:encoded>
-<pubDate>Wed, 02 Apr 2025 11:55:24 GMT</pubDate>
 <pubDate>Wed, 02 Apr 2025 11:55:24 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +55,8 @@
 <link>https://arxiv.org/abs/2504.01724</link>
 <guid>https://arxiv.org/abs/2504.01724</guid>
 <content:encoded><![CDATA[
-
-  While recent image-based human animation methods achieve realistic body and facial motion synthesis, critical gaps remain in fine-grained holistic controllability, multi-scale adaptability, and long-term temporal coherence, which leads to their lower expressiveness and robustness. We propose a diffusion transformer (DiT) based framework, DreamActor-M1, with hybrid guidance to overcome these limitations. For motion guidance, our hybrid control signals that integrate implicit facial representations, 3D head spheres, and 3D body skeletons achieve robust control of facial expressions and body movements, while producing expressive and identity-preserving animations. For scale adaptation, to handle various body poses and image scales ranging from portraits to full-body views, we employ a progressive training strategy using data with varying resolutions and scales. For appearance guidance, we integrate motion patterns from sequential frames with complementary visual references, ensuring long-term temporal coherence for unseen regions during complex movements. Experiments demonstrate that our method outperforms the state-of-the-art works, delivering expressive results for portraits, upper-body, and full-body generation with robust long-term consistency. Project Page: https://grisoon.github.io/DreamActor-M1/.
-
+While recent image-based human animation methods achieve realistic body and facial motion synthesis, critical gaps remain in fine-grained holistic controllability, multi-scale adaptability, and long-term temporal coherence, which leads to their lower expressiveness and robustness. We propose a diffusion transformer (DiT) based framework, DreamActor-M1, with hybrid guidance to overcome these limitations. For motion guidance, our hybrid control signals that integrate implicit facial representations, 3D head spheres, and 3D body skeletons achieve robust control of facial expressions and body movements, while producing expressive and identity-preserving animations. For scale adaptation, to handle various body poses and image scales ranging from portraits to full-body views, we employ a progressive training strategy using data with varying resolutions and scales. For appearance guidance, we integrate motion patterns from sequential frames with complementary visual references, ensuring long-term temporal coherence for unseen regions during complex movements. Experiments demonstrate that our method outperforms the state-of-the-art works, delivering expressive results for portraits, upper-body, and full-body generation with robust long-term consistency. Project Page: https://grisoon.github.io/DreamActor-M1/.
 ]]></content:encoded>
-<pubDate>Wed, 02 Apr 2025 09:30:32 GMT</pubDate>
 <pubDate>Wed, 02 Apr 2025 09:30:32 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +64,8 @@
 <link>https://arxiv.org/abs/2504.01308</link>
 <guid>https://arxiv.org/abs/2504.01308</guid>
 <content:encoded><![CDATA[
-
-  Vision-Language Models (VLMs) extend the capabilities of Large Language Models (LLMs) by incorporating visual information, yet they remain vulnerable to jailbreak attacks, especially when processing noisy or corrupted images. Although existing VLMs adopt security measures during training to mitigate such attacks, vulnerabilities associated with noise-augmented visual inputs are overlooked. In this work, we identify that missing noise-augmented training causes critical security gaps: many VLMs are susceptible to even simple perturbations such as Gaussian noise. To address this challenge, we propose Robust-VLGuard, a multimodal safety dataset with aligned / misaligned image-text pairs, combined with noise-augmented fine-tuning that reduces attack success rates while preserving functionality of VLM. For stronger optimization-based visual perturbation attacks, we propose DiffPure-VLM, leveraging diffusion models to convert adversarial perturbations into Gaussian-like noise, which can be defended by VLMs with noise-augmented safety fine-tuning. Experimental results demonstrate that the distribution-shifting property of diffusion model aligns well with our fine-tuned VLMs, significantly mitigating adversarial perturbations across varying intensities. The dataset and code are available at https://github.com/JarvisUSTC/DiffPure-RobustVLM.
-
+Vision-Language Models (VLMs) extend the capabilities of Large Language Models (LLMs) by incorporating visual information, yet they remain vulnerable to jailbreak attacks, especially when processing noisy or corrupted images. Although existing VLMs adopt security measures during training to mitigate such attacks, vulnerabilities associated with noise-augmented visual inputs are overlooked. In this work, we identify that missing noise-augmented training causes critical security gaps: many VLMs are susceptible to even simple perturbations such as Gaussian noise. To address this challenge, we propose Robust-VLGuard, a multimodal safety dataset with aligned / misaligned image-text pairs, combined with noise-augmented fine-tuning that reduces attack success rates while preserving functionality of VLM. For stronger optimization-based visual perturbation attacks, we propose DiffPure-VLM, leveraging diffusion models to convert adversarial perturbations into Gaussian-like noise, which can be defended by VLMs with noise-augmented safety fine-tuning. Experimental results demonstrate that the distribution-shifting property of diffusion model aligns well with our fine-tuned VLMs, significantly mitigating adversarial perturbations across varying intensities. The dataset and code are available at https://github.com/JarvisUSTC/DiffPure-RobustVLM.
 ]]></content:encoded>
-<pubDate>Tue, 01 Apr 2025 22:35:19 GMT</pubDate>
 <pubDate>Tue, 01 Apr 2025 22:35:19 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +73,8 @@
 <link>https://arxiv.org/abs/2504.01204</link>
 <guid>https://arxiv.org/abs/2504.01204</guid>
 <content:encoded><![CDATA[
-
-  We present Articulated Kinematics Distillation (AKD), a framework for generating high-fidelity character animations by merging the strengths of skeleton-based animation and modern generative models. AKD uses a skeleton-based representation for rigged 3D assets, drastically reducing the Degrees of Freedom (DoFs) by focusing on joint-level control, which allows for efficient, consistent motion synthesis. Through Score Distillation Sampling (SDS) with pre-trained video diffusion models, AKD distills complex, articulated motions while maintaining structural integrity, overcoming challenges faced by 4D neural deformation fields in preserving shape consistency. This approach is naturally compatible with physics-based simulation, ensuring physically plausible interactions. Experiments show that AKD achieves superior 3D consistency and motion quality compared with existing works on text-to-4D generation. Project page: https://research.nvidia.com/labs/dir/akd/
-
+We present Articulated Kinematics Distillation (AKD), a framework for generating high-fidelity character animations by merging the strengths of skeleton-based animation and modern generative models. AKD uses a skeleton-based representation for rigged 3D assets, drastically reducing the Degrees of Freedom (DoFs) by focusing on joint-level control, which allows for efficient, consistent motion synthesis. Through Score Distillation Sampling (SDS) with pre-trained video diffusion models, AKD distills complex, articulated motions while maintaining structural integrity, overcoming challenges faced by 4D neural deformation fields in preserving shape consistency. This approach is naturally compatible with physics-based simulation, ensuring physically plausible interactions. Experiments show that AKD achieves superior 3D consistency and motion quality compared with existing works on text-to-4D generation. Project page: https://research.nvidia.com/labs/dir/akd/
 ]]></content:encoded>
-<pubDate>Tue, 01 Apr 2025 17:37:57 GMT</pubDate>
 <pubDate>Tue, 01 Apr 2025 17:37:57 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +82,8 @@
 <link>https://arxiv.org/abs/2504.01014</link>
 <guid>https://arxiv.org/abs/2504.01014</guid>
 <content:encoded><![CDATA[
-
-  Recent advancements in image and video synthesis have opened up new promise in generative games. One particularly intriguing application is transforming characters from anime films into interactive, playable entities. This allows players to immerse themselves in the dynamic anime world as their favorite characters for life simulation through language instructions. Such games are defined as infinite game since they eliminate predetermined boundaries and fixed gameplay rules, where players can interact with the game world through open-ended language and experience ever-evolving storylines and environments. Recently, a pioneering approach for infinite anime life simulation employs large language models (LLMs) to translate multi-turn text dialogues into language instructions for image generation. However, it neglects historical visual context, leading to inconsistent gameplay. Furthermore, it only generates static images, failing to incorporate the dynamics necessary for an engaging gaming experience. In this work, we propose AnimeGamer, which is built upon Multimodal Large Language Models (MLLMs) to generate each game state, including dynamic animation shots that depict character movements and updates to character states, as illustrated in Figure 1. We introduce novel action-aware multimodal representations to represent animation shots, which can be decoded into high-quality video clips using a video diffusion model. By taking historical animation shot representations as context and predicting subsequent representations, AnimeGamer can generate games with contextual consistency and satisfactory dynamics. Extensive evaluations using both automated metrics and human evaluations demonstrate that AnimeGamer outperforms existing methods in various aspects of the gaming experience. Codes and checkpoints are available at https://github.com/TencentARC/AnimeGamer.
-
+Recent advancements in image and video synthesis have opened up new promise in generative games. One particularly intriguing application is transforming characters from anime films into interactive, playable entities. This allows players to immerse themselves in the dynamic anime world as their favorite characters for life simulation through language instructions. Such games are defined as infinite game since they eliminate predetermined boundaries and fixed gameplay rules, where players can interact with the game world through open-ended language and experience ever-evolving storylines and environments. Recently, a pioneering approach for infinite anime life simulation employs large language models (LLMs) to translate multi-turn text dialogues into language instructions for image generation. However, it neglects historical visual context, leading to inconsistent gameplay. Furthermore, it only generates static images, failing to incorporate the dynamics necessary for an engaging gaming experience. In this work, we propose AnimeGamer, which is built upon Multimodal Large Language Models (MLLMs) to generate each game state, including dynamic animation shots that depict character movements and updates to character states, as illustrated in Figure 1. We introduce novel action-aware multimodal representations to represent animation shots, which can be decoded into high-quality video clips using a video diffusion model. By taking historical animation shot representations as context and predicting subsequent representations, AnimeGamer can generate games with contextual consistency and satisfactory dynamics. Extensive evaluations using both automated metrics and human evaluations demonstrate that AnimeGamer outperforms existing methods in various aspects of the gaming experience. Codes and checkpoints are available at https://github.com/TencentARC/AnimeGamer.
 ]]></content:encoded>
-<pubDate>Tue, 01 Apr 2025 13:57:18 GMT</pubDate>
 <pubDate>Tue, 01 Apr 2025 13:57:18 GMT</pubDate>
 </item>
 <item>
@@ -69,11 +91,8 @@
 <link>https://arxiv.org/abs/2504.00999</link>
 <guid>https://arxiv.org/abs/2504.00999</guid>
 <content:encoded><![CDATA[
-
-  Masked Image Modeling (MIM) with Vector Quantization (VQ) has achieved great success in both self-supervised pre-training and image generation. However, most existing methods struggle to address the trade-off in shared latent space for generation quality vs. representation learning and efficiency. To push the limits of this paradigm, we propose MergeVQ, which incorporates token merging techniques into VQ-based generative models to bridge the gap between image generation and visual representation learning in a unified architecture. During pre-training, MergeVQ decouples top-k semantics from latent space with the token merge module after self-attention blocks in the encoder for subsequent Look-up Free Quantization (LFQ) and global alignment and recovers their fine-grained details through cross-attention in the decoder for reconstruction. As for the second-stage generation, we introduce MergeAR, which performs KV Cache compression for efficient raster-order prediction. Extensive experiments on ImageNet verify that MergeVQ as an AR generative model achieves competitive performance in both visual representation learning and image generation tasks while maintaining favorable token efficiency and inference speed. The code and model will be available at https://apexgen-x.github.io/MergeVQ.
-
+Masked Image Modeling (MIM) with Vector Quantization (VQ) has achieved great success in both self-supervised pre-training and image generation. However, most existing methods struggle to address the trade-off in shared latent space for generation quality vs. representation learning and efficiency. To push the limits of this paradigm, we propose MergeVQ, which incorporates token merging techniques into VQ-based generative models to bridge the gap between image generation and visual representation learning in a unified architecture. During pre-training, MergeVQ decouples top-k semantics from latent space with the token merge module after self-attention blocks in the encoder for subsequent Look-up Free Quantization (LFQ) and global alignment and recovers their fine-grained details through cross-attention in the decoder for reconstruction. As for the second-stage generation, we introduce MergeAR, which performs KV Cache compression for efficient raster-order prediction. Extensive experiments on ImageNet verify that MergeVQ as an AR generative model achieves competitive performance in both visual representation learning and image generation tasks while maintaining favorable token efficiency and inference speed. The code and model will be available at https://apexgen-x.github.io/MergeVQ.
 ]]></content:encoded>
-<pubDate>Tue, 01 Apr 2025 13:39:19 GMT</pubDate>
 <pubDate>Tue, 01 Apr 2025 13:39:19 GMT</pubDate>
 </item>
 <item>
@@ -81,11 +100,8 @@
 <link>https://arxiv.org/abs/2504.00883</link>
 <guid>https://arxiv.org/abs/2504.00883</guid>
 <content:encoded><![CDATA[
-
-  Increasing attention has been placed on improving the reasoning capacities of multi-modal large language models (MLLMs). As the cornerstone for AI agents that function in the physical realm, video-based visual-spatial intelligence (VSI) emerges as one of the most pivotal reasoning capabilities of MLLMs. This work conducts a first, in-depth study on improving the visual-spatial reasoning of MLLMs via R1-Zero-like training. Technically, we first identify that the visual-spatial reasoning capacities of small- to medium-sized Qwen2-VL models cannot be activated via Chain of Thought (CoT) prompts. We then incorporate GRPO training for improved visual-spatial reasoning, using the carefully curated VSI-100k dataset, following DeepSeek-R1-Zero. During the investigation, we identify the necessity to keep the KL penalty (even with a small value) in GRPO. With just 120 GPU hours, our vsGRPO-2B model, fine-tuned from Qwen2-VL-2B, can outperform the base model by 12.1% and surpass GPT-4o. Moreover, our vsGRPO-7B model, fine-tuned from Qwen2-VL-7B, achieves performance comparable to that of the best open-source model LLaVA-NeXT-Video-72B. Additionally, we compare vsGRPO to supervised fine-tuning and direct preference optimization baselines and observe strong performance superiority. The code and dataset will be available soon.
-
+Increasing attention has been placed on improving the reasoning capacities of multi-modal large language models (MLLMs). As the cornerstone for AI agents that function in the physical realm, video-based visual-spatial intelligence (VSI) emerges as one of the most pivotal reasoning capabilities of MLLMs. This work conducts a first, in-depth study on improving the visual-spatial reasoning of MLLMs via R1-Zero-like training. Technically, we first identify that the visual-spatial reasoning capacities of small- to medium-sized Qwen2-VL models cannot be activated via Chain of Thought (CoT) prompts. We then incorporate GRPO training for improved visual-spatial reasoning, using the carefully curated VSI-100k dataset, following DeepSeek-R1-Zero. During the investigation, we identify the necessity to keep the KL penalty (even with a small value) in GRPO. With just 120 GPU hours, our vsGRPO-2B model, fine-tuned from Qwen2-VL-2B, can outperform the base model by 12.1% and surpass GPT-4o. Moreover, our vsGRPO-7B model, fine-tuned from Qwen2-VL-7B, achieves performance comparable to that of the best open-source model LLaVA-NeXT-Video-72B. Additionally, we compare vsGRPO to supervised fine-tuning and direct preference optimization baselines and observe strong performance superiority. The code and dataset will be available soon.
 ]]></content:encoded>
-<pubDate>Tue, 01 Apr 2025 11:11:11 GMT</pubDate>
 <pubDate>Tue, 01 Apr 2025 11:11:11 GMT</pubDate>
 </item>
 <item>
@@ -93,11 +109,8 @@
 <link>https://arxiv.org/abs/2504.00824</link>
 <guid>https://arxiv.org/abs/2504.00824</guid>
 <content:encoded><![CDATA[
-
-  Academic writing requires both coherent text generation and precise citation of relevant literature. Although recent Retrieval-Augmented Generation (RAG) systems have significantly improved factual accuracy in general-purpose text generation, their capacity to adequately support professional academic writing remains limited. In this work, we introduce ScholarCopilot, a unified framework designed to enhance existing large language models for generating professional academic articles with accurate and contextually relevant citations. ScholarCopilot dynamically determines when to retrieve scholarly references by generating a retrieval token [RET], and then utilizes its representation to look up relevant citations from a database. The retrieved references are fed into the model to augment the generation process. We jointly optimize both the generation and citation tasks within a single framework to increase efficiency. Trained on 500K papers from arXiv, our model achieves a top-1 retrieval accuracy of 40.1% on our evaluation dataset, outperforming baselines such as E5-Mistral-7B-Instruct (15.0%) and BM25 (9.8%). On a dataset of 1,000 academic writing samples, ScholarCopilot scores 16.2/25 in generation quality (measured across relevance, coherence, academic rigor, completeness, and innovation), surpassing models with 10x more parameters such as Qwen-2.5-72B-Instruct (15.8/25). Human studies also confirm ScholarCopilot's superior performance in citation recall, writing efficiency, and overall user experience, confirming the effectiveness of our approach.
-
+Academic writing requires both coherent text generation and precise citation of relevant literature. Although recent Retrieval-Augmented Generation (RAG) systems have significantly improved factual accuracy in general-purpose text generation, their capacity to adequately support professional academic writing remains limited. In this work, we introduce ScholarCopilot, a unified framework designed to enhance existing large language models for generating professional academic articles with accurate and contextually relevant citations. ScholarCopilot dynamically determines when to retrieve scholarly references by generating a retrieval token [RET], and then utilizes its representation to look up relevant citations from a database. The retrieved references are fed into the model to augment the generation process. We jointly optimize both the generation and citation tasks within a single framework to increase efficiency. Trained on 500K papers from arXiv, our model achieves a top-1 retrieval accuracy of 40.1% on our evaluation dataset, outperforming baselines such as E5-Mistral-7B-Instruct (15.0%) and BM25 (9.8%). On a dataset of 1,000 academic writing samples, ScholarCopilot scores 16.2/25 in generation quality (measured across relevance, coherence, academic rigor, completeness, and innovation), surpassing models with 10x more parameters such as Qwen-2.5-72B-Instruct (15.8/25). Human studies also confirm ScholarCopilot's superior performance in citation recall, writing efficiency, and overall user experience, confirming the effectiveness of our approach.
 ]]></content:encoded>
-<pubDate>Tue, 01 Apr 2025 10:12:14 GMT</pubDate>
 <pubDate>Tue, 01 Apr 2025 10:12:14 GMT</pubDate>
 </item>
 <item>
@@ -105,14 +118,10 @@
 <link>https://arxiv.org/abs/2503.23135</link>
 <guid>https://arxiv.org/abs/2503.23135</guid>
 <content:encoded><![CDATA[
-
-  Vision network designs, including Convolutional Neural Networks and Vision Transformers, have significantly advanced the field of computer vision. Yet, their complex computations pose challenges for practical deployments, particularly in real-time applications. To tackle this issue, researchers have explored various lightweight and efficient network designs. However, existing lightweight models predominantly leverage self-attention mechanisms and convolutions for token mixing. This dependence brings limitations in effectiveness and efficiency in the perception and aggregation processes of lightweight networks, hindering the balance between performance and efficiency under limited computational budgets. In this paper, we draw inspiration from the dynamic heteroscale vision ability inherent in the efficient human vision system and propose a ``See Large, Focus Small'' strategy for lightweight vision network design. We introduce LS (Large-Small) convolution, which combines large-kernel perception and small-kernel aggregation. It can efficiently capture a wide range of perceptual information and achieve precise feature aggregation for dynamic and complex visual representations, thus enabling proficient processing of visual information. Based on LS convolution, we present LSNet, a new family of lightweight models. Extensive experiments demonstrate that LSNet achieves superior performance and efficiency over existing lightweight networks in various vision tasks. Codes and models are available at https://github.com/jameslahm/lsnet.
-
+Vision network designs, including Convolutional Neural Networks and Vision Transformers, have significantly advanced the field of computer vision. Yet, their complex computations pose challenges for practical deployments, particularly in real-time applications. To tackle this issue, researchers have explored various lightweight and efficient network designs. However, existing lightweight models predominantly leverage self-attention mechanisms and convolutions for token mixing. This dependence brings limitations in effectiveness and efficiency in the perception and aggregation processes of lightweight networks, hindering the balance between performance and efficiency under limited computational budgets. In this paper, we draw inspiration from the dynamic heteroscale vision ability inherent in the efficient human vision system and propose a ``See Large, Focus Small'' strategy for lightweight vision network design. We introduce LS (Large-Small) convolution, which combines large-kernel perception and small-kernel aggregation. It can efficiently capture a wide range of perceptual information and achieve precise feature aggregation for dynamic and complex visual representations, thus enabling proficient processing of visual information. Based on LS convolution, we present LSNet, a new family of lightweight models. Extensive experiments demonstrate that LSNet achieves superior performance and efficiency over existing lightweight networks in various vision tasks. Codes and models are available at https://github.com/jameslahm/lsnet.
 ]]></content:encoded>
 <pubDate>Sat, 29 Mar 2025 12:00:54 GMT</pubDate>
-<pubDate>Sat, 29 Mar 2025 12:00:54 GMT</pubDate>
 </item>
-
 <item>
 <title>Landscape of Thoughts: Visualizing the Reasoning Process of Large Language Models</title>
 <link>https://arxiv.org/abs/2503.22165</link>
@@ -9031,87 +9040,6 @@ Direct Preference Optimization (DPO) and its variants have become increasingly p
 In this technical report, we present Magic 1-For-1 (Magic141), an efficient video generation model with optimized memory consumption and inference latency. The key idea is simple: factorize the text-to-video generation task into two separate easier tasks for diffusion step distillation, namely text-to-image generation and image-to-video generation. We verify that with the same optimization algorithm, the image-to-video task is indeed easier to converge over the text-to-video task. We also explore a bag of optimization tricks to reduce the computational cost of training the image-to-video (I2V) models from three aspects: 1) model convergence speedup by using a multi-modal prior condition injection; 2) inference latency speed up by applying an adversarial step distillation, and 3) inference memory cost optimization with parameter sparsification. With those techniques, we are able to generate 5-second video clips within 3 seconds. By applying a test time sliding window, we are able to generate a minute-long video within one minute with significantly improved visual quality and motion dynamics, spending less than 1 second for generating 1 second video clips on average. We conduct a series of preliminary explorations to find out the optimal tradeoff between computational cost and video quality during diffusion step distillation and hope this could be a good foundation model for open-source explorations. The code and the model weights are available at https://github.com/DA-Group-PKU/Magic-1-For-1.
 ]]></content:encoded>
 <pubDate>Tue, 11 Feb 2025 23:27:13 GMT</pubDate>
-</item>
-<item>
-<title>Chameleon Benchmark Overfit Detector：评估大型语言模型的真实理解能力</title>
-<link>https://arxiv.org/abs/2502.07445</link>
-<guid>https://arxiv.org/abs/2502.07445</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">C-BOD框架揭示LLM依赖于表面线索而非真实理解的问题。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了Chameleon Benchmark Overfit Detector (C-BOD)，一种通过参数化变换系统性扭曲基准提示的元评估框架，以检测大型语言模型（LLMs）的过拟合现象。通过对输入的重新措辞，同时保持其语义内容和标签，C-BOD可以揭示模型的性能是否源自记忆模式。我们对26个领先的LLM在MMLU基准上的评估显示，经过适度扰动后，平均表现下降2.15%，其中20个模型表现出统计显著差异。研究发现，基线准确率较高的模型在扰动下表现差异较大，而更大的LLM对重新措辞表现出更高的敏感性，这表明它们可能过于依赖固定提示模式。相比之下，Llama系列模型和较低基线准确率的模型显示出微不足道的降幅，暗示其对表面线索的依赖减少。此外，C-BOD具有数据集和模型无关的设计，便于集成到训练流程中，促进更强的语言理解。我们的发现挑战社区超越排行榜分数，重视LLM评估中的抗干扰性和泛化能力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.07445" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 11 Feb 2025 23:22:50 GMT</pubDate>
-</item>
-<item>
-<title>VidCRAFT3: 一种精准控制多视觉元素的图像到视频生成框架</title>
-<link>https://arxiv.org/abs/2502.07531</link>
-<guid>https://arxiv.org/abs/2502.07531</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">VidCRAFT3框架实现了对多个视觉元素的精准控制。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种名为VidCRAFT3的创新框架，旨在实现精准的图像到视频生成，同时控制摄像机运动、物体运动和光照方向。通过提出空间三重注意力变换器，VidCRAFT3能够对每个视觉元素进行松耦合控制。由于大多数现实世界的视频数据集缺乏光照注释，我们构建了一个高质量的合成视频数据集VideoLightingDirection（VLD），其中包含光照方向标注和多样化的物体外观，确保VidCRAFT3有效处理强光传输和反射效应。此外，我们提出了一种三阶段训练策略，消除了对多视觉元素同时注释的训练数据的需求。广泛的实验结果显示，VidCRAFT3在生成高质量视频内容方面的表现优于现有的最先进方法，尤其在控制精度和视觉一致性上。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.07531" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 11 Feb 2025 23:21:13 GMT</pubDate>
-</item>
-<item>
-<title>CAD-Editor: 基于文本的计算机辅助设计编辑框架</title>
-<link>https://arxiv.org/abs/2502.03997</link>
-<guid>https://arxiv.org/abs/2502.03997</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">CAD-Editor 是一个创新的基于文本的 CAD 编辑框架，提升了设计模型修改的效率。</p><br /><br /><p><strong>摘要：</strong> CAD-Editor 是一种创新的框架，专注于文本驱动的计算机辅助设计（CAD）模型编辑，旨在克服传统方法在文本控制和现有CAD模型应用中的局限性。该框架通过自动化数据合成管道生成原始与编辑模型的配对，并利用大型视觉语言模型（LVLMs）将它们的差异总结为编辑指令。此外，CAD-Editor 采用了定位-再填充的方法，将任务拆分为两大子任务：定位待修改区域与填充适当编辑。依赖于大型语言模型（LLMs）的强大自然语言理解和CAD知识，实验结果表明，CAD-Editor 在定量和定性性能上均表现优异，证明了其在文本式CAD编辑领域的潜力和应用价值。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.03997" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 11 Feb 2025 23:16:28 GMT</pubDate>
-</item>
-<item>
-<title>Enhance-A-Video: 一种提升DiT生成视频的一体化方法</title>
-<link>https://arxiv.org/abs/2502.07508</link>
-<guid>https://arxiv.org/abs/2502.07508</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文提出了一种训练无关的方法，提升DiT视频生成的连贯性与质量。</p><br /><br /><p><strong>摘要：</strong> DiT基础的视频生成已经取得显著成果，但现有模型的增强研究仍较为欠缺。本文介绍了一种名为Enhance-A-Video的无训练方法，旨在提升DiT生成视频的连贯性和质量。其核心思想是增强基于非对角时间注意力分布的跨帧相关性。由于设计简单，该方法可轻松应用于大多数DiT视频生成框架，而无需任何重新训练或微调。在多种DiT视频生成模型上，我们的方法在时间一致性和视觉质量方面均表现出良好的改善。我们希望这项研究能激发未来在视频生成增强方面的探索。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.07508" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 11 Feb 2025 23:14:10 GMT</pubDate>
-</item>
-<item>
-<title>大语言模型中的提示缓存引发的隐私泄露风险</title>
-<link>https://arxiv.org/abs/2502.07776</link>
-<guid>https://arxiv.org/abs/2502.07776</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提示缓存导致的时间差异可能引发隐私泄露问题。</p><br /><br /><p><strong>摘要：</strong> 在大语言模型(LLMs)中，提示缓存产生的数据依赖性时延差异可能导致隐私泄露，这意味着缓存的提示处理速度快于非缓存的提示。若缓存在不同用户之间共享，攻击者能够通过快速的API响应时间识别出缓存提示，从而获取其他用户的信息。为此，我们开展了对现实世界LLM API提供者的统计审计，以检测提示缓存。结果发现，七家API提供者（包括OpenAI）之间存在全球性缓存共享，可能导致用户提示的隐私泄露。此外，由于提示缓存导致的时延变化还可能泄露模型架构的信息，我们发现OpenAI的嵌入模型是一个仅解码的Transformer，这一信息之前并未公开。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.07776" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 11 Feb 2025 23:11:49 GMT</pubDate>
-</item>
-<item>
-<title>Nature语言模型：跨领域科学发现的基础模型</title>
-<link>https://arxiv.org/abs/2502.07527</link>
-<guid>https://arxiv.org/abs/2502.07527</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">NatureLM是一个跨科学领域的基础模型，推动科学发现的潜力。</p><br /><br /><p><strong>摘要：</strong> NatureLM是一个新的序列基础科学模型，旨在推动科学发现，通过在多个科学领域的数据上进行预训练，实现了跨领域的生成与设计应用。该模型能够生成和优化小分子、蛋白质、RNA和材料，支持蛋白质到小分子和蛋白质到RNA的跨领域生成，以及在SMILES到IUPAC翻译及USPTO-50k的逆合成任务中实现最先进的性能。NatureLM以不同的模型规模（10亿、80亿和467亿参数）进行开发，且随着模型规模的增大，性能明显改进，展现出在药物发现、材料设计和治疗蛋白或核苷酸开发等领域的广泛应用前景。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.07527" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 11 Feb 2025 23:10:26 GMT</pubDate>
-</item>
-<item>
-<title>Hephaestus-Forge：提升LLM代理的预训练数据集</title>
-<link>https://arxiv.org/abs/2502.06589</link>
-<guid>https://arxiv.org/abs/2502.06589</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">Hephaestus-Forge是首个针对LLM代理的预训练数据集，显著提升其基本能力。</p><br /><br /><p><strong>摘要：</strong> 文章介绍了Hephaestus-Forge，这是第一个大规模预训练语料库，旨在增强大型语言模型（LLM）代理在API功能调用、内在推理和规划能力方面的基本能力。Hephaestus-Forge包含1030亿个代理特定数据，涵盖76,537个API，提供工具文档以传授API功能知识及功能调用轨迹以强化内在推理。通过研究规模法则以确定最佳数据混合比率，持续在Hephaestus-Forge上进行预训练，Hephaestus在三个代理基准测试中超越小型到中型开源LLM，并与商业LLM相抗衡，证明了该预训练语料库在提升LLM代理基本能力及其对新任务或环境的泛化能力方面的有效性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.06589" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 11 Feb 2025 23:04:08 GMT</pubDate>
-</item>
-<item>
-<title>超大规模预训练视觉语言模型的实证研究</title>
-<link>https://arxiv.org/abs/2502.07617</link>
-<guid>https://arxiv.org/abs/2502.07617</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">探讨1000亿实例的预训练对多文化任务的影响。</p><br /><br /><p><strong>摘要：</strong> 本文对在前所未有的1000亿实例规模上预训练视觉语言模型的潜力进行了实证研究。研究发现，尽管传统的西方分类和检索基准（如COCO Captions）在这一规模上模型表现趋于饱和，但在文化多样性相关任务中，利用1000亿规模的网络数据取得了显著提升，特别是对长尾概念的覆盖。此外，研究分析了模型的多语言能力，低资源语言也表现出提升。值得注意的是，通过使用CLIP等质量过滤器减少预训练数据集的规模，虽然通常被认为有助于提升性能，但却可能无意中降低了大规模数据集中所表现的文化多样性。结果表明，尽管传统基准未能显著受益于扩大到1000亿实例的噪声原始网络数据，这一数据规模在构建真正包容的多模态系统中至关重要。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.07617" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 11 Feb 2025 23:03:08 GMT</pubDate>
-</item>
-<item>
-<title>CodeI/O：提升大语言模型的推理能力</title>
-<link>https://arxiv.org/abs/2502.07316</link>
-<guid>https://arxiv.org/abs/2502.07316</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">CodeI/O 提出新方法，通过代码输入输出预测提升推理能力。</p><br /><br /><p><strong>摘要：</strong> CodeI/O 是一种新颖的方法，旨在系统性地提炼多样的推理模式，以应对大语言模型在推理任务中的挑战。通过将原始代码转化为代码输入-输出预测格式，并训练模型在自然语言下预测这些输入和输出，CodeI/O 能够帮助模型掌握通用的推理原理，如逻辑流规划、状态空间搜索、决策树遍历和模块化分解。这种方法有效地将结构化推理与特定代码的语法解耦，确保了程序的严格性。实验结果表明，CodeI/O 在多个推理任务上取得了一致的提升，包括符号、科学、逻辑、数学与数字推理以及常识推理。通过匹配现有的真实输出或重新执行代码以验证预测，CodeI/O++ 实现了更高的性能，促进了多轮修订的思考链。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.07316" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 11 Feb 2025 23:00:20 GMT</pubDate>
 </item>
 </channel>
 </rss>
