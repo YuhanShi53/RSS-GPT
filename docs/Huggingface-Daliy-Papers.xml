@@ -5,15 +5,25 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>Target-Aware Video Diffusion Models</title>
+<link>https://arxiv.org/abs/2503.18950</link>
+<guid>https://arxiv.org/abs/2503.18950</guid>
+<content:encoded><![CDATA[
+
+  We present a target-aware video diffusion model that generates videos from an input image in which an actor interacts with a specified target while performing a desired action. The target is defined by a segmentation mask and the desired action is described via a text prompt. Unlike existing controllable image-to-video diffusion models that often rely on dense structural or motion cues to guide the actor's movements toward the target, our target-aware model requires only a simple mask to indicate the target, leveraging the generalization capabilities of pretrained models to produce plausible actions. This makes our method particularly effective for human-object interaction (HOI) scenarios, where providing precise action guidance is challenging, and further enables the use of video diffusion models for high-level action planning in applications such as robotics. We build our target-aware model by extending a baseline model to incorporate the target mask as an additional input. To enforce target awareness, we introduce a special token that encodes the target's spatial information within the text prompt. We then fine-tune the model with our curated dataset using a novel cross-attention loss that aligns the cross-attention maps associated with this token with the input target mask. To further improve performance, we selectively apply this loss to the most semantically relevant transformer blocks and attention regions. Experimental results show that our target-aware model outperforms existing solutions in generating videos where actors interact accurately with the specified targets. We further demonstrate its efficacy in two downstream applications: video content creation and zero-shot 3D HOI motion synthesis.
+
+]]></content:encoded>
+<pubDate>Mon, 24 Mar 2025 13:59:59 GMT</pubDate>
+<pubDate>Mon, 24 Mar 2025 13:59:59 GMT</pubDate>
+</item>
+
+<item>
 <title>Medical large language models are easily distracted</title>
 <link>https://arxiv.org/abs/2504.01201</link>
 <guid>https://arxiv.org/abs/2504.01201</guid>
 <content:encoded><![CDATA[
-
-  Large language models (LLMs) have the potential to transform medicine, but real-world clinical scenarios contain extraneous information that can hinder performance. The rise of assistive technologies like ambient dictation, which automatically generates draft notes from live patient encounters, has the potential to introduce additional noise making it crucial to assess the ability of LLM's to filter relevant data. To investigate this, we developed MedDistractQA, a benchmark using USMLE-style questions embedded with simulated real-world distractions. Our findings show that distracting statements (polysemous words with clinical meanings used in a non-clinical context or references to unrelated health conditions) can reduce LLM accuracy by up to 17.9%. Commonly proposed solutions to improve model performance such as retrieval-augmented generation (RAG) and medical fine-tuning did not change this effect and in some cases introduced their own confounders and further degraded performance. Our findings suggest that LLMs natively lack the logical mechanisms necessary to distinguish relevant from irrelevant clinical information, posing challenges for real-world applications. MedDistractQA and our results highlights the need for robust mitigation strategies to enhance LLM resilience to extraneous information.
-
+Large language models (LLMs) have the potential to transform medicine, but real-world clinical scenarios contain extraneous information that can hinder performance. The rise of assistive technologies like ambient dictation, which automatically generates draft notes from live patient encounters, has the potential to introduce additional noise making it crucial to assess the ability of LLM's to filter relevant data. To investigate this, we developed MedDistractQA, a benchmark using USMLE-style questions embedded with simulated real-world distractions. Our findings show that distracting statements (polysemous words with clinical meanings used in a non-clinical context or references to unrelated health conditions) can reduce LLM accuracy by up to 17.9%. Commonly proposed solutions to improve model performance such as retrieval-augmented generation (RAG) and medical fine-tuning did not change this effect and in some cases introduced their own confounders and further degraded performance. Our findings suggest that LLMs natively lack the logical mechanisms necessary to distinguish relevant from irrelevant clinical information, posing challenges for real-world applications. MedDistractQA and our results highlights the need for robust mitigation strategies to enhance LLM resilience to extraneous information.
 ]]></content:encoded>
-<pubDate>Tue, 01 Apr 2025 17:34:01 GMT</pubDate>
 <pubDate>Tue, 01 Apr 2025 17:34:01 GMT</pubDate>
 </item>
 <item>
@@ -21,14 +31,10 @@
 <link>https://arxiv.org/abs/2502.18924</link>
 <guid>https://arxiv.org/abs/2502.18924</guid>
 <content:encoded><![CDATA[
-
-  While recent zero-shot text-to-speech (TTS) models have significantly improved speech quality and expressiveness, mainstream systems still suffer from issues related to speech-text alignment modeling: 1) models without explicit speech-text alignment modeling exhibit less robustness, especially for hard sentences in practical applications; 2) predefined alignment-based models suffer from naturalness constraints of forced alignments. This paper introduces MegaTTS 3, a TTS system featuring an innovative sparse alignment algorithm that guides the latent diffusion transformer (DiT). Specifically, we provide sparse alignment boundaries to MegaTTS 3 to reduce the difficulty of alignment without limiting the search space, thereby achieving high naturalness. Moreover, we employ a multi-condition classifier-free guidance strategy for accent intensity adjustment and adopt the piecewise rectified flow technique to accelerate the generation process. Experiments demonstrate that MegaTTS 3 achieves state-of-the-art zero-shot TTS speech quality and supports highly flexible control over accent intensity. Notably, our system can generate high-quality one-minute speech with only 8 sampling steps. Audio samples are available at https://sditdemo.github.io/sditdemo/.
-
+While recent zero-shot text-to-speech (TTS) models have significantly improved speech quality and expressiveness, mainstream systems still suffer from issues related to speech-text alignment modeling: 1) models without explicit speech-text alignment modeling exhibit less robustness, especially for hard sentences in practical applications; 2) predefined alignment-based models suffer from naturalness constraints of forced alignments. This paper introduces MegaTTS 3, a TTS system featuring an innovative sparse alignment algorithm that guides the latent diffusion transformer (DiT). Specifically, we provide sparse alignment boundaries to MegaTTS 3 to reduce the difficulty of alignment without limiting the search space, thereby achieving high naturalness. Moreover, we employ a multi-condition classifier-free guidance strategy for accent intensity adjustment and adopt the piecewise rectified flow technique to accelerate the generation process. Experiments demonstrate that MegaTTS 3 achieves state-of-the-art zero-shot TTS speech quality and supports highly flexible control over accent intensity. Notably, our system can generate high-quality one-minute speech with only 8 sampling steps. Audio samples are available at https://sditdemo.github.io/sditdemo/.
 ]]></content:encoded>
 <pubDate>Wed, 26 Feb 2025 03:22:00 GMT</pubDate>
-<pubDate>Wed, 26 Feb 2025 03:22:00 GMT</pubDate>
 </item>
-
 <item>
 <title>DASH: Detection and Assessment of Systematic Hallucinations of VLMs</title>
 <link>https://arxiv.org/abs/2503.23573</link>
@@ -9010,24 +9016,6 @@ Direct Preference Optimization (DPO) and its variants have become increasingly p
 <div><p style="color: gray;">提出一种框架，通过稀疏自编码器理解和控制视觉模型。</p><br /><br /><p><strong>摘要：</strong> 为了深入理解视觉模型，我们不仅需要解释其学习的特征，还需通过控制实验验证这些解释。当前的方法要么提供可解释的特征但不能测试其因果影响，要么允许模型编辑但没有可解释的控制。我们提出了一个统一框架，利用稀疏自编码器（SAEs）弥补这一空白，能够发现可人类解释的视觉特征，并精确操纵这些特征以测试模型行为的假设。通过对最先进的视觉模型应用该方法，我们揭示了不同预训练目标的模型在语义抽象学习上的关键差异，并展示了我们框架在多个视觉任务中的实际应用。我们的研究表明，SAEs能够可靠地识别和操纵可解释的视觉特征，而无需对模型进行重新训练，这为理解和控制视觉模型行为提供了强大的工具。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.06755" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 12 Feb 2025 09:54:39 GMT</pubDate>
-</item>
-<item>
-<title>基于链式选片的长视频理解优化</title>
-<link>https://arxiv.org/abs/2502.06428</link>
-<guid>https://arxiv.org/abs/2502.06428</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出链式选片方法以优化长视频的任务相关镜头选择。</p><br /><br /><p><strong>摘要：</strong> 本研究针对多模态大语言模型在处理长视频时面临的视觉token过多问题，提出了链式选片（CoS）方法。传统的视频采样方法难以平衡关键细节与冗余内容的选择，导致模型对视频理解的偏差。CoS方法将镜头选择视为测试时视觉提示的优化，通过优化镜头与任务的对齐来选择适合视频理解的镜头。其核心包括：一个二元视频摘要机制，用于发现任务相关镜头，以及一个视频共推理模块，利用二元编码将相关镜头与不相关镜头进行学习对齐。实验结果表明，CoS在多个基线和数据集上的有效性和适应性得到验证。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.06428" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 12 Feb 2025 07:51:18 GMT</pubDate>
-</item>
-<item>
-<title>深入探讨模型架构与超参数对缩放法则的影响</title>
-<link>https://arxiv.org/abs/2502.06857</link>
-<guid>https://arxiv.org/abs/2502.06857</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本研究探讨模型架构及超参数对缩放法则的影响，发布开放数据集Gemstones。</p><br /><br /><p><strong>摘要：</strong> 本文研究使用广泛的模型架构和超参数选择来探讨缩放法则的适用性，强调这些选择对结果中的建议产生的重要影响。作为研究的主要成果，我们发布了Gemstones，这是迄今为止最全面的开源缩放法则数据集，包含超过4000个检查点，这些变换器模型的参数量高达20亿，采用不同的学习率、冷却周期和架构形状进行训练。我们的数据集支持更复杂的缩放研究，例如预测语言建模性能与模型宽度和深度的关系。通过分析模型组合的各个方面，我们发现缩放法则的建议对实验设计过程和使用的具体模型检查点非常敏感。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.06857" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 12 Feb 2025 07:18:08 GMT</pubDate>
 </item>
 </channel>
 </rss>
