@@ -5,15 +5,37 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>DASH: Detection and Assessment of Systematic Hallucinations of VLMs</title>
+<link>https://arxiv.org/abs/2503.23573</link>
+<guid>https://arxiv.org/abs/2503.23573</guid>
+<content:encoded><![CDATA[
+
+  Vision-language models (VLMs) are prone to object hallucinations, where they erroneously indicate the presenceof certain objects in an image. Existing benchmarks quantify hallucinations using relatively small, labeled datasets. However, this approach is i) insufficient to assess hallucinations that arise in open-world settings, where VLMs are widely used, and ii) inadequate for detecting systematic errors in VLMs. We propose DASH (Detection and Assessment of Systematic Hallucinations), an automatic, large-scale pipeline designed to identify systematic hallucinations of VLMs on real-world images in an open-world setting. A key component is DASH-OPT for image-based retrieval, where we optimize over the ''natural image manifold'' to generate images that mislead the VLM. The output of DASH consists of clusters of real and semantically similar images for which the VLM hallucinates an object. We apply DASH to PaliGemma and two LLaVA-NeXT models across 380 object classes and, in total, find more than 19k clusters with 950k images. We study the transfer of the identified systematic hallucinations to other VLMs and show that fine-tuning PaliGemma with the model-specific images obtained with DASH mitigates object hallucinations. Code and data are available at https://YanNeu.github.io/DASH.
+
+]]></content:encoded>
+<pubDate>Sun, 30 Mar 2025 15:45:09 GMT</pubDate>
+<pubDate>Sun, 30 Mar 2025 15:45:09 GMT</pubDate>
+</item>
+<item>
+<title>Towards Physically Plausible Video Generation via VLM Planning</title>
+<link>https://arxiv.org/abs/2503.23368</link>
+<guid>https://arxiv.org/abs/2503.23368</guid>
+<content:encoded><![CDATA[
+
+  Video diffusion models (VDMs) have advanced significantly in recent years, enabling the generation of highly realistic videos and drawing the attention of the community in their potential as world simulators. However, despite their capabilities, VDMs often fail to produce physically plausible videos due to an inherent lack of understanding of physics, resulting in incorrect dynamics and event sequences. To address this limitation, we propose a novel two-stage image-to-video generation framework that explicitly incorporates physics. In the first stage, we employ a Vision Language Model (VLM) as a coarse-grained motion planner, integrating chain-of-thought and physics-aware reasoning to predict a rough motion trajectories/changes that approximate real-world physical dynamics while ensuring the inter-frame consistency. In the second stage, we use the predicted motion trajectories/changes to guide the video generation of a VDM. As the predicted motion trajectories/changes are rough, noise is added during inference to provide freedom to the VDM in generating motion with more fine details. Extensive experimental results demonstrate that our framework can produce physically plausible motion, and comparative evaluations highlight the notable superiority of our approach over existing methods. More video results are available on our Project Page: https://madaoer.github.io/projects/physically_plausible_video_generation.
+
+]]></content:encoded>
+<pubDate>Sun, 30 Mar 2025 05:03:09 GMT</pubDate>
+<pubDate>Sun, 30 Mar 2025 05:03:09 GMT</pubDate>
+</item>
+
+<item>
 <title>VerifiAgent: a Unified Verification Agent in Language Model Reasoning</title>
 <link>https://arxiv.org/abs/2504.00406</link>
 <guid>https://arxiv.org/abs/2504.00406</guid>
 <content:encoded><![CDATA[
-
-  Large language models demonstrate remarkable reasoning capabilities but often produce unreliable or incorrect responses. Existing verification methods are typically model-specific or domain-restricted, requiring significant computational resources and lacking scalability across diverse reasoning tasks. To address these limitations, we propose VerifiAgent, a unified verification agent that integrates two levels of verification: meta-verification, which assesses completeness and consistency in model responses, and tool-based adaptive verification, where VerifiAgent autonomously selects appropriate verification tools based on the reasoning type, including mathematical, logical, or commonsense reasoning. This adaptive approach ensures both efficiency and robustness across different verification scenarios. Experimental results show that VerifiAgent outperforms baseline verification methods (e.g., deductive verifier, backward verifier) among all reasoning tasks. Additionally, it can further enhance reasoning accuracy by leveraging feedback from verification results. VerifiAgent can also be effectively applied to inference scaling, achieving better results with fewer generated samples and costs compared to existing process reward models in the mathematical reasoning domain. Code is available at https://github.com/Jiuzhouh/VerifiAgent
-
+Large language models demonstrate remarkable reasoning capabilities but often produce unreliable or incorrect responses. Existing verification methods are typically model-specific or domain-restricted, requiring significant computational resources and lacking scalability across diverse reasoning tasks. To address these limitations, we propose VerifiAgent, a unified verification agent that integrates two levels of verification: meta-verification, which assesses completeness and consistency in model responses, and tool-based adaptive verification, where VerifiAgent autonomously selects appropriate verification tools based on the reasoning type, including mathematical, logical, or commonsense reasoning. This adaptive approach ensures both efficiency and robustness across different verification scenarios. Experimental results show that VerifiAgent outperforms baseline verification methods (e.g., deductive verifier, backward verifier) among all reasoning tasks. Additionally, it can further enhance reasoning accuracy by leveraging feedback from verification results. VerifiAgent can also be effectively applied to inference scaling, achieving better results with fewer generated samples and costs compared to existing process reward models in the mathematical reasoning domain. Code is available at https://github.com/Jiuzhouh/VerifiAgent
 ]]></content:encoded>
-<pubDate>Tue, 01 Apr 2025 00:05:03 GMT</pubDate>
 <pubDate>Tue, 01 Apr 2025 00:05:03 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +43,8 @@
 <link>https://arxiv.org/abs/2503.18817</link>
 <guid>https://arxiv.org/abs/2503.18817</guid>
 <content:encoded><![CDATA[
-
-  Prior research on out-of-distribution detection (OoDD) has primarily focused on single-modality models. Recently, with the advent of large-scale pretrained vision-language models such as CLIP, OoDD methods utilizing such multi-modal representations through zero-shot and prompt learning strategies have emerged. However, these methods typically involve either freezing the pretrained weights or only partially tuning them, which can be suboptimal for downstream datasets. In this paper, we highlight that multi-modal fine-tuning (MMFT) can achieve notable OoDD performance. Despite some recent works demonstrating the impact of fine-tuning methods for OoDD, there remains significant potential for performance improvement. We investigate the limitation of na\"ive fine-tuning methods, examining why they fail to fully leverage the pretrained knowledge. Our empirical analysis suggests that this issue could stem from the modality gap within in-distribution (ID) embeddings. To address this, we propose a training objective that enhances cross-modal alignment by regularizing the distances between image and text embeddings of ID data. This adjustment helps in better utilizing pretrained textual information by aligning similar semantics from different modalities (i.e., text and image) more closely in the hyperspherical representation space. We theoretically demonstrate that the proposed regularization corresponds to the maximum likelihood estimation of an energy-based model on a hypersphere. Utilizing ImageNet-1k OoD benchmark datasets, we show that our method, combined with post-hoc OoDD approaches leveraging pretrained knowledge (e.g., NegLabel), significantly outperforms existing methods, achieving state-of-the-art OoDD performance and leading ID accuracy.
-
+Prior research on out-of-distribution detection (OoDD) has primarily focused on single-modality models. Recently, with the advent of large-scale pretrained vision-language models such as CLIP, OoDD methods utilizing such multi-modal representations through zero-shot and prompt learning strategies have emerged. However, these methods typically involve either freezing the pretrained weights or only partially tuning them, which can be suboptimal for downstream datasets. In this paper, we highlight that multi-modal fine-tuning (MMFT) can achieve notable OoDD performance. Despite some recent works demonstrating the impact of fine-tuning methods for OoDD, there remains significant potential for performance improvement. We investigate the limitation of na\"ive fine-tuning methods, examining why they fail to fully leverage the pretrained knowledge. Our empirical analysis suggests that this issue could stem from the modality gap within in-distribution (ID) embeddings. To address this, we propose a training objective that enhances cross-modal alignment by regularizing the distances between image and text embeddings of ID data. This adjustment helps in better utilizing pretrained textual information by aligning similar semantics from different modalities (i.e., text and image) more closely in the hyperspherical representation space. We theoretically demonstrate that the proposed regularization corresponds to the maximum likelihood estimation of an energy-based model on a hypersphere. Utilizing ImageNet-1k OoD benchmark datasets, we show that our method, combined with post-hoc OoDD approaches leveraging pretrained knowledge (e.g., NegLabel), significantly outperforms existing methods, achieving state-of-the-art OoDD performance and leading ID accuracy.
 ]]></content:encoded>
-<pubDate>Mon, 24 Mar 2025 12:00:21 GMT</pubDate>
 <pubDate>Mon, 24 Mar 2025 12:00:21 GMT</pubDate>
 </item>
 <item>
@@ -33,14 +52,10 @@
 <link>https://arxiv.org/abs/2405.20216</link>
 <guid>https://arxiv.org/abs/2405.20216</guid>
 <content:encoded><![CDATA[
-
-  The generation of high-quality human images through text-to-image (T2I) methods is a significant yet challenging task. Distinct from general image generation, human image synthesis must satisfy stringent criteria related to human pose, anatomy, and alignment with textual prompts, making it particularly difficult to achieve realistic results. Recent advancements in T2I generation based on diffusion models have shown promise, yet challenges remain in meeting human-specific preferences. In this paper, we introduce a novel approach tailored specifically for human image generation utilizing Direct Preference Optimization (DPO). Specifically, we introduce an efficient method for constructing a specialized DPO dataset for training human image generation models without the need for costly human feedback. We also propose a modified loss function that enhances the DPO training process by minimizing artifacts and improving image fidelity. Our method demonstrates its versatility and effectiveness in generating human images, including personalized text-to-image generation. Through comprehensive evaluations, we show that our approach significantly advances the state of human image generation, achieving superior results in terms of natural anatomies, poses, and text-image alignment.
-
+The generation of high-quality human images through text-to-image (T2I) methods is a significant yet challenging task. Distinct from general image generation, human image synthesis must satisfy stringent criteria related to human pose, anatomy, and alignment with textual prompts, making it particularly difficult to achieve realistic results. Recent advancements in T2I generation based on diffusion models have shown promise, yet challenges remain in meeting human-specific preferences. In this paper, we introduce a novel approach tailored specifically for human image generation utilizing Direct Preference Optimization (DPO). Specifically, we introduce an efficient method for constructing a specialized DPO dataset for training human image generation models without the need for costly human feedback. We also propose a modified loss function that enhances the DPO training process by minimizing artifacts and improving image fidelity. Our method demonstrates its versatility and effectiveness in generating human images, including personalized text-to-image generation. Through comprehensive evaluations, we show that our approach significantly advances the state of human image generation, achieving superior results in terms of natural anatomies, poses, and text-image alignment.
 ]]></content:encoded>
 <pubDate>Thu, 30 May 2024 12:18:05 GMT</pubDate>
-<pubDate>Thu, 30 May 2024 12:18:05 GMT</pubDate>
 </item>
-
 <item>
 <title>VideoScene: Distilling Video Diffusion Model to Generate 3D Scenes in One Step</title>
 <link>https://arxiv.org/abs/2504.01956</link>
@@ -9013,33 +9028,6 @@ Direct Preference Optimization (DPO) and its variants have become increasingly p
 <div><p style="color: gray;">提出MEAP方法，显著提升大型语言模型的关键信息检索能力。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种名为Mask-Enhanced Autoregressive Prediction（MEAP）的方法，通过将遮蔽语言建模（MLM）与下一词预测（NTP）结合，显著改善大型语言模型在关键信息检索和长上下文推理任务中的表现。MEAP随机遮蔽输入令牌的一小部分，然后利用解码器Transformer进行自回归的下一词预测，避免了对双向注意力或编码-解码架构的依赖，从而在预训练和推理阶段没有额外的计算开销。实验表明，MEAP在关键检索和长上下文推理任务上优于NTP，并且在常识推理任务上表现相当或更优。在有监督微调中，MEAP在“中间缺失”情境下表现优异，超越NTP达11.77个百分点。分析显示，MEAP能够提升可区分的注意力评分，增强了模型对与任务相关信号的关注，同时减少了外围上下文的影响。这些结果表明，MEAP是大型语言模型训练中的一种有前景的方法。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.07490" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 12 Feb 2025 06:55:30 GMT</pubDate>
-</item>
-<item>
-<title>参数化技能扩展与组合框架PSEC的研究</title>
-<link>https://arxiv.org/abs/2502.05932</link>
-<guid>https://arxiv.org/abs/2502.05932</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文提出参数化技能扩展与组合框架PSEC，用于提高自主智能体的技能扩展效率。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了参数化技能扩展与组合框架PSEC，旨在提升自主智能体在应对新挑战时的技能扩展效率。传统方法在扩展新技能时训练效率低下，未能充分利用已有知识。PSEC通过维护可管理的技能库，以低秩适配（LoRA）模块的形式逐步集成技能原语，实现参数高效的微调，促进灵活的技能扩展。此外，该框架通过合并不同技能的LoRA模块在参数空间中直接进行技能组合，利用技能间的共享信息高效编程新技能。文章还提出了一种上下文感知模块，能够动态激活不同技能，以协同处理新任务。经过在D4RL、DSRL基准和DeepMind控制套件上的实验，结果表明PSEC在有效利用已有知识以应对新挑战以及扩大技能库方面表现优越。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.05932" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 12 Feb 2025 04:53:50 GMT</pubDate>
-</item>
-<item>
-<title>Eclair: 一种高效的文档级光学字符识别工具</title>
-<link>https://arxiv.org/abs/2502.04223</link>
-<guid>https://arxiv.org/abs/2502.04223</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">Eclair是一款优化的文本提取工具，旨在提高文档的理解和处理能力。</p><br /><br /><p><strong>摘要：</strong> Eclair是一种新型的光学字符识别（OCR）工具，专门设计用于处理多种文档类型。它不仅能从图像中提取文本，还能识别文档的结构和语义信息，如格式、公式、表格以及多个块的阅读顺序。这些功能对于文档查询、问题回答及训练大语言模型和视觉语言模型至关重要。通过引入人类标注的基准测试，Eclair在文档级OCR及语义分类上达到了最先进的准确率，超越了其他方法。此外，Eclair在多个现有基准上表现出色，展现了其广泛的应用潜力和强大的性能。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.04223" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 12 Feb 2025 04:25:54 GMT</pubDate>
-</item>
-<item>
-<title>FailSafeQA：评估金融领域LLM的鲁棒性与上下文意识的新基准</title>
-<link>https://arxiv.org/abs/2502.06329</link>
-<guid>https://arxiv.org/abs/2502.06329</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本研究提出了一种新的金融基准FailSafeQA，旨在测试LLM的鲁棒性与上下文意识。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一个新的长上下文金融基准FailSafeQA，旨在测试大型语言模型（LLM）在面对六种人机交互变化时的鲁棒性和上下文意识。我们聚焦于查询失败和上下文失败这两个案例研究，分别通过改变查询的领域专业性、完整性和语言准确性，及模拟上传降级、无关和空文档来进行测试。使用LLM-as-a-Judge方法及Qwen2.5-72B-Instruct模型，定义并计算24种现成模型的鲁棒性、上下文基础和合规性评分。结果表明，尽管某些模型在应对输入扰动方面表现出色，但在提供鲁棒答案时必须谨慎避免虚构信息的出现。Palmyra-Fin-128k-Instruct在合规性上表现最优，但在17%的测试案例中难以维持鲁棒预测；而OpenAI o3-mini则在41%案例中虚构了信息。这些结果表明，即使是高表现的模型仍有显著改进空间，并强调了FailSafeQA在金融应用中优化LLM可靠性的潜力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.06329" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 12 Feb 2025 02:51:41 GMT</pubDate>
 </item>
 </channel>
 </rss>
