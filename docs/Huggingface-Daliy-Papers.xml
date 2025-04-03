@@ -5,15 +5,37 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>Medical large language models are easily distracted</title>
+<link>https://arxiv.org/abs/2504.01201</link>
+<guid>https://arxiv.org/abs/2504.01201</guid>
+<content:encoded><![CDATA[
+
+  Large language models (LLMs) have the potential to transform medicine, but real-world clinical scenarios contain extraneous information that can hinder performance. The rise of assistive technologies like ambient dictation, which automatically generates draft notes from live patient encounters, has the potential to introduce additional noise making it crucial to assess the ability of LLM's to filter relevant data. To investigate this, we developed MedDistractQA, a benchmark using USMLE-style questions embedded with simulated real-world distractions. Our findings show that distracting statements (polysemous words with clinical meanings used in a non-clinical context or references to unrelated health conditions) can reduce LLM accuracy by up to 17.9%. Commonly proposed solutions to improve model performance such as retrieval-augmented generation (RAG) and medical fine-tuning did not change this effect and in some cases introduced their own confounders and further degraded performance. Our findings suggest that LLMs natively lack the logical mechanisms necessary to distinguish relevant from irrelevant clinical information, posing challenges for real-world applications. MedDistractQA and our results highlights the need for robust mitigation strategies to enhance LLM resilience to extraneous information.
+
+]]></content:encoded>
+<pubDate>Tue, 01 Apr 2025 17:34:01 GMT</pubDate>
+<pubDate>Tue, 01 Apr 2025 17:34:01 GMT</pubDate>
+</item>
+<item>
+<title>MegaTTS 3: Sparse Alignment Enhanced Latent Diffusion Transformer for Zero-Shot Speech Synthesis</title>
+<link>https://arxiv.org/abs/2502.18924</link>
+<guid>https://arxiv.org/abs/2502.18924</guid>
+<content:encoded><![CDATA[
+
+  While recent zero-shot text-to-speech (TTS) models have significantly improved speech quality and expressiveness, mainstream systems still suffer from issues related to speech-text alignment modeling: 1) models without explicit speech-text alignment modeling exhibit less robustness, especially for hard sentences in practical applications; 2) predefined alignment-based models suffer from naturalness constraints of forced alignments. This paper introduces MegaTTS 3, a TTS system featuring an innovative sparse alignment algorithm that guides the latent diffusion transformer (DiT). Specifically, we provide sparse alignment boundaries to MegaTTS 3 to reduce the difficulty of alignment without limiting the search space, thereby achieving high naturalness. Moreover, we employ a multi-condition classifier-free guidance strategy for accent intensity adjustment and adopt the piecewise rectified flow technique to accelerate the generation process. Experiments demonstrate that MegaTTS 3 achieves state-of-the-art zero-shot TTS speech quality and supports highly flexible control over accent intensity. Notably, our system can generate high-quality one-minute speech with only 8 sampling steps. Audio samples are available at https://sditdemo.github.io/sditdemo/.
+
+]]></content:encoded>
+<pubDate>Wed, 26 Feb 2025 03:22:00 GMT</pubDate>
+<pubDate>Wed, 26 Feb 2025 03:22:00 GMT</pubDate>
+</item>
+
+<item>
 <title>DASH: Detection and Assessment of Systematic Hallucinations of VLMs</title>
 <link>https://arxiv.org/abs/2503.23573</link>
 <guid>https://arxiv.org/abs/2503.23573</guid>
 <content:encoded><![CDATA[
-
-  Vision-language models (VLMs) are prone to object hallucinations, where they erroneously indicate the presenceof certain objects in an image. Existing benchmarks quantify hallucinations using relatively small, labeled datasets. However, this approach is i) insufficient to assess hallucinations that arise in open-world settings, where VLMs are widely used, and ii) inadequate for detecting systematic errors in VLMs. We propose DASH (Detection and Assessment of Systematic Hallucinations), an automatic, large-scale pipeline designed to identify systematic hallucinations of VLMs on real-world images in an open-world setting. A key component is DASH-OPT for image-based retrieval, where we optimize over the ''natural image manifold'' to generate images that mislead the VLM. The output of DASH consists of clusters of real and semantically similar images for which the VLM hallucinates an object. We apply DASH to PaliGemma and two LLaVA-NeXT models across 380 object classes and, in total, find more than 19k clusters with 950k images. We study the transfer of the identified systematic hallucinations to other VLMs and show that fine-tuning PaliGemma with the model-specific images obtained with DASH mitigates object hallucinations. Code and data are available at https://YanNeu.github.io/DASH.
-
+Vision-language models (VLMs) are prone to object hallucinations, where they erroneously indicate the presenceof certain objects in an image. Existing benchmarks quantify hallucinations using relatively small, labeled datasets. However, this approach is i) insufficient to assess hallucinations that arise in open-world settings, where VLMs are widely used, and ii) inadequate for detecting systematic errors in VLMs. We propose DASH (Detection and Assessment of Systematic Hallucinations), an automatic, large-scale pipeline designed to identify systematic hallucinations of VLMs on real-world images in an open-world setting. A key component is DASH-OPT for image-based retrieval, where we optimize over the ''natural image manifold'' to generate images that mislead the VLM. The output of DASH consists of clusters of real and semantically similar images for which the VLM hallucinates an object. We apply DASH to PaliGemma and two LLaVA-NeXT models across 380 object classes and, in total, find more than 19k clusters with 950k images. We study the transfer of the identified systematic hallucinations to other VLMs and show that fine-tuning PaliGemma with the model-specific images obtained with DASH mitigates object hallucinations. Code and data are available at https://YanNeu.github.io/DASH.
 ]]></content:encoded>
-<pubDate>Sun, 30 Mar 2025 15:45:09 GMT</pubDate>
 <pubDate>Sun, 30 Mar 2025 15:45:09 GMT</pubDate>
 </item>
 <item>
@@ -21,14 +43,10 @@
 <link>https://arxiv.org/abs/2503.23368</link>
 <guid>https://arxiv.org/abs/2503.23368</guid>
 <content:encoded><![CDATA[
-
-  Video diffusion models (VDMs) have advanced significantly in recent years, enabling the generation of highly realistic videos and drawing the attention of the community in their potential as world simulators. However, despite their capabilities, VDMs often fail to produce physically plausible videos due to an inherent lack of understanding of physics, resulting in incorrect dynamics and event sequences. To address this limitation, we propose a novel two-stage image-to-video generation framework that explicitly incorporates physics. In the first stage, we employ a Vision Language Model (VLM) as a coarse-grained motion planner, integrating chain-of-thought and physics-aware reasoning to predict a rough motion trajectories/changes that approximate real-world physical dynamics while ensuring the inter-frame consistency. In the second stage, we use the predicted motion trajectories/changes to guide the video generation of a VDM. As the predicted motion trajectories/changes are rough, noise is added during inference to provide freedom to the VDM in generating motion with more fine details. Extensive experimental results demonstrate that our framework can produce physically plausible motion, and comparative evaluations highlight the notable superiority of our approach over existing methods. More video results are available on our Project Page: https://madaoer.github.io/projects/physically_plausible_video_generation.
-
+Video diffusion models (VDMs) have advanced significantly in recent years, enabling the generation of highly realistic videos and drawing the attention of the community in their potential as world simulators. However, despite their capabilities, VDMs often fail to produce physically plausible videos due to an inherent lack of understanding of physics, resulting in incorrect dynamics and event sequences. To address this limitation, we propose a novel two-stage image-to-video generation framework that explicitly incorporates physics. In the first stage, we employ a Vision Language Model (VLM) as a coarse-grained motion planner, integrating chain-of-thought and physics-aware reasoning to predict a rough motion trajectories/changes that approximate real-world physical dynamics while ensuring the inter-frame consistency. In the second stage, we use the predicted motion trajectories/changes to guide the video generation of a VDM. As the predicted motion trajectories/changes are rough, noise is added during inference to provide freedom to the VDM in generating motion with more fine details. Extensive experimental results demonstrate that our framework can produce physically plausible motion, and comparative evaluations highlight the notable superiority of our approach over existing methods. More video results are available on our Project Page: https://madaoer.github.io/projects/physically_plausible_video_generation.
 ]]></content:encoded>
 <pubDate>Sun, 30 Mar 2025 05:03:09 GMT</pubDate>
-<pubDate>Sun, 30 Mar 2025 05:03:09 GMT</pubDate>
 </item>
-
 <item>
 <title>VerifiAgent: a Unified Verification Agent in Language Model Reasoning</title>
 <link>https://arxiv.org/abs/2504.00406</link>
@@ -9010,24 +9028,6 @@ Direct Preference Optimization (DPO) and its variants have become increasingly p
 <div><p style="color: gray;">本研究探讨模型架构及超参数对缩放法则的影响，发布开放数据集Gemstones。</p><br /><br /><p><strong>摘要：</strong> 本文研究使用广泛的模型架构和超参数选择来探讨缩放法则的适用性，强调这些选择对结果中的建议产生的重要影响。作为研究的主要成果，我们发布了Gemstones，这是迄今为止最全面的开源缩放法则数据集，包含超过4000个检查点，这些变换器模型的参数量高达20亿，采用不同的学习率、冷却周期和架构形状进行训练。我们的数据集支持更复杂的缩放研究，例如预测语言建模性能与模型宽度和深度的关系。通过分析模型组合的各个方面，我们发现缩放法则的建议对实验设计过程和使用的具体模型检查点非常敏感。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.06857" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 12 Feb 2025 07:18:08 GMT</pubDate>
-</item>
-<item>
-<title>基于检索增强生成的金融时间序列预测框架</title>
-<link>https://arxiv.org/abs/2502.05878</link>
-<guid>https://arxiv.org/abs/2502.05878</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出一种新的框架，通过有效检索提升金融时间序列预测精度。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种新的检索增强生成（RAG）框架，用于金融时间序列预测，解决了现有检索方法在处理复杂金融分析中的不足。该框架的核心创新包括：以一亿参数的大型语言模型（StockLLM）作为基础，采用新颖的候选选择方法并利用LLM反馈，以及通过最大化查询与历史重要序列相似度的训练目标，来提高检索效果。新构建的数据集融合了金融指标和历史股价，确保了FinSeer的有效训练与评估。实验结果表明，该RAG框架在BIGDATA22上实现了比StockLLM和随机检索更高的预测精度，FinSeer在现有检索方法中表现优异，准确率提高了8%。此研究突显了定制化检索模型在金融预测中的重要性，并为未来研究奠定了基础。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.05878" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 12 Feb 2025 07:10:24 GMT</pubDate>
-</item>
-<item>
-<title>Mask-Enhanced Autoregressive Prediction：提升大型语言模型信息检索能力</title>
-<link>https://arxiv.org/abs/2502.07490</link>
-<guid>https://arxiv.org/abs/2502.07490</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出MEAP方法，显著提升大型语言模型的关键信息检索能力。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种名为Mask-Enhanced Autoregressive Prediction（MEAP）的方法，通过将遮蔽语言建模（MLM）与下一词预测（NTP）结合，显著改善大型语言模型在关键信息检索和长上下文推理任务中的表现。MEAP随机遮蔽输入令牌的一小部分，然后利用解码器Transformer进行自回归的下一词预测，避免了对双向注意力或编码-解码架构的依赖，从而在预训练和推理阶段没有额外的计算开销。实验表明，MEAP在关键检索和长上下文推理任务上优于NTP，并且在常识推理任务上表现相当或更优。在有监督微调中，MEAP在“中间缺失”情境下表现优异，超越NTP达11.77个百分点。分析显示，MEAP能够提升可区分的注意力评分，增强了模型对与任务相关信号的关注，同时减少了外围上下文的影响。这些结果表明，MEAP是大型语言模型训练中的一种有前景的方法。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.07490" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 12 Feb 2025 06:55:30 GMT</pubDate>
 </item>
 </channel>
 </rss>
