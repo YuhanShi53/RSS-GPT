@@ -5,15 +5,73 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>ZClip: Adaptive Spike Mitigation for LLM Pre-Training</title>
+<link>https://arxiv.org/abs/2504.02507</link>
+<guid>https://arxiv.org/abs/2504.02507</guid>
+<content:encoded><![CDATA[
+
+  Training large language models (LLMs) presents numerous challenges, including gradient instability and loss spikes. These phenomena can lead to catastrophic divergence, requiring costly checkpoint restoration and data batch skipping. Traditional gradient clipping techniques, such as constant or norm-based methods, fail to address these issues effectively due to their reliance on fixed thresholds or heuristics, leading to inefficient learning and requiring frequent manual intervention. In this work, we propose ZClip, an adaptive gradient clipping algorithm that dynamically adjusts the clipping threshold based on statistical properties of gradient norms over time. Unlike prior reactive strategies, ZClip proactively adapts to training dynamics without making any prior assumptions on the scale and the temporal evolution of gradient norms. At its core, it leverages z-score-based anomaly detection to identify and mitigate large gradient spikes, preventing malignant loss spikes while not interfering with convergence otherwise. Our code is available at: https://github.com/bluorion-com/ZClip.
+
+]]></content:encoded>
+<pubDate>Thu, 03 Apr 2025 07:41:55 GMT</pubDate>
+<pubDate>Thu, 03 Apr 2025 07:41:55 GMT</pubDate>
+</item>
+<item>
+<title>Scaling Analysis of Interleaved Speech-Text Language Models</title>
+<link>https://arxiv.org/abs/2504.02398</link>
+<guid>https://arxiv.org/abs/2504.02398</guid>
+<content:encoded><![CDATA[
+
+  Existing Speech Language Model (SLM) scaling analysis paints a bleak picture. They predict that SLMs require much more compute and data compared to text, leading some to question the feasibility of training high-quality SLMs. However, modern SLMs are often initialised from pre-trained TextLMs using speech-text interleaving to allow knowledge transfer. This raises the question - Do interleaved SLMs scale more efficiently than textless-SLMs? In this paper we answer a resounding, yes! We conduct scaling analysis of interleaved SLMs by training several dozen and analysing the scaling trends. We see that under this setup SLMs scale more efficiently with compute. Additionally, our results indicate that the scaling-dynamics are significantly different than textless-SLMs, suggesting one should allocate notably more of the compute budget for increasing model size over training tokens. We also study the role of synthetic data and TextLM model families in unlocking this potential. Results suggest, that our scaled up model achieves comparable performance with leading models on speech semantic metrics while using less compute and data than other approaches. We open source models, samples, and data - https://pages.cs.huji.ac.il/adiyoss-lab/sims.
+
+]]></content:encoded>
+<pubDate>Thu, 03 Apr 2025 04:46:56 GMT</pubDate>
+<pubDate>Thu, 03 Apr 2025 04:46:56 GMT</pubDate>
+</item>
+<item>
+<title>Instruction-Guided Autoregressive Neural Network Parameter Generation</title>
+<link>https://arxiv.org/abs/2504.02012</link>
+<guid>https://arxiv.org/abs/2504.02012</guid>
+<content:encoded><![CDATA[
+
+  Learning to generate neural network parameters conditioned on task descriptions and architecture specifications is pivotal for advancing model adaptability and transfer learning. Existing methods especially those based on diffusion models suffer from limited scalability to large architectures, rigidity in handling varying network depths, and disjointed parameter generation that undermines inter-layer coherence. In this work, we propose IGPG (Instruction Guided Parameter Generation), an autoregressive framework that unifies parameter synthesis across diverse tasks and architectures. IGPG leverages a VQ-VAE and an autoregressive model to generate neural network parameters, conditioned on task instructions, dataset, and architecture details. By autoregressively generating neural network weights' tokens, IGPG ensures inter-layer coherence and enables efficient adaptation across models and datasets. Operating at the token level, IGPG effectively captures complex parameter distributions aggregated from a broad spectrum of pretrained models. Extensive experiments on multiple vision datasets demonstrate that IGPG consolidates diverse pretrained models into a single, flexible generative framework. The synthesized parameters achieve competitive or superior performance relative to state-of-the-art methods, especially in terms of scalability and efficiency when applied to large architectures. These results underscore ICPG potential as a powerful tool for pretrained weight retrieval, model selection, and rapid task-specific fine-tuning.
+
+]]></content:encoded>
+<pubDate>Wed, 02 Apr 2025 01:50:19 GMT</pubDate>
+<pubDate>Wed, 02 Apr 2025 01:50:19 GMT</pubDate>
+</item>
+<item>
+<title>GenPRM: Scaling Test-Time Compute of Process Reward Models via Generative Reasoning</title>
+<link>https://arxiv.org/abs/2504.00891</link>
+<guid>https://arxiv.org/abs/2504.00891</guid>
+<content:encoded><![CDATA[
+
+  Recent advancements in Large Language Models (LLMs) have shown that it is promising to utilize Process Reward Models (PRMs) as verifiers to enhance the performance of LLMs. However, current PRMs face three key challenges: (1) limited process supervision and generalization capabilities, (2) dependence on scalar value prediction without leveraging the generative abilities of LLMs, and (3) inability to scale the test-time compute of PRMs. In this work, we introduce GenPRM, a generative process reward model that performs explicit Chain-of-Thought (CoT) reasoning with code verification before providing judgment for each reasoning step. To obtain high-quality process supervision labels and rationale data, we propose Relative Progress Estimation (RPE) and a rationale synthesis framework that incorporates code verification. Experimental results on ProcessBench and several mathematical reasoning tasks show that GenPRM significantly outperforms prior PRMs with only 23K training data from MATH dataset. Through test-time scaling, a 1.5B GenPRM outperforms GPT-4o, and a 7B GenPRM surpasses Qwen2.5-Math-PRM-72B on ProcessBench. Additionally, GenPRM demonstrates strong abilities to serve as a critic model for policy model refinement. This work establishes a new paradigm for process supervision that bridges the gap between PRMs and critic models in LLMs. Our code, model, and data will be available in https://ryanliu112.github.io/GenPRM.
+
+]]></content:encoded>
+<pubDate>Tue, 01 Apr 2025 11:21:05 GMT</pubDate>
+<pubDate>Tue, 01 Apr 2025 11:21:05 GMT</pubDate>
+</item>
+<item>
+<title>ShortV: Efficient Multimodal Large Language Models by Freezing Visual Tokens in Ineffective Layers</title>
+<link>https://arxiv.org/abs/2504.00502</link>
+<guid>https://arxiv.org/abs/2504.00502</guid>
+<content:encoded><![CDATA[
+
+  Multimodal Large Language Models (MLLMs) suffer from high computational costs due to their massive size and the large number of visual tokens. In this paper, we investigate layer-wise redundancy in MLLMs by introducing a novel metric, Layer Contribution (LC), which quantifies the impact of a layer's transformations on visual and text tokens, respectively. The calculation of LC involves measuring the divergence in model output that results from removing the layer's transformations on the specified tokens. Our pilot experiment reveals that many layers of MLLMs exhibit minimal contribution during the processing of visual tokens. Motivated by this observation, we propose ShortV, a training-free method that leverages LC to identify ineffective layers, and freezes visual token updates in these layers. Experiments show that ShortV can freeze visual token in approximately 60\% of the MLLM layers, thereby dramatically reducing computational costs related to updating visual tokens. For example, it achieves a 50\% reduction in FLOPs on LLaVA-NeXT-13B while maintaining superior performance. The code will be publicly available at https://github.com/icip-cas/ShortV
+
+]]></content:encoded>
+<pubDate>Tue, 01 Apr 2025 03:47:55 GMT</pubDate>
+<pubDate>Tue, 01 Apr 2025 03:47:55 GMT</pubDate>
+</item>
+
+<item>
 <title>Envisioning Beyond the Pixels: Benchmarking Reasoning-Informed Visual Editing</title>
 <link>https://arxiv.org/abs/2504.02826</link>
 <guid>https://arxiv.org/abs/2504.02826</guid>
 <content:encoded><![CDATA[
-
-  Large Multi-modality Models (LMMs) have made significant progress in visual understanding and generation, but they still face challenges in General Visual Editing, particularly in following complex instructions, preserving appearance consistency, and supporting flexible input formats. To address this gap, we introduce RISEBench, the first benchmark for evaluating Reasoning-Informed viSual Editing (RISE). RISEBench focuses on four key reasoning types: Temporal, Causal, Spatial, and Logical Reasoning. We curate high-quality test cases for each category and propose an evaluation framework that assesses Instruction Reasoning, Appearance Consistency, and Visual Plausibility with both human judges and an LMM-as-a-judge approach. Our experiments reveal that while GPT-4o-Native significantly outperforms other open-source and proprietary models, even this state-of-the-art system struggles with logical reasoning tasks, highlighting an area that remains underexplored. As an initial effort, RISEBench aims to provide foundational insights into reasoning-aware visual editing and to catalyze future research. Though still in its early stages, we are committed to continuously expanding and refining the benchmark to support more comprehensive, reliable, and scalable evaluations of next-generation multimodal systems. Our code and data will be released at https://github.com/PhoenixZ810/RISEBench.
-
+Large Multi-modality Models (LMMs) have made significant progress in visual understanding and generation, but they still face challenges in General Visual Editing, particularly in following complex instructions, preserving appearance consistency, and supporting flexible input formats. To address this gap, we introduce RISEBench, the first benchmark for evaluating Reasoning-Informed viSual Editing (RISE). RISEBench focuses on four key reasoning types: Temporal, Causal, Spatial, and Logical Reasoning. We curate high-quality test cases for each category and propose an evaluation framework that assesses Instruction Reasoning, Appearance Consistency, and Visual Plausibility with both human judges and an LMM-as-a-judge approach. Our experiments reveal that while GPT-4o-Native significantly outperforms other open-source and proprietary models, even this state-of-the-art system struggles with logical reasoning tasks, highlighting an area that remains underexplored. As an initial effort, RISEBench aims to provide foundational insights into reasoning-aware visual editing and to catalyze future research. Though still in its early stages, we are committed to continuously expanding and refining the benchmark to support more comprehensive, reliable, and scalable evaluations of next-generation multimodal systems. Our code and data will be released at https://github.com/PhoenixZ810/RISEBench.
 ]]></content:encoded>
-<pubDate>Thu, 03 Apr 2025 13:59:56 GMT</pubDate>
 <pubDate>Thu, 03 Apr 2025 13:59:56 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +79,8 @@
 <link>https://arxiv.org/abs/2504.02782</link>
 <guid>https://arxiv.org/abs/2504.02782</guid>
 <content:encoded><![CDATA[
-
-  The recent breakthroughs in OpenAI's GPT4o model have demonstrated surprisingly good capabilities in image generation and editing, resulting in significant excitement in the community. This technical report presents the first-look evaluation benchmark (named GPT-ImgEval), quantitatively and qualitatively diagnosing GPT-4o's performance across three critical dimensions: (1) generation quality, (2) editing proficiency, and (3) world knowledge-informed semantic synthesis. Across all three tasks, GPT-4o demonstrates strong performance, significantly surpassing existing methods in both image generation control and output quality, while also showcasing exceptional knowledge reasoning capabilities. Furthermore, based on the GPT-4o's generated data, we propose a classification-model-based approach to investigate the underlying architecture of GPT-4o, where our empirical results suggest the model consists of an auto-regressive (AR) combined with a diffusion-based head for image decoding, rather than the VAR-like architectures. We also provide a complete speculation on GPT-4o's overall architecture. In addition, we conduct a series of analyses to identify and visualize GPT-4o's specific limitations and the synthetic artifacts commonly observed in its image generation. We also present a comparative study of multi-round image editing between GPT-4o and Gemini 2.0 Flash, and discuss the safety implications of GPT-4o's outputs, particularly their detectability by existing image forensic models. We hope that our work can offer valuable insight and provide a reliable benchmark to guide future research, foster reproducibility, and accelerate innovation in the field of image generation and beyond. The codes and datasets used for evaluating GPT-4o can be found at https://github.com/PicoTrex/GPT-ImgEval.
-
+The recent breakthroughs in OpenAI's GPT4o model have demonstrated surprisingly good capabilities in image generation and editing, resulting in significant excitement in the community. This technical report presents the first-look evaluation benchmark (named GPT-ImgEval), quantitatively and qualitatively diagnosing GPT-4o's performance across three critical dimensions: (1) generation quality, (2) editing proficiency, and (3) world knowledge-informed semantic synthesis. Across all three tasks, GPT-4o demonstrates strong performance, significantly surpassing existing methods in both image generation control and output quality, while also showcasing exceptional knowledge reasoning capabilities. Furthermore, based on the GPT-4o's generated data, we propose a classification-model-based approach to investigate the underlying architecture of GPT-4o, where our empirical results suggest the model consists of an auto-regressive (AR) combined with a diffusion-based head for image decoding, rather than the VAR-like architectures. We also provide a complete speculation on GPT-4o's overall architecture. In addition, we conduct a series of analyses to identify and visualize GPT-4o's specific limitations and the synthetic artifacts commonly observed in its image generation. We also present a comparative study of multi-round image editing between GPT-4o and Gemini 2.0 Flash, and discuss the safety implications of GPT-4o's outputs, particularly their detectability by existing image forensic models. We hope that our work can offer valuable insight and provide a reliable benchmark to guide future research, foster reproducibility, and accelerate innovation in the field of image generation and beyond. The codes and datasets used for evaluating GPT-4o can be found at https://github.com/PicoTrex/GPT-ImgEval.
 ]]></content:encoded>
-<pubDate>Thu, 03 Apr 2025 13:23:16 GMT</pubDate>
 <pubDate>Thu, 03 Apr 2025 13:23:16 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +88,8 @@
 <link>https://arxiv.org/abs/2504.02587</link>
 <guid>https://arxiv.org/abs/2504.02587</guid>
 <content:encoded><![CDATA[
-
-  Reinforcement learning (RL) has recently shown strong potential in improving the reasoning capabilities of large language models and is now being actively extended to vision-language models (VLMs). However, existing RL applications in VLMs often rely on heavily engineered frameworks that hinder reproducibility and accessibility, while lacking standardized evaluation protocols, making it difficult to compare results or interpret training dynamics. This work introduces a transparent, from-scratch framework for RL in VLMs, offering a minimal yet functional four-step pipeline validated across multiple models and datasets. In addition, a standardized evaluation scheme is proposed to assess training dynamics and reflective behaviors. Extensive experiments on visual reasoning tasks uncover key empirical findings: response length is sensitive to random seeds, reflection correlates with output length, and RL consistently outperforms supervised fine-tuning (SFT) in generalization, even with high-quality data. These findings, together with the proposed framework, aim to establish a reproducible baseline and support broader engagement in RL-based VLM research.
-
+Reinforcement learning (RL) has recently shown strong potential in improving the reasoning capabilities of large language models and is now being actively extended to vision-language models (VLMs). However, existing RL applications in VLMs often rely on heavily engineered frameworks that hinder reproducibility and accessibility, while lacking standardized evaluation protocols, making it difficult to compare results or interpret training dynamics. This work introduces a transparent, from-scratch framework for RL in VLMs, offering a minimal yet functional four-step pipeline validated across multiple models and datasets. In addition, a standardized evaluation scheme is proposed to assess training dynamics and reflective behaviors. Extensive experiments on visual reasoning tasks uncover key empirical findings: response length is sensitive to random seeds, reflection correlates with output length, and RL consistently outperforms supervised fine-tuning (SFT) in generalization, even with high-quality data. These findings, together with the proposed framework, aim to establish a reproducible baseline and support broader engagement in RL-based VLM research.
 ]]></content:encoded>
-<pubDate>Thu, 03 Apr 2025 09:53:28 GMT</pubDate>
 <pubDate>Thu, 03 Apr 2025 09:53:28 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +97,8 @@
 <link>https://arxiv.org/abs/2504.02542</link>
 <guid>https://arxiv.org/abs/2504.02542</guid>
 <content:encoded><![CDATA[
-
-  Talking head synthesis is vital for virtual avatars and human-computer interaction. However, most existing methods are typically limited to accepting control from a single primary modality, restricting their practical utility. To this end, we introduce ACTalker, an end-to-end video diffusion framework that supports both multi-signals control and single-signal control for talking head video generation. For multiple control, we design a parallel mamba structure with multiple branches, each utilizing a separate driving signal to control specific facial regions. A gate mechanism is applied across all branches, providing flexible control over video generation. To ensure natural coordination of the controlled video both temporally and spatially, we employ the mamba structure, which enables driving signals to manipulate feature tokens across both dimensions in each branch. Additionally, we introduce a mask-drop strategy that allows each driving signal to independently control its corresponding facial region within the mamba structure, preventing control conflicts. Experimental results demonstrate that our method produces natural-looking facial videos driven by diverse signals and that the mamba layer seamlessly integrates multiple driving modalities without conflict.
-
+Talking head synthesis is vital for virtual avatars and human-computer interaction. However, most existing methods are typically limited to accepting control from a single primary modality, restricting their practical utility. To this end, we introduce ACTalker, an end-to-end video diffusion framework that supports both multi-signals control and single-signal control for talking head video generation. For multiple control, we design a parallel mamba structure with multiple branches, each utilizing a separate driving signal to control specific facial regions. A gate mechanism is applied across all branches, providing flexible control over video generation. To ensure natural coordination of the controlled video both temporally and spatially, we employ the mamba structure, which enables driving signals to manipulate feature tokens across both dimensions in each branch. Additionally, we introduce a mask-drop strategy that allows each driving signal to independently control its corresponding facial region within the mamba structure, preventing control conflicts. Experimental results demonstrate that our method produces natural-looking facial videos driven by diverse signals and that the mamba layer seamlessly integrates multiple driving modalities without conflict.
 ]]></content:encoded>
-<pubDate>Thu, 03 Apr 2025 08:44:41 GMT</pubDate>
 <pubDate>Thu, 03 Apr 2025 08:44:41 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +106,8 @@
 <link>https://arxiv.org/abs/2504.02436</link>
 <guid>https://arxiv.org/abs/2504.02436</guid>
 <content:encoded><![CDATA[
-
-  This paper presents SkyReels-A2, a controllable video generation framework capable of assembling arbitrary visual elements (e.g., characters, objects, backgrounds) into synthesized videos based on textual prompts while maintaining strict consistency with reference images for each element. We term this task elements-to-video (E2V), whose primary challenges lie in preserving the fidelity of each reference element, ensuring coherent composition of the scene, and achieving natural outputs. To address these, we first design a comprehensive data pipeline to construct prompt-reference-video triplets for model training. Next, we propose a novel image-text joint embedding model to inject multi-element representations into the generative process, balancing element-specific consistency with global coherence and text alignment. We also optimize the inference pipeline for both speed and output stability. Moreover, we introduce a carefully curated benchmark for systematic evaluation, i.e, A2 Bench. Experiments demonstrate that our framework can generate diverse, high-quality videos with precise element control. SkyReels-A2 is the first open-source commercial grade model for the generation of E2V, performing favorably against advanced closed-source commercial models. We anticipate SkyReels-A2 will advance creative applications such as drama and virtual e-commerce, pushing the boundaries of controllable video generation.
-
+This paper presents SkyReels-A2, a controllable video generation framework capable of assembling arbitrary visual elements (e.g., characters, objects, backgrounds) into synthesized videos based on textual prompts while maintaining strict consistency with reference images for each element. We term this task elements-to-video (E2V), whose primary challenges lie in preserving the fidelity of each reference element, ensuring coherent composition of the scene, and achieving natural outputs. To address these, we first design a comprehensive data pipeline to construct prompt-reference-video triplets for model training. Next, we propose a novel image-text joint embedding model to inject multi-element representations into the generative process, balancing element-specific consistency with global coherence and text alignment. We also optimize the inference pipeline for both speed and output stability. Moreover, we introduce a carefully curated benchmark for systematic evaluation, i.e, A2 Bench. Experiments demonstrate that our framework can generate diverse, high-quality videos with precise element control. SkyReels-A2 is the first open-source commercial grade model for the generation of E2V, performing favorably against advanced closed-source commercial models. We anticipate SkyReels-A2 will advance creative applications such as drama and virtual e-commerce, pushing the boundaries of controllable video generation.
 ]]></content:encoded>
-<pubDate>Thu, 03 Apr 2025 05:50:50 GMT</pubDate>
 <pubDate>Thu, 03 Apr 2025 05:50:50 GMT</pubDate>
 </item>
 <item>
@@ -69,14 +115,10 @@
 <link>https://arxiv.org/abs/2504.02119</link>
 <guid>https://arxiv.org/abs/2504.02119</guid>
 <content:encoded><![CDATA[
-
-  Model selection is a critical step in time series forecasting, traditionally requiring extensive performance evaluations across various datasets. Meta-learning approaches aim to automate this process, but they typically depend on pre-constructed performance matrices, which are costly to build. In this work, we propose to leverage Large Language Models (LLMs) as a lightweight alternative for model selection. Our method eliminates the need for explicit performance matrices by utilizing the inherent knowledge and reasoning capabilities of LLMs. Through extensive experiments with LLaMA, GPT and Gemini, we demonstrate that our approach outperforms traditional meta-learning techniques and heuristic baselines, while significantly reducing computational overhead. These findings underscore the potential of LLMs in efficient model selection for time series forecasting.
-
+Model selection is a critical step in time series forecasting, traditionally requiring extensive performance evaluations across various datasets. Meta-learning approaches aim to automate this process, but they typically depend on pre-constructed performance matrices, which are costly to build. In this work, we propose to leverage Large Language Models (LLMs) as a lightweight alternative for model selection. Our method eliminates the need for explicit performance matrices by utilizing the inherent knowledge and reasoning capabilities of LLMs. Through extensive experiments with LLaMA, GPT and Gemini, we demonstrate that our approach outperforms traditional meta-learning techniques and heuristic baselines, while significantly reducing computational overhead. These findings underscore the potential of LLMs in efficient model selection for time series forecasting.
 ]]></content:encoded>
 <pubDate>Wed, 02 Apr 2025 16:33:27 GMT</pubDate>
-<pubDate>Wed, 02 Apr 2025 16:33:27 GMT</pubDate>
 </item>
-
 <item>
 <title>Adaptive Layer-skipping in Pre-trained LLMs</title>
 <link>https://arxiv.org/abs/2503.23798</link>
@@ -9022,60 +9064,6 @@ In the field of synthetic aperture radar (SAR) remote sensing image interpretati
 <div><p style="color: gray;">CineMaster框架实现了3D感知与可控的文本到视频生成。</p><br /><br /><p><strong>摘要：</strong> CineMaster是一个创新的3D感知可控文本到视频生成框架，旨在为用户提供与专业导演相似的控制能力，包括场景中的物体精确放置、对象和相机在3D空间中的灵活操控，以及对渲染帧的直观布局控制。该框架分为两个阶段：第一阶段通过交互式工作流程帮助用户在3D空间内构建条件信号；第二阶段利用生成的深度图、相机轨迹和对象类别标签，指导文本到视频扩散模型生成用户意图的视频内容。此外，CineMaster还建立了自动化数据注释管道，以从大规模视频数据中提取3D边界框和相机轨迹，克服野外数据集稀缺的问题。实验结果表明，CineMaster在3D感知文本到视频生成方面明显优于现有方法。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.08639" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 12 Feb 2025 21:55:44 GMT</pubDate>
-</item>
-<item>
-<title>基于下一块预测的半自回归视频生成框架</title>
-<link>https://arxiv.org/abs/2502.07737</link>
-<guid>https://arxiv.org/abs/2502.07737</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出一种半自回归框架，显著提升视频生成效率与质量。</p><br /><br /><p><strong>摘要：</strong> 本研究提出了一种名为下一块预测（NBP）的半自回归（semi-AR）框架，用于视频生成。通过将视频内容均匀分解成等大小的块（如行或帧），我们将生成单位从单个令牌转变为块，使当前块中的每个令牌可以同时预测下一个块中对应的令牌。这种框架在每个块内应用双向注意力，捕捉到更强的空间依赖性。通过并行预测多个令牌，NBP显著减少了生成步骤，从而提高了推理速度和效率。我们的模型在UCF101和K600数据集上的FVD分数分别达到103.3和25.5，平均超越传统NTP模型4.4。此外，由于推理步骤减少，NBP模型的生成速度达到每秒8.89帧（128x128分辨率），实现了11倍的加速。我们还探索了从700M到3B参数的模型规模，发现生成质量显著提升，UCF101和K600上的FVD分数分别从103.3降至55.3和25.5降至19.5，展示了我们方法的可扩展性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.07737" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 12 Feb 2025 21:48:00 GMT</pubDate>
-</item>
-<item>
-<title>评估大型语言模型在金融推理中的能力与改进</title>
-<link>https://arxiv.org/abs/2502.08127</link>
-<guid>https://arxiv.org/abs/2502.08127</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">研究评估大型语言模型在金融推理任务中的表现及改进方法。</p><br /><br /><p><strong>摘要：</strong> 本研究综合评估了16种强大推理和通用大型语言模型(LLMs)在三项复杂金融任务上的表现，包括金融文本、表格数据和方程的处理，重点考察数值推理、表格解读、金融术语理解、长上下文处理与基于方程的问题解决能力。研究结果表明，尽管更好的数据集和预训练可以提升金融推理能力，但如CoT微调等一般性增强并不总是有效。此外，所有推理策略在长上下文和多表格任务中的性能提升面临挑战。为了解决这些限制，研究开发了基于Llama-3.1-8B-Instruct的金融推理增强模型，通过CoT微调和领域特定推理路径的强化学习，简单的单金融数据集微调使模型在任务中平均实现了10%的一致性提升，超越了所有8B模型及Llama3-70B-Instruct和Llama3.1-70B-Instruct。研究强调了金融任务中适应特定领域的必要性，并指明了未来的研究方向，如多表格推理和金融术语理解。所有数据集、模型和代码都已公开，并引入了一个基准排行榜以促进未来的数据集和模型的评估。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.08127" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 12 Feb 2025 21:45:28 GMT</pubDate>
-</item>
-<item>
-<title>DPO-Shift: Shifting the Distribution of Direct Preference Optimization</title>
-<link>https://arxiv.org/abs/2502.07599</link>
-<guid>https://arxiv.org/abs/2502.07599</guid>
-<content:encoded><![CDATA[
-Direct Preference Optimization (DPO) and its variants have become increasingly popular for aligning language models with human preferences. These methods aim to teach models to better distinguish between chosen (or preferred) and rejected (or dispreferred) responses. However, prior research has identified that the probability of chosen responses often decreases during training, and this phenomenon is known as likelihood displacement. To tackle this challenge, in this work we introduce \method to controllably shift the distribution of the chosen probability. Then, we show that \method exhibits a fundamental trade-off between improving the chosen probability and sacrificing the reward margin, as supported by both theoretical analysis and experimental validation. Furthermore, we demonstrate the superiority of \method over DPO on downstream tasks such as MT-Bench and a designed win rate experiment. We believe this study shows that the likelihood displacement issue of DPO can be effectively mitigated with a simple, theoretically grounded solution. Our code is available at https://github.com/Meaquadddd/DPO-Shift.
-]]></content:encoded>
-<pubDate>Wed, 12 Feb 2025 21:43:42 GMT</pubDate>
-</item>
-<item>
-<title>TransMLA：提升语言模型通信效率的新方法</title>
-<link>https://arxiv.org/abs/2502.07864</link>
-<guid>https://arxiv.org/abs/2502.07864</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">TransMLA方法有效提升语言模型的通信效率与推理速度。</p><br /><br /><p><strong>摘要：</strong> 现代的大型语言模型在当前硬件上经常面临沟通瓶颈，而不仅仅是计算限制。多头潜在注意力（MLA）通过在关键值（KV）层使用低秩矩阵，允许压缩的潜在KV状态被缓存，从而大幅度减少KV缓存大小，提升推理速度。尽管MLA在Deepseek V2/V3/R1中表现出效率和有效性，许多主要模型供应商仍然依赖于组查询注意力（GQA）。本文展示了GQA可以通过MLA进行始终保持相同KV缓存开销的表示，但反之则不成立。为促进MLA的广泛应用，我们引入了**TransMLA**，一种将广泛使用的基于GQA的预训练模型（如LLaMA、Qwen、Mixtral）转换为基于MLA模型的后训练方法。转换后的模型可以在不增加KV缓存大小的情况下经过额外训练来提高表达能力。此外，我们还计划开发MLA特定的推理加速技术，以保持转化模型的低延迟，进一步提升Deepseek R1的提炼效率。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.07864" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 12 Feb 2025 21:41:19 GMT</pubDate>
-</item>
-<item>
-<title>可学习的合规性放弃：提高大规模语言模型的决策可靠性</title>
-<link>https://arxiv.org/abs/2502.06884</link>
-<guid>https://arxiv.org/abs/2502.06884</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出一种结合强化学习的合规性放弃方法，以提升LLM/VLM的可靠决策能力。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种名为可学习合规性放弃的方法，旨在提高安全关键应用中大规模语言模型（LLM）和视觉-语言模型（VLM）的决策可靠性。传统的合规性预测方法在阈值设定上过于静态，难以适应任务复杂性和数据分布的变化。为此，本文将强化学习融入合规性预测，动态优化放弃阈值，从而在最小化预测集大小的同时，确保可靠的覆盖率。经过在多个LLM/VLM基准上的广泛评估，研究表明，该方法在准确性、幻觉检测的AUROC和不确定性引导选择生成方面均优于现有方法，并显著降低了校准误差。这些改进在多种模型和数据集上均表现出色，且始终满足90%的覆盖目标，确立了该方法作为安全关键应用中可靠决策的更有效和灵活的解决方案。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.06884" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 12 Feb 2025 18:40:34 GMT</pubDate>
-</item>
-<item>
-<title>Pippo: 从单张照片生成高分辨率密集视频的多视角扩散模型</title>
-<link>https://arxiv.org/abs/2502.07785</link>
-<guid>https://arxiv.org/abs/2502.07785</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">Pippo模型可从一张照片生成高分辨率的人物视频，展现出色的多视角表现。</p><br /><br /><p><strong>摘要：</strong> Pippo是一种先进的生成模型，能够仅通过一张随意拍摄的照片生成分辨率达到1000的密集人物视频。该模型采用了多视角扩散变换器，且无需额外输入，如参数模型或图像拍摄的相机参数。欲使模型有效学习，Pippo在与3亿幅无标签人像图像预训练后，进行多视角的中期训练与后期训练，快速吸收工作室数据集。中期训练中，用于去噪的低分辨率视图数量可达48个；后期训练则使用像素对齐控制，提升3D一致性的生成。在推理阶段，Pippo通过注意力偏置技巧，能够生成超过训练时5倍的视图数量。此外，团队还提出了一种改进的3D一致性评估标准，表明Pippo在单图像多视角生成人物方面的优越性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.07785" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 12 Feb 2025 13:41:46 GMT</pubDate>
 </item>
 </channel>
 </rss>
