@@ -5,15 +5,49 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>FreSca: Unveiling the Scaling Space in Diffusion Models</title>
+<link>https://arxiv.org/abs/2504.02154</link>
+<guid>https://arxiv.org/abs/2504.02154</guid>
+<content:encoded><![CDATA[
+
+  Diffusion models offer impressive controllability for image tasks, primarily through noise predictions that encode task-specific information and classifier-free guidance enabling adjustable scaling. This scaling mechanism implicitly defines a ``scaling space'' whose potential for fine-grained semantic manipulation remains underexplored. We investigate this space, starting with inversion-based editing where the difference between conditional/unconditional noise predictions carries key semantic information. Our core contribution stems from a Fourier analysis of noise predictions, revealing that its low- and high-frequency components evolve differently throughout diffusion. Based on this insight, we introduce FreSca, a straightforward method that applies guidance scaling independently to different frequency bands in the Fourier domain. FreSca demonstrably enhances existing image editing methods without retraining. Excitingly, its effectiveness extends to image understanding tasks such as depth estimation, yielding quantitative gains across multiple datasets.
+
+]]></content:encoded>
+<pubDate>Wed, 02 Apr 2025 18:03:11 GMT</pubDate>
+<pubDate>Wed, 02 Apr 2025 18:03:11 GMT</pubDate>
+</item>
+<item>
+<title>WikiVideo: Article Generation from Multiple Videos</title>
+<link>https://arxiv.org/abs/2504.00939</link>
+<guid>https://arxiv.org/abs/2504.00939</guid>
+<content:encoded><![CDATA[
+
+  We present the challenging task of automatically creating a high-level Wikipedia-style article that aggregates information from multiple diverse videos about real-world events, such as natural disasters or political elections. Videos are intuitive sources for retrieval-augmented generation (RAG), but most contemporary RAG workflows focus heavily on text and existing methods for video-based summarization focus on low-level scene understanding rather than high-level event semantics. To close this gap, we introduce WikiVideo, a benchmark consisting of expert-written articles and densely annotated videos that provide evidence for articles' claims, facilitating the integration of video into RAG pipelines and enabling the creation of in-depth content that is grounded in multimodal sources. We further propose Collaborative Article Generation (CAG), a novel interactive method for article creation from multiple videos. CAG leverages an iterative interaction between an r1-style reasoning model and a VideoLLM to draw higher level inferences about the target event than is possible with VideoLLMs alone, which fixate on low-level visual features. We benchmark state-of-the-art VideoLLMs and CAG in both oracle retrieval and RAG settings and find that CAG consistently outperforms alternative methods, while suggesting intriguing avenues for future work.
+
+]]></content:encoded>
+<pubDate>Tue, 01 Apr 2025 12:22:15 GMT</pubDate>
+<pubDate>Tue, 01 Apr 2025 12:22:15 GMT</pubDate>
+</item>
+<item>
+<title>JavisDiT: Joint Audio-Video Diffusion Transformer with Hierarchical Spatio-Temporal Prior Synchronization</title>
+<link>https://arxiv.org/abs/2503.23377</link>
+<guid>https://arxiv.org/abs/2503.23377</guid>
+<content:encoded><![CDATA[
+
+  This paper introduces JavisDiT, a novel Joint Audio-Video Diffusion Transformer designed for synchronized audio-video generation (JAVG). Built upon the powerful Diffusion Transformer (DiT) architecture, JavisDiT is able to generate high-quality audio and video content simultaneously from open-ended user prompts. To ensure optimal synchronization, we introduce a fine-grained spatio-temporal alignment mechanism through a Hierarchical Spatial-Temporal Synchronized Prior (HiST-Sypo) Estimator. This module extracts both global and fine-grained spatio-temporal priors, guiding the synchronization between the visual and auditory components. Furthermore, we propose a new benchmark, JavisBench, consisting of 10,140 high-quality text-captioned sounding videos spanning diverse scenes and complex real-world scenarios. Further, we specifically devise a robust metric for evaluating the synchronization between generated audio-video pairs in real-world complex content. Experimental results demonstrate that JavisDiT significantly outperforms existing methods by ensuring both high-quality generation and precise synchronization, setting a new standard for JAVG tasks. Our code, model, and dataset will be made publicly available at https://javisdit.github.io/.
+
+]]></content:encoded>
+<pubDate>Sun, 30 Mar 2025 05:40:42 GMT</pubDate>
+<pubDate>Sun, 30 Mar 2025 05:40:42 GMT</pubDate>
+</item>
+
+<item>
 <title>Inference-Time Scaling for Generalist Reward Modeling</title>
 <link>https://arxiv.org/abs/2504.02495</link>
 <guid>https://arxiv.org/abs/2504.02495</guid>
 <content:encoded><![CDATA[
-
-  Reinforcement learning (RL) has been widely adopted in post-training for large language models (LLMs) at scale. Recently, the incentivization of reasoning capabilities in LLMs from RL indicates that proper learning methods could enable effective inference-time scalability. A key challenge of RL is to obtain accurate reward signals for LLMs in various domains beyond verifiable questions or artificial rules. In this work, we investigate how to improve reward modeling (RM) with more inference compute for general queries, i.e. the inference-time scalability of generalist RM, and further, how to improve the effectiveness of performance-compute scaling with proper learning methods. For the RM approach, we adopt pointwise generative reward modeling (GRM) to enable flexibility for different input types and potential for inference-time scaling. For the learning method, we propose Self-Principled Critique Tuning (SPCT) to foster scalable reward generation behaviors in GRMs through online RL, to generate principles adaptively and critiques accurately, resulting in DeepSeek-GRM models. Furthermore, for effective inference-time scaling, we use parallel sampling to expand compute usage, and introduce a meta RM to guide voting process for better scaling performance. Empirically, we show that SPCT significantly improves the quality and scalability of GRMs, outperforming existing methods and models in various RM benchmarks without severe biases, and could achieve better performance compared to training-time scaling. DeepSeek-GRM still meets challenges in some tasks, which we believe can be addressed by future efforts in generalist reward systems. The models will be released and open-sourced.
-
+Reinforcement learning (RL) has been widely adopted in post-training for large language models (LLMs) at scale. Recently, the incentivization of reasoning capabilities in LLMs from RL indicates that proper learning methods could enable effective inference-time scalability. A key challenge of RL is to obtain accurate reward signals for LLMs in various domains beyond verifiable questions or artificial rules. In this work, we investigate how to improve reward modeling (RM) with more inference compute for general queries, i.e. the inference-time scalability of generalist RM, and further, how to improve the effectiveness of performance-compute scaling with proper learning methods. For the RM approach, we adopt pointwise generative reward modeling (GRM) to enable flexibility for different input types and potential for inference-time scaling. For the learning method, we propose Self-Principled Critique Tuning (SPCT) to foster scalable reward generation behaviors in GRMs through online RL, to generate principles adaptively and critiques accurately, resulting in DeepSeek-GRM models. Furthermore, for effective inference-time scaling, we use parallel sampling to expand compute usage, and introduce a meta RM to guide voting process for better scaling performance. Empirically, we show that SPCT significantly improves the quality and scalability of GRMs, outperforming existing methods and models in various RM benchmarks without severe biases, and could achieve better performance compared to training-time scaling. DeepSeek-GRM still meets challenges in some tasks, which we believe can be addressed by future efforts in generalist reward systems. The models will be released and open-sourced.
 ]]></content:encoded>
-<pubDate>Thu, 03 Apr 2025 07:19:49 GMT</pubDate>
 <pubDate>Thu, 03 Apr 2025 07:19:49 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +55,8 @@
 <link>https://arxiv.org/abs/2503.23542</link>
 <guid>https://arxiv.org/abs/2503.23542</guid>
 <content:encoded><![CDATA[
-
-  Automatic speech recognition systems have undoubtedly advanced with the integration of multilingual and multitask models such as Whisper, which have shown a promising ability to understand and process speech across a wide range of languages. Despite their robustness, these models often fall short in handling the linguistic distinctions of minority languages. This study addresses this gap by integrating traditional and novel language models with fine-tuned Whisper models to raise their performance in less commonly studied languages. Through rigorous fine-tuning and evaluation across multiple datasets, we demonstrate substantial improvements in word error rate, particularly in low-resource scenarios. Our approach not only does take advantage of the extensive data Whisper was pre-trained on, but also complements its linguistic adaptability by incorporating language models. We obtained improvements up to 51\% for in-distribution datasets and up to 34\% for out-of-distribution sentences using statistical language models, while large language models provided moderate but consistently robust improvement across diverse linguistic contexts. The findings reveal that, while the integration reliably benefits all model sizes, the extent of improvement varies, highlighting the importance of optimized language model parameters. Finally, we emphasize the importance of selecting appropriate evaluation parameters when reporting the results using transformer-based ASR models. In summary, this research clears the way for more inclusive ASR technologies that perform better across languages by enriching their linguistic knowledge. For further implementation details of this study, the technical documentation and source code are available at http://www.github.com/hitz-zentroa/whisper-lm.
-
+Automatic speech recognition systems have undoubtedly advanced with the integration of multilingual and multitask models such as Whisper, which have shown a promising ability to understand and process speech across a wide range of languages. Despite their robustness, these models often fall short in handling the linguistic distinctions of minority languages. This study addresses this gap by integrating traditional and novel language models with fine-tuned Whisper models to raise their performance in less commonly studied languages. Through rigorous fine-tuning and evaluation across multiple datasets, we demonstrate substantial improvements in word error rate, particularly in low-resource scenarios. Our approach not only does take advantage of the extensive data Whisper was pre-trained on, but also complements its linguistic adaptability by incorporating language models. We obtained improvements up to 51\% for in-distribution datasets and up to 34\% for out-of-distribution sentences using statistical language models, while large language models provided moderate but consistently robust improvement across diverse linguistic contexts. The findings reveal that, while the integration reliably benefits all model sizes, the extent of improvement varies, highlighting the importance of optimized language model parameters. Finally, we emphasize the importance of selecting appropriate evaluation parameters when reporting the results using transformer-based ASR models. In summary, this research clears the way for more inclusive ASR technologies that perform better across languages by enriching their linguistic knowledge. For further implementation details of this study, the technical documentation and source code are available at http://www.github.com/hitz-zentroa/whisper-lm.
 ]]></content:encoded>
-<pubDate>Sun, 30 Mar 2025 14:03:52 GMT</pubDate>
 <pubDate>Sun, 30 Mar 2025 14:03:52 GMT</pubDate>
 </item>
 <item>
@@ -33,14 +64,10 @@
 <link>https://arxiv.org/abs/2503.23162</link>
 <guid>https://arxiv.org/abs/2503.23162</guid>
 <content:encoded><![CDATA[
-
-  3D Gaussian Splatting (3DGS) demonstrates superior quality and rendering speed, but with millions of 3D Gaussians and significant storage and transmission costs. Recent 3DGS compression methods mainly concentrate on compressing Scaffold-GS, achieving impressive performance but with an additional voxel structure and a complex encoding and quantization strategy. In this paper, we aim to develop a simple yet effective method called NeuralGS that explores in another way to compress the original 3DGS into a compact representation without the voxel structure and complex quantization strategies. Our observation is that neural fields like NeRF can represent complex 3D scenes with Multi-Layer Perceptron (MLP) neural networks using only a few megabytes. Thus, NeuralGS effectively adopts the neural field representation to encode the attributes of 3D Gaussians with MLPs, only requiring a small storage size even for a large-scale scene. To achieve this, we adopt a clustering strategy and fit the Gaussians with different tiny MLPs for each cluster, based on importance scores of Gaussians as fitting weights. We experiment on multiple datasets, achieving a 45-times average model size reduction without harming the visual quality. The compression performance of our method on original 3DGS is comparable to the dedicated Scaffold-GS-based compression methods, which demonstrate the huge potential of directly compressing original 3DGS with neural fields.
-
+3D Gaussian Splatting (3DGS) demonstrates superior quality and rendering speed, but with millions of 3D Gaussians and significant storage and transmission costs. Recent 3DGS compression methods mainly concentrate on compressing Scaffold-GS, achieving impressive performance but with an additional voxel structure and a complex encoding and quantization strategy. In this paper, we aim to develop a simple yet effective method called NeuralGS that explores in another way to compress the original 3DGS into a compact representation without the voxel structure and complex quantization strategies. Our observation is that neural fields like NeRF can represent complex 3D scenes with Multi-Layer Perceptron (MLP) neural networks using only a few megabytes. Thus, NeuralGS effectively adopts the neural field representation to encode the attributes of 3D Gaussians with MLPs, only requiring a small storage size even for a large-scale scene. To achieve this, we adopt a clustering strategy and fit the Gaussians with different tiny MLPs for each cluster, based on importance scores of Gaussians as fitting weights. We experiment on multiple datasets, achieving a 45-times average model size reduction without harming the visual quality. The compression performance of our method on original 3DGS is comparable to the dedicated Scaffold-GS-based compression methods, which demonstrate the huge potential of directly compressing original 3DGS with neural fields.
 ]]></content:encoded>
 <pubDate>Sat, 29 Mar 2025 13:36:53 GMT</pubDate>
-<pubDate>Sat, 29 Mar 2025 13:36:53 GMT</pubDate>
 </item>
-
 <item>
 <title>Sparse Autoencoders Learn Monosemantic Features in Vision-Language Models</title>
 <link>https://arxiv.org/abs/2504.02821</link>
@@ -9013,33 +9040,6 @@ In the rapidly evolving field of Natural Language Processing, Large Language Mod
 <div><p style="color: gray;">BenchMAX是一个新兴的多语言评估基准，专注于大型语言模型的高级能力测量。</p><br /><br /><p><strong>摘要：</strong> 随着大型语言模型(LLMs)的快速发展，传统的多语言基准主要集中于简单理解任务，未能充分评估它们在指令遵循、推理、长文本理解和代码生成等高级能力上的表现。为了解决这一问题，我们引入了BenchMAX，它是一个多方式的多语言评估基准，能公平比较这些关键能力。该基准经过三个不同的母语评审者对所有任务中的样本进行独立标注，并在从英语机器翻译到另外16种语言后进行测试。全面的实验表明，核心能力在不同语言间的有效性存在差异，这些差距不能仅通过扩大模型规模来弥补。BenchMAX为多语言模型的发展提供了一个综合评估平台，数据集和代码均已公开访问。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.07346" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Thu, 13 Feb 2025 03:34:47 GMT</pubDate>
-</item>
-<item>
-<title>优化模型合并提升大语言模型性能</title>
-<link>https://arxiv.org/abs/2502.04411</link>
-<guid>https://arxiv.org/abs/2502.04411</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本研究通过分层合并与任务级路由技术提升大语言模型的性能。</p><br /><br /><p><strong>摘要：</strong> 本研究针对将不同任务微调后的大语言模型（LLMs）合并为更强模型时参数冲突导致性能下降的问题，提出了一种新的优化方法。研究发现，不同层级的模型存在不同程度的参数冲突。因此，本文提出对参数冲突较小的层进行平均，而对参数冲突明显的层采用新颖的任务级专家路由。同时，为了降低存储成本，借鉴任务算术稀疏性，本文将多个微调专家解耦成一个稠密专家和若干个稀疏专家。在处理分布外样本时，依据任务不确定性选择并合并合适的专家。通过在LLaMA和Qwen等多个参数规模的模型上进行大规模实验，结果表明，该方法在真实世界推理任务中始终能实现显著的性能提升，并且所需的系统成本低于现有方法。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.04411" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 13 Feb 2025 03:30:35 GMT</pubDate>
-</item>
-<item>
-<title>动态安全框架优化语言模型推理安全</title>
-<link>https://arxiv.org/abs/2502.07985</link>
-<guid>https://arxiv.org/abs/2502.07985</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出了一种在推理时优化语言模型安全性的动态安全框架。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种新颖的动态安全框架，用于在推理时优化语言模型的安全性 reasoning，且不需修改模型权重。该方法基于近期自我批评技术的进展，利用一种元批评机制，迭代地更新安全提示（称为规范），以自适应地驱动批评和修正过程。此种测试时优化不仅提高了模型应对对抗性越狱请求的能力，还在避免道德伤害和追求诚实回答等各种安全相关任务中表现出色。通过在多个语言模型上的实证评估，结果显示动态优化的安全提示明显优于固定系统提示和静态自我批评防御策略，显著提高了安全评分。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.07985" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 13 Feb 2025 01:47:30 GMT</pubDate>
-</item>
-<item>
-<title>WorldGUI：一种新颖的GUI基准用于真实用户交互评估</title>
-<link>https://arxiv.org/abs/2502.08047</link>
-<guid>https://arxiv.org/abs/2502.08047</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出WorldGUI基准，评估GUI任务中的初始状态敏感性及其影响。</p><br /><br /><p><strong>摘要：</strong> 当前的GUI代理在元素定位方面表现出色，但规划依然面临巨大挑战，尤其是对于环境初始状态的敏感性。些微的初始状态差异，如目标软件未打开或界面未处于默认状态，往往导致规划错误，这在真实用户场景中普遍存在，但现有基准未能对此进行评估。为此，本文提出WorldGUI，这是一种新颖的GUI基准，设计了具有多种初始状态的GUI任务，以模拟真实的计算机用户交互。该基准涵盖了10款流行软件应用的多种任务，包括PowerPoint、VSCode和Adobe Acrobat。此外，为应对动态GUI自动化任务的挑战，我们提出了GUI-Thinker，一个整体框架，利用批判机制，能够有效管理GUI交互的不确定性和复杂性。实验结果显示，GUI-Thinker在WorldGUI任务上相比Claude-3.5（计算机使用）成功率提高了14.9%，突显了基于批判性思维的框架在提升GUI自动化中的有效性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.08047" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 13 Feb 2025 01:39:08 GMT</pubDate>
 </item>
 </channel>
 </rss>
