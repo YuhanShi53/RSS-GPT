@@ -5,18 +5,27 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>Quamba2: A Robust and Scalable Post-training Quantization Framework for Selective State Space Models</title>
+<link>https://arxiv.org/abs/2503.22879</link>
+<guid>https://arxiv.org/abs/2503.22879</guid>
+<content:encoded><![CDATA[
+
+  State Space Models (SSMs) are emerging as a compelling alternative to Transformers because of their consistent memory usage and high performance. Despite this, scaling up SSMs on cloud services or limited-resource devices is challenging due to their storage requirements and computational power. To overcome this, quantizing SSMs with low bit-width data formats can reduce model size and benefit from hardware acceleration. As SSMs are prone to quantization-induced errors, recent efforts have focused on optimizing a particular model or bit-width for efficiency without sacrificing performance. However, distinct bit-width configurations are essential for different scenarios, like W4A8 for boosting large-batch decoding speed, and W4A16 for enhancing generation speed in short prompt applications for a single user. To this end, we present Quamba2, compatible with W8A8, W4A8, and W4A16 for both Mamba1 and Mamba2 backbones, addressing the growing demand for SSM deployment on various platforms. Based on the channel order preserving and activation persistence of SSMs, we propose an offline approach to quantize inputs of a linear recurrence in 8-bit by sorting and clustering for input x, combined with a per-state-group quantization for input-dependent parameters B and C. To ensure compute-invariance in the SSM output, we rearrange weights offline according to the clustering sequence. The experiments show that Quamba2-8B outperforms several state-of-the-art SSM quantization methods and delivers 1.3times and 3times speed-ups in the pre-filling and generation stages, respectively, while offering 4times memory reduction with only a 1.6% average accuracy drop. The evaluation on MMLU shows the generalizability and robustness of our framework. The code and quantized models will be released at: https://github.com/enyac-group/Quamba.
+
+]]></content:encoded>
+<pubDate>Fri, 28 Mar 2025 17:10:39 GMT</pubDate>
+<pubDate>Fri, 28 Mar 2025 17:10:39 GMT</pubDate>
+</item>
+
+<item>
 <title>Target-Aware Video Diffusion Models</title>
 <link>https://arxiv.org/abs/2503.18950</link>
 <guid>https://arxiv.org/abs/2503.18950</guid>
 <content:encoded><![CDATA[
-
-  We present a target-aware video diffusion model that generates videos from an input image in which an actor interacts with a specified target while performing a desired action. The target is defined by a segmentation mask and the desired action is described via a text prompt. Unlike existing controllable image-to-video diffusion models that often rely on dense structural or motion cues to guide the actor's movements toward the target, our target-aware model requires only a simple mask to indicate the target, leveraging the generalization capabilities of pretrained models to produce plausible actions. This makes our method particularly effective for human-object interaction (HOI) scenarios, where providing precise action guidance is challenging, and further enables the use of video diffusion models for high-level action planning in applications such as robotics. We build our target-aware model by extending a baseline model to incorporate the target mask as an additional input. To enforce target awareness, we introduce a special token that encodes the target's spatial information within the text prompt. We then fine-tune the model with our curated dataset using a novel cross-attention loss that aligns the cross-attention maps associated with this token with the input target mask. To further improve performance, we selectively apply this loss to the most semantically relevant transformer blocks and attention regions. Experimental results show that our target-aware model outperforms existing solutions in generating videos where actors interact accurately with the specified targets. We further demonstrate its efficacy in two downstream applications: video content creation and zero-shot 3D HOI motion synthesis.
-
+We present a target-aware video diffusion model that generates videos from an input image in which an actor interacts with a specified target while performing a desired action. The target is defined by a segmentation mask and the desired action is described via a text prompt. Unlike existing controllable image-to-video diffusion models that often rely on dense structural or motion cues to guide the actor's movements toward the target, our target-aware model requires only a simple mask to indicate the target, leveraging the generalization capabilities of pretrained models to produce plausible actions. This makes our method particularly effective for human-object interaction (HOI) scenarios, where providing precise action guidance is challenging, and further enables the use of video diffusion models for high-level action planning in applications such as robotics. We build our target-aware model by extending a baseline model to incorporate the target mask as an additional input. To enforce target awareness, we introduce a special token that encodes the target's spatial information within the text prompt. We then fine-tune the model with our curated dataset using a novel cross-attention loss that aligns the cross-attention maps associated with this token with the input target mask. To further improve performance, we selectively apply this loss to the most semantically relevant transformer blocks and attention regions. Experimental results show that our target-aware model outperforms existing solutions in generating videos where actors interact accurately with the specified targets. We further demonstrate its efficacy in two downstream applications: video content creation and zero-shot 3D HOI motion synthesis.
 ]]></content:encoded>
 <pubDate>Mon, 24 Mar 2025 13:59:59 GMT</pubDate>
-<pubDate>Mon, 24 Mar 2025 13:59:59 GMT</pubDate>
 </item>
-
 <item>
 <title>Medical large language models are easily distracted</title>
 <link>https://arxiv.org/abs/2504.01201</link>
@@ -9007,15 +9016,6 @@ Direct Preference Optimization (DPO) and its variants have become increasingly p
 <div><p style="color: gray;">Goedel-Prover是一个实现数学证明生成最佳性能的开源语言模型。</p><br /><br /><p><strong>摘要：</strong> Goedel-Prover是一种开源大型语言模型，专门用于自动化数学问题的形式化证明生成，达到了该领域的最优性能。为了解决形式化数学语句和证明稀缺的问题，研究团队训练了语句形式化工具，将自然语言数学问题转化为形式语言（Lean 4），创建了一个包含164万个形式语句的数据集。利用大型语言模型，检查这些形式语句准确保留了原始自然语言问题的内容。然后，团队通过训练一系列证明者，迭代构建了一个大型形式证明数据集。每个新的证明者都成功证明了前一个证明者无法解决的许多语句，并将这些新证明追加到下一轮训练集中。最终的证明者在整体证明生成中超越了现有所有开源模型，在miniF2F基准测试中达到了57.6%的成功率，领先于之前的最佳开源模型7.6%。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.07640" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 12 Feb 2025 09:56:56 GMT</pubDate>
-</item>
-<item>
-<title>通过稀疏自编码器理解与控制视觉模型</title>
-<link>https://arxiv.org/abs/2502.06755</link>
-<guid>https://arxiv.org/abs/2502.06755</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出一种框架，通过稀疏自编码器理解和控制视觉模型。</p><br /><br /><p><strong>摘要：</strong> 为了深入理解视觉模型，我们不仅需要解释其学习的特征，还需通过控制实验验证这些解释。当前的方法要么提供可解释的特征但不能测试其因果影响，要么允许模型编辑但没有可解释的控制。我们提出了一个统一框架，利用稀疏自编码器（SAEs）弥补这一空白，能够发现可人类解释的视觉特征，并精确操纵这些特征以测试模型行为的假设。通过对最先进的视觉模型应用该方法，我们揭示了不同预训练目标的模型在语义抽象学习上的关键差异，并展示了我们框架在多个视觉任务中的实际应用。我们的研究表明，SAEs能够可靠地识别和操纵可解释的视觉特征，而无需对模型进行重新训练，这为理解和控制视觉模型行为提供了强大的工具。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.06755" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 12 Feb 2025 09:54:39 GMT</pubDate>
 </item>
 </channel>
 </rss>
