@@ -5,15 +5,61 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>Sparse Autoencoders Learn Monosemantic Features in Vision-Language Models</title>
+<link>https://arxiv.org/abs/2504.02821</link>
+<guid>https://arxiv.org/abs/2504.02821</guid>
+<content:encoded><![CDATA[
+
+  Sparse Autoencoders (SAEs) have recently been shown to enhance interpretability and steerability in Large Language Models (LLMs). In this work, we extend the application of SAEs to Vision-Language Models (VLMs), such as CLIP, and introduce a comprehensive framework for evaluating monosemanticity in vision representations. Our experimental results reveal that SAEs trained on VLMs significantly enhance the monosemanticity of individual neurons while also exhibiting hierarchical representations that align well with expert-defined structures (e.g., iNaturalist taxonomy). Most notably, we demonstrate that applying SAEs to intervene on a CLIP vision encoder, directly steer output from multimodal LLMs (e.g., LLaVA) without any modifications to the underlying model. These findings emphasize the practicality and efficacy of SAEs as an unsupervised approach for enhancing both the interpretability and control of VLMs.
+
+]]></content:encoded>
+<pubDate>Thu, 03 Apr 2025 13:58:35 GMT</pubDate>
+<pubDate>Thu, 03 Apr 2025 13:58:35 GMT</pubDate>
+</item>
+<item>
+<title>Interpreting Emergent Planning in Model-Free Reinforcement Learning</title>
+<link>https://arxiv.org/abs/2504.01871</link>
+<guid>https://arxiv.org/abs/2504.01871</guid>
+<content:encoded><![CDATA[
+
+  We present the first mechanistic evidence that model-free reinforcement learning agents can learn to plan. This is achieved by applying a methodology based on concept-based interpretability to a model-free agent in Sokoban -- a commonly used benchmark for studying planning. Specifically, we demonstrate that DRC, a generic model-free agent introduced by Guez et al. (2019), uses learned concept representations to internally formulate plans that both predict the long-term effects of actions on the environment and influence action selection. Our methodology involves: (1) probing for planning-relevant concepts, (2) investigating plan formation within the agent's representations, and (3) verifying that discovered plans (in the agent's representations) have a causal effect on the agent's behavior through interventions. We also show that the emergence of these plans coincides with the emergence of a planning-like property: the ability to benefit from additional test-time compute. Finally, we perform a qualitative analysis of the planning algorithm learned by the agent and discover a strong resemblance to parallelized bidirectional search. Our findings advance understanding of the internal mechanisms underlying planning behavior in agents, which is important given the recent trend of emergent planning and reasoning capabilities in LLMs through RL
+
+]]></content:encoded>
+<pubDate>Wed, 02 Apr 2025 12:24:23 GMT</pubDate>
+<pubDate>Wed, 02 Apr 2025 12:24:23 GMT</pubDate>
+</item>
+<item>
+<title>Advances and Challenges in Foundation Agents: From Brain-Inspired Intelligence to Evolutionary, Collaborative, and Safe Systems</title>
+<link>https://arxiv.org/abs/2504.01990</link>
+<guid>https://arxiv.org/abs/2504.01990</guid>
+<content:encoded><![CDATA[
+
+  The advent of large language models (LLMs) has catalyzed a transformative shift in artificial intelligence, paving the way for advanced intelligent agents capable of sophisticated reasoning, robust perception, and versatile action across diverse domains. As these agents increasingly drive AI research and practical applications, their design, evaluation, and continuous improvement present intricate, multifaceted challenges. This survey provides a comprehensive overview, framing intelligent agents within a modular, brain-inspired architecture that integrates principles from cognitive science, neuroscience, and computational research. We structure our exploration into four interconnected parts. First, we delve into the modular foundation of intelligent agents, systematically mapping their cognitive, perceptual, and operational modules onto analogous human brain functionalities, and elucidating core components such as memory, world modeling, reward processing, and emotion-like systems. Second, we discuss self-enhancement and adaptive evolution mechanisms, exploring how agents autonomously refine their capabilities, adapt to dynamic environments, and achieve continual learning through automated optimization paradigms, including emerging AutoML and LLM-driven optimization strategies. Third, we examine collaborative and evolutionary multi-agent systems, investigating the collective intelligence emerging from agent interactions, cooperation, and societal structures, highlighting parallels to human social dynamics. Finally, we address the critical imperative of building safe, secure, and beneficial AI systems, emphasizing intrinsic and extrinsic security threats, ethical alignment, robustness, and practical mitigation strategies necessary for trustworthy real-world deployment.
+
+]]></content:encoded>
+<pubDate>Mon, 31 Mar 2025 14:00:29 GMT</pubDate>
+<pubDate>Mon, 31 Mar 2025 14:00:29 GMT</pubDate>
+</item>
+<item>
+<title>Scaling Laws in Scientific Discovery with AI and Robot Scientists</title>
+<link>https://arxiv.org/abs/2503.22444</link>
+<guid>https://arxiv.org/abs/2503.22444</guid>
+<content:encoded><![CDATA[
+
+  Scientific discovery is poised for rapid advancement through advanced robotics and artificial intelligence. Current scientific practices face substantial limitations as manual experimentation remains time-consuming and resource-intensive, while multidisciplinary research demands knowledge integration beyond individual researchers' expertise boundaries. Here, we envision an autonomous generalist scientist (AGS) concept combines agentic AI and embodied robotics to automate the entire research lifecycle. This system could dynamically interact with both physical and virtual environments while facilitating the integration of knowledge across diverse scientific disciplines. By deploying these technologies throughout every research stage -- spanning literature review, hypothesis generation, experimentation, and manuscript writing -- and incorporating internal reflection alongside external feedback, this system aims to significantly reduce the time and resources needed for scientific discovery. Building on the evolution from virtual AI scientists to versatile generalist AI-based robot scientists, AGS promises groundbreaking potential. As these autonomous systems become increasingly integrated into the research process, we hypothesize that scientific discovery might adhere to new scaling laws, potentially shaped by the number and capabilities of these autonomous systems, offering novel perspectives on how knowledge is generated and evolves. The adaptability of embodied robots to extreme environments, paired with the flywheel effect of accumulating scientific knowledge, holds the promise of continually pushing beyond both physical and intellectual frontiers.
+
+]]></content:encoded>
+<pubDate>Fri, 28 Mar 2025 10:00:27 GMT</pubDate>
+<pubDate>Fri, 28 Mar 2025 10:00:27 GMT</pubDate>
+</item>
+
+<item>
 <title>ZClip: Adaptive Spike Mitigation for LLM Pre-Training</title>
 <link>https://arxiv.org/abs/2504.02507</link>
 <guid>https://arxiv.org/abs/2504.02507</guid>
 <content:encoded><![CDATA[
-
-  Training large language models (LLMs) presents numerous challenges, including gradient instability and loss spikes. These phenomena can lead to catastrophic divergence, requiring costly checkpoint restoration and data batch skipping. Traditional gradient clipping techniques, such as constant or norm-based methods, fail to address these issues effectively due to their reliance on fixed thresholds or heuristics, leading to inefficient learning and requiring frequent manual intervention. In this work, we propose ZClip, an adaptive gradient clipping algorithm that dynamically adjusts the clipping threshold based on statistical properties of gradient norms over time. Unlike prior reactive strategies, ZClip proactively adapts to training dynamics without making any prior assumptions on the scale and the temporal evolution of gradient norms. At its core, it leverages z-score-based anomaly detection to identify and mitigate large gradient spikes, preventing malignant loss spikes while not interfering with convergence otherwise. Our code is available at: https://github.com/bluorion-com/ZClip.
-
+Training large language models (LLMs) presents numerous challenges, including gradient instability and loss spikes. These phenomena can lead to catastrophic divergence, requiring costly checkpoint restoration and data batch skipping. Traditional gradient clipping techniques, such as constant or norm-based methods, fail to address these issues effectively due to their reliance on fixed thresholds or heuristics, leading to inefficient learning and requiring frequent manual intervention. In this work, we propose ZClip, an adaptive gradient clipping algorithm that dynamically adjusts the clipping threshold based on statistical properties of gradient norms over time. Unlike prior reactive strategies, ZClip proactively adapts to training dynamics without making any prior assumptions on the scale and the temporal evolution of gradient norms. At its core, it leverages z-score-based anomaly detection to identify and mitigate large gradient spikes, preventing malignant loss spikes while not interfering with convergence otherwise. Our code is available at: https://github.com/bluorion-com/ZClip.
 ]]></content:encoded>
-<pubDate>Thu, 03 Apr 2025 07:41:55 GMT</pubDate>
 <pubDate>Thu, 03 Apr 2025 07:41:55 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +67,8 @@
 <link>https://arxiv.org/abs/2504.02398</link>
 <guid>https://arxiv.org/abs/2504.02398</guid>
 <content:encoded><![CDATA[
-
-  Existing Speech Language Model (SLM) scaling analysis paints a bleak picture. They predict that SLMs require much more compute and data compared to text, leading some to question the feasibility of training high-quality SLMs. However, modern SLMs are often initialised from pre-trained TextLMs using speech-text interleaving to allow knowledge transfer. This raises the question - Do interleaved SLMs scale more efficiently than textless-SLMs? In this paper we answer a resounding, yes! We conduct scaling analysis of interleaved SLMs by training several dozen and analysing the scaling trends. We see that under this setup SLMs scale more efficiently with compute. Additionally, our results indicate that the scaling-dynamics are significantly different than textless-SLMs, suggesting one should allocate notably more of the compute budget for increasing model size over training tokens. We also study the role of synthetic data and TextLM model families in unlocking this potential. Results suggest, that our scaled up model achieves comparable performance with leading models on speech semantic metrics while using less compute and data than other approaches. We open source models, samples, and data - https://pages.cs.huji.ac.il/adiyoss-lab/sims.
-
+Existing Speech Language Model (SLM) scaling analysis paints a bleak picture. They predict that SLMs require much more compute and data compared to text, leading some to question the feasibility of training high-quality SLMs. However, modern SLMs are often initialised from pre-trained TextLMs using speech-text interleaving to allow knowledge transfer. This raises the question - Do interleaved SLMs scale more efficiently than textless-SLMs? In this paper we answer a resounding, yes! We conduct scaling analysis of interleaved SLMs by training several dozen and analysing the scaling trends. We see that under this setup SLMs scale more efficiently with compute. Additionally, our results indicate that the scaling-dynamics are significantly different than textless-SLMs, suggesting one should allocate notably more of the compute budget for increasing model size over training tokens. We also study the role of synthetic data and TextLM model families in unlocking this potential. Results suggest, that our scaled up model achieves comparable performance with leading models on speech semantic metrics while using less compute and data than other approaches. We open source models, samples, and data - https://pages.cs.huji.ac.il/adiyoss-lab/sims.
 ]]></content:encoded>
-<pubDate>Thu, 03 Apr 2025 04:46:56 GMT</pubDate>
 <pubDate>Thu, 03 Apr 2025 04:46:56 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +76,8 @@
 <link>https://arxiv.org/abs/2504.02012</link>
 <guid>https://arxiv.org/abs/2504.02012</guid>
 <content:encoded><![CDATA[
-
-  Learning to generate neural network parameters conditioned on task descriptions and architecture specifications is pivotal for advancing model adaptability and transfer learning. Existing methods especially those based on diffusion models suffer from limited scalability to large architectures, rigidity in handling varying network depths, and disjointed parameter generation that undermines inter-layer coherence. In this work, we propose IGPG (Instruction Guided Parameter Generation), an autoregressive framework that unifies parameter synthesis across diverse tasks and architectures. IGPG leverages a VQ-VAE and an autoregressive model to generate neural network parameters, conditioned on task instructions, dataset, and architecture details. By autoregressively generating neural network weights' tokens, IGPG ensures inter-layer coherence and enables efficient adaptation across models and datasets. Operating at the token level, IGPG effectively captures complex parameter distributions aggregated from a broad spectrum of pretrained models. Extensive experiments on multiple vision datasets demonstrate that IGPG consolidates diverse pretrained models into a single, flexible generative framework. The synthesized parameters achieve competitive or superior performance relative to state-of-the-art methods, especially in terms of scalability and efficiency when applied to large architectures. These results underscore ICPG potential as a powerful tool for pretrained weight retrieval, model selection, and rapid task-specific fine-tuning.
-
+Learning to generate neural network parameters conditioned on task descriptions and architecture specifications is pivotal for advancing model adaptability and transfer learning. Existing methods especially those based on diffusion models suffer from limited scalability to large architectures, rigidity in handling varying network depths, and disjointed parameter generation that undermines inter-layer coherence. In this work, we propose IGPG (Instruction Guided Parameter Generation), an autoregressive framework that unifies parameter synthesis across diverse tasks and architectures. IGPG leverages a VQ-VAE and an autoregressive model to generate neural network parameters, conditioned on task instructions, dataset, and architecture details. By autoregressively generating neural network weights' tokens, IGPG ensures inter-layer coherence and enables efficient adaptation across models and datasets. Operating at the token level, IGPG effectively captures complex parameter distributions aggregated from a broad spectrum of pretrained models. Extensive experiments on multiple vision datasets demonstrate that IGPG consolidates diverse pretrained models into a single, flexible generative framework. The synthesized parameters achieve competitive or superior performance relative to state-of-the-art methods, especially in terms of scalability and efficiency when applied to large architectures. These results underscore ICPG potential as a powerful tool for pretrained weight retrieval, model selection, and rapid task-specific fine-tuning.
 ]]></content:encoded>
-<pubDate>Wed, 02 Apr 2025 01:50:19 GMT</pubDate>
 <pubDate>Wed, 02 Apr 2025 01:50:19 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +85,8 @@
 <link>https://arxiv.org/abs/2504.00891</link>
 <guid>https://arxiv.org/abs/2504.00891</guid>
 <content:encoded><![CDATA[
-
-  Recent advancements in Large Language Models (LLMs) have shown that it is promising to utilize Process Reward Models (PRMs) as verifiers to enhance the performance of LLMs. However, current PRMs face three key challenges: (1) limited process supervision and generalization capabilities, (2) dependence on scalar value prediction without leveraging the generative abilities of LLMs, and (3) inability to scale the test-time compute of PRMs. In this work, we introduce GenPRM, a generative process reward model that performs explicit Chain-of-Thought (CoT) reasoning with code verification before providing judgment for each reasoning step. To obtain high-quality process supervision labels and rationale data, we propose Relative Progress Estimation (RPE) and a rationale synthesis framework that incorporates code verification. Experimental results on ProcessBench and several mathematical reasoning tasks show that GenPRM significantly outperforms prior PRMs with only 23K training data from MATH dataset. Through test-time scaling, a 1.5B GenPRM outperforms GPT-4o, and a 7B GenPRM surpasses Qwen2.5-Math-PRM-72B on ProcessBench. Additionally, GenPRM demonstrates strong abilities to serve as a critic model for policy model refinement. This work establishes a new paradigm for process supervision that bridges the gap between PRMs and critic models in LLMs. Our code, model, and data will be available in https://ryanliu112.github.io/GenPRM.
-
+Recent advancements in Large Language Models (LLMs) have shown that it is promising to utilize Process Reward Models (PRMs) as verifiers to enhance the performance of LLMs. However, current PRMs face three key challenges: (1) limited process supervision and generalization capabilities, (2) dependence on scalar value prediction without leveraging the generative abilities of LLMs, and (3) inability to scale the test-time compute of PRMs. In this work, we introduce GenPRM, a generative process reward model that performs explicit Chain-of-Thought (CoT) reasoning with code verification before providing judgment for each reasoning step. To obtain high-quality process supervision labels and rationale data, we propose Relative Progress Estimation (RPE) and a rationale synthesis framework that incorporates code verification. Experimental results on ProcessBench and several mathematical reasoning tasks show that GenPRM significantly outperforms prior PRMs with only 23K training data from MATH dataset. Through test-time scaling, a 1.5B GenPRM outperforms GPT-4o, and a 7B GenPRM surpasses Qwen2.5-Math-PRM-72B on ProcessBench. Additionally, GenPRM demonstrates strong abilities to serve as a critic model for policy model refinement. This work establishes a new paradigm for process supervision that bridges the gap between PRMs and critic models in LLMs. Our code, model, and data will be available in https://ryanliu112.github.io/GenPRM.
 ]]></content:encoded>
-<pubDate>Tue, 01 Apr 2025 11:21:05 GMT</pubDate>
 <pubDate>Tue, 01 Apr 2025 11:21:05 GMT</pubDate>
 </item>
 <item>
@@ -57,14 +94,10 @@
 <link>https://arxiv.org/abs/2504.00502</link>
 <guid>https://arxiv.org/abs/2504.00502</guid>
 <content:encoded><![CDATA[
-
-  Multimodal Large Language Models (MLLMs) suffer from high computational costs due to their massive size and the large number of visual tokens. In this paper, we investigate layer-wise redundancy in MLLMs by introducing a novel metric, Layer Contribution (LC), which quantifies the impact of a layer's transformations on visual and text tokens, respectively. The calculation of LC involves measuring the divergence in model output that results from removing the layer's transformations on the specified tokens. Our pilot experiment reveals that many layers of MLLMs exhibit minimal contribution during the processing of visual tokens. Motivated by this observation, we propose ShortV, a training-free method that leverages LC to identify ineffective layers, and freezes visual token updates in these layers. Experiments show that ShortV can freeze visual token in approximately 60\% of the MLLM layers, thereby dramatically reducing computational costs related to updating visual tokens. For example, it achieves a 50\% reduction in FLOPs on LLaVA-NeXT-13B while maintaining superior performance. The code will be publicly available at https://github.com/icip-cas/ShortV
-
+Multimodal Large Language Models (MLLMs) suffer from high computational costs due to their massive size and the large number of visual tokens. In this paper, we investigate layer-wise redundancy in MLLMs by introducing a novel metric, Layer Contribution (LC), which quantifies the impact of a layer's transformations on visual and text tokens, respectively. The calculation of LC involves measuring the divergence in model output that results from removing the layer's transformations on the specified tokens. Our pilot experiment reveals that many layers of MLLMs exhibit minimal contribution during the processing of visual tokens. Motivated by this observation, we propose ShortV, a training-free method that leverages LC to identify ineffective layers, and freezes visual token updates in these layers. Experiments show that ShortV can freeze visual token in approximately 60\% of the MLLM layers, thereby dramatically reducing computational costs related to updating visual tokens. For example, it achieves a 50\% reduction in FLOPs on LLaVA-NeXT-13B while maintaining superior performance. The code will be publicly available at https://github.com/icip-cas/ShortV
 ]]></content:encoded>
 <pubDate>Tue, 01 Apr 2025 03:47:55 GMT</pubDate>
-<pubDate>Tue, 01 Apr 2025 03:47:55 GMT</pubDate>
 </item>
-
 <item>
 <title>Envisioning Beyond the Pixels: Benchmarking Reasoning-Informed Visual Editing</title>
 <link>https://arxiv.org/abs/2504.02826</link>
@@ -9019,51 +9052,6 @@ In the rapidly evolving field of Natural Language Processing, Large Language Mod
 <div><p style="color: gray;">Light-A-Video 提供了一种无训练的视频重光照解决方案，提升了时间一致性。</p><br /><br /><p><strong>摘要：</strong> 近日，图像重光照模型的进步主要得益于大规模数据集和预训练扩散模型，使得一致性照明得以实现。然而，视频重光照仍面临训练成本过高和高质量多样化视频数据集稀缺的挑战。本研究提出了 Light-A-Video，这是一种无训练的方法，旨在实现时间平滑的视频重光照。通过设计一致性光照注意模块（CLA），加强了自注意力层内帧间的交互，从而稳定背景光源的生成。此外，我们利用光传输独立性的物理原则，采用渐进光融合（PLF）策略，在源视频的外观和重光照外观之间进行线性混合，以确保照明的平滑过渡。实验证明，Light-A-Video在保持图像质量的同时，提高了重光照视频的时间一致性，确保了帧间光照的连贯性过渡。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.08590" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 12 Feb 2025 23:47:56 GMT</pubDate>
-</item>
-<item>
-<title>LASP-2: 提升线性注意力变换器模型的序列并行ism方法</title>
-<link>https://arxiv.org/abs/2502.07563</link>
-<guid>https://arxiv.org/abs/2502.07563</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">LASP-2 提高了线性注意力模型的训练速度和并行性。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了LASP-2，这是一种新型序列并行（SP）方法，旨在提升线性注意力变换器模型在处理超长输入序列时的通信和计算并行性。与之前的LASP相比，LASP-2重新审视了线性注意力层对于SP的最小通信需求，并重组了整体的通信-计算工作流。此方法仅需对中间内存状态进行一次集体通信，显著提高了通信与计算的并行性及其重叠。另外，LASP-2延伸至LASP-2H，对标准注意力模块进行类似的通信重设计，为融合线性与标准注意力层的混合模型提供了高效的SP解决方案。在对Linear-Llama3模型的评估中，LASP-2实现了相对LASP快15.2%的训练速度提升，相比Ring Attention则提升了36.6%。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.07563" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 12 Feb 2025 23:47:31 GMT</pubDate>
-</item>
-<item>
-<title>CoCoMix：结合离散的下一个标记预测与连续概念的预训练框架</title>
-<link>https://arxiv.org/abs/2502.08524</link>
-<guid>https://arxiv.org/abs/2502.08524</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">CoCoMix是一种新颖的预训练框架，通过概念学习提高语言模型性能。</p><br /><br /><p><strong>摘要：</strong> CoCoMix是一种新提出的预训练框架，它结合离散的下一个标记预测与连续概念学习。通过使用预训练的稀疏自编码器，CoCoMix能够预测连续概念，并将其与模型的隐藏状态混合。在多个基准测试中，包括语言建模和下游推理任务，实验结果表明CoCoMix在样本效率上表现更佳，并且在性能上一致优于传统的下一个标记预测、知识蒸馏以及插入暂停标记的方法。研究发现，概念学习和交错处理的结合对于性能提升至关重要。此外，CoCoMix也增强了模型的可解释性和可引导性，可以直接检查和修改预测的概念，从而提供一种透明的方式来指导模型的内部推理过程。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.08524" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 12 Feb 2025 23:42:44 GMT</pubDate>
-</item>
-<item>
-<title>基于计算预算的模型蒸馏性能估计研究</title>
-<link>https://arxiv.org/abs/2502.08606</link>
-<guid>https://arxiv.org/abs/2502.08606</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本研究提出了一个蒸馏规模法，优化了模型性能与计算预算的分配。</p><br /><br /><p><strong>摘要：</strong> 本研究提供了一种蒸馏规模法，以估算基于计算预算的蒸馏模型性能，并优化了计算在教师和学生模型之间的分配。研究成果降低了大规模使用蒸馏的风险，确保在分配计算时能够最大化学生模型的性能。我们提供了计算最优的蒸馏方案，适用于存在教师模型或需要训练教师模型的情况。如果有多个学生模型进行蒸馏且已有教师模型，则蒸馏的效果优于监督预训练，直到计算水平随着学生规模的增加而可预测性地增长；而如果只有一个学生需要蒸馏且教师也需要训练，则应选择监督学习。此外，基于大规模研究结果，我们提供了关于蒸馏的新见解，增进了对蒸馏的理解并为实验设计提供了指导。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.08606" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 12 Feb 2025 23:41:41 GMT</pubDate>
-</item>
-<item>
-<title>SARChat-Bench-2M: A Multi-Task Vision-Language Benchmark for SAR Image Interpretation</title>
-<link>https://arxiv.org/abs/2502.08168</link>
-<guid>https://arxiv.org/abs/2502.08168</guid>
-<content:encoded><![CDATA[
-In the field of synthetic aperture radar (SAR) remote sensing image interpretation, although Vision language models (VLMs) have made remarkable progress in natural language processing and image understanding, their applications remain limited in professional domains due to insufficient domain expertise. This paper innovatively proposes the first large-scale multimodal dialogue dataset for SAR images, named SARChat-2M, which contains approximately 2 million high-quality image-text pairs, encompasses diverse scenarios with detailed target annotations. This dataset not only supports several key tasks such as visual understanding and object detection tasks, but also has unique innovative aspects: this study develop a visual-language dataset and benchmark for the SAR domain, enabling and evaluating VLMs' capabilities in SAR image interpretation, which provides a paradigmatic framework for constructing multimodal datasets across various remote sensing vertical domains. Through experiments on 16 mainstream VLMs, the effectiveness of the dataset has been fully verified, and the first multi-task dialogue benchmark in the SAR field has been successfully established. The project will be released at https://github.com/JimmyMa99/SARChat, aiming to promote the in-depth development and wide application of SAR visual language models.
-]]></content:encoded>
-<pubDate>Wed, 12 Feb 2025 21:57:30 GMT</pubDate>
-</item>
-<item>
-<title>CineMaster：3D感知可控文本到视频生成框架</title>
-<link>https://arxiv.org/abs/2502.08639</link>
-<guid>https://arxiv.org/abs/2502.08639</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">CineMaster框架实现了3D感知与可控的文本到视频生成。</p><br /><br /><p><strong>摘要：</strong> CineMaster是一个创新的3D感知可控文本到视频生成框架，旨在为用户提供与专业导演相似的控制能力，包括场景中的物体精确放置、对象和相机在3D空间中的灵活操控，以及对渲染帧的直观布局控制。该框架分为两个阶段：第一阶段通过交互式工作流程帮助用户在3D空间内构建条件信号；第二阶段利用生成的深度图、相机轨迹和对象类别标签，指导文本到视频扩散模型生成用户意图的视频内容。此外，CineMaster还建立了自动化数据注释管道，以从大规模视频数据中提取3D边界框和相机轨迹，克服野外数据集稀缺的问题。实验结果表明，CineMaster在3D感知文本到视频生成方面明显优于现有方法。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.08639" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 12 Feb 2025 21:55:44 GMT</pubDate>
 </item>
 </channel>
 </rss>
