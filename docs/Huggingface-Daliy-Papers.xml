@@ -5,18 +5,27 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>Adaptive Layer-skipping in Pre-trained LLMs</title>
+<link>https://arxiv.org/abs/2503.23798</link>
+<guid>https://arxiv.org/abs/2503.23798</guid>
+<content:encoded><![CDATA[
+
+  Various layer-skipping methods have been proposed to accelerate token generation in large language models (LLMs). However, they have overlooked a fundamental question: How do computational demands vary across the generation of different tokens? In this work, we introduce FlexiDepth, a method that dynamically adjusts the number of Transformer layers used in text generation. By incorporating a plug-in router and adapter, FlexiDepth enables adaptive layer-skipping in LLMs without modifying their original parameters. Introducing FlexiDepth to Llama-3-8B model achieves layer skipping of 8 layers out of 32, and meanwhile maintains the full 100\% benchmark performance. Experimental results with FlexiDepth demonstrate that computational demands in LLMs significantly vary based on token type. Specifically, generating repetitive tokens or fixed phrases requires fewer layers, whereas producing tokens involving computation or high uncertainty requires more layers. Interestingly, this adaptive allocation pattern aligns with human intuition. To advance research in this area, we open sourced FlexiDepth and a dataset documenting FlexiDepth's layer allocation patterns for future exploration.
+
+]]></content:encoded>
+<pubDate>Mon, 31 Mar 2025 03:20:58 GMT</pubDate>
+<pubDate>Mon, 31 Mar 2025 03:20:58 GMT</pubDate>
+</item>
+
+<item>
 <title>Quamba2: A Robust and Scalable Post-training Quantization Framework for Selective State Space Models</title>
 <link>https://arxiv.org/abs/2503.22879</link>
 <guid>https://arxiv.org/abs/2503.22879</guid>
 <content:encoded><![CDATA[
-
-  State Space Models (SSMs) are emerging as a compelling alternative to Transformers because of their consistent memory usage and high performance. Despite this, scaling up SSMs on cloud services or limited-resource devices is challenging due to their storage requirements and computational power. To overcome this, quantizing SSMs with low bit-width data formats can reduce model size and benefit from hardware acceleration. As SSMs are prone to quantization-induced errors, recent efforts have focused on optimizing a particular model or bit-width for efficiency without sacrificing performance. However, distinct bit-width configurations are essential for different scenarios, like W4A8 for boosting large-batch decoding speed, and W4A16 for enhancing generation speed in short prompt applications for a single user. To this end, we present Quamba2, compatible with W8A8, W4A8, and W4A16 for both Mamba1 and Mamba2 backbones, addressing the growing demand for SSM deployment on various platforms. Based on the channel order preserving and activation persistence of SSMs, we propose an offline approach to quantize inputs of a linear recurrence in 8-bit by sorting and clustering for input x, combined with a per-state-group quantization for input-dependent parameters B and C. To ensure compute-invariance in the SSM output, we rearrange weights offline according to the clustering sequence. The experiments show that Quamba2-8B outperforms several state-of-the-art SSM quantization methods and delivers 1.3times and 3times speed-ups in the pre-filling and generation stages, respectively, while offering 4times memory reduction with only a 1.6% average accuracy drop. The evaluation on MMLU shows the generalizability and robustness of our framework. The code and quantized models will be released at: https://github.com/enyac-group/Quamba.
-
+State Space Models (SSMs) are emerging as a compelling alternative to Transformers because of their consistent memory usage and high performance. Despite this, scaling up SSMs on cloud services or limited-resource devices is challenging due to their storage requirements and computational power. To overcome this, quantizing SSMs with low bit-width data formats can reduce model size and benefit from hardware acceleration. As SSMs are prone to quantization-induced errors, recent efforts have focused on optimizing a particular model or bit-width for efficiency without sacrificing performance. However, distinct bit-width configurations are essential for different scenarios, like W4A8 for boosting large-batch decoding speed, and W4A16 for enhancing generation speed in short prompt applications for a single user. To this end, we present Quamba2, compatible with W8A8, W4A8, and W4A16 for both Mamba1 and Mamba2 backbones, addressing the growing demand for SSM deployment on various platforms. Based on the channel order preserving and activation persistence of SSMs, we propose an offline approach to quantize inputs of a linear recurrence in 8-bit by sorting and clustering for input x, combined with a per-state-group quantization for input-dependent parameters B and C. To ensure compute-invariance in the SSM output, we rearrange weights offline according to the clustering sequence. The experiments show that Quamba2-8B outperforms several state-of-the-art SSM quantization methods and delivers 1.3times and 3times speed-ups in the pre-filling and generation stages, respectively, while offering 4times memory reduction with only a 1.6% average accuracy drop. The evaluation on MMLU shows the generalizability and robustness of our framework. The code and quantized models will be released at: https://github.com/enyac-group/Quamba.
 ]]></content:encoded>
 <pubDate>Fri, 28 Mar 2025 17:10:39 GMT</pubDate>
-<pubDate>Fri, 28 Mar 2025 17:10:39 GMT</pubDate>
 </item>
-
 <item>
 <title>Target-Aware Video Diffusion Models</title>
 <link>https://arxiv.org/abs/2503.18950</link>
@@ -9007,15 +9016,6 @@ Direct Preference Optimization (DPO) and its variants have become increasingly p
 <div><p style="color: gray;">本文提出Hypencoder，一个基于神经网络的请求编码器，显著提升文档检索性能。</p><br /><br /><p><strong>摘要：</strong> 传统的检索模型通常依赖向量内积来生成查询与文档之间的相关性评分，限制了评分的表现力。本文提出一种新范式，使用小型神经网络作为学习的相关性函数，而非生成向量来表示查询。该神经网络以文档的表示为输入，输出标量相关性评分。我们应用超网络（hypernetwork）生成该神经网络的权重，称之为Hypencoder。通过在领域内的搜索任务进行实验，Hypencoder的表现显著超越了强大的稠密检索模型，并在重排序模型和规模更大的模型中取得了更高的指标。此外，Hypencoder在领域外检索任务中也展现出良好的泛化能力。为进一步评估其能力，我们对一系列困难检索任务进行了评测，包括“想不起来的检索”和“遵循指令的检索”，结果表明，与标准检索任务相比，性能差距显著扩大。最后，我们实现了一种近似搜索算法，展示该模型能够在60毫秒内搜索880万份文档。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.05364" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 12 Feb 2025 10:35:08 GMT</pubDate>
-</item>
-<item>
-<title>Goedel-Prover：开源自动化数学证明生成的最优语言模型</title>
-<link>https://arxiv.org/abs/2502.07640</link>
-<guid>https://arxiv.org/abs/2502.07640</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">Goedel-Prover是一个实现数学证明生成最佳性能的开源语言模型。</p><br /><br /><p><strong>摘要：</strong> Goedel-Prover是一种开源大型语言模型，专门用于自动化数学问题的形式化证明生成，达到了该领域的最优性能。为了解决形式化数学语句和证明稀缺的问题，研究团队训练了语句形式化工具，将自然语言数学问题转化为形式语言（Lean 4），创建了一个包含164万个形式语句的数据集。利用大型语言模型，检查这些形式语句准确保留了原始自然语言问题的内容。然后，团队通过训练一系列证明者，迭代构建了一个大型形式证明数据集。每个新的证明者都成功证明了前一个证明者无法解决的许多语句，并将这些新证明追加到下一轮训练集中。最终的证明者在整体证明生成中超越了现有所有开源模型，在miniF2F基准测试中达到了57.6%的成功率，领先于之前的最佳开源模型7.6%。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.07640" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 12 Feb 2025 09:56:56 GMT</pubDate>
 </item>
 </channel>
 </rss>
