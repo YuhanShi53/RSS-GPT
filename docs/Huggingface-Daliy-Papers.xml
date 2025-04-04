@@ -5,15 +5,25 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>Scene-Centric Unsupervised Panoptic Segmentation</title>
+<link>https://arxiv.org/abs/2504.01955</link>
+<guid>https://arxiv.org/abs/2504.01955</guid>
+<content:encoded><![CDATA[
+
+  Unsupervised panoptic segmentation aims to partition an image into semantically meaningful regions and distinct object instances without training on manually annotated data. In contrast to prior work on unsupervised panoptic scene understanding, we eliminate the need for object-centric training data, enabling the unsupervised understanding of complex scenes. To that end, we present the first unsupervised panoptic method that directly trains on scene-centric imagery. In particular, we propose an approach to obtain high-resolution panoptic pseudo labels on complex scene-centric data, combining visual representations, depth, and motion cues. Utilizing both pseudo-label training and a panoptic self-training strategy yields a novel approach that accurately predicts panoptic segmentation of complex scenes without requiring any human annotations. Our approach significantly improves panoptic quality, e.g., surpassing the recent state of the art in unsupervised panoptic segmentation on Cityscapes by 9.4% points in PQ.
+
+]]></content:encoded>
+<pubDate>Wed, 02 Apr 2025 13:58:46 GMT</pubDate>
+<pubDate>Wed, 02 Apr 2025 13:58:46 GMT</pubDate>
+</item>
+
+<item>
 <title>FreSca: Unveiling the Scaling Space in Diffusion Models</title>
 <link>https://arxiv.org/abs/2504.02154</link>
 <guid>https://arxiv.org/abs/2504.02154</guid>
 <content:encoded><![CDATA[
-
-  Diffusion models offer impressive controllability for image tasks, primarily through noise predictions that encode task-specific information and classifier-free guidance enabling adjustable scaling. This scaling mechanism implicitly defines a ``scaling space'' whose potential for fine-grained semantic manipulation remains underexplored. We investigate this space, starting with inversion-based editing where the difference between conditional/unconditional noise predictions carries key semantic information. Our core contribution stems from a Fourier analysis of noise predictions, revealing that its low- and high-frequency components evolve differently throughout diffusion. Based on this insight, we introduce FreSca, a straightforward method that applies guidance scaling independently to different frequency bands in the Fourier domain. FreSca demonstrably enhances existing image editing methods without retraining. Excitingly, its effectiveness extends to image understanding tasks such as depth estimation, yielding quantitative gains across multiple datasets.
-
+Diffusion models offer impressive controllability for image tasks, primarily through noise predictions that encode task-specific information and classifier-free guidance enabling adjustable scaling. This scaling mechanism implicitly defines a ``scaling space'' whose potential for fine-grained semantic manipulation remains underexplored. We investigate this space, starting with inversion-based editing where the difference between conditional/unconditional noise predictions carries key semantic information. Our core contribution stems from a Fourier analysis of noise predictions, revealing that its low- and high-frequency components evolve differently throughout diffusion. Based on this insight, we introduce FreSca, a straightforward method that applies guidance scaling independently to different frequency bands in the Fourier domain. FreSca demonstrably enhances existing image editing methods without retraining. Excitingly, its effectiveness extends to image understanding tasks such as depth estimation, yielding quantitative gains across multiple datasets.
 ]]></content:encoded>
-<pubDate>Wed, 02 Apr 2025 18:03:11 GMT</pubDate>
 <pubDate>Wed, 02 Apr 2025 18:03:11 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +31,8 @@
 <link>https://arxiv.org/abs/2504.00939</link>
 <guid>https://arxiv.org/abs/2504.00939</guid>
 <content:encoded><![CDATA[
-
-  We present the challenging task of automatically creating a high-level Wikipedia-style article that aggregates information from multiple diverse videos about real-world events, such as natural disasters or political elections. Videos are intuitive sources for retrieval-augmented generation (RAG), but most contemporary RAG workflows focus heavily on text and existing methods for video-based summarization focus on low-level scene understanding rather than high-level event semantics. To close this gap, we introduce WikiVideo, a benchmark consisting of expert-written articles and densely annotated videos that provide evidence for articles' claims, facilitating the integration of video into RAG pipelines and enabling the creation of in-depth content that is grounded in multimodal sources. We further propose Collaborative Article Generation (CAG), a novel interactive method for article creation from multiple videos. CAG leverages an iterative interaction between an r1-style reasoning model and a VideoLLM to draw higher level inferences about the target event than is possible with VideoLLMs alone, which fixate on low-level visual features. We benchmark state-of-the-art VideoLLMs and CAG in both oracle retrieval and RAG settings and find that CAG consistently outperforms alternative methods, while suggesting intriguing avenues for future work.
-
+We present the challenging task of automatically creating a high-level Wikipedia-style article that aggregates information from multiple diverse videos about real-world events, such as natural disasters or political elections. Videos are intuitive sources for retrieval-augmented generation (RAG), but most contemporary RAG workflows focus heavily on text and existing methods for video-based summarization focus on low-level scene understanding rather than high-level event semantics. To close this gap, we introduce WikiVideo, a benchmark consisting of expert-written articles and densely annotated videos that provide evidence for articles' claims, facilitating the integration of video into RAG pipelines and enabling the creation of in-depth content that is grounded in multimodal sources. We further propose Collaborative Article Generation (CAG), a novel interactive method for article creation from multiple videos. CAG leverages an iterative interaction between an r1-style reasoning model and a VideoLLM to draw higher level inferences about the target event than is possible with VideoLLMs alone, which fixate on low-level visual features. We benchmark state-of-the-art VideoLLMs and CAG in both oracle retrieval and RAG settings and find that CAG consistently outperforms alternative methods, while suggesting intriguing avenues for future work.
 ]]></content:encoded>
-<pubDate>Tue, 01 Apr 2025 12:22:15 GMT</pubDate>
 <pubDate>Tue, 01 Apr 2025 12:22:15 GMT</pubDate>
 </item>
 <item>
@@ -33,14 +40,10 @@
 <link>https://arxiv.org/abs/2503.23377</link>
 <guid>https://arxiv.org/abs/2503.23377</guid>
 <content:encoded><![CDATA[
-
-  This paper introduces JavisDiT, a novel Joint Audio-Video Diffusion Transformer designed for synchronized audio-video generation (JAVG). Built upon the powerful Diffusion Transformer (DiT) architecture, JavisDiT is able to generate high-quality audio and video content simultaneously from open-ended user prompts. To ensure optimal synchronization, we introduce a fine-grained spatio-temporal alignment mechanism through a Hierarchical Spatial-Temporal Synchronized Prior (HiST-Sypo) Estimator. This module extracts both global and fine-grained spatio-temporal priors, guiding the synchronization between the visual and auditory components. Furthermore, we propose a new benchmark, JavisBench, consisting of 10,140 high-quality text-captioned sounding videos spanning diverse scenes and complex real-world scenarios. Further, we specifically devise a robust metric for evaluating the synchronization between generated audio-video pairs in real-world complex content. Experimental results demonstrate that JavisDiT significantly outperforms existing methods by ensuring both high-quality generation and precise synchronization, setting a new standard for JAVG tasks. Our code, model, and dataset will be made publicly available at https://javisdit.github.io/.
-
+This paper introduces JavisDiT, a novel Joint Audio-Video Diffusion Transformer designed for synchronized audio-video generation (JAVG). Built upon the powerful Diffusion Transformer (DiT) architecture, JavisDiT is able to generate high-quality audio and video content simultaneously from open-ended user prompts. To ensure optimal synchronization, we introduce a fine-grained spatio-temporal alignment mechanism through a Hierarchical Spatial-Temporal Synchronized Prior (HiST-Sypo) Estimator. This module extracts both global and fine-grained spatio-temporal priors, guiding the synchronization between the visual and auditory components. Furthermore, we propose a new benchmark, JavisBench, consisting of 10,140 high-quality text-captioned sounding videos spanning diverse scenes and complex real-world scenarios. Further, we specifically devise a robust metric for evaluating the synchronization between generated audio-video pairs in real-world complex content. Experimental results demonstrate that JavisDiT significantly outperforms existing methods by ensuring both high-quality generation and precise synchronization, setting a new standard for JAVG tasks. Our code, model, and dataset will be made publicly available at https://javisdit.github.io/.
 ]]></content:encoded>
 <pubDate>Sun, 30 Mar 2025 05:40:42 GMT</pubDate>
-<pubDate>Sun, 30 Mar 2025 05:40:42 GMT</pubDate>
 </item>
-
 <item>
 <title>Inference-Time Scaling for Generalist Reward Modeling</title>
 <link>https://arxiv.org/abs/2504.02495</link>
@@ -9013,33 +9016,6 @@ In the rapidly evolving field of Natural Language Processing, Large Language Mod
 <div><p style="color: gray;">本研究提出通过增强交叉注意机制实现大模型向小模型的知识传输。</p><br /><br /><p><strong>摘要：</strong> 本研究提出了一种LLM模块架构，利用增强交叉注意机制将知识从大型预训练模型传递给小型模型。具体而言，通过冻结Qwen2-1.5B模型，并将其表示通过特制注意力层传递给GPT-Neo-125M模型，从而在有限的计算资源下进行训练。在Bespoke-Stratos-17k数据集上的实验结果表明，经过15个训练周期后，结合模型生成的响应质量可与蒸馏方法相媲美。文中讨论了模块化方法的优势，提供了输入查询示例和比较分析，并展望了该方法的进一步扩展前景。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.08213" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Thu, 13 Feb 2025 05:48:33 GMT</pubDate>
-</item>
-<item>
-<title>改进长效目标优化的语言模型探索方法</title>
-<link>https://arxiv.org/abs/2502.06533</link>
-<guid>https://arxiv.org/abs/2502.06533</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">探讨通过强化学习改进语言模型在长效目标上的探索能力。</p><br /><br /><p><strong>摘要：</strong> 在大型语言模型（LLMs）发展过程中，实现长效目标是一项重要挑战。本文研究了如何通过强化学习（RL）对预训练的LLMs进行微调，以优化特定目标的解决方案。探索过程中需权衡发现新方案与维持预训练模型基本能力的平衡，通常通过Kullback-Leibler（KL）惩罚来控制。我们通过对小型语言模型在简单算术任务上的探索动态进行研究，发现预训练程度对探索的影响，并强调了“关键标记”的重要性，这些标记对最终结果有显著影响。此外，我们提出了一种对KL惩罚的简单修改，旨在促进关键标记的探索，提升RL微调阶段的效率。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.06533" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 13 Feb 2025 03:47:28 GMT</pubDate>
-</item>
-<item>
-<title>Animate Anyone 2: 结合环境语义的角色动画生成</title>
-<link>https://arxiv.org/abs/2502.06145</link>
-<guid>https://arxiv.org/abs/2502.06145</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文介绍Animate Anyone 2，提升角色与环境的动画一致性与合理性。</p><br /><br /><p><strong>摘要：</strong> 随着基于扩散模型的角色图像动画方法的发展，Animate Anyone 2应运而生，旨在改善角色与其环境之间的关系。与以往仅提取源视频的运动信号不同，Animate Anyone 2还捕捉环境的表现作为条件输入，这样可以在角色与环境之间建立更合理的关联。文章提出了一种形状无关的掩码策略，以更有效地描述角色与环境的关系。同时，引入了对象引导器用于提取交互对象的特征，并通过空间混合来增强特征注入，以提高对象交互的真实感。此外，作者还提出了姿势调节策略，使模型能够处理更多样化的运动模式。实验结果表明，该方法在动画生成方面具有显著的性能提升。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.06145" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 13 Feb 2025 03:45:43 GMT</pubDate>
-</item>
-<item>
-<title>BenchMAX：一种多语言评估基准以测量语言模型的高级能力</title>
-<link>https://arxiv.org/abs/2502.07346</link>
-<guid>https://arxiv.org/abs/2502.07346</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">BenchMAX是一个新兴的多语言评估基准，专注于大型语言模型的高级能力测量。</p><br /><br /><p><strong>摘要：</strong> 随着大型语言模型(LLMs)的快速发展，传统的多语言基准主要集中于简单理解任务，未能充分评估它们在指令遵循、推理、长文本理解和代码生成等高级能力上的表现。为了解决这一问题，我们引入了BenchMAX，它是一个多方式的多语言评估基准，能公平比较这些关键能力。该基准经过三个不同的母语评审者对所有任务中的样本进行独立标注，并在从英语机器翻译到另外16种语言后进行测试。全面的实验表明，核心能力在不同语言间的有效性存在差异，这些差距不能仅通过扩大模型规模来弥补。BenchMAX为多语言模型的发展提供了一个综合评估平台，数据集和代码均已公开访问。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.07346" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 13 Feb 2025 03:34:47 GMT</pubDate>
 </item>
 </channel>
 </rss>
