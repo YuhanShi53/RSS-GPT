@@ -5,15 +5,25 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>TransMamba: Flexibly Switching between Transformer and Mamba</title>
+<link>https://arxiv.org/abs/2503.24067</link>
+<guid>https://arxiv.org/abs/2503.24067</guid>
+<content:encoded><![CDATA[
+
+  Transformers are the cornerstone of modern large language models, but their quadratic computational complexity limits efficiency in long-sequence processing. Recent advancements in Mamba, a state space model (SSM) with linear complexity, offer promising efficiency gains but suffer from unstable contextual learning and multitask generalization. This paper proposes TransMamba, a novel framework that unifies Transformer and Mamba through shared parameter matrices (e.g., QKV and CBx), and thus could dynamically switch between attention and SSM mechanisms at different token lengths and layers. We design the Memory converter to bridge Transformer and Mamba by converting attention outputs into SSM-compatible states, ensuring seamless information flow at TransPoints where the transformation happens. The TransPoint scheduling is also thoroughly explored for further improvements. We conducted extensive experiments demonstrating that TransMamba achieves superior training efficiency and performance compared to baselines, and validated the deeper consistency between Transformer and Mamba paradigms, offering a scalable solution for next-generation sequence modeling.
+
+]]></content:encoded>
+<pubDate>Mon, 31 Mar 2025 09:26:24 GMT</pubDate>
+<pubDate>Mon, 31 Mar 2025 09:26:24 GMT</pubDate>
+</item>
+
+<item>
 <title>APIGen-MT: Agentic Pipeline for Multi-Turn Data Generation via Simulated Agent-Human Interplay</title>
 <link>https://arxiv.org/abs/2504.03601</link>
 <guid>https://arxiv.org/abs/2504.03601</guid>
 <content:encoded><![CDATA[
-
-  Training effective AI agents for multi-turn interactions requires high-quality data that captures realistic human-agent dynamics, yet such data is scarce and expensive to collect manually. We introduce APIGen-MT, a two-phase framework that generates verifiable and diverse multi-turn agent data. In the first phase, our agentic pipeline produces detailed task blueprints with ground-truth actions, leveraging a committee of LLM reviewers and iterative feedback loops. These blueprints are then transformed into complete interaction trajectories through simulated human-agent interplay. We train a family of models -- the xLAM-2-fc-r series with sizes ranging from 1B to 70B parameters. Our models outperform frontier models such as GPT-4o and Claude 3.5 on tau-bench and BFCL benchmarks, with the smaller models surpassing their larger counterparts, particularly in multi-turn settings, while maintaining superior consistency across multiple trials. Comprehensive experiments demonstrate that our verified blueprint-to-details approach yields high-quality training data, enabling the development of more reliable, efficient, and capable agents. We open-source both the synthetic data collected and the trained xLAM-2-fc-r models to advance research in AI agents. Models are available on HuggingFace at https://huggingface.co/collections/Salesforce/xlam-2-67ef5be12949d8dcdae354c4 and project website is https://apigen-mt.github.io
-
+Training effective AI agents for multi-turn interactions requires high-quality data that captures realistic human-agent dynamics, yet such data is scarce and expensive to collect manually. We introduce APIGen-MT, a two-phase framework that generates verifiable and diverse multi-turn agent data. In the first phase, our agentic pipeline produces detailed task blueprints with ground-truth actions, leveraging a committee of LLM reviewers and iterative feedback loops. These blueprints are then transformed into complete interaction trajectories through simulated human-agent interplay. We train a family of models -- the xLAM-2-fc-r series with sizes ranging from 1B to 70B parameters. Our models outperform frontier models such as GPT-4o and Claude 3.5 on tau-bench and BFCL benchmarks, with the smaller models surpassing their larger counterparts, particularly in multi-turn settings, while maintaining superior consistency across multiple trials. Comprehensive experiments demonstrate that our verified blueprint-to-details approach yields high-quality training data, enabling the development of more reliable, efficient, and capable agents. We open-source both the synthetic data collected and the trained xLAM-2-fc-r models to advance research in AI agents. Models are available on HuggingFace at https://huggingface.co/collections/Salesforce/xlam-2-67ef5be12949d8dcdae354c4 and project website is https://apigen-mt.github.io
 ]]></content:encoded>
-<pubDate>Fri, 04 Apr 2025 13:13:57 GMT</pubDate>
 <pubDate>Fri, 04 Apr 2025 13:13:57 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +31,8 @@
 <link>https://arxiv.org/abs/2504.03536</link>
 <guid>https://arxiv.org/abs/2504.03536</guid>
 <content:encoded><![CDATA[
-
-  Single-image human reconstruction is vital for digital human modeling applications but remains an extremely challenging task. Current approaches rely on generative models to synthesize multi-view images for subsequent 3D reconstruction and animation. However, directly generating multiple views from a single human image suffers from geometric inconsistencies, resulting in issues like fragmented or blurred limbs in the reconstructed models. To tackle these limitations, we introduce HumanDreamer-X, a novel framework that integrates multi-view human generation and reconstruction into a unified pipeline, which significantly enhances the geometric consistency and visual fidelity of the reconstructed 3D models. In this framework, 3D Gaussian Splatting serves as an explicit 3D representation to provide initial geometry and appearance priority. Building upon this foundation, HumanFixer is trained to restore 3DGS renderings, which guarantee photorealistic results. Furthermore, we delve into the inherent challenges associated with attention mechanisms in multi-view human generation, and propose an attention modulation strategy that effectively enhances geometric details identity consistency across multi-view. Experimental results demonstrate that our approach markedly improves generation and reconstruction PSNR quality metrics by 16.45% and 12.65%, respectively, achieving a PSNR of up to 25.62 dB, while also showing generalization capabilities on in-the-wild data and applicability to various human reconstruction backbone models.
-
+Single-image human reconstruction is vital for digital human modeling applications but remains an extremely challenging task. Current approaches rely on generative models to synthesize multi-view images for subsequent 3D reconstruction and animation. However, directly generating multiple views from a single human image suffers from geometric inconsistencies, resulting in issues like fragmented or blurred limbs in the reconstructed models. To tackle these limitations, we introduce HumanDreamer-X, a novel framework that integrates multi-view human generation and reconstruction into a unified pipeline, which significantly enhances the geometric consistency and visual fidelity of the reconstructed 3D models. In this framework, 3D Gaussian Splatting serves as an explicit 3D representation to provide initial geometry and appearance priority. Building upon this foundation, HumanFixer is trained to restore 3DGS renderings, which guarantee photorealistic results. Furthermore, we delve into the inherent challenges associated with attention mechanisms in multi-view human generation, and propose an attention modulation strategy that effectively enhances geometric details identity consistency across multi-view. Experimental results demonstrate that our approach markedly improves generation and reconstruction PSNR quality metrics by 16.45% and 12.65%, respectively, achieving a PSNR of up to 25.62 dB, while also showing generalization capabilities on in-the-wild data and applicability to various human reconstruction backbone models.
 ]]></content:encoded>
-<pubDate>Fri, 04 Apr 2025 11:35:14 GMT</pubDate>
 <pubDate>Fri, 04 Apr 2025 11:35:14 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +40,8 @@
 <link>https://arxiv.org/abs/2504.03011</link>
 <guid>https://arxiv.org/abs/2504.03011</guid>
 <content:encoded><![CDATA[
-
-  This paper introduces Comprehensive Relighting, the first all-in-one approach that can both control and harmonize the lighting from an image or video of humans with arbitrary body parts from any scene. Building such a generalizable model is extremely challenging due to the lack of dataset, restricting existing image-based relighting models to a specific scenario (e.g., face or static human). To address this challenge, we repurpose a pre-trained diffusion model as a general image prior and jointly model the human relighting and background harmonization in the coarse-to-fine framework. To further enhance the temporal coherence of the relighting, we introduce an unsupervised temporal lighting model that learns the lighting cycle consistency from many real-world videos without any ground truth. In inference time, our temporal lighting module is combined with the diffusion models through the spatio-temporal feature blending algorithms without extra training; and we apply a new guided refinement as a post-processing to preserve the high-frequency details from the input image. In the experiments, Comprehensive Relighting shows a strong generalizability and lighting temporal coherence, outperforming existing image-based human relighting and harmonization methods.
-
+This paper introduces Comprehensive Relighting, the first all-in-one approach that can both control and harmonize the lighting from an image or video of humans with arbitrary body parts from any scene. Building such a generalizable model is extremely challenging due to the lack of dataset, restricting existing image-based relighting models to a specific scenario (e.g., face or static human). To address this challenge, we repurpose a pre-trained diffusion model as a general image prior and jointly model the human relighting and background harmonization in the coarse-to-fine framework. To further enhance the temporal coherence of the relighting, we introduce an unsupervised temporal lighting model that learns the lighting cycle consistency from many real-world videos without any ground truth. In inference time, our temporal lighting module is combined with the diffusion models through the spatio-temporal feature blending algorithms without extra training; and we apply a new guided refinement as a post-processing to preserve the high-frequency details from the input image. In the experiments, Comprehensive Relighting shows a strong generalizability and lighting temporal coherence, outperforming existing image-based human relighting and harmonization methods.
 ]]></content:encoded>
-<pubDate>Thu, 03 Apr 2025 16:10:50 GMT</pubDate>
 <pubDate>Thu, 03 Apr 2025 16:10:50 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +49,8 @@
 <link>https://arxiv.org/abs/2504.02402</link>
 <guid>https://arxiv.org/abs/2504.02402</guid>
 <content:encoded><![CDATA[
-
-  When sound waves hit an object, they induce vibrations that produce high-frequency and subtle visual changes, which can be used for recovering the sound. Early studies always encounter trade-offs related to sampling rate, bandwidth, field of view, and the simplicity of the optical path. Recent advances in event camera hardware show good potential for its application in visual sound recovery, because of its superior ability in capturing high-frequency signals. However, existing event-based vibration recovery methods are still sub-optimal for sound recovery. In this work, we propose a novel pipeline for non-contact sound recovery, fully utilizing spatial-temporal information from the event stream. We first generate a large training set using a novel simulation pipeline. Then we designed a network that leverages the sparsity of events to capture spatial information and uses Mamba to model long-term temporal information. Lastly, we train a spatial aggregation block to aggregate information from different locations to further improve signal quality. To capture event signals caused by sound waves, we also designed an imaging system using a laser matrix to enhance the gradient and collected multiple data sequences for testing. Experimental results on synthetic and real-world data demonstrate the effectiveness of our method.
-
+When sound waves hit an object, they induce vibrations that produce high-frequency and subtle visual changes, which can be used for recovering the sound. Early studies always encounter trade-offs related to sampling rate, bandwidth, field of view, and the simplicity of the optical path. Recent advances in event camera hardware show good potential for its application in visual sound recovery, because of its superior ability in capturing high-frequency signals. However, existing event-based vibration recovery methods are still sub-optimal for sound recovery. In this work, we propose a novel pipeline for non-contact sound recovery, fully utilizing spatial-temporal information from the event stream. We first generate a large training set using a novel simulation pipeline. Then we designed a network that leverages the sparsity of events to capture spatial information and uses Mamba to model long-term temporal information. Lastly, we train a spatial aggregation block to aggregate information from different locations to further improve signal quality. To capture event signals caused by sound waves, we also designed an imaging system using a laser matrix to enhance the gradient and collected multiple data sequences for testing. Experimental results on synthetic and real-world data demonstrate the effectiveness of our method.
 ]]></content:encoded>
-<pubDate>Thu, 03 Apr 2025 04:51:17 GMT</pubDate>
 <pubDate>Thu, 03 Apr 2025 04:51:17 GMT</pubDate>
 </item>
 <item>
@@ -57,14 +58,10 @@
 <link>https://arxiv.org/abs/2503.24310</link>
 <guid>https://arxiv.org/abs/2503.24310</guid>
 <content:encoded><![CDATA[
-
-  In this research, we introduce BEATS, a novel framework for evaluating Bias, Ethics, Fairness, and Factuality in Large Language Models (LLMs). Building upon the BEATS framework, we present a bias benchmark for LLMs that measure performance across 29 distinct metrics. These metrics span a broad range of characteristics, including demographic, cognitive, and social biases, as well as measures of ethical reasoning, group fairness, and factuality related misinformation risk. These metrics enable a quantitative assessment of the extent to which LLM generated responses may perpetuate societal prejudices that reinforce or expand systemic inequities. To achieve a high score on this benchmark a LLM must show very equitable behavior in their responses, making it a rigorous standard for responsible AI evaluation. Empirical results based on data from our experiment show that, 37.65\% of outputs generated by industry leading models contained some form of bias, highlighting a substantial risk of using these models in critical decision making systems. BEATS framework and benchmark offer a scalable and statistically rigorous methodology to benchmark LLMs, diagnose factors driving biases, and develop mitigation strategies. With the BEATS framework, our goal is to help the development of more socially responsible and ethically aligned AI models.
-
+In this research, we introduce BEATS, a novel framework for evaluating Bias, Ethics, Fairness, and Factuality in Large Language Models (LLMs). Building upon the BEATS framework, we present a bias benchmark for LLMs that measure performance across 29 distinct metrics. These metrics span a broad range of characteristics, including demographic, cognitive, and social biases, as well as measures of ethical reasoning, group fairness, and factuality related misinformation risk. These metrics enable a quantitative assessment of the extent to which LLM generated responses may perpetuate societal prejudices that reinforce or expand systemic inequities. To achieve a high score on this benchmark a LLM must show very equitable behavior in their responses, making it a rigorous standard for responsible AI evaluation. Empirical results based on data from our experiment show that, 37.65\% of outputs generated by industry leading models contained some form of bias, highlighting a substantial risk of using these models in critical decision making systems. BEATS framework and benchmark offer a scalable and statistically rigorous methodology to benchmark LLMs, diagnose factors driving biases, and develop mitigation strategies. With the BEATS framework, our goal is to help the development of more socially responsible and ethically aligned AI models.
 ]]></content:encoded>
 <pubDate>Mon, 31 Mar 2025 12:56:52 GMT</pubDate>
-<pubDate>Mon, 31 Mar 2025 12:56:52 GMT</pubDate>
 </item>
-
 <item>
 <title>MME-Unify: A Comprehensive Benchmark for Unified Multimodal Understanding and Generation Models</title>
 <link>https://arxiv.org/abs/2504.03641</link>
@@ -9019,51 +9016,6 @@ In the rapidly evolving field of Natural Language Processing, Large Language Mod
 <div><p style="color: gray;">CoT-Valve方法动态调节推理链长度，优化推理效率。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种新的方法CoT-Valve，用于动态控制推理链的长度，以应对不同任务的难度，降低推理模型的推理成本。研究表明，在简单任务中推理路径容易压缩，而在困难任务中则存在挑战。为此，我们引入了一种新的调整和推理策略，使模型能够生成不同长度的推理链。我们在参数空间中识别出一个能够有效控制生成CoT长度的方向，并构建了从长到短的推理链数据集。实验结果表明，CoT-Valve在控制能力和压缩能力上表现优越，相较于传统的提示控制方法，在减少GSM8K和AIME任务中的推理链长短时，仅带来了轻微的性能下降。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.09601" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Fri, 14 Feb 2025 00:16:30 GMT</pubDate>
-</item>
-<item>
-<title>高质量合成多模态数据及其在mmE5模型中的应用</title>
-<link>https://arxiv.org/abs/2502.08468</link>
-<guid>https://arxiv.org/abs/2502.08468</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文探讨了高质量合成多模态数据的标准及其在mmE5模型中的应用。</p><br /><br /><p><strong>摘要：</strong> 多模态嵌入模型因能够将文本和图像等不同模态的数据映射到统一的表示空间而备受关注。然而，有限的标注多模态数据常常限制了嵌入性能。本文提出了高质量合成多模态数据的三个标准：广泛的范围、稳健的跨模态对齐和高保真度。我们基于这些原则合成了涵盖多任务、多模态和多语言的高质量数据集，并通过多模态大语言模型进行深度思考生成。同时，该数据集结合了真实世界的图像与准确的文本，确保保真度，经过自我评估和精炼。利用这些高质量合成和标注数据，我们训练了多模态多语言E5模型mmE5，并在MMEB基准测试上取得了最先进的表现，在XTD基准测试中展现了卓越的多语言性能。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.08468" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 13 Feb 2025 23:32:15 GMT</pubDate>
-</item>
-<item>
-<title>构建评估框架以提升多模态大型语言模型在体感代理中的应用</title>
-<link>https://arxiv.org/abs/2502.09560</link>
-<guid>https://arxiv.org/abs/2502.09560</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出EmbodiedBench评估框架以提升多模态代理的实际应用能力。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了EmbodiedBench，一个旨在评估基于多模态大型语言模型（MLLM）的体感代理的全面评估框架。虽然语言为中心的体感代理得到了较多关注，但基于MLLM的代理仍未得到充分探索。EmbodiedBench覆盖了1,128个任务，任务内容多样，从高层的语义任务到低层的原子操作，包括空间意识、视觉感知等六个核心能力的评估。通过对13个领先的MLLM进行测试，我们发现尽管MLLM在高层任务中表现良好，但在低层操作中面临挑战，最佳模型GPT-4o的平均得分仅为28.9%。EmbodiedBench为研究人员提供了一个标准化的评估平台，不仅揭示了当前的挑战，也为提升MLLM-based体感代理的研究提供了宝贵的见解。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.09560" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 13 Feb 2025 23:23:42 GMT</pubDate>
-</item>
-<item>
-<title>Skrr: 提高文本编码器在T2I扩散模型中的内存效率</title>
-<link>https://arxiv.org/abs/2502.08690</link>
-<guid>https://arxiv.org/abs/2502.08690</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">Skrr通过选择性跳过和重用层来优化文本编码器的内存使用。</p><br /><br /><p><strong>摘要：</strong> 在文本到图像（T2I）扩散模型中，文本编码器在从文本提示生成高质量图像方面表现出色，但其内存消耗却是去噪模块的八倍。本研究提出了一种名为Skip and Re-use layers (Skrr)的修剪策略，旨在针对T2I任务优化文本编码器的内存使用。Skrr通过选择性地跳过或重用变换器块中的某些层，利用其固有冗余，显著减少内存占用而不影响性能。实验结果表明，Skrr在高稀疏级别下仍能维持与原始模型相当的图像质量，且在多个评估指标（包括FID、CLIP、DreamSim和GenEval分数）上实现了最先进的内存效率，超越了现有的逐块修剪方法。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.08690" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 13 Feb 2025 23:10:44 GMT</pubDate>
-</item>
-<item>
-<title>InfiniteHiP：高效的长序列推理框架</title>
-<link>https://arxiv.org/abs/2502.08910</link>
-<guid>https://arxiv.org/abs/2502.08910</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出InfiniteHiP框架，提高长序列处理速度和效率。</p><br /><br /><p><strong>摘要：</strong> 在现代的大型语言模型中，处理超长上下文面临诸多挑战，如推理速度缓慢和内存消耗增加。为此，我们提出了InfiniteHiP，一个新的高效推理框架，采用模块化的层次化token剪枝算法，动态去除无关的上下文token，从而加速处理。此外，该方法允许通过根据内部注意模式选择性地应用不同的RoPE调整方法，来实现更长序列的概括。我们还在推理过程中将键值缓存转移至主内存，显著降低了GPU内存压力，实现了在单个L40s 48GB GPU上处理高达300万token的能力，相比之下是原本的3倍，无任何上下文信息的永久丢失。InfinityHiP在处理100万token上下文时，实现了18.95倍的注意力解码加速，并且不需要额外的训练。通过在SGLang框架中的实现，我们通过广泛评估展示了其有效性和实用性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.08910" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 13 Feb 2025 22:57:03 GMT</pubDate>
-</item>
-<item>
-<title>TripoSG：高保真3D形状生成的新流行扩散模型</title>
-<link>https://arxiv.org/abs/2502.06608</link>
-<guid>https://arxiv.org/abs/2502.06608</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">TripoSG通过扩散技术实现高保真3D形状生成，提升生成质量与通用性。</p><br /><br /><p><strong>摘要：</strong> 随着扩散技术的进步，图像和视频生成质量得以显著提升，但3D形状生成技术仍面临规模和复杂性限制。本文提出TripoSG，一个新型的形状扩散范式，能生成高保真的3D网格，并精准对应输入图像。TripoSG的关键创新包括：1) 一种针对3D形状生成的大规模规范流变换器，基于大量高质量数据进行训练，以达到最佳保真度；2) 结合SDF、法向量和Eikonal损失的混合监督训练策略，显著提升3D重建性能；3) 一条生成200万高质量3D样本的数据处理管道，强调数据质量和数量在训练3D生成模型中的重要性。实验验证了各组成部分的有效性，使TripoSG在3D形状生成方面实现了领先性能，3D形状细节更为丰富，且对输入图像的保真度极高。此外，TripoSG能从多样的图像风格和内容中生成3D模型，展示了强大的通用性。为了推动3D生成领域的发展，我们将公开该模型。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.06608" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 13 Feb 2025 22:56:23 GMT</pubDate>
 </item>
 </channel>
 </rss>
