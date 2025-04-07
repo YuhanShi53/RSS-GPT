@@ -5,15 +5,73 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>APIGen-MT: Agentic Pipeline for Multi-Turn Data Generation via Simulated Agent-Human Interplay</title>
+<link>https://arxiv.org/abs/2504.03601</link>
+<guid>https://arxiv.org/abs/2504.03601</guid>
+<content:encoded><![CDATA[
+
+  Training effective AI agents for multi-turn interactions requires high-quality data that captures realistic human-agent dynamics, yet such data is scarce and expensive to collect manually. We introduce APIGen-MT, a two-phase framework that generates verifiable and diverse multi-turn agent data. In the first phase, our agentic pipeline produces detailed task blueprints with ground-truth actions, leveraging a committee of LLM reviewers and iterative feedback loops. These blueprints are then transformed into complete interaction trajectories through simulated human-agent interplay. We train a family of models -- the xLAM-2-fc-r series with sizes ranging from 1B to 70B parameters. Our models outperform frontier models such as GPT-4o and Claude 3.5 on tau-bench and BFCL benchmarks, with the smaller models surpassing their larger counterparts, particularly in multi-turn settings, while maintaining superior consistency across multiple trials. Comprehensive experiments demonstrate that our verified blueprint-to-details approach yields high-quality training data, enabling the development of more reliable, efficient, and capable agents. We open-source both the synthetic data collected and the trained xLAM-2-fc-r models to advance research in AI agents. Models are available on HuggingFace at https://huggingface.co/collections/Salesforce/xlam-2-67ef5be12949d8dcdae354c4 and project website is https://apigen-mt.github.io
+
+]]></content:encoded>
+<pubDate>Fri, 04 Apr 2025 13:13:57 GMT</pubDate>
+<pubDate>Fri, 04 Apr 2025 13:13:57 GMT</pubDate>
+</item>
+<item>
+<title>HumanDreamer-X: Photorealistic Single-image Human Avatars Reconstruction via Gaussian Restoration</title>
+<link>https://arxiv.org/abs/2504.03536</link>
+<guid>https://arxiv.org/abs/2504.03536</guid>
+<content:encoded><![CDATA[
+
+  Single-image human reconstruction is vital for digital human modeling applications but remains an extremely challenging task. Current approaches rely on generative models to synthesize multi-view images for subsequent 3D reconstruction and animation. However, directly generating multiple views from a single human image suffers from geometric inconsistencies, resulting in issues like fragmented or blurred limbs in the reconstructed models. To tackle these limitations, we introduce HumanDreamer-X, a novel framework that integrates multi-view human generation and reconstruction into a unified pipeline, which significantly enhances the geometric consistency and visual fidelity of the reconstructed 3D models. In this framework, 3D Gaussian Splatting serves as an explicit 3D representation to provide initial geometry and appearance priority. Building upon this foundation, HumanFixer is trained to restore 3DGS renderings, which guarantee photorealistic results. Furthermore, we delve into the inherent challenges associated with attention mechanisms in multi-view human generation, and propose an attention modulation strategy that effectively enhances geometric details identity consistency across multi-view. Experimental results demonstrate that our approach markedly improves generation and reconstruction PSNR quality metrics by 16.45% and 12.65%, respectively, achieving a PSNR of up to 25.62 dB, while also showing generalization capabilities on in-the-wild data and applicability to various human reconstruction backbone models.
+
+]]></content:encoded>
+<pubDate>Fri, 04 Apr 2025 11:35:14 GMT</pubDate>
+<pubDate>Fri, 04 Apr 2025 11:35:14 GMT</pubDate>
+</item>
+<item>
+<title>Comprehensive Relighting: Generalizable and Consistent Monocular Human Relighting and Harmonization</title>
+<link>https://arxiv.org/abs/2504.03011</link>
+<guid>https://arxiv.org/abs/2504.03011</guid>
+<content:encoded><![CDATA[
+
+  This paper introduces Comprehensive Relighting, the first all-in-one approach that can both control and harmonize the lighting from an image or video of humans with arbitrary body parts from any scene. Building such a generalizable model is extremely challenging due to the lack of dataset, restricting existing image-based relighting models to a specific scenario (e.g., face or static human). To address this challenge, we repurpose a pre-trained diffusion model as a general image prior and jointly model the human relighting and background harmonization in the coarse-to-fine framework. To further enhance the temporal coherence of the relighting, we introduce an unsupervised temporal lighting model that learns the lighting cycle consistency from many real-world videos without any ground truth. In inference time, our temporal lighting module is combined with the diffusion models through the spatio-temporal feature blending algorithms without extra training; and we apply a new guided refinement as a post-processing to preserve the high-frequency details from the input image. In the experiments, Comprehensive Relighting shows a strong generalizability and lighting temporal coherence, outperforming existing image-based human relighting and harmonization methods.
+
+]]></content:encoded>
+<pubDate>Thu, 03 Apr 2025 16:10:50 GMT</pubDate>
+<pubDate>Thu, 03 Apr 2025 16:10:50 GMT</pubDate>
+</item>
+<item>
+<title>EvMic: Event-based Non-contact sound recovery from effective spatial-temporal modeling</title>
+<link>https://arxiv.org/abs/2504.02402</link>
+<guid>https://arxiv.org/abs/2504.02402</guid>
+<content:encoded><![CDATA[
+
+  When sound waves hit an object, they induce vibrations that produce high-frequency and subtle visual changes, which can be used for recovering the sound. Early studies always encounter trade-offs related to sampling rate, bandwidth, field of view, and the simplicity of the optical path. Recent advances in event camera hardware show good potential for its application in visual sound recovery, because of its superior ability in capturing high-frequency signals. However, existing event-based vibration recovery methods are still sub-optimal for sound recovery. In this work, we propose a novel pipeline for non-contact sound recovery, fully utilizing spatial-temporal information from the event stream. We first generate a large training set using a novel simulation pipeline. Then we designed a network that leverages the sparsity of events to capture spatial information and uses Mamba to model long-term temporal information. Lastly, we train a spatial aggregation block to aggregate information from different locations to further improve signal quality. To capture event signals caused by sound waves, we also designed an imaging system using a laser matrix to enhance the gradient and collected multiple data sequences for testing. Experimental results on synthetic and real-world data demonstrate the effectiveness of our method.
+
+]]></content:encoded>
+<pubDate>Thu, 03 Apr 2025 04:51:17 GMT</pubDate>
+<pubDate>Thu, 03 Apr 2025 04:51:17 GMT</pubDate>
+</item>
+<item>
+<title>BEATS: Bias Evaluation and Assessment Test Suite for Large Language Models</title>
+<link>https://arxiv.org/abs/2503.24310</link>
+<guid>https://arxiv.org/abs/2503.24310</guid>
+<content:encoded><![CDATA[
+
+  In this research, we introduce BEATS, a novel framework for evaluating Bias, Ethics, Fairness, and Factuality in Large Language Models (LLMs). Building upon the BEATS framework, we present a bias benchmark for LLMs that measure performance across 29 distinct metrics. These metrics span a broad range of characteristics, including demographic, cognitive, and social biases, as well as measures of ethical reasoning, group fairness, and factuality related misinformation risk. These metrics enable a quantitative assessment of the extent to which LLM generated responses may perpetuate societal prejudices that reinforce or expand systemic inequities. To achieve a high score on this benchmark a LLM must show very equitable behavior in their responses, making it a rigorous standard for responsible AI evaluation. Empirical results based on data from our experiment show that, 37.65\% of outputs generated by industry leading models contained some form of bias, highlighting a substantial risk of using these models in critical decision making systems. BEATS framework and benchmark offer a scalable and statistically rigorous methodology to benchmark LLMs, diagnose factors driving biases, and develop mitigation strategies. With the BEATS framework, our goal is to help the development of more socially responsible and ethically aligned AI models.
+
+]]></content:encoded>
+<pubDate>Mon, 31 Mar 2025 12:56:52 GMT</pubDate>
+<pubDate>Mon, 31 Mar 2025 12:56:52 GMT</pubDate>
+</item>
+
+<item>
 <title>MME-Unify: A Comprehensive Benchmark for Unified Multimodal Understanding and Generation Models</title>
 <link>https://arxiv.org/abs/2504.03641</link>
 <guid>https://arxiv.org/abs/2504.03641</guid>
 <content:encoded><![CDATA[
-
-  Existing MLLM benchmarks face significant challenges in evaluating Unified MLLMs (U-MLLMs) due to: 1) lack of standardized benchmarks for traditional tasks, leading to inconsistent comparisons; 2) absence of benchmarks for mixed-modality generation, which fails to assess multimodal reasoning capabilities. We present a comprehensive evaluation framework designed to systematically assess U-MLLMs. Our benchmark includes: Standardized Traditional Task Evaluation. We sample from 12 datasets, covering 10 tasks with 30 subtasks, ensuring consistent and fair comparisons across studies." 2. Unified Task Assessment. We introduce five novel tasks testing multimodal reasoning, including image editing, commonsense QA with image generation, and geometric reasoning. 3. Comprehensive Model Benchmarking. We evaluate 12 leading U-MLLMs, such as Janus-Pro, EMU3, VILA-U, and Gemini2-flash, alongside specialized understanding (e.g., Claude-3.5-Sonnet) and generation models (e.g., DALL-E-3). Our findings reveal substantial performance gaps in existing U-MLLMs, highlighting the need for more robust models capable of handling mixed-modality tasks effectively. The code and evaluation data can be found in https://mme-unify.github.io/.
-
+Existing MLLM benchmarks face significant challenges in evaluating Unified MLLMs (U-MLLMs) due to: 1) lack of standardized benchmarks for traditional tasks, leading to inconsistent comparisons; 2) absence of benchmarks for mixed-modality generation, which fails to assess multimodal reasoning capabilities. We present a comprehensive evaluation framework designed to systematically assess U-MLLMs. Our benchmark includes: Standardized Traditional Task Evaluation. We sample from 12 datasets, covering 10 tasks with 30 subtasks, ensuring consistent and fair comparisons across studies." 2. Unified Task Assessment. We introduce five novel tasks testing multimodal reasoning, including image editing, commonsense QA with image generation, and geometric reasoning. 3. Comprehensive Model Benchmarking. We evaluate 12 leading U-MLLMs, such as Janus-Pro, EMU3, VILA-U, and Gemini2-flash, alongside specialized understanding (e.g., Claude-3.5-Sonnet) and generation models (e.g., DALL-E-3). Our findings reveal substantial performance gaps in existing U-MLLMs, highlighting the need for more robust models capable of handling mixed-modality tasks effectively. The code and evaluation data can be found in https://mme-unify.github.io/.
 ]]></content:encoded>
-<pubDate>Fri, 04 Apr 2025 13:59:55 GMT</pubDate>
 <pubDate>Fri, 04 Apr 2025 13:59:55 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +79,8 @@
 <link>https://arxiv.org/abs/2504.03561</link>
 <guid>https://arxiv.org/abs/2504.03561</guid>
 <content:encoded><![CDATA[
-
-  In the interaction between agents and their environments, agents expand their capabilities by planning and executing actions. However, LLM-based agents face substantial challenges when deployed in novel environments or required to navigate unconventional action spaces. To empower agents to autonomously explore environments, optimize workflows, and enhance their understanding of actions, we propose SynWorld, a framework that allows agents to synthesize possible scenarios with multi-step action invocation within the action space and perform Monte Carlo Tree Search (MCTS) exploration to effectively refine their action knowledge in the current environment. Our experiments demonstrate that SynWorld is an effective and general approach to learning action knowledge in new environments. Code is available at https://github.com/zjunlp/SynWorld.
-
+In the interaction between agents and their environments, agents expand their capabilities by planning and executing actions. However, LLM-based agents face substantial challenges when deployed in novel environments or required to navigate unconventional action spaces. To empower agents to autonomously explore environments, optimize workflows, and enhance their understanding of actions, we propose SynWorld, a framework that allows agents to synthesize possible scenarios with multi-step action invocation within the action space and perform Monte Carlo Tree Search (MCTS) exploration to effectively refine their action knowledge in the current environment. Our experiments demonstrate that SynWorld is an effective and general approach to learning action knowledge in new environments. Code is available at https://github.com/zjunlp/SynWorld.
 ]]></content:encoded>
-<pubDate>Fri, 04 Apr 2025 12:10:57 GMT</pubDate>
 <pubDate>Fri, 04 Apr 2025 12:10:57 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +88,8 @@
 <link>https://arxiv.org/abs/2504.03553</link>
 <guid>https://arxiv.org/abs/2504.03553</guid>
 <content:encoded><![CDATA[
-
-  Large Language Models (LLMs) have achieved considerable performance across various agentic planning tasks. However, traditional agent planning approaches adopt a "flood irrigation" methodology that indiscriminately injects gold trajectories, external feedback, and domain knowledge into agent models. This practice overlooks the fundamental human cognitive principle of situational self-awareness during decision-making-the ability to dynamically assess situational demands and strategically employ resources during decision-making. We propose agentic knowledgeable self-awareness to address this gap, a novel paradigm enabling LLM-based agents to autonomously regulate knowledge utilization. Specifically, we propose KnowSelf, a data-centric approach that applies agents with knowledgeable self-awareness like humans. Concretely, we devise a heuristic situation judgement criterion to mark special tokens on the agent's self-explored trajectories for collecting training data. Through a two-stage training process, the agent model can switch between different situations by generating specific special tokens, achieving optimal planning effects with minimal costs. Our experiments demonstrate that KnowSelf can outperform various strong baselines on different tasks and models with minimal use of external knowledge. Code is available at https://github.com/zjunlp/KnowSelf.
-
+Large Language Models (LLMs) have achieved considerable performance across various agentic planning tasks. However, traditional agent planning approaches adopt a "flood irrigation" methodology that indiscriminately injects gold trajectories, external feedback, and domain knowledge into agent models. This practice overlooks the fundamental human cognitive principle of situational self-awareness during decision-making-the ability to dynamically assess situational demands and strategically employ resources during decision-making. We propose agentic knowledgeable self-awareness to address this gap, a novel paradigm enabling LLM-based agents to autonomously regulate knowledge utilization. Specifically, we propose KnowSelf, a data-centric approach that applies agents with knowledgeable self-awareness like humans. Concretely, we devise a heuristic situation judgement criterion to mark special tokens on the agent's self-explored trajectories for collecting training data. Through a two-stage training process, the agent model can switch between different situations by generating specific special tokens, achieving optimal planning effects with minimal costs. Our experiments demonstrate that KnowSelf can outperform various strong baselines on different tasks and models with minimal use of external knowledge. Code is available at https://github.com/zjunlp/KnowSelf.
 ]]></content:encoded>
-<pubDate>Fri, 04 Apr 2025 12:03:38 GMT</pubDate>
 <pubDate>Fri, 04 Apr 2025 12:03:38 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +97,8 @@
 <link>https://arxiv.org/abs/2504.02949</link>
 <guid>https://arxiv.org/abs/2504.02949</guid>
 <content:encoded><![CDATA[
-
-  In this work, we present VARGPT-v1.1, an advanced unified visual autoregressive model that builds upon our previous framework VARGPT. The model preserves the dual paradigm of next-token prediction for visual understanding and next-scale generation for image synthesis. Specifically, VARGPT-v1.1 integrates: (1) a novel training strategy combining iterative visual instruction tuning with reinforcement learning through Direct Preference Optimization (DPO), (2) an expanded training corpus containing 8.3M visual-generative instruction pairs, (3) an upgraded language model backbone using Qwen2, (4) enhanced image generation resolution, and (5) emergent image editing capabilities without architectural modifications. These advancements enable VARGPT-v1.1 to achieve state-of-the-art performance in multimodal understanding and text-to-image instruction-following tasks, demonstrating significant improvements in both comprehension and generation metrics. Notably, through visual instruction tuning, the model acquires image editing functionality while maintaining architectural consistency with its predecessor, revealing the potential for unified visual understanding, generation, and editing. Our findings suggest that well-designed unified visual autoregressive models can effectively adopt flexible training strategies from large language models (LLMs), exhibiting promising scalability. The codebase and model weights are publicly available at https://github.com/VARGPT-family/VARGPT-v1.1.
-
+In this work, we present VARGPT-v1.1, an advanced unified visual autoregressive model that builds upon our previous framework VARGPT. The model preserves the dual paradigm of next-token prediction for visual understanding and next-scale generation for image synthesis. Specifically, VARGPT-v1.1 integrates: (1) a novel training strategy combining iterative visual instruction tuning with reinforcement learning through Direct Preference Optimization (DPO), (2) an expanded training corpus containing 8.3M visual-generative instruction pairs, (3) an upgraded language model backbone using Qwen2, (4) enhanced image generation resolution, and (5) emergent image editing capabilities without architectural modifications. These advancements enable VARGPT-v1.1 to achieve state-of-the-art performance in multimodal understanding and text-to-image instruction-following tasks, demonstrating significant improvements in both comprehension and generation metrics. Notably, through visual instruction tuning, the model acquires image editing functionality while maintaining architectural consistency with its predecessor, revealing the potential for unified visual understanding, generation, and editing. Our findings suggest that well-designed unified visual autoregressive models can effectively adopt flexible training strategies from large language models (LLMs), exhibiting promising scalability. The codebase and model weights are publicly available at https://github.com/VARGPT-family/VARGPT-v1.1.
 ]]></content:encoded>
-<pubDate>Thu, 03 Apr 2025 14:06:28 GMT</pubDate>
 <pubDate>Thu, 03 Apr 2025 14:06:28 GMT</pubDate>
 </item>
 <item>
@@ -57,14 +106,10 @@
 <link>https://arxiv.org/abs/2504.02605</link>
 <guid>https://arxiv.org/abs/2504.02605</guid>
 <content:encoded><![CDATA[
-
-  The task of issue resolving is to modify a codebase to generate a patch that addresses a given issue. However, existing benchmarks, such as SWE-bench, focus almost exclusively on Python, making them insufficient for evaluating Large Language Models (LLMs) across diverse software ecosystems. To address this, we introduce a multilingual issue-resolving benchmark, called Multi-SWE-bench, covering Java, TypeScript, JavaScript, Go, Rust, C, and C++. It includes a total of 1,632 high-quality instances, which were carefully annotated from 2,456 candidates by 68 expert annotators, ensuring that the benchmark can provide an accurate and reliable evaluation. Based on Multi-SWE-bench, we evaluate a series of state-of-the-art models using three representative methods (Agentless, SWE-agent, and OpenHands) and present a comprehensive analysis with key empirical insights. In addition, we launch a Multi-SWE-RL open-source community, aimed at building large-scale reinforcement learning (RL) training datasets for issue-resolving tasks. As an initial contribution, we release a set of 4,723 well-structured instances spanning seven programming languages, laying a solid foundation for RL research in this domain. More importantly, we open-source our entire data production pipeline, along with detailed tutorials, encouraging the open-source community to continuously contribute and expand the dataset. We envision our Multi-SWE-bench and the ever-growing Multi-SWE-RL community as catalysts for advancing RL toward its full potential, bringing us one step closer to the dawn of AGI.
-
+The task of issue resolving is to modify a codebase to generate a patch that addresses a given issue. However, existing benchmarks, such as SWE-bench, focus almost exclusively on Python, making them insufficient for evaluating Large Language Models (LLMs) across diverse software ecosystems. To address this, we introduce a multilingual issue-resolving benchmark, called Multi-SWE-bench, covering Java, TypeScript, JavaScript, Go, Rust, C, and C++. It includes a total of 1,632 high-quality instances, which were carefully annotated from 2,456 candidates by 68 expert annotators, ensuring that the benchmark can provide an accurate and reliable evaluation. Based on Multi-SWE-bench, we evaluate a series of state-of-the-art models using three representative methods (Agentless, SWE-agent, and OpenHands) and present a comprehensive analysis with key empirical insights. In addition, we launch a Multi-SWE-RL open-source community, aimed at building large-scale reinforcement learning (RL) training datasets for issue-resolving tasks. As an initial contribution, we release a set of 4,723 well-structured instances spanning seven programming languages, laying a solid foundation for RL research in this domain. More importantly, we open-source our entire data production pipeline, along with detailed tutorials, encouraging the open-source community to continuously contribute and expand the dataset. We envision our Multi-SWE-bench and the ever-growing Multi-SWE-RL community as catalysts for advancing RL toward its full potential, bringing us one step closer to the dawn of AGI.
 ]]></content:encoded>
 <pubDate>Thu, 03 Apr 2025 10:06:17 GMT</pubDate>
-<pubDate>Thu, 03 Apr 2025 10:06:17 GMT</pubDate>
 </item>
-
 <item>
 <title>OpenCodeReasoning: Advancing Data Distillation for Competitive Coding</title>
 <link>https://arxiv.org/abs/2504.01943</link>
@@ -9019,51 +9064,6 @@ In the rapidly evolving field of Natural Language Processing, Large Language Mod
 <div><p style="color: gray;">TripoSG通过扩散技术实现高保真3D形状生成，提升生成质量与通用性。</p><br /><br /><p><strong>摘要：</strong> 随着扩散技术的进步，图像和视频生成质量得以显著提升，但3D形状生成技术仍面临规模和复杂性限制。本文提出TripoSG，一个新型的形状扩散范式，能生成高保真的3D网格，并精准对应输入图像。TripoSG的关键创新包括：1) 一种针对3D形状生成的大规模规范流变换器，基于大量高质量数据进行训练，以达到最佳保真度；2) 结合SDF、法向量和Eikonal损失的混合监督训练策略，显著提升3D重建性能；3) 一条生成200万高质量3D样本的数据处理管道，强调数据质量和数量在训练3D生成模型中的重要性。实验验证了各组成部分的有效性，使TripoSG在3D形状生成方面实现了领先性能，3D形状细节更为丰富，且对输入图像的保真度极高。此外，TripoSG能从多样的图像风格和内容中生成3D模型，展示了强大的通用性。为了推动3D生成领域的发展，我们将公开该模型。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.06608" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Thu, 13 Feb 2025 22:56:23 GMT</pubDate>
-</item>
-<item>
-<title>提升泰语大语言模型推理能力的方法研究</title>
-<link>https://arxiv.org/abs/2502.09056</link>
-<guid>https://arxiv.org/abs/2502.09056</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本研究探讨了增强泰语大语言模型推理能力的方法。</p><br /><br /><p><strong>摘要：</strong> 本文研究了数据选择和模型合并的方法，旨在将先进的推理能力（如DeepSeek R1）融入语言特定的大语言模型（LLMs），特别关注泰语LLM。我们的目标是在保持语言特性的同时，提升语言特定LLMs的推理能力。DeepSeek R1在推理方面表现出色，但主要集中于英语和中文等高资源语言，导致低资源语言的表现受限。文章展示了仅使用公开数据集和120美元的计算预算，就能提升语言特定LLMs的推理能力，使其水平与DeepSeek R1相当，同时不影响其在目标语言任务上的表现。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.09056" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 13 Feb 2025 22:01:48 GMT</pubDate>
-</item>
-<item>
-<title>对大型语言模型理解能力的系统评估</title>
-<link>https://arxiv.org/abs/2502.08946</link>
-<guid>https://arxiv.org/abs/2502.08946</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">研究表明，LLMs在理解物理概念任务上落后于人类约40%。</p><br /><br /><p><strong>摘要：</strong> 本文系统性地探讨了大型语言模型（LLMs）是否真正理解其所表达的内容，提出了一项名为PhysiCo的物理概念理解任务。该任务通过网格格式输入减轻了记忆化问题，网格表示不同层次的理解，包括核心现象、应用示例以及与其他抽象模式的类比。研究结果表明，尽管当前最先进的LLMs（如GPT-4o、o1和Gemini 2.0）在自然语言中能够描述和识别相关概念，但在此网格任务中表现显著低于人类，落后约40%。此外，LLMs的表现不佳源于任务的内在难度，而非网格格式的陌生性，因为在相同格式的数据上进行的上下文学习和微调对其表现几乎没有提升。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.08946" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 13 Feb 2025 21:59:28 GMT</pubDate>
-</item>
-<item>
-<title>大型语言模型中的逻辑推理能力研究</title>
-<link>https://arxiv.org/abs/2502.09100</link>
-<guid>https://arxiv.org/abs/2502.09100</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文综述了大型语言模型在逻辑推理方面的最新进展。</p><br /><br /><p><strong>摘要：</strong> 随着OpenAI o3和DeepSeek-R1等先进推理模型的出现，大型语言模型（LLMs）展示了显著的推理能力，但其进行严谨逻辑推理的能力仍然存在疑问。本文综述了LLMs中逻辑推理的最新进展，探讨了其理论基础及评估推理能力的基准。我们分析了在不同推理范式（包括演绎、归纳、溯因和类比）下的现有能力，并评估了提升推理表现的策略，包括数据中心调优、强化学习、解码策略和神经-符号方法。最后，本文提出了未来的研究方向，强调进一步探索以增强人工智能系统中的逻辑推理能力的必要性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.09100" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 13 Feb 2025 21:55:58 GMT</pubDate>
-</item>
-<item>
-<title>SelfCite：一种自监督方法生成高质量句子级引用</title>
-<link>https://arxiv.org/abs/2502.09604</link>
-<guid>https://arxiv.org/abs/2502.09604</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">SelfCite以自监督方式提升LLMs生成高质量引用的能力。</p><br /><br /><p><strong>摘要：</strong> SelfCite是一种新颖的自监督方法，旨在提高大型语言模型(LLMs)生成高质量细粒度句子级引用的能力。该方法依赖于LLM自身提供的奖励信号，通过上下文的消融实验来判断引用的必要性。当引用文本被移除时，若应答变化则说明引用必要；而保留引用文本时，应答不变则说明已提供足够的信息。这一奖励信号可以有效指导推理过程中最佳抽样策略的实施，从而显著改善引用质量。此外，该信号也可以用于偏好优化，直接对模型进行微调，以生成更好的引用。在LongBench-Cite基准测试中，SelfCite在五个长文本问答任务上使引用F1值提升了多达5.3个百分点，展现了其有效性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.09604" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 13 Feb 2025 21:42:37 GMT</pubDate>
-</item>
-<item>
-<title>基于GEMINI学习的医疗图像密集对比表示学习</title>
-<link>https://arxiv.org/abs/2502.05282</link>
-<guid>https://arxiv.org/abs/2502.05282</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文提出GEMINI学习以增强医疗图像的密集对比表示效率。</p><br /><br /><p><strong>摘要：</strong> 密集对比表示学习（DCRL）在医疗图像密集预测任务中显著提高了学习效率，但由于医疗图像的特殊性，往往会导致不可靠的对应关系发现，从而产生大量的错误匹配对（假阳性和假阴性）。为了解决这一问题，本文提出了一种名为GEMINI的学习框架，通过将同胚性先验嵌入到DCRL中，实现有效的对应关系发现。我们设计了可形变同胚学习（DHL），该方法通过建模医疗图像的同胚性来学习可变形映射，以在保持拓扑结构的前提下预测像素对应关系，有效减少匹配空间。还提出几何语义相似性（GSS），用于提取特征中的语义信息，从而量化对应学习的对齐度。通过这两种方法，GEMINI不仅提高了学习效率，同时构建可靠的正向匹配对。在多项实验中，我们在七个数据集上实现了比现有方法更优的结果，证明了我们方法的有效性和优越性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.05282" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 13 Feb 2025 14:57:40 GMT</pubDate>
 </item>
 </channel>
 </rss>
