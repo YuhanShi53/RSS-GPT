@@ -5,18 +5,63 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>MedSAM2: Segment Anything in 3D Medical Images and Videos</title>
+<link>https://arxiv.org/abs/2504.03600</link>
+<guid>https://arxiv.org/abs/2504.03600</guid>
+<content:encoded><![CDATA[
+
+  Medical image and video segmentation is a critical task for precision medicine, which has witnessed considerable progress in developing task or modality-specific and generalist models for 2D images. However, there have been limited studies on building general-purpose models for 3D images and videos with comprehensive user studies. Here, we present MedSAM2, a promptable segmentation foundation model for 3D image and video segmentation. The model is developed by fine-tuning the Segment Anything Model 2 on a large medical dataset with over 455,000 3D image-mask pairs and 76,000 frames, outperforming previous models across a wide range of organs, lesions, and imaging modalities. Furthermore, we implement a human-in-the-loop pipeline to facilitate the creation of large-scale datasets resulting in, to the best of our knowledge, the most extensive user study to date, involving the annotation of 5,000 CT lesions, 3,984 liver MRI lesions, and 251,550 echocardiogram video frames, demonstrating that MedSAM2 can reduce manual costs by more than 85%. MedSAM2 is also integrated into widely used platforms with user-friendly interfaces for local and cloud deployment, making it a practical tool for supporting efficient, scalable, and high-quality segmentation in both research and healthcare environments.
+
+]]></content:encoded>
+<pubDate>Fri, 04 Apr 2025 13:13:37 GMT</pubDate>
+<pubDate>Fri, 04 Apr 2025 13:13:37 GMT</pubDate>
+</item>
+<item>
+<title>MegaMath: Pushing the Limits of Open Math Corpora</title>
+<link>https://arxiv.org/abs/2504.02807</link>
+<guid>https://arxiv.org/abs/2504.02807</guid>
+<content:encoded><![CDATA[
+
+  Mathematical reasoning is a cornerstone of human intelligence and a key benchmark for advanced capabilities in large language models (LLMs). However, the research community still lacks an open, large-scale, high-quality corpus tailored to the demands of math-centric LLM pre-training. We present MegaMath, an open dataset curated from diverse, math-focused sources through following practices: (1) Revisiting web data: We re-extracted mathematical documents from Common Crawl with math-oriented HTML optimizations, fasttext-based filtering and deduplication, all for acquiring higher-quality data on the Internet. (2) Recalling Math-related code data: We identified high quality math-related code from large code training corpus, Stack-V2, further enhancing data diversity. (3) Exploring Synthetic data: We synthesized QA-style text, math-related code, and interleaved text-code blocks from web data or code data. By integrating these strategies and validating their effectiveness through extensive ablations, MegaMath delivers 371B tokens with the largest quantity and top quality among existing open math pre-training datasets.
+
+]]></content:encoded>
+<pubDate>Thu, 03 Apr 2025 13:52:07 GMT</pubDate>
+<pubDate>Thu, 03 Apr 2025 13:52:07 GMT</pubDate>
+</item>
+<item>
+<title>Slow-Fast Architecture for Video Multi-Modal Large Language Models</title>
+<link>https://arxiv.org/abs/2504.01328</link>
+<guid>https://arxiv.org/abs/2504.01328</guid>
+<content:encoded><![CDATA[
+
+  Balancing temporal resolution and spatial detail under limited compute budget remains a key challenge for video-based multi-modal large language models (MLLMs). Existing methods typically compress video representations using predefined rules before feeding them into the LLM, resulting in irreversible information loss and often ignoring input instructions. To address this, we propose a novel slow-fast architecture that naturally circumvents this trade-off, enabling the use of more input frames while preserving spatial details. Inspired by how humans first skim a video before focusing on relevant parts, our slow-fast design employs a dual-token strategy: 1) "fast" visual tokens -- a compact set of compressed video features -- are fed into the LLM alongside text embeddings to provide a quick overview; 2) "slow" visual tokens -- uncompressed video features -- are cross-attended by text embeddings through specially designed hybrid decoder layers, enabling instruction-aware extraction of relevant visual details with linear complexity. We conduct systematic exploration to optimize both the overall architecture and key components. Experiments show that our model significantly outperforms self-attention-only baselines, extending the input capacity from 16 to 128 frames with just a 3% increase in computation, and achieving a 16% average performance improvement across five video understanding benchmarks. Our 7B model achieves state-of-the-art performance among models of similar size. Furthermore, our slow-fast architecture is a plug-and-play design that can be integrated into other video MLLMs to improve efficiency and scalability.
+
+]]></content:encoded>
+<pubDate>Tue, 01 Apr 2025 23:24:58 GMT</pubDate>
+<pubDate>Tue, 01 Apr 2025 23:24:58 GMT</pubDate>
+</item>
+<item>
+<title>SPF-Portrait: Towards Pure Portrait Customization with Semantic Pollution-Free Fine-tuning</title>
+<link>https://arxiv.org/abs/2504.00396</link>
+<guid>https://arxiv.org/abs/2504.00396</guid>
+<content:encoded><![CDATA[
+
+  Fine-tuning a pre-trained Text-to-Image (T2I) model on a tailored portrait dataset is the mainstream method for text-driven customization of portrait attributes. Due to Semantic Pollution during fine-tuning, existing methods struggle to maintain the original model's behavior and achieve incremental learning while customizing target attributes. To address this issue, we propose SPF-Portrait, a pioneering work to purely understand customized semantics while eliminating semantic pollution in text-driven portrait customization. In our SPF-Portrait, we propose a dual-path pipeline that introduces the original model as a reference for the conventional fine-tuning path. Through contrastive learning, we ensure adaptation to target attributes and purposefully align other unrelated attributes with the original portrait. We introduce a novel Semantic-Aware Fine Control Map, which represents the precise response regions of the target semantics, to spatially guide the alignment process between the contrastive paths. This alignment process not only effectively preserves the performance of the original model but also avoids over-alignment. Furthermore, we propose a novel response enhancement mechanism to reinforce the performance of target attributes, while mitigating representation discrepancy inherent in direct cross-modal supervision. Extensive experiments demonstrate that SPF-Portrait achieves state-of-the-art performance. Project webpage: https://spf-portrait.github.io/SPF-Portrait/
+
+]]></content:encoded>
+<pubDate>Mon, 31 Mar 2025 23:37:30 GMT</pubDate>
+<pubDate>Mon, 31 Mar 2025 23:37:30 GMT</pubDate>
+</item>
+
+<item>
 <title>TransMamba: Flexibly Switching between Transformer and Mamba</title>
 <link>https://arxiv.org/abs/2503.24067</link>
 <guid>https://arxiv.org/abs/2503.24067</guid>
 <content:encoded><![CDATA[
-
-  Transformers are the cornerstone of modern large language models, but their quadratic computational complexity limits efficiency in long-sequence processing. Recent advancements in Mamba, a state space model (SSM) with linear complexity, offer promising efficiency gains but suffer from unstable contextual learning and multitask generalization. This paper proposes TransMamba, a novel framework that unifies Transformer and Mamba through shared parameter matrices (e.g., QKV and CBx), and thus could dynamically switch between attention and SSM mechanisms at different token lengths and layers. We design the Memory converter to bridge Transformer and Mamba by converting attention outputs into SSM-compatible states, ensuring seamless information flow at TransPoints where the transformation happens. The TransPoint scheduling is also thoroughly explored for further improvements. We conducted extensive experiments demonstrating that TransMamba achieves superior training efficiency and performance compared to baselines, and validated the deeper consistency between Transformer and Mamba paradigms, offering a scalable solution for next-generation sequence modeling.
-
+Transformers are the cornerstone of modern large language models, but their quadratic computational complexity limits efficiency in long-sequence processing. Recent advancements in Mamba, a state space model (SSM) with linear complexity, offer promising efficiency gains but suffer from unstable contextual learning and multitask generalization. This paper proposes TransMamba, a novel framework that unifies Transformer and Mamba through shared parameter matrices (e.g., QKV and CBx), and thus could dynamically switch between attention and SSM mechanisms at different token lengths and layers. We design the Memory converter to bridge Transformer and Mamba by converting attention outputs into SSM-compatible states, ensuring seamless information flow at TransPoints where the transformation happens. The TransPoint scheduling is also thoroughly explored for further improvements. We conducted extensive experiments demonstrating that TransMamba achieves superior training efficiency and performance compared to baselines, and validated the deeper consistency between Transformer and Mamba paradigms, offering a scalable solution for next-generation sequence modeling.
 ]]></content:encoded>
 <pubDate>Mon, 31 Mar 2025 09:26:24 GMT</pubDate>
-<pubDate>Mon, 31 Mar 2025 09:26:24 GMT</pubDate>
 </item>
-
 <item>
 <title>APIGen-MT: Agentic Pipeline for Multi-Turn Data Generation via Simulated Agent-Human Interplay</title>
 <link>https://arxiv.org/abs/2504.03601</link>
@@ -9007,15 +9052,6 @@ In the rapidly evolving field of Natural Language Processing, Large Language Mod
 <div><p style="color: gray;">本文介绍了Typhoon T1，一个新型泰语推理模型的开放开发项目。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了Typhoon T1，这是一个旨在开发开放泰语推理模型的项目。推理模型是一种新型的生成模型，基于大型语言模型（LLMs）之上，通过生成长链思维来得到最终答案，已被发现能够提高复杂任务的性能。然而，关于如何开发此类模型的细节相对有限，特别是在低资源语言的推理模型方面。Typhoon T1以更具成本效益的方式进行开发，采用监督微调和开放数据集，而非强化学习。文章分享了合成数据生成与训练的细节，以及我们的数据集和模型权重。此外，我们提供了跨领域通用推理模型的开发见解，能够生成低资源语言中的推理痕迹，以泰语为例。我们希望这一开放努力能为该领域的进一步研究奠定基础。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.09042" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Fri, 14 Feb 2025 01:29:44 GMT</pubDate>
-</item>
-<item>
-<title>CoT-Valve: 动态控制推理链长度的方法</title>
-<link>https://arxiv.org/abs/2502.09601</link>
-<guid>https://arxiv.org/abs/2502.09601</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">CoT-Valve方法动态调节推理链长度，优化推理效率。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种新的方法CoT-Valve，用于动态控制推理链的长度，以应对不同任务的难度，降低推理模型的推理成本。研究表明，在简单任务中推理路径容易压缩，而在困难任务中则存在挑战。为此，我们引入了一种新的调整和推理策略，使模型能够生成不同长度的推理链。我们在参数空间中识别出一个能够有效控制生成CoT长度的方向，并构建了从长到短的推理链数据集。实验结果表明，CoT-Valve在控制能力和压缩能力上表现优越，相较于传统的提示控制方法，在减少GSM8K和AIME任务中的推理链长短时，仅带来了轻微的性能下降。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.09601" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 14 Feb 2025 00:16:30 GMT</pubDate>
 </item>
 </channel>
 </rss>
