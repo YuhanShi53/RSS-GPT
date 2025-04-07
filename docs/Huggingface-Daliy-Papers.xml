@@ -5,15 +5,37 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>Real-is-Sim: Bridging the Sim-to-Real Gap with a Dynamic Digital Twin for Real-World Robot Policy Evaluation</title>
+<link>https://arxiv.org/abs/2504.03597</link>
+<guid>https://arxiv.org/abs/2504.03597</guid>
+<content:encoded><![CDATA[
+
+  Recent advancements in behavior cloning have enabled robots to perform complex manipulation tasks. However, accurately assessing training performance remains challenging, particularly for real-world applications, as behavior cloning losses often correlate poorly with actual task success. Consequently, researchers resort to success rate metrics derived from costly and time-consuming real-world evaluations, making the identification of optimal policies and detection of overfitting or underfitting impractical. To address these issues, we propose real-is-sim, a novel behavior cloning framework that incorporates a dynamic digital twin (based on Embodied Gaussians) throughout the entire policy development pipeline: data collection, training, and deployment. By continuously aligning the simulated world with the physical world, demonstrations can be collected in the real world with states extracted from the simulator. The simulator enables flexible state representations by rendering image inputs from any viewpoint or extracting low-level state information from objects embodied within the scene. During training, policies can be directly evaluated within the simulator in an offline and highly parallelizable manner. Finally, during deployment, policies are run within the simulator where the real robot directly tracks the simulated robot's joints, effectively decoupling policy execution from real hardware and mitigating traditional domain-transfer challenges. We validate real-is-sim on the PushT manipulation task, demonstrating strong correlation between success rates obtained in the simulator and real-world evaluations. Videos of our system can be found at https://realissim.rai-inst.com.
+
+]]></content:encoded>
+<pubDate>Fri, 04 Apr 2025 13:05:56 GMT</pubDate>
+<pubDate>Fri, 04 Apr 2025 13:05:56 GMT</pubDate>
+</item>
+<item>
+<title>Delineate Anything: Resolution-Agnostic Field Boundary Delineation on Satellite Imagery</title>
+<link>https://arxiv.org/abs/2504.02534</link>
+<guid>https://arxiv.org/abs/2504.02534</guid>
+<content:encoded><![CDATA[
+
+  The accurate delineation of agricultural field boundaries from satellite imagery is vital for land management and crop monitoring. However, current methods face challenges due to limited dataset sizes, resolution discrepancies, and diverse environmental conditions. We address this by reformulating the task as instance segmentation and introducing the Field Boundary Instance Segmentation - 22M dataset (FBIS-22M), a large-scale, multi-resolution dataset comprising 672,909 high-resolution satellite image patches (ranging from 0.25 m to 10 m) and 22,926,427 instance masks of individual fields, significantly narrowing the gap between agricultural datasets and those in other computer vision domains. We further propose Delineate Anything, an instance segmentation model trained on our new FBIS-22M dataset. Our proposed model sets a new state-of-the-art, achieving a substantial improvement of 88.5% in mAP@0.5 and 103% in mAP@0.5:0.95 over existing methods, while also demonstrating significantly faster inference and strong zero-shot generalization across diverse image resolutions and unseen geographic regions. Code, pre-trained models, and the FBIS-22M dataset are available at https://lavreniuk.github.io/Delineate-Anything.
+
+]]></content:encoded>
+<pubDate>Thu, 03 Apr 2025 08:37:04 GMT</pubDate>
+<pubDate>Thu, 03 Apr 2025 08:37:04 GMT</pubDate>
+</item>
+
+<item>
 <title>MedSAM2: Segment Anything in 3D Medical Images and Videos</title>
 <link>https://arxiv.org/abs/2504.03600</link>
 <guid>https://arxiv.org/abs/2504.03600</guid>
 <content:encoded><![CDATA[
-
-  Medical image and video segmentation is a critical task for precision medicine, which has witnessed considerable progress in developing task or modality-specific and generalist models for 2D images. However, there have been limited studies on building general-purpose models for 3D images and videos with comprehensive user studies. Here, we present MedSAM2, a promptable segmentation foundation model for 3D image and video segmentation. The model is developed by fine-tuning the Segment Anything Model 2 on a large medical dataset with over 455,000 3D image-mask pairs and 76,000 frames, outperforming previous models across a wide range of organs, lesions, and imaging modalities. Furthermore, we implement a human-in-the-loop pipeline to facilitate the creation of large-scale datasets resulting in, to the best of our knowledge, the most extensive user study to date, involving the annotation of 5,000 CT lesions, 3,984 liver MRI lesions, and 251,550 echocardiogram video frames, demonstrating that MedSAM2 can reduce manual costs by more than 85%. MedSAM2 is also integrated into widely used platforms with user-friendly interfaces for local and cloud deployment, making it a practical tool for supporting efficient, scalable, and high-quality segmentation in both research and healthcare environments.
-
+Medical image and video segmentation is a critical task for precision medicine, which has witnessed considerable progress in developing task or modality-specific and generalist models for 2D images. However, there have been limited studies on building general-purpose models for 3D images and videos with comprehensive user studies. Here, we present MedSAM2, a promptable segmentation foundation model for 3D image and video segmentation. The model is developed by fine-tuning the Segment Anything Model 2 on a large medical dataset with over 455,000 3D image-mask pairs and 76,000 frames, outperforming previous models across a wide range of organs, lesions, and imaging modalities. Furthermore, we implement a human-in-the-loop pipeline to facilitate the creation of large-scale datasets resulting in, to the best of our knowledge, the most extensive user study to date, involving the annotation of 5,000 CT lesions, 3,984 liver MRI lesions, and 251,550 echocardiogram video frames, demonstrating that MedSAM2 can reduce manual costs by more than 85%. MedSAM2 is also integrated into widely used platforms with user-friendly interfaces for local and cloud deployment, making it a practical tool for supporting efficient, scalable, and high-quality segmentation in both research and healthcare environments.
 ]]></content:encoded>
-<pubDate>Fri, 04 Apr 2025 13:13:37 GMT</pubDate>
 <pubDate>Fri, 04 Apr 2025 13:13:37 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +43,8 @@
 <link>https://arxiv.org/abs/2504.02807</link>
 <guid>https://arxiv.org/abs/2504.02807</guid>
 <content:encoded><![CDATA[
-
-  Mathematical reasoning is a cornerstone of human intelligence and a key benchmark for advanced capabilities in large language models (LLMs). However, the research community still lacks an open, large-scale, high-quality corpus tailored to the demands of math-centric LLM pre-training. We present MegaMath, an open dataset curated from diverse, math-focused sources through following practices: (1) Revisiting web data: We re-extracted mathematical documents from Common Crawl with math-oriented HTML optimizations, fasttext-based filtering and deduplication, all for acquiring higher-quality data on the Internet. (2) Recalling Math-related code data: We identified high quality math-related code from large code training corpus, Stack-V2, further enhancing data diversity. (3) Exploring Synthetic data: We synthesized QA-style text, math-related code, and interleaved text-code blocks from web data or code data. By integrating these strategies and validating their effectiveness through extensive ablations, MegaMath delivers 371B tokens with the largest quantity and top quality among existing open math pre-training datasets.
-
+Mathematical reasoning is a cornerstone of human intelligence and a key benchmark for advanced capabilities in large language models (LLMs). However, the research community still lacks an open, large-scale, high-quality corpus tailored to the demands of math-centric LLM pre-training. We present MegaMath, an open dataset curated from diverse, math-focused sources through following practices: (1) Revisiting web data: We re-extracted mathematical documents from Common Crawl with math-oriented HTML optimizations, fasttext-based filtering and deduplication, all for acquiring higher-quality data on the Internet. (2) Recalling Math-related code data: We identified high quality math-related code from large code training corpus, Stack-V2, further enhancing data diversity. (3) Exploring Synthetic data: We synthesized QA-style text, math-related code, and interleaved text-code blocks from web data or code data. By integrating these strategies and validating their effectiveness through extensive ablations, MegaMath delivers 371B tokens with the largest quantity and top quality among existing open math pre-training datasets.
 ]]></content:encoded>
-<pubDate>Thu, 03 Apr 2025 13:52:07 GMT</pubDate>
 <pubDate>Thu, 03 Apr 2025 13:52:07 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +52,8 @@
 <link>https://arxiv.org/abs/2504.01328</link>
 <guid>https://arxiv.org/abs/2504.01328</guid>
 <content:encoded><![CDATA[
-
-  Balancing temporal resolution and spatial detail under limited compute budget remains a key challenge for video-based multi-modal large language models (MLLMs). Existing methods typically compress video representations using predefined rules before feeding them into the LLM, resulting in irreversible information loss and often ignoring input instructions. To address this, we propose a novel slow-fast architecture that naturally circumvents this trade-off, enabling the use of more input frames while preserving spatial details. Inspired by how humans first skim a video before focusing on relevant parts, our slow-fast design employs a dual-token strategy: 1) "fast" visual tokens -- a compact set of compressed video features -- are fed into the LLM alongside text embeddings to provide a quick overview; 2) "slow" visual tokens -- uncompressed video features -- are cross-attended by text embeddings through specially designed hybrid decoder layers, enabling instruction-aware extraction of relevant visual details with linear complexity. We conduct systematic exploration to optimize both the overall architecture and key components. Experiments show that our model significantly outperforms self-attention-only baselines, extending the input capacity from 16 to 128 frames with just a 3% increase in computation, and achieving a 16% average performance improvement across five video understanding benchmarks. Our 7B model achieves state-of-the-art performance among models of similar size. Furthermore, our slow-fast architecture is a plug-and-play design that can be integrated into other video MLLMs to improve efficiency and scalability.
-
+Balancing temporal resolution and spatial detail under limited compute budget remains a key challenge for video-based multi-modal large language models (MLLMs). Existing methods typically compress video representations using predefined rules before feeding them into the LLM, resulting in irreversible information loss and often ignoring input instructions. To address this, we propose a novel slow-fast architecture that naturally circumvents this trade-off, enabling the use of more input frames while preserving spatial details. Inspired by how humans first skim a video before focusing on relevant parts, our slow-fast design employs a dual-token strategy: 1) "fast" visual tokens -- a compact set of compressed video features -- are fed into the LLM alongside text embeddings to provide a quick overview; 2) "slow" visual tokens -- uncompressed video features -- are cross-attended by text embeddings through specially designed hybrid decoder layers, enabling instruction-aware extraction of relevant visual details with linear complexity. We conduct systematic exploration to optimize both the overall architecture and key components. Experiments show that our model significantly outperforms self-attention-only baselines, extending the input capacity from 16 to 128 frames with just a 3% increase in computation, and achieving a 16% average performance improvement across five video understanding benchmarks. Our 7B model achieves state-of-the-art performance among models of similar size. Furthermore, our slow-fast architecture is a plug-and-play design that can be integrated into other video MLLMs to improve efficiency and scalability.
 ]]></content:encoded>
-<pubDate>Tue, 01 Apr 2025 23:24:58 GMT</pubDate>
 <pubDate>Tue, 01 Apr 2025 23:24:58 GMT</pubDate>
 </item>
 <item>
@@ -45,14 +61,10 @@
 <link>https://arxiv.org/abs/2504.00396</link>
 <guid>https://arxiv.org/abs/2504.00396</guid>
 <content:encoded><![CDATA[
-
-  Fine-tuning a pre-trained Text-to-Image (T2I) model on a tailored portrait dataset is the mainstream method for text-driven customization of portrait attributes. Due to Semantic Pollution during fine-tuning, existing methods struggle to maintain the original model's behavior and achieve incremental learning while customizing target attributes. To address this issue, we propose SPF-Portrait, a pioneering work to purely understand customized semantics while eliminating semantic pollution in text-driven portrait customization. In our SPF-Portrait, we propose a dual-path pipeline that introduces the original model as a reference for the conventional fine-tuning path. Through contrastive learning, we ensure adaptation to target attributes and purposefully align other unrelated attributes with the original portrait. We introduce a novel Semantic-Aware Fine Control Map, which represents the precise response regions of the target semantics, to spatially guide the alignment process between the contrastive paths. This alignment process not only effectively preserves the performance of the original model but also avoids over-alignment. Furthermore, we propose a novel response enhancement mechanism to reinforce the performance of target attributes, while mitigating representation discrepancy inherent in direct cross-modal supervision. Extensive experiments demonstrate that SPF-Portrait achieves state-of-the-art performance. Project webpage: https://spf-portrait.github.io/SPF-Portrait/
-
+Fine-tuning a pre-trained Text-to-Image (T2I) model on a tailored portrait dataset is the mainstream method for text-driven customization of portrait attributes. Due to Semantic Pollution during fine-tuning, existing methods struggle to maintain the original model's behavior and achieve incremental learning while customizing target attributes. To address this issue, we propose SPF-Portrait, a pioneering work to purely understand customized semantics while eliminating semantic pollution in text-driven portrait customization. In our SPF-Portrait, we propose a dual-path pipeline that introduces the original model as a reference for the conventional fine-tuning path. Through contrastive learning, we ensure adaptation to target attributes and purposefully align other unrelated attributes with the original portrait. We introduce a novel Semantic-Aware Fine Control Map, which represents the precise response regions of the target semantics, to spatially guide the alignment process between the contrastive paths. This alignment process not only effectively preserves the performance of the original model but also avoids over-alignment. Furthermore, we propose a novel response enhancement mechanism to reinforce the performance of target attributes, while mitigating representation discrepancy inherent in direct cross-modal supervision. Extensive experiments demonstrate that SPF-Portrait achieves state-of-the-art performance. Project webpage: https://spf-portrait.github.io/SPF-Portrait/
 ]]></content:encoded>
 <pubDate>Mon, 31 Mar 2025 23:37:30 GMT</pubDate>
-<pubDate>Mon, 31 Mar 2025 23:37:30 GMT</pubDate>
 </item>
-
 <item>
 <title>TransMamba: Flexibly Switching between Transformer and Mamba</title>
 <link>https://arxiv.org/abs/2503.24067</link>
@@ -9016,42 +9028,6 @@ Pre-trained foundation models (FMs) have shown exceptional performance in univar
 <div><p style="color: gray;">CoSER提供高质量角色扮演语言模型的数据集及评估方法。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了CoSER，一个为角色扮演语言代理(RPLA)提供的高质量数据集、开放模型及评估协议。CoSER数据集包含来自771部著名书籍的17,966个角色，并提供真实对话及多样化的数据类型，如对话设置、角色体验和内心想法。我们引入了基于表演方法的给定情境表演，来训练和评估角色扮演的语言模型，LLMs能顺序展现书中多个角色。通过该数据集，我们开发了基于LLaMA-3.1的CoSER 8B和CoSER 70B先进的开放角色扮演语言模型。大量实验表明，CoSER数据集在RPLA的训练、评估和检索中具有重要价值，其中CoSER 70B在我们的评估及现有三个基准上表现优异，超越或匹配了GPT-4o，在InCharacter和LifeChoice基准上分别达到了75.80%和93.47%的准确率。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.09082" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Fri, 14 Feb 2025 02:50:35 GMT</pubDate>
-</item>
-<item>
-<title>SQuARE: Sequential Question Answering Reasoning Engine for Enhanced Chain-of-Thought in Large Language Models</title>
-<link>https://arxiv.org/abs/2502.09390</link>
-<guid>https://arxiv.org/abs/2502.09390</guid>
-<content:encoded><![CDATA[
-In the rapidly evolving field of Natural Language Processing, Large Language Models (LLMs) are tasked with increasingly complex reasoning challenges. Traditional methods like chain-of-thought prompting have shown promise but often fall short in fully leveraging a model's reasoning capabilities. This paper introduces SQuARE (Sequential Question Answering Reasoning Engine), a novel prompting technique designed to improve reasoning through a self-interrogation paradigm. Building upon CoT frameworks, SQuARE prompts models to generate and resolve multiple auxiliary questions before tackling the main query, promoting a more thorough exploration of various aspects of a topic. Our expansive evaluations, conducted with Llama 3 and GPT-4o models across multiple question-answering datasets, demonstrate that SQuARE significantly surpasses traditional CoT prompts and existing rephrase-and-respond methods. By systematically decomposing queries, SQuARE advances LLM capabilities in reasoning tasks. The code is publicly available at https://github.com/IntelLabs/RAG-FiT/tree/square.
-]]></content:encoded>
-<pubDate>Fri, 14 Feb 2025 02:35:53 GMT</pubDate>
-</item>
-<item>
-<title>无编码器架构在3D理解中的应用探索</title>
-<link>https://arxiv.org/abs/2502.09620</link>
-<guid>https://arxiv.org/abs/2502.09620</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文首次探讨无编码器架构在3D理解中的有效性。</p><br /><br /><p><strong>摘要：</strong> 本文对无编码器架构在3D理解的应用潜力进行了全面研究，解决了现有基于编码器的3D大多模态模型所面临的挑战，例如无法适应不同的点云分辨率以及编码器输出的特征无法满足大型语言模型的语义需求。我们提出了两个关键策略：一是在预训练阶段采用LLM嵌入的语义编码策略，并使用混合语义损失提取高级语义；二是在指令调优阶段引入层次化几何聚合策略，帮助LLM关注点云的局部细节。最终，我们提出了首个无编码器的3D大多模态模型ENEL，表现出色，与当前最先进的模型ShapeLLM-13B相竞争，分别在分类、描述和视觉问答任务中取得55.0%、50.92%和42.7%的成绩。这些结果表明，无编码器架构在3D理解领域具有替代基于编码器的架构的巨大潜力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.09620" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 14 Feb 2025 02:27:45 GMT</pubDate>
-</item>
-<item>
-<title>MME-CoT：评估大型多模态模型的链式思维推理性能</title>
-<link>https://arxiv.org/abs/2502.09621</link>
-<guid>https://arxiv.org/abs/2502.09621</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文介绍了MME-CoT基准，评估多模态模型的链式思维推理能力。</p><br /><br /><p><strong>摘要：</strong> 本文提出MME-CoT，一个专门评估大型多模态模型（LMMs）链式思维（CoT）推理性能的基准，涵盖数学、科学、光学字符识别、逻辑、时空和常规场景等六个领域。作为该领域的首个综合研究，MME-CoT包含三项新颖的评估指标，细致评估推理质量、鲁棒性和效率。通过高质量数据和独特的评估策略，我们深入分析了最先进的LMMs，发现几个关键见解：拥有反思机制的模型在CoT质量上表现优异，其中Kimi k1.5表现优于GPT-4o并取得最高质量结果；CoT提示在感知性任务中通常会降低LMM性能，这表明可能存在有害的过度思考行为；尽管CoT质量较高，但拥有反思机制的LMMs在正常响应和自我修正阶段效率明显不足。我们希望MME-CoT能够为推进LMMs的多模态推理奠定基础。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.09621" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 14 Feb 2025 01:34:58 GMT</pubDate>
-</item>
-<item>
-<title>Typhoon T1：开放的泰语推理模型开发</title>
-<link>https://arxiv.org/abs/2502.09042</link>
-<guid>https://arxiv.org/abs/2502.09042</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文介绍了Typhoon T1，一个新型泰语推理模型的开放开发项目。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了Typhoon T1，这是一个旨在开发开放泰语推理模型的项目。推理模型是一种新型的生成模型，基于大型语言模型（LLMs）之上，通过生成长链思维来得到最终答案，已被发现能够提高复杂任务的性能。然而，关于如何开发此类模型的细节相对有限，特别是在低资源语言的推理模型方面。Typhoon T1以更具成本效益的方式进行开发，采用监督微调和开放数据集，而非强化学习。文章分享了合成数据生成与训练的细节，以及我们的数据集和模型权重。此外，我们提供了跨领域通用推理模型的开发见解，能够生成低资源语言中的推理痕迹，以泰语为例。我们希望这一开放努力能为该领域的进一步研究奠定基础。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.09042" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 14 Feb 2025 01:29:44 GMT</pubDate>
 </item>
 </channel>
 </rss>
