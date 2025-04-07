@@ -4,6 +4,66 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>MME-Unify: A Comprehensive Benchmark for Unified Multimodal Understanding and Generation Models</title>
+<link>https://arxiv.org/abs/2504.03641</link>
+<guid>https://arxiv.org/abs/2504.03641</guid>
+<content:encoded><![CDATA[
+
+  Existing MLLM benchmarks face significant challenges in evaluating Unified MLLMs (U-MLLMs) due to: 1) lack of standardized benchmarks for traditional tasks, leading to inconsistent comparisons; 2) absence of benchmarks for mixed-modality generation, which fails to assess multimodal reasoning capabilities. We present a comprehensive evaluation framework designed to systematically assess U-MLLMs. Our benchmark includes: Standardized Traditional Task Evaluation. We sample from 12 datasets, covering 10 tasks with 30 subtasks, ensuring consistent and fair comparisons across studies." 2. Unified Task Assessment. We introduce five novel tasks testing multimodal reasoning, including image editing, commonsense QA with image generation, and geometric reasoning. 3. Comprehensive Model Benchmarking. We evaluate 12 leading U-MLLMs, such as Janus-Pro, EMU3, VILA-U, and Gemini2-flash, alongside specialized understanding (e.g., Claude-3.5-Sonnet) and generation models (e.g., DALL-E-3). Our findings reveal substantial performance gaps in existing U-MLLMs, highlighting the need for more robust models capable of handling mixed-modality tasks effectively. The code and evaluation data can be found in https://mme-unify.github.io/.
+
+]]></content:encoded>
+<pubDate>Fri, 04 Apr 2025 13:59:55 GMT</pubDate>
+<pubDate>Fri, 04 Apr 2025 13:59:55 GMT</pubDate>
+</item>
+<item>
+<title>SynWorld: Virtual Scenario Synthesis for Agentic Action Knowledge Refinement</title>
+<link>https://arxiv.org/abs/2504.03561</link>
+<guid>https://arxiv.org/abs/2504.03561</guid>
+<content:encoded><![CDATA[
+
+  In the interaction between agents and their environments, agents expand their capabilities by planning and executing actions. However, LLM-based agents face substantial challenges when deployed in novel environments or required to navigate unconventional action spaces. To empower agents to autonomously explore environments, optimize workflows, and enhance their understanding of actions, we propose SynWorld, a framework that allows agents to synthesize possible scenarios with multi-step action invocation within the action space and perform Monte Carlo Tree Search (MCTS) exploration to effectively refine their action knowledge in the current environment. Our experiments demonstrate that SynWorld is an effective and general approach to learning action knowledge in new environments. Code is available at https://github.com/zjunlp/SynWorld.
+
+]]></content:encoded>
+<pubDate>Fri, 04 Apr 2025 12:10:57 GMT</pubDate>
+<pubDate>Fri, 04 Apr 2025 12:10:57 GMT</pubDate>
+</item>
+<item>
+<title>Agentic Knowledgeable Self-awareness</title>
+<link>https://arxiv.org/abs/2504.03553</link>
+<guid>https://arxiv.org/abs/2504.03553</guid>
+<content:encoded><![CDATA[
+
+  Large Language Models (LLMs) have achieved considerable performance across various agentic planning tasks. However, traditional agent planning approaches adopt a "flood irrigation" methodology that indiscriminately injects gold trajectories, external feedback, and domain knowledge into agent models. This practice overlooks the fundamental human cognitive principle of situational self-awareness during decision-making-the ability to dynamically assess situational demands and strategically employ resources during decision-making. We propose agentic knowledgeable self-awareness to address this gap, a novel paradigm enabling LLM-based agents to autonomously regulate knowledge utilization. Specifically, we propose KnowSelf, a data-centric approach that applies agents with knowledgeable self-awareness like humans. Concretely, we devise a heuristic situation judgement criterion to mark special tokens on the agent's self-explored trajectories for collecting training data. Through a two-stage training process, the agent model can switch between different situations by generating specific special tokens, achieving optimal planning effects with minimal costs. Our experiments demonstrate that KnowSelf can outperform various strong baselines on different tasks and models with minimal use of external knowledge. Code is available at https://github.com/zjunlp/KnowSelf.
+
+]]></content:encoded>
+<pubDate>Fri, 04 Apr 2025 12:03:38 GMT</pubDate>
+<pubDate>Fri, 04 Apr 2025 12:03:38 GMT</pubDate>
+</item>
+<item>
+<title>VARGPT-v1.1: Improve Visual Autoregressive Large Unified Model via Iterative Instruction Tuning and Reinforcement Learning</title>
+<link>https://arxiv.org/abs/2504.02949</link>
+<guid>https://arxiv.org/abs/2504.02949</guid>
+<content:encoded><![CDATA[
+
+  In this work, we present VARGPT-v1.1, an advanced unified visual autoregressive model that builds upon our previous framework VARGPT. The model preserves the dual paradigm of next-token prediction for visual understanding and next-scale generation for image synthesis. Specifically, VARGPT-v1.1 integrates: (1) a novel training strategy combining iterative visual instruction tuning with reinforcement learning through Direct Preference Optimization (DPO), (2) an expanded training corpus containing 8.3M visual-generative instruction pairs, (3) an upgraded language model backbone using Qwen2, (4) enhanced image generation resolution, and (5) emergent image editing capabilities without architectural modifications. These advancements enable VARGPT-v1.1 to achieve state-of-the-art performance in multimodal understanding and text-to-image instruction-following tasks, demonstrating significant improvements in both comprehension and generation metrics. Notably, through visual instruction tuning, the model acquires image editing functionality while maintaining architectural consistency with its predecessor, revealing the potential for unified visual understanding, generation, and editing. Our findings suggest that well-designed unified visual autoregressive models can effectively adopt flexible training strategies from large language models (LLMs), exhibiting promising scalability. The codebase and model weights are publicly available at https://github.com/VARGPT-family/VARGPT-v1.1.
+
+]]></content:encoded>
+<pubDate>Thu, 03 Apr 2025 14:06:28 GMT</pubDate>
+<pubDate>Thu, 03 Apr 2025 14:06:28 GMT</pubDate>
+</item>
+<item>
+<title>Multi-SWE-bench: A Multilingual Benchmark for Issue Resolving</title>
+<link>https://arxiv.org/abs/2504.02605</link>
+<guid>https://arxiv.org/abs/2504.02605</guid>
+<content:encoded><![CDATA[
+
+  The task of issue resolving is to modify a codebase to generate a patch that addresses a given issue. However, existing benchmarks, such as SWE-bench, focus almost exclusively on Python, making them insufficient for evaluating Large Language Models (LLMs) across diverse software ecosystems. To address this, we introduce a multilingual issue-resolving benchmark, called Multi-SWE-bench, covering Java, TypeScript, JavaScript, Go, Rust, C, and C++. It includes a total of 1,632 high-quality instances, which were carefully annotated from 2,456 candidates by 68 expert annotators, ensuring that the benchmark can provide an accurate and reliable evaluation. Based on Multi-SWE-bench, we evaluate a series of state-of-the-art models using three representative methods (Agentless, SWE-agent, and OpenHands) and present a comprehensive analysis with key empirical insights. In addition, we launch a Multi-SWE-RL open-source community, aimed at building large-scale reinforcement learning (RL) training datasets for issue-resolving tasks. As an initial contribution, we release a set of 4,723 well-structured instances spanning seven programming languages, laying a solid foundation for RL research in this domain. More importantly, we open-source our entire data production pipeline, along with detailed tutorials, encouraging the open-source community to continuously contribute and expand the dataset. We envision our Multi-SWE-bench and the ever-growing Multi-SWE-RL community as catalysts for advancing RL toward its full potential, bringing us one step closer to the dawn of AGI.
+
+]]></content:encoded>
+<pubDate>Thu, 03 Apr 2025 10:06:17 GMT</pubDate>
+<pubDate>Thu, 03 Apr 2025 10:06:17 GMT</pubDate>
+</item>
 
 <item>
 <title>OpenCodeReasoning: Advancing Data Distillation for Competitive Coding</title>
