@@ -4,6 +4,90 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>SmolVLM: Redefining small and efficient multimodal models</title>
+<link>https://arxiv.org/abs/2504.05299</link>
+<guid>https://arxiv.org/abs/2504.05299</guid>
+<content:encoded><![CDATA[
+
+  Large Vision-Language Models (VLMs) deliver exceptional performance but require significant computational resources, limiting their deployment on mobile and edge devices. Smaller VLMs typically mirror design choices of larger models, such as extensive image tokenization, leading to inefficient GPU memory usage and constrained practicality for on-device applications.   We introduce SmolVLM, a series of compact multimodal models specifically engineered for resource-efficient inference. We systematically explore architectural configurations, tokenization strategies, and data curation optimized for low computational overhead. Through this, we identify key design choices that yield substantial performance gains on image and video tasks with minimal memory footprints.   Our smallest model, SmolVLM-256M, uses less than 1GB GPU memory during inference and outperforms the 300-times larger Idefics-80B model, despite an 18-month development gap. Our largest model, at 2.2B parameters, rivals state-of-the-art VLMs consuming twice the GPU memory. SmolVLM models extend beyond static images, demonstrating robust video comprehension capabilities.   Our results emphasize that strategic architectural optimizations, aggressive yet efficient tokenization, and carefully curated training data significantly enhance multimodal performance, facilitating practical, energy-efficient deployments at significantly smaller scales.
+
+]]></content:encoded>
+<pubDate>Mon, 07 Apr 2025 13:58:57 GMT</pubDate>
+<pubDate>Mon, 07 Apr 2025 13:58:57 GMT</pubDate>
+</item>
+<item>
+<title>LiveVQA: Live Visual Knowledge Seeking</title>
+<link>https://arxiv.org/abs/2504.05288</link>
+<guid>https://arxiv.org/abs/2504.05288</guid>
+<content:encoded><![CDATA[
+
+  We introduce LiveVQA, an automatically collected dataset of latest visual knowledge from the Internet with synthesized VQA problems. LiveVQA consists of 3,602 single- and multi-hop visual questions from 6 news websites across 14 news categories, featuring high-quality image-text coherence and authentic information. Our evaluation across 15 MLLMs (e.g., GPT-4o, Gemma-3, and Qwen-2.5-VL family) demonstrates that stronger models perform better overall, with advanced visual reasoning capabilities proving crucial for complex multi-hop questions. Despite excellent performance on textual problems, models with tools like search engines still show significant gaps when addressing visual questions requiring latest visual knowledge, highlighting important areas for future research.
+
+]]></content:encoded>
+<pubDate>Mon, 07 Apr 2025 13:39:31 GMT</pubDate>
+<pubDate>Mon, 07 Apr 2025 13:39:31 GMT</pubDate>
+</item>
+<item>
+<title>T1: Tool-integrated Self-verification for Test-time Compute Scaling in Small Language Models</title>
+<link>https://arxiv.org/abs/2504.04718</link>
+<guid>https://arxiv.org/abs/2504.04718</guid>
+<content:encoded><![CDATA[
+
+  Recent studies have demonstrated that test-time compute scaling effectively improves the performance of small language models (sLMs). However, prior research has mainly examined test-time compute scaling with an additional larger model as a verifier, leaving self-verification by sLMs underexplored. In this work, we investigate whether sLMs can reliably self-verify their outputs under test-time scaling. We find that even with knowledge distillation from larger verifiers, sLMs struggle with verification tasks requiring memorization, such as numerical calculations and fact-checking. To address this limitation, we propose Tool-integrated self-verification (T1), which delegates memorization-heavy verification steps to external tools, such as a code interpreter. Our theoretical analysis shows that tool integration reduces memorization demands and improves test-time scaling performance. Experiments on the MATH benchmark demonstrate that, with T1, a Llama-3.2 1B model under test-time scaling outperforms the significantly larger Llama-3.1 8B model. Moreover, T1 generalizes effectively to both mathematical (MATH500) and multi-domain knowledge-intensive tasks (MMLU-Pro). Our findings highlight the potential of tool integration to substantially improve the self-verification abilities of sLMs.
+
+]]></content:encoded>
+<pubDate>Mon, 07 Apr 2025 00:01:17 GMT</pubDate>
+<pubDate>Mon, 07 Apr 2025 00:01:17 GMT</pubDate>
+</item>
+<item>
+<title>Clinical ModernBERT: An efficient and long context encoder for biomedical text</title>
+<link>https://arxiv.org/abs/2504.03964</link>
+<guid>https://arxiv.org/abs/2504.03964</guid>
+<content:encoded><![CDATA[
+
+  We introduce Clinical ModernBERT, a transformer based encoder pretrained on large scale biomedical literature, clinical notes, and medical ontologies, incorporating PubMed abstracts, MIMIC IV clinical data, and medical codes with their textual descriptions. Building on ModernBERT the current state of the art natural language text encoder featuring architectural upgrades such as rotary positional embeddings (RoPE), Flash Attention, and extended context length up to 8,192 tokens our model adapts these innovations specifically for biomedical and clinical domains. Clinical ModernBERT excels at producing semantically rich representations tailored for long context tasks. We validate this both by analyzing its pretrained weights and through empirical evaluation on a comprehensive suite of clinical NLP benchmarks.
+
+]]></content:encoded>
+<pubDate>Fri, 04 Apr 2025 18:14:12 GMT</pubDate>
+<pubDate>Fri, 04 Apr 2025 18:14:12 GMT</pubDate>
+</item>
+<item>
+<title>Mamba as a Bridge: Where Vision Foundation Models Meet Vision Language Models for Domain-Generalized Semantic Segmentation</title>
+<link>https://arxiv.org/abs/2504.03193</link>
+<guid>https://arxiv.org/abs/2504.03193</guid>
+<content:encoded><![CDATA[
+
+  Vision Foundation Models (VFMs) and Vision-Language Models (VLMs) have gained traction in Domain Generalized Semantic Segmentation (DGSS) due to their strong generalization capabilities. However, existing DGSS methods often rely exclusively on either VFMs or VLMs, overlooking their complementary strengths. VFMs (e.g., DINOv2) excel at capturing fine-grained features, while VLMs (e.g., CLIP) provide robust text alignment but struggle with coarse granularity. Despite their complementary strengths, effectively integrating VFMs and VLMs with attention mechanisms is challenging, as the increased patch tokens complicate long-sequence modeling. To address this, we propose MFuser, a novel Mamba-based fusion framework that efficiently combines the strengths of VFMs and VLMs while maintaining linear scalability in sequence length. MFuser consists of two key components: MVFuser, which acts as a co-adapter to jointly fine-tune the two models by capturing both sequential and spatial dynamics; and MTEnhancer, a hybrid attention-Mamba module that refines text embeddings by incorporating image priors. Our approach achieves precise feature locality and strong text alignment without incurring significant computational overhead. Extensive experiments demonstrate that MFuser significantly outperforms state-of-the-art DGSS methods, achieving 68.20 mIoU on synthetic-to-real and 71.87 mIoU on real-to-real benchmarks. The code is available at https://github.com/devinxzhang/MFuser.
+
+]]></content:encoded>
+<pubDate>Fri, 04 Apr 2025 01:44:45 GMT</pubDate>
+<pubDate>Fri, 04 Apr 2025 01:44:45 GMT</pubDate>
+</item>
+<item>
+<title>BOP Challenge 2024 on Model-Based and Model-Free 6D Object Pose Estimation</title>
+<link>https://arxiv.org/abs/2504.02812</link>
+<guid>https://arxiv.org/abs/2504.02812</guid>
+<content:encoded><![CDATA[
+
+  We present the evaluation methodology, datasets and results of the BOP Challenge 2024, the sixth in a series of public competitions organized to capture the state of the art in 6D object pose estimation and related tasks. In 2024, our goal was to transition BOP from lab-like setups to real-world scenarios. First, we introduced new model-free tasks, where no 3D object models are available and methods need to onboard objects just from provided reference videos. Second, we defined a new, more practical 6D object detection task where identities of objects visible in a test image are not provided as input. Third, we introduced new BOP-H3 datasets recorded with high-resolution sensors and AR/VR headsets, closely resembling real-world scenarios. BOP-H3 include 3D models and onboarding videos to support both model-based and model-free tasks. Participants competed on seven challenge tracks, each defined by a task, object onboarding setup, and dataset group. Notably, the best 2024 method for model-based 6D localization of unseen objects (FreeZeV2.1) achieves 22% higher accuracy on BOP-Classic-Core than the best 2023 method (GenFlow), and is only 4% behind the best 2023 method for seen objects (GPose2023) although being significantly slower (24.9 vs 2.7s per image). A more practical 2024 method for this task is Co-op which takes only 0.8s per image and is 25X faster and 13% more accurate than GenFlow. Methods have a similar ranking on 6D detection as on 6D localization but higher run time. On model-based 2D detection of unseen objects, the best 2024 method (MUSE) achieves 21% relative improvement compared to the best 2023 method (CNOS). However, the 2D detection accuracy for unseen objects is still noticealy (-53%) behind the accuracy for seen objects (GDet2023). The online evaluation system stays open and is available at http://bop.felk.cvut.cz/
+
+]]></content:encoded>
+<pubDate>Thu, 03 Apr 2025 13:55:19 GMT</pubDate>
+<pubDate>Thu, 03 Apr 2025 13:55:19 GMT</pubDate>
+</item>
+<item>
+<title>DiaTool-DPO: Multi-Turn Direct Preference Optimization for Tool-Augmented Large Language Models</title>
+<link>https://arxiv.org/abs/2504.02882</link>
+<guid>https://arxiv.org/abs/2504.02882</guid>
+<content:encoded><![CDATA[
+
+  Tool-Augmented Larage Language Models (TA-LLMs) have shown promise in real-world applications, but face challenges in handling incomplete queries and out-of-scope requests. While existing approaches rely mainly on Supervised Fine-Tuning with expert trajectories, we propose DiaTool-DPO, a novel method that enhances TA-LLM's dialogue capabilities through Direct Preference Optimization. We model TA-LLM interactions as a Markov Decision Process with 5 distinct dialogue states and categorize user queries into 3 types based on their state transition trajectories. We automatically construct paired trajectory datasets of correct and incorrect dialogue flows and introduce a specialized objective loss for dialogue control. Our comprehensive evaluation demonstrates that DiaTool-DPO approaches GPT-4o's performance (94.8% in information gathering, 91% in tool call rejection) with substantial improvements over baseline (44% and 9.6% respectively) while maintaining core functionality. Our approach opens new possibilities for developing TA-LLMs that can handle diverse real-world scenarios without requiring additional expert demonstrations or human labeling.
+
+]]></content:encoded>
+<pubDate>Wed, 02 Apr 2025 01:47:28 GMT</pubDate>
+<pubDate>Wed, 02 Apr 2025 01:47:28 GMT</pubDate>
+</item>
 
 <item>
 <title>URECA: Unique Region Caption Anything</title>
