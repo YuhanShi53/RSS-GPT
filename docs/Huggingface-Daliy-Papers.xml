@@ -4,16 +4,14 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+
 <item>
 <title>URECA: Unique Region Caption Anything</title>
 <link>https://arxiv.org/abs/2504.05305</link>
 <guid>https://arxiv.org/abs/2504.05305</guid>
 <content:encoded><![CDATA[
-
-  Region-level captioning aims to generate natural language descriptions for specific image regions while highlighting their distinguishing features. However, existing methods struggle to produce unique captions across multi-granularity, limiting their real-world applicability. To address the need for detailed region-level understanding, we introduce URECA dataset, a large-scale dataset tailored for multi-granularity region captioning. Unlike prior datasets that focus primarily on salient objects, URECA dataset ensures a unique and consistent mapping between regions and captions by incorporating a diverse set of objects, parts, and background elements. Central to this is a stage-wise data curation pipeline, where each stage incrementally refines region selection and caption generation. By leveraging Multimodal Large Language Models (MLLMs) at each stage, our pipeline produces distinctive and contextually grounded captions with improved accuracy and semantic diversity. Building upon this dataset, we present URECA, a novel captioning model designed to effectively encode multi-granularity regions. URECA maintains essential spatial properties such as position and shape through simple yet impactful modifications to existing MLLMs, enabling fine-grained and semantically rich region descriptions. Our approach introduces dynamic mask modeling and a high-resolution mask encoder to enhance caption uniqueness. Experiments show that URECA achieves state-of-the-art performance on URECA dataset and generalizes well to existing region-level captioning benchmarks.
-
+Region-level captioning aims to generate natural language descriptions for specific image regions while highlighting their distinguishing features. However, existing methods struggle to produce unique captions across multi-granularity, limiting their real-world applicability. To address the need for detailed region-level understanding, we introduce URECA dataset, a large-scale dataset tailored for multi-granularity region captioning. Unlike prior datasets that focus primarily on salient objects, URECA dataset ensures a unique and consistent mapping between regions and captions by incorporating a diverse set of objects, parts, and background elements. Central to this is a stage-wise data curation pipeline, where each stage incrementally refines region selection and caption generation. By leveraging Multimodal Large Language Models (MLLMs) at each stage, our pipeline produces distinctive and contextually grounded captions with improved accuracy and semantic diversity. Building upon this dataset, we present URECA, a novel captioning model designed to effectively encode multi-granularity regions. URECA maintains essential spatial properties such as position and shape through simple yet impactful modifications to existing MLLMs, enabling fine-grained and semantically rich region descriptions. Our approach introduces dynamic mask modeling and a high-resolution mask encoder to enhance caption uniqueness. Experiments show that URECA achieves state-of-the-art performance on URECA dataset and generalizes well to existing region-level captioning benchmarks.
 ]]></content:encoded>
-<pubDate>Mon, 07 Apr 2025 13:59:44 GMT</pubDate>
 <pubDate>Mon, 07 Apr 2025 13:59:44 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +19,8 @@
 <link>https://arxiv.org/abs/2504.05304</link>
 <guid>https://arxiv.org/abs/2504.05304</guid>
 <content:encoded><![CDATA[
-
-  Diffusion models approximate the denoising distribution as a Gaussian and predict its mean, whereas flow matching models reparameterize the Gaussian mean as flow velocity. However, they underperform in few-step sampling due to discretization error and tend to produce over-saturated colors under classifier-free guidance (CFG). To address these limitations, we propose a novel Gaussian mixture flow matching (GMFlow) model: instead of predicting the mean, GMFlow predicts dynamic Gaussian mixture (GM) parameters to capture a multi-modal flow velocity distribution, which can be learned with a KL divergence loss. We demonstrate that GMFlow generalizes previous diffusion and flow matching models where a single Gaussian is learned with an L_2 denoising loss. For inference, we derive GM-SDE/ODE solvers that leverage analytic denoising distributions and velocity fields for precise few-step sampling. Furthermore, we introduce a novel probabilistic guidance scheme that mitigates the over-saturation issues of CFG and improves image generation quality. Extensive experiments demonstrate that GMFlow consistently outperforms flow matching baselines in generation quality, achieving a Precision of 0.942 with only 6 sampling steps on ImageNet 256times256.
-
+Diffusion models approximate the denoising distribution as a Gaussian and predict its mean, whereas flow matching models reparameterize the Gaussian mean as flow velocity. However, they underperform in few-step sampling due to discretization error and tend to produce over-saturated colors under classifier-free guidance (CFG). To address these limitations, we propose a novel Gaussian mixture flow matching (GMFlow) model: instead of predicting the mean, GMFlow predicts dynamic Gaussian mixture (GM) parameters to capture a multi-modal flow velocity distribution, which can be learned with a KL divergence loss. We demonstrate that GMFlow generalizes previous diffusion and flow matching models where a single Gaussian is learned with an L_2 denoising loss. For inference, we derive GM-SDE/ODE solvers that leverage analytic denoising distributions and velocity fields for precise few-step sampling. Furthermore, we introduce a novel probabilistic guidance scheme that mitigates the over-saturation issues of CFG and improves image generation quality. Extensive experiments demonstrate that GMFlow consistently outperforms flow matching baselines in generation quality, achieving a Precision of 0.942 with only 6 sampling steps on ImageNet 256times256.
 ]]></content:encoded>
-<pubDate>Mon, 07 Apr 2025 13:59:42 GMT</pubDate>
 <pubDate>Mon, 07 Apr 2025 13:59:42 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +28,8 @@
 <link>https://arxiv.org/abs/2504.05298</link>
 <guid>https://arxiv.org/abs/2504.05298</guid>
 <content:encoded><![CDATA[
-
-  Transformers today still struggle to generate one-minute videos because self-attention layers are inefficient for long context. Alternatives such as Mamba layers struggle with complex multi-scene stories because their hidden states are less expressive. We experiment with Test-Time Training (TTT) layers, whose hidden states themselves can be neural networks, therefore more expressive. Adding TTT layers into a pre-trained Transformer enables it to generate one-minute videos from text storyboards. For proof of concept, we curate a dataset based on Tom and Jerry cartoons. Compared to baselines such as Mamba~2, Gated DeltaNet, and sliding-window attention layers, TTT layers generate much more coherent videos that tell complex stories, leading by 34 Elo points in a human evaluation of 100 videos per method. Although promising, results still contain artifacts, likely due to the limited capability of the pre-trained 5B model. The efficiency of our implementation can also be improved. We have only experimented with one-minute videos due to resource constraints, but the approach can be extended to longer videos and more complex stories. Sample videos, code and annotations are available at: https://test-time-training.github.io/video-dit
-
+Transformers today still struggle to generate one-minute videos because self-attention layers are inefficient for long context. Alternatives such as Mamba layers struggle with complex multi-scene stories because their hidden states are less expressive. We experiment with Test-Time Training (TTT) layers, whose hidden states themselves can be neural networks, therefore more expressive. Adding TTT layers into a pre-trained Transformer enables it to generate one-minute videos from text storyboards. For proof of concept, we curate a dataset based on Tom and Jerry cartoons. Compared to baselines such as Mamba~2, Gated DeltaNet, and sliding-window attention layers, TTT layers generate much more coherent videos that tell complex stories, leading by 34 Elo points in a human evaluation of 100 videos per method. Although promising, results still contain artifacts, likely due to the limited capability of the pre-trained 5B model. The efficiency of our implementation can also be improved. We have only experimented with one-minute videos due to resource constraints, but the approach can be extended to longer videos and more complex stories. Sample videos, code and annotations are available at: https://test-time-training.github.io/video-dit
 ]]></content:encoded>
-<pubDate>Mon, 07 Apr 2025 13:56:31 GMT</pubDate>
 <pubDate>Mon, 07 Apr 2025 13:56:31 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +37,8 @@
 <link>https://arxiv.org/abs/2504.04823</link>
 <guid>https://arxiv.org/abs/2504.04823</guid>
 <content:encoded><![CDATA[
-
-  Recent advancements in reasoning language models have demonstrated remarkable performance in complex tasks, but their extended chain-of-thought reasoning process increases inference overhead. While quantization has been widely adopted to reduce the inference cost of large language models, its impact on reasoning models remains understudied. In this study, we conduct the first systematic study on quantized reasoning models, evaluating the open-sourced DeepSeek-R1-Distilled Qwen and LLaMA families ranging from 1.5B to 70B parameters, and QwQ-32B. Our investigation covers weight, KV cache, and activation quantization using state-of-the-art algorithms at varying bit-widths, with extensive evaluation across mathematical (AIME, MATH-500), scientific (GPQA), and programming (LiveCodeBench) reasoning benchmarks. Our findings reveal that while lossless quantization can be achieved with W8A8 or W4A16 quantization, lower bit-widths introduce significant accuracy risks. We further identify model size, model origin, and task difficulty as critical determinants of performance. Contrary to expectations, quantized models do not exhibit increased output lengths. In addition, strategically scaling the model sizes or reasoning steps can effectively enhance the performance. All quantized models and codes will be open-sourced in https://github.com/ruikangliu/Quantized-Reasoning-Models.
-
+Recent advancements in reasoning language models have demonstrated remarkable performance in complex tasks, but their extended chain-of-thought reasoning process increases inference overhead. While quantization has been widely adopted to reduce the inference cost of large language models, its impact on reasoning models remains understudied. In this study, we conduct the first systematic study on quantized reasoning models, evaluating the open-sourced DeepSeek-R1-Distilled Qwen and LLaMA families ranging from 1.5B to 70B parameters, and QwQ-32B. Our investigation covers weight, KV cache, and activation quantization using state-of-the-art algorithms at varying bit-widths, with extensive evaluation across mathematical (AIME, MATH-500), scientific (GPQA), and programming (LiveCodeBench) reasoning benchmarks. Our findings reveal that while lossless quantization can be achieved with W8A8 or W4A16 quantization, lower bit-widths introduce significant accuracy risks. We further identify model size, model origin, and task difficulty as critical determinants of performance. Contrary to expectations, quantized models do not exhibit increased output lengths. In addition, strategically scaling the model sizes or reasoning steps can effectively enhance the performance. All quantized models and codes will be open-sourced in https://github.com/ruikangliu/Quantized-Reasoning-Models.
 ]]></content:encoded>
-<pubDate>Mon, 07 Apr 2025 04:22:45 GMT</pubDate>
 <pubDate>Mon, 07 Apr 2025 04:22:45 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +46,8 @@
 <link>https://arxiv.org/abs/2504.04715</link>
 <guid>https://arxiv.org/abs/2504.04715</guid>
 <content:encoded><![CDATA[
-
-  The proliferation of Large Language Models (LLMs) accessed via black-box APIs introduces a significant trust challenge: users pay for services based on advertised model capabilities (e.g., size, performance), but providers may covertly substitute the specified model with a cheaper, lower-quality alternative to reduce operational costs. This lack of transparency undermines fairness, erodes trust, and complicates reliable benchmarking. Detecting such substitutions is difficult due to the black-box nature, typically limiting interaction to input-output queries. This paper formalizes the problem of model substitution detection in LLM APIs. We systematically evaluate existing verification techniques, including output-based statistical tests, benchmark evaluations, and log probability analysis, under various realistic attack scenarios like model quantization, randomized substitution, and benchmark evasion. Our findings reveal the limitations of methods relying solely on text outputs, especially against subtle or adaptive attacks. While log probability analysis offers stronger guarantees when available, its accessibility is often limited. We conclude by discussing the potential of hardware-based solutions like Trusted Execution Environments (TEEs) as a pathway towards provable model integrity, highlighting the trade-offs between security, performance, and provider adoption. Code is available at https://github.com/sunblaze-ucb/llm-api-audit
-
+The proliferation of Large Language Models (LLMs) accessed via black-box APIs introduces a significant trust challenge: users pay for services based on advertised model capabilities (e.g., size, performance), but providers may covertly substitute the specified model with a cheaper, lower-quality alternative to reduce operational costs. This lack of transparency undermines fairness, erodes trust, and complicates reliable benchmarking. Detecting such substitutions is difficult due to the black-box nature, typically limiting interaction to input-output queries. This paper formalizes the problem of model substitution detection in LLM APIs. We systematically evaluate existing verification techniques, including output-based statistical tests, benchmark evaluations, and log probability analysis, under various realistic attack scenarios like model quantization, randomized substitution, and benchmark evasion. Our findings reveal the limitations of methods relying solely on text outputs, especially against subtle or adaptive attacks. While log probability analysis offers stronger guarantees when available, its accessibility is often limited. We conclude by discussing the potential of hardware-based solutions like Trusted Execution Environments (TEEs) as a pathway towards provable model integrity, highlighting the trade-offs between security, performance, and provider adoption. Code is available at https://github.com/sunblaze-ucb/llm-api-audit
 ]]></content:encoded>
-<pubDate>Sun, 06 Apr 2025 23:57:41 GMT</pubDate>
 <pubDate>Sun, 06 Apr 2025 23:57:41 GMT</pubDate>
 </item>
 <item>
@@ -69,11 +55,8 @@
 <link>https://arxiv.org/abs/2504.02828</link>
 <guid>https://arxiv.org/abs/2504.02828</guid>
 <content:encoded><![CDATA[
-
-  Diffusion models are widely used for image editing tasks. Existing editing methods often design a representation manipulation procedure by curating an edit direction in the text embedding or score space. However, such a procedure faces a key challenge: overestimating the edit strength harms visual consistency while underestimating it fails the editing task. Notably, each source image may require a different editing strength, and it is costly to search for an appropriate strength via trial-and-error. To address this challenge, we propose Concept Lancet (CoLan), a zero-shot plug-and-play framework for principled representation manipulation in diffusion-based image editing. At inference time, we decompose the source input in the latent (text embedding or diffusion score) space as a sparse linear combination of the representations of the collected visual concepts. This allows us to accurately estimate the presence of concepts in each image, which informs the edit. Based on the editing task (replace/add/remove), we perform a customized concept transplant process to impose the corresponding editing direction. To sufficiently model the concept space, we curate a conceptual representation dataset, CoLan-150K, which contains diverse descriptions and scenarios of visual terms and phrases for the latent dictionary. Experiments on multiple diffusion-based image editing baselines show that methods equipped with CoLan achieve state-of-the-art performance in editing effectiveness and consistency preservation.
-
+Diffusion models are widely used for image editing tasks. Existing editing methods often design a representation manipulation procedure by curating an edit direction in the text embedding or score space. However, such a procedure faces a key challenge: overestimating the edit strength harms visual consistency while underestimating it fails the editing task. Notably, each source image may require a different editing strength, and it is costly to search for an appropriate strength via trial-and-error. To address this challenge, we propose Concept Lancet (CoLan), a zero-shot plug-and-play framework for principled representation manipulation in diffusion-based image editing. At inference time, we decompose the source input in the latent (text embedding or diffusion score) space as a sparse linear combination of the representations of the collected visual concepts. This allows us to accurately estimate the presence of concepts in each image, which informs the edit. Based on the editing task (replace/add/remove), we perform a customized concept transplant process to impose the corresponding editing direction. To sufficiently model the concept space, we curate a conceptual representation dataset, CoLan-150K, which contains diverse descriptions and scenarios of visual terms and phrases for the latent dictionary. Experiments on multiple diffusion-based image editing baselines show that methods equipped with CoLan achieve state-of-the-art performance in editing effectiveness and consistency preservation.
 ]]></content:encoded>
-<pubDate>Thu, 03 Apr 2025 13:59:58 GMT</pubDate>
 <pubDate>Thu, 03 Apr 2025 13:59:58 GMT</pubDate>
 </item>
 <item>
@@ -81,14 +64,10 @@
 <link>https://arxiv.org/abs/2504.03770</link>
 <guid>https://arxiv.org/abs/2504.03770</guid>
 <content:encoded><![CDATA[
-
-  Multimodal large language models (MLLMs) excel in vision-language tasks but also pose significant risks of generating harmful content, particularly through jailbreak attacks. Jailbreak attacks refer to intentional manipulations that bypass safety mechanisms in models, leading to the generation of inappropriate or unsafe content. Detecting such attacks is critical to ensuring the responsible deployment of MLLMs. Existing jailbreak detection methods face three primary challenges: (1) Many rely on model hidden states or gradients, limiting their applicability to white-box models, where the internal workings of the model are accessible; (2) They involve high computational overhead from uncertainty-based analysis, which limits real-time detection, and (3) They require fully labeled harmful datasets, which are often scarce in real-world settings. To address these issues, we introduce a test-time adaptive framework called JAILDAM. Our method leverages a memory-based approach guided by policy-driven unsafe knowledge representations, eliminating the need for explicit exposure to harmful data. By dynamically updating unsafe knowledge during test-time, our framework improves generalization to unseen jailbreak strategies while maintaining efficiency. Experiments on multiple VLM jailbreak benchmarks demonstrate that JAILDAM delivers state-of-the-art performance in harmful content detection, improving both accuracy and speed.
-
+Multimodal large language models (MLLMs) excel in vision-language tasks but also pose significant risks of generating harmful content, particularly through jailbreak attacks. Jailbreak attacks refer to intentional manipulations that bypass safety mechanisms in models, leading to the generation of inappropriate or unsafe content. Detecting such attacks is critical to ensuring the responsible deployment of MLLMs. Existing jailbreak detection methods face three primary challenges: (1) Many rely on model hidden states or gradients, limiting their applicability to white-box models, where the internal workings of the model are accessible; (2) They involve high computational overhead from uncertainty-based analysis, which limits real-time detection, and (3) They require fully labeled harmful datasets, which are often scarce in real-world settings. To address these issues, we introduce a test-time adaptive framework called JAILDAM. Our method leverages a memory-based approach guided by policy-driven unsafe knowledge representations, eliminating the need for explicit exposure to harmful data. By dynamically updating unsafe knowledge during test-time, our framework improves generalization to unseen jailbreak strategies while maintaining efficiency. Experiments on multiple VLM jailbreak benchmarks demonstrate that JAILDAM delivers state-of-the-art performance in harmful content detection, improving both accuracy and speed.
 ]]></content:encoded>
 <pubDate>Thu, 03 Apr 2025 01:00:28 GMT</pubDate>
-<pubDate>Thu, 03 Apr 2025 01:00:28 GMT</pubDate>
 </item>
-
 <item>
 <title>ShieldAgent: Shielding Agents via Verifiable Safety Policy Reasoning</title>
 <link>https://arxiv.org/abs/2503.22738</link>
@@ -9025,69 +9004,6 @@ Pre-trained foundation models (FMs) have shown exceptional performance in univar
 <div><p style="color: gray;">Step-Video-T2V是一款具有30B参数的文本到视频生成模型。</p><br /><br /><p><strong>摘要：</strong> Step-Video-T2V是一款先进的文本生成视频预训练模型，拥有30B个参数，能够生成长达204帧的视频。该模型使用深度压缩变分自编码器(Video-VAE)，实现了16x16空间和8x时间压缩比，同时确保视频重建质量卓越。为了处理英语和汉语的用户提示，采用了两种双语文本编码器。模型结合3D全注意力的DiT，通过Flow Matching去噪输入噪声，转换为潜在帧，利用视频基础的DPO方法减少伪影和提高生成视频的视觉质量。通过新开发的视频生成基准Step-Video-T2V-Eval进行性能评估，Step-Video-T2V在文本到视频生成质量上表现出色。文章还讨论了当前扩散模型的局限性，并指出了未来视频基础模型的发展方向。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.10248" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Sun, 16 Feb 2025 22:50:38 GMT</pubDate>
-</item>
-<item>
-<title>RAS：一种高效的动态采样策略以加速扩散模型</title>
-<link>https://arxiv.org/abs/2502.10389</link>
-<guid>https://arxiv.org/abs/2502.10389</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">RAS通过动态采样区域显著提高扩散模型的实时性能。</p><br /><br /><p><strong>摘要：</strong> 扩散模型在多种生成任务中表现出色，但其依赖于多个顺序前向传播的特性限制了实时性能。传统的加速方法主要集中于减少采样步骤或重用中间结果，未能利用图像中空间区域的差异。本文提出的RAS（区域自适应采样）策略，利用扩散变换器在处理变数量标记的灵活性，为图像的不同区域动态分配采样比例。通过观察模型在每个采样步骤专注于语义重要区域的现象，RAS仅更新当前集中区域，而将其他区域使用上一步的缓存噪声进行更新。实验结果显示，RAS在Stable Diffusion 3和Lumina-Next-T2I上分别实现了2.36倍和2.51倍的加速，同时生成质量几乎不受影响。用户研究表明，RAS在人工评估中表现相当，并实现了1.6倍的速度提升，推动了扩散变换器在实时应用中的潜力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.10389" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Sun, 16 Feb 2025 22:22:08 GMT</pubDate>
-</item>
-<item>
-<title>ZeroBench：一项全新的视觉推理基准挑战大型多模态模型</title>
-<link>https://arxiv.org/abs/2502.09696</link>
-<guid>https://arxiv.org/abs/2502.09696</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">ZeroBench旨在挑战大型多模态模型的视觉推理能力，结果显示其表现较差。</p><br /><br /><p><strong>摘要：</strong> 大型多模态模型（LMMs）在图像解释上存在显著不足，其空间认知能力甚至不及幼儿或动物。尽管如此，这些模型在许多流行的视觉基准上得分颇高，然而其进展空间正在迅速缩小。因此，急需一些更具挑战性的基准以保持其长期相关性。为此，研究者推出了ZeroBench，这是一项完全不能被现代前沿LMMs解决的轻量级视觉推理基准，由100个精心编制的问题和334个较易于答复的子问题组成。对20个LMMs进行ZeroBench评估，结果显示它们的得分均为0.0%。此基准的推出旨在促进视觉理解的进展，并已公开发布以供研究者使用。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.09696" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Sun, 16 Feb 2025 22:20:53 GMT</pubDate>
-</item>
-<item>
-<title>基于时空记忆的智能代理框架STMA</title>
-<link>https://arxiv.org/abs/2502.10177</link>
-<guid>https://arxiv.org/abs/2502.10177</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">STMA框架通过时空记忆提升智能代理在动态环境中的决策能力。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种新的代理框架——时空记忆代理(STMA)，旨在提高智能代理在动态环境中执行长远任务的能力。STMA集成了三大关键组件：实时捕捉历史和环境变化的时空记忆模块、支持自适应空间推理的动态知识图谱，以及迭代优化任务策略的规划-评估机制。我们在TextWorld环境中评估了STMA在32个任务上的表现，通过多步规划和探索，结果显示STMA相比最先进模型的成功率提高了31.25%，平均得分提高了24.7%。这些结果突显了时空记忆在提升智能代理记忆能力方面的有效性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.10177" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Sun, 16 Feb 2025 21:31:11 GMT</pubDate>
-</item>
-<item>
-<title>新框架提升二维潜在空间的三维重建效果</title>
-<link>https://arxiv.org/abs/2502.09613</link>
-<guid>https://arxiv.org/abs/2502.09613</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文提出新框架，提升二维潜在空间在三维重建中的效果。</p><br /><br /><p><strong>摘要：</strong> 针对现有三维重建方法在二维特征空间与三维表示之间存在的领域差距，本文提出了一种新颖的框架，旨在将三维意识整合到二维潜在空间中。该框架由三个阶段组成，首先通过一种考虑对应关系的自编码方法，增强二维潜在表示的三维一致性；其次，利用潜在辐射场（LRF）将这些具备三维意识的二维表示提升到三维空间；最后，采用VAE-Radiance Field（VAE-RF）对齐策略，提升从渲染的二维表示中解码图像的效果。通过广泛实验，结果表明该方法在合成性能和跨数据集泛化能力方面优于当前最先进的潜在三维重建方法，是首次展示基于二维潜在表示构建的辐射场可以实现逼真的三维重建性能。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.09613" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 14 Feb 2025 21:20:14 GMT</pubDate>
-</item>
-<item>
-<title>GSM-Ranges：评估大语言模型数学推理能力的新方法</title>
-<link>https://arxiv.org/abs/2502.08680</link>
-<guid>https://arxiv.org/abs/2502.08680</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">文章介绍GSM-Ranges，用于评估大语言模型在不同数值范围下的数学推理能力。</p><br /><br /><p><strong>摘要：</strong> 本研究探讨了大语言模型（LLMs）在数学推理方面的评估局限性，现有基准测试通常使用有限的数值范围，未能真实反映模型在多样化规模下的问题解决能力。为了解决这些问题，我们引入了GSM-Ranges，这是一个基于GSM8K生成的数据集，旨在系统性地扰动数学问题中的数值，以评估模型在不同数值复杂性下的稳健性。此外，我们提出了一种新颖的评分方法，能够区分逻辑错误和非逻辑错误，从而更精准地评估推理过程。实验显示，随着数值复杂性的增加，模型的逻辑错误率显著上升，高达14个百分点，表明模型在处理超出分布的数值时存在普遍弱点。同时，模型在独立的算术任务上表现良好，但在处理嵌入了文字问题的计算时，其性能显著下降。这些发现为进一步研究LMMs的数学推理能力及其数值泛化的改进提供了重要见解。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.08680" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 14 Feb 2025 09:18:18 GMT</pubDate>
-</item>
-<item>
-<title>VFX Creator: 基于AI的可控视觉效果生成新范式</title>
-<link>https://arxiv.org/abs/2502.05979</link>
-<guid>https://arxiv.org/abs/2502.05979</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文提出了一种基于文本描述和静态图像的可控视觉效果生成方法。</p><br /><br /><p><strong>摘要：</strong> 随着电影制作中特效技术的发展，视觉效果（VFX）成为实现魔法与幻觉的重要工具。本文提出了一种新的动画视觉效果生成范式，通过用户友好的文本描述和静态参考图像生成动态效果。主要贡献包括：第一，建立了Open-VFX数据集，这是首个高质量的视觉效果视频数据集，涵盖15种多样化的效果类别并附有详细标注；第二，开发了VFX Creator框架，利用视频扩散变换器实现可控VFX生成。该模型具备空间和时间控制的LoRA适配器，支持实例级的空间操控与精准的时间控制。通过在Open-VFX测试集上的广泛实验，证明了该系统在生成真实动态效果上优于现有技术，并引入了一种专门的度量标准以评估时间控制的精确度。VFX Creator通过结合传统特效与生成方法，拓展了高质量视频特效生成的新可能性，使得先进的视觉效果可被更广泛的受众所掌握。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.05979" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 14 Feb 2025 08:47:33 GMT</pubDate>
-</item>
-<item>
-<title>通用神经追踪控制器的开发与应用</title>
-<link>https://arxiv.org/abs/2502.09614</link>
-<guid>https://arxiv.org/abs/2502.09614</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">研究了从人类参考中开发的通用神经追踪控制器，以实现灵活的操作。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了如何开发一个通用的神经追踪控制器，以实现灵活的机器人手部操控，能够应对多种物体及其不同的操控需求。我们提出了一种方法，利用大规模成功机器人追踪示例，结合人类参考和机器人动作，来训练一个神经控制器。通过数据飞轮的方式，我们不断提升控制器的性能以及成功追踪示例的数量和质量。同时，采用强化学习与模仿学习相结合的策略，以增强控制器在动态环境中的表现。此外，为了获得高质量的追踪示例，我们还优化了每条轨迹的追踪，通过同伦优化方法，解决复杂的轨迹追踪问题，从而增加示例的多样性。实验表明，我们训练的通用神经控制器在仿真和实际环境中实现了超过10%的成功率提升，优于现有的先进基线。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.09614" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 14 Feb 2025 04:50:27 GMT</pubDate>
 </item>
 </channel>
 </rss>
