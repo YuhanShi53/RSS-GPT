@@ -5,18 +5,51 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>HybriMoE: Hybrid CPU-GPU Scheduling and Cache Management for Efficient MoE Inference</title>
+<link>https://arxiv.org/abs/2504.05897</link>
+<guid>https://arxiv.org/abs/2504.05897</guid>
+<content:encoded><![CDATA[
+
+  The Mixture of Experts (MoE) architecture has demonstrated significant advantages as it enables to increase the model capacity without a proportional increase in computation. However, the large MoE model size still introduces substantial memory demands, which usually requires expert offloading on resource-constrained platforms and incurs significant overhead. Hybrid CPU-GPU inference has been proposed to leverage CPU computation to reduce expert loading overhead but faces major challenges: on one hand, the expert activation patterns of MoE models are highly unstable, rendering the fixed mapping strategies in existing works inefficient; on the other hand, the hybrid CPU-GPU schedule for MoE is inherently complex due to the diverse expert sizes, structures, uneven workload distribution, etc. To address these challenges, in this paper, we propose HybriMoE, a hybrid CPU-GPU inference framework that improves resource utilization through a novel CPU-GPU scheduling and cache management system. HybriMoE introduces (i) a dynamic intra-layer scheduling strategy to balance workloads across CPU and GPU, (ii) an impact-driven inter-layer prefetching algorithm, and (iii) a score-based caching algorithm to mitigate expert activation instability. We implement HybriMoE on top of the kTransformers framework and evaluate it on three widely used MoE-based LLMs. Experimental results demonstrate that HybriMoE achieves an average speedup of 1.33times in the prefill stage and 1.70times in the decode stage compared to state-of-the-art hybrid MoE inference framework. Our code is available at: https://github.com/PKU-SEC-Lab/HybriMoE.
+
+]]></content:encoded>
+<pubDate>Tue, 08 Apr 2025 06:47:37 GMT</pubDate>
+<pubDate>Tue, 08 Apr 2025 06:47:37 GMT</pubDate>
+</item>
+<item>
+<title>Efficient Reinforcement Finetuning via Adaptive Curriculum Learning</title>
+<link>https://arxiv.org/abs/2504.05520</link>
+<guid>https://arxiv.org/abs/2504.05520</guid>
+<content:encoded><![CDATA[
+
+  Reinforcement finetuning (RFT) has shown great potential for enhancing the mathematical reasoning capabilities of large language models (LLMs), but it is often sample- and compute-inefficient, requiring extensive training. In this work, we introduce AdaRFT (Adaptive Curriculum Reinforcement Finetuning), a method that significantly improves both the efficiency and final accuracy of RFT through adaptive curriculum learning. AdaRFT dynamically adjusts the difficulty of training problems based on the model's recent reward signals, ensuring that the model consistently trains on tasks that are challenging but solvable. This adaptive sampling strategy accelerates learning by maintaining an optimal difficulty range, avoiding wasted computation on problems that are too easy or too hard. AdaRFT requires only a lightweight extension to standard RFT algorithms like Proximal Policy Optimization (PPO), without modifying the reward function or model architecture. Experiments on competition-level math datasets-including AMC, AIME, and IMO-style problems-demonstrate that AdaRFT significantly improves both training efficiency and reasoning performance. We evaluate AdaRFT across multiple data distributions and model sizes, showing that it reduces the number of training steps by up to 2x and improves accuracy by a considerable margin, offering a more scalable and effective RFT framework.
+
+]]></content:encoded>
+<pubDate>Mon, 07 Apr 2025 17:31:31 GMT</pubDate>
+<pubDate>Mon, 07 Apr 2025 17:31:31 GMT</pubDate>
+</item>
+<item>
+<title>ProtoGCD: Unified and Unbiased Prototype Learning for Generalized Category Discovery</title>
+<link>https://arxiv.org/abs/2504.03755</link>
+<guid>https://arxiv.org/abs/2504.03755</guid>
+<content:encoded><![CDATA[
+
+  Generalized category discovery (GCD) is a pragmatic but underexplored problem, which requires models to automatically cluster and discover novel categories by leveraging the labeled samples from old classes. The challenge is that unlabeled data contain both old and new classes. Early works leveraging pseudo-labeling with parametric classifiers handle old and new classes separately, which brings about imbalanced accuracy between them. Recent methods employing contrastive learning neglect potential positives and are decoupled from the clustering objective, leading to biased representations and sub-optimal results. To address these issues, we introduce a unified and unbiased prototype learning framework, namely ProtoGCD, wherein old and new classes are modeled with joint prototypes and unified learning objectives, {enabling unified modeling between old and new classes}. Specifically, we propose a dual-level adaptive pseudo-labeling mechanism to mitigate confirmation bias, together with two regularization terms to collectively help learn more suitable representations for GCD. Moreover, for practical considerations, we devise a criterion to estimate the number of new classes. Furthermore, we extend ProtoGCD to detect unseen outliers, achieving task-level unification. Comprehensive experiments show that ProtoGCD achieves state-of-the-art performance on both generic and fine-grained datasets. The code is available at https://github.com/mashijie1028/ProtoGCD.
+
+]]></content:encoded>
+<pubDate>Wed, 02 Apr 2025 02:13:14 GMT</pubDate>
+<pubDate>Wed, 02 Apr 2025 02:13:14 GMT</pubDate>
+</item>
+
+<item>
 <title>Leanabell-Prover: Posttraining Scaling in Formal Reasoning</title>
 <link>https://arxiv.org/abs/2504.06122</link>
 <guid>https://arxiv.org/abs/2504.06122</guid>
 <content:encoded><![CDATA[
-
-  Recent advances in automated theorem proving (ATP) through LLMs have highlighted the potential of formal reasoning with Lean 4 codes. However, ATP has not yet be revolutionized by the recent posttraining scaling as demonstrated by Open AI O1/O3 and Deepseek R1. In this work, we investigate the entire posttraining of ATP, aiming to align it with breakthroughs in reasoning models in natural languages.To begin, we continual train current ATP models with a hybrid dataset, which consists of numerous statement-proof pairs, and additional data aimed at incorporating cognitive behaviors that emulate human reasoning and hypothesis refinement. Next, we explore reinforcement learning with the use of outcome reward returned by Lean 4 compiler. Through our designed continual training and reinforcement learning processes, we have successfully improved existing formal provers, including both DeepSeek-Prover-v1.5 and Goedel-Prover, achieving state-of-the-art performance in the field of whole-proof generation. For example, we achieve a 59.8% pass rate (pass@32) on MiniF2F. This is an on-going project and we will progressively update our findings, release our data and training details.
-
+Recent advances in automated theorem proving (ATP) through LLMs have highlighted the potential of formal reasoning with Lean 4 codes. However, ATP has not yet be revolutionized by the recent posttraining scaling as demonstrated by Open AI O1/O3 and Deepseek R1. In this work, we investigate the entire posttraining of ATP, aiming to align it with breakthroughs in reasoning models in natural languages.To begin, we continual train current ATP models with a hybrid dataset, which consists of numerous statement-proof pairs, and additional data aimed at incorporating cognitive behaviors that emulate human reasoning and hypothesis refinement. Next, we explore reinforcement learning with the use of outcome reward returned by Lean 4 compiler. Through our designed continual training and reinforcement learning processes, we have successfully improved existing formal provers, including both DeepSeek-Prover-v1.5 and Goedel-Prover, achieving state-of-the-art performance in the field of whole-proof generation. For example, we achieve a 59.8% pass rate (pass@32) on MiniF2F. This is an on-going project and we will progressively update our findings, release our data and training details.
 ]]></content:encoded>
 <pubDate>Tue, 08 Apr 2025 11:15:26 GMT</pubDate>
-<pubDate>Tue, 08 Apr 2025 11:15:26 GMT</pubDate>
 </item>
-
 <item>
 <title>HiFlow: Training-free High-Resolution Image Generation with Flow-Aligned Guidance</title>
 <link>https://arxiv.org/abs/2504.06232</link>
@@ -9007,15 +9040,6 @@ We introduce SWE-Lancer, a benchmark of over 1,400 freelance software engineerin
 <div><p style="color: gray;">提出video-SALMONN-o1，提升视频理解与推理能力的开源多模态语言模型。</p><br /><br /><p><strong>摘要：</strong> 本论文提出了video-SALMONN-o1，这是首个专为一般视频理解任务设计的开源推理增强音视频语言模型。为提升推理能力，我们开发了一个包含具有挑战性音视频问题及逐步解决方案的推理密集型数据集，并提出了过程直接偏好优化（pDPO）方法，利用对比步骤选择实现针对多模态输入的高效步级奖励建模。此外，本文还引入了RivaBench，这是首个理由密集型视频理解基准，包含4000多个高质量专家策划的问题-答案对，覆盖单口喜剧、学术演讲和合成视频检测等场景。与LLaVA-OneVision基线相比，video-SALMONN-o1在不同视频推理基准上实现了3-8%的准确性提升，而pDPO在RivaBench上相对于监督微调模型则提高了6-8%的准确率。增强的推理能力使video-SALMONN-o1具备零次合成视频检测能力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.11775" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 18 Feb 2025 00:06:55 GMT</pubDate>
-</item>
-<item>
-<title>TalkHier：一种新型LLM-MA系统的结构化沟通框架</title>
-<link>https://arxiv.org/abs/2502.11098</link>
-<guid>https://arxiv.org/abs/2502.11098</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文提出TalkHier框架，解决LLM-MA系统中的沟通和优化问题。</p><br /><br /><p><strong>摘要：</strong> 随着LLM-MA系统研究的进展，各代理在复杂任务协作中面临沟通管理和输出优化的挑战。本文提出了Talk Structurally, Act Hierarchically (TalkHier)框架，旨在引入结构化沟通协议和层级优化机制，以解决输出错误、虚假信息及偏见等问题。通过在多种任务上的测试，包括开放域问答、领域特定选择性提问和实际广告文本生成，TalkHier在性能上超过了多种前沿技术，如OpenAI的推理缩放模型和AgentVerse等开源多代理模型。这一新框架展示了其成为LLM-MA系统新标准的潜力，推动了更有效、适应性强的多代理协作框架的发展。相关代码已在GitHub上发布。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.11098" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 17 Feb 2025 23:51:50 GMT</pubDate>
 </item>
 </channel>
 </rss>
