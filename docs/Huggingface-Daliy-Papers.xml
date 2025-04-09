@@ -5,15 +5,25 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>Distillation and Refinement of Reasoning in Small Language Models for Document Re-ranking</title>
+<link>https://arxiv.org/abs/2504.03947</link>
+<guid>https://arxiv.org/abs/2504.03947</guid>
+<content:encoded><![CDATA[
+
+  We present a novel approach for training small language models for reasoning-intensive document ranking that combines knowledge distillation with reinforcement learning optimization. While existing methods often rely on expensive human annotations or large black-box language models, our methodology leverages web data and a teacher LLM to automatically generate high-quality training examples with relevance explanations. By framing document ranking as a reinforcement learning problem and incentivizing explicit reasoning capabilities, we train a compact 3B parameter language model that achieves state-of-the-art performance on the BRIGHT benchmark. Our model ranks third on the leaderboard while using substantially fewer parameters than other approaches, outperforming models that are over 20 times larger. Through extensive experiments, we demonstrate that generating explanations during inference, rather than directly predicting relevance scores, enables more effective reasoning with smaller language models. The self-supervised nature of our method offers a scalable and interpretable solution for modern information retrieval systems.
+
+]]></content:encoded>
+<pubDate>Fri, 04 Apr 2025 17:27:48 GMT</pubDate>
+<pubDate>Fri, 04 Apr 2025 17:27:48 GMT</pubDate>
+</item>
+
+<item>
 <title>VAPO: Efficient and Reliable Reinforcement Learning for Advanced Reasoning Tasks</title>
 <link>https://arxiv.org/abs/2504.05118</link>
 <guid>https://arxiv.org/abs/2504.05118</guid>
 <content:encoded><![CDATA[
-
-  We present VAPO, Value-based Augmented Proximal Policy Optimization framework for reasoning models., a novel framework tailored for reasoning models within the value-based paradigm. Benchmarked the AIME 2024 dataset, VAPO, built on the Qwen 32B pre-trained model, attains a state-of-the-art score of 60.4. In direct comparison under identical experimental settings, VAPO outperforms the previously reported results of DeepSeek-R1-Zero-Qwen-32B and DAPO by more than 10 points. The training process of VAPO stands out for its stability and efficiency. It reaches state-of-the-art performance within a mere 5,000 steps. Moreover, across multiple independent runs, no training crashes occur, underscoring its reliability. This research delves into long chain-of-thought (long-CoT) reasoning using a value-based reinforcement learning framework. We pinpoint three key challenges that plague value-based methods: value model bias, the presence of heterogeneous sequence lengths, and the sparsity of reward signals. Through systematic design, VAPO offers an integrated solution that effectively alleviates these challenges, enabling enhanced performance in long-CoT reasoning tasks.
-
+We present VAPO, Value-based Augmented Proximal Policy Optimization framework for reasoning models., a novel framework tailored for reasoning models within the value-based paradigm. Benchmarked the AIME 2024 dataset, VAPO, built on the Qwen 32B pre-trained model, attains a state-of-the-art score of 60.4. In direct comparison under identical experimental settings, VAPO outperforms the previously reported results of DeepSeek-R1-Zero-Qwen-32B and DAPO by more than 10 points. The training process of VAPO stands out for its stability and efficiency. It reaches state-of-the-art performance within a mere 5,000 steps. Moreover, across multiple independent runs, no training crashes occur, underscoring its reliability. This research delves into long chain-of-thought (long-CoT) reasoning using a value-based reinforcement learning framework. We pinpoint three key challenges that plague value-based methods: value model bias, the presence of heterogeneous sequence lengths, and the sparsity of reward signals. Through systematic design, VAPO offers an integrated solution that effectively alleviates these challenges, enabling enhanced performance in long-CoT reasoning tasks.
 ]]></content:encoded>
-<pubDate>Mon, 07 Apr 2025 10:21:11 GMT</pubDate>
 <pubDate>Mon, 07 Apr 2025 10:21:11 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +31,8 @@
 <link>https://arxiv.org/abs/2504.04155</link>
 <guid>https://arxiv.org/abs/2504.04155</guid>
 <content:encoded><![CDATA[
-
-  Large language models (LLMs) are advancing at an unprecedented pace globally, with regions increasingly adopting these models for applications in their primary language. Evaluation of these models in diverse linguistic environments, especially in low-resource languages, has become a major challenge for academia and industry. Existing evaluation frameworks are disproportionately focused on English and a handful of high-resource languages, thereby overlooking the realistic performance of LLMs in multilingual and lower-resource scenarios. To address this gap, we introduce GlotEval, a lightweight framework designed for massively multilingual evaluation. Supporting seven key tasks (machine translation, text classification, summarization, open-ended generation, reading comprehension, sequence labeling, and intrinsic evaluation), spanning over dozens to hundreds of languages, GlotEval highlights consistent multilingual benchmarking, language-specific prompt templates, and non-English-centric machine translation. This enables a precise diagnosis of model strengths and weaknesses in diverse linguistic contexts. A multilingual translation case study demonstrates GlotEval's applicability for multilingual and language-specific evaluations.
-
+Large language models (LLMs) are advancing at an unprecedented pace globally, with regions increasingly adopting these models for applications in their primary language. Evaluation of these models in diverse linguistic environments, especially in low-resource languages, has become a major challenge for academia and industry. Existing evaluation frameworks are disproportionately focused on English and a handful of high-resource languages, thereby overlooking the realistic performance of LLMs in multilingual and lower-resource scenarios. To address this gap, we introduce GlotEval, a lightweight framework designed for massively multilingual evaluation. Supporting seven key tasks (machine translation, text classification, summarization, open-ended generation, reading comprehension, sequence labeling, and intrinsic evaluation), spanning over dozens to hundreds of languages, GlotEval highlights consistent multilingual benchmarking, language-specific prompt templates, and non-English-centric machine translation. This enables a precise diagnosis of model strengths and weaknesses in diverse linguistic contexts. A multilingual translation case study demonstrates GlotEval's applicability for multilingual and language-specific evaluations.
 ]]></content:encoded>
-<pubDate>Sat, 05 Apr 2025 08:30:58 GMT</pubDate>
 <pubDate>Sat, 05 Apr 2025 08:30:58 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +40,8 @@
 <link>https://arxiv.org/abs/2504.04152</link>
 <guid>https://arxiv.org/abs/2504.04152</guid>
 <content:encoded><![CDATA[
-
-  Large Language Models (LLMs) exhibit significant disparities in performance across languages, primarily benefiting high-resource languages while marginalizing underrepresented ones. Continual Pretraining (CPT) has emerged as a promising approach to address this imbalance, although the relative effectiveness of monolingual, bilingual, and code-augmented data strategies remains unclear. This study systematically evaluates 36 CPT configurations involving three multilingual base models, across 30+ languages categorized as altruistic, selfish, and stagnant, spanning various resource levels. Our findings reveal three major insights: (1) Bilingual CPT improves multilingual classification but often causes language mixing issues during generation. (2) Including programming code data during CPT consistently enhances multilingual classification accuracy, particularly benefiting low-resource languages, but introduces a trade-off by slightly degrading generation quality. (3) Contrary to prior work, we observe substantial deviations from language classifications according to their impact on cross-lingual transfer: Languages classified as altruistic often negatively affect related languages, selfish languages show conditional and configuration-dependent behavior, and stagnant languages demonstrate surprising adaptability under certain CPT conditions. These nuanced interactions emphasize the complexity of multilingual representation learning, underscoring the importance of systematic studies on generalizable language classification to inform future multilingual CPT strategies.
-
+Large Language Models (LLMs) exhibit significant disparities in performance across languages, primarily benefiting high-resource languages while marginalizing underrepresented ones. Continual Pretraining (CPT) has emerged as a promising approach to address this imbalance, although the relative effectiveness of monolingual, bilingual, and code-augmented data strategies remains unclear. This study systematically evaluates 36 CPT configurations involving three multilingual base models, across 30+ languages categorized as altruistic, selfish, and stagnant, spanning various resource levels. Our findings reveal three major insights: (1) Bilingual CPT improves multilingual classification but often causes language mixing issues during generation. (2) Including programming code data during CPT consistently enhances multilingual classification accuracy, particularly benefiting low-resource languages, but introduces a trade-off by slightly degrading generation quality. (3) Contrary to prior work, we observe substantial deviations from language classifications according to their impact on cross-lingual transfer: Languages classified as altruistic often negatively affect related languages, selfish languages show conditional and configuration-dependent behavior, and stagnant languages demonstrate surprising adaptability under certain CPT conditions. These nuanced interactions emphasize the complexity of multilingual representation learning, underscoring the importance of systematic studies on generalizable language classification to inform future multilingual CPT strategies.
 ]]></content:encoded>
-<pubDate>Sat, 05 Apr 2025 08:10:55 GMT</pubDate>
 <pubDate>Sat, 05 Apr 2025 08:10:55 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +49,8 @@
 <link>https://arxiv.org/abs/2504.04022</link>
 <guid>https://arxiv.org/abs/2504.04022</guid>
 <content:encoded><![CDATA[
-
-  A language model's ability to reflect on its own reasoning provides a key advantage for solving complex problems. While most recent research has focused on how this ability develops during reinforcement learning, we show that it actually begins to emerge much earlier - during the model's pre-training. To study this, we introduce deliberate errors into chains-of-thought and test whether the model can still arrive at the correct answer by recognizing and correcting these mistakes. By tracking performance across different stages of pre-training, we observe that this self-correcting ability appears early and improves steadily over time. For instance, an OLMo2-7B model pre-trained on 4 trillion tokens displays self-correction on our six self-reflection tasks.
-
+A language model's ability to reflect on its own reasoning provides a key advantage for solving complex problems. While most recent research has focused on how this ability develops during reinforcement learning, we show that it actually begins to emerge much earlier - during the model's pre-training. To study this, we introduce deliberate errors into chains-of-thought and test whether the model can still arrive at the correct answer by recognizing and correcting these mistakes. By tracking performance across different stages of pre-training, we observe that this self-correcting ability appears early and improves steadily over time. For instance, an OLMo2-7B model pre-trained on 4 trillion tokens displays self-correction on our six self-reflection tasks.
 ]]></content:encoded>
-<pubDate>Fri, 04 Apr 2025 22:24:07 GMT</pubDate>
 <pubDate>Fri, 04 Apr 2025 22:24:07 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +58,8 @@
 <link>https://arxiv.org/abs/2504.03151</link>
 <guid>https://arxiv.org/abs/2504.03151</guid>
 <content:encoded><![CDATA[
-
-  Reasoning is central to human intelligence, enabling structured problem-solving across diverse tasks. Recent advances in large language models (LLMs) have greatly enhanced their reasoning abilities in arithmetic, commonsense, and symbolic domains. However, effectively extending these capabilities into multimodal contexts-where models must integrate both visual and textual inputs-continues to be a significant challenge. Multimodal reasoning introduces complexities, such as handling conflicting information across modalities, which require models to adopt advanced interpretative strategies. Addressing these challenges involves not only sophisticated algorithms but also robust methodologies for evaluating reasoning accuracy and coherence. This paper offers a concise yet insightful overview of reasoning techniques in both textual and multimodal LLMs. Through a thorough and up-to-date comparison, we clearly formulate core reasoning challenges and opportunities, highlighting practical methods for post-training optimization and test-time inference. Our work provides valuable insights and guidance, bridging theoretical frameworks and practical implementations, and sets clear directions for future research.
-
+Reasoning is central to human intelligence, enabling structured problem-solving across diverse tasks. Recent advances in large language models (LLMs) have greatly enhanced their reasoning abilities in arithmetic, commonsense, and symbolic domains. However, effectively extending these capabilities into multimodal contexts-where models must integrate both visual and textual inputs-continues to be a significant challenge. Multimodal reasoning introduces complexities, such as handling conflicting information across modalities, which require models to adopt advanced interpretative strategies. Addressing these challenges involves not only sophisticated algorithms but also robust methodologies for evaluating reasoning accuracy and coherence. This paper offers a concise yet insightful overview of reasoning techniques in both textual and multimodal LLMs. Through a thorough and up-to-date comparison, we clearly formulate core reasoning challenges and opportunities, highlighting practical methods for post-training optimization and test-time inference. Our work provides valuable insights and guidance, bridging theoretical frameworks and practical implementations, and sets clear directions for future research.
 ]]></content:encoded>
-<pubDate>Fri, 04 Apr 2025 00:04:56 GMT</pubDate>
 <pubDate>Fri, 04 Apr 2025 00:04:56 GMT</pubDate>
 </item>
 <item>
@@ -69,14 +67,10 @@
 <link>https://arxiv.org/abs/2504.03790</link>
 <guid>https://arxiv.org/abs/2504.03790</guid>
 <content:encoded><![CDATA[
-
-  Increasing test-time computation has emerged as a promising direction for improving language model performance, particularly in scenarios where model finetuning is impractical or impossible due to computational constraints or private model weights. However, existing test-time search methods using a reward model (RM) often degrade in quality as compute scales, due to the over-optimization of what are inherently imperfect reward proxies. We introduce QAlign, a new test-time alignment approach. As we scale test-time compute, QAlign converges to sampling from the optimal aligned distribution for each individual prompt. By adopting recent advances in Markov chain Monte Carlo for text generation, our method enables better-aligned outputs without modifying the underlying model or even requiring logit access. We demonstrate the effectiveness of QAlign on mathematical reasoning benchmarks (GSM8K and GSM-Symbolic) using a task-specific RM, showing consistent improvements over existing test-time compute methods like best-of-n and majority voting. Furthermore, when applied with more realistic RMs trained on the Tulu 3 preference dataset, QAlign outperforms direct preference optimization (DPO), best-of-n, majority voting, and weighted majority voting on a diverse range of datasets (GSM8K, MATH500, IFEval, MMLU-Redux, and TruthfulQA). A practical solution to aligning language models at test time using additional computation without degradation, our approach expands the limits of the capability that can be obtained from off-the-shelf language models without further training.
-
+Increasing test-time computation has emerged as a promising direction for improving language model performance, particularly in scenarios where model finetuning is impractical or impossible due to computational constraints or private model weights. However, existing test-time search methods using a reward model (RM) often degrade in quality as compute scales, due to the over-optimization of what are inherently imperfect reward proxies. We introduce QAlign, a new test-time alignment approach. As we scale test-time compute, QAlign converges to sampling from the optimal aligned distribution for each individual prompt. By adopting recent advances in Markov chain Monte Carlo for text generation, our method enables better-aligned outputs without modifying the underlying model or even requiring logit access. We demonstrate the effectiveness of QAlign on mathematical reasoning benchmarks (GSM8K and GSM-Symbolic) using a task-specific RM, showing consistent improvements over existing test-time compute methods like best-of-n and majority voting. Furthermore, when applied with more realistic RMs trained on the Tulu 3 preference dataset, QAlign outperforms direct preference optimization (DPO), best-of-n, majority voting, and weighted majority voting on a diverse range of datasets (GSM8K, MATH500, IFEval, MMLU-Redux, and TruthfulQA). A practical solution to aligning language models at test time using additional computation without degradation, our approach expands the limits of the capability that can be obtained from off-the-shelf language models without further training.
 ]]></content:encoded>
 <pubDate>Thu, 03 Apr 2025 20:41:40 GMT</pubDate>
-<pubDate>Thu, 03 Apr 2025 20:41:40 GMT</pubDate>
 </item>
-
 <item>
 <title>SmolVLM: Redefining small and efficient multimodal models</title>
 <link>https://arxiv.org/abs/2504.05299</link>
@@ -9022,60 +9016,6 @@ Large Language Models (LLMs) have achieved significant success across various NL
 <div><p style="color: gray;">本研究 explores 小型多语言模型在低资源语言下的适应性与性能提升。</p><br /><br /><p><strong>摘要：</strong> 本研究系统探讨了如何有效地使用参数高效的适配器方法，将小型多语言模型（mLMs）适应于低资源语言（LRLs）。研究评估了三种适配器架构：顺序瓶颈、可逆瓶颈和低秩适配方法。结果显示，使用来自GlotCC的非结构化文本和ConceptNet的结构化知识的小型适配数据集（如最多1GB的自由文本或几MB的知识图数据）能显著提升模型在内部（掩码语言建模）和外部任务（主题分类、情感分析和命名实体识别）的表现。研究发现，顺序瓶颈适配器在语言建模方面表现出色，而可逆瓶颈适配器在下游任务上由于更好的嵌入对齐和更多的参数数量略有凌驾于其他方法之上。适配器方法在使用更少参数的情况下，实现了与完整微调相当或更优的性能，而与大型语言模型（如LLaMA-3、GPT-4及DeepSeek-R1基于的蒸馏模型）相比，小型mLMs在低资源语言任务中更为有效。尽管适应性提高了性能，但预训练数据规模仍是决定因素，特别是对于预训练覆盖面广的语言。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.10140" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Mon, 17 Feb 2025 08:29:25 GMT</pubDate>
-</item>
-<item>
-<title>CAPI：一种基于聚类的纯MIM框架及其在图像识别中的应用</title>
-<link>https://arxiv.org/abs/2502.08769</link>
-<guid>https://arxiv.org/abs/2502.08769</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">CAPI框架通过聚类预测提升了自监督学习的表现，达到了高准确率。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了CAPI，一个新颖的纯蒙面图像建模（MIM）框架，旨在提升自监督表示学习的性能。我们系统分析了目标表示、损失函数和架构，提出了一种基于聚类的损失函数，以提高模型的训练稳定性和扩展性。CAPI使用ViT-L骨干网络，在ImageNet数据集上取得了83.8%的准确率，ADE20K数据集上实现了32.1%的mIoU，相较于现有的MIM方法大幅提升，并接近当前最先进的方法DINOv2。我们将所有代码和模型发布，促进后续研究和应用。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.08769" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 17 Feb 2025 07:24:28 GMT</pubDate>
-</item>
-<item>
-<title>AdaPTS: Adapting Univariate Foundation Models to Probabilistic Multivariate Time Series Forecasting</title>
-<link>https://arxiv.org/abs/2502.10235</link>
-<guid>https://arxiv.org/abs/2502.10235</guid>
-<content:encoded><![CDATA[
-Pre-trained foundation models (FMs) have shown exceptional performance in univariate time series forecasting tasks. However, several practical challenges persist, including managing intricate dependencies among features and quantifying uncertainty in predictions. This study aims to tackle these critical limitations by introducing adapters; feature-space transformations that facilitate the effective use of pre-trained univariate time series FMs for multivariate tasks. Adapters operate by projecting multivariate inputs into a suitable latent space and applying the FM independently to each dimension. Inspired by the literature on representation learning and partially stochastic Bayesian neural networks, we present a range of adapters and optimization/inference strategies. Experiments conducted on both synthetic and real-world datasets confirm the efficacy of adapters, demonstrating substantial enhancements in forecasting accuracy and uncertainty quantification compared to baseline methods. Our framework, AdaPTS, positions adapters as a modular, scalable, and effective solution for leveraging time series FMs in multivariate contexts, thereby promoting their wider adoption in real-world applications. We release the code at https://github.com/abenechehab/AdaPTS.
-]]></content:encoded>
-<pubDate>Mon, 17 Feb 2025 05:36:23 GMT</pubDate>
-</item>
-<item>
-<title>VibeGen：基于生成AI的蛋白质动态设计框架</title>
-<link>https://arxiv.org/abs/2502.10173</link>
-<guid>https://arxiv.org/abs/2502.10173</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">VibeGen是一种基于动态特性的蛋白质生成AI设计框架。</p><br /><br /><p><strong>摘要：</strong> VibeGen是一个新颖的蛋白质生成AI框架，旨在通过正常模式振动进行蛋白质的端到端设计。它采用双模型架构，包括一个基于指定振动模式生成序列候选者的蛋白质设计器和一个评估其动态准确性的蛋白质预测器。通过全原子分子模拟确认，设计的蛋白质能够准确再现规定的正常模式幅度，并在此基础上采用多种稳定、功能相关的结构。显著的是，生成的序列为全新设计，与自然蛋白质没有显著相似性，拓展了可及的蛋白质空间，突破了进化限制。本研究将蛋白质动态性引入生成设计过程，建立了序列与振动行为之间的双向联系，为工程化具有定制动态和功能特性的生物分子开辟了新的路径，具有重要的应用潜力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.10173" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 17 Feb 2025 05:09:33 GMT</pubDate>
-</item>
-<item>
-<title>通过新词开发理解人工智能的语言</title>
-<link>https://arxiv.org/abs/2502.07586</link>
-<guid>https://arxiv.org/abs/2502.07586</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">为有效理解AI，需构建新词汇以弥补现有语言的不足。</p><br /><br /><p><strong>摘要：</strong> 本文立论认为，要理解人工智能（AI），我们不能仅依赖现有的人类词汇。相反，我们应努力开发新词汇，以准确表达人类概念或机器概念，从而实现更好的理解。人类与机器的概念不同，因此可将可解释性视为一种沟通问题：人类需要能够参考和控制机器概念，同时将人类概念传达给机器。通过创建共享的人机语言，借助新词汇的发展，可解决这一沟通难题。成功的新词汇应当在抽象程度上适中，既不过于细化，以便于在多个语境中重用，又不太高层，以便于传达精确信息。作为概念验证，文章展示了如何通过“长度新词”控制大型语言模型的回答长度，以及使用“多样性新词”促进更加多变的响应。总体来说，我们认为，无法仅用现有词汇理解AI，而通过新词汇的扩展可为控制和理解机器创造新的机会。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.07586" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 17 Feb 2025 04:28:55 GMT</pubDate>
-</item>
-<item>
-<title>通过局部化关注层提升扩散模型文本生成能力</title>
-<link>https://arxiv.org/abs/2502.09935</link>
-<guid>https://arxiv.org/abs/2502.09935</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文探讨如何通过局部化扩散模型的注意力层来优化图像中的文本生成。</p><br /><br /><p><strong>摘要：</strong> 本文研究了如何在扩散模型中通过局部化局部注意力层来提高文本生成的效率和性能。研究表明，扩散模型参数的不到1%影响图像中文本内容的生成，主要集中在注意力层中。通过只对这些局部注意力层进行LoRA微调，可以显著提升大型扩散模型的文本生成能力，并且在保持图像生成质量和多样性的同时，应用于图像中文本编辑和防止有害文本生成。该方法跨多种扩散模型架构（如U-Net和Transformer）均具有广泛适用性，能够兼容多种文本编码器，如CLIP和T5。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.09935" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 17 Feb 2025 03:06:17 GMT</pubDate>
-</item>
-<item>
-<title>MR采样器：加速可控生成中的扩散模型采样过程</title>
-<link>https://arxiv.org/abs/2502.07856</link>
-<guid>https://arxiv.org/abs/2502.07856</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文提出MR采样器算法，显著加速了MR扩散模型的采样过程。</p><br /><br /><p><strong>摘要：</strong> 随着扩散模型应用的不断增长，可控生成的重要性和挑战并存。目前的可控生成方法主要集中在修改扩散模型的评分函数，而均值回归(MR)扩散则直接修改随机微分方程(SDE)的结构，使得图像条件的结合更加简便自然。然而，现有的无训练快速采样器并不适用于MR扩散，因此在获得高质量样本时，MR扩散需要数百次函数评估(NFEs)。本文提出了一种新的算法MR采样器(MRS)，旨在减少MR扩散的采样NFEs。该算法解决了与MR扩散相关的逆向时间SDE和概率流普通微分方程(PF-ODE)，并推导出半解析解，包括一个解析函数和一个由神经网络参数化的积分。基于这一解法，我们能够在更少的步骤中生成高质量样本。本方法无需训练，支持所有主流参数化，包括噪声预测、数据预测和速度预测。大量实验表明，MR采样器在十个不同的图像恢复任务中以10到20倍的加速维持高采样质量，极大提高了MR扩散的可控生成实用性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.07856" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 17 Feb 2025 02:03:05 GMT</pubDate>
 </item>
 </channel>
 </rss>
