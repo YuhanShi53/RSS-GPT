@@ -5,15 +5,61 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>HiFlow: Training-free High-Resolution Image Generation with Flow-Aligned Guidance</title>
+<link>https://arxiv.org/abs/2504.06232</link>
+<guid>https://arxiv.org/abs/2504.06232</guid>
+<content:encoded><![CDATA[
+
+  Text-to-image (T2I) diffusion/flow models have drawn considerable attention recently due to their remarkable ability to deliver flexible visual creations. Still, high-resolution image synthesis presents formidable challenges due to the scarcity and complexity of high-resolution content. To this end, we present HiFlow, a training-free and model-agnostic framework to unlock the resolution potential of pre-trained flow models. Specifically, HiFlow establishes a virtual reference flow within the high-resolution space that effectively captures the characteristics of low-resolution flow information, offering guidance for high-resolution generation through three key aspects: initialization alignment for low-frequency consistency, direction alignment for structure preservation, and acceleration alignment for detail fidelity. By leveraging this flow-aligned guidance, HiFlow substantially elevates the quality of high-resolution image synthesis of T2I models and demonstrates versatility across their personalized variants. Extensive experiments validate HiFlow's superiority in achieving superior high-resolution image quality over current state-of-the-art methods.
+
+]]></content:encoded>
+<pubDate>Tue, 08 Apr 2025 13:30:40 GMT</pubDate>
+<pubDate>Tue, 08 Apr 2025 13:30:40 GMT</pubDate>
+</item>
+<item>
+<title>V-MAGE: A Game Evaluation Framework for Assessing Visual-Centric Capabilities in Multimodal Large Language Models</title>
+<link>https://arxiv.org/abs/2504.06148</link>
+<guid>https://arxiv.org/abs/2504.06148</guid>
+<content:encoded><![CDATA[
+
+  Recent advancements in Multimodal Large Language Models (MLLMs) have led to significant improvements across various multimodal benchmarks. However, as evaluations shift from static datasets to open-world, dynamic environments, current game-based benchmarks remain inadequate because they lack visual-centric tasks and fail to assess the diverse reasoning skills required for real-world decision-making. To address this, we introduce Visual-centric Multiple Abilities Game Evaluation (V-MAGE), a game-based evaluation framework designed to assess visual reasoning capabilities of MLLMs. V-MAGE features five diverse games with 30+ handcrafted levels, testing models on core visual skills such as positioning, trajectory tracking, timing, and visual memory, alongside higher-level reasoning like long-term planning and deliberation. We use V-MAGE to evaluate leading MLLMs, revealing significant challenges in their visual perception and reasoning. In all game environments, the top-performing MLLMs, as determined by Elo rating comparisons, exhibit a substantial performance gap compared to humans. Our findings highlight critical limitations, including various types of perceptual errors made by the models, and suggest potential avenues for improvement from an agent-centric perspective, such as refining agent strategies and addressing perceptual inaccuracies. Code is available at https://github.com/CSU-JPG/V-MAGE.
+
+]]></content:encoded>
+<pubDate>Tue, 08 Apr 2025 11:43:01 GMT</pubDate>
+<pubDate>Tue, 08 Apr 2025 11:43:01 GMT</pubDate>
+</item>
+<item>
+<title>COIG-P: A High-Quality and Large-Scale Chinese Preference Dataset for Alignment with Human Values</title>
+<link>https://arxiv.org/abs/2504.05535</link>
+<guid>https://arxiv.org/abs/2504.05535</guid>
+<content:encoded><![CDATA[
+
+  Aligning large language models (LLMs) with human preferences has achieved remarkable success. However, existing Chinese preference datasets are limited by small scale, narrow domain coverage, and lack of rigorous data validation. Additionally, the reliance on human annotators for instruction and response labeling significantly constrains the scalability of human preference datasets. To address these challenges, we design an LLM-based Chinese preference dataset annotation pipeline with no human intervention. Specifically, we crawled and carefully filtered 92k high-quality Chinese queries and employed 15 mainstream LLMs to generate and score chosen-rejected response pairs. Based on it, we introduce COIG-P (Chinese Open Instruction Generalist - Preference), a high-quality, large-scale Chinese preference dataset, comprises 1,009k Chinese preference pairs spanning 6 diverse domains: Chat, Code, Math, Logic, Novel, and Role. Building upon COIG-P, to reduce the overhead of using LLMs for scoring, we trained a 8B-sized Chinese Reward Model (CRM) and meticulously constructed a Chinese Reward Benchmark (CRBench). Evaluation results based on AlignBench liu2024alignbenchbenchmarkingchinesealignment show that that COIG-P significantly outperforms other Chinese preference datasets, and it brings significant performance improvements ranging from 2% to 12% for the Qwen2/2.5 and Infinity-Instruct-3M-0625 model series, respectively. The results on CRBench demonstrate that our CRM has a strong and robust scoring ability. We apply it to filter chosen-rejected response pairs in a test split of COIG-P, and our experiments show that it is comparable to GPT-4o in identifying low-quality samples while maintaining efficiency and cost-effectiveness. Our codes and data are released in https://github.com/multimodal-art-projection/COIG-P.
+
+]]></content:encoded>
+<pubDate>Mon, 07 Apr 2025 18:15:51 GMT</pubDate>
+<pubDate>Mon, 07 Apr 2025 18:15:51 GMT</pubDate>
+</item>
+<item>
+<title>Accelerate Parallelizable Reasoning via Parallel Decoding within One Sequence</title>
+<link>https://arxiv.org/abs/2503.20533</link>
+<guid>https://arxiv.org/abs/2503.20533</guid>
+<content:encoded><![CDATA[
+
+  Recent advances in reasoning models have demonstrated significant improvements in accuracy, particularly for complex tasks such as mathematical reasoning, by employing detailed and comprehensive reasoning processes. However, generating these lengthy reasoning sequences is computationally expensive and time-consuming. To address this inefficiency, we leverage the inherent parallelizability of certain tasks to accelerate the reasoning process. Specifically, when multiple parallel reasoning branches exist, we decode multiple tokens per step using a specialized attention mask, processing them within a single sequence, avoiding additional memory usage. Experimental results show that our method achieves over 100% speedup in decoding time while maintaining the answer quality.
+
+]]></content:encoded>
+<pubDate>Wed, 26 Mar 2025 09:28:57 GMT</pubDate>
+<pubDate>Wed, 26 Mar 2025 09:28:57 GMT</pubDate>
+</item>
+
+<item>
 <title>OmniSVG: A Unified Scalable Vector Graphics Generation Model</title>
 <link>https://arxiv.org/abs/2504.06263</link>
 <guid>https://arxiv.org/abs/2504.06263</guid>
 <content:encoded><![CDATA[
-
-  Scalable Vector Graphics (SVG) is an important image format widely adopted in graphic design because of their resolution independence and editability. The study of generating high-quality SVG has continuously drawn attention from both designers and researchers in the AIGC community. However, existing methods either produces unstructured outputs with huge computational cost or is limited to generating monochrome icons of over-simplified structures. To produce high-quality and complex SVG, we propose OmniSVG, a unified framework that leverages pre-trained Vision-Language Models (VLMs) for end-to-end multimodal SVG generation. By parameterizing SVG commands and coordinates into discrete tokens, OmniSVG decouples structural logic from low-level geometry for efficient training while maintaining the expressiveness of complex SVG structure. To further advance the development of SVG synthesis, we introduce MMSVG-2M, a multimodal dataset with two million richly annotated SVG assets, along with a standardized evaluation protocol for conditional SVG generation tasks. Extensive experiments show that OmniSVG outperforms existing methods and demonstrates its potential for integration into professional SVG design workflows.
-
+Scalable Vector Graphics (SVG) is an important image format widely adopted in graphic design because of their resolution independence and editability. The study of generating high-quality SVG has continuously drawn attention from both designers and researchers in the AIGC community. However, existing methods either produces unstructured outputs with huge computational cost or is limited to generating monochrome icons of over-simplified structures. To produce high-quality and complex SVG, we propose OmniSVG, a unified framework that leverages pre-trained Vision-Language Models (VLMs) for end-to-end multimodal SVG generation. By parameterizing SVG commands and coordinates into discrete tokens, OmniSVG decouples structural logic from low-level geometry for efficient training while maintaining the expressiveness of complex SVG structure. To further advance the development of SVG synthesis, we introduce MMSVG-2M, a multimodal dataset with two million richly annotated SVG assets, along with a standardized evaluation protocol for conditional SVG generation tasks. Extensive experiments show that OmniSVG outperforms existing methods and demonstrates its potential for integration into professional SVG design workflows.
 ]]></content:encoded>
-<pubDate>Tue, 08 Apr 2025 13:59:49 GMT</pubDate>
 <pubDate>Tue, 08 Apr 2025 13:59:49 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +67,8 @@
 <link>https://arxiv.org/abs/2504.06261</link>
 <guid>https://arxiv.org/abs/2504.06261</guid>
 <content:encoded><![CDATA[
-
-  Large Language Models (LLMs) have demonstrated the ability to tackle increasingly complex tasks through advanced reasoning, long-form content generation, and tool use. Solving these tasks often involves long inference-time computations. In human problem solving, a common strategy to expedite work is collaboration: by dividing the problem into sub-tasks, exploring different strategies concurrently, etc. Recent research has shown that LLMs can also operate in parallel by implementing explicit cooperation frameworks, such as voting mechanisms or the explicit creation of independent sub-tasks that can be executed in parallel. However, each of these frameworks may not be suitable for all types of tasks, which can hinder their applicability. In this work, we propose a different design approach: we run LLM "workers" in parallel , allowing them to synchronize via a concurrently-updated attention cache and prompt these workers to decide how best to collaborate. Our approach allows the instances to come up with their own collaboration strategy for the problem at hand, all the while "seeing" each other's partial progress in the concurrent cache. We implement this approach via Hogwild! Inference: a parallel LLM inference engine where multiple instances of the same LLM run in parallel with the same attention cache, with "instant" access to each other's generated tokens. Hogwild! inference takes advantage of Rotary Position Embeddings (RoPE) to avoid recomputation while improving parallel hardware utilization. We find that modern reasoning-capable LLMs can perform inference with shared Key-Value cache out of the box, without additional fine-tuning.
-
+Large Language Models (LLMs) have demonstrated the ability to tackle increasingly complex tasks through advanced reasoning, long-form content generation, and tool use. Solving these tasks often involves long inference-time computations. In human problem solving, a common strategy to expedite work is collaboration: by dividing the problem into sub-tasks, exploring different strategies concurrently, etc. Recent research has shown that LLMs can also operate in parallel by implementing explicit cooperation frameworks, such as voting mechanisms or the explicit creation of independent sub-tasks that can be executed in parallel. However, each of these frameworks may not be suitable for all types of tasks, which can hinder their applicability. In this work, we propose a different design approach: we run LLM "workers" in parallel , allowing them to synchronize via a concurrently-updated attention cache and prompt these workers to decide how best to collaborate. Our approach allows the instances to come up with their own collaboration strategy for the problem at hand, all the while "seeing" each other's partial progress in the concurrent cache. We implement this approach via Hogwild! Inference: a parallel LLM inference engine where multiple instances of the same LLM run in parallel with the same attention cache, with "instant" access to each other's generated tokens. Hogwild! inference takes advantage of Rotary Position Embeddings (RoPE) to avoid recomputation while improving parallel hardware utilization. We find that modern reasoning-capable LLMs can perform inference with shared Key-Value cache out of the box, without additional fine-tuning.
 ]]></content:encoded>
-<pubDate>Tue, 08 Apr 2025 13:59:41 GMT</pubDate>
 <pubDate>Tue, 08 Apr 2025 13:59:41 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +76,8 @@
 <link>https://arxiv.org/abs/2504.05979</link>
 <guid>https://arxiv.org/abs/2504.05979</guid>
 <content:encoded><![CDATA[
-
-  The landscape of image generation has rapidly evolved, from early GAN-based approaches to diffusion models and, most recently, to unified generative architectures that seek to bridge understanding and generation tasks. Recent advances, especially the GPT-4o, have demonstrated the feasibility of high-fidelity multimodal generation, their architectural design remains mysterious and unpublished. This prompts the question of whether image and text generation have already been successfully integrated into a unified framework for those methods. In this work, we conduct an empirical study of GPT-4o's image generation capabilities, benchmarking it against leading open-source and commercial models. Our evaluation covers four main categories, including text-to-image, image-to-image, image-to-3D, and image-to-X generation, with more than 20 tasks. Our analysis highlights the strengths and limitations of GPT-4o under various settings, and situates it within the broader evolution of generative modeling. Through this investigation, we identify promising directions for future unified generative models, emphasizing the role of architectural design and data scaling.
-
+The landscape of image generation has rapidly evolved, from early GAN-based approaches to diffusion models and, most recently, to unified generative architectures that seek to bridge understanding and generation tasks. Recent advances, especially the GPT-4o, have demonstrated the feasibility of high-fidelity multimodal generation, their architectural design remains mysterious and unpublished. This prompts the question of whether image and text generation have already been successfully integrated into a unified framework for those methods. In this work, we conduct an empirical study of GPT-4o's image generation capabilities, benchmarking it against leading open-source and commercial models. Our evaluation covers four main categories, including text-to-image, image-to-image, image-to-3D, and image-to-X generation, with more than 20 tasks. Our analysis highlights the strengths and limitations of GPT-4o under various settings, and situates it within the broader evolution of generative modeling. Through this investigation, we identify promising directions for future unified generative models, emphasizing the role of architectural design and data scaling.
 ]]></content:encoded>
-<pubDate>Tue, 08 Apr 2025 08:34:36 GMT</pubDate>
 <pubDate>Tue, 08 Apr 2025 08:34:36 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +85,8 @@
 <link>https://arxiv.org/abs/2504.05599</link>
 <guid>https://arxiv.org/abs/2504.05599</guid>
 <content:encoded><![CDATA[
-
-  We introduce Skywork R1V, a multimodal reasoning model extending the an R1-series Large language models (LLM) to visual modalities via an efficient multimodal transfer method. Leveraging a lightweight visual projector, Skywork R1V facilitates seamless multimodal adaptation without necessitating retraining of either the foundational language model or the vision encoder. To strengthen visual-text alignment, we propose a hybrid optimization strategy that combines Iterative Supervised Fine-Tuning (SFT) with Group Relative Policy Optimization (GRPO), significantly enhancing cross-modal integration efficiency. Additionally, we introduce an adaptive-length Chain-of-Thought distillation approach for reasoning data generation. This approach dynamically optimizes reasoning chain lengths, thereby enhancing inference efficiency and preventing excessive reasoning overthinking. Empirical evaluations demonstrate that Skywork R1V, with only 38B parameters, delivers competitive performance, achieving a score of 69.0 on the MMMU benchmark and 67.5 on MathVista. Meanwhile, it maintains robust textual reasoning performance, evidenced by impressive scores of 72.0 on AIME and 94.0 on MATH500. The Skywork R1V model weights have been publicly released to promote openness and reproducibility.
-
+We introduce Skywork R1V, a multimodal reasoning model extending the an R1-series Large language models (LLM) to visual modalities via an efficient multimodal transfer method. Leveraging a lightweight visual projector, Skywork R1V facilitates seamless multimodal adaptation without necessitating retraining of either the foundational language model or the vision encoder. To strengthen visual-text alignment, we propose a hybrid optimization strategy that combines Iterative Supervised Fine-Tuning (SFT) with Group Relative Policy Optimization (GRPO), significantly enhancing cross-modal integration efficiency. Additionally, we introduce an adaptive-length Chain-of-Thought distillation approach for reasoning data generation. This approach dynamically optimizes reasoning chain lengths, thereby enhancing inference efficiency and preventing excessive reasoning overthinking. Empirical evaluations demonstrate that Skywork R1V, with only 38B parameters, delivers competitive performance, achieving a score of 69.0 on the MMMU benchmark and 67.5 on MathVista. Meanwhile, it maintains robust textual reasoning performance, evidenced by impressive scores of 72.0 on AIME and 94.0 on MATH500. The Skywork R1V model weights have been publicly released to promote openness and reproducibility.
 ]]></content:encoded>
-<pubDate>Mon, 07 Apr 2025 21:19:20 GMT</pubDate>
 <pubDate>Mon, 07 Apr 2025 21:19:20 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +94,8 @@
 <link>https://arxiv.org/abs/2504.05594</link>
 <guid>https://arxiv.org/abs/2504.05594</guid>
 <content:encoded><![CDATA[
-
-  Balancing fidelity and editability is essential in text-based image editing (TIE), where failures commonly lead to over- or under-editing issues. Existing methods typically rely on attention injections for structure preservation and leverage the inherent text alignment capabilities of pre-trained text-to-image (T2I) models for editability, but they lack explicit and unified mechanisms to properly balance these two objectives. In this work, we introduce UnifyEdit, a tuning-free method that performs diffusion latent optimization to enable a balanced integration of fidelity and editability within a unified framework. Unlike direct attention injections, we develop two attention-based constraints: a self-attention (SA) preservation constraint for structural fidelity, and a cross-attention (CA) alignment constraint to enhance text alignment for improved editability. However, simultaneously applying both constraints can lead to gradient conflicts, where the dominance of one constraint results in over- or under-editing. To address this challenge, we introduce an adaptive time-step scheduler that dynamically adjusts the influence of these constraints, guiding the diffusion latent toward an optimal balance. Extensive quantitative and qualitative experiments validate the effectiveness of our approach, demonstrating its superiority in achieving a robust balance between structure preservation and text alignment across various editing tasks, outperforming other state-of-the-art methods. The source code will be available at https://github.com/CUC-MIPG/UnifyEdit.
-
+Balancing fidelity and editability is essential in text-based image editing (TIE), where failures commonly lead to over- or under-editing issues. Existing methods typically rely on attention injections for structure preservation and leverage the inherent text alignment capabilities of pre-trained text-to-image (T2I) models for editability, but they lack explicit and unified mechanisms to properly balance these two objectives. In this work, we introduce UnifyEdit, a tuning-free method that performs diffusion latent optimization to enable a balanced integration of fidelity and editability within a unified framework. Unlike direct attention injections, we develop two attention-based constraints: a self-attention (SA) preservation constraint for structural fidelity, and a cross-attention (CA) alignment constraint to enhance text alignment for improved editability. However, simultaneously applying both constraints can lead to gradient conflicts, where the dominance of one constraint results in over- or under-editing. To address this challenge, we introduce an adaptive time-step scheduler that dynamically adjusts the influence of these constraints, guiding the diffusion latent toward an optimal balance. Extensive quantitative and qualitative experiments validate the effectiveness of our approach, demonstrating its superiority in achieving a robust balance between structure preservation and text alignment across various editing tasks, outperforming other state-of-the-art methods. The source code will be available at https://github.com/CUC-MIPG/UnifyEdit.
 ]]></content:encoded>
-<pubDate>Mon, 07 Apr 2025 21:02:50 GMT</pubDate>
 <pubDate>Mon, 07 Apr 2025 21:02:50 GMT</pubDate>
 </item>
 <item>
@@ -69,11 +103,8 @@
 <link>https://arxiv.org/abs/2504.02810</link>
 <guid>https://arxiv.org/abs/2504.02810</guid>
 <content:encoded><![CDATA[
-
-  With powerful large language models (LLMs) demonstrating superhuman reasoning capabilities, a critical question arises: Do LLMs genuinely reason, or do they merely recall answers from their extensive, web-scraped training datasets? Publicly released benchmarks inevitably become contaminated once incorporated into subsequent LLM training sets, undermining their reliability as faithful assessments. To address this, we introduce KUMO, a generative evaluation framework designed specifically for assessing reasoning in LLMs. KUMO synergistically combines LLMs with symbolic engines to dynamically produce diverse, multi-turn reasoning tasks that are partially observable and adjustable in difficulty. Through an automated pipeline, KUMO continuously generates novel tasks across open-ended domains, compelling models to demonstrate genuine generalization rather than memorization. We evaluated 23 state-of-the-art LLMs on 5,000 tasks across 100 domains created by KUMO, benchmarking their reasoning abilities against university students. Our findings reveal that many LLMs have outperformed university-level performance on easy reasoning tasks, and reasoning-scaled LLMs reach university-level performance on complex reasoning challenges. Moreover, LLM performance on KUMO tasks correlates strongly with results on newly released real-world reasoning benchmarks, underscoring KUMO's value as a robust, enduring assessment tool for genuine LLM reasoning capabilities.
-
+With powerful large language models (LLMs) demonstrating superhuman reasoning capabilities, a critical question arises: Do LLMs genuinely reason, or do they merely recall answers from their extensive, web-scraped training datasets? Publicly released benchmarks inevitably become contaminated once incorporated into subsequent LLM training sets, undermining their reliability as faithful assessments. To address this, we introduce KUMO, a generative evaluation framework designed specifically for assessing reasoning in LLMs. KUMO synergistically combines LLMs with symbolic engines to dynamically produce diverse, multi-turn reasoning tasks that are partially observable and adjustable in difficulty. Through an automated pipeline, KUMO continuously generates novel tasks across open-ended domains, compelling models to demonstrate genuine generalization rather than memorization. We evaluated 23 state-of-the-art LLMs on 5,000 tasks across 100 domains created by KUMO, benchmarking their reasoning abilities against university students. Our findings reveal that many LLMs have outperformed university-level performance on easy reasoning tasks, and reasoning-scaled LLMs reach university-level performance on complex reasoning challenges. Moreover, LLM performance on KUMO tasks correlates strongly with results on newly released real-world reasoning benchmarks, underscoring KUMO's value as a robust, enduring assessment tool for genuine LLM reasoning capabilities.
 ]]></content:encoded>
-<pubDate>Thu, 03 Apr 2025 13:54:18 GMT</pubDate>
 <pubDate>Thu, 03 Apr 2025 13:54:18 GMT</pubDate>
 </item>
 <item>
@@ -81,11 +112,8 @@
 <link>https://arxiv.org/abs/2504.02160</link>
 <guid>https://arxiv.org/abs/2504.02160</guid>
 <content:encoded><![CDATA[
-
-  Although subject-driven generation has been extensively explored in image generation due to its wide applications, it still has challenges in data scalability and subject expansibility. For the first challenge, moving from curating single-subject datasets to multiple-subject ones and scaling them is particularly difficult. For the second, most recent methods center on single-subject generation, making it hard to apply when dealing with multi-subject scenarios. In this study, we propose a highly-consistent data synthesis pipeline to tackle this challenge. This pipeline harnesses the intrinsic in-context generation capabilities of diffusion transformers and generates high-consistency multi-subject paired data. Additionally, we introduce UNO, which consists of progressive cross-modal alignment and universal rotary position embedding. It is a multi-image conditioned subject-to-image model iteratively trained from a text-to-image model. Extensive experiments show that our method can achieve high consistency while ensuring controllability in both single-subject and multi-subject driven generation.
-
+Although subject-driven generation has been extensively explored in image generation due to its wide applications, it still has challenges in data scalability and subject expansibility. For the first challenge, moving from curating single-subject datasets to multiple-subject ones and scaling them is particularly difficult. For the second, most recent methods center on single-subject generation, making it hard to apply when dealing with multi-subject scenarios. In this study, we propose a highly-consistent data synthesis pipeline to tackle this challenge. This pipeline harnesses the intrinsic in-context generation capabilities of diffusion transformers and generates high-consistency multi-subject paired data. Additionally, we introduce UNO, which consists of progressive cross-modal alignment and universal rotary position embedding. It is a multi-image conditioned subject-to-image model iteratively trained from a text-to-image model. Extensive experiments show that our method can achieve high consistency while ensuring controllability in both single-subject and multi-subject driven generation.
 ]]></content:encoded>
-<pubDate>Wed, 02 Apr 2025 18:20:21 GMT</pubDate>
 <pubDate>Wed, 02 Apr 2025 18:20:21 GMT</pubDate>
 </item>
 <item>
@@ -93,14 +121,10 @@
 <link>https://arxiv.org/abs/2504.00043</link>
 <guid>https://arxiv.org/abs/2504.00043</guid>
 <content:encoded><![CDATA[
-
-  Existing reasoning evaluation frameworks for Large Language Models (LLMs) and Large Vision-Language Models (LVLMs) predominantly either assess text-based reasoning or vision-language understanding capabilities, with limited dynamic interplay between textual and visual constraints. To address this limitation, we introduce CrossWordBench, a benchmark designed to evaluate the reasoning capabilities of both LLMs and LVLMs through the medium of crossword puzzles-a task requiring multimodal adherence to semantic constraints from text-based clues and intersectional constraints from visual grid structures. CrossWordBench leverages a controllable puzzle generation framework that produces puzzles in multiple formats (text and image) and offers different evaluation strategies ranging from direct puzzle solving to interactive modes. Our extensive evaluation of over 20 models reveals that reasoning LLMs outperform non-reasoning models substantially by effectively leveraging crossing-letter constraints. We further demonstrate that LVLMs struggle with the task, showing a strong correlation between their puzzle-solving performance and grid-parsing accuracy. Our findings offer insights into the limitations of the reasoning capabilities of current LLMs and LVLMs, and provide an effective approach for creating multimodal constrained tasks for future evaluations.
-
+Existing reasoning evaluation frameworks for Large Language Models (LLMs) and Large Vision-Language Models (LVLMs) predominantly either assess text-based reasoning or vision-language understanding capabilities, with limited dynamic interplay between textual and visual constraints. To address this limitation, we introduce CrossWordBench, a benchmark designed to evaluate the reasoning capabilities of both LLMs and LVLMs through the medium of crossword puzzles-a task requiring multimodal adherence to semantic constraints from text-based clues and intersectional constraints from visual grid structures. CrossWordBench leverages a controllable puzzle generation framework that produces puzzles in multiple formats (text and image) and offers different evaluation strategies ranging from direct puzzle solving to interactive modes. Our extensive evaluation of over 20 models reveals that reasoning LLMs outperform non-reasoning models substantially by effectively leveraging crossing-letter constraints. We further demonstrate that LVLMs struggle with the task, showing a strong correlation between their puzzle-solving performance and grid-parsing accuracy. Our findings offer insights into the limitations of the reasoning capabilities of current LLMs and LVLMs, and provide an effective approach for creating multimodal constrained tasks for future evaluations.
 ]]></content:encoded>
 <pubDate>Sun, 30 Mar 2025 16:03:36 GMT</pubDate>
-<pubDate>Sun, 30 Mar 2025 16:03:36 GMT</pubDate>
 </item>
-
 <item>
 <title>3D Scene Understanding Through Local Random Access Sequence Modeling</title>
 <link>https://arxiv.org/abs/2504.03875</link>
@@ -9028,78 +9052,6 @@ We introduce SWE-Lancer, a benchmark of over 1,400 freelance software engineerin
 <div><p style="color: gray;">SAFE-SQL通过自生成示例提升Text-to-SQL的执行准确性。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种新框架SAFE-SQL，旨在将自然语言问题转换为可执行的SQL查询。传统方法如骨架掩码选择在获取相似训练示例以指导大型语言模型时表现出色，但在实际应用中面临示例缺失的挑战。为此，SAFE-SQL采用自增强上下文学习，通过生成并过滤自增强示例，显著提升SQL生成效果。该框架首先引导大型语言模型生成与测试输入相关的多个Text-to-SQL示例，并通过三种相关性评估进行过滤，构建高质量的上下文学习示例。最终，SAFE-SQL在零-shot和少-shot的Text-to-SQL任务中超越了传统框架，尤其在困难和未见场景中表现出额外的性能提升。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.11438" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Mon, 17 Feb 2025 23:06:03 GMT</pubDate>
-</item>
-<item>
-<title>CRANE：一种增强推理能力的约束解码算法</title>
-<link>https://arxiv.org/abs/2502.09061</link>
-<guid>https://arxiv.org/abs/2502.09061</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">CRANE算法在约束生成中平衡了语法和推理能力。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了如何在保证语法和语义正确性的同时，增强大型语言模型（LLMs）的推理能力。我们首先理论上解释了限制LLM输出为严格语法形式为何会减弱其推理能力。接着，我们提出通过增强输出语法、增加设计良好的额外规则，能够在确保输出合规的同时维持推理能力。基于这些理论见解，我们开发了CRANE算法，它在约束生成的正确性与非约束生成的灵活性之间取得有效平衡。通过对多个开源LLM和基准进行实验，结果显示CRANE在严苛的符号推理基准GSM-symbolic和FOLIO上，相较于最先进的约束解码策略和标准的非约束解码，准确性提升达10%。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.09061" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 17 Feb 2025 22:43:51 GMT</pubDate>
-</item>
-<item>
-<title>利用高质量LLM数据提升信息提取模型性能</title>
-<link>https://arxiv.org/abs/2502.11275</link>
-<guid>https://arxiv.org/abs/2502.11275</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">Cuckoo模型展示了如何利用LLM数据提升信息提取效果。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了在信息提取（IE）领域中，将大型语言模型（LLM）的数据应用于IE模型的可能性。我们提出了一种新的NTE（下一标记提取）范式，通过将预测下一个标记的过程重新设计为对已存在上下文中标记的提取，从而构建出Cuckoo模型，该模型基于来自LLM的102.6M抽取数据进行训练。在少量样本环境下，Cuckoo能有效适应传统和复杂指令下的信息提取任务，表现优于现有的预训练IE模型。作为一种“搭便车”方案，Cuckoo能随着LLM数据准备的持续进展而自然演化，无需额外的手动干预，即可从LLM训练管道的改进中获益。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.11275" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 17 Feb 2025 22:10:49 GMT</pubDate>
-</item>
-<item>
-<title>合成数据增强在项目级证明导向编程中的应用</title>
-<link>https://arxiv.org/abs/2502.11901</link>
-<guid>https://arxiv.org/abs/2502.11901</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本研究提出了一种合成数据增强方法以解决证明导向编程中的数据稀缺问题。</p><br /><br /><p><strong>摘要：</strong> 现有的语言模型在证明导向编程中面临数据稀缺的问题，主要表现为缺乏足够的相关语料库和项目级实现。本文首次提出了一种基于合成数据增强的方法，旨在通过生成和修复项目级的证明导向编程问题来应对这一挑战。该方法通过合成基本的证明导向编程问题提升语言模型在特定编程语言中的熟练程度，同时引入多样化的编码数据，以增强推理能力，并在现有代码库中创建新的证明和修复数据。这一方法使得语言模型能够在函数级和代码库级别生成及修复证明。我们展示了我们微调后的14B参数模型PoPilot，在项目级证明导向编程中超越了GPT-4o模型64%的性能，并能够通过修复其输出，比GPT-4o的自我修复提高54%的性能。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.11901" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 17 Feb 2025 22:05:54 GMT</pubDate>
-</item>
-<item>
-<title>深度分析大型推理模型中的过度思考现象</title>
-<link>https://arxiv.org/abs/2502.08235</link>
-<guid>https://arxiv.org/abs/2502.08235</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">研究表明，过度思考限制了大型推理模型在互动环境中的表现。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了大型推理模型（LRMs）在互动环境中的过度思考现象，这种现象表现为模型倾向于使用冗长的内部推理链而不是进行环境互动。通过在SWE Bench Verified软件工程任务上的实验，我们识别了三种常见行为模式：分析瘫痪、鲁莽行动和过早脱离。分析结果显示，过度思考得分较高与模型表现下降相关，推理模型表现出比非推理模型更强的过度思考倾向。通过采取一些简单措施，如选择过度思考得分较低的解决方案，我们发现可将模型性能提升近30%，同时计算成本降低43%。这些发现表明，缓解过度思考在实际应用中具有重要意义。我们建议可通过利用原生功能调用能力和选择性的强化学习来减轻过度思考倾向，并开源了我们的评估框架和数据集，以推动该研究方向的发展。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.08235" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 17 Feb 2025 17:09:38 GMT</pubDate>
-</item>
-<item>
-<title>选择性自我监督微调方法（S3FT）提升大语言模型的泛化能力</title>
-<link>https://arxiv.org/abs/2502.08130</link>
-<guid>https://arxiv.org/abs/2502.08130</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">S3FT方法在保持性能的同时，改善了大语言模型的泛化能力。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种新的微调方法——选择性自我监督微调（S3FT），该方法旨在提高大语言模型（LLMs）在特定任务上的性能，同时改善其泛化能力。S3FT的方法通过利用多个对同一查询的有效响应来减少模型在微调过程中的过拟合，从而避免过度专注于训练数据的特征。具体而言，S3FT首先通过部署适当的评估者，识别训练集中的正确模型响应，然后利用这些正确响应与目标响应（或其同义句）微调模型。实验结果显示，与标准监督微调（SFT）相比，S3FT在数学推理、Python编程和阅读理解任务上显著提升了性能，并将标准SFT导致的平均性能下降（最高达4.4）减少了一半，说明S3FT在提高模型任务性能的同时，具备更好的泛化能力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.08130" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 17 Feb 2025 12:27:43 GMT</pubDate>
-</item>
-<item>
-<title>CLaMP 3: 一种跨模态与跨语言音乐信息检索统一框架</title>
-<link>https://arxiv.org/abs/2502.10362</link>
-<guid>https://arxiv.org/abs/2502.10362</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">CLaMP 3通过对比学习实现跨模态及语言的音乐信息检索。</p><br /><br /><p><strong>摘要：</strong> CLaMP 3是一个为解决音乐信息检索中跨模态和跨语言泛化挑战而开发的统一框架。它通过对比学习将主要音乐模态（包括乐谱、表演信号和音频记录）与多语言文本对齐至共享表示空间，从而实现以文本为桥梁的各模态检索。该框架具有可适应新语言的多语言文本编码器，显示了强大的跨语言泛化能力。我们利用增强检索生成技术，创建了M4-RAG数据集，包含231万对音乐文本对，并附有丰富的元数据，涵盖广泛的全球音乐传统。为推动未来研究，我们还发布了WikiMT-X基准数据集，包含1000个乐谱、音频以及多样化文本描述的三元组。实验结果显示，CLaMP 3在多个音乐信息检索任务上达到领先性能，显著超越之前的强基线，展现出在多模态和多语言音乐上下文中的优秀泛化能力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.10362" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 17 Feb 2025 10:18:04 GMT</pubDate>
-</item>
-<item>
-<title>高效多级卷积架构在3D视觉定位中的应用</title>
-<link>https://arxiv.org/abs/2502.10392</link>
-<guid>https://arxiv.org/abs/2502.10392</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出一种高效的多级卷积架构，优化3D视觉定位性能。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种高效的多级卷积架构，用于3D视觉定位，旨在克服传统方法因双阶段或点基础架构导致实时推理困难的问题。受3D物体检测中稀疏卷积架构成功的启发，结合文本特征，使3D场景表示与文本特征有效互动，采用文本引导剪枝（TGP）与基于补全的加法（CBA）方法，通过逐渐区域剪枝与目标补全高度融合信息。TGP通过交叉注意力有效地稀疏化3D场景表示，CBA则解决了过度剪枝对几何信息影响的问题，以微小的计算开销修复被过度剪枝区域。实验显示，与以往单阶段方法相比，该方法在推理速度上领先，且在ScanRefer、NR3D和SR3D上存在显著的准确率提升。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.10392" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 17 Feb 2025 09:25:39 GMT</pubDate>
-</item>
-<item>
-<title>DarwinLM: Evolutionary Structured Pruning of Large Language Models</title>
-<link>https://arxiv.org/abs/2502.07780</link>
-<guid>https://arxiv.org/abs/2502.07780</guid>
-<content:encoded><![CDATA[
-Large Language Models (LLMs) have achieved significant success across various NLP tasks. However, their massive computational costs limit their widespread use, particularly in real-time applications. Structured pruning offers an effective solution by compressing models and directly providing end-to-end speed improvements, regardless of the hardware environment. Meanwhile, different components of the model exhibit varying sensitivities towards pruning, calling for non-uniform model compression. However, a pruning method should not only identify a capable substructure, but also account for post-compression training. To this end, we propose \sysname, a method for training-aware structured pruning. \sysname builds upon an evolutionary search process, generating multiple offspring models in each generation through mutation, and selecting the fittest for survival. To assess the effect of post-training, we incorporate a lightweight, multistep training process within the offspring population, progressively increasing the number of tokens and eliminating poorly performing models in each selection stage. We validate our method through extensive experiments on Llama-2-7B, Llama-3.1-8B and Qwen-2.5-14B-Instruct, achieving state-of-the-art performance for structured pruning. For instance, \sysname surpasses ShearedLlama while requiring 5times less training data during post-compression training.
-]]></content:encoded>
-<pubDate>Mon, 17 Feb 2025 08:54:04 GMT</pubDate>
 </item>
 </channel>
 </rss>
