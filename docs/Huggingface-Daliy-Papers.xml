@@ -4,16 +4,14 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+
 <item>
 <title>HiFlow: Training-free High-Resolution Image Generation with Flow-Aligned Guidance</title>
 <link>https://arxiv.org/abs/2504.06232</link>
 <guid>https://arxiv.org/abs/2504.06232</guid>
 <content:encoded><![CDATA[
-
-  Text-to-image (T2I) diffusion/flow models have drawn considerable attention recently due to their remarkable ability to deliver flexible visual creations. Still, high-resolution image synthesis presents formidable challenges due to the scarcity and complexity of high-resolution content. To this end, we present HiFlow, a training-free and model-agnostic framework to unlock the resolution potential of pre-trained flow models. Specifically, HiFlow establishes a virtual reference flow within the high-resolution space that effectively captures the characteristics of low-resolution flow information, offering guidance for high-resolution generation through three key aspects: initialization alignment for low-frequency consistency, direction alignment for structure preservation, and acceleration alignment for detail fidelity. By leveraging this flow-aligned guidance, HiFlow substantially elevates the quality of high-resolution image synthesis of T2I models and demonstrates versatility across their personalized variants. Extensive experiments validate HiFlow's superiority in achieving superior high-resolution image quality over current state-of-the-art methods.
-
+Text-to-image (T2I) diffusion/flow models have drawn considerable attention recently due to their remarkable ability to deliver flexible visual creations. Still, high-resolution image synthesis presents formidable challenges due to the scarcity and complexity of high-resolution content. To this end, we present HiFlow, a training-free and model-agnostic framework to unlock the resolution potential of pre-trained flow models. Specifically, HiFlow establishes a virtual reference flow within the high-resolution space that effectively captures the characteristics of low-resolution flow information, offering guidance for high-resolution generation through three key aspects: initialization alignment for low-frequency consistency, direction alignment for structure preservation, and acceleration alignment for detail fidelity. By leveraging this flow-aligned guidance, HiFlow substantially elevates the quality of high-resolution image synthesis of T2I models and demonstrates versatility across their personalized variants. Extensive experiments validate HiFlow's superiority in achieving superior high-resolution image quality over current state-of-the-art methods.
 ]]></content:encoded>
-<pubDate>Tue, 08 Apr 2025 13:30:40 GMT</pubDate>
 <pubDate>Tue, 08 Apr 2025 13:30:40 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +19,8 @@
 <link>https://arxiv.org/abs/2504.06148</link>
 <guid>https://arxiv.org/abs/2504.06148</guid>
 <content:encoded><![CDATA[
-
-  Recent advancements in Multimodal Large Language Models (MLLMs) have led to significant improvements across various multimodal benchmarks. However, as evaluations shift from static datasets to open-world, dynamic environments, current game-based benchmarks remain inadequate because they lack visual-centric tasks and fail to assess the diverse reasoning skills required for real-world decision-making. To address this, we introduce Visual-centric Multiple Abilities Game Evaluation (V-MAGE), a game-based evaluation framework designed to assess visual reasoning capabilities of MLLMs. V-MAGE features five diverse games with 30+ handcrafted levels, testing models on core visual skills such as positioning, trajectory tracking, timing, and visual memory, alongside higher-level reasoning like long-term planning and deliberation. We use V-MAGE to evaluate leading MLLMs, revealing significant challenges in their visual perception and reasoning. In all game environments, the top-performing MLLMs, as determined by Elo rating comparisons, exhibit a substantial performance gap compared to humans. Our findings highlight critical limitations, including various types of perceptual errors made by the models, and suggest potential avenues for improvement from an agent-centric perspective, such as refining agent strategies and addressing perceptual inaccuracies. Code is available at https://github.com/CSU-JPG/V-MAGE.
-
+Recent advancements in Multimodal Large Language Models (MLLMs) have led to significant improvements across various multimodal benchmarks. However, as evaluations shift from static datasets to open-world, dynamic environments, current game-based benchmarks remain inadequate because they lack visual-centric tasks and fail to assess the diverse reasoning skills required for real-world decision-making. To address this, we introduce Visual-centric Multiple Abilities Game Evaluation (V-MAGE), a game-based evaluation framework designed to assess visual reasoning capabilities of MLLMs. V-MAGE features five diverse games with 30+ handcrafted levels, testing models on core visual skills such as positioning, trajectory tracking, timing, and visual memory, alongside higher-level reasoning like long-term planning and deliberation. We use V-MAGE to evaluate leading MLLMs, revealing significant challenges in their visual perception and reasoning. In all game environments, the top-performing MLLMs, as determined by Elo rating comparisons, exhibit a substantial performance gap compared to humans. Our findings highlight critical limitations, including various types of perceptual errors made by the models, and suggest potential avenues for improvement from an agent-centric perspective, such as refining agent strategies and addressing perceptual inaccuracies. Code is available at https://github.com/CSU-JPG/V-MAGE.
 ]]></content:encoded>
-<pubDate>Tue, 08 Apr 2025 11:43:01 GMT</pubDate>
 <pubDate>Tue, 08 Apr 2025 11:43:01 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +28,8 @@
 <link>https://arxiv.org/abs/2504.05535</link>
 <guid>https://arxiv.org/abs/2504.05535</guid>
 <content:encoded><![CDATA[
-
-  Aligning large language models (LLMs) with human preferences has achieved remarkable success. However, existing Chinese preference datasets are limited by small scale, narrow domain coverage, and lack of rigorous data validation. Additionally, the reliance on human annotators for instruction and response labeling significantly constrains the scalability of human preference datasets. To address these challenges, we design an LLM-based Chinese preference dataset annotation pipeline with no human intervention. Specifically, we crawled and carefully filtered 92k high-quality Chinese queries and employed 15 mainstream LLMs to generate and score chosen-rejected response pairs. Based on it, we introduce COIG-P (Chinese Open Instruction Generalist - Preference), a high-quality, large-scale Chinese preference dataset, comprises 1,009k Chinese preference pairs spanning 6 diverse domains: Chat, Code, Math, Logic, Novel, and Role. Building upon COIG-P, to reduce the overhead of using LLMs for scoring, we trained a 8B-sized Chinese Reward Model (CRM) and meticulously constructed a Chinese Reward Benchmark (CRBench). Evaluation results based on AlignBench liu2024alignbenchbenchmarkingchinesealignment show that that COIG-P significantly outperforms other Chinese preference datasets, and it brings significant performance improvements ranging from 2% to 12% for the Qwen2/2.5 and Infinity-Instruct-3M-0625 model series, respectively. The results on CRBench demonstrate that our CRM has a strong and robust scoring ability. We apply it to filter chosen-rejected response pairs in a test split of COIG-P, and our experiments show that it is comparable to GPT-4o in identifying low-quality samples while maintaining efficiency and cost-effectiveness. Our codes and data are released in https://github.com/multimodal-art-projection/COIG-P.
-
+Aligning large language models (LLMs) with human preferences has achieved remarkable success. However, existing Chinese preference datasets are limited by small scale, narrow domain coverage, and lack of rigorous data validation. Additionally, the reliance on human annotators for instruction and response labeling significantly constrains the scalability of human preference datasets. To address these challenges, we design an LLM-based Chinese preference dataset annotation pipeline with no human intervention. Specifically, we crawled and carefully filtered 92k high-quality Chinese queries and employed 15 mainstream LLMs to generate and score chosen-rejected response pairs. Based on it, we introduce COIG-P (Chinese Open Instruction Generalist - Preference), a high-quality, large-scale Chinese preference dataset, comprises 1,009k Chinese preference pairs spanning 6 diverse domains: Chat, Code, Math, Logic, Novel, and Role. Building upon COIG-P, to reduce the overhead of using LLMs for scoring, we trained a 8B-sized Chinese Reward Model (CRM) and meticulously constructed a Chinese Reward Benchmark (CRBench). Evaluation results based on AlignBench liu2024alignbenchbenchmarkingchinesealignment show that that COIG-P significantly outperforms other Chinese preference datasets, and it brings significant performance improvements ranging from 2% to 12% for the Qwen2/2.5 and Infinity-Instruct-3M-0625 model series, respectively. The results on CRBench demonstrate that our CRM has a strong and robust scoring ability. We apply it to filter chosen-rejected response pairs in a test split of COIG-P, and our experiments show that it is comparable to GPT-4o in identifying low-quality samples while maintaining efficiency and cost-effectiveness. Our codes and data are released in https://github.com/multimodal-art-projection/COIG-P.
 ]]></content:encoded>
-<pubDate>Mon, 07 Apr 2025 18:15:51 GMT</pubDate>
 <pubDate>Mon, 07 Apr 2025 18:15:51 GMT</pubDate>
 </item>
 <item>
@@ -45,14 +37,10 @@
 <link>https://arxiv.org/abs/2503.20533</link>
 <guid>https://arxiv.org/abs/2503.20533</guid>
 <content:encoded><![CDATA[
-
-  Recent advances in reasoning models have demonstrated significant improvements in accuracy, particularly for complex tasks such as mathematical reasoning, by employing detailed and comprehensive reasoning processes. However, generating these lengthy reasoning sequences is computationally expensive and time-consuming. To address this inefficiency, we leverage the inherent parallelizability of certain tasks to accelerate the reasoning process. Specifically, when multiple parallel reasoning branches exist, we decode multiple tokens per step using a specialized attention mask, processing them within a single sequence, avoiding additional memory usage. Experimental results show that our method achieves over 100% speedup in decoding time while maintaining the answer quality.
-
+Recent advances in reasoning models have demonstrated significant improvements in accuracy, particularly for complex tasks such as mathematical reasoning, by employing detailed and comprehensive reasoning processes. However, generating these lengthy reasoning sequences is computationally expensive and time-consuming. To address this inefficiency, we leverage the inherent parallelizability of certain tasks to accelerate the reasoning process. Specifically, when multiple parallel reasoning branches exist, we decode multiple tokens per step using a specialized attention mask, processing them within a single sequence, avoiding additional memory usage. Experimental results show that our method achieves over 100% speedup in decoding time while maintaining the answer quality.
 ]]></content:encoded>
 <pubDate>Wed, 26 Mar 2025 09:28:57 GMT</pubDate>
-<pubDate>Wed, 26 Mar 2025 09:28:57 GMT</pubDate>
 </item>
-
 <item>
 <title>OmniSVG: A Unified Scalable Vector Graphics Generation Model</title>
 <link>https://arxiv.org/abs/2504.06263</link>
@@ -9016,42 +9004,6 @@ We introduce SWE-Lancer, a benchmark of over 1,400 freelance software engineerin
 <div><p style="color: gray;">本文提出TalkHier框架，解决LLM-MA系统中的沟通和优化问题。</p><br /><br /><p><strong>摘要：</strong> 随着LLM-MA系统研究的进展，各代理在复杂任务协作中面临沟通管理和输出优化的挑战。本文提出了Talk Structurally, Act Hierarchically (TalkHier)框架，旨在引入结构化沟通协议和层级优化机制，以解决输出错误、虚假信息及偏见等问题。通过在多种任务上的测试，包括开放域问答、领域特定选择性提问和实际广告文本生成，TalkHier在性能上超过了多种前沿技术，如OpenAI的推理缩放模型和AgentVerse等开源多代理模型。这一新框架展示了其成为LLM-MA系统新标准的潜力，推动了更有效、适应性强的多代理协作框架的发展。相关代码已在GitHub上发布。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.11098" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Mon, 17 Feb 2025 23:51:50 GMT</pubDate>
-</item>
-<item>
-<title>通过对例增强数学大语言模型的证明能力研究</title>
-<link>https://arxiv.org/abs/2502.10454</link>
-<guid>https://arxiv.org/abs/2502.10454</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">研究表明现有数学大语言模型的证明能力受训练数据的影响，并提出通过对例提高其数学推理能力的方案。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了数学大语言模型（LLMs）在证明生成中的能力，认为现有模型的证明效果主要依赖于其训练中是否遇到相关的证明过程。这一依赖限制了模型对数学定理及概念的深入理解。我们受到人类数学教育中常用的“反例证明”方法的启发，致力于通过反例增强LLMs的数学推理和证明能力。为此，手动创建了CounterMATH，一个高质量的大学水平数学基准，要求LLMs通过提供反例来证明数学命题，从而评估其对数学概念的掌握情况。此外，我们还开发了数据工程框架，以自动获取训练数据以进一步提升模型性能。广泛的实验和详细的分析表明，CounterMATH具有挑战性，显示出LLMs（如OpenAI o1）在反例驱动的证明能力方面不足。我们认为，增强LLMs的反例驱动概念推理能力对提高其整体数学能力至关重要，提出了对数学大语言模型社区的新视角。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.10454" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 17 Feb 2025 23:37:16 GMT</pubDate>
-</item>
-<item>
-<title>Diffusion-Sharpening：一种优化采样轨迹的微调方法</title>
-<link>https://arxiv.org/abs/2502.12146</link>
-<guid>https://arxiv.org/abs/2502.12146</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出Diffusion-Sharpening方法，通过优化采样轨迹提升微调效率。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种名为Diffusion-Sharpening的微调方法，旨在通过优化采样轨迹提升下游任务的对齐效果。现有的基于强化学习的微调方法往往关注单个训练时间步，而忽视了轨迹级别的对齐；而最近的采样轨迹优化方法则带来了显著的推理NFE成本。Diffusion-Sharpening通过路径积分框架在训练过程中选择最优轨迹，利用奖励反馈来克服这些问题，并摊销推理成本。实验结果表明，该方法在训练效率（二次收敛速度）和推理效率（不需要额外的NFE）方面均表现出色，相较于传统的基于强化学习的微调方法和采样轨迹优化方法，Diffusion-Sharpening在文本对齐、组合能力和人类偏好等多项指标上均取得了更好的效果，提供了一种可扩展且高效的扩散模型微调方案。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.12146" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 17 Feb 2025 23:30:53 GMT</pubDate>
-</item>
-<item>
-<title>HermesFlow：弥合多模态大语言模型理解与生成能力的差距</title>
-<link>https://arxiv.org/abs/2502.12148</link>
-<guid>https://arxiv.org/abs/2502.12148</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">HermesFlow有效弥合了多模态大语言模型的理解与生成能力差距。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了HermesFlow，一个旨在优化多模态大语言模型（MLLMs）理解与生成能力的框架。研究表明，MLLMs的理解能力通常强于其生成能力，二者之间存在显著差距。HermesFlow通过输入同源数据，构建理解与生成的同源偏好数据，利用Pair-DPO和自我对抗优化机制，将理解能力与生成能力有效对齐。实验结果显示，HermesFlow在缩小多模态理解与生成的差距方面，显著优于之前的方法。这一发现突显了HermesFlow作为下代多模态基础模型的一般性对齐框架的潜力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.12148" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 17 Feb 2025 23:29:29 GMT</pubDate>
-</item>
-<item>
-<title>SAFE-SQL：自增强上下文学习提升Text-to-SQL性能</title>
-<link>https://arxiv.org/abs/2502.11438</link>
-<guid>https://arxiv.org/abs/2502.11438</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">SAFE-SQL通过自生成示例提升Text-to-SQL的执行准确性。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种新框架SAFE-SQL，旨在将自然语言问题转换为可执行的SQL查询。传统方法如骨架掩码选择在获取相似训练示例以指导大型语言模型时表现出色，但在实际应用中面临示例缺失的挑战。为此，SAFE-SQL采用自增强上下文学习，通过生成并过滤自增强示例，显著提升SQL生成效果。该框架首先引导大型语言模型生成与测试输入相关的多个Text-to-SQL示例，并通过三种相关性评估进行过滤，构建高质量的上下文学习示例。最终，SAFE-SQL在零-shot和少-shot的Text-to-SQL任务中超越了传统框架，尤其在困难和未见场景中表现出额外的性能提升。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.11438" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 17 Feb 2025 23:06:03 GMT</pubDate>
 </item>
 </channel>
 </rss>
