@@ -5,18 +5,27 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>3D Scene Understanding Through Local Random Access Sequence Modeling</title>
+<link>https://arxiv.org/abs/2504.03875</link>
+<guid>https://arxiv.org/abs/2504.03875</guid>
+<content:encoded><![CDATA[
+
+  3D scene understanding from single images is a pivotal problem in computer vision with numerous downstream applications in graphics, augmented reality, and robotics. While diffusion-based modeling approaches have shown promise, they often struggle to maintain object and scene consistency, especially in complex real-world scenarios. To address these limitations, we propose an autoregressive generative approach called Local Random Access Sequence (LRAS) modeling, which uses local patch quantization and randomly ordered sequence generation. By utilizing optical flow as an intermediate representation for 3D scene editing, our experiments demonstrate that LRAS achieves state-of-the-art novel view synthesis and 3D object manipulation capabilities. Furthermore, we show that our framework naturally extends to self-supervised depth estimation through a simple modification of the sequence design. By achieving strong performance on multiple 3D scene understanding tasks, LRAS provides a unified and effective framework for building the next generation of 3D vision models.
+
+]]></content:encoded>
+<pubDate>Fri, 04 Apr 2025 14:59:41 GMT</pubDate>
+<pubDate>Fri, 04 Apr 2025 14:59:41 GMT</pubDate>
+</item>
+
+<item>
 <title>Distillation and Refinement of Reasoning in Small Language Models for Document Re-ranking</title>
 <link>https://arxiv.org/abs/2504.03947</link>
 <guid>https://arxiv.org/abs/2504.03947</guid>
 <content:encoded><![CDATA[
-
-  We present a novel approach for training small language models for reasoning-intensive document ranking that combines knowledge distillation with reinforcement learning optimization. While existing methods often rely on expensive human annotations or large black-box language models, our methodology leverages web data and a teacher LLM to automatically generate high-quality training examples with relevance explanations. By framing document ranking as a reinforcement learning problem and incentivizing explicit reasoning capabilities, we train a compact 3B parameter language model that achieves state-of-the-art performance on the BRIGHT benchmark. Our model ranks third on the leaderboard while using substantially fewer parameters than other approaches, outperforming models that are over 20 times larger. Through extensive experiments, we demonstrate that generating explanations during inference, rather than directly predicting relevance scores, enables more effective reasoning with smaller language models. The self-supervised nature of our method offers a scalable and interpretable solution for modern information retrieval systems.
-
+We present a novel approach for training small language models for reasoning-intensive document ranking that combines knowledge distillation with reinforcement learning optimization. While existing methods often rely on expensive human annotations or large black-box language models, our methodology leverages web data and a teacher LLM to automatically generate high-quality training examples with relevance explanations. By framing document ranking as a reinforcement learning problem and incentivizing explicit reasoning capabilities, we train a compact 3B parameter language model that achieves state-of-the-art performance on the BRIGHT benchmark. Our model ranks third on the leaderboard while using substantially fewer parameters than other approaches, outperforming models that are over 20 times larger. Through extensive experiments, we demonstrate that generating explanations during inference, rather than directly predicting relevance scores, enables more effective reasoning with smaller language models. The self-supervised nature of our method offers a scalable and interpretable solution for modern information retrieval systems.
 ]]></content:encoded>
 <pubDate>Fri, 04 Apr 2025 17:27:48 GMT</pubDate>
-<pubDate>Fri, 04 Apr 2025 17:27:48 GMT</pubDate>
 </item>
-
 <item>
 <title>VAPO: Efficient and Reliable Reinforcement Learning for Advanced Reasoning Tasks</title>
 <link>https://arxiv.org/abs/2504.05118</link>
@@ -9007,15 +9016,6 @@ Large Language Models (LLMs) have achieved significant success across various NL
 <div><p style="color: gray;">ImageRAG通过动态检索图像提高了图像生成质量，特别是在稀有概念的合成方面。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种名为ImageRAG的方法，它结合了图像生成模型与检索增强生成技术，以解决现有扩散模型在生成稀有或未见概念时的挑战。ImageRAG会根据给定的文本提示动态检索相关图像，并将这些图像作为上下文来指导图像生成过程。与之前专门针对检索生成训练的模型不同，ImageRAG不需要专门的训练，而是利用现有图像条件模型的能力。这种方法具有高度的适应性，能够在多种基础模型中应用，显著提高了稀有和细粒度概念的生成效果。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.09411" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Mon, 17 Feb 2025 08:41:41 GMT</pubDate>
-</item>
-<item>
-<title>小型多语言模型在低资源语言处理中的适应性研究</title>
-<link>https://arxiv.org/abs/2502.10140</link>
-<guid>https://arxiv.org/abs/2502.10140</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本研究 explores 小型多语言模型在低资源语言下的适应性与性能提升。</p><br /><br /><p><strong>摘要：</strong> 本研究系统探讨了如何有效地使用参数高效的适配器方法，将小型多语言模型（mLMs）适应于低资源语言（LRLs）。研究评估了三种适配器架构：顺序瓶颈、可逆瓶颈和低秩适配方法。结果显示，使用来自GlotCC的非结构化文本和ConceptNet的结构化知识的小型适配数据集（如最多1GB的自由文本或几MB的知识图数据）能显著提升模型在内部（掩码语言建模）和外部任务（主题分类、情感分析和命名实体识别）的表现。研究发现，顺序瓶颈适配器在语言建模方面表现出色，而可逆瓶颈适配器在下游任务上由于更好的嵌入对齐和更多的参数数量略有凌驾于其他方法之上。适配器方法在使用更少参数的情况下，实现了与完整微调相当或更优的性能，而与大型语言模型（如LLaMA-3、GPT-4及DeepSeek-R1基于的蒸馏模型）相比，小型mLMs在低资源语言任务中更为有效。尽管适应性提高了性能，但预训练数据规模仍是决定因素，特别是对于预训练覆盖面广的语言。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.10140" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 17 Feb 2025 08:29:25 GMT</pubDate>
 </item>
 </channel>
 </rss>
