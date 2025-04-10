@@ -5,15 +5,97 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>Are We Done with Object-Centric Learning?</title>
+<link>https://arxiv.org/abs/2504.07092</link>
+<guid>https://arxiv.org/abs/2504.07092</guid>
+<content:encoded><![CDATA[
+
+  Object-centric learning (OCL) seeks to learn representations that only encode an object, isolated from other objects or background cues in a scene. This approach underpins various aims, including out-of-distribution (OOD) generalization, sample-efficient composition, and modeling of structured environments. Most research has focused on developing unsupervised mechanisms that separate objects into discrete slots in the representation space, evaluated using unsupervised object discovery. However, with recent sample-efficient segmentation models, we can separate objects in the pixel space and encode them independently. This achieves remarkable zero-shot performance on OOD object discovery benchmarks, is scalable to foundation models, and can handle a variable number of slots out-of-the-box. Hence, the goal of OCL methods to obtain object-centric representations has been largely achieved. Despite this progress, a key question remains: How does the ability to separate objects within a scene contribute to broader OCL objectives, such as OOD generalization? We address this by investigating the OOD generalization challenge caused by spurious background cues through the lens of OCL. We propose a novel, training-free probe called Object-Centric Classification with Applied Masks (OCCAM), demonstrating that segmentation-based encoding of individual objects significantly outperforms slot-based OCL methods. However, challenges in real-world applications remain. We provide the toolbox for the OCL community to use scalable object-centric representations, and focus on practical applications and fundamental questions, such as understanding object perception in human cognition. Our code is available https://github.com/AlexanderRubinstein/OCCAM{here}.
+
+]]></content:encoded>
+<pubDate>Wed, 09 Apr 2025 13:59:05 GMT</pubDate>
+<pubDate>Wed, 09 Apr 2025 13:59:05 GMT</pubDate>
+</item>
+<item>
+<title>Self-Steering Language Models</title>
+<link>https://arxiv.org/abs/2504.07081</link>
+<guid>https://arxiv.org/abs/2504.07081</guid>
+<content:encoded><![CDATA[
+
+  While test-time reasoning enables language models to tackle complex tasks, searching or planning in natural language can be slow, costly, and error-prone. But even when LMs struggle to emulate the precise reasoning steps needed to solve a problem, they often excel at describing its abstract structure--both how to verify solutions and how to search for them. This paper introduces DisCIPL, a method for "self-steering" LMs where a Planner model generates a task-specific inference program that is executed by a population of Follower models. Our approach equips LMs with the ability to write recursive search procedures that guide LM inference, enabling new forms of verifiable and efficient reasoning. When instantiated with a small Follower (e.g., Llama-3.2-1B), DisCIPL matches (and sometimes outperforms) much larger models, including GPT-4o and o1, on challenging constrained generation tasks. In decoupling planning from execution, our work opens up a design space of highly-parallelized Monte Carlo inference strategies that outperform standard best-of-N sampling, require no finetuning, and can be implemented automatically by existing LMs.
+
+]]></content:encoded>
+<pubDate>Wed, 09 Apr 2025 13:54:22 GMT</pubDate>
+<pubDate>Wed, 09 Apr 2025 13:54:22 GMT</pubDate>
+</item>
+<item>
+<title>A Unified Agentic Framework for Evaluating Conditional Image Generation</title>
+<link>https://arxiv.org/abs/2504.07046</link>
+<guid>https://arxiv.org/abs/2504.07046</guid>
+<content:encoded><![CDATA[
+
+  Conditional image generation has gained significant attention for its ability to personalize content. However, the field faces challenges in developing task-agnostic, reliable, and explainable evaluation metrics. This paper introduces CIGEval, a unified agentic framework for comprehensive evaluation of conditional image generation tasks. CIGEval utilizes large multimodal models (LMMs) as its core, integrating a multi-functional toolbox and establishing a fine-grained evaluation framework. Additionally, we synthesize evaluation trajectories for fine-tuning, empowering smaller LMMs to autonomously select appropriate tools and conduct nuanced analyses based on tool outputs. Experiments across seven prominent conditional image generation tasks demonstrate that CIGEval (GPT-4o version) achieves a high correlation of 0.4625 with human assessments, closely matching the inter-annotator correlation of 0.47. Moreover, when implemented with 7B open-source LMMs using only 2.3K training trajectories, CIGEval surpasses the previous GPT-4o-based state-of-the-art method. Case studies on GPT-4o image generation highlight CIGEval's capability in identifying subtle issues related to subject consistency and adherence to control guidance, indicating its great potential for automating evaluation of image generation tasks with human-level reliability.
+
+]]></content:encoded>
+<pubDate>Wed, 09 Apr 2025 13:04:14 GMT</pubDate>
+<pubDate>Wed, 09 Apr 2025 13:04:14 GMT</pubDate>
+</item>
+<item>
+<title>VideoChat-R1: Enhancing Spatio-Temporal Perception via Reinforcement Fine-Tuning</title>
+<link>https://arxiv.org/abs/2504.06958</link>
+<guid>https://arxiv.org/abs/2504.06958</guid>
+<content:encoded><![CDATA[
+
+  Recent advancements in reinforcement learning have significantly advanced the reasoning capabilities of multimodal large language models (MLLMs). While approaches such as Group Relative Policy Optimization (GRPO) and rule-based reward mechanisms demonstrate promise in text and image domains, their application to video understanding remains limited. This paper presents a systematic exploration of Reinforcement Fine-Tuning (RFT) with GRPO for video MLLMs, aiming to enhance spatio-temporal perception while maintaining general capabilities. Our experiments reveal that RFT is highly data-efficient for task-specific improvements. Through multi-task RFT on spatio-temporal perception objectives with limited samples, we develop VideoChat-R1, a powerful video MLLM that achieves state-of-the-art performance on spatio-temporal perception tasks without sacrificing chat ability, while exhibiting emerging spatio-temporal reasoning abilities. Compared to Qwen2.5-VL-7B, VideoChat-R1 boosts performance several-fold in tasks like temporal grounding (+31.8) and object tracking (+31.2). Additionally, it significantly improves on general QA benchmarks such as VideoMME (+0.9), MVBench (+1.0), and Perception Test (+0.9). Our findings underscore the potential of RFT for specialized task enhancement of Video MLLMs. We hope our work offers valuable insights for future RL research in video MLLMs.
+
+]]></content:encoded>
+<pubDate>Wed, 09 Apr 2025 11:09:27 GMT</pubDate>
+<pubDate>Wed, 09 Apr 2025 11:09:27 GMT</pubDate>
+</item>
+<item>
+<title>RuOpinionNE-2024: Extraction of Opinion Tuples from Russian News Texts</title>
+<link>https://arxiv.org/abs/2504.06947</link>
+<guid>https://arxiv.org/abs/2504.06947</guid>
+<content:encoded><![CDATA[
+
+  In this paper, we introduce the Dialogue Evaluation shared task on extraction of structured opinions from Russian news texts. The task of the contest is to extract opinion tuples for a given sentence; the tuples are composed of a sentiment holder, its target, an expression and sentiment from the holder to the target. In total, the task received more than 100 submissions. The participants experimented mainly with large language models in zero-shot, few-shot and fine-tuning formats. The best result on the test set was obtained with fine-tuning of a large language model. We also compared 30 prompts and 11 open source language models with 3-32 billion parameters in the 1-shot and 10-shot settings and found the best models and prompts.
+
+]]></content:encoded>
+<pubDate>Wed, 09 Apr 2025 10:54:00 GMT</pubDate>
+<pubDate>Wed, 09 Apr 2025 10:54:00 GMT</pubDate>
+</item>
+<item>
+<title>Masked Scene Modeling: Narrowing the Gap Between Supervised and Self-Supervised Learning in 3D Scene Understanding</title>
+<link>https://arxiv.org/abs/2504.06719</link>
+<guid>https://arxiv.org/abs/2504.06719</guid>
+<content:encoded><![CDATA[
+
+  Self-supervised learning has transformed 2D computer vision by enabling models trained on large, unannotated datasets to provide versatile off-the-shelf features that perform similarly to models trained with labels. However, in 3D scene understanding, self-supervised methods are typically only used as a weight initialization step for task-specific fine-tuning, limiting their utility for general-purpose feature extraction. This paper addresses this shortcoming by proposing a robust evaluation protocol specifically designed to assess the quality of self-supervised features for 3D scene understanding. Our protocol uses multi-resolution feature sampling of hierarchical models to create rich point-level representations that capture the semantic capabilities of the model and, hence, are suitable for evaluation with linear probing and nearest-neighbor methods. Furthermore, we introduce the first self-supervised model that performs similarly to supervised models when only off-the-shelf features are used in a linear probing setup. In particular, our model is trained natively in 3D with a novel self-supervised approach based on a Masked Scene Modeling objective, which reconstructs deep features of masked patches in a bottom-up manner and is specifically tailored to hierarchical 3D models. Our experiments not only demonstrate that our method achieves competitive performance to supervised models, but also surpasses existing self-supervised approaches by a large margin. The model and training code can be found at our Github repository (https://github.com/phermosilla/msm).
+
+]]></content:encoded>
+<pubDate>Wed, 09 Apr 2025 05:19:49 GMT</pubDate>
+<pubDate>Wed, 09 Apr 2025 05:19:49 GMT</pubDate>
+</item>
+<item>
+<title>WildGS-SLAM: Monocular Gaussian Splatting SLAM in Dynamic Environments</title>
+<link>https://arxiv.org/abs/2504.03886</link>
+<guid>https://arxiv.org/abs/2504.03886</guid>
+<content:encoded><![CDATA[
+
+  We present WildGS-SLAM, a robust and efficient monocular RGB SLAM system designed to handle dynamic environments by leveraging uncertainty-aware geometric mapping. Unlike traditional SLAM systems, which assume static scenes, our approach integrates depth and uncertainty information to enhance tracking, mapping, and rendering performance in the presence of moving objects. We introduce an uncertainty map, predicted by a shallow multi-layer perceptron and DINOv2 features, to guide dynamic object removal during both tracking and mapping. This uncertainty map enhances dense bundle adjustment and Gaussian map optimization, improving reconstruction accuracy. Our system is evaluated on multiple datasets and demonstrates artifact-free view synthesis. Results showcase WildGS-SLAM's superior performance in dynamic environments compared to state-of-the-art methods.
+
+]]></content:encoded>
+<pubDate>Fri, 04 Apr 2025 15:19:40 GMT</pubDate>
+<pubDate>Fri, 04 Apr 2025 15:19:40 GMT</pubDate>
+</item>
+
+<item>
 <title>OmniCaptioner: One Captioner to Rule Them All</title>
 <link>https://arxiv.org/abs/2504.07089</link>
 <guid>https://arxiv.org/abs/2504.07089</guid>
 <content:encoded><![CDATA[
-
-  We propose OmniCaptioner, a versatile visual captioning framework for generating fine-grained textual descriptions across a wide variety of visual domains. Unlike prior methods limited to specific image types (e.g., natural images or geometric visuals), our framework provides a unified solution for captioning natural images, visual text (e.g., posters, UIs, textbooks), and structured visuals (e.g., documents, tables, charts). By converting low-level pixel information into semantically rich textual representations, our framework bridges the gap between visual and textual modalities. Our results highlight three key advantages: (i) Enhanced Visual Reasoning with LLMs, where long-context captions of visual modalities empower LLMs, particularly the DeepSeek-R1 series, to reason effectively in multimodal scenarios; (ii) Improved Image Generation, where detailed captions improve tasks like text-to-image generation and image transformation; and (iii) Efficient Supervised Fine-Tuning (SFT), which enables faster convergence with less data. We believe the versatility and adaptability of OmniCaptioner can offer a new perspective for bridging the gap between language and visual modalities.
-
+We propose OmniCaptioner, a versatile visual captioning framework for generating fine-grained textual descriptions across a wide variety of visual domains. Unlike prior methods limited to specific image types (e.g., natural images or geometric visuals), our framework provides a unified solution for captioning natural images, visual text (e.g., posters, UIs, textbooks), and structured visuals (e.g., documents, tables, charts). By converting low-level pixel information into semantically rich textual representations, our framework bridges the gap between visual and textual modalities. Our results highlight three key advantages: (i) Enhanced Visual Reasoning with LLMs, where long-context captions of visual modalities empower LLMs, particularly the DeepSeek-R1 series, to reason effectively in multimodal scenarios; (ii) Improved Image Generation, where detailed captions improve tasks like text-to-image generation and image transformation; and (iii) Efficient Supervised Fine-Tuning (SFT), which enables faster convergence with less data. We believe the versatility and adaptability of OmniCaptioner can offer a new perspective for bridging the gap between language and visual modalities.
 ]]></content:encoded>
-<pubDate>Wed, 09 Apr 2025 13:58:58 GMT</pubDate>
 <pubDate>Wed, 09 Apr 2025 13:58:58 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +103,8 @@
 <link>https://arxiv.org/abs/2504.07086</link>
 <guid>https://arxiv.org/abs/2504.07086</guid>
 <content:encoded><![CDATA[
-
-  Reasoning has emerged as the next major frontier for language models (LMs), with rapid advances from both academic and industrial labs. However, this progress often outpaces methodological rigor, with many evaluations relying on benchmarking practices that lack transparency, robustness, or statistical grounding. In this work, we conduct a comprehensive empirical study and find that current mathematical reasoning benchmarks are highly sensitive to subtle implementation choices - including decoding parameters, random seeds, prompt formatting, and even hardware and software-framework configurations. Performance gains reported in recent studies frequently hinge on unclear comparisons or unreported sources of variance. To address these issues, we propose a standardized evaluation framework with clearly defined best practices and reporting standards. Using this framework, we reassess recent methods and find that reinforcement learning (RL) approaches yield only modest improvements - far below prior claims - and are prone to overfitting, especially on small-scale benchmarks like AIME24. In contrast, supervised finetuning (SFT) methods show consistently stronger generalization. To foster reproducibility, we release all code, prompts, and model outputs, for reasoning benchmarks, establishing more rigorous foundations for future work.
-
+Reasoning has emerged as the next major frontier for language models (LMs), with rapid advances from both academic and industrial labs. However, this progress often outpaces methodological rigor, with many evaluations relying on benchmarking practices that lack transparency, robustness, or statistical grounding. In this work, we conduct a comprehensive empirical study and find that current mathematical reasoning benchmarks are highly sensitive to subtle implementation choices - including decoding parameters, random seeds, prompt formatting, and even hardware and software-framework configurations. Performance gains reported in recent studies frequently hinge on unclear comparisons or unreported sources of variance. To address these issues, we propose a standardized evaluation framework with clearly defined best practices and reporting standards. Using this framework, we reassess recent methods and find that reinforcement learning (RL) approaches yield only modest improvements - far below prior claims - and are prone to overfitting, especially on small-scale benchmarks like AIME24. In contrast, supervised finetuning (SFT) methods show consistently stronger generalization. To foster reproducibility, we release all code, prompts, and model outputs, for reasoning benchmarks, establishing more rigorous foundations for future work.
 ]]></content:encoded>
-<pubDate>Wed, 09 Apr 2025 13:58:17 GMT</pubDate>
 <pubDate>Wed, 09 Apr 2025 13:58:17 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +112,8 @@
 <link>https://arxiv.org/abs/2504.05287</link>
 <guid>https://arxiv.org/abs/2504.05287</guid>
 <content:encoded><![CDATA[
-
-  Robust grasping of various objects from single-view perception is fundamental for dexterous robots. Previous works often rely on fully observable objects, expert demonstrations, or static grasping poses, which restrict their generalization ability and adaptability to external disturbances. In this paper, we present a reinforcement-learning-based framework that enables zero-shot dynamic dexterous grasping of a wide range of unseen objects from single-view perception, while performing adaptive motions to external disturbances. We utilize a hand-centric object representation for shape feature extraction that emphasizes interaction-relevant local shapes, enhancing robustness to shape variance and uncertainty. To enable effective hand adaptation to disturbances with limited observations, we propose a mixed curriculum learning strategy, which first utilizes imitation learning to distill a policy trained with privileged real-time visual-tactile feedback, and gradually transfers to reinforcement learning to learn adaptive motions under disturbances caused by observation noises and dynamic randomization. Our experiments demonstrate strong generalization in grasping unseen objects with random poses, achieving success rates of 97.0% across 247,786 simulated objects and 94.6% across 512 real objects. We also demonstrate the robustness of our method to various disturbances, including unobserved object movement and external forces, through both quantitative and qualitative evaluations. Project Page: https://zdchan.github.io/Robust_DexGrasp/
-
+Robust grasping of various objects from single-view perception is fundamental for dexterous robots. Previous works often rely on fully observable objects, expert demonstrations, or static grasping poses, which restrict their generalization ability and adaptability to external disturbances. In this paper, we present a reinforcement-learning-based framework that enables zero-shot dynamic dexterous grasping of a wide range of unseen objects from single-view perception, while performing adaptive motions to external disturbances. We utilize a hand-centric object representation for shape feature extraction that emphasizes interaction-relevant local shapes, enhancing robustness to shape variance and uncertainty. To enable effective hand adaptation to disturbances with limited observations, we propose a mixed curriculum learning strategy, which first utilizes imitation learning to distill a policy trained with privileged real-time visual-tactile feedback, and gradually transfers to reinforcement learning to learn adaptive motions under disturbances caused by observation noises and dynamic randomization. Our experiments demonstrate strong generalization in grasping unseen objects with random poses, achieving success rates of 97.0% across 247,786 simulated objects and 94.6% across 512 real objects. We also demonstrate the robustness of our method to various disturbances, including unobserved object movement and external forces, through both quantitative and qualitative evaluations. Project Page: https://zdchan.github.io/Robust_DexGrasp/
 ]]></content:encoded>
-<pubDate>Mon, 07 Apr 2025 13:38:19 GMT</pubDate>
 <pubDate>Mon, 07 Apr 2025 13:38:19 GMT</pubDate>
 </item>
 <item>
@@ -45,14 +121,10 @@
 <link>https://arxiv.org/abs/2504.04010</link>
 <guid>https://arxiv.org/abs/2504.04010</guid>
 <content:encoded><![CDATA[
-
-  Generating naturalistic and nuanced listener motions for extended interactions remains an open problem. Existing methods often rely on low-dimensional motion codes for facial behavior generation followed by photorealistic rendering, limiting both visual fidelity and expressive richness. To address these challenges, we introduce DiTaiListener, powered by a video diffusion model with multimodal conditions. Our approach first generates short segments of listener responses conditioned on the speaker's speech and facial motions with DiTaiListener-Gen. It then refines the transitional frames via DiTaiListener-Edit for a seamless transition. Specifically, DiTaiListener-Gen adapts a Diffusion Transformer (DiT) for the task of listener head portrait generation by introducing a Causal Temporal Multimodal Adapter (CTM-Adapter) to process speakers' auditory and visual cues. CTM-Adapter integrates speakers' input in a causal manner into the video generation process to ensure temporally coherent listener responses. For long-form video generation, we introduce DiTaiListener-Edit, a transition refinement video-to-video diffusion model. The model fuses video segments into smooth and continuous videos, ensuring temporal consistency in facial expressions and image quality when merging short video segments produced by DiTaiListener-Gen. Quantitatively, DiTaiListener achieves the state-of-the-art performance on benchmark datasets in both photorealism (+73.8% in FID on RealTalk) and motion representation (+6.1% in FD metric on VICO) spaces. User studies confirm the superior performance of DiTaiListener, with the model being the clear preference in terms of feedback, diversity, and smoothness, outperforming competitors by a significant margin.
-
+Generating naturalistic and nuanced listener motions for extended interactions remains an open problem. Existing methods often rely on low-dimensional motion codes for facial behavior generation followed by photorealistic rendering, limiting both visual fidelity and expressive richness. To address these challenges, we introduce DiTaiListener, powered by a video diffusion model with multimodal conditions. Our approach first generates short segments of listener responses conditioned on the speaker's speech and facial motions with DiTaiListener-Gen. It then refines the transitional frames via DiTaiListener-Edit for a seamless transition. Specifically, DiTaiListener-Gen adapts a Diffusion Transformer (DiT) for the task of listener head portrait generation by introducing a Causal Temporal Multimodal Adapter (CTM-Adapter) to process speakers' auditory and visual cues. CTM-Adapter integrates speakers' input in a causal manner into the video generation process to ensure temporally coherent listener responses. For long-form video generation, we introduce DiTaiListener-Edit, a transition refinement video-to-video diffusion model. The model fuses video segments into smooth and continuous videos, ensuring temporal consistency in facial expressions and image quality when merging short video segments produced by DiTaiListener-Gen. Quantitatively, DiTaiListener achieves the state-of-the-art performance on benchmark datasets in both photorealism (+73.8% in FID on RealTalk) and motion representation (+6.1% in FD metric on VICO) spaces. User studies confirm the superior performance of DiTaiListener, with the model being the clear preference in terms of feedback, diversity, and smoothness, outperforming competitors by a significant margin.
 ]]></content:encoded>
 <pubDate>Fri, 04 Apr 2025 21:19:46 GMT</pubDate>
-<pubDate>Fri, 04 Apr 2025 21:19:46 GMT</pubDate>
 </item>
-
 <item>
 <title>OLMoTrace: Tracing Language Model Outputs Back to Trillions of Training Tokens</title>
 <link>https://arxiv.org/abs/2504.07096</link>
@@ -9016,42 +9088,6 @@ The continuous development of foundational models for video generation is evolvi
 <div><p style="color: gray;">ThinkDiff通过多模态对齐提升图像生成模型的理解与推理能力。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种新颖的对齐范式ThinkDiff，旨在通过整合视觉语言模型(VLMs)的优势，赋予文本到图像的扩散模型多模态的上下文理解和推理能力。当前的多模态扩散微调方法大多聚焦于像素级重建，而忽略了上下文推理，且受限于推理数据集的复杂性和可用性。ThinkDiff通过将视觉语言训练作为代理任务，简化了与编码-解码大型语言模型(LLM)解码器的对齐过程，有效提升了扩散模型的理解、推理和构成能力。实验证明，ThinkDiff在多模态上下文推理生成的挑战性CoBSAT基准上，准确率从19.2%提升至46.3%，仅需在4个A100 GPU上训练5小时。此外，ThinkDiff在将多张图像和文本组合成逻辑一致的图像方面表现出色。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.10458" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 18 Feb 2025 04:33:41 GMT</pubDate>
-</item>
-<item>
-<title>深度神经网络模型中的直觉物理理解研究</title>
-<link>https://arxiv.org/abs/2502.11831</link>
-<guid>https://arxiv.org/abs/2502.11831</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">研究表明深度神经网络能通过视频预测学习直觉物理知识。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了普遍深度神经网络模型在自然视频中预测缺失区域的过程中，如何逐步获得直觉物理理解。基于期望违背框架的实验表明，训练在学习表示空间中的视频预测模型能展示对象延续性和形状一致性等直觉物理特性。而在像素空间中的视频预测和通过文本推理的多模态大型语言模型，表现更接近于随机概率。研究比较不同结构显示，联合学习抽象表示空间并预测感官输入的缺失部分，类似于预测编码，足以培养对直觉物理的理解。这一发现挑战了固有知识的概念，即理解世界所需的核心知识并不一定需要内置到模型中，即便是训练一周的独特视频模型也能超越随机表现。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.11831" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 18 Feb 2025 04:20:25 GMT</pubDate>
-</item>
-<item>
-<title>量子属性预测中的预训练质量优于量</title>
-<link>https://arxiv.org/abs/2502.11085</link>
-<guid>https://arxiv.org/abs/2502.11085</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本研究表明，优质数据集在量子属性预测中优于大规模数据集。</p><br /><br /><p><strong>摘要：</strong> 本文挑战了量子属性预测中近期的范式，认为进展与数据集规模和计算资源的增长相关。研究表明，在精心选择的任务相关数据集上进行预训练，能够匹敌甚至超越大规模预训练，而计算成本仅为1/24。同时，引入了一种新指标——化学相似性指数（CSI），用于量化上游预训练数据集与下游任务的对齐程度。通过选择最相关的数据集，最低化CSI距离，结果表明，基于较小、聚焦数据集的预训练模型在性能上始终优于那些基于大量混合数据集（如JMP）的模型。这一结果表明，数据增加并不总是提升性能，反而可能因低相关性数据的加入而恶化。这一发现突显出在量子属性预测中，预训练的质量常常优于数量。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.11085" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 18 Feb 2025 04:16:28 GMT</pubDate>
-</item>
-<item>
-<title>PhysReason：评估大语言模型物理推理能力的新基准</title>
-<link>https://arxiv.org/abs/2502.12054</link>
-<guid>https://arxiv.org/abs/2502.12054</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">PhysReason是一个评估大语言模型物理推理能力的新基准，涵盖1200个问题。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了PhysReason，一个包含1200道问题的新基准，旨在评估大语言模型在物理推理方面的能力。该基准问题分为知识型（25%）和推理型（75%）两类，并依据难度分为简单、中等和困难三级，其中困难问题的平均解题步骤达到15.6步。我们还提出了物理解题自动评分框架，进行高效的答案级和步骤级评估。尽管一些顶尖模型如Deepseek-R1和Gemini-2.0-Flash-Thinking在答案级评估中得分不到60%，为何从知识型问题（75.11%）到困难问题（31.95%）的性能显著下降，借助步骤级评估，我们发现了四个主要瓶颈：物理定理应用、物理过程理解、计算和物理条件分析。这些发现使PhysReason成为评估语言模型物理推理能力的一个新颖且全面的基准。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.12054" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 18 Feb 2025 03:53:47 GMT</pubDate>
-</item>
-<item>
-<title>大型语言模型的数学推理能力研究</title>
-<link>https://arxiv.org/abs/2502.11574</link>
-<guid>https://arxiv.org/abs/2502.11574</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">研究表明大型语言模型在数学推理中存在逻辑缺陷。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了大型语言模型（LLMs）的数学推理能力，使用50个新构建的高中水平文字题进行分析。研究不仅关注模型的最终答案正确性，还深入分析了解题步骤，以识别推理失败。评估了八种最新模型，包括Mixtral、Llama、Gemini和GPT系列，发现虽然一些新模型（如o3-mini、deepseek-r1）在准确度上表现较高，但所有模型在空间推理、战略规划和算术方面均存在错误。有些模型通过错误的逻辑得出了正确的答案。常见的失败模式包括不当假设、对数字模式的过度依赖，以及将物理直觉转化为数学步骤的困难。手动分析表明，尽管模型具备广泛的数学知识，它们在处理需多步推理或现实世界知识的问题上表现不佳。研究强调仅仅关注答案而忽视推理过程的评估是有风险的，凸显出LLMs在广泛性和推理能力上的持续差距，需要针对性改进结构化推理和约束处理能力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.11574" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 18 Feb 2025 02:26:18 GMT</pubDate>
 </item>
 </channel>
 </rss>
