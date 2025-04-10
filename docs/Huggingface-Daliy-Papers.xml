@@ -4,16 +4,14 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+
 <item>
 <title>Caption Anything in Video: Fine-grained Object-centric Captioning via Spatiotemporal Multimodal Prompting</title>
 <link>https://arxiv.org/abs/2504.05541</link>
 <guid>https://arxiv.org/abs/2504.05541</guid>
 <content:encoded><![CDATA[
-
-  We present CAT-V (Caption AnyThing in Video), a training-free framework for fine-grained object-centric video captioning that enables detailed descriptions of user-selected objects through time. CAT-V integrates three key components: a Segmenter based on SAMURAI for precise object segmentation across frames, a Temporal Analyzer powered by TRACE-Uni for accurate event boundary detection and temporal analysis, and a Captioner using InternVL-2.5 for generating detailed object-centric descriptions. Through spatiotemporal visual prompts and chain-of-thought reasoning, our framework generates detailed, temporally-aware descriptions of objects' attributes, actions, statuses, interactions, and environmental contexts without requiring additional training data. CAT-V supports flexible user interactions through various visual prompts (points, bounding boxes, and irregular regions) and maintains temporal sensitivity by tracking object states and interactions across different time segments. Our approach addresses limitations of existing video captioning methods, which either produce overly abstract descriptions or lack object-level precision, enabling fine-grained, object-specific descriptions while maintaining temporal coherence and spatial accuracy. The GitHub repository for this project is available at https://github.com/yunlong10/CAT-V
-
+We present CAT-V (Caption AnyThing in Video), a training-free framework for fine-grained object-centric video captioning that enables detailed descriptions of user-selected objects through time. CAT-V integrates three key components: a Segmenter based on SAMURAI for precise object segmentation across frames, a Temporal Analyzer powered by TRACE-Uni for accurate event boundary detection and temporal analysis, and a Captioner using InternVL-2.5 for generating detailed object-centric descriptions. Through spatiotemporal visual prompts and chain-of-thought reasoning, our framework generates detailed, temporally-aware descriptions of objects' attributes, actions, statuses, interactions, and environmental contexts without requiring additional training data. CAT-V supports flexible user interactions through various visual prompts (points, bounding boxes, and irregular regions) and maintains temporal sensitivity by tracking object states and interactions across different time segments. Our approach addresses limitations of existing video captioning methods, which either produce overly abstract descriptions or lack object-level precision, enabling fine-grained, object-specific descriptions while maintaining temporal coherence and spatial accuracy. The GitHub repository for this project is available at https://github.com/yunlong10/CAT-V
 ]]></content:encoded>
-<pubDate>Mon, 07 Apr 2025 18:35:36 GMT</pubDate>
 <pubDate>Mon, 07 Apr 2025 18:35:36 GMT</pubDate>
 </item>
 <item>
@@ -21,14 +19,10 @@
 <link>https://arxiv.org/abs/2504.05523</link>
 <guid>https://arxiv.org/abs/2504.05523</guid>
 <content:encoded><![CDATA[
-
-  Large language models (LLMs) have shown potential as tools for scientific discovery. This has engendered growing interest in their use in humanistic disciplines, such as historical linguistics and literary studies. These fields often construct arguments on the basis of delineations like genre, or more inflexibly, time period. Although efforts have been made to restrict inference to specific domains via fine-tuning or model editing, we posit that the only true guarantee is domain-restricted pretraining -- typically, a data- and compute-expensive proposition.   We show that efficient pretraining techniques can produce useful models over corpora too large for easy manual inspection but too small for "typical" LLM approaches. We employ a novel date-attribution pipeline in order to obtain a temporally-segmented dataset of five 10-million-word slices. We train two corresponding five-model batteries over these corpus segments, efficient pretraining and Llama3-8B parameter efficiently finetuned.   We find that the pretrained models are faster to train than the finetuned baselines and that they better respect the historical divisions of our corpus. Emphasizing speed and precision over a-historical comprehensiveness enables a number of novel approaches to hypothesis discovery and testing in our target fields. Taking up diachronic linguistics as a testbed, we show that our method enables the detection of a diverse set of phenomena, including en masse lexical change, non-lexical (grammatical and morphological) change, and word sense introduction/obsolescence. We provide a ready-to-use pipeline that allows extension of our approach to other target fields with only minimal adaptation.
-
+Large language models (LLMs) have shown potential as tools for scientific discovery. This has engendered growing interest in their use in humanistic disciplines, such as historical linguistics and literary studies. These fields often construct arguments on the basis of delineations like genre, or more inflexibly, time period. Although efforts have been made to restrict inference to specific domains via fine-tuning or model editing, we posit that the only true guarantee is domain-restricted pretraining -- typically, a data- and compute-expensive proposition.   We show that efficient pretraining techniques can produce useful models over corpora too large for easy manual inspection but too small for "typical" LLM approaches. We employ a novel date-attribution pipeline in order to obtain a temporally-segmented dataset of five 10-million-word slices. We train two corresponding five-model batteries over these corpus segments, efficient pretraining and Llama3-8B parameter efficiently finetuned.   We find that the pretrained models are faster to train than the finetuned baselines and that they better respect the historical divisions of our corpus. Emphasizing speed and precision over a-historical comprehensiveness enables a number of novel approaches to hypothesis discovery and testing in our target fields. Taking up diachronic linguistics as a testbed, we show that our method enables the detection of a diverse set of phenomena, including en masse lexical change, non-lexical (grammatical and morphological) change, and word sense introduction/obsolescence. We provide a ready-to-use pipeline that allows extension of our approach to other target fields with only minimal adaptation.
 ]]></content:encoded>
 <pubDate>Mon, 07 Apr 2025 17:51:32 GMT</pubDate>
-<pubDate>Mon, 07 Apr 2025 17:51:32 GMT</pubDate>
 </item>
-
 <item>
 <title>Are We Done with Object-Centric Learning?</title>
 <link>https://arxiv.org/abs/2504.07092</link>
@@ -9010,24 +9004,6 @@ The continuous development of foundational models for video generation is evolvi
 <div><p style="color: gray;">ILIAS数据集旨在评估图像检索模型对特定对象的识别能力。</p><br /><br /><p><strong>摘要：</strong> ILIAS是一个新推出的测试数据集，专为评估当前及未来的基础模型与检索技术在实例级图像检索能力而设计。与现有数据集相比，ILIAS的优势在于其大规模、多样化的领域，以及准确的真实标注，且性能尚未饱和。该数据集包含1,000个对象实例的查询和正面图像，这些图像经过手动收集，旨在捕捉具有挑战性的条件和多样化的领域。检索任务涉及1亿张来自YFCC100M的数据干扰图像。在避免假阴性并减少额外标注工作量的前提下，ILIAS仅包含确认在2014年后出现的查询对象。通过广泛的基准测试，结果显示：针对特定领域的模型表现优异，但在ILIAS上的效果有限；通过多领域类监督训练线性适配层可以提高性能；局部描述符在重排检索中的作用依然重要，特别是在存在严重背景干扰的情况下；此外，视觉-语言基础模型在文本到图像的性能与图像到图像的性能接近。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.11748" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 18 Feb 2025 11:42:58 GMT</pubDate>
-</item>
-<item>
-<title>CALM：结合对话与智能能力的统一语言模型</title>
-<link>https://arxiv.org/abs/2502.08820</link>
-<guid>https://arxiv.org/abs/2502.08820</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">CALM统一模型提升了对话系统与任务导向的能力。</p><br /><br /><p><strong>摘要：</strong> 大型语言模型（LLMs）通过API调用功能，推动了语言智能体（LA）和传统任务导向对话（TOD）范式的变革。然而，现有方法在支持多轮对话时面临重大困境。任务导向系统通常在有限的目标API上训练，需要新数据来维持与新服务的接口质量，而语言智能体在多轮对话中则难以维持用户意图。为了解决这一问题，本文提出CALM（Conversational Agentic Language Model），一种结合对话和智能能力的统一方法。我们创建了CALM-IT，一个精心构建的多任务数据集，以交错多轮ReAct推理与复杂的API使用。使用CALM-IT训练的CALM系列模型（CALM 8B, CALM 70B, CALM 405B），在三个流行基准（MultiWOZ 2.4, BFCL V3, API-Bank）上均超越了包括GPT-4o在内的顶尖领域专用模型。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.08820" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 18 Feb 2025 08:59:34 GMT</pubDate>
-</item>
-<item>
-<title>模型编辑在问答系统中的评估与实践研究</title>
-<link>https://arxiv.org/abs/2502.11177</link>
-<guid>https://arxiv.org/abs/2502.11177</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">研究表明当前模型编辑方法在实际应用中的有效性不足。</p><br /><br /><p><strong>摘要：</strong> 尽管现有模型编辑方法在人工评估中表现良好，但其实用性仍待证实。本研究通过建立QAEdit基准和标准化评估框架，探讨模型编辑在问答（QA）中的有效性。实验结果显示，现有编辑方法在真实应用中的表现远低于预期（38.5%对比~96%），分析指出，主要原因在于以往研究中的评估实践不当，特别是教师强迫使用不当，导致错误无法传播。此外，通过模拟真实场景的连续编辑，发现现有方法在仅进行1000次编辑的情况下效果显著下降。我们的分析对现有模型编辑方法的实际应用及其评估实践进行了重新审视，并提出了改进建议，以推动可靠且实用的模型编辑研究。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.11177" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 18 Feb 2025 07:33:17 GMT</pubDate>
 </item>
 </channel>
 </rss>
