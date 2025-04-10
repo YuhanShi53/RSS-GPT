@@ -5,15 +5,61 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>OmniCaptioner: One Captioner to Rule Them All</title>
+<link>https://arxiv.org/abs/2504.07089</link>
+<guid>https://arxiv.org/abs/2504.07089</guid>
+<content:encoded><![CDATA[
+
+  We propose OmniCaptioner, a versatile visual captioning framework for generating fine-grained textual descriptions across a wide variety of visual domains. Unlike prior methods limited to specific image types (e.g., natural images or geometric visuals), our framework provides a unified solution for captioning natural images, visual text (e.g., posters, UIs, textbooks), and structured visuals (e.g., documents, tables, charts). By converting low-level pixel information into semantically rich textual representations, our framework bridges the gap between visual and textual modalities. Our results highlight three key advantages: (i) Enhanced Visual Reasoning with LLMs, where long-context captions of visual modalities empower LLMs, particularly the DeepSeek-R1 series, to reason effectively in multimodal scenarios; (ii) Improved Image Generation, where detailed captions improve tasks like text-to-image generation and image transformation; and (iii) Efficient Supervised Fine-Tuning (SFT), which enables faster convergence with less data. We believe the versatility and adaptability of OmniCaptioner can offer a new perspective for bridging the gap between language and visual modalities.
+
+]]></content:encoded>
+<pubDate>Wed, 09 Apr 2025 13:58:58 GMT</pubDate>
+<pubDate>Wed, 09 Apr 2025 13:58:58 GMT</pubDate>
+</item>
+<item>
+<title>A Sober Look at Progress in Language Model Reasoning: Pitfalls and Paths to Reproducibility</title>
+<link>https://arxiv.org/abs/2504.07086</link>
+<guid>https://arxiv.org/abs/2504.07086</guid>
+<content:encoded><![CDATA[
+
+  Reasoning has emerged as the next major frontier for language models (LMs), with rapid advances from both academic and industrial labs. However, this progress often outpaces methodological rigor, with many evaluations relying on benchmarking practices that lack transparency, robustness, or statistical grounding. In this work, we conduct a comprehensive empirical study and find that current mathematical reasoning benchmarks are highly sensitive to subtle implementation choices - including decoding parameters, random seeds, prompt formatting, and even hardware and software-framework configurations. Performance gains reported in recent studies frequently hinge on unclear comparisons or unreported sources of variance. To address these issues, we propose a standardized evaluation framework with clearly defined best practices and reporting standards. Using this framework, we reassess recent methods and find that reinforcement learning (RL) approaches yield only modest improvements - far below prior claims - and are prone to overfitting, especially on small-scale benchmarks like AIME24. In contrast, supervised finetuning (SFT) methods show consistently stronger generalization. To foster reproducibility, we release all code, prompts, and model outputs, for reasoning benchmarks, establishing more rigorous foundations for future work.
+
+]]></content:encoded>
+<pubDate>Wed, 09 Apr 2025 13:58:17 GMT</pubDate>
+<pubDate>Wed, 09 Apr 2025 13:58:17 GMT</pubDate>
+</item>
+<item>
+<title>RobustDexGrasp: Robust Dexterous Grasping of General Objects from Single-view Perception</title>
+<link>https://arxiv.org/abs/2504.05287</link>
+<guid>https://arxiv.org/abs/2504.05287</guid>
+<content:encoded><![CDATA[
+
+  Robust grasping of various objects from single-view perception is fundamental for dexterous robots. Previous works often rely on fully observable objects, expert demonstrations, or static grasping poses, which restrict their generalization ability and adaptability to external disturbances. In this paper, we present a reinforcement-learning-based framework that enables zero-shot dynamic dexterous grasping of a wide range of unseen objects from single-view perception, while performing adaptive motions to external disturbances. We utilize a hand-centric object representation for shape feature extraction that emphasizes interaction-relevant local shapes, enhancing robustness to shape variance and uncertainty. To enable effective hand adaptation to disturbances with limited observations, we propose a mixed curriculum learning strategy, which first utilizes imitation learning to distill a policy trained with privileged real-time visual-tactile feedback, and gradually transfers to reinforcement learning to learn adaptive motions under disturbances caused by observation noises and dynamic randomization. Our experiments demonstrate strong generalization in grasping unseen objects with random poses, achieving success rates of 97.0% across 247,786 simulated objects and 94.6% across 512 real objects. We also demonstrate the robustness of our method to various disturbances, including unobserved object movement and external forces, through both quantitative and qualitative evaluations. Project Page: https://zdchan.github.io/Robust_DexGrasp/
+
+]]></content:encoded>
+<pubDate>Mon, 07 Apr 2025 13:38:19 GMT</pubDate>
+<pubDate>Mon, 07 Apr 2025 13:38:19 GMT</pubDate>
+</item>
+<item>
+<title>DiTaiListener: Controllable High Fidelity Listener Video Generation with Diffusion</title>
+<link>https://arxiv.org/abs/2504.04010</link>
+<guid>https://arxiv.org/abs/2504.04010</guid>
+<content:encoded><![CDATA[
+
+  Generating naturalistic and nuanced listener motions for extended interactions remains an open problem. Existing methods often rely on low-dimensional motion codes for facial behavior generation followed by photorealistic rendering, limiting both visual fidelity and expressive richness. To address these challenges, we introduce DiTaiListener, powered by a video diffusion model with multimodal conditions. Our approach first generates short segments of listener responses conditioned on the speaker's speech and facial motions with DiTaiListener-Gen. It then refines the transitional frames via DiTaiListener-Edit for a seamless transition. Specifically, DiTaiListener-Gen adapts a Diffusion Transformer (DiT) for the task of listener head portrait generation by introducing a Causal Temporal Multimodal Adapter (CTM-Adapter) to process speakers' auditory and visual cues. CTM-Adapter integrates speakers' input in a causal manner into the video generation process to ensure temporally coherent listener responses. For long-form video generation, we introduce DiTaiListener-Edit, a transition refinement video-to-video diffusion model. The model fuses video segments into smooth and continuous videos, ensuring temporal consistency in facial expressions and image quality when merging short video segments produced by DiTaiListener-Gen. Quantitatively, DiTaiListener achieves the state-of-the-art performance on benchmark datasets in both photorealism (+73.8% in FID on RealTalk) and motion representation (+6.1% in FD metric on VICO) spaces. User studies confirm the superior performance of DiTaiListener, with the model being the clear preference in terms of feedback, diversity, and smoothness, outperforming competitors by a significant margin.
+
+]]></content:encoded>
+<pubDate>Fri, 04 Apr 2025 21:19:46 GMT</pubDate>
+<pubDate>Fri, 04 Apr 2025 21:19:46 GMT</pubDate>
+</item>
+
+<item>
 <title>OLMoTrace: Tracing Language Model Outputs Back to Trillions of Training Tokens</title>
 <link>https://arxiv.org/abs/2504.07096</link>
 <guid>https://arxiv.org/abs/2504.07096</guid>
 <content:encoded><![CDATA[
-
-  We present OLMoTrace, the first system that traces the outputs of language models back to their full, multi-trillion-token training data in real time. OLMoTrace finds and shows verbatim matches between segments of language model output and documents in the training text corpora. Powered by an extended version of infini-gram (Liu et al., 2024), our system returns tracing results within a few seconds. OLMoTrace can help users understand the behavior of language models through the lens of their training data. We showcase how it can be used to explore fact checking, hallucination, and the creativity of language models. OLMoTrace is publicly available and fully open-source.
-
+We present OLMoTrace, the first system that traces the outputs of language models back to their full, multi-trillion-token training data in real time. OLMoTrace finds and shows verbatim matches between segments of language model output and documents in the training text corpora. Powered by an extended version of infini-gram (Liu et al., 2024), our system returns tracing results within a few seconds. OLMoTrace can help users understand the behavior of language models through the lens of their training data. We showcase how it can be used to explore fact checking, hallucination, and the creativity of language models. OLMoTrace is publicly available and fully open-source.
 ]]></content:encoded>
-<pubDate>Wed, 09 Apr 2025 13:59:35 GMT</pubDate>
 <pubDate>Wed, 09 Apr 2025 13:59:35 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +67,8 @@
 <link>https://arxiv.org/abs/2504.07083</link>
 <guid>https://arxiv.org/abs/2504.07083</guid>
 <content:encoded><![CDATA[
-
-  Camera trajectory design plays a crucial role in video production, serving as a fundamental tool for conveying directorial intent and enhancing visual storytelling. In cinematography, Directors of Photography meticulously craft camera movements to achieve expressive and intentional framing. However, existing methods for camera trajectory generation remain limited: Traditional approaches rely on geometric optimization or handcrafted procedural systems, while recent learning-based methods often inherit structural biases or lack textual alignment, constraining creative synthesis. In this work, we introduce an auto-regressive model inspired by the expertise of Directors of Photography to generate artistic and expressive camera trajectories. We first introduce DataDoP, a large-scale multi-modal dataset containing 29K real-world shots with free-moving camera trajectories, depth maps, and detailed captions in specific movements, interaction with the scene, and directorial intent. Thanks to the comprehensive and diverse database, we further train an auto-regressive, decoder-only Transformer for high-quality, context-aware camera movement generation based on text guidance and RGBD inputs, named GenDoP. Extensive experiments demonstrate that compared to existing methods, GenDoP offers better controllability, finer-grained trajectory adjustments, and higher motion stability. We believe our approach establishes a new standard for learning-based cinematography, paving the way for future advancements in camera control and filmmaking. Our project website: https://kszpxxzmc.github.io/GenDoP/.
-
+Camera trajectory design plays a crucial role in video production, serving as a fundamental tool for conveying directorial intent and enhancing visual storytelling. In cinematography, Directors of Photography meticulously craft camera movements to achieve expressive and intentional framing. However, existing methods for camera trajectory generation remain limited: Traditional approaches rely on geometric optimization or handcrafted procedural systems, while recent learning-based methods often inherit structural biases or lack textual alignment, constraining creative synthesis. In this work, we introduce an auto-regressive model inspired by the expertise of Directors of Photography to generate artistic and expressive camera trajectories. We first introduce DataDoP, a large-scale multi-modal dataset containing 29K real-world shots with free-moving camera trajectories, depth maps, and detailed captions in specific movements, interaction with the scene, and directorial intent. Thanks to the comprehensive and diverse database, we further train an auto-regressive, decoder-only Transformer for high-quality, context-aware camera movement generation based on text guidance and RGBD inputs, named GenDoP. Extensive experiments demonstrate that compared to existing methods, GenDoP offers better controllability, finer-grained trajectory adjustments, and higher motion stability. We believe our approach establishes a new standard for learning-based cinematography, paving the way for future advancements in camera control and filmmaking. Our project website: https://kszpxxzmc.github.io/GenDoP/.
 ]]></content:encoded>
-<pubDate>Wed, 09 Apr 2025 13:56:01 GMT</pubDate>
 <pubDate>Wed, 09 Apr 2025 13:56:01 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +76,8 @@
 <link>https://arxiv.org/abs/2504.06514</link>
 <guid>https://arxiv.org/abs/2504.06514</guid>
 <content:encoded><![CDATA[
-
-  We find that the response length of reasoning LLMs, whether trained by reinforcement learning or supervised learning, drastically increases for ill-posed questions with missing premises (MiP), ending up with redundant and ineffective thinking. This newly introduced scenario exacerbates the general overthinking issue to a large extent, which we name as the MiP-Overthinking. Such failures are against the ``test-time scaling law'' but have been widely observed on multiple datasets we curated with MiP, indicating the harm of cheap overthinking and a lack of critical thinking. Surprisingly, LLMs not specifically trained for reasoning exhibit much better performance on the MiP scenario, producing much shorter responses that quickly identify ill-posed queries. This implies a critical flaw of the current training recipe for reasoning LLMs, which does not encourage efficient thinking adequately, leading to the abuse of thinking patterns. To further investigate the reasons behind such failures, we conduct fine-grained analyses of the reasoning length, overthinking patterns, and location of critical thinking on different types of LLMs. Moreover, our extended ablation study reveals that the overthinking is contagious through the distillation of reasoning models' responses. These results improve the understanding of overthinking and shed novel insights into mitigating the problem.
-
+We find that the response length of reasoning LLMs, whether trained by reinforcement learning or supervised learning, drastically increases for ill-posed questions with missing premises (MiP), ending up with redundant and ineffective thinking. This newly introduced scenario exacerbates the general overthinking issue to a large extent, which we name as the MiP-Overthinking. Such failures are against the ``test-time scaling law'' but have been widely observed on multiple datasets we curated with MiP, indicating the harm of cheap overthinking and a lack of critical thinking. Surprisingly, LLMs not specifically trained for reasoning exhibit much better performance on the MiP scenario, producing much shorter responses that quickly identify ill-posed queries. This implies a critical flaw of the current training recipe for reasoning LLMs, which does not encourage efficient thinking adequately, leading to the abuse of thinking patterns. To further investigate the reasons behind such failures, we conduct fine-grained analyses of the reasoning length, overthinking patterns, and location of critical thinking on different types of LLMs. Moreover, our extended ablation study reveals that the overthinking is contagious through the distillation of reasoning models' responses. These results improve the understanding of overthinking and shed novel insights into mitigating the problem.
 ]]></content:encoded>
-<pubDate>Tue, 08 Apr 2025 21:25:27 GMT</pubDate>
 <pubDate>Tue, 08 Apr 2025 21:25:27 GMT</pubDate>
 </item>
 <item>
@@ -45,14 +85,10 @@
 <link>https://arxiv.org/abs/2504.04842</link>
 <guid>https://arxiv.org/abs/2504.04842</guid>
 <content:encoded><![CDATA[
-
-  Creating a realistic animatable avatar from a single static portrait remains challenging. Existing approaches often struggle to capture subtle facial expressions, the associated global body movements, and the dynamic background. To address these limitations, we propose a novel framework that leverages a pretrained video diffusion transformer model to generate high-fidelity, coherent talking portraits with controllable motion dynamics. At the core of our work is a dual-stage audio-visual alignment strategy. In the first stage, we employ a clip-level training scheme to establish coherent global motion by aligning audio-driven dynamics across the entire scene, including the reference portrait, contextual objects, and background. In the second stage, we refine lip movements at the frame level using a lip-tracing mask, ensuring precise synchronization with audio signals. To preserve identity without compromising motion flexibility, we replace the commonly used reference network with a facial-focused cross-attention module that effectively maintains facial consistency throughout the video. Furthermore, we integrate a motion intensity modulation module that explicitly controls expression and body motion intensity, enabling controllable manipulation of portrait movements beyond mere lip motion. Extensive experimental results show that our proposed approach achieves higher quality with better realism, coherence, motion intensity, and identity preservation. Ours project page: https://fantasy-amap.github.io/fantasy-talking/.
-
+Creating a realistic animatable avatar from a single static portrait remains challenging. Existing approaches often struggle to capture subtle facial expressions, the associated global body movements, and the dynamic background. To address these limitations, we propose a novel framework that leverages a pretrained video diffusion transformer model to generate high-fidelity, coherent talking portraits with controllable motion dynamics. At the core of our work is a dual-stage audio-visual alignment strategy. In the first stage, we employ a clip-level training scheme to establish coherent global motion by aligning audio-driven dynamics across the entire scene, including the reference portrait, contextual objects, and background. In the second stage, we refine lip movements at the frame level using a lip-tracing mask, ensuring precise synchronization with audio signals. To preserve identity without compromising motion flexibility, we replace the commonly used reference network with a facial-focused cross-attention module that effectively maintains facial consistency throughout the video. Furthermore, we integrate a motion intensity modulation module that explicitly controls expression and body motion intensity, enabling controllable manipulation of portrait movements beyond mere lip motion. Extensive experimental results show that our proposed approach achieves higher quality with better realism, coherence, motion intensity, and identity preservation. Ours project page: https://fantasy-amap.github.io/fantasy-talking/.
 ]]></content:encoded>
 <pubDate>Mon, 07 Apr 2025 04:56:01 GMT</pubDate>
-<pubDate>Mon, 07 Apr 2025 04:56:01 GMT</pubDate>
 </item>
-
 <item>
 <title>DDT: Decoupled Diffusion Transformer</title>
 <link>https://arxiv.org/abs/2504.05741</link>
@@ -9016,42 +9052,6 @@ The continuous development of foundational models for video generation is evolvi
 <div><p style="color: gray;">研究表明大型语言模型在数学推理中存在逻辑缺陷。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了大型语言模型（LLMs）的数学推理能力，使用50个新构建的高中水平文字题进行分析。研究不仅关注模型的最终答案正确性，还深入分析了解题步骤，以识别推理失败。评估了八种最新模型，包括Mixtral、Llama、Gemini和GPT系列，发现虽然一些新模型（如o3-mini、deepseek-r1）在准确度上表现较高，但所有模型在空间推理、战略规划和算术方面均存在错误。有些模型通过错误的逻辑得出了正确的答案。常见的失败模式包括不当假设、对数字模式的过度依赖，以及将物理直觉转化为数学步骤的困难。手动分析表明，尽管模型具备广泛的数学知识，它们在处理需多步推理或现实世界知识的问题上表现不佳。研究强调仅仅关注答案而忽视推理过程的评估是有风险的，凸显出LLMs在广泛性和推理能力上的持续差距，需要针对性改进结构化推理和约束处理能力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.11574" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 18 Feb 2025 02:26:18 GMT</pubDate>
-</item>
-<item>
-<title>大型语言模型在语言复杂性测量任务中的表现研究</title>
-<link>https://arxiv.org/abs/2502.11578</link>
-<guid>https://arxiv.org/abs/2502.11578</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">研究显示ChatGPT-o1-mini在语言复杂性测量中表现最佳。</p><br /><br /><p><strong>摘要：</strong> 本文研究了当前大型语言模型（LLMs）在语言复杂性测量任务中的表现，重点关注LIX可读性指标和平均依赖距离（ADD）的计算。通过分析瑞典高中的论文和大学级别的论文，我们评估了模型计算LIX分数和进行依赖解析的能力，并将其结果与已建立的基准进行比较。研究发现，所有模型在这些任务上均展现出一定的能力，其中ChatGPT-o1-mini在LIX计算和依赖解析中表现最为稳定，取得了最高的准确率。此外，我们观察到模型在计算LIX时的准确性与其在大规模多任务语言理解基准（MMLU）上的整体表现之间存在显著相关性（-0.875，p = 0.026，N=6）。这些结果表明，语言复杂性测量能力可以作为评估LLMs一般能力的有效零-shot代理，提供了一种无需大量基准数据集的模型评估方法。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.11578" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 18 Feb 2025 02:23:29 GMT</pubDate>
-</item>
-<item>
-<title>SysGen: 提升语言模型响应的系统消息生成管道</title>
-<link>https://arxiv.org/abs/2502.11330</link>
-<guid>https://arxiv.org/abs/2502.11330</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">SysGen改善了语言模型响应与系统消息的一致性。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了SysGen，一个用于生成系统消息的流程，旨在提高大型语言模型（LLMs）响应的对齐度。当前，公开可用的数据常常缺乏系统消息，且在行业中受到严格的许可限制，手动标注需要大量资源。通过对没有系统消息的有监督微调数据集进行训练，SysGen显著提升了模型响应与系统消息及用户指令的一致性，且在多种开源模型的Multifacet基准测试中表现出显著改善，同时对未见的基准测试，如Open LLM Leaderboard 2，的影响极小。定性分析则强调了多样化系统消息在不同环境中的适应性的重要性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.11330" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 18 Feb 2025 01:45:36 GMT</pubDate>
-</item>
-<item>
-<title>大型语言模型知识电路演化研究</title>
-<link>https://arxiv.org/abs/2502.11196</link>
-<guid>https://arxiv.org/abs/2502.11196</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">研究大型语言模型如何内化新知识并优化知识存储过程。</p><br /><br /><p><strong>摘要：</strong> 尽管大型语言模型（LLMs）在知识密集型任务中表现卓越，但它们在理解新知识的内化过程方面存在重大缺口。本文通过知识电路演化的视角，识别出促进知识存储和处理的计算子图。我们的系统分析显示，新知识的获取受既有知识相关性的影响，知识电路的演化经历从形成到优化的明显相变，并且遵循从深到浅的演化模式。这些发现不仅深化了我们对LLMs中新知识获取机制的理论理解，也为改善持续预训练策略以提升模型性能提供了潜在的启示。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.11196" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 18 Feb 2025 01:02:25 GMT</pubDate>
-</item>
-<item>
-<title>探索大型语言模型作为代码执行替代者的能力</title>
-<link>https://arxiv.org/abs/2502.11167</link>
-<guid>https://arxiv.org/abs/2502.11167</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文研究大型语言模型在代码执行预测中的有效性与局限性。</p><br /><br /><p><strong>摘要：</strong> 本研究探讨了大型语言模型（LLMs）作为通用代码执行替代者的潜力，尤其是预测程序输出和行为而不实际运行代码。我们提出了SURGE基准，涵盖了八个关键方面，包括多语言编程任务、竞争级编程问题和高成本科学计算等。通过对多种开源和专有LLMs的评估及模型规模与训练数据规模对替代执行准确性的影响分析，我们发现LLMs在某些情况下能够预测代码执行结果，但在通用替代执行方面存在显著限制。研究还对模型预测错误进行了分类，并探讨了潜在的改进领域，提供了使用LLMs作为代码执行替代者的可行性实证见解。代码和数据集已在GitHub上发布。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.11167" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 18 Feb 2025 01:01:24 GMT</pubDate>
 </item>
 </channel>
 </rss>
