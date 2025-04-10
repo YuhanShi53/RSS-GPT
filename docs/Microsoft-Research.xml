@@ -4,6 +4,153 @@
 <title>Microsoft Research</title>
 <link>https://www.microsoft.com/en-us/research/</link>
 
+<item>
+<title>Debug-gym: an environment for AI coding tools to learn how to debug code like programmers</title>
+<link>https://www.microsoft.com/en-us/research/blog/debug-gym-an-environment-for-ai-coding-tools-to-learn-how-to-debug-code-like-programmers/</link>
+<guid>https://www.microsoft.com/en-us/research/blog/debug-gym-an-environment-for-ai-coding-tools-to-learn-how-to-debug-code-like-programmers/</guid>
+<content:encoded><![CDATA[
+
+  <figure class="wp-block-image size-full"><img alt="A graphic with a gradient background transitioning from blue on the left to pink on the right. The graphic features a white outline of a computer monitor with code brackets on the screen, an arrow pointing downwards into the monitor, and another arrow curving around to point upwards towards a magnifying glass with a bug icon inside it." class="wp-image-1136365" height="1182" src="https://www.microsoft.com/en-us/research/wp-content/uploads/2025/04/NEWDeBug-BlogHeroFeature-1400x788-1.jpg" width="2100" /></figure>
+
+
+
+<p>The ongoing proliferation of AI coding tools is not only boosting developers’ efficiency, it also signals a future where AI will generate a growing share of all new code. <a class="msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall" href="https://www.freethink.com/robots-ai/github-copilot" rel="noreferrer noopener" target="_blank">GitHub CEO Thomas Dohmke<span class="sr-only"> (opens in new tab)</span></a> predicted as much in 2023, when he said that &#8220;sooner than later, 80% of the code is going to be written by Copilot.&#8221;&nbsp;&nbsp;</p>
+
+
+
+<p>Both large and small software companies are already heavily using AI to generate code. <a class="msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall" href="https://www.youtube.com/watch?v=coojA-odaTk&amp;t=861s" rel="noreferrer noopener" target="_blank">Y Combinator’s Garry Tan<span class="sr-only"> (opens in new tab)</span></a> noted that 95% of code for a quarter of Y Combinator’s latest batch of startups was written by large language models.</p>
+
+
+
+<p>In fact, <strong>most developers spend the majority of their time debugging code,</strong> not writing it. As maintainers of popular open-source repositories, this resonates with us. But what if an AI tool could propose fixes for hundreds of open issues, and all we had to do was approve them before merging? This was what motivated us to maximize the potential time savings from AI coding tools by teaching them to debug code.&nbsp;</p>
+
+
+
+<p>By debugging we mean the interactive, iterative process to fix code. Developers typically hypothesize why their code crashed, then gather evidence by stepping through the program and examining variable values. They often use debugging tools like pdb (Python debugger) to assist in gathering information. This process is repeated until the code is fixed.</p>
+
+
+
+<p>Today&#8217;s AI coding tools boost productivity and excel at suggesting solutions for bugs based on available code and error messages. However, unlike human developers, these tools don&#8217;t seek additional information when solutions fail, leaving some bugs unaddressed, as you can see in this simple <a class="msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall" href="https://microsoft.github.io/debug-gym/" rel="noreferrer noopener" target="_blank">demo of how a mislabeled column stumps today’s coding tools<span class="sr-only"> (opens in new tab)</span></a>. This may leave users feeling like AI coding tools don’t understand the full context of the issues they are trying to solve.&nbsp;</p>
+
+
+
+<h2 class="wp-block-heading" id="introducing-debug-gym">Introducing debug-gym</h2>
+
+
+
+<p>A natural research question emerges: <strong>to what degree can LLMs use interactive debugging tools such as pdb?</strong> To explore this question, we released <a class="msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall" href="https://microsoft.github.io/debug-gym/" rel="noreferrer noopener" target="_blank"><strong>debug-gym</strong><span class="sr-only"> (opens in new tab)</span></a> – an environment that allows code-repairing agents to access tools for active information-seeking behavior. Debug-gym expands an agent’s action and observation space with feedback from tool usage, enabling setting breakpoints, navigating code, printing variable values, and creating test functions. Agents can interact with tools to investigate code or rewrite it, if confident. We believe interactive debugging with proper tools can empower coding agents to tackle real-world software engineering tasks and is central to LLM-based agent research. The fixes proposed by a coding agent with debugging capabilities, and then approved by a human programmer, will be grounded in the context of the relevant codebase, program execution and documentation, rather than relying solely on guesses based on previously seen training data.</p>
+
+
+
+<figure class="wp-block-image aligncenter size-full"><img alt="Figure 1: Diagram demonstrating the code-repairing process in outline. Left: conventional code-repairing system; right: additional tools enabled by debug-gym." class="wp-image-1136156" height="488" src="https://www.microsoft.com/en-us/research/wp-content/uploads/2025/04/DeBug_intro_diagram_v2.png" width="1503" /><figcaption class="wp-element-caption">Figure 1: Diagram demonstrating the code-repairing process in outline. In most existing approaches (shown in <strong>black</strong>), an agent rewrites its code conditioned on error messages obtained from executing the code. debug-gym equips the agent with additional tools such as pdb (shown in <strong>red</strong>), so it can interactively seek necessary information from the semantic space hidden behind the code and therefore have better code-repairing performance.</figcaption></figure>
+
+
+
+<p>Debug-gym is designed and developed to:</p>
+
+
+
+<ul class="wp-block-list">
+<li><strong>Handle repository-level information</strong>: the full repository is available to agents in debug-gym, allowing them to navigate and edit files.</li>
+
+
+
+<li><strong>Be robust and safe</strong>: to safeguard both the system and the development process, debug-gym runs code within sandbox Docker containers. This isolates the runtime environment, preventing harmful actions while still allowing thorough testing and debugging.&nbsp;&nbsp;</li>
+
+
+
+<li><strong>Be easily extensible</strong>: debug-gym was conceived with extensibility in mind and provides practitioners with the possibility of easily adding new tools.&nbsp;&nbsp;</li>
+
+
+
+<li><strong>Be text-based</strong>: debug-gym represents observation information in structured text (e.g., JSON format) and defines a simple syntax for text actions, making the environment fully compatible with modern LLM-based agents.</li>
+</ul>
+
+
+
+<p>With debug-gym, researchers and developers can specify a folder path to work with any custom repository to evaluate their debugging agent&#8217;s performance. Additionally, debug-gym includes three coding benchmarks to measure LLM-based agents’ performance in interactive debugging: Aider for simple function-level code generation, Mini-nightmare for short, hand-crafted buggy code examples, and SWE-bench for real-world coding problems requiring a comprehensive understanding of a large codebase and a solution in the format of a GitHub pull request.</p>
+
+
+
+<p>To learn more about debug-gym and start using it to train your own debugging agents, please refer to the <a href="https://www.microsoft.com/en-us/research/publication/debug-gym-a-text-based-environment-for-interactive-debugging/" rel="noreferrer noopener" target="_blank">technical report<span class="sr-only"> (opens in new tab)</span></a> and <a class="msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall" href="https://github.com/microsoft/debug-gym" rel="noreferrer noopener" target="_blank">GitHub<span class="sr-only"> (opens in new tab)</span></a>.&nbsp;</p>
+
+
+
+<h2 class="wp-block-heading" id="early-experimentation-promising-signal">Early experimentation: promising signal</h2>
+
+
+
+<p>For our initial attempt to validate that LLMs perform better on coding tests when they have access to debugging tools, we built a simple prompt-based agent and provided it with access to the following debug tools: eval, view, pdb, rewrite, and listdir. We used nine different LLMs as the backbone for our agent. Detailed results can be found in the <a href="https://www.microsoft.com/en-us/research/publication/debug-gym-a-text-based-environment-for-interactive-debugging/">technical report<span class="sr-only"> (opens in new tab)</span></a><a class="msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall" href="https://arxiv.org/pdf/2503.21557" rel="noreferrer noopener" target="_blank">.<span class="sr-only"> (opens in new tab)</span></a></p>
+
+
+
+<p>Even with debugging tools, our simple prompt-based agent rarely solves more than half of the <a class="msr-external-link glyph-append glyph-append-open-in-new-tab glyph-append-xsmall" href="https://www.swebench.com/lite.html" rel="noreferrer noopener" target="_blank">SWE-bench <span class="sr-only"> (opens in new tab)</span></a>Lite issues. We believe this is due to the scarcity of data representing sequential decision-making behavior (e.g., debugging traces) in the current LLM training corpus. However, the significant performance improvement (as shown in the most promising results in the graph below) validates that this is a promising research direction.&nbsp;</p>
+
+
+
+<figure class="wp-block-image aligncenter size-full"><img alt="Figure 2: The success rate represents the percentage of the 300 SWE-bench Lite issues resolved, comparing between agents with and without debugging tools." class="wp-image-1136159" height="974" src="https://www.microsoft.com/en-us/research/wp-content/uploads/2025/04/DeBug_froggy_bar_chart.png" width="1934" /><figcaption class="wp-element-caption">Figure 2: The success rate represents the percentage of the 300 SWE-bench Lite issues resolved. The green bars indicate the performance of the agent with debugging tools, while the gray bars show the performance of the agent without debugging tools. Note that both agents use the same backbone LLM to make decisions and propose code edits.</figcaption></figure>
+
+
+
+	<div class="border-bottom border-top border-gray-300 mt-5 mb-5 msr-promo text-center text-md-left alignwide">
+		
+
+		<p class="msr-promo__label text-gray-800 text-center text-uppercase">
+		<span class="px-4 bg-white display-inline-block font-weight-semibold small">Microsoft research podcast</span>
+	</p>
+	
+	<div class="row pt-3 pb-4 align-items-center">
+						<div class="msr-promo__media col-12 col-md-5">
+				<a class="bg-gray-300" href="https://www.microsoft.com/en-us/research/podcast/collaborators-silica-in-space-with-richard-black-and-dexter-greene/" target="_blank">
+					<img alt="Headshots of Richard Black and Dexter Greene for the Microsoft Research Podcast" class="w-100 display-block" src="https://www.microsoft.com/en-us/research/wp-content/uploads/2024/09/Richard-and-Dexter_Collaborators_Hero_Feature_No_Text_1400x788-1.jpg" />
+				</a>
+			</div>
+			
+			<div class="msr-promo__content p-3 px-5 col-12 col-md">
+
+									<h2 class="h4">Collaborators: Silica in space with Richard Black and Dexter Greene</h2>
+				
+								<p class="large">College freshman Dexter Greene and Microsoft research manager Richard Black discuss how technology that stores data in glass is supporting students as they expand earlier efforts to communicate what it means to be human to extraterrestrials.</p>
+				
+								<div class="wp-block-buttons justify-content-center justify-content-md-start">
+					<div class="wp-block-button">
+						<a class="btn btn-brand glyph-append glyph-append-chevron-right" href="https://www.microsoft.com/en-us/research/podcast/collaborators-silica-in-space-with-richard-black-and-dexter-greene/" target="_blank">
+							Listen now						</a>
+					</div>
+				</div>
+							</div><!--/.msr-promo__content-->
+	</div><!--/.msr-promo__inner-wrap-->
+<span class="sr-only" id="label-external-link">Opens in a new tab</span>	</div><!--/.msr-promo-->
+	
+
+
+<h2 class="wp-block-heading" id="future-work">Future work</h2>
+
+
+
+<p>We believe that training or fine-tuning LLMs can enhance their interactive debugging abilities. This requires specialized data, such as trajectory data that records agents interacting with a debugger to gather information before suggesting a fix. Unlike conventional reasoning problems, interactive debugging involves generating actions at each step that trigger feedback from the environment. This feedback helps the agent make new decisions, requiring dense data like the problem description and the sequence of actions leading to the solution.&nbsp;</p>
+
+
+
+<p>Our plan is to fine-tune an info-seeking model specialized in gathering the necessary information to resolve bugs. The goal is to use this model to actively build relevant context for a code generation model. If the code generation model is large, there is an opportunity to build a smaller info-seeking model that can provide relevant information to the larger one, e.g., a generalization of retrieval augmented generation (RAG), thus saving AI inference costs. The data collected during the reinforcement learning loop to train the info-seeking model can also be used to fine-tune larger models for interactive debugging.</p>
+
+
+
+<p>We are open-sourcing debug-gym to facilitate this line of research. We encourage the community to help us advance this research towards building interactive debugging agents and, more generally, agents that can seek information by interacting with the world on demand.</p>
+
+
+
+<h2 class="wp-block-heading" id="acknowledgements">Acknowledgements</h2>
+
+
+
+<p>We thank Ruoyao Wang for their insightful discussion on building interactive debugging agents, Chris Templeman and Elaina Maffeo for their team coaching, Jessica Mastronardi and Rich Ciapala for their kind support in project management and resource allocation, and Peter Jansen for providing valuable feedback for the technical report.</p>
+<span class="sr-only" id="label-external-link">Opens in a new tab</span><p>The post <a href="https://www.microsoft.com/en-us/research/blog/debug-gym-an-environment-for-ai-coding-tools-to-learn-how-to-debug-code-like-programmers/">Debug-gym: an environment for AI coding tools to learn how to debug code like programmers</a> appeared first on <a href="https://www.microsoft.com/en-us/research">Microsoft Research</a>.</p>
+
+]]></content:encoded>
+<pubDate>Thu, 10 Apr 2025 16:00:00 +0000</pubDate>
+<pubDate>Thu, 10 Apr 2025 16:00:00 +0000</pubDate>
+</item>
 
 <item>
 <title>Research Focus: Week of April 7, 2025</title>
