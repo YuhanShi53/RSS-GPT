@@ -4,16 +4,14 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+
 <item>
 <title>HybriMoE: Hybrid CPU-GPU Scheduling and Cache Management for Efficient MoE Inference</title>
 <link>https://arxiv.org/abs/2504.05897</link>
 <guid>https://arxiv.org/abs/2504.05897</guid>
 <content:encoded><![CDATA[
-
-  The Mixture of Experts (MoE) architecture has demonstrated significant advantages as it enables to increase the model capacity without a proportional increase in computation. However, the large MoE model size still introduces substantial memory demands, which usually requires expert offloading on resource-constrained platforms and incurs significant overhead. Hybrid CPU-GPU inference has been proposed to leverage CPU computation to reduce expert loading overhead but faces major challenges: on one hand, the expert activation patterns of MoE models are highly unstable, rendering the fixed mapping strategies in existing works inefficient; on the other hand, the hybrid CPU-GPU schedule for MoE is inherently complex due to the diverse expert sizes, structures, uneven workload distribution, etc. To address these challenges, in this paper, we propose HybriMoE, a hybrid CPU-GPU inference framework that improves resource utilization through a novel CPU-GPU scheduling and cache management system. HybriMoE introduces (i) a dynamic intra-layer scheduling strategy to balance workloads across CPU and GPU, (ii) an impact-driven inter-layer prefetching algorithm, and (iii) a score-based caching algorithm to mitigate expert activation instability. We implement HybriMoE on top of the kTransformers framework and evaluate it on three widely used MoE-based LLMs. Experimental results demonstrate that HybriMoE achieves an average speedup of 1.33times in the prefill stage and 1.70times in the decode stage compared to state-of-the-art hybrid MoE inference framework. Our code is available at: https://github.com/PKU-SEC-Lab/HybriMoE.
-
+The Mixture of Experts (MoE) architecture has demonstrated significant advantages as it enables to increase the model capacity without a proportional increase in computation. However, the large MoE model size still introduces substantial memory demands, which usually requires expert offloading on resource-constrained platforms and incurs significant overhead. Hybrid CPU-GPU inference has been proposed to leverage CPU computation to reduce expert loading overhead but faces major challenges: on one hand, the expert activation patterns of MoE models are highly unstable, rendering the fixed mapping strategies in existing works inefficient; on the other hand, the hybrid CPU-GPU schedule for MoE is inherently complex due to the diverse expert sizes, structures, uneven workload distribution, etc. To address these challenges, in this paper, we propose HybriMoE, a hybrid CPU-GPU inference framework that improves resource utilization through a novel CPU-GPU scheduling and cache management system. HybriMoE introduces (i) a dynamic intra-layer scheduling strategy to balance workloads across CPU and GPU, (ii) an impact-driven inter-layer prefetching algorithm, and (iii) a score-based caching algorithm to mitigate expert activation instability. We implement HybriMoE on top of the kTransformers framework and evaluate it on three widely used MoE-based LLMs. Experimental results demonstrate that HybriMoE achieves an average speedup of 1.33times in the prefill stage and 1.70times in the decode stage compared to state-of-the-art hybrid MoE inference framework. Our code is available at: https://github.com/PKU-SEC-Lab/HybriMoE.
 ]]></content:encoded>
-<pubDate>Tue, 08 Apr 2025 06:47:37 GMT</pubDate>
 <pubDate>Tue, 08 Apr 2025 06:47:37 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +19,8 @@
 <link>https://arxiv.org/abs/2504.05520</link>
 <guid>https://arxiv.org/abs/2504.05520</guid>
 <content:encoded><![CDATA[
-
-  Reinforcement finetuning (RFT) has shown great potential for enhancing the mathematical reasoning capabilities of large language models (LLMs), but it is often sample- and compute-inefficient, requiring extensive training. In this work, we introduce AdaRFT (Adaptive Curriculum Reinforcement Finetuning), a method that significantly improves both the efficiency and final accuracy of RFT through adaptive curriculum learning. AdaRFT dynamically adjusts the difficulty of training problems based on the model's recent reward signals, ensuring that the model consistently trains on tasks that are challenging but solvable. This adaptive sampling strategy accelerates learning by maintaining an optimal difficulty range, avoiding wasted computation on problems that are too easy or too hard. AdaRFT requires only a lightweight extension to standard RFT algorithms like Proximal Policy Optimization (PPO), without modifying the reward function or model architecture. Experiments on competition-level math datasets-including AMC, AIME, and IMO-style problems-demonstrate that AdaRFT significantly improves both training efficiency and reasoning performance. We evaluate AdaRFT across multiple data distributions and model sizes, showing that it reduces the number of training steps by up to 2x and improves accuracy by a considerable margin, offering a more scalable and effective RFT framework.
-
+Reinforcement finetuning (RFT) has shown great potential for enhancing the mathematical reasoning capabilities of large language models (LLMs), but it is often sample- and compute-inefficient, requiring extensive training. In this work, we introduce AdaRFT (Adaptive Curriculum Reinforcement Finetuning), a method that significantly improves both the efficiency and final accuracy of RFT through adaptive curriculum learning. AdaRFT dynamically adjusts the difficulty of training problems based on the model's recent reward signals, ensuring that the model consistently trains on tasks that are challenging but solvable. This adaptive sampling strategy accelerates learning by maintaining an optimal difficulty range, avoiding wasted computation on problems that are too easy or too hard. AdaRFT requires only a lightweight extension to standard RFT algorithms like Proximal Policy Optimization (PPO), without modifying the reward function or model architecture. Experiments on competition-level math datasets-including AMC, AIME, and IMO-style problems-demonstrate that AdaRFT significantly improves both training efficiency and reasoning performance. We evaluate AdaRFT across multiple data distributions and model sizes, showing that it reduces the number of training steps by up to 2x and improves accuracy by a considerable margin, offering a more scalable and effective RFT framework.
 ]]></content:encoded>
-<pubDate>Mon, 07 Apr 2025 17:31:31 GMT</pubDate>
 <pubDate>Mon, 07 Apr 2025 17:31:31 GMT</pubDate>
 </item>
 <item>
@@ -33,14 +28,10 @@
 <link>https://arxiv.org/abs/2504.03755</link>
 <guid>https://arxiv.org/abs/2504.03755</guid>
 <content:encoded><![CDATA[
-
-  Generalized category discovery (GCD) is a pragmatic but underexplored problem, which requires models to automatically cluster and discover novel categories by leveraging the labeled samples from old classes. The challenge is that unlabeled data contain both old and new classes. Early works leveraging pseudo-labeling with parametric classifiers handle old and new classes separately, which brings about imbalanced accuracy between them. Recent methods employing contrastive learning neglect potential positives and are decoupled from the clustering objective, leading to biased representations and sub-optimal results. To address these issues, we introduce a unified and unbiased prototype learning framework, namely ProtoGCD, wherein old and new classes are modeled with joint prototypes and unified learning objectives, {enabling unified modeling between old and new classes}. Specifically, we propose a dual-level adaptive pseudo-labeling mechanism to mitigate confirmation bias, together with two regularization terms to collectively help learn more suitable representations for GCD. Moreover, for practical considerations, we devise a criterion to estimate the number of new classes. Furthermore, we extend ProtoGCD to detect unseen outliers, achieving task-level unification. Comprehensive experiments show that ProtoGCD achieves state-of-the-art performance on both generic and fine-grained datasets. The code is available at https://github.com/mashijie1028/ProtoGCD.
-
+Generalized category discovery (GCD) is a pragmatic but underexplored problem, which requires models to automatically cluster and discover novel categories by leveraging the labeled samples from old classes. The challenge is that unlabeled data contain both old and new classes. Early works leveraging pseudo-labeling with parametric classifiers handle old and new classes separately, which brings about imbalanced accuracy between them. Recent methods employing contrastive learning neglect potential positives and are decoupled from the clustering objective, leading to biased representations and sub-optimal results. To address these issues, we introduce a unified and unbiased prototype learning framework, namely ProtoGCD, wherein old and new classes are modeled with joint prototypes and unified learning objectives, {enabling unified modeling between old and new classes}. Specifically, we propose a dual-level adaptive pseudo-labeling mechanism to mitigate confirmation bias, together with two regularization terms to collectively help learn more suitable representations for GCD. Moreover, for practical considerations, we devise a criterion to estimate the number of new classes. Furthermore, we extend ProtoGCD to detect unseen outliers, achieving task-level unification. Comprehensive experiments show that ProtoGCD achieves state-of-the-art performance on both generic and fine-grained datasets. The code is available at https://github.com/mashijie1028/ProtoGCD.
 ]]></content:encoded>
 <pubDate>Wed, 02 Apr 2025 02:13:14 GMT</pubDate>
-<pubDate>Wed, 02 Apr 2025 02:13:14 GMT</pubDate>
 </item>
-
 <item>
 <title>Leanabell-Prover: Posttraining Scaling in Formal Reasoning</title>
 <link>https://arxiv.org/abs/2504.06122</link>
@@ -9013,33 +9004,6 @@ The continuous development of foundational models for video generation is evolvi
 Current unlearning methods for large language models usually rely on reverse optimization to reduce target token probabilities. However, this paradigm disrupts the subsequent tokens prediction, degrading model performance and linguistic coherence. Moreover, existing evaluation metrics overemphasize contextual forgetting while inadequately assessing response fluency and relevance. To address these challenges, we propose ReLearn, a data augmentation and fine-tuning pipeline for effective unlearning, along with a comprehensive evaluation framework. This framework introduces Knowledge Forgetting Rate (KFR) and Knowledge Retention Rate (KRR) to measure knowledge-level preservation, and Linguistic Score (LS) to evaluate generation quality. Our experiments show that ReLearn successfully achieves targeted forgetting while preserving high-quality output. Through mechanistic analysis, we further demonstrate how reverse optimization disrupts coherent text generation, while ReLearn preserves this essential capability. Code is available at https://github.com/zjunlp/unlearn.
 ]]></content:encoded>
 <pubDate>Tue, 18 Feb 2025 00:58:24 GMT</pubDate>
-</item>
-<item>
-<title>基于学习框架的人形机器人自动起立控制研究</title>
-<link>https://arxiv.org/abs/2502.12152</link>
-<guid>https://arxiv.org/abs/2502.12152</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出一种学习框架帮助人形机器人从跌倒状态成功起立。</p><br /><br /><p><strong>摘要：</strong> 本文针对人形机器人在跌倒后自动起立的控制问题，提出了一种学习框架。由于人形机器人跌倒后可能处于多种不同配置，并需要在复杂地形上操作，手动设计控制器面临巨大挑战。研究利用两阶段的课程学习方法，首先在松弛约束条件下发现良好的起立轨迹，其后将这些轨迹精炼为适合部署的平滑、缓慢的运动，确保在不同的初始配置和地形下的稳健性。实验表明，该方法使得一款真实的人形机器人能够从仰卧和俯卧两种姿态成功起立，验证了在真实环境中的有效性。这是首个在人形机器人身上成功演示的学习起立策略。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.12152" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 18 Feb 2025 00:49:53 GMT</pubDate>
-</item>
-<item>
-<title>SWE-Lancer: Can Frontier LLMs Earn $1 Million from Real-World Freelance Software Engineering?</title>
-<link>https://arxiv.org/abs/2502.12115</link>
-<guid>https://arxiv.org/abs/2502.12115</guid>
-<content:encoded><![CDATA[
-We introduce SWE-Lancer, a benchmark of over 1,400 freelance software engineering tasks from Upwork, valued at \1 million USD total in real-world payouts. SWE-Lancer encompasses both independent engineering tasks--ranging from 50 bug fixes to \$32,000 feature implementations--and managerial tasks, where models choose between technical implementation proposals. Independent tasks are graded with end-to-end tests triple-verified by experienced software engineers, while managerial decisions are assessed against the choices of the original hired engineering managers. We evaluate model performance and find that frontier models are still unable to solve the majority of tasks. To facilitate future research, we open-source a unified Docker image and a public evaluation split, SWE-Lancer Diamond (https://github.com/openai/SWELancer-Benchmark). By mapping model performance to monetary value, we hope SWE-Lancer enables greater research into the economic impact of AI model development.
-]]></content:encoded>
-<pubDate>Tue, 18 Feb 2025 00:28:31 GMT</pubDate>
-</item>
-<item>
-<title>提升视频理解能力的开源多模态LLM video-SALMONN-o1</title>
-<link>https://arxiv.org/abs/2502.11775</link>
-<guid>https://arxiv.org/abs/2502.11775</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出video-SALMONN-o1，提升视频理解与推理能力的开源多模态语言模型。</p><br /><br /><p><strong>摘要：</strong> 本论文提出了video-SALMONN-o1，这是首个专为一般视频理解任务设计的开源推理增强音视频语言模型。为提升推理能力，我们开发了一个包含具有挑战性音视频问题及逐步解决方案的推理密集型数据集，并提出了过程直接偏好优化（pDPO）方法，利用对比步骤选择实现针对多模态输入的高效步级奖励建模。此外，本文还引入了RivaBench，这是首个理由密集型视频理解基准，包含4000多个高质量专家策划的问题-答案对，覆盖单口喜剧、学术演讲和合成视频检测等场景。与LLaVA-OneVision基线相比，video-SALMONN-o1在不同视频推理基准上实现了3-8%的准确性提升，而pDPO在RivaBench上相对于监督微调模型则提高了6-8%的准确率。增强的推理能力使video-SALMONN-o1具备零次合成视频检测能力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.11775" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 18 Feb 2025 00:06:55 GMT</pubDate>
 </item>
 </channel>
 </rss>
