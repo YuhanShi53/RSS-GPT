@@ -4,19 +4,16 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+
 <item>
 <title>Fast Controlled Generation from Language Models with Adaptive Weighted Rejection Sampling</title>
 <link>https://arxiv.org/abs/2504.05410</link>
 <guid>https://arxiv.org/abs/2504.05410</guid>
 <content:encoded><![CDATA[
-
-  The dominant approach to generating from language models subject to some constraint is locally constrained decoding (LCD), incrementally sampling tokens at each time step such that the constraint is never violated. Typically, this is achieved through token masking: looping over the vocabulary and excluding non-conforming tokens. There are two important problems with this approach. (i) Evaluating the constraint on every token can be prohibitively expensive -- LM vocabularies often exceed 100,000 tokens. (ii) LCD can distort the global distribution over strings, sampling tokens based only on local information, even if they lead down dead-end paths. This work introduces a new algorithm that addresses both these problems. First, to avoid evaluating a constraint on the full vocabulary at each step of generation, we propose an adaptive rejection sampling algorithm that typically requires orders of magnitude fewer constraint evaluations. Second, we show how this algorithm can be extended to produce low-variance, unbiased estimates of importance weights at a very small additional cost -- estimates that can be soundly used within previously proposed sequential Monte Carlo algorithms to correct for the myopic behavior of local constraint enforcement. Through extensive empirical evaluation in text-to-SQL, molecular synthesis, goal inference, pattern matching, and JSON domains, we show that our approach is superior to state-of-the-art baselines, supporting a broader class of constraints and improving both runtime and performance. Additional theoretical and empirical analyses show that our method's runtime efficiency is driven by its dynamic use of computation, scaling with the divergence between the unconstrained and constrained LM, and as a consequence, runtime improvements are greater for better models.
-
+The dominant approach to generating from language models subject to some constraint is locally constrained decoding (LCD), incrementally sampling tokens at each time step such that the constraint is never violated. Typically, this is achieved through token masking: looping over the vocabulary and excluding non-conforming tokens. There are two important problems with this approach. (i) Evaluating the constraint on every token can be prohibitively expensive -- LM vocabularies often exceed 100,000 tokens. (ii) LCD can distort the global distribution over strings, sampling tokens based only on local information, even if they lead down dead-end paths. This work introduces a new algorithm that addresses both these problems. First, to avoid evaluating a constraint on the full vocabulary at each step of generation, we propose an adaptive rejection sampling algorithm that typically requires orders of magnitude fewer constraint evaluations. Second, we show how this algorithm can be extended to produce low-variance, unbiased estimates of importance weights at a very small additional cost -- estimates that can be soundly used within previously proposed sequential Monte Carlo algorithms to correct for the myopic behavior of local constraint enforcement. Through extensive empirical evaluation in text-to-SQL, molecular synthesis, goal inference, pattern matching, and JSON domains, we show that our approach is superior to state-of-the-art baselines, supporting a broader class of constraints and improving both runtime and performance. Additional theoretical and empirical analyses show that our method's runtime efficiency is driven by its dynamic use of computation, scaling with the divergence between the unconstrained and constrained LM, and as a consequence, runtime improvements are greater for better models.
 ]]></content:encoded>
 <pubDate>Mon, 07 Apr 2025 14:30:18 GMT</pubDate>
-<pubDate>Mon, 07 Apr 2025 14:30:18 GMT</pubDate>
 </item>
-
 <item>
 <title>Caption Anything in Video: Fine-grained Object-centric Captioning via Spatiotemporal Multimodal Prompting</title>
 <link>https://arxiv.org/abs/2504.05541</link>
@@ -9007,15 +9004,6 @@ The continuous development of foundational models for video generation is evolvi
 <div><p style="color: gray;">本文开发了一个多模态网络任务数据集，提升了代理的性能。</p><br /><br /><p><strong>摘要：</strong> 近期大型多模态模型（LMM）的成功应用已展现出自主完成复杂网络任务的潜力。尽管开源LMM代理在离线评估基准上取得了显著进展，但在更真实的在线环境中仍远未达到人类水平。本文提出了一种可扩展的方法，合成了迄今为止最大的多样化网络任务轨迹数据集，包含超过94K的成功任务轨迹，跨越49K个独特URL、720K张屏幕截图和33M个网页元素。本研究还介绍了“Explorer”多模态网络代理，并在多个基准测试中表现出色，验证了数据扩展对提高网络代理能力的重要性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.11357" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 18 Feb 2025 11:57:43 GMT</pubDate>
-</item>
-<item>
-<title>ILIAS：用于实例级图像检索的新测试数据集</title>
-<link>https://arxiv.org/abs/2502.11748</link>
-<guid>https://arxiv.org/abs/2502.11748</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">ILIAS数据集旨在评估图像检索模型对特定对象的识别能力。</p><br /><br /><p><strong>摘要：</strong> ILIAS是一个新推出的测试数据集，专为评估当前及未来的基础模型与检索技术在实例级图像检索能力而设计。与现有数据集相比，ILIAS的优势在于其大规模、多样化的领域，以及准确的真实标注，且性能尚未饱和。该数据集包含1,000个对象实例的查询和正面图像，这些图像经过手动收集，旨在捕捉具有挑战性的条件和多样化的领域。检索任务涉及1亿张来自YFCC100M的数据干扰图像。在避免假阴性并减少额外标注工作量的前提下，ILIAS仅包含确认在2014年后出现的查询对象。通过广泛的基准测试，结果显示：针对特定领域的模型表现优异，但在ILIAS上的效果有限；通过多领域类监督训练线性适配层可以提高性能；局部描述符在重排检索中的作用依然重要，特别是在存在严重背景干扰的情况下；此外，视觉-语言基础模型在文本到图像的性能与图像到图像的性能接近。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.11748" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 18 Feb 2025 11:42:58 GMT</pubDate>
 </item>
 </channel>
 </rss>
