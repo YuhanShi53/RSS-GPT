@@ -5,15 +5,37 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>MonoPlace3D: Learning 3D-Aware Object Placement for 3D Monocular Detection</title>
+<link>https://arxiv.org/abs/2504.06801</link>
+<guid>https://arxiv.org/abs/2504.06801</guid>
+<content:encoded><![CDATA[
+
+  Current monocular 3D detectors are held back by the limited diversity and scale of real-world datasets. While data augmentation certainly helps, it's particularly difficult to generate realistic scene-aware augmented data for outdoor settings. Most current approaches to synthetic data generation focus on realistic object appearance through improved rendering techniques. However, we show that where and how objects are positioned is just as crucial for training effective 3D monocular detectors. The key obstacle lies in automatically determining realistic object placement parameters - including position, dimensions, and directional alignment when introducing synthetic objects into actual scenes. To address this, we introduce MonoPlace3D, a novel system that considers the 3D scene content to create realistic augmentations. Specifically, given a background scene, MonoPlace3D learns a distribution over plausible 3D bounding boxes. Subsequently, we render realistic objects and place them according to the locations sampled from the learned distribution. Our comprehensive evaluation on two standard datasets KITTI and NuScenes, demonstrates that MonoPlace3D significantly improves the accuracy of multiple existing monocular 3D detectors while being highly data efficient.
+
+]]></content:encoded>
+<pubDate>Wed, 09 Apr 2025 07:47:48 GMT</pubDate>
+<pubDate>Wed, 09 Apr 2025 07:47:48 GMT</pubDate>
+</item>
+<item>
+<title>Compass Control: Multi Object Orientation Control for Text-to-Image Generation</title>
+<link>https://arxiv.org/abs/2504.06752</link>
+<guid>https://arxiv.org/abs/2504.06752</guid>
+<content:encoded><![CDATA[
+
+  Existing approaches for controlling text-to-image diffusion models, while powerful, do not allow for explicit 3D object-centric control, such as precise control of object orientation. In this work, we address the problem of multi-object orientation control in text-to-image diffusion models. This enables the generation of diverse multi-object scenes with precise orientation control for each object. The key idea is to condition the diffusion model with a set of orientation-aware compass tokens, one for each object, along with text tokens. A light-weight encoder network predicts these compass tokens taking object orientation as the input. The model is trained on a synthetic dataset of procedurally generated scenes, each containing one or two 3D assets on a plain background. However, direct training this framework results in poor orientation control as well as leads to entanglement among objects. To mitigate this, we intervene in the generation process and constrain the cross-attention maps of each compass token to its corresponding object regions. The trained model is able to achieve precise orientation control for a) complex objects not seen during training and b) multi-object scenes with more than two objects, indicating strong generalization capabilities. Further, when combined with personalization methods, our method precisely controls the orientation of the new object in diverse contexts. Our method achieves state-of-the-art orientation control and text alignment, quantified with extensive evaluations and a user study.
+
+]]></content:encoded>
+<pubDate>Wed, 09 Apr 2025 06:15:15 GMT</pubDate>
+<pubDate>Wed, 09 Apr 2025 06:15:15 GMT</pubDate>
+</item>
+
+<item>
 <title>C3PO: Critical-Layer, Core-Expert, Collaborative Pathway Optimization for Test-Time Expert Re-Mixing</title>
 <link>https://arxiv.org/abs/2504.07964</link>
 <guid>https://arxiv.org/abs/2504.07964</guid>
 <content:encoded><![CDATA[
-
-  Mixture-of-Experts (MoE) Large Language Models (LLMs) suffer from severely sub-optimal expert pathways-our study reveals that naive expert selection learned from pretraining leaves a surprising 10-20% accuracy gap for improvement. Motivated by this observation, we develop a novel class of test-time optimization methods to re-weight or "re-mixing" the experts in different layers jointly for each test sample. Since the test sample's ground truth is unknown, we propose to optimize a surrogate objective defined by the sample's "successful neighbors" from a reference set of samples. We introduce three surrogates and algorithms based on mode-finding, kernel regression, and the average loss of similar reference samples/tasks. To reduce the cost of optimizing whole pathways, we apply our algorithms merely to the core experts' mixing weights in critical layers, which enjoy similar performance but save significant computation. This leads to "Critical-Layer, Core-Expert, Collaborative Pathway Optimization (C3PO)". We apply C3PO to two recent MoE LLMs and examine it on six widely-used benchmarks. It consistently improves the base model by 7-15% in accuracy and outperforms widely used test-time learning baselines, e.g., in-context learning and prompt/prefix tuning, by a large margin. Moreover, C3PO enables MoE LLMs with 1-3B active parameters to outperform LLMs of 7-9B parameters, hence improving MoE's advantages on efficiency. Our thorough ablation study further sheds novel insights on achieving test-time improvement on MoE.
-
+Mixture-of-Experts (MoE) Large Language Models (LLMs) suffer from severely sub-optimal expert pathways-our study reveals that naive expert selection learned from pretraining leaves a surprising 10-20% accuracy gap for improvement. Motivated by this observation, we develop a novel class of test-time optimization methods to re-weight or "re-mixing" the experts in different layers jointly for each test sample. Since the test sample's ground truth is unknown, we propose to optimize a surrogate objective defined by the sample's "successful neighbors" from a reference set of samples. We introduce three surrogates and algorithms based on mode-finding, kernel regression, and the average loss of similar reference samples/tasks. To reduce the cost of optimizing whole pathways, we apply our algorithms merely to the core experts' mixing weights in critical layers, which enjoy similar performance but save significant computation. This leads to "Critical-Layer, Core-Expert, Collaborative Pathway Optimization (C3PO)". We apply C3PO to two recent MoE LLMs and examine it on six widely-used benchmarks. It consistently improves the base model by 7-15% in accuracy and outperforms widely used test-time learning baselines, e.g., in-context learning and prompt/prefix tuning, by a large margin. Moreover, C3PO enables MoE LLMs with 1-3B active parameters to outperform LLMs of 7-9B parameters, hence improving MoE's advantages on efficiency. Our thorough ablation study further sheds novel insights on achieving test-time improvement on MoE.
 ]]></content:encoded>
-<pubDate>Thu, 10 Apr 2025 13:59:56 GMT</pubDate>
 <pubDate>Thu, 10 Apr 2025 13:59:56 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +43,8 @@
 <link>https://arxiv.org/abs/2504.07960</link>
 <guid>https://arxiv.org/abs/2504.07960</guid>
 <content:encoded><![CDATA[
-
-  Recent progress in diffusion models significantly advances various image generation tasks. However, the current mainstream approach remains focused on building task-specific models, which have limited efficiency when supporting a wide range of different needs. While universal models attempt to address this limitation, they face critical challenges, including generalizable task instruction, appropriate task distributions, and unified architectural design. To tackle these challenges, we propose VisualCloze, a universal image generation framework, which supports a wide range of in-domain tasks, generalization to unseen ones, unseen unification of multiple tasks, and reverse generation. Unlike existing methods that rely on language-based task instruction, leading to task ambiguity and weak generalization, we integrate visual in-context learning, allowing models to identify tasks from visual demonstrations. Meanwhile, the inherent sparsity of visual task distributions hampers the learning of transferable knowledge across tasks. To this end, we introduce Graph200K, a graph-structured dataset that establishes various interrelated tasks, enhancing task density and transferable knowledge. Furthermore, we uncover that our unified image generation formulation shared a consistent objective with image infilling, enabling us to leverage the strong generative priors of pre-trained infilling models without modifying the architectures.
-
+Recent progress in diffusion models significantly advances various image generation tasks. However, the current mainstream approach remains focused on building task-specific models, which have limited efficiency when supporting a wide range of different needs. While universal models attempt to address this limitation, they face critical challenges, including generalizable task instruction, appropriate task distributions, and unified architectural design. To tackle these challenges, we propose VisualCloze, a universal image generation framework, which supports a wide range of in-domain tasks, generalization to unseen ones, unseen unification of multiple tasks, and reverse generation. Unlike existing methods that rely on language-based task instruction, leading to task ambiguity and weak generalization, we integrate visual in-context learning, allowing models to identify tasks from visual demonstrations. Meanwhile, the inherent sparsity of visual task distributions hampers the learning of transferable knowledge across tasks. To this end, we introduce Graph200K, a graph-structured dataset that establishes various interrelated tasks, enhancing task density and transferable knowledge. Furthermore, we uncover that our unified image generation formulation shared a consistent objective with image infilling, enabling us to leverage the strong generative priors of pre-trained infilling models without modifying the architectures.
 ]]></content:encoded>
-<pubDate>Thu, 10 Apr 2025 13:59:42 GMT</pubDate>
 <pubDate>Thu, 10 Apr 2025 13:59:42 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +52,8 @@
 <link>https://arxiv.org/abs/2504.07957</link>
 <guid>https://arxiv.org/abs/2504.07957</guid>
 <content:encoded><![CDATA[
-
-  The Instruction Following (IF) ability measures how well Multi-modal Large Language Models (MLLMs) understand exactly what users are telling them and whether they are doing it right. Existing multimodal instruction following training data is scarce, the benchmarks are simple with atomic instructions, and the evaluation strategies are imprecise for tasks demanding exact output constraints. To address this, we present MM-IFEngine, an effective pipeline to generate high-quality image-instruction pairs. Our MM-IFEngine pipeline yields large-scale, diverse, and high-quality training data MM-IFInstruct-23k, which is suitable for Supervised Fine-Tuning (SFT) and extended as MM-IFDPO-23k for Direct Preference Optimization (DPO). We further introduce MM-IFEval, a challenging and diverse multi-modal instruction-following benchmark that includes (1) both compose-level constraints for output responses and perception-level constraints tied to the input images, and (2) a comprehensive evaluation pipeline incorporating both rule-based assessment and judge model. We conduct SFT and DPO experiments and demonstrate that fine-tuning MLLMs on MM-IFInstruct-23k and MM-IFDPO-23k achieves notable gains on various IF benchmarks, such as MM-IFEval (+10.2%), MIA (+7.6%), and IFEval (+12.3%). The full data and evaluation code will be released on https://github.com/SYuan03/MM-IFEngine.
-
+The Instruction Following (IF) ability measures how well Multi-modal Large Language Models (MLLMs) understand exactly what users are telling them and whether they are doing it right. Existing multimodal instruction following training data is scarce, the benchmarks are simple with atomic instructions, and the evaluation strategies are imprecise for tasks demanding exact output constraints. To address this, we present MM-IFEngine, an effective pipeline to generate high-quality image-instruction pairs. Our MM-IFEngine pipeline yields large-scale, diverse, and high-quality training data MM-IFInstruct-23k, which is suitable for Supervised Fine-Tuning (SFT) and extended as MM-IFDPO-23k for Direct Preference Optimization (DPO). We further introduce MM-IFEval, a challenging and diverse multi-modal instruction-following benchmark that includes (1) both compose-level constraints for output responses and perception-level constraints tied to the input images, and (2) a comprehensive evaluation pipeline incorporating both rule-based assessment and judge model. We conduct SFT and DPO experiments and demonstrate that fine-tuning MLLMs on MM-IFInstruct-23k and MM-IFDPO-23k achieves notable gains on various IF benchmarks, such as MM-IFEval (+10.2%), MIA (+7.6%), and IFEval (+12.3%). The full data and evaluation code will be released on https://github.com/SYuan03/MM-IFEngine.
 ]]></content:encoded>
-<pubDate>Thu, 10 Apr 2025 13:59:12 GMT</pubDate>
 <pubDate>Thu, 10 Apr 2025 13:59:12 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +61,8 @@
 <link>https://arxiv.org/abs/2504.07956</link>
 <guid>https://arxiv.org/abs/2504.07956</guid>
 <content:encoded><![CDATA[
-
-  The advancement of Chain-of-Thought (CoT) reasoning has significantly enhanced the capabilities of large language models (LLMs) and large vision-language models (LVLMs). However, a rigorous evaluation framework for video CoT reasoning remains absent. Current video benchmarks fail to adequately assess the reasoning process and expose whether failures stem from deficiencies in perception or reasoning capabilities. Therefore, we introduce VCR-Bench, a novel benchmark designed to comprehensively evaluate LVLMs' Video Chain-of-Thought Reasoning capabilities. VCR-Bench comprises 859 videos spanning a variety of video content and durations, along with 1,034 high-quality question-answer pairs. Each pair is manually annotated with a stepwise CoT rationale, where every step is tagged to indicate its association with the perception or reasoning capabilities. Furthermore, we design seven distinct task dimensions and propose the CoT score to assess the entire CoT process based on the stepwise tagged CoT rationals. Extensive experiments on VCR-Bench highlight substantial limitations in current LVLMs. Even the top-performing model, o1, only achieves a 62.8% CoT score and an 56.7% accuracy, while most models score below 40%. Experiments show most models score lower on perception than reasoning steps, revealing LVLMs' key bottleneck in temporal-spatial information processing for complex video reasoning. A robust positive correlation between the CoT score and accuracy confirms the validity of our evaluation framework and underscores the critical role of CoT reasoning in solving complex video reasoning tasks. We hope VCR-Bench to serve as a standardized evaluation framework and expose the actual drawbacks in complex video reasoning task.
-
+The advancement of Chain-of-Thought (CoT) reasoning has significantly enhanced the capabilities of large language models (LLMs) and large vision-language models (LVLMs). However, a rigorous evaluation framework for video CoT reasoning remains absent. Current video benchmarks fail to adequately assess the reasoning process and expose whether failures stem from deficiencies in perception or reasoning capabilities. Therefore, we introduce VCR-Bench, a novel benchmark designed to comprehensively evaluate LVLMs' Video Chain-of-Thought Reasoning capabilities. VCR-Bench comprises 859 videos spanning a variety of video content and durations, along with 1,034 high-quality question-answer pairs. Each pair is manually annotated with a stepwise CoT rationale, where every step is tagged to indicate its association with the perception or reasoning capabilities. Furthermore, we design seven distinct task dimensions and propose the CoT score to assess the entire CoT process based on the stepwise tagged CoT rationals. Extensive experiments on VCR-Bench highlight substantial limitations in current LVLMs. Even the top-performing model, o1, only achieves a 62.8% CoT score and an 56.7% accuracy, while most models score below 40%. Experiments show most models score lower on perception than reasoning steps, revealing LVLMs' key bottleneck in temporal-spatial information processing for complex video reasoning. A robust positive correlation between the CoT score and accuracy confirms the validity of our evaluation framework and underscores the critical role of CoT reasoning in solving complex video reasoning tasks. We hope VCR-Bench to serve as a standardized evaluation framework and expose the actual drawbacks in complex video reasoning task.
 ]]></content:encoded>
-<pubDate>Thu, 10 Apr 2025 13:59:03 GMT</pubDate>
 <pubDate>Thu, 10 Apr 2025 13:59:03 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +70,8 @@
 <link>https://arxiv.org/abs/2504.07943</link>
 <guid>https://arxiv.org/abs/2504.07943</guid>
 <content:encoded><![CDATA[
-
-  3D part amodal segmentation--decomposing a 3D shape into complete, semantically meaningful parts, even when occluded--is a challenging but crucial task for 3D content creation and understanding. Existing 3D part segmentation methods only identify visible surface patches, limiting their utility. Inspired by 2D amodal segmentation, we introduce this novel task to the 3D domain and propose a practical, two-stage approach, addressing the key challenges of inferring occluded 3D geometry, maintaining global shape consistency, and handling diverse shapes with limited training data. First, we leverage existing 3D part segmentation to obtain initial, incomplete part segments. Second, we introduce HoloPart, a novel diffusion-based model, to complete these segments into full 3D parts. HoloPart utilizes a specialized architecture with local attention to capture fine-grained part geometry and global shape context attention to ensure overall shape consistency. We introduce new benchmarks based on the ABO and PartObjaverse-Tiny datasets and demonstrate that HoloPart significantly outperforms state-of-the-art shape completion methods. By incorporating HoloPart with existing segmentation techniques, we achieve promising results on 3D part amodal segmentation, opening new avenues for applications in geometry editing, animation, and material assignment.
-
+3D part amodal segmentation--decomposing a 3D shape into complete, semantically meaningful parts, even when occluded--is a challenging but crucial task for 3D content creation and understanding. Existing 3D part segmentation methods only identify visible surface patches, limiting their utility. Inspired by 2D amodal segmentation, we introduce this novel task to the 3D domain and propose a practical, two-stage approach, addressing the key challenges of inferring occluded 3D geometry, maintaining global shape consistency, and handling diverse shapes with limited training data. First, we leverage existing 3D part segmentation to obtain initial, incomplete part segments. Second, we introduce HoloPart, a novel diffusion-based model, to complete these segments into full 3D parts. HoloPart utilizes a specialized architecture with local attention to capture fine-grained part geometry and global shape context attention to ensure overall shape consistency. We introduce new benchmarks based on the ABO and PartObjaverse-Tiny datasets and demonstrate that HoloPart significantly outperforms state-of-the-art shape completion methods. By incorporating HoloPart with existing segmentation techniques, we achieve promising results on 3D part amodal segmentation, opening new avenues for applications in geometry editing, animation, and material assignment.
 ]]></content:encoded>
-<pubDate>Thu, 10 Apr 2025 13:53:31 GMT</pubDate>
 <pubDate>Thu, 10 Apr 2025 13:53:31 GMT</pubDate>
 </item>
 <item>
@@ -69,11 +79,8 @@
 <link>https://arxiv.org/abs/2504.07934</link>
 <guid>https://arxiv.org/abs/2504.07934</guid>
 <content:encoded><![CDATA[
-
-  In this paper, we present an effective method to enhance visual reasoning with significantly fewer training samples, relying purely on self-improvement with no knowledge distillation. Our key insight is that the difficulty of training data during reinforcement fine-tuning (RFT) is critical. Appropriately challenging samples can substantially boost reasoning capabilities even when the dataset is small. Despite being intuitive, the main challenge remains in accurately quantifying sample difficulty to enable effective data filtering. To this end, we propose a novel way of repurposing Monte Carlo Tree Search (MCTS) to achieve that. Starting from our curated 70k open-source training samples, we introduce an MCTS-based selection method that quantifies sample difficulty based on the number of iterations required by the VLMs to solve each problem. This explicit step-by-step reasoning in MCTS enforces the model to think longer and better identifies samples that are genuinely challenging. We filter and retain 11k samples to perform RFT on Qwen2.5-VL-7B-Instruct, resulting in our final model, ThinkLite-VL. Evaluation results on eight benchmarks show that ThinkLite-VL improves the average performance of Qwen2.5-VL-7B-Instruct by 7%, using only 11k training samples with no knowledge distillation. This significantly outperforms all existing 7B-level reasoning VLMs, and our fairly comparable baselines that use classic selection methods such as accuracy-based filtering. Notably, on MathVista, ThinkLite-VL-7B achieves the SoTA accuracy of 75.1, surpassing Qwen2.5-VL-72B, GPT-4o, and O1. Our code, data, and model are available at https://github.com/si0wang/ThinkLite-VL.
-
+In this paper, we present an effective method to enhance visual reasoning with significantly fewer training samples, relying purely on self-improvement with no knowledge distillation. Our key insight is that the difficulty of training data during reinforcement fine-tuning (RFT) is critical. Appropriately challenging samples can substantially boost reasoning capabilities even when the dataset is small. Despite being intuitive, the main challenge remains in accurately quantifying sample difficulty to enable effective data filtering. To this end, we propose a novel way of repurposing Monte Carlo Tree Search (MCTS) to achieve that. Starting from our curated 70k open-source training samples, we introduce an MCTS-based selection method that quantifies sample difficulty based on the number of iterations required by the VLMs to solve each problem. This explicit step-by-step reasoning in MCTS enforces the model to think longer and better identifies samples that are genuinely challenging. We filter and retain 11k samples to perform RFT on Qwen2.5-VL-7B-Instruct, resulting in our final model, ThinkLite-VL. Evaluation results on eight benchmarks show that ThinkLite-VL improves the average performance of Qwen2.5-VL-7B-Instruct by 7%, using only 11k training samples with no knowledge distillation. This significantly outperforms all existing 7B-level reasoning VLMs, and our fairly comparable baselines that use classic selection methods such as accuracy-based filtering. Notably, on MathVista, ThinkLite-VL-7B achieves the SoTA accuracy of 75.1, surpassing Qwen2.5-VL-72B, GPT-4o, and O1. Our code, data, and model are available at https://github.com/si0wang/ThinkLite-VL.
 ]]></content:encoded>
-<pubDate>Thu, 10 Apr 2025 13:49:05 GMT</pubDate>
 <pubDate>Thu, 10 Apr 2025 13:49:05 GMT</pubDate>
 </item>
 <item>
@@ -81,11 +88,8 @@
 <link>https://arxiv.org/abs/2504.07830</link>
 <guid>https://arxiv.org/abs/2504.07830</guid>
 <content:encoded><![CDATA[
-
-  We present a novel, open-source social network simulation framework, MOSAIC, where generative language agents predict user behaviors such as liking, sharing, and flagging content. This simulation combines LLM agents with a directed social graph to analyze emergent deception behaviors and gain a better understanding of how users determine the veracity of online social content. By constructing user representations from diverse fine-grained personas, our system enables multi-agent simulations that model content dissemination and engagement dynamics at scale. Within this framework, we evaluate three different content moderation strategies with simulated misinformation dissemination, and we find that they not only mitigate the spread of non-factual content but also increase user engagement. In addition, we analyze the trajectories of popular content in our simulations, and explore whether simulation agents' articulated reasoning for their social interactions truly aligns with their collective engagement patterns. We open-source our simulation software to encourage further research within AI and social sciences.
-
+We present a novel, open-source social network simulation framework, MOSAIC, where generative language agents predict user behaviors such as liking, sharing, and flagging content. This simulation combines LLM agents with a directed social graph to analyze emergent deception behaviors and gain a better understanding of how users determine the veracity of online social content. By constructing user representations from diverse fine-grained personas, our system enables multi-agent simulations that model content dissemination and engagement dynamics at scale. Within this framework, we evaluate three different content moderation strategies with simulated misinformation dissemination, and we find that they not only mitigate the spread of non-factual content but also increase user engagement. In addition, we analyze the trajectories of popular content in our simulations, and explore whether simulation agents' articulated reasoning for their social interactions truly aligns with their collective engagement patterns. We open-source our simulation software to encourage further research within AI and social sciences.
 ]]></content:encoded>
-<pubDate>Thu, 10 Apr 2025 11:06:54 GMT</pubDate>
 <pubDate>Thu, 10 Apr 2025 11:06:54 GMT</pubDate>
 </item>
 <item>
@@ -93,11 +97,8 @@
 <link>https://arxiv.org/abs/2504.07491</link>
 <guid>https://arxiv.org/abs/2504.07491</guid>
 <content:encoded><![CDATA[
-
-  We present Kimi-VL, an efficient open-source Mixture-of-Experts (MoE) vision-language model (VLM) that offers advanced multimodal reasoning, long-context understanding, and strong agent capabilities - all while activating only 2.8B parameters in its language decoder (Kimi-VL-A3B). Kimi-VL demonstrates strong performance across challenging domains: as a general-purpose VLM, Kimi-VL excels in multi-turn agent tasks (e.g., OSWorld), matching flagship models. Furthermore, it exhibits remarkable capabilities across diverse challenging vision language tasks, including college-level image and video comprehension, OCR, mathematical reasoning, and multi-image understanding. In comparative evaluations, it effectively competes with cutting-edge efficient VLMs such as GPT-4o-mini, Qwen2.5-VL-7B, and Gemma-3-12B-IT, while surpassing GPT-4o in several key domains. Kimi-VL also advances in processing long contexts and perceiving clearly. With a 128K extended context window, Kimi-VL can process diverse long inputs, achieving impressive scores of 64.5 on LongVideoBench and 35.1 on MMLongBench-Doc. Its native-resolution vision encoder, MoonViT, further allows it to see and understand ultra-high-resolution visual inputs, achieving 83.2 on InfoVQA and 34.5 on ScreenSpot-Pro, while maintaining lower computational cost for common tasks. Building upon Kimi-VL, we introduce an advanced long-thinking variant: Kimi-VL-Thinking. Developed through long chain-of-thought (CoT) supervised fine-tuning (SFT) and reinforcement learning (RL), this model exhibits strong long-horizon reasoning capabilities. It achieves scores of 61.7 on MMMU, 36.8 on MathVision, and 71.3 on MathVista while maintaining the compact 2.8B activated LLM parameters, setting a new standard for efficient multimodal thinking models. Code and models are publicly accessible at https://github.com/MoonshotAI/Kimi-VL.
-
+We present Kimi-VL, an efficient open-source Mixture-of-Experts (MoE) vision-language model (VLM) that offers advanced multimodal reasoning, long-context understanding, and strong agent capabilities - all while activating only 2.8B parameters in its language decoder (Kimi-VL-A3B). Kimi-VL demonstrates strong performance across challenging domains: as a general-purpose VLM, Kimi-VL excels in multi-turn agent tasks (e.g., OSWorld), matching flagship models. Furthermore, it exhibits remarkable capabilities across diverse challenging vision language tasks, including college-level image and video comprehension, OCR, mathematical reasoning, and multi-image understanding. In comparative evaluations, it effectively competes with cutting-edge efficient VLMs such as GPT-4o-mini, Qwen2.5-VL-7B, and Gemma-3-12B-IT, while surpassing GPT-4o in several key domains. Kimi-VL also advances in processing long contexts and perceiving clearly. With a 128K extended context window, Kimi-VL can process diverse long inputs, achieving impressive scores of 64.5 on LongVideoBench and 35.1 on MMLongBench-Doc. Its native-resolution vision encoder, MoonViT, further allows it to see and understand ultra-high-resolution visual inputs, achieving 83.2 on InfoVQA and 34.5 on ScreenSpot-Pro, while maintaining lower computational cost for common tasks. Building upon Kimi-VL, we introduce an advanced long-thinking variant: Kimi-VL-Thinking. Developed through long chain-of-thought (CoT) supervised fine-tuning (SFT) and reinforcement learning (RL), this model exhibits strong long-horizon reasoning capabilities. It achieves scores of 61.7 on MMMU, 36.8 on MathVision, and 71.3 on MathVista while maintaining the compact 2.8B activated LLM parameters, setting a new standard for efficient multimodal thinking models. Code and models are publicly accessible at https://github.com/MoonshotAI/Kimi-VL.
 ]]></content:encoded>
-<pubDate>Thu, 10 Apr 2025 02:48:26 GMT</pubDate>
 <pubDate>Thu, 10 Apr 2025 02:48:26 GMT</pubDate>
 </item>
 <item>
@@ -105,26 +106,19 @@
 <link>https://arxiv.org/abs/2504.04974</link>
 <guid>https://arxiv.org/abs/2504.04974</guid>
 <content:encoded><![CDATA[
-
-  Despite the existing evolution of Multimodal Large Language Models (MLLMs), a non-neglectable limitation remains in their struggle with visual text grounding, especially in text-rich images of documents. Document images, such as scanned forms and infographics, highlight critical challenges due to their complex layouts and textual content. However, current benchmarks do not fully address these challenges, as they mostly focus on visual grounding on natural images, rather than text-rich document images. Thus, to bridge this gap, we introduce TRIG, a novel task with a newly designed instruction dataset for benchmarking and improving the Text-Rich Image Grounding capabilities of MLLMs in document question-answering. Specifically, we propose an OCR-LLM-human interaction pipeline to create 800 manually annotated question-answer pairs as a benchmark and a large-scale training set of 90$ synthetic data based on four diverse datasets. A comprehensive evaluation of various MLLMs on our proposed benchmark exposes substantial limitations in their grounding capability on text-rich images. In addition, we propose two simple and effective TRIG methods based on general instruction tuning and plug-and-play efficient embedding, respectively. By finetuning MLLMs on our synthetic dataset, they promisingly improve spatial reasoning and grounding capabilities.
-
+Despite the existing evolution of Multimodal Large Language Models (MLLMs), a non-neglectable limitation remains in their struggle with visual text grounding, especially in text-rich images of documents. Document images, such as scanned forms and infographics, highlight critical challenges due to their complex layouts and textual content. However, current benchmarks do not fully address these challenges, as they mostly focus on visual grounding on natural images, rather than text-rich document images. Thus, to bridge this gap, we introduce TRIG, a novel task with a newly designed instruction dataset for benchmarking and improving the Text-Rich Image Grounding capabilities of MLLMs in document question-answering. Specifically, we propose an OCR-LLM-human interaction pipeline to create 800 manually annotated question-answer pairs as a benchmark and a large-scale training set of 90$ synthetic data based on four diverse datasets. A comprehensive evaluation of various MLLMs on our proposed benchmark exposes substantial limitations in their grounding capability on text-rich images. In addition, we propose two simple and effective TRIG methods based on general instruction tuning and plug-and-play efficient embedding, respectively. By finetuning MLLMs on our synthetic dataset, they promisingly improve spatial reasoning and grounding capabilities.
 ]]></content:encoded>
-<pubDate>Mon, 07 Apr 2025 08:01:59 GMT</pubDate>
 <pubDate>Mon, 07 Apr 2025 08:01:59 GMT</pubDate>
 </item>
 <item>
-<title>DeepSeek-R1 Thoughtology: Let's <think> about LLM Reasoning</title>
+<title>DeepSeek-R1 Thoughtology: Let's  about LLM Reasoning</title>
 <link>https://arxiv.org/abs/2504.07128</link>
 <guid>https://arxiv.org/abs/2504.07128</guid>
 <content:encoded><![CDATA[
-
-  Large Reasoning Models like DeepSeek-R1 mark a fundamental shift in how LLMs approach complex problems. Instead of directly producing an answer for a given input, DeepSeek-R1 creates detailed multi-step reasoning chains, seemingly "thinking" about a problem before providing an answer. This reasoning process is publicly available to the user, creating endless opportunities for studying the reasoning behaviour of the model and opening up the field of Thoughtology. Starting from a taxonomy of DeepSeek-R1's basic building blocks of reasoning, our analyses on DeepSeek-R1 investigate the impact and controllability of thought length, management of long or confusing contexts, cultural and safety concerns, and the status of DeepSeek-R1 vis-\`a-vis cognitive phenomena, such as human-like language processing and world modelling. Our findings paint a nuanced picture. Notably, we show DeepSeek-R1 has a 'sweet spot' of reasoning, where extra inference time can impair model performance. Furthermore, we find a tendency for DeepSeek-R1 to persistently ruminate on previously explored problem formulations, obstructing further exploration. We also note strong safety vulnerabilities of DeepSeek-R1 compared to its non-reasoning counterpart, which can also compromise safety-aligned LLMs.
-
+Large Reasoning Models like DeepSeek-R1 mark a fundamental shift in how LLMs approach complex problems. Instead of directly producing an answer for a given input, DeepSeek-R1 creates detailed multi-step reasoning chains, seemingly "thinking" about a problem before providing an answer. This reasoning process is publicly available to the user, creating endless opportunities for studying the reasoning behaviour of the model and opening up the field of Thoughtology. Starting from a taxonomy of DeepSeek-R1's basic building blocks of reasoning, our analyses on DeepSeek-R1 investigate the impact and controllability of thought length, management of long or confusing contexts, cultural and safety concerns, and the status of DeepSeek-R1 vis-\`a-vis cognitive phenomena, such as human-like language processing and world modelling. Our findings paint a nuanced picture. Notably, we show DeepSeek-R1 has a 'sweet spot' of reasoning, where extra inference time can impair model performance. Furthermore, we find a tendency for DeepSeek-R1 to persistently ruminate on previously explored problem formulations, obstructing further exploration. We also note strong safety vulnerabilities of DeepSeek-R1 compared to its non-reasoning counterpart, which can also compromise safety-aligned LLMs.
 ]]></content:encoded>
 <pubDate>Tue, 01 Apr 2025 20:36:08 GMT</pubDate>
-<pubDate>Tue, 01 Apr 2025 20:36:08 GMT</pubDate>
 </item>
-
 <item>
 <title>Fast Controlled Generation from Language Models with Adaptive Weighted Rejection Sampling</title>
 <link>https://arxiv.org/abs/2504.05410</link>
@@ -9034,96 +9028,6 @@ Large Language Models (LLMs) and Multimodal Large Language Models (MLLMs) have m
 <div><p style="color: gray;">DRMs通过二元比较提取人类偏好，为个性化AI提供了新视角。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种新颖的奖赏模型——分解奖赏模型（DRMs），旨在有效提取多样化的人类偏好。传统奖励模型在捕捉偏好的复杂性方面存在局限性。DRMs不需要细粒度的注释，而是通过二元比较来分析人类偏好，并将其表示为向量。采用主成分分析（PCA）对偏好的数据进行分析，构造了偏好与拒绝响应之间的嵌入差异数据集。通过识别正交基向量，DRMs能够捕捉偏好的不同维度，如有帮助性、安全性和幽默感等。这些分解的奖励可以灵活组合，以适应不同用户的需求，从而提供一个可解释且可扩展的替代方案。我们的结果表明，DRMs不仅有效提取偏好维度，还能在无额外训练的情况下适应新用户，展示了其在个性化和可解释性大型语言模型对齐中的强大能力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.13131" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 18 Feb 2025 21:59:45 GMT</pubDate>
-</item>
-<item>
-<title>HEADINFER: 一种高效的长序列推理策略</title>
-<link>https://arxiv.org/abs/2502.12574</link>
-<guid>https://arxiv.org/abs/2502.12574</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">HEADINFER通过头部级别的KV缓存卸载，显著降低推理内存占用。</p><br /><br /><p><strong>摘要：</strong> 本文提出了HEADINFER，一种优化长序列生成模型的推理内存使用的新策略。通过将关键值缓存（KV缓存）卸载到CPU RAM，HEADINFER避免了在GPU上完全存储Transformer层的KV缓存。该方法采用细粒度的头部级别卸载策略，仅在GPU上维护选择性的注意力头的KV缓存，同时动态计算注意力输出。通过Roofline分析，我们展示了HEADINFER在保持计算效率的同时，大幅降低了内存占用。在对Llama-3-8B模型进行评估时，HEADINFER能够将KV缓存的GPU内存占用从128 GB减少到1 GB，总体GPU内存使用从207 GB减少到17 GB，相比BF16基线推理实现了92%的减少。值得一提的是，HEADINFER使得在单个24GB显存的消费级GPU（如NVIDIA RTX 4090）上实现4百万令牌的推理成为可能，而无需采用近似方法。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.12574" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 18 Feb 2025 21:57:00 GMT</pubDate>
-</item>
-<item>
-<title>Phantom: Subject-consistent video generation via cross-modal alignment</title>
-<link>https://arxiv.org/abs/2502.11079</link>
-<guid>https://arxiv.org/abs/2502.11079</guid>
-<content:encoded><![CDATA[
-The continuous development of foundational models for video generation is evolving into various applications, with subject-consistent video generation still in the exploratory stage. We refer to this as Subject-to-Video, which extracts subject elements from reference images and generates subject-consistent video through textual instructions. We believe that the essence of subject-to-video lies in balancing the dual-modal prompts of text and image, thereby deeply and simultaneously aligning both text and visual content. To this end, we propose Phantom, a unified video generation framework for both single and multi-subject references. Building on existing text-to-video and image-to-video architectures, we redesign the joint text-image injection model and drive it to learn cross-modal alignment via text-image-video triplet data. In particular, we emphasize subject consistency in human generation, covering existing ID-preserving video generation while offering enhanced advantages. The project homepage is here https://phantom-video.github.io/Phantom/.
-]]></content:encoded>
-<pubDate>Tue, 18 Feb 2025 21:56:39 GMT</pubDate>
-</item>
-<item>
-<title>基于人群比较评估的LLM自动评价方法的改进</title>
-<link>https://arxiv.org/abs/2502.12501</link>
-<guid>https://arxiv.org/abs/2502.12501</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出基于人群比较的评估方法以提升LLM判断的可靠性。</p><br /><br /><p><strong>摘要：</strong> 随着LLM-as-a-Judge逐渐成为自动评估的主流方法，其基于链式推理（CoT）所产生的判断却存在可靠性不足的问题，主要由于CoT推理无法捕捉到深入且全面的细节而导致的输出不完整。现有方法多依赖于多数投票或标准扩展，这未能有效解决CoT的局限性。为此，我们提出了一种人群比较评估方法，增加了额外的人群反馈来与候选回应进行比较，从而揭示候选回应中的更深层次和更全面的细节。这一过程有效地引导LLM-as-a-Judge提供更详尽的CoT判断。通过大量实验，我们的方法在五个基准测试中平均提高了6.7%的评估准确性，并产生了更高质量的CoT，进一步推动了判断蒸馏与在监督微调过程中的更高效表现。我们的分析表明，所生成的CoT在全面性和质量上优于现有方法，并且随着推理规模的扩大，评估准确性不断改善。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.12501" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 18 Feb 2025 21:55:26 GMT</pubDate>
-</item>
-<item>
-<title>RealSyn：用于视觉-语言表示学习的真实与合成文本数据集</title>
-<link>https://arxiv.org/abs/2502.12513</link>
-<guid>https://arxiv.org/abs/2502.12513</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">RealSyn数据集通过真实与合成文本增强视觉-语言表示学习。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了RealSyn数据集的构建，该数据集结合了高质量的真实文本和合成文本，以提升视觉-语言表示学习的性能。通过建立一条真实世界数据提取管道，提取高质量图像和文本，并设计层次检索方法有效关联图像与多个语义相关的文本，本文充分利用了未配对的数据。此外，为了增强细粒度视觉信息，提出了图像语义增强生成模块用于合成文本的生产，同时采用了语义均衡抽样策略以提高数据集多样性，从而更好地学习长尾概念。RealSyn可在15M、30M和100M三个规模上使用，实验表明，基于RealSyn预训练的模型在多个下游任务上达到了最新的性能，极大推动了视觉-语言表示学习的发展。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.12513" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 18 Feb 2025 21:52:22 GMT</pubDate>
-</item>
-<item>
-<title>利用自然语言定义物体方向以增强机器人操作能力</title>
-<link>https://arxiv.org/abs/2502.13143</link>
-<guid>https://arxiv.org/abs/2502.13143</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本研究通过自然语言定义物体方向，以提升机器人的操作能力。</p><br /><br /><p><strong>摘要：</strong> 空间智能是具身AI的关键组成部分，使机器人能够理解并与环境互动。尽管现有视觉语言模型在理解物体位置和关系方面已取得进展，但仍缺乏对物体方向的精确理解，尤其是在细致操作任务中的需求。为解决这一限制，本文提出通过自然语言来定义语义方向，形成了一种更灵活的表示方式。我们构建了OrienText300K数据集，包含带有语义方向的3D模型，旨在将几何理解与功能语义连接。通过整合语义方向进VLM系统，我们的研究使机器人能够在操作中同时考虑位置和方向的约束，实验表明，模型在仿真和真实场景中显著提升了操作准确率，如在Open6DOR上达到48.7%的准确率，SIMPLER上达到74.9%。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.13143" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 18 Feb 2025 21:51:33 GMT</pubDate>
-</item>
-<item>
-<title>EQ-VAE：提升潜在生成模型的等变性</title>
-<link>https://arxiv.org/abs/2502.09509</link>
-<guid>https://arxiv.org/abs/2502.09509</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文提出EQ-VAE，提升潜在生成模型的性能与效率。</p><br /><br /><p><strong>摘要：</strong> 潜在生成模型已成为高质量图像合成的领先方法，然而现有自编码器在应对尺度和旋转等语义保留变换时缺乏等变性，导致潜在空间复杂性增加，从而影响生成性能。为此，本文提出了EQ-VAE，这是一种简单的正则化方法，旨在在潜在空间内强制实现等变性，降低其复杂性而不损害重构质量。通过对预训练自编码器进行EQ-VAE微调，本文显著提升了包括DiT、SiT、REPA和MaskGIT在内的多种最先进生成模型的性能，其中DiT-XL/2在五个SD-VAE微调周期内实现了7倍的加速。EQ-VAE适用于连续和离散自编码器，从而为多种潜在生成模型提供了灵活的增强工具。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.09509" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 18 Feb 2025 14:56:45 GMT</pubDate>
-</item>
-<item>
-<title>多模态检索增强生成系统综述</title>
-<link>https://arxiv.org/abs/2502.08826</link>
-<guid>https://arxiv.org/abs/2502.08826</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本综述分析了多模态检索增强生成系统的挑战和进展。</p><br /><br /><p><strong>摘要：</strong> 大型语言模型因依赖静态训练数据而面临幻觉和过时知识的问题。检索增强生成（RAG）通过整合外部动态信息来缓解这些问题，进而提高输出的真实性和时效性。近期的多模态学习进展促成了多模态RAG的发展，将文本、图像、音频和视频等多种模态结合以增强生成效果。然而，跨模态对齐和推理为多模态RAG带来了独特挑战。本文综述了多模态RAG系统，涵盖数据集、指标、基准、评估、方法论及创新等方面，详细审视训练策略、鲁棒性增强及损失函数，并探讨多样化的多模态RAG场景及未来研究方向。该综述为构建更强大、可靠的人工智能系统奠定了基础，旨在有效利用多模态动态外部知识库。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.08826" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 18 Feb 2025 13:59:31 GMT</pubDate>
-</item>
-<item>
-<title>IHEval：评估语言模型指令层级遵循能力的新基准</title>
-<link>https://arxiv.org/abs/2502.08745</link>
-<guid>https://arxiv.org/abs/2502.08745</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">IHEval基准评估语言模型在指令层级遵循中的表现与挑战。</p><br /><br /><p><strong>摘要：</strong> 指令层级在语言模型（LMs）中至关重要，确保系统消息、用户消息、对话历史和工具输出之间的优先顺序。然而，这一领域的研究相对较少，缺乏全面的评估基准。为此，我们推出了IHEval，一个新基准，包含3,538个示例，涵盖九项任务，特别是对优先级不同的指令的处理。我们的评估显示，流行的语言模型在识别指令优先级方面表现不佳，尤其在面对相互冲突的指令时，性能显著下降。最具竞争力的开源模型在解决此类冲突中仅获得48%的准确率。这些结果强调了未来在语言模型开发中需要针对性优化的必要性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.08745" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 18 Feb 2025 13:21:05 GMT</pubDate>
-</item>
-<item>
-<title>高效影响值估计的神经网络方法</title>
-<link>https://arxiv.org/abs/2502.09969</link>
-<guid>https://arxiv.org/abs/2502.09969</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出了一种名为NN-CIFT的小型神经网络方法，以降低影响值估计的成本。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了使用小型神经网络（称为InfluenceNetwork）来估计模型培训中的影响值，显著降低了计算成本，达到了99%的节约。传统的影响函数计算方法由于高昂的计算需求和内存消耗，在处理大型模型和数据集时效果不理想；而我们的方法能够以仅占全语言模型0.0027%的小型模型，进行有效的影响值估计。我们将此算法（NN-CIFT）应用于针对指令细化的子集选择任务中，结果显示在速度显著提升的情况下，无需牺牲性能，与四个先进的影响函数方法对比，均表现出良好的效果。此外，我们还对NN-CIFT进行了深入的超参数分析，证明其有效性和通用性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.09969" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 18 Feb 2025 13:04:04 GMT</pubDate>
-</item>
-<item>
-<title>合成多模态网络任务数据集和探索者代理的研究</title>
-<link>https://arxiv.org/abs/2502.11357</link>
-<guid>https://arxiv.org/abs/2502.11357</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文开发了一个多模态网络任务数据集，提升了代理的性能。</p><br /><br /><p><strong>摘要：</strong> 近期大型多模态模型（LMM）的成功应用已展现出自主完成复杂网络任务的潜力。尽管开源LMM代理在离线评估基准上取得了显著进展，但在更真实的在线环境中仍远未达到人类水平。本文提出了一种可扩展的方法，合成了迄今为止最大的多样化网络任务轨迹数据集，包含超过94K的成功任务轨迹，跨越49K个独特URL、720K张屏幕截图和33M个网页元素。本研究还介绍了“Explorer”多模态网络代理，并在多个基准测试中表现出色，验证了数据扩展对提高网络代理能力的重要性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.11357" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 18 Feb 2025 11:57:43 GMT</pubDate>
 </item>
 </channel>
 </rss>
