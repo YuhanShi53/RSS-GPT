@@ -5,15 +5,37 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>Scaling Laws for Native Multimodal Models Scaling Laws for Native Multimodal Models</title>
+<link>https://arxiv.org/abs/2504.07951</link>
+<guid>https://arxiv.org/abs/2504.07951</guid>
+<content:encoded><![CDATA[
+
+  Building general-purpose models that can effectively perceive the world through multimodal signals has been a long-standing goal. Current approaches involve integrating separately pre-trained components, such as connecting vision encoders to LLMs and continuing multimodal training. While such approaches exhibit remarkable sample efficiency, it remains an open question whether such late-fusion architectures are inherently superior. In this work, we revisit the architectural design of native multimodal models (NMMs)--those trained from the ground up on all modalities--and conduct an extensive scaling laws study, spanning 457 trained models with different architectures and training mixtures. Our investigation reveals no inherent advantage to late-fusion architectures over early-fusion ones, which do not rely on image encoders. On the contrary, early-fusion exhibits stronger performance at lower parameter counts, is more efficient to train, and is easier to deploy. Motivated by the strong performance of the early-fusion architectures, we show that incorporating Mixture of Experts (MoEs) allows for models that learn modality-specific weights, significantly enhancing performance.
+
+]]></content:encoded>
+<pubDate>Thu, 10 Apr 2025 13:57:28 GMT</pubDate>
+<pubDate>Thu, 10 Apr 2025 13:57:28 GMT</pubDate>
+</item>
+<item>
+<title>TAPNext: Tracking Any Point (TAP) as Next Token Prediction</title>
+<link>https://arxiv.org/abs/2504.05579</link>
+<guid>https://arxiv.org/abs/2504.05579</guid>
+<content:encoded><![CDATA[
+
+  Tracking Any Point (TAP) in a video is a challenging computer vision problem with many demonstrated applications in robotics, video editing, and 3D reconstruction. Existing methods for TAP rely heavily on complex tracking-specific inductive biases and heuristics, limiting their generality and potential for scaling. To address these challenges, we present TAPNext, a new approach that casts TAP as sequential masked token decoding. Our model is causal, tracks in a purely online fashion, and removes tracking-specific inductive biases. This enables TAPNext to run with minimal latency, and removes the temporal windowing required by many existing state of art trackers. Despite its simplicity, TAPNext achieves a new state-of-the-art tracking performance among both online and offline trackers. Finally, we present evidence that many widely used tracking heuristics emerge naturally in TAPNext through end-to-end training.
+
+]]></content:encoded>
+<pubDate>Mon, 07 Apr 2025 20:28:42 GMT</pubDate>
+<pubDate>Mon, 07 Apr 2025 20:28:42 GMT</pubDate>
+</item>
+
+<item>
 <title>MonoPlace3D: Learning 3D-Aware Object Placement for 3D Monocular Detection</title>
 <link>https://arxiv.org/abs/2504.06801</link>
 <guid>https://arxiv.org/abs/2504.06801</guid>
 <content:encoded><![CDATA[
-
-  Current monocular 3D detectors are held back by the limited diversity and scale of real-world datasets. While data augmentation certainly helps, it's particularly difficult to generate realistic scene-aware augmented data for outdoor settings. Most current approaches to synthetic data generation focus on realistic object appearance through improved rendering techniques. However, we show that where and how objects are positioned is just as crucial for training effective 3D monocular detectors. The key obstacle lies in automatically determining realistic object placement parameters - including position, dimensions, and directional alignment when introducing synthetic objects into actual scenes. To address this, we introduce MonoPlace3D, a novel system that considers the 3D scene content to create realistic augmentations. Specifically, given a background scene, MonoPlace3D learns a distribution over plausible 3D bounding boxes. Subsequently, we render realistic objects and place them according to the locations sampled from the learned distribution. Our comprehensive evaluation on two standard datasets KITTI and NuScenes, demonstrates that MonoPlace3D significantly improves the accuracy of multiple existing monocular 3D detectors while being highly data efficient.
-
+Current monocular 3D detectors are held back by the limited diversity and scale of real-world datasets. While data augmentation certainly helps, it's particularly difficult to generate realistic scene-aware augmented data for outdoor settings. Most current approaches to synthetic data generation focus on realistic object appearance through improved rendering techniques. However, we show that where and how objects are positioned is just as crucial for training effective 3D monocular detectors. The key obstacle lies in automatically determining realistic object placement parameters - including position, dimensions, and directional alignment when introducing synthetic objects into actual scenes. To address this, we introduce MonoPlace3D, a novel system that considers the 3D scene content to create realistic augmentations. Specifically, given a background scene, MonoPlace3D learns a distribution over plausible 3D bounding boxes. Subsequently, we render realistic objects and place them according to the locations sampled from the learned distribution. Our comprehensive evaluation on two standard datasets KITTI and NuScenes, demonstrates that MonoPlace3D significantly improves the accuracy of multiple existing monocular 3D detectors while being highly data efficient.
 ]]></content:encoded>
-<pubDate>Wed, 09 Apr 2025 07:47:48 GMT</pubDate>
 <pubDate>Wed, 09 Apr 2025 07:47:48 GMT</pubDate>
 </item>
 <item>
@@ -21,14 +43,10 @@
 <link>https://arxiv.org/abs/2504.06752</link>
 <guid>https://arxiv.org/abs/2504.06752</guid>
 <content:encoded><![CDATA[
-
-  Existing approaches for controlling text-to-image diffusion models, while powerful, do not allow for explicit 3D object-centric control, such as precise control of object orientation. In this work, we address the problem of multi-object orientation control in text-to-image diffusion models. This enables the generation of diverse multi-object scenes with precise orientation control for each object. The key idea is to condition the diffusion model with a set of orientation-aware compass tokens, one for each object, along with text tokens. A light-weight encoder network predicts these compass tokens taking object orientation as the input. The model is trained on a synthetic dataset of procedurally generated scenes, each containing one or two 3D assets on a plain background. However, direct training this framework results in poor orientation control as well as leads to entanglement among objects. To mitigate this, we intervene in the generation process and constrain the cross-attention maps of each compass token to its corresponding object regions. The trained model is able to achieve precise orientation control for a) complex objects not seen during training and b) multi-object scenes with more than two objects, indicating strong generalization capabilities. Further, when combined with personalization methods, our method precisely controls the orientation of the new object in diverse contexts. Our method achieves state-of-the-art orientation control and text alignment, quantified with extensive evaluations and a user study.
-
+Existing approaches for controlling text-to-image diffusion models, while powerful, do not allow for explicit 3D object-centric control, such as precise control of object orientation. In this work, we address the problem of multi-object orientation control in text-to-image diffusion models. This enables the generation of diverse multi-object scenes with precise orientation control for each object. The key idea is to condition the diffusion model with a set of orientation-aware compass tokens, one for each object, along with text tokens. A light-weight encoder network predicts these compass tokens taking object orientation as the input. The model is trained on a synthetic dataset of procedurally generated scenes, each containing one or two 3D assets on a plain background. However, direct training this framework results in poor orientation control as well as leads to entanglement among objects. To mitigate this, we intervene in the generation process and constrain the cross-attention maps of each compass token to its corresponding object regions. The trained model is able to achieve precise orientation control for a) complex objects not seen during training and b) multi-object scenes with more than two objects, indicating strong generalization capabilities. Further, when combined with personalization methods, our method precisely controls the orientation of the new object in diverse contexts. Our method achieves state-of-the-art orientation control and text alignment, quantified with extensive evaluations and a user study.
 ]]></content:encoded>
 <pubDate>Wed, 09 Apr 2025 06:15:15 GMT</pubDate>
-<pubDate>Wed, 09 Apr 2025 06:15:15 GMT</pubDate>
 </item>
-
 <item>
 <title>C3PO: Critical-Layer, Core-Expert, Collaborative Pathway Optimization for Test-Time Expert Re-Mixing</title>
 <link>https://arxiv.org/abs/2504.07964</link>
@@ -9010,24 +9028,6 @@ Large Language Models (LLMs) and Multimodal Large Language Models (MLLMs) have m
 <div><p style="color: gray;">mmMamba框架通过知识蒸馏实现线性复杂度的多模态模型，提升效率。</p><br /><br /><p><strong>摘要：</strong> 近年来，多模态大型语言模型（MLLMs）展现了卓越的性能，但在部署时面临计算复杂度高、缓存需求增长等挑战。为此，我们提出了mmMamba框架，通过对现有MLLM的逐步知识蒸馏，开发线性复杂度的多模态状态空间模型。该方法允许直接将经过训练的解码器-仅模型转化为线性复杂度架构，无需预训练的基于RNN的LLM或视觉编码器。通过提出播种策略和三阶段蒸馏流程，我们有效地将知识从Transformer转移到Mamba，同时保持多模态能力。经过Transformer的解码器-仅模型HoVLE蒸馏的mmMamba-linear在性能方面与现有的线性和二次复杂度视觉语言模型相竞争，而mmMamba-hybrid的性能进一步显著提升，接近HoVLE的能力。在103K tokens时，mmMamba-linear实现了20.6倍的加速和75.8%的GPU内存减少，而mmMamba-hybrid则实现了13.5倍的加速及60.2%的内存节省。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.13145" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 18 Feb 2025 22:08:27 GMT</pubDate>
-</item>
-<item>
-<title>FLAG-Trader：一种融合语言处理与强化学习的金融交易模型</title>
-<link>https://arxiv.org/abs/2502.11433</link>
-<guid>https://arxiv.org/abs/2502.11433</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出FLAG-Trader，通过强化学习优化金融交易决策，提高多步骤任务表现。</p><br /><br /><p><strong>摘要：</strong> 本文提出了FLAG-Trader，一种结合语言处理与强化学习的金融交易模型。大型语言模型（LLMs）在处理多模态金融数据时，展现出卓越的推理能力，但在需复杂决策的多步骤互动金融市场（如交易）中，表现尚不理想。FLAG-Trader通过将部分微调的LLM作为策略网络，利用预训练知识与金融领域的参数高效微调相结合，提升了决策过程的表现。借助政策梯度优化，在交易奖励的驱动下，FLAG-Trader不仅优化了交易性能，还显著改善了其他金融领域任务的表现。我们提供了大量实证数据来验证这些提升效果。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.11433" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 18 Feb 2025 22:06:19 GMT</pubDate>
-</item>
-<item>
-<title>Decomposed Reward Models: 提取人类偏好的新方法</title>
-<link>https://arxiv.org/abs/2502.13131</link>
-<guid>https://arxiv.org/abs/2502.13131</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">DRMs通过二元比较提取人类偏好，为个性化AI提供了新视角。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种新颖的奖赏模型——分解奖赏模型（DRMs），旨在有效提取多样化的人类偏好。传统奖励模型在捕捉偏好的复杂性方面存在局限性。DRMs不需要细粒度的注释，而是通过二元比较来分析人类偏好，并将其表示为向量。采用主成分分析（PCA）对偏好的数据进行分析，构造了偏好与拒绝响应之间的嵌入差异数据集。通过识别正交基向量，DRMs能够捕捉偏好的不同维度，如有帮助性、安全性和幽默感等。这些分解的奖励可以灵活组合，以适应不同用户的需求，从而提供一个可解释且可扩展的替代方案。我们的结果表明，DRMs不仅有效提取偏好维度，还能在无额外训练的情况下适应新用户，展示了其在个性化和可解释性大型语言模型对齐中的强大能力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.13131" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 18 Feb 2025 21:59:45 GMT</pubDate>
 </item>
 </channel>
 </rss>
