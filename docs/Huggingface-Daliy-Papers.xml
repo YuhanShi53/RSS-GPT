@@ -5,15 +5,37 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>Latent Diffusion Autoencoders: Toward Efficient and Meaningful Unsupervised Representation Learning in Medical Imaging</title>
+<link>https://arxiv.org/abs/2504.08635</link>
+<guid>https://arxiv.org/abs/2504.08635</guid>
+<content:encoded><![CDATA[
+
+  This study presents Latent Diffusion Autoencoder (LDAE), a novel encoder-decoder diffusion-based framework for efficient and meaningful unsupervised learning in medical imaging, focusing on Alzheimer disease (AD) using brain MR from the ADNI database as a case study. Unlike conventional diffusion autoencoders operating in image space, LDAE applies the diffusion process in a compressed latent representation, improving computational efficiency and making 3D medical imaging representation learning tractable. To validate the proposed approach, we explore two key hypotheses: (i) LDAE effectively captures meaningful semantic representations on 3D brain MR associated with AD and ageing, and (ii) LDAE achieves high-quality image generation and reconstruction while being computationally efficient. Experimental results support both hypotheses: (i) linear-probe evaluations demonstrate promising diagnostic performance for AD (ROC-AUC: 90%, ACC: 84%) and age prediction (MAE: 4.1 years, RMSE: 5.2 years); (ii) the learned semantic representations enable attribute manipulation, yielding anatomically plausible modifications; (iii) semantic interpolation experiments show strong reconstruction of missing scans, with SSIM of 0.969 (MSE: 0.0019) for a 6-month gap. Even for longer gaps (24 months), the model maintains robust performance (SSIM &gt; 0.93, MSE &lt; 0.004), indicating an ability to capture temporal progression trends; (iv) compared to conventional diffusion autoencoders, LDAE significantly increases inference throughput (20x faster) while also enhancing reconstruction quality. These findings position LDAE as a promising framework for scalable medical imaging applications, with the potential to serve as a foundation model for medical image analysis. Code available at https://github.com/GabrieleLozupone/LDAE
+
+]]></content:encoded>
+<pubDate>Fri, 11 Apr 2025 11:37:46 GMT</pubDate>
+<pubDate>Fri, 11 Apr 2025 11:37:46 GMT</pubDate>
+</item>
+<item>
+<title>Pangu Ultra: Pushing the Limits of Dense Large Language Models on Ascend NPUs</title>
+<link>https://arxiv.org/abs/2504.07866</link>
+<guid>https://arxiv.org/abs/2504.07866</guid>
+<content:encoded><![CDATA[
+
+  We present Pangu Ultra, a Large Language Model (LLM) with 135 billion parameters and dense Transformer modules trained on Ascend Neural Processing Units (NPUs). Although the field of LLM has been witnessing unprecedented advances in pushing the scale and capability of LLM in recent years, training such a large-scale model still involves significant optimization and system challenges. To stabilize the training process, we propose depth-scaled sandwich normalization, which effectively eliminates loss spikes during the training process of deep models. We pre-train our model on 13.2 trillion diverse and high-quality tokens and further enhance its reasoning capabilities during post-training. To perform such large-scale training efficiently, we utilize 8,192 Ascend NPUs with a series of system optimizations. Evaluations on multiple diverse benchmarks indicate that Pangu Ultra significantly advances the state-of-the-art capabilities of dense LLMs such as Llama 405B and Mistral Large 2, and even achieves competitive results with DeepSeek-R1, whose sparse model structure contains much more parameters. Our exploration demonstrates that Ascend NPUs are capable of efficiently and effectively training dense models with more than 100 billion parameters. Our model and system will be available for our commercial customers.
+
+]]></content:encoded>
+<pubDate>Thu, 10 Apr 2025 11:41:51 GMT</pubDate>
+<pubDate>Thu, 10 Apr 2025 11:41:51 GMT</pubDate>
+</item>
+
+<item>
 <title>SAEs Can Improve Unlearning: Dynamic Sparse Autoencoder Guardrails for Precision Unlearning in LLMs</title>
 <link>https://arxiv.org/abs/2504.08192</link>
 <guid>https://arxiv.org/abs/2504.08192</guid>
 <content:encoded><![CDATA[
-
-  Machine unlearning is a promising approach to improve LLM safety by removing unwanted knowledge from the model. However, prevailing gradient-based unlearning methods suffer from issues such as high computational costs, hyperparameter instability, poor sequential unlearning capability, vulnerability to relearning attacks, low data efficiency, and lack of interpretability. While Sparse Autoencoders are well-suited to improve these aspects by enabling targeted activation-based unlearning, prior approaches underperform gradient-based methods. This work demonstrates that, contrary to these earlier findings, SAEs can significantly improve unlearning when employed dynamically. We introduce Dynamic DAE Guardrails (DSG), a novel method for precision unlearning that leverages principled feature selection and a dynamic classifier. Our experiments show DSG substantially outperforms leading unlearning methods, achieving superior forget-utility trade-offs. DSG addresses key drawbacks of gradient-based approaches for unlearning -- offering enhanced computational efficiency and stability, robust performance in sequential unlearning, stronger resistance to relearning attacks, better data efficiency including zero-shot settings, and more interpretable unlearning.
-
+Machine unlearning is a promising approach to improve LLM safety by removing unwanted knowledge from the model. However, prevailing gradient-based unlearning methods suffer from issues such as high computational costs, hyperparameter instability, poor sequential unlearning capability, vulnerability to relearning attacks, low data efficiency, and lack of interpretability. While Sparse Autoencoders are well-suited to improve these aspects by enabling targeted activation-based unlearning, prior approaches underperform gradient-based methods. This work demonstrates that, contrary to these earlier findings, SAEs can significantly improve unlearning when employed dynamically. We introduce Dynamic DAE Guardrails (DSG), a novel method for precision unlearning that leverages principled feature selection and a dynamic classifier. Our experiments show DSG substantially outperforms leading unlearning methods, achieving superior forget-utility trade-offs. DSG addresses key drawbacks of gradient-based approaches for unlearning -- offering enhanced computational efficiency and stability, robust performance in sequential unlearning, stronger resistance to relearning attacks, better data efficiency including zero-shot settings, and more interpretable unlearning.
 ]]></content:encoded>
-<pubDate>Thu, 10 Apr 2025 21:24:03 GMT</pubDate>
 <pubDate>Thu, 10 Apr 2025 21:24:03 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +43,8 @@
 <link>https://arxiv.org/abs/2504.05303</link>
 <guid>https://arxiv.org/abs/2504.05303</guid>
 <content:encoded><![CDATA[
-
-  We introduce InteractVLM, a novel method to estimate 3D contact points on human bodies and objects from single in-the-wild images, enabling accurate human-object joint reconstruction in 3D. This is challenging due to occlusions, depth ambiguities, and widely varying object shapes. Existing methods rely on 3D contact annotations collected via expensive motion-capture systems or tedious manual labeling, limiting scalability and generalization. To overcome this, InteractVLM harnesses the broad visual knowledge of large Vision-Language Models (VLMs), fine-tuned with limited 3D contact data. However, directly applying these models is non-trivial, as they reason only in 2D, while human-object contact is inherently 3D. Thus we introduce a novel Render-Localize-Lift module that: (1) embeds 3D body and object surfaces in 2D space via multi-view rendering, (2) trains a novel multi-view localization model (MV-Loc) to infer contacts in 2D, and (3) lifts these to 3D. Additionally, we propose a new task called Semantic Human Contact estimation, where human contact predictions are conditioned explicitly on object semantics, enabling richer interaction modeling. InteractVLM outperforms existing work on contact estimation and also facilitates 3D reconstruction from an in-the wild image. Code and models are available at https://interactvlm.is.tue.mpg.de.
-
+We introduce InteractVLM, a novel method to estimate 3D contact points on human bodies and objects from single in-the-wild images, enabling accurate human-object joint reconstruction in 3D. This is challenging due to occlusions, depth ambiguities, and widely varying object shapes. Existing methods rely on 3D contact annotations collected via expensive motion-capture systems or tedious manual labeling, limiting scalability and generalization. To overcome this, InteractVLM harnesses the broad visual knowledge of large Vision-Language Models (VLMs), fine-tuned with limited 3D contact data. However, directly applying these models is non-trivial, as they reason only in 2D, while human-object contact is inherently 3D. Thus we introduce a novel Render-Localize-Lift module that: (1) embeds 3D body and object surfaces in 2D space via multi-view rendering, (2) trains a novel multi-view localization model (MV-Loc) to infer contacts in 2D, and (3) lifts these to 3D. Additionally, we propose a new task called Semantic Human Contact estimation, where human contact predictions are conditioned explicitly on object semantics, enabling richer interaction modeling. InteractVLM outperforms existing work on contact estimation and also facilitates 3D reconstruction from an in-the wild image. Code and models are available at https://interactvlm.is.tue.mpg.de.
 ]]></content:encoded>
-<pubDate>Mon, 07 Apr 2025 13:59:33 GMT</pubDate>
 <pubDate>Mon, 07 Apr 2025 13:59:33 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +52,8 @@
 <link>https://arxiv.org/abs/2504.05262</link>
 <guid>https://arxiv.org/abs/2504.05262</guid>
 <content:encoded><![CDATA[
-
-  Despite high benchmark scores, Large Language Models (LLMs) often fail simple problem, raising a critical question: Do LLMs learn mathematical principles or merely memorize patterns? Rather than designing increasingly complex benchmarks like recent works, we investigate this using elementary two-integer addition (0 to 2^{64}), probing two core properties: commutativity (A+B=B+A) and compositional generalization (via isomorphic symbolic mappings, e.g., 7 rightarrow y). While state-of-the-art LLMs achieve 73.8-99.8\% accuracy on numerical addition, performance collapses to leq7.5\% under symbolic mapping, indicating failure to generalize learned rules. Non-monotonic performance scaling with digit count and frequent commutativity violations (over 1,700 cases of A+B neq B+A) further support this. Explicitly providing addition rules degrades performance by 81.2\% on average, while self-explanation maintains baseline accuracy, suggesting LLM arithmetic processing is misaligned with human-defined principles. Our findings indicate current LLMs rely on memory pattern over genuine rule learning, highlighting architectural limitations and the need for new approaches to achieve true mathematical reasoning.
-
+Despite high benchmark scores, Large Language Models (LLMs) often fail simple problem, raising a critical question: Do LLMs learn mathematical principles or merely memorize patterns? Rather than designing increasingly complex benchmarks like recent works, we investigate this using elementary two-integer addition (0 to 2^{64}), probing two core properties: commutativity (A+B=B+A) and compositional generalization (via isomorphic symbolic mappings, e.g., 7 rightarrow y). While state-of-the-art LLMs achieve 73.8-99.8\% accuracy on numerical addition, performance collapses to leq7.5\% under symbolic mapping, indicating failure to generalize learned rules. Non-monotonic performance scaling with digit count and frequent commutativity violations (over 1,700 cases of A+B neq B+A) further support this. Explicitly providing addition rules degrades performance by 81.2\% on average, while self-explanation maintains baseline accuracy, suggesting LLM arithmetic processing is misaligned with human-defined principles. Our findings indicate current LLMs rely on memory pattern over genuine rule learning, highlighting architectural limitations and the need for new approaches to achieve true mathematical reasoning.
 ]]></content:encoded>
-<pubDate>Mon, 07 Apr 2025 12:57:10 GMT</pubDate>
 <pubDate>Mon, 07 Apr 2025 12:57:10 GMT</pubDate>
 </item>
 <item>
@@ -45,14 +61,10 @@
 <link>https://arxiv.org/abs/2504.01883</link>
 <guid>https://arxiv.org/abs/2504.01883</guid>
 <content:encoded><![CDATA[
-
-  Retrieval-Augmented Generation (RAG) models excel in knowledge-intensive tasks, especially under few-shot learning constraints. We introduce CoRAG, a framework extending RAG to collaborative settings, where clients jointly train a shared model using a collaborative passage store. To evaluate CoRAG, we introduce CRAB, a benchmark for collaborative homogeneous open-domain question answering. Our experiments demonstrate that CoRAG consistently outperforms both parametric collaborative learning methods and locally trained RAG models in low-resource scenarios. Further analysis reveals the critical importance of relevant passages within the shared store, the surprising benefits of incorporating irrelevant passages, and the potential for hard negatives to negatively impact performance. This introduces a novel consideration in collaborative RAG: the trade-off between leveraging a collectively enriched knowledge base and the potential risk of incorporating detrimental passages from other clients. Our findings underscore the viability of CoRAG, while also highlighting key design challenges and promising avenues for future research.
-
+Retrieval-Augmented Generation (RAG) models excel in knowledge-intensive tasks, especially under few-shot learning constraints. We introduce CoRAG, a framework extending RAG to collaborative settings, where clients jointly train a shared model using a collaborative passage store. To evaluate CoRAG, we introduce CRAB, a benchmark for collaborative homogeneous open-domain question answering. Our experiments demonstrate that CoRAG consistently outperforms both parametric collaborative learning methods and locally trained RAG models in low-resource scenarios. Further analysis reveals the critical importance of relevant passages within the shared store, the surprising benefits of incorporating irrelevant passages, and the potential for hard negatives to negatively impact performance. This introduces a novel consideration in collaborative RAG: the trade-off between leveraging a collectively enriched knowledge base and the potential risk of incorporating detrimental passages from other clients. Our findings underscore the viability of CoRAG, while also highlighting key design challenges and promising avenues for future research.
 ]]></content:encoded>
 <pubDate>Wed, 02 Apr 2025 12:40:43 GMT</pubDate>
-<pubDate>Wed, 02 Apr 2025 12:40:43 GMT</pubDate>
 </item>
-
 <item>
 <title>GigaTok: Scaling Visual Tokenizers to 3 Billion Parameters for Autoregressive Image Generation</title>
 <link>https://arxiv.org/abs/2504.08736</link>
@@ -9016,42 +9028,6 @@ Large Language Models (LLMs) and Multimodal Large Language Models (MLLMs) have m
 <div><p style="color: gray;">研究显示序列令牌的压缩比可达1500，揭示优化空间巨大。</p><br /><br /><p><strong>摘要：</strong> 近年来的研究关注于将令牌序列压缩成较短的实值向量序列，以替代令牌嵌入或键值缓存，这些方法能够减少现有语言模型的计算量。尽管基于强大的编码模型，现有方案的最大无损压缩比通常仅为10。这一现象引人深思，因为理论上即使是16位精度和适中向量大小，大型实值向量的最大信息容量远超此速率。本研究通过用逐样本优化程序替换编码器，探究压缩的极限，结果显示压缩比高达1500，这凸显出现有方法与实用解决方案之间的两个数量级的差距。此外，我们还实证表明，压缩的极限并非由输入长度决定，而是由需减少的不确定性，即该序列的交叉熵损失，这一发现强调了输入嵌入的理论能力与实际利用之间的显著差距，表明在模型设计中存在显著优化空间。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.13063" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 19 Feb 2025 04:43:42 GMT</pubDate>
-</item>
-<item>
-<title>提升变换器性能的层集成记忆方法研究</title>
-<link>https://arxiv.org/abs/2502.09245</link>
-<guid>https://arxiv.org/abs/2502.09245</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出层集成记忆方法，以提升变换器的表示能力和性能。</p><br /><br /><p><strong>摘要：</strong> 本文针对标准变换器在处理历史信息时只使用相邻层的表示，导致表示崩溃和性能欠佳的问题，提出了一种新的解决方案——层集成记忆（LIMe）。该方法允许模型访问早期层的隐藏状态，从而扩展表示能力，而仍然保持整体内存占用。通过在多种架构和查找机制下进行广泛实验，我们展示了在多项任务上表现出一致的性能提升。此外，我们对学习到的表示动态进行分析，并探索了深度电路的应用，揭示了LIMe在层间集成信息的机制，为未来研究指明了有前景的方向。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.09245" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 19 Feb 2025 03:03:51 GMT</pubDate>
-</item>
-<item>
-<title>增强大型语言模型的领域知识方法综述</title>
-<link>https://arxiv.org/abs/2502.10708</link>
-<guid>https://arxiv.org/abs/2502.10708</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">探讨如何通过知识集成提升大型语言模型的领域适应性。</p><br /><br /><p><strong>摘要：</strong> 大型语言模型在自然语言理解、文本摘要和机器翻译等任务中取得了显著成功，但其通用特性限制了在特定领域应用中的有效性。为此，研究人员探索了多种方法来增强大型语言模型的领域知识。本综述将这些方法归纳为四种关键途径：动态知识注入、静态知识嵌入、模块化适配器和提示优化。这些方法为大型语言模型提供了领域专业知识的独特机制，平衡了灵活性、可扩展性和效率之间的权衡。文中还讨论了这些方法在特化任务中的应用，比较了领域特定的大型语言模型与通用模型的优缺点，同时指出了这一新兴领域的挑战与机遇。此外，还总结了常用的数据集和基准，以帮助研究者更深入了解这一领域。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.10708" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 19 Feb 2025 02:56:09 GMT</pubDate>
-</item>
-<item>
-<title>增强的钙钛矿太阳能电池知识管理系统</title>
-<link>https://arxiv.org/abs/2502.12669</link>
-<guid>https://arxiv.org/abs/2502.12669</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文介绍了一种集成钙钛矿太阳能电池的知识管理系统。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种集成化的钙钛矿太阳能电池(PSC)知识增强系统，旨在提高该领域研究的知识管理与推理效率。系统包括三个主要组成部分：首先，构建了Perovskite-KG知识图谱，从1517篇研究论文中提取了23789个实体和22272个关系；其次，创建了两个互补数据集：Perovskite-Chat，涵盖了55101个高质量问答对，以及Perovskite-Reasoning，包含2217个精心策划的材料科学问题；最后，引入了两个专门的大型语言模型：用于领域特定知识辅助的Perovskite-Chat-LLM和用于科学推理任务的Perovskite-Reasoning-LLM。实验结果表明，该系统在领域特定知识检索和科学推理任务上显著优于现有模型，为PSCs领域的研究人员提供了有效的文献回顾、实验设计及复杂问题解决工具。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.12669" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 19 Feb 2025 02:47:33 GMT</pubDate>
-</item>
-<item>
-<title>OctoTools：一个面向多领域复杂推理任务的开放源框架</title>
-<link>https://arxiv.org/abs/2502.11271</link>
-<guid>https://arxiv.org/abs/2502.11271</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">OctoTools提供了一个高效的框架，用于解决多领域的复杂推理任务。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了OctoTools，这是一个无需训练、用户友好且易于扩展的开源代理框架，旨在解决多领域的复杂推理任务。OctoTools通过标准化工具卡来封装工具功能，设有高层次和低层次的规划器，以及执行器来实现工具的使用。我们在16个不同任务（包括MathVista、MMLU-Pro、MedQA和GAIA-Text）上验证了OctoTools的广泛适用性，平均准确率提高了9.3%，超越了GPT-4o。此外，OctoTools在相同工具集合下的表现，比AutoGen、GPT-Functions和LangChain高出10.6%。通过全面分析与消融实验，OctoTools在任务规划、工具有效使用和多步骤问题解决上展现出明显的优势。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.11271" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 19 Feb 2025 02:27:36 GMT</pubDate>
 </item>
 </channel>
 </rss>
