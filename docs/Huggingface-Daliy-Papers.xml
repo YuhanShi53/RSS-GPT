@@ -5,15 +5,61 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>GigaTok: Scaling Visual Tokenizers to 3 Billion Parameters for Autoregressive Image Generation</title>
+<link>https://arxiv.org/abs/2504.08736</link>
+<guid>https://arxiv.org/abs/2504.08736</guid>
+<content:encoded><![CDATA[
+
+  In autoregressive (AR) image generation, visual tokenizers compress images into compact discrete latent tokens, enabling efficient training of downstream autoregressive models for visual generation via next-token prediction. While scaling visual tokenizers improves image reconstruction quality, it often degrades downstream generation quality -- a challenge not adequately addressed in existing literature. To address this, we introduce GigaTok, the first approach to simultaneously improve image reconstruction, generation, and representation learning when scaling visual tokenizers. We identify the growing complexity of latent space as the key factor behind the reconstruction vs. generation dilemma. To mitigate this, we propose semantic regularization, which aligns tokenizer features with semantically consistent features from a pre-trained visual encoder. This constraint prevents excessive latent space complexity during scaling, yielding consistent improvements in both reconstruction and downstream autoregressive generation. Building on semantic regularization, we explore three key practices for scaling tokenizers:(1) using 1D tokenizers for better scalability, (2) prioritizing decoder scaling when expanding both encoder and decoder, and (3) employing entropy loss to stabilize training for billion-scale tokenizers. By scaling to 3 space billion parameters, GigaTok achieves state-of-the-art performance in reconstruction, downstream AR generation, and downstream AR representation quality.
+
+]]></content:encoded>
+<pubDate>Fri, 11 Apr 2025 13:59:58 GMT</pubDate>
+<pubDate>Fri, 11 Apr 2025 13:59:58 GMT</pubDate>
+</item>
+<item>
+<title>ModernBERT or DeBERTaV3? Examining Architecture and Data Influence on Transformer Encoder Models Performance</title>
+<link>https://arxiv.org/abs/2504.08716</link>
+<guid>https://arxiv.org/abs/2504.08716</guid>
+<content:encoded><![CDATA[
+
+  Pretrained transformer-encoder models like DeBERTaV3 and ModernBERT introduce architectural advancements aimed at improving efficiency and performance. Although the authors of ModernBERT report improved performance over DeBERTaV3 on several benchmarks, the lack of disclosed training data and the absence of comparisons using a shared dataset make it difficult to determine whether these gains are due to architectural improvements or differences in training data. In this work, we conduct a controlled study by pretraining ModernBERT on the same dataset as CamemBERTaV2, a DeBERTaV3 French model, isolating the effect of model design. Our results show that the previous model generation remains superior in sample efficiency and overall benchmark performance, with ModernBERT's primary advantage being faster training and inference speed. However, the new proposed model still provides meaningful architectural improvements compared to earlier models such as BERT and RoBERTa. Additionally, we observe that high-quality pre-training data accelerates convergence but does not significantly improve final performance, suggesting potential benchmark saturation. These findings show the importance of disentangling pretraining data from architectural innovations when evaluating transformer models.
+
+]]></content:encoded>
+<pubDate>Fri, 11 Apr 2025 13:29:35 GMT</pubDate>
+<pubDate>Fri, 11 Apr 2025 13:29:35 GMT</pubDate>
+</item>
+<item>
+<title>SQL-R1: Training Natural Language to SQL Reasoning Model By Reinforcement Learning</title>
+<link>https://arxiv.org/abs/2504.08600</link>
+<guid>https://arxiv.org/abs/2504.08600</guid>
+<content:encoded><![CDATA[
+
+  Natural Language to SQL (NL2SQL) enables intuitive interactions with databases by transforming natural language queries into structured SQL statements. Despite recent advancements in enhancing human-computer interaction within database applications, significant challenges persist, particularly regarding the inference performance in complex scenarios involving multi-table joins and nested queries. Current methodologies primarily utilize supervised fine-tuning (SFT) to train the NL2SQL model, which may limit adaptability and interpretability in new environments (e.g., finance and healthcare). In order to enhance the reasoning performance of the NL2SQL model in the above complex situations, we introduce SQL-R1, a novel NL2SQL reasoning model trained by the reinforcement learning (RL) algorithms. We design a specialized RL-based reward function tailored for NL2SQL tasks and discussed the impact of cold start on the effectiveness of intensive training. In addition, we achieve competitive accuracy using only a tiny amount of synthetic NL2SQL data for augmented training and further explore data engineering for RL. In existing experiments, SQL-R1 achieves execution accuracy of 88.6% and 66.6% on the benchmark Spider and BIRD, respectively, only using the 7B base model.
+
+]]></content:encoded>
+<pubDate>Fri, 11 Apr 2025 11:01:30 GMT</pubDate>
+<pubDate>Fri, 11 Apr 2025 11:01:30 GMT</pubDate>
+</item>
+<item>
+<title>PixelFlow: Pixel-Space Generative Models with Flow</title>
+<link>https://arxiv.org/abs/2504.07963</link>
+<guid>https://arxiv.org/abs/2504.07963</guid>
+<content:encoded><![CDATA[
+
+  We present PixelFlow, a family of image generation models that operate directly in the raw pixel space, in contrast to the predominant latent-space models. This approach simplifies the image generation process by eliminating the need for a pre-trained Variational Autoencoder (VAE) and enabling the whole model end-to-end trainable. Through efficient cascade flow modeling, PixelFlow achieves affordable computation cost in pixel space. It achieves an FID of 1.98 on 256times256 ImageNet class-conditional image generation benchmark. The qualitative text-to-image results demonstrate that PixelFlow excels in image quality, artistry, and semantic control. We hope this new paradigm will inspire and open up new opportunities for next-generation visual generation models. Code and models are available at https://github.com/ShoufaChen/PixelFlow.
+
+]]></content:encoded>
+<pubDate>Thu, 10 Apr 2025 13:59:56 GMT</pubDate>
+<pubDate>Thu, 10 Apr 2025 13:59:56 GMT</pubDate>
+</item>
+
+<item>
 <title>Seaweed-7B: Cost-Effective Training of Video Generation Foundation Model</title>
 <link>https://arxiv.org/abs/2504.08685</link>
 <guid>https://arxiv.org/abs/2504.08685</guid>
 <content:encoded><![CDATA[
-
-  This technical report presents a cost-efficient strategy for training a video generation foundation model. We present a mid-sized research model with approximately 7 billion parameters (7B) called Seaweed-7B trained from scratch using 665,000 H100 GPU hours. Despite being trained with moderate computational resources, Seaweed-7B demonstrates highly competitive performance compared to contemporary video generation models of much larger size. Design choices are especially crucial in a resource-constrained setting. This technical report highlights the key design decisions that enhance the performance of the medium-sized diffusion model. Empirically, we make two observations: (1) Seaweed-7B achieves performance comparable to, or even surpasses, larger models trained on substantially greater GPU resources, and (2) our model, which exhibits strong generalization ability, can be effectively adapted across a wide range of downstream applications either by lightweight fine-tuning or continue training. See the project page at https://seaweed.video/
-
+This technical report presents a cost-efficient strategy for training a video generation foundation model. We present a mid-sized research model with approximately 7 billion parameters (7B) called Seaweed-7B trained from scratch using 665,000 H100 GPU hours. Despite being trained with moderate computational resources, Seaweed-7B demonstrates highly competitive performance compared to contemporary video generation models of much larger size. Design choices are especially crucial in a resource-constrained setting. This technical report highlights the key design decisions that enhance the performance of the medium-sized diffusion model. Empirically, we make two observations: (1) Seaweed-7B achieves performance comparable to, or even surpasses, larger models trained on substantially greater GPU resources, and (2) our model, which exhibits strong generalization ability, can be effectively adapted across a wide range of downstream applications either by lightweight fine-tuning or continue training. See the project page at https://seaweed.video/
 ]]></content:encoded>
-<pubDate>Fri, 11 Apr 2025 12:46:20 GMT</pubDate>
 <pubDate>Fri, 11 Apr 2025 12:46:20 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +67,8 @@
 <link>https://arxiv.org/abs/2504.08388</link>
 <guid>https://arxiv.org/abs/2504.08388</guid>
 <content:encoded><![CDATA[
-
-  World modeling is a crucial task for enabling intelligent agents to effectively interact with humans and operate in dynamic environments. In this work, we propose MineWorld, a real-time interactive world model on Minecraft, an open-ended sandbox game which has been utilized as a common testbed for world modeling. MineWorld is driven by a visual-action autoregressive Transformer, which takes paired game scenes and corresponding actions as input, and generates consequent new scenes following the actions. Specifically, by transforming visual game scenes and actions into discrete token ids with an image tokenizer and an action tokenizer correspondingly, we consist the model input with the concatenation of the two kinds of ids interleaved. The model is then trained with next token prediction to learn rich representations of game states as well as the conditions between states and actions simultaneously. In inference, we develop a novel parallel decoding algorithm that predicts the spatial redundant tokens in each frame at the same time, letting models in different scales generate 4 to 7 frames per second and enabling real-time interactions with game players. In evaluation, we propose new metrics to assess not only visual quality but also the action following capacity when generating new scenes, which is crucial for a world model. Our comprehensive evaluation shows the efficacy of MineWorld, outperforming SoTA open-sourced diffusion based world models significantly. The code and model have been released.
-
+World modeling is a crucial task for enabling intelligent agents to effectively interact with humans and operate in dynamic environments. In this work, we propose MineWorld, a real-time interactive world model on Minecraft, an open-ended sandbox game which has been utilized as a common testbed for world modeling. MineWorld is driven by a visual-action autoregressive Transformer, which takes paired game scenes and corresponding actions as input, and generates consequent new scenes following the actions. Specifically, by transforming visual game scenes and actions into discrete token ids with an image tokenizer and an action tokenizer correspondingly, we consist the model input with the concatenation of the two kinds of ids interleaved. The model is then trained with next token prediction to learn rich representations of game states as well as the conditions between states and actions simultaneously. In inference, we develop a novel parallel decoding algorithm that predicts the spatial redundant tokens in each frame at the same time, letting models in different scales generate 4 to 7 frames per second and enabling real-time interactions with game players. In evaluation, we propose new metrics to assess not only visual quality but also the action following capacity when generating new scenes, which is crucial for a world model. Our comprehensive evaluation shows the efficacy of MineWorld, outperforming SoTA open-sourced diffusion based world models significantly. The code and model have been released.
 ]]></content:encoded>
-<pubDate>Fri, 11 Apr 2025 05:41:04 GMT</pubDate>
 <pubDate>Fri, 11 Apr 2025 05:41:04 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +76,8 @@
 <link>https://arxiv.org/abs/2504.08366</link>
 <guid>https://arxiv.org/abs/2504.08366</guid>
 <content:encoded><![CDATA[
-
-  We propose a new problem, In-2-4D, for generative 4D (i.e., 3D + motion) inbetweening from a minimalistic input setting: two single-view images capturing an object in two distinct motion states. Given two images representing the start and end states of an object in motion, our goal is to generate and reconstruct the motion in 4D. We utilize a video interpolation model to predict the motion, but large frame-to-frame motions can lead to ambiguous interpretations. To overcome this, we employ a hierarchical approach to identify keyframes that are visually close to the input states and show significant motion, then generate smooth fragments between them. For each fragment, we construct the 3D representation of the keyframe using Gaussian Splatting. The temporal frames within the fragment guide the motion, enabling their transformation into dynamic Gaussians through a deformation field. To improve temporal consistency and refine 3D motion, we expand the self-attention of multi-view diffusion across timesteps and apply rigid transformation regularization. Finally, we merge the independently generated 3D motion segments by interpolating boundary deformation fields and optimizing them to align with the guiding video, ensuring smooth and flicker-free transitions. Through extensive qualitative and quantitiave experiments as well as a user study, we show the effectiveness of our method and its components. The project page is available at https://in-2-4d.github.io/
-
+We propose a new problem, In-2-4D, for generative 4D (i.e., 3D + motion) inbetweening from a minimalistic input setting: two single-view images capturing an object in two distinct motion states. Given two images representing the start and end states of an object in motion, our goal is to generate and reconstruct the motion in 4D. We utilize a video interpolation model to predict the motion, but large frame-to-frame motions can lead to ambiguous interpretations. To overcome this, we employ a hierarchical approach to identify keyframes that are visually close to the input states and show significant motion, then generate smooth fragments between them. For each fragment, we construct the 3D representation of the keyframe using Gaussian Splatting. The temporal frames within the fragment guide the motion, enabling their transformation into dynamic Gaussians through a deformation field. To improve temporal consistency and refine 3D motion, we expand the self-attention of multi-view diffusion across timesteps and apply rigid transformation regularization. Finally, we merge the independently generated 3D motion segments by interpolating boundary deformation fields and optimizing them to align with the guiding video, ensuring smooth and flicker-free transitions. Through extensive qualitative and quantitiave experiments as well as a user study, we show the effectiveness of our method and its components. The project page is available at https://in-2-4d.github.io/
 ]]></content:encoded>
-<pubDate>Fri, 11 Apr 2025 05:01:09 GMT</pubDate>
 <pubDate>Fri, 11 Apr 2025 05:01:09 GMT</pubDate>
 </item>
 <item>
@@ -45,14 +85,10 @@
 <link>https://arxiv.org/abs/2504.07405</link>
 <guid>https://arxiv.org/abs/2504.07405</guid>
 <content:encoded><![CDATA[
-
-  With the rapid advancement of 2D generative models, preserving subject identity while enabling diverse editing has emerged as a critical research focus. Existing methods typically face inherent trade-offs between identity preservation and personalized manipulation. We introduce FlexIP, a novel framework that decouples these objectives through two dedicated components: a Personalization Adapter for stylistic manipulation and a Preservation Adapter for identity maintenance. By explicitly injecting both control mechanisms into the generative model, our framework enables flexible parameterized control during inference through dynamic tuning of the weight adapter. Experimental results demonstrate that our approach breaks through the performance limitations of conventional methods, achieving superior identity preservation while supporting more diverse personalized generation capabilities (Project Page: https://flexip-tech.github.io/flexip/).
-
+With the rapid advancement of 2D generative models, preserving subject identity while enabling diverse editing has emerged as a critical research focus. Existing methods typically face inherent trade-offs between identity preservation and personalized manipulation. We introduce FlexIP, a novel framework that decouples these objectives through two dedicated components: a Personalization Adapter for stylistic manipulation and a Preservation Adapter for identity maintenance. By explicitly injecting both control mechanisms into the generative model, our framework enables flexible parameterized control during inference through dynamic tuning of the weight adapter. Experimental results demonstrate that our approach breaks through the performance limitations of conventional methods, achieving superior identity preservation while supporting more diverse personalized generation capabilities (Project Page: https://flexip-tech.github.io/flexip/).
 ]]></content:encoded>
 <pubDate>Wed, 09 Apr 2025 22:58:22 GMT</pubDate>
-<pubDate>Wed, 09 Apr 2025 22:58:22 GMT</pubDate>
 </item>
-
 <item>
 <title>Geo4D: Leveraging Video Generators for Geometric 4D Scene Reconstruction</title>
 <link>https://arxiv.org/abs/2504.07961</link>
@@ -9016,42 +9052,6 @@ Large Language Models (LLMs) and Multimodal Large Language Models (MLLMs) have m
 <div><p style="color: gray;">Magma是一个新型多模态基础模型，具备数字与物理世界的智能代理能力。</p><br /><br /><p><strong>摘要：</strong> Magma是一个前沿的基础模型，旨在执行多模态AI代理任务，涵盖数字和物理世界。相较于传统的视觉-语言(VL)模型，Magma不仅具备VL理解能力（语言智能），同时具备在视觉-空间世界中进行规划和行动的能力（时空智能）。为了实现智能代理功能，Magma在大量异构数据集上进行了预训练，这些数据集包括图像、视频和机器人数据。具体而言，图像中的可操作视觉对象通过Set-of-Mark (SoM)进行标记，而视频中的对象运动通过Trace-of-Mark (ToM)进行标记，从而为行动提供基础。实验结果显示，SoM和ToM的结合显著提升了Magma的时空智能，使其在UI导航和机器人操作等任务上打破了以往的记录，优于专门为这些任务设计的模型。同时，在图像和视频相关的多模态任务中，Magma也与其他训练在更大数据集上的大型多模态模型相比较，表现出色。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.13130" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 18 Feb 2025 23:51:36 GMT</pubDate>
-</item>
-<item>
-<title>测试时间缩放在大型语言模型中的应用与效果研究</title>
-<link>https://arxiv.org/abs/2502.12215</link>
-<guid>https://arxiv.org/abs/2502.12215</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本研究探讨了大型语言模型的测试时间缩放及其对推理能力的影响。</p><br /><br /><p><strong>摘要：</strong> 本文研究了大型语言模型（LLMs）在推理过程中测试时间缩放的能力，尤其是OpenAI的o1系列模型。尽管后续模型如QwQ、Deepseek-R1（R1）和LIMO也声称具备类似能力，但其实际效果仍需进一步探讨。研究发现，更长的chain of thought（CoT）并不总能提高准确性，反而对于同一问题，正确答案的长度往往短于错误答案。深入分析后发现，这一现象与模型的自我修正能力密切相关，长CoT中包含较多的自我修正，常导致性能的降低。本文进一步比较了QwQ、R1和LIMO的顺序与并行缩放策略，结果显示并行缩放在覆盖性和可扩展性上更优。基于此发现，提出了一种Shortest Majority Vote的方法，将并行缩放策略与CoT长度特征相结合，显著提高了模型的测试时间可扩展性，较传统多数投票方法表现更佳。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.12215" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 18 Feb 2025 23:37:46 GMT</pubDate>
-</item>
-<item>
-<title>SafeRoute：高效的安全守卫模型自适应路由方案</title>
-<link>https://arxiv.org/abs/2502.12464</link>
-<guid>https://arxiv.org/abs/2502.12464</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">SafeRoute通过自适应路由提升了安全守卫模型的效率与准确性。</p><br /><br /><p><strong>摘要：</strong> 部署大型语言模型需要高效的安全守卫模型来检测和阻止有害用户提示。虽然大型安全守卫模型性能强大，但计算成本高昂。为此，研究提出了SafeRoute，一种双重路由器，旨在区分困难示例和简单示例。该方法通过仅在路由器认定为困难的输入上应用大型安全守卫模型，提高了模型选择的效率，同时保持了较高的准确性。实验表明，相比单独使用大型模型，自适应选择显著提升了计算成本与安全性能之间的平衡，并在多个基准数据集上超越了相关基线。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.12464" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 18 Feb 2025 23:23:34 GMT</pubDate>
-</item>
-<item>
-<title>MUDD连接：提升Transformer跨层信息流动的有效方法</title>
-<link>https://arxiv.org/abs/2502.12170</link>
-<guid>https://arxiv.org/abs/2502.12170</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">MUDD连接改善了Transformer的残差连接，显著提升模型性能。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种简单有效的MUDD连接方法，以解决残差连接的局限性，并增强Transformer中的跨层信息流动。与现有的静态共享连接权重方法不同，MUDD根据每个序列位置的隐藏状态动态生成连接权重，并针对Transformer块的每个解耦输入流（查询、键、值或残差）。MUDD连接能够无缝地集成到任何Transformer架构中，形成MUDDFormer。大量实验表明，MUDDFormer在语言建模中显著超越了各种模型架构和规模的Transformers，表现出相当于经过1.8X-2.4X计算训练的Transformers的性能。值得注意的是，MUDDPythia-2.8B在预训练的每个词困惑度和下游任务中与Pythia-6.9B相匹配，并在五次少样本设置中甚至与Pythia-12B相媲美，同时仅增加了0.23%的参数和0.4%的计算量。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.12170" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 18 Feb 2025 22:59:16 GMT</pubDate>
-</item>
-<item>
-<title>XLM-SWCM：低资源语言文本生成的新框架</title>
-<link>https://arxiv.org/abs/2502.10852</link>
-<guid>https://arxiv.org/abs/2502.10852</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出XLM-SWCM框架以提升低资源语言的文本生成能力。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种新的框架XLM-SWCM，用于在极低资源语言中适应多语言编码器以进行文本生成。尽管现有的多语言模型如XLM-R在自然语言处理上获得了进展，但在极低资源语言的表现仍然较差。此外，现代大型语言模型支持的语言种类远少于XLM-R，导致许多语言缺乏文本生成模型。通过重用编码器和解码器之间的权重，XLM-SWCM框架充分利用了编码器学习到的语义空间，从而实现了在低资源语言中的高效学习与有效泛化。我们将此框架应用于四种中国少数民族语言，并在多项下游任务中展示了其优越的性能，甚至超越了更大模型的表现。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.10852" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 18 Feb 2025 22:46:16 GMT</pubDate>
 </item>
 </channel>
 </rss>
