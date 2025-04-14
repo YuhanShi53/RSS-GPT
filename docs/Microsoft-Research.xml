@@ -4,6 +4,232 @@
 <title>Microsoft Research</title>
 <link>https://www.microsoft.com/en-us/research/</link>
 
+<item>
+<title>Engagement, user expertise, and satisfaction: Key insights from the Semantic Telemetry Project</title>
+<link>https://www.microsoft.com/en-us/research/blog/engagement-user-expertise-and-satisfaction-key-insights-from-the-semantic-telemetry-project/</link>
+<guid>https://www.microsoft.com/en-us/research/blog/engagement-user-expertise-and-satisfaction-key-insights-from-the-semantic-telemetry-project/</guid>
+<content:encoded><![CDATA[
+
+  <figure class="wp-block-image size-full"><img alt="The image features four white icons on a gradient background that transitions from blue on the left to green on the right. The first icon is a network or molecule structure with interconnected nodes. The second icon is a light bulb, symbolizing an idea or innovation. The third icon is a checklist with three items and checkmarks next to each item. The fourth icon consists of two overlapping speech bubbles, representing communication or conversation." class="wp-image-1136384" height="1182" src="https://www.microsoft.com/en-us/research/wp-content/uploads/2025/04/Semantic-Telemetry-2-BlogHeroFeature-1400x788-1.jpg" width="2100" /></figure>
+
+
+
+<p>The <a href="https://www.microsoft.com/en-us/research/project/semantic-telemetry/" rel="noreferrer noopener" target="_blank">Semantic Telemetry Project</a> aims to better understand complex, turn-based human-AI interactions in Microsoft Copilot using a new data science approach.&nbsp;</p>
+
+
+
+<p>This understanding is crucial for recognizing how individuals utilize AI systems to address real-world tasks. It provides actionable insights, enhances key use cases , and identifies opportunities for system improvement.</p>
+
+
+
+<p>In a recent <a href="https://www.microsoft.com/en-us/research/blog/semantic-telemetry-understanding-how-users-interact-with-ai-systems/?msockid=0f3bfc3f6f3464c71ab7e9906e196520">blog post</a>, we shared our approach for classifying chat log data using large language models (LLMs), which allows us to analyze these interactions at scale and in near real time. We also introduced two of our LLM-generated classifiers: Topics and Task Complexity. </p>
+
+
+
+<p>This blog post will examine how our suite of LLM-generated classifiers can serve as early indicators for user engagement and highlight how usage and satisfaction varies based on AI and user expertise.</p>
+
+
+
+<p><strong>The key findings from our research are:&nbsp;</strong></p>
+
+
+
+<ul class="wp-block-list">
+<li>When users engage in more professional, technical, and complex tasks, they are more likely to continue utilizing the tool and increase their level of interaction with it.&nbsp;</li>
+
+
+
+<li>Novice users currently engage in simpler tasks, but their work is gradually becoming more complex over time.&nbsp;</li>
+
+
+
+<li>More expert users are satisfied with AI responses only where AI expertise is on par with their own expertise on the topic, while novice users had low satisfaction rates regardless of AI expertise.&nbsp;</li>
+</ul>
+
+
+
+<p>Read on for more information on these findings. Note that all analyses were conducted on anonymous Copilot in Bing interactions containing no personal information.&nbsp;</p>
+
+
+
+<div class="wp-block-msr-immersive-section alignfull row has-background has-lighter-gray-background-color has-text-color has-black-color wp-block-msr-immersive-section" style="padding-bottom: 0; padding-top: 0;">
+	
+	<div class="container">
+		<div class="wp-block-msr-immersive-section__inner wp-block-msr-immersive-section__inner--narrow">
+			<hr class="wp-block-separator has-alpha-channel-opacity" />
+
+
+
+<p><em>Classifiers mentioned in article:&nbsp;</em></p>
+
+
+
+<p><strong>Knowledge work classifier</strong>: Tasks that involve creating artifacts related to information work typically requiring creative and analytical thinking. Examples include strategic business planning, software design, and scientific research.&nbsp;</p>
+
+
+
+<p><a href="https://www.microsoft.com/en-us/research/blog/semantic-telemetry-understanding-how-users-interact-with-ai-systems/?msockid=0f3bfc3f6f3464c71ab7e9906e196520" rel="noreferrer noopener" target="_blank"><strong>Task complexity classifier</strong></a>: Assesses the cognitive complexity of a task if a user performs it without the use of AI. We group into two categories: <em>low complexity</em> and <em>high complexity</em>.&nbsp;</p>
+
+
+
+<p><strong>Topics classifier</strong>: A single label for the primary topic of the conversation.</p>
+
+
+
+<p><strong>User expertise: </strong>Labels the user’s expertise on the primary topic within the conversation as one of the following categories: Novice (no familiarity with the topic), Beginner (little prior knowledge or experience), Intermediate (some basic knowledge or familiarity with the topic), Proficient (can apply relevant concepts from conversation), and Expert (deep and comprehensive understanding of the topic).&nbsp;</p>
+
+
+
+<p><strong>AI expertise: </strong>Labels the AI agent expertise based on the same criteria as user expertise above.&nbsp;</p>
+
+
+
+<p><strong>User satisfaction: </strong>A 20-question satisfaction/dissatisfaction rubric that the LLM evaluates to create an aggregate score for overall user satisfaction.&nbsp;</p>
+
+
+
+<hr class="wp-block-separator has-alpha-channel-opacity" />		</div>
+	</div>
+
+	</div>
+
+
+
+<h2 class="wp-block-heading" id="what-keeps-bing-chat-users-engaged">What keeps Bing Chat users engaged?&nbsp;</h2>
+
+
+
+<p>We conducted a study of a random sample of 45,000 anonymous Bing Chat users during May 2024. The data was grouped into three cohorts based on user activity over the course of the month:&nbsp;</p>
+
+
+
+<ul class="wp-block-list">
+<li><em>Light </em>(1 active chat session per week)&nbsp;</li>
+
+
+
+<li><em>Medium</em> (2-3 active chat sessions per week)&nbsp;</li>
+
+
+
+<li><em>Heavy</em> (4+ active chat sessions per week)&nbsp;</li>
+</ul>
+
+
+
+<p><strong>The key finding is that </strong><strong><em>heavy users</em></strong><strong> are doing more professional, complex work.</strong>&nbsp;</p>
+
+
+
+<p>We utilized our <strong>knowledge work classifier</strong> to label the chat log data as relating to knowledge work tasks. What we found is knowledge work tasks were higher in all cohorts, with the highest percentage in <em>heavy users</em>.&nbsp;</p>
+
+
+
+<figure class="wp-block-image aligncenter size-full"><img alt="Bar chart illustrating knowledge work distribution across three engagement cohorts: light, medium, and heavy. The chart shows that all three cohorts engage in more knowledge work compared to the 'Not knowledge work' and 'Both' categories, with heavy users performing the most knowledge work. " class="wp-image-1136247" height="1429" src="https://www.microsoft.com/en-us/research/wp-content/uploads/2025/04/Figure_1_Engagement-Knowledge-Work.png" width="2308" /><figcaption class="wp-element-caption"><em>Figure 1: Knowledge work based on engagement cohort</em></figcaption></figure>
+
+
+
+<p>Analyzing task complexity, we observed that users with higher engagement frequently perform the highest number of tasks with high complexity, while users with lower engagement performed more tasks with low complexity.&nbsp;</p>
+
+
+
+<figure class="wp-block-image aligncenter size-full"><img alt="Bar chart illustrating task complexity distribution across three engagement cohorts: light, medium, and heavy. The chart shows all three cohorts perform more high complexity tasks than low complexity tasks, with heavy users performing the greatest number of high complexity tasks. " class="wp-image-1136248" height="1087" src="https://www.microsoft.com/en-us/research/wp-content/uploads/2025/04/Figure_2_Engagement-task-complexity.png" width="1798" /><figcaption class="wp-element-caption"><em>Figure 2: High complexity and low complexity tasks by engagement cohort+</em>&nbsp;</figcaption></figure>
+
+
+
+<p>Looking at the overall data, we can filter on heavy users and see higher numbers of chats where the user was performing <em>knowledge work</em> tasks. Based on task complexity, we see that most <em>knowledge work </em>tasks seek to apply a solution to an existing problem, primarily within <em>programming and scripting</em>. This is in line with our top overall topic, <em>technology</em>, which we discussed in the previous post.&nbsp;</p>
+
+
+
+<figure class="wp-block-image aligncenter size-full"><img alt="Tree diagram illustrating how heavy users are engaging with Bing Chat. The visual selects the most common use case for heavy users: knowledge work, “apply” complexity and related topics.  " class="wp-image-1136249" height="1219" src="https://www.microsoft.com/en-us/research/wp-content/uploads/2025/04/Figure_3_Engagement-heavy-users-tree-view.png" width="2161" /><figcaption class="wp-element-caption"><em>Figure 3: Heavy users tree diagram</em>&nbsp;</figcaption></figure>
+
+
+
+<p>In contrast, <em>light users</em> tended to do more <em>low complexity </em>tasks (<a href="https://www.microsoft.com/en-us/research/blog/semantic-telemetry-understanding-how-users-interact-with-ai-systems/?msockid=061a2f481be2670621233a8a1a5866f2">“Remember”</a>), using Bing Chat like a traditional search engine and engaging more in topics like <em>business and finance </em>and <em>computers and electronics.</em></p>
+
+
+
+<figure class="wp-block-image aligncenter size-large"><img alt="Tree diagram illustrating how light users are engaging with Bing Chat. The visual selects the most common use case for light users: knowledge work, “remember” complexity and related topics. " class="wp-image-1136250" height="580" src="https://www.microsoft.com/en-us/research/wp-content/uploads/2025/04/Figure_4_Engagement-light-users-tree-view-1024x580.png" width="1024" /><figcaption class="wp-element-caption"><em>Figure 4: Light users tree diagram</em>&nbsp;</figcaption></figure>
+
+
+
+<h2 class="wp-block-heading" id="novice-queries-are-becoming-more-complex">Novice queries are becoming more complex&nbsp;</h2>
+
+
+
+<p>We looked at Bing Chat data from January through August 2024 and we classified chats using our <strong>User Expertise</strong> classifier. When we looked at how the different user expertise groups were using the tool for professional tasks, we discovered that proficient and expert users tend to do more professional tasks with high complexity in topics like <em>programming and scripting, professional writing and editing</em>, <em>and physics and chemistry</em>.&nbsp;</p>
+
+
+
+<figure class="wp-block-image aligncenter size-full"><img alt="Bar chart illustrating top topics for proficient and expert users with programming and scripting (18.3%), professional writing and editing (10.4%), and physics and chemistry (9.8%) as top three topics. " class="wp-image-1136251" height="1135" src="https://www.microsoft.com/en-us/research/wp-content/uploads/2025/04/Figure_5_Proficent-Expert-top-topics.png" width="1576" /><figcaption class="wp-element-caption"><em>Figure 5: Top topics for proficient/expert users</em>&nbsp;</figcaption></figure>
+
+
+
+<figure class="wp-block-image aligncenter size-full"><img alt="Bar chart showing task complexity for proficient and expert users. The chart shows a greater number of high complexity chats than low complexity chats, with the highest percentage in categories “Understand” (30.8%) and “Apply” (29.3%). " class="wp-image-1136252" height="667" src="https://www.microsoft.com/en-us/research/wp-content/uploads/2025/04/Figure_6_Proficent-expert-task-complexity.png" width="1329" /><figcaption class="wp-element-caption"><em>Figure 6: Task complexity for proficient/expert</em>&nbsp;</figcaption></figure>
+
+
+
+<figure class="wp-block-image aligncenter size-full"><img alt="Bar chart illustrating top topics for novice users with business and finance (12.5%), education and learning (10.0%), and computers and electronics (9.8%) as top three topics. " class="wp-image-1136253" height="1386" src="https://www.microsoft.com/en-us/research/wp-content/uploads/2025/04/Figure_7_Novice-top-topics.png" width="1882" /><figcaption class="wp-element-caption"><em>Figure 7: Top topics for novices</em>&nbsp;</figcaption></figure>
+
+
+
+<p>In contrast, novice users engaged more in professional tasks relating to <em>business and finance</em> and <em>education and learning, </em>mainly using the tool to recall information.</p>
+
+
+
+<figure class="wp-block-image aligncenter size-full"><img alt="Bar chart showing task complexity for novice users. The chart shows a greater number of low complexity chats than high complexity chats, with the highest percentage in categories “Remember” (48.6%). " class="wp-image-1136254" height="799" src="https://www.microsoft.com/en-us/research/wp-content/uploads/2025/04/Figure_8_novice-task-complexity.png" width="1588" /><figcaption class="wp-element-caption"><em>Figure 8: Task complexity for novices</em>&nbsp;</figcaption></figure>
+
+
+
+<p>However, novices are targeting increasingly more complex tasks over time. Over the eight-month period, we see the percentage of high complexity tasks rise from about 36% to 67%, revealing that novices are learning and adapting quickly (see Figure 9).&nbsp;</p>
+
+
+
+<figure class="wp-block-image aligncenter size-large"><img alt="Line chart showing weekly percentage of high complexity chats for novice users from January-August 2024. The line chart starts at 35.9% in January and ends at 67.2% in August.  " class="wp-image-1136255" height="672" src="https://www.microsoft.com/en-us/research/wp-content/uploads/2025/04/Figure_9_weekly-high-complexity-novice-1024x672.png" width="1024" /><figcaption class="wp-element-caption"><em>Figure 9: High complexity for novices Jan-Aug 2024</em>&nbsp;</figcaption></figure>
+
+
+
+<h2 class="wp-block-heading" id="how-does-user-satisfaction-vary-according-to-expertise">How does user satisfaction vary according to expertise?&nbsp;</h2>
+
+
+
+<p>We classified both the user expertise and AI agent expertise for anonymous interactions in Copilot in Bing. We compared the level of user and AI agent expertise with our <strong>user satisfaction classifier</strong>.&nbsp;</p>
+
+
+
+<p><strong>The key takeaways are:</strong>&nbsp;</p>
+
+
+
+<ul class="wp-block-list">
+<li>Experts and proficient users are only satisfied with AI agents with similar expertise (expert/proficient).&nbsp;</li>
+
+
+
+<li>Novices are least satisfied, regardless of the expertise of the AI agent.&nbsp;</li>
+</ul>
+
+
+
+<figure class="wp-block-image aligncenter size-full"><img alt="Table illustrating user satisfaction based on expertise level of user and agent. Each row if the table is the user expertise group (novice, beginner, intermediate, proficient, expert) and on the columns is AI expertise group (novice, beginner, intermediate, proficient, expert). The table illustrates that novice users are least satisfied overall and expert/proficient users are satisfied with AI expertise of proficient/expert.  " class="wp-image-1136256" height="859" src="https://www.microsoft.com/en-us/research/wp-content/uploads/2025/04/Figure_10_Sat-by-User-AI.png" width="2548" /><figcaption class="wp-element-caption"><em>Figure 10: Copilot in Bing satisfaction intersection of AI expertise and User expertise (August-September 2024)</em>&nbsp;</figcaption></figure>
+
+
+
+<h2 class="wp-block-heading" id="conclusion">Conclusion</h2>
+
+
+
+<p>Understanding these metrics is vital for grasping user behavior over time and relating it to real-world business indicators. Users are finding value from complex professional knowledge work tasks, and novices are quickly adapting to the tool and finding these high value use-cases. By analyzing user satisfaction in conjunction with expertise levels, we can tailor our tools to better meet the needs of different user groups. Ultimately, these insights can help improve user understanding across a variety of tasks.&nbsp;&nbsp;</p>
+
+
+
+<p>In our next post, we will examine the engineering processes involved in LLM-generated classification.</p>
+<span class="sr-only" id="label-external-link">Opens in a new tab</span><p>The post <a href="https://www.microsoft.com/en-us/research/blog/engagement-user-expertise-and-satisfaction-key-insights-from-the-semantic-telemetry-project/">Engagement, user expertise, and satisfaction: Key insights from the Semantic Telemetry Project</a> appeared first on <a href="https://www.microsoft.com/en-us/research">Microsoft Research</a>.</p>
+
+]]></content:encoded>
+<pubDate>Mon, 14 Apr 2025 19:00:00 +0000</pubDate>
+<pubDate>Mon, 14 Apr 2025 19:00:00 +0000</pubDate>
+</item>
 
 <item>
 <title>Debug-gym: an environment for AI coding tools to learn how to debug code like programmers</title>
