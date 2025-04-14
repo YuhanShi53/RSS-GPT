@@ -5,15 +5,61 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>SAEs Can Improve Unlearning: Dynamic Sparse Autoencoder Guardrails for Precision Unlearning in LLMs</title>
+<link>https://arxiv.org/abs/2504.08192</link>
+<guid>https://arxiv.org/abs/2504.08192</guid>
+<content:encoded><![CDATA[
+
+  Machine unlearning is a promising approach to improve LLM safety by removing unwanted knowledge from the model. However, prevailing gradient-based unlearning methods suffer from issues such as high computational costs, hyperparameter instability, poor sequential unlearning capability, vulnerability to relearning attacks, low data efficiency, and lack of interpretability. While Sparse Autoencoders are well-suited to improve these aspects by enabling targeted activation-based unlearning, prior approaches underperform gradient-based methods. This work demonstrates that, contrary to these earlier findings, SAEs can significantly improve unlearning when employed dynamically. We introduce Dynamic DAE Guardrails (DSG), a novel method for precision unlearning that leverages principled feature selection and a dynamic classifier. Our experiments show DSG substantially outperforms leading unlearning methods, achieving superior forget-utility trade-offs. DSG addresses key drawbacks of gradient-based approaches for unlearning -- offering enhanced computational efficiency and stability, robust performance in sequential unlearning, stronger resistance to relearning attacks, better data efficiency including zero-shot settings, and more interpretable unlearning.
+
+]]></content:encoded>
+<pubDate>Thu, 10 Apr 2025 21:24:03 GMT</pubDate>
+<pubDate>Thu, 10 Apr 2025 21:24:03 GMT</pubDate>
+</item>
+<item>
+<title>InteractVLM: 3D Interaction Reasoning from 2D Foundational Models</title>
+<link>https://arxiv.org/abs/2504.05303</link>
+<guid>https://arxiv.org/abs/2504.05303</guid>
+<content:encoded><![CDATA[
+
+  We introduce InteractVLM, a novel method to estimate 3D contact points on human bodies and objects from single in-the-wild images, enabling accurate human-object joint reconstruction in 3D. This is challenging due to occlusions, depth ambiguities, and widely varying object shapes. Existing methods rely on 3D contact annotations collected via expensive motion-capture systems or tedious manual labeling, limiting scalability and generalization. To overcome this, InteractVLM harnesses the broad visual knowledge of large Vision-Language Models (VLMs), fine-tuned with limited 3D contact data. However, directly applying these models is non-trivial, as they reason only in 2D, while human-object contact is inherently 3D. Thus we introduce a novel Render-Localize-Lift module that: (1) embeds 3D body and object surfaces in 2D space via multi-view rendering, (2) trains a novel multi-view localization model (MV-Loc) to infer contacts in 2D, and (3) lifts these to 3D. Additionally, we propose a new task called Semantic Human Contact estimation, where human contact predictions are conditioned explicitly on object semantics, enabling richer interaction modeling. InteractVLM outperforms existing work on contact estimation and also facilitates 3D reconstruction from an in-the wild image. Code and models are available at https://interactvlm.is.tue.mpg.de.
+
+]]></content:encoded>
+<pubDate>Mon, 07 Apr 2025 13:59:33 GMT</pubDate>
+<pubDate>Mon, 07 Apr 2025 13:59:33 GMT</pubDate>
+</item>
+<item>
+<title>Do PhD-level LLMs Truly Grasp Elementary Addition? Probing Rule Learning vs. Memorization in Large Language Models</title>
+<link>https://arxiv.org/abs/2504.05262</link>
+<guid>https://arxiv.org/abs/2504.05262</guid>
+<content:encoded><![CDATA[
+
+  Despite high benchmark scores, Large Language Models (LLMs) often fail simple problem, raising a critical question: Do LLMs learn mathematical principles or merely memorize patterns? Rather than designing increasingly complex benchmarks like recent works, we investigate this using elementary two-integer addition (0 to 2^{64}), probing two core properties: commutativity (A+B=B+A) and compositional generalization (via isomorphic symbolic mappings, e.g., 7 rightarrow y). While state-of-the-art LLMs achieve 73.8-99.8\% accuracy on numerical addition, performance collapses to leq7.5\% under symbolic mapping, indicating failure to generalize learned rules. Non-monotonic performance scaling with digit count and frequent commutativity violations (over 1,700 cases of A+B neq B+A) further support this. Explicitly providing addition rules degrades performance by 81.2\% on average, while self-explanation maintains baseline accuracy, suggesting LLM arithmetic processing is misaligned with human-defined principles. Our findings indicate current LLMs rely on memory pattern over genuine rule learning, highlighting architectural limitations and the need for new approaches to achieve true mathematical reasoning.
+
+]]></content:encoded>
+<pubDate>Mon, 07 Apr 2025 12:57:10 GMT</pubDate>
+<pubDate>Mon, 07 Apr 2025 12:57:10 GMT</pubDate>
+</item>
+<item>
+<title>CoRAG: Collaborative Retrieval-Augmented Generation</title>
+<link>https://arxiv.org/abs/2504.01883</link>
+<guid>https://arxiv.org/abs/2504.01883</guid>
+<content:encoded><![CDATA[
+
+  Retrieval-Augmented Generation (RAG) models excel in knowledge-intensive tasks, especially under few-shot learning constraints. We introduce CoRAG, a framework extending RAG to collaborative settings, where clients jointly train a shared model using a collaborative passage store. To evaluate CoRAG, we introduce CRAB, a benchmark for collaborative homogeneous open-domain question answering. Our experiments demonstrate that CoRAG consistently outperforms both parametric collaborative learning methods and locally trained RAG models in low-resource scenarios. Further analysis reveals the critical importance of relevant passages within the shared store, the surprising benefits of incorporating irrelevant passages, and the potential for hard negatives to negatively impact performance. This introduces a novel consideration in collaborative RAG: the trade-off between leveraging a collectively enriched knowledge base and the potential risk of incorporating detrimental passages from other clients. Our findings underscore the viability of CoRAG, while also highlighting key design challenges and promising avenues for future research.
+
+]]></content:encoded>
+<pubDate>Wed, 02 Apr 2025 12:40:43 GMT</pubDate>
+<pubDate>Wed, 02 Apr 2025 12:40:43 GMT</pubDate>
+</item>
+
+<item>
 <title>GigaTok: Scaling Visual Tokenizers to 3 Billion Parameters for Autoregressive Image Generation</title>
 <link>https://arxiv.org/abs/2504.08736</link>
 <guid>https://arxiv.org/abs/2504.08736</guid>
 <content:encoded><![CDATA[
-
-  In autoregressive (AR) image generation, visual tokenizers compress images into compact discrete latent tokens, enabling efficient training of downstream autoregressive models for visual generation via next-token prediction. While scaling visual tokenizers improves image reconstruction quality, it often degrades downstream generation quality -- a challenge not adequately addressed in existing literature. To address this, we introduce GigaTok, the first approach to simultaneously improve image reconstruction, generation, and representation learning when scaling visual tokenizers. We identify the growing complexity of latent space as the key factor behind the reconstruction vs. generation dilemma. To mitigate this, we propose semantic regularization, which aligns tokenizer features with semantically consistent features from a pre-trained visual encoder. This constraint prevents excessive latent space complexity during scaling, yielding consistent improvements in both reconstruction and downstream autoregressive generation. Building on semantic regularization, we explore three key practices for scaling tokenizers:(1) using 1D tokenizers for better scalability, (2) prioritizing decoder scaling when expanding both encoder and decoder, and (3) employing entropy loss to stabilize training for billion-scale tokenizers. By scaling to 3 space billion parameters, GigaTok achieves state-of-the-art performance in reconstruction, downstream AR generation, and downstream AR representation quality.
-
+In autoregressive (AR) image generation, visual tokenizers compress images into compact discrete latent tokens, enabling efficient training of downstream autoregressive models for visual generation via next-token prediction. While scaling visual tokenizers improves image reconstruction quality, it often degrades downstream generation quality -- a challenge not adequately addressed in existing literature. To address this, we introduce GigaTok, the first approach to simultaneously improve image reconstruction, generation, and representation learning when scaling visual tokenizers. We identify the growing complexity of latent space as the key factor behind the reconstruction vs. generation dilemma. To mitigate this, we propose semantic regularization, which aligns tokenizer features with semantically consistent features from a pre-trained visual encoder. This constraint prevents excessive latent space complexity during scaling, yielding consistent improvements in both reconstruction and downstream autoregressive generation. Building on semantic regularization, we explore three key practices for scaling tokenizers:(1) using 1D tokenizers for better scalability, (2) prioritizing decoder scaling when expanding both encoder and decoder, and (3) employing entropy loss to stabilize training for billion-scale tokenizers. By scaling to 3 space billion parameters, GigaTok achieves state-of-the-art performance in reconstruction, downstream AR generation, and downstream AR representation quality.
 ]]></content:encoded>
-<pubDate>Fri, 11 Apr 2025 13:59:58 GMT</pubDate>
 <pubDate>Fri, 11 Apr 2025 13:59:58 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +67,8 @@
 <link>https://arxiv.org/abs/2504.08716</link>
 <guid>https://arxiv.org/abs/2504.08716</guid>
 <content:encoded><![CDATA[
-
-  Pretrained transformer-encoder models like DeBERTaV3 and ModernBERT introduce architectural advancements aimed at improving efficiency and performance. Although the authors of ModernBERT report improved performance over DeBERTaV3 on several benchmarks, the lack of disclosed training data and the absence of comparisons using a shared dataset make it difficult to determine whether these gains are due to architectural improvements or differences in training data. In this work, we conduct a controlled study by pretraining ModernBERT on the same dataset as CamemBERTaV2, a DeBERTaV3 French model, isolating the effect of model design. Our results show that the previous model generation remains superior in sample efficiency and overall benchmark performance, with ModernBERT's primary advantage being faster training and inference speed. However, the new proposed model still provides meaningful architectural improvements compared to earlier models such as BERT and RoBERTa. Additionally, we observe that high-quality pre-training data accelerates convergence but does not significantly improve final performance, suggesting potential benchmark saturation. These findings show the importance of disentangling pretraining data from architectural innovations when evaluating transformer models.
-
+Pretrained transformer-encoder models like DeBERTaV3 and ModernBERT introduce architectural advancements aimed at improving efficiency and performance. Although the authors of ModernBERT report improved performance over DeBERTaV3 on several benchmarks, the lack of disclosed training data and the absence of comparisons using a shared dataset make it difficult to determine whether these gains are due to architectural improvements or differences in training data. In this work, we conduct a controlled study by pretraining ModernBERT on the same dataset as CamemBERTaV2, a DeBERTaV3 French model, isolating the effect of model design. Our results show that the previous model generation remains superior in sample efficiency and overall benchmark performance, with ModernBERT's primary advantage being faster training and inference speed. However, the new proposed model still provides meaningful architectural improvements compared to earlier models such as BERT and RoBERTa. Additionally, we observe that high-quality pre-training data accelerates convergence but does not significantly improve final performance, suggesting potential benchmark saturation. These findings show the importance of disentangling pretraining data from architectural innovations when evaluating transformer models.
 ]]></content:encoded>
-<pubDate>Fri, 11 Apr 2025 13:29:35 GMT</pubDate>
 <pubDate>Fri, 11 Apr 2025 13:29:35 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +76,8 @@
 <link>https://arxiv.org/abs/2504.08600</link>
 <guid>https://arxiv.org/abs/2504.08600</guid>
 <content:encoded><![CDATA[
-
-  Natural Language to SQL (NL2SQL) enables intuitive interactions with databases by transforming natural language queries into structured SQL statements. Despite recent advancements in enhancing human-computer interaction within database applications, significant challenges persist, particularly regarding the inference performance in complex scenarios involving multi-table joins and nested queries. Current methodologies primarily utilize supervised fine-tuning (SFT) to train the NL2SQL model, which may limit adaptability and interpretability in new environments (e.g., finance and healthcare). In order to enhance the reasoning performance of the NL2SQL model in the above complex situations, we introduce SQL-R1, a novel NL2SQL reasoning model trained by the reinforcement learning (RL) algorithms. We design a specialized RL-based reward function tailored for NL2SQL tasks and discussed the impact of cold start on the effectiveness of intensive training. In addition, we achieve competitive accuracy using only a tiny amount of synthetic NL2SQL data for augmented training and further explore data engineering for RL. In existing experiments, SQL-R1 achieves execution accuracy of 88.6% and 66.6% on the benchmark Spider and BIRD, respectively, only using the 7B base model.
-
+Natural Language to SQL (NL2SQL) enables intuitive interactions with databases by transforming natural language queries into structured SQL statements. Despite recent advancements in enhancing human-computer interaction within database applications, significant challenges persist, particularly regarding the inference performance in complex scenarios involving multi-table joins and nested queries. Current methodologies primarily utilize supervised fine-tuning (SFT) to train the NL2SQL model, which may limit adaptability and interpretability in new environments (e.g., finance and healthcare). In order to enhance the reasoning performance of the NL2SQL model in the above complex situations, we introduce SQL-R1, a novel NL2SQL reasoning model trained by the reinforcement learning (RL) algorithms. We design a specialized RL-based reward function tailored for NL2SQL tasks and discussed the impact of cold start on the effectiveness of intensive training. In addition, we achieve competitive accuracy using only a tiny amount of synthetic NL2SQL data for augmented training and further explore data engineering for RL. In existing experiments, SQL-R1 achieves execution accuracy of 88.6% and 66.6% on the benchmark Spider and BIRD, respectively, only using the 7B base model.
 ]]></content:encoded>
-<pubDate>Fri, 11 Apr 2025 11:01:30 GMT</pubDate>
 <pubDate>Fri, 11 Apr 2025 11:01:30 GMT</pubDate>
 </item>
 <item>
@@ -45,14 +85,10 @@
 <link>https://arxiv.org/abs/2504.07963</link>
 <guid>https://arxiv.org/abs/2504.07963</guid>
 <content:encoded><![CDATA[
-
-  We present PixelFlow, a family of image generation models that operate directly in the raw pixel space, in contrast to the predominant latent-space models. This approach simplifies the image generation process by eliminating the need for a pre-trained Variational Autoencoder (VAE) and enabling the whole model end-to-end trainable. Through efficient cascade flow modeling, PixelFlow achieves affordable computation cost in pixel space. It achieves an FID of 1.98 on 256times256 ImageNet class-conditional image generation benchmark. The qualitative text-to-image results demonstrate that PixelFlow excels in image quality, artistry, and semantic control. We hope this new paradigm will inspire and open up new opportunities for next-generation visual generation models. Code and models are available at https://github.com/ShoufaChen/PixelFlow.
-
+We present PixelFlow, a family of image generation models that operate directly in the raw pixel space, in contrast to the predominant latent-space models. This approach simplifies the image generation process by eliminating the need for a pre-trained Variational Autoencoder (VAE) and enabling the whole model end-to-end trainable. Through efficient cascade flow modeling, PixelFlow achieves affordable computation cost in pixel space. It achieves an FID of 1.98 on 256times256 ImageNet class-conditional image generation benchmark. The qualitative text-to-image results demonstrate that PixelFlow excels in image quality, artistry, and semantic control. We hope this new paradigm will inspire and open up new opportunities for next-generation visual generation models. Code and models are available at https://github.com/ShoufaChen/PixelFlow.
 ]]></content:encoded>
 <pubDate>Thu, 10 Apr 2025 13:59:56 GMT</pubDate>
-<pubDate>Thu, 10 Apr 2025 13:59:56 GMT</pubDate>
 </item>
-
 <item>
 <title>Seaweed-7B: Cost-Effective Training of Video Generation Foundation Model</title>
 <link>https://arxiv.org/abs/2504.08685</link>
@@ -9016,42 +9052,6 @@ Large Language Models (LLMs) and Multimodal Large Language Models (MLLMs) have m
 <div><p style="color: gray;">OctoTools提供了一个高效的框架，用于解决多领域的复杂推理任务。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了OctoTools，这是一个无需训练、用户友好且易于扩展的开源代理框架，旨在解决多领域的复杂推理任务。OctoTools通过标准化工具卡来封装工具功能，设有高层次和低层次的规划器，以及执行器来实现工具的使用。我们在16个不同任务（包括MathVista、MMLU-Pro、MedQA和GAIA-Text）上验证了OctoTools的广泛适用性，平均准确率提高了9.3%，超越了GPT-4o。此外，OctoTools在相同工具集合下的表现，比AutoGen、GPT-Functions和LangChain高出10.6%。通过全面分析与消融实验，OctoTools在任务规划、工具有效使用和多步骤问题解决上展现出明显的优势。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.11271" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 19 Feb 2025 02:27:36 GMT</pubDate>
-</item>
-<item>
-<title>ARM4R：基于人类视频数据的自动回归机器人模型</title>
-<link>https://arxiv.org/abs/2502.13142</link>
-<guid>https://arxiv.org/abs/2502.13142</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文提出ARM4R模型，利用4D表示提升机器人控制能力。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了ARM4R，一个基于人类视频数据的自动回归机器人模型，通过利用低级4D表示，旨在提升机器人的预训练效果。具体而言，ARM4R从视频中提取的3D点追踪表示，通过单目深度估计将2D表示提升为3D，使得这些4D表示在点与机器人状态表示之间保持共享几何结构，仅需线性变换即可实现高效的迁移学习。实验结果表明，ARM4R能够有效地将人类视频数据转移至机器人控制任务中，并在多种机器人环境和配置下显著改进任务表现。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.13142" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 19 Feb 2025 01:24:26 GMT</pubDate>
-</item>
-<item>
-<title>基于动态提示的无提示微调方法研究</title>
-<link>https://arxiv.org/abs/2502.12859</link>
-<guid>https://arxiv.org/abs/2502.12859</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出了一种新颖的无提示微调方法，以增强大型语言模型的鲁棒性。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种称为无提示微调（PAFT）的方法，旨在提高大型语言模型（LLMs）在微调后的提示鲁棒性。研究表明，微调后，LLMs能够适应下游任务，但这种适应性常常导致提示鲁棒性降低，细微的提示变化会显著影响模型性能。PAFT 通过在微调过程中动态调整提示，激励模型学习任务的基本原则，而不是过于依赖特定的提示表达。该方法分为两个阶段：首先构建多样化的合成候选提示集；其次在微调过程中从该集合中随机采样提示，生成动态训练输入。通过对多个数据集和 LLMs 的广泛实验，证明使用 PAFT 训练的模型在各种提示（包括未见过的提示）下展现出强大的鲁棒性和泛化能力。此外，这一增强的鲁棒性还提高了模型的性能和推理速度，同时保持了训练效率。消融研究进一步确认了 PAFT 的有效性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.12859" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 19 Feb 2025 01:21:54 GMT</pubDate>
-</item>
-<item>
-<title>Soundwave: 一种高效的语音到文本大语言模型训练方法</title>
-<link>https://arxiv.org/abs/2502.12900</link>
-<guid>https://arxiv.org/abs/2502.12900</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">Soundwave是一种提高语音到文本模型训练效率的新方法，表现优于前作。</p><br /><br /><p><strong>摘要：</strong> 现有的端到端语音大语言模型通常依赖于大规模的标注数据进行训练，但对于数据高效训练的讨论较少。本文聚焦于语音与文本之间的两个基本问题：表示空间差距和序列长度不一致。我们提出了Soundwave，结合高效的训练策略和新颖的架构，成功解决了这些问题。实验结果表明，Soundwave在语音翻译和AIR-Bench语音任务中，使用仅为训练数据的五十分之一的情况下，超越了先进的Qwen2-Audio模型。此外，进一步分析显示，Soundwave在对话中仍保持其智能。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.12900" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 19 Feb 2025 00:22:36 GMT</pubDate>
-</item>
-<item>
-<title>Magma：多模态AI代理任务的基础模型</title>
-<link>https://arxiv.org/abs/2502.13130</link>
-<guid>https://arxiv.org/abs/2502.13130</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">Magma是一个新型多模态基础模型，具备数字与物理世界的智能代理能力。</p><br /><br /><p><strong>摘要：</strong> Magma是一个前沿的基础模型，旨在执行多模态AI代理任务，涵盖数字和物理世界。相较于传统的视觉-语言(VL)模型，Magma不仅具备VL理解能力（语言智能），同时具备在视觉-空间世界中进行规划和行动的能力（时空智能）。为了实现智能代理功能，Magma在大量异构数据集上进行了预训练，这些数据集包括图像、视频和机器人数据。具体而言，图像中的可操作视觉对象通过Set-of-Mark (SoM)进行标记，而视频中的对象运动通过Trace-of-Mark (ToM)进行标记，从而为行动提供基础。实验结果显示，SoM和ToM的结合显著提升了Magma的时空智能，使其在UI导航和机器人操作等任务上打破了以往的记录，优于专门为这些任务设计的模型。同时，在图像和视频相关的多模态任务中，Magma也与其他训练在更大数据集上的大型多模态模型相比较，表现出色。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.13130" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 18 Feb 2025 23:51:36 GMT</pubDate>
 </item>
 </channel>
 </rss>
