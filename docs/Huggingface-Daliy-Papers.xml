@@ -5,15 +5,61 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>Visual Chronicles: Using Multimodal LLMs to Analyze Massive Collections of Images</title>
+<link>https://arxiv.org/abs/2504.08727</link>
+<guid>https://arxiv.org/abs/2504.08727</guid>
+<content:encoded><![CDATA[
+
+  We present a system using Multimodal LLMs (MLLMs) to analyze a large database with tens of millions of images captured at different times, with the aim of discovering patterns in temporal changes. Specifically, we aim to capture frequent co-occurring changes ("trends") across a city over a certain period. Unlike previous visual analyses, our analysis answers open-ended queries (e.g., "what are the frequent types of changes in the city?") without any predetermined target subjects or training labels. These properties cast prior learning-based or unsupervised visual analysis tools unsuitable. We identify MLLMs as a novel tool for their open-ended semantic understanding capabilities. Yet, our datasets are four orders of magnitude too large for an MLLM to ingest as context. So we introduce a bottom-up procedure that decomposes the massive visual analysis problem into more tractable sub-problems. We carefully design MLLM-based solutions to each sub-problem. During experiments and ablation studies with our system, we find it significantly outperforms baselines and is able to discover interesting trends from images captured in large cities (e.g., "addition of outdoor dining,", "overpass was painted blue," etc.). See more results and interactive demos at https://boyangdeng.com/visual-chronicles.
+
+]]></content:encoded>
+<pubDate>Fri, 11 Apr 2025 13:55:45 GMT</pubDate>
+<pubDate>Fri, 11 Apr 2025 13:55:45 GMT</pubDate>
+</item>
+<item>
+<title>Training-free Guidance in Text-to-Video Generation via Multimodal Planning and Structured Noise Initialization</title>
+<link>https://arxiv.org/abs/2504.08641</link>
+<guid>https://arxiv.org/abs/2504.08641</guid>
+<content:encoded><![CDATA[
+
+  Recent advancements in text-to-video (T2V) diffusion models have significantly enhanced the visual quality of the generated videos. However, even recent T2V models find it challenging to follow text descriptions accurately, especially when the prompt requires accurate control of spatial layouts or object trajectories. A recent line of research uses layout guidance for T2V models that require fine-tuning or iterative manipulation of the attention map during inference time. This significantly increases the memory requirement, making it difficult to adopt a large T2V model as a backbone. To address this, we introduce Video-MSG, a training-free Guidance method for T2V generation based on Multimodal planning and Structured noise initialization. Video-MSG consists of three steps, where in the first two steps, Video-MSG creates Video Sketch, a fine-grained spatio-temporal plan for the final video, specifying background, foreground, and object trajectories, in the form of draft video frames. In the last step, Video-MSG guides a downstream T2V diffusion model with Video Sketch through noise inversion and denoising. Notably, Video-MSG does not need fine-tuning or attention manipulation with additional memory during inference time, making it easier to adopt large T2V models. Video-MSG demonstrates its effectiveness in enhancing text alignment with multiple T2V backbones (VideoCrafter2 and CogVideoX-5B) on popular T2V generation benchmarks (T2VCompBench and VBench). We provide comprehensive ablation studies about noise inversion ratio, different background generators, background object detection, and foreground object segmentation.
+
+]]></content:encoded>
+<pubDate>Fri, 11 Apr 2025 11:41:43 GMT</pubDate>
+<pubDate>Fri, 11 Apr 2025 11:41:43 GMT</pubDate>
+</item>
+<item>
+<title>ZipIR: Latent Pyramid Diffusion Transformer for High-Resolution Image Restoration</title>
+<link>https://arxiv.org/abs/2504.08591</link>
+<guid>https://arxiv.org/abs/2504.08591</guid>
+<content:encoded><![CDATA[
+
+  Recent progress in generative models has significantly improved image restoration capabilities, particularly through powerful diffusion models that offer remarkable recovery of semantic details and local fidelity. However, deploying these models at ultra-high resolutions faces a critical trade-off between quality and efficiency due to the computational demands of long-range attention mechanisms. To address this, we introduce ZipIR, a novel framework that enhances efficiency, scalability, and long-range modeling for high-res image restoration. ZipIR employs a highly compressed latent representation that compresses image 32x, effectively reducing the number of spatial tokens, and enabling the use of high-capacity models like the Diffusion Transformer (DiT). Toward this goal, we propose a Latent Pyramid VAE (LP-VAE) design that structures the latent space into sub-bands to ease diffusion training. Trained on full images up to 2K resolution, ZipIR surpasses existing diffusion-based methods, offering unmatched speed and quality in restoring high-resolution images from severely degraded inputs.
+
+]]></content:encoded>
+<pubDate>Fri, 11 Apr 2025 10:49:52 GMT</pubDate>
+<pubDate>Fri, 11 Apr 2025 10:49:52 GMT</pubDate>
+</item>
+<item>
+<title>VLM-R1: A Stable and Generalizable R1-style Large Vision-Language Model</title>
+<link>https://arxiv.org/abs/2504.07615</link>
+<guid>https://arxiv.org/abs/2504.07615</guid>
+<content:encoded><![CDATA[
+
+  Recently DeepSeek R1 has shown that reinforcement learning (RL) can substantially improve the reasoning capabilities of Large Language Models (LLMs) through a simple yet effective design. The core of R1 lies in its rule-based reward formulation, which leverages tasks with deterministic ground-truth answers to enable precise and stable reward computation. In the visual domain, we similarly observe that a wide range of visual understanding tasks are inherently equipped with well-defined ground-truth annotations. This property makes them naturally compatible with rule-based reward mechanisms. Motivated by this observation, we investigate the extension of R1-style reinforcement learning to Vision-Language Models (VLMs), aiming to enhance their visual reasoning capabilities. To this end, we develop VLM-R1, a dedicated framework designed to harness RL for improving VLMs' performance on general vision-language tasks. Using this framework, we further explore the feasibility of applying RL to visual domain. Experimental results indicate that the RL-based model not only delivers competitive performance on visual understanding tasks but also surpasses Supervised Fine-Tuning (SFT) in generalization ability. Furthermore, we conduct comprehensive ablation studies that uncover a series of noteworthy insights, including the presence of reward hacking in object detection, the emergence of the "OD aha moment", the impact of training data quality, and the scaling behavior of RL across different model sizes. Through these analyses, we aim to deepen the understanding of how reinforcement learning enhances the capabilities of vision-language models, and we hope our findings and open-source contributions will support continued progress in the vision-language RL community. Our code and model are available at https://github.com/om-ai-lab/VLM-R1
+
+]]></content:encoded>
+<pubDate>Thu, 10 Apr 2025 06:05:15 GMT</pubDate>
+<pubDate>Thu, 10 Apr 2025 06:05:15 GMT</pubDate>
+</item>
+
+<item>
 <title>Latent Diffusion Autoencoders: Toward Efficient and Meaningful Unsupervised Representation Learning in Medical Imaging</title>
 <link>https://arxiv.org/abs/2504.08635</link>
 <guid>https://arxiv.org/abs/2504.08635</guid>
 <content:encoded><![CDATA[
-
-  This study presents Latent Diffusion Autoencoder (LDAE), a novel encoder-decoder diffusion-based framework for efficient and meaningful unsupervised learning in medical imaging, focusing on Alzheimer disease (AD) using brain MR from the ADNI database as a case study. Unlike conventional diffusion autoencoders operating in image space, LDAE applies the diffusion process in a compressed latent representation, improving computational efficiency and making 3D medical imaging representation learning tractable. To validate the proposed approach, we explore two key hypotheses: (i) LDAE effectively captures meaningful semantic representations on 3D brain MR associated with AD and ageing, and (ii) LDAE achieves high-quality image generation and reconstruction while being computationally efficient. Experimental results support both hypotheses: (i) linear-probe evaluations demonstrate promising diagnostic performance for AD (ROC-AUC: 90%, ACC: 84%) and age prediction (MAE: 4.1 years, RMSE: 5.2 years); (ii) the learned semantic representations enable attribute manipulation, yielding anatomically plausible modifications; (iii) semantic interpolation experiments show strong reconstruction of missing scans, with SSIM of 0.969 (MSE: 0.0019) for a 6-month gap. Even for longer gaps (24 months), the model maintains robust performance (SSIM &gt; 0.93, MSE &lt; 0.004), indicating an ability to capture temporal progression trends; (iv) compared to conventional diffusion autoencoders, LDAE significantly increases inference throughput (20x faster) while also enhancing reconstruction quality. These findings position LDAE as a promising framework for scalable medical imaging applications, with the potential to serve as a foundation model for medical image analysis. Code available at https://github.com/GabrieleLozupone/LDAE
-
+This study presents Latent Diffusion Autoencoder (LDAE), a novel encoder-decoder diffusion-based framework for efficient and meaningful unsupervised learning in medical imaging, focusing on Alzheimer disease (AD) using brain MR from the ADNI database as a case study. Unlike conventional diffusion autoencoders operating in image space, LDAE applies the diffusion process in a compressed latent representation, improving computational efficiency and making 3D medical imaging representation learning tractable. To validate the proposed approach, we explore two key hypotheses: (i) LDAE effectively captures meaningful semantic representations on 3D brain MR associated with AD and ageing, and (ii) LDAE achieves high-quality image generation and reconstruction while being computationally efficient. Experimental results support both hypotheses: (i) linear-probe evaluations demonstrate promising diagnostic performance for AD (ROC-AUC: 90%, ACC: 84%) and age prediction (MAE: 4.1 years, RMSE: 5.2 years); (ii) the learned semantic representations enable attribute manipulation, yielding anatomically plausible modifications; (iii) semantic interpolation experiments show strong reconstruction of missing scans, with SSIM of 0.969 (MSE: 0.0019) for a 6-month gap. Even for longer gaps (24 months), the model maintains robust performance (SSIM &gt; 0.93, MSE &lt; 0.004), indicating an ability to capture temporal progression trends; (iv) compared to conventional diffusion autoencoders, LDAE significantly increases inference throughput (20x faster) while also enhancing reconstruction quality. These findings position LDAE as a promising framework for scalable medical imaging applications, with the potential to serve as a foundation model for medical image analysis. Code available at https://github.com/GabrieleLozupone/LDAE
 ]]></content:encoded>
-<pubDate>Fri, 11 Apr 2025 11:37:46 GMT</pubDate>
 <pubDate>Fri, 11 Apr 2025 11:37:46 GMT</pubDate>
 </item>
 <item>
@@ -21,14 +67,10 @@
 <link>https://arxiv.org/abs/2504.07866</link>
 <guid>https://arxiv.org/abs/2504.07866</guid>
 <content:encoded><![CDATA[
-
-  We present Pangu Ultra, a Large Language Model (LLM) with 135 billion parameters and dense Transformer modules trained on Ascend Neural Processing Units (NPUs). Although the field of LLM has been witnessing unprecedented advances in pushing the scale and capability of LLM in recent years, training such a large-scale model still involves significant optimization and system challenges. To stabilize the training process, we propose depth-scaled sandwich normalization, which effectively eliminates loss spikes during the training process of deep models. We pre-train our model on 13.2 trillion diverse and high-quality tokens and further enhance its reasoning capabilities during post-training. To perform such large-scale training efficiently, we utilize 8,192 Ascend NPUs with a series of system optimizations. Evaluations on multiple diverse benchmarks indicate that Pangu Ultra significantly advances the state-of-the-art capabilities of dense LLMs such as Llama 405B and Mistral Large 2, and even achieves competitive results with DeepSeek-R1, whose sparse model structure contains much more parameters. Our exploration demonstrates that Ascend NPUs are capable of efficiently and effectively training dense models with more than 100 billion parameters. Our model and system will be available for our commercial customers.
-
+We present Pangu Ultra, a Large Language Model (LLM) with 135 billion parameters and dense Transformer modules trained on Ascend Neural Processing Units (NPUs). Although the field of LLM has been witnessing unprecedented advances in pushing the scale and capability of LLM in recent years, training such a large-scale model still involves significant optimization and system challenges. To stabilize the training process, we propose depth-scaled sandwich normalization, which effectively eliminates loss spikes during the training process of deep models. We pre-train our model on 13.2 trillion diverse and high-quality tokens and further enhance its reasoning capabilities during post-training. To perform such large-scale training efficiently, we utilize 8,192 Ascend NPUs with a series of system optimizations. Evaluations on multiple diverse benchmarks indicate that Pangu Ultra significantly advances the state-of-the-art capabilities of dense LLMs such as Llama 405B and Mistral Large 2, and even achieves competitive results with DeepSeek-R1, whose sparse model structure contains much more parameters. Our exploration demonstrates that Ascend NPUs are capable of efficiently and effectively training dense models with more than 100 billion parameters. Our model and system will be available for our commercial customers.
 ]]></content:encoded>
 <pubDate>Thu, 10 Apr 2025 11:41:51 GMT</pubDate>
-<pubDate>Thu, 10 Apr 2025 11:41:51 GMT</pubDate>
 </item>
-
 <item>
 <title>SAEs Can Improve Unlearning: Dynamic Sparse Autoencoder Guardrails for Precision Unlearning in LLMs</title>
 <link>https://arxiv.org/abs/2504.08192</link>
@@ -9010,24 +9052,6 @@ Large Language Models (LLMs) and Multimodal Large Language Models (MLLMs) have m
 <div><p style="color: gray;">本研究探讨了通过重叠通信与计算来优化分布式训练速度的方法。</p><br /><br /><p><strong>摘要：</strong> 本文研究了使用分布式优化方法（如DiLoCo）训练大型模型时的通信效率问题。在分布式工作环境下，传统的数据并行训练需要大量通信，尽管DiLoCo的更新拆分为内部优化和外部优化两个阶段减少了通信需求，但在数据中心场景下，外部优化步骤的阻塞仍会导致显著的延迟。为了解决这一问题，本文提出了一种重叠通信与计算的技术，使外部优化步骤与内部优化阶段能够完全重叠。研究表明，名为“急切更新”的特定变体在低带宽的工作环境中，其性能与标准DiLoCo相当，展现出有效的优化潜力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.12996" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 19 Feb 2025 06:13:51 GMT</pubDate>
-</item>
-<item>
-<title>金融领域文本嵌入基准测试与模型评估</title>
-<link>https://arxiv.org/abs/2502.10990</link>
-<guid>https://arxiv.org/abs/2502.10990</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文提出金融领域的大规模文本嵌入基准FinMTEB及其评估结果。</p><br /><br /><p><strong>摘要：</strong> 随着大型语言模型的进展，嵌入模型在自然语言处理（NLP）应用中发挥着至关重要的作用。尽管这些模型通常在通用数据集上进行基准测试，但现实应用迫切需要领域特定的评估。本文介绍了金融大规模文本嵌入基准（FinMTEB），这是一个针对金融领域的专用基准，涵盖64个金融领域特定的嵌入数据集，涉及7个任务，包括金融新闻、公司年报、环境、社会和治理（ESG）报告、监管文件及财报电话会议记录。我们还基于角色数据合成方法开发了一个金融适应模型FinPersona-E5。通过对15个嵌入模型的广泛评估，包括FinPersona-E5，我们的研究发现：通用基准测试的性能与金融领域任务的相关性有限，领域适应模型始终优于通用模型，此外，简单的词袋模型在金融语义文本相似性任务中超越了复杂的密集嵌入技术，突显出密集嵌入方法的当前局限性。我们的工作为金融NLP应用建立了一个稳健的评估框架，并为开发领域特定的嵌入模型提供了关键见解。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.10990" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 19 Feb 2025 04:54:27 GMT</pubDate>
-</item>
-<item>
-<title>序列令牌压缩的极限研究及优化潜力</title>
-<link>https://arxiv.org/abs/2502.13063</link>
-<guid>https://arxiv.org/abs/2502.13063</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">研究显示序列令牌的压缩比可达1500，揭示优化空间巨大。</p><br /><br /><p><strong>摘要：</strong> 近年来的研究关注于将令牌序列压缩成较短的实值向量序列，以替代令牌嵌入或键值缓存，这些方法能够减少现有语言模型的计算量。尽管基于强大的编码模型，现有方案的最大无损压缩比通常仅为10。这一现象引人深思，因为理论上即使是16位精度和适中向量大小，大型实值向量的最大信息容量远超此速率。本研究通过用逐样本优化程序替换编码器，探究压缩的极限，结果显示压缩比高达1500，这凸显出现有方法与实用解决方案之间的两个数量级的差距。此外，我们还实证表明，压缩的极限并非由输入长度决定，而是由需减少的不确定性，即该序列的交叉熵损失，这一发现强调了输入嵌入的理论能力与实际利用之间的显著差距，表明在模型设计中存在显著优化空间。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.13063" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 19 Feb 2025 04:43:42 GMT</pubDate>
 </item>
 </channel>
 </rss>
