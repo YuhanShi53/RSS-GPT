@@ -4,6 +4,102 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>M1: Towards Scalable Test-Time Compute with Mamba Reasoning Models</title>
+<link>https://arxiv.org/abs/2504.10449</link>
+<guid>https://arxiv.org/abs/2504.10449</guid>
+<content:encoded><![CDATA[
+
+  Effective reasoning is crucial to solving complex mathematical problems. Recent large language models (LLMs) have boosted performance by scaling test-time computation through long chain-of-thought reasoning. However, transformer-based models are inherently limited in extending context length due to their quadratic computational complexity and linear memory requirements. In this paper, we introduce a novel hybrid linear RNN reasoning model, M1, built on the Mamba architecture, which allows memory-efficient inference. Our approach leverages a distillation process from existing reasoning models and is further enhanced through RL training. Experimental results on the AIME and MATH benchmarks show that M1 not only outperforms previous linear RNN models but also matches the performance of state-of-the-art Deepseek R1 distilled reasoning models at a similar scale. We also compare our generation speed with a highly performant general purpose inference engine, vLLM, and observe more than a 3x speedup compared to a same size transformer. With throughput speedup, we are able to achieve higher accuracy compared to DeepSeek R1 distilled transformer reasoning models under a fixed generation time budget using self-consistency voting. Overall, we introduce a hybrid Mamba reasoning model and provide a more effective approach to scaling test-time generation using self-consistency or long chain of thought reasoning.
+
+]]></content:encoded>
+<pubDate>Mon, 14 Apr 2025 13:38:25 GMT</pubDate>
+<pubDate>Mon, 14 Apr 2025 13:38:25 GMT</pubDate>
+</item>
+<item>
+<title>LLM Can be a Dangerous Persuader: Empirical Study of Persuasion Safety in Large Language Models</title>
+<link>https://arxiv.org/abs/2504.10430</link>
+<guid>https://arxiv.org/abs/2504.10430</guid>
+<content:encoded><![CDATA[
+
+  Recent advancements in Large Language Models (LLMs) have enabled them to approach human-level persuasion capabilities. However, such potential also raises concerns about the safety risks of LLM-driven persuasion, particularly their potential for unethical influence through manipulation, deception, exploitation of vulnerabilities, and many other harmful tactics. In this work, we present a systematic investigation of LLM persuasion safety through two critical aspects: (1) whether LLMs appropriately reject unethical persuasion tasks and avoid unethical strategies during execution, including cases where the initial persuasion goal appears ethically neutral, and (2) how influencing factors like personality traits and external pressures affect their behavior. To this end, we introduce PersuSafety, the first comprehensive framework for the assessment of persuasion safety which consists of three stages, i.e., persuasion scene creation, persuasive conversation simulation, and persuasion safety assessment. PersuSafety covers 6 diverse unethical persuasion topics and 15 common unethical strategies. Through extensive experiments across 8 widely used LLMs, we observe significant safety concerns in most LLMs, including failing to identify harmful persuasion tasks and leveraging various unethical persuasion strategies. Our study calls for more attention to improve safety alignment in progressive and goal-driven conversations such as persuasion.
+
+]]></content:encoded>
+<pubDate>Mon, 14 Apr 2025 13:20:34 GMT</pubDate>
+<pubDate>Mon, 14 Apr 2025 13:20:34 GMT</pubDate>
+</item>
+<item>
+<title>Breaking the Data Barrier -- Building GUI Agents Through Task Generalization</title>
+<link>https://arxiv.org/abs/2504.10127</link>
+<guid>https://arxiv.org/abs/2504.10127</guid>
+<content:encoded><![CDATA[
+
+  Graphical User Interface (GUI) agents offer cross-platform solutions for automating complex digital tasks, with significant potential to transform productivity workflows. However, their performance is often constrained by the scarcity of high-quality trajectory data. To address this limitation, we propose training Vision Language Models (VLMs) on data-rich, reasoning-intensive tasks during a dedicated mid-training stage, and then examine how incorporating these tasks facilitates generalization to GUI planning scenarios. Specifically, we explore a range of tasks with readily available instruction-tuning data, including GUI perception, multimodal reasoning, and textual reasoning. Through extensive experiments across 11 mid-training tasks, we demonstrate that: (1) Task generalization proves highly effective, yielding substantial improvements across most settings. For instance, multimodal mathematical reasoning enhances performance on AndroidWorld by an absolute 6.3%. Remarkably, text-only mathematical data significantly boosts GUI web agent performance, achieving a 5.6% improvement on WebArena and 5.4% improvement on AndroidWorld, underscoring notable cross-modal generalization from text-based to visual domains; (2) Contrary to prior assumptions, GUI perception data - previously considered closely aligned with GUI agent tasks and widely utilized for training - has a comparatively limited impact on final performance; (3) Building on these insights, we identify the most effective mid-training tasks and curate optimized mixture datasets, resulting in absolute performance gains of 8.0% on WebArena and 12.2% on AndroidWorld. Our work provides valuable insights into cross-domain knowledge transfer for GUI agents and offers a practical approach to addressing data scarcity challenges in this emerging field. The code, data and models will be available at https://github.com/hkust-nlp/GUIMid.
+
+]]></content:encoded>
+<pubDate>Mon, 14 Apr 2025 07:35:02 GMT</pubDate>
+<pubDate>Mon, 14 Apr 2025 07:35:02 GMT</pubDate>
+</item>
+<item>
+<title>Executable Functional Abstractions: Inferring Generative Programs for Advanced Math Problems</title>
+<link>https://arxiv.org/abs/2504.09763</link>
+<guid>https://arxiv.org/abs/2504.09763</guid>
+<content:encoded><![CDATA[
+
+  Scientists often infer abstract procedures from specific instances of problems and use the abstractions to generate new, related instances. For example, programs encoding the formal rules and properties of a system have been useful in fields ranging from RL (procedural environments) to physics (simulation engines). These programs can be seen as functions which execute to different outputs based on their parameterizations (e.g., gridworld configuration or initial physical conditions). We introduce the term EFA (Executable Functional Abstraction) to denote such programs for math problems. EFA-like constructs have been shown to be useful for math reasoning as problem generators for stress-testing models. However, prior work has been limited to abstractions for grade-school math (whose simple rules are easy to encode in programs), while generating EFAs for advanced math has thus far required human engineering. We explore the automatic construction of EFAs for advanced math problems. We operationalize the task of automatically constructing EFAs as a program synthesis task, and develop EFAGen, which conditions an LLM on a seed math problem and its step-by-step solution to generate candidate EFA programs that are faithful to the generalized problem and solution class underlying the seed problem. Furthermore, we formalize properties any valid EFA must possess in terms of executable unit tests, and show how the tests can be used as verifiable rewards to train LLMs to become better writers of EFAs. We demonstrate that EFAs constructed by EFAGen behave rationally by remaining faithful to seed problems, produce learnable problem variations, and that EFAGen can infer EFAs across multiple diverse sources of competition-level math problems. Finally, we show downstream uses of model-written EFAs e.g. finding problem variations that are harder or easier for a learner to solve, as well as data generation.
+
+]]></content:encoded>
+<pubDate>Sun, 13 Apr 2025 20:06:48 GMT</pubDate>
+<pubDate>Sun, 13 Apr 2025 20:06:48 GMT</pubDate>
+</item>
+<item>
+<title>Iterative Self-Training for Code Generation via Reinforced Re-Ranking</title>
+<link>https://arxiv.org/abs/2504.09643</link>
+<guid>https://arxiv.org/abs/2504.09643</guid>
+<content:encoded><![CDATA[
+
+  Generating high-quality code that solves complex programming tasks is challenging, especially with current decoder-based models that produce highly stochastic outputs. In code generation, even minor errors can easily break the entire solution. Leveraging multiple sampled solutions can significantly improve the overall output quality.   One effective way to enhance code generation is by pairing a code generation model with a reranker model, which selects the best solution from the generated samples. We propose a novel iterative self-training approach for self-training reranker models using Proximal Policy Optimization (PPO), aimed at improving both reranking accuracy and the overall code generation process. Unlike traditional PPO approaches, where the focus is on optimizing a generative model with a reward model, our approach emphasizes the development of a robust reward/reranking model. This model improves the quality of generated code through reranking and addresses problems and errors that the reward model might overlook during PPO alignment with the reranker. Our method iteratively refines the training dataset by re-evaluating outputs, identifying high-scoring negative examples, and incorporating them into the training loop, that boosting model performance.   Our evaluation on the MultiPL-E dataset demonstrates that our 13.4B parameter model outperforms a 33B model in code generation quality while being three times faster. Moreover, it achieves performance comparable to GPT-4 and surpasses it in one programming language.
+
+]]></content:encoded>
+<pubDate>Sun, 13 Apr 2025 12:34:17 GMT</pubDate>
+<pubDate>Sun, 13 Apr 2025 12:34:17 GMT</pubDate>
+</item>
+<item>
+<title>How new data permeates LLM knowledge and how to dilute it</title>
+<link>https://arxiv.org/abs/2504.09522</link>
+<guid>https://arxiv.org/abs/2504.09522</guid>
+<content:encoded><![CDATA[
+
+  Large language models learn and continually learn through the accumulation of gradient-based updates, but how individual pieces of new information affect existing knowledge, leading to both beneficial generalization and problematic hallucination, remains poorly understood. We demonstrate that when learning new information, LLMs exhibit a "priming" effect: learning a new fact can cause the model to inappropriately apply that knowledge in unrelated contexts. To systematically study this phenomenon, we introduce "Outlandish," a carefully curated dataset of 1320 diverse text samples designed to probe how new knowledge permeates through an LLM's existing knowledge base. Using this dataset, we show that the degree of priming after learning new information can be predicted by measuring the token probability of key words before learning. This relationship holds robustly across different model architectures (PALM-2, Gemma, Llama), sizes, and training stages. Finally, we develop two novel techniques to modulate how new knowledge affects existing model behavior: (1) a ``stepping-stone'' text augmentation strategy and (2) an ``ignore-k'' update pruning method. These approaches reduce undesirable priming effects by 50-95\% while preserving the model's ability to learn new information. Our findings provide both empirical insights into how LLMs learn and practical tools for improving the specificity of knowledge insertion in language models. Further materials: https://sunchipsster1.github.io/projects/outlandish/
+
+]]></content:encoded>
+<pubDate>Sun, 13 Apr 2025 07:25:04 GMT</pubDate>
+<pubDate>Sun, 13 Apr 2025 07:25:04 GMT</pubDate>
+</item>
+<item>
+<title>VisuoThink: Empowering LVLM Reasoning with Multimodal Tree Search</title>
+<link>https://arxiv.org/abs/2504.09130</link>
+<guid>https://arxiv.org/abs/2504.09130</guid>
+<content:encoded><![CDATA[
+
+  Recent advancements in Large Vision-Language Models have showcased remarkable capabilities. However, they often falter when confronted with complex reasoning tasks that humans typically address through visual aids and deliberate, step-by-step thinking. While existing methods have explored text-based slow thinking or rudimentary visual assistance, they fall short of capturing the intricate, interleaved nature of human visual-verbal reasoning processes. To overcome these limitations and inspired by the mechanisms of slow thinking in human cognition, we introduce VisuoThink, a novel framework that seamlessly integrates visuospatial and linguistic domains. VisuoThink facilitates multimodal slow thinking by enabling progressive visual-textual reasoning and incorporates test-time scaling through look-ahead tree search. Extensive experiments demonstrate that VisuoThink significantly enhances reasoning capabilities via inference-time scaling, even without fine-tuning, achieving state-of-the-art performance in tasks involving geometry and spatial reasoning.
+
+]]></content:encoded>
+<pubDate>Sat, 12 Apr 2025 04:37:30 GMT</pubDate>
+<pubDate>Sat, 12 Apr 2025 04:37:30 GMT</pubDate>
+</item>
+<item>
+<title>The AI Scientist-v2: Workshop-Level Automated Scientific Discovery via Agentic Tree Search</title>
+<link>https://arxiv.org/abs/2504.08066</link>
+<guid>https://arxiv.org/abs/2504.08066</guid>
+<content:encoded><![CDATA[
+
+  AI is increasingly playing a pivotal role in transforming how scientific discoveries are made. We introduce The AI Scientist-v2, an end-to-end agentic system capable of producing the first entirely AI generated peer-review-accepted workshop paper. This system iteratively formulates scientific hypotheses, designs and executes experiments, analyzes and visualizes data, and autonomously authors scientific manuscripts. Compared to its predecessor (v1, Lu et al., 2024 arXiv:2408.06292), The AI Scientist-v2 eliminates the reliance on human-authored code templates, generalizes effectively across diverse machine learning domains, and leverages a novel progressive agentic tree-search methodology managed by a dedicated experiment manager agent. Additionally, we enhance the AI reviewer component by integrating a Vision-Language Model (VLM) feedback loop for iterative refinement of content and aesthetics of the figures. We evaluated The AI Scientist-v2 by submitting three fully autonomous manuscripts to a peer-reviewed ICLR workshop. Notably, one manuscript achieved high enough scores to exceed the average human acceptance threshold, marking the first instance of a fully AI-generated paper successfully navigating a peer review. This accomplishment highlights the growing capability of AI in conducting all aspects of scientific research. We anticipate that further advancements in autonomous scientific discovery technologies will profoundly impact human knowledge generation, enabling unprecedented scalability in research productivity and significantly accelerating scientific breakthroughs, greatly benefiting society at large. We have open-sourced the code at https://github.com/SakanaAI/AI-Scientist-v2 to foster the future development of this transformative technology. We also discuss the role of AI in science, including AI safety.
+
+]]></content:encoded>
+<pubDate>Thu, 10 Apr 2025 14:44:41 GMT</pubDate>
+<pubDate>Thu, 10 Apr 2025 14:44:41 GMT</pubDate>
+</item>
 
 <item>
 <title>InternVL3: Exploring Advanced Training and Test-Time Recipes for Open-Source Multimodal Models</title>
