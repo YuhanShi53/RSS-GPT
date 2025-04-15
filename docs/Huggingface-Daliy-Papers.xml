@@ -5,18 +5,159 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>InternVL3: Exploring Advanced Training and Test-Time Recipes for Open-Source Multimodal Models</title>
+<link>https://arxiv.org/abs/2504.10479</link>
+<guid>https://arxiv.org/abs/2504.10479</guid>
+<content:encoded><![CDATA[
+
+  We introduce InternVL3, a significant advancement in the InternVL series featuring a native multimodal pre-training paradigm. Rather than adapting a text-only large language model (LLM) into a multimodal large language model (MLLM) that supports visual inputs, InternVL3 jointly acquires multimodal and linguistic capabilities from both diverse multimodal data and pure-text corpora during a single pre-training stage. This unified training paradigm effectively addresses the complexities and alignment challenges commonly encountered in conventional post-hoc training pipelines for MLLMs. To further improve performance and scalability, InternVL3 incorporates variable visual position encoding (V2PE) to support extended multimodal contexts, employs advanced post-training techniques such as supervised fine-tuning (SFT) and mixed preference optimization (MPO), and adopts test-time scaling strategies alongside an optimized training infrastructure. Extensive empirical evaluations demonstrate that InternVL3 delivers superior performance across a wide range of multi-modal tasks. In particular, InternVL3-78B achieves a score of 72.2 on the MMMU benchmark, setting a new state-of-the-art among open-source MLLMs. Its capabilities remain highly competitive with leading proprietary models, including ChatGPT-4o, Claude 3.5 Sonnet, and Gemini 2.5 Pro, while also maintaining strong pure-language proficiency. In pursuit of open-science principles, we will publicly release both the training data and model weights to foster further research and development in next-generation MLLMs.
+
+]]></content:encoded>
+<pubDate>Mon, 14 Apr 2025 13:59:25 GMT</pubDate>
+<pubDate>Mon, 14 Apr 2025 13:59:25 GMT</pubDate>
+</item>
+<item>
+<title>LLM-SRBench: A New Benchmark for Scientific Equation Discovery with Large Language Models</title>
+<link>https://arxiv.org/abs/2504.10415</link>
+<guid>https://arxiv.org/abs/2504.10415</guid>
+<content:encoded><![CDATA[
+
+  Scientific equation discovery is a fundamental task in the history of scientific progress, enabling the derivation of laws governing natural phenomena. Recently, Large Language Models (LLMs) have gained interest for this task due to their potential to leverage embedded scientific knowledge for hypothesis generation. However, evaluating the true discovery capabilities of these methods remains challenging, as existing benchmarks often rely on common equations that are susceptible to memorization by LLMs, leading to inflated performance metrics that do not reflect discovery. In this paper, we introduce LLM-SRBench, a comprehensive benchmark with 239 challenging problems across four scientific domains specifically designed to evaluate LLM-based scientific equation discovery methods while preventing trivial memorization. Our benchmark comprises two main categories: LSR-Transform, which transforms common physical models into less common mathematical representations to test reasoning beyond memorized forms, and LSR-Synth, which introduces synthetic, discovery-driven problems requiring data-driven reasoning. Through extensive evaluation of several state-of-the-art methods, using both open and closed LLMs, we find that the best-performing system so far achieves only 31.5% symbolic accuracy. These findings highlight the challenges of scientific equation discovery, positioning LLM-SRBench as a valuable resource for future research.
+
+]]></content:encoded>
+<pubDate>Mon, 14 Apr 2025 13:00:13 GMT</pubDate>
+<pubDate>Mon, 14 Apr 2025 13:00:13 GMT</pubDate>
+</item>
+<item>
+<title>S1-Bench: A Simple Benchmark for Evaluating System 1 Thinking Capability of Large Reasoning Models</title>
+<link>https://arxiv.org/abs/2504.10368</link>
+<guid>https://arxiv.org/abs/2504.10368</guid>
+<content:encoded><![CDATA[
+
+  We introduce S1-Bench, a novel benchmark designed to evaluate Large Reasoning Models' (LRMs) performance on simple tasks that favor intuitive system 1 thinking rather than deliberative system 2 reasoning. While LRMs have achieved significant breakthroughs in complex reasoning tasks through explicit chains of thought, their reliance on deep analytical thinking may limit their system 1 thinking capabilities. Moreover, a lack of benchmark currently exists to evaluate LRMs' performance in tasks that require such capabilities. To fill this gap, S1-Bench presents a set of simple, diverse, and naturally clear questions across multiple domains and languages, specifically designed to assess LRMs' performance in such tasks. Our comprehensive evaluation of 22 LRMs reveals significant lower efficiency tendencies, with outputs averaging 15.5 times longer than those of traditional small LLMs. Additionally, LRMs often identify correct answers early but continue unnecessary deliberation, with some models even producing numerous errors. These findings highlight the rigid reasoning patterns of current LRMs and underscore the substantial development needed to achieve balanced dual-system thinking capabilities that can adapt appropriately to task complexity.
+
+]]></content:encoded>
+<pubDate>Mon, 14 Apr 2025 12:13:23 GMT</pubDate>
+<pubDate>Mon, 14 Apr 2025 12:13:23 GMT</pubDate>
+</item>
+<item>
+<title>SocioVerse: A World Model for Social Simulation Powered by LLM Agents and A Pool of 10 Million Real-World Users</title>
+<link>https://arxiv.org/abs/2504.10157</link>
+<guid>https://arxiv.org/abs/2504.10157</guid>
+<content:encoded><![CDATA[
+
+  Social simulation is transforming traditional social science research by modeling human behavior through interactions between virtual individuals and their environments. With recent advances in large language models (LLMs), this approach has shown growing potential in capturing individual differences and predicting group behaviors. However, existing methods face alignment challenges related to the environment, target users, interaction mechanisms, and behavioral patterns. To this end, we introduce SocioVerse, an LLM-agent-driven world model for social simulation. Our framework features four powerful alignment components and a user pool of 10 million real individuals. To validate its effectiveness, we conducted large-scale simulation experiments across three distinct domains: politics, news, and economics. Results demonstrate that SocioVerse can reflect large-scale population dynamics while ensuring diversity, credibility, and representativeness through standardized procedures and minimal manual adjustments.
+
+]]></content:encoded>
+<pubDate>Mon, 14 Apr 2025 08:12:52 GMT</pubDate>
+<pubDate>Mon, 14 Apr 2025 08:12:52 GMT</pubDate>
+</item>
+<item>
+<title>Mavors: Multi-granularity Video Representation for Multimodal Large Language Model</title>
+<link>https://arxiv.org/abs/2504.10068</link>
+<guid>https://arxiv.org/abs/2504.10068</guid>
+<content:encoded><![CDATA[
+
+  Long-context video understanding in multimodal large language models (MLLMs) faces a critical challenge: balancing computational efficiency with the retention of fine-grained spatio-temporal patterns. Existing approaches (e.g., sparse sampling, dense sampling with low resolution, and token compression) suffer from significant information loss in temporal dynamics, spatial details, or subtle interactions, particularly in videos with complex motion or varying resolutions. To address this, we propose Mavors, a novel framework that introduces Multi-granularity video representation for holistic long-video modeling. Specifically, Mavors directly encodes raw video content into latent representations through two core components: 1) an Intra-chunk Vision Encoder (IVE) that preserves high-resolution spatial features via 3D convolutions and Vision Transformers, and 2) an Inter-chunk Feature Aggregator (IFA) that establishes temporal coherence across chunks using transformer-based dependency modeling with chunk-level rotary position encodings. Moreover, the framework unifies image and video understanding by treating images as single-frame videos via sub-image decomposition. Experiments across diverse benchmarks demonstrate Mavors' superiority in maintaining both spatial fidelity and temporal continuity, significantly outperforming existing methods in tasks requiring fine-grained spatio-temporal reasoning.
+
+]]></content:encoded>
+<pubDate>Mon, 14 Apr 2025 06:14:44 GMT</pubDate>
+<pubDate>Mon, 14 Apr 2025 06:14:44 GMT</pubDate>
+</item>
+<item>
+<title>FUSION: Fully Integration of Vision-Language Representations for Deep Cross-Modal Understanding</title>
+<link>https://arxiv.org/abs/2504.09925</link>
+<guid>https://arxiv.org/abs/2504.09925</guid>
+<content:encoded><![CDATA[
+
+  We introduce FUSION, a family of multimodal large language models (MLLMs) with a fully vision-language alignment and integration paradigm. Unlike existing methods that primarily rely on late-stage modality interaction during LLM decoding, our approach achieves deep, dynamic integration throughout the entire processing pipeline. To this end, we propose Text-Guided Unified Vision Encoding, incorporating textual information in vision encoding to achieve pixel-level integration. We further design Context-Aware Recursive Alignment Decoding that recursively aggregates visual features conditioned on textual context during decoding, enabling fine-grained, question-level semantic integration. To guide feature mapping and mitigate modality discrepancies, we develop Dual-Supervised Semantic Mapping Loss. Additionally, we construct a Synthesized Language-Driven Question-Answer (QA) dataset through a new data synthesis method, prioritizing high-quality QA pairs to optimize text-guided feature integration. Building on these foundations, we train FUSION at two scales-3B, 8B-and demonstrate that our full-modality integration approach significantly outperforms existing methods with only 630 vision tokens. Notably, FUSION 3B surpasses Cambrian-1 8B and Florence-VL 8B on most benchmarks. FUSION 3B continues to outperform Cambrian-1 8B even when limited to 300 vision tokens. Our ablation studies show that FUSION outperforms LLaVA-NeXT on over half of the benchmarks under same configuration without dynamic resolution, highlighting the effectiveness of our approach. We release our code, model weights, and dataset. https://github.com/starriver030515/FUSION
+
+]]></content:encoded>
+<pubDate>Mon, 14 Apr 2025 02:33:29 GMT</pubDate>
+<pubDate>Mon, 14 Apr 2025 02:33:29 GMT</pubDate>
+</item>
+<item>
+<title>EmoAgent: Assessing and Safeguarding Human-AI Interaction for Mental Health Safety</title>
+<link>https://arxiv.org/abs/2504.09689</link>
+<guid>https://arxiv.org/abs/2504.09689</guid>
+<content:encoded><![CDATA[
+
+  The rise of LLM-driven AI characters raises safety concerns, particularly for vulnerable human users with psychological disorders. To address these risks, we propose EmoAgent, a multi-agent AI framework designed to evaluate and mitigate mental health hazards in human-AI interactions. EmoAgent comprises two components: EmoEval simulates virtual users, including those portraying mentally vulnerable individuals, to assess mental health changes before and after interactions with AI characters. It uses clinically proven psychological and psychiatric assessment tools (PHQ-9, PDI, PANSS) to evaluate mental risks induced by LLM. EmoGuard serves as an intermediary, monitoring users' mental status, predicting potential harm, and providing corrective feedback to mitigate risks. Experiments conducted in popular character-based chatbots show that emotionally engaging dialogues can lead to psychological deterioration in vulnerable users, with mental state deterioration in more than 34.4% of the simulations. EmoGuard significantly reduces these deterioration rates, underscoring its role in ensuring safer AI-human interactions. Our code is available at: https://github.com/1akaman/EmoAgent
+
+]]></content:encoded>
+<pubDate>Sun, 13 Apr 2025 14:47:22 GMT</pubDate>
+<pubDate>Sun, 13 Apr 2025 14:47:22 GMT</pubDate>
+</item>
+<item>
+<title>TinyLLaVA-Video-R1: Towards Smaller LMMs for Video Reasoning</title>
+<link>https://arxiv.org/abs/2504.09641</link>
+<guid>https://arxiv.org/abs/2504.09641</guid>
+<content:encoded><![CDATA[
+
+  Recently, improving the reasoning ability of large multimodal models (LMMs) through reinforcement learning has made great progress. However, most existing works are based on highly reasoning-intensive datasets such as mathematics and code, and researchers generally choose large-scale models as the foundation. We argue that exploring small-scale models' reasoning capabilities remains valuable for researchers with limited computational resources. Moreover, enabling models to explain their reasoning processes on general question-answering datasets is equally meaningful. Therefore, we present the small-scale video reasoning model TinyLLaVA-Video-R1. Based on TinyLLaVA-Video, a traceably trained video understanding model with no more than 4B parameters, it not only demonstrates significantly improved reasoning and thinking capabilities after using reinforcement learning on general Video-QA datasets, but also exhibits the emergent characteristic of "aha moments". Furthermore, we share a series of experimental findings, aiming to provide practical insights for future exploration of video reasoning (thinking) abilities in small-scale models. It is available at https://github.com/ZhangXJ199/TinyLLaVA-Video-R1.
+
+]]></content:encoded>
+<pubDate>Sun, 13 Apr 2025 12:32:49 GMT</pubDate>
+<pubDate>Sun, 13 Apr 2025 12:32:49 GMT</pubDate>
+</item>
+<item>
+<title>AgentRewardBench: Evaluating Automatic Evaluations of Web Agent Trajectories</title>
+<link>https://arxiv.org/abs/2504.08942</link>
+<guid>https://arxiv.org/abs/2504.08942</guid>
+<content:encoded><![CDATA[
+
+  Web agents enable users to perform tasks on web browsers through natural language interaction. Evaluating web agents trajectories is an important problem, since it helps us determine whether the agent successfully completed the tasks. Rule-based methods are widely used for this purpose, but they are challenging to extend to new tasks and may not always recognize successful trajectories. We may achieve higher accuracy through human evaluation, but the process would be substantially slower and more expensive. Automatic evaluations with LLMs may avoid the challenges of designing new rules and manually annotating trajectories, enabling faster and cost-effective evaluation. However, it is unclear how effective they are at evaluating web agents. To this end, we propose AgentRewardBench, the first benchmark to assess the effectiveness of LLM judges for evaluating web agents. AgentRewardBench contains 1302 trajectories across 5 benchmarks and 4 LLMs. Each trajectory in AgentRewardBench is reviewed by an expert, who answers questions pertaining to the success, side effects, and repetitiveness of the agent. Using our benchmark, we evaluate 12 LLM judges and find that no single LLM excels across all benchmarks. We also find that the rule-based evaluation used by common benchmarks tends to underreport the success rate of web agents, highlighting a key weakness of rule-based evaluation and the need to develop more flexible automatic evaluations. We release the benchmark at: https://agent-reward-bench.github.io
+
+]]></content:encoded>
+<pubDate>Fri, 11 Apr 2025 15:49:22 GMT</pubDate>
+<pubDate>Fri, 11 Apr 2025 15:49:22 GMT</pubDate>
+</item>
+<item>
+<title>VL-Rethinker: Incentivizing Self-Reflection of Vision-Language Models with Reinforcement Learning</title>
+<link>https://arxiv.org/abs/2504.08837</link>
+<guid>https://arxiv.org/abs/2504.08837</guid>
+<content:encoded><![CDATA[
+
+  Recently, slow-thinking systems like GPT-o1 and DeepSeek-R1 have demonstrated great potential in solving challenging problems through explicit reflection. They significantly outperform the best fast-thinking models, such as GPT-4o, on various math and science benchmarks. However, their multimodal reasoning capabilities remain on par with fast-thinking models. For instance, GPT-o1's performance on benchmarks like MathVista, MathVerse, and MathVision is similar to fast-thinking models. In this paper, we aim to enhance the slow-thinking capabilities of vision-language models using reinforcement learning (without relying on distillation) to advance the state of the art. First, we adapt the GRPO algorithm with a novel technique called Selective Sample Replay (SSR) to address the vanishing advantages problem. While this approach yields strong performance, the resulting RL-trained models exhibit limited self-reflection or self-verification. To further encourage slow-thinking, we introduce Forced Rethinking, which appends a textual rethinking trigger to the end of initial rollouts in RL training, explicitly enforcing a self-reflection reasoning step. By combining these two techniques, our model, VL-Rethinker, advances state-of-the-art scores on MathVista, MathVerse, and MathVision to achieve 80.3%, 61.8%, and 43.9% respectively. VL-Rethinker also achieves open-source SoTA on multi-disciplinary benchmarks such as MMMU-Pro, EMMA, and MEGA-Bench, narrowing the gap with GPT-o1.
+
+]]></content:encoded>
+<pubDate>Thu, 10 Apr 2025 13:41:56 GMT</pubDate>
+<pubDate>Thu, 10 Apr 2025 13:41:56 GMT</pubDate>
+</item>
+<item>
+<title>Have we unified image generation and understanding yet? An empirical study of GPT-4o's image generation ability</title>
+<link>https://arxiv.org/abs/2504.08003</link>
+<guid>https://arxiv.org/abs/2504.08003</guid>
+<content:encoded><![CDATA[
+
+  OpenAI's multimodal GPT-4o has demonstrated remarkable capabilities in image generation and editing, yet its ability to achieve world knowledge-informed semantic synthesis--seamlessly integrating domain knowledge, contextual reasoning, and instruction adherence--remains unproven. In this study, we systematically evaluate these capabilities across three critical dimensions: (1) Global Instruction Adherence, (2) Fine-Grained Editing Precision, and (3) Post-Generation Reasoning. While existing benchmarks highlight GPT-4o's strong capabilities in image generation and editing, our evaluation reveals GPT-4o's persistent limitations: the model frequently defaults to literal interpretations of instructions, inconsistently applies knowledge constraints, and struggles with conditional reasoning tasks. These findings challenge prevailing assumptions about GPT-4o's unified understanding and generation capabilities, exposing significant gaps in its dynamic knowledge integration. Our study calls for the development of more robust benchmarks and training strategies that go beyond surface-level alignment, emphasizing context-aware and reasoning-grounded multimodal generation.
+
+]]></content:encoded>
+<pubDate>Wed, 09 Apr 2025 12:10:15 GMT</pubDate>
+<pubDate>Wed, 09 Apr 2025 12:10:15 GMT</pubDate>
+</item>
+<item>
+<title>PRIMA.CPP: Speeding Up 70B-Scale LLM Inference on Low-Resource Everyday Home Clusters</title>
+<link>https://arxiv.org/abs/2504.08791</link>
+<guid>https://arxiv.org/abs/2504.08791</guid>
+<content:encoded><![CDATA[
+
+  Emergency of DeepSeek R1 and QwQ 32B have broken through performance barriers for running frontier large language models (LLMs) on home devices. While consumer hardware is getting stronger and model quantization is improving, existing end-side solutions still demand GPU clusters, large RAM/VRAM, and high bandwidth, far beyond what a common home cluster can handle. This paper introduces prima.cpp, a distributed inference system that runs 70B-scale models on everyday home devices using a mix of CPU/GPU, low RAM/VRAM, Wi-Fi, and cross-platform support. It uses mmap to manage model weights and introduces piped-ring parallelism with prefetching to hide disk loading. By modeling heterogeneity in computation, communication, disk, memory (and its management behavior), and OS, it optimally assigns model layers to each device's CPU and GPU, further reducing token latency. An elegant algorithm named Halda is proposed to solve this NP-hard assignment problem. We evaluate prima.cpp on a common four-node home cluster. It outperforms llama.cpp, exo, and dllama on 30B+ models while keeping memory pressure below 6%. This brings frontier 30B-70B models, such as Llama 3, DeepSeek R1, Qwen 2.5, and QwQ to home assistants, making advanced AI truly accessible to individuals. The code is open source and available at https://github.com/Lizonghang/prima.cpp.
+
+]]></content:encoded>
+<pubDate>Mon, 07 Apr 2025 09:46:21 GMT</pubDate>
+<pubDate>Mon, 07 Apr 2025 09:46:21 GMT</pubDate>
+</item>
+
+<item>
 <title>DUMP: Automated Distribution-Level Curriculum Learning for RL-based LLM Post-training</title>
 <link>https://arxiv.org/abs/2504.09710</link>
 <guid>https://arxiv.org/abs/2504.09710</guid>
 <content:encoded><![CDATA[
-
-  Recent advances in reinforcement learning (RL)-based post-training have led to notable improvements in large language models (LLMs), particularly in enhancing their reasoning capabilities to handle complex tasks. However, most existing methods treat the training data as a unified whole, overlooking the fact that modern LLM training often involves a mixture of data from diverse distributions-varying in both source and difficulty. This heterogeneity introduces a key challenge: how to adaptively schedule training across distributions to optimize learning efficiency. In this paper, we present a principled curriculum learning framework grounded in the notion of distribution-level learnability. Our core insight is that the magnitude of policy advantages reflects how much a model can still benefit from further training on a given distribution. Based on this, we propose a distribution-level curriculum learning framework for RL-based LLM post-training, which leverages the Upper Confidence Bound (UCB) principle to dynamically adjust sampling probabilities for different distrubutions. This approach prioritizes distributions with either high average advantage (exploitation) or low sample count (exploration), yielding an adaptive and theoretically grounded training schedule. We instantiate our curriculum learning framework with GRPO as the underlying RL algorithm and demonstrate its effectiveness on logic reasoning datasets with multiple difficulties and sources. Our experiments show that our framework significantly improves convergence speed and final performance, highlighting the value of distribution-aware curriculum strategies in LLM post-training. Code: https://github.com/ZhentingWang/DUMP.
-
+Recent advances in reinforcement learning (RL)-based post-training have led to notable improvements in large language models (LLMs), particularly in enhancing their reasoning capabilities to handle complex tasks. However, most existing methods treat the training data as a unified whole, overlooking the fact that modern LLM training often involves a mixture of data from diverse distributions-varying in both source and difficulty. This heterogeneity introduces a key challenge: how to adaptively schedule training across distributions to optimize learning efficiency. In this paper, we present a principled curriculum learning framework grounded in the notion of distribution-level learnability. Our core insight is that the magnitude of policy advantages reflects how much a model can still benefit from further training on a given distribution. Based on this, we propose a distribution-level curriculum learning framework for RL-based LLM post-training, which leverages the Upper Confidence Bound (UCB) principle to dynamically adjust sampling probabilities for different distrubutions. This approach prioritizes distributions with either high average advantage (exploitation) or low sample count (exploration), yielding an adaptive and theoretically grounded training schedule. We instantiate our curriculum learning framework with GRPO as the underlying RL algorithm and demonstrate its effectiveness on logic reasoning datasets with multiple difficulties and sources. Our experiments show that our framework significantly improves convergence speed and final performance, highlighting the value of distribution-aware curriculum strategies in LLM post-training. Code: https://github.com/ZhentingWang/DUMP.
 ]]></content:encoded>
 <pubDate>Sun, 13 Apr 2025 16:10:27 GMT</pubDate>
-<pubDate>Sun, 13 Apr 2025 16:10:27 GMT</pubDate>
 </item>
-
 <item>
 <title>BlenderGym: Benchmarking Foundational Model Systems for Graphics Editing</title>
 <link>https://arxiv.org/abs/2504.01786</link>
@@ -9007,15 +9148,6 @@ Large Language Models (LLMs) and Multimodal Large Language Models (MLLMs) have m
 <div><p style="color: gray;">LongPO方法使短文档LLM在长文档任务中表现优异。</p><br /><br /><p><strong>摘要：</strong> Large Language Models (LLMs)在短文档任务中表现出色，但在长文档场景中常常由于长文档对齐不足而导致性能下降。本文提出的LongPO方法，通过自我演化，使短文档LLM能够在长文档任务中表现出色。该方法通过生成的短到长偏好数据，包含对于相同指令的长文档输入和其压缩短文档对应的成对响应，帮助LLM在长文档任务中学习和适应。同时，LongPO采用短到长的KL约束，旨在减轻长文档对齐过程中短文档性能的下降。经过应用于Mistral-7B-Instruct-v0.2模型，LongPO在128K到512K上下文长度的实验中，充分保留了短文档性能，并在长短文档任务中表现显著优于传统策略，取得的长文档基准结果可与需大量长文档标注的高级LLM（如GPT-4-128K）相媲美，甚至在某些情况下超越其表现。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.13922" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 19 Feb 2025 21:35:20 GMT</pubDate>
-</item>
-<item>
-<title>提升大型语言模型决策能力的自动化奖励模型框架</title>
-<link>https://arxiv.org/abs/2502.12130</link>
-<guid>https://arxiv.org/abs/2502.12130</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出一种无人工标注学习奖励模型框架，以改善LLM代理的决策能力。</p><br /><br /><p><strong>摘要：</strong> 大型语言模型在文本生成任务上表现优异，但在需要多步骤决策和环境反馈的任务上仍显不足。为了解决LLM代理的局限性，本文提出了一种自动学习奖励模型的框架，该模型无需人工标注数据。通过让一个LLM代理随机导航环境，生成多种动作轨迹，随后利用另一个LLM为每个轨迹分配任务意图，并生成正向和负向响应，构建任务意图-正向响应-负向响应的三元组，作为训练数据来优化奖励模型。此模型能够评分动作轨迹，进而为任务规划提供启发式指导。研究表明该框架在不同代理基准测试中的有效性和普遍性，标志着在复杂互动环境中提升LLM代理决策能力的重要进展。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.12130" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 19 Feb 2025 18:20:05 GMT</pubDate>
 </item>
 </channel>
 </rss>
