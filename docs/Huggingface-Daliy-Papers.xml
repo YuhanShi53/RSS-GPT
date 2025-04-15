@@ -5,18 +5,27 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>BlenderGym: Benchmarking Foundational Model Systems for Graphics Editing</title>
+<link>https://arxiv.org/abs/2504.01786</link>
+<guid>https://arxiv.org/abs/2504.01786</guid>
+<content:encoded><![CDATA[
+
+  3D graphics editing is crucial in applications like movie production and game design, yet it remains a time-consuming process that demands highly specialized domain expertise. Automating this process is challenging because graphical editing requires performing a variety of tasks, each requiring distinct skill sets. Recently, vision-language models (VLMs) have emerged as a powerful framework for automating the editing process, but their development and evaluation are bottlenecked by the lack of a comprehensive benchmark that requires human-level perception and presents real-world editing complexity. In this work, we present BlenderGym, the first comprehensive VLM system benchmark for 3D graphics editing. BlenderGym evaluates VLM systems through code-based 3D reconstruction tasks. We evaluate closed- and open-source VLM systems and observe that even the state-of-the-art VLM system struggles with tasks relatively easy for human Blender users. Enabled by BlenderGym, we study how inference scaling techniques impact VLM's performance on graphics editing tasks. Notably, our findings reveal that the verifier used to guide the scaling of generation can itself be improved through inference scaling, complementing recent insights on inference scaling of LLM generation in coding and math tasks. We further show that inference compute is not uniformly effective and can be optimized by strategically distributing it between generation and verification.
+
+]]></content:encoded>
+<pubDate>Wed, 02 Apr 2025 10:51:45 GMT</pubDate>
+<pubDate>Wed, 02 Apr 2025 10:51:45 GMT</pubDate>
+</item>
+
+<item>
 <title>UKBOB: One Billion MRI Labeled Masks for Generalizable 3D Medical Image Segmentation</title>
 <link>https://arxiv.org/abs/2504.06908</link>
 <guid>https://arxiv.org/abs/2504.06908</guid>
 <content:encoded><![CDATA[
-
-  In medical imaging, the primary challenge is collecting large-scale labeled data due to privacy concerns, logistics, and high labeling costs. In this work, we present the UK Biobank Organs and Bones (UKBOB), the largest labeled dataset of body organs, comprising 51,761 MRI 3D samples (equivalent to 17.9 million 2D images) and more than 1.37 billion 2D segmentation masks of 72 organs, all based on the UK Biobank MRI dataset. We utilize automatic labeling, introduce an automated label cleaning pipeline with organ-specific filters, and manually annotate a subset of 300 MRIs with 11 abdominal classes to validate the quality (referred to as UKBOB-manual). This approach allows for scaling up the dataset collection while maintaining confidence in the labels. We further confirm the validity of the labels by demonstrating zero-shot generalization of trained models on the filtered UKBOB to other small labeled datasets from similar domains (e.g., abdominal MRI). To further mitigate the effect of noisy labels, we propose a novel method called Entropy Test-time Adaptation (ETTA) to refine the segmentation output. We use UKBOB to train a foundation model, Swin-BOB, for 3D medical image segmentation based on the Swin-UNetr architecture, achieving state-of-the-art results in several benchmarks in 3D medical imaging, including the BRATS brain MRI tumor challenge (with a 0.4% improvement) and the BTCV abdominal CT scan benchmark (with a 1.3% improvement). The pre-trained models and the code are available at https://emmanuelleb985.github.io/ukbob , and the filtered labels will be made available with the UK Biobank.
-
+In medical imaging, the primary challenge is collecting large-scale labeled data due to privacy concerns, logistics, and high labeling costs. In this work, we present the UK Biobank Organs and Bones (UKBOB), the largest labeled dataset of body organs, comprising 51,761 MRI 3D samples (equivalent to 17.9 million 2D images) and more than 1.37 billion 2D segmentation masks of 72 organs, all based on the UK Biobank MRI dataset. We utilize automatic labeling, introduce an automated label cleaning pipeline with organ-specific filters, and manually annotate a subset of 300 MRIs with 11 abdominal classes to validate the quality (referred to as UKBOB-manual). This approach allows for scaling up the dataset collection while maintaining confidence in the labels. We further confirm the validity of the labels by demonstrating zero-shot generalization of trained models on the filtered UKBOB to other small labeled datasets from similar domains (e.g., abdominal MRI). To further mitigate the effect of noisy labels, we propose a novel method called Entropy Test-time Adaptation (ETTA) to refine the segmentation output. We use UKBOB to train a foundation model, Swin-BOB, for 3D medical image segmentation based on the Swin-UNetr architecture, achieving state-of-the-art results in several benchmarks in 3D medical imaging, including the BRATS brain MRI tumor challenge (with a 0.4% improvement) and the BTCV abdominal CT scan benchmark (with a 1.3% improvement). The pre-trained models and the code are available at https://emmanuelleb985.github.io/ukbob , and the filtered labels will be made available with the UK Biobank.
 ]]></content:encoded>
 <pubDate>Wed, 09 Apr 2025 10:10:51 GMT</pubDate>
-<pubDate>Wed, 09 Apr 2025 10:10:51 GMT</pubDate>
 </item>
-
 <item>
 <title>Visual Chronicles: Using Multimodal LLMs to Analyze Massive Collections of Images</title>
 <link>https://arxiv.org/abs/2504.08727</link>
@@ -9007,15 +9016,6 @@ Large Language Models (LLMs) and Multimodal Large Language Models (MLLMs) have m
 <div><p style="color: gray;">YOLOv12实现了速度与注意力机制性能的最佳结合，超越传统CNN模型。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种新的YOLO框架YOLOv12，该框架借助注意力机制，实现了与传统CNN模型相同的推理速度，同时提升了目标检测的准确性。与以往的YOLOv10-N和YOLOv11-N相比，YOLOv12-N在T4 GPU上实现了40.6% mAP，仅需1.64毫秒的推理延迟，分别超越了2.1%和1.2%的mAP。此外，YOLOv12还在其他模型规模中展现出显著优势，比如在与RT-DETR系列模型的比较中，YOLOv12-S在运行速度上快42%，计算量及参数量均仅为后者的36%和45%。这些结果表明，YOLOv12在准确性和速度之间达成了优良的平衡，推动了实时目标检测技术的发展。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.12524" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 19 Feb 2025 13:39:32 GMT</pubDate>
-</item>
-<item>
-<title>视觉模型在时间序列分析中的优势与未来研究方向</title>
-<link>https://arxiv.org/abs/2502.08869</link>
-<guid>https://arxiv.org/abs/2502.08869</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文探讨了视觉模型在时间序列分析中的应用及其优势。</p><br /><br /><p><strong>摘要：</strong> 时间序列分析经历了从传统自回归模型、深度学习模型，到最近的变换器和大型语言模型（LLMs）的发展。然而，尽管已有一些利用视觉模型进行时间序列分析的努力，这一领域仍较少被关注。本文讨论了视觉模型在时间序列分析中相较于LLMs的优势，提供了现有方法的全面概述，并回答了如何将时间序列编码为图像以及如何为各种任务建模图像时间序列的关键研究问题。此外，文章还探讨了该框架中预处理和后处理步骤所面临的挑战，并概述了未来研究的方向，以进一步推动视觉模型在时间序列分析中的应用。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.08869" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 19 Feb 2025 10:33:08 GMT</pubDate>
 </item>
 </channel>
 </rss>
