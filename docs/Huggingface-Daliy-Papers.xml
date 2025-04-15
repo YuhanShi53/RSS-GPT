@@ -5,18 +5,27 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>DUMP: Automated Distribution-Level Curriculum Learning for RL-based LLM Post-training</title>
+<link>https://arxiv.org/abs/2504.09710</link>
+<guid>https://arxiv.org/abs/2504.09710</guid>
+<content:encoded><![CDATA[
+
+  Recent advances in reinforcement learning (RL)-based post-training have led to notable improvements in large language models (LLMs), particularly in enhancing their reasoning capabilities to handle complex tasks. However, most existing methods treat the training data as a unified whole, overlooking the fact that modern LLM training often involves a mixture of data from diverse distributions-varying in both source and difficulty. This heterogeneity introduces a key challenge: how to adaptively schedule training across distributions to optimize learning efficiency. In this paper, we present a principled curriculum learning framework grounded in the notion of distribution-level learnability. Our core insight is that the magnitude of policy advantages reflects how much a model can still benefit from further training on a given distribution. Based on this, we propose a distribution-level curriculum learning framework for RL-based LLM post-training, which leverages the Upper Confidence Bound (UCB) principle to dynamically adjust sampling probabilities for different distrubutions. This approach prioritizes distributions with either high average advantage (exploitation) or low sample count (exploration), yielding an adaptive and theoretically grounded training schedule. We instantiate our curriculum learning framework with GRPO as the underlying RL algorithm and demonstrate its effectiveness on logic reasoning datasets with multiple difficulties and sources. Our experiments show that our framework significantly improves convergence speed and final performance, highlighting the value of distribution-aware curriculum strategies in LLM post-training. Code: https://github.com/ZhentingWang/DUMP.
+
+]]></content:encoded>
+<pubDate>Sun, 13 Apr 2025 16:10:27 GMT</pubDate>
+<pubDate>Sun, 13 Apr 2025 16:10:27 GMT</pubDate>
+</item>
+
+<item>
 <title>BlenderGym: Benchmarking Foundational Model Systems for Graphics Editing</title>
 <link>https://arxiv.org/abs/2504.01786</link>
 <guid>https://arxiv.org/abs/2504.01786</guid>
 <content:encoded><![CDATA[
-
-  3D graphics editing is crucial in applications like movie production and game design, yet it remains a time-consuming process that demands highly specialized domain expertise. Automating this process is challenging because graphical editing requires performing a variety of tasks, each requiring distinct skill sets. Recently, vision-language models (VLMs) have emerged as a powerful framework for automating the editing process, but their development and evaluation are bottlenecked by the lack of a comprehensive benchmark that requires human-level perception and presents real-world editing complexity. In this work, we present BlenderGym, the first comprehensive VLM system benchmark for 3D graphics editing. BlenderGym evaluates VLM systems through code-based 3D reconstruction tasks. We evaluate closed- and open-source VLM systems and observe that even the state-of-the-art VLM system struggles with tasks relatively easy for human Blender users. Enabled by BlenderGym, we study how inference scaling techniques impact VLM's performance on graphics editing tasks. Notably, our findings reveal that the verifier used to guide the scaling of generation can itself be improved through inference scaling, complementing recent insights on inference scaling of LLM generation in coding and math tasks. We further show that inference compute is not uniformly effective and can be optimized by strategically distributing it between generation and verification.
-
+3D graphics editing is crucial in applications like movie production and game design, yet it remains a time-consuming process that demands highly specialized domain expertise. Automating this process is challenging because graphical editing requires performing a variety of tasks, each requiring distinct skill sets. Recently, vision-language models (VLMs) have emerged as a powerful framework for automating the editing process, but their development and evaluation are bottlenecked by the lack of a comprehensive benchmark that requires human-level perception and presents real-world editing complexity. In this work, we present BlenderGym, the first comprehensive VLM system benchmark for 3D graphics editing. BlenderGym evaluates VLM systems through code-based 3D reconstruction tasks. We evaluate closed- and open-source VLM systems and observe that even the state-of-the-art VLM system struggles with tasks relatively easy for human Blender users. Enabled by BlenderGym, we study how inference scaling techniques impact VLM's performance on graphics editing tasks. Notably, our findings reveal that the verifier used to guide the scaling of generation can itself be improved through inference scaling, complementing recent insights on inference scaling of LLM generation in coding and math tasks. We further show that inference compute is not uniformly effective and can be optimized by strategically distributing it between generation and verification.
 ]]></content:encoded>
 <pubDate>Wed, 02 Apr 2025 10:51:45 GMT</pubDate>
-<pubDate>Wed, 02 Apr 2025 10:51:45 GMT</pubDate>
 </item>
-
 <item>
 <title>UKBOB: One Billion MRI Labeled Masks for Generalizable 3D Medical Image Segmentation</title>
 <link>https://arxiv.org/abs/2504.06908</link>
@@ -9007,15 +9016,6 @@ Large Language Models (LLMs) and Multimodal Large Language Models (MLLMs) have m
 <div><p style="color: gray;">提出一种无人工标注学习奖励模型框架，以改善LLM代理的决策能力。</p><br /><br /><p><strong>摘要：</strong> 大型语言模型在文本生成任务上表现优异，但在需要多步骤决策和环境反馈的任务上仍显不足。为了解决LLM代理的局限性，本文提出了一种自动学习奖励模型的框架，该模型无需人工标注数据。通过让一个LLM代理随机导航环境，生成多种动作轨迹，随后利用另一个LLM为每个轨迹分配任务意图，并生成正向和负向响应，构建任务意图-正向响应-负向响应的三元组，作为训练数据来优化奖励模型。此模型能够评分动作轨迹，进而为任务规划提供启发式指导。研究表明该框架在不同代理基准测试中的有效性和普遍性，标志着在复杂互动环境中提升LLM代理决策能力的重要进展。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.12130" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 19 Feb 2025 18:20:05 GMT</pubDate>
-</item>
-<item>
-<title>基于注意力机制的YOLOv12框架提升目标检测性能</title>
-<link>https://arxiv.org/abs/2502.12524</link>
-<guid>https://arxiv.org/abs/2502.12524</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">YOLOv12实现了速度与注意力机制性能的最佳结合，超越传统CNN模型。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种新的YOLO框架YOLOv12，该框架借助注意力机制，实现了与传统CNN模型相同的推理速度，同时提升了目标检测的准确性。与以往的YOLOv10-N和YOLOv11-N相比，YOLOv12-N在T4 GPU上实现了40.6% mAP，仅需1.64毫秒的推理延迟，分别超越了2.1%和1.2%的mAP。此外，YOLOv12还在其他模型规模中展现出显著优势，比如在与RT-DETR系列模型的比较中，YOLOv12-S在运行速度上快42%，计算量及参数量均仅为后者的36%和45%。这些结果表明，YOLOv12在准确性和速度之间达成了优良的平衡，推动了实时目标检测技术的发展。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.12524" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 19 Feb 2025 13:39:32 GMT</pubDate>
 </item>
 </channel>
 </rss>
