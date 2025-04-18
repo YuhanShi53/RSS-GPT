@@ -39,7 +39,7 @@ OPENAI_API_KEY = os.environ.get('OPENAI_API_KEY')
 U_NAME = os.environ.get('U_NAME')
 OPENAI_PROXY = os.environ.get('OPENAI_PROXY')
 OPENAI_BASE_URL = os.environ.get('OPENAI_BASE_URL', 'https://api.openai.com/v1')
-custom_model = os.environ.get('CUSTOM_MODEL')
+custom_model = os.environ.get('CUSTOM_MODEL', "gpt4v")
 deployment_url = f'https://{U_NAME}.github.io/RSS-GPT/'
 
 
