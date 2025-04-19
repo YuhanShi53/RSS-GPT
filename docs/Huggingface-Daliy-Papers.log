@@ -17479,3 +17479,18 @@ Summarized using qwen-turbo
 Append: [基于学习的跨相机色彩恒常性方法](https://arxiv.org/abs/2504.07959)
 append_entries: 3
 Finish: 2025-04-18 18:18:31.329952
+------------------------------------------------------
+Started: 2025-04-19 01:03:57.865563
+Existing_entries: 1003
+Fetching from https://rsshub.app/huggingface/daily-papers
+Json decode failed:
+{
+  "title": "动态长度浮点压缩框架DFloat11实现大语言模型高效部署",
+  "short_summary": "提出一种新框架DFloat11，可将大语言模型大小减少30%，同时保持输出精度。",
+  "summary": "本文介绍了一种名为DFloat11的新框架，这是一种无损压缩方法，可以将大型语言模型（LLMs）的大小减少约30%，同时确保输出与原始模型完全相同（比特位完全一致）。DFloat11的设计灵感来源于LLMs中BFloat16权重表示的低熵特性，揭示了现有存储格式的效率低下。通过应用熵编码技术，该框架根据权重出现频率分配动态长度编码，实现了接近信息最优的压缩效果且不丢失任何精度。为了支持高效推理，我们开发了一个定制化的GPU内核以实现在线解压缩。此外，我们的设计还包括分解内存密集型查找表为适合GPU SRAM的紧凑型查找表、采用两阶段内核协调线程读写位置以及按Transformer块级别进行解压缩等优化措施，从而最小化延迟。实验表明，在最近发布的模型如Llama-3.1、Qwen-2.5和Gemma-3上，DFloat11不仅达到了预期的压缩率，还显著提高了推理吞吐量并延长了上下文长度。特别值得一提的是，我们的方法能够在配备8块80GB显存GPU的单节点上实现对Llama-3.1-405B（810GB模型）的无损推理。我们的代码和模型已公开发布在https:
+  "keyword": ["大语言模型", "无损压缩", "动态长度浮点"]
+}Summarization failed, append the original article
+error: Invalid control character at: line 4 column 500 (char 608). Line: 406.
+Append: [70% Size, 100% Accuracy: Lossless LLM Compression for Efficient GPU Inference via Dynamic-Length Float](https://arxiv.org/abs/2504.11651)
+append_entries: 1
+Finish: 2025-04-19 01:04:03.885954

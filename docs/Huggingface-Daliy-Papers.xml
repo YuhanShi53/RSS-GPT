@@ -5,15 +5,25 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>70% Size, 100% Accuracy: Lossless LLM Compression for Efficient GPU Inference via Dynamic-Length Float</title>
+<link>https://arxiv.org/abs/2504.11651</link>
+<guid>https://arxiv.org/abs/2504.11651</guid>
+<content:encoded><![CDATA[
+
+  Large Language Models (LLMs) have grown rapidly in size, creating significant challenges for efficient deployment on resource-constrained hardware. In this paper, we introduce Dynamic-Length Float (DFloat11), a lossless compression framework that reduces LLM size by 30% while preserving outputs that are bit-for-bit identical to the original model. DFloat11 is motivated by the low entropy in the BFloat16 weight representation of LLMs, which reveals significant inefficiency in existing storage format. By applying entropy coding, DFloat11 assigns dynamic-length encodings to weights based on frequency, achieving near information-optimal compression without any loss of precision. To facilitate efficient inference with dynamic-length encodings, we develop a custom GPU kernel for fast online decompression. Our design incorporates the following: (i) decomposition of memory-intensive lookup tables (LUTs) into compact LUTs that fit in GPU SRAM, (ii) a two-phase kernel for coordinating thread read/write positions using lightweight auxiliary variables, and (iii) transformer-block-level decompression to minimize latency. Experiments on recent models, including Llama-3.1, Qwen-2.5, and Gemma-3, validates our hypothesis that DFloat11 achieves around 30% model size reduction while preserving bit-for-bit exact outputs. Compared to a potential alternative of offloading parts of an uncompressed model to the CPU to meet memory constraints, DFloat11 achieves 1.9-38.8x higher throughput in token generation. With a fixed GPU memory budget, DFloat11 enables 5.3-13.17x longer context lengths than uncompressed models. Notably, our method enables lossless inference of Llama-3.1-405B, an 810GB model, on a single node equipped with 8x80GB GPUs. Our code and models are available at https://github.com/LeanModels/DFloat11.
+
+]]></content:encoded>
+<pubDate>Tue, 15 Apr 2025 18:38:38 GMT</pubDate>
+<pubDate>Tue, 15 Apr 2025 18:38:38 GMT</pubDate>
+</item>
+
+<item>
 <title>Perception Encoder：通过视觉-语言对比学习实现多任务通用编码器</title>
 <link>https://arxiv.org/abs/2504.13181</link>
 <guid>https://arxiv.org/abs/2504.13181</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>仅靠对比视觉-语言训练即可生成适用于多种下游任务的强大通用嵌入。</p><br><br><p><strong>摘要：</strong> 本文介绍了名为Perception Encoder（PE）的最先进图像和视频理解编码器，该编码器通过简单的视觉-语言学习进行训练。传统视觉编码器依赖于针对具体任务定制的各种预训练目标，而我们发现，经过精心调校的图像预训练方法和稳健的视频数据引擎优化后，仅基于对比视觉-语言训练就能产生适用于分类、描述、定位等所有这些下游任务的强大通用嵌入。然而，这些嵌入隐藏在网络的中间层中，为此我们提出了两种对齐方法：用于多模态语言建模的语言对齐和用于密集预测的空间对齐。结合核心对比检查点，PE模型家族在零样本图像和视频分类与检索、文档问答、图像问答、视频问答以及检测、深度估计和跟踪等空间任务上均取得了最先进的性能。为了促进进一步研究，我们将发布我们的模型、代码以及一个包含合成和人工注释视频的新颖数据集。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.13181 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">仅靠对比视觉-语言训练即可生成适用于多种下游任务的强大通用嵌入。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了名为Perception Encoder（PE）的最先进图像和视频理解编码器，该编码器通过简单的视觉-语言学习进行训练。传统视觉编码器依赖于针对具体任务定制的各种预训练目标，而我们发现，经过精心调校的图像预训练方法和稳健的视频数据引擎优化后，仅基于对比视觉-语言训练就能产生适用于分类、描述、定位等所有这些下游任务的强大通用嵌入。然而，这些嵌入隐藏在网络的中间层中，为此我们提出了两种对齐方法：用于多模态语言建模的语言对齐和用于密集预测的空间对齐。结合核心对比检查点，PE模型家族在零样本图像和视频分类与检索、文档问答、图像问答、视频问答以及检测、深度估计和跟踪等空间任务上均取得了最先进的性能。为了促进进一步研究，我们将发布我们的模型、代码以及一个包含合成和人工注释视频的新颖数据集。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.13181" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 17 Apr 2025 13:59:57 GMT</pubDate>
 <pubDate>Thu, 17 Apr 2025 13:59:57 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +31,8 @@
 <link>https://arxiv.org/abs/2504.12563</link>
 <guid>https://arxiv.org/abs/2504.12563</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>MetaSynth通过元提示生成多样化合成数据，成功将大型语言模型适配到金融和生物医学领域。</p><br><br><p><strong>摘要：</strong> 本文探讨了利用合成数据进行领域自适应的问题，特别是针对小型语言模型Phi-3.5和Phi-4，这些模型依赖由大型语言模型生成的合成数据。然而，合成数据的低多样性限制了其在改进其他模型方面的应用。为解决这一问题，我们提出了MetaSynth方法，该方法通过元提示机制，让多个“专家”大型语言模型协同生成数据，从而提高合成数据的多样性。实验表明，仅使用2500万token的MetaSynth生成的合成数据，就能有效将已训练好的大型语言模型（Mistral-7B-v0.3）适配到金融和生物医学两个特定领域，同时不影响其在通用任务中的性能。此外，通过七种自动化指标评估，MetaSynth生成的合成数据的多样性接近大型语言模型预训练语料库。持续预训练Mistral-7B-v0.3模型显示，在金融领域提升了4.08%，在生物医学领域提升了13.75%的表现。相比之下，使用模板提示生成的数据即使包含真实数据示例，也会导致模型性能下降。研究结果表明，使用MetaSynth生成的少量多样化合成数据即可实现有效的领域自适应。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.12563 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">MetaSynth通过元提示生成多样化合成数据，成功将大型语言模型适配到金融和生物医学领域。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了利用合成数据进行领域自适应的问题，特别是针对小型语言模型Phi-3.5和Phi-4，这些模型依赖由大型语言模型生成的合成数据。然而，合成数据的低多样性限制了其在改进其他模型方面的应用。为解决这一问题，我们提出了MetaSynth方法，该方法通过元提示机制，让多个“专家”大型语言模型协同生成数据，从而提高合成数据的多样性。实验表明，仅使用2500万token的MetaSynth生成的合成数据，就能有效将已训练好的大型语言模型（Mistral-7B-v0.3）适配到金融和生物医学两个特定领域，同时不影响其在通用任务中的性能。此外，通过七种自动化指标评估，MetaSynth生成的合成数据的多样性接近大型语言模型预训练语料库。持续预训练Mistral-7B-v0.3模型显示，在金融领域提升了4.08%，在生物医学领域提升了13.75%的表现。相比之下，使用模板提示生成的数据即使包含真实数据示例，也会导致模型性能下降。研究结果表明，使用MetaSynth生成的少量多样化合成数据即可实现有效的领域自适应。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.12563" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 16 Apr 2025 21:25:15 GMT</pubDate>
 <pubDate>Wed, 16 Apr 2025 21:25:15 GMT</pubDate>
 </item>
 <item>
@@ -33,14 +40,10 @@
 <link>https://arxiv.org/abs/2504.07959</link>
 <guid>https://arxiv.org/abs/2504.07959</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种无需重新训练即可适应新相机的跨相机色彩校正学习方法。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种基于学习的方法，用于解决计算色彩恒常性（即白平衡）问题中的跨相机适应性挑战。该方法利用图像信号处理器(ISP)中预校准的颜色校正矩阵(CCM)，将标准空间的颜色映射到相机的原始颜色空间，并通过编码生成紧凑的相机指纹嵌入(CFE)，从而实现对未知相机的适应。为了防止训练过程中因相机数量有限导致的过拟合，引入了一种相机间数据插值增强技术。实验结果表明，该方法在多个数据集和网络结构上实现了最先进的跨相机色彩恒常性性能，同时保持轻量化且仅依赖于ISP中已有的数据。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.07959 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种无需重新训练即可适应新相机的跨相机色彩校正学习方法。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种基于学习的方法，用于解决计算色彩恒常性（即白平衡）问题中的跨相机适应性挑战。该方法利用图像信号处理器(ISP)中预校准的颜色校正矩阵(CCM)，将标准空间的颜色映射到相机的原始颜色空间，并通过编码生成紧凑的相机指纹嵌入(CFE)，从而实现对未知相机的适应。为了防止训练过程中因相机数量有限导致的过拟合，引入了一种相机间数据插值增强技术。实验结果表明，该方法在多个数据集和网络结构上实现了最先进的跨相机色彩恒常性性能，同时保持轻量化且仅依赖于ISP中已有的数据。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.07959" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Thu, 10 Apr 2025 13:59:31 GMT</pubDate>
-<pubDate>Thu, 10 Apr 2025 13:59:31 GMT</pubDate>
 </item>
-
 <item>
 <title>通过睡眠计算提升大语言模型推理效率</title>
 <link>https://arxiv.org/abs/2504.13171</link>
@@ -9013,33 +9016,6 @@ Generating novel molecules with out-of-distribution properties is a major challe
 Reward models play an essential role in training vision-language models (VLMs) by assessing output quality to enable aligning with human preferences. Despite their importance, the research community lacks comprehensive open benchmarks for evaluating multimodal reward models in VLMs. To address this gap, we introduce Multimodal RewardBench, an expert-annotated benchmark covering six domains: general correctness, preference, knowledge, reasoning, safety, and visual question-answering. Our dataset comprises 5,211 annotated (prompt, chosen response, rejected response) triplets collected from various VLMs. In evaluating a range of VLM judges, we find that even the top-performing models, Gemini 1.5 Pro and Claude 3.5 Sonnet, achieve only 72% overall accuracy. Notably, most models struggle in the reasoning and safety domains. These findings suggest that Multimodal RewardBench offers a challenging testbed for advancing reward model development across multiple domains. We release the benchmark at https://github.com/facebookresearch/multimodal_rewardbench.
 ]]></content:encoded>
 <pubDate>Fri, 21 Feb 2025 11:34:53 GMT</pubDate>
-</item>
-<item>
-<title>LServe：基于混合稀疏注意力的长序列大语言模型高效服务</title>
-<link>https://arxiv.org/abs/2502.14866</link>
-<guid>https://arxiv.org/abs/2502.14866</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">LServe通过混合稀疏注意力加速长序列大语言模型的服务效率。</p><br /><br /><p><strong>摘要：</strong> 大语言模型在处理长序列时表现出色，但由于前填充阶段的注意力计算复杂度及解码阶段的KV缓存内存开销，服务这些模型仍面临挑战。为了解决这些问题，我们提出了LServe，一个高效系统，通过混合稀疏注意力加速长序列大语言模型的服务。该方法将不同的硬件友好结构稀疏模式统一到一个框架内，省略对不重要标记的计算，显示出静态和动态稀疏在长上下文模型中兼容性。通过将一半的注意力头转换为几乎免费的流式头，LServe在前填充和解码阶段实现乘法加速。此外，我们发现保持长上下文能力只需固定数量的KV页面，并设计了一个层级KV页面选择策略，根据查询的相似性动态修剪KV页面。总体而言，LServe在保持长上下文准确度的同时，使LLM的前填充加速达到2.9倍，解码加速达到1.3-2.1倍。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.14866" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 21 Feb 2025 09:39:36 GMT</pubDate>
-</item>
-<item>
-<title>提升大型多模态模型的视觉推理与可解释性的框架</title>
-<link>https://arxiv.org/abs/2502.14044</link>
-<guid>https://arxiv.org/abs/2502.14044</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出一种新框架，增强大型多模态模型的视觉推理与解释能力。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种新的视觉拒绝采样框架，旨在提高大型多模态模型（LMMs）在视觉任务中的认知能力和可解释性。当前LMMs在细粒度视觉推理中表现不佳，常常无法识别特定领域的目标，也无法对其预测提供合理的解释。我们的框架通过自合成数据来解决这些问题，具体方法包括合成可解释的答案，答案中包含可供人验证的视觉特征，这些特征基于专家定义的概念，经过精心选择以与图像内容对齐。在每次微调后，我们应用无奖励模型的过滤机制，筛选出最高质量的可解释答案用于下一轮的调优。实验结果显示，该方法在提高专业视觉分类任务的准确性和可解释性方面显著有效。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.14044" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 21 Feb 2025 08:26:31 GMT</pubDate>
-</item>
-<item>
-<title>NaviClues数据集与Navig框架推动影像地理定位进步</title>
-<link>https://arxiv.org/abs/2502.14638</link>
-<guid>https://arxiv.org/abs/2502.14638</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本研究提出NaviClues数据集和Navig框架，提升影像地理定位精度。</p><br /><br /><p><strong>摘要：</strong> 本研究聚焦影像地理定位任务，提出了新的高质量数据集NaviClues，来源于流行的地理游戏GeoGuessr，旨在提供语言方面专家推理的示例。我们还提出了Navig，一个综合的影像地理定位框架，该框架整合了全球和细粒度的影像信息。通过语言推理，Navig相较于以往的最先进模型减少了14%的平均距离误差，同时训练样本不足1000。本文贡献不仅提升了影像地理定位的精确性，也为相关研究提供了数据集和代码。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.14638" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 21 Feb 2025 08:18:34 GMT</pubDate>
 </item>
 </channel>
 </rss>
