@@ -5,18 +5,51 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>构建透明图像与视频理解研究的开放性感知语言模型</title>
+<link>https://arxiv.org/abs/2504.13180</link>
+<guid>https://arxiv.org/abs/2504.13180</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究提出通过开源框架构建透明的感知语言模型用于图像和视频理解。</p><br><br><p><strong>摘要：</strong> 视觉语言模型在计算机视觉领域至关重要，但许多高性能模型仍为闭源状态，限制了科学进展。尽管学术界尝试通过黑盒模型蒸馏生成训练数据取得显著基准成果，但缺乏对教师模型及其数据来源的了解阻碍了真正的科学进步。本文提出在完全开源且可复现的框架下构建感知语言模型（PLM），以推动图像和视频理解领域的透明研究。我们分析了标准训练管道，并探索大规模合成数据，发现特别是在详细视频理解方面存在关键的数据缺口。为此，我们发布了包含280万个细粒度视频问答对的人类标注实例以及时空定位的视频描述。此外，我们推出了PLM-VideoBench，这是一个评估具有挑战性的视频理解任务的工具包，重点关注对视频“什么”、“哪里”、“何时”和“如何”的推理能力。我们的工作通过提供数据、训练方法、代码和模型实现了完全的可复现性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.13180 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 17 Apr 2025 13:59:56 GMT</pubDate>
+<pubDate>Thu, 17 Apr 2025 13:59:56 GMT</pubDate>
+</item>
+<item>
+<title>Complex-Edit：基于指令的图像编辑模型综合评估基准</title>
+<link>https://arxiv.org/abs/2504.13143</link>
+<guid>https://arxiv.org/abs/2504.13143</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出Complex-Edit基准，评估指令复杂性对图像编辑模型的影响。</p><br><br><p><strong>摘要：</strong> 本文介绍了一个名为Complex-Edit的综合基准，用于系统性评估基于指令的图像编辑模型在不同复杂度指令下的表现。通过利用GPT-4o大规模自动生成多样化编辑指令，我们设计了一套“编辑链”管道来构建复杂的编辑任务。此外，还引入了一系列指标和基于视觉语言模型的自动化评估流程，以支持大规模性能评估。研究发现开源模型显著落后于闭源模型，且随着指令复杂性的增加，模型在保留输入图像关键元素和整体美学质量方面的能力显著下降。此外，将复杂指令分解为原子步骤执行会降低性能，而Best-of-N策略能提升直接编辑和逐步方法的效果。有趣的是，训练中使用合成数据会导致模型生成的图像显得更加人工化，这种现象在GPT-4o输出中也有所体现。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.13143 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 17 Apr 2025 13:51:59 GMT</pubDate>
+<pubDate>Thu, 17 Apr 2025 13:51:59 GMT</pubDate>
+</item>
+<item>
+<title>基于Vision Transformer的无人机跟踪中抗遮挡表示学习</title>
+<link>https://arxiv.org/abs/2504.09228</link>
+<guid>https://arxiv.org/abs/2504.09228</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新方法增强单流ViT模型在航拍跟踪中的遮挡鲁棒性。</p><br><br><p><strong>摘要：</strong> 本文针对使用视觉Transformer(ViT)主干网络的单流架构在实时无人机跟踪中的不足，即缺乏有效处理遮挡的策略，提出了一种基于ViT学习抗遮挡表示（ORR）的新方法。通过引入随机屏蔽操作模拟目标遮挡，使ViT模型具备更强的目标遮挡鲁棒性，构建了名为ORTrack的框架。此外，为满足实时应用需求，设计了自适应特征知识蒸馏（AFKD）方法，生成高效的学生模型ORTrack-D，既保留了ORTrack的性能，又提高了效率。在多个基准数据集上的实验验证了该方法的有效性和领先性能，代码已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.09228 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sat, 12 Apr 2025 10:06:50 GMT</pubDate>
+<pubDate>Sat, 12 Apr 2025 10:06:50 GMT</pubDate>
+</item>
+
+<item>
 <title>70% Size, 100% Accuracy: Lossless LLM Compression for Efficient GPU Inference via Dynamic-Length Float</title>
 <link>https://arxiv.org/abs/2504.11651</link>
 <guid>https://arxiv.org/abs/2504.11651</guid>
 <content:encoded><![CDATA[
-
-  Large Language Models (LLMs) have grown rapidly in size, creating significant challenges for efficient deployment on resource-constrained hardware. In this paper, we introduce Dynamic-Length Float (DFloat11), a lossless compression framework that reduces LLM size by 30% while preserving outputs that are bit-for-bit identical to the original model. DFloat11 is motivated by the low entropy in the BFloat16 weight representation of LLMs, which reveals significant inefficiency in existing storage format. By applying entropy coding, DFloat11 assigns dynamic-length encodings to weights based on frequency, achieving near information-optimal compression without any loss of precision. To facilitate efficient inference with dynamic-length encodings, we develop a custom GPU kernel for fast online decompression. Our design incorporates the following: (i) decomposition of memory-intensive lookup tables (LUTs) into compact LUTs that fit in GPU SRAM, (ii) a two-phase kernel for coordinating thread read/write positions using lightweight auxiliary variables, and (iii) transformer-block-level decompression to minimize latency. Experiments on recent models, including Llama-3.1, Qwen-2.5, and Gemma-3, validates our hypothesis that DFloat11 achieves around 30% model size reduction while preserving bit-for-bit exact outputs. Compared to a potential alternative of offloading parts of an uncompressed model to the CPU to meet memory constraints, DFloat11 achieves 1.9-38.8x higher throughput in token generation. With a fixed GPU memory budget, DFloat11 enables 5.3-13.17x longer context lengths than uncompressed models. Notably, our method enables lossless inference of Llama-3.1-405B, an 810GB model, on a single node equipped with 8x80GB GPUs. Our code and models are available at https://github.com/LeanModels/DFloat11.
-
+Large Language Models (LLMs) have grown rapidly in size, creating significant challenges for efficient deployment on resource-constrained hardware. In this paper, we introduce Dynamic-Length Float (DFloat11), a lossless compression framework that reduces LLM size by 30% while preserving outputs that are bit-for-bit identical to the original model. DFloat11 is motivated by the low entropy in the BFloat16 weight representation of LLMs, which reveals significant inefficiency in existing storage format. By applying entropy coding, DFloat11 assigns dynamic-length encodings to weights based on frequency, achieving near information-optimal compression without any loss of precision. To facilitate efficient inference with dynamic-length encodings, we develop a custom GPU kernel for fast online decompression. Our design incorporates the following: (i) decomposition of memory-intensive lookup tables (LUTs) into compact LUTs that fit in GPU SRAM, (ii) a two-phase kernel for coordinating thread read/write positions using lightweight auxiliary variables, and (iii) transformer-block-level decompression to minimize latency. Experiments on recent models, including Llama-3.1, Qwen-2.5, and Gemma-3, validates our hypothesis that DFloat11 achieves around 30% model size reduction while preserving bit-for-bit exact outputs. Compared to a potential alternative of offloading parts of an uncompressed model to the CPU to meet memory constraints, DFloat11 achieves 1.9-38.8x higher throughput in token generation. With a fixed GPU memory budget, DFloat11 enables 5.3-13.17x longer context lengths than uncompressed models. Notably, our method enables lossless inference of Llama-3.1-405B, an 810GB model, on a single node equipped with 8x80GB GPUs. Our code and models are available at https://github.com/LeanModels/DFloat11.
 ]]></content:encoded>
 <pubDate>Tue, 15 Apr 2025 18:38:38 GMT</pubDate>
-<pubDate>Tue, 15 Apr 2025 18:38:38 GMT</pubDate>
 </item>
-
 <item>
 <title>Perception Encoder：通过视觉-语言对比学习实现多任务通用编码器</title>
 <link>https://arxiv.org/abs/2504.13181</link>
@@ -9007,15 +9040,6 @@ Generating novel molecules with out-of-distribution properties is a major challe
 <div><p style="color: gray;">本文提出了CHASE框架，以无人工参与的方式合成具有挑战性的问题。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了CHASE，一个新的框架，用于合成生成具有挑战性的问题，以应对大型语言模型（LLMs）评估的不断变化的需求。传统的人力标注方法在面对复杂、高质量问题时变得难以实施，因此我们开发了一个无人工干预的自下而上的生成方法，通过更简单的组件构建复杂问题。同时，CHASE框架将生成过程拆分为可独立验证的子任务，以确保高质量和正确性。我们在三个不同领域（文档问答、代码补全和数学推理）验证了CHASE的有效性，结果显示最先进的LLMs在这些合成基准上的准确率在40-60%之间，突显了该框架生成挑战性问题的能力。我们会公开发布这些基准和代码。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.14678" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Fri, 21 Feb 2025 11:36:30 GMT</pubDate>
-</item>
-<item>
-<title>Multimodal RewardBench: Holistic Evaluation of Reward Models for Vision Language Models</title>
-<link>https://arxiv.org/abs/2502.14191</link>
-<guid>https://arxiv.org/abs/2502.14191</guid>
-<content:encoded><![CDATA[
-Reward models play an essential role in training vision-language models (VLMs) by assessing output quality to enable aligning with human preferences. Despite their importance, the research community lacks comprehensive open benchmarks for evaluating multimodal reward models in VLMs. To address this gap, we introduce Multimodal RewardBench, an expert-annotated benchmark covering six domains: general correctness, preference, knowledge, reasoning, safety, and visual question-answering. Our dataset comprises 5,211 annotated (prompt, chosen response, rejected response) triplets collected from various VLMs. In evaluating a range of VLM judges, we find that even the top-performing models, Gemini 1.5 Pro and Claude 3.5 Sonnet, achieve only 72% overall accuracy. Notably, most models struggle in the reasoning and safety domains. These findings suggest that Multimodal RewardBench offers a challenging testbed for advancing reward model development across multiple domains. We release the benchmark at https://github.com/facebookresearch/multimodal_rewardbench.
-]]></content:encoded>
-<pubDate>Fri, 21 Feb 2025 11:34:53 GMT</pubDate>
 </item>
 </channel>
 </rss>
