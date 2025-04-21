@@ -4,6 +4,90 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>强化学习与可验证奖励对大语言模型推理能力的影响</title>
+<link>https://arxiv.org/abs/2504.13837</link>
+<guid>https://arxiv.org/abs/2504.13837</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究发现强化学习并未显著提升大语言模型的基础推理能力。</p><br><br><p><strong>摘要：</strong> 本文重新评估了强化学习与可验证奖励（RLVR）在增强大型语言模型（LLMs）推理能力方面的作用，特别是在数学和编程任务中的表现。虽然RLVR训练的模型在小值k（如k=1）下的pass@k指标优于基线模型，但在大值k时，基线模型的表现可以达到甚至超过RL训练模型。进一步分析表明，RL训练通过调整模型输出分布，提高了采样正确响应的效率，但同时也限制了模型的推理能力边界。此外，在视觉推理任务中也观察到类似结果。值得注意的是，蒸馏方法可以引入不同于RLVR的新知识。这些发现揭示了RLVR在提升LLMs推理能力方面的局限性，需要重新审视强化学习对推理模型的影响并探索更优的训练范式。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.13837 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 18 Apr 2025 13:59:56 GMT</pubDate>
+<pubDate>Fri, 18 Apr 2025 13:59:56 GMT</pubDate>
+</item>
+<item>
+<title>基于最大信息增益的指令微调数据高效采样方法</title>
+<link>https://arxiv.org/abs/2504.13835</link>
+<guid>https://arxiv.org/abs/2504.13835</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种统一的数据信息量化方法及最大信息增益采样算法，显著提升指令微调数据集构建效果。</p><br><br><p><strong>摘要：</strong> 数据质量和多样性对构建有效的指令微调数据集至关重要。现有方法多侧重实例质量并采用启发式规则维持多样性，但缺乏全局视角可能导致结果不佳，且难以精确捕捉复杂指令意图。本文提出一种基于标签图构造的语义空间量化方法，通过信息分布衡量数据集多样性，并设计最大信息增益(MIG)采样算法，迭代选择样本以最大化语义空间中的信息增益。实验表明，MIG方法在多个数据集和基础模型上优于当前先进方法，例如用Tulu3数据集5%采样数据微调的模型在AlpacaEval和Wildbench上的性能分别提升了5.73%和6.89%，接近全量数据SFT模型的表现。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.13835 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 18 Apr 2025 13:59:46 GMT</pubDate>
+<pubDate>Fri, 18 Apr 2025 13:59:46 GMT</pubDate>
+</item>
+<item>
+<title>基于注意力偏差的深度学习架构设计框架Miras</title>
+<link>https://arxiv.org/abs/2504.13173</link>
+<guid>https://arxiv.org/abs/2504.13173</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新框架Miras，通过重新设计神经网络作为关联记忆模块提升模型能力。</p><br><br><p><strong>摘要：</strong> 本文受人类认知现象“注意力偏差”的启发，将Transformer等神经网络重新定义为通过内部目标学习键值映射的关联记忆模块。研究发现现有序列模型大多采用点积相似性或L2回归作为注意力偏差，为此提出了多种替代配置及其稳定训练的近似方法，并重新解释了现代深度学习中的遗忘机制。基于这些见解，我们开发了Miras框架，包含四种设计选择：关联记忆架构、注意力偏差目标、保留门和记忆学习算法。由此产生了三个新型序列模型Moneta、Yaad和Memora，不仅超越了现有线性RNN的能力，还展现出在语言建模、常识推理及回忆密集型任务上的优异表现，甚至优于Transformer等现代模型。实验表明，Miras的不同设计变体在特定任务上具有显著优势。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.13173 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 17 Apr 2025 13:59:33 GMT</pubDate>
+<pubDate>Thu, 17 Apr 2025 13:59:33 GMT</pubDate>
+</item>
+<item>
+<title>结合伪合成与真实图像的空中地面视角几何重建</title>
+<link>https://arxiv.org/abs/2504.13157</link>
+<guid>https://arxiv.org/abs/2504.13157</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种结合伪合成与真实图像的框架，解决空中与地面视角差异大的几何重建问题。</p><br><br><p><strong>摘要：</strong> 本文研究了从混合地面和空中视图捕获的图像进行几何重建的任务。当前最先进的基于学习的方法无法处理空中与地面图像对之间极端的视角变化，主要原因是缺乏高质量的共配准空中-地面训练数据集。我们假设这是失败的关键原因，因为这样的数据难以精确组装且难以以可扩展的方式重建。为了解决这一挑战，我们提出了一种可扩展的框架，该框架结合了来自3D城市范围网格（如Google Earth）的伪合成渲染和真实地面级众包图像（如MegaDepth）。伪合成数据模拟了广泛的空中视角，而真实众包图像则在地面级图像中改善了视觉保真度，有效地弥合了真实图像与伪合成渲染之间的领域差距。使用此混合数据集，我们微调了几种最先进的算法，在现实世界的零样本空中-地面任务中取得了显著改进。例如，基线DUSt3R方法仅将不到5%的空中-地面对在相机旋转误差5度以内定位，而使用我们的数据微调后，准确率提高到近56%，解决了处理大视角变化的主要失败点。除了相机估计和场景重建外，我们的数据集还在具有挑战性的空中-地面场景中的下游任务（如新颖视图合成）中提高了性能，展示了我们的方法在实际应用中的实用价值。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.13157 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 17 Apr 2025 13:57:05 GMT</pubDate>
+<pubDate>Thu, 17 Apr 2025 13:57:05 GMT</pubDate>
+</item>
+<item>
+<title>HiScene：基于层次结构的场景级3D生成框架</title>
+<link>https://arxiv.org/abs/2504.13072</link>
+<guid>https://arxiv.org/abs/2504.13072</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出HiScene框架，结合2D与3D生成技术实现高质量场景生成。</p><br><br><p><strong>摘要：</strong> 场景级3D生成是多媒体与计算机图形学的重要前沿领域，但现有方法存在对象类别有限或编辑灵活性不足的问题。本文介绍了一种名为HiScene的新框架，通过将场景视为具有等距视图的层次化“对象”，实现了高保真度的场景生成。HiScene将房间视为复杂对象并进一步分解为可操控的项目，从而确保生成内容与2D表示的一致性同时保持组成结构。为了保证分解实例的完整性和空间对齐，我们开发了一种基于视频扩散的模态完成技术，有效处理对象之间的遮挡和阴影问题，并引入形状先验注入以确保场景内的空间一致性。实验结果显示，该方法生成的物体排列更加自然且适合交互应用，同时保持物理真实性和与用户输入的对齐。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.13072 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 17 Apr 2025 12:33:39 GMT</pubDate>
+<pubDate>Thu, 17 Apr 2025 12:33:39 GMT</pubDate>
+</item>
+<item>
+<title>多语言推理在大型语言模型中的上限潜力研究</title>
+<link>https://arxiv.org/abs/2504.11833</link>
+<guid>https://arxiv.org/abs/2504.11833</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>多语言推理比英语推理具有更高的性能上限。</p><br><br><p><strong>摘要：</strong> 现有研究表明，大型语言模型存在显著的“英语偏见”，即任务用英语呈现时表现更好。然而，我们发现某些其他语言在推理任务中甚至可以优于英语。本文探索了多语言推理在任务中的性能上限，指出多语言推理不仅能显著提高近10 Acc@k点，还更具鲁棒性，对翻译质量和语言选择的变化具有更强的容忍度。尽管如此，目前常见的答案选择方法无法达到这一上限，因为它们受到局限性和偏见的影响。此外，我们分析了性能上限背后的原因及实现挑战。这些发现为未来充分挖掘大型语言模型中多语言推理的潜力提供了方向。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.11833 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 16 Apr 2025 03:45:10 GMT</pubDate>
+<pubDate>Wed, 16 Apr 2025 03:45:10 GMT</pubDate>
+</item>
+<item>
+<title>NodeRAG：基于异构图结构的大规模语言模型增强型检索生成框架</title>
+<link>https://arxiv.org/abs/2504.11544</link>
+<guid>https://arxiv.org/abs/2504.11544</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>NodeRAG通过引入异构图结构优化检索增强生成性能。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为NodeRAG的新框架，该框架以图为中心，通过引入异构图结构，实现了图算法在检索增强生成（RAG）工作流中的无缝整合。与现有方法相比，NodeRAG不仅提升了索引时间、查询时间和存储效率，还在多跳基准测试和开放式一对一评估中展现出更优的问题回答能力。此外，NodeRAG在使用最少检索标记的情况下，表现出了显著的优势，尤其是在GraphRAG和LightRAG等方法的基础上进一步优化了性能。NodeRAG的代码已开源，可在GitHub上获取。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.11544 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 15 Apr 2025 14:24:00 GMT</pubDate>
+<pubDate>Tue, 15 Apr 2025 14:24:00 GMT</pubDate>
+</item>
 
 <item>
 <title>构建透明图像与视频理解研究的开放性感知语言模型</title>
