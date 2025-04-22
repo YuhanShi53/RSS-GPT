@@ -4,6 +4,258 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>StyleMe3D：实现3D高斯点云风格迁移的综合性框架</title>
+<link>https://arxiv.org/abs/2504.15281</link>
+<guid>https://arxiv.org/abs/2504.15281</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出StyleMe3D框架，解决3D高斯点云在风格化场景中的问题。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为StyleMe3D的综合性框架，旨在解决3D Gaussian Splatting (3DGS) 在处理卡通、游戏等风格化场景时遇到的纹理碎片化、语义错位及适应抽象美学能力有限的问题。StyleMe3D通过多模态风格条件、多层级语义对齐和感知质量增强等技术，实现了几何结构完整性和风格一致性。该框架包含动态风格评分蒸馏(DSSD)、对比风格描述符(CSD)、同时优化尺度(SOS)以及可微分的3D高斯质量评估(3DG-QA)四个创新组件。实验表明，StyleMe3D在NeRF合成数据集和tandt db场景数据集上表现优异，不仅保留了几何细节，还确保了场景间的风格一致性，并且具备实时渲染能力，适用于游戏、虚拟世界和数字艺术等领域。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.15281 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 21 Apr 2025 13:59:55 GMT</pubDate>
+<pubDate>Mon, 21 Apr 2025 13:59:55 GMT</pubDate>
+</item>
+<item>
+<title>Seeing from Another Perspective: Evaluating Multi-View Understanding in MLLMs</title>
+<link>https://arxiv.org/abs/2504.15280</link>
+<guid>https://arxiv.org/abs/2504.15280</guid>
+<content:encoded><![CDATA[
+
+  Multi-view understanding, the ability to reconcile visual information across diverse viewpoints for effective navigation, manipulation, and 3D scene comprehension, is a fundamental challenge in Multi-Modal Large Language Models (MLLMs) to be used as embodied agents. While recent MLLMs have shown impressive advances in high-level reasoning and planning, they frequently fall short when confronted with multi-view geometric consistency and cross-view correspondence. To comprehensively evaluate the challenges of MLLMs in multi-view scene reasoning, we propose All-Angles Bench, a benchmark of over 2,100 human carefully annotated multi-view question-answer pairs across 90 diverse real-world scenes. Our six tasks (counting, attribute identification, relative distance, relative direction, object manipulation, and camera pose estimation) specifically test model's geometric correspondence and the capacity to align information consistently across views. Our extensive experiments, benchmark on 27 representative MLLMs including Gemini-2.0-Flash, Claude-3.7-Sonnet, and GPT-4o against human evaluators reveals a substantial performance gap, indicating that current MLLMs remain far from human-level proficiency. Through in-depth analysis, we show that MLLMs are particularly underperforming under two aspects: (1) cross-view correspondence for partially occluded views and (2) establishing the coarse camera poses. These findings highlight the necessity of domain-specific refinements or modules that embed stronger multi-view awareness. We believe that our All-Angles Bench offers valuable insights and contribute to bridging the gap between MLLMs and human-level multi-view understanding. The project and benchmark are publicly available at https://danielchyeh.github.io/All-Angles-Bench/.
+
+]]></content:encoded>
+<pubDate>Mon, 21 Apr 2025 13:59:53 GMT</pubDate>
+<pubDate>Mon, 21 Apr 2025 13:59:53 GMT</pubDate>
+</item>
+<item>
+<title>Eagle 2.5：面向长上下文多模态学习的前沿视觉语言模型</title>
+<link>https://arxiv.org/abs/2504.15271</link>
+<guid>https://arxiv.org/abs/2504.15271</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新的视觉语言模型Eagle 2.5，显著提升长视频和高分辨率图像的理解能力。</p><br><br><p><strong>摘要：</strong> 本文介绍了一组名为Eagle 2.5的前沿视觉语言模型（VLMs），专门针对长上下文多模态学习进行优化。这些模型解决了长视频理解和高分辨率图像分析中的挑战，提供了一个通用框架来同时处理这两种任务。研究中采用了自动降级采样和图像区域保留两项技术，以确保上下文完整性和视觉细节的保留。此外，还对长上下文数据训练的整个流程进行了多项效率优化。为了促进长视频理解，我们提出了一个新的数据集Eagle-Video-110K，该数据集结合了故事级和片段级标注。实验结果显示，Eagle 2.5在长上下文多模态基准测试中表现出色，其中最佳模型Eagle 2.5-8B在Video-MME测试中达到了72.4%的准确率，这一成绩与顶级商业模型如GPT-4o以及大规模开源模型如Qwen2.5-VL-72B和InternVL2.5-78B相当。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.15271 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 21 Apr 2025 13:57:28 GMT</pubDate>
+<pubDate>Mon, 21 Apr 2025 13:57:28 GMT</pubDate>
+</item>
+<item>
+<title>Quicksviewer：基于动态时间密度划分的高效多模态模型</title>
+<link>https://arxiv.org/abs/2504.15270</link>
+<guid>https://arxiv.org/abs/2504.15270</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新的多模态模型Quicksviewer，通过自适应时间密度划分实现视频高效理解。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为Quicksviewer的大型多模态模型，该模型采用全新的感知范式，通过Gumbel Softmax将非均匀密度的视频分割成不同大小的立方体，并对每个立方体进行统一重采样，从而提高视频理解效率。这种方法能够在线动态压缩视频，显著减少时空冗余（总体压缩率可达45倍），同时支持大感受野下的高效训练。Quicksviewer通过三个渐进阶段进行训练，在平均420秒/1帧的长时间视频上表现出色。仅使用0.8M视频-文本样本进行训练，该模型在准确性上比采用固定划分策略的基线高出最多8.72分，同时在Video-MME基准测试中达到SOTA性能，且所需令牌数量仅为基线的5%。此外，实验验证了立方网络生成的片段有助于分析视频中的连续事件。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.15270 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 21 Apr 2025 13:57:21 GMT</pubDate>
+<pubDate>Mon, 21 Apr 2025 13:57:21 GMT</pubDate>
+</item>
+<item>
+<title>基于推理的查询级元代理FlowReasoner自动化设计</title>
+<link>https://arxiv.org/abs/2504.15257</link>
+<guid>https://arxiv.org/abs/2504.15257</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出基于推理的元代理FlowReasoner，显著提升多智能体系统设计性能。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为FlowReasoner的查询级元代理，旨在自动化设计针对每个用户查询的多智能体系统。核心理念是通过外部执行反馈激励基于推理的元代理。首先通过DeepSeek R1提炼出生成多智能体系统的初步推理能力，然后借助强化学习进一步优化，设计了多用途奖励函数从性能、复杂性和效率角度引导训练。实验表明，FlowReasoner在工程和竞赛代码基准测试中优于其他模型，在三个基准上比o1-mini提升了10.52%的准确率。相关代码已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.15257 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 21 Apr 2025 13:35:42 GMT</pubDate>
+<pubDate>Mon, 21 Apr 2025 13:35:42 GMT</pubDate>
+</item>
+<item>
+<title>DRAGON框架：一种灵活的生成模型微调方法</title>
+<link>https://arxiv.org/abs/2504.15217</link>
+<guid>https://arxiv.org/abs/2504.15217</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>DRAGON是一种比传统RLHF更灵活的生成模型微调框架。</p><br><br><p><strong>摘要：</strong> 本文介绍了DRAGON（Distributional RewArds for Generative OptimizatioN），一种用于优化生成模型以实现特定目标的多功能框架。与传统的基于人类反馈的强化学习（RLHF）或直接偏好优化（DPO）等方法相比，DRAGON更加灵活，能够处理个体示例或其分布的奖励函数评估，支持多种奖励类型。通过利用这一灵活性，研究者们设计了新颖的奖励函数，结合跨模态编码器如CLAP，并通过对比正负样本集最大化奖励。实验表明，DRAGON在多个目标奖励下平均胜率为81.45%，且无需依赖人类偏好标注即可达到较高的音乐质量。这项工作展示了如何通过设计和优化奖励函数来提升生成模型的人类感知质量。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.15217 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 21 Apr 2025 12:41:40 GMT</pubDate>
+<pubDate>Mon, 21 Apr 2025 12:41:40 GMT</pubDate>
+</item>
+<item>
+<title>EasyEdit2：支持大语言模型实时行为调控的新框架</title>
+<link>https://arxiv.org/abs/2504.15133</link>
+<guid>https://arxiv.org/abs/2504.15133</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>EasyEdit2 是一种新框架，可轻松实现大语言模型的行为控制。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为 EasyEdit2 的新框架，该框架旨在为大型语言模型（LLM）的行为控制提供插件式调节功能。与前代相比，EasyEdit2 引入了一种专门设计的新架构，用于平滑的模型操控。它包含多个关键模块，如操控向量生成器和应用器，允许用户通过生成并应用操控向量来影响模型行为，而无需修改模型参数。框架支持多种测试时干预，包括安全性、情感、人格、推理模式、事实性和语言特性等。此外，EasyEdit2 用户界面友好，仅需单个示例即可引导和调整模型响应，使精确控制变得简单高效。实验表明，该框架在多种 LLM 上均表现良好。源代码已公开于 GitHub，并附有演示笔记本和介绍视频。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.15133 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 21 Apr 2025 10:33:55 GMT</pubDate>
+<pubDate>Mon, 21 Apr 2025 10:33:55 GMT</pubDate>
+</item>
+<item>
+<title>RainbowPlus：基于进化计算的大语言模型红队框架</title>
+<link>https://arxiv.org/abs/2504.15047</link>
+<guid>https://arxiv.org/abs/2504.15047</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出RainbowPlus框架，显著提升大语言模型对抗性提示生成的效率与多样性。</p><br><br><p><strong>摘要：</strong> 大型语言模型（LLMs）表现出强大的能力，但容易受到对抗性提示的影响，从而产生不安全或有偏见的输出。现有红队方法通常面临可扩展性差、资源消耗高或攻击策略多样性不足的问题。本文提出RainbowPlus，这是一种基于进化计算的新红队框架，通过适应性的质量-多样性（QD）搜索算法改进对抗性提示生成。该框架采用多元素存档存储多样化的高质量提示，并使用综合适应度函数同时评估多个提示，从而克服了先前QD方法中的单一提示存档和成对比较的限制。实验表明，RainbowPlus在六个基准数据集和四种开源LLMs上的攻击成功率（ASR）和多样性均优于其他QD方法。此外，在HarmBench数据集上，RainbowPlus对十二个LLMs的平均ASR达到81.1%，比最先进的AutoDAN-Turbo高出3.9%，且运行速度快9倍。RainbowPlus的开源实现为LLM安全性评估提供了可扩展工具，促进了相关领域的进一步研究。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.15047 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 21 Apr 2025 08:04:57 GMT</pubDate>
+<pubDate>Mon, 21 Apr 2025 08:04:57 GMT</pubDate>
+</item>
+<item>
+<title>LUFFY框架：通过离线策略指导提升大规模推理模型的泛化能力</title>
+<link>https://arxiv.org/abs/2504.14945</link>
+<guid>https://arxiv.org/abs/2504.14945</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>引入LUFFY框架，结合离线策略推理轨迹显著提升了数学基准测试中的性能。</p><br><br><p><strong>摘要：</strong> 近期研究表明，大规模推理模型可以通过简单的基于规则奖励的强化学习实现复杂的推理行为。然而，现有的零样本强化学习方法受限于仅能依赖自身输出进行学习，难以突破初始能力限制。为解决这一问题，我们提出了LUFFY框架，该框架通过整合离线推理轨迹扩展了零样本强化学习。LUFFY在训练过程中动态平衡模仿与探索，采用正则化的重要性采样进行策略塑造，避免了混合策略训练中的浅层模仿。实验表明，LUFFY在六个数学基准测试中平均提升了超过7.0分，在分布外任务中领先6.2分以上，且在泛化能力上显著优于监督微调方法。分析显示，LUFFY不仅有效模仿了现有知识，还实现了超出示范范围的探索，为大规模推理模型的可扩展训练提供了新路径。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.14945 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 21 Apr 2025 04:09:13 GMT</pubDate>
+<pubDate>Mon, 21 Apr 2025 04:09:13 GMT</pubDate>
+</item>
+<item>
+<title>Uni3C：统一3D增强框架实现视频生成中摄像机与人体运动的精确控制</title>
+<link>https://arxiv.org/abs/2504.14899</link>
+<guid>https://arxiv.org/abs/2504.14899</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种统一框架Uni3C，实现视频生成中摄像机与人体运动的同步精准控制。</p><br><br><p><strong>摘要：</strong> 本文针对现有视频生成方法中摄像机与人体运动控制分离的问题，提出了Uni3C，这是一种基于3D增强的统一框架。Uni3C通过引入PCDController模块，利用未投影点云进行摄像机控制，该模块无需重新训练视频生成的基础模型，表现出强大的泛化能力。此外，Uni3C还设计了一种联合对齐的3D世界引导机制，在推理阶段整合场景点云和SMPL-X人物模型，实现摄像机与人体运动信号的统一控制。实验表明，Uni3C在摄像机可控性和人体动作质量方面均优于现有方法，并通过定制验证集进一步验证了其有效性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.14899 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 21 Apr 2025 03:10:41 GMT</pubDate>
+<pubDate>Mon, 21 Apr 2025 03:10:41 GMT</pubDate>
+</item>
+<item>
+<title>TAPIP3D：一种新颖的单目RGB和RGB-D视频中的长期3D点跟踪方法</title>
+<link>https://arxiv.org/abs/2504.14717</link>
+<guid>https://arxiv.org/abs/2504.14717</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出TAPIP3D方法，通过三维空间特征云实现长期3D点跟踪。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为TAPIP3D的新方法，用于在单目RGB和RGB-D视频中的长期3D点跟踪。该方法将视频表示为相机稳定的空间-时间特征云，并利用深度和相机运动信息将二维视频特征提升到三维世界空间中，从而有效消除相机运动影响。TAPIP3D在这一稳定表示中迭代优化多帧3D运动估计，实现了长时间的稳健跟踪。为了处理3D点分布的固有不规则性，我们提出了局部成对注意力机制，这种三维上下文策略有效地利用了空间关系，形成了精确的3D轨迹估计所需的有用特征邻域。实验结果显示，我们的方法显著优于现有的3D点跟踪方法，并且在有准确深度的情况下，甚至提高了2D跟踪精度。此外，该方法支持在相机坐标系和世界坐标系下的推理，并证明了补偿相机运动可以提高跟踪性能。相比之前的2D和3D跟踪器使用的传统2D方形相关邻域，TAPIP3D提供了更鲁棒和准确的结果。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.14717 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 20 Apr 2025 15:09:43 GMT</pubDate>
+<pubDate>Sun, 20 Apr 2025 15:09:43 GMT</pubDate>
+</item>
+<item>
+<title>LeetCodeDataset：面向代码生成模型的高质量基准数据集</title>
+<link>https://arxiv.org/abs/2504.14655</link>
+<guid>https://arxiv.org/abs/2504.14655</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>推出用于评估和训练代码生成模型的高质量基准数据集LeetCodeDataset。</p><br><br><p><strong>摘要：</strong> 本文介绍了名为LeetCodeDataset的新数据集，该数据集旨在应对LLM研究中的两个关键挑战：缺乏注重推理的编程基准和自包含的训练测试平台。通过精心整理具有丰富元数据的LeetCode Python问题，并提供每题超过100个测试用例及时间分割（2024年7月前/后），该数据集实现了无污染评估和高效的监督微调（SFT）。实验表明，具备推理能力的模型显著优于非推理模型，而仅使用2.6K模型生成解决方案的SFT表现可媲美拥有110K样本的数据。数据集及其评估框架已在Hugging Face和Github上公开。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.14655 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 20 Apr 2025 11:28:16 GMT</pubDate>
+<pubDate>Sun, 20 Apr 2025 11:28:16 GMT</pubDate>
+</item>
+<item>
+<title>UFO2：面向Windows桌面的多智能体操作系统实现可靠自动化</title>
+<link>https://arxiv.org/abs/2504.14603</link>
+<guid>https://arxiv.org/abs/2504.14603</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>UFO2通过多智能体架构提升计算机使用代理的实用性。</p><br><br><p><strong>摘要：</strong> 近期基于多模态大语言模型的计算机使用代理（CUAs）为自然语言驱动的复杂桌面工作流自动化提供了新方向，但现有CUAs多为概念性原型，受制于浅层操作系统集成、脆弱的基于截图交互及干扰性的执行方式。本文提出UFO2，这是一种针对Windows桌面的多智能体操作系统，将CUAs转化为实用的系统级自动化工具。UFO2采用中心化的HostAgent进行任务分解与协调，并配备一系列应用专用AppAgent，具备原生API、领域特定知识及统一的图形用户界面-应用程序接口动作层。该架构不仅实现了稳健的任务执行，还保持了模块化与可扩展性。通过融合Windows UI自动化与基于视觉解析的混合控制检测管道，支持多样化的界面风格。此外，通过推测多动作规划优化运行效率，减少每步大语言模型开销。最后，嵌套式画中画界面允许代理与用户在隔离虚拟桌面中并发操作。实验评估显示，UFO2在超过20款真实Windows应用中显著提升了鲁棒性和执行准确性，证明了深度操作系统集成是实现可靠用户导向桌面自动化的可扩展路径。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.14603 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 20 Apr 2025 09:04:43 GMT</pubDate>
+<pubDate>Sun, 20 Apr 2025 09:04:43 GMT</pubDate>
+</item>
+<item>
+<title>SphereDiff：一种无缝全景图像与视频生成方法</title>
+<link>https://arxiv.org/abs/2504.14396</link>
+<guid>https://arxiv.org/abs/2504.14396</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种基于扩散模型的新方法，解决全景图像生成中的极点失真问题。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为SphereDiff的创新方法，用于通过最先进的扩散模型生成无缝的360度全景图像和视频。传统方法因等距矩形投影(ERP)引起的严重畸变面临挑战，而SphereDiff定义了一个球面潜在表示，确保所有视角下均匀分布，从而减轻ERP固有的畸变。该方法扩展了多扩散机制至球面潜在空间，并提出了球面潜在采样方法，使预训练扩散模型能够直接应用。此外，引入了畸变感知加权平均技术，进一步提升投影过程中的生成质量。实验表明，SphereDiff在生成高质量全景内容方面优于现有方法，适用于增强现实/虚拟现实(AR/VR)等沉浸式应用。代码已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.14396 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sat, 19 Apr 2025 15:59:11 GMT</pubDate>
+<pubDate>Sat, 19 Apr 2025 15:59:11 GMT</pubDate>
+</item>
+<item>
+<title>InfiGUI-R1: Advancing Multimodal GUI Agents from Reactive Actors to Deliberative Reasoners</title>
+<link>https://arxiv.org/abs/2504.14239</link>
+<guid>https://arxiv.org/abs/2504.14239</guid>
+<content:encoded><![CDATA[
+
+  Multimodal Large Language Models (MLLMs) have powered Graphical User Interface (GUI) Agents, showing promise in automating tasks on computing devices. Recent works have begun exploring reasoning in GUI tasks with encouraging results. However, many current approaches rely on manually designed reasoning templates, which may result in reasoning that is not sufficiently robust and adaptive for complex GUI environments. Meanwhile, some existing agents continue to operate as Reactive Actors, relying primarily on implicit reasoning that may lack sufficient depth for GUI tasks demanding planning and error recovery. We argue that advancing these agents requires a shift from reactive acting towards acting based on deliberate reasoning. To facilitate this transformation, we introduce InfiGUI-R1, an MLLM-based GUI agent developed through our Actor2Reasoner framework, a reasoning-centric, two-stage training approach designed to progressively evolve agents from Reactive Actors to Deliberative Reasoners. The first stage, Reasoning Injection, focuses on establishing a basic reasoner. We employ Spatial Reasoning Distillation to transfer cross-modal spatial reasoning capabilities from teacher models to MLLMs through trajectories with explicit reasoning steps, enabling models to integrate GUI visual-spatial information with logical reasoning before action generation. The second stage, Deliberation Enhancement, refines the basic reasoner into a deliberative one using Reinforcement Learning. This stage introduces two approaches: Sub-goal Guidance, which rewards models for generating accurate intermediate sub-goals, and Error Recovery Scenario Construction, which creates failure-and-recovery training scenarios from identified prone-to-error steps. Experimental results show InfiGUI-R1 achieves strong performance in GUI grounding and trajectory tasks. Resources at https://github.com/Reallm-Labs/InfiGUI-R1.
+
+]]></content:encoded>
+<pubDate>Sat, 19 Apr 2025 05:25:55 GMT</pubDate>
+<pubDate>Sat, 19 Apr 2025 05:25:55 GMT</pubDate>
+</item>
+<item>
+<title>通过人机演示提升移动GUI代理性能</title>
+<link>https://arxiv.org/abs/2504.13805</link>
+<guid>https://arxiv.org/abs/2504.13805</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出基于人演示的学习方法，显著提高移动GUI代理在多样化场景中的性能。</p><br><br><p><strong>摘要：</strong> 移动图形用户界面（GUI）代理在自动化任务方面展现出潜力，但面临现实世界多样场景中泛化能力不足的问题。传统方法通过大规模数据集进行预训练或微调难以应对移动应用及用户特定任务的多样性。本文提出通过人类演示增强移动GUI代理能力，专注于提升其在未见过场景中的表现而非追求更大数据集的普遍泛化。为此，我们引入LearnGUI，这是首个专门用于研究基于演示学习的移动GUI代理的综合数据集，包含2,252个离线任务和101个在线任务的人类高质量演示。同时，开发了LearnAct，这是一种复杂的多智能体框架，可自动从演示中提取知识以增强任务完成。该框架结合了三个专业化智能体：DemoParser用于知识提取，KnowSeeker用于相关知识检索，ActExecutor用于演示增强的任务执行。实验结果显示，在离线和在线评估中均取得了显著性能提升。例如，在离线评估中，单个演示使Gemini-1.5-Pro的准确性从19.3%提高到51.7%；在线评估中，框架将UI-TARS-7B-SFT的任务成功率从18.1%提高到32.8%。LearnAct框架和LearnGUI基准确立了基于演示学习作为更适应性、个性化且可部署的移动GUI代理的有前景方向。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.13805 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 18 Apr 2025 13:13:34 GMT</pubDate>
+<pubDate>Fri, 18 Apr 2025 13:13:34 GMT</pubDate>
+</item>
+<item>
+<title>强化学习中工具使用奖励设计的研究与实践</title>
+<link>https://arxiv.org/abs/2504.13958</link>
+<guid>https://arxiv.org/abs/2504.13958</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究提出强化学习中工具使用任务的奖励设计方案，显著提升大语言模型能力。</p><br><br><p><strong>摘要：</strong> 当前大型语言模型(LLMs)通过有监督微调(SFT)获取工具使用能力，但难以泛化到复杂场景。强化学习(RL)的最新进展显示了优秀的推理和泛化能力，但在工具使用奖励设计上面临挑战，如多种工具参数及反馈不足问题。本研究首次系统性探索强化学习框架下的工具选择和应用任务奖励策略，分析其类型、尺度、粒度及时序动态，提出面向工具使用的奖励设计方案并结合分组相对策略优化(GRPO)训练模型。实验表明该方法比基础模型提高17%，比SFT模型提高15%，强调了奖励设计对提升LLMs工具使用能力和泛化性能的重要性。所有代码已公开以促进后续研究。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.13958 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 16 Apr 2025 17:45:32 GMT</pubDate>
+<pubDate>Wed, 16 Apr 2025 17:45:32 GMT</pubDate>
+</item>
+<item>
+<title>基于单目摄像机的多人3D姿态检测与跟踪方法</title>
+<link>https://arxiv.org/abs/2504.12186</link>
+<guid>https://arxiv.org/abs/2504.12186</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种从单目视频流中检测与跟踪多人3D姿态的方法。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种利用单目摄像机流检测并追踪多人详细3D姿势的方法。系统能够在拥挤场景中处理复杂姿势和遮挡情况，维持时间上连贯的预测。该模型不仅能在每帧进行强检测，还通过学习的姿态更新机制实现跨帧追踪。与传统匹配检测不同，该方法直接从新输入图像更新姿态，支持在线追踪。通过使用大量伪标签标注的数据集训练，模型在3D姿态估计准确性方面达到领先水平，同时在多目标长时间追踪中表现更快更准确。代码和权重可在指定GitHub仓库获取。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.12186 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 16 Apr 2025 11:40:15 GMT</pubDate>
+<pubDate>Wed, 16 Apr 2025 11:40:15 GMT</pubDate>
+</item>
+<item>
+<title>NEMOTRON-CROSSTHINK：强化学习框架提升大语言模型跨领域推理能力</title>
+<link>https://arxiv.org/abs/2504.13941</link>
+<guid>https://arxiv.org/abs/2504.13941</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出NEMOTRON-CROSSTHINK框架，通过多领域数据增强强化学习训练，显著提高大语言模型在数学及非数学推理任务中的准确性与效率。</p><br><br><p><strong>摘要：</strong> 近年来，大型语言模型（LLMs）在推理任务中表现出色，特别是在数学推理领域。然而，将其推广到其他复杂且多样化的推理任务时面临诸多挑战，例如有限的数据量、缺乏可验证的奖励结构以及任务需求的多样性。为解决这些问题，本文提出了NEMOTRON-CROSSTHINK框架，该框架通过整合来自科学、技术、工程、数学（STEM）、人文学科和社会科学等多个领域的合成和真实问题-答案对，增强了强化学习的训练过程。具体而言，NEMOTRON-CROSSTHINK通过采用多选题和开放性问题模板控制答案空间复杂度，筛选可验证的答案，并优化多源数据融合策略，从而实现对数学及非数学推理任务的高效泛化。实验结果显示，该方法不仅在数学推理任务（如MATH-500和AMC23）上取得了显著的性能提升（分别提升了30.1%和27.5%），还在非数学推理任务（如MMLU-PRO、GPQA-DIAMOND、AGIEVAL和SUPERGPQA）上实现了11.3%至15.1%的准确率增长。此外，NEMOTRON-CROSSTHINK还大幅提高了响应效率，在正确回答问题时所需令牌数量减少了28%，表明其推理更加集中和高效。总之，这一研究证明了在强化学习中引入多领域、多格式数据的重要性，为构建更精确、高效且通用的大语言模型提供了新途径。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.13941 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 15 Apr 2025 17:37:13 GMT</pubDate>
+<pubDate>Tue, 15 Apr 2025 17:37:13 GMT</pubDate>
+</item>
+<item>
+<title>X-Teaming：一种高效的多轮对话语言模型攻击框架</title>
+<link>https://arxiv.org/abs/2504.13203</link>
+<guid>https://arxiv.org/abs/2504.13203</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出X-Teaming框架，显著提升多轮对话中语言模型的安全性。</p><br><br><p><strong>摘要：</strong> 本文针对多轮对话中语言模型存在的安全风险展开研究，现有工作主要集中在单轮安全性，而多轮对抗测试仍面临适应性和多样性挑战。为解决这些问题，我们提出了X-Teaming框架，通过协作代理进行规划、攻击优化和验证，成功率达到98.1%，尤其对Claude 3.7 Sonnet等先进模型也实现了高达96.2%的成功率。此外，基于X-Teaming，我们开发了XGuard-Train开源训练集，规模为此前最佳资源的20倍，包含3万种交互式越狱场景，助力提升语言模型的多轮安全性。本研究为应对复杂对话攻击提供了重要工具和见解。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.13203 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 15 Apr 2025 12:11:28 GMT</pubDate>
+<pubDate>Tue, 15 Apr 2025 12:11:28 GMT</pubDate>
+</item>
+<item>
+<title>基于生成模型的新型透视变形图像创作</title>
+<link>https://arxiv.org/abs/2504.08902</link>
+<guid>https://arxiv.org/abs/2504.08902</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>结合生成模型与频率感知变换技术，创造可直接解读的透视变形图像。</p><br><br><p><strong>摘要：</strong> 本文重新审视了经典的光学错觉——透视变形图像（anamorphosis），这类图像是通过故意扭曲形成，在常规视角下难以辨认，仅当从特定角度或借助反射设备观看时才显现其真实形态。尽管这类视觉效果的数学原理可以追溯到17世纪，但它们的意义通常依赖于特定视角。我们提出了一种创新方法，利用潜伏修正流模型和一种名为拉普拉斯金字塔扭曲的技术，在保持图像直接可读性的同时生成高质量的透视变形图像。这一研究将视觉文字谜（Visual Anagrams）的概念扩展到了潜在空间模型及更广泛的几何变换领域，为生成式艺术与感知错觉的创作提供了新的可能性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.08902 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 11 Apr 2025 14:12:01 GMT</pubDate>
+<pubDate>Fri, 11 Apr 2025 14:12:01 GMT</pubDate>
+</item>
 
 <item>
 <title>从知识检索到思维构建：生成式AI的第二幕</title>
