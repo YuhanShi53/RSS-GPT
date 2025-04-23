@@ -17740,3 +17740,72 @@ Summarized using qwen-turbo
 Append: [基于语音交互的医学视觉语言模型SilVar-Med及其可解释性研究](https://arxiv.org/abs/2504.10642)
 append_entries: 4
 Finish: 2025-04-23 01:07:59.787842
+------------------------------------------------------
+Started: 2025-04-23 06:20:20.075704
+Existing_entries: 1004
+Fetching from https://rsshub.app/huggingface/daily-papers
+Json decode failed:
+{
+  "title": "基于测试时强化学习的无标签数据大语言模型训练方法",
+  "short_summary": "提出一种利用无标签数据通过强化学习提升大语言模型性能的新方法。",
+  "summary": "本文研究了在大型语言模型（LLMs）的推理任务中，针对无显式标签数据的强化学习（RL）。主要挑战是在推断过程中缺乏真实奖励信息的情况下进行奖励估计。我们发现测试时缩放（TTS）中的常见实践（如多数投票）能有效产生适合驱动强化学习训练的奖励。为此，我们引入了测试时强化学习（TTRL），这是一种利用预训练模型先验知识的新型方法。实验表明，TTRL在多种任务和模型上均能稳定提升性能，例如在AIME 2024比赛中，Qwen-2.5-Math-7B的pass@1性能提升了约159%。尽管TTRL仅由Maj@N指标监督，但其表现已超越初始模型上限并接近直接使用真实标签训练的模型性能。我们的研究验证了TTRL在各种任务上的有效性，并展示了其在更广泛领域中的潜力。GitHub链接：https:
+  "keyword": ["强化学习", "大语言模型", "无标签数据"]
+}Summarization failed, append the original article
+error: Invalid control character at: line 4 column 359 (char 453). Line: 406.
+Append: [TTRL: Test-Time Reinforcement Learning](https://arxiv.org/abs/2504.16084)
+Token length: 1435
+Summarized using qwen-turbo
+Append: [MR. Video：基于MapReduce原理的长视频理解框架](https://arxiv.org/abs/2504.16082)
+Token length: 1352
+Summarized using qwen-turbo
+Append: [ReflectionFlow：基于推理时自省的文本到图像扩散模型优化框架](https://arxiv.org/abs/2504.16080)
+Token length: 979
+Summarized using qwen-turbo
+Append: [Describe Anything Model：实现图像和视频的精细化局部描述](https://arxiv.org/abs/2504.16072)
+Json decode failed:
+{
+  "title": "基于自动语音识别的低成本大规模视频语言模型训练方法",
+  "short_summary": "提出一种基于ASR自动转录的大规模视频语言模型训练新方法。",
+  "summary": "本文探讨了一种利用廉价自动语音识别(ASR)转录进行大规模视频语言模型训练的新方法。该方法通过时间戳密集交错ASR单词和视频帧，使模型能够学习到时间对齐且细粒度的视觉-语言建模。为了支持这一算法，我们构建了一个数据生产管道处理YouTube视频及其字幕，生成了Live-CC-5M预训练数据集和Live-WhisperX-526K高质量监督微调(SFT)数据集。实验表明，即使不经过SFT，仅使用ASR转录预训练的LiveCC-7B-Base模型也能在通用视频问答(QA)任务上表现出色，并具备实时视频评论能力。进一步优化后，LiveCC-7B-Instruct模型在实时模式下甚至超越了更大规模的72B参数模型，在多个流行视频QA基准测试中达到了最先进的性能，展示了该方法的广泛适用性。所有资源已公开发布于https:
+  "keyword": ["Video LLM", "ASR", "实时视频评论"]
+}Summarization failed, append the original article
+error: Invalid control character at: line 4 column 375 (char 468). Line: 406.
+Append: [LiveCC: Learning Video LLM with Streaming Speech Transcription at Scale](https://arxiv.org/abs/2504.16030)
+Token length: 1496
+Summarized using qwen-turbo
+Append: [通过神经符号世界模型提升大型语言模型代理性能](https://arxiv.org/abs/2504.15785)
+Token length: 1818
+Summarized using qwen-turbo
+Append: [Vidi：面向视频编辑的大规模多模态模型](https://arxiv.org/abs/2504.15681)
+Token length: 1825
+Summarized using qwen-turbo
+Append: [多语言基准评估的现状与未来：挑战与改进建议](https://arxiv.org/abs/2504.15521)
+Token length: 1476
+Summarized using qwen-turbo
+Append: [自适应并行推理框架提升语言模型推理能力](https://arxiv.org/abs/2504.15466)
+Json decode failed:
+{
+    "title": "IV-Bench：首个评估图像引导视频感知与推理能力的综合基准",
+    "short_summary": "研究提出IV-Bench，评估现有多模态大语言模型在图像引导视频理解中的不足。",
+    "summary": "当前对多模态大型语言模型的评估框架主要集中在图像推理或一般视频理解上，忽视了图像上下文在视频理解中的重要作用。为此，我们提出了IV-Bench，这是第一个全面评估图像引导视频感知与推理能力的基准。IV-Bench包含967个视频及其2585个精心标注的图像-文本查询，涵盖13项任务（7项感知任务和6项推理任务）及5个代表性类别。对最新开源和闭源多模态大型语言模型的广泛评估显示，现有模型在这方面的表现显著不足，最高准确率仅为28.9%。进一步分析表明，推理模式、帧数和分辨率等因素影响模型性能。此外，通过简单的数据合成方法，我们发现IV-Bench的挑战不仅限于训练过程中的数据格式对齐问题。这些发现为未来研究提供了宝贵见解。相关代码和数据已发布在https:
+    "keyword": ["多模态大型语言模型", "图像引导视频理解", "IV-Bench"]
+}Summarization failed, append the original article
+error: Invalid control character at: line 4 column 348 (char 461). Line: 406.
+Append: [IV-Bench: A Benchmark for Image-Grounded Video Perception and Reasoning in Multimodal LLMs](https://arxiv.org/abs/2504.15415)
+Token length: 1105
+Summarized using qwen-turbo
+Append: [基于平行隐藏解码的高效长度缩放预训练框架](https://arxiv.org/abs/2504.14992)
+Token length: 1531
+Summarized using qwen-turbo
+Append: [基于DiT模型的可控角色动画生成方法](https://arxiv.org/abs/2504.14977)
+Token length: 1121
+Summarized using qwen-turbo
+Append: [BookWorld：基于书籍的多智能体社会构建与模拟系统](https://arxiv.org/abs/2504.14538)
+Token length: 1605
+Summarized using qwen-turbo
+Append: [CheXWorld：基于自监督学习的胸部X光影像世界模型](https://arxiv.org/abs/2504.13820)
+Token length: 1916
+Summarized using qwen-turbo
+Append: [Progent：一种用于大型语言模型代理的权限控制机制](https://arxiv.org/abs/2504.11703)
+append_entries: 15
+Finish: 2025-04-23 06:21:17.452770

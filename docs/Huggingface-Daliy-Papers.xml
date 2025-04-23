@@ -5,15 +5,193 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>TTRL: Test-Time Reinforcement Learning</title>
+<link>https://arxiv.org/abs/2504.16084</link>
+<guid>https://arxiv.org/abs/2504.16084</guid>
+<content:encoded><![CDATA[
+
+  This paper investigates Reinforcement Learning (RL) on data without explicit labels for reasoning tasks in Large Language Models (LLMs). The core challenge of the problem is reward estimation during inference while not having access to ground-truth information. While this setting appears elusive, we find that common practices in Test-Time Scaling (TTS), such as majority voting, yield surprisingly effective rewards suitable for driving RL training. In this work, we introduce Test-Time Reinforcement Learning (TTRL), a novel method for training LLMs using RL on unlabeled data. TTRL enables self-evolution of LLMs by utilizing the priors in the pre-trained models. Our experiments demonstrate that TTRL consistently improves performance across a variety of tasks and models. Notably, TTRL boosts the pass@1 performance of Qwen-2.5-Math-7B by approximately 159% on the AIME 2024 with only unlabeled test data. Furthermore, although TTRL is only supervised by the Maj@N metric, TTRL has demonstrated performance to consistently surpass the upper limit of the initial model, and approach the performance of models trained directly on test data with ground-truth labels. Our experimental findings validate the general effectiveness of TTRL across various tasks, and highlight TTRL's potential for broader tasks and domains. GitHub: https://github.com/PRIME-RL/TTRL
+
+]]></content:encoded>
+<pubDate>Tue, 22 Apr 2025 13:59:56 GMT</pubDate>
+<pubDate>Tue, 22 Apr 2025 13:59:56 GMT</pubDate>
+</item>
+<item>
+<title>MR. Video：基于MapReduce原理的长视频理解框架</title>
+<link>https://arxiv.org/abs/2504.16082</link>
+<guid>https://arxiv.org/abs/2504.16082</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种基于MapReduce原则的长视频理解框架MR. Video。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为MR. Video的长视频理解框架，它通过Map（独立密集感知短视频片段）和Reduce（联合聚合所有片段信息）两个步骤，有效解决了传统序列到序列视觉语言模型在处理长视频时上下文长度受限的问题。与依赖关键片段选择的现有视频代理相比，MR. Video的Map操作实现了更简单的并行感知，而Reduce则支持更全面的上下文聚合和推理。该框架在LVBench挑战数据集上比最先进的视觉语言模型和视频代理提高了超过10%的准确性。此外，MR. Video还展示了其在短视频字幕生成和问题分析中的应用效果。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.16082 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 22 Apr 2025 13:59:41 GMT</pubDate>
+<pubDate>Tue, 22 Apr 2025 13:59:41 GMT</pubDate>
+</item>
+<item>
+<title>ReflectionFlow：基于推理时自省的文本到图像扩散模型优化框架</title>
+<link>https://arxiv.org/abs/2504.16080</link>
+<guid>https://arxiv.org/abs/2504.16080</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新框架ReflectionFlow，通过推理时自省提升文本到图像生成质量。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为ReflectionFlow的新框架，该框架旨在解决现有文本到图像扩散模型在处理复杂场景和精细细节时表现不佳的问题。受大型语言模型中涌现的自我反思能力启发，ReflectionFlow在推理阶段引入三个互补的扩展轴：噪声级扩展、提示级扩展以及创新性的反射级扩展，后者通过提供可操作的反馈来评估并修正之前的生成结果。为了支持反射级扩展，我们构建了一个包含一百万个三元组的大规模数据集GenRef，每个三元组包括一条反馈、一张有缺陷的图像和一张增强后的图像。利用此数据集，我们在最先进的扩散变换器FLUX.1-dev上高效执行了反射调优。实验结果表明，ReflectionFlow显著优于朴素的噪声级扩展方法，在具有挑战性的任务中提供了可扩展且计算高效的高质量图像合成解决方案。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.16080 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 22 Apr 2025 13:58:07 GMT</pubDate>
+<pubDate>Tue, 22 Apr 2025 13:58:07 GMT</pubDate>
+</item>
+<item>
+<title>Describe Anything Model：实现图像和视频的精细化局部描述</title>
+<link>https://arxiv.org/abs/2504.16072</link>
+<guid>https://arxiv.org/abs/2504.16072</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种用于图像和视频精细化局部描述的新模型DAM。</p><br><br><p><strong>摘要：</strong> 描述特定区域内的图像和视频细节一直是视觉语言模型面临的基本挑战。本文介绍了一种名为DAM（Describe Anything Model）的模型，专门用于精细化局部描述（DLC）。DAM通过两个关键创新保持局部细节和全局上下文：焦点提示确保目标区域的高分辨率编码，局部视觉主干将精确的定位与其更广泛的上下文相结合。为了解决高质量DLC数据稀缺的问题，我们提出了基于半监督学习的数据管道（DLC-SDP），该管道从现有的分割数据集开始，并扩展到未标记的网络图像。此外，我们还引入了DLC-Bench基准，用于评估DLC而不依赖参考标题。DAM在七个涵盖关键词级、短语级和详细的多句局部图像和视频描述基准上创造了新的最先进水平。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.16072 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 22 Apr 2025 13:51:41 GMT</pubDate>
+<pubDate>Tue, 22 Apr 2025 13:51:41 GMT</pubDate>
+</item>
+<item>
+<title>LiveCC: Learning Video LLM with Streaming Speech Transcription at Scale</title>
+<link>https://arxiv.org/abs/2504.16030</link>
+<guid>https://arxiv.org/abs/2504.16030</guid>
+<content:encoded><![CDATA[
+
+  Recent video large language models (Video LLMs) often depend on costly human annotations or proprietary model APIs (e.g., GPT-4o) to produce training data, which limits their training at scale. In this paper, we explore large-scale training for Video LLM with cheap automatic speech recognition (ASR) transcripts. Specifically, we propose a novel streaming training approach that densely interleaves the ASR words and video frames according to their timestamps. Compared to previous studies in vision-language representation with ASR, our method naturally fits the streaming characteristics of ASR, thus enabling the model to learn temporally-aligned, fine-grained vision-language modeling. To support the training algorithm, we introduce a data production pipeline to process YouTube videos and their closed captions (CC, same as ASR), resulting in Live-CC-5M dataset for pre-training and Live-WhisperX-526K dataset for high-quality supervised fine-tuning (SFT). Remarkably, even without SFT, the ASR-only pre-trained LiveCC-7B-Base model demonstrates competitive general video QA performance and exhibits a new capability in real-time video commentary. To evaluate this, we carefully design a new LiveSports-3K benchmark, using LLM-as-a-judge to measure the free-form commentary. Experiments show our final LiveCC-7B-Instruct model can surpass advanced 72B models (Qwen2.5-VL-72B-Instruct, LLaVA-Video-72B) in commentary quality even working in a real-time mode. Meanwhile, it achieves state-of-the-art results at the 7B/8B scale on popular video QA benchmarks such as VideoMME and OVOBench, demonstrating the broad generalizability of our approach. All resources of this paper have been released at https://showlab.github.io/livecc.
+
+]]></content:encoded>
+<pubDate>Tue, 22 Apr 2025 12:52:09 GMT</pubDate>
+<pubDate>Tue, 22 Apr 2025 12:52:09 GMT</pubDate>
+</item>
+<item>
+<title>通过神经符号世界模型提升大型语言模型代理性能</title>
+<link>https://arxiv.org/abs/2504.15785</link>
+<guid>https://arxiv.org/abs/2504.15785</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出无需训练的世界对齐方法提升大型语言模型作为世界模型的准确性。</p><br><br><p><strong>摘要：</strong> 本文探讨了大型语言模型（LLMs）能否构建出准确的世界模型，并分析了世界模型如何增强LLM代理的表现。主要瓶颈在于LLMs的先验知识与特定环境动态之间的差距。为此，我们提出了无需训练的“世界对齐”方法，通过从探索轨迹中提取并编码动作规则、知识图谱及场景图等符号知识，来补充LLMs的不足。进一步地，我们设计了一个无需强化学习的基于模型的代理WALL-E 2.0，利用模型预测控制框架，采用LLM代理作为高效前瞻优化器，显著提升了新环境中的学习效率。在Mars（类似Minecraft）和ALFWorld（具身室内环境）的开放世界挑战中，WALL-E 2.0在成功率和得分上均大幅超越现有方法，特别是在Mars环境中成功率提升16.1%-51.6%，而在ALFWorld中仅需四轮迭代就达到了98%的成功率。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.15785 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 22 Apr 2025 06:58:27 GMT</pubDate>
+<pubDate>Tue, 22 Apr 2025 06:58:27 GMT</pubDate>
+</item>
+<item>
+<title>Vidi：面向视频编辑的大规模多模态模型</title>
+<link>https://arxiv.org/abs/2504.15681</link>
+<guid>https://arxiv.org/abs/2504.15681</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Vidi模型在长时间视频的时间检索任务上显著优于GPT-4o和Gemini。</p><br><br><p><strong>摘要：</strong> 随着互联网上视频成为主要的沟通和表达方式，高质量大规模视频内容的制作需求日益增长。然而，传统模型在处理多模态数据（如视觉、音频、文本）以及灵活输入长度时面临挑战。本文介绍了一种名为Vidi的大规模多模态模型家族，专门针对视频理解与编辑场景。Vidi的第一个版本专注于时间检索任务，即根据文本查询识别输入视频中的时间范围。该模型能够在长达数小时的视频中表现出强大的时间理解能力。为了支持真实场景的全面评估，研究团队还推出了VUE-TR基准，具有视频时长更长、支持音频查询、多样化查询格式、高质量标注及改进的IoU评价指标等五大优势。实验结果显示，Vidi在时间检索任务上显著超越了领先的专有模型如GPT-4o和Gemini，展示了其在视频编辑领域的优越性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.15681 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 22 Apr 2025 04:04:45 GMT</pubDate>
+<pubDate>Tue, 22 Apr 2025 04:04:45 GMT</pubDate>
+</item>
+<item>
+<title>多语言基准评估的现状与未来：挑战与改进建议</title>
+<link>https://arxiv.org/abs/2504.15521</link>
+<guid>https://arxiv.org/abs/2504.15521</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究发现英语在多语言基准中过度代表，提出创建本地化基准的重要性。</p><br><br><p><strong>摘要：</strong> 本文基于对2021年至2024年间来自148个国家超过2000个多语言（非英语）基准的分析，探讨了当前多语言基准评估的实践及其不足之处。尽管投入了大量资金，但英语仍占据显著优势，且多数基准源自高资源国家。此外，STEM相关任务与人类评价高度相关，而传统NLP任务的相关性较低。翻译基准不足以反映实际应用需求，本地化基准表现更优。研究指出了当前评估中的六大局限，并提出了指导原则及五大研究方向。最后，呼吁全球合作开发更符合人类需求的应用导向型基准。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.15521 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 21 Apr 2025 21:47:37 GMT</pubDate>
+<pubDate>Mon, 21 Apr 2025 21:47:37 GMT</pubDate>
+</item>
+<item>
+<title>自适应并行推理框架提升语言模型推理能力</title>
+<link>https://arxiv.org/abs/2504.15466</link>
+<guid>https://arxiv.org/abs/2504.15466</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新框架APR，解决现有推理方法的效率与性能瓶颈。</p><br><br><p><strong>摘要：</strong> 现有语言模型推理方法存在显著局限性：序列化推理生成过长输出导致延迟增加及上下文窗口耗尽；而并行推理如自一致性则因协调不足产生冗余计算和有限性能提升。为此，本文提出自适应并行推理（APR），一种端到端推理框架，可整合序列化与并行计算。APR通过spawn()和join()操作实现多线程推理，创新性采用端到端强化学习策略优化推理过程。实验表明，在Countdown推理任务中，APR相比传统方法在相同上下文窗口内表现更优（83.4% vs. 60.0%），扩展性更强且在同等延迟下精度更高（75.2% vs. 57.3%）。APR标志着语言模型自主优化推理过程的新方向。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.15466 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 21 Apr 2025 18:29:02 GMT</pubDate>
+<pubDate>Mon, 21 Apr 2025 18:29:02 GMT</pubDate>
+</item>
+<item>
+<title>IV-Bench: A Benchmark for Image-Grounded Video Perception and Reasoning in Multimodal LLMs</title>
+<link>https://arxiv.org/abs/2504.15415</link>
+<guid>https://arxiv.org/abs/2504.15415</guid>
+<content:encoded><![CDATA[
+
+  Existing evaluation frameworks for Multimodal Large Language Models (MLLMs) primarily focus on image reasoning or general video understanding tasks, largely overlooking the significant role of image context in video comprehension. To bridge this gap, we propose IV-Bench, the first comprehensive benchmark for evaluating Image-Grounded Video Perception and Reasoning. IV-Bench consists of 967 videos paired with 2,585 meticulously annotated image-text queries across 13 tasks (7 perception and 6 reasoning tasks) and 5 representative categories. Extensive evaluations of state-of-the-art open-source (e.g., InternVL2.5, Qwen2.5-VL) and closed-source (e.g., GPT-4o, Gemini2-Flash and Gemini2-Pro) MLLMs demonstrate that current models substantially underperform in image-grounded video Perception and Reasoning, merely achieving at most 28.9% accuracy. Further analysis reveals key factors influencing model performance on IV-Bench, including inference pattern, frame number, and resolution. Additionally, through a simple data synthesis approach, we demonstratethe challenges of IV- Bench extend beyond merely aligning the data format in the training proecss. These findings collectively provide valuable insights for future research. Our codes and data are released in https://github.com/multimodal-art-projection/IV-Bench.
+
+]]></content:encoded>
+<pubDate>Mon, 21 Apr 2025 15:53:44 GMT</pubDate>
+<pubDate>Mon, 21 Apr 2025 15:53:44 GMT</pubDate>
+</item>
+<item>
+<title>基于平行隐藏解码的高效长度缩放预训练框架</title>
+<link>https://arxiv.org/abs/2504.14992</link>
+<guid>https://arxiv.org/abs/2504.14992</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新型框架PHD-Transformer，实现预训练中的高效长度缩放。</p><br><br><p><strong>摘要：</strong> 近年来，大型语言模型的研究表明，在后训练阶段通过长度缩放可以显著提升性能，但这一方法在预训练阶段的应用尚待深入探索。本文介绍了一种名为Parallel Hidden Decoding Transformer（PHD-Transformer）的新框架，该框架能够在预训练期间实现高效的长度缩放，同时保持推理效率。通过引入创新的KV缓存管理策略，PHD-Transformer能够区分原始令牌和隐藏解码令牌，仅保留原始令牌的KV缓存以维持长距离依赖关系，而立即丢弃已使用的隐藏解码令牌，从而在不增加KV缓存大小的情况下实现有效扩展。此外，还提出了两种优化变体：PHD-SWA利用滑动窗口注意力机制保存局部依赖关系；PHD-CSWA则采用分块滑动窗口注意力机制消除预填充时间的线性增长。实验结果表明，该方法在多个基准测试中均表现出一致的性能提升。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.14992 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 21 Apr 2025 05:41:26 GMT</pubDate>
+<pubDate>Mon, 21 Apr 2025 05:41:26 GMT</pubDate>
+</item>
+<item>
+<title>基于DiT模型的可控角色动画生成方法</title>
+<link>https://arxiv.org/abs/2504.14977</link>
+<guid>https://arxiv.org/abs/2504.14977</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出通过基础模型微调解决罕见姿态等挑战的新视角。</p><br><br><p><strong>摘要：</strong> 可控角色动画在处理罕见姿态、风格化角色及复杂场景时面临诸多难题，传统方法主要依赖复杂的旁路网络注入姿态与外观指导，但泛化能力有限。本文提出新方法，认为只要基础模型足够强大，通过简单修改并采用灵活微调策略即可有效应对上述挑战。文中介绍的RealisDance-DiT基于Wan-2.1视频基础模型构建，实验表明其性能显著优于现有方法。此外，我们还设计了新的测试数据集，涵盖多样化的现实世界挑战，补充了现有基准数据集，进一步验证了该方法的有效性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.14977 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 21 Apr 2025 05:09:21 GMT</pubDate>
+<pubDate>Mon, 21 Apr 2025 05:09:21 GMT</pubDate>
+</item>
+<item>
+<title>BookWorld：基于书籍的多智能体社会构建与模拟系统</title>
+<link>https://arxiv.org/abs/2504.14538</link>
+<guid>https://arxiv.org/abs/2504.14538</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出BookWorld系统，用于构建和模拟基于书籍的多智能体社会。</p><br><br><p><strong>摘要：</strong> 近期大型语言模型(LLMs)的进步推动了通过多智能体系统进行社会模拟的发展，但对已建立的虚构世界和角色的模拟研究较少。本文介绍BookWorld系统，该系统能够全面构建和模拟基于书籍的多智能体社会，涵盖复杂现实细节如多样化动态角色、世界观、地理约束等。实验表明，BookWorld生成的故事具有创意且质量高，忠实于原作，胜过前人方法。BookWorld还可应用于故事生成、互动游戏和社会模拟等领域。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.14538 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 20 Apr 2025 04:56:27 GMT</pubDate>
+<pubDate>Sun, 20 Apr 2025 04:56:27 GMT</pubDate>
+</item>
+<item>
+<title>CheXWorld：基于自监督学习的胸部X光影像世界模型</title>
+<link>https://arxiv.org/abs/2504.13820</link>
+<guid>https://arxiv.org/abs/2504.13820</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出首个针对放射影像的自监督世界模型CheXWorld。</p><br><br><p><strong>摘要：</strong> 本文介绍了CheXWorld，这是首个用于放射影像的自监督世界模型，旨在捕捉医学知识的三个关键方面：局部解剖结构、全局解剖布局及领域变化。通过统一框架同时建模这三个方面，实验表明CheXWorld不仅成功捕捉了这些医学知识维度，还在八个医学图像分类和分割基准上显著优于现有自监督学习方法和大规模医学基础模型。代码和预训练模型已公开。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.13820 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 18 Apr 2025 13:50:43 GMT</pubDate>
+<pubDate>Fri, 18 Apr 2025 13:50:43 GMT</pubDate>
+</item>
+<item>
+<title>Progent：一种用于大型语言模型代理的权限控制机制</title>
+<link>https://arxiv.org/abs/2504.11703</link>
+<guid>https://arxiv.org/abs/2504.11703</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Progent通过灵活的权限策略提高大型语言模型代理的安全性。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为Progent的新方法，这是首个面向大型语言模型（LLM）代理的权限控制机制。Progent的核心是一种领域特定语言，用于在代理执行期间灵活表达权限控制策略。这些策略对工具调用施加细粒度限制，决定哪些工具调用是允许的，并指定回退方案。这种设计使得代理开发者和用户可以根据具体用例创建并确定性地应用适当的策略，从而保证安全性。由于其模块化设计，集成Progent不会改变代理内部结构，只需对代理实现进行最小改动，这提升了其实用性和广泛采用的可能性。此外，我们利用LLM自动生成基于用户查询的策略，并动态更新以增强安全性和实用性。我们的广泛评估表明，Progent能够在三个不同的场景或基准测试中（AgentDojo、ASB和AgentPoison）提供强大的安全保障，同时保持高实用性。此外，我们还进行了深入分析，展示了其核心组件的有效性以及自动化策略生成在对抗适应性攻击时的弹性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.11703 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 15 Apr 2025 21:58:40 GMT</pubDate>
+<pubDate>Tue, 15 Apr 2025 21:58:40 GMT</pubDate>
+</item>
+
+<item>
 <title>通过强化学习优化工具集成推理中的工具使用效率</title>
 <link>https://arxiv.org/abs/2504.14870</link>
 <guid>https://arxiv.org/abs/2504.14870</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种新框架，通过奖励机制减少工具调用次数并提高工具生产力。</p><br><br><p><strong>摘要：</strong> 本文探讨了如何通过强化学习提升工具集成推理（TIR）的能力，尤其是在优化最终答案正确性的同时考虑工具使用的效率与成本。现有方法往往忽视了工具调用的数量及其带来的计算和财务负担，可能导致不理想的模型行为。为解决这一问题，我们提出了Optimal Tool Call-controlled Policy Optimization (OTC-PO)，这是一种基于强化学习的新框架，旨在鼓励模型以最少的工具调用生成准确的答案。该框架引入了一个综合考虑正确性和工具效率的奖励机制，从而提升了工具的生产力。我们将此框架应用于Proximal Policy Optimization (PPO) 和 Group Relative Preference Optimization (GRPO)，分别得到OTC-PPO和OTC-GRPO。实验结果显示，在多个问答基准测试中，我们的方法将工具调用次数减少了高达73.1%，同时提高了工具生产力达229.4%，且保持了相近的答案准确性。据我们所知，这是首个明确优化TIR中工具使用效率的强化学习框架。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.14870 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种新框架，通过奖励机制减少工具调用次数并提高工具生产力。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了如何通过强化学习提升工具集成推理（TIR）的能力，尤其是在优化最终答案正确性的同时考虑工具使用的效率与成本。现有方法往往忽视了工具调用的数量及其带来的计算和财务负担，可能导致不理想的模型行为。为解决这一问题，我们提出了Optimal Tool Call-controlled Policy Optimization (OTC-PO)，这是一种基于强化学习的新框架，旨在鼓励模型以最少的工具调用生成准确的答案。该框架引入了一个综合考虑正确性和工具效率的奖励机制，从而提升了工具的生产力。我们将此框架应用于Proximal Policy Optimization (PPO) 和 Group Relative Preference Optimization (GRPO)，分别得到OTC-PPO和OTC-GRPO。实验结果显示，在多个问答基准测试中，我们的方法将工具调用次数减少了高达73.1%，同时提高了工具生产力达229.4%，且保持了相近的答案准确性。据我们所知，这是首个明确优化TIR中工具使用效率的强化学习框架。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.14870" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 21 Apr 2025 01:40:05 GMT</pubDate>
 <pubDate>Mon, 21 Apr 2025 01:40:05 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +199,8 @@
 <link>https://arxiv.org/abs/2504.13367</link>
 <guid>https://arxiv.org/abs/2504.13367</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究推理模型过思考问题并提出THOUGHTTERMINATOR优化方法。</p><br><br><p><strong>摘要：</strong> 推理模型在处理传统语言模型难以应对的任务时表现出色，但普遍存在过思考问题，即生成大量不必要的标记，这不仅不提升准确性还浪费计算资源。本文引入问题难度的近似度量方法，揭示了问题难度与最优标记消耗之间的关系，并评估了几种推理模型在有效分配最优标记数量方面的校准程度。研究发现，大多数推理模型在校准方面表现不佳，尤其是在简单问题上。为此，我们构建了DUMB500数据集，包含极其简单的数学、推理、代码及任务问题，同时结合现有前沿基准中的极难问题，对推理模型进行综合评估。最后，我们提出了无需训练的黑盒解码技术THOUGHTTERMINATOR，显著改善了推理模型的校准性能。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.13367 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究推理模型过思考问题并提出THOUGHTTERMINATOR优化方法。</p><br /><br /><p><strong>摘要：</strong> 推理模型在处理传统语言模型难以应对的任务时表现出色，但普遍存在过思考问题，即生成大量不必要的标记，这不仅不提升准确性还浪费计算资源。本文引入问题难度的近似度量方法，揭示了问题难度与最优标记消耗之间的关系，并评估了几种推理模型在有效分配最优标记数量方面的校准程度。研究发现，大多数推理模型在校准方面表现不佳，尤其是在简单问题上。为此，我们构建了DUMB500数据集，包含极其简单的数学、推理、代码及任务问题，同时结合现有前沿基准中的极难问题，对推理模型进行综合评估。最后，我们提出了无需训练的黑盒解码技术THOUGHTTERMINATOR，显著改善了推理模型的校准性能。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.13367" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 17 Apr 2025 18:16:30 GMT</pubDate>
 <pubDate>Thu, 17 Apr 2025 18:16:30 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +208,8 @@
 <link>https://arxiv.org/abs/2504.13099</link>
 <guid>https://arxiv.org/abs/2504.13099</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>RF-DETR在单类和多类绿果检测中均优于YOLOv12。</p><br><br><p><strong>摘要：</strong> 本研究对基于Transformer的RF-DETR和基于CNN的YOLOv12两种目标检测模型在复杂果园环境下的绿果检测性能进行了详细比较。通过构建包含单类和多类标注的自定义数据集，评估了模型在处理标签模糊、遮挡及背景融合等动态条件下的表现。RF-DETR凭借DINOv2骨干网络和可变形注意力机制，在全局上下文建模和局部特征提取方面表现出色，尤其在单类检测中取得了0.9464的mAP50高分；而YOLOv12则通过优化计算效率和边缘部署能力，在多类检测中达到了0.6622的mAP@50:95最佳分类效果。此外，RF-DETR展现了更快的收敛速度，尤其是在单类检测中仅需10个训练周期即可达到稳定状态。这些结果表明，RF-DETR更适合应用于精确农业场景，而YOLOv12则适用于需要快速响应的应用场景。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.13099 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">RF-DETR在单类和多类绿果检测中均优于YOLOv12。</p><br /><br /><p><strong>摘要：</strong> 本研究对基于Transformer的RF-DETR和基于CNN的YOLOv12两种目标检测模型在复杂果园环境下的绿果检测性能进行了详细比较。通过构建包含单类和多类标注的自定义数据集，评估了模型在处理标签模糊、遮挡及背景融合等动态条件下的表现。RF-DETR凭借DINOv2骨干网络和可变形注意力机制，在全局上下文建模和局部特征提取方面表现出色，尤其在单类检测中取得了0.9464的mAP50高分；而YOLOv12则通过优化计算效率和边缘部署能力，在多类检测中达到了0.6622的mAP@50:95最佳分类效果。此外，RF-DETR展现了更快的收敛速度，尤其是在单类检测中仅需10个训练周期即可达到稳定状态。这些结果表明，RF-DETR更适合应用于精确农业场景，而YOLOv12则适用于需要快速响应的应用场景。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.13099" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 17 Apr 2025 13:08:11 GMT</pubDate>
 <pubDate>Thu, 17 Apr 2025 13:08:11 GMT</pubDate>
 </item>
 <item>
@@ -45,14 +217,10 @@
 <link>https://arxiv.org/abs/2504.10642</link>
 <guid>https://arxiv.org/abs/2504.10642</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种结合语音交互的端到端医学视觉语言模型SilVar-Med。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为SilVar-Med的端到端语音驱动的医学视觉语言模型（VLM），该模型通过整合语音交互功能，突破了传统文本指令限制，在临床环境中实现更实用的医疗图像分析辅助。此外，针对当前医学图像分析模型缺乏透明推理的问题，我们提出了一个用于异常预测解释的数据集，展示了基于推理的医学图像解释概念验证研究。实验表明，SilVar-Med在提升诊断支持系统的透明度、互动性和临床实用性方面具有重要意义。我们的代码和数据集已公开可用。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.10642 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种结合语音交互的端到端医学视觉语言模型SilVar-Med。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种名为SilVar-Med的端到端语音驱动的医学视觉语言模型（VLM），该模型通过整合语音交互功能，突破了传统文本指令限制，在临床环境中实现更实用的医疗图像分析辅助。此外，针对当前医学图像分析模型缺乏透明推理的问题，我们提出了一个用于异常预测解释的数据集，展示了基于推理的医学图像解释概念验证研究。实验表明，SilVar-Med在提升诊断支持系统的透明度、互动性和临床实用性方面具有重要意义。我们的代码和数据集已公开可用。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.10642" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Mon, 14 Apr 2025 14:51:37 GMT</pubDate>
-<pubDate>Mon, 14 Apr 2025 14:51:37 GMT</pubDate>
 </item>
-
 <item>
 <title>StyleMe3D：实现3D高斯点云风格迁移的综合性框架</title>
 <link>https://arxiv.org/abs/2504.15281</link>
@@ -9016,42 +9184,6 @@ The rapid advancement of AI-generated image (AGI) models has introduced signific
 <div><p style="color: gray;">Slam是提升单GPU训练高质量语言模型的有效方案。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种名为Slam的有效方案，可在单一学术GPU上于24小时内训练高质量的语言模型（SLM）。通过对模型初始化、架构、合成训练数据的偏好优化及其他组件的调试，本文进行了实证分析。研究表明，该训练方案具备良好的可扩展性，能够以更低的计算成本实现与领先SLM相媲美的结果。此外，在SLM扩展法则的背景下，研究结果远超计算最优性能预测，为SLM训练的可行性带来了乐观的前景。相关代码、数据、模型和样本可在指定网址查阅。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.15814" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Mon, 24 Feb 2025 23:14:12 GMT</pubDate>
-</item>
-<item>
-<title>CTM基准：评估语言模型的时间推理能力</title>
-<link>https://arxiv.org/abs/2502.16922</link>
-<guid>https://arxiv.org/abs/2502.16922</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">CTM基准通过丰富的历史语境评估语言模型的时间推理能力。</p><br /><br /><p><strong>摘要：</strong> 时间推理是人类认知的重要组成部分，对许多现实世界应用至关重要。尽管大型语言模型在时间推理方面取得了一些进展，但现有基准多依赖规则构建，缺乏上下文深度，且涉及的时间实体范围有限。为解决这些问题，我们推出了中文时间推理(CTM)基准，旨在评估语言模型在中国历史年代学的广泛背景下的时间推理能力。CTM强调跨实体关系、对时间的成对对齐，以及上下文化和文化根植的推理，提供了一个全面的评估。大量实验结果揭示了CTM所带来的挑战，并突出了改进的潜在方向。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.16922" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 24 Feb 2025 22:48:30 GMT</pubDate>
-</item>
-<item>
-<title>DICEPTION：一种高效的通用视觉感知模型</title>
-<link>https://arxiv.org/abs/2502.17157</link>
-<guid>https://arxiv.org/abs/2502.17157</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">DICEPTION是一种高效的视觉感知模型，能在低资源下完成多任务。</p><br /><br /><p><strong>摘要：</strong> DICEPTION是一个旨在创建高效通用视觉感知模型的研究，其目标是在有限的计算资源和训练数据上，运用经过数十亿图像预训练的文本到图像扩散模型。研究显示，DICEPTION在多个视觉感知任务上达到与最先进模型相当的效果，仅使用了0.06%的数据（600K对比1B像素级标注图像）。该模型采用颜色编码策略，将各类任务的输出进行统一，证明了为不同实例赋予随机颜色的策略在实体和语义分割中极为有效。此外，DICEPTION整合了各种视觉任务为条件图像生成，充分利用预训练的文本到图像模型，从而在训练成本上大幅降低。调整此模型到其他任务时，仅需在少量图像（如50张）和1%的参数上进行微调。DICEPTION为视觉通用模型提供了有效的解决方案和重要的洞察。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.17157" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 24 Feb 2025 22:39:29 GMT</pubDate>
-</item>
-<item>
-<title>GOAT：一种提升LoRA性能的新型专家模型框架</title>
-<link>https://arxiv.org/abs/2502.16894</link>
-<guid>https://arxiv.org/abs/2502.16894</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">GOAT框架通过SVD结构改善LoRA在大规模语言模型中的表现。</p><br /><br /><p><strong>摘要：</strong> 尽管低秩适应(LoRA)为大规模语言模型的高效微调提供了可能，但其性能往往不及全量微调(Full FT)。目前的方法通过使用静态奇异值分解(SVD)子集来优化LOra，但这限制了对预训练知识的有效利用。为此，我们提出了大规模LoRA混合专家(GOAT)框架，该框架通过自适应整合相关先验和采用SVD结构的混合专家模型，解决了权重不匹配和复杂梯度动态的问题。此外，本研究还通过推导理论缩放因子，使优化与全量微调的混合专家模型对齐。我们的实验涵盖了25个数据集，包括自然语言理解、常识推理、图像分类和自然语言生成，结果表明GOAT在性能上已接近全量微调，展示了其卓越的效率与效果。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.16894" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 24 Feb 2025 22:35:41 GMT</pubDate>
-</item>
-<item>
-<title>Mobile-Agent-V：基于视频指导的移动自动化框架</title>
-<link>https://arxiv.org/abs/2502.17110</link>
-<guid>https://arxiv.org/abs/2502.17110</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">Mobile-Agent-V框架通过视频指导提升移动设备任务管理效率。</p><br /><br /><p><strong>摘要：</strong> 随着移动设备使用的快速增长，提升任务管理的自动化水平显得尤为重要。然而，许多基于AI的框架由于缺乏充分的操作知识而面临挑战。虽然手动编写的知识可以帮助解决这一问题，但过程既繁琐又低效。为了解决这些问题，我们提出了Mobile-Agent-V框架，该框架利用视频指导提供丰富且具有成本效益的操作知识，从而促进移动自动化的发展。Mobile-Agent-V通过视频输入增强任务执行能力，无需专门的采样或预处理。同时，该框架集成了滑动窗口策略，并引入视频代理和深度反思代理，确保用户指令与执行动作保持一致。实验结果表明，相较于现有框架，Mobile-Agent-V实现了30%的性能提升。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.17110" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 24 Feb 2025 22:31:17 GMT</pubDate>
 </item>
 </channel>
 </rss>
