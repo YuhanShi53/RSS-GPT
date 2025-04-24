@@ -5,15 +5,49 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>构建顶级数学推理模型的方法与实践</title>
+<link>https://arxiv.org/abs/2504.16891</link>
+<guid>https://arxiv.org/abs/2504.16891</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种基于大规模数据集和创新方法的数学推理模型。</p><br><br><p><strong>摘要：</strong> 本文介绍了我们在AI数学奥林匹克竞赛(AIMO-2)中的获奖方案。我们的方法围绕三个关键支柱展开：首先，创建了一个包含54万独特高质量数学问题及其320万个长推理解决方案的大规模数据集；其次，开发了一种通过迭代训练、生成和质量过滤将代码执行与长推理模型集成的新方法，产生了170万个高质量工具集成推理解决方案；最后，构建了一个从多个候选者中挑选最有可能解决方案的流水线。实验表明，这种生成性解选(GenSelect)显著优于多数投票基线。结合这些技术，我们训练了一系列在数学推理基准测试中达到最先进的模型。为了促进进一步研究，我们以商业许可方式发布了代码、模型以及完整的OpenMathReasoning数据集。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.16891 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 23 Apr 2025 13:13:04 GMT</pubDate>
+<pubDate>Wed, 23 Apr 2025 13:13:04 GMT</pubDate>
+</item>
+<item>
+<title>PHYBench: Holistic Evaluation of Physical Perception and Reasoning in Large Language Models</title>
+<link>https://arxiv.org/abs/2504.16074</link>
+<guid>https://arxiv.org/abs/2504.16074</guid>
+<content:encoded><![CDATA[
+
+  We introduce PHYBench, a novel, high-quality benchmark designed for evaluating reasoning capabilities of large language models (LLMs) in physical contexts. PHYBench consists of 500 meticulously curated physics problems based on real-world physical scenarios, designed to assess the ability of models to understand and reason about realistic physical processes. Covering mechanics, electromagnetism, thermodynamics, optics, modern physics, and advanced physics, the benchmark spans difficulty levels from high school exercises to undergraduate problems and Physics Olympiad challenges. Additionally, we propose the Expression Edit Distance (EED) Score, a novel evaluation metric based on the edit distance between mathematical expressions, which effectively captures differences in model reasoning processes and results beyond traditional binary scoring methods. We evaluate various LLMs on PHYBench and compare their performance with human experts. Our results reveal that even state-of-the-art reasoning models significantly lag behind human experts, highlighting their limitations and the need for improvement in complex physical reasoning scenarios. Our benchmark results and dataset are publicly available at https://phybench-official.github.io/phybench-demo/.
+
+]]></content:encoded>
+<pubDate>Tue, 22 Apr 2025 13:53:29 GMT</pubDate>
+<pubDate>Tue, 22 Apr 2025 13:53:29 GMT</pubDate>
+</item>
+<item>
+<title>基于渐进语言引导视觉学习的多任务视觉定位框架</title>
+<link>https://arxiv.org/abs/2504.16145</link>
+<guid>https://arxiv.org/abs/2504.16145</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种无需额外跨模态模块的多任务视觉定位框架PLVL。</p><br><br><p><strong>摘要：</strong> 本文针对多任务视觉定位(MTVG)中的子任务(指表达理解REC和分割RES)提出了渐进语言引导视觉学习框架PLVL。传统方法通过独立特征提取、跨模态交互及独立预测头实现任务处理，但存在语言信息注入不足及任务间关系未有效利用的问题。PLVL不仅深入挖掘视觉模态自身特性，还逐步引入语言信息以增强语言相关视觉特征的学习能力，避免了额外跨模态融合模块的需求。此外，通过分析REC定位中心对RES分割对象区域的潜在帮助，设计了多任务头以实现协作预测。实验表明，PLVL在多个基准数据集上显著优于现有代表性方法。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.16145 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 22 Apr 2025 08:48:12 GMT</pubDate>
+<pubDate>Tue, 22 Apr 2025 08:48:12 GMT</pubDate>
+</item>
+
+<item>
 <title>Tina：基于LoRA高效实现语言模型强推理能力的研究</title>
 <link>https://arxiv.org/abs/2504.15777</link>
 <guid>https://arxiv.org/abs/2504.15777</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究提出Tina模型家族，通过LoRA技术显著降低资源消耗实现高效推理。</p><br><br><p><strong>摘要：</strong> 本文探讨如何以低成本实现语言模型的强推理能力，提出了Tina这一高效推理模型家族。Tina通过对已有1.5B参数的小型基础模型应用低秩适应（LoRA）技术，在强化学习过程中进行参数高效更新，从而在极小资源投入下展现出卓越的推理性能。实验表明，最佳的Tina模型在AIME24数据集上实现了超过20%的推理性能提升及43.33%的Pass@1准确率，且仅需9美元的后训练与评估成本，较现有顶级模型减少了约260倍的成本。此外，Tina在多个开源推理数据集上的表现验证了其有效性，同时通过消融实验进一步支持了LoRA方法的优势。研究表明，LoRA能够快速使模型适应强化学习奖励的推理结构，同时保留基础模型的知识。为促进开放研究，所有代码、训练日志及模型权重均已公开发布。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.15777 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究提出Tina模型家族，通过LoRA技术显著降低资源消耗实现高效推理。</p><br /><br /><p><strong>摘要：</strong> 本文探讨如何以低成本实现语言模型的强推理能力，提出了Tina这一高效推理模型家族。Tina通过对已有1.5B参数的小型基础模型应用低秩适应（LoRA）技术，在强化学习过程中进行参数高效更新，从而在极小资源投入下展现出卓越的推理性能。实验表明，最佳的Tina模型在AIME24数据集上实现了超过20%的推理性能提升及43.33%的Pass@1准确率，且仅需9美元的后训练与评估成本，较现有顶级模型减少了约260倍的成本。此外，Tina在多个开源推理数据集上的表现验证了其有效性，同时通过消融实验进一步支持了LoRA方法的优势。研究表明，LoRA能够快速使模型适应强化学习奖励的推理结构，同时保留基础模型的知识。为促进开放研究，所有代码、训练日志及模型权重均已公开发布。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.15777" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 22 Apr 2025 06:38:00 GMT</pubDate>
 <pubDate>Tue, 22 Apr 2025 06:38:00 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +55,8 @@
 <link>https://arxiv.org/abs/2504.15707</link>
 <guid>https://arxiv.org/abs/2504.15707</guid>
 <content:encoded><![CDATA[
-
-  Since data annotation is costly, benchmark datasets often incorporate labels from established image datasets. In this work, we assess the impact of label errors in MSCOCO on the frequently used object hallucination benchmark POPE. We re-annotate the benchmark images and identify an imbalance in annotation errors across different subsets. Evaluating multiple models on the revised labels, which we denote as RePOPE, we observe notable shifts in model rankings, highlighting the impact of label quality. Code and data are available at https://github.com/YanNeu/RePOPE .
-
+Since data annotation is costly, benchmark datasets often incorporate labels from established image datasets. In this work, we assess the impact of label errors in MSCOCO on the frequently used object hallucination benchmark POPE. We re-annotate the benchmark images and identify an imbalance in annotation errors across different subsets. Evaluating multiple models on the revised labels, which we denote as RePOPE, we observe notable shifts in model rankings, highlighting the impact of label quality. Code and data are available at https://github.com/YanNeu/RePOPE .
 ]]></content:encoded>
-<pubDate>Tue, 22 Apr 2025 04:47:59 GMT</pubDate>
 <pubDate>Tue, 22 Apr 2025 04:47:59 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +64,8 @@
 <link>https://arxiv.org/abs/2504.15585</link>
 <guid>https://arxiv.org/abs/2504.15585</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>首次提出大型语言模型全生命周期安全概念。</p><br><br><p><strong>摘要：</strong> 随着大型语言模型（LLMs）在学术界和工业界的广泛应用，其安全性问题逐渐成为关注焦点。然而，现有研究多聚焦于特定阶段的安全性，缺乏对整个生命周期的全面分析。本文首次引入“全栈”安全的概念，系统探讨LLMs从训练到商业化过程中的安全挑战。通过综合分析超过800篇文献，我们定义了完整的LLMs生命周期，涵盖数据准备、预训练、后训练、部署及商业化的全过程，并提出了包括数据生成、对齐技术、模型编辑及基于LLM的代理系统在内的多个研究方向，为未来研究提供了宝贵的指导。这一工作不仅填补了现有研究的空白，还为构建更加安全可靠的LLMs提供了理论支持。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.15585 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">首次提出大型语言模型全生命周期安全概念。</p><br /><br /><p><strong>摘要：</strong> 随着大型语言模型（LLMs）在学术界和工业界的广泛应用，其安全性问题逐渐成为关注焦点。然而，现有研究多聚焦于特定阶段的安全性，缺乏对整个生命周期的全面分析。本文首次引入“全栈”安全的概念，系统探讨LLMs从训练到商业化过程中的安全挑战。通过综合分析超过800篇文献，我们定义了完整的LLMs生命周期，涵盖数据准备、预训练、后训练、部署及商业化的全过程，并提出了包括数据生成、对齐技术、模型编辑及基于LLM的代理系统在内的多个研究方向，为未来研究提供了宝贵的指导。这一工作不仅填补了现有研究的空白，还为构建更加安全可靠的LLMs提供了理论支持。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.15585" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 22 Apr 2025 01:02:49 GMT</pubDate>
 <pubDate>Tue, 22 Apr 2025 01:02:49 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +73,8 @@
 <link>https://arxiv.org/abs/2504.15254</link>
 <guid>https://arxiv.org/abs/2504.15254</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出CRUST-Bench数据集，用于评估C代码转安全Rust的能力。</p><br><br><p><strong>摘要：</strong> 本文介绍了CRUST-Bench，这是一个包含100个C代码仓库及其对应安全Rust接口和测试用例的数据集，旨在评估系统将C代码转换为符合规范且通过测试的安全Rust代码的能力。与仅关注孤立函数的传统方法不同，CRUST-Bench考虑整个项目及其多文件依赖关系，提供明确的Rust接口规格以保证内存安全性，并通过测试用例验证功能正确性。尽管现有最先进的大型语言模型（LLMs）在该任务上表现有限，但研究仍揭示了模型常见的错误类型。CRUST-Bench的成功应用有望推动复杂场景下C到Rust等内存安全语言迁移技术的发展。数据集及代码已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.15254 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出CRUST-Bench数据集，用于评估C代码转安全Rust的能力。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了CRUST-Bench，这是一个包含100个C代码仓库及其对应安全Rust接口和测试用例的数据集，旨在评估系统将C代码转换为符合规范且通过测试的安全Rust代码的能力。与仅关注孤立函数的传统方法不同，CRUST-Bench考虑整个项目及其多文件依赖关系，提供明确的Rust接口规格以保证内存安全性，并通过测试用例验证功能正确性。尽管现有最先进的大型语言模型（LLMs）在该任务上表现有限，但研究仍揭示了模型常见的错误类型。CRUST-Bench的成功应用有望推动复杂场景下C到Rust等内存安全语言迁移技术的发展。数据集及代码已开源。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.15254" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 21 Apr 2025 13:33:33 GMT</pubDate>
 <pubDate>Mon, 21 Apr 2025 13:33:33 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +82,8 @@
 <link>https://arxiv.org/abs/2504.14509</link>
 <guid>https://arxiv.org/abs/2504.14509</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种基于扩散模型的高保真人脸交换方法DreamID。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为DreamID的基于扩散模型的人脸交换方法，该方法通过构建三元组身份组（Triplet ID Group）数据实现了对身份相似性和属性保留的显式监督，解决了传统隐式监督方法的局限性。此外，DreamID采用加速扩散模型SD Turbo实现单次迭代推理，显著提高了训练效率。研究还设计了一个由SwapNet、FaceNet和ID Adapter组成的改进架构，进一步增强了显式监督的效果。实验表明，DreamID在身份相似性、姿态表情保留和图像保真度方面超越了现有最先进方法，并且能在0.6秒内完成512*512分辨率的高质量人脸交换，尤其在复杂光照、大角度和遮挡等挑战场景下表现出色。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.14509 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种基于扩散模型的高保真人脸交换方法DreamID。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种名为DreamID的基于扩散模型的人脸交换方法，该方法通过构建三元组身份组（Triplet ID Group）数据实现了对身份相似性和属性保留的显式监督，解决了传统隐式监督方法的局限性。此外，DreamID采用加速扩散模型SD Turbo实现单次迭代推理，显著提高了训练效率。研究还设计了一个由SwapNet、FaceNet和ID Adapter组成的改进架构，进一步增强了显式监督的效果。实验表明，DreamID在身份相似性、姿态表情保留和图像保真度方面超越了现有最先进方法，并且能在0.6秒内完成512*512分辨率的高质量人脸交换，尤其在复杂光照、大角度和遮挡等挑战场景下表现出色。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.14509" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Sun, 20 Apr 2025 02:53:00 GMT</pubDate>
 <pubDate>Sun, 20 Apr 2025 02:53:00 GMT</pubDate>
 </item>
 <item>
@@ -69,11 +91,8 @@
 <link>https://arxiv.org/abs/2504.11919</link>
 <guid>https://arxiv.org/abs/2504.11919</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种高效生成高质量链式思维数据的方法，显著提升模型微调效率。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种通过构建LLM自适应难度问题数据库并利用DeepSeek-R1生成高质量链式思维(CoT)数据的方法。该方法降低了数据生成成本，提升了模型微调效率。实验验证了该方法在数学竞赛和代码生成任务中的有效性，其中ZMath-32B和ZCode-32B分别在仅使用2k高质量数据的情况下超越了DeepSeek-Distill-32B。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.11919 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种高效生成高质量链式思维数据的方法，显著提升模型微调效率。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种通过构建LLM自适应难度问题数据库并利用DeepSeek-R1生成高质量链式思维(CoT)数据的方法。该方法降低了数据生成成本，提升了模型微调效率。实验验证了该方法在数学竞赛和代码生成任务中的有效性，其中ZMath-32B和ZCode-32B分别在仅使用2k高质量数据的情况下超越了DeepSeek-Distill-32B。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.11919" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 16 Apr 2025 05:55:34 GMT</pubDate>
 <pubDate>Wed, 16 Apr 2025 05:55:34 GMT</pubDate>
 </item>
 <item>
@@ -81,14 +100,10 @@
 <link>https://arxiv.org/abs/2504.10419</link>
 <guid>https://arxiv.org/abs/2504.10419</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>CheckboxQA 数据集用于提升视觉语言模型对复选框的理解能力。</p><br><br><p><strong>摘要：</strong> 在文档处理中，复选框的存在与否直接影响到数据提取和决策制定，然而现有大型视觉语言模型在这方面的表现并不理想。这种不足在法律和技术金融等对细节要求极高的行业中尤为突出。为解决这一问题，我们发布了 CheckboxQA 数据集，该数据集专门设计用于评估并改进模型在复选框相关任务上的性能。通过揭示当前模型的局限性，CheckboxQA 为推动文档理解系统的进步提供了宝贵的资源，在法律科技和金融等领域具有重要意义。数据集已公开发布于 GitHub 平台。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.10419 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">CheckboxQA 数据集用于提升视觉语言模型对复选框的理解能力。</p><br /><br /><p><strong>摘要：</strong> 在文档处理中，复选框的存在与否直接影响到数据提取和决策制定，然而现有大型视觉语言模型在这方面的表现并不理想。这种不足在法律和技术金融等对细节要求极高的行业中尤为突出。为解决这一问题，我们发布了 CheckboxQA 数据集，该数据集专门设计用于评估并改进模型在复选框相关任务上的性能。通过揭示当前模型的局限性，CheckboxQA 为推动文档理解系统的进步提供了宝贵的资源，在法律科技和金融等领域具有重要意义。数据集已公开发布于 GitHub 平台。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.10419" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Mon, 14 Apr 2025 13:06:59 GMT</pubDate>
-<pubDate>Mon, 14 Apr 2025 13:06:59 GMT</pubDate>
 </item>
-
 <item>
 <title>统一信息论框架下的现代机器学习损失函数</title>
 <link>https://arxiv.org/abs/2504.16929</link>
@@ -9025,69 +9040,6 @@ We introduce WiCkeD, a simple method to increase the complexity of existing mult
 <div><p style="color: gray;">Shakti VLM通过模型设计提升多模态学习的数据效率。</p><br /><br /><p><strong>摘要：</strong> Shakti VLM是一组具有10亿和40亿参数的视觉语言模型，旨在解决多模态学习中的数据效率挑战。尽管近期的视觉语言模型依赖于大量训练数据以实现强大性能，Shakti模型通过架构创新在较少的标记下获得了竞争力的成果。关键进展包括QK-Normalization以增强注意力稳定性、混合归一化技术及改进的位置信息编码。此外，三阶段训练策略进一步优化了学习效率。评估结果显示，Shakti-VLM-1B和Shakti-VLM-4B在文档理解、视觉推理、OCR提取及一般多模态推理中表现出色。这些结果强调，通过模型设计和训练策略而非单纯依赖大量数据，Shakti能够成为企业级多模态任务的高效解决方案。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.17092" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 26 Feb 2025 00:38:42 GMT</pubDate>
-</item>
-<item>
-<title>Scale-Distribution Decoupling: 稳定大规模语言模型训练的新方法</title>
-<link>https://arxiv.org/abs/2502.15499</link>
-<guid>https://arxiv.org/abs/2502.15499</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出了一种新方法SDD，以稳定大规模语言模型的训练过程。</p><br /><br /><p><strong>摘要：</strong> 本文针对大规模语言模型（LLMs）预训练中的训练稳定性问题，提出了一种名为规模-分布解耦（SDD）的新方法。SDD通过明确地解耦全连接层中权重矩阵的规模和分布，利用归一化机制调节激活和可学习的缩放向量，保持良好的梯度条件，从而有效防止梯度爆炸和消散。实验结果表明，该方法在多个LLM架构中稳定训练效果，并在不同归一化配置下优于现有技术。SDD还轻量化且与现有框架兼容，为大规模语言模型训练的稳定提供了一种实用解决方案。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.15499" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 25 Feb 2025 22:26:11 GMT</pubDate>
-</item>
-<item>
-<title>WebGames：评估通用网页浏览AI代理的新基准套件</title>
-<link>https://arxiv.org/abs/2502.18356</link>
-<guid>https://arxiv.org/abs/2502.18356</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">WebGames通过50多个挑战评估网页浏览AI的性能和限度。</p><br /><br /><p><strong>摘要：</strong> WebGames是一个综合基准套件，旨在通过50多个互动挑战评估通用网页浏览AI代理的能力。这些挑战针对人类易于理解的操作，同时系统性地测试当前AI系统在基本浏览器交互、高级输入处理、认知任务、工作流自动化和互动娱乐等方面的局限性。该框架通过密闭测试环境消除外部依赖，确保可再现的评估与可验证的真实解决方案。我们对领先的视觉语言模型进行了评估，包括GPT-4o、Claude Computer-Use、Gemini-1.5-Pro和Qwen2-VL，结果显示这些AI系统与人类表现之间存在显著能力差距，最佳AI系统的成功率仅为43.1%，而人类的表现为95.7%，突显了当前AI系统在处理人类认为直观的常见网页交互模式方面的基本限制。该基准在webgames.convergence.ai上公开可用，提供轻量级的客户端实现以促进快速评估周期。通过其模块化架构和标准化挑战规范，WebGames为测量更强大网页浏览代理的发展进展提供了坚实基础。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.18356" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 25 Feb 2025 22:20:16 GMT</pubDate>
-</item>
-<item>
-<title>兼顾人类听觉选择性的听觉注意驱动大型语言模型研究</title>
-<link>https://arxiv.org/abs/2502.16794</link>
-<guid>https://arxiv.org/abs/2502.16794</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出一种新模型，结合脑信号以改进听觉处理中的选择性注意力。</p><br /><br /><p><strong>摘要：</strong> 文章介绍了Intention-Informed Auditory Scene Understanding (II-ASU)与Auditory Attention-Driven LLM (AAD-LLM)，一种原型系统，通过集成脑信号来推断听众注意力。研究指出，现有的听觉基础模型未能捕捉人类选择性听觉这一特性，限制了其产生与听者意图相符的回应能力。AAD-LLM通过采用颅内脑电图(iEEG)记录，首先预测听众关注的发言者，然后基于此推测的注意状态来生成回应。在多发言者场景中评估AAD-LLM，包括发言者描述、语音转录和提问回答，结果显示该模型在客观和主观评分上均表现出更好的意图一致性。这项研究为迈向意图意识的听觉人工智能开辟了新途径，探索了让机器听觉受到听众感知影响的新范式。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.16794" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 25 Feb 2025 22:20:08 GMT</pubDate>
-</item>
-<item>
-<title>基于难度聚类的下游性能预测框架在大语言模型中的应用</title>
-<link>https://arxiv.org/abs/2502.17262</link>
-<guid>https://arxiv.org/abs/2502.17262</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出了一种基于难度聚类的框架，以提高大语言模型的性能预测准确性。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种新颖的下游性能预测框架——基于难度聚类（COD），旨在解决大型语言模型（LLMs）训练中资源配置和性能预测的挑战。由于存在“出现现象”和任务难度分布不均等问题，现有性能预测方法面临准确性和可靠性不足的困境。COD通过根据任务难度特征聚类，构建可预测的支持子集，排除非出现和不可扩展的聚类，从而确保所选子集的分数能有效预测整体评估集的下游表现。同时，本文推导了性能指标从支持子集到全评估集的映射函数，确保了LLM下游性能的准确外推。经过应用于70B LLM的性能预测后，研究结果表明COD显著提高了预测准确性，平均绝对偏差仅为1.36%。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.17262" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 25 Feb 2025 22:18:24 GMT</pubDate>
-</item>
-<item>
-<title>SpargeAttn：通用稀疏和量化注意力机制的实现</title>
-<link>https://arxiv.org/abs/2502.18137</link>
-<guid>https://arxiv.org/abs/2502.18137</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出SpargeAttn，以加速多种模型的稀疏注意力机制。</p><br /><br /><p><strong>摘要：</strong> 本文提出了SpargeAttn，一种通用的稀疏和量化注意力机制，旨在提高大型模型的效率。由于传统注意力机制的时间复杂度为平方级别，SpargeAttn利用注意力图中的稀疏性预测注意力图，并优化矩阵乘法的计算。我们的方法包括两个阶段的在线过滤器：第一阶段快速准确地预测注意力图，跳过部分矩阵乘法；第二阶段设计了一个在线softmax感知过滤器，进一步减少计算开销。实验表明，SpargeAttn在语言、图像和视频生成等多种模型上显著加速计算，同时保留了端到端的性能指标。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.18137" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 25 Feb 2025 22:04:57 GMT</pubDate>
-</item>
-<item>
-<title>SWE-RL：通过强化学习提升软件工程领域的大语言模型推理能力</title>
-<link>https://arxiv.org/abs/2502.18449</link>
-<guid>https://arxiv.org/abs/2502.18449</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">SWE-RL方法提升了大型语言模型在软件工程上的推理能力。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了SWE-RL，这是一种首个将强化学习应用于现实世界软件工程推理的方案。尽管DeepSeek-R1重点关注编码和数学问题，SWE-RL通过使用轻量级规则奖励机制，如生成解决方案与真实解决方案间的相似度分数，使得大型语言模型（LLMs）能够自动恢复开发者的推理过程。该模型通过学习广泛的开源软件演化数据进行训练，取得了41.0%的解决率，成为中型LLM中的最佳表现，并在五个超领域任务上展现了普适的推理能力，展示了其在软件工程领域的巨大潜力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.18449" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 25 Feb 2025 22:03:08 GMT</pubDate>
-</item>
-<item>
-<title>OmniAlign-V: Towards Enhanced Alignment of MLLMs with Human Preference</title>
-<link>https://arxiv.org/abs/2502.18411</link>
-<guid>https://arxiv.org/abs/2502.18411</guid>
-<content:encoded><![CDATA[
-Recent advancements in open-source multi-modal large language models (MLLMs) have primarily focused on enhancing foundational capabilities, leaving a significant gap in human preference alignment. This paper introduces OmniAlign-V, a comprehensive dataset of 200K high-quality training samples featuring diverse images, complex questions, and varied response formats to improve MLLMs' alignment with human preferences. We also present MM-AlignBench, a human-annotated benchmark specifically designed to evaluate MLLMs' alignment with human values. Experimental results show that finetuning MLLMs with OmniAlign-V, using Supervised Fine-Tuning (SFT) or Direct Preference Optimization (DPO), significantly enhances human preference alignment while maintaining or enhancing performance on standard VQA benchmarks, preserving their fundamental capabilities. Our datasets, benchmark, code and checkpoints have been released at https://github.com/PhoenixZ810/OmniAlign-V.
-]]></content:encoded>
-<pubDate>Tue, 25 Feb 2025 22:01:56 GMT</pubDate>
 </item>
 </channel>
 </rss>
