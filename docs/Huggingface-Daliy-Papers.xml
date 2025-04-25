@@ -5,15 +5,157 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>Token-Shuffle：通过维度重排提升基于Transformer的文本到高分辨率图像生成</title>
+<link>https://arxiv.org/abs/2504.17789</link>
+<guid>https://arxiv.org/abs/2504.17789</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出Token-Shuffle方法，大幅减少Transformer中的图像tokens数量，实现高效高分辨率图像生成。</p><br><br><p><strong>摘要：</strong> 本文针对自回归（AR）模型在图像合成领域的局限性展开研究，主要问题在于其所需图像tokens数量庞大，影响训练和推理效率及图像分辨率。为此，我们提出了Token-Shuffle，一种新颖且简单的方法，通过在视觉编码器生成的低维视觉代码映射到语言词汇表时利用视觉词汇表的维度冗余性，减少输入tokens的数量。具体而言，Token-Shuffle通过在通道维度上合并空间局部tokens来降低输入tokens数量，而token-unshuffle则在Transformer块后解纠缠推断出的tokens，恢复空间排列以输出图像。该策略无需额外的预训练文本编码器，使多模态大语言模型（MLLMs）能够以统一的下一-token预测方式支持极高分辨率（如2048x2048）的图像生成，同时保持高效的训练和推理。实验表明，在GenAI基准测试中，我们的2.7B参数模型在困难提示下获得0.77的整体分数，优于LlamaGen 0.18分，超过LDM 0.15分。大规模的人类评估进一步证明了我们在文本对齐、视觉瑕疵和视觉外观方面的卓越能力。我们希望Token-Shuffle能成为高效高分辨率图像生成的基础设计。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.17789 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 24 Apr 2025 13:59:56 GMT</pubDate>
+<pubDate>Thu, 24 Apr 2025 13:59:56 GMT</pubDate>
+</item>
+<item>
+<title>结合线性和非线性方法的新一代降维算法</title>
+<link>https://arxiv.org/abs/2504.17601</link>
+<guid>https://arxiv.org/abs/2504.17601</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>一种结合线性和非线性特性的新型降维技术被提出。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种新的降维方法，旨在解决现有技术如t-SNE和PCA在表达能力和可解释性之间的权衡问题。该算法通过将高维空间映射到低维空间时结合线性变换和高斯加权的非线性变换，实现了复杂非线性转换的同时保持线性方法的可解释性。文章详细描述了这种架构的设计及其在几何关系保留上的优势，并提出了用于分析学习到的变换的技术，例如识别被抑制的维度以及空间如何被扩展和收缩的方法。此外，为了促进学术界和工业界的广泛应用，强调了开发用户友好型软件包的重要性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.17601 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 24 Apr 2025 10:26:42 GMT</pubDate>
+<pubDate>Thu, 24 Apr 2025 10:26:42 GMT</pubDate>
+</item>
+<item>
+<title>RefVNLI：一种高效可靠的文本到图像生成评估方法</title>
+<link>https://arxiv.org/abs/2504.17502</link>
+<guid>https://arxiv.org/abs/2504.17502</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新方法RefVNLI，用于同时评估文本对齐和主体一致性。</p><br><br><p><strong>摘要：</strong> 当前基于主体驱动的文本到图像生成技术在个性化图像生成和视频角色表现等领域有广泛应用潜力，但缺乏可靠的自动评估手段。现有评估方法通常仅关注任务的一个方面、与人类判断不一致或依赖昂贵的API评估。为解决这一问题，我们提出了RefVNLI，这是一种成本效益高的度量方法，能够在单一预测中评估文本对齐和主体保存。通过在大规模数据集上训练，RefVNLI在多个基准测试和主体类别中表现出色，相较于现有基线方法，在文本对齐和主体一致性方面分别提高了6.4和8.5个百分点。此外，它在处理较冷门概念时也表现出色，与人类偏好的一致性超过87%。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.17502 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 24 Apr 2025 08:44:51 GMT</pubDate>
+<pubDate>Thu, 24 Apr 2025 08:44:51 GMT</pubDate>
+</item>
+<item>
+<title>基于扩散模型的高质量视频试穿框架3DV-TON</title>
+<link>https://arxiv.org/abs/2504.17414</link>
+<guid>https://arxiv.org/abs/2504.17414</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新的扩散模型方法，解决复杂服装图案和多变人体姿态下的高质量视频试穿问题。</p><br><br><p><strong>摘要：</strong> 现有的视频试穿技术在处理复杂的服装图案和多样的人体姿势时，难以生成高质量且时间上一致的结果。本文介绍了一种名为3DV-TON的新框架，该框架基于扩散模型，旨在生成高保真度且时间一致的视频试穿效果。3DV-TON通过生成可动画化的纹理化3D网格作为显式的帧级指导，缓解了模型过于关注外观细节而忽略运动连贯性的问题。具体而言，该方法首先选择关键帧进行初始2D图像试穿，随后重建并同步原始视频姿态的纹理化3D网格。此外，我们引入了一种鲁棒的矩形掩码策略，成功减少了动态人体和服装运动过程中因服装信息泄漏导致的伪影传播。为了推动视频试穿研究的发展，我们还创建了一个名为HR-VVT的高分辨率基准数据集，包含130段具有多样服装类型和场景的视频。定量和定性结果表明，我们的方法在性能上优于现有方法。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.17414 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 24 Apr 2025 06:12:40 GMT</pubDate>
+<pubDate>Thu, 24 Apr 2025 06:12:40 GMT</pubDate>
+</item>
+<item>
+<title>TimeChat-Online：革新实时视频交互的在线VideoLLM</title>
+<link>https://arxiv.org/abs/2504.17343</link>
+<guid>https://arxiv.org/abs/2504.17343</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出TimeChat-Online，解决流媒体视频冗余问题并实现高效实时互动。</p><br><br><p><strong>摘要：</strong> 随着在线视频平台特别是直播服务的快速发展，在线视频理解系统的需求日益迫切。然而，现有的VideoLLMs在处理完整视频时表现出色，但在流媒体场景下由于无法有效处理密集冗余帧而面临显著限制。本文介绍了一种名为TimeChat-Online的新型在线VideoLLM，它通过创新的Differential Token Drop (DTD)模块解决了流媒体视频中的视觉冗余问题。DTD模块受到人类视觉感知变化盲视现象的启发，能够在过滤冗余内容的同时保留有意义的时间变化。实验表明，DTD可以将视频令牌减少82.8%，同时在StreamingBench上保持98%的性能。此外，TimeChat-Online-139K数据集支持多种交互模式，包括后向追踪、当前感知和未来响应。TimeChat-Online的独特主动响应能力也使其在流媒体基准测试和长视频任务中表现优异。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.17343 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 24 Apr 2025 03:59:46 GMT</pubDate>
+<pubDate>Thu, 24 Apr 2025 03:59:46 GMT</pubDate>
+</item>
+<item>
+<title>PaperCoder：基于多智能体大语言模型的论文代码自动生成框架</title>
+<link>https://arxiv.org/abs/2504.17192</link>
+<guid>https://arxiv.org/abs/2504.17192</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>PaperCoder通过多阶段生成高质量机器学习论文代码实现。</p><br><br><p><strong>摘要：</strong> 尽管机器学习研究快速发展，但相关代码实现往往不可用，导致研究人员难以复现结果或扩展先前工作。近期大型语言模型（LLMs）在理解科学文档和生成高质量代码方面表现出色。受此启发，我们提出了PaperCoder，这是一种多智能体LLM框架，可将机器学习论文转化为功能完善的代码库。PaperCoder分为三个阶段：规划阶段构建高层次路线图、设计系统架构并生成配置文件；分析阶段专注于解析特定实现细节；生成阶段则产生模块化且依赖感知的代码。每个阶段均由专门设计的智能体协作完成。我们在基于模型和人工评估的基础上对PaperCoder进行了评估，以机器学习论文为基础生成代码实现，同时以作者发布的代码库作为真实数据。结果显示，PaperCoder生成的代码质量高且忠实于原论文，尤其在新发布的PaperBench基准测试中表现优异，大幅超越了其他基线方法。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.17192 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 23 Apr 2025 21:57:01 GMT</pubDate>
+<pubDate>Wed, 23 Apr 2025 21:57:01 GMT</pubDate>
+</item>
+<item>
+<title>基于任意顺序补丁生成的自回归图像生成方法</title>
+<link>https://arxiv.org/abs/2504.17069</link>
+<guid>https://arxiv.org/abs/2504.17069</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新的自回归图像生成方法，通过训练模型在任意顺序下生成补丁，显著提升图像质量。</p><br><br><p><strong>摘要：</strong> 自回归补丁式图像生成在图像质量和可扩展性方面表现出色，且易于整合到视觉语言模型中。然而，这类模型需要定义补丁生成的顺序，传统上采用从左上角到右下角的光栅扫描顺序。本文指出这种顺序并非最优，因为它无法尊重图像内容的因果关系。为此，我们首先训练模型能够在任意顺序下生成补丁，并在生成过程中推断每个补丁的内容及其位置。其次，利用这些提取出的顺序对任意顺序模型进行微调，从而生成更高质量的图像。实验结果显示，新方法在两个数据集上的生成效果优于传统的光栅扫描方法，且训练成本相近，无需额外标注。关键词：自回归生成、补丁生成、图像质量优化。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.17069 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 23 Apr 2025 15:33:58 GMT</pubDate>
+<pubDate>Wed, 23 Apr 2025 15:33:58 GMT</pubDate>
+</item>
+<item>
+<title>DyMU：一种高效且无需训练的视觉-语言模型动态计算降低框架</title>
+<link>https://arxiv.org/abs/2504.17040</link>
+<guid>https://arxiv.org/abs/2504.17040</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出DyMU框架，通过动态合并视觉标记实现VLM高效计算。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为DyMU的高效、无需训练的框架，用于动态减少视觉-语言模型（VLMs）的计算负担，同时保持高任务性能。该方法包含两个关键组件：动态标记合并（DToMe）通过基于图像复杂度合并相似标记来减少视觉标记嵌入的数量；虚拟标记拆分（VTU）则通过高效重建完整序列的注意力动态来模拟大型语言模型的预期标记序列，从而在不进行额外微调的情况下保持下游性能。与现有方法不同，DyMU根据图像内容动态调整标记压缩，且完全无需训练，可轻松应用于大多数最先进的VLM架构。实验表明，DyMU在多种VLM架构上平均减少了32%-85%的视觉标记数量，同时保持了与全长度模型相当的性能。此外，定性分析显示，DToMe可根据图像复杂度有效调整标记减少量，为用户提供更多对计算成本的控制权。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.17040 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 23 Apr 2025 14:38:18 GMT</pubDate>
+<pubDate>Wed, 23 Apr 2025 14:38:18 GMT</pubDate>
+</item>
+<item>
+<title>IberBench：评估伊比利亚半岛及伊比罗-美洲语言的大语言模型基准</title>
+<link>https://arxiv.org/abs/2504.16921</link>
+<guid>https://arxiv.org/abs/2504.16921</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>IberBench是一个针对伊比利亚半岛及伊比罗-美洲语言的大语言模型综合评估基准。</p><br><br><p><strong>摘要：</strong> 现有的大型语言模型（LLMs）评估基准主要集中在英语上，对于其他语言尤其是资源有限的语言，评估方法存在不足。这些基准通常忽视了语言多样性，过分关注基础自然语言处理（NLP）能力而忽略了工业相关的任务，并且缺乏动态更新机制。为解决这些问题，我们提出了IberBench，这是一个全面且可扩展的基准，用于评估伊比利亚半岛及伊比罗-美洲语言上的LLMs在基础和工业相关NLP任务中的表现。IberBench整合了来自评估活动和最新基准的101个数据集，涵盖22个任务类别，如情感分析、情绪分析、毒性检测和摘要生成等。此外，该基准通过支持持续更新和社区驱动的模型与数据集提交，解决了当前评估实践中存在的问题。我们对23个参数规模从1亿到140亿的LLMs进行了评估，并提供了关于其优势和局限性的实证见解。研究发现，LLMs在工业相关任务上的表现不如基础任务好，在加利西亚语和巴斯克语上的表现较低，某些任务的结果接近随机水平，而在其他任务上LLMs的表现高于随机但低于共享任务系统。IberBench提供了完整的开源实现，包括数据集标准化和托管、LLMs的增量评估以及公开的排行榜。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.16921 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 23 Apr 2025 13:48:25 GMT</pubDate>
+<pubDate>Wed, 23 Apr 2025 13:48:25 GMT</pubDate>
+</item>
+<item>
+<title>QuaDMix：统一框架优化大语言模型训练数据的质量与多样性</title>
+<link>https://arxiv.org/abs/2504.16511</link>
+<guid>https://arxiv.org/abs/2504.16511</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出QuaDMix框架，同时优化大语言模型训练数据质量和多样性。</p><br><br><p><strong>摘要：</strong> 现有研究通常分别优化大语言模型（LLMs）训练数据的质量和多样性，忽视了两者之间的权衡关系。本文提出QuaDMix框架，通过统一的数据采样函数，在固定训练预算下平衡质量与多样性。QuaDMix利用多个指标衡量数据质量，并借助领域分类评估整体多样性。通过模拟实验和参数搜索加速框架优化，最终在多个基准测试中实现平均性能提升7.2%，显著优于独立优化策略。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.16511 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 23 Apr 2025 04:36:50 GMT</pubDate>
+<pubDate>Wed, 23 Apr 2025 04:36:50 GMT</pubDate>
+</item>
+<item>
+<title>一种结合表征学习与扩散模型的图像生成新框架</title>
+<link>https://arxiv.org/abs/2504.16064</link>
+<guid>https://arxiv.org/abs/2504.16064</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新框架，将扩散模型与表征学习结合，提升图像生成质量和训练效率。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种创新的图像生成框架，通过引入扩散模型同时建模低级图像潜在表示和高级语义特征，实现了表征学习与生成建模的无缝融合。该方法基于变分自编码器和预训练的自监督编码器，从纯噪声开始生成连贯的图像-特征对，在不显著改变标准扩散变换架构的情况下显著提升了生成质量与训练效率。此外，通过引入“表征引导”的推理策略，进一步增强了图像生成的可控性。实验表明，该方法在条件和无条件生成设置下均表现出色，为表征感知的生成建模开辟了新方向。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.16064 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 22 Apr 2025 13:41:42 GMT</pubDate>
+<pubDate>Tue, 22 Apr 2025 13:41:42 GMT</pubDate>
+</item>
+<item>
+<title>ViSMap：基于元提示的无监督视频摘要技术</title>
+<link>https://arxiv.org/abs/2504.15921</link>
+<guid>https://arxiv.org/abs/2504.15921</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>ViSMap通过元提示策略生成长视频伪摘要，实现无监督长视频摘要。</p><br><br><p><strong>摘要：</strong> ViSMap是一种无需标注的长视频摘要系统，解决了现有模型在稀疏分布事件长视频上的总结难题。传统方法依赖于昂贵的分层监督训练，而ViSMap利用LLMs根据短视频片段描述生成长视频的伪摘要，作为长视频摘要模型的训练数据。该系统采用元提示策略迭代生成并优化伪摘要，使用三个LLMs依次生成、评估和改进伪摘要，以提升质量。实验表明，ViSMap在多个数据集上表现优异，性能接近完全监督的最先进模型，且具有跨领域的泛化能力。代码将在发表后公开。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.15921 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 22 Apr 2025 10:06:01 GMT</pubDate>
+<pubDate>Tue, 22 Apr 2025 10:06:01 GMT</pubDate>
+</item>
+
+<item>
 <title>Step1X-Edit：开源图像编辑模型的突破性进展</title>
 <link>https://arxiv.org/abs/2504.17761</link>
 <guid>https://arxiv.org/abs/2504.17761</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种开源图像编辑模型Step1X-Edit，性能接近闭源顶级模型。</p><br><br><p><strong>摘要：</strong> 近年来，图像编辑模型发展迅猛，闭源模型如GPT-4o和Gemini2 Flash展现了强大的图像编辑能力。然而，现有开源算法与其存在显著差距。本文发布了一种名为Step1X-Edit的最新图像编辑模型，通过多模态大语言模型处理参考图像和用户指令，利用潜在嵌入与扩散图像解码器结合生成目标图像。为训练该模型，构建了高质量数据生成管道，并开发了基于真实用户指令的GEdit-Bench基准进行评估。实验结果显示，Step1X-Edit大幅超越现有开源基线，接近领先闭源模型的性能，为图像编辑领域做出了重要贡献。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.17761 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种开源图像编辑模型Step1X-Edit，性能接近闭源顶级模型。</p><br /><br /><p><strong>摘要：</strong> 近年来，图像编辑模型发展迅猛，闭源模型如GPT-4o和Gemini2 Flash展现了强大的图像编辑能力。然而，现有开源算法与其存在显著差距。本文发布了一种名为Step1X-Edit的最新图像编辑模型，通过多模态大语言模型处理参考图像和用户指令，利用潜在嵌入与扩散图像解码器结合生成目标图像。为训练该模型，构建了高质量数据生成管道，并开发了基于真实用户指令的GEdit-Bench基准进行评估。实验结果显示，Step1X-Edit大幅超越现有开源基线，接近领先闭源模型的性能，为图像编辑领域做出了重要贡献。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.17761" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 24 Apr 2025 13:25:12 GMT</pubDate>
 <pubDate>Thu, 24 Apr 2025 13:25:12 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +163,8 @@
 <link>https://arxiv.org/abs/2504.17432</link>
 <guid>https://arxiv.org/abs/2504.17432</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种新的两阶段框架UniME，提升多模态表示学习能力。</p><br><br><p><strong>摘要：</strong> 现有的对比语言图像预训练（CLIP）框架存在文本截断、孤立编码及组合性不足等问题，限制了其效能。尽管多模态大型语言模型（MLLMs）在视觉-语言理解方面取得了显著进展，但其在迁移学习中的潜力尚未充分挖掘。本文介绍了一种名为UniME的新型两阶段框架，通过从强大的基于LLM的教师模型中进行文本辨别性知识蒸馏，增强MLLM的语言组件嵌入能力，并引入硬负样本增强指令微调进一步改进表征学习。实验结果显示，UniME在多个基准测试和检索任务中均表现出色，具有更强的辨别能力和组合性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.17432 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种新的两阶段框架UniME，提升多模态表示学习能力。</p><br /><br /><p><strong>摘要：</strong> 现有的对比语言图像预训练（CLIP）框架存在文本截断、孤立编码及组合性不足等问题，限制了其效能。尽管多模态大型语言模型（MLLMs）在视觉-语言理解方面取得了显著进展，但其在迁移学习中的潜力尚未充分挖掘。本文介绍了一种名为UniME的新型两阶段框架，通过从强大的基于LLM的教师模型中进行文本辨别性知识蒸馏，增强MLLM的语言组件嵌入能力，并引入硬负样本增强指令微调进一步改进表征学习。实验结果显示，UniME在多个基准测试和检索任务中均表现出色，具有更强的辨别能力和组合性。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.17432" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 24 Apr 2025 06:51:52 GMT</pubDate>
 <pubDate>Thu, 24 Apr 2025 06:51:52 GMT</pubDate>
 </item>
 <item>
@@ -33,14 +172,10 @@
 <link>https://arxiv.org/abs/2504.17207</link>
 <guid>https://arxiv.org/abs/2504.17207</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种利用心理意象模拟提升视觉语言模型视角感知能力的新框架。</p><br><br><p><strong>摘要：</strong> 本文介绍了一个用于视觉语言模型(VLMs)视角感知推理的框架，名为抽象视角变化(APC)。该框架通过模拟心理意象，利用视觉基础模型如物体检测、分割和方向估计来构建场景抽象并实现视角转换，从而有效弥补现代VLMs在视角感知推理上的不足。实验结果显示，该框架在合成图像和真实图像基准测试中显著提升了视角感知推理能力，优于微调的空间推理模型和基于新视图合成的方法。这项研究对提高VLMs的人类水平视觉理解能力具有重要意义，有助于促进人机交互与协作。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.17207 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种利用心理意象模拟提升视觉语言模型视角感知能力的新框架。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一个用于视觉语言模型(VLMs)视角感知推理的框架，名为抽象视角变化(APC)。该框架通过模拟心理意象，利用视觉基础模型如物体检测、分割和方向估计来构建场景抽象并实现视角转换，从而有效弥补现代VLMs在视角感知推理上的不足。实验结果显示，该框架在合成图像和真实图像基准测试中显著提升了视角感知推理能力，优于微调的空间推理模型和基于新视图合成的方法。这项研究对提高VLMs的人类水平视觉理解能力具有重要意义，有助于促进人机交互与协作。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.17207" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 23 Apr 2025 22:41:34 GMT</pubDate>
-<pubDate>Wed, 23 Apr 2025 22:41:34 GMT</pubDate>
 </item>
-
 <item>
 <title>Causal-Copilot: An Autonomous Causal Analysis Agent</title>
 <link>https://arxiv.org/abs/2504.13263</link>
@@ -9013,33 +9148,6 @@ Scientific experimentation, a cornerstone of human progress, demands rigor in re
 We introduce WiCkeD, a simple method to increase the complexity of existing multiple-choice benchmarks by randomly replacing a choice with "None of the above", a method often used in educational tests. We show that WiCkeD can be automatically applied to any existing benchmark, making it more challenging. We apply WiCkeD to 6 popular benchmarks and use it to evaluate 18 open-weight LLMs. The performance of the models drops 12.1 points on average with respect to the original versions of the datasets. When using chain-of-thought on 3 MMLU datasets, the performance drop for the WiCkeD variant is similar to the one observed when using the LLMs directly, showing that WiCkeD is also challenging for models with enhanced reasoning abilities. WiCkeD also uncovers that some models are more sensitive to the extra reasoning required, providing additional information with respect to the original benchmarks. We relase our code and data at https://github.com/ahmedselhady/wicked-benchmarks.
 ]]></content:encoded>
 <pubDate>Wed, 26 Feb 2025 10:53:44 GMT</pubDate>
-</item>
-<item>
-<title>基于提示的语言模型评估方法P2L的提案</title>
-<link>https://arxiv.org/abs/2502.14855</link>
-<guid>https://arxiv.org/abs/2502.14855</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出了一种新方法P2L，用于更加精准的语言模型评估。</p><br /><br /><p><strong>摘要：</strong> 文章提出了一种名为Prompt-to-Leaderboard（P2L）的方法，用于解决现有语言模型（LLM）评估中的问题，特别是平均指标无法展示用户与提示特定的性能差异。P2L通过将自然语言提示输入到LLM中，生成Bradley-Terry系数的向量，从而预测人类偏好的投票。此方法允许实现针对特定提示的无监督任务评估、最优的查询路由、个性化和模型优缺点的自动评估。根据Chatbot Arena的数据，P2L能更好地反映语言模型性能的细微差异。研究还发现，P2L的提示特定评估能力遵循与LLM相似的幂律缩放。在2025年1月，基于该方法训练的路由器在Chatbot Arena排行榜上获得第一名。相关代码可在GitHub上获取。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.14855" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 26 Feb 2025 10:43:07 GMT</pubDate>
-</item>
-<item>
-<title>提升大语言模型调优性能的可扩展偏好数据构建策略</title>
-<link>https://arxiv.org/abs/2502.16825</link>
-<guid>https://arxiv.org/abs/2502.16825</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文提出了一个可扩展的偏好数据构建策略以提升大语言模型的性能。</p><br /><br /><p><strong>摘要：</strong> 文章探讨了通过重复随机抽样来扩大大语言模型（LLMs）对齐过程中的采样规模，以提高性能。传统方法选择最高奖励的样本作为已选择回应，最低奖励的样本作为拒绝回应进行直接偏好优化（DPO），然而实验证实这一策略在样本量增加时表现不佳。为解决此问题，研究者基于样本奖励的正态分布特征构建偏好数据，定义七个代表性奖励点，并系统探讨其21种成对组合。通过对四个模型使用AlpacaEval 2进行评估，发现选择奖励位置为μ - 2σ的拒绝回应而不是最低奖励，对于优化性能至关重要。最终，文章提出了一种可扩展的偏好数据构建策略，能够随着样本规模的增加持续提升模型的表现。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.16825" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 26 Feb 2025 09:40:23 GMT</pubDate>
-</item>
-<item>
-<title>LaTIM: 基于Mamba模型的细粒度令牌级可解释性方法</title>
-<link>https://arxiv.org/abs/2502.15612</link>
-<guid>https://arxiv.org/abs/2502.15612</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文提出LaTIM方法，以提升Mamba模型的可解释性。</p><br /><br /><p><strong>摘要：</strong> 本研究引入LaTIM，一种新颖的令牌级分解方法，旨在提高Mamba-1和Mamba-2模型的可解释性。尽管状态空间模型（SSMs）如Mamba在长上下文序列建模方面展示出优越性能，但其在可解释性工具方面的缺乏限制了对其内部机制的理解。我们的方法通过细粒度地分解令牌的贡献，使得用户能够清晰地了解不同层次中Mamba的选择性序列处理方式。我们在机器翻译、复制以及基于检索的生成等多个任务上对LaTIM进行了广泛评估，结果显示其有效揭示了Mamba模型的令牌间交互模式，增强了模型的可解释性和透明度。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.15612" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 26 Feb 2025 07:28:05 GMT</pubDate>
 </item>
 </channel>
 </rss>
