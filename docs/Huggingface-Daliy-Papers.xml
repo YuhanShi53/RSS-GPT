@@ -5,15 +5,37 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>DiMeR：一种用于稀疏视图网格重建的解耦双流前馈模型</title>
+<link>https://arxiv.org/abs/2504.17670</link>
+<guid>https://arxiv.org/abs/2504.17670</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出了一种新型解耦双流模型DiMeR，显著提升了稀疏视图网格重建的效果。</p><br><br><p><strong>摘要：</strong> 随着大规模3D数据集的到来，前馈3D生成模型如大尺度重建模型（LRM）受到广泛关注并取得显著成功。然而，RGB图像往往导致训练目标冲突且缺乏几何重建所需的清晰度。本文重新审视了与网格重建相关的归纳偏差，引入了DiMeR，这是一种新颖的解耦双流前馈模型，用于稀疏视图网格重建。DiMeR通过将输入和框架分解为几何和纹理部分，减少了每个部分的训练难度。几何分支利用法线贴图作为输入，而纹理分支则使用RGB图像获取纹理网格。实验表明，DiMeR在多种任务中表现出色，并在GSO和OmniObject3D数据集上显著优于现有方法，Chamfer距离提升超过30%。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.17670 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 24 Apr 2025 11:39:20 GMT</pubDate>
+<pubDate>Thu, 24 Apr 2025 11:39:20 GMT</pubDate>
+</item>
+<item>
+<title>Process Reward Models That Think</title>
+<link>https://arxiv.org/abs/2504.16828</link>
+<guid>https://arxiv.org/abs/2504.16828</guid>
+<content:encoded><![CDATA[
+
+  Step-by-step verifiers -- also known as process reward models (PRMs) -- are a key ingredient for test-time scaling. PRMs require step-level supervision, making them expensive to train. This work aims to build data-efficient PRMs as verbalized step-wise reward models that verify every step in the solution by generating a verification chain-of-thought (CoT). We propose ThinkPRM, a long CoT verifier fine-tuned on orders of magnitude fewer process labels than those required by discriminative PRMs. Our approach capitalizes on the inherent reasoning abilities of long CoT models, and outperforms LLM-as-a-Judge and discriminative verifiers -- using only 1% of the process labels in PRM800K -- across several challenging benchmarks. Specifically, ThinkPRM beats the baselines on ProcessBench, MATH-500, and AIME '24 under best-of-N selection and reward-guided search. In an out-of-domain evaluation on a subset of GPQA-Diamond and LiveCodeBench, our PRM surpasses discriminative verifiers trained on the full PRM800K by 8% and 4.5%, respectively. Lastly, under the same token budget, ThinkPRM scales up verification compute more effectively compared to LLM-as-a-Judge, outperforming it by 7.2% on a subset of ProcessBench. Our work highlights the value of generative, long CoT PRMs that can scale test-time compute for verification while requiring minimal supervision for training. Our code, data, and models will be released at https://github.com/mukhal/thinkprm.
+
+]]></content:encoded>
+<pubDate>Wed, 23 Apr 2025 11:44:54 GMT</pubDate>
+<pubDate>Wed, 23 Apr 2025 11:44:54 GMT</pubDate>
+</item>
+
+<item>
 <title>Token-Shuffle：通过维度重排提升基于Transformer的文本到高分辨率图像生成</title>
 <link>https://arxiv.org/abs/2504.17789</link>
 <guid>https://arxiv.org/abs/2504.17789</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出Token-Shuffle方法，大幅减少Transformer中的图像tokens数量，实现高效高分辨率图像生成。</p><br><br><p><strong>摘要：</strong> 本文针对自回归（AR）模型在图像合成领域的局限性展开研究，主要问题在于其所需图像tokens数量庞大，影响训练和推理效率及图像分辨率。为此，我们提出了Token-Shuffle，一种新颖且简单的方法，通过在视觉编码器生成的低维视觉代码映射到语言词汇表时利用视觉词汇表的维度冗余性，减少输入tokens的数量。具体而言，Token-Shuffle通过在通道维度上合并空间局部tokens来降低输入tokens数量，而token-unshuffle则在Transformer块后解纠缠推断出的tokens，恢复空间排列以输出图像。该策略无需额外的预训练文本编码器，使多模态大语言模型（MLLMs）能够以统一的下一-token预测方式支持极高分辨率（如2048x2048）的图像生成，同时保持高效的训练和推理。实验表明，在GenAI基准测试中，我们的2.7B参数模型在困难提示下获得0.77的整体分数，优于LlamaGen 0.18分，超过LDM 0.15分。大规模的人类评估进一步证明了我们在文本对齐、视觉瑕疵和视觉外观方面的卓越能力。我们希望Token-Shuffle能成为高效高分辨率图像生成的基础设计。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.17789 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出Token-Shuffle方法，大幅减少Transformer中的图像tokens数量，实现高效高分辨率图像生成。</p><br /><br /><p><strong>摘要：</strong> 本文针对自回归（AR）模型在图像合成领域的局限性展开研究，主要问题在于其所需图像tokens数量庞大，影响训练和推理效率及图像分辨率。为此，我们提出了Token-Shuffle，一种新颖且简单的方法，通过在视觉编码器生成的低维视觉代码映射到语言词汇表时利用视觉词汇表的维度冗余性，减少输入tokens的数量。具体而言，Token-Shuffle通过在通道维度上合并空间局部tokens来降低输入tokens数量，而token-unshuffle则在Transformer块后解纠缠推断出的tokens，恢复空间排列以输出图像。该策略无需额外的预训练文本编码器，使多模态大语言模型（MLLMs）能够以统一的下一-token预测方式支持极高分辨率（如2048x2048）的图像生成，同时保持高效的训练和推理。实验表明，在GenAI基准测试中，我们的2.7B参数模型在困难提示下获得0.77的整体分数，优于LlamaGen 0.18分，超过LDM 0.15分。大规模的人类评估进一步证明了我们在文本对齐、视觉瑕疵和视觉外观方面的卓越能力。我们希望Token-Shuffle能成为高效高分辨率图像生成的基础设计。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.17789" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 24 Apr 2025 13:59:56 GMT</pubDate>
 <pubDate>Thu, 24 Apr 2025 13:59:56 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +43,8 @@
 <link>https://arxiv.org/abs/2504.17601</link>
 <guid>https://arxiv.org/abs/2504.17601</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>一种结合线性和非线性特性的新型降维技术被提出。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种新的降维方法，旨在解决现有技术如t-SNE和PCA在表达能力和可解释性之间的权衡问题。该算法通过将高维空间映射到低维空间时结合线性变换和高斯加权的非线性变换，实现了复杂非线性转换的同时保持线性方法的可解释性。文章详细描述了这种架构的设计及其在几何关系保留上的优势，并提出了用于分析学习到的变换的技术，例如识别被抑制的维度以及空间如何被扩展和收缩的方法。此外，为了促进学术界和工业界的广泛应用，强调了开发用户友好型软件包的重要性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.17601 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">一种结合线性和非线性特性的新型降维技术被提出。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种新的降维方法，旨在解决现有技术如t-SNE和PCA在表达能力和可解释性之间的权衡问题。该算法通过将高维空间映射到低维空间时结合线性变换和高斯加权的非线性变换，实现了复杂非线性转换的同时保持线性方法的可解释性。文章详细描述了这种架构的设计及其在几何关系保留上的优势，并提出了用于分析学习到的变换的技术，例如识别被抑制的维度以及空间如何被扩展和收缩的方法。此外，为了促进学术界和工业界的广泛应用，强调了开发用户友好型软件包的重要性。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.17601" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 24 Apr 2025 10:26:42 GMT</pubDate>
 <pubDate>Thu, 24 Apr 2025 10:26:42 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +52,8 @@
 <link>https://arxiv.org/abs/2504.17502</link>
 <guid>https://arxiv.org/abs/2504.17502</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种新方法RefVNLI，用于同时评估文本对齐和主体一致性。</p><br><br><p><strong>摘要：</strong> 当前基于主体驱动的文本到图像生成技术在个性化图像生成和视频角色表现等领域有广泛应用潜力，但缺乏可靠的自动评估手段。现有评估方法通常仅关注任务的一个方面、与人类判断不一致或依赖昂贵的API评估。为解决这一问题，我们提出了RefVNLI，这是一种成本效益高的度量方法，能够在单一预测中评估文本对齐和主体保存。通过在大规模数据集上训练，RefVNLI在多个基准测试和主体类别中表现出色，相较于现有基线方法，在文本对齐和主体一致性方面分别提高了6.4和8.5个百分点。此外，它在处理较冷门概念时也表现出色，与人类偏好的一致性超过87%。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.17502 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种新方法RefVNLI，用于同时评估文本对齐和主体一致性。</p><br /><br /><p><strong>摘要：</strong> 当前基于主体驱动的文本到图像生成技术在个性化图像生成和视频角色表现等领域有广泛应用潜力，但缺乏可靠的自动评估手段。现有评估方法通常仅关注任务的一个方面、与人类判断不一致或依赖昂贵的API评估。为解决这一问题，我们提出了RefVNLI，这是一种成本效益高的度量方法，能够在单一预测中评估文本对齐和主体保存。通过在大规模数据集上训练，RefVNLI在多个基准测试和主体类别中表现出色，相较于现有基线方法，在文本对齐和主体一致性方面分别提高了6.4和8.5个百分点。此外，它在处理较冷门概念时也表现出色，与人类偏好的一致性超过87%。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.17502" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 24 Apr 2025 08:44:51 GMT</pubDate>
 <pubDate>Thu, 24 Apr 2025 08:44:51 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +61,8 @@
 <link>https://arxiv.org/abs/2504.17414</link>
 <guid>https://arxiv.org/abs/2504.17414</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种新的扩散模型方法，解决复杂服装图案和多变人体姿态下的高质量视频试穿问题。</p><br><br><p><strong>摘要：</strong> 现有的视频试穿技术在处理复杂的服装图案和多样的人体姿势时，难以生成高质量且时间上一致的结果。本文介绍了一种名为3DV-TON的新框架，该框架基于扩散模型，旨在生成高保真度且时间一致的视频试穿效果。3DV-TON通过生成可动画化的纹理化3D网格作为显式的帧级指导，缓解了模型过于关注外观细节而忽略运动连贯性的问题。具体而言，该方法首先选择关键帧进行初始2D图像试穿，随后重建并同步原始视频姿态的纹理化3D网格。此外，我们引入了一种鲁棒的矩形掩码策略，成功减少了动态人体和服装运动过程中因服装信息泄漏导致的伪影传播。为了推动视频试穿研究的发展，我们还创建了一个名为HR-VVT的高分辨率基准数据集，包含130段具有多样服装类型和场景的视频。定量和定性结果表明，我们的方法在性能上优于现有方法。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.17414 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种新的扩散模型方法，解决复杂服装图案和多变人体姿态下的高质量视频试穿问题。</p><br /><br /><p><strong>摘要：</strong> 现有的视频试穿技术在处理复杂的服装图案和多样的人体姿势时，难以生成高质量且时间上一致的结果。本文介绍了一种名为3DV-TON的新框架，该框架基于扩散模型，旨在生成高保真度且时间一致的视频试穿效果。3DV-TON通过生成可动画化的纹理化3D网格作为显式的帧级指导，缓解了模型过于关注外观细节而忽略运动连贯性的问题。具体而言，该方法首先选择关键帧进行初始2D图像试穿，随后重建并同步原始视频姿态的纹理化3D网格。此外，我们引入了一种鲁棒的矩形掩码策略，成功减少了动态人体和服装运动过程中因服装信息泄漏导致的伪影传播。为了推动视频试穿研究的发展，我们还创建了一个名为HR-VVT的高分辨率基准数据集，包含130段具有多样服装类型和场景的视频。定量和定性结果表明，我们的方法在性能上优于现有方法。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.17414" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 24 Apr 2025 06:12:40 GMT</pubDate>
 <pubDate>Thu, 24 Apr 2025 06:12:40 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +70,8 @@
 <link>https://arxiv.org/abs/2504.17343</link>
 <guid>https://arxiv.org/abs/2504.17343</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出TimeChat-Online，解决流媒体视频冗余问题并实现高效实时互动。</p><br><br><p><strong>摘要：</strong> 随着在线视频平台特别是直播服务的快速发展，在线视频理解系统的需求日益迫切。然而，现有的VideoLLMs在处理完整视频时表现出色，但在流媒体场景下由于无法有效处理密集冗余帧而面临显著限制。本文介绍了一种名为TimeChat-Online的新型在线VideoLLM，它通过创新的Differential Token Drop (DTD)模块解决了流媒体视频中的视觉冗余问题。DTD模块受到人类视觉感知变化盲视现象的启发，能够在过滤冗余内容的同时保留有意义的时间变化。实验表明，DTD可以将视频令牌减少82.8%，同时在StreamingBench上保持98%的性能。此外，TimeChat-Online-139K数据集支持多种交互模式，包括后向追踪、当前感知和未来响应。TimeChat-Online的独特主动响应能力也使其在流媒体基准测试和长视频任务中表现优异。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.17343 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出TimeChat-Online，解决流媒体视频冗余问题并实现高效实时互动。</p><br /><br /><p><strong>摘要：</strong> 随着在线视频平台特别是直播服务的快速发展，在线视频理解系统的需求日益迫切。然而，现有的VideoLLMs在处理完整视频时表现出色，但在流媒体场景下由于无法有效处理密集冗余帧而面临显著限制。本文介绍了一种名为TimeChat-Online的新型在线VideoLLM，它通过创新的Differential Token Drop (DTD)模块解决了流媒体视频中的视觉冗余问题。DTD模块受到人类视觉感知变化盲视现象的启发，能够在过滤冗余内容的同时保留有意义的时间变化。实验表明，DTD可以将视频令牌减少82.8%，同时在StreamingBench上保持98%的性能。此外，TimeChat-Online-139K数据集支持多种交互模式，包括后向追踪、当前感知和未来响应。TimeChat-Online的独特主动响应能力也使其在流媒体基准测试和长视频任务中表现优异。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.17343" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 24 Apr 2025 03:59:46 GMT</pubDate>
 <pubDate>Thu, 24 Apr 2025 03:59:46 GMT</pubDate>
 </item>
 <item>
@@ -69,11 +79,8 @@
 <link>https://arxiv.org/abs/2504.17192</link>
 <guid>https://arxiv.org/abs/2504.17192</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>PaperCoder通过多阶段生成高质量机器学习论文代码实现。</p><br><br><p><strong>摘要：</strong> 尽管机器学习研究快速发展，但相关代码实现往往不可用，导致研究人员难以复现结果或扩展先前工作。近期大型语言模型（LLMs）在理解科学文档和生成高质量代码方面表现出色。受此启发，我们提出了PaperCoder，这是一种多智能体LLM框架，可将机器学习论文转化为功能完善的代码库。PaperCoder分为三个阶段：规划阶段构建高层次路线图、设计系统架构并生成配置文件；分析阶段专注于解析特定实现细节；生成阶段则产生模块化且依赖感知的代码。每个阶段均由专门设计的智能体协作完成。我们在基于模型和人工评估的基础上对PaperCoder进行了评估，以机器学习论文为基础生成代码实现，同时以作者发布的代码库作为真实数据。结果显示，PaperCoder生成的代码质量高且忠实于原论文，尤其在新发布的PaperBench基准测试中表现优异，大幅超越了其他基线方法。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.17192 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">PaperCoder通过多阶段生成高质量机器学习论文代码实现。</p><br /><br /><p><strong>摘要：</strong> 尽管机器学习研究快速发展，但相关代码实现往往不可用，导致研究人员难以复现结果或扩展先前工作。近期大型语言模型（LLMs）在理解科学文档和生成高质量代码方面表现出色。受此启发，我们提出了PaperCoder，这是一种多智能体LLM框架，可将机器学习论文转化为功能完善的代码库。PaperCoder分为三个阶段：规划阶段构建高层次路线图、设计系统架构并生成配置文件；分析阶段专注于解析特定实现细节；生成阶段则产生模块化且依赖感知的代码。每个阶段均由专门设计的智能体协作完成。我们在基于模型和人工评估的基础上对PaperCoder进行了评估，以机器学习论文为基础生成代码实现，同时以作者发布的代码库作为真实数据。结果显示，PaperCoder生成的代码质量高且忠实于原论文，尤其在新发布的PaperBench基准测试中表现优异，大幅超越了其他基线方法。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.17192" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 23 Apr 2025 21:57:01 GMT</pubDate>
 <pubDate>Wed, 23 Apr 2025 21:57:01 GMT</pubDate>
 </item>
 <item>
@@ -81,11 +88,8 @@
 <link>https://arxiv.org/abs/2504.17069</link>
 <guid>https://arxiv.org/abs/2504.17069</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种新的自回归图像生成方法，通过训练模型在任意顺序下生成补丁，显著提升图像质量。</p><br><br><p><strong>摘要：</strong> 自回归补丁式图像生成在图像质量和可扩展性方面表现出色，且易于整合到视觉语言模型中。然而，这类模型需要定义补丁生成的顺序，传统上采用从左上角到右下角的光栅扫描顺序。本文指出这种顺序并非最优，因为它无法尊重图像内容的因果关系。为此，我们首先训练模型能够在任意顺序下生成补丁，并在生成过程中推断每个补丁的内容及其位置。其次，利用这些提取出的顺序对任意顺序模型进行微调，从而生成更高质量的图像。实验结果显示，新方法在两个数据集上的生成效果优于传统的光栅扫描方法，且训练成本相近，无需额外标注。关键词：自回归生成、补丁生成、图像质量优化。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.17069 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种新的自回归图像生成方法，通过训练模型在任意顺序下生成补丁，显著提升图像质量。</p><br /><br /><p><strong>摘要：</strong> 自回归补丁式图像生成在图像质量和可扩展性方面表现出色，且易于整合到视觉语言模型中。然而，这类模型需要定义补丁生成的顺序，传统上采用从左上角到右下角的光栅扫描顺序。本文指出这种顺序并非最优，因为它无法尊重图像内容的因果关系。为此，我们首先训练模型能够在任意顺序下生成补丁，并在生成过程中推断每个补丁的内容及其位置。其次，利用这些提取出的顺序对任意顺序模型进行微调，从而生成更高质量的图像。实验结果显示，新方法在两个数据集上的生成效果优于传统的光栅扫描方法，且训练成本相近，无需额外标注。关键词：自回归生成、补丁生成、图像质量优化。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.17069" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 23 Apr 2025 15:33:58 GMT</pubDate>
 <pubDate>Wed, 23 Apr 2025 15:33:58 GMT</pubDate>
 </item>
 <item>
@@ -93,11 +97,8 @@
 <link>https://arxiv.org/abs/2504.17040</link>
 <guid>https://arxiv.org/abs/2504.17040</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出DyMU框架，通过动态合并视觉标记实现VLM高效计算。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为DyMU的高效、无需训练的框架，用于动态减少视觉-语言模型（VLMs）的计算负担，同时保持高任务性能。该方法包含两个关键组件：动态标记合并（DToMe）通过基于图像复杂度合并相似标记来减少视觉标记嵌入的数量；虚拟标记拆分（VTU）则通过高效重建完整序列的注意力动态来模拟大型语言模型的预期标记序列，从而在不进行额外微调的情况下保持下游性能。与现有方法不同，DyMU根据图像内容动态调整标记压缩，且完全无需训练，可轻松应用于大多数最先进的VLM架构。实验表明，DyMU在多种VLM架构上平均减少了32%-85%的视觉标记数量，同时保持了与全长度模型相当的性能。此外，定性分析显示，DToMe可根据图像复杂度有效调整标记减少量，为用户提供更多对计算成本的控制权。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.17040 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出DyMU框架，通过动态合并视觉标记实现VLM高效计算。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种名为DyMU的高效、无需训练的框架，用于动态减少视觉-语言模型（VLMs）的计算负担，同时保持高任务性能。该方法包含两个关键组件：动态标记合并（DToMe）通过基于图像复杂度合并相似标记来减少视觉标记嵌入的数量；虚拟标记拆分（VTU）则通过高效重建完整序列的注意力动态来模拟大型语言模型的预期标记序列，从而在不进行额外微调的情况下保持下游性能。与现有方法不同，DyMU根据图像内容动态调整标记压缩，且完全无需训练，可轻松应用于大多数最先进的VLM架构。实验表明，DyMU在多种VLM架构上平均减少了32%-85%的视觉标记数量，同时保持了与全长度模型相当的性能。此外，定性分析显示，DToMe可根据图像复杂度有效调整标记减少量，为用户提供更多对计算成本的控制权。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.17040" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 23 Apr 2025 14:38:18 GMT</pubDate>
 <pubDate>Wed, 23 Apr 2025 14:38:18 GMT</pubDate>
 </item>
 <item>
@@ -105,11 +106,8 @@
 <link>https://arxiv.org/abs/2504.16921</link>
 <guid>https://arxiv.org/abs/2504.16921</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>IberBench是一个针对伊比利亚半岛及伊比罗-美洲语言的大语言模型综合评估基准。</p><br><br><p><strong>摘要：</strong> 现有的大型语言模型（LLMs）评估基准主要集中在英语上，对于其他语言尤其是资源有限的语言，评估方法存在不足。这些基准通常忽视了语言多样性，过分关注基础自然语言处理（NLP）能力而忽略了工业相关的任务，并且缺乏动态更新机制。为解决这些问题，我们提出了IberBench，这是一个全面且可扩展的基准，用于评估伊比利亚半岛及伊比罗-美洲语言上的LLMs在基础和工业相关NLP任务中的表现。IberBench整合了来自评估活动和最新基准的101个数据集，涵盖22个任务类别，如情感分析、情绪分析、毒性检测和摘要生成等。此外，该基准通过支持持续更新和社区驱动的模型与数据集提交，解决了当前评估实践中存在的问题。我们对23个参数规模从1亿到140亿的LLMs进行了评估，并提供了关于其优势和局限性的实证见解。研究发现，LLMs在工业相关任务上的表现不如基础任务好，在加利西亚语和巴斯克语上的表现较低，某些任务的结果接近随机水平，而在其他任务上LLMs的表现高于随机但低于共享任务系统。IberBench提供了完整的开源实现，包括数据集标准化和托管、LLMs的增量评估以及公开的排行榜。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.16921 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">IberBench是一个针对伊比利亚半岛及伊比罗-美洲语言的大语言模型综合评估基准。</p><br /><br /><p><strong>摘要：</strong> 现有的大型语言模型（LLMs）评估基准主要集中在英语上，对于其他语言尤其是资源有限的语言，评估方法存在不足。这些基准通常忽视了语言多样性，过分关注基础自然语言处理（NLP）能力而忽略了工业相关的任务，并且缺乏动态更新机制。为解决这些问题，我们提出了IberBench，这是一个全面且可扩展的基准，用于评估伊比利亚半岛及伊比罗-美洲语言上的LLMs在基础和工业相关NLP任务中的表现。IberBench整合了来自评估活动和最新基准的101个数据集，涵盖22个任务类别，如情感分析、情绪分析、毒性检测和摘要生成等。此外，该基准通过支持持续更新和社区驱动的模型与数据集提交，解决了当前评估实践中存在的问题。我们对23个参数规模从1亿到140亿的LLMs进行了评估，并提供了关于其优势和局限性的实证见解。研究发现，LLMs在工业相关任务上的表现不如基础任务好，在加利西亚语和巴斯克语上的表现较低，某些任务的结果接近随机水平，而在其他任务上LLMs的表现高于随机但低于共享任务系统。IberBench提供了完整的开源实现，包括数据集标准化和托管、LLMs的增量评估以及公开的排行榜。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.16921" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 23 Apr 2025 13:48:25 GMT</pubDate>
 <pubDate>Wed, 23 Apr 2025 13:48:25 GMT</pubDate>
 </item>
 <item>
@@ -117,11 +115,8 @@
 <link>https://arxiv.org/abs/2504.16511</link>
 <guid>https://arxiv.org/abs/2504.16511</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出QuaDMix框架，同时优化大语言模型训练数据质量和多样性。</p><br><br><p><strong>摘要：</strong> 现有研究通常分别优化大语言模型（LLMs）训练数据的质量和多样性，忽视了两者之间的权衡关系。本文提出QuaDMix框架，通过统一的数据采样函数，在固定训练预算下平衡质量与多样性。QuaDMix利用多个指标衡量数据质量，并借助领域分类评估整体多样性。通过模拟实验和参数搜索加速框架优化，最终在多个基准测试中实现平均性能提升7.2%，显著优于独立优化策略。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.16511 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出QuaDMix框架，同时优化大语言模型训练数据质量和多样性。</p><br /><br /><p><strong>摘要：</strong> 现有研究通常分别优化大语言模型（LLMs）训练数据的质量和多样性，忽视了两者之间的权衡关系。本文提出QuaDMix框架，通过统一的数据采样函数，在固定训练预算下平衡质量与多样性。QuaDMix利用多个指标衡量数据质量，并借助领域分类评估整体多样性。通过模拟实验和参数搜索加速框架优化，最终在多个基准测试中实现平均性能提升7.2%，显著优于独立优化策略。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.16511" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 23 Apr 2025 04:36:50 GMT</pubDate>
 <pubDate>Wed, 23 Apr 2025 04:36:50 GMT</pubDate>
 </item>
 <item>
@@ -129,11 +124,8 @@
 <link>https://arxiv.org/abs/2504.16064</link>
 <guid>https://arxiv.org/abs/2504.16064</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种新框架，将扩散模型与表征学习结合，提升图像生成质量和训练效率。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种创新的图像生成框架，通过引入扩散模型同时建模低级图像潜在表示和高级语义特征，实现了表征学习与生成建模的无缝融合。该方法基于变分自编码器和预训练的自监督编码器，从纯噪声开始生成连贯的图像-特征对，在不显著改变标准扩散变换架构的情况下显著提升了生成质量与训练效率。此外，通过引入“表征引导”的推理策略，进一步增强了图像生成的可控性。实验表明，该方法在条件和无条件生成设置下均表现出色，为表征感知的生成建模开辟了新方向。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.16064 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种新框架，将扩散模型与表征学习结合，提升图像生成质量和训练效率。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种创新的图像生成框架，通过引入扩散模型同时建模低级图像潜在表示和高级语义特征，实现了表征学习与生成建模的无缝融合。该方法基于变分自编码器和预训练的自监督编码器，从纯噪声开始生成连贯的图像-特征对，在不显著改变标准扩散变换架构的情况下显著提升了生成质量与训练效率。此外，通过引入“表征引导”的推理策略，进一步增强了图像生成的可控性。实验表明，该方法在条件和无条件生成设置下均表现出色，为表征感知的生成建模开辟了新方向。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.16064" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 22 Apr 2025 13:41:42 GMT</pubDate>
 <pubDate>Tue, 22 Apr 2025 13:41:42 GMT</pubDate>
 </item>
 <item>
@@ -141,14 +133,10 @@
 <link>https://arxiv.org/abs/2504.15921</link>
 <guid>https://arxiv.org/abs/2504.15921</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>ViSMap通过元提示策略生成长视频伪摘要，实现无监督长视频摘要。</p><br><br><p><strong>摘要：</strong> ViSMap是一种无需标注的长视频摘要系统，解决了现有模型在稀疏分布事件长视频上的总结难题。传统方法依赖于昂贵的分层监督训练，而ViSMap利用LLMs根据短视频片段描述生成长视频的伪摘要，作为长视频摘要模型的训练数据。该系统采用元提示策略迭代生成并优化伪摘要，使用三个LLMs依次生成、评估和改进伪摘要，以提升质量。实验表明，ViSMap在多个数据集上表现优异，性能接近完全监督的最先进模型，且具有跨领域的泛化能力。代码将在发表后公开。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.15921 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">ViSMap通过元提示策略生成长视频伪摘要，实现无监督长视频摘要。</p><br /><br /><p><strong>摘要：</strong> ViSMap是一种无需标注的长视频摘要系统，解决了现有模型在稀疏分布事件长视频上的总结难题。传统方法依赖于昂贵的分层监督训练，而ViSMap利用LLMs根据短视频片段描述生成长视频的伪摘要，作为长视频摘要模型的训练数据。该系统采用元提示策略迭代生成并优化伪摘要，使用三个LLMs依次生成、评估和改进伪摘要，以提升质量。实验表明，ViSMap在多个数据集上表现优异，性能接近完全监督的最先进模型，且具有跨领域的泛化能力。代码将在发表后公开。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.15921" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 22 Apr 2025 10:06:01 GMT</pubDate>
-<pubDate>Tue, 22 Apr 2025 10:06:01 GMT</pubDate>
 </item>
-
 <item>
 <title>Step1X-Edit：开源图像编辑模型的突破性进展</title>
 <link>https://arxiv.org/abs/2504.17761</link>
@@ -9040,114 +9028,6 @@ While the task of face swapping has recently gained attention in the research co
 <div><p style="color: gray;">本研究提出通过能谱增强3D分子表示的预训练以融入量子力学知识。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了3D结构与分子能态之间的关系，并提出运用量子力学的能谱增强分子表示的预训练方法。现有方法多依赖经典力学建模，忽视了量子力学的效应。在此框架下，我们提出了SpecFormer，一种用于通过掩蔽补丁重建编码分子能谱的多谱编码器。通过对3D编码器与能谱编码器输出的对比目标进行对齐，我们提升了3D编码器对分子的理解。评估结果显示，基于我们预训练的表示在分子性质预测和动力学建模方面超越了现有方法。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.16284" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 26 Feb 2025 22:29:40 GMT</pubDate>
-</item>
-<item>
-<title>AI助力科学发现：多智能体系统在生物医学领域的应用</title>
-<link>https://arxiv.org/abs/2502.18864</link>
-<guid>https://arxiv.org/abs/2502.18864</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">文章介绍了一种AI共同科学家系统，旨在增强科学假设生成与实验验证。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种基于Gemini 2.0的AI共同科学家系统，旨在通过生成、辩论和进化的方法，辅助科学家发现新的研究假设。此系统具备多智能体架构和异步任务执行框架，支持灵活的计算扩展，特别关注生物医学领域的应用，如药物再利用、新靶点发现和细菌进化机制解析。具体而言，系统为急性髓性白血病提供了具有临床应用潜力的药物候选，而在新靶点发现中，提出了在肝纤维化研究中可验证的表观遗传靶点。此外，AI共同科学家还总结了细菌进化中的新基因转移机制，展示了AI在增强生物医学发现方面的潜力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.18864" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 26 Feb 2025 22:18:06 GMT</pubDate>
-</item>
-<item>
-<title>AISafetyLab: 统一的AI安全框架与工具包</title>
-<link>https://arxiv.org/abs/2502.16776</link>
-<guid>https://arxiv.org/abs/2502.16776</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">文章介绍AISafetyLab，一个集成AI安全方法的工具包。</p><br /><br /><p><strong>摘要：</strong> 随着AI模型在实际场景中的广泛应用，确保其安全性变得愈发重要。尽管在AI安全的评估与提升方面进行了大量努力，但缺乏标准化框架和全面工具包仍然是系统研究和实际应用的重大障碍。为此，文章提出了AISafetyLab，一个统一的框架和工具包，整合了代表性的攻击、防御及评估方法。AISafetyLab具有直观的界面，使开发者能够无缝应用各种技术，并保持结构良好、可扩展的代码库以支持未来的技术进步。此外，本文对Vicuna进行了实证研究，分析了不同攻击和防御策略的有效性，为未来研究提供了重要见解。AISafetyLab已在GitHub公开发布，致力于持续维护和改进。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.16776" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 26 Feb 2025 22:16:03 GMT</pubDate>
-</item>
-<item>
-<title>跨上下文蒸馏方法提升单目深度估计精度</title>
-<link>https://arxiv.org/abs/2502.19204</link>
-<guid>https://arxiv.org/abs/2502.19204</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文提出跨上下文蒸馏方法，显著提升单目深度估计的准确性。</p><br /><br /><p><strong>摘要：</strong> 单目深度估计(MDE)旨在从单张RGB图像中预测场景深度，对3D场景理解至关重要。近期零-shot MDE的进展利用了标准化深度表示和基于蒸馏的学习，以提高在多样场景中的泛化能力。然而，目前的蒸馏深度标准化方法依赖于全局标准化，可能会放大噪声伪标签，从而降低蒸馏效果。本文系统分析了不同深度标准化策略对伪标签蒸馏的影响，并提出了跨上下文蒸馏方法，结合全局和局部深度线索以增强伪标签质量。此外，我们还引入了一种多教师蒸馏框架，充分利用不同深度估计模型的互补优势，旨在提供更稳健和准确的深度预测。大量在基准数据集上的实验证明，我们的方法在定量和定性方面均显著优于当前最先进的方法。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.19204" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 26 Feb 2025 22:10:20 GMT</pubDate>
-</item>
-<item>
-<title>基于Manim动画的定理解释视频生成与评估</title>
-<link>https://arxiv.org/abs/2502.19400</link>
-<guid>https://arxiv.org/abs/2502.19400</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">探讨使用TheoremExplainAgent生成定理解释视频的有效性及评估基准。</p><br /><br /><p><strong>摘要：</strong> 本研究介绍了TheoremExplainAgent，这是一种利用Manim动画生成长达5分钟的定理解释视频的代理方法。我们提出了TheoremExplainBench，一个涵盖240个定理的多学科基准测试，配备5种自动评估指标，以系统性地评估多模态定理解释。研究结果表明，代理计划对于生成详细的长格式视频至关重要，其中o3-mini代理的成功率为93.8%，整体得分为0.77。然而，定量和定性研究也揭示出大多数视频存在视觉元素布局的小问题。此外，多模态解释揭示了文本解释未能暴露的更深层次的推理缺陷，强调了多模态解释的重要性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.19400" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 26 Feb 2025 22:07:49 GMT</pubDate>
-</item>
-<item>
-<title>一种结合可验证正确性信号的代理奖励建模方法</title>
-<link>https://arxiv.org/abs/2502.19328</link>
-<guid>https://arxiv.org/abs/2502.19328</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出了代理奖励建模方法，提高大语言模型的训练和推理效果。</p><br /><br /><p><strong>摘要：</strong> 本文提出了代理奖励建模（Agentic Reward Modeling）方法，强调奖励模型在训练和推理中对于大语言模型的重要性。现有的奖励模型大多集中于人类偏好，忽视了可验证的正确性信号。我们实现了一个名为RewardAgent的奖励代理，将人类偏好奖励与事实性和指令遵循等两个可验证信号结合，以提供更可靠的奖励。经过对现有奖励模型基准的全面实验，RewardAgent在真实世界下游任务的推理时间最优搜索中显著优于传统奖励模型。此外，我们使用RewardAgent构建了训练偏好对，并以DPO目标训练大语言模型，在各种自然语言处理基准测试中取得了优秀表现。代码已公开发布，以便进一步研究。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.19328" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 26 Feb 2025 22:05:16 GMT</pubDate>
-</item>
-<item>
-<title>基于预训练值环境模型的无环境强化学习框架</title>
-<link>https://arxiv.org/abs/2502.18906</link>
-<guid>https://arxiv.org/abs/2502.18906</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出一种基于预训练模型的无环境强化学习框架，提高GUI代理的性能。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种针对图形用户界面（GUI）代理的无环境强化学习框架，旨在解决传统环境基于RL方法在交互成本和奖励泛化上的挑战。该框架利用预训练的值环境模型（VEM），有效地将价值估计与策略优化解耦。VEM通过离线数据直接预测状态-动作值，从而提取人类交互结果的先验知识，而无需环境反馈或下一个状态预测。这种方法能够避免错误累积，提高对用户界面变化的韧性，强调语义推理在决策中的重要性。该框架分为两个阶段：首先预训练VEM以估计长期行动效用，然后利用固定的VEM信号引导策略探索，支持无布局依赖的GUI自动化。在Android-in-the-Wild基准测试中，VEM在离线和在线设置中均取得了领先的表现，显著优于传统的无环境基线，与无需交互成本的环境基方法相匹配，展示了语义感知价值估计可以达到与在线训练方法相当的性能。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.18906" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 26 Feb 2025 22:02:50 GMT</pubDate>
-</item>
-<item>
-<title>通过词汇课程学习提升语言模型的预训练效率</title>
-<link>https://arxiv.org/abs/2502.17910</link>
-<guid>https://arxiv.org/abs/2502.17910</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出一种词汇课程学习方法，提高语言模型的预训练效率。</p><br /><br /><p><strong>摘要：</strong> 现代语言模型依赖于预训练前确定的静态词汇，而人类语言学习则表现出适应性词汇获取。为弥补这一差距，本文提出了词汇课程学习的方法，该方法通过词汇规模的对数线性缩放增益来提高预训练效率。该方法在熵引导的词汇扩展与模型优化之间交替进行，使模型能够在不同的标记粒度间学习可迁移的表示。研究表明，较长的标记捕捉可预测的内容，而较短的标记则聚焦于更复杂难测的上下文。我们在小规模GPT模型上的实验显示了这种动态标记化的有效性，提升了扩展效率。我们还发布了代码以支持进一步研究，并计划将实验扩展到更大模型和不同领域。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.17910" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 26 Feb 2025 18:40:15 GMT</pubDate>
-</item>
-<item>
-<title>LDGen：高效的多语言文本到图像生成方法</title>
-<link>https://arxiv.org/abs/2502.18302</link>
-<guid>https://arxiv.org/abs/2502.18302</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">LDGen是一种将大语言模型高效整合入文本到图像生成的创新方法。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了LDGen，一种将大语言模型（LLMs）整合到现有文本到图像扩散模型中的新方法，旨在降低计算需求。传统的文本编码器（如CLIP和T5）在多语言处理方面存在局限，影响了跨语言的图像生成。为了解决这些问题，我们利用LLMs的高级能力，采用分层字幕优化和人类指令技术来提取精确的语义信息。同时，我们融入了一个轻量级适配器和跨模态精炼器，以促进LLMs和图像特征之间的高效特征对齐和交互。实验结果表明，LDGen在提示遵循性和图像美学质量上均超越了基线模型，同时无缝支持多个语言的零-shot图像生成。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.18302" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 26 Feb 2025 16:56:34 GMT</pubDate>
-</item>
-<item>
-<title>多模态大语言模型在视觉识别中的效果与干预研究</title>
-<link>https://arxiv.org/abs/2502.17422</link>
-<guid>https://arxiv.org/abs/2502.17422</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">研究多模态大语言模型在视觉识别中的局限性及提高方法。</p><br /><br /><p><strong>摘要：</strong> 本文研究了多模态大语言模型（MLLMs）在处理图像问答时，对于小视觉细节的感知能力。实验结果表明，MLLMs的表现对视觉主题的大小非常敏感，并通过干预研究证明此效果是因果关系。文章还分析了MLLMs在回答视觉问题时的注意力模式，发现即使在错误回答时，它们也能准确定位注意力。基于这些发现，提出了一种无需训练的视觉干预方法，利用MLLM内在的注意力和梯度图来增强其对小视觉细节的感知。通过在两个广泛使用的MLLM和七个视觉问答基准上的评估，证明该方法能够显著提高模型的准确性，而无需额外训练。研究结果揭示了在小细节视觉识别任务中应用MLLMs的风险，同时提供了利用模型内部状态进行视觉干预的有效解决方向。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.17422" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 26 Feb 2025 14:46:51 GMT</pubDate>
-</item>
-<item>
-<title>Curie: Toward Rigorous and Automated Scientific Experimentation with AI Agents</title>
-<link>https://arxiv.org/abs/2502.16069</link>
-<guid>https://arxiv.org/abs/2502.16069</guid>
-<content:encoded><![CDATA[
-Scientific experimentation, a cornerstone of human progress, demands rigor in reliability, methodical control, and interpretability to yield meaningful results. Despite the growing capabilities of large language models (LLMs) in automating different aspects of the scientific process, automating rigorous experimentation remains a significant challenge. To address this gap, we propose Curie, an AI agent framework designed to embed rigor into the experimentation process through three key components: an intra-agent rigor module to enhance reliability, an inter-agent rigor module to maintain methodical control, and an experiment knowledge module to enhance interpretability. To evaluate Curie, we design a novel experimental benchmark composed of 46 questions across four computer science domains, derived from influential research papers, and widely adopted open-source projects. Compared to the strongest baseline tested, we achieve a 3.4times improvement in correctly answering experimental questions.Curie is open-sourced at https://github.com/Just-Curieous/Curie.
-]]></content:encoded>
-<pubDate>Wed, 26 Feb 2025 12:51:05 GMT</pubDate>
-</item>
-<item>
-<title>统计学在大型语言模型中的作用与挑战</title>
-<link>https://arxiv.org/abs/2502.17814</link>
-<guid>https://arxiv.org/abs/2502.17814</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">探讨统计学如何提升大型语言模型的可信性与透明性。</p><br /><br /><p><strong>摘要：</strong> 随着大型语言模型（LLMs）在人工智能领域的迅速发展，其在文本生成、推理和决策等多项任务中的卓越能力得到认可。然而，当前的成功主要依赖于计算能力和深度学习架构的进步，但在不确定性量化、决策制定、因果推断以及分布转移等方面却面临着挑战。本文探讨了统计学在这些领域中的重要作用，特别是在提高模型的可信性和透明性方面，包括不确定性量化、可解释性、公平性、隐私、掩码和模型适应性等问题。同时，本文还讨论了大型语言模型在统计分析中的潜在作用。通过促进人工智能与统计学之间的深度合作，我们希望推动LLMs理论基础和实践应用的进步，从而更好地应对复杂的社会挑战。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.17814" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 26 Feb 2025 12:34:59 GMT</pubDate>
-</item>
-<item>
-<title>WiCkeD: A Simple Method to Make Multiple Choice Benchmarks More Challenging</title>
-<link>https://arxiv.org/abs/2502.18316</link>
-<guid>https://arxiv.org/abs/2502.18316</guid>
-<content:encoded><![CDATA[
-We introduce WiCkeD, a simple method to increase the complexity of existing multiple-choice benchmarks by randomly replacing a choice with "None of the above", a method often used in educational tests. We show that WiCkeD can be automatically applied to any existing benchmark, making it more challenging. We apply WiCkeD to 6 popular benchmarks and use it to evaluate 18 open-weight LLMs. The performance of the models drops 12.1 points on average with respect to the original versions of the datasets. When using chain-of-thought on 3 MMLU datasets, the performance drop for the WiCkeD variant is similar to the one observed when using the LLMs directly, showing that WiCkeD is also challenging for models with enhanced reasoning abilities. WiCkeD also uncovers that some models are more sensitive to the extra reasoning required, providing additional information with respect to the original benchmarks. We relase our code and data at https://github.com/ahmedselhady/wicked-benchmarks.
-]]></content:encoded>
-<pubDate>Wed, 26 Feb 2025 10:53:44 GMT</pubDate>
 </item>
 </channel>
 </rss>
