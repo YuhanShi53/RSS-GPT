@@ -5,15 +5,25 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>DynPose-100K：大规模动态互联网视频的相机姿态标注数据集</title>
+<link>https://arxiv.org/abs/2504.17788</link>
+<guid>https://arxiv.org/abs/2504.17788</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出了一种大规模动态视频相机姿态标注数据集DynPose-100K。</p><br><br><p><strong>摘要：</strong> 随着逼真的视频生成和模拟领域的发展，在动态互联网视频上大规模标注相机姿态变得至关重要。然而，由于大多数互联网视频不适合姿态估计，收集这样的数据集极具挑战性。本文介绍了一个名为DynPose-100K的大规模动态互联网视频数据集，其中包含相机姿态注释。为了克服数据收集的困难，我们设计了一个结合特定任务模型和通用模型的过滤管道。此外，通过整合最新的点跟踪、动态掩蔽和运动结构技术，我们在姿态估计方面实现了对现有方法的改进。实验分析表明，DynPose-100K在多个关键属性上具有大规模和多样性，为下游应用的进一步发展开辟了新的途径。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.17788 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 24 Apr 2025 13:59:56 GMT</pubDate>
+<pubDate>Thu, 24 Apr 2025 13:59:56 GMT</pubDate>
+</item>
+
+<item>
 <title>DiMeR：一种用于稀疏视图网格重建的解耦双流前馈模型</title>
 <link>https://arxiv.org/abs/2504.17670</link>
 <guid>https://arxiv.org/abs/2504.17670</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出了一种新型解耦双流模型DiMeR，显著提升了稀疏视图网格重建的效果。</p><br><br><p><strong>摘要：</strong> 随着大规模3D数据集的到来，前馈3D生成模型如大尺度重建模型（LRM）受到广泛关注并取得显著成功。然而，RGB图像往往导致训练目标冲突且缺乏几何重建所需的清晰度。本文重新审视了与网格重建相关的归纳偏差，引入了DiMeR，这是一种新颖的解耦双流前馈模型，用于稀疏视图网格重建。DiMeR通过将输入和框架分解为几何和纹理部分，减少了每个部分的训练难度。几何分支利用法线贴图作为输入，而纹理分支则使用RGB图像获取纹理网格。实验表明，DiMeR在多种任务中表现出色，并在GSO和OmniObject3D数据集上显著优于现有方法，Chamfer距离提升超过30%。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.17670 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出了一种新型解耦双流模型DiMeR，显著提升了稀疏视图网格重建的效果。</p><br /><br /><p><strong>摘要：</strong> 随着大规模3D数据集的到来，前馈3D生成模型如大尺度重建模型（LRM）受到广泛关注并取得显著成功。然而，RGB图像往往导致训练目标冲突且缺乏几何重建所需的清晰度。本文重新审视了与网格重建相关的归纳偏差，引入了DiMeR，这是一种新颖的解耦双流前馈模型，用于稀疏视图网格重建。DiMeR通过将输入和框架分解为几何和纹理部分，减少了每个部分的训练难度。几何分支利用法线贴图作为输入，而纹理分支则使用RGB图像获取纹理网格。实验表明，DiMeR在多种任务中表现出色，并在GSO和OmniObject3D数据集上显著优于现有方法，Chamfer距离提升超过30%。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.17670" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 24 Apr 2025 11:39:20 GMT</pubDate>
 <pubDate>Thu, 24 Apr 2025 11:39:20 GMT</pubDate>
 </item>
 <item>
@@ -21,14 +31,10 @@
 <link>https://arxiv.org/abs/2504.16828</link>
 <guid>https://arxiv.org/abs/2504.16828</guid>
 <content:encoded><![CDATA[
-
-  Step-by-step verifiers -- also known as process reward models (PRMs) -- are a key ingredient for test-time scaling. PRMs require step-level supervision, making them expensive to train. This work aims to build data-efficient PRMs as verbalized step-wise reward models that verify every step in the solution by generating a verification chain-of-thought (CoT). We propose ThinkPRM, a long CoT verifier fine-tuned on orders of magnitude fewer process labels than those required by discriminative PRMs. Our approach capitalizes on the inherent reasoning abilities of long CoT models, and outperforms LLM-as-a-Judge and discriminative verifiers -- using only 1% of the process labels in PRM800K -- across several challenging benchmarks. Specifically, ThinkPRM beats the baselines on ProcessBench, MATH-500, and AIME '24 under best-of-N selection and reward-guided search. In an out-of-domain evaluation on a subset of GPQA-Diamond and LiveCodeBench, our PRM surpasses discriminative verifiers trained on the full PRM800K by 8% and 4.5%, respectively. Lastly, under the same token budget, ThinkPRM scales up verification compute more effectively compared to LLM-as-a-Judge, outperforming it by 7.2% on a subset of ProcessBench. Our work highlights the value of generative, long CoT PRMs that can scale test-time compute for verification while requiring minimal supervision for training. Our code, data, and models will be released at https://github.com/mukhal/thinkprm.
-
+Step-by-step verifiers -- also known as process reward models (PRMs) -- are a key ingredient for test-time scaling. PRMs require step-level supervision, making them expensive to train. This work aims to build data-efficient PRMs as verbalized step-wise reward models that verify every step in the solution by generating a verification chain-of-thought (CoT). We propose ThinkPRM, a long CoT verifier fine-tuned on orders of magnitude fewer process labels than those required by discriminative PRMs. Our approach capitalizes on the inherent reasoning abilities of long CoT models, and outperforms LLM-as-a-Judge and discriminative verifiers -- using only 1% of the process labels in PRM800K -- across several challenging benchmarks. Specifically, ThinkPRM beats the baselines on ProcessBench, MATH-500, and AIME '24 under best-of-N selection and reward-guided search. In an out-of-domain evaluation on a subset of GPQA-Diamond and LiveCodeBench, our PRM surpasses discriminative verifiers trained on the full PRM800K by 8% and 4.5%, respectively. Lastly, under the same token budget, ThinkPRM scales up verification compute more effectively compared to LLM-as-a-Judge, outperforming it by 7.2% on a subset of ProcessBench. Our work highlights the value of generative, long CoT PRMs that can scale test-time compute for verification while requiring minimal supervision for training. Our code, data, and models will be released at https://github.com/mukhal/thinkprm.
 ]]></content:encoded>
 <pubDate>Wed, 23 Apr 2025 11:44:54 GMT</pubDate>
-<pubDate>Wed, 23 Apr 2025 11:44:54 GMT</pubDate>
 </item>
-
 <item>
 <title>Token-Shuffle：通过维度重排提升基于Transformer的文本到高分辨率图像生成</title>
 <link>https://arxiv.org/abs/2504.17789</link>
@@ -9010,24 +9016,6 @@ While the task of face swapping has recently gained attention in the research co
 <div><p style="color: gray;">Kanana模型在韩语表现卓越，英语竞争力强，且计算成本显著低。</p><br /><br /><p><strong>摘要：</strong> Kanana是一系列双语语言模型，在韩语方面表现卓越，而在英语方面具有竞争力。该系列模型的计算成本显著低于同类的最先进模型。报告详细介绍了在预训练过程中采用的技术，包括高质量数据筛选、分阶段预训练、深度缩放及剪枝和蒸馏等，以实现计算高效且表现竞争力的模型。此外，报告还概述了Kanana模型后训练过程中的方法论，包括监督微调和偏好优化，旨在增强与用户的无缝交互能力。同时，报告详细说明了适应特定场景的模型调整方法，例如嵌入、检索增强生成和功能调用。Kanana模型系列的参数范围从21亿到325亿不等，其中21亿模型（基础、指令、嵌入）已公开发布，以促进对韩语语言模型的研究。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.18934" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 26 Feb 2025 23:05:13 GMT</pubDate>
-</item>
-<item>
-<title>DeltaBench：评估o1-like模型在长推理链上的表现</title>
-<link>https://arxiv.org/abs/2502.19361</link>
-<guid>https://arxiv.org/abs/2502.19361</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文介绍DeltaBench，用于评估o1-like模型在长推理链上的能力。</p><br /><br /><p><strong>摘要：</strong> 本文提出DeltaBench，旨在评估不同o1-like模型（如QwQ和DeepSeek-R1）在长Chain-of-Thought（CoT）推理步骤方面的表现及现有大型语言模型（LLMs）对这些长CoT的批判能力。DeltaBench包含来自不同o1-like模型生成的长CoT，用于多种推理任务（如数学、代码和一般推理），并测量检测长CoT推理中错误的能力。通过对生成的长CoT进行细致分析，我们发现了不同o1-like模型的有效性和效率。此外，研究评估了现有的过程奖励模型（PRMs）和批评模型在检测每个标注过程错误方面的表现，旨在探讨现有模型的边界和限制。最终，本文希望DeltaBench能够指导开发者更好地理解模型在长CoT推理能力上的表现。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.19361" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 26 Feb 2025 23:04:47 GMT</pubDate>
-</item>
-<item>
-<title>利用量子力学知识提升3D分子表示的能谱预训练</title>
-<link>https://arxiv.org/abs/2502.16284</link>
-<guid>https://arxiv.org/abs/2502.16284</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本研究提出通过能谱增强3D分子表示的预训练以融入量子力学知识。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了3D结构与分子能态之间的关系，并提出运用量子力学的能谱增强分子表示的预训练方法。现有方法多依赖经典力学建模，忽视了量子力学的效应。在此框架下，我们提出了SpecFormer，一种用于通过掩蔽补丁重建编码分子能谱的多谱编码器。通过对3D编码器与能谱编码器输出的对比目标进行对齐，我们提升了3D编码器对分子的理解。评估结果显示，基于我们预训练的表示在分子性质预测和动力学建模方面超越了现有方法。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.16284" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 26 Feb 2025 22:29:40 GMT</pubDate>
 </item>
 </channel>
 </rss>
