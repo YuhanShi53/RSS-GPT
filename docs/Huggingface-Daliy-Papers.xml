@@ -4,6 +4,54 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>BitNet v2：高效部署1比特大语言模型的新框架</title>
+<link>https://arxiv.org/abs/2504.18415</link>
+<guid>https://arxiv.org/abs/2504.18415</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出BitNet v2框架，实现1比特大语言模型的4比特激活量化。</p><br><br><p><strong>摘要：</strong> 本文针对1比特大语言模型（LLMs）在低比特量化时因激活异常值导致的部署难题，引入了BitNet v2这一创新框架，支持原生4比特激活量化。为解决注意力机制及前馈网络中的异常激活问题，提出了H-BitLinear模块，在量化之前应用在线哈达玛变换，将尖锐分布平滑为更符合高斯分布的形式，从而适应低比特表示。实验表明，从零训练的BitNet v2在8比特激活下性能与BitNet b1.58相当，并且在使用原生4比特激活训练时仅产生极小的性能下降，显著减少了内存占用和计算成本，适用于批量推理。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.18415 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 25 Apr 2025 11:17:52 GMT</pubDate>
+<pubDate>Fri, 25 Apr 2025 11:17:52 GMT</pubDate>
+</item>
+<item>
+<title>MMLA基准：多模态语言理解能力的全面评估</title>
+<link>https://arxiv.org/abs/2504.16427</link>
+<guid>https://arxiv.org/abs/2504.16427</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究发现现有多模态大模型在认知级语义理解上存在局限性。</p><br><br><p><strong>摘要：</strong> 多模态语言分析是理解人类会话语义的重要领域，但当前多模态大型语言模型（MLLMs）在认知级语义理解方面的能力尚待深入研究。本文介绍了一个名为MMLA的新基准，该基准包含超过61,000个多模态语句，涵盖意图、情感、对话行为、情感倾向、说话风格及沟通行为六大维度。通过零样本推理、监督微调和指令微调三种方法对主流LLMs和MLLMs进行评估后发现，即使经过微调的模型在复杂人类语言理解上的准确率也仅在60%-70%之间，凸显了现有MLLMs的局限性。MMLA有望成为探索大语言模型潜力的重要基础，并为推动多模态语言分析领域的发展提供宝贵资源。相关数据集和代码已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.16427 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 23 Apr 2025 01:25:13 GMT</pubDate>
+<pubDate>Wed, 23 Apr 2025 01:25:13 GMT</pubDate>
+</item>
+<item>
+<title>CameraBench：评估与提升摄像机运动理解的数据集与基准</title>
+<link>https://arxiv.org/abs/2504.15376</link>
+<guid>https://arxiv.org/abs/2504.15376</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出CameraBench数据集，用于评估和改进摄像机运动理解。</p><br><br><p><strong>摘要：</strong> 本文介绍了名为CameraBench的大规模数据集和基准，该数据集由约3000段互联网视频组成，经过专家的多阶段质量控制标注而成。我们与电影摄影师合作开发了一种摄像机运动基元的分类法，发现某些运动如“跟踪”需要理解场景内容。通过大规模的人类研究量化了人类标注性能，发现领域专业知识和教程培训可以显著提高准确性。使用CameraBench，我们评估了运动恢复结构（SfM）模型和视频-语言模型（VLMs），发现SfM模型难以捕捉依赖场景内容的语义基元，而VLMs则难以捕捉需要精确轨迹估计的几何基元。我们进一步在一个生成式VLM上进行微调，使其兼具两者优势，并展示了其在运动增强的字幕生成、视频问答和视频-文本检索中的应用。我们希望此分类法、基准和教程能够推动未来对视频中摄像机运动理解的研究。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.15376 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 21 Apr 2025 14:34:57 GMT</pubDate>
+<pubDate>Mon, 21 Apr 2025 14:34:57 GMT</pubDate>
+</item>
+<item>
+<title>基于Dual Consistency SAM方法的上下文分割研究</title>
+<link>https://arxiv.org/abs/2504.12080</link>
+<guid>https://arxiv.org/abs/2504.12080</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种基于SAM的上下文图像及视频分割方法DC-SAM。</p><br><br><p><strong>摘要：</strong> 上下文分割（In-context Segmentation）作为小样本学习中的单次分割任务，探索了分割模型的泛化能力，被应用于场景理解和图像/视频编辑等任务。然而，现有的Segment Anything Models在交互式分割中表现优异，但不适用于上下文分割。本文提出Dual Consistency SAM (DC-SAM) 方法，通过提示调优适配SAM和SAM2进行图像和视频的上下文分割。该方法通过提供高质量视觉提示增强SAM提示编码器特征，并设计循环一致性交叉注意力和双分支设计提升性能。此外，还提出了掩码管训练策略以适应所提出的双重一致性方法。尽管DC-SAM主要针对图像设计，但在SAM2的支持下可无缝扩展到视频领域。由于视频领域的上下文分割尚属空白，我们手动整理并构建首个基准数据集IC-VOS，用于评估模型的上下文分割能力。实验结果显示，DC-SAM在COCO-20i上达到55.5 mIoU，在PASCAL-5i上达到73.0 mIoU，并在IC-VOS基准上获得71.52的J&F分数。源代码和基准数据集已公开。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.12080 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 16 Apr 2025 09:41:59 GMT</pubDate>
+<pubDate>Wed, 16 Apr 2025 09:41:59 GMT</pubDate>
+</item>
 
 <item>
 <title>DynPose-100K：大规模动态互联网视频的相机姿态标注数据集</title>
