@@ -5,15 +5,61 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>Kimi-Audio Technical Report</title>
+<link>https://arxiv.org/abs/2504.18425</link>
+<guid>https://arxiv.org/abs/2504.18425</guid>
+<content:encoded><![CDATA[
+
+  We present Kimi-Audio, an open-source audio foundation model that excels in audio understanding, generation, and conversation. We detail the practices in building Kimi-Audio, including model architecture, data curation, training recipe, inference deployment, and evaluation. Specifically, we leverage a 12.5Hz audio tokenizer, design a novel LLM-based architecture with continuous features as input and discrete tokens as output, and develop a chunk-wise streaming detokenizer based on flow matching. We curate a pre-training dataset that consists of more than 13 million hours of audio data covering a wide range of modalities including speech, sound, and music, and build a pipeline to construct high-quality and diverse post-training data. Initialized from a pre-trained LLM, Kimi-Audio is continual pre-trained on both audio and text data with several carefully designed tasks, and then fine-tuned to support a diverse of audio-related tasks. Extensive evaluation shows that Kimi-Audio achieves state-of-the-art performance on a range of audio benchmarks including speech recognition, audio understanding, audio question answering, and speech conversation. We release the codes, model checkpoints, as well as the evaluation toolkits in https://github.com/MoonshotAI/Kimi-Audio.
+
+]]></content:encoded>
+<pubDate>Fri, 25 Apr 2025 11:31:46 GMT</pubDate>
+<pubDate>Fri, 25 Apr 2025 11:31:46 GMT</pubDate>
+</item>
+<item>
+<title>新一代小型推理模型Pleias-RAG在RAG和搜索领域的突破性进展</title>
+<link>https://arxiv.org/abs/2504.18225</link>
+<guid>https://arxiv.org/abs/2504.18225</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>新推出的Pleias-RAG系列模型在多语言开放源检索及引用支持方面表现优异。</p><br><br><p><strong>摘要：</strong> 本文介绍了两种新型的小型推理模型Pleias-RAG-350m和Pleias-RAG-1B，这些模型专门设计用于检索增强生成（RAG）、搜索以及来源摘要。通过在一个大型合成数据集上的训练，这些模型能够模拟从Common Crawl中检索多种多语言开放资源的过程。它们不仅提供直接引用和上下文关联的支持，还重新整合了与RAG工作流相关的多个功能，例如查询路由、查询重写和来源重排序。在标准化的RAG基准测试（如HotPotQA和2Wiki）中，这两种模型的表现优于参数少于40亿的单语言模型，并且与更大规模的流行模型（如Qwen-2.5-7B、Llama-3.1-8B和Gemma-3-4B）竞争。值得注意的是，Pleias-RAG系列是目前唯一能在主要欧洲语言中保持一致RAG性能并确保陈述系统性引用关联的单语言模型。由于其较小的体积和对受限基础设施的良好适应性，这些模型为生成式人工智能开辟了新的应用场景。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.18225 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 25 Apr 2025 06:17:04 GMT</pubDate>
+<pubDate>Fri, 25 Apr 2025 06:17:04 GMT</pubDate>
+</item>
+<item>
+<title>Transformer LLMs中稀疏注意力的研究：效率-准确性权衡与扩展性分析</title>
+<link>https://arxiv.org/abs/2504.17768</link>
+<guid>https://arxiv.org/abs/2504.17768</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究探讨Transformer模型中稀疏注意力方法的可行性及效率-准确性权衡。</p><br><br><p><strong>摘要：</strong> 本文针对Transformer语言模型处理长上下文的能力，研究了无需训练的稀疏注意力方法。通过在多种长序列任务上的实验，我们发现：1）在非常长的序列上，较大的高稀疏模型优于较小的密集模型；2）解码阶段相比填充阶段可以实现更高的稀疏水平并保证准确性；3）没有一种策略在所有任务和阶段中表现最佳，不同场景需要不同的稀疏化单元或预算适应性；4）即使中等稀疏度也可能导致某些任务性能显著下降，表明稀疏注意力并非万能解决方案。此外，我们提出了适用于稀疏注意力的新尺度定律，并验证了这些发现可能超越实验范围。综上所述，稀疏注意力是增强Transformer模型长序列处理能力的关键工具，但需要对性能敏感的应用进行仔细评估。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.17768 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 24 Apr 2025 13:39:25 GMT</pubDate>
+<pubDate>Thu, 24 Apr 2025 13:39:25 GMT</pubDate>
+</item>
+<item>
+<title>针对意大利语优化的英语大型语言模型词汇适应技术</title>
+<link>https://arxiv.org/abs/2504.17025</link>
+<guid>https://arxiv.org/abs/2504.17025</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究提出一种新方法优化英语大型语言模型以处理意大利语。</p><br><br><p><strong>摘要：</strong> 本文探讨了多种词汇适应技术，以提升英语大型语言模型（LLMs）对意大利语的处理能力。传统LLMs虽能处理多语言，但因训练数据混杂或非优化设计，在非英语语言上的表现欠佳。为此，我们提出了语义对齐词汇适应（SAVA）方法，利用神经映射实现词汇替换。通过适配两个模型——Mistral-7b-v0.1和Llama-3.1-8B，分别降低了25%的标记“生育率”和减少10亿参数。实验表明，经过词汇适配后，这些模型在持续少量目标语言训练后即可恢复性能。最后，我们在多项选择和生成任务中测试了适配后的模型能力，显示出显著效果。此研究为多语言LLMs优化提供了新的思路。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.17025 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 23 Apr 2025 14:12:27 GMT</pubDate>
+<pubDate>Wed, 23 Apr 2025 14:12:27 GMT</pubDate>
+</item>
+
+<item>
 <title>VideoVista-CulturalLingo：首个跨文化视频评估基准</title>
 <link>https://arxiv.org/abs/2504.17821</link>
 <guid>https://arxiv.org/abs/2504.17821</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出首个跨文化、多语言、多领域的视频理解评估基准VideoVista-CulturalLingo。</p><br><br><p><strong>摘要：</strong> 本文介绍了VideoVista-CulturalLingo，这是一个旨在弥合文化、语言和领域差距的视频理解评估基准。与现有基准不同，它涵盖了中国文化、北美文化和欧洲文化，问题以中文和英文呈现，并包含来自数百个人类创作领域的视频。该基准包含1389个视频和3134个QA对，并评估了24个最近开源或专有的视频大模型。实验结果显示，现有模型在与中国历史相关的问题上表现较差，在事件定位任务中的时间理解能力有限，而主流模型在科学问题上表现出色，但开源模型在数学问题上的表现较弱。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.17821 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出首个跨文化、多语言、多领域的视频理解评估基准VideoVista-CulturalLingo。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了VideoVista-CulturalLingo，这是一个旨在弥合文化、语言和领域差距的视频理解评估基准。与现有基准不同，它涵盖了中国文化、北美文化和欧洲文化，问题以中文和英文呈现，并包含来自数百个人类创作领域的视频。该基准包含1389个视频和3134个QA对，并评估了24个最近开源或专有的视频大模型。实验结果显示，现有模型在与中国历史相关的问题上表现较差，在事件定位任务中的时间理解能力有限，而主流模型在科学问题上表现出色，但开源模型在数学问题上的表现较弱。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.17821" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 23 Apr 2025 09:47:30 GMT</pubDate>
 <pubDate>Wed, 23 Apr 2025 09:47:30 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +67,8 @@
 <link>https://arxiv.org/abs/2504.16656</link>
 <guid>https://arxiv.org/abs/2504.16656</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>Skywork R1V2引入混合强化学习范式，显著提升多模态推理能力。</p><br><br><p><strong>摘要：</strong> Skywork R1V2作为Skywork R1V的升级版，通过结合奖励模型指导与基于规则策略的混合强化学习框架，解决了复杂推理与广泛泛化之间的平衡难题。此外，R1V2创新性地采用Selective Sample Buffer机制，优化训练效率并缓解了GRPO中的“优势消失”问题。实验表明，R1V2在多项基准测试中表现优异，如OlympiadBench得分62.6、AIME2024得分79.0等，展现了其在开放源代码模型中的领先地位，并逐步缩小与顶级专有系统的性能差距。该模型权重已公开发布，以促进研究的透明度与可重复性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.16656 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">Skywork R1V2引入混合强化学习范式，显著提升多模态推理能力。</p><br /><br /><p><strong>摘要：</strong> Skywork R1V2作为Skywork R1V的升级版，通过结合奖励模型指导与基于规则策略的混合强化学习框架，解决了复杂推理与广泛泛化之间的平衡难题。此外，R1V2创新性地采用Selective Sample Buffer机制，优化训练效率并缓解了GRPO中的“优势消失”问题。实验表明，R1V2在多项基准测试中表现优异，如OlympiadBench得分62.6、AIME2024得分79.0等，展现了其在开放源代码模型中的领先地位，并逐步缩小与顶级专有系统的性能差距。该模型权重已公开发布，以促进研究的透明度与可重复性。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.16656" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 23 Apr 2025 08:24:10 GMT</pubDate>
 <pubDate>Wed, 23 Apr 2025 08:24:10 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +76,8 @@
 <link>https://arxiv.org/abs/2504.17816</link>
 <guid>https://arxiv.org/abs/2504.17816</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种解耦身份学习与时间动态的个性化视频生成方法。</p><br><br><p><strong>摘要：</strong> 本文提出了一种无需微调的个性化视频生成模型，通过将身份特定的学习与时间动态解耦，在零样本设置下实现视频定制。传统方法依赖大规模标注数据集，成本高昂且需要大量标注工作，而我们的方法直接利用图像定制数据集训练视频定制模型，并将其分解为两个部分：通过图像定制数据集进行身份注入，以及借助少量未标注视频通过图像到视频训练方法保留时间建模。此外，在图像到视频微调过程中采用随机图像标记丢弃和随机图像初始化以缓解复制粘贴问题，并引入随机切换机制以增强学习效果，避免灾难性遗忘。实验表明，该方法在零样本设置下表现出色，具有较强的主体一致性与可扩展性，优于现有视频定制模型。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.17816 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种解耦身份学习与时间动态的个性化视频生成方法。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种无需微调的个性化视频生成模型，通过将身份特定的学习与时间动态解耦，在零样本设置下实现视频定制。传统方法依赖大规模标注数据集，成本高昂且需要大量标注工作，而我们的方法直接利用图像定制数据集训练视频定制模型，并将其分解为两个部分：通过图像定制数据集进行身份注入，以及借助少量未标注视频通过图像到视频训练方法保留时间建模。此外，在图像到视频微调过程中采用随机图像标记丢弃和随机图像初始化以缓解复制粘贴问题，并引入随机切换机制以增强学习效果，避免灾难性遗忘。实验表明，该方法在零样本设置下表现出色，具有较强的主体一致性与可扩展性，优于现有视频定制模型。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.17816" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 23 Apr 2025 02:48:31 GMT</pubDate>
 <pubDate>Wed, 23 Apr 2025 02:48:31 GMT</pubDate>
 </item>
 <item>
@@ -45,14 +85,10 @@
 <link>https://arxiv.org/abs/2504.15716</link>
 <guid>https://arxiv.org/abs/2504.15716</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出DianJin-R1框架，通过强化推理能力提升金融领域大语言模型性能。</p><br><br><p><strong>摘要：</strong> 本文针对金融领域大语言模型在推理方面的挑战，提出了一种名为DianJin-R1的推理增强框架。该框架通过构建高质量的数据集DianJin-R1-Data（整合CFLUE、FinQA及自有合规语料库），结合结构化输出的方式对Qwen2.5进行微调，显著提升了模型的推理能力。此外，采用Group Relative Policy Optimization方法优化模型的奖励机制，进一步提高了答案的准确性。实验表明，DianJin-R1在复杂金融任务上表现优异，甚至超越多代理系统，为实际应用提供了高效且实用的解决方案。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.15716 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出DianJin-R1框架，通过强化推理能力提升金融领域大语言模型性能。</p><br /><br /><p><strong>摘要：</strong> 本文针对金融领域大语言模型在推理方面的挑战，提出了一种名为DianJin-R1的推理增强框架。该框架通过构建高质量的数据集DianJin-R1-Data（整合CFLUE、FinQA及自有合规语料库），结合结构化输出的方式对Qwen2.5进行微调，显著提升了模型的推理能力。此外，采用Group Relative Policy Optimization方法优化模型的奖励机制，进一步提高了答案的准确性。实验表明，DianJin-R1在复杂金融任务上表现优异，甚至超越多代理系统，为实际应用提供了高效且实用的解决方案。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.15716" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 22 Apr 2025 05:01:04 GMT</pubDate>
-<pubDate>Tue, 22 Apr 2025 05:01:04 GMT</pubDate>
 </item>
-
 <item>
 <title>BitNet v2：高效部署1比特大语言模型的新框架</title>
 <link>https://arxiv.org/abs/2504.18415</link>
@@ -9016,42 +9052,6 @@ Consistency Training (CT) has recently emerged as a promising alternative to dif
 <div><p style="color: gray;">提出DOEI方法，通过双重优化嵌入信息提升弱监督语义分割效果。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种新颖的方法DOEI（Dual Optimization of Embedding Information），旨在提升弱监督语义分割（WSSS）的性能。传统的类激活图（CAM）在高维空间中由于类激活响应与语义信息的耦合不足，常导致目标共现或低激活，从而影响识别准确度。DOEI通过语义感知的注意力权重矩阵重建嵌入表示，优化嵌入信息的表达能力。具体而言，该方法在类到补丁的交互中放大高置信度的标记，抑制低置信度的标记。此外，DOEI还引入了混合特征对齐模块，结合RGB值、嵌入引导特征和自注意力权重，以增强候选标记的可靠性。全面实验表明，DOEI是一个有效的可插拔模块，能够显著提高先进的视觉变换器基础WSSS模型在PASCAL VOC和MS COCO等流行基准上的类激活图质量和分割性能。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.15885" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Thu, 27 Feb 2025 07:31:45 GMT</pubDate>
-</item>
-<item>
-<title>知识单位：破解科学知识传播的版权壁垒</title>
-<link>https://arxiv.org/abs/2502.19413</link>
-<guid>https://arxiv.org/abs/2502.19413</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出将学术文本转化为知识单位，以突破版权限制，促进科学知识传播。</p><br /><br /><p><strong>摘要：</strong> 随着版权法规限制了科学知识的传播，本文提出了一种新方法，即将学术文献转换为知识单位。这些知识单位利用大语言模型（LLM）提取文本的结构化数据，捕捉实体、属性和关系，而非风格内容，从而在法律和技术上都能有效传播科学知识。通过对德国和美国的法律分析，我们证明了知识单位提供了一种合法的知识分享框架，并且在保护版权的前提下能够保留约95%的原始文本事实内容。我们的研究表明，免于版权限制的科学知识可以为研究与教育带来变革性的好处。此外，我们还分享了一些开源工具，帮助将研究文档转换为知识单位，以促进科学知识的开放获取，同时尊重版权。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.19413" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 27 Feb 2025 04:18:26 GMT</pubDate>
-</item>
-<item>
-<title>GHOST 2.0: generative high-fidelity one shot transfer of heads</title>
-<link>https://arxiv.org/abs/2502.18417</link>
-<guid>https://arxiv.org/abs/2502.18417</guid>
-<content:encoded><![CDATA[
-While the task of face swapping has recently gained attention in the research community, a related problem of head swapping remains largely unexplored. In addition to skin color transfer, head swap poses extra challenges, such as the need to preserve structural information of the whole head during synthesis and inpaint gaps between swapped head and background. In this paper, we address these concerns with GHOST 2.0, which consists of two problem-specific modules. First, we introduce enhanced Aligner model for head reenactment, which preserves identity information at multiple scales and is robust to extreme pose variations. Secondly, we use a Blender module that seamlessly integrates the reenacted head into the target background by transferring skin color and inpainting mismatched regions. Both modules outperform the baselines on the corresponding tasks, allowing to achieve state of the art results in head swapping. We also tackle complex cases, such as large difference in hair styles of source and target. Code is available at https://github.com/ai-forever/ghost-2.0
-]]></content:encoded>
-<pubDate>Thu, 27 Feb 2025 04:15:43 GMT</pubDate>
-</item>
-<item>
-<title>推出BIG-Bench Extra Hard：评估大型语言模型推理能力的新基准</title>
-<link>https://arxiv.org/abs/2502.19187</link>
-<guid>https://arxiv.org/abs/2502.19187</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文介绍了BIG-Bench Extra Hard基准，旨在提升大型语言模型的推理能力评估。</p><br /><br /><p><strong>摘要：</strong> 随着大型语言模型（LLMs）在日常应用中的日益普及，要求其具备强大的推理能力。然而，目前的大多数推理基准主要集中在数学和编码能力上，未能全面评估更广泛的推理技能。为此，本文推出了BIG-Bench Extra Hard（BBEH）基准，通过引入更具挑战性的任务来测试LLMs的推理能力，旨在填补这一空白。不同于之前的BIG-Bench Hard（BBH），BBEH对每个任务进行替换，显著提高了难度。我们的评估结果显示，最佳通用模型在BBEH上仅达到9.8%的平均准确率，而最佳推理专用模型的准确率为44.8%，表明LLMs在推理能力上仍有显著的提升空间。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.19187" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 27 Feb 2025 02:43:05 GMT</pubDate>
-</item>
-<item>
-<title>提升语言模型反驳能力以加速科学发现</title>
-<link>https://arxiv.org/abs/2502.19414</link>
-<guid>https://arxiv.org/abs/2502.19414</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出评估语言模型反驳能力的新基准，以加速科学研究。</p><br /><br /><p><strong>摘要：</strong> 随着对语言模型（LMs）在加速科学发现潜力的兴奋不断增加，反驳假设成为科学进步的关键。然而，目前的基准主要评估模型生成解决方案的能力，而缺乏对其反驳能力的评估。我们建议开发能够评估模型生成反例的基准。为此，我们引入REFUTE，一个动态更新的基准，包括近期问题和编程竞赛中的错误提交，通过代码执行自动评估反例。我们的分析显示即使是最佳的推理代理（如OpenAI o3-mini）在REFUTE上仅能为不足9%的错误解决方案生成反例，尽管其评分表明其能从零解决48%的问题。希望我们的研究能够推动对语言模型反驳能力的评估与提升，这是加速研究和模型自我改进的关键能力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.19414" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 27 Feb 2025 02:36:29 GMT</pubDate>
 </item>
 </channel>
 </rss>
