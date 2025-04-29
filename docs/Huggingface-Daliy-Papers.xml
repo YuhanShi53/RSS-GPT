@@ -5,15 +5,109 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>RepText：一种无需理解文本的多语言视觉文本生成方法</title>
+<link>https://arxiv.org/abs/2504.19724</link>
+<guid>https://arxiv.org/abs/2504.19724</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出RepText模型，提升文本到图像生成模型对非拉丁字母及多语言视觉文本的精确渲染能力。</p><br><br><p><strong>摘要：</strong> 尽管当前文本到图像生成模型在生成视觉上吸引人的图像方面取得了显著进展，但其在生成精确且灵活的印刷元素（尤其是非拉丁字母）方面的能力仍受到限制。为解决这些局限性，我们基于一个假设——即文本理解只是文本呈现的充分条件而非必要条件，提出了RepText模型。该模型通过引入字体无关的字符和位置信息，允许用户自定义文本内容、字体和位置，同时结合感知损失和扩散损失提高准确性。此外，在推理阶段，RepText采用噪声字符潜在初始化并使用区域掩码来稳定生成过程。实验表明，RepText在多语言视觉文本生成任务中表现出色，性能优于现有开源方法，与闭源多语言模型相当，同时也讨论了其局限性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.19724 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 28 Apr 2025 08:19:53 GMT</pubDate>
+<pubDate>Mon, 28 Apr 2025 08:19:53 GMT</pubDate>
+</item>
+<item>
+<title>利用替代密码研究In-Context Learning中的双模态操作</title>
+<link>https://arxiv.org/abs/2504.19395</link>
+<guid>https://arxiv.org/abs/2504.19395</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>通过引入基于替代密码的任务重构，研究In-Context Learning的学习模式。</p><br><br><p><strong>摘要：</strong> 近期研究表明，In-Context Learning (ICL) 存在任务检索与任务学习两种模式，但区分这两种模式仍具挑战性。本文提出一种基于经典密码学中替代密码的任务重构方法ICL CIPHERS，通过部分替换上下文输入中的标记，使英文句子对人类不直观，但仍保持可逆性。实验显示，大型语言模型在处理具有双射映射的ICL CIPHERS时表现优于非双射基线，为量化ICL中的学习能力提供了新途径。此外，我们分析了模型内部表征，发现其具备解码加密输入的能力。这一研究结果在四个数据集和六种模型上具有一致性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.19395 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 27 Apr 2025 20:05:29 GMT</pubDate>
+<pubDate>Sun, 27 Apr 2025 20:05:29 GMT</pubDate>
+</item>
+<item>
+<title>基于自博弈批评者的大型语言模型推理可靠性评估方法</title>
+<link>https://arxiv.org/abs/2504.19162</link>
+<guid>https://arxiv.org/abs/2504.19162</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种无需人工标注的自博弈批评者方法提升大语言模型推理可靠性。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为Self-Play Critic（SPC）的新方法，用于评估大型语言模型（LLM）的推理可靠性，如Chain-of-Thought推理。由于高质量的分步监督数据难以获取且成本高昂，SPC通过两个模型之间的对抗性自博弈游戏进化出评估推理步骤的能力，消除了对人工分步注释的需求。这两个模型分别是“狡猾生成器”和“批评者”，前者生成故意错误的推理步骤以迷惑后者，后者则试图检测这些错误。通过基于游戏结果的强化学习机制，两者迭代改进。实验表明，SPC在三个推理过程基准测试上提升了错误检测能力，并优于其他基线模型，同时在数学推理任务中显著提高了多种LLMs的表现。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.19162 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 27 Apr 2025 04:45:06 GMT</pubDate>
+<pubDate>Sun, 27 Apr 2025 04:45:06 GMT</pubDate>
+</item>
+<item>
+<title>CipherBank：评估大型语言模型在密码学推理中的能力</title>
+<link>https://arxiv.org/abs/2504.19093</link>
+<guid>https://arxiv.org/abs/2504.19093</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究提出CipherBank基准测试集，评估LLMs在加密解密任务中的推理能力。</p><br><br><p><strong>摘要：</strong> 本文介绍CipherBank，这是一个针对大型语言模型（LLMs）在密码学推理任务中表现进行评估的综合基准测试集。CipherBank包含2358个精心设计的问题，覆盖了5大领域和14种子领域的262种独特明文，重点关注隐私敏感和现实场景下的加密需求。从密码学角度来看，该基准涵盖了三大类加密方法，涉及9种不同的算法，从经典密码到自定义加密技术均有涉及。通过在CipherBank上对当前最先进的LLMs（如GPT-4、DeepSeek-V3等）及专注于推理的模型（如o1、DeepSeek-R1）进行评估，发现这些模型在推理能力上存在显著差距，不仅体现在通用聊天型LLMs与推理型LLMs之间，也表现在推理型LLMs在经典密码学解密任务中的表现不足。本研究通过详细分析和错误调查揭示了LLMs在密码推理方面的局限性及改进空间，强调了持续提升LLMs推理能力的重要性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.19093 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sat, 26 Apr 2025 23:41:17 GMT</pubDate>
+<pubDate>Sat, 26 Apr 2025 23:41:17 GMT</pubDate>
+</item>
+<item>
+<title>VCBENCH：大型视觉语言模型在多模态数学推理中的挑战与评估</title>
+<link>https://arxiv.org/abs/2504.18589</link>
+<guid>https://arxiv.org/abs/2504.18589</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究发现现有大型视觉语言模型在处理依赖显式视觉的数学问题时表现有限。</p><br><br><p><strong>摘要：</strong> 近年来，大型视觉-语言模型（LVLMs）在整合视觉与语言信息方面取得了显著进展，但在涉及基本数学元素和视觉概念的推理任务上仍存在不足。当前基准测试多集中于特定领域的专业知识评估，而忽视了基础数学推理能力。为填补这一空白，我们开发了VCBENCH，这是一个包含1720个问题的综合基准，涉及六个认知领域，平均每个问题包含近四个图像，强调多图推理。通过对26个最先进的LVLM进行测试，我们发现即使是最优秀的模型，在准确性上也未能超过50%，这揭示了视觉与数学整合方面的持续挑战，并为未来模型改进提供了方向。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.18589 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 24 Apr 2025 02:16:38 GMT</pubDate>
+<pubDate>Thu, 24 Apr 2025 02:16:38 GMT</pubDate>
+</item>
+<item>
+<title>基于均匀下采样的群等变架构广义化研究</title>
+<link>https://arxiv.org/abs/2504.17258</link>
+<guid>https://arxiv.org/abs/2504.17258</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究了群等变架构中的均匀下采样层的广义化方法。</p><br><br><p><strong>摘要：</strong> 本文探讨了在群等变架构（如G-CNNs）中均匀下采样层的一般化应用，特别是在反混淆下的通用有限群信号（特征图）下采样问题。首先，给出了一种根据有限群和下采样率选择合适子群的算法；其次，在给定群和子群的情况下，研究了带限性概念并提出了反混淆操作的实现方式。该方法推广了经典采样理论中的下采样概念，当信号位于循环群时，其等效于理想低通滤波器后接下采样操作。实验表明，将所提出的下采样操作引入G-等变网络中，可提高图像分类任务的准确性，更好地保持等变性并减少模型规模。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.17258 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 24 Apr 2025 01:29:51 GMT</pubDate>
+<pubDate>Thu, 24 Apr 2025 01:29:51 GMT</pubDate>
+</item>
+<item>
+<title>MMInference：一种加速多模态长上下文推理的动态稀疏注意力方法</title>
+<link>https://arxiv.org/abs/2504.16083</link>
+<guid>https://arxiv.org/abs/2504.16083</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出MMInference方法，显著加速视觉语言模型的长上下文推理。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为MMInference的动态稀疏注意力方法，旨在解决视觉语言模型(VLMs)在处理长上下文多模态输入时，由于二次注意力复杂度导致的预填充阶段效率低下问题。通过分析视频输入的时间和空间局部性，我们发现了一种独特的Grid模式，并提出了基于排列的方法来利用这一模式并处理模态边界问题。此外，通过离线搜索每个头的最佳稀疏模式，MMInference能够根据输入动态构建稀疏分布。该方法无需对现有VLM管道进行任何修改或微调即可无缝集成，并且在多模态基准测试中表现出高达8.3倍的速度提升，同时保持了准确性。实验涵盖了多种任务，如视频问答、视频描述生成等。我们的代码已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.16083 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 22 Apr 2025 13:59:51 GMT</pubDate>
+<pubDate>Tue, 22 Apr 2025 13:59:51 GMT</pubDate>
+</item>
+<item>
+<title>基于可信赖生成的数据引擎TrustGeoGen用于几何问题求解</title>
+<link>https://arxiv.org/abs/2504.15780</link>
+<guid>https://arxiv.org/abs/2504.15780</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种名为TrustGeoGen的数据引擎，用于生成高质量几何问题数据集。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为TrustGeoGen的可扩展数据引擎，专门用于生成几何问题数据。该引擎通过多模态对齐生成图表、文本描述及分步解答，结合形式化验证确保推理路径符合规则，并采用自举机制递归生成复杂性增加的状态。此外，设计的GeoExplore系列算法同时生成多解变体并进行自我反思回溯跟踪。通过形式逻辑验证，生成的GeoTrust-200K数据集保证了模态完整性，且GeoTrust-test测试集显示出极高的评估严格性，当前最先进的模型仅达到49.17%的准确率。训练后的模型在GeoQA上表现出出色的OOD泛化能力，显著减少了逻辑不一致性。此工作为几何问题求解方法的发展奠定了基础。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.15780 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 22 Apr 2025 06:45:23 GMT</pubDate>
+<pubDate>Tue, 22 Apr 2025 06:45:23 GMT</pubDate>
+</item>
+
+<item>
 <title>基于大型语言模型的手机图形用户界面智能代理综述</title>
 <link>https://arxiv.org/abs/2504.19838</link>
 <guid>https://arxiv.org/abs/2504.19838</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>综述大型语言模型如何推动手机GUI自动化向智能化方向发展。</p><br><br><p><strong>摘要：</strong> 本文系统性回顾了由大型语言模型（LLMs）驱动的手机图形用户界面（GUI）智能代理的发展历程，从基于脚本的传统自动化转变为具备智能和适应性的系统。首先分析了传统自动化面临的三大挑战：泛化能力有限、维护成本高及意图理解薄弱，并阐述LLMs通过先进的语言理解、多模态感知和稳健决策解决这些问题的方法。接着提出了一种涵盖基础代理框架、建模方法及关键数据集和基准的分类体系。此外，还详细介绍了针对特定任务的架构设计、监督微调及强化学习策略，这些技术连接了用户意图与GUI操作。最后，讨论了该领域尚未解决的问题，如数据集多样性、设备端高效部署、用户定制化及安全问题，为研究人员提供了未来研究方向的前瞻性见解。本文旨在为开发可扩展且用户友好的手机GUI代理提供权威参考。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.19838 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">综述大型语言模型如何推动手机GUI自动化向智能化方向发展。</p><br /><br /><p><strong>摘要：</strong> 本文系统性回顾了由大型语言模型（LLMs）驱动的手机图形用户界面（GUI）智能代理的发展历程，从基于脚本的传统自动化转变为具备智能和适应性的系统。首先分析了传统自动化面临的三大挑战：泛化能力有限、维护成本高及意图理解薄弱，并阐述LLMs通过先进的语言理解、多模态感知和稳健决策解决这些问题的方法。接着提出了一种涵盖基础代理框架、建模方法及关键数据集和基准的分类体系。此外，还详细介绍了针对特定任务的架构设计、监督微调及强化学习策略，这些技术连接了用户意图与GUI操作。最后，讨论了该领域尚未解决的问题，如数据集多样性、设备端高效部署、用户定制化及安全问题，为研究人员提供了未来研究方向的前瞻性见解。本文旨在为开发可扩展且用户友好的手机GUI代理提供权威参考。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.19838" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 28 Apr 2025 10:39:25 GMT</pubDate>
 <pubDate>Mon, 28 Apr 2025 10:39:25 GMT</pubDate>
 </item>
 <item>
@@ -21,14 +115,10 @@
 <link>https://arxiv.org/abs/2504.18919</link>
 <guid>https://arxiv.org/abs/2504.18919</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究显示，尽管大型语言模型在医学考试中表现出色，但用户交互影响其实际应用效果。</p><br><br><p><strong>摘要：</strong> 全球医疗提供者正在探索使用大型语言模型（LLMs）向公众提供医疗建议。LLMs在医学执照考试中几乎达到满分，但在现实场景中的准确性仍存疑。本研究测试了LLMs是否能帮助公众识别潜在疾病并选择行动方案，在1,298名参与者中进行了实验。单独测试时，LLMs正确识别疾病的比例为94.9%，确定处置方案的比例为56.3%，但当参与者使用相同模型时，识别疾病的比例降至34.5%，确定处置方案的比例降至44.2%，均未显著优于对照组。研究指出用户交互是LLMs在医疗建议中部署的关键挑战。现有医学知识基准和模拟患者互动无法预测人类参与者中出现的问题。因此，我们建议在面向公众部署前进行系统化的人类用户测试，以评估其交互能力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.18919 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究显示，尽管大型语言模型在医学考试中表现出色，但用户交互影响其实际应用效果。</p><br /><br /><p><strong>摘要：</strong> 全球医疗提供者正在探索使用大型语言模型（LLMs）向公众提供医疗建议。LLMs在医学执照考试中几乎达到满分，但在现实场景中的准确性仍存疑。本研究测试了LLMs是否能帮助公众识别潜在疾病并选择行动方案，在1,298名参与者中进行了实验。单独测试时，LLMs正确识别疾病的比例为94.9%，确定处置方案的比例为56.3%，但当参与者使用相同模型时，识别疾病的比例降至34.5%，确定处置方案的比例降至44.2%，均未显著优于对照组。研究指出用户交互是LLMs在医疗建议中部署的关键挑战。现有医学知识基准和模拟患者互动无法预测人类参与者中出现的问题。因此，我们建议在面向公众部署前进行系统化的人类用户测试，以评估其交互能力。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.18919" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Sat, 26 Apr 2025 09:32:49 GMT</pubDate>
-<pubDate>Sat, 26 Apr 2025 09:32:49 GMT</pubDate>
 </item>
-
 <item>
 <title>Kimi-Audio Technical Report</title>
 <link>https://arxiv.org/abs/2504.18425</link>
@@ -9010,24 +9100,6 @@ Consistency Training (CT) has recently emerged as a promising alternative to dif
 <div><p style="color: gray;">LongRoPE2提升了预训练大语言模型的上下文处理能力。</p><br /><br /><p><strong>摘要：</strong> LongRoPE2是一种创新方法，旨在扩展预训练大语言模型的有效上下文窗口，同时保持短上下文的性能。该方法的三大贡献包括：一是提出假设，现有方法在更高RoPE维度上的训练不足导致了持续的分布外（OOD）问题；二是开发了一种有效的RoPE重缩放算法，通过“针导向”的困惑度演化搜索来解决训练不足问题；三是采用混合上下文窗口训练方法，对模型权重进行微调，以适应长上下文序列的重缩放RoPE，同时保留使用原始RoPE的短上下文的性能。基于LLaMA3-8B和Phi3-mini-3.8B的广泛实验结果验证了该假设，并证明了LongRoPE2的有效性。LongRoPE2使得LLaMA3-8B达到128K的有效上下文长度，同时保持短上下文性能超过98.5%，仅需10B标记数据，比Meta的方法减少了80倍，却未能达成目标有效上下文长度。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.20082" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Thu, 27 Feb 2025 22:22:53 GMT</pubDate>
-</item>
-<item>
-<title>自我奖励推理大型语言模型的研究</title>
-<link>https://arxiv.org/abs/2502.19613</link>
-<guid>https://arxiv.org/abs/2502.19613</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文探讨自我奖励推理的语言模型及其自我校正能力。</p><br /><br /><p><strong>摘要：</strong> 本文研究了一种自我奖励推理的大型语言模型（LLMs），能够在推理时同时生成逐步推理过程并评估输出的正确性，而无需外部反馈。重点关注自我校正任务，该模型可以自主检测响应中的错误、修改输出，并决定何时终止迭代修正循环。为此，提出了一种两阶段的算法框架，首阶段通过序列拒绝采样合成包含自我奖励和自我校正机制的长链推理轨迹，随后对模型进行微调，以学习相关模式。第二阶段通过使用基于规则的信号的强化学习进一步提升模型评估响应准确性和修正输出的能力。在 Llama-3 和 Qwen-2.5 的实验中，结果表明该方法超越了内在的自我校正能力，性能与依赖外部奖励模型的系统相当。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.19613" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 27 Feb 2025 22:15:54 GMT</pubDate>
-</item>
-<item>
-<title>多草稿推测解码的效率优化研究</title>
-<link>https://arxiv.org/abs/2502.18779</link>
-<guid>https://arxiv.org/abs/2502.18779</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文探讨了多草稿推测解码在效率优化中的关键设计选择与理论上限。</p><br /><br /><p><strong>摘要：</strong> 本文讨论了多草稿推测解码（MDSD）在自然语言处理中的效率瓶颈，重点分析了草稿采样方法和验证算法。通过研究最优传输问题的对偶，本文首次高效计算了MDSD的最优接受率，并评估了现有验证算法与理论上限之间的差距。研究表明，不同的草稿采样方法显著影响最优接受率，其中不重复采样优于重复采样。此外，目前的验证算法在两种采样方式下均未能达到理论上限。 findings建议，精心设计的草稿采样方法有可能提高最优接受率，并促进验证算法的开发，使其更接近理论最优。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.18779" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 27 Feb 2025 14:03:36 GMT</pubDate>
 </item>
 </channel>
 </rss>
