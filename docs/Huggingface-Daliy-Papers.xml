@@ -5,15 +5,97 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>X-Fusion：一种保持语言能力的多模态任务扩展框架</title>
+<link>https://arxiv.org/abs/2504.20996</link>
+<guid>https://arxiv.org/abs/2504.20996</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>X-Fusion框架通过双塔设计提升多模态任务性能同时保留语言模型能力。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为X-Fusion的框架，旨在扩展预训练的大规模语言模型（LLMs）以处理多模态任务，同时保持其原有的语言处理能力。X-Fusion采用了一种双塔结构，其中包含针对特定模态的权重，使得在整合视觉信息时可以保持LLM参数不变。实验结果显示，在图像到文本和文本到图像的任务上，X-Fusion的表现优于其他替代架构。研究还发现，引入专注于理解的数据能提高生成质量，减少图像数据噪声可改善整体表现，而特征对齐对较小模型的收敛速度有显著促进作用，但对较大模型影响有限。这些发现为构建高效的统一多模态模型提供了宝贵的见解。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.20996 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 29 Apr 2025 13:59:45 GMT</pubDate>
+<pubDate>Tue, 29 Apr 2025 13:59:45 GMT</pubDate>
+</item>
+<item>
+<title>Chatbot Arena排名体系中的系统性问题及改进建议</title>
+<link>https://arxiv.org/abs/2504.20879</link>
+<guid>https://arxiv.org/abs/2504.20879</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究揭示Chatbot Arena排名受私测偏颇影响，导致不公平竞争。</p><br><br><p><strong>摘要：</strong> 本文探讨了Chatbot Arena作为顶级AI系统排行榜所面临的问题。研究发现，少数公司通过未公开的私测策略，在公开发布前测试多个模型变体并选择最佳成绩，这种做法导致了排行榜评分的偏差。例如，Meta在Llama-4发布前对27个私测变体进行了评估。此外，闭源模型比开源模型获得更多测试机会，造成数据获取的不对等。Google和OpenAI分别占Arena总数据的19.2%和20.4%，而83个开源模型仅占29.7%。这些动态使模型过度适应Arena特定环境，而非整体性能提升。尽管如此，Chatbot Arena仍得益于组织者和开放社区的努力。我们提出了改进评估框架的建议，以实现更公平透明的基准测试。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.20879 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 29 Apr 2025 11:48:49 GMT</pubDate>
+<pubDate>Tue, 29 Apr 2025 11:48:49 GMT</pubDate>
+</item>
+<item>
+<title>ISDrama: Immersive Spatial Drama Generation through Multimodal Prompting</title>
+<link>https://arxiv.org/abs/2504.20630</link>
+<guid>https://arxiv.org/abs/2504.20630</guid>
+<content:encoded><![CDATA[
+
+  Multimodal immersive spatial drama generation focuses on creating continuous multi-speaker binaural speech with dramatic prosody based on multimodal prompts, with potential applications in AR, VR, and others. This task requires simultaneous modeling of spatial information and dramatic prosody based on multimodal inputs, with high data collection costs. To the best of our knowledge, our work is the first attempt to address these challenges. We construct MRSDrama, the first multimodal recorded spatial drama dataset, containing binaural drama audios, scripts, videos, geometric poses, and textual prompts. Then, we propose ISDrama, the first immersive spatial drama generation model through multimodal prompting. ISDrama comprises these primary components: 1) Multimodal Pose Encoder, based on contrastive learning, considering the Doppler effect caused by moving speakers to extract unified pose information from multimodal prompts. 2) Immersive Drama Transformer, a flow-based mamba-transformer model that generates high-quality drama, incorporating Drama-MOE to select proper experts for enhanced prosody and pose control. We also design a context-consistent classifier-free guidance strategy to coherently generate complete drama. Experimental results show that ISDrama outperforms baseline models on objective and subjective metrics. The demos and dataset are available at https://aaronz345.github.io/ISDramaDemo.
+
+]]></content:encoded>
+<pubDate>Tue, 29 Apr 2025 06:56:44 GMT</pubDate>
+<pubDate>Tue, 29 Apr 2025 06:56:44 GMT</pubDate>
+</item>
+<item>
+<title>Meta Policy Optimization提升大语言模型奖励对齐的鲁棒性</title>
+<link>https://arxiv.org/abs/2504.20157</link>
+<guid>https://arxiv.org/abs/2504.20157</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>引入Meta Policy Optimization框架解决大语言模型奖励对齐中的奖励黑客和提示工程问题。</p><br><br><p><strong>摘要：</strong> 本文针对基于奖励的大语言模型对齐方法存在的两大局限性——易受奖励黑客影响及高度依赖人工设计的提示工程——提出了一种名为Meta Policy Optimization (MPO) 的新框架。MPO通过集成一个元奖励模型，在训练过程中动态优化奖励模型的提示，从而有效减少奖励信号被模型利用的可能性，同时大幅降低手动设计提示的需求。实验表明，该方法不仅在性能上媲美甚至优于传统方法，而且在多种任务（如问答和数学推理）中表现稳定，无需特定奖励设计。此外，MPO的元学习特性使其可扩展至更高层次的对齐框架，为大语言模型的奖励对齐提供了更稳健且灵活的解决方案。未来，代码和模型将公开共享。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.20157 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 28 Apr 2025 14:02:35 GMT</pubDate>
+<pubDate>Mon, 28 Apr 2025 14:02:35 GMT</pubDate>
+</item>
+<item>
+<title>TreeHop：一种高效的多跳问答系统</title>
+<link>https://arxiv.org/abs/2504.20114</link>
+<guid>https://arxiv.org/abs/2504.20114</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种无需LLMs的嵌入级框架TreeHop，显著提升多跳问答效率。</p><br><br><p><strong>摘要：</strong> 本文针对多跳问答（MHQA）中检索增强生成（RAG）系统的挑战，提出了一种名为TreeHop的新框架。传统方法依赖迭代的基于LLMs的查询重写和路由，导致高计算成本。TreeHop通过融合前序查询和文档的语义信息动态更新查询嵌入，在嵌入空间内完成迭代检索，从而避免重复调用LLMs和多阶段处理。此外，引入基于规则的停止准则进一步减少冗余检索，平衡效率与召回率。实验结果显示，TreeHop在三个公开数据集上的表现与先进RAG方法相当，但参数规模仅为5%-0.4%，查询延迟降低约99%。这一成果表明TreeHop是一种更快且更具成本效益的解决方案，适用于知识密集型应用。代码和数据已开源以促进复现研究。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.20114 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 27 Apr 2025 21:56:31 GMT</pubDate>
+<pubDate>Sun, 27 Apr 2025 21:56:31 GMT</pubDate>
+</item>
+<item>
+<title>DICE-Talk：基于解耦身份与情感的高表现力可泛化口型同步虚拟头像生成</title>
+<link>https://arxiv.org/abs/2504.18087</link>
+<guid>https://arxiv.org/abs/2504.18087</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新框架DICE-Talk，解决现有情感生成方法的情感表达不足问题。</p><br><br><p><strong>摘要：</strong> 近年来，基于扩散模型的虚拟口型同步技术在唇同步和视觉质量方面取得了显著进步，但在保持说话者身份的同时生成富有情感的表情仍然面临挑战。本文指出当前情感口型生成方法存在三大局限：音频内在情感线索利用不足、情感表示中的身份泄露以及情感相关性孤立学习的问题。为此，我们提出了名为DICE-Talk的新框架，通过解耦身份与情感并协作具有相似特性的感情来解决这些问题。首先，开发了一种解耦的情感嵌入器，通过跨模态注意力共同建模音视频情感线索，将情感表示为与身份无关的高斯分布。其次，引入了一个增强相关性的条件模块，使用可学习的情绪银行通过向量量化和基于注意力的特征聚合显式捕获情绪间关系。第三，设计了一种情绪辨别目标，在扩散过程中通过潜在空间分类强制情感一致性。在MEAD和HDTF数据集上的大量实验表明，该方法在情感准确性方面优于最先进的方法，同时保持了竞争性的唇同步性能。定性结果和用户研究进一步证实了该方法能够生成保留身份且具有丰富相关情感表达的可泛化虚拟头像。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.18087 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 25 Apr 2025 01:28:21 GMT</pubDate>
+<pubDate>Fri, 25 Apr 2025 01:28:21 GMT</pubDate>
+</item>
+<item>
+<title>BloomScrub：一种高效的大语言模型版权清除方法</title>
+<link>https://arxiv.org/abs/2504.16046</link>
+<guid>https://arxiv.org/abs/2504.16046</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新方法有效解决大语言模型的版权侵权问题。</p><br><br><p><strong>摘要：</strong> 本文针对大型语言模型（LLMs）在预训练阶段接触大量受版权保护材料后可能引发的无意版权侵权问题，探讨了现有“版权清除”技术的局限性，特别是对最坏情况下的长段直接引用处理不足的问题。为此，我们提出了BloomScrub，一种简单而高效的推理阶段方法，通过交替检测并重写潜在侵权片段，利用高效的Bloom过滤器实现大规模文本的版权筛查。该方法不仅显著降低了侵权风险，还保证了模型功能的实用性，并支持根据需求调整执行严格程度。实验表明，这种轻量级的推理时间方法在版权预防方面表现出了令人惊讶的有效性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.16046 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 22 Apr 2025 13:16:53 GMT</pubDate>
+<pubDate>Tue, 22 Apr 2025 13:16:53 GMT</pubDate>
+</item>
+
+<item>
 <title>YoChameleon: Personalized Vision and Language Generation</title>
 <link>https://arxiv.org/abs/2504.20998</link>
 <guid>https://arxiv.org/abs/2504.20998</guid>
 <content:encoded><![CDATA[
-
-  Large Multimodal Models (e.g., GPT-4, Gemini, Chameleon) have evolved into powerful tools with millions of users. However, they remain generic models and lack personalized knowledge of specific user concepts. Previous work has explored personalization for text generation, yet it remains unclear how these methods can be adapted to new modalities, such as image generation. In this paper, we introduce Yo'Chameleon, the first attempt to study personalization for large multimodal models. Given 3-5 images of a particular concept, Yo'Chameleon leverages soft-prompt tuning to embed subject-specific information to (i) answer questions about the subject and (ii) recreate pixel-level details to produce images of the subject in new contexts. Yo'Chameleon is trained with (i) a self-prompting optimization mechanism to balance performance across multiple modalities, and (ii) a ``soft-positive" image generation approach to enhance image quality in a few-shot setting.
-
+Large Multimodal Models (e.g., GPT-4, Gemini, Chameleon) have evolved into powerful tools with millions of users. However, they remain generic models and lack personalized knowledge of specific user concepts. Previous work has explored personalization for text generation, yet it remains unclear how these methods can be adapted to new modalities, such as image generation. In this paper, we introduce Yo'Chameleon, the first attempt to study personalization for large multimodal models. Given 3-5 images of a particular concept, Yo'Chameleon leverages soft-prompt tuning to embed subject-specific information to (i) answer questions about the subject and (ii) recreate pixel-level details to produce images of the subject in new contexts. Yo'Chameleon is trained with (i) a self-prompting optimization mechanism to balance performance across multiple modalities, and (ii) a ``soft-positive" image generation approach to enhance image quality in a few-shot setting.
 ]]></content:encoded>
-<pubDate>Tue, 29 Apr 2025 13:59:57 GMT</pubDate>
 <pubDate>Tue, 29 Apr 2025 13:59:57 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +103,8 @@
 <link>https://arxiv.org/abs/2504.20995</link>
 <guid>https://arxiv.org/abs/2504.20995</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种通过RGB-DN视频学习四维世界模型的新方法。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种有效学习新型四维具身世界模型的方法，该模型能够预测三维场景随时间动态变化的过程，响应具身智能体的动作需求，提供空间和时间的一致性。我们建议通过训练RGB-DN（RGB、深度图和法线图）视频来学习四维世界模型。这种方法不仅超越传统的二维模型，通过整合详细的形状、配置和时间变化到预测中，而且还能有效地学习具身智能体的逆动力学模型。具体来说，我们首先利用现有的机器人操作视频数据集扩展深度和法线信息，然后微调视频生成模型，使其联合预测每帧的RGB-DN。最后，我们提出了一种算法，直接将生成的RGB、深度和法线视频转换为高质量的四维场景。我们的方法确保了具身场景中四维场景预测的时间和空间一致性，实现了具身环境中的新颖视图合成，并促进了显著优于先前基于视频的世界模型的策略学习。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.20995 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种通过RGB-DN视频学习四维世界模型的新方法。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种有效学习新型四维具身世界模型的方法，该模型能够预测三维场景随时间动态变化的过程，响应具身智能体的动作需求，提供空间和时间的一致性。我们建议通过训练RGB-DN（RGB、深度图和法线图）视频来学习四维世界模型。这种方法不仅超越传统的二维模型，通过整合详细的形状、配置和时间变化到预测中，而且还能有效地学习具身智能体的逆动力学模型。具体来说，我们首先利用现有的机器人操作视频数据集扩展深度和法线信息，然后微调视频生成模型，使其联合预测每帧的RGB-DN。最后，我们提出了一种算法，直接将生成的RGB、深度和法线视频转换为高质量的四维场景。我们的方法确保了具身场景中四维场景预测的时间和空间一致性，实现了具身环境中的新颖视图合成，并促进了显著优于先前基于视频的世界模型的策略学习。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.20995" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 29 Apr 2025 13:59:30 GMT</pubDate>
 <pubDate>Tue, 29 Apr 2025 13:59:30 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +112,8 @@
 <link>https://arxiv.org/abs/2504.20734</link>
 <guid>https://arxiv.org/abs/2504.20734</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种新框架，可从多模态异构知识源中检索并整合信息。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为UniversalRAG的新框架，该框架旨在通过从异构的多模态知识源中检索和整合相关信息，提升基于检索的生成模型（RAG）的能力。现有RAG方法大多局限于单一模态的知识库，而UniversalRAG则通过引入模态感知路由机制，动态确定最合适的模态特定知识库并进行针对性检索。此外，还对各模态按粒度级别组织，以实现根据查询复杂性和范围进行精细化检索。实验结果显示，在涉及多种模态的8个基准测试中，UniversalRAG的表现优于模态特定和统一基线。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.20734 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种新框架，可从多模态异构知识源中检索并整合信息。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种名为UniversalRAG的新框架，该框架旨在通过从异构的多模态知识源中检索和整合相关信息，提升基于检索的生成模型（RAG）的能力。现有RAG方法大多局限于单一模态的知识库，而UniversalRAG则通过引入模态感知路由机制，动态确定最合适的模态特定知识库并进行针对性检索。此外，还对各模态按粒度级别组织，以实现根据查询复杂性和范围进行精细化检索。实验结果显示，在涉及多种模态的8个基准测试中，UniversalRAG的表现优于模态特定和统一基线。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.20734" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 29 Apr 2025 09:18:58 GMT</pubDate>
 <pubDate>Tue, 29 Apr 2025 09:18:58 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +121,8 @@
 <link>https://arxiv.org/abs/2504.20595</link>
 <guid>https://arxiv.org/abs/2504.20595</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>ReasonIR-8B通过合成数据显著提升了推理密集型信息检索任务的表现。</p><br><br><p><strong>摘要：</strong> 本文介绍了ReasonIR-8B，这是首个专门针对一般推理任务训练的检索器。传统检索器在推理任务中的表现有限，因为现有训练数据集主要关注简单事实查询。我们开发了一种合成数据生成管道，该管道为每份文档创建具有挑战性和相关性的查询，同时结合看似相关但最终无用的硬负样本。通过混合使用合成数据和现有公开数据进行训练，ReasonIR-8B在BRIGHT基准测试中实现了新的最佳性能，nDCG@10分别达到了29.9（无重排序器）和36.9（有重排序器）。此外，在RAG任务中，它相对提高了MMLU和GPQA性能，分别提升了6.4%和22.6%，并更有效地利用了测试时计算资源。我们的训练方法通用且易于扩展到未来的大型语言模型，为此我们开源了代码、数据和模型。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.20595 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">ReasonIR-8B通过合成数据显著提升了推理密集型信息检索任务的表现。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了ReasonIR-8B，这是首个专门针对一般推理任务训练的检索器。传统检索器在推理任务中的表现有限，因为现有训练数据集主要关注简单事实查询。我们开发了一种合成数据生成管道，该管道为每份文档创建具有挑战性和相关性的查询，同时结合看似相关但最终无用的硬负样本。通过混合使用合成数据和现有公开数据进行训练，ReasonIR-8B在BRIGHT基准测试中实现了新的最佳性能，nDCG@10分别达到了29.9（无重排序器）和36.9（有重排序器）。此外，在RAG任务中，它相对提高了MMLU和GPQA性能，分别提升了6.4%和22.6%，并更有效地利用了测试时计算资源。我们的训练方法通用且易于扩展到未来的大型语言模型，为此我们开源了代码、数据和模型。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.20595" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 29 Apr 2025 05:49:28 GMT</pubDate>
 <pubDate>Tue, 29 Apr 2025 05:49:28 GMT</pubDate>
 </item>
 <item>
@@ -57,14 +130,10 @@
 <link>https://arxiv.org/abs/2504.20571</link>
 <guid>https://arxiv.org/abs/2504.20571</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究展示1-shot强化学习结合可验证奖励显著提升了大型语言模型的数学推理性能。</p><br><br><p><strong>摘要：</strong> 本文探讨了一种基于单训练样本（1-shot）的强化学习方法，即强化学习与可验证奖励（RLVR），其在提升大型语言模型（LLMs）的数学推理能力方面表现出色。通过将此方法应用于基础模型Qwen2.5-Math-1.5B，我们发现仅使用一个示例即可显著提高其在MATH500测试集上的表现，从36.0%提升至73.6%，并在六个常见数学推理基准上平均提高了18.1个百分点。此外，实验表明，这种方法不仅适用于多种模型架构和强化学习算法，还能在多个数学问题上实现类似的效果。进一步研究还揭示了一些有趣的现象，如跨领域泛化能力增强、自我反思频率增加以及在训练精度饱和后持续的测试性能提升（称为“后饱和泛化”）。我们还验证了策略梯度损失在此过程中的关键作用，并强调了探索促进的重要性。最后，单独使用熵损失也能显著提高Qwen2.5-Math-1.5B在MATH500上的表现。这些发现为未来提高RLVR的数据效率提供了启示，并促使重新审视相关领域的进展及其机制。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.20571 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究展示1-shot强化学习结合可验证奖励显著提升了大型语言模型的数学推理性能。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了一种基于单训练样本（1-shot）的强化学习方法，即强化学习与可验证奖励（RLVR），其在提升大型语言模型（LLMs）的数学推理能力方面表现出色。通过将此方法应用于基础模型Qwen2.5-Math-1.5B，我们发现仅使用一个示例即可显著提高其在MATH500测试集上的表现，从36.0%提升至73.6%，并在六个常见数学推理基准上平均提高了18.1个百分点。此外，实验表明，这种方法不仅适用于多种模型架构和强化学习算法，还能在多个数学问题上实现类似的效果。进一步研究还揭示了一些有趣的现象，如跨领域泛化能力增强、自我反思频率增加以及在训练精度饱和后持续的测试性能提升（称为“后饱和泛化”）。我们还验证了策略梯度损失在此过程中的关键作用，并强调了探索促进的重要性。最后，单独使用熵损失也能显著提高Qwen2.5-Math-1.5B在MATH500上的表现。这些发现为未来提高RLVR的数据效率提供了启示，并促使重新审视相关领域的进展及其机制。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.20571" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 29 Apr 2025 05:24:30 GMT</pubDate>
-<pubDate>Tue, 29 Apr 2025 05:24:30 GMT</pubDate>
 </item>
-
 <item>
 <title>NORA：高效视觉-语言-动作模型实现机器人实时自主性</title>
 <link>https://arxiv.org/abs/2504.19854</link>
@@ -9019,51 +9088,6 @@ The increasing complexity and parameter count of Convolutional Neural Networks (
 <div><p style="color: gray;">研究表明，大语言模型中存在关系特定的神经元，影响知识生成。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了在大语言模型（LLMs）中，某些神经元是否专注于关系而非具体实体。研究假设这些神经元能够识别输入文本中的关系，并指导相关生成。通过对Llama-2系列进行实验，结果表明存在关系特定的神经元，并通过选择性去激活这些神经元，评估了其对处理特定关系事实的影响。研究显示，关系特定神经元具备三个显著特性：（i）神经元累积效应，即去激活更多相关神经元会导致相关事实的更大降解；（ii）神经元多样性，不同关系的神经元可以共享，且部分神经元可跨语言传递；（iii）神经元干扰，去激活特定关系的神经元能够提高对其他关系事实的生成表现。这些发现为理解大语言模型中知识存储的机制提供了新视角。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.17355" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Fri, 28 Feb 2025 08:54:03 GMT</pubDate>
-</item>
-<item>
-<title>提升自主AI代理的安全性：应对攻击与脆弱性</title>
-<link>https://arxiv.org/abs/2502.16750</link>
-<guid>https://arxiv.org/abs/2502.16750</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文探讨了自主AI代理的安全威胁及其防护框架。</p><br /><br /><p><strong>摘要：</strong> 自主AI代理利用大语言模型为社会各个领域创造了重要价值，但面临着来自对手的安全威胁，亟需采取保护措施以保障信任与安全。文章指出，静态守卫措施无法有效应对许多种越狱与欺骗性对齐等高级攻击，并强调在真实环境中增强鲁棒性的重要性。通过开发新的评估框架，本文旨在提升基于LLM的代理安全性，采用反图灵测试和多代理模拟进行攻击检测，并用GEMINI 1.5 pro与lama-3.3-70B等模型进行反越狱系统的测试。尽管检测能力达到了94%的准确率，但在长时间攻击下系统仍表现出持续的脆弱性，攻击成功率随着提示长度增加而上升，揭示了复杂系统的多个故障。因此，提出了基于主动监控的灵活安全体系，以应对现有模型的脆弱性，是文章的核心贡献。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.16750" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 28 Feb 2025 08:46:19 GMT</pubDate>
-</item>
-<item>
-<title>Training Consistency Models with Variational Noise Coupling</title>
-<link>https://arxiv.org/abs/2502.18197</link>
-<guid>https://arxiv.org/abs/2502.18197</guid>
-<content:encoded><![CDATA[
-Consistency Training (CT) has recently emerged as a promising alternative to diffusion models, achieving competitive performance in image generation tasks. However, non-distillation consistency training often suffers from high variance and instability, and analyzing and improving its training dynamics is an active area of research. In this work, we propose a novel CT training approach based on the Flow Matching framework. Our main contribution is a trained noise-coupling scheme inspired by the architecture of Variational Autoencoders (VAE). By training a data-dependent noise emission model implemented as an encoder architecture, our method can indirectly learn the geometry of the noise-to-data mapping, which is instead fixed by the choice of the forward process in classical CT. Empirical results across diverse image datasets show significant generative improvements, with our model outperforming baselines and achieving the state-of-the-art (SoTA) non-distillation CT FID on CIFAR-10, and attaining FID on par with SoTA on ImageNet at 64 times 64 resolution in 2-step generation. Our code is available at https://github.com/sony/vct .
-]]></content:encoded>
-<pubDate>Fri, 28 Feb 2025 07:55:48 GMT</pubDate>
-</item>
-<item>
-<title>高效动态高斯点阵的渲染技术研究</title>
-<link>https://arxiv.org/abs/2502.20378</link>
-<guid>https://arxiv.org/abs/2502.20378</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出高效动态高斯点阵方法显著提升动态场景渲染速度与质量。</p><br /><br /><p><strong>摘要：</strong> 动态场景的单目视频渲染是一项重要且具有挑战性的任务。尽管近期的可变形高斯点阵技术为动态场景的表现提供了有效解决方案，但其在训练视角下生成过多冗余高斯，导致渲染速度变慢。此外，静态区域的高斯属性是时间不变的，这使得不必要的高斯建模会引起静态区域的抖动。本文提出了一种高效动态高斯点阵（EDGS）方法，通过稀疏时间变属性建模表示动态场景，利用稀疏锚点网格表示，结合经典内核表示计算密集高斯的运动流，并引入无监督策略以高效筛选静态区域锚点。实验结果表明，EDGS在两个真实数据集上的渲染速度显著提高，同时相比于先前的最先进方法，渲染质量也得到了提升。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.20378" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 28 Feb 2025 07:25:35 GMT</pubDate>
-</item>
-<item>
-<title>ArtGS：一种用于多部件关节物体建模的新方法</title>
-<link>https://arxiv.org/abs/2502.19459</link>
-<guid>https://arxiv.org/abs/2502.19459</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">ArtGS是一种利用3D高斯表示的新方法，提升多部件关节物体的重建和动态建模。</p><br /><br /><p><strong>摘要：</strong> 本文提出了ArtGS，一种新颖的方法，利用3D高斯作为灵活高效的表示，解决计算机视觉中多部件关节物体的建模挑战。ArtGS通过结合规范高斯的粗到细初始化和更新，旨在对齐不同物体状态下的关节部件信息，并采用启发自皮肤绑定的部件动态建模模块，以提升部件网格重建和关节学习。通过在合成和真实世界数据集上的广泛实验，ArtGS展示了在联合参数估计和部件网格重建方面的最高性能，尤其是在处理复杂的多部件关节物体时显著提高了重建质量与效率。此外，本文还对设计选择进行了详细分析，以验证每个组件的有效性，并指明未来的改进方向。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.19459" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 28 Feb 2025 04:47:08 GMT</pubDate>
-</item>
-<item>
-<title>MedVLM-R1：提升医疗图像分析的透明度与可信度</title>
-<link>https://arxiv.org/abs/2502.19634</link>
-<guid>https://arxiv.org/abs/2502.19634</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">MedVLM-R1通过生成自然语言推理提升医疗图像分析的透明度与准确性。</p><br /><br /><p><strong>摘要：</strong> MedVLM-R1是一种新的医疗视觉语言模型，旨在增强医疗图像分析中的透明度和可信度。现有的医疗视觉语言模型多只提供最终答案，缺乏有效的推理过程。MedVLM-R1通过强化学习框架，鼓励模型发现可人类解释的推理路径，避免了监督fine-tuning所带来的过拟合问题。在限量训练数据（600个视觉问题回答样本）和2B参数的情况下，MedVLM-R1在MRI、CT和X光基准测试中的准确率从55.11%提升至78.22%，超越了在超过100万样本上训练的更大模型，并展示了在分布外任务中的良好领域泛化能力。此模型的推出标志着医疗图像分析与明确推理结合的重要进展，为临床实践中的可信和可解释AI奠定了基础。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.19634" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 28 Feb 2025 04:36:05 GMT</pubDate>
 </item>
 </channel>
 </rss>
