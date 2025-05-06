@@ -5,15 +5,25 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>Learning Heterogeneous Mixture of Scene Experts for Large-scale Neural Radiance Fields</title>
+<link>https://arxiv.org/abs/2505.02005</link>
+<guid>https://arxiv.org/abs/2505.02005</guid>
+<content:encoded><![CDATA[
+
+  Recent NeRF methods on large-scale scenes have underlined the importance of scene decomposition for scalable NeRFs. Although achieving reasonable scalability, there are several critical problems remaining unexplored, i.e., learnable decomposition, modeling scene heterogeneity, and modeling efficiency. In this paper, we introduce Switch-NeRF++, a Heterogeneous Mixture of Hash Experts (HMoHE) network that addresses these challenges within a unified framework. It is a highly scalable NeRF that learns heterogeneous decomposition and heterogeneous NeRFs efficiently for large-scale scenes in an end-to-end manner. In our framework, a gating network learns to decomposes scenes and allocates 3D points to specialized NeRF experts. This gating network is co-optimized with the experts, by our proposed Sparsely Gated Mixture of Experts (MoE) NeRF framework. We incorporate a hash-based gating network and distinct heterogeneous hash experts. The hash-based gating efficiently learns the decomposition of the large-scale scene. The distinct heterogeneous hash experts consist of hash grids of different resolution ranges, enabling effective learning of the heterogeneous representation of different scene parts. These design choices make our framework an end-to-end and highly scalable NeRF solution for real-world large-scale scene modeling to achieve both quality and efficiency. We evaluate our accuracy and scalability on existing large-scale NeRF datasets and a new dataset with very large-scale scenes (&gt;6.5km^2) from UrbanBIS. Extensive experiments demonstrate that our approach can be easily scaled to various large-scale scenes and achieve state-of-the-art scene rendering accuracy. Furthermore, our method exhibits significant efficiency, with an 8x acceleration in training and a 16x acceleration in rendering compared to Switch-NeRF. Codes will be released in https://github.com/MiZhenxing/Switch-NeRF.
+
+]]></content:encoded>
+<pubDate>Sun, 04 May 2025 02:25:14 GMT</pubDate>
+<pubDate>Sun, 04 May 2025 02:25:14 GMT</pubDate>
+</item>
+
+<item>
 <title>MUSAR：仅需单领域训练数据的多领域定制框架</title>
 <link>https://arxiv.org/abs/2505.02823</link>
 <guid>https://arxiv.org/abs/2505.02823</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种仅需单领域数据即可实现多领域自定义的新框架MUSAR。</p><br><br><p><strong>摘要：</strong> 本文针对现有跨领域定制方法面临的两大挑战——多领域训练数据获取困难和属性纠缠问题，提出了名为MUSAR的简单而有效的框架。MUSAR通过引入去偏双联学习解决数据限制问题，利用静态注意力路由和双分支LoRA校正分布偏差；同时借助动态注意力路由机制消除领域间的纠缠，从而实现多领域的解耦表示。实验表明，尽管仅使用单领域数据，MUSAR在图像质量、领域一致性及交互自然性方面均优于现有方法，甚至超越部分基于多领域数据训练的方法。这一成果为多领域定制提供了新的思路。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.02823 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种仅需单领域数据即可实现多领域自定义的新框架MUSAR。</p><br /><br /><p><strong>摘要：</strong> 本文针对现有跨领域定制方法面临的两大挑战——多领域训练数据获取困难和属性纠缠问题，提出了名为MUSAR的简单而有效的框架。MUSAR通过引入去偏双联学习解决数据限制问题，利用静态注意力路由和双分支LoRA校正分布偏差；同时借助动态注意力路由机制消除领域间的纠缠，从而实现多领域的解耦表示。实验表明，尽管仅使用单领域数据，MUSAR在图像质量、领域一致性及交互自然性方面均优于现有方法，甚至超越部分基于多领域数据训练的方法。这一成果为多领域定制提供了新的思路。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.02823" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 05 May 2025 13:50:24 GMT</pubDate>
 <pubDate>Mon, 05 May 2025 13:50:24 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +31,8 @@
 <link>https://arxiv.org/abs/2505.02819</link>
 <guid>https://arxiv.org/abs/2505.02819</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>一种无需训练即可有效剪枝Transformer块的方法。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为ReplaceMe的新型训练-free深度剪枝方法，该方法通过将Transformer块替换为线性操作，同时保持高精度性能，适用于低压缩比场景。与传统需要额外训练或微调的剪枝方法不同，ReplaceMe仅需一个小规模校准数据集来估计线性变换，从而逼近被剪枝的块。这一线性映射可无缝合并到剩余的Transformer块中，无需添加额外网络参数。实验表明，ReplaceMe在多个大型语言模型上的表现优于其他训练-free方法，并与涉及大量重新训练/微调及架构修改的最新剪枝方法具有竞争力。在开放基准测试中，ReplaceMe实现了高达25%的剪枝率，而性能保留约90%，且没有额外的计算开销。此外，我们开源了一个包含ReplaceMe及其相关技术的库。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.02819 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">一种无需训练即可有效剪枝Transformer块的方法。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种名为ReplaceMe的新型训练-free深度剪枝方法，该方法通过将Transformer块替换为线性操作，同时保持高精度性能，适用于低压缩比场景。与传统需要额外训练或微调的剪枝方法不同，ReplaceMe仅需一个小规模校准数据集来估计线性变换，从而逼近被剪枝的块。这一线性映射可无缝合并到剩余的Transformer块中，无需添加额外网络参数。实验表明，ReplaceMe在多个大型语言模型上的表现优于其他训练-free方法，并与涉及大量重新训练/微调及架构修改的最新剪枝方法具有竞争力。在开放基准测试中，ReplaceMe实现了高达25%的剪枝率，而性能保留约90%，且没有额外的计算开销。此外，我们开源了一个包含ReplaceMe及其相关技术的库。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.02819" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 05 May 2025 13:47:42 GMT</pubDate>
 <pubDate>Mon, 05 May 2025 13:47:42 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +40,8 @@
 <link>https://arxiv.org/abs/2505.02707</link>
 <guid>https://arxiv.org/abs/2505.02707</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>Voila是一种新型全双工语音语言模型，实现低延迟、情感丰富的对话交互。</p><br><br><p><strong>摘要：</strong> 本文介绍了Voila，一种旨在实现自主、实时且情感表达丰富的人机语音交互的大型语音语言基础模型。不同于传统的流水线系统，Voila采用端到端架构，支持毫秒级响应时间，同时保留丰富的语音特征如音调、节奏和情感。它通过层次化多尺度Transformer融合了大语言模型的推理能力与强大的声学建模能力，允许用户通过文本指令定义语音角色特性。此外，Voila还支持百万级预制语音并能高效定制新语音，仅需10秒音频样本即可完成。除了对话功能，Voila还能轻松适应自动语音识别（ASR）、文本转语音（TTS）及多语言语音翻译等多种应用场景。该模型已完全开源，助力开放研究并推动下一代人机交互发展。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.02707 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">Voila是一种新型全双工语音语言模型，实现低延迟、情感丰富的对话交互。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了Voila，一种旨在实现自主、实时且情感表达丰富的人机语音交互的大型语音语言基础模型。不同于传统的流水线系统，Voila采用端到端架构，支持毫秒级响应时间，同时保留丰富的语音特征如音调、节奏和情感。它通过层次化多尺度Transformer融合了大语言模型的推理能力与强大的声学建模能力，允许用户通过文本指令定义语音角色特性。此外，Voila还支持百万级预制语音并能高效定制新语音，仅需10秒音频样本即可完成。除了对话功能，Voila还能轻松适应自动语音识别（ASR）、文本转语音（TTS）及多语言语音翻译等多种应用场景。该模型已完全开源，助力开放研究并推动下一代人机交互发展。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.02707" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 05 May 2025 11:05:01 GMT</pubDate>
 <pubDate>Mon, 05 May 2025 11:05:01 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +49,8 @@
 <link>https://arxiv.org/abs/2505.02391</link>
 <guid>https://arxiv.org/abs/2505.02391</guid>
 <content:encoded><![CDATA[
-
-  Chain-of-thought (CoT) reasoning in large language models (LLMs) can be formalized as a latent variable problem, where the model needs to generate intermediate reasoning steps. While prior approaches such as iterative reward-ranked fine-tuning (RAFT) have relied on such formulations, they typically apply uniform inference budgets across prompts, which fails to account for variability in difficulty and convergence behavior. This work identifies the main bottleneck in CoT training as inefficient stochastic gradient estimation due to static sampling strategies. We propose GVM-RAFT, a prompt-specific Dynamic Sample Allocation Strategy designed to minimize stochastic gradient variance under a computational budget constraint. The method dynamically allocates computational resources by monitoring prompt acceptance rates and stochastic gradient norms, ensuring that the resulting gradient variance is minimized. Our theoretical analysis shows that the proposed dynamic sampling strategy leads to accelerated convergence guarantees under suitable conditions. Experiments on mathematical reasoning show that GVM-RAFT achieves a 2-4x speedup and considerable accuracy improvements over vanilla RAFT. The proposed dynamic sampling strategy is general and can be incorporated into other reinforcement learning algorithms, such as GRPO, leading to similar improvements in convergence and test accuracy. Our code is available at https://github.com/RLHFlow/GVM.
-
+Chain-of-thought (CoT) reasoning in large language models (LLMs) can be formalized as a latent variable problem, where the model needs to generate intermediate reasoning steps. While prior approaches such as iterative reward-ranked fine-tuning (RAFT) have relied on such formulations, they typically apply uniform inference budgets across prompts, which fails to account for variability in difficulty and convergence behavior. This work identifies the main bottleneck in CoT training as inefficient stochastic gradient estimation due to static sampling strategies. We propose GVM-RAFT, a prompt-specific Dynamic Sample Allocation Strategy designed to minimize stochastic gradient variance under a computational budget constraint. The method dynamically allocates computational resources by monitoring prompt acceptance rates and stochastic gradient norms, ensuring that the resulting gradient variance is minimized. Our theoretical analysis shows that the proposed dynamic sampling strategy leads to accelerated convergence guarantees under suitable conditions. Experiments on mathematical reasoning show that GVM-RAFT achieves a 2-4x speedup and considerable accuracy improvements over vanilla RAFT. The proposed dynamic sampling strategy is general and can be incorporated into other reinforcement learning algorithms, such as GRPO, leading to similar improvements in convergence and test accuracy. Our code is available at https://github.com/RLHFlow/GVM.
 ]]></content:encoded>
-<pubDate>Mon, 05 May 2025 02:26:00 GMT</pubDate>
 <pubDate>Mon, 05 May 2025 02:26:00 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +58,8 @@
 <link>https://arxiv.org/abs/2505.02387</link>
 <guid>https://arxiv.org/abs/2505.02387</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究提出推理奖励模型（ReasRM），显著提高大语言模型对人类偏好的对齐能力。</p><br><br><p><strong>摘要：</strong> 奖励建模（Reward Modeling）对于通过强化学习从人类反馈（RLHF）来对齐大型语言模型（LLMs）至关重要。然而，现有的奖励模型要么提供不透明的标量评分，要么直接预测首选答案，导致缺乏解释性。受长链推理（CoT）方法的启发，本研究提出了推理奖励模型（ReasRM），将奖励建模视为一个推理任务。ReasRM通过两个阶段进行训练：高质量推理链蒸馏和基于可验证奖励的强化学习。实验结果显示，所提出的RM-R1模型在多个基准测试中达到或接近当前最佳性能，甚至超越了更大的开源权重模型（如Llama3.1-405B）和专有模型（如GPT-4o）。此外，我们分析了ReasRM成功训练的关键因素，并开源了六个ReasRM模型及相关代码和数据。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.02387 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究提出推理奖励模型（ReasRM），显著提高大语言模型对人类偏好的对齐能力。</p><br /><br /><p><strong>摘要：</strong> 奖励建模（Reward Modeling）对于通过强化学习从人类反馈（RLHF）来对齐大型语言模型（LLMs）至关重要。然而，现有的奖励模型要么提供不透明的标量评分，要么直接预测首选答案，导致缺乏解释性。受长链推理（CoT）方法的启发，本研究提出了推理奖励模型（ReasRM），将奖励建模视为一个推理任务。ReasRM通过两个阶段进行训练：高质量推理链蒸馏和基于可验证奖励的强化学习。实验结果显示，所提出的RM-R1模型在多个基准测试中达到或接近当前最佳性能，甚至超越了更大的开源权重模型（如Llama3.1-405B）和专有模型（如GPT-4o）。此外，我们分析了ReasRM成功训练的关键因素，并开源了六个ReasRM模型及相关代码和数据。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.02387" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 05 May 2025 02:11:12 GMT</pubDate>
 <pubDate>Mon, 05 May 2025 02:11:12 GMT</pubDate>
 </item>
 <item>
@@ -69,11 +67,8 @@
 <link>https://arxiv.org/abs/2505.02222</link>
 <guid>https://arxiv.org/abs/2505.02222</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>Muon优化器在计算时间和AdamW之间扩展帕累托前沿，提高大批次训练的数据效率。</p><br><br><p><strong>摘要：</strong> 本文展示了Muon作为二阶优化器的最简单实例，如何在计算时间与AdamW的权衡中扩展帕累托前沿。研究发现，Muon在大批次训练中比AdamW更具数据效率，且保持了计算效率，从而实现更经济的训练。此外，Muon与最大更新参数化(muP)的结合用于高效超参数转移，提出了一种考虑所有muP误差来源的简单望远镜算法，仅引入适度的资源开销。通过模型大小高达40亿参数的广泛实验及对数据分布和架构的消融研究验证了这些发现。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.02222 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">Muon优化器在计算时间和AdamW之间扩展帕累托前沿，提高大批次训练的数据效率。</p><br /><br /><p><strong>摘要：</strong> 本文展示了Muon作为二阶优化器的最简单实例，如何在计算时间与AdamW的权衡中扩展帕累托前沿。研究发现，Muon在大批次训练中比AdamW更具数据效率，且保持了计算效率，从而实现更经济的训练。此外，Muon与最大更新参数化(muP)的结合用于高效超参数转移，提出了一种考虑所有muP误差来源的简单望远镜算法，仅引入适度的资源开销。通过模型大小高达40亿参数的广泛实验及对数据分布和架构的消融研究验证了这些发现。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.02222" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Sun, 04 May 2025 15:14:43 GMT</pubDate>
 <pubDate>Sun, 04 May 2025 15:14:43 GMT</pubDate>
 </item>
 <item>
@@ -81,11 +76,8 @@
 <link>https://arxiv.org/abs/2505.02094</link>
 <guid>https://arxiv.org/abs/2505.02094</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种解决强化学习中演示噪声与覆盖不足问题的新方法。</p><br><br><p><strong>摘要：</strong> 本文解决了强化学习从交互演示中获取技能的一个基础挑战：演示噪声与覆盖限制。现有数据收集方法虽有价值，但常产生稀疏、不连贯且嘈杂的轨迹。我们通过引入两种数据增强技术——Stitched Trajectory Graph (STG) 和 State Transition Field (STF)，有效连接演示技能并构建状态转换场。同时，开发了自适应轨迹采样策略和记忆依赖技能学习机制。实验表明，在多种交互任务上，该方法显著提升了收敛稳定性、泛化能力和恢复鲁棒性，超越当前最先进方法。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.02094 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种解决强化学习中演示噪声与覆盖不足问题的新方法。</p><br /><br /><p><strong>摘要：</strong> 本文解决了强化学习从交互演示中获取技能的一个基础挑战：演示噪声与覆盖限制。现有数据收集方法虽有价值，但常产生稀疏、不连贯且嘈杂的轨迹。我们通过引入两种数据增强技术——Stitched Trajectory Graph (STG) 和 State Transition Field (STF)，有效连接演示技能并构建状态转换场。同时，开发了自适应轨迹采样策略和记忆依赖技能学习机制。实验表明，在多种交互任务上，该方法显著提升了收敛稳定性、泛化能力和恢复鲁棒性，超越当前最先进方法。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.02094" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Sun, 04 May 2025 09:00:29 GMT</pubDate>
 <pubDate>Sun, 04 May 2025 09:00:29 GMT</pubDate>
 </item>
 <item>
@@ -93,11 +85,8 @@
 <link>https://arxiv.org/abs/2505.01658</link>
 <guid>https://arxiv.org/abs/2505.01658</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究评估25个开源及商业LLM推理引擎，探讨优化方法与适用场景。</p><br><br><p><strong>摘要：</strong> 大规模语言模型（LLMs）在聊天机器人、代码生成器和搜索引擎中广泛应用，但复杂推理等任务显著增加推理成本。尽管已有并行化、压缩和缓存等多种优化方法，但服务需求多样化使得方法选择困难。本文对25个开源和商业推理引擎进行全面评估，涵盖易用性、部署便捷性、通用支持、可扩展性和吞吐量/延迟敏感计算的适用性。通过分析各引擎支持的优化技术，揭示其设计目标，并评估开源引擎的生态系统成熟度及商业解决方案的成本性能策略。此外，本文还提出未来研究方向，如支持复杂服务、兼容多种硬件及增强安全性，并提供公共存储库追踪领域进展。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.01658 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究评估25个开源及商业LLM推理引擎，探讨优化方法与适用场景。</p><br /><br /><p><strong>摘要：</strong> 大规模语言模型（LLMs）在聊天机器人、代码生成器和搜索引擎中广泛应用，但复杂推理等任务显著增加推理成本。尽管已有并行化、压缩和缓存等多种优化方法，但服务需求多样化使得方法选择困难。本文对25个开源和商业推理引擎进行全面评估，涵盖易用性、部署便捷性、通用支持、可扩展性和吞吐量/延迟敏感计算的适用性。通过分析各引擎支持的优化技术，揭示其设计目标，并评估开源引擎的生态系统成熟度及商业解决方案的成本性能策略。此外，本文还提出未来研究方向，如支持复杂服务、兼容多种硬件及增强安全性，并提供公共存储库追踪领域进展。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.01658" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 02 May 2025 22:47:43 GMT</pubDate>
 <pubDate>Fri, 02 May 2025 22:47:43 GMT</pubDate>
 </item>
 <item>
@@ -105,11 +94,8 @@
 <link>https://arxiv.org/abs/2505.01456</link>
 <guid>https://arxiv.org/abs/2505.01456</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究提出多模态遗忘学习基准UnLOK-VQA及框架，评估删除特定知识的效果。</p><br><br><p><strong>摘要：</strong> 本文探讨了大规模数据训练的语言模型可能无意中获取敏感信息的风险，尤其是多模态模型整合文本和图像信息时风险更高。为了应对这一挑战，研究者引入了一个名为UnLOK-VQA的多模态遗忘学习基准，并设计了一套攻击与防御框架，用于评估如何有效删除多模态知识。该基准通过自动化管道扩展视觉问答数据集，同时进行人工筛选，确保高质量。研究对六种防御目标进行了测试，发现多模态攻击比单一模态更具优势，且最有效的防御方法是从模型状态中移除答案信息。此外，更大的模型表现出更强的编辑后鲁棒性，表明规模有助于提高安全性。UnLOK-VQA为多模态大型语言模型的安全性提升提供了严格的评估工具。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.01456 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究提出多模态遗忘学习基准UnLOK-VQA及框架，评估删除特定知识的效果。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了大规模数据训练的语言模型可能无意中获取敏感信息的风险，尤其是多模态模型整合文本和图像信息时风险更高。为了应对这一挑战，研究者引入了一个名为UnLOK-VQA的多模态遗忘学习基准，并设计了一套攻击与防御框架，用于评估如何有效删除多模态知识。该基准通过自动化管道扩展视觉问答数据集，同时进行人工筛选，确保高质量。研究对六种防御目标进行了测试，发现多模态攻击比单一模态更具优势，且最有效的防御方法是从模型状态中移除答案信息。此外，更大的模型表现出更强的编辑后鲁棒性，表明规模有助于提高安全性。UnLOK-VQA为多模态大型语言模型的安全性提升提供了严格的评估工具。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.01456" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 30 Apr 2025 21:54:00 GMT</pubDate>
 <pubDate>Wed, 30 Apr 2025 21:54:00 GMT</pubDate>
 </item>
 <item>
@@ -117,11 +103,8 @@
 <link>https://arxiv.org/abs/2504.20752</link>
 <guid>https://arxiv.org/abs/2504.20752</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究首次将Grokking应用于现实世界事实数据，显著提升多跳推理准确性。</p><br><br><p><strong>摘要：</strong> 尽管Transformer模型在众多自然语言处理任务中取得了显著成功，但在缺乏实际知识的情况下进行多步事实推理时仍存在明显不足。最近关于Grokking的研究表明，神经网络可以通过检测潜在逻辑模式实现从记忆到完全泛化的转变，但这些研究主要集中在小型合成任务上。本文首次将Grokking扩展到现实世界的事实数据，并通过精心设计的合成数据扩充现有知识图谱，提高推断事实与原子事实的比例phi_r，从而克服数据稀疏性问题。令人惊讶的是，即使合成数据存在事实错误，也能加强新兴推理电路的形成，而非降低准确性。在多跳推理基准测试中，我们的方法在2WikiMultiHopQA上的准确率达到了95%-100%，大幅优于现有基线模型。此外，我们深入分析了phi_r增加如何促进Transformer内部形成泛化电路。研究结果表明，基于Grokking的数据增强可以解锁隐式的多跳推理能力，为大规模语言模型提供更健壮且可解释的事实推理奠定了基础。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.20752 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究首次将Grokking应用于现实世界事实数据，显著提升多跳推理准确性。</p><br /><br /><p><strong>摘要：</strong> 尽管Transformer模型在众多自然语言处理任务中取得了显著成功，但在缺乏实际知识的情况下进行多步事实推理时仍存在明显不足。最近关于Grokking的研究表明，神经网络可以通过检测潜在逻辑模式实现从记忆到完全泛化的转变，但这些研究主要集中在小型合成任务上。本文首次将Grokking扩展到现实世界的事实数据，并通过精心设计的合成数据扩充现有知识图谱，提高推断事实与原子事实的比例phi_r，从而克服数据稀疏性问题。令人惊讶的是，即使合成数据存在事实错误，也能加强新兴推理电路的形成，而非降低准确性。在多跳推理基准测试中，我们的方法在2WikiMultiHopQA上的准确率达到了95%-100%，大幅优于现有基线模型。此外，我们深入分析了phi_r增加如何促进Transformer内部形成泛化电路。研究结果表明，基于Grokking的数据增强可以解锁隐式的多跳推理能力，为大规模语言模型提供更健壮且可解释的事实推理奠定了基础。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.20752" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 29 Apr 2025 09:33:29 GMT</pubDate>
 <pubDate>Tue, 29 Apr 2025 09:33:29 GMT</pubDate>
 </item>
 <item>
@@ -129,14 +112,10 @@
 <link>https://arxiv.org/abs/2505.01441</link>
 <guid>https://arxiv.org/abs/2505.01441</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>ARTIST框架通过具身推理和工具集成显著提升大语言模型问题解决能力。</p><br><br><p><strong>摘要：</strong> 本文提出ARTIST（具身推理与工具集成的自我改进Transformer），这是一种将具身推理、强化学习和工具集成统一起来的框架，旨在增强大型语言模型（LLMs）的动态、多步推理能力以及适应性决策能力。ARTIST允许模型自主决定何时、如何以及选择哪个工具进行调用，并通过基于结果的强化学习策略优化工具使用和环境交互。实验表明，ARTIST在数学推理和多轮函数调用基准测试中超越现有最先进的基线模型，特别是在最具挑战性的任务上取得了高达22%的绝对性能提升。深入研究和指标分析显示，具身强化学习训练促进了更深层次的推理、更有效的工具使用和更高质量的解决方案。这些结果确立了具身强化学习与工具集成作为LLMs鲁棒、可解释和泛化能力强的问题解决新方向的重要性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.01441 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">ARTIST框架通过具身推理和工具集成显著提升大语言模型问题解决能力。</p><br /><br /><p><strong>摘要：</strong> 本文提出ARTIST（具身推理与工具集成的自我改进Transformer），这是一种将具身推理、强化学习和工具集成统一起来的框架，旨在增强大型语言模型（LLMs）的动态、多步推理能力以及适应性决策能力。ARTIST允许模型自主决定何时、如何以及选择哪个工具进行调用，并通过基于结果的强化学习策略优化工具使用和环境交互。实验表明，ARTIST在数学推理和多轮函数调用基准测试中超越现有最先进的基线模型，特别是在最具挑战性的任务上取得了高达22%的绝对性能提升。深入研究和指标分析显示，具身强化学习训练促进了更深层次的推理、更有效的工具使用和更高质量的解决方案。这些结果确立了具身强化学习与工具集成作为LLMs鲁棒、可解释和泛化能力强的问题解决新方向的重要性。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.01441" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Mon, 28 Apr 2025 06:42:49 GMT</pubDate>
-<pubDate>Mon, 28 Apr 2025 06:42:49 GMT</pubDate>
 </item>
-
 <item>
 <title>基于强化学习的多模态奖励模型优化研究</title>
 <link>https://arxiv.org/abs/2505.02835</link>
@@ -9037,105 +9016,6 @@ We introduce Pok\'eChamp, a minimax agent powered by Large Language Models (LLMs
 <div><p style="color: gray;">本研究探讨了味觉信息如何转化为音乐，以促进多感官交互。</p><br /><br /><p><strong>摘要：</strong> 近年来，神经科学和心理学研究发现味觉与听觉之间存在直接关系。本文探讨了能够将味觉信息转化为音乐的多模态生成模型，基于此研究背景，我们回顾了该领域的现状，并强调了关键发现和方法。此外，我们设计了一项实验，通过对生成音乐模型（MusicGEN）的精细调优，生成基于详细味觉描述的音乐作品。结果显示，参与者（n=111）的评估认为，经过调优的模型比未调优的模型所生成的音乐更能体现输入的味觉描述。这项研究在理解和开发人工智能、声音与味觉之间的具身交互方面迈出了重要一步，为生成式人工智能领域开启了新的可能性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.02823" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 05 Mar 2025 11:04:04 GMT</pubDate>
-</item>
-<item>
-<title>Tabby: 一种用于合成表格数据的强大Transformer后训练方法</title>
-<link>https://arxiv.org/abs/2503.02152</link>
-<guid>https://arxiv.org/abs/2503.02152</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">Tabby是一种改进Transformer架构以合成高质量表格数据的方法。</p><br /><br /><p><strong>摘要：</strong> 随着大型语言模型技术的发展，合成文本数据的质量显著提高，但对表格数据的合成关注相对较少。我们提出了Tabby，这是一种简洁而强大的后训练修改，适用于标准Transformer语言模型架构，以实现表格数据的合成。Tabby通过Gated Mixture-of-Experts来表示列间差异，采用列特定的参数集合。实证结果显示，Tabby生成的数据质量与真实数据相当。通过将我们的新型表格训练技术Plain与Tabby配对，我们观察到质量较之前方法提高了多达44%。此外，Tabby的应用范围超越表格数据，针对嵌套JSON数据集也达到了与真实数据相当的表现。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.02152" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 05 Mar 2025 11:03:42 GMT</pubDate>
-</item>
-<item>
-<title>TokenOCR：一种针对文本图像任务的首个 token 级视觉基础模型</title>
-<link>https://arxiv.org/abs/2503.02304</link>
-<guid>https://arxiv.org/abs/2503.02304</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">TokenOCR 是首个针对文本图像任务的 token 级视觉基础模型，能提高模型预测准确性。</p><br /><br /><p><strong>摘要：</strong> 近年来，视觉基础模型（VFM）在多模态大语言模型（MLLM）中的应用不断增加，但在处理含小密集文本的图像时仍存在基本预测错误。为解决这一问题，本文开发了 TokenOCR，这是一个专门针对文本图像任务的 token 级视觉基础模型，旨在支持多种传统下游应用程序。为促进 TokenOCR 的预训练，研究团队还设计了一个高质量数据生产管道，构建了首个 token 级图像文本数据集 TokenIT，包含2千万张图像和18亿对 token-mask。此外，利用其卓越的图像文本能力，团队无缝替换了以往的 VFM，构建了一种文档级 MLLM，即 TokenVL，用于基于 VQA 的文档理解任务。实验结果证明了 TokenOCR 和 TokenVL 的有效性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.02304" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 05 Mar 2025 11:03:27 GMT</pubDate>
-</item>
-<item>
-<title>基于强化学习的离散时间混合自动机学习框架</title>
-<link>https://arxiv.org/abs/2503.01842</link>
-<guid>https://arxiv.org/abs/2503.01842</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出了一种新颖的框架，通过强化学习识别模式切换，实现无轨迹分割的学习。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种离散时间混合自动机学习（DHAL）框架，该框架使用基于策略的强化学习技术，在不进行轨迹分割或事件函数学习的情况下，识别和执行模式切换。混合动态系统结合了连续流动与离散模式切换，能够有效建模像四足机器人行走等复杂机器人任务。传统的基于模型的方法依赖于预定义的步态，而无模型方法在显式模式切换知识方面存在不足。现有方法通过轨迹分割来识别离散模式，但在没有轨迹标签或分割的条件下，学习高维复杂的刚体动力学仍然是一个具有挑战性的开放问题。我们的方法结合了β策略分布和多重批评者架构，以模拟接触引导的运动，特别是在四足机器人滑板任务中表现出色。通过仿真和现实世界测试，我们验证了该方法在混合动态系统中的强大性能。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.01842" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 05 Mar 2025 10:37:18 GMT</pubDate>
-</item>
-<item>
-<title>平衡回归中的均匀性学习方法</title>
-<link>https://arxiv.org/abs/2503.00876</link>
-<guid>https://arxiv.org/abs/2503.00876</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文探讨在不平衡回归中实现均匀特征分布的重要性。</p><br /><br /><p><strong>摘要：</strong> 在表示学习中，均匀性指的是潜在空间中特征的均匀分布。以往的研究表明，提高均匀性有助于学习被低估类别，但大多数集中在分类任务，不平衡回归的表示空间尚未探索。与分类不同，回归任务特征是连续的，因此需采用不同方法。我们通过引入包络损失和同质性损失，确保在潜在空间中实现均匀性。包络损失促使特征均匀覆盖超球面，而同质性损失则确保表示间均匀间隔。我们的方法通过代理驱动表示学习框架（SRL）将几何原则融入数据表示。实验结果强调了在不平衡回归任务中均匀性的重要性，验证了我们的几何损失函数的有效性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.00876" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 05 Mar 2025 08:25:03 GMT</pubDate>
-</item>
-<item>
-<title>Q-EVAL-100K：评估文本与视觉内容的综合数据集</title>
-<link>https://arxiv.org/abs/2503.02357</link>
-<guid>https://arxiv.org/abs/2503.02357</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">Q-EVAL-100K数据集提升文本与视觉内容的评估能力。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了Q-EVAL-100K数据集，该数据集专为评估文本与视觉内容的视觉质量和对齐水平而设计，包含960K个人工标注的平均意见分数(MOS)。此数据集包括60K图像和40K视频实例，在文本到图像和文本到视频模型的评估中具有重要意义。通过Q-Eval-Score模型，研究者能够有效评估视觉质量和对齐，尤其在长文本提示对齐方面有显著改进。实验结果显示，该模型在视觉质量和对齐性能上均表现优异，并在其他基准测试中具有良好的泛化能力，突显了Q-EVAL-100K数据集的重大价值。相关数据和代码将会在GitHub上发布。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.02357" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 05 Mar 2025 06:09:41 GMT</pubDate>
-</item>
-<item>
-<title>IterPref：提升代码大语言模型的偏好学习框架</title>
-<link>https://arxiv.org/abs/2503.02783</link>
-<guid>https://arxiv.org/abs/2503.02783</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">IterPref框架通过精确定位错误区域，提升代码生成模型性能。</p><br /><br /><p><strong>摘要：</strong> 本文提出了IterPref，一个新颖的偏好对齐框架，旨在通过模仿人类迭代调试来优化代码大语言模型（Code LLMs）。现有方法基于测试用例的成功构建偏好对，通常将较高通过率的样本视为正样本，低通过率样本视为负样本，这种方法缺乏对代码具体错误的识别，限制了模型学习有效错误修正模式的能力。为了解决这一问题，IterPref明确定位错误区域，并通过量身定制的DPO算法对相关令牌进行对齐。同时，我们引入了CodeFlow数据集，其中样本经过多次迭代优化，直至通过所有测试，改动捕捉了错误修正过程。实验结果表明，配备IterPref的多样化代码大语言模型在代码生成方面显著提升了性能，并在诸如BigCodeBench等复杂任务上表现优异。深入分析显示，IterPref有效减少了错误。我们的代码和数据将公开发布。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.02783" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 05 Mar 2025 05:54:00 GMT</pubDate>
-</item>
-<item>
-<title>RectifiedHR：一种高效的无训练高分辨率图像生成方法</title>
-<link>https://arxiv.org/abs/2503.02537</link>
-<guid>https://arxiv.org/abs/2503.02537</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">RectifiedHR提供了一种高效的无训练高分辨率图像生成方案。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了RectifiedHR，一种高效且无需训练的高分辨率图像生成解决方案。尽管现有的高分辨率生成方法普遍存在效率低下或操作复杂的问题，RectifiedHR通过引入噪声刷新策略，仅需少量代码便能释放模型的高分辨率生成能力，从而提高效率。此外，作者首次观察到高分辨率图像生成过程中可能导致图像模糊的能量衰减现象，并提出能量修正策略，通过调整无分类器引导的超参数，显著提升生成效果。经过与多种基线方法的广泛比较，RectifiedHR表现出显著的效果和效率优势，完全符合训练免费的需求。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.02537" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 05 Mar 2025 05:53:05 GMT</pubDate>
-</item>
-<item>
-<title>LADDER: 自主驱动的自我学习框架提升语言模型解决问题的能力</title>
-<link>https://arxiv.org/abs/2503.00735</link>
-<guid>https://arxiv.org/abs/2503.00735</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">LADDER框架通过自我学习大幅提升语言模型的数学问题解决能力。</p><br /><br /><p><strong>摘要：</strong> LADDER（自主难度驱动示例递归学习）是一个框架，通过递归生成和解决逐渐简化的复杂问题变体，使大型语言模型能够自主提升其问题解决能力。与以往需要策划数据集或人类反馈的方法不同，LADDER利用模型自身的能力生成更简单的问题变体。研究表明，LADDER在数学积分领域的有效性显著，从Llama 3.2 3B模型在本科水平问题上的准确率从1%提升至82%；同时，Qwen2.5 7B Deepseek-R1模型在MIT积分考试资格考试中取得了73%的高分。此外，本文还介绍了TTRL（测试时强化学习），通过在推理时对测试问题的变体进行强化学习，使得Qwen2.5 7B Deepseek-R1模型在MIT积分考试资格考试中取得了90%的最高得分，超过了OpenAI模型的表现。这些结果表明，自我导向的战略学习能够在不依赖架构扩展或人类监督的情况下，实现显著的能力提升。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.00735" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 05 Mar 2025 05:24:20 GMT</pubDate>
-</item>
-<item>
-<title>迭代价值函数优化：提升价值引导解码的有效性</title>
-<link>https://arxiv.org/abs/2503.02368</link>
-<guid>https://arxiv.org/abs/2503.02368</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文提出迭代价值函数优化，提升了价值引导解码的准确性与效率。</p><br /><br /><p><strong>摘要：</strong> 随着人类反馈强化学习(RLHF)成为控制语言模型输出的主要方法，但其高计算成本和训练不稳定性依然是挑战。价值引导解码提供了一种更具成本效益的替代方案，通过控制输出而无需重新训练模型。然而，价值函数的准确性对价值引导解码至关重要，不准确的估计可能导致次优决策和性能下降。现有方法在准确估计最优价值函数方面面临困难，导致控制效果不理想。为此，本文提出了一种新框架——迭代价值函数优化，包含两个关键组成部分：蒙特卡洛价值估计，通过探索多样化的轨迹来降低估计方差；迭代在线优化，通过从价值引导策略收集轨迹逐步改善价值估计。通过在文本摘要、多轮对话和任务跟随等领域的广泛实验，验证了价值引导解码方法在对齐语言模型方面的有效性，且显著降低了计算成本，提升了控制的效率和有效性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.02368" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 05 Mar 2025 03:48:51 GMT</pubDate>
-</item>
-<item>
-<title>基于进化框架的智能GUI代理提升效率与灵活性</title>
-<link>https://arxiv.org/abs/2503.02268</link>
-<guid>https://arxiv.org/abs/2503.02268</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出一种新方法提升LLM代理在GUI系统中的效率与智能。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种新颖的基于进化框架的GUI代理方法，以解决传统大语言模型(LLM)代理在执行常规任务时的低效率问题。尽管LLM代理展现出强大的推理能力和适应性，但其对逐步推理的依赖导致在处理例行事务时效率低下。相比之下，传统规则系统在效率上表现优异，但缺乏智能与灵活性。我们的方法引入了一种记忆机制，可以记录代理的任务执行历史，通过分析这些历史数据，代理能够识别重复的动作序列并进化出高层次的快捷操作，从而替代低层次操作，提升整体效率。实验结果显示，所提方法在多项基准任务上显著优于现有技术，提升了效率与准确性，相关代码将开放源码以支持进一步研究。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.02268" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 05 Mar 2025 01:15:42 GMT</pubDate>
-</item>
-<item>
-<title>FR-Spec：一种优化的频率排名推测采样框架</title>
-<link>https://arxiv.org/abs/2502.14856</link>
-<guid>https://arxiv.org/abs/2502.14856</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">FR-Spec通过频率优先的选词策略提升推测采样效率。</p><br /><br /><p><strong>摘要：</strong> FR-Spec是一种新提出的频率排名推测采样框架，旨在加速大型语言模型（LLMs）的自回归生成过程。该模型采用草稿-验证机制，使每次前向传递可生成多个标记。虽然现有的推测采样方法在采用单层和语言建模头时能实现较高的层压缩，但在处理大词汇表（如Llama-3-8B的128k标记）的LLMs时，效率提升明显降低。FR-Spec通过将草稿搜索限制在频率优先的标记子集，从而减少语言建模头的计算开销，降低幅度达到75%，同时确保最终输出分布的一致性。跨多个数据集的实验结果显示，FR-Spec较现有的EAGLE-2方法有着平均1.12倍的加速效果。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2502.14856" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 05 Mar 2025 00:36:34 GMT</pubDate>
 </item>
 </channel>
 </rss>
