@@ -4,6 +4,42 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>通过Selective Loss方法提升语言模型对高风险文本的理解能力</title>
+<link>https://arxiv.org/abs/2505.03052</link>
+<guid>https://arxiv.org/abs/2505.03052</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出SLUNG方法，使模型能理解高风险文本而不生成它们。</p><br><br><p><strong>摘要：</strong> 语言模型开发者通常会过滤掉预训练数据中的高风险内容（如有毒或受版权保护的文本），以防止模型生成类似内容。然而，这种做法限制了模型识别和适当响应有害或敏感内容的能力。本文介绍了一种名为SLUNG（Selective Loss to Understand but Not Generate）的预训练范式，该方法让模型学会理解高风险数据而不学习生成它们。SLUNG不是均匀地应用下一个令牌预测损失，而是有选择地避免激励生成高风险令牌，同时确保它们保留在模型的上下文窗口内。实验表明，SLUNG在提高模型对高风险数据的理解能力方面始终表现出色，而不会增加生成这些内容的风险。总的来说，SLUNG范式使得模型能够从原本会被过滤掉的高风险文本中受益。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.03052 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 05 May 2025 18:24:06 GMT</pubDate>
+<pubDate>Mon, 05 May 2025 18:24:06 GMT</pubDate>
+</item>
+<item>
+<title>Which Agent Causes Task Failures and When? On Automated Failure Attribution of LLM Multi-Agent Systems</title>
+<link>https://arxiv.org/abs/2505.00212</link>
+<guid>https://arxiv.org/abs/2505.00212</guid>
+<content:encoded><![CDATA[
+
+  Failure attribution in LLM multi-agent systems-identifying the agent and step responsible for task failures-provides crucial clues for systems debugging but remains underexplored and labor-intensive. In this paper, we propose and formulate a new research area: automated failure attribution for LLM multi-agent systems. To support this initiative, we introduce the Who&amp;When dataset, comprising extensive failure logs from 127 LLM multi-agent systems with fine-grained annotations linking failures to specific agents and decisive error steps. Using the Who&amp;When, we develop and evaluate three automated failure attribution methods, summarizing their corresponding pros and cons. The best method achieves 53.5% accuracy in identifying failure-responsible agents but only 14.2% in pinpointing failure steps, with some methods performing below random. Even SOTA reasoning models, such as OpenAI o1 and DeepSeek R1, fail to achieve practical usability. These results highlight the task's complexity and the need for further research in this area. Code and dataset are available at https://github.com/mingyin1/Agents_Failure_Attribution
+
+]]></content:encoded>
+<pubDate>Wed, 30 Apr 2025 19:09:44 GMT</pubDate>
+<pubDate>Wed, 30 Apr 2025 19:09:44 GMT</pubDate>
+</item>
+<item>
+<title>SWE-smith: Scaling Data for Software Engineering Agents</title>
+<link>https://arxiv.org/abs/2504.21798</link>
+<guid>https://arxiv.org/abs/2504.21798</guid>
+<content:encoded><![CDATA[
+
+  Despite recent progress in Language Models (LMs) for software engineering, collecting training data remains a significant pain point. Existing datasets are small, with at most 1,000s of training instances from 11 or fewer GitHub repositories. The procedures to curate such datasets are often complex, necessitating hundreds of hours of human labor; companion execution environments also take up several terabytes of storage, severely limiting their scalability and usability. To address this pain point, we introduce SWE-smith, a novel pipeline for generating software engineering training data at scale. Given any Python codebase, SWE-smith constructs a corresponding execution environment, then automatically synthesizes 100s to 1,000s of task instances that break existing test(s) in the codebase. Using SWE-smith, we create a dataset of 50k instances sourced from 128 GitHub repositories, an order of magnitude larger than all previous works. We train SWE-agent-LM-32B, achieving 40.2% Pass@1 resolve rate on the SWE-bench Verified benchmark, state of the art among open source models. We open source SWE-smith (collection procedure, task instances, trajectories, models) to lower the barrier of entry for research in LM systems for automated software engineering. All assets available at https://swesmith.com.
+
+]]></content:encoded>
+<pubDate>Wed, 30 Apr 2025 12:56:06 GMT</pubDate>
+<pubDate>Wed, 30 Apr 2025 12:56:06 GMT</pubDate>
+</item>
 
 <item>
 <title>VITA-Audio：基于多模态预测模块的低延迟语音生成大模型</title>
