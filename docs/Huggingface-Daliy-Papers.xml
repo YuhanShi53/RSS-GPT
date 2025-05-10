@@ -4,6 +4,54 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>基于鲁棒文本水印的大语言模型高效遗忘评估方法</title>
+<link>https://arxiv.org/abs/2505.05064</link>
+<guid>https://arxiv.org/abs/2505.05064</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出首个面向大语言模型的数据驱动遗忘度量方法WaterDrum。</p><br><br><p><strong>摘要：</strong> 现有基于模型效用的遗忘度量方法在实际应用中存在局限性，如忘记集和保留集内容语义相似、重新训练模型不可行等情况下无法准确评估遗忘效果。本文提出了首个面向大语言模型的数据驱动遗忘度量方法WaterDrum，利用鲁棒文本水印技术克服这些限制。此外，我们还引入了新的基准数据集，用于严格评估遗忘算法，并提供了代码和数据集的公开访问链接。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.05064 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 08 May 2025 04:56:46 GMT</pubDate>
+<pubDate>Thu, 08 May 2025 04:56:46 GMT</pubDate>
+</item>
+<item>
+<title>RL^V：强化学习中引入验证能力提升LLM推理性能</title>
+<link>https://arxiv.org/abs/2505.04842</link>
+<guid>https://arxiv.org/abs/2505.04842</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>RL^V通过联合训练LLM作为推理器和生成式验证器，显著提高数学问题求解精度并优化计算效率。</p><br><br><p><strong>摘要：</strong> 当前针对大型语言模型（LLM）推理微调的主流强化学习方法（如GRPO或Leave-one-out PPO），倾向于放弃已学得的价值函数，转而依赖经验估计回报，这限制了测试阶段基于价值函数进行验证的计算扩展性。本文提出了一种名为RL^V的新方法，该方法通过使用强化学习生成的数据，同时训练LLM作为推理器和生成式验证器，从而在不增加显著开销的情况下赋予模型验证能力。实验表明，RL^V使MATH数据集的准确率提升了超过20%，并且相比基础强化学习方法，在测试阶段的并行计算效率提高了8到32倍。此外，RL^V在易难任务迁移及域外任务上均展现出强大的泛化能力，同时在联合扩展并行与顺序测试时间计算时，相较于原始R1模型取得了1.2至1.6倍的性能提升。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.04842 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 07 May 2025 18:41:26 GMT</pubDate>
+<pubDate>Wed, 07 May 2025 18:41:26 GMT</pubDate>
+</item>
+<item>
+<title>视觉-语言-行动模型综述：架构创新与未来展望</title>
+<link>https://arxiv.org/abs/2505.04769</link>
+<guid>https://arxiv.org/abs/2505.04769</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>综述了近3年视觉-语言-行动模型的最新进展及其应用。</p><br><br><p><strong>摘要：</strong> 本文系统性回顾了近年来视觉-语言-行动（VLA）模型的研究进展，涵盖五大主题支柱，如从跨模态学习到整合视觉语言模型、动作规划器和分层控制器的通用代理。通过分析80余篇相关论文，重点讨论了架构创新、高效参数训练及实时推理加速等进步领域，并探讨了人形机器人、自动驾驶、医疗工业机器人等多样化应用场景。同时，文章还针对实时控制、多模态动作表示等挑战提出解决方案，并展望了VLA模型与具身人工智能融合推动社会对齐的智能通用体的未来方向。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.04769 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 07 May 2025 15:46:43 GMT</pubDate>
+<pubDate>Wed, 07 May 2025 15:46:43 GMT</pubDate>
+</item>
+<item>
+<title>结合策略优化语言模型对齐：on-policy与off-policy数据的互补优势</title>
+<link>https://arxiv.org/abs/2505.02363</link>
+<guid>https://arxiv.org/abs/2505.02363</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究发现on-policy和off-policy数据在偏好优化中具有互补性，提出SIMPLEMIX方法显著提升语言模型对齐效果。</p><br><br><p><strong>摘要：</strong> 语言模型对齐依赖于成对偏好数据集，然而关于on-policy数据与off-policy数据在偏好学习中的优劣关系存在争议。本研究通过系统分析指出，on-policy数据在推理任务如数学和编程中表现优异，而off-policy数据在开放式任务如创意写作和个人推荐方面更具优势。基于此，我们提出了SIMPLEMIX方法，通过简单混合两种数据源充分利用其互补特性。实验结果显示，SIMPLEMIX在Alpaca Eval 2.0等多任务基准测试中平均优于单独使用on-policy DPO和off-policy DPO达6.03%，且性能超越了更为复杂的HyPO和DPO-Mix-P方法，平均提高3.05%。这一成果为语言模型的高效对齐提供了新的思路。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.02363 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 05 May 2025 00:54:44 GMT</pubDate>
+<pubDate>Mon, 05 May 2025 00:54:44 GMT</pubDate>
+</item>
 
 <item>
 <title>3D场景生成综述：技术进展与未来方向</title>
