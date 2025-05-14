@@ -5,15 +5,109 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>Aya-Vision：解决多语言多模态模型挑战的新方法</title>
+<link>https://arxiv.org/abs/2505.08751</link>
+<guid>https://arxiv.org/abs/2505.08751</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出新方法解决多语言多模态模型中的数据稀缺及遗忘问题。</p><br><br><p><strong>摘要：</strong> 本文介绍了针对多语言多模态语言模型开发的创新技术和框架，以应对跨视觉与文本模态对齐、高质量指令数据采集以及引入视觉能力后文本性能退化等挑战。通过构建合成注释框架生成多样化多语言多模态指令数据，同时提出跨模态模型融合技术缓解灾难性遗忘问题，从而在多种语言环境下保持并提升模型性能。实验结果显示，Aya-Vision-8B 和 Aya-Vision-32B 分别在性能上优于同类较大规模的模型，展示了高效计算利用和卓越性能表现的能力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.08751 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 13 May 2025 13:03:48 GMT</pubDate>
+<pubDate>Tue, 13 May 2025 13:03:48 GMT</pubDate>
+</item>
+<item>
+<title>基于信息瓶颈的LLMs训练方法：压缩与记忆的平衡</title>
+<link>https://arxiv.org/abs/2505.08727</link>
+<guid>https://arxiv.org/abs/2505.08727</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究提出通过压缩内部表征提升大语言模型泛化能力。</p><br><br><p><strong>摘要：</strong> 本文证明了泛化能力不仅可以通过数据规模提升，还可以通过压缩内部表征实现。为此引入了信息瓶颈语言建模（IBLM）目标，将语言建模重新定义为受约束优化问题。实验发现，在大型语言模型预训练过程中存在记忆-压缩循环现象，这与IBLM理论预测及生物学习-巩固过程相似。基于此，提出门控相变（GAPT）算法，该算法可自适应切换记忆与压缩阶段。在FineWeb数据集上对GPT-2进行预训练时，GAPT减少了50%的矩阵熵并提升了4.8%的交叉熵。此外，在算术乘法预训练任务中，GAPT使OOD泛化能力提高了35%，并在模拟灾难性遗忘场景中大幅降低了干扰，实现了97%的分离改善。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.08727 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 13 May 2025 12:37:54 GMT</pubDate>
+<pubDate>Tue, 13 May 2025 12:37:54 GMT</pubDate>
+</item>
+<item>
+<title>面向复杂工作流的可扩展评估方法研究</title>
+<link>https://arxiv.org/abs/2505.08638</link>
+<guid>https://arxiv.org/abs/2505.08638</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>现有方法无法应对复杂工作流评估需求，新研究提出分类法并构建标注数据集。</p><br><br><p><strong>摘要：</strong> 随着自主性工作流在多个领域的普及，如何系统性地评估这些系统生成的复杂轨迹成为紧迫需求。当前评估依赖人工分析，难以应对日益增长的工作流复杂性和数量。此外，工具输出与语言模型推理之间的相互作用使错误分析更加困难。本研究提出了对自主系统轨迹进行稳健动态评估的需求，引入了自主系统错误类型的正式分类，并基于此构建了包含148个大型人工标注轨迹的数据集（TRAIL）。数据集涵盖单代理和多代理系统，聚焦软件工程和开放世界信息检索等实际应用。评估显示现代长上下文LLMs在轨迹调试方面表现不佳，最佳Gemini-2.5-pro模型仅达11%准确率。研究数据和代码已公开，以推动自主工作流的可扩展评估研究。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.08638 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 13 May 2025 10:55:31 GMT</pubDate>
+<pubDate>Tue, 13 May 2025 10:55:31 GMT</pubDate>
+</item>
+<item>
+<title>检索增强生成系统中超参数对性能的影响分析</title>
+<link>https://arxiv.org/abs/2505.08445</link>
+<guid>https://arxiv.org/abs/2505.08445</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究显示合适超参数可大幅提升检索增强生成系统的准确性与速度。</p><br><br><p><strong>摘要：</strong> 本文探讨了超参数如何影响检索增强生成（RAG）系统的速度与质量，涉及Chroma和Faiss向量存储、分块策略、交叉编码重排序及温度等。实验评估了六个指标，发现Chroma查询处理更快，而Faiss具有更高的检索精度，存在明显的速度-准确性权衡。固定长度分块优于语义分割，但重新排序虽提升了检索质量却增加了五倍运行时间。最终通过纠正性RAG工作流验证，最佳配置在迭代请求证据时仍保持优势，达到了近乎完美的上下文精确度（99%），表明恰当的超参数组合可极大提升医疗等领域下游任务表现的关键性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.08445 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 13 May 2025 07:13:27 GMT</pubDate>
+<pubDate>Tue, 13 May 2025 07:13:27 GMT</pubDate>
+</item>
+<item>
+<title>开源模型AM-Thinking-v1：32B规模下的推理能力新标杆</title>
+<link>https://arxiv.org/abs/2505.08311</link>
+<guid>https://arxiv.org/abs/2505.08311</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>AM-Thinking-v1在多项数学和代码评测中超越同类开源模型。</p><br><br><p><strong>摘要：</strong> AM-Thinking-v1是一款基于开源Qwen2.5-32B基模型构建的大型密集语言模型，通过精心设计的后训练管道结合监督微调和强化学习技术，实现了卓越的推理能力。该模型在AIME 2024、AIME 2025以及LiveCodeBench等测试中分别获得85.3、74.4和70.3的高分，表现出色，与顶级混合专家模型如Qwen3-235B-A2B和Seed1.5-Thinking相媲美。此外，AM-Thinking-v1完全由开源资源开发，展示了开放社区在32B规模上的强大潜力，强调了高性能与实际可用性之间的平衡。本项目已托管于Hugging Face平台，旨在激励更多协作努力以推动中型模型的发展。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.08311 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 13 May 2025 03:41:15 GMT</pubDate>
+<pubDate>Tue, 13 May 2025 03:41:15 GMT</pubDate>
+</item>
+<item>
+<title>基于对抗相对对比学习的文本转音频加速方法</title>
+<link>https://arxiv.org/abs/2505.08175</link>
+<guid>https://arxiv.org/abs/2505.08175</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新的非蒸馏加速算法，显著降低文本转音频模型推理延迟。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为Adversarial Relativistic-Contrastive（ARC）后训练的创新方法，该方法首次针对扩散/流模型提出了非蒸馏加速技术。传统蒸馏方法成本较高，而ARC通过引入相对论性对抗框架并结合对比鉴别器目标，有效提升了生成音频对文本提示的依从性。实验表明，当与Stable Audio Open结合优化后，所构建的模型在H100硬件上可于约75毫秒内生成12秒的44.1kHz立体声音频，在移动边缘设备上也可达到约7秒的生成速度，成为目前最快的文本转音频系统之一。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.08175 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 12 May 2025 22:25:47 GMT</pubDate>
+<pubDate>Mon, 12 May 2025 22:25:47 GMT</pubDate>
+</item>
+<item>
+<title>跨模态模型融合：将语言模型推理能力融入视觉语言模型</title>
+<link>https://arxiv.org/abs/2505.05464</link>
+<guid>https://arxiv.org/abs/2505.05464</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究通过跨模态模型融合实现视觉语言模型获取语言模型的推理能力。</p><br><br><p><strong>摘要：</strong> 本文探索了如何通过参数连接不同模型来整合感知与推理能力。不同于以往仅限于同类模型融合的工作，我们提出了跨模态模型融合方法，使语言模型的推理能力得以融入视觉语言模型，且无需额外训练。实验表明，这种融合方式成功实现了推理能力的迁移。此外，我们利用合并后的模型分析了感知与推理在模型中的分布情况，发现感知主要集中在早期层，而推理则由中间到晚期层主导。融合后，所有层均开始参与推理，但感知能力的分布基本保持不变。这些发现揭示了模型融合作为多模态集成与解释工具的潜力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.05464 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 08 May 2025 13:56:23 GMT</pubDate>
+<pubDate>Thu, 08 May 2025 13:56:23 GMT</pubDate>
+</item>
+<item>
+<title>基于Transformer的阿拉伯语反向词典系统研究</title>
+<link>https://arxiv.org/abs/2504.21475</link>
+<guid>https://arxiv.org/abs/2504.21475</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>开发了一种基于Transformer的新型阿拉伯语反向词典系统。</p><br><br><p><strong>摘要：</strong> 本研究针对阿拉伯自然语言处理领域的空白，提出了一种基于Transformer的创新性半编码神经网络架构，用于构建高效的阿拉伯语反向词典系统。该系统通过几何递减层实现对词语描述或意义的查询功能，显著提升了阿拉伯语反向词典任务的表现。实验表明，特定领域的预训练模型优于通用多语言嵌入模型，其中ARBERTv2表现最佳。此外，研究还提出了逆向词典任务的正式抽象，并开发了一个可配置训练管道的Python库(RDTL)，为阿拉伯语定义构建提供了重要的质量标准。这项工作对阿拉伯计算语言学具有重要意义，也为阿拉伯语学习、学术写作及专业交流提供了实用工具。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2504.21475 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 30 Apr 2025 05:56:36 GMT</pubDate>
+<pubDate>Wed, 30 Apr 2025 05:56:36 GMT</pubDate>
+</item>
+
+<item>
 <title>基于扩散模型的机器人导航策略NavDP</title>
 <link>https://arxiv.org/abs/2505.08712</link>
 <guid>https://arxiv.org/abs/2505.08712</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种端到端的仿真训练导航方法NavDP，实现跨多种真实环境的零样本迁移。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为Navigation Diffusion Policy (NavDP) 的端到端框架，该框架仅通过仿真训练即可实现对不同真实环境中的多种机器人形态的零样本迁移。NavDP结合了基于扩散的轨迹生成和轨迹选择的批评函数，这些均基于共享策略Transformer编码的局部观测标记。通过利用仿真环境中全局环境的特权信息，我们扩展了高质量演示的规模以训练扩散策略，并通过对比负样本制定批评值函数目标。此方法每天可生成约2500条轨迹/GPU，效率比真实世界数据收集高20倍，生成了包含1244个场景、总长度达363.2公里的大规模导航数据集。在四足、轮式和人形机器人上的实验表明，NavDP在室内和室外多样化环境中表现出最先进的性能和一致性卓越的泛化能力。此外，我们初步尝试使用Gaussian Splatting进行域内真实到仿真微调，实验显示添加此类数据可以将成功率提高30%，而不会损害其泛化能力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.08712 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种端到端的仿真训练导航方法NavDP，实现跨多种真实环境的零样本迁移。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种名为Navigation Diffusion Policy (NavDP) 的端到端框架，该框架仅通过仿真训练即可实现对不同真实环境中的多种机器人形态的零样本迁移。NavDP结合了基于扩散的轨迹生成和轨迹选择的批评函数，这些均基于共享策略Transformer编码的局部观测标记。通过利用仿真环境中全局环境的特权信息，我们扩展了高质量演示的规模以训练扩散策略，并通过对比负样本制定批评值函数目标。此方法每天可生成约2500条轨迹/GPU，效率比真实世界数据收集高20倍，生成了包含1244个场景、总长度达363.2公里的大规模导航数据集。在四足、轮式和人形机器人上的实验表明，NavDP在室内和室外多样化环境中表现出最先进的性能和一致性卓越的泛化能力。此外，我们初步尝试使用Gaussian Splatting进行域内真实到仿真微调，实验显示添加此类数据可以将成功率提高30%，而不会损害其泛化能力。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.08712" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 13 May 2025 12:20:28 GMT</pubDate>
 <pubDate>Tue, 13 May 2025 12:20:28 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +115,8 @@
 <link>https://arxiv.org/abs/2505.08665</link>
 <guid>https://arxiv.org/abs/2505.08665</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种用于多视角技能评估的参数高效架构SkillFormer。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为SkillFormer的新架构，该架构旨在通过融合第一人称和第三人称视频，实现复杂活动中的人类技能水平统一评估。SkillFormer基于TimeSformer模型构建，引入了CrossViewFusion模块，利用多头交叉注意力、可学习门控机制及自适应校准技术来融合特定视角的特征。通过低秩适应方法进行微调，仅需调整少量参数即可显著降低训练成本。实验表明，在EgoExo4D数据集上的多视角设置中，SkillFormer达到了最先进的准确性，同时表现出卓越的计算效率，所需参数量仅为先前基线的1/4.5，训练周期减少至3.75倍。SkillFormer在多个结构化任务中的表现证明了多视角整合在细粒度技能评估中的价值。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.08665 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种用于多视角技能评估的参数高效架构SkillFormer。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种名为SkillFormer的新架构，该架构旨在通过融合第一人称和第三人称视频，实现复杂活动中的人类技能水平统一评估。SkillFormer基于TimeSformer模型构建，引入了CrossViewFusion模块，利用多头交叉注意力、可学习门控机制及自适应校准技术来融合特定视角的特征。通过低秩适应方法进行微调，仅需调整少量参数即可显著降低训练成本。实验表明，在EgoExo4D数据集上的多视角设置中，SkillFormer达到了最先进的准确性，同时表现出卓越的计算效率，所需参数量仅为先前基线的1/4.5，训练周期减少至3.75倍。SkillFormer在多个结构化任务中的表现证明了多视角整合在细粒度技能评估中的价值。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.08665" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 13 May 2025 11:27:24 GMT</pubDate>
 <pubDate>Tue, 13 May 2025 11:27:24 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +124,8 @@
 <link>https://arxiv.org/abs/2505.07916</link>
 <guid>https://arxiv.org/abs/2505.07916</guid>
 <content:encoded><![CDATA[
-
-  We introduce MiniMax-Speech, an autoregressive Transformer-based Text-to-Speech (TTS) model that generates high-quality speech. A key innovation is our learnable speaker encoder, which extracts timbre features from a reference audio without requiring its transcription. This enables MiniMax-Speech to produce highly expressive speech with timbre consistent with the reference in a zero-shot manner, while also supporting one-shot voice cloning with exceptionally high similarity to the reference voice. In addition, the overall quality of the synthesized audio is enhanced through the proposed Flow-VAE. Our model supports 32 languages and demonstrates excellent performance across multiple objective and subjective evaluations metrics. Notably, it achieves state-of-the-art (SOTA) results on objective voice cloning metrics (Word Error Rate and Speaker Similarity) and has secured the top position on the public TTS Arena leaderboard. Another key strength of MiniMax-Speech, granted by the robust and disentangled representations from the speaker encoder, is its extensibility without modifying the base model, enabling various applications such as: arbitrary voice emotion control via LoRA; text to voice (T2V) by synthesizing timbre features directly from text description; and professional voice cloning (PVC) by fine-tuning timbre features with additional data. We encourage readers to visit https://minimax-ai.github.io/tts_tech_report for more examples.
-
+We introduce MiniMax-Speech, an autoregressive Transformer-based Text-to-Speech (TTS) model that generates high-quality speech. A key innovation is our learnable speaker encoder, which extracts timbre features from a reference audio without requiring its transcription. This enables MiniMax-Speech to produce highly expressive speech with timbre consistent with the reference in a zero-shot manner, while also supporting one-shot voice cloning with exceptionally high similarity to the reference voice. In addition, the overall quality of the synthesized audio is enhanced through the proposed Flow-VAE. Our model supports 32 languages and demonstrates excellent performance across multiple objective and subjective evaluations metrics. Notably, it achieves state-of-the-art (SOTA) results on objective voice cloning metrics (Word Error Rate and Speaker Similarity) and has secured the top position on the public TTS Arena leaderboard. Another key strength of MiniMax-Speech, granted by the robust and disentangled representations from the speaker encoder, is its extensibility without modifying the base model, enabling various applications such as: arbitrary voice emotion control via LoRA; text to voice (T2V) by synthesizing timbre features directly from text description; and professional voice cloning (PVC) by fine-tuning timbre features with additional data. We encourage readers to visit https://minimax-ai.github.io/tts_tech_report for more examples.
 ]]></content:encoded>
-<pubDate>Mon, 12 May 2025 10:25:20 GMT</pubDate>
 <pubDate>Mon, 12 May 2025 10:25:20 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +133,8 @@
 <link>https://arxiv.org/abs/2505.07591</link>
 <guid>https://arxiv.org/abs/2505.07591</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究提出多维度约束框架并生成新测试样本，评估多种大语言模型性能差异。</p><br><br><p><strong>摘要：</strong> 现有指令跟随基准测试常依赖模板约束提示，缺乏真实场景多样性且限制精细评估。本研究构建了一个包含三种约束模式、四种约束类别及四个难度等级的多维度约束框架，并开发自动化指令生成流水线，生成了1200个可代码验证的指令跟随测试样本。通过对七大家族19个大语言模型的评估发现，不同约束形式下模型表现差异显著，例如平均表现从一级的77.67%下降到四级的32.96%。此外，利用此方法生成强化学习数据，不仅提升了指令跟随能力，还避免了对整体性能的影响，深入分析表明改进主要源于注意力模块参数调整以增强约束识别。相关代码和数据已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.07591 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究提出多维度约束框架并生成新测试样本，评估多种大语言模型性能差异。</p><br /><br /><p><strong>摘要：</strong> 现有指令跟随基准测试常依赖模板约束提示，缺乏真实场景多样性且限制精细评估。本研究构建了一个包含三种约束模式、四种约束类别及四个难度等级的多维度约束框架，并开发自动化指令生成流水线，生成了1200个可代码验证的指令跟随测试样本。通过对七大家族19个大语言模型的评估发现，不同约束形式下模型表现差异显著，例如平均表现从一级的77.67%下降到四级的32.96%。此外，利用此方法生成强化学习数据，不仅提升了指令跟随能力，还避免了对整体性能的影响，深入分析表明改进主要源于注意力模块参数调整以增强约束识别。相关代码和数据已开源。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.07591" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 12 May 2025 10:16:55 GMT</pubDate>
 <pubDate>Mon, 12 May 2025 10:16:55 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +142,8 @@
 <link>https://arxiv.org/abs/2505.07416</link>
 <guid>https://arxiv.org/abs/2505.07416</guid>
 <content:encoded><![CDATA[
-
-  Multimodal Review Helpfulness Prediction (MRHP) is an essential task in recommender systems, particularly in E-commerce platforms. Determining the helpfulness of user-generated reviews enhances user experience and improves consumer decision-making. However, existing datasets focus predominantly on English and Indonesian, resulting in a lack of linguistic diversity, especially for low-resource languages such as Vietnamese. In this paper, we introduce ViMRHP (Vietnamese Multimodal Review Helpfulness Prediction), a large-scale benchmark dataset for MRHP task in Vietnamese. This dataset covers four domains, including 2K products with 46K reviews. Meanwhile, a large-scale dataset requires considerable time and cost. To optimize the annotation process, we leverage AI to assist annotators in constructing the ViMRHP dataset. With AI assistance, annotation time is reduced (90 to 120 seconds per task down to 20 to 40 seconds per task) while maintaining data quality and lowering overall costs by approximately 65%. However, AI-generated annotations still have limitations in complex annotation tasks, which we further examine through a detailed performance analysis. In our experiment on ViMRHP, we evaluate baseline models on human-verified and AI-generated annotations to assess their quality differences. The ViMRHP dataset is publicly available at https://github.com/trng28/ViMRHP
-
+Multimodal Review Helpfulness Prediction (MRHP) is an essential task in recommender systems, particularly in E-commerce platforms. Determining the helpfulness of user-generated reviews enhances user experience and improves consumer decision-making. However, existing datasets focus predominantly on English and Indonesian, resulting in a lack of linguistic diversity, especially for low-resource languages such as Vietnamese. In this paper, we introduce ViMRHP (Vietnamese Multimodal Review Helpfulness Prediction), a large-scale benchmark dataset for MRHP task in Vietnamese. This dataset covers four domains, including 2K products with 46K reviews. Meanwhile, a large-scale dataset requires considerable time and cost. To optimize the annotation process, we leverage AI to assist annotators in constructing the ViMRHP dataset. With AI assistance, annotation time is reduced (90 to 120 seconds per task down to 20 to 40 seconds per task) while maintaining data quality and lowering overall costs by approximately 65%. However, AI-generated annotations still have limitations in complex annotation tasks, which we further examine through a detailed performance analysis. In our experiment on ViMRHP, we evaluate baseline models on human-verified and AI-generated annotations to assess their quality differences. The ViMRHP dataset is publicly available at https://github.com/trng28/ViMRHP
 ]]></content:encoded>
-<pubDate>Mon, 12 May 2025 06:11:28 GMT</pubDate>
 <pubDate>Mon, 12 May 2025 06:11:28 GMT</pubDate>
 </item>
 <item>
@@ -69,14 +151,10 @@
 <link>https://arxiv.org/abs/2505.07215</link>
 <guid>https://arxiv.org/abs/2505.07215</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>gg-bench是一种动态生成游戏环境的基准，用于评估语言模型的通用推理能力。</p><br><br><p><strong>摘要：</strong> gg-bench是一个创新性的游戏环境集合，旨在评估大型语言模型（LLMs）的通用推理能力。与静态基准不同，gg-bench通过大语言模型生成新的游戏描述和代码实现，然后利用强化学习代理进行自我训练。该基准挑战性强，目前最先进的LLMs在其中的表现仅为7-9%，而专门设计的推理模型也仅达到31-36%的胜率。我们公开了生成的游戏、数据生成过程及评估代码，以支持未来的研究工作和基准扩展。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.07215 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">gg-bench是一种动态生成游戏环境的基准，用于评估语言模型的通用推理能力。</p><br /><br /><p><strong>摘要：</strong> gg-bench是一个创新性的游戏环境集合，旨在评估大型语言模型（LLMs）的通用推理能力。与静态基准不同，gg-bench通过大语言模型生成新的游戏描述和代码实现，然后利用强化学习代理进行自我训练。该基准挑战性强，目前最先进的LLMs在其中的表现仅为7-9%，而专门设计的推理模型也仅达到31-36%的胜率。我们公开了生成的游戏、数据生成过程及评估代码，以支持未来的研究工作和基准扩展。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.07215" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Mon, 12 May 2025 00:01:03 GMT</pubDate>
-<pubDate>Mon, 12 May 2025 00:01:03 GMT</pubDate>
 </item>
-
 <item>
 <title>INTELLECT-2：首个全球分布式强化学习语言模型训练</title>
 <link>https://arxiv.org/abs/2505.07291</link>
@@ -9022,60 +9100,6 @@ Existing novel object 6D pose estimation methods typically rely on CAD models or
 <div><p style="color: gray;">研究三维编码器与文本特征空间的后期对齐方法及其效果。</p><br /><br /><p><strong>摘要：</strong> 本文探讨三维编码器在与文本特征空间的对齐中的作用，分析传统方法的局限性。研究发现，仅依靠简单的后期对齐训练，文本与三维编码器的性能提升有限。通过提取特征空间的子空间并进行有针对性的投影，显著提高了对齐质量，进而提高了匹配和检索任务的准确性。此外，分析显示这些共享子空间大致分隔了语义与几何数据表示。此研究首次为三维单模态与文本特征空间的后期对齐建立了基线，并突出了与其他表示相比三维数据的共享与独特属性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.05283" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Fri, 07 Mar 2025 04:51:56 GMT</pubDate>
-</item>
-<item>
-<title>WritingBench：提升大语言模型写作能力的综合评估基准</title>
-<link>https://arxiv.org/abs/2503.05244</link>
-<guid>https://arxiv.org/abs/2503.05244</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">Introducing WritingBench, a benchmark to evaluate LLMs in diverse writing domains.</p><br /><br /><p><strong>摘要：</strong> 随着大型语言模型（LLMs）的进步，文本生成能力显著增强，但评估其在写作上的表现仍然面临挑战。现有的基准主要集中在通用文本生成或有限的写作任务上，未能全面捕捉高质量书面内容在各个领域的多样化需求。为此，本文提出了WritingBench，这是一个综合性基准，旨在评估LLMs在六个核心写作领域及其一百个子领域的表现，涵盖创意、说服性、信息性和技术性写作。此外，我们还提出了一种依赖查询的评估框架，使LLMs能够动态生成特定实例的评估标准。该框架配备了一个调优后的评判模型，能够在风格、格式和长度方面进行标准化评分，框架的有效性通过其数据策划能力得以进一步验证，7B参数模型在该基准下可接近最先进的性能。该基准及评估工具与模块化框架组件将以开源形式发布，以推动LLMs在写作方面的发展。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.05244" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 07 Mar 2025 03:56:20 GMT</pubDate>
-</item>
-<item>
-<title>AlphaDrive：基于强化学习和推理的自动驾驶视觉语言模型框架</title>
-<link>https://arxiv.org/abs/2503.07608</link>
-<guid>https://arxiv.org/abs/2503.07608</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文提出AlphaDrive框架，提升了自动驾驶的规划性能和训练效率。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了AlphaDrive，一个将强化学习（RL）与推理相结合的视觉语言模型（VLM）框架，旨在解决自动驾驶中的复杂规划问题。AlphaDrive引入了四种基于GRPO的RL奖励机制，并采用两阶段的推理训练策略，将监督微调（SFT）与强化学习相结合，从而显著提高了自动驾驶系统的规划性能和训练效率。研究还发现，在经历强化学习训练后，AlphaDrive展现出新兴的多模态规划能力，这对提升驾驶安全和效率至关重要。该框架是首个将GRPO基础的强化学习与规划推理相结合应用于自动驾驶中的研究，未来将发布代码以促进相关研究的发展。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.07608" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 10 Mar 2025 13:59:42 GMT</pubDate>
-</item>
-<item>
-<title>图像与文本结合预训练模型在视语言任务中的表现</title>
-<link>https://arxiv.org/abs/2503.07603</link>
-<guid>https://arxiv.org/abs/2503.07603</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">研究表明，图像与文本结合的预训练模型在视语言任务中表现更佳。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了结合图像数据进行预训练的语言模型在视语言任务中的表现，重点分析了两步培训流程与早期集成图像的视觉语言模型（VLMs）之间的收益和损失。通过对不同数据集、模型规模、图像文本比率及预训练量进行实验，结果显示，采用图像和文本数据混合预训练的模型在视语言任务中表现优越，同时在文字仅任务中的表现依然强劲。具体而言，对于一个10亿参数的模型，在预训练过程中将视觉标记引入到80%时，相比于在完全预训练模型中引入视觉标记，平均提升了2%的任务表现。这表明图像集成的时机对模型性能具有重要影响。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.07603" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 10 Mar 2025 13:58:19 GMT</pubDate>
-</item>
-<item>
-<title>DreamRelation：一种基于示例视频的个性化关系视频定制方法</title>
-<link>https://arxiv.org/abs/2503.07602</link>
-<guid>https://arxiv.org/abs/2503.07602</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">DreamRelation通过示例视频优化个性化关系视频生成，提升模型泛化能力。</p><br /><br /><p><strong>摘要：</strong> 关系视频定制是实现个性化视频的重要环节，但现有方法在处理复杂关系时存在困难，尤其是需要准确关系建模和在多样主题类别间的高泛化能力。为了解决这些问题，我们提出了DreamRelation方法，它利用示例视频通过两大核心组成部分：关系解耦学习和关系动态增强，实现个性化关系建模。在关系解耦学习中，我们剥离了关系与主题外观的交互，确保了在多样关系中的良好泛化。此外，我们通过分析MM-DiT的注意力机制中查询、键和值特征的不同角色，优化了关系LoRA三元组的设计，使该框架具备可解释性。在关系动态增强中，我们引入了时空关系对比损失，优先考虑关系动态，同时减少对详细外观的依赖。实验结果表明，DreamRelation在关系视频定制方面优于现有最先进方法。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.07602" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 10 Mar 2025 13:58:03 GMT</pubDate>
-</item>
-<item>
-<title>MedAgentsBench: 复杂医学问题的新评估基准</title>
-<link>https://arxiv.org/abs/2503.07459</link>
-<guid>https://arxiv.org/abs/2503.07459</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出MedAgentsBench基准，以评估复杂医学问题的多步骤推理能力。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了MedAgentsBench，一个新颖的基准，专注于需要多步骤临床推理、诊断制定和治疗规划的复杂医学问题。在当前的医疗问答基准中，尽管大型语言模型（LLMs）表现优异，但在面对复杂问题时仍然存在明显不足。MedAgentsBench从七个已有的医学数据集中提取数据，旨在解决现有评估中的三大关键限制，包括简单问题导致的高基线性能、一致性不足的采样与评估协议，以及缺乏对性能、成本和推理时间相互关系的系统分析。通过对多种基础模型和推理方法的实验，结果表明，最新的思维模型如DeepSeek R1和OpenAI o3在复杂医学推理任务中表现优异。此外，基于搜索的先进代理方法在性能与成本比方面表现出色，适应不同计算约束下的最佳模型选择也得到了识别。该基准及评估框架已公开发布，供研究者使用。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.07459" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 10 Mar 2025 11:38:44 GMT</pubDate>
-</item>
-<item>
-<title>DistiLLM-2：通过对比学习提升语言模型蒸馏效果</title>
-<link>https://arxiv.org/abs/2503.07067</link>
-<guid>https://arxiv.org/abs/2503.07067</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">DistiLLM-2通过对比学习显著提升语言模型蒸馏性能。</p><br /><br /><p><strong>摘要：</strong> DistiLLM-2提出了一种新的对比学习方法，旨在通过有效调和教师与学生模型之间的损失函数，提升学生模型的表现。与以往的蒸馏策略相比，该方法同时提高了教师生成回应的概率，并降低了学生生成回应的概率。实验证明，DistiLLM-2在执行指令跟随、代码生成等多种任务时均能构建高性能的学生模型。此外，该方法还支持多样化的应用场景，如偏好对齐和视觉语言扩展。这些研究结果彰显了通过对比学习来增强语言模型蒸馏效果的潜力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.07067" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 10 Mar 2025 04:51:32 GMT</pubDate>
 </item>
 </channel>
 </rss>
