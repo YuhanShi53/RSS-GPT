@@ -4,6 +4,78 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>基于扩散模型的机器人导航策略NavDP</title>
+<link>https://arxiv.org/abs/2505.08712</link>
+<guid>https://arxiv.org/abs/2505.08712</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种端到端的仿真训练导航方法NavDP，实现跨多种真实环境的零样本迁移。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为Navigation Diffusion Policy (NavDP) 的端到端框架，该框架仅通过仿真训练即可实现对不同真实环境中的多种机器人形态的零样本迁移。NavDP结合了基于扩散的轨迹生成和轨迹选择的批评函数，这些均基于共享策略Transformer编码的局部观测标记。通过利用仿真环境中全局环境的特权信息，我们扩展了高质量演示的规模以训练扩散策略，并通过对比负样本制定批评值函数目标。此方法每天可生成约2500条轨迹/GPU，效率比真实世界数据收集高20倍，生成了包含1244个场景、总长度达363.2公里的大规模导航数据集。在四足、轮式和人形机器人上的实验表明，NavDP在室内和室外多样化环境中表现出最先进的性能和一致性卓越的泛化能力。此外，我们初步尝试使用Gaussian Splatting进行域内真实到仿真微调，实验显示添加此类数据可以将成功率提高30%，而不会损害其泛化能力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.08712 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 13 May 2025 12:20:28 GMT</pubDate>
+<pubDate>Tue, 13 May 2025 12:20:28 GMT</pubDate>
+</item>
+<item>
+<title>SkillFormer：基于多视角融合的技能评估高效架构</title>
+<link>https://arxiv.org/abs/2505.08665</link>
+<guid>https://arxiv.org/abs/2505.08665</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种用于多视角技能评估的参数高效架构SkillFormer。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为SkillFormer的新架构，该架构旨在通过融合第一人称和第三人称视频，实现复杂活动中的人类技能水平统一评估。SkillFormer基于TimeSformer模型构建，引入了CrossViewFusion模块，利用多头交叉注意力、可学习门控机制及自适应校准技术来融合特定视角的特征。通过低秩适应方法进行微调，仅需调整少量参数即可显著降低训练成本。实验表明，在EgoExo4D数据集上的多视角设置中，SkillFormer达到了最先进的准确性，同时表现出卓越的计算效率，所需参数量仅为先前基线的1/4.5，训练周期减少至3.75倍。SkillFormer在多个结构化任务中的表现证明了多视角整合在细粒度技能评估中的价值。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.08665 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 13 May 2025 11:27:24 GMT</pubDate>
+<pubDate>Tue, 13 May 2025 11:27:24 GMT</pubDate>
+</item>
+<item>
+<title>MiniMax-Speech: Intrinsic Zero-Shot Text-to-Speech with a Learnable Speaker Encoder</title>
+<link>https://arxiv.org/abs/2505.07916</link>
+<guid>https://arxiv.org/abs/2505.07916</guid>
+<content:encoded><![CDATA[
+
+  We introduce MiniMax-Speech, an autoregressive Transformer-based Text-to-Speech (TTS) model that generates high-quality speech. A key innovation is our learnable speaker encoder, which extracts timbre features from a reference audio without requiring its transcription. This enables MiniMax-Speech to produce highly expressive speech with timbre consistent with the reference in a zero-shot manner, while also supporting one-shot voice cloning with exceptionally high similarity to the reference voice. In addition, the overall quality of the synthesized audio is enhanced through the proposed Flow-VAE. Our model supports 32 languages and demonstrates excellent performance across multiple objective and subjective evaluations metrics. Notably, it achieves state-of-the-art (SOTA) results on objective voice cloning metrics (Word Error Rate and Speaker Similarity) and has secured the top position on the public TTS Arena leaderboard. Another key strength of MiniMax-Speech, granted by the robust and disentangled representations from the speaker encoder, is its extensibility without modifying the base model, enabling various applications such as: arbitrary voice emotion control via LoRA; text to voice (T2V) by synthesizing timbre features directly from text description; and professional voice cloning (PVC) by fine-tuning timbre features with additional data. We encourage readers to visit https://minimax-ai.github.io/tts_tech_report for more examples.
+
+]]></content:encoded>
+<pubDate>Mon, 12 May 2025 10:25:20 GMT</pubDate>
+<pubDate>Mon, 12 May 2025 10:25:20 GMT</pubDate>
+</item>
+<item>
+<title>多维度约束框架提升大语言模型指令跟随能力</title>
+<link>https://arxiv.org/abs/2505.07591</link>
+<guid>https://arxiv.org/abs/2505.07591</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究提出多维度约束框架并生成新测试样本，评估多种大语言模型性能差异。</p><br><br><p><strong>摘要：</strong> 现有指令跟随基准测试常依赖模板约束提示，缺乏真实场景多样性且限制精细评估。本研究构建了一个包含三种约束模式、四种约束类别及四个难度等级的多维度约束框架，并开发自动化指令生成流水线，生成了1200个可代码验证的指令跟随测试样本。通过对七大家族19个大语言模型的评估发现，不同约束形式下模型表现差异显著，例如平均表现从一级的77.67%下降到四级的32.96%。此外，利用此方法生成强化学习数据，不仅提升了指令跟随能力，还避免了对整体性能的影响，深入分析表明改进主要源于注意力模块参数调整以增强约束识别。相关代码和数据已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.07591 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 12 May 2025 10:16:55 GMT</pubDate>
+<pubDate>Mon, 12 May 2025 10:16:55 GMT</pubDate>
+</item>
+<item>
+<title>ViMRHP: A Vietnamese Benchmark Dataset for Multimodal Review Helpfulness Prediction via Human-AI Collaborative Annotation</title>
+<link>https://arxiv.org/abs/2505.07416</link>
+<guid>https://arxiv.org/abs/2505.07416</guid>
+<content:encoded><![CDATA[
+
+  Multimodal Review Helpfulness Prediction (MRHP) is an essential task in recommender systems, particularly in E-commerce platforms. Determining the helpfulness of user-generated reviews enhances user experience and improves consumer decision-making. However, existing datasets focus predominantly on English and Indonesian, resulting in a lack of linguistic diversity, especially for low-resource languages such as Vietnamese. In this paper, we introduce ViMRHP (Vietnamese Multimodal Review Helpfulness Prediction), a large-scale benchmark dataset for MRHP task in Vietnamese. This dataset covers four domains, including 2K products with 46K reviews. Meanwhile, a large-scale dataset requires considerable time and cost. To optimize the annotation process, we leverage AI to assist annotators in constructing the ViMRHP dataset. With AI assistance, annotation time is reduced (90 to 120 seconds per task down to 20 to 40 seconds per task) while maintaining data quality and lowering overall costs by approximately 65%. However, AI-generated annotations still have limitations in complex annotation tasks, which we further examine through a detailed performance analysis. In our experiment on ViMRHP, we evaluate baseline models on human-verified and AI-generated annotations to assess their quality differences. The ViMRHP dataset is publicly available at https://github.com/trng28/ViMRHP
+
+]]></content:encoded>
+<pubDate>Mon, 12 May 2025 06:11:28 GMT</pubDate>
+<pubDate>Mon, 12 May 2025 06:11:28 GMT</pubDate>
+</item>
+<item>
+<title>gg-bench：评估语言模型通用推理能力的游戏基准</title>
+<link>https://arxiv.org/abs/2505.07215</link>
+<guid>https://arxiv.org/abs/2505.07215</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>gg-bench是一种动态生成游戏环境的基准，用于评估语言模型的通用推理能力。</p><br><br><p><strong>摘要：</strong> gg-bench是一个创新性的游戏环境集合，旨在评估大型语言模型（LLMs）的通用推理能力。与静态基准不同，gg-bench通过大语言模型生成新的游戏描述和代码实现，然后利用强化学习代理进行自我训练。该基准挑战性强，目前最先进的LLMs在其中的表现仅为7-9%，而专门设计的推理模型也仅达到31-36%的胜率。我们公开了生成的游戏、数据生成过程及评估代码，以支持未来的研究工作和基准扩展。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.07215 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 12 May 2025 00:01:03 GMT</pubDate>
+<pubDate>Mon, 12 May 2025 00:01:03 GMT</pubDate>
+</item>
 
 <item>
 <title>INTELLECT-2：首个全球分布式强化学习语言模型训练</title>
