@@ -5,15 +5,61 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>并行扩展(ParScale)：语言模型更高效的扩展方法</title>
+<link>https://arxiv.org/abs/2505.10475</link>
+<guid>https://arxiv.org/abs/2505.10475</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新的语言模型扩展方法——并行扩展，可显著提高推理效率。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种全新的语言模型扩展方法，即并行扩展(ParScale)，通过在训练和推理过程中增加模型的并行计算来提升效率，而无需大幅增加参数规模或输出令牌数。该方法通过对输入应用P种不同的变换，在并行执行模型前向传播后动态聚合输出。实验表明，相比参数扩展，ParScale能在达到相同性能提升的同时，减少高达22倍的内存增长和6倍的延迟增长。此外，ParScale还可通过少量微调将现成的预训练模型转化为并行扩展版本，进一步降低训练成本。这一新发现的扩展定律可能有助于在资源受限场景下部署更强大的模型，并为计算在机器学习中的作用提供了新的视角。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.10475 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 15 May 2025 12:24:45 GMT</pubDate>
+<pubDate>Thu, 15 May 2025 12:24:45 GMT</pubDate>
+</item>
+<item>
+<title>AI Agents与Agentic AI对比分析及发展路径</title>
+<link>https://arxiv.org/abs/2505.10468</link>
+<guid>https://arxiv.org/abs/2505.10468</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究界定了AI Agents与Agentic AI的设计哲学与能力差异。</p><br><br><p><strong>摘要：</strong> 本研究通过结构化的概念分类法、应用映射和挑战分析，清晰地区分了AI Agents与Agentic AI。AI Agents被定义为由大型语言模型（LLMs）和大型图像模型（LIMs）驱动的模块化系统，专注于特定任务自动化，而Generative AI为其前身。相比之下，Agentic AI则通过多代理协作、动态任务分解、持久记忆和协调自治展现了范式转变。文章通过架构演化、操作机制、交互风格和自治水平的对比分析，展示了两者在客户支持、调度和数据总结等领域的应用差异，并探讨了幻觉、脆弱性、涌现行为和协调失败等独特挑战，提出了ReAct循环、RAG、协调层和因果建模等解决方案。此研究旨在为开发稳健、可扩展且可解释的AI代理和Agentic AI驱动系统提供明确路线图。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.10468 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 15 May 2025 12:21:33 GMT</pubDate>
+<pubDate>Thu, 15 May 2025 12:21:33 GMT</pubDate>
+</item>
+<item>
+<title>QuXAI：用于混合量子经典机器学习模型的可解释性框架</title>
+<link>https://arxiv.org/abs/2505.10167</link>
+<guid>https://arxiv.org/abs/2505.10167</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出QuXAI框架，提升混合量子经典机器学习模型的可解释性和可靠性。</p><br><br><p><strong>摘要：</strong> 本文聚焦于混合量子经典机器学习（HQML）模型的可解释性研究，指出当前领域在全局和局部解释方法上的研究空白。为此，作者引入QuXAI框架，基于Q-MEDLEY方法，通过量化特征编码与经典学习结合，分析特征重要性并可视化结果。实验表明，Q-MEDLEY不仅能有效区分经典部分的重要性及噪声，还在验证测试中表现优异。此外，消融实验进一步验证了Q-MEDLEY复合结构的优势。这项工作对增强HQML模型的透明度和可靠性具有重要意义，推动量子增强人工智能技术的安全应用。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.10167 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 15 May 2025 06:51:34 GMT</pubDate>
+<pubDate>Thu, 15 May 2025 06:51:34 GMT</pubDate>
+</item>
+<item>
+<title>Unilogit：一种新颖的语言模型自蒸馏机删方法</title>
+<link>https://arxiv.org/abs/2505.06027</link>
+<guid>https://arxiv.org/abs/2505.06027</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新型自蒸馏方法Unilogit，实现语言模型中高效有选择性遗忘。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为Unilogit的新颖自蒸馏方法，用于大规模语言模型中的机器遗忘任务。该方法通过动态调整目标logits，使目标令牌具有均匀概率，从而解决了在遵守GDPR等隐私法规的同时选择性遗忘特定信息的难题。与依赖静态超参数或初始模型输出的现有方法不同，Unilogit利用当前模型的输出作为更准确的自蒸馏目标，不仅无需额外的超参数设置，还提升了模型对黄金标准目标的逼近能力。实验表明，Unilogit在公共基准和自有电商数据集上表现出色，在平衡遗忘与保留目标方面优于NPO和UnDIAL等最先进方法，并且在多种场景下展现出强大的鲁棒性和实际应用价值。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.06027 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 09 May 2025 09:19:09 GMT</pubDate>
+<pubDate>Fri, 09 May 2025 09:19:09 GMT</pubDate>
+</item>
+
+<item>
 <title>Prior Depth Anything框架实现任意场景高精度深度图生成</title>
 <link>https://arxiv.org/abs/2505.10565</link>
 <guid>https://arxiv.org/abs/2505.10565</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出结合精确度量和相对结构的Prior Depth Anything框架。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为Prior Depth Anything的新框架，该框架通过整合不完整但精确的度量信息与相对完整的几何结构，在任意场景中生成准确、密集且详细的度量深度图。为此，设计了一个粗到细的管道逐步融合两种互补的深度源。首先引入像素级度量对齐和距离感知加权，通过显式使用深度预测预填充多种度量先验，有效缩小了先验模式之间的领域差距。其次，开发了一个条件单目深度估计模型来细化深度先验的固有噪声。我们的模型在7个真实世界的数据集上展示了令人印象深刻的零样本泛化能力，并提供了灵活的准确性和效率权衡。此外，它还能在测试时通过切换预测模型进行改进。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.10565 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出结合精确度量和相对结构的Prior Depth Anything框架。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种名为Prior Depth Anything的新框架，该框架通过整合不完整但精确的度量信息与相对完整的几何结构，在任意场景中生成准确、密集且详细的度量深度图。为此，设计了一个粗到细的管道逐步融合两种互补的深度源。首先引入像素级度量对齐和距离感知加权，通过显式使用深度预测预填充多种度量先验，有效缩小了先验模式之间的领域差距。其次，开发了一个条件单目深度估计模型来细化深度先验的固有噪声。我们的模型在7个真实世界的数据集上展示了令人印象深刻的零样本泛化能力，并提供了灵活的准确性和效率权衡。此外，它还能在测试时通过切换预测模型进行改进。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.10565" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 15 May 2025 13:59:50 GMT</pubDate>
 <pubDate>Thu, 15 May 2025 13:59:50 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +67,8 @@
 <link>https://arxiv.org/abs/2505.10558</link>
 <guid>https://arxiv.org/abs/2505.10558</guid>
 <content:encoded><![CDATA[
-
-  Scalable Vector Graphics (SVGs) are highly favored by designers due to their resolution independence and well-organized layer structure. Although existing text-to-vector (T2V) generation methods can create SVGs from text prompts, they often overlook an important need in practical applications: style customization, which is vital for producing a collection of vector graphics with consistent visual appearance and coherent aesthetics. Extending existing T2V methods for style customization poses certain challenges. Optimization-based T2V models can utilize the priors of text-to-image (T2I) models for customization, but struggle with maintaining structural regularity. On the other hand, feed-forward T2V models can ensure structural regularity, yet they encounter difficulties in disentangling content and style due to limited SVG training data.   To address these challenges, we propose a novel two-stage style customization pipeline for SVG generation, making use of the advantages of both feed-forward T2V models and T2I image priors. In the first stage, we train a T2V diffusion model with a path-level representation to ensure the structural regularity of SVGs while preserving diverse expressive capabilities. In the second stage, we customize the T2V diffusion model to different styles by distilling customized T2I models. By integrating these techniques, our pipeline can generate high-quality and diverse SVGs in custom styles based on text prompts in an efficient feed-forward manner. The effectiveness of our method has been validated through extensive experiments. The project page is https://customsvg.github.io.
-
+Scalable Vector Graphics (SVGs) are highly favored by designers due to their resolution independence and well-organized layer structure. Although existing text-to-vector (T2V) generation methods can create SVGs from text prompts, they often overlook an important need in practical applications: style customization, which is vital for producing a collection of vector graphics with consistent visual appearance and coherent aesthetics. Extending existing T2V methods for style customization poses certain challenges. Optimization-based T2V models can utilize the priors of text-to-image (T2I) models for customization, but struggle with maintaining structural regularity. On the other hand, feed-forward T2V models can ensure structural regularity, yet they encounter difficulties in disentangling content and style due to limited SVG training data.   To address these challenges, we propose a novel two-stage style customization pipeline for SVG generation, making use of the advantages of both feed-forward T2V models and T2I image priors. In the first stage, we train a T2V diffusion model with a path-level representation to ensure the structural regularity of SVGs while preserving diverse expressive capabilities. In the second stage, we customize the T2V diffusion model to different styles by distilling customized T2I models. By integrating these techniques, our pipeline can generate high-quality and diverse SVGs in custom styles based on text prompts in an efficient feed-forward manner. The effectiveness of our method has been validated through extensive experiments. The project page is https://customsvg.github.io.
 ]]></content:encoded>
-<pubDate>Thu, 15 May 2025 13:59:21 GMT</pubDate>
 <pubDate>Thu, 15 May 2025 13:59:21 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +76,8 @@
 <link>https://arxiv.org/abs/2505.09990</link>
 <guid>https://arxiv.org/abs/2505.09990</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出PointArena平台，用于评估多模态模型在多样化推理场景中的指针能力。</p><br><br><p><strong>摘要：</strong> 本文介绍了一个名为PointArena的综合性平台，用于评估多模态模型的指针能力，涵盖从视觉情境中定位物体到实际操作场景下的应用。该平台由三个主要部分组成：Point-Bench数据集，包含五个推理类别的约1000项指针任务；Point-Battle交互式网络竞技场，已收集超过4500份匿名投票进行盲测；以及Point-Act机器人操作系统，用于在真实环境中直接测试模型的指针能力。通过对多种开源及专有模型的广泛评估发现，Molmo-72B表现出色，而针对指针任务的监督训练显著提升了模型性能。此外，研究还揭示了抽象推理与具体现实世界动作之间的强相关性，强调了精确指针能力的重要性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.09990 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出PointArena平台，用于评估多模态模型在多样化推理场景中的指针能力。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一个名为PointArena的综合性平台，用于评估多模态模型的指针能力，涵盖从视觉情境中定位物体到实际操作场景下的应用。该平台由三个主要部分组成：Point-Bench数据集，包含五个推理类别的约1000项指针任务；Point-Battle交互式网络竞技场，已收集超过4500份匿名投票进行盲测；以及Point-Act机器人操作系统，用于在真实环境中直接测试模型的指针能力。通过对多种开源及专有模型的广泛评估发现，Molmo-72B表现出色，而针对指针任务的监督训练显著提升了模型性能。此外，研究还揭示了抽象推理与具体现实世界动作之间的强相关性，强调了精确指针能力的重要性。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.09990" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 15 May 2025 02:04:42 GMT</pubDate>
 <pubDate>Thu, 15 May 2025 02:04:42 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +85,8 @@
 <link>https://arxiv.org/abs/2505.09738</link>
 <guid>https://arxiv.org/abs/2505.09738</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出Tokenadapt方法解决固定分词器导致的语言模型效率低下问题。</p><br><br><p><strong>摘要：</strong> 本文针对预训练语言模型（LLMs）因固定分词方案而产生的性能瓶颈及资源消耗问题，提出了名为Tokenadapt的创新性tokenizer移植框架。该框架通过混合启发式方法初始化新的唯一token嵌入，同时引入多词SuperTokens进行压缩优化，有效减少碎片化并提升多语言应用表现。实验表明，Tokenadapt在多个基准测试中显著优于现有方法，尤其在零样本困惑度方面，展现了卓越的性能改进能力，至少实现了2倍以上的整体分数提升。关键词：Tokenadapt, tokenizer移植, 多词SuperTokens</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.09738 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出Tokenadapt方法解决固定分词器导致的语言模型效率低下问题。</p><br /><br /><p><strong>摘要：</strong> 本文针对预训练语言模型（LLMs）因固定分词方案而产生的性能瓶颈及资源消耗问题，提出了名为Tokenadapt的创新性tokenizer移植框架。该框架通过混合启发式方法初始化新的唯一token嵌入，同时引入多词SuperTokens进行压缩优化，有效减少碎片化并提升多语言应用表现。实验表明，Tokenadapt在多个基准测试中显著优于现有方法，尤其在零样本困惑度方面，展现了卓越的性能改进能力，至少实现了2倍以上的整体分数提升。关键词：Tokenadapt, tokenizer移植, 多词SuperTokens</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.09738" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 14 May 2025 15:00:27 GMT</pubDate>
 <pubDate>Wed, 14 May 2025 15:00:27 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +94,8 @@
 <link>https://arxiv.org/abs/2505.09723</link>
 <guid>https://arxiv.org/abs/2505.09723</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出EnerVerse-AC模型，通过生成未来视觉观察提升机器人交互场景测试效率。</p><br><br><p><strong>摘要：</strong> 机器人模仿学习已从静态任务扩展到动态交互场景，但实时与动态环境互动的测试和评估成本高昂且困难重重。本文提出EnerVerse-AC（EVAC），这是一种动作条件世界模型，可基于预测动作生成未来的视觉观察，从而实现真实且可控的机器人推理。EVAC基于先前架构，引入多级动作条件机制和射线图编码以支持动态多视角图像生成，同时通过多样化失败轨迹扩充训练数据以增强泛化能力。作为数据引擎和评估工具，EVAC将人类收集的轨迹扩展为多样化的数据集，并生成动作条件视频观察以进行策略测试，无需物理机器人或复杂模拟。此方法大幅降低了成本，同时保持了机器人操作评估的高保真度。实验结果验证了该方法的有效性。代码、检查点和数据集可在指定网址获取。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.09723 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出EnerVerse-AC模型，通过生成未来视觉观察提升机器人交互场景测试效率。</p><br /><br /><p><strong>摘要：</strong> 机器人模仿学习已从静态任务扩展到动态交互场景，但实时与动态环境互动的测试和评估成本高昂且困难重重。本文提出EnerVerse-AC（EVAC），这是一种动作条件世界模型，可基于预测动作生成未来的视觉观察，从而实现真实且可控的机器人推理。EVAC基于先前架构，引入多级动作条件机制和射线图编码以支持动态多视角图像生成，同时通过多样化失败轨迹扩充训练数据以增强泛化能力。作为数据引擎和评估工具，EVAC将人类收集的轨迹扩展为多样化的数据集，并生成动作条件视频观察以进行策略测试，无需物理机器人或复杂模拟。此方法大幅降低了成本，同时保持了机器人操作评估的高保真度。实验结果验证了该方法的有效性。代码、检查点和数据集可在指定网址获取。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.09723" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 14 May 2025 14:30:53 GMT</pubDate>
 <pubDate>Wed, 14 May 2025 14:30:53 GMT</pubDate>
 </item>
 <item>
@@ -69,14 +103,10 @@
 <link>https://arxiv.org/abs/2505.08581</link>
 <guid>https://arxiv.org/abs/2505.08581</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出ReSurgSAM2框架，提升手术场景分割精度和效率。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为ReSurgSAM2的两阶段手术参考分割框架，该框架结合了Segment Anything Model 2进行目标检测，并通过可靠的初始帧识别和多样性驱动的长期记忆机制实现跟踪。在检测阶段，引入跨模态时空Mamba生成精确结果；在跟踪阶段，采用多样性驱动的记忆机制确保长期一致性。实验表明，ReSurgSAM2在准确性与效率上显著优于现有方法，实时运行速度达61.2 FPS。相关代码和数据集将在GitHub上公开。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.08581 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出ReSurgSAM2框架，提升手术场景分割精度和效率。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种名为ReSurgSAM2的两阶段手术参考分割框架，该框架结合了Segment Anything Model 2进行目标检测，并通过可靠的初始帧识别和多样性驱动的长期记忆机制实现跟踪。在检测阶段，引入跨模态时空Mamba生成精确结果；在跟踪阶段，采用多样性驱动的记忆机制确保长期一致性。实验表明，ReSurgSAM2在准确性与效率上显著优于现有方法，实时运行速度达61.2 FPS。相关代码和数据集将在GitHub上公开。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.08581" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 13 May 2025 09:56:10 GMT</pubDate>
-<pubDate>Tue, 13 May 2025 09:56:10 GMT</pubDate>
 </item>
-
 <item>
 <title>ETT：端到端视觉标记器调优提升多模态任务性能</title>
 <link>https://arxiv.org/abs/2505.10562</link>
@@ -9022,60 +9052,6 @@ The image-to-image translation abilities of generative learning models have rece
 <div><p style="color: gray;">本文探讨了大语言模型在神经机器翻译中的应用与优化。</p><br /><br /><p><strong>摘要：</strong> 本文研究了如何将大语言模型（LLMs）有效地应用于神经机器翻译（NMT），旨在设计一种通用、高效且易于优化的翻译模型。我们保留了传统NMT模型中的解码器，仅在编码阶段引入LLMs，并发展了一些方法来进一步改进其与解码器的适配性。此外，构建了一个新的多任务数据集，以评估机器翻译系统在不同任务中的泛化能力。经过在WMT及其他数据集上的评估，结果表明我们的方法在翻译质量上与多种基线相匹配或更优，同时实现了2.4到6.5倍的推理速度提升，并将KV缓存的内存占用降低了75%。这表明所提方法在各种翻译相关任务中表现出强大的泛化能力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.06594" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Sun, 09 Mar 2025 08:54:05 GMT</pubDate>
-</item>
-<item>
-<title>VisualSimpleQA：一项针对大规模视觉语言模型的多模态基准评测</title>
-<link>https://arxiv.org/abs/2503.06492</link>
-<guid>https://arxiv.org/abs/2503.06492</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">VisualSimpleQA为大规模视觉语言模型提供了一种新的多模态评测基准。</p><br /><br /><p><strong>摘要：</strong> 大规模视觉语言模型（LVLMs）在生成非事实回应方面仍面临挑战。当前的多模态事实寻求基准主要关注模型输出与真实答案的比较，但对模态特定模块的表现洞察有限。为了解决这一问题，我们推出了VisualSimpleQA，一个多模态事实寻求基准，具备两个关键特点：首先，它支持对LVLMs在视觉和语言模态中的脱钩评估；其次，它采用明确的难度标准来指导人类标注，并提取出更具挑战性的子集VisualSimpleQA-hard。对15个LVLM的实验表明，即使是最先进的模型如GPT-4o，在VisualSimpleQA上的正确率仅为60%以上，而在VisualSimpleQA-hard上的正确率也仅为30%以上。这种解耦评估揭示了在视觉和语言模块中都有显著的改进空间。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.06492" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Sun, 09 Mar 2025 03:25:32 GMT</pubDate>
-</item>
-<item>
-<title>MagicInfinite：高保真多角色肖像动画的新方法</title>
-<link>https://arxiv.org/abs/2503.05978</link>
-<guid>https://arxiv.org/abs/2503.05978</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">MagicInfinite通过创新技术实现高保真的肖像动画。</p><br /><br /><p><strong>摘要：</strong> MagicInfinite是一种新型扩散Transformer框架，克服了传统肖像动画的局限，能够在现实人类、全身角色和风格化动漫角色等多种角色类型中实现高保真动画效果。该框架支持多种面部姿势，并通过输入掩码精确指定多角色场景中的说话者。其创新之处在于：1）采用滑动窗口去噪策略的3D全注意力机制，实现在多种角色风格下的无限视频生成；2）两阶段学习方案结合音频、文本和参考图像，实现灵活的多模态控制；3）使用区域特定掩码和自适应损失函数平衡全局文本控制和局部音频指导。得益于统一步骤和cfg蒸馏技术，效率显著提升，实现20倍的推理速度提升。评估结果显示，MagicInfinite在音频口型同步和运动自然性方面表现优越。该项目已公开发布，感兴趣的用户可访问官方网站获取更多信息。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.05978" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 07 Mar 2025 18:21:11 GMT</pubDate>
-</item>
-<item>
-<title>AI4SE基准的评估与优化：BenchScout和BenchFrame的应用</title>
-<link>https://arxiv.org/abs/2503.05860</link>
-<guid>https://arxiv.org/abs/2503.05860</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文综述了AI4SE基准的现状，并提出了BenchScout和BenchFrame以优化基准质量。</p><br /><br /><p><strong>摘要：</strong> 随着人工智能在软件工程领域的应用日益广泛，基准测试成为评估和可重复性的关键。然而，现有的基准面临着碎片化知识、选择困难、缺乏统一标准及局限性等挑战。本文回顾了173项研究，识别出204个AI4SE基准，并分析了这些基准的局限性及实践中的空白。为此，研究团队开发了BenchScout，一款支持语义搜索的工具，旨在帮助用户快速找到相关基准。此外，提出了BenchFrame，以统一方法提升基准质量，并以HumanEval基准为案例，解决其主要局限性，从而生成HumanEvalNext，改进了语言转换、测试覆盖和难度。评估表明，HumanEvalNext的通过率明显低于以往基准，提示了后续研究的改进方向。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.05860" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 07 Mar 2025 13:44:32 GMT</pubDate>
-</item>
-<item>
-<title>QuoTA：基于查询重要性评估的视频标记分配模型</title>
-<link>https://arxiv.org/abs/2503.08689</link>
-<guid>https://arxiv.org/abs/2503.08689</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">QuoTA通过查询导向评估优化视频标记分配，提高长视频理解效果。</p><br /><br /><p><strong>摘要：</strong> 本文提出了QuoTA，一种训练无关的模块，旨在基于查询导向的帧级重要性评估优化视觉标记的分配。当前技术侧重于解码器层的低响应标记剪枝，而忽视了视觉标记与指令之间的输入层次语义相关性。QuoTA通过查询相关性战略性地分配帧级重要性分数，使视觉标记分配在跨模态交互之前进行，从而提高了标记预算的利用率并保留了语义相关的内容。此外，QuoTA通过链式思维推理拆分查询，以精确评分，且为现有的大型视频语言模型提供了即插即用的功能。实验结果表明，QuoTA在LLaVA-Video-7B上实施后，在六个基准测试（包括Video-MME和MLVU）中平均提升了3.2%的表现，同时在与基线相同的视觉标记预算内运行。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.08689" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 11 Mar 2025 13:59:57 GMT</pubDate>
-</item>
-<item>
-<title>OmniMamba：首个线性架构的多模态生成模型</title>
-<link>https://arxiv.org/abs/2503.08686</link>
-<guid>https://arxiv.org/abs/2503.08686</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">OmniMamba是一个高效的多模态生成模型，显著减少计算复杂度和数据需求。</p><br /><br /><p><strong>摘要：</strong> OmniMamba是一种创新的线性架构多模态生成模型，采用统一的下一个token预测范式，能够同时生成文本和图像，克服了传统模型的二次计算复杂度和对大规模训练数据的依赖。该模型在Mamba-2的基础上提升了计算和内存效率，并通过引入解耦词汇以指导特定模态生成及用于参数高效自适应的任务特定LoRA，解决了现有统一模型的数据低效问题。OmniMamba还采用了分阶段的训练策略，以降低两个任务间的数据不平衡。尽管仅使用了200万对图像-文本数据，OmniMamba在多个基准测试中达到了与JanusFlow相媲美的性能，并超越了Show-o，表现出卓越的推理效率，相较于基于Transformer的模型，长序列生成的速度提升高达119.2倍，GPU内存减少63%。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.08686" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 11 Mar 2025 13:59:46 GMT</pubDate>
-</item>
-<item>
-<title>YuE：创新的长篇音乐生成模型</title>
-<link>https://arxiv.org/abs/2503.08638</link>
-<guid>https://arxiv.org/abs/2503.08638</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">YuE是一种新型模型，可将歌词生成长达五分钟的音乐。</p><br /><br /><p><strong>摘要：</strong> YuE模型专注于长篇音乐生成，尤其是歌词到歌曲的转换，基于LLaMA2架构，能够处理数万亿个令牌，生成最多五分钟的音乐，同时保持歌词对齐、连贯的音乐结构和动听的旋律。其主要技术创新包括：追踪解耦的下一个token预测、结构性渐进条件提供长文本上下文对齐，以及多任务、多阶段的预训练方案。YuE还重塑了音乐生成的上下文学习技术，支持多样化风格转换和双向生成。通过大量评估，YuE在音乐性和声乐灵活性上与一些专有系统相当或更优。此外，微调YuE可增强控制能力，支持小众语言，且在音乐理解任务中表现出色，超过了MARBLE基准上的现有最先进技术。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.08638" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 11 Mar 2025 13:26:50 GMT</pubDate>
 </item>
 </channel>
 </rss>
