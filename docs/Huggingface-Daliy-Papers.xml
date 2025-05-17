@@ -5,15 +5,49 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>基于扩散模型的3D先验引导图像编辑框架3D-Fixup</title>
+<link>https://arxiv.org/abs/2505.10566</link>
+<guid>https://arxiv.org/abs/2505.10566</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种利用扩散模型和3D先验进行复杂图像编辑的新框架。</p><br><br><p><strong>摘要：</strong> 本文针对3D-aware图像编辑中的挑战，提出了名为3D-Fixup的新框架，该框架通过学习到的3D先验指导2D图像编辑。不同于仅依赖单一图像描述物体，3D-Fixup利用基于扩散模型的生成能力，并结合视频数据生成训练数据对。此外，通过引入Image-to-3D模型提供3D引导，实现了物体平移、旋转等复杂编辑任务。实验表明，该方法能够在保持身份一致性的同时实现高质量的3D-aware图像编辑，推动扩散模型在真实图像操作中的应用。代码已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.10566 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 15 May 2025 13:59:51 GMT</pubDate>
+<pubDate>Thu, 15 May 2025 13:59:51 GMT</pubDate>
+</item>
+<item>
+<title>Real2Render2Real：无需硬件操作的机器人训练数据生成方法</title>
+<link>https://arxiv.org/abs/2505.09601</link>
+<guid>https://arxiv.org/abs/2505.09601</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种无需物理机器人操作的机器人训练数据生成方法R2R2R。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为Real2Render2Real（R2R2R）的新方法，用于生成机器人训练数据，而无需依赖物体动力学模拟或机器人硬件的远程操作。该方法仅需输入智能手机扫描的物体图像及人类演示视频，即可通过3D高保真渲染生成大量机器人演示数据。R2R2R利用3D高斯点云技术实现刚性与可动物体的灵活资产生成和轨迹合成，并将其转换为网格以兼容大规模渲染引擎。实验表明，基于R2R2R生成的数据训练模型的表现可媲美传统方式下150倍的人类远程操作数据训练效果。这种方法显著降低了数据收集成本，为机器人学习提供了新的解决方案。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.09601 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 14 May 2025 13:50:35 GMT</pubDate>
+<pubDate>Wed, 14 May 2025 13:50:35 GMT</pubDate>
+</item>
+<item>
+<title>X-Sim：通过人类视频训练机器人操作策略的新框架</title>
+<link>https://arxiv.org/abs/2505.07096</link>
+<guid>https://arxiv.org/abs/2505.07096</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种基于RGBD视频的跨实体机器人操作策略学习框架X-Sim。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为X-Sim的新框架，用于利用人类视频训练机器人操作策略。X-Sim是一种真实到模拟再到真实的框架，它使用物体运动作为密集且可转移的信号来学习机器人策略。该框架首先从RGBD人类视频重建出逼真的模拟环境并跟踪物体轨迹以定义物体中心奖励，这些奖励被用来在模拟环境中训练强化学习策略。然后，该策略被蒸馏成条件图像扩散策略，使用具有不同视角和光照的合成滚动渲染。为了将策略转移到现实世界，X-Sim引入了一种在线领域适应技术，在部署过程中对齐真实和模拟观察。重要的是，X-Sim不需要任何机器人遥操作数据。我们在两个环境中评估了X-Sim在五个操作任务上的表现，结果显示它平均提高了30%的任务进展，比手部追踪和模拟到真实基线更好，并且匹配了需要10倍更多数据收集时间的行为克隆方法，同时泛化到新的相机视点和测试时的变化。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.07096 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 11 May 2025 15:04:00 GMT</pubDate>
+<pubDate>Sun, 11 May 2025 15:04:00 GMT</pubDate>
+</item>
+
+<item>
 <title>并行扩展(ParScale)：语言模型更高效的扩展方法</title>
 <link>https://arxiv.org/abs/2505.10475</link>
 <guid>https://arxiv.org/abs/2505.10475</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种新的语言模型扩展方法——并行扩展，可显著提高推理效率。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种全新的语言模型扩展方法，即并行扩展(ParScale)，通过在训练和推理过程中增加模型的并行计算来提升效率，而无需大幅增加参数规模或输出令牌数。该方法通过对输入应用P种不同的变换，在并行执行模型前向传播后动态聚合输出。实验表明，相比参数扩展，ParScale能在达到相同性能提升的同时，减少高达22倍的内存增长和6倍的延迟增长。此外，ParScale还可通过少量微调将现成的预训练模型转化为并行扩展版本，进一步降低训练成本。这一新发现的扩展定律可能有助于在资源受限场景下部署更强大的模型，并为计算在机器学习中的作用提供了新的视角。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.10475 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种新的语言模型扩展方法——并行扩展，可显著提高推理效率。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种全新的语言模型扩展方法，即并行扩展(ParScale)，通过在训练和推理过程中增加模型的并行计算来提升效率，而无需大幅增加参数规模或输出令牌数。该方法通过对输入应用P种不同的变换，在并行执行模型前向传播后动态聚合输出。实验表明，相比参数扩展，ParScale能在达到相同性能提升的同时，减少高达22倍的内存增长和6倍的延迟增长。此外，ParScale还可通过少量微调将现成的预训练模型转化为并行扩展版本，进一步降低训练成本。这一新发现的扩展定律可能有助于在资源受限场景下部署更强大的模型，并为计算在机器学习中的作用提供了新的视角。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.10475" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 15 May 2025 12:24:45 GMT</pubDate>
 <pubDate>Thu, 15 May 2025 12:24:45 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +55,8 @@
 <link>https://arxiv.org/abs/2505.10468</link>
 <guid>https://arxiv.org/abs/2505.10468</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究界定了AI Agents与Agentic AI的设计哲学与能力差异。</p><br><br><p><strong>摘要：</strong> 本研究通过结构化的概念分类法、应用映射和挑战分析，清晰地区分了AI Agents与Agentic AI。AI Agents被定义为由大型语言模型（LLMs）和大型图像模型（LIMs）驱动的模块化系统，专注于特定任务自动化，而Generative AI为其前身。相比之下，Agentic AI则通过多代理协作、动态任务分解、持久记忆和协调自治展现了范式转变。文章通过架构演化、操作机制、交互风格和自治水平的对比分析，展示了两者在客户支持、调度和数据总结等领域的应用差异，并探讨了幻觉、脆弱性、涌现行为和协调失败等独特挑战，提出了ReAct循环、RAG、协调层和因果建模等解决方案。此研究旨在为开发稳健、可扩展且可解释的AI代理和Agentic AI驱动系统提供明确路线图。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.10468 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究界定了AI Agents与Agentic AI的设计哲学与能力差异。</p><br /><br /><p><strong>摘要：</strong> 本研究通过结构化的概念分类法、应用映射和挑战分析，清晰地区分了AI Agents与Agentic AI。AI Agents被定义为由大型语言模型（LLMs）和大型图像模型（LIMs）驱动的模块化系统，专注于特定任务自动化，而Generative AI为其前身。相比之下，Agentic AI则通过多代理协作、动态任务分解、持久记忆和协调自治展现了范式转变。文章通过架构演化、操作机制、交互风格和自治水平的对比分析，展示了两者在客户支持、调度和数据总结等领域的应用差异，并探讨了幻觉、脆弱性、涌现行为和协调失败等独特挑战，提出了ReAct循环、RAG、协调层和因果建模等解决方案。此研究旨在为开发稳健、可扩展且可解释的AI代理和Agentic AI驱动系统提供明确路线图。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.10468" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 15 May 2025 12:21:33 GMT</pubDate>
 <pubDate>Thu, 15 May 2025 12:21:33 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +64,8 @@
 <link>https://arxiv.org/abs/2505.10167</link>
 <guid>https://arxiv.org/abs/2505.10167</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出QuXAI框架，提升混合量子经典机器学习模型的可解释性和可靠性。</p><br><br><p><strong>摘要：</strong> 本文聚焦于混合量子经典机器学习（HQML）模型的可解释性研究，指出当前领域在全局和局部解释方法上的研究空白。为此，作者引入QuXAI框架，基于Q-MEDLEY方法，通过量化特征编码与经典学习结合，分析特征重要性并可视化结果。实验表明，Q-MEDLEY不仅能有效区分经典部分的重要性及噪声，还在验证测试中表现优异。此外，消融实验进一步验证了Q-MEDLEY复合结构的优势。这项工作对增强HQML模型的透明度和可靠性具有重要意义，推动量子增强人工智能技术的安全应用。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.10167 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出QuXAI框架，提升混合量子经典机器学习模型的可解释性和可靠性。</p><br /><br /><p><strong>摘要：</strong> 本文聚焦于混合量子经典机器学习（HQML）模型的可解释性研究，指出当前领域在全局和局部解释方法上的研究空白。为此，作者引入QuXAI框架，基于Q-MEDLEY方法，通过量化特征编码与经典学习结合，分析特征重要性并可视化结果。实验表明，Q-MEDLEY不仅能有效区分经典部分的重要性及噪声，还在验证测试中表现优异。此外，消融实验进一步验证了Q-MEDLEY复合结构的优势。这项工作对增强HQML模型的透明度和可靠性具有重要意义，推动量子增强人工智能技术的安全应用。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.10167" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 15 May 2025 06:51:34 GMT</pubDate>
 <pubDate>Thu, 15 May 2025 06:51:34 GMT</pubDate>
 </item>
 <item>
@@ -45,14 +73,10 @@
 <link>https://arxiv.org/abs/2505.06027</link>
 <guid>https://arxiv.org/abs/2505.06027</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种新型自蒸馏方法Unilogit，实现语言模型中高效有选择性遗忘。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为Unilogit的新颖自蒸馏方法，用于大规模语言模型中的机器遗忘任务。该方法通过动态调整目标logits，使目标令牌具有均匀概率，从而解决了在遵守GDPR等隐私法规的同时选择性遗忘特定信息的难题。与依赖静态超参数或初始模型输出的现有方法不同，Unilogit利用当前模型的输出作为更准确的自蒸馏目标，不仅无需额外的超参数设置，还提升了模型对黄金标准目标的逼近能力。实验表明，Unilogit在公共基准和自有电商数据集上表现出色，在平衡遗忘与保留目标方面优于NPO和UnDIAL等最先进方法，并且在多种场景下展现出强大的鲁棒性和实际应用价值。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.06027 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种新型自蒸馏方法Unilogit，实现语言模型中高效有选择性遗忘。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种名为Unilogit的新颖自蒸馏方法，用于大规模语言模型中的机器遗忘任务。该方法通过动态调整目标logits，使目标令牌具有均匀概率，从而解决了在遵守GDPR等隐私法规的同时选择性遗忘特定信息的难题。与依赖静态超参数或初始模型输出的现有方法不同，Unilogit利用当前模型的输出作为更准确的自蒸馏目标，不仅无需额外的超参数设置，还提升了模型对黄金标准目标的逼近能力。实验表明，Unilogit在公共基准和自有电商数据集上表现出色，在平衡遗忘与保留目标方面优于NPO和UnDIAL等最先进方法，并且在多种场景下展现出强大的鲁棒性和实际应用价值。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.06027" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Fri, 09 May 2025 09:19:09 GMT</pubDate>
-<pubDate>Fri, 09 May 2025 09:19:09 GMT</pubDate>
 </item>
-
 <item>
 <title>Prior Depth Anything框架实现任意场景高精度深度图生成</title>
 <link>https://arxiv.org/abs/2505.10565</link>
@@ -9016,42 +9040,6 @@ The image-to-image translation abilities of generative learning models have rece
 <div><p style="color: gray;">本文提出RexSeek模型，旨在提升个体识别的准确性并应对现实应用中的挑战。</p><br /><br /><p><strong>摘要：</strong> 本文聚焦于计算机视觉中个体识别的重要性，定义了一个新任务，即基于自然语言描述识别个体。尽管现有模型在一些基准测试上表现良好，但在实际应用中却缺乏有效性。为了应对这一挑战，本文从任务定义、数据集设计和模型架构三个方面进行研究，提出HumanRef数据集以更好地反映现实应用场景。我们构建了集成多模态大语言模型与物体检测框架的RexSeek模型，实验结果表明，尽管一些先进模型在常用基准如RefCOCO上表现出色，但在HumanRef数据集上却遇到困难，主要因为它们无法有效检测多个个体。而RexSeek在个体识别上表现优异，并能够有效推广至常见物体的识别任务，显示出广泛的应用潜力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.08507" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 11 Mar 2025 10:57:14 GMT</pubDate>
-</item>
-<item>
-<title>一种无训练的人脸匿名化方法</title>
-<link>https://arxiv.org/abs/2503.08478</link>
-<guid>https://arxiv.org/abs/2503.08478</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出一种无需训练的人脸匿名化方法，有效保留非身份属性。</p><br /><br /><p><strong>摘要：</strong> 针对隐私担忧不断增加的背景下，本文提出了一种训练-free的人脸匿名化方法，旨在保留非身份相关的关键属性。该方法利用预训练的文本到图像扩散模型，能够在不需要优化或训练的情况下进行操作。具体而言，方法通过反转输入图像来恢复初始噪声，然后通过身份条件的扩散过程去噪，以确保匿名后的面孔与原身份明显不同。此外，系统支持局部匿名化，用户可以控制待匿名化或保留的面部区域。经过与最先进的方法的全面评估，该方法在匿名化、属性保留和图像质量方面表现优异，展示出良好的灵活性、鲁棒性和实用性，适合于实际应用。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.08478" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 11 Mar 2025 10:29:37 GMT</pubDate>
-</item>
-<item>
-<title>一种新型Transformer架构用于音视频生成的研究</title>
-<link>https://arxiv.org/abs/2503.08307</link>
-<guid>https://arxiv.org/abs/2503.08307</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文介绍了一种新型Transformer架构，解决音视频生成中的关键挑战。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种新型的Transformer架构，用于解决生成AI中音视频（AV）生成面临的三大挑战：生成样本的质量、无缝的多模态同步与时间一致性，以及无限视频时长。我们探讨了三种不同的跨模态交互模块，其中轻量级时间融合模块被证明是对齐音频和视觉模态的高效有效方法。实验结果显示，所提出的方法在多模态音视频生成任务中超越了现有的最先进模型，为音视频生成领域提供了新的视角和技术。代码和模型检查点已在GitHub上公开。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.08307" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 11 Mar 2025 07:18:47 GMT</pubDate>
-</item>
-<item>
-<title>智能记忆管理系统SECOND ME的创新应用</title>
-<link>https://arxiv.org/abs/2503.08102</link>
-<guid>https://arxiv.org/abs/2503.08102</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">SECOND ME重塑用户交互中记忆管理的方式，大幅提升信息处理效率。</p><br /><br /><p><strong>摘要：</strong> 文章介绍了SECOND ME，一个利用大型语言模型(LLMs)的智能记忆管理系统，其目标是提升用户与外界的互动效率。人们在与其他个体、网站及未来的AI代理交互时，常需重复提供相同信息，SECOND ME通过作为用户交互的中介，有效减少了这一冗余。该系统不仅能够自动生成环境感知的响应，自动填充所需信息，还能与外部系统无缝沟通，从而降低用户的认知负担。与传统的记忆存储解决方案相比，SECOND ME通过LLM驱动的记忆参数化，提供了结构化的组织、上下文推理和自适应知识检索。这一创新代表了朝向更智能化和系统化的记忆管理的重要进步，为AI驱动的个人代理在数字生态系统中的角色奠定基础。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.08102" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 11 Mar 2025 03:05:52 GMT</pubDate>
-</item>
-<item>
-<title>结合大语言模型与神经机器翻译的高效模型</title>
-<link>https://arxiv.org/abs/2503.06594</link>
-<guid>https://arxiv.org/abs/2503.06594</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文探讨了大语言模型在神经机器翻译中的应用与优化。</p><br /><br /><p><strong>摘要：</strong> 本文研究了如何将大语言模型（LLMs）有效地应用于神经机器翻译（NMT），旨在设计一种通用、高效且易于优化的翻译模型。我们保留了传统NMT模型中的解码器，仅在编码阶段引入LLMs，并发展了一些方法来进一步改进其与解码器的适配性。此外，构建了一个新的多任务数据集，以评估机器翻译系统在不同任务中的泛化能力。经过在WMT及其他数据集上的评估，结果表明我们的方法在翻译质量上与多种基线相匹配或更优，同时实现了2.4到6.5倍的推理速度提升，并将KV缓存的内存占用降低了75%。这表明所提方法在各种翻译相关任务中表现出强大的泛化能力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.06594" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Sun, 09 Mar 2025 08:54:05 GMT</pubDate>
 </item>
 </channel>
 </rss>
