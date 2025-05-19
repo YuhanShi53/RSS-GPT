@@ -4,6 +4,162 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>Mergenetic：用于语言模型的开源进化模型合并库</title>
+<link>https://arxiv.org/abs/2505.11427</link>
+<guid>https://arxiv.org/abs/2505.11427</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Mergenetic结合进化算法提升语言模型性能。</p><br><br><p><strong>摘要：</strong> 模型合并是一种无需额外训练即可将现有模型能力整合到新模型中的方法，因其低成本和对消费者GPU的支持而受到欢迎。最新研究表明，将模型合并与进化算法结合可进一步提高性能，但目前尚无框架支持灵活实验。本文介绍了一个名为Mergenetic的开源库，该库专门针对语言模型设计，支持轻松组合不同的合并方法和进化算法，并引入轻量级适应度评估器以降低评估成本。通过描述其设计并展示在多种任务和语言上的竞争力，Mergenetic证明了其在有限硬件条件下仍能取得良好效果的能力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.11427 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 16 May 2025 12:43:23 GMT</pubDate>
+<pubDate>Fri, 16 May 2025 12:43:23 GMT</pubDate>
+</item>
+<item>
+<title>视觉规划：基于视觉表示的推理新范式</title>
+<link>https://arxiv.org/abs/2505.11409</link>
+<guid>https://arxiv.org/abs/2505.11409</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新的视觉规划范式，通过纯视觉表示进行推理。</p><br><br><p><strong>摘要：</strong> 近期大型语言模型（LLMs）及其多模态扩展（MLLMs）显著提升了跨任务的机器推理能力，但这些模型主要依赖纯文本表达推理，即便在存在视觉信息的情况下亦如此。本文指出语言并非在所有情况下最自然或有效的推理模式，特别是在涉及空间和几何信息的任务中。因此，我们提出了视觉规划这一新范式，它通过纯粹的视觉表示执行规划，无需依赖文本。在这一范式下，规划通过图像序列完成，每一步推理均在视觉领域编码，类似于人类的草图或可视化未来行动的方式。我们引入了视觉规划强化学习框架（VPRL），借助GRPO对大规模视觉模型进行后训练，显著提升了在代表性视觉导航任务（如FrozenLake、Maze和MiniBehavior）中的规划性能。实验结果显示，视觉规划在所有其他仅限文本空间的推理变体中表现最优，确立了其作为语言推理替代方案的可行性和潜力，为直观的图像推理任务开辟了新途径。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.11409 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 16 May 2025 12:17:22 GMT</pubDate>
+<pubDate>Fri, 16 May 2025 12:17:22 GMT</pubDate>
+</item>
+<item>
+<title>解决类别和空间不平衡问题的密集手部接触估计框架</title>
+<link>https://arxiv.org/abs/2505.11152</link>
+<guid>https://arxiv.org/abs/2505.11152</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新框架解决手部接触估计中的类别和空间不平衡问题。</p><br><br><p><strong>摘要：</strong> 手部与世界的交互对于人类至关重要，但有效学习密集手部接触估计仍面临挑战。主要问题包括类别不平衡（大部分样本无接触）和空间不平衡（接触多集中于指尖）。为解决这些问题，本文提出了一种名为HACO的新框架，通过平衡接触采样和顶点级类别均衡损失函数，有效预测大规模手部接触数据的密集接触估计，且不受到类别和空间不平衡的影响。该方法不仅提升了模型性能，还为未来研究提供了宝贵资源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.11152 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 16 May 2025 07:54:25 GMT</pubDate>
+<pubDate>Fri, 16 May 2025 07:54:25 GMT</pubDate>
+</item>
+<item>
+<title>大语言模型推理能力增强研究：开放领域问答中的测试时扩展</title>
+<link>https://arxiv.org/abs/2505.11140</link>
+<guid>https://arxiv.org/abs/2505.11140</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究表明增加推理链长度可提高大语言模型在开放领域问答中的事实准确性。</p><br><br><p><strong>摘要：</strong> 本研究通过分析复杂开放领域问答任务中的大语言模型推理能力，发现较短推理链的小型模型在经过微调后，其事实准确性显著优于原始指令调优模型。此外，引入知识图谱路径作为补充信息进一步增强了推理痕迹的丰富性。实验设置涵盖了六组基准数据集，超过22.6K个问题，并进行了168次实验，分析约170万条推理痕迹。结果表明，在单次运行中，通过添加测试时计算资源和令牌预算，事实准确性普遍提升2-8%，验证了测试时扩展的有效性。本研究公开所有实验材料供后续研究使用。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.11140 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 16 May 2025 07:39:33 GMT</pubDate>
+<pubDate>Fri, 16 May 2025 07:39:33 GMT</pubDate>
+</item>
+<item>
+<title>Group Think：基于单一大语言模型的并发推理新范式</title>
+<link>https://arxiv.org/abs/2505.11107</link>
+<guid>https://arxiv.org/abs/2505.11107</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新型并发推理方法，使单个大语言模型能同时扮演多个推理代理，提升效率并降低延迟。</p><br><br><p><strong>摘要：</strong> 近年来，大型语言模型（LLMs）在推理能力方面取得了显著进步，但传统的多推理代理通常采用轮流交互的方式，这虽然提高了推理质量，却带来了较高的延迟。本文介绍了一种名为Group Think的新方法，它通过让单一LLM充当多个并发推理代理，在保持高质量的同时大幅降低了延迟。Group Think中的推理代理共享彼此的部分生成进度，从而能够在令牌级别动态适应对方，减少冗余推理。此外，这种并发机制能够更好地利用计算资源，特别适用于边缘推理场景。我们还提供了一个简单的修改方案，使现有的LLM能够在本地GPU上执行Group Think，并设计了一种评估策略，证明了这种方法在开源LLM上的延迟改进效果。这项研究为未来LLMs实现更复杂、更高效的协作行为奠定了基础。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.11107 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 16 May 2025 06:40:35 GMT</pubDate>
+<pubDate>Fri, 16 May 2025 06:40:35 GMT</pubDate>
+</item>
+<item>
+<title>GuardReasoner-VL：基于推理的视觉语言模型安全增强方法</title>
+<link>https://arxiv.org/abs/2505.11049</link>
+<guid>https://arxiv.org/abs/2505.11049</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出一种基于在线强化学习的视觉语言模型安全增强方法GuardReasoner-VL。</p><br><br><p><strong>摘要：</strong> 为了提高视觉语言模型(VLM)的安全性，本文提出了一种名为GuardReasoner-VL的新颖推理型VLM保护模型。该模型通过在线强化学习激励保护模型在做出审核决策前进行深思熟虑的推理。首先构建了一个包含12.3万个样本和63.1万个推理步骤的GuardReasoner-VLTrain推理语料库，涵盖文本、图像及图文输入。接着通过SFT冷启动模型的推理能力。此外，通过在线强化学习进一步增强审核中的推理。具体而言，在拒绝采样后，利用所提出的安全性感知数据连接进行数据增强，同时采用动态裁剪参数促进早期探索和后期利用。为平衡性能和令牌效率，设计了考虑准确性、格式和令牌成本的长度感知安全性奖励。实验表明，GuardReasoner-VL在F1得分上平均比亚军高出19.27%，并开源了相关数据、代码和模型(3B/7B)。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.11049 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 16 May 2025 05:46:10 GMT</pubDate>
+<pubDate>Fri, 16 May 2025 05:46:10 GMT</pubDate>
+</item>
+<item>
+<title>人类在博弈实验中对大型语言模型对手的行为差异研究</title>
+<link>https://arxiv.org/abs/2505.11011</link>
+<guid>https://arxiv.org/abs/2505.11011</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>人类在与大型语言模型博弈时选择更低数字，主要由高战略推理能力者驱动。</p><br><br><p><strong>摘要：</strong> 本研究通过首个受货币激励的实验室实验，探讨人类在多人p-beauty博弈中面对人类对手与大型语言模型（LLMs）对手时的行为差异。采用被试内设计，结果显示，与对抗人类相比，人类参与者对抗LLMs时选择显著更低的数字，这种现象主要源于零纳什均衡选择的增加。此转变主要由具有较高战略推理能力的参与者推动，他们通过引用LLMs的推理能力和合作倾向来解释策略选择。研究揭示了混合人类-LLMs系统机制设计的重要启示，并展示了参与者的异质性行为及对LLMs行为信念的变化。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.11011 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 16 May 2025 05:01:09 GMT</pubDate>
+<pubDate>Fri, 16 May 2025 05:01:09 GMT</pubDate>
+</item>
+<item>
+<title>基于多视角搜索的自动化定理证明系统MPS-Prover</title>
+<link>https://arxiv.org/abs/2505.10962</link>
+<guid>https://arxiv.org/abs/2505.10962</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>MPS-Prover通过创新的数据精炼和多视角树搜索机制，显著提升了定理证明效率。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为MPS-Prover的新自动化定理证明系统，旨在解决现有逐步定理证明器因搜索引导偏差导致的低效问题。MPS-Prover采用两种关键创新：一种高效的数据后训练精炼策略，可以去除约40%的冗余训练数据而不影响性能；以及一种结合学习到的批评模型与精心设计启发式规则的多视角树搜索机制，该机制有助于多样化战术选择、避免陷入无效状态并增强搜索鲁棒性。广泛的评估显示，MPS-Prover在多个具有挑战性的基准测试中达到了最先进的性能，包括miniF2F和ProofNet，超过了之前7B参数规模的模型。此外，分析表明，与现有的逐步方法和整体证明方法相比，MPS-Prover生成的证明更短且更多样化，凸显了其效率和有效性。这项工作推动了基于大型语言模型的形式推理能力，并为开发更强大的定理证明器提供了稳健框架和全面分析。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.10962 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 16 May 2025 03:56:03 GMT</pubDate>
+<pubDate>Fri, 16 May 2025 03:56:03 GMT</pubDate>
+</item>
+<item>
+<title>MatTools：评估大型语言模型在材料科学工具应用中的能力</title>
+<link>https://arxiv.org/abs/2505.10852</link>
+<guid>https://arxiv.org/abs/2505.10852</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出MatTools基准应用，评估大型语言模型在材料科学问题上的解答能力。</p><br><br><p><strong>摘要：</strong> 本文介绍了一个名为MatTools的新基准应用，用于评估大型语言模型（LLMs）在材料科学领域的能力，涵盖文献理解、性质预测、材料发现及合金设计等方面。MatTools由两个互补部分组成：材料模拟工具问答（QA）基准和真实世界工具使用基准。QA基准基于pymatgen代码库和文档构建，包含69,225对问答对；真实世界基准则包含49项任务（138个子任务），涉及材料属性计算的Python代码生成。通过对多种LLMs的评估，研究得出三个关键见解：通用模型优于专用模型、人工智能了解人工智能、简单方法更有效。MatTools为提升LLMs在材料科学工具应用中的能力提供了标准化框架，推动了更有效的AI系统在材料科学及通用科学研究中的发展。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.10852 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 16 May 2025 00:43:05 GMT</pubDate>
+<pubDate>Fri, 16 May 2025 00:43:05 GMT</pubDate>
+</item>
+<item>
+<title>MMLongBench：首个全面评估长上下文视觉语言模型的基准测试</title>
+<link>https://arxiv.org/abs/2505.10610</link>
+<guid>https://arxiv.org/abs/2505.10610</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出首个涵盖多种长上下文视觉语言任务的基准MMLongBench。</p><br><br><p><strong>摘要：</strong> 本文介绍了一个名为MMLongBench的新基准测试，这是第一个全面评估长上下文视觉语言模型(LCVLMs)能力的数据集。MMLongBench包含13,331个样本，涉及五个下游任务类别，并覆盖自然和合成图像等多种类型。通过在标准化输入长度下进行跨模态标记化处理，该基准能够有效评估模型在不同输入长度下的鲁棒性。通过对46个闭源和开源LCVLMs的详尽测试，研究发现单一任务的表现并不能很好地反映整体长上下文能力，且现有模型在长上下文任务中仍面临挑战，具备更强推理能力的模型表现更优。MMLongBench为下一代LCVLMs的发展提供了重要的诊断基础。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.10610 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 15 May 2025 13:52:54 GMT</pubDate>
+<pubDate>Thu, 15 May 2025 13:52:54 GMT</pubDate>
+</item>
+<item>
+<title>MuToR：一种高效多令牌预测方法</title>
+<link>https://arxiv.org/abs/2505.10518</link>
+<guid>https://arxiv.org/abs/2505.10518</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出MuToR方法，提升语言模型预训练效果并适用于多种场景。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为MuToR的新方法，用于增强语言模型的多令牌预测能力。MuToR通过在输入序列中插入可学习的寄存器令牌来实现这一目标，每个令牌负责预测未来的特定目标。相比现有技术，MuToR具有参数增加少、无需架构改动且与下一令牌预训练目标兼容等优势。实验表明，MuToR在多种任务上表现出色，包括监督微调、参数高效微调及预训练。无论是在语言还是视觉领域，MuToR都能有效应对复杂的生成任务。此外，该方法支持扩展预测范围，并且代码将在GitHub上公开。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.10518 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 15 May 2025 13:25:03 GMT</pubDate>
+<pubDate>Thu, 15 May 2025 13:25:03 GMT</pubDate>
+</item>
+<item>
+<title>Qwen3：大型语言模型家族的新里程碑</title>
+<link>https://arxiv.org/abs/2505.09388</link>
+<guid>https://arxiv.org/abs/2505.09388</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Qwen3发布，集复杂推理与快速响应于一身，支持多语言并开源。</p><br><br><p><strong>摘要：</strong> 本文介绍了Qwen3系列大型语言模型（LLMs），这是Qwen模型家族的最新版本。Qwen3包含密集架构和混合专家（MoE）架构的多种规模模型，参数量从0.6亿到235亿不等。创新之处在于统一整合了思考模式（用于复杂多步推理）和非思考模式（用于快速上下文响应），无需切换不同模型即可实现动态模式转换。此外，Qwen3引入了思考预算机制，允许用户根据任务复杂度灵活分配计算资源，平衡延迟与性能。与前代相比，Qwen3将多语言支持扩展至119种语言和方言，并通过开源促进社区研究。实验表明，Qwen3在代码生成、数学推理及代理任务等多个基准测试中表现优异，优于部分更大规模的MoE模型和专有模型。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.09388 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 14 May 2025 09:41:34 GMT</pubDate>
+<pubDate>Wed, 14 May 2025 09:41:34 GMT</pubDate>
+</item>
+<item>
+<title>一种用于视觉语言模型知识蒸馏的双头优化框架</title>
+<link>https://arxiv.org/abs/2505.07675</link>
+<guid>https://arxiv.org/abs/2505.07675</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种高效的知识蒸馏框架DHO，在半监督设置下提升紧凑模型性能。</p><br><br><p><strong>摘要：</strong> 近年来，视觉-语言模型（VLMs）在多种任务上取得了显著成果，但其部署在资源受限环境中的挑战依然存在。传统知识蒸馏方法通常涉及多阶段训练或额外调优，增加了计算开销和优化复杂性。本文提出了一种名为“双头优化”（DHO）的新框架，通过引入独立学习标签数据和教师预测的双预测头，在半监督环境中有效转移VLM的知识到紧凑的任务特定模型。实验表明，DHO在多个领域和细粒度数据集上优于基线模型，在ImageNet上使用1%和10%标记数据时分别提升了3%和0.1%的准确性，同时减少了参数量。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.07675 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 12 May 2025 11:39:51 GMT</pubDate>
+<pubDate>Mon, 12 May 2025 11:39:51 GMT</pubDate>
+</item>
 
 <item>
 <title>基于扩散模型的3D先验引导图像编辑框架3D-Fixup</title>
