@@ -5,15 +5,61 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>探究Transformer语言模型推理阶段中的非激活层</title>
+<link>https://arxiv.org/abs/2505.14467</link>
+<guid>https://arxiv.org/abs/2505.14467</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究显示并非所有Transformer模型层在推理阶段都被激活。</p><br><br><p><strong>摘要：</strong> 本文探讨了在推理过程中是否所有Transformer模型层都被激活这一基本问题。通过引入一种名为L2自适应计算（LAC）的非参数化方法，我们检测到了未被激活的层（即空洞）。实验分析了指令微调模型在提示处理和响应生成两个阶段中各层的激活情况，发现这两个阶段激活的层存在显著差异。例如，在MMLU零样本测试中，跳过Qwen2.5-7B-Instruct的空洞层后，性能从69.24提升至71.29，同时仅使用了30%的层；同样，Mistral-7B-Instruct-v0.3在GPQA Diamond上的表现也因减少层的使用而有所提高。这些结果表明，某些任务中可以有选择地跳过大部分层以优化模型性能。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.14467 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 20 May 2025 11:01:56 GMT</pubDate>
+<pubDate>Tue, 20 May 2025 11:01:56 GMT</pubDate>
+</item>
+<item>
+<title>强化微调对大语言模型可信度的影响及“幻觉税”问题研究</title>
+<link>https://arxiv.org/abs/2505.13988</link>
+<guid>https://arxiv.org/abs/2505.13988</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>强化微调导致大语言模型拒绝不可回答问题的能力显著下降，产生更多自信但虚假的回答。</p><br><br><p><strong>摘要：</strong> 强化微调（RFT）作为提升大型语言模型（LLMs）推理能力的标准方法，其对模型可信度的影响尚不明确。本研究发现，RFT会引发一种被称为“幻觉税”的副作用，即模型拒绝不可回答问题的比例大幅降低，导致对无法回答的问题给出自信但虚假的答案。为了深入分析这一现象，我们构建了一个名为SUM（合成不可回答数学题）的数据集，用于测试模型通过有限或模糊信息判断问题是否可解的能力。实验表明，标准RFT训练使模型拒绝不可回答问题的比例减少了80%以上，显著增加了幻觉倾向。然而，仅在RFT过程中加入10%的SUM数据即可显著恢复适当的拒绝行为，且对可解任务的准确性影响极小。这种方法还帮助LLMs在推理时利用计算资源评估自身不确定性与知识边界，不仅提升了跨领域数学问题的泛化能力，也改善了事实性问题回答的表现。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.13988 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 20 May 2025 02:36:45 GMT</pubDate>
+<pubDate>Tue, 20 May 2025 02:36:45 GMT</pubDate>
+</item>
+<item>
+<title>通过信息瓶颈理论提升多模态大语言模型的分布外泛化能力</title>
+<link>https://arxiv.org/abs/2505.13946</link>
+<guid>https://arxiv.org/abs/2505.13946</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种基于信息瓶颈原理的新方法Vittle，提升多模态大语言模型的分布外鲁棒性。</p><br><br><p><strong>摘要：</strong> 本文针对多模态大型语言模型（MLLMs）在分布偏移下性能下降的问题，提出了从表示学习角度增强其泛化能力的方法。不同于传统需要更多指令数据或更大模型架构的方法，我们受到信息瓶颈（IB）原则的启发，推导出适用于MLLMs的信息瓶颈变分下界，并设计了其实现方式——Visual Instruction Bottleneck Tuning（Vittle）。通过理论分析，揭示了Vittle与MLLM信息论鲁棒性度量之间的联系。实证研究在开放问答、闭合问答及物体幻觉检测等45个数据集上的30种分布偏移场景验证了Vittle的有效性，证明其能有效提升MLLM在分布偏移下的鲁棒性，同时追求最小充分表示的学习。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.13946 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 20 May 2025 01:24:53 GMT</pubDate>
+<pubDate>Tue, 20 May 2025 01:24:53 GMT</pubDate>
+</item>
+<item>
+<title>GeoRanker：基于视觉语言模型的地理排名框架</title>
+<link>https://arxiv.org/abs/2505.13731</link>
+<guid>https://arxiv.org/abs/2505.13731</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出GeoRanker框架，通过多模态信息提升全球图像地理定位性能。</p><br><br><p><strong>摘要：</strong> 本文针对全球范围内的图像地理定位（image geolocalization）任务展开研究，该任务旨在根据地球上任意位置拍摄的图像预测其GPS坐标。传统方法通常采用检索候选对象并选择最佳匹配的两阶段流水线，但往往依赖简单的相似性启发式方法和逐点监督，未能有效建模候选对象间的空间关系。为解决这一问题，我们提出了GeoRanker，这是一种距离感知的排名框架，利用大型视觉-语言模型联合编码查询-候选对象交互并预测地理邻近性。此外，我们引入了一种多阶距离损失函数，可以对绝对距离和相对距离进行排名，使模型能够推理结构化的空间关系。为了支持这一框架，我们还创建了GeoRanking数据集，这是首个明确设计用于地理排名任务的多模态候选信息数据集。实验结果显示，GeoRanker在两个著名的基准数据集（IM2GPS3K和YFCC4K）上取得了最先进的结果，显著优于当前最佳方法。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.13731 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 19 May 2025 17:04:46 GMT</pubDate>
+<pubDate>Mon, 19 May 2025 17:04:46 GMT</pubDate>
+</item>
+
+<item>
 <title>Vox-Profile：基于语音基础模型的多维度说话人与语音特征基准</title>
 <link>https://arxiv.org/abs/2505.14648</link>
 <guid>https://arxiv.org/abs/2505.14648</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出Vox-Profile基准，全面评估说话人与语音的静态和动态特性。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为Vox-Profile的综合基准，用于通过语音基础模型刻画丰富的说话人和语音特征。与现有仅关注单一维度的研究不同，Vox-Profile提供了涵盖说话人静态属性（如年龄、性别、口音）和语音动态特性（如情感、语流）的全方位多维描述。该基准结合了语音科学和语言学专业知识，由领域专家开发以准确索引说话人及语音特征。研究利用超过15个公开可用的语音数据集和多种广泛使用的语音基础模型进行了基准实验，并展示了Vox-Profile在多个下游应用中的潜力，包括增强现有的自动语音识别数据集、评估语音生成系统性能，以及验证自动化描述的质量。Vox-Profile已开源供公众访问。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.14648 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出Vox-Profile基准，全面评估说话人与语音的静态和动态特性。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种名为Vox-Profile的综合基准，用于通过语音基础模型刻画丰富的说话人和语音特征。与现有仅关注单一维度的研究不同，Vox-Profile提供了涵盖说话人静态属性（如年龄、性别、口音）和语音动态特性（如情感、语流）的全方位多维描述。该基准结合了语音科学和语言学专业知识，由领域专家开发以准确索引说话人及语音特征。研究利用超过15个公开可用的语音数据集和多种广泛使用的语音基础模型进行了基准实验，并展示了Vox-Profile在多个下游应用中的潜力，包括增强现有的自动语音识别数据集、评估语音生成系统性能，以及验证自动化描述的质量。Vox-Profile已开源供公众访问。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.14648" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 20 May 2025 13:36:41 GMT</pubDate>
 <pubDate>Tue, 20 May 2025 13:36:41 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +67,8 @@
 <link>https://arxiv.org/abs/2505.14633</link>
 <guid>https://arxiv.org/abs/2505.14633</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究发现AI模型的潜在风险与其内在价值观相关。</p><br><br><p><strong>摘要：</strong> 随着AI模型能力增强，传统的风险检测方法面临挑战。本文受到人类行为受价值观驱动的启发，提出通过分析AI模型的价值观来预测其潜在风险。为此，我们开发了LitmusValues评估管道，用于揭示AI模型对多种价值类别的优先级。同时，我们收集了AIRiskDilemmas数据集，其中包含与AI安全相关的困境场景。实验表明，LitmusValues中的价值观不仅能预测已知的危险行为，还能预测未见过的风险行为。这一研究为AI风险管理提供了新的视角和工具。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.14633 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究发现AI模型的潜在风险与其内在价值观相关。</p><br /><br /><p><strong>摘要：</strong> 随着AI模型能力增强，传统的风险检测方法面临挑战。本文受到人类行为受价值观驱动的启发，提出通过分析AI模型的价值观来预测其潜在风险。为此，我们开发了LitmusValues评估管道，用于揭示AI模型对多种价值类别的优先级。同时，我们收集了AIRiskDilemmas数据集，其中包含与AI安全相关的困境场景。实验表明，LitmusValues中的价值观不仅能预测已知的危险行为，还能预测未见过的风险行为。这一研究为AI风险管理提供了新的视角和工具。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.14633" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 20 May 2025 13:24:09 GMT</pubDate>
 <pubDate>Tue, 20 May 2025 13:24:09 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +76,8 @@
 <link>https://arxiv.org/abs/2505.14629</link>
 <guid>https://arxiv.org/abs/2505.14629</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出结合知识图谱与大语言模型的KERL系统，实现个性化食品推荐及营养分析。</p><br><br><p><strong>摘要：</strong> 近期大型语言模型(LLMs)的进步及其对食品数据的应用催生了多项研究，试图通过LLMs提升食品理解能力。尽管已有推荐系统利用LLMs和知识图谱(KGs)，但将食品相关KGs与LLMs整合的研究尚显不足。本文介绍了一种名为KERL的新系统，该系统结合食品KGs与LLMs，提供个性化食品推荐并生成带有微营养信息的食谱。KERL首先从自然语言问题中提取实体，从KG中检索子图，然后将其作为上下文输入LLM以筛选满足条件的食谱。接着，系统生成每道菜的烹饪步骤和营养信息。为了评估此方法，我们开发了一个包含食谱相关问题、约束条件和个人偏好的基准数据集。实验表明，我们的KG增强型LLM显著优于现有方法，提供了食品推荐、食谱生成和营养分析的一体化解决方案。代码和基准数据集已公开发布。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.14629 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出结合知识图谱与大语言模型的KERL系统，实现个性化食品推荐及营养分析。</p><br /><br /><p><strong>摘要：</strong> 近期大型语言模型(LLMs)的进步及其对食品数据的应用催生了多项研究，试图通过LLMs提升食品理解能力。尽管已有推荐系统利用LLMs和知识图谱(KGs)，但将食品相关KGs与LLMs整合的研究尚显不足。本文介绍了一种名为KERL的新系统，该系统结合食品KGs与LLMs，提供个性化食品推荐并生成带有微营养信息的食谱。KERL首先从自然语言问题中提取实体，从KG中检索子图，然后将其作为上下文输入LLM以筛选满足条件的食谱。接着，系统生成每道菜的烹饪步骤和营养信息。为了评估此方法，我们开发了一个包含食谱相关问题、约束条件和个人偏好的基准数据集。实验表明，我们的KG增强型LLM显著优于现有方法，提供了食品推荐、食谱生成和营养分析的一体化解决方案。代码和基准数据集已公开发布。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.14629" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 20 May 2025 13:19:57 GMT</pubDate>
 <pubDate>Tue, 20 May 2025 13:19:57 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +85,8 @@
 <link>https://arxiv.org/abs/2505.14556</link>
 <guid>https://arxiv.org/abs/2505.14556</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种单阶段扩散模型Dynadiff用于从动态fMRI信号重建图像。</p><br><br><p><strong>摘要：</strong> 近年来，生成式人工智能模型的进步和超大超高磁场功能磁共振成像(fMRI)数据的可用性推动了脑到图像解码的发展。然而，现有方法依赖复杂的多阶段管道和预处理步骤，通常会压缩大脑记录的时间维度，限制了解码器的时间分辨率。本文介绍了一种名为Dynadiff的新单阶段扩散模型，旨在从动态演化的fMRI记录中重建图像。该模型具有三大贡献：简化训练过程、在时间分辨fMRI信号上的卓越表现以及对大脑活动中图像表示演化进行精确表征的能力。总体而言，这项工作为时间分辨的脑到图像解码奠定了基础。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.14556 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种单阶段扩散模型Dynadiff用于从动态fMRI信号重建图像。</p><br /><br /><p><strong>摘要：</strong> 近年来，生成式人工智能模型的进步和超大超高磁场功能磁共振成像(fMRI)数据的可用性推动了脑到图像解码的发展。然而，现有方法依赖复杂的多阶段管道和预处理步骤，通常会压缩大脑记录的时间维度，限制了解码器的时间分辨率。本文介绍了一种名为Dynadiff的新单阶段扩散模型，旨在从动态演化的fMRI记录中重建图像。该模型具有三大贡献：简化训练过程、在时间分辨fMRI信号上的卓越表现以及对大脑活动中图像表示演化进行精确表征的能力。总体而言，这项工作为时间分辨的脑到图像解码奠定了基础。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.14556" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 20 May 2025 12:14:37 GMT</pubDate>
 <pubDate>Tue, 20 May 2025 12:14:37 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +94,8 @@
 <link>https://arxiv.org/abs/2505.14366</link>
 <guid>https://arxiv.org/abs/2505.14366</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出用于机器人视觉视角理解的视觉语言模型训练框架。</p><br><br><p><strong>摘要：</strong> 本文介绍了一个概念框架，用于训练视觉语言模型（VLMs）实现视觉视角理解（VPT），这是人机交互（HRI）中主体认知的核心能力。作为迈向该目标的第一步，我们引入了一个在NVIDIA Omniverse中生成的合成数据集，支持空间推理任务的有监督学习。数据集中的每一项包括RGB图像、自然语言描述及表示物体姿态的4X4变换矩阵。我们重点关注推断Z轴距离这一基础技能，并计划未来扩展至完整的6自由度推理。此数据集已公开，以支持进一步研究，标志着向具备交互场景中空间理解能力的具身AI系统迈进的重要一步。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.14366 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出用于机器人视觉视角理解的视觉语言模型训练框架。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一个概念框架，用于训练视觉语言模型（VLMs）实现视觉视角理解（VPT），这是人机交互（HRI）中主体认知的核心能力。作为迈向该目标的第一步，我们引入了一个在NVIDIA Omniverse中生成的合成数据集，支持空间推理任务的有监督学习。数据集中的每一项包括RGB图像、自然语言描述及表示物体姿态的4X4变换矩阵。我们重点关注推断Z轴距离这一基础技能，并计划未来扩展至完整的6自由度推理。此数据集已公开，以支持进一步研究，标志着向具备交互场景中空间理解能力的具身AI系统迈进的重要一步。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.14366" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 20 May 2025 09:49:09 GMT</pubDate>
 <pubDate>Tue, 20 May 2025 09:49:09 GMT</pubDate>
 </item>
 <item>
@@ -69,11 +103,8 @@
 <link>https://arxiv.org/abs/2505.13778</link>
 <guid>https://arxiv.org/abs/2505.13778</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种新框架CoIn，用于审计闭源大语言模型中的令牌计数和推理内容真实性。</p><br><br><p><strong>摘要：</strong> 随着后训练技术的发展，大型语言模型通过强化学习被赋予多步结构化推理能力，这些模型在复杂任务上表现优于标准模型，并成为许多商业API的基础。然而，为了保护专有行为并减少冗长性，服务提供商通常隐藏推理痕迹仅返回最终答案，导致计费透明度缺失。这种不透明性可能引发令牌计数膨胀问题，即服务商可能虚报令牌使用量或注入合成令牌来增加费用。本文提出CoIn，这是一种验证框架，通过构建可验证哈希树检查令牌数量，并利用基于嵌入的相关性匹配检测伪造的推理内容。实验表明，当作为可信第三方审计员部署时，CoIn能够有效检测令牌计数膨胀，成功率高达94.7%，恢复了闭源大语言模型服务的计费透明性。相关代码和数据集已公开。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.13778 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种新框架CoIn，用于审计闭源大语言模型中的令牌计数和推理内容真实性。</p><br /><br /><p><strong>摘要：</strong> 随着后训练技术的发展，大型语言模型通过强化学习被赋予多步结构化推理能力，这些模型在复杂任务上表现优于标准模型，并成为许多商业API的基础。然而，为了保护专有行为并减少冗长性，服务提供商通常隐藏推理痕迹仅返回最终答案，导致计费透明度缺失。这种不透明性可能引发令牌计数膨胀问题，即服务商可能虚报令牌使用量或注入合成令牌来增加费用。本文提出CoIn，这是一种验证框架，通过构建可验证哈希树检查令牌数量，并利用基于嵌入的相关性匹配检测伪造的推理内容。实验表明，当作为可信第三方审计员部署时，CoIn能够有效检测令牌计数膨胀，成功率高达94.7%，恢复了闭源大语言模型服务的计费透明性。相关代码和数据集已公开。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.13778" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 19 May 2025 19:39:23 GMT</pubDate>
 <pubDate>Mon, 19 May 2025 19:39:23 GMT</pubDate>
 </item>
 <item>
@@ -81,11 +112,8 @@
 <link>https://arxiv.org/abs/2505.12154</link>
 <guid>https://arxiv.org/abs/2505.12154</guid>
 <content:encoded><![CDATA[
-
-  Recent years have seen a significant increase in video content creation and consumption. Crafting engaging content requires the careful curation of both visual and audio elements. While visual cue curation, through techniques like optimal viewpoint selection or post-editing, has been central to media production, its natural counterpart, audio, has not undergone equivalent advancements. This often results in a disconnect between visual and acoustic saliency. To bridge this gap, we introduce a novel task: visually-guided acoustic highlighting, which aims to transform audio to deliver appropriate highlighting effects guided by the accompanying video, ultimately creating a more harmonious audio-visual experience. We propose a flexible, transformer-based multimodal framework to solve this task. To train our model, we also introduce a new dataset -- the muddy mix dataset, leveraging the meticulous audio and video crafting found in movies, which provides a form of free supervision. We develop a pseudo-data generation process to simulate poorly mixed audio, mimicking real-world scenarios through a three-step process -- separation, adjustment, and remixing. Our approach consistently outperforms several baselines in both quantitative and subjective evaluation. We also systematically study the impact of different types of contextual guidance and difficulty levels of the dataset. Our project page is here: https://wikichao.github.io/VisAH/.
-
+Recent years have seen a significant increase in video content creation and consumption. Crafting engaging content requires the careful curation of both visual and audio elements. While visual cue curation, through techniques like optimal viewpoint selection or post-editing, has been central to media production, its natural counterpart, audio, has not undergone equivalent advancements. This often results in a disconnect between visual and acoustic saliency. To bridge this gap, we introduce a novel task: visually-guided acoustic highlighting, which aims to transform audio to deliver appropriate highlighting effects guided by the accompanying video, ultimately creating a more harmonious audio-visual experience. We propose a flexible, transformer-based multimodal framework to solve this task. To train our model, we also introduce a new dataset -- the muddy mix dataset, leveraging the meticulous audio and video crafting found in movies, which provides a form of free supervision. We develop a pseudo-data generation process to simulate poorly mixed audio, mimicking real-world scenarios through a three-step process -- separation, adjustment, and remixing. Our approach consistently outperforms several baselines in both quantitative and subjective evaluation. We also systematically study the impact of different types of contextual guidance and difficulty levels of the dataset. Our project page is here: https://wikichao.github.io/VisAH/.
 ]]></content:encoded>
-<pubDate>Sat, 17 May 2025 18:03:57 GMT</pubDate>
 <pubDate>Sat, 17 May 2025 18:03:57 GMT</pubDate>
 </item>
 <item>
@@ -93,11 +121,8 @@
 <link>https://arxiv.org/abs/2505.11730</link>
 <guid>https://arxiv.org/abs/2505.11730</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出新算法VG-Search优化验证频率，提高推理效率。</p><br><br><p><strong>摘要：</strong> 测试时扩展(TTS)通过验证提升大语言模型(LLMs)推理性能，但传统验证方式影响计算效率。本文引入变量粒度搜索(VG-Search)，通过调整粒度参数g统一束搜索和最佳N采样，实验显示动态选择g能显著改善计算效率和扩展行为。基于此，提出自适应VG-Search策略，在特定任务上提升精度同时减少FLOPs超过52%，并计划开源代码支持后续研究。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.11730 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出新算法VG-Search优化验证频率，提高推理效率。</p><br /><br /><p><strong>摘要：</strong> 测试时扩展(TTS)通过验证提升大语言模型(LLMs)推理性能，但传统验证方式影响计算效率。本文引入变量粒度搜索(VG-Search)，通过调整粒度参数g统一束搜索和最佳N采样，实验显示动态选择g能显著改善计算效率和扩展行为。基于此，提出自适应VG-Search策略，在特定任务上提升精度同时减少FLOPs超过52%，并计划开源代码支持后续研究。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.11730" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 16 May 2025 18:24:48 GMT</pubDate>
 <pubDate>Fri, 16 May 2025 18:24:48 GMT</pubDate>
 </item>
 <item>
@@ -105,11 +130,8 @@
 <link>https://arxiv.org/abs/2505.11563</link>
 <guid>https://arxiv.org/abs/2505.11563</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>对象中心表征在复杂视觉条件下的泛化能力优于密集和全局特征。</p><br><br><p><strong>摘要：</strong> 本文探讨了对象中心表征（OCR）作为一种结构化替代方案在机器人操作策略中的应用，它通过将视觉输入分割成一组实体，引入了更符合操作任务的归纳偏置。我们评估了一系列视觉编码器——对象中心、全局和密集方法，在一系列模拟和真实世界操作任务中的表现，并在光照变化、纹理差异及干扰物存在等多样化视觉条件下测试其泛化能力。结果显示，即使没有针对特定任务的预训练，基于OCR的策略在泛化场景中也优于密集和全局表示法。这些发现表明，OCR是设计能够在动态真实环境中有效泛化的视觉系统的一个有前景的方向。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.11563 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">对象中心表征在复杂视觉条件下的泛化能力优于密集和全局特征。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了对象中心表征（OCR）作为一种结构化替代方案在机器人操作策略中的应用，它通过将视觉输入分割成一组实体，引入了更符合操作任务的归纳偏置。我们评估了一系列视觉编码器——对象中心、全局和密集方法，在一系列模拟和真实世界操作任务中的表现，并在光照变化、纹理差异及干扰物存在等多样化视觉条件下测试其泛化能力。结果显示，即使没有针对特定任务的预训练，基于OCR的策略在泛化场景中也优于密集和全局表示法。这些发现表明，OCR是设计能够在动态真实环境中有效泛化的视觉系统的一个有前景的方向。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.11563" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 16 May 2025 03:06:37 GMT</pubDate>
 <pubDate>Fri, 16 May 2025 03:06:37 GMT</pubDate>
 </item>
 <item>
@@ -117,14 +139,10 @@
 <link>https://arxiv.org/abs/2505.06914</link>
 <guid>https://arxiv.org/abs/2505.06914</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究提出新方法利用困难干扰片段提高检索增强生成模型准确性。</p><br><br><p><strong>摘要：</strong> 本文聚焦于检索增强生成（RAG）系统中的一个核心问题——不相关文档对语言模型答案生成的干扰效应。我们量化了这种干扰效应，并证明其在不同语言模型中的稳健性。研究引入了识别和应用困难干扰片段的新方法，通过微调这些片段，RAG系统的回答准确性提升了高达7.5%，优于传统数据集微调的对照组。我们的贡献分为两方面：一是超越了无关文档简单二分类的方法，二是开发并分析了多种寻找困难干扰片段的技术。据我们所知，这是首个提供全面框架以识别和利用困难干扰片段的研究。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.06914 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究提出新方法利用困难干扰片段提高检索增强生成模型准确性。</p><br /><br /><p><strong>摘要：</strong> 本文聚焦于检索增强生成（RAG）系统中的一个核心问题——不相关文档对语言模型答案生成的干扰效应。我们量化了这种干扰效应，并证明其在不同语言模型中的稳健性。研究引入了识别和应用困难干扰片段的新方法，通过微调这些片段，RAG系统的回答准确性提升了高达7.5%，优于传统数据集微调的对照组。我们的贡献分为两方面：一是超越了无关文档简单二分类的方法，二是开发并分析了多种寻找困难干扰片段的技术。据我们所知，这是首个提供全面框架以识别和利用困难干扰片段的研究。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.06914" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Sun, 11 May 2025 05:25:05 GMT</pubDate>
-<pubDate>Sun, 11 May 2025 05:25:05 GMT</pubDate>
 </item>
-
 <item>
 <title>通过强化认知专家提升大规模推理模型的推理效率</title>
 <link>https://arxiv.org/abs/2505.14681</link>
@@ -9034,96 +9052,6 @@ Traditional white-box methods for creating adversarial perturbations against LLM
 <div><p style="color: gray;">本文提出了一种新颖的Edit Transfer方法，通过少量示例实现非刚性图像编辑。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种新颖的编辑转移（Edit Transfer）设置，模型能够从单一的源-目标示例中学习变换，并将其应用于新的查询图像。虽然基于文本的方法在语义操作上表现优异，但在精准的几何细节上（如姿态和视角变化）常常显得力不从心。与此不同，基于参考的编辑通常侧重于风格或外观，无法有效处理非刚性变换。Edit Transfer通过显式学习源-目标对的编辑变换克服了文本驱动和外观中心参考的限制。我们提出了一种视觉关系上下文学习的范式，基于DiT的文本到图像模型，构建了编辑示例与查询图像的统一四面复合体，并通过轻量级的LoRA微调捕捉复杂的空间变换。尽管只使用42个训练样本，Edit Transfer在多样的非刚性场景中显著超越了现有的TIE和RIE方法，展示了少样本视觉关系学习的有效性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.13327" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Mon, 17 Mar 2025 12:04:44 GMT</pubDate>
-</item>
-<item>
-<title>通过奖励增强的生成方法提升文本到图像生成控制能力</title>
-<link>https://arxiv.org/abs/2503.13070</link>
-<guid>https://arxiv.org/abs/2503.13070</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出R0方法，通过奖励优化提升文本到图像生成效果。</p><br /><br /><p><strong>摘要：</strong> 生成与复杂文本提示和人类偏好对齐的图像是人工智能生成内容(AIGC)中的核心挑战。研究表明，当条件更具体、奖励信号更强时，奖励在生成中的主导力量将逐渐超越扩散损失。为了验证这一假设，本文提出了R0，一种通过规范化奖励最大化的全新条件生成方法。R0将图像生成视为数据空间中的优化问题，旨在寻找具有高组合奖励的有效图像，而非依赖复杂的扩散耗损。通过创新的生成器参数化设计和适当的正则化技术，我们在大规模上训练了最先进的少步骤文本到图像生成模型。研究结果挑战了传统的拓展后训练和条件生成观念，展示了在复杂条件情境下奖励的主导作用。希望这些发现能为人本及以奖励为中心的生成范式的进一步研究提供借鉴。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.13070" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 17 Mar 2025 07:21:43 GMT</pubDate>
-</item>
-<item>
-<title>Step-wise Group Relative Policy Optimization提升多语言大型模型的推理能力</title>
-<link>https://arxiv.org/abs/2503.12937</link>
-<guid>https://arxiv.org/abs/2503.12937</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">研究通过新的在线强化学习框架提升多语言大型模型的推理能力。</p><br /><br /><p><strong>摘要：</strong> 本文旨在通过设计一种新的在线强化学习框架——逐步群体相对策略优化（StepGRPO），提升多语言大型模型（MLLMs）的推理能力。传统的方法往往让模型被动地模仿成功的推理路径，而StepGRPO则鼓励模型通过简单、有效且密集的逐步奖励机制自我改进。为此，本文引入了两种新颖的基于规则的推理奖励：逐步推理准确性奖励（StepRAR）和逐步推理有效性奖励（StepRVR）。StepRAR通过软密钥步骤匹配技术奖励包含必要中间推理步骤的推理路径，而StepRVR则通过推理完整性和逻辑评估策略奖励遵循合理结构和逻辑一致性的推理路径。通过StepGRPO，本文开发了一系列具有优异逐步推理能力的MLLMs（R1-VL），并在八个基准测试上进行了广泛实验，结果显示该方法的优越性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.12937" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 17 Mar 2025 04:51:44 GMT</pubDate>
-</item>
-<item>
-<title>DreamRenderer：增强图像生成的实例控制</title>
-<link>https://arxiv.org/abs/2503.12885</link>
-<guid>https://arxiv.org/abs/2503.12885</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">DreamRenderer通过创新的方法提升了图像合成中的实例控制能力。</p><br /><br /><p><strong>摘要：</strong> DreamRenderer是一种基于FLUX模型的无训练方法，旨在提升图像合成中用户对多个实例内容的控制能力。本文介绍了两个关键创新：一是桥接图像令牌用于硬文本属性绑定，确保T5文本嵌入在联合注意力过程中正确绑定每个实例的视觉属性；二是仅在关键层应用硬图像属性绑定，通过识别FLUX中负责实例属性渲染的关键层，确保精确控制的同时保持图像质量。评估结果表明，DreamRenderer在COCO-POS和COCO-MIG基准测试中相比FLUX提升了17.7%的图像成功率，并且提高了GLIGEN和3DIS等布局到图像模型的性能，最高提升可达26.8%。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.12885" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 17 Mar 2025 03:30:16 GMT</pubDate>
-</item>
-<item>
-<title>基于扩散变换器的个性化图像生成新方法</title>
-<link>https://arxiv.org/abs/2503.12590</link>
-<guid>https://arxiv.org/abs/2503.12590</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出了一种基于扩散变换器的训练-free个性化图像生成方法。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种新的个性化图像生成方法，利用扩散变换器(DiTs)的潜力，实现用户指定概念的图像生成和灵活编辑。尽管最近的无训练方法在计算效率上优于基于训练的方法，但在身份保留和适用性方面仍存在挑战。我们提出的‘Personalize Anything’框架，通过时间步自适应的令牌替换和补丁扰动策略，实现了个性化图像生成，支持布局引导生成、多主体个性化和掩码控制编辑。评估结果表明，该方法在身份保留和多样性方面表现出色，提供了高效的个性化解决方案，推动了对扩散变换器的新理解。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.12590" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Sun, 16 Mar 2025 13:51:16 GMT</pubDate>
-</item>
-<item>
-<title>Being-0: 一种高效的人形机器人自主代理框架</title>
-<link>https://arxiv.org/abs/2503.12533</link>
-<guid>https://arxiv.org/abs/2503.12533</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">Being-0框架将高层次认知与低层次技能结合，实现高效的人形机器人任务执行。</p><br /><br /><p><strong>摘要：</strong> Being-0是一个层次化的自主代理框架，旨在将高层次认知与低层次技能有效整合，以实现人形机器人在真实环境中的自主操作。该框架结合了基础模型（FM）和模块化技能库，FM负责理解指令、任务规划和推理，而技能库则提供稳定的运动和灵巧的操作。为了解决不同层次之间的协调问题，Being-0引入了一个名为Connector的模块，该模块利用轻量级的视觉-语言模型（VLM）将语言计划转换为可执行的技能指令，并动态协调行走和操作，从而提高任务成功率。通过在大规模室内环境中的广泛实验，Being-0展示了其在复杂长周期任务中的有效性，能够克服具有挑战性的导航和操控子任务。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.12533" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Sun, 16 Mar 2025 10:53:53 GMT</pubDate>
-</item>
-<item>
-<title>视觉语言模型中的基本水平分类研究</title>
-<link>https://arxiv.org/abs/2503.12530</link>
-<guid>https://arxiv.org/abs/2503.12530</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">研究视觉语言模型如何体现人类的基本水平分类行为。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了心理学中基本水平分类的概念，并研究了两个开放源代码的视觉语言模型（VLMs）在此分类中的表现。研究发现，Llama 3.2 Vision Instruct（11B）和Molmo 7B-D模型均偏好与人类行为一致的基本水平分类。此外，模型偏好表现出与生物-非生物基本水平效应及专家基本水平转变等人类复杂行为一致的特点，进一步表明这些视觉语言模型在训练过程中获取了来自人类数据的认知分类行为。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.12530" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Sun, 16 Mar 2025 10:50:54 GMT</pubDate>
-</item>
-<item>
-<title>量化大语言模型不确定性以增强用户信任</title>
-<link>https://arxiv.org/abs/2503.12528</link>
-<guid>https://arxiv.org/abs/2503.12528</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">探讨多种不确定性度量对人类行为的相关性，以提高模型控制和用户信任。</p><br /><br /><p><strong>摘要：</strong> 文章研究了多种不确定性度量，以识别与人类群体不确定性相对应的度量方法。研究发现，贝叶斯度量和一种名为top-k熵的熵变体在模型大小变化下，能够更好地与人类行为一致。尽管一些强度量在模型规模增大时与人类表现的相似性下降，但通过多元线性回归分析，结合多种不确定性度量的方法在减小规模依赖性的同时，仍能实现与人类行为的良好对齐。这项研究为增强模型的可控性和用户对模型的信任提供了理论支持。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.12528" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Sun, 16 Mar 2025 10:45:43 GMT</pubDate>
-</item>
-<item>
-<title>强化奖励模型的鲁棒性研究</title>
-<link>https://arxiv.org/abs/2503.11751</link>
-<guid>https://arxiv.org/abs/2503.11751</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本研究探讨奖励模型的鲁棒性及其过拟合现象。</p><br /><br /><p><strong>摘要：</strong> 本研究分析了现代自然语言处理中的奖励模型，特别是其鲁棒性与过拟合现象。尽管最新的奖励模型在标准基准上表现优异，作者指出这可能部分源于过拟合，影响了对模型真实能力的理解。为此，团队构建了reWordBench，系统性地对奖励模型输入进行意义或排名保持的变换，结果显示即使是微小的输入变换也能导致模型性能显著下降，展现出脆弱性。为改善这一问题，作者提出通过显式训练模型为同义句赋予相似分数的方法，结果表明该方法不仅提高了模型对同义句的鲁棒性，还增强了对其他不同类型变换的适应能力。最终，经过增强训练的奖励模型在对齐任务中展示出更好的实用性，与标准训练模型相比，在59%的情况下能生成更高质量的输出。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.11751" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 14 Mar 2025 13:59:41 GMT</pubDate>
-</item>
-<item>
-<title>视频时空推理基准V-STaR的提出及视频大语言模型评估</title>
-<link>https://arxiv.org/abs/2503.11495</link>
-<guid>https://arxiv.org/abs/2503.11495</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出V-STaR基准以评估视频模型的时空推理能力。</p><br /><br /><p><strong>摘要：</strong> 本文探讨视频大语言模型（Video-LLMs）是否能在视频中进行顺序时空推理，现有的基准主要评估对象的存在而忽视了关系推理，无法有效测量模型对对象互动的理解。为此，本文引入了视频时空推理基准（V-STaR），通过反向时空推理任务（RSTR），同时评估对象的存在、事件的发生时机和空间位置，并捕捉人类认知的思维链逻辑。为支持此评估，构建了一个数据集，通过半自动化的GPT-4管道生成粗细结合的思维链问题，嵌入明确的推理链。实验结果显示，当前的视频大语言模型在稳健和一致的时空推理能力方面存在显著差距。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.11495" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 14 Mar 2025 11:21:44 GMT</pubDate>
-</item>
-<item>
-<title>MTV-Inpaint：统一多任务视频修复框架</title>
-<link>https://arxiv.org/abs/2503.11412</link>
-<guid>https://arxiv.org/abs/2503.11412</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">MTV-Inpaint是一个统一的视频修复框架，兼具场景填充和物体插入能力。</p><br /><br /><p><strong>摘要：</strong> 视频修复涉及修改视频中的局部区域，确保时空一致性。现有方法主要侧重于场景填充，缺乏对新对象可控插入的能力。而最近的发展在文本引导视频(T2V)扩散模型方面为视频修复提供了新的思路。针对当前方法的局限，我们提出了MTV-Inpaint，一个统一的多任务视频修复框架，能够同时处理传统的场景填充和新对象插入任务。通过设计双分支空间注意机制，MTV-Inpaint在单一框架中实现了这两种任务的无缝整合。同时，MTV-Inpaint支持通过整合多个图像修复模型的图像到视频(I2V)修复模式，增强了多模态控制能力。此外，我们提出的两阶段管道结合了关键帧修复与中间帧传播，使得MTV-Inpaint能够有效处理长达数百帧的视频。大规模实验表明，MTV-Inpaint在场景填充和物体插入任务中均表现出色，展示了其在多模态修复、物体编辑、去除及处理长视频的广泛应用潜力。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.11412" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 14 Mar 2025 09:54:10 GMT</pubDate>
 </item>
 </channel>
 </rss>
