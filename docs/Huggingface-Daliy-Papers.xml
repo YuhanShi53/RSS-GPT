@@ -5,18 +5,75 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>评估参考型奖励系统的VerifyBench基准测试</title>
+<link>https://arxiv.org/abs/2505.15801</link>
+<guid>https://arxiv.org/abs/2505.15801</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究提出VerifyBench基准以评估参考型奖励系统性能。</p><br><br><p><strong>摘要：</strong> 大型推理模型如OpenAI和DeepSeek-R1在推理领域表现优异，其训练的关键在于强化学习中的可验证奖励机制。然而，现有的奖励基准未能评估基于参考的奖励系统，导致研究人员对强化学习中使用的校验器准确性缺乏深入了解。本文引入了两个新基准——VerifyBench和VerifyBench-Hard，通过精心收集和整理数据，并进行细致的人工标注构建，旨在评估此类奖励系统的性能。当前模型在这两个基准上仍有较大改进空间，尤其是较小规模的模型。此外，我们还对评估结果进行了全面分析，为理解和发展基于参考的奖励系统提供了见解。所提出的基准为指导校验器准确性及通过强化学习训练的推理模型的推理能力发展提供了有效工具。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.15801 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 21 May 2025 13:54:43 GMT</pubDate>
+<pubDate>Wed, 21 May 2025 13:54:43 GMT</pubDate>
+</item>
+<item>
+<title>基于多臂老虎机的自适应推测解码框架</title>
+<link>https://arxiv.org/abs/2505.15141</link>
+<guid>https://arxiv.org/abs/2505.15141</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种无需训练的在线学习框架，优化大语言模型推测解码性能。</p><br><br><p><strong>摘要：</strong> 本文提出了一种无需训练的在线学习框架BanditSpec，用于自适应调整大语言模型推测解码的超参数配置。该问题被形式化为一个多臂老虎机问题，设计并分析了UCBSpec和EXP3Spec两种算法，其停止时间遗憾在随机和对抗奖励设定下均得到上界估计。UCBSpec的遗憾性能接近最优。通过实验验证，该方法在多种输入提示场景下的吞吐量接近最佳固定配置。关键词：推测解码、多臂老虎机、大语言模型。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.15141 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 21 May 2025 01:56:31 GMT</pubDate>
+<pubDate>Wed, 21 May 2025 01:56:31 GMT</pubDate>
+</item>
+<item>
+<title>熵最小化提升大语言模型在复杂任务中的表现</title>
+<link>https://arxiv.org/abs/2505.15134</link>
+<guid>https://arxiv.org/abs/2505.15134</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>熵最小化无需标注数据即可显著提升大语言模型在数学、物理及编程任务上的性能。</p><br><br><p><strong>摘要：</strong> 本文探讨了熵最小化(Entropy Minimization, EM)作为一种训练目标对大规模语言模型(Large Language Models, LLMs)在解决复杂任务时的效果。我们提出了三种方法：(1) EM-FT，类似于指令微调但作用于未标记的数据；(2) EM-RL，采用负熵作为唯一奖励的强化学习；(3) EM-INF，在推理阶段通过调整logits减少熵，无需训练数据或参数更新。实验表明，在Qwen-7B上，EM-RL仅基于未标注数据便能达到或超过使用60K标注数据训练的强基线模型如GRPO和RLOO的表现；而EM-INF使Qwen-32B在SciCode基准测试中达到甚至超越了GPT-4o、Claude 3 Opus和Gemini 1.5 Pro的性能，同时效率提升了3倍。研究揭示了许多预训练的LLMs具备未被充分挖掘的推理能力，仅通过熵最小化即可有效激发这些潜力，无需标注数据或参数更新。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.15134 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 21 May 2025 01:39:11 GMT</pubDate>
+<pubDate>Wed, 21 May 2025 01:39:11 GMT</pubDate>
+</item>
+<item>
+<title>DiCo：基于标准卷积网络的高效扩散模型</title>
+<link>https://arxiv.org/abs/2505.11196</link>
+<guid>https://arxiv.org/abs/2505.11196</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出DiCo，一种基于卷积网络的高效扩散模型，性能超越传统Transformer模型。</p><br><br><p><strong>摘要：</strong> 本文重新审视了卷积操作作为构建高效表达扩散模型的替代模块的可能性。虽然直接用卷积替换自注意力通常会导致性能下降，我们发现这是因为卷积神经网络比Transformer具有更高的通道冗余度。为此，我们引入了一种紧凑的通道注意力机制，提高了特征多样性。由此产生了DiCo，一种完全由标准卷积模块组成的扩散模型家族，在ImageNet上的表现优于现有扩散模型，同时显著提升了效率。例如，DiCo-XL在256x256分辨率下的FID得分为2.05，比DiT-XL/2快2.7倍；在512x512分辨率下FID为2.53，快3.1倍。此外，我们的最大模型DiCo-H达到1B参数规模，在ImageNet 256x256上的FID为1.90，且无需额外监督。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.11196 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 16 May 2025 08:54:04 GMT</pubDate>
+<pubDate>Fri, 16 May 2025 08:54:04 GMT</pubDate>
+</item>
+<item>
+<title>BLEUBERI: BLEU is a surprisingly effective reward for instruction following</title>
+<link>https://arxiv.org/abs/2505.11080</link>
+<guid>https://arxiv.org/abs/2505.11080</guid>
+<content:encoded><![CDATA[
+
+  Reward models are central to aligning LLMs with human preferences, but they are costly to train, requiring large-scale human-labeled preference data and powerful pretrained LLM backbones. Meanwhile, the increasing availability of high-quality synthetic instruction-following datasets raises the question: can simpler, reference-based metrics serve as viable alternatives to reward models during RL-based alignment? In this paper, we show first that BLEU, a basic string-matching metric, surprisingly matches strong reward models in agreement with human preferences on general instruction-following datasets. Based on this insight, we develop BLEUBERI, a method that first identifies challenging instructions and then applies Group Relative Policy Optimization (GRPO) using BLEU directly as the reward function. We demonstrate that BLEUBERI-trained models are competitive with models trained via reward model-guided RL across four challenging instruction-following benchmarks and three different base language models. A human evaluation further supports that the quality of BLEUBERI model outputs is on par with those from reward model-aligned models. Moreover, BLEUBERI models generate outputs that are more factually grounded than competing methods. Overall, we show that given access to high-quality reference outputs (easily obtained via existing instruction-following datasets or synthetic data generation), string matching-based metrics are cheap yet effective proxies for reward models during alignment. We release our code and data at https://github.com/lilakk/BLEUBERI.
+
+]]></content:encoded>
+<pubDate>Fri, 16 May 2025 06:11:43 GMT</pubDate>
+<pubDate>Fri, 16 May 2025 06:11:43 GMT</pubDate>
+</item>
+
+<item>
 <title>Llama-SMoP：一种高效多模态大型语言模型用于视听语音识别</title>
 <link>https://arxiv.org/abs/2505.14336</link>
 <guid>https://arxiv.org/abs/2505.14336</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出Llama-SMoP模型，通过稀疏混合投影模块提升多模态语音识别性能。</p><br><br><p><strong>摘要：</strong> 本文针对视听语音识别(AVSR)领域中大型语言模型(LLMs)高计算成本的问题，提出了Llama-SMoP，这是一种利用稀疏混合投影(SMoP)模块的高效多模态LLM。该模型通过引入稀疏门控的混合专家(MoE)投影器，在不增加推理成本的前提下扩展模型容量。实验表明，采用模态特定路由和专家的DED R配置在ASR、VSR及AVSR任务上表现出色，消融研究进一步验证了其在专家激活、可扩展性和噪声鲁棒性方面的有效性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.14336 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出Llama-SMoP模型，通过稀疏混合投影模块提升多模态语音识别性能。</p><br /><br /><p><strong>摘要：</strong> 本文针对视听语音识别(AVSR)领域中大型语言模型(LLMs)高计算成本的问题，提出了Llama-SMoP，这是一种利用稀疏混合投影(SMoP)模块的高效多模态LLM。该模型通过引入稀疏门控的混合专家(MoE)投影器，在不增加推理成本的前提下扩展模型容量。实验表明，采用模态特定路由和专家的DED R配置在ASR、VSR及AVSR任务上表现出色，消融研究进一步验证了其在专家激活、可扩展性和噪声鲁棒性方面的有效性。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.14336" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 20 May 2025 09:20:55 GMT</pubDate>
-<pubDate>Tue, 20 May 2025 09:20:55 GMT</pubDate>
 </item>
-
 <item>
 <title>Mixture-of-Thought框架：多模态推理提升逻辑推理性能</title>
 <link>https://arxiv.org/abs/2505.15817</link>
@@ -9007,15 +9064,6 @@ We introduce MusicInfuser, an approach for generating high-quality dance videos 
 <div><p style="color: gray;">本文介绍EvalTree方法，通过弱点档案提升语言模型评估与训练。</p><br /><br /><p><strong>摘要：</strong> 理想的模型评估应能识别模型的缺陷并提供改进指导。为此，本文提出了生成语言模型弱点档案的概念，根据模型在基准测试中的表现，形成一套以自然语言表达的弱点集合。我们引入了一系列定量评估方法来比较不同的弱点分析方法，并提出了EvalTree方法，通过构建能力树，识别模型表现不佳的能力，从而生成弱点档案。在MATH和WildChat基准测试中，EvalTree在识别弱点的精准性和全面性上优于其他基线方法。此外，基于EvalTree识别的弱点进行的数据收集和训练，显著提升了语言模型的性能。我们还展示了EvalTree如何揭示Chatbot Arena中基于人投票的评估方式中的缺陷。为促进未来研究，我们还发布了代码及交互接口，供实践者探索由EvalTree构建的能力树。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.08893" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 11 Mar 2025 17:12:48 GMT</pubDate>
-</item>
-<item>
-<title>CoLMDriver: 基于大语言模型的协作驾驶系统</title>
-<link>https://arxiv.org/abs/2503.08683</link>
-<guid>https://arxiv.org/abs/2503.08683</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">CoLMDriver 提供了一种新型的基于语言模型的 V2V 协作驾驶解决方案。</p><br /><br /><p><strong>摘要：</strong> CoLMDriver 是首个全流程基于大语言模型的协作驾驶系统，旨在通过有效的语言基础协商和实时驾驶控制来改善车辆间安全性。该系统包含两个主要组件：基于演员-评论者范式的 LLM 协商模块，持续通过车辆间的反馈优化合作策略；以及意图导向的路径点生成器，将协商结果转化为可执行的路径点。此外，文章还引入了 InterDrive，一个包含10个复杂交互驾驶场景的 CARLA 基准测试，用于评估 V2V 的合作能力。实验结果表明，CoLMDriver 在多种高度互动的 V2V 驾驶场景中，成功率较现有方法提高了11%。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.08683" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 11 Mar 2025 13:58:42 GMT</pubDate>
 </item>
 </channel>
 </rss>
