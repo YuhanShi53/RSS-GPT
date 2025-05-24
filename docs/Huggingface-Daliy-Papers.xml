@@ -5,18 +5,27 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>利用生成模型的感知组织能力实现类别无关实例分割</title>
+<link>https://arxiv.org/abs/2505.15263</link>
+<guid>https://arxiv.org/abs/2505.15263</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>通过微调Stable Diffusion和MAE实现类别无关的实例分割，发现生成模型具备跨类别泛化能力。</p><br><br><p><strong>摘要：</strong> 本文探讨如何利用生成模型对物体边界的内在理解，将其应用于通用感知组织任务。研究者通过引入实例着色损失函数，在有限的室内家具和汽车类型上对Stable Diffusion和MAE进行微调，实现了类别无关的实例分割。令人惊讶的是，这些模型在未见过的对象类型和风格上表现出强大的零样本泛化能力，甚至超过了高度监督的SAM模型在细结构和模糊边界上的表现。相比之下，现有的提示可调分割架构或判别式预训练模型无法泛化。这表明生成模型学习到的分组机制可以跨类别和领域转移，即使没有互联网规模的预训练。相关代码、预训练模型和演示可在项目网站获取。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.15263 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 21 May 2025 04:42:05 GMT</pubDate>
+<pubDate>Wed, 21 May 2025 04:42:05 GMT</pubDate>
+</item>
+
+<item>
 <title>RoPECraft：基于旋转位置嵌入的无训练视频动作迁移方法</title>
 <link>https://arxiv.org/abs/2505.13344</link>
 <guid>https://arxiv.org/abs/2505.13344</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种仅通过修改旋转位置嵌入实现扩散变压器视频动作迁移的方法。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为RoPECraft的训练自由视频运动转移方法，该方法专门针对扩散变压器设计，通过仅修改其旋转位置嵌入（RoPE）来实现动作迁移。首先，从参考视频中提取密集光流，并利用运动偏移量扭曲复杂指数张量的RoPE，从而将运动编码到生成过程中。在去噪时间步中，通过目标速度和预测速度之间的轨迹对齐进一步优化这些嵌入，采用流匹配目标函数。为了保持输出忠实于文本提示并防止重复生成，还引入了一个基于参考视频傅里叶变换相位分量的正则化项，将相位角度投影到一个平滑流形上以抑制高频伪影。实验表明，RoPECraft在基准测试中超越了所有近期发布的同类方法，无论是定性还是定量评估均表现优异。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.13344 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种仅通过修改旋转位置嵌入实现扩散变压器视频动作迁移的方法。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种名为RoPECraft的训练自由视频运动转移方法，该方法专门针对扩散变压器设计，通过仅修改其旋转位置嵌入（RoPE）来实现动作迁移。首先，从参考视频中提取密集光流，并利用运动偏移量扭曲复杂指数张量的RoPE，从而将运动编码到生成过程中。在去噪时间步中，通过目标速度和预测速度之间的轨迹对齐进一步优化这些嵌入，采用流匹配目标函数。为了保持输出忠实于文本提示并防止重复生成，还引入了一个基于参考视频傅里叶变换相位分量的正则化项，将相位角度投影到一个平滑流形上以抑制高频伪影。实验表明，RoPECraft在基准测试中超越了所有近期发布的同类方法，无论是定性还是定量评估均表现优异。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.13344" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Mon, 19 May 2025 12:50:26 GMT</pubDate>
-<pubDate>Mon, 19 May 2025 12:50:26 GMT</pubDate>
 </item>
-
 <item>
 <title>通过高质量训练数据提升检索与重排序模型性能</title>
 <link>https://arxiv.org/abs/2505.16967</link>
@@ -9007,15 +9016,6 @@ Large Vision-Language Models (LVLMs) have shown promising performance in vision-
 <div><p style="color: gray;">提出MotionStreamer框架，解决流式动作生成中的信息损失和错误累积问题。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了文本条件流式动作生成中的挑战，特别是如何在变长历史动作和输入文本的基础上预测下一步人类姿态。现有方法在流式动作生成中存在不足，如扩散模型被限制在预定义的动作长度，而基于GPT的方法由于离散化的非因果标记化导致响应延迟和错误累积。为了解决这些问题，本文提出了MotionStreamer，一个将连续因果潜在空间引入概率自回归模型的新框架。连续潜在变量减轻了因离散化造成的信息损失，有效减少了长期自回归生成中的错误累积。此外，通过建立当前和历史动作潜在变量之间的时间因果依赖关系，我们的模型充分利用可用信息，实现准确的在线动作解码。实验结果表明，我们的方法在多个方面优于现有方法，包括多轮生成、长期生成和动态动作合成等应用。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.15451" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 19 Mar 2025 13:32:24 GMT</pubDate>
-</item>
-<item>
-<title>DiffMoE：提升扩散模型图像生成能力的新方法</title>
-<link>https://arxiv.org/abs/2503.14487</link>
-<guid>https://arxiv.org/abs/2503.14487</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">DiffMoE通过专家访问机制优化扩散模型的图像生成性能。</p><br /><br /><p><strong>摘要：</strong> DiffMoE是一种创新的方法，旨在改善扩散模型在不同条件和噪声水平下的图像生成性能。该方法引入了一种批级全局令牌池，使得专家能够在训练中访问全局令牌分布，从而促进专业化的专家行为。此外，DiffMoE还融入了一个动态容量预测器，根据噪声水平和样本复杂性动态分配计算资源。通过全面评估，DiffMoE在ImageNet基准上取得了业界领先的表现，相较于传统的稠密架构，即便激活参数数量相同，其性能显著提升。该方法的有效性不仅限于类条件生成，还扩展到更具挑战性的任务如文本生成图像，展现了其在不同扩散模型应用中的广泛适用性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.14487" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 18 Mar 2025 13:57:07 GMT</pubDate>
 </item>
 </channel>
 </rss>
