@@ -4,6 +4,186 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>V-Triune：统一强化学习提升视觉语言模型的推理与感知能力</title>
+<link>https://arxiv.org/abs/2505.18129</link>
+<guid>https://arxiv.org/abs/2505.18129</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出V-Triune系统，使视觉语言模型同时学习推理与感知任务。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为V-Triune的Visual Triple Unified Reinforcement Learning系统，它通过整合样本级数据格式化、验证器级奖励计算和源级指标监控三个互补组件，使得视觉语言模型(VLMs)能够在单一训练管道中联合学习视觉推理和感知任务。此外，还引入了动态IoU奖励，以提供自适应反馈。该方法基于开源7B和32B骨干模型，在多样化的数据集上进行训练，生成的Orsta模型在多种推理和感知任务上均表现出显著性能提升，特别是在MEGA-Bench Core测试中表现优异。这些成果证明了统一强化学习方法在视觉语言模型中的有效性和可扩展性。V-Triune系统及其相关模型已公开发布。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.18129 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 23 May 2025 13:41:14 GMT</pubDate>
+<pubDate>Fri, 23 May 2025 13:41:14 GMT</pubDate>
+</item>
+<item>
+<title>VeriThinker: Learning to Verify Makes Reasoning Model Efficient</title>
+<link>https://arxiv.org/abs/2505.17941</link>
+<guid>https://arxiv.org/abs/2505.17941</guid>
+<content:encoded><![CDATA[
+
+  Large Reasoning Models (LRMs) excel at complex tasks using Chain-of-Thought (CoT) reasoning. However, their tendency to overthinking leads to unnecessarily lengthy reasoning chains, dramatically increasing inference costs. To mitigate this issue, we introduce VeriThinker, a novel approach for CoT compression. Unlike conventional methods that fine-tune LRMs directly on the original reasoning task using synthetic concise CoT data, we innovatively fine-tune the model solely through an auxiliary verification task. By training LRMs to accurately verify the correctness of CoT solutions, the LRMs inherently become more discerning about the necessity of subsequent self-reflection steps, thereby effectively suppressing overthinking. Extensive experiments validate that VeriThinker substantially reduces reasoning chain lengths while maintaining or even slightly improving accuracy. When applied to DeepSeek-R1-Distill-Qwen-7B, our approach reduces reasoning tokens on MATH500 from 3790 to 2125 while improving accuracy by 0.8% (94.0% to 94.8%), and on AIME25, tokens decrease from 14321 to 10287 with a 2.1% accuracy gain (38.7% to 40.8%). Additionally, our experiments demonstrate that VeriThinker can also be zero-shot generalized to speculative reasoning. Code is available at https://github.com/czg1225/VeriThinker
+
+]]></content:encoded>
+<pubDate>Fri, 23 May 2025 10:17:56 GMT</pubDate>
+<pubDate>Fri, 23 May 2025 10:17:56 GMT</pubDate>
+</item>
+<item>
+<title>Trinity-RFT：一种灵活可扩展的大语言模型强化微调框架</title>
+<link>https://arxiv.org/abs/2505.17826</link>
+<guid>https://arxiv.org/abs/2505.17826</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Trinity-RFT是一种用于大语言模型强化微调的通用框架。</p><br><br><p><strong>摘要：</strong> Trinity-RFT是一种旨在实现大语言模型强化微调（RFT）的通用、灵活且可扩展的框架。该框架采用解耦设计，包含统一同步/异步、在线/离线等模式的RFT核心模块，高效稳健的智能体-环境交互集成，以及针对RFT优化的数据管道系统。其设计目标是适应多样化的应用场景，并作为探索先进强化学习范式的统一平台。本技术报告介绍了Trinity-RFT的愿景、功能、设计与实现细节，并通过大量示例展示了该框架的实用性和易用性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.17826 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 23 May 2025 08:41:09 GMT</pubDate>
+<pubDate>Fri, 23 May 2025 08:41:09 GMT</pubDate>
+</item>
+<item>
+<title>Agent Distillation：将大型语言模型推理能力迁移至小规模模型</title>
+<link>https://arxiv.org/abs/2505.17612</link>
+<guid>https://arxiv.org/abs/2505.17612</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出Agent Distillation框架，使小规模语言模型通过模仿大型模型完成任务实现高效推理。</p><br><br><p><strong>摘要：</strong> 本文针对大规模语言模型（LLMs）在实际部署中的计算成本问题，提出Agent Distillation框架，该框架不仅迁移推理能力，还转移大型模型基于检索和代码工具的任务解决行为至小规模语言模型（sLMs）。通过引入first-thought prefix提示方法提升教师模型生成轨迹的质量，并采用自一致性动作生成技术增强测试时小模型的鲁棒性。实验在事实性和数学推理任务上验证了方法的有效性，证明参数量仅为0.5B、1.5B、3B的小模型在性能上可媲美更大规模的模型，展示了构建实用工具型小模型的潜力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.17612 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 23 May 2025 04:20:15 GMT</pubDate>
+<pubDate>Fri, 23 May 2025 04:20:15 GMT</pubDate>
+</item>
+<item>
+<title>ANSE：通过主动噪声选择提升视频扩散模型质量</title>
+<link>https://arxiv.org/abs/2505.17561</link>
+<guid>https://arxiv.org/abs/2505.17561</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出ANSE框架，利用注意力机制量化不确定性，优化视频扩散模型的初始噪声选择。</p><br><br><p><strong>摘要：</strong> 本文研究了初始噪声对视频扩散模型生成质量和对齐速度的影响，发现相同提示下不同的噪声种子可能导致显著差异的结果。尽管现有方法依赖外部设计先验如频率滤波或帧间平滑，但忽略了内部模型信号。为此，我们提出了ANSE（Active Noise Selection for Generation），这是一种基于模型感知的框架，通过量化的基于注意力的不确定性选择高质量的噪声种子。ANSE的核心是BANSA（Bayesian Active Noise Selection via Attention），它通过多个随机注意力样本之间的熵分歧测量模型置信度和一致性。为了高效部署，我们还引入了BANSA的伯努利掩码近似版本，使得仅需单步扩散和部分注意力层即可进行评分估计。实验结果显示，在CogVideoX-2B和5B数据集上，ANSE提高了视频质量和时间一致性，分别仅增加了8%和13%的推理时间，提供了一种有原则且通用的视频扩散噪声选择方法。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.17561 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 23 May 2025 03:09:10 GMT</pubDate>
+<pubDate>Fri, 23 May 2025 03:09:10 GMT</pubDate>
+</item>
+<item>
+<title>基于课程学习的大语言模型幻觉检测方法</title>
+<link>https://arxiv.org/abs/2505.17558</link>
+<guid>https://arxiv.org/abs/2505.17558</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种利用精心设计的幻觉样本作为负例的课程学习策略，提升大语言模型的幻觉检测性能。</p><br><br><p><strong>摘要：</strong> 本文针对大型语言模型（LLMs）难以准确检测幻觉文本这一挑战，创新性地将高质量的幻觉样本作为负例引入到DPO对齐过程中。通过引入课程学习策略，逐步从概率分数降低最多的简单样本开始训练，再到复杂样本，确保了学习过程的稳定性和渐进性。实验表明，采用此方法训练的HaluCheck模型在MedHallu和HaluEval等困难基准测试中表现优异，各项指标提升最高可达24%，并且在零样本设置下展现出强大的鲁棒性，优于现有最先进的大型模型。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.17558 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 23 May 2025 03:05:09 GMT</pubDate>
+<pubDate>Fri, 23 May 2025 03:05:09 GMT</pubDate>
+</item>
+<item>
+<title>基于正则化策略梯度的在线强化学习方法研究</title>
+<link>https://arxiv.org/abs/2505.17508</link>
+<guid>https://arxiv.org/abs/2505.17508</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出RPG框架，优化大语言模型推理能力，提升训练稳定性与性能。</p><br><br><p><strong>摘要：</strong> 本文提出了正则化策略梯度（RPG）框架，用于系统性地推导和分析在线强化学习（RL）中的KL散度正则化策略梯度方法。我们针对前向和反向KL散度正则化的两种目标函数，分别推导出对应的策略梯度和代理损失函数，同时考虑归一化与非归一化策略分布。此外，还提供了完全可微的损失函数及REINFORCE风格的梯度估计器，满足多样化的算法需求。通过在大语言模型推理任务上的实验，RPG方法在训练稳定性和性能方面表现出优于GRPO、REINFORCE++和DAPO等基线算法的结果。该研究为KL正则化在在线RL中的应用提供了新视角，并推动了大语言模型推理能力的提升。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.17508 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 23 May 2025 02:01:21 GMT</pubDate>
+<pubDate>Fri, 23 May 2025 02:01:21 GMT</pubDate>
+</item>
+<item>
+<title>基于语义表征的语音指令数据生成方法</title>
+<link>https://arxiv.org/abs/2505.17417</link>
+<guid>https://arxiv.org/abs/2505.17417</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种无需文本到语音模型的语音指令数据生成方法。</p><br><br><p><strong>摘要：</strong> 随着大型语言模型驱动的语音助手快速发展，对训练这些系统所需的语音指令数据的需求日益增长。然而，尽管存在大量语音识别数据，高质量的语音指令数据却相对匮乏。传统生成高质量合成语音需要依赖优秀的文本到语音模型，但对于资源匮乏的语言来说，这一条件难以满足。本文提出了一种创新方法，在语义表示层停止合成过程，绕过对文本到语音模型的依赖。通过将合成的语义表示与预训练的Whisper编码器对齐，使大型语言模型能够在文本指令上进行微调的同时，在推理过程中仍能理解口语指令。此简化训练流程为低资源语言构建语音助手提供了有前景的解决方案。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.17417 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 22 May 2025 23:05:47 GMT</pubDate>
+<pubDate>Thu, 22 May 2025 23:05:47 GMT</pubDate>
+</item>
+<item>
+<title>大型语言模型中的推理刚性问题及其诊断研究</title>
+<link>https://arxiv.org/abs/2505.17225</link>
+<guid>https://arxiv.org/abs/2505.17225</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>大型语言模型常因推理惯性忽视用户指令，本文通过构建诊断集揭示其问题。</p><br><br><p><strong>摘要：</strong> 大型语言模型在复杂推理任务中表现出色，但普遍存在推理刚性问题，即倾向于依赖熟悉的推理模式，即使面对明确的用户指示也容易偏离正轨，导致错误结论。这一现象在数学和逻辑领域尤为突出。为了系统研究推理刚性，本文构建了一个由专家精心策划的诊断数据集，其中包括对AIME和MATH500等基准测试的修改版本，以及重新设计的经典谜题，旨在迫使模型偏离常规推理路径。通过分析，我们识别出三种主要的污染模式：解释过载、输入不信任和部分指令关注，这些模式导致模型忽略或扭曲提供的指示。本研究公开发布了诊断集，以促进未来缓解语言模型推理刚性的研究。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.17225 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 22 May 2025 15:00:01 GMT</pubDate>
+<pubDate>Thu, 22 May 2025 15:00:01 GMT</pubDate>
+</item>
+<item>
+<title>CANOE框架提升大语言模型生成任务的准确性</title>
+<link>https://arxiv.org/abs/2505.16483</link>
+<guid>https://arxiv.org/abs/2505.16483</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出无需人工标注的CANOE框架，显著提高大语言模型在多种任务中的准确性。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为CANOE的系统框架，旨在提升大型语言模型（LLMs）在短文本和长文本生成任务中的准确性，而无需依赖人工标注。通过合成多样化的问答数据，构建高质量且易于验证的训练集，并引入基于规则的强化学习方法Dual-GRPO，该框架优化了生成任务中的规则性奖励。实验表明，CANOE在11项下游任务中均表现出色，甚至超过了最先进的模型如GPT-4o和OpenAI o1。这项研究强调了在信息检索系统中构建可靠模型的重要性，同时提供了有效的解决方案。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.16483 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 22 May 2025 06:10:07 GMT</pubDate>
+<pubDate>Thu, 22 May 2025 06:10:07 GMT</pubDate>
+</item>
+<item>
+<title>Transformer Copilot：通过日志驱动优化的大语言模型增强框架</title>
+<link>https://arxiv.org/abs/2505.16270</link>
+<guid>https://arxiv.org/abs/2505.16270</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出Transformer Copilot框架，通过日志记录和日志驱动的日志纠正显著提升大语言模型性能。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为Transformer Copilot的新框架，该框架通过引入日志驱动的学习机制来改进大型语言模型的下游任务表现。Transformer Copilot由Pilot模型和Copilot模型组成，其中Pilot模型作为主模型，而Copilot模型则负责通过修正预测结果（logits）来提高Pilot的推理性能。通过构建Mistake Log来系统地跟踪和分析模型在微调过程中的错误模式，Transformer Copilot实现了对模型学习信号的深度利用。实验表明，在涉及常识推理、算术问题及推荐系统的12项基准测试中，Transformer Copilot可以将模型性能提升高达34.5%，同时保持较低的计算开销和良好的可扩展性与迁移能力。此外，我们还提供了理论和实证分析以支持该框架的有效性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.16270 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 22 May 2025 02:00:45 GMT</pubDate>
+<pubDate>Thu, 22 May 2025 02:00:45 GMT</pubDate>
+</item>
+<item>
+<title>AudioTrust：首个面向音频大语言模型的多维度可信性评估框架</title>
+<link>https://arxiv.org/abs/2505.16211</link>
+<guid>https://arxiv.org/abs/2505.16211</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出首个针对音频大语言模型的多维度可信性评估框架AudioTrust。</p><br><br><p><strong>摘要：</strong> 现有的大型语言模型评估框架主要集中在文本模态，而针对音频模态的系统性研究较少，尤其缺乏对音频特性及应用场景的独特考量。本文引入AudioTrust，这是首个专门设计用于评估音频大型语言模型（ALLMs）可信性的多维度框架和基准。AudioTrust涵盖公平性、幻觉生成、安全性、隐私保护、鲁棒性和认证六个关键维度，并通过18种实验设置进行综合评估。该框架基于超过4,420个来自真实场景（如日常对话、紧急呼叫、语音助手交互）的音频/文本样本构建，采用9个音频专用评估指标，并结合大规模自动化评分管道实现客观评估。实验结果显示当前最先进的开源和闭源ALLMs在高风险音频场景中的可信性边界与局限性，为未来音频模型的安全部署提供了重要参考。AudioTrust平台和基准现已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.16211 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 22 May 2025 00:27:46 GMT</pubDate>
+<pubDate>Thu, 22 May 2025 00:27:46 GMT</pubDate>
+</item>
+<item>
+<title>TAPO：通过融入外部知识提升强化学习推理能力</title>
+<link>https://arxiv.org/abs/2505.15692</link>
+<guid>https://arxiv.org/abs/2505.15692</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>引入外部知识的TAPO框架显著提升了推理模型的性能。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为TAPO的新框架，它通过整合外部高阶指导（即“思想模式”）增强强化学习的能力。与传统方法相比，TAPO在训练过程中平衡了内部探索与外部指导利用，从而显著提高了推理模型的表现，在AIME、AMC和Minerva Math等任务上的表现均优于现有方法。实验表明，这些抽象自少量先验样本的思想模式可以有效推广到多种任务和模型中，展示了TAPO在多领域应用中的潜力。此外，引入外部指导还增强了模型的解释性和输出可读性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.15692 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 21 May 2025 12:06:10 GMT</pubDate>
+<pubDate>Wed, 21 May 2025 12:06:10 GMT</pubDate>
+</item>
+<item>
+<title>基于真实表情包评估视觉语言模型的安全性</title>
+<link>https://arxiv.org/abs/2505.15389</link>
+<guid>https://arxiv.org/abs/2505.15389</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究发现当前视觉语言模型对普通用户分享的表情包更易产生有害输出。</p><br><br><p><strong>摘要：</strong> 本研究探讨了现有视觉语言模型(VLMs)在面对普通用户广泛传播的表情包时的安全性问题。通过构建MemeSafetyBench数据集，包含50,430组真实表情包及其对应指令，结合大语言模型生成指令，我们评估了多种VLMs在单轮与多轮交互中的安全性表现。研究显示，表情包相较于合成或纯文本输入显著增加了有害输出并降低了拒绝率，尽管多轮对话提供了一定缓解作用，但模型仍表现出较高脆弱性。研究强调了生态有效评估的重要性及加强安全机制的必要性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.15389 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 21 May 2025 07:26:40 GMT</pubDate>
+<pubDate>Wed, 21 May 2025 07:26:40 GMT</pubDate>
+</item>
+<item>
+<title>基于文本大模型的跨模态学习能力研究</title>
+<link>https://arxiv.org/abs/2505.17091</link>
+<guid>https://arxiv.org/abs/2505.17091</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>通过训练文本模型，模型自动发展出理解和处理图像及音频的能力。</p><br><br><p><strong>摘要：</strong> 本文探讨了一种有趣的现象：通过在文本标记上训练自回归语言模型（LLM），该模型在内部自发发展出理解图像和音频的能力，从而仅通过阅读就能具备视觉和听觉功能。传统方法通常通过微调文本LLM生成特定条件下的音频或视觉输出，而我们提出的架构直接将图像块、音频波形或标记作为输入，输出分类嵌入或标签。实验表明，这种基于文本权重的方法在FSD-50K、GTZAN数据集上的音频分类以及CIFAR-10、Fashion-MNIST数据集上的图像分类中表现良好，甚至可以处理图像补丁。这一发现推动了文本-LLM学习强大内部电路的概念，即激活必要的连接即可用于多种应用，而非每次都需要从头开始训练模型。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.17091 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 20 May 2025 18:20:16 GMT</pubDate>
+<pubDate>Tue, 20 May 2025 18:20:16 GMT</pubDate>
+</item>
 
 <item>
 <title>利用生成模型的感知组织能力实现类别无关实例分割</title>
