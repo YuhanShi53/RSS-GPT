@@ -5,18 +5,603 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>GLEAM-Bench与GLEAM：提升移动机器人在复杂未知环境中的主动映射能力</title>
+<link>https://arxiv.org/abs/2505.20294</link>
+<guid>https://arxiv.org/abs/2505.20294</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出GLEAM-Bench基准与GLEAM策略，显著提高移动机器人在多样化复杂环境中的主动映射性能。</p><br><br><p><strong>摘要：</strong> 当前移动机器人在复杂未知环境中的主动映射面临挑战，现有方法因训练数据不足和探索策略保守，难以适应多样化的场景布局和连接性。为解决这一问题，本文引入GLEAM-Bench，首个大规模通用主动映射基准，涵盖1152个来自合成与真实扫描数据集的多样化3D场景。基于此，我们提出了GLEAM，一种统一的通用探索策略。该策略通过语义表示、长期导航目标及随机化策略显著提升了泛化能力，在128个未见过的复杂场景中实现了66.50%的覆盖率，提高了映射精度并优化了轨迹效率。项目页面已发布以供参考。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.20294 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 13:59:52 GMT</pubDate>
+<pubDate>Mon, 26 May 2025 13:59:52 GMT</pubDate>
+</item>
+<item>
+<title>基于覆盖原则的大规模语言模型系统性组合泛化能力分析</title>
+<link>https://arxiv.org/abs/2505.20278</link>
+<guid>https://arxiv.org/abs/2505.20278</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究揭示大规模语言模型依赖模式匹配时难以实现系统性组合泛化。</p><br><br><p><strong>摘要：</strong> 本文提出覆盖原则这一数据驱动框架，表明主要依赖模式匹配的模型无法可靠地推广到超出片段替换的情形。通过实验发现，Transformer模型在处理两跳泛化任务时，所需训练数据随词汇集大小至少呈二次增长，且参数量扩大20倍并未提升效率。对于存在路径歧义的组合任务，Transformer学习到的上下文相关状态表示会削弱性能与互操作性。尽管思维链监督能提高多跳任务的训练效率，但对路径歧义仍显乏力。最后，我们提出了一个基于机制的分类方法，区分了神经网络实现泛化的三种方式。这一概念视角不仅解释了我们的研究结果，还指出了需要新架构创新的方向，以实现真正的系统性组合泛化能力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.20278 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 13:55:15 GMT</pubDate>
+<pubDate>Mon, 26 May 2025 13:55:15 GMT</pubDate>
+</item>
+<item>
+<title>面向未知攻击的终身安全对齐框架</title>
+<link>https://arxiv.org/abs/2505.20259</link>
+<guid>https://arxiv.org/abs/2505.20259</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种终身安全对齐框架，使大模型适应新型越狱攻击。</p><br><br><p><strong>摘要：</strong> 本文针对大型语言模型（LLMs）在部署过程中可能遭遇的未知越狱攻击问题，提出了一种名为终身安全对齐（Lifelong Safety Alignment）的框架。该框架通过设置Meta-Attacker（元攻击者）和Defender（防御者）的竞争机制，使模型能够持续适应新出现的越狱策略。首先利用GPT-4o API从大量研究论文中提取关键信息，作为Meta-Attacker的初始训练数据。实验显示，在单轮攻击下，第一代Meta-Attacker在RR任务上的成功率为73%，在LAT任务上的迁移成功率也达到57%。然而，经过对抗训练后，Defender显著提升了鲁棒性，最终将Meta-Attacker的成功率降至7%左右。这项工作为LLMs在开放环境中的安全部署提供了重要参考。代码已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.20259 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 13:40:40 GMT</pubDate>
+<pubDate>Mon, 26 May 2025 13:40:40 GMT</pubDate>
+</item>
+<item>
+<title>自适应推理模型（ARM）解决“过度思考”问题</title>
+<link>https://arxiv.org/abs/2505.20258</link>
+<guid>https://arxiv.org/abs/2505.20258</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种自适应推理模型ARM，通过调整推理格式减少令牌使用，提升效率。</p><br><br><p><strong>摘要：</strong> 本文针对大型推理模型在复杂任务中的“过度思考”问题，即过多不必要的推理，提出了自适应推理模型（ARM）。ARM能够根据任务需求自动选择适当的推理格式，包括高效但简单的Direct Answer、Short CoT和Code，以及更复杂的Long CoT格式。为了训练ARM，引入了Ada-GRPO算法，解决了传统GRPO中的格式崩溃问题，使ARM在减少令牌使用的同时保持性能，平均减少30%，最高可达70%。此外，ARM不仅提高了推理效率，还加快了训练速度达两倍。ARM提供了三种模式：默认的自适应模式、指令引导模式和共识引导模式，以满足不同的应用场景需求。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.20258 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 13:38:50 GMT</pubDate>
+<pubDate>Mon, 26 May 2025 13:38:50 GMT</pubDate>
+</item>
+<item>
+<title>Omni-R1：基于强化学习的多模态全局推理与细节理解模型</title>
+<link>https://arxiv.org/abs/2505.20256</link>
+<guid>https://arxiv.org/abs/2505.20256</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出Omni-R1模型解决多模态模型在时空覆盖和像素级理解间的矛盾。</p><br><br><p><strong>摘要：</strong> 本文针对长时间视频音频推理与精细像素理解对多模态模型提出的冲突需求，设计了双系统架构：全局推理系统通过低空间成本选择关键帧并重写任务，细节理解系统则对高分辨率片段进行像素级定位。由于最优关键帧选择和任务重写难以监督，我们将其转化为强化学习问题，提出了Omni-R1框架。该框架通过在线协作获取分层奖励来训练全局推理系统，仅需少量任务划分的强化学习一轮迭代。实验表明，Omni-R1不仅超越了强监督基线和专门领域的最新模型，还显著提升了跨域泛化能力和减少了多模态幻觉现象，展示了强化学习在大规模多模态推理中的首次成功应用。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.20256 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 13:34:06 GMT</pubDate>
+<pubDate>Mon, 26 May 2025 13:34:06 GMT</pubDate>
+</item>
+<item>
+<title>稀疏自编码器特征一致性对神经网络可解释性研究的重要性</title>
+<link>https://arxiv.org/abs/2505.20254</link>
+<guid>https://arxiv.org/abs/2505.20254</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>文章强调稀疏自编码器特征一致性对提升神经网络机制可解释性的关键作用。</p><br><br><p><strong>摘要：</strong> 本文探讨了稀疏自编码器（SAEs）在神经网络机制可解释性（MI）中的应用局限性，特别是特征不一致性问题。作者指出，机制可解释性研究需要优先考虑SAEs的特征一致性，即在独立训练运行中可靠收敛至等效特征集。为此，我们引入成对字典均相关系数（PW-MCC）作为衡量一致性的实用指标，并展示了通过适当架构选择可以实现高水平的一致性（如LLM激活中TopK SAEs达到0.80）。我们的贡献包括阐述一致性优先的益处，提供理论支持及合成验证，证明PW-MCC是恢复真实特征的有效代理；同时将这些发现扩展到实际LLM数据，表明高特征一致性与学习特征解释的语义相似度高度相关。最后，我们呼吁社区转向系统测量特征一致性，以推动机制可解释性领域的稳健累积进展。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.20254 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 13:31:36 GMT</pubDate>
+<pubDate>Mon, 26 May 2025 13:31:36 GMT</pubDate>
+</item>
+<item>
+<title>基于硬负样本对比学习的大规模多模态模型在几何推理中的应用</title>
+<link>https://arxiv.org/abs/2505.20152</link>
+<guid>https://arxiv.org/abs/2505.20152</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新型硬负样本对比学习框架提升视觉编码器的几何理解能力。</p><br><br><p><strong>摘要：</strong> 大规模多模态模型（LMMs）在视觉感知任务中表现优异，但对比学习的局限性限制了其在精细推理中的表现，特别是在几何问题求解场景中。本文提出了一种结合图像和文本的硬负样本对比学习框架，通过扰动图表生成代码创建生成型硬负样本、基于修改的几何描述生成规则型硬负样本以及基于标题相似性选择检索型硬负样本，训练得到的MMGeoLM模型在三个几何推理基准测试中显著优于其他开源模型，甚至与强大的闭源模型GPT-4o相媲美。此外，研究还探讨了不同负样本构建方法及负样本数量对几何推理性能的影响，得出丰富的结论。相关代码和数据集已公开。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.20152 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 11:55:28 GMT</pubDate>
+<pubDate>Mon, 26 May 2025 11:55:28 GMT</pubDate>
+</item>
+<item>
+<title>StructEval：评估大型语言模型结构化输出能力的新基准</title>
+<link>https://arxiv.org/abs/2505.20139</link>
+<guid>https://arxiv.org/abs/2505.20139</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出StructEval基准，系统评估大型语言模型生成和转换多种结构化格式的能力。</p><br><br><p><strong>摘要：</strong> 随着大型语言模型（LLMs）在软件开发中的广泛应用，其生成结构化输出的能力变得至关重要。本文介绍了一个名为StructEval的新基准，用于评估LLMs在生成非渲染格式（如JSON、YAML、CSV）和可渲染格式（如HTML、React、SVG）方面的表现。与现有基准不同，StructEval通过生成任务和转换任务两种范式，系统性地评估多种格式的结构保真度。该基准涵盖18种格式和44种任务类型，并引入了新的衡量指标来评估格式遵守和结构正确性。实验结果显示，即使是最先进的模型（如o1-mini）也仅达到平均75.58分，而开源替代方案则落后约10分。研究还发现生成任务比转换任务更具挑战性，生成视觉内容的难度高于生成纯文本结构。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.20139 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 11:40:42 GMT</pubDate>
+<pubDate>Mon, 26 May 2025 11:40:42 GMT</pubDate>
+</item>
+<item>
+<title>MLR-Bench：评估AI研究代理能力的综合基准</title>
+<link>https://arxiv.org/abs/2505.19955</link>
+<guid>https://arxiv.org/abs/2505.19955</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>MLR-Bench评估AI代理在开放性机器学习研究中的表现。</p><br><br><p><strong>摘要：</strong> 本文介绍了一个名为MLR-Bench的新基准，用于评估AI代理在开放性机器学习研究中的能力。该基准包含三个关键部分：来自NeurIPS、ICLR和ICML研讨会的201个研究任务，涵盖多种ML主题；MLR-Judge，一个结合LLM评审员和精心设计的评审标准的自动化评估框架；以及MLR-Agent，一种模块化代理框架，能够完成研究任务的四个阶段。我们使用MLR-Bench评估了六种前沿LLM和一个先进的编码代理，发现虽然LLM在生成连贯想法和结构良好的论文方面表现出色，但当前的编码代理经常产生伪造或无效的实验结果。此外，通过人工评估验证了MLR-Judge的有效性，并开源了MLR-Bench，以帮助社区对AI研究代理进行基准测试、诊断和改进，推动可信和透明的科学发现。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.19955 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 09:18:37 GMT</pubDate>
+<pubDate>Mon, 26 May 2025 09:18:37 GMT</pubDate>
+</item>
+<item>
+<title>基于影响函数的大语言模型推理能力归因研究</title>
+<link>https://arxiv.org/abs/2505.19949</link>
+<guid>https://arxiv.org/abs/2505.19949</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>通过影响函数揭示大语言模型数学与代码推理能力的训练数据特性。</p><br><br><p><strong>摘要：</strong> 大型语言模型（LLMs）在数学和编码推理方面表现出色，通常得益于更强模型生成的链式思维（CoTs）。然而，现有训练数据的筛选策略主要依赖启发式方法，导致泛化性有限且难以捕捉数据中的微妙特征。本文利用影响函数系统性地将LLMs的数学和编码推理能力归因至单个训练样本、序列和标记，从而深入洞察有效数据的特性。我们的基于影响函数的推理归因（Infra）发现了跨领域效应：高难度数学示例同时提升数学和代码推理能力，而低难度代码任务最能促进代码推理。基于此，我们提出了一种简单有效的数据重加权策略，通过翻转任务难度，使AIME24的准确率从10%提高到20%，LiveCodeBench的准确率从33.8%提高到35.3%。此外，细粒度归因显示，序列级探索行为增强了数学和代码推理性能，而标记级影响模式在数学和代码推理中存在显著差异：前者偏好自然语言逻辑连接符，后者强调结构语法。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.19949 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 09:15:26 GMT</pubDate>
+<pubDate>Mon, 26 May 2025 09:15:26 GMT</pubDate>
+</item>
+<item>
+<title>Enigmata: Scaling Logical Reasoning in Large Language Models with Synthetic Verifiable Puzzles</title>
+<link>https://arxiv.org/abs/2505.19914</link>
+<guid>https://arxiv.org/abs/2505.19914</guid>
+<content:encoded><![CDATA[
+
+  Large Language Models (LLMs), such as OpenAI's o1 and DeepSeek's R1, excel at advanced reasoning tasks like math and coding via Reinforcement Learning with Verifiable Rewards (RLVR), but still struggle with puzzles solvable by humans without domain knowledge. We introduce Enigmata, the first comprehensive suite tailored for improving LLMs with puzzle reasoning skills. It includes 36 tasks across seven categories, each with 1) a generator that produces unlimited examples with controllable difficulty and 2) a rule-based verifier for automatic evaluation. This generator-verifier design supports scalable, multi-task RL training, fine-grained analysis, and seamless RLVR integration. We further propose Enigmata-Eval, a rigorous benchmark, and develop optimized multi-task RLVR strategies. Our trained model, Qwen2.5-32B-Enigmata, consistently surpasses o3-mini-high and o1 on the puzzle reasoning benchmarks like Enigmata-Eval, ARC-AGI (32.8%), and ARC-AGI 2 (0.6%). It also generalizes well to out-of-domain puzzle benchmarks and mathematical reasoning, with little multi-tasking trade-off. When trained on larger models like Seed1.5-Thinking (20B activated parameters and 200B total parameters), puzzle data from Enigmata further boosts SoTA performance on advanced math and STEM reasoning tasks such as AIME (2024-2025), BeyondAIME and GPQA (Diamond), showing nice generalization benefits of Enigmata. This work offers a unified, controllable framework for advancing logical reasoning in LLMs. Resources of this work can be found at https://seed-enigmata.github.io.
+
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 08:40:31 GMT</pubDate>
+<pubDate>Mon, 26 May 2025 08:40:31 GMT</pubDate>
+</item>
+<item>
+<title>基于元学习视角的大语言模型推理能力研究</title>
+<link>https://arxiv.org/abs/2505.19815</link>
+<guid>https://arxiv.org/abs/2505.19815</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新框架，将大语言模型的推理视为元学习过程。</p><br><br><p><strong>摘要：</strong> 本文提出了一种新颖的框架，通过元学习的视角来理解大型语言模型（LLMs）的推理能力。我们设想推理轨迹为对模型参数的伪梯度下降更新，并发现LLM推理与多种元学习范式的相似性。我们将推理任务的训练过程形式化为元学习设置，其中每个问题被视为一个单独的任务，推理轨迹作为适应模型参数的内循环优化。经过多样化问题的训练后，LLM能够发展出可泛化的基础推理能力。广泛的实证评估证实了LLM推理与元学习之间的紧密联系，并从元学习的角度探讨了多个重要议题。这项工作不仅深化了对LLM推理的理解，还为通过传统元学习技术改进这些模型提供了实用见解。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.19815 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 06:52:17 GMT</pubDate>
+<pubDate>Mon, 26 May 2025 06:52:17 GMT</pubDate>
+</item>
+<item>
+<title>MOLE: Metadata Extraction and Validation in Scientific Papers Using LLMs</title>
+<link>https://arxiv.org/abs/2505.19800</link>
+<guid>https://arxiv.org/abs/2505.19800</guid>
+<content:encoded><![CDATA[
+
+  Metadata extraction is essential for cataloging and preserving datasets, enabling effective research discovery and reproducibility, especially given the current exponential growth in scientific research. While Masader (Alyafeai et al.,2021) laid the groundwork for extracting a wide range of metadata attributes from Arabic NLP datasets' scholarly articles, it relies heavily on manual annotation. In this paper, we present MOLE, a framework that leverages Large Language Models (LLMs) to automatically extract metadata attributes from scientific papers covering datasets of languages other than Arabic. Our schema-driven methodology processes entire documents across multiple input formats and incorporates robust validation mechanisms for consistent output. Additionally, we introduce a new benchmark to evaluate the research progress on this task. Through systematic analysis of context length, few-shot learning, and web browsing integration, we demonstrate that modern LLMs show promising results in automating this task, highlighting the need for further future work improvements to ensure consistent and reliable performance. We release the code: https://github.com/IVUL-KAUST/MOLE and dataset: https://huggingface.co/datasets/IVUL-KAUST/MOLE for the research community.
+
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 06:31:26 GMT</pubDate>
+<pubDate>Mon, 26 May 2025 06:31:26 GMT</pubDate>
+</item>
+<item>
+<title>基于多轮分解的大型推理模型高效推理方法</title>
+<link>https://arxiv.org/abs/2505.19788</link>
+<guid>https://arxiv.org/abs/2505.19788</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种多轮分解方法MinD，大幅减少推理延迟。</p><br><br><p><strong>摘要：</strong> 大型推理模型（LRMs）因复杂的链式思维（CoT）导致推理效率低下，首令牌及整体延迟较高。本文引入多轮分解（MinD），将传统CoT解码为显式、结构化的多轮交互序列，每轮专注于一个思考单元并给出相应答案，支持反思、验证、修正及探索替代方案，显著提升推理速度并实现过程控制。通过监督微调（SFT）与强化学习（RL）结合优化模型，在MATH等数据集上，MinD可使输出令牌使用量和首次令牌时间（TTFT）减少约70%，同时保持在MATH-500、AIME24、AMC23和GPQA-Diamond等推理基准测试中的竞争力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.19788 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 06:18:57 GMT</pubDate>
+<pubDate>Mon, 26 May 2025 06:18:57 GMT</pubDate>
+</item>
+<item>
+<title>离散马尔可夫桥：一种新型的离散表示学习框架</title>
+<link>https://arxiv.org/abs/2505.19752</link>
+<guid>https://arxiv.org/abs/2505.19752</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出了一种针对离散表示学习的新框架，显著提升了表达能力。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为离散马尔可夫桥的新框架，用于解决现有离散扩散模型中存在的局限性。这些局限包括固定转换矩阵导致潜在表示表达力不足以及设计空间受限的问题。新框架通过矩阵学习和分数学习两个组件构建，并提供了理论性能保证及收敛性证明。此外，我们还分析了方法的空间复杂度，解决了先前研究中发现的实际约束问题。实验结果表明，该框架在Text8数据集上的证据下界（ELBO）达到了1.38，优于现有基线模型；同时在CIFAR-10数据集上也表现出与图像特定生成方法相当的竞争性能。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.19752 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 05:32:12 GMT</pubDate>
+<pubDate>Mon, 26 May 2025 05:32:12 GMT</pubDate>
+</item>
+<item>
+<title>基于纳什均衡的人类反馈强化学习算法及其在线实现</title>
+<link>https://arxiv.org/abs/2505.19731</link>
+<guid>https://arxiv.org/abs/2505.19731</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新的在线纳什均衡强化学习算法Nash-MP，实现在复杂人类偏好下的快速收敛。</p><br><br><p><strong>摘要：</strong> 传统基于人类反馈的强化学习（RLHF）通常依赖奖励模型，但可能无法准确捕捉真实的人类偏好结构。本文引入Nash Mirror Prox (Nash-MP)，这是一种新型的在线纳什学习算法，利用镜像优化方法实现对纳什均衡的快速稳定收敛。理论分析表明，Nash-MP在KL散度、exploitability gap及对数概率的span半范数上均具有线性收敛特性，且这些特性不受动作空间大小影响。此外，我们还提出了近似版本的Nash-MP，通过随机策略梯度估计近似求解，并探讨其在大语言模型微调中的实际应用，实验结果证明其性能与现有方法兼容且竞争力强。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.19731 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 05:17:32 GMT</pubDate>
+<pubDate>Mon, 26 May 2025 05:17:32 GMT</pubDate>
+</item>
+<item>
+<title>PathFinder-PRM：一种基于分层错误感知的数学推理奖励模型</title>
+<link>https://arxiv.org/abs/2505.19706</link>
+<guid>https://arxiv.org/abs/2505.19706</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>引入新的Process Reward Model提升多跳推理任务中的数学问题求解能力。</p><br><br><p><strong>摘要：</strong> 大型语言模型（LLMs）在多跳推理任务如数学问题求解中容易出现幻觉。本文介绍了一种名为PathFinder-PRM的新过程奖励模型，它通过分级检测每一步骤中的数学和一致性错误来指导生成连贯的解决方案。为了训练该模型，我们扩展了人类注释的数据集，构建了一个包含40万样本的数据集。实验结果显示，PathFinder-PRM在PRMBench上达到了67.7的新SOTA分数，比之前的最佳成绩高出2.2分，同时使用的数据量仅为之前的三分之一。当应用于基于奖励的贪心搜索时，模型在prm@8指标上取得了48.3的成绩，比最强基线提升了1.5个百分点。这些成果表明，分离的错误检测和奖励估计不仅提高了细粒度错误检测的能力，还显著提升了端到端的基于奖励的数学推理效率。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.19706 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 04:56:36 GMT</pubDate>
+<pubDate>Mon, 26 May 2025 04:56:36 GMT</pubDate>
+</item>
+<item>
+<title>基于强化学习的多跳推理改进方法</title>
+<link>https://arxiv.org/abs/2505.19640</link>
+<guid>https://arxiv.org/abs/2505.19640</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>通过强化学习指导语言模型交替推理和回答，大幅提升多跳问题解决效率。</p><br><br><p><strong>摘要：</strong> 本文提出了一种新颖的训练范式，利用强化学习引导大型语言模型在解决多跳问题时交替进行推理与回答。实验表明，这种方法可以有效提升推理能力，同时显著减少首次响应时间（TTFT），平均降低超过80%，并且在Pass@1准确性上提高了19.3%。此外，该方法无需依赖外部工具，仅基于问答和逻辑推理数据集即可实现对复杂推理任务的良好泛化。研究还深入分析了条件奖励建模中的若干有价值见解。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.19640 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 03:58:17 GMT</pubDate>
+<pubDate>Mon, 26 May 2025 03:58:17 GMT</pubDate>
+</item>
+<item>
+<title>基于强化学习的多智能体协作框架提升医学问答系统性能</title>
+<link>https://arxiv.org/abs/2505.19630</link>
+<guid>https://arxiv.org/abs/2505.19630</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出DoctorAgent-RL框架，通过强化学习优化医学咨询对话策略。</p><br><br><p><strong>摘要：</strong> 大型语言模型在生物医学问答领域表现优异，但在临床咨询中的应用仍面临挑战，如信息传递不明确导致诊断建议不具体。传统方法受限于静态数据驱动模式，缺乏泛化能力且难以智能提取关键信息。为解决这些问题，本文提出DoctorAgent-RL，一种基于强化学习的多智能体协作框架，将医疗咨询建模为动态决策过程。该框架通过医生代理与患者代理的多轮交互优化提问策略，依据综合奖励动态调整信息采集路径。实验表明，DoctorAgent-RL在多轮推理能力和最终诊断性能上优于现有模型，并在MTMedDialog数据集上展示了实际应用价值。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.19630 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 03:48:14 GMT</pubDate>
+<pubDate>Mon, 26 May 2025 03:48:14 GMT</pubDate>
+</item>
+<item>
+<title>ScaleKV：针对视觉自回归模型的KV缓存压缩框架</title>
+<link>https://arxiv.org/abs/2505.19602</link>
+<guid>https://arxiv.org/abs/2505.19602</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出ScaleKV框架，大幅降低视觉自回归模型KV缓存内存需求。</p><br><br><p><strong>摘要：</strong> 本文聚焦于视觉自回归（VAR）模型的高效推理问题，指出其粗略到精细的方法导致KV缓存指数增长的问题。为解决这一瓶颈，我们引入了ScaleKV，这是一种专为VAR架构设计的KV缓存压缩框架。通过将Transformer层分为起草者（drafters）和精炼器（refiners），并根据不同的注意力模式进行差异化缓存管理，ScaleKV显著减少了缓存内存需求。实验表明，在最先进的文本到图像VAR模型Infinity上，该方法将所需KV缓存内存减少至原来的10%，同时保持像素级保真度。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.19602 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 03:11:42 GMT</pubDate>
+<pubDate>Mon, 26 May 2025 03:11:42 GMT</pubDate>
+</item>
+<item>
+<title>利用内部反馈信号实现大规模语言模型的无监督强化学习</title>
+<link>https://arxiv.org/abs/2505.19590</link>
+<guid>https://arxiv.org/abs/2505.19590</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究提出基于自我确信度的无监督强化学习方法，可媲美有监督学习效果。</p><br><br><p><strong>摘要：</strong> 当前通过验证奖励进行强化学习（RLVR）训练复杂推理的大规模语言模型（LLMs）有效但成本高昂且依赖特定领域的监督。本文探索了一种新的框架——基于内部反馈的强化学习（RLIF），该框架使LLMs能够利用内在信号而非外部奖励或标记数据进行学习。文中提出的Intuitor方法，仅使用模型自身的置信度作为奖励信号，在无需黄金标准解决方案或测试用例的情况下，实现了完全无监督的学习。实验表明，Intuitor在数学基准测试中的表现与需要外部奖励的团体相对策略优化（GRPO）相当，同时在代码生成等跨领域任务上表现出更好的泛化能力。这项研究表明，内在模型信号可以驱动跨领域有效的学习，为无法获得可验证奖励的自主AI系统提供了一种可扩展的替代方案。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.19590 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 03:01:06 GMT</pubDate>
+<pubDate>Mon, 26 May 2025 03:01:06 GMT</pubDate>
+</item>
+<item>
+<title>BizFinBench：首个面向金融应用的大语言模型评估基准</title>
+<link>https://arxiv.org/abs/2505.19457</link>
+<guid>https://arxiv.org/abs/2505.19457</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究提出BizFinBench，首个针对大语言模型在金融领域应用的评估基准。</p><br><br><p><strong>摘要：</strong> 本文介绍了BizFinBench，这是一个专门设计用于评估大型语言模型（LLMs）在真实世界金融应用场景中的表现的全新基准。该基准包含6,781个经过良好标注的中文查询，涵盖了五个维度：数值计算、推理、信息提取、预测识别和基于知识的问题回答，分为九个细分类别。此外，还引入了IteraJudge，这是一种新的LLM评估方法，旨在减少LLMs作为客观指标评估者时的偏差。实验测试了25种模型，结果显示没有一款模型在所有任务中占据主导地位。分析揭示了各模型在不同能力上的显著差异，例如在数值计算方面，Claude-3.5-Sonnet和DeepSeek-R1表现出色；而在推理任务中，闭源模型明显优于开源模型。尽管当前LLMs在处理常规财务查询时表现良好，但在需要跨概念推理的复杂场景中仍显不足。BizFinBench为未来相关研究提供了严谨且业务导向的评估工具，代码和数据集已公开。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.19457 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 25 May 2025 23:23:02 GMT</pubDate>
+<pubDate>Sun, 25 May 2025 23:23:02 GMT</pubDate>
+</item>
+<item>
+<title>AI辅助软件开发中的两种新兴范式：氛围编码与自主编码对比分析</title>
+<link>https://arxiv.org/abs/2505.19443</link>
+<guid>https://arxiv.org/abs/2505.19443</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文对比分析了AI辅助软件开发中的氛围编码与自主编码两种范式。</p><br><br><p><strong>摘要：</strong> 本文深入探讨了AI辅助软件开发领域中两种新兴范式——氛围编码和自主编码。尽管两者均依赖大型语言模型（LLMs），但在自主性、架构设计及开发者角色上存在根本差异。氛围编码侧重通过基于提示词的对话工作流支持创意探索，而自主编码则通过目标驱动代理实现自动化开发。文章提出了涵盖概念基础、执行模型、反馈机制等的详细分类法，并通过20个具体案例展示了氛围系统在原型设计和教育中的优势，以及自主系统在企业级自动化和CI/CD集成中的卓越表现。此外，文章还探讨了自然语言接口与自动化执行管道结合的混合架构趋势，并规划了可信、可解释且协作的自主AI基础设施未来路径。研究指出，成功的AI软件工程需要整合这两种范式的优点，构建以人为中心的统一开发生命周期。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.19443 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 25 May 2025 23:00:21 GMT</pubDate>
+<pubDate>Sun, 25 May 2025 23:00:21 GMT</pubDate>
+</item>
+<item>
+<title>基于格式与长度代理信号的大规模语言模型数学问题求解训练研究</title>
+<link>https://arxiv.org/abs/2505.19439</link>
+<guid>https://arxiv.org/abs/2505.19439</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究提出利用格式和长度作为代理信号训练大规模语言模型解决数学问题。</p><br><br><p><strong>摘要：</strong> 大规模语言模型在自然语言处理领域取得了显著成就，强化学习在模型应用适配中起到了关键作用。然而，在数学问题求解的训练过程中，获取真实答案往往困难且昂贵。本文探索了利用格式和长度作为代理信号的方法，通过设计奖励函数，使得模型在早期阶段的表现可与标准GRPO算法相媲美。随着训练进展，单纯依赖格式的奖励机制暴露出局限性，因此引入了长度相关的奖励信号。最终提出的GRPO方法结合格式与长度的代理信号，在特定场景下不仅达到了与传统基于真实答案方法相当甚至更好的性能，还在AIME2024测试集上实现了40.0%的准确率。这项研究不仅提供了一种减少对大量真实标注数据依赖的实用解决方案，还揭示了无标签方法成功的本质：基础模型已具备强大的数学和逻辑推理能力，只需培养良好的答题习惯即可展现潜力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.19439 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 25 May 2025 22:56:22 GMT</pubDate>
+<pubDate>Sun, 25 May 2025 22:56:22 GMT</pubDate>
+</item>
+<item>
+<title>WINA: Weight Informed Neuron Activation for Accelerating Large Language Model Inference</title>
+<link>https://arxiv.org/abs/2505.19427</link>
+<guid>https://arxiv.org/abs/2505.19427</guid>
+<content:encoded><![CDATA[
+
+  The growing computational demands of large language models (LLMs) make efficient inference and activation strategies increasingly critical. While recent approaches, such as Mixture-of-Experts (MoE), leverage selective activation but require specialized training, training-free sparse activation methods offer broader applicability and superior resource efficiency through their plug-and-play design. However, many existing methods rely solely on hidden state magnitudes to determine activation, resulting in high approximation errors and suboptimal inference accuracy. To address these limitations, we propose WINA (Weight Informed Neuron Activation), a novel, simple, and training-free sparse activation framework that jointly considers hidden state magnitudes and the column-wise ell_2-norms of weight matrices. We show that this leads to a sparsification strategy that obtains optimal approximation error bounds with theoretical guarantees tighter than existing techniques. Empirically, WINA also outperforms state-of-the-art methods (e.g., TEAL) by up to 2.94% in average performance at the same sparsity levels, across a diverse set of LLM architectures and datasets. These results position WINA as a new performance frontier for training-free sparse activation in LLM inference, advancing training-free sparse activation methods and setting a robust baseline for efficient inference. The source code is available at https://github.com/microsoft/wina.
+
+]]></content:encoded>
+<pubDate>Sun, 25 May 2025 22:37:32 GMT</pubDate>
+<pubDate>Sun, 25 May 2025 22:37:32 GMT</pubDate>
+</item>
+<item>
+<title>通过生成模型筛选构建通用文本到图像精调数据集</title>
+<link>https://arxiv.org/abs/2505.19297</link>
+<guid>https://arxiv.org/abs/2505.19297</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新方法构建通用的文本到图像模型精调数据集。</p><br><br><p><strong>摘要：</strong> 预训练虽然为文本到图像（T2I）模型提供了广泛的世界知识，但仅靠此不足以实现高质量的美学效果和对齐。因此，监督微调（SFT）至关重要，但其效果高度依赖于微调数据集的质量。现有的公开SFT数据集往往针对狭窄领域，创建高质量、通用的SFT数据集仍是一项重大挑战。本文介绍了一种利用预训练生成模型作为高影响力训练样本估计器的新方法，以此构建并发布了Alchemist数据集。该数据集虽小（3,350个样本），却非常有效。实验表明，Alchemist显著提高了五个公共T2I模型的生成质量，同时保持了多样性和风格。此外，还向公众发布了微调模型的权重。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.19297 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 25 May 2025 16:08:20 GMT</pubDate>
+<pubDate>Sun, 25 May 2025 16:08:20 GMT</pubDate>
+</item>
+<item>
+<title>基于过程级自适应推理模式的大语言模型高效推理方法</title>
+<link>https://arxiv.org/abs/2505.19250</link>
+<guid>https://arxiv.org/abs/2505.19250</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新推理范式PATS，动态调整大语言模型的推理策略以优化性能与效率。</p><br><br><p><strong>摘要：</strong> 当前大规模语言模型通常采用固定推理策略处理所有问题，忽视了任务复杂性和推理过程的变化，导致性能与效率失衡。现有方法通过训练自由的快慢思考系统切换来应对不同难度的问题，但受限于粗粒度的解决方案级策略调整。为解决这一问题，本文提出了一种新的推理范式——过程级自适应推理模式切换(PATS)，使大语言模型能够根据每一步的难度动态调整推理策略，从而在准确性与计算效率之间取得平衡。该方法将过程奖励模型(PRMs)与束搜索相结合，引入渐进式模式切换和坏步惩罚机制。实验表明，在多种数学基准测试中，我们的方法在保持适度令牌使用量的同时实现了高精度。这项研究强调了过程级、难度感知的推理策略适应的重要性，为大语言模型的高效推理提供了有价值的见解。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.19250 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 25 May 2025 13:58:50 GMT</pubDate>
+<pubDate>Sun, 25 May 2025 13:58:50 GMT</pubDate>
+</item>
+<item>
+<title>Variance-Reduced Preference Optimization提升掩码扩散模型对齐性能</title>
+<link>https://arxiv.org/abs/2505.19223</link>
+<guid>https://arxiv.org/abs/2505.19223</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>通过VRPO框架优化掩码扩散模型对齐人类偏好，显著提升LLaDA表现。</p><br><br><p><strong>摘要：</strong> 掩码扩散模型（MDMs）如LLaDA在语言建模方面展现出巨大潜力，但其与人类偏好的对齐尚未得到充分探索，主要因为基于证据下界（ELBO）的似然估计具有高方差问题。为此，我们提出变异性降低偏好优化（VRPO），通过理论分析ELBO估计器的方差，推导偏好优化梯度的偏差和方差界限，并引入无偏方差减少策略如最优蒙特卡洛预算分配和反向采样，大幅提高MDM对齐效果。实验表明，应用VRPO优化后的LLaDA 1.5在数学、代码及对齐基准测试中均显著优于仅经过监督微调的前代模型，并在数学能力上与顶级语言MDMs和自回归模型（ARMs）竞争。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.19223 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 25 May 2025 12:36:20 GMT</pubDate>
+<pubDate>Sun, 25 May 2025 12:36:20 GMT</pubDate>
+</item>
+<item>
+<title>大型语言模型在精细科学假设发现中的应用与优化研究</title>
+<link>https://arxiv.org/abs/2505.19209</link>
+<guid>https://arxiv.org/abs/2505.19209</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新方法解决大型语言模型生成精细科学假设的问题。</p><br><br><p><strong>摘要：</strong> 本文引入并正式定义了精细科学假设发现这一全新任务，即从粗略的研究方向中生成具有实验操作性的详细假设。我们将其视为组合优化问题，并探讨了大型语言模型在此任务上的能力上限。通过构建潜在奖励景观，我们研究了如何利用模型内部启发式来优化假设生成过程，并比较了单一模型与模型集合的效果。实验表明，提出的分层搜索方法可有效平滑奖励景观并提高优化效果，在化学文献基准测试中显著优于现有基线方法。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.19209 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 25 May 2025 12:13:46 GMT</pubDate>
+<pubDate>Sun, 25 May 2025 12:13:46 GMT</pubDate>
+</item>
+<item>
+<title>从模型压缩到令牌压缩：AI效率研究的新范式</title>
+<link>https://arxiv.org/abs/2505.19147</link>
+<guid>https://arxiv.org/abs/2505.19147</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>文章探讨了AI效率研究从模型压缩转向数据驱动的令牌压缩。</p><br><br><p><strong>摘要：</strong> 近年来，大型语言模型（LLMs）和多模态LLMs的发展主要依赖于通过增加参数数量实现性能提升。然而，随着硬件限制的逼近，计算瓶颈已转变为自注意力机制在长序列上的二次成本问题。本文认为，AI效率研究的重点正在从模型为中心的压缩转向数据为中心的压缩。我们提出令牌压缩作为新的研究前沿，它通过减少训练或推理过程中的令牌数量来提高AI效率。通过综合分析，本文首先考察了各领域长上下文AI的最新进展，并建立了现有模型效率策略的统一数学框架，展示了令牌压缩为何是解决长上下文开销的关键范式转变。随后，系统回顾了令牌压缩的研究现状，分析了其基本优势，并在多种场景下展示了其显著优势。此外，还深入剖析了当前令牌压缩研究面临的挑战，并提出了未来有前景的方向。本研究旨在为AI效率提供新视角，整合现有研究成果，并推动创新解决方案以应对长上下文对AI发展的挑战。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.19147 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 25 May 2025 09:51:17 GMT</pubDate>
+<pubDate>Sun, 25 May 2025 09:51:17 GMT</pubDate>
+</item>
+<item>
+<title>Jodi: Unification of Visual Generation and Understanding via Joint Modeling</title>
+<link>https://arxiv.org/abs/2505.19084</link>
+<guid>https://arxiv.org/abs/2505.19084</guid>
+<content:encoded><![CDATA[
+
+  Visual generation and understanding are two deeply interconnected aspects of human intelligence, yet they have been traditionally treated as separate tasks in machine learning. In this paper, we propose Jodi, a diffusion framework that unifies visual generation and understanding by jointly modeling the image domain and multiple label domains. Specifically, Jodi is built upon a linear diffusion transformer along with a role switch mechanism, which enables it to perform three particular types of tasks: (1) joint generation, where the model simultaneously generates images and multiple labels; (2) controllable generation, where images are generated conditioned on any combination of labels; and (3) image perception, where multiple labels can be predicted at once from a given image. Furthermore, we present the Joint-1.6M dataset, which contains 200,000 high-quality images collected from public sources, automatic labels for 7 visual domains, and LLM-generated captions. Extensive experiments demonstrate that Jodi excels in both generation and understanding tasks and exhibits strong extensibility to a wider range of visual domains. Code is available at https://github.com/VIPL-GENUN/Jodi.
+
+]]></content:encoded>
+<pubDate>Sun, 25 May 2025 06:40:52 GMT</pubDate>
+<pubDate>Sun, 25 May 2025 06:40:52 GMT</pubDate>
+</item>
+<item>
+<title>An Embarrassingly Simple Defense Against LLM Abliteration Attacks</title>
+<link>https://arxiv.org/abs/2505.19056</link>
+<guid>https://arxiv.org/abs/2505.19056</guid>
+<content:encoded><![CDATA[
+
+  Large language models (LLMs) are typically aligned to comply with safety guidelines by refusing harmful instructions. A recent attack, termed abliteration, isolates and suppresses the single latent direction most responsible for refusal behavior, enabling the model to generate unethical content. We propose a defense that modifies how models generate refusals. We construct an extended-refusal dataset that contains harmful prompts with a full response that justifies the reason for refusal. We then fine-tune Llama-2-7B-Chat and Qwen2.5-Instruct (1.5B and 3B parameters) on our extended-refusal dataset, and evaluate the resulting systems on a set of harmful prompts. In our experiments, extended-refusal models maintain high refusal rates, dropping at most by 10%, whereas baseline models' refusal rates drop by 70-80% after abliteration. A broad evaluation of safety and utility shows that extended-refusal fine-tuning neutralizes the abliteration attack while preserving general performance.
+
+]]></content:encoded>
+<pubDate>Sun, 25 May 2025 05:18:24 GMT</pubDate>
+<pubDate>Sun, 25 May 2025 05:18:24 GMT</pubDate>
+</item>
+<item>
+<title>AdaCtrl: Towards Adaptive and Controllable Reasoning via Difficulty-Aware Budgeting</title>
+<link>https://arxiv.org/abs/2505.18822</link>
+<guid>https://arxiv.org/abs/2505.18822</guid>
+<content:encoded><![CDATA[
+
+  Modern large reasoning models demonstrate impressive problem-solving capabilities by employing sophisticated reasoning strategies. However, they often struggle to balance efficiency and effectiveness, frequently generating unnecessarily lengthy reasoning chains for simple problems. In this work, we propose AdaCtrl, a novel framework to support both difficulty-aware adaptive reasoning budget allocation and explicit user control over reasoning depth. AdaCtrl dynamically adjusts its reasoning length based on self-assessed problem difficulty, while also allowing users to manually control the budget to prioritize either efficiency or effectiveness. This is achieved through a two-stage training pipeline: an initial cold-start fine-tuning phase to instill the ability to self-aware difficulty and adjust reasoning budget, followed by a difficulty-aware reinforcement learning (RL) stage that refines the model's adaptive reasoning strategies and calibrates its difficulty assessments based on its evolving capabilities during online training. To enable intuitive user interaction, we design explicit length-triggered tags that function as a natural interface for budget control. Empirical results show that AdaCtrl adapts reasoning length based on estimated difficulty, compared to the standard training baseline that also incorporates fine-tuning and RL, it yields performance improvements and simultaneously reduces response length by 10.06% and 12.14% on the more challenging AIME2024 and AIME2025 datasets, which require elaborate reasoning, and by 62.05% and 91.04% on the MATH500 and GSM8K datasets, where more concise responses are sufficient. Furthermore, AdaCtrl enables precise user control over the reasoning budget, allowing for tailored responses to meet specific needs.
+
+]]></content:encoded>
+<pubDate>Sat, 24 May 2025 14:46:50 GMT</pubDate>
+<pubDate>Sat, 24 May 2025 14:46:50 GMT</pubDate>
+</item>
+<item>
+<title>Strong Membership Inference Attacks on Massive Datasets and (Moderately) Large Language Models</title>
+<link>https://arxiv.org/abs/2505.18773</link>
+<guid>https://arxiv.org/abs/2505.18773</guid>
+<content:encoded><![CDATA[
+
+  State-of-the-art membership inference attacks (MIAs) typically require training many reference models, making it difficult to scale these attacks to large pre-trained language models (LLMs). As a result, prior research has either relied on weaker attacks that avoid training reference models (e.g., fine-tuning attacks), or on stronger attacks applied to small-scale models and datasets. However, weaker attacks have been shown to be brittle - achieving close-to-arbitrary success - and insights from strong attacks in simplified settings do not translate to today's LLMs. These challenges have prompted an important question: are the limitations observed in prior work due to attack design choices, or are MIAs fundamentally ineffective on LLMs? We address this question by scaling LiRA - one of the strongest MIAs - to GPT-2 architectures ranging from 10M to 1B parameters, training reference models on over 20B tokens from the C4 dataset. Our results advance the understanding of MIAs on LLMs in three key ways: (1) strong MIAs can succeed on pre-trained LLMs; (2) their effectiveness, however, remains limited (e.g., AUC&lt;0.7) in practical settings; and, (3) the relationship between MIA success and related privacy metrics is not as straightforward as prior work has suggested.
+
+]]></content:encoded>
+<pubDate>Sat, 24 May 2025 12:23:43 GMT</pubDate>
+<pubDate>Sat, 24 May 2025 12:23:43 GMT</pubDate>
+</item>
+<item>
+<title>The Quest for Efficient Reasoning: A Data-Centric Benchmark to CoT Distillation</title>
+<link>https://arxiv.org/abs/2505.18759</link>
+<guid>https://arxiv.org/abs/2505.18759</guid>
+<content:encoded><![CDATA[
+
+  Data-centric distillation, including data augmentation, selection, and mixing, offers a promising path to creating smaller, more efficient student Large Language Models (LLMs) that retain strong reasoning abilities. However, there still lacks a comprehensive benchmark to systematically assess the effect of each distillation approach. This paper introduces DC-CoT, the first data-centric benchmark that investigates data manipulation in chain-of-thought (CoT) distillation from method, model and data perspectives. Utilizing various teacher models (e.g., o4-mini, Gemini-Pro, Claude-3.5) and student architectures (e.g., 3B, 7B parameters), we rigorously evaluate the impact of these data manipulations on student model performance across multiple reasoning datasets, with a focus on in-distribution (IID) and out-of-distribution (OOD) generalization, and cross-domain transfer. Our findings aim to provide actionable insights and establish best practices for optimizing CoT distillation through data-centric techniques, ultimately facilitating the development of more accessible and capable reasoning models. The dataset can be found at https://huggingface.co/datasets/rana-shahroz/DC-COT, while our code is shared in https://anonymous.4open.science/r/DC-COT-FF4C/.
+
+]]></content:encoded>
+<pubDate>Sat, 24 May 2025 11:54:19 GMT</pubDate>
+<pubDate>Sat, 24 May 2025 11:54:19 GMT</pubDate>
+</item>
+<item>
+<title>Can MLLMs Guide Me Home? A Benchmark Study on Fine-Grained Visual Reasoning from Transit Maps</title>
+<link>https://arxiv.org/abs/2505.18675</link>
+<guid>https://arxiv.org/abs/2505.18675</guid>
+<content:encoded><![CDATA[
+
+  Multimodal large language models (MLLMs) have recently achieved significant progress in visual tasks, including semantic scene understanding and text-image alignment, with reasoning variants enhancing performance on complex tasks involving mathematics and logic. However, their capacity for reasoning tasks involving fine-grained visual understanding remains insufficiently evaluated. To address this gap, we introduce ReasonMap, a benchmark designed to assess the fine-grained visual understanding and spatial reasoning abilities of MLLMs. ReasonMap encompasses high-resolution transit maps from 30 cities across 13 countries and includes 1,008 question-answer pairs spanning two question types and three templates. Furthermore, we design a two-level evaluation pipeline that properly assesses answer correctness and quality. Comprehensive evaluations of 15 popular MLLMs, including both base and reasoning variants, reveal a counterintuitive pattern: among open-source models, base models outperform reasoning ones, while the opposite trend is observed in closed-source models. Additionally, performance generally degrades when visual inputs are masked, indicating that while MLLMs can leverage prior knowledge to answer some questions, fine-grained visual reasoning tasks still require genuine visual perception for strong performance. Our benchmark study offers new insights into visual reasoning and contributes to investigating the gap between open-source and closed-source models.
+
+]]></content:encoded>
+<pubDate>Sat, 24 May 2025 08:33:52 GMT</pubDate>
+<pubDate>Sat, 24 May 2025 08:33:52 GMT</pubDate>
+</item>
+<item>
+<title>Flex-Judge: Think Once, Judge Anywhere</title>
+<link>https://arxiv.org/abs/2505.18601</link>
+<guid>https://arxiv.org/abs/2505.18601</guid>
+<content:encoded><![CDATA[
+
+  Human-generated reward signals are critical for aligning generative models with human preferences, guiding both training and inference-time evaluations. While large language models (LLMs) employed as proxy evaluators, i.e., LLM-as-a-Judge, significantly reduce the costs associated with manual annotations, they typically require extensive modality-specific training data and fail to generalize well across diverse multimodal tasks. In this paper, we propose Flex-Judge, a reasoning-guided multimodal judge model that leverages minimal textual reasoning data to robustly generalize across multiple modalities and evaluation formats. Our core intuition is that structured textual reasoning explanations inherently encode generalizable decision-making patterns, enabling an effective transfer to multimodal judgments, e.g., with images or videos. Empirical results demonstrate that Flex-Judge, despite being trained on significantly fewer text data, achieves competitive or superior performance compared to state-of-the-art commercial APIs and extensively trained multimodal evaluators. Notably, Flex-Judge presents broad impact in modalities like molecule, where comprehensive evaluation benchmarks are scarce, underscoring its practical value in resource-constrained domains. Our framework highlights reasoning-based text supervision as a powerful, cost-effective alternative to traditional annotation-intensive approaches, substantially advancing scalable multimodal model-as-a-judge.
+
+]]></content:encoded>
+<pubDate>Sat, 24 May 2025 04:50:53 GMT</pubDate>
+<pubDate>Sat, 24 May 2025 04:50:53 GMT</pubDate>
+</item>
+<item>
+<title>B-score: Detecting biases in large language models using response history</title>
+<link>https://arxiv.org/abs/2505.18545</link>
+<guid>https://arxiv.org/abs/2505.18545</guid>
+<content:encoded><![CDATA[
+
+  Large language models (LLMs) often exhibit strong biases, e.g, against women or in favor of the number 7. We investigate whether LLMs would be able to output less biased answers when allowed to observe their prior answers to the same question in a multi-turn conversation. To understand which types of questions invite more biased answers, we test LLMs on our proposed set of questions that span 9 topics and belong to three types: (1) Subjective; (2) Random; and (3) Objective. Interestingly, LLMs are able to "de-bias" themselves in a multi-turn conversation in response to questions that seek an Random, unbiased answer. Furthermore, we propose B-score, a novel metric that is effective in detecting biases to Subjective, Random, Easy, and Hard questions. On MMLU, HLE, and CSQA, leveraging B-score substantially improves the verification accuracy of LLM answers (i.e, accepting LLM correct answers and rejecting incorrect ones) compared to using verbalized confidence scores or the frequency of single-turn answers alone. Code and data are available at: https://b-score.github.io.
+
+]]></content:encoded>
+<pubDate>Sat, 24 May 2025 02:23:52 GMT</pubDate>
+<pubDate>Sat, 24 May 2025 02:23:52 GMT</pubDate>
+</item>
+<item>
+<title>Reinforcement Fine-Tuning Powers Reasoning Capability of Multimodal Large Language Models</title>
+<link>https://arxiv.org/abs/2505.18536</link>
+<guid>https://arxiv.org/abs/2505.18536</guid>
+<content:encoded><![CDATA[
+
+  Standing in 2025, at a critical juncture in the pursuit of Artificial General Intelligence (AGI), reinforcement fine-tuning (RFT) has demonstrated significant potential in enhancing the reasoning capability of large language models (LLMs) and has led to the development of cutting-edge AI models such as OpenAI-o1 and DeepSeek-R1. Moreover, the efficient application of RFT to enhance the reasoning capability of multimodal large language models (MLLMs) has attracted widespread attention from the community. In this position paper, we argue that reinforcement fine-tuning powers the reasoning capability of multimodal large language models. To begin with, we provide a detailed introduction to the fundamental background knowledge that researchers interested in this field should be familiar with. Furthermore, we meticulously summarize the improvements of RFT in powering reasoning capability of MLLMs into five key points: diverse modalities, diverse tasks and domains, better training algorithms, abundant benchmarks and thriving engineering frameworks. Finally, we propose five promising directions for future research that the community might consider. We hope that this position paper will provide valuable insights to the community at this pivotal stage in the advancement toward AGI. Summary of works done on RFT for MLLMs is available at https://github.com/Sun-Haoyuan23/Awesome-RL-based-Reasoning-MLLMs.
+
+]]></content:encoded>
+<pubDate>Sat, 24 May 2025 02:01:48 GMT</pubDate>
+<pubDate>Sat, 24 May 2025 02:01:48 GMT</pubDate>
+</item>
+<item>
+<title>Dynamic Risk Assessments for Offensive Cybersecurity Agents</title>
+<link>https://arxiv.org/abs/2505.18384</link>
+<guid>https://arxiv.org/abs/2505.18384</guid>
+<content:encoded><![CDATA[
+
+  Foundation models are increasingly becoming better autonomous programmers, raising the prospect that they could also automate dangerous offensive cyber-operations. Current frontier model audits probe the cybersecurity risks of such agents, but most fail to account for the degrees of freedom available to adversaries in the real world. In particular, with strong verifiers and financial incentives, agents for offensive cybersecurity are amenable to iterative improvement by would-be adversaries. We argue that assessments should take into account an expanded threat model in the context of cybersecurity, emphasizing the varying degrees of freedom that an adversary may possess in stateful and non-stateful environments within a fixed compute budget. We show that even with a relatively small compute budget (8 H100 GPU Hours in our study), adversaries can improve an agent's cybersecurity capability on InterCode CTF by more than 40\% relative to the baseline -- without any external assistance. These results highlight the need to evaluate agents' cybersecurity risk in a dynamic manner, painting a more representative picture of risk.
+
+]]></content:encoded>
+<pubDate>Fri, 23 May 2025 17:18:59 GMT</pubDate>
+<pubDate>Fri, 23 May 2025 17:18:59 GMT</pubDate>
+</item>
+<item>
+<title>Architectural Backdoors for Within-Batch Data Stealing and Model Inference Manipulation</title>
+<link>https://arxiv.org/abs/2505.18323</link>
+<guid>https://arxiv.org/abs/2505.18323</guid>
+<content:encoded><![CDATA[
+
+  For nearly a decade the academic community has investigated backdoors in neural networks, primarily focusing on classification tasks where adversaries manipulate the model prediction. While demonstrably malicious, the immediate real-world impact of such prediction-altering attacks has remained unclear. In this paper we introduce a novel and significantly more potent class of backdoors that builds upon recent advancements in architectural backdoors. We demonstrate how these backdoors can be specifically engineered to exploit batched inference, a common technique for hardware utilization, enabling large-scale user data manipulation and theft. By targeting the batching process, these architectural backdoors facilitate information leakage between concurrent user requests and allow attackers to fully control model responses directed at other users within the same batch. In other words, an attacker who can change the model architecture can set and steal model inputs and outputs of other users within the same batch. We show that such attacks are not only feasible but also alarmingly effective, can be readily injected into prevalent model architectures, and represent a truly malicious threat to user privacy and system integrity. Critically, to counteract this new class of vulnerabilities, we propose a deterministic mitigation strategy that provides formal guarantees against this new attack vector, unlike prior work that relied on Large Language Models to find the backdoors. Our mitigation strategy employs a novel Information Flow Control mechanism that analyzes the model graph and proves non-interference between different user inputs within the same batch. Using our mitigation strategy we perform a large scale analysis of models hosted through Hugging Face and find over 200 models that introduce (unintended) information leakage between batch entries due to the use of dynamic quantization.
+
+]]></content:encoded>
+<pubDate>Fri, 23 May 2025 15:28:45 GMT</pubDate>
+<pubDate>Fri, 23 May 2025 15:28:45 GMT</pubDate>
+</item>
+<item>
+<title>Mutarjim: Advancing Bidirectional Arabic-English Translation with a Small Language Model</title>
+<link>https://arxiv.org/abs/2505.17894</link>
+<guid>https://arxiv.org/abs/2505.17894</guid>
+<content:encoded><![CDATA[
+
+  We introduce Mutarjim, a compact yet powerful language model for bidirectional Arabic-English translation. While large-scale LLMs have shown impressive progress in natural language processing tasks, including machine translation, smaller models. Leveraging this insight, we developed Mutarjim based on Kuwain-1.5B , a language model tailored for both Arabic and English. Despite its modest size, Mutarjim outperforms much larger models on several established benchmarks, achieved through an optimized two-phase training approach and a carefully curated, high-quality training corpus.. Experimental results show that Mutarjim rivals models up to 20 times larger while significantly reducing computational costs and training requirements. We also introduce Tarjama-25, a new benchmark designed to overcome limitations in existing Arabic-English benchmarking datasets, such as domain narrowness, short sentence lengths, and English-source bias. Tarjama-25 comprises 5,000 expert-reviewed sentence pairs and spans a wide range of domains, offering a more comprehensive and balanced evaluation framework. Notably, Mutarjim achieves state-of-the-art performance on the English-to-Arabic task in Tarjama-25, surpassing even significantly larger and proprietary models like GPT-4o mini. We publicly release Tarjama-25 to support future research and advance the evaluation of Arabic-English translation systems.
+
+]]></content:encoded>
+<pubDate>Fri, 23 May 2025 09:42:21 GMT</pubDate>
+<pubDate>Fri, 23 May 2025 09:42:21 GMT</pubDate>
+</item>
+<item>
+<title>Rethinking the Sampling Criteria in Reinforcement Learning for LLM Reasoning: A Competence-Difficulty Alignment Perspective</title>
+<link>https://arxiv.org/abs/2505.17652</link>
+<guid>https://arxiv.org/abs/2505.17652</guid>
+<content:encoded><![CDATA[
+
+  Reinforcement learning exhibits potential in enhancing the reasoning abilities of large language models, yet it is hard to scale for the low sample efficiency during the rollout phase. Existing methods attempt to improve efficiency by scheduling problems based on problem difficulties. However, these approaches suffer from unstable and biased estimations of problem difficulty and fail to capture the alignment between model competence and problem difficulty in RL training, leading to suboptimal results. To tackle these limitations, this paper introduces Competence-Difficulty Alignment Sampling (CDAS), which enables accurate and stable estimation of problem difficulties by aggregating historical performance discrepancies of problems. Then the model competence is quantified to adaptively select problems whose difficulty is in alignment with the model's current competence using a fixed-point system. Experimental results across a range of challenging mathematical benchmarks show that CDAS achieves great improvements in both accuracy and efficiency. CDAS attains the highest average accuracy against baselines and exhibits significant speed advantages compared to Dynamic Sampling, a competitive strategy in DAPO, which is 2.33 times slower than CDAS.
+
+]]></content:encoded>
+<pubDate>Fri, 23 May 2025 05:15:26 GMT</pubDate>
+<pubDate>Fri, 23 May 2025 05:15:26 GMT</pubDate>
+</item>
+<item>
+<title>From Tens of Hours to Tens of Thousands: Scaling Back-Translation for Speech Recognition</title>
+<link>https://arxiv.org/abs/2505.16972</link>
+<guid>https://arxiv.org/abs/2505.16972</guid>
+<content:encoded><![CDATA[
+
+  Recent advances in Automatic Speech Recognition (ASR) have been largely fueled by massive speech corpora. However, extending coverage to diverse languages with limited resources remains a formidable challenge. This paper introduces Speech Back-Translation, a scalable pipeline that improves multilingual ASR models by converting large-scale text corpora into synthetic speech via off-the-shelf text-to-speech (TTS) models. We demonstrate that just tens of hours of real transcribed speech can effectively train TTS models to generate synthetic speech at hundreds of times the original volume while maintaining high quality. To evaluate synthetic speech quality, we develop an intelligibility-based assessment framework and establish clear thresholds for when synthetic data benefits ASR training. Using Speech Back-Translation, we generate more than 500,000 hours of synthetic speech in ten languages and continue pre-training Whisper-large-v3, achieving average transcription error reductions of over 30\%. These results highlight the scalability and effectiveness of Speech Back-Translation for enhancing multilingual ASR systems.
+
+]]></content:encoded>
+<pubDate>Thu, 22 May 2025 13:51:05 GMT</pubDate>
+<pubDate>Thu, 22 May 2025 13:51:05 GMT</pubDate>
+</item>
+<item>
+<title>Embodied Agents Meet Personalization: Exploring Memory Utilization for Personalized Assistance</title>
+<link>https://arxiv.org/abs/2505.16348</link>
+<guid>https://arxiv.org/abs/2505.16348</guid>
+<content:encoded><![CDATA[
+
+  Embodied agents empowered by large language models (LLMs) have shown strong performance in household object rearrangement tasks. However, these tasks primarily focus on single-turn interactions with simplified instructions, which do not truly reflect the challenges of providing meaningful assistance to users. To provide personalized assistance, embodied agents must understand the unique semantics that users assign to the physical world (e.g., favorite cup, breakfast routine) by leveraging prior interaction history to interpret dynamic, real-world instructions. Yet, the effectiveness of embodied agents in utilizing memory for personalized assistance remains largely underexplored. To address this gap, we present MEMENTO, a personalized embodied agent evaluation framework designed to comprehensively assess memory utilization capabilities to provide personalized assistance. Our framework consists of a two-stage memory evaluation process design that enables quantifying the impact of memory utilization on task performance. This process enables the evaluation of agents' understanding of personalized knowledge in object rearrangement tasks by focusing on its role in goal interpretation: (1) the ability to identify target objects based on personal meaning (object semantics), and (2) the ability to infer object-location configurations from consistent user patterns, such as routines (user patterns). Our experiments across various LLMs reveal significant limitations in memory utilization, with even frontier models like GPT-4o experiencing a 30.5% performance drop when required to reference multiple memories, particularly in tasks involving user patterns. These findings, along with our detailed analyses and case studies, provide valuable insights for future research in developing more effective personalized embodied agents. Project website: https://connoriginal.github.io/MEMENTO
+
+]]></content:encoded>
+<pubDate>Thu, 22 May 2025 04:00:10 GMT</pubDate>
+<pubDate>Thu, 22 May 2025 04:00:10 GMT</pubDate>
+</item>
+<item>
+<title>EquivPruner: Boosting Efficiency and Quality in LLM-Based Search via Action Pruning</title>
+<link>https://arxiv.org/abs/2505.16312</link>
+<guid>https://arxiv.org/abs/2505.16312</guid>
+<content:encoded><![CDATA[
+
+  Large Language Models (LLMs) excel at complex reasoning through search algorithms, yet current strategies often suffer from massive token consumption due to redundant exploration of semantically equivalent steps. Existing semantic similarity methods struggle to accurately identify such equivalence in domain-specific contexts like mathematical reasoning. To address this, we propose EquivPruner, a simple yet effective approach that identifies and prunes semantically equivalent actions during LLM reasoning search. We also introduce MathEquiv, the first dataset we created for mathematical statement equivalence, which enables the training of a lightweight equivalence detector. Extensive experiments across various models and tasks demonstrate that EquivPruner significantly reduces token consumption, improving searching efficiency and often bolstering reasoning accuracy. For instance, when applied to Qwen2.5-Math-7B-Instruct on GSM8K, EquivPruner reduced token consumption by 48.1\% while also improving accuracy. Our code is available at https://github.com/Lolo1222/EquivPruner.
+
+]]></content:encoded>
+<pubDate>Thu, 22 May 2025 03:07:43 GMT</pubDate>
+<pubDate>Thu, 22 May 2025 03:07:43 GMT</pubDate>
+</item>
+<item>
+<title>Towards Holistic Evaluation of Large Audio-Language Models: A Comprehensive Survey</title>
+<link>https://arxiv.org/abs/2505.15957</link>
+<guid>https://arxiv.org/abs/2505.15957</guid>
+<content:encoded><![CDATA[
+
+  With advancements in large audio-language models (LALMs), which enhance large language models (LLMs) with auditory capabilities, these models are expected to demonstrate universal proficiency across various auditory tasks. While numerous benchmarks have emerged to assess LALMs' performance, they remain fragmented and lack a structured taxonomy. To bridge this gap, we conduct a comprehensive survey and propose a systematic taxonomy for LALM evaluations, categorizing them into four dimensions based on their objectives: (1) General Auditory Awareness and Processing, (2) Knowledge and Reasoning, (3) Dialogue-oriented Ability, and (4) Fairness, Safety, and Trustworthiness. We provide detailed overviews within each category and highlight challenges in this field, offering insights into promising future directions. To the best of our knowledge, this is the first survey specifically focused on the evaluations of LALMs, providing clear guidelines for the community. We will release the collection of the surveyed papers and actively maintain it to support ongoing advancements in the field.
+
+]]></content:encoded>
+<pubDate>Wed, 21 May 2025 15:17:29 GMT</pubDate>
+<pubDate>Wed, 21 May 2025 15:17:29 GMT</pubDate>
+</item>
+<item>
+<title>G1: Bootstrapping Perception and Reasoning Abilities of Vision-Language Model via Reinforcement Learning</title>
+<link>https://arxiv.org/abs/2505.13426</link>
+<guid>https://arxiv.org/abs/2505.13426</guid>
+<content:encoded><![CDATA[
+
+  Vision-Language Models (VLMs) excel in many direct multimodal tasks but struggle to translate this prowess into effective decision-making within interactive, visually rich environments like games. This ``knowing-doing'' gap significantly limits their potential as autonomous agents, as leading VLMs often performing badly in simple games. To address this, we introduce VLM-Gym, a curated reinforcement learning (RL) environment featuring diverse visual games with unified interfaces and adjustable, compositional difficulty, specifically designed for scalable multi-game parallel training. Leveraging VLM-Gym, we train G0 models using pure RL-driven self-evolution, which demonstrate emergent perception and reasoning patterns. To further mitigate challenges arising from game diversity, we develop G1 models. G1 incorporates a perception-enhanced cold start prior to RL fine-tuning. Our resulting G1 models consistently surpass their teacher across all games and outperform leading proprietary models like Claude-3.7-Sonnet-Thinking. Systematic analysis reveals an intriguing finding: perception and reasoning abilities mutually bootstrap each other throughout the RL training process. Source code including VLM-Gym and RL training are released at https://github.com/chenllliang/G1 to foster future research in advancing VLMs as capable interactive agents.
+
+]]></content:encoded>
+<pubDate>Mon, 19 May 2025 13:54:39 GMT</pubDate>
+<pubDate>Mon, 19 May 2025 13:54:39 GMT</pubDate>
+</item>
+<item>
+<title>InfantAgent-Next: A Multimodal Generalist Agent for Automated Computer Interaction</title>
+<link>https://arxiv.org/abs/2505.10887</link>
+<guid>https://arxiv.org/abs/2505.10887</guid>
+<content:encoded><![CDATA[
+
+  This paper introduces InfantAgent-Next, a generalist agent capable of interacting with computers in a multimodal manner, encompassing text, images, audio, and video. Unlike existing approaches that either build intricate workflows around a single large model or only provide workflow modularity, our agent integrates tool-based and pure vision agents within a highly modular architecture, enabling different models to collaboratively solve decoupled tasks in a step-by-step manner. Our generality is demonstrated by our ability to evaluate not only pure vision-based real-world benchmarks (i.e., OSWorld), but also more general or tool-intensive benchmarks (e.g., GAIA and SWE-Bench). Specifically, we achieve 7.27% accuracy on OSWorld, higher than Claude-Computer-Use. Codes and evaluation scripts are open-sourced at https://github.com/bin123apple/InfantAgent.
+
+]]></content:encoded>
+<pubDate>Fri, 16 May 2025 01:43:27 GMT</pubDate>
+<pubDate>Fri, 16 May 2025 01:43:27 GMT</pubDate>
+</item>
+
+<item>
 <title>面向低资源语言的文化适配大型语言模型研究</title>
 <link>https://arxiv.org/abs/2505.18383</link>
 <guid>https://arxiv.org/abs/2505.18383</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种结合文化与语言特性的大型语言模型创建方法。</p><br><br><p><strong>摘要：</strong> 当前针对低资源语言增强大型语言模型（LLMs）的研究多依赖于从英语语料库翻译生成的合成数据，尽管这些模型展示了良好的语言理解和翻译能力，但往往未能充分反映目标社区的文化遗产与价值观。本文提出了一种创新方法，通过构建符合特定社区语言、文化遗产及价值观的合成与检索型预训练数据，以实现对社区文化的深度适配。以埃及方言和摩洛哥方言为例进行测试，我们开发了NileChat，一款30亿参数量的语言模型，显著提升了对阿拉伯语相关任务的理解、翻译及文化对齐表现，同时性能媲美更大规模的模型。本研究共享了方法、数据与模型，以推动LLMs在更多元化社区中的发展与包容性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.18383 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种结合文化与语言特性的大型语言模型创建方法。</p><br /><br /><p><strong>摘要：</strong> 当前针对低资源语言增强大型语言模型（LLMs）的研究多依赖于从英语语料库翻译生成的合成数据，尽管这些模型展示了良好的语言理解和翻译能力，但往往未能充分反映目标社区的文化遗产与价值观。本文提出了一种创新方法，通过构建符合特定社区语言、文化遗产及价值观的合成与检索型预训练数据，以实现对社区文化的深度适配。以埃及方言和摩洛哥方言为例进行测试，我们开发了NileChat，一款30亿参数量的语言模型，显著提升了对阿拉伯语相关任务的理解、翻译及文化对齐表现，同时性能媲美更大规模的模型。本研究共享了方法、数据与模型，以推动LLMs在更多元化社区中的发展与包容性。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.18383" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Fri, 23 May 2025 17:18:40 GMT</pubDate>
-<pubDate>Fri, 23 May 2025 17:18:40 GMT</pubDate>
 </item>
-
 <item>
 <title>RankNovo：基于深度重排序框架的全新从头肽段测序方法</title>
 <link>https://arxiv.org/abs/2505.17552</link>
@@ -9007,15 +9592,6 @@ Fine-tuning enables large language models (LLMs) to adapt to specific domains, b
 <div><p style="color: gray;">文章探讨互动生成视频如何推动生成游戏引擎的发展，重塑游戏创作方式。</p><br /><br /><p><strong>摘要：</strong> 现代游戏开发面临着创意和成本方面的重大挑战，传统游戏引擎的预设内容限制了开发者的创新能力。近期视频生成模型的突破，为创建逼真且互动的虚拟环境提供了新机遇。本文提出以互动生成视频（IGV）为基础，构建生成游戏引擎（GGE），这一平台能够实现无限的新内容生成，革新下一代游戏。GGE利用IGV的优势，进行高质量内容合成、物理意识的世界建模、用户控制的互动、长期记忆能力和因果推理。我们详细阐述了GGE的核心模块及其发展路线图，从L0到L4引导其演进，展望在人工智能时代，AI驱动的生成系统将根本改变游戏的创作与体验方式。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.17359" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Fri, 21 Mar 2025 13:59:22 GMT</pubDate>
-</item>
-<item>
-<title>通过错误学习提升大型语言模型的数学推理能力</title>
-<link>https://arxiv.org/abs/2503.17439</link>
-<guid>https://arxiv.org/abs/2503.17439</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文提出LEMMA方法，通过错误学习提高大型语言模型的数学推理能力。</p><br /><br /><p><strong>摘要：</strong> 大型语言模型在解决数学问题方面展现出卓越的推理能力，但现有方法主要集中于改进正确训练数据的质量，忽略了错误数据的潜在价值。本文提出了一种名为LEMMA的方法，通过构建包含错误步骤的错误解与正确解的反思联系的数据集，来增强模型的推理能力。我们分析了模型生成的错误类型，并引入了基于错误类型的增强方法，以收集多样且具有代表性的错误。通过模型感知的平滑反思连接，错误解被有效地转化为正确解。实验结果表明，LEMMA在性能上显著优于其他强基线，为大型语言模型的数学推理能力提升提供了新的途径。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.17439" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 21 Mar 2025 13:59:10 GMT</pubDate>
 </item>
 </channel>
 </rss>
