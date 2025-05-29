@@ -5,15 +5,241 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>Post Hoc Registers：无需重训的视觉Transformer补救方案</title>
+<link>https://arxiv.org/abs/2505.21501</link>
+<guid>https://arxiv.org/abs/2505.21501</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种高效自蒸馏方法Post Hoc Registers，为现有ViT模型添加注册令牌以减少伪影。</p><br><br><p><strong>摘要：</strong> 视觉Transformer(ViTs)已成为视觉处理领域的主导架构，但存在与局部语义不一致的伪影令牌问题，影响细粒度定位和结构连贯性任务的表现。本文提出Post Hoc Registers(PH-Reg)，这是一种无需重新训练即可为大型预训练ViT模型添加注册令牌的高效自蒸馏方法。PH-Reg通过冻结教师网络并优化学生网络中的少量权重，利用教师网络生成去噪密集嵌入来指导学生网络学习，从而有效减少了伪影令牌的数量，提升了零样本和线性探测下的分割和深度预测性能。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.21501 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 27 May 2025 13:59:41 GMT</pubDate>
+<pubDate>Tue, 27 May 2025 13:59:41 GMT</pubDate>
+</item>
+<item>
+<title>一种无需验证器的强化学习方法用于大规模语言模型训练</title>
+<link>https://arxiv.org/abs/2505.21493</link>
+<guid>https://arxiv.org/abs/2505.21493</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出了一种无需验证器的强化学习方法，显著提升了大规模语言模型的泛化能力。</p><br><br><p><strong>摘要：</strong> 本文探讨了基于DeepSeek-R1-Zero风格的强化学习方法在大规模语言模型训练中的局限性，特别是其无法直接应用于化学、医疗等实际领域的问题。为解决这一限制，我们提出了Verifier-Free（VeriFree）方法，该方法通过直接优化生成参考答案的概率来替代传统的验证器机制。实验表明，VeriFree不仅在计算需求上有所减少，还在多个基准测试中表现出色，甚至超越了传统基于验证器的方法。此外，我们从多个角度分析了此方法的优势，包括统一模型中策略与隐式验证器的结合，以及作为变分优化方法的应用前景。相关代码已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.21493 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 27 May 2025 13:56:27 GMT</pubDate>
+<pubDate>Tue, 27 May 2025 13:56:27 GMT</pubDate>
+</item>
+<item>
+<title>基于双重过程理论优化大语言模型推理能力的研究</title>
+<link>https://arxiv.org/abs/2505.21097</link>
+<guid>https://arxiv.org/abs/2505.21097</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究通过引入四阶段任务改进大语言模型推理能力。</p><br><br><p><strong>摘要：</strong> 近期研究表明，通过强化学习应用于数学和编程等领域的问答任务可以提升大型语言模型（LLMs）的推理能力。然而，长上下文长度下LLMs虽表现出搜索行为，但这种行为常缺乏精确性和信心，导致冗长且冗余的回答。受心理学中的双重过程理论启发，我们提出了一种简单修改的问答任务，包括快速思考、验证、慢速思考及总结四个阶段。此任务显著提升了Qwen2.5-1.5B和DeepSeek-R1-Qwen-1.5B的平均准确率，其中Qwen2.5-1.5B在快速思考模式下仅用不到1000个token就达到了26.8%的准确率，展示了显著的推理效率提升。这些发现表明直觉和深思熟虑的推理是两种互补且独立的系统，需要针对性训练。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.21097 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 27 May 2025 08:22:46 GMT</pubDate>
+<pubDate>Tue, 27 May 2025 08:22:46 GMT</pubDate>
+</item>
+<item>
+<title>通过渲染反馈强化学习提升可缩放矢量图形生成</title>
+<link>https://arxiv.org/abs/2505.20793</link>
+<guid>https://arxiv.org/abs/2505.20793</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>结合渲染反馈的强化学习方法显著提升了视觉语言模型生成高质量SVG的能力。</p><br><br><p><strong>摘要：</strong> 可缩放矢量图形(SVG)因其代码可解释性成为视觉设计的重要格式，而近期的视觉语言模型(VLM)通过将SVG生成视为代码生成任务实现了高质量生成。然而，由于训练过程中缺乏对渲染图像的观察，现有VLM方法难以生成既忠实又高效的SVG。本文提出了一种名为RLRF的强化学习方法，利用渲染输出与原始输入之间的比较提供评估反馈，从而引导模型生成更精确、高效且语义连贯的SVG。实验表明，RLRF在性能上显著优于监督微调，有效解决了常见失败模式，同时增强了模型的结构化理解和泛化能力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.20793 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 27 May 2025 02:56:00 GMT</pubDate>
+<pubDate>Tue, 27 May 2025 02:56:00 GMT</pubDate>
+</item>
+<item>
+<title>FinTagging：首个全面的XBRL基准测试评估大型语言模型的财务报告结构化信息提取能力</title>
+<link>https://arxiv.org/abs/2505.20650</link>
+<guid>https://arxiv.org/abs/2505.20650</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>FinTagging评估大型语言模型在XBRL财务报告中的信息提取与语义对齐能力。</p><br><br><p><strong>摘要：</strong> 本文介绍了一个名为FinTagging的新基准测试，它旨在评估大型语言模型（LLMs）在基于XBRL的财务报告中的结构化信息提取和语义对齐能力。与之前仅关注叙述文本且将XBRL标签简化为多分类问题的基准不同，FinTagging将XBRL标签问题分解为两个子任务：FinNI用于财务实体提取，FinCL用于基于税制的概念对齐。该基准测试要求模型同时处理非结构化文本和结构化表格中的事实提取，并将其与完整的1万多项US-GAAP税制进行对齐，从而实现现实且细致的评估。我们对多种LLMs进行了零样本设置下的评估，系统分析了其在子任务和整体标签准确性上的表现。结果表明，尽管LLMs在信息提取方面表现出强大的泛化能力，但在细粒度概念对齐上存在困难，特别是在区分密切相关的税制条目时。这些发现揭示了现有LLMs在完全自动化XBRL标签方面的局限性，并强调了改进语义推理和模式感知建模的需求，以满足精确财务披露的要求。相关代码可在GitHub仓库获取，数据则可在Hugging Face仓库找到。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.20650 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 22:55:53 GMT</pubDate>
+<pubDate>Mon, 26 May 2025 22:55:53 GMT</pubDate>
+</item>
+<item>
+<title>MMPerspective：评估多模态大语言模型透视几何理解能力的新基准</title>
+<link>https://arxiv.org/abs/2505.20426</link>
+<guid>https://arxiv.org/abs/2505.20426</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究引入MMPerspective，首个专门评估多模态大语言模型透视理解能力的基准。</p><br><br><p><strong>摘要：</strong> 本文介绍了一项名为MMPerspective的研究成果，该成果是首个专门设计用于系统性评估多模态大语言模型（MLLMs）对透视几何理解的基准。MMPerspective通过三个互补维度——透视感知、推理和鲁棒性——共10项精心设计的任务，涵盖了2,711个真实世界及合成图像实例和5,083个问题-答案对。这些任务旨在测试模型的关键能力，如消失点感知、透视类型推理、三维空间中的线关系理解等。通过对43个最先进的MLLMs进行综合评估，研究发现尽管模型在表面级感知任务上表现出色，但在组合推理和在扰动下保持空间一致性方面存在显著局限。此外，分析揭示了模型架构、规模与透视能力之间的有趣模式，强调了鲁棒性瓶颈和逐步提示的好处。MMPerspective为诊断和推进视觉-语言系统的空间理解提供了一个有价值的测试平台。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.20426 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 14:20:22 GMT</pubDate>
+<pubDate>Mon, 26 May 2025 14:20:22 GMT</pubDate>
+</item>
+<item>
+<title>MotionPro：用于精确图像到视频运动控制的新型生成模型</title>
+<link>https://arxiv.org/abs/2505.20287</link>
+<guid>https://arxiv.org/abs/2505.20287</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出MotionPro，通过区域轨迹和运动掩码实现精细的运动合成控制。</p><br><br><p><strong>摘要：</strong> 动画图像与交互式运动控制在图像到视频（I2V）生成领域备受关注。现有方法通常依赖大高斯核扩展运动轨迹，但无法明确定义移动区域，导致粗略的运动控制且难以区分物体与相机的移动。为解决这些问题，我们提出了MotionPro，这是一种精确的运动控制器，创新性地利用区域轨迹和运动掩码来调节细粒度的运动合成并识别目标运动类别（即物体或相机移动）。MotionPro首先通过跟踪模型估计每个训练视频上的流图，然后采样区域轨迹以模拟推理场景。与通过大高斯核扩展流不同，我们的区域轨迹方法通过直接利用局部区域内的轨迹实现更精确的控制，从而有效表征细粒度运动。同时，运动掩码从预测的流图中导出，捕捉运动区域的整体动态。为了追求自然的运动控制，MotionPro进一步通过特征调制结合区域轨迹和运动掩码加强视频去噪。此外，我们精心构建了一个基准数据集MC-Bench，包含1100个用户注释的图像-轨迹对，用于评估细粒度和对象级别的I2V运动控制。在WebVid-10M和MC-Bench上的广泛实验验证了MotionPro的有效性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.20287 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 13:59:03 GMT</pubDate>
+<pubDate>Mon, 26 May 2025 13:59:03 GMT</pubDate>
+</item>
+<item>
+<title>VLM-3R：一种基于视觉语言模型的统一三维重建框架</title>
+<link>https://arxiv.org/abs/2505.20279</link>
+<guid>https://arxiv.org/abs/2505.20279</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出了一种结合三维重建指令微调的视觉语言模型VLM-3R。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为VLM-3R的统一框架，用于处理基于单目视频帧的三维场景理解任务。通过几何编码器生成隐式的三维标记，并利用空间-视觉-视图融合技术及大规模的三维重建指令微调问答对，VLM-3R实现了现实世界空间上下文与语言指令的有效对齐，支持单目三维空间辅助和具身推理。此外，为了评估时间推理能力，还提出了Vision-Spatial-Temporal Intelligence基准，包含五个专注于动态空间关系的任务。实验表明，该模型不仅在视觉空间推理方面表现稳健，还能理解时间维度上的三维情境变化，在准确性与可扩展性上均表现出色。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.20279 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 13:56:30 GMT</pubDate>
+<pubDate>Mon, 26 May 2025 13:56:30 GMT</pubDate>
+</item>
+<item>
+<title>大型语言模型红队测试中的能力差距研究</title>
+<link>https://arxiv.org/abs/2505.20162</link>
+<guid>https://arxiv.org/abs/2505.20162</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究显示，攻击者与目标模型的能力差距决定了红队测试的有效性。</p><br><br><p><strong>摘要：</strong> 随着大型语言模型（LLMs）的能力和自主性增强，通过红队测试识别漏洞变得至关重要。然而，当红队测试转变为弱到强的问题时，传统的提示工程方法可能失效。本研究通过能力差距视角重新定义红队测试，评估超过500对攻击者-目标模型组合的表现。结果显示，能力更强的模型更有效作为攻击者，攻击成功率在目标模型能力超过攻击者后急剧下降，并且攻击成功率与MMLU-Pro基准的社会科学部分表现呈正相关。基于这些趋势，我们推导出一个越狱规模法则，预测固定目标模型的攻击成功率。这些发现表明，固定能力的攻击者可能在未来模型中失去效用，开放源代码模型的增强风险需要被重视，模型提供方需准确衡量和控制模型的说服力和操控能力以限制其作为攻击者的有效性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.20162 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 12:05:41 GMT</pubDate>
+<pubDate>Mon, 26 May 2025 12:05:41 GMT</pubDate>
+</item>
+<item>
+<title>ScienceBoard：助力科学发现的大语言模型综合评估平台</title>
+<link>https://arxiv.org/abs/2505.19897</link>
+<guid>https://arxiv.org/abs/2505.19897</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>ScienceBoard提出多域环境与基准任务，评估当前大语言模型在科研中的表现。</p><br><br><p><strong>摘要：</strong> 大型语言模型（LLMs）已超越自然语言处理领域，推动跨学科研究发展。特别是计算机交互型代理正在革新科学研究方式。本文介绍ScienceBoard，它由两个部分组成：一是具备动态科学工作流的多域仿真环境，集成专业软件并支持多接口交互；二是涵盖生物化学、天文学等领域的169项真实任务的人类验证基准。尽管最先进的模型如GPT-4o等在部分实验中表现良好，但整体成功率仅为15%，表明现有模型尚不能可靠辅助复杂科研任务。深入分析为改进模型设计提供了方向，ScienceBoard的代码、环境及基准已公开。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.19897 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 08:27:27 GMT</pubDate>
+<pubDate>Mon, 26 May 2025 08:27:27 GMT</pubDate>
+</item>
+<item>
+<title>CoreMatching：融合Token稀疏性和Neuron稀疏性的视觉语言模型高效推理框架</title>
+<link>https://arxiv.org/abs/2505.19235</link>
+<guid>https://arxiv.org/abs/2505.19235</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究揭示Token稀疏性和Neuron稀疏性存在协同作用，并提出CoreMatching框架提升视觉语言模型推理效率。</p><br><br><p><strong>摘要：</strong> 视觉语言模型（VLMs）在多项任务中表现出色，但其高推理成本成为瓶颈。传统上，Token稀疏性和Neuron稀疏性被视为独立优化路径，然而本研究首次系统探索两者潜在交互。通过分析核心Neuron与核心Token之间的匹配机制，发现二者在推理过程中相互影响、彼此增强。基于此洞察，我们提出CoreMatching框架，通过协同适应性稀疏推理显著提升效率。实验表明，该方法在十项图像理解任务及三种硬件设备上超越现有最优模型，在NVIDIA Titan Xp上实现了5倍浮点运算减少和整体10倍加速。代码已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.19235 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 25 May 2025 13:16:34 GMT</pubDate>
+<pubDate>Sun, 25 May 2025 13:16:34 GMT</pubDate>
+</item>
+<item>
+<title>SATORI-R1: Incentivizing Multimodal Reasoning with Spatial Grounding and Verifiable Rewards</title>
+<link>https://arxiv.org/abs/2505.19094</link>
+<guid>https://arxiv.org/abs/2505.19094</guid>
+<content:encoded><![CDATA[
+
+  DeepSeek-R1 has demonstrated powerful reasoning capabilities in the text domain through stable reinforcement learning (RL). Recently, in the multimodal domain, works have begun to directly apply RL to generate R1-like free-form reasoning for Visual Question Answering (VQA) tasks. However, multimodal tasks share an intrinsically different nature from textual tasks, which heavily rely on the understanding of the input image to solve the problem. Therefore, such free-form reasoning faces two critical limitations in the VQA task: (1) Extended reasoning chains diffuse visual focus away from task-critical regions, degrading answer accuracy. (2) Unverifiable intermediate steps amplify policy-gradient variance and computational costs overhead. To address these issues, in this paper, we introduce SATORI (Spatially Anchored Task Optimization with ReInforcement Learning), which decomposes VQA into three verifiable stages, including global image captioning, region localization, and answer prediction, each supplying explicit reward signals. Furthermore, we also introduce VQA-Verify, a 12k dataset annotated with answer-aligned captions and bounding-boxes to facilitate training. Experiments demonstrate consistent performance improvements across seven VQA benchmarks, achieving up to 15.7% improvement in accuracy in accuracy compared to the R1-like baseline. Our analysis of the attention map confirms enhanced focus on critical regions, which brings improvements in accuracy. Our code is available at https://github.com/justairr/SATORI-R1.
+
+]]></content:encoded>
+<pubDate>Sun, 25 May 2025 07:11:06 GMT</pubDate>
+<pubDate>Sun, 25 May 2025 07:11:06 GMT</pubDate>
+</item>
+<item>
+<title>Guided by Gut：高效自引导测试时扩展框架提升大语言模型推理能力</title>
+<link>https://arxiv.org/abs/2505.20325</link>
+<guid>https://arxiv.org/abs/2505.20325</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种无需外部验证器的自引导方法，使小规模模型实现与大规模模型相当的推理精度。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为Guided by Gut (GG)的高效自引导测试时扩展(TTS)框架，该框架通过仅依赖内部大型语言模型(LLM)信号(如token级置信度和步进新颖性)的轻量级树搜索实现与过程奖励模型(PRM)相当的性能，而无需昂贵的外部验证器模型。关键创新包括通过目标强化学习微调阶段提高内部置信估计的可靠性。实验表明，GG使参数量为1.5B的小型模型在数学推理基准上达到或超越参数量为32B-70B的大型模型的准确性，同时将GPU内存使用减少高达10倍。与基于PRM的方法相比，GG的推理速度提高了8倍，内存使用降低了4-5倍。此外，与最佳-of-N(BoN)策略相比，GG减少了约50%的KV缓存内存使用，使得TTS技术的部署更加高效和实用。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.20325 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 23 May 2025 14:19:09 GMT</pubDate>
+<pubDate>Fri, 23 May 2025 14:19:09 GMT</pubDate>
+</item>
+<item>
+<title>BiomedSQL：评估科学推理的文本转SQL基准</title>
+<link>https://arxiv.org/abs/2505.20321</link>
+<guid>https://arxiv.org/abs/2505.20321</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究提出首个用于评估生物医学领域文本转SQL生成中科学推理能力的基准BiomedSQL。</p><br><br><p><strong>摘要：</strong> 随着生物医学研究人员越来越多地依赖大规模结构化数据库进行复杂分析，现有文本到SQL系统在将定性科学问题转换为可执行SQL查询时面临挑战，尤其是在需要隐式领域推理的情况下。本文介绍了一个名为BiomedSQL的新基准，它专门设计用于评估真实世界生物医学知识库中的文本到SQL生成中的科学推理能力。BiomedSQL由68,000个基于整合了基因-疾病关联、组学数据因果推断及药物批准记录的大规模BigQuery知识库的问题/SQL查询/答案三元组组成。该基准要求模型推断特定领域的标准，而非单纯依赖语法翻译。我们测试了多种开源和闭源LLMs，并发现GPT-o3-mini和定制多步代理BMSQL分别达到了59.0%和62.6%的执行准确性，远低于90.0%的专家基线。这些结果表明BiomedSQL为提升支持科学发现的文本到SQL系统提供了新基础。该数据集和代码已公开发布。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.20321 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 23 May 2025 13:58:07 GMT</pubDate>
+<pubDate>Fri, 23 May 2025 13:58:07 GMT</pubDate>
+</item>
+<item>
+<title>VideoGameBench：评估视觉语言模型的人类技能</title>
+<link>https://arxiv.org/abs/2505.18134</link>
+<guid>https://arxiv.org/abs/2505.18134</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究显示前沿视觉语言模型难以完成经典游戏。</p><br><br><p><strong>摘要：</strong> 本研究引入VideoGameBench，一个由10款90年代经典游戏组成的基准测试集，用于评估视觉语言模型（VLMs）在感知、导航和记忆管理等人类自然能力方面的表现。这些游戏仅提供原始视觉输入和高级目标描述，不依赖特定游戏的支持信息。实验表明，目前最先进的VLMs如Gemini 2.5 Pro，在实时交互中表现不佳，仅完成了极小比例的游戏内容。为解决推理延迟问题，还设计了暂停模式的VideoGameBench Lite，但性能提升有限。该基准旨在推动相关领域研究进展，探索模型在复杂任务中的潜力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.18134 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 23 May 2025 13:43:27 GMT</pubDate>
+<pubDate>Fri, 23 May 2025 13:43:27 GMT</pubDate>
+</item>
+<item>
+<title>CLUE：一种基于冲突与共识的语言模型不确定性解释框架</title>
+<link>https://arxiv.org/abs/2505.17855</link>
+<guid>https://arxiv.org/abs/2505.17855</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>CLUE是首个通过自然语言解释语言模型预测不确定性的框架。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为CLUE的新框架，用于生成语言模型预测不确定性的自然语言解释。CLUE通过无监督方式识别文本片段之间的主张-证据或证据间冲突与共识，这些因素驱动着模型的预测不确定性。随后，利用提示生成和注意力引导技术将这些关键交互转化为可读解释。实验表明，在三个语言模型和两个事实核查数据集上，CLUE生成的解释比未引导的不确定性解释更具忠实性和一致性。此外，人类评估者认为CLUE的解释更具有帮助性、信息量更大且逻辑上更一致。CLUE无需微调或架构改动，适用于任何白盒语言模型，有助于提高事实核查工作的实用性，并可推广到其他需要复杂推理的任务中。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.17855 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 23 May 2025 09:06:43 GMT</pubDate>
+<pubDate>Fri, 23 May 2025 09:06:43 GMT</pubDate>
+</item>
+<item>
+<title>PreMoe：高效部署大规模Mixture-of-Experts模型的新框架</title>
+<link>https://arxiv.org/abs/2505.17639</link>
+<guid>https://arxiv.org/abs/2505.17639</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出PreMoe框架，通过专家剪枝和检索实现大规模MoE模型在内存受限环境下的高效部署。</p><br><br><p><strong>摘要：</strong> 本文研究了Mixture-of-Experts（MoE）架构中的专家激活模式，发现其具有显著的任务特定专业化特性。基于此，我们提出了PreMoe框架，它由概率专家剪枝（PEP）和任务适应性专家检索（TAER）两个主要组件构成。PEP利用任务条件期望选择评分（TCESS）量化专家的重要性，从而识别出任务关键专家的最小集合。而TAER则通过预计算和存储针对多样化任务的紧凑专家模式，在接收到用户查询时快速定位相关任务模式并仅加载必要专家，大幅降低内存占用。实验表明，DeepSeek-R1 671B和Pangu-Ultra-MoE 718B等大型MoE模型在经过不同程度的专家剪枝后仍保持较高的精度。该方法在云服务器到消费级设备的各种计算环境中均表现出色，且代码已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.17639 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 23 May 2025 04:59:16 GMT</pubDate>
+<pubDate>Fri, 23 May 2025 04:59:16 GMT</pubDate>
+</item>
+<item>
+<title>MMMG：面向多模态生成的人类对齐基准测试</title>
+<link>https://arxiv.org/abs/2505.17613</link>
+<guid>https://arxiv.org/abs/2505.17613</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出MMMG基准测试，解决多模态生成自动评估难题。</p><br><br><p><strong>摘要：</strong> 本文介绍了一个名为MMMG的综合基准测试，专门用于评估涉及图像、音频、文本与图像交织、文本与音频交织四种模态组合的多模态生成模型。该基准测试包含49项任务，其中29项为新开发任务，共涵盖937条指令，旨在系统性评估多模态生成模型的推理能力、可控性等关键特性。通过广泛的验证表明，MMMG与人类评价高度一致，平均一致性达到94.3%。对24种多模态生成模型的基准测试结果显示，尽管最先进的模型GPT Image在图像生成方面达到78.3%的准确率，但在多模态推理和交织生成任务上表现欠佳，同时音频生成领域仍有显著提升空间，为未来研究提供了重要方向。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.17613 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 23 May 2025 04:21:28 GMT</pubDate>
+<pubDate>Fri, 23 May 2025 04:21:28 GMT</pubDate>
+</item>
+<item>
+<title>SweEval：评估大语言模型在企业场景中的伦理对齐性</title>
+<link>https://arxiv.org/abs/2505.17332</link>
+<guid>https://arxiv.org/abs/2505.17332</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>SweEval通过模拟真实场景评估大语言模型是否能抵制不当指令。</p><br><br><p><strong>摘要：</strong> 随着企业越来越多地采用大型语言模型（LLMs）用于关键沟通任务，如撰写邮件、销售演示文稿等，如何确保这些模型在全球不同地区正确理解和适应文化及语言背景变得至关重要。企业应用中尤为关注的是降低声誉风险、维护信任并保证合规性，特别是在处理不安全或冒犯性语言时。为此，我们开发了SweEval基准测试，它通过模拟正负语气及正式非正式语境的变化来测试LLMs的表现。特别地，SweEval的提示会明确要求模型包含特定的脏话，以此评估模型遵守还是抗拒此类不当指示的能力，同时考察其在伦理框架、文化差异及语言理解方面的表现。为了推动构建符合道德规范的企业级AI系统，我们公开了该数据集及相关代码资源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.17332 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 22 May 2025 18:56:58 GMT</pubDate>
+<pubDate>Thu, 22 May 2025 18:56:58 GMT</pubDate>
+</item>
+
+<item>
 <title>AdInject: Real-World Black-Box Attacks on Web Agents via Advertising Delivery</title>
 <link>https://arxiv.org/abs/2505.21499</link>
 <guid>https://arxiv.org/abs/2505.21499</guid>
 <content:encoded><![CDATA[
-
-  Vision-Language Model (VLM) based Web Agents represent a significant step towards automating complex tasks by simulating human-like interaction with websites. However, their deployment in uncontrolled web environments introduces significant security vulnerabilities. Existing research on adversarial environmental injection attacks often relies on unrealistic assumptions, such as direct HTML manipulation, knowledge of user intent, or access to agent model parameters, limiting their practical applicability. In this paper, we propose AdInject, a novel and real-world black-box attack method that leverages the internet advertising delivery to inject malicious content into the Web Agent's environment. AdInject operates under a significantly more realistic threat model than prior work, assuming a black-box agent, static malicious content constraints, and no specific knowledge of user intent. AdInject includes strategies for designing malicious ad content aimed at misleading agents into clicking, and a VLM-based ad content optimization technique that infers potential user intents from the target website's context and integrates these intents into the ad content to make it appear more relevant or critical to the agent's task, thus enhancing attack effectiveness. Experimental evaluations demonstrate the effectiveness of AdInject, attack success rates exceeding 60% in most scenarios and approaching 100% in certain cases. This strongly demonstrates that prevalent advertising delivery constitutes a potent and real-world vector for environment injection attacks against Web Agents. This work highlights a critical vulnerability in Web Agent security arising from real-world environment manipulation channels, underscoring the urgent need for developing robust defense mechanisms against such threats. Our code is available at https://github.com/NicerWang/AdInject.
-
+Vision-Language Model (VLM) based Web Agents represent a significant step towards automating complex tasks by simulating human-like interaction with websites. However, their deployment in uncontrolled web environments introduces significant security vulnerabilities. Existing research on adversarial environmental injection attacks often relies on unrealistic assumptions, such as direct HTML manipulation, knowledge of user intent, or access to agent model parameters, limiting their practical applicability. In this paper, we propose AdInject, a novel and real-world black-box attack method that leverages the internet advertising delivery to inject malicious content into the Web Agent's environment. AdInject operates under a significantly more realistic threat model than prior work, assuming a black-box agent, static malicious content constraints, and no specific knowledge of user intent. AdInject includes strategies for designing malicious ad content aimed at misleading agents into clicking, and a VLM-based ad content optimization technique that infers potential user intents from the target website's context and integrates these intents into the ad content to make it appear more relevant or critical to the agent's task, thus enhancing attack effectiveness. Experimental evaluations demonstrate the effectiveness of AdInject, attack success rates exceeding 60% in most scenarios and approaching 100% in certain cases. This strongly demonstrates that prevalent advertising delivery constitutes a potent and real-world vector for environment injection attacks against Web Agents. This work highlights a critical vulnerability in Web Agent security arising from real-world environment manipulation channels, underscoring the urgent need for developing robust defense mechanisms against such threats. Our code is available at https://github.com/NicerWang/AdInject.
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 13:59:05 GMT</pubDate>
 <pubDate>Tue, 27 May 2025 13:59:05 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +247,8 @@
 <link>https://arxiv.org/abs/2505.21471</link>
 <guid>https://arxiv.org/abs/2505.21471</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种多智能体框架ExtAgents，有效扩展知识输入规模且不增加上下文长度。</p><br><br><p><strong>摘要：</strong> 本文针对大语言模型（LLMs）在推理与信息获取任务中的局限性展开研究。传统方法受限于模型上下文窗口大小，难以处理大规模外部知识输入，导致性能瓶颈。为解决这一问题，作者开发了名为ExtAgents的多智能体框架，通过分布式的知识同步与推理过程克服现有方法的信息丢失问题。该框架在多跳问答测试集$inftyBench+$及长文档生成等任务中表现优异，显著提升了非训练方法的性能，同时保持高效并行计算优势。未来研究可进一步优化多智能体协调机制，推动实际应用发展。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.21471 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种多智能体框架ExtAgents，有效扩展知识输入规模且不增加上下文长度。</p><br /><br /><p><strong>摘要：</strong> 本文针对大语言模型（LLMs）在推理与信息获取任务中的局限性展开研究。传统方法受限于模型上下文窗口大小，难以处理大规模外部知识输入，导致性能瓶颈。为解决这一问题，作者开发了名为ExtAgents的多智能体框架，通过分布式的知识同步与推理过程克服现有方法的信息丢失问题。该框架在多跳问答测试集$inftyBench+$及长文档生成等任务中表现优异，显著提升了非训练方法的性能，同时保持高效并行计算优势。未来研究可进一步优化多智能体协调机制，推动实际应用发展。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.21471" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 13:45:04 GMT</pubDate>
 <pubDate>Tue, 27 May 2025 13:45:04 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +256,8 @@
 <link>https://arxiv.org/abs/2505.21189</link>
 <guid>https://arxiv.org/abs/2505.21189</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究发现，冻结的大语言模型无需自回归即可一次性生成数百个准确令牌。</p><br><br><p><strong>摘要：</strong> 本研究探讨了大型语言模型（LLMs）是否可以在不依赖自回归的情况下重构长文本。实验表明，当提供两个训练好的嵌入时，冻结的LLMs可以在单次前向传递中生成多达数百个准确的令牌，展示了这些模型一种令人惊讶且尚未充分探索的能力——即一次性生成多个令牌而无需迭代解码。此外，研究还分析了这些嵌入的行为，并揭示了它们所编码的信息类型。尽管这些表示并非对于给定文本唯一，但它们在嵌入空间中形成连接且局部的区域，这一特性暗示了学习专用编码器进入该空间的可能性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.21189 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究发现，冻结的大语言模型无需自回归即可一次性生成数百个准确令牌。</p><br /><br /><p><strong>摘要：</strong> 本研究探讨了大型语言模型（LLMs）是否可以在不依赖自回归的情况下重构长文本。实验表明，当提供两个训练好的嵌入时，冻结的LLMs可以在单次前向传递中生成多达数百个准确的令牌，展示了这些模型一种令人惊讶且尚未充分探索的能力——即一次性生成多个令牌而无需迭代解码。此外，研究还分析了这些嵌入的行为，并揭示了它们所编码的信息类型。尽管这些表示并非对于给定文本唯一，但它们在嵌入空间中形成连接且局部的区域，这一特性暗示了学习专用编码器进入该空间的可能性。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.21189" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 09:39:24 GMT</pubDate>
 <pubDate>Tue, 27 May 2025 09:39:24 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +265,8 @@
 <link>https://arxiv.org/abs/2505.21178</link>
 <guid>https://arxiv.org/abs/2505.21178</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种两阶段强化学习框架ConciseR，提升大型语言模型推理效率并减少冗余。</p><br><br><p><strong>摘要：</strong> 随着大型语言模型（LLMs）在推理能力上的发展，扩展生成长度成为研究热点。然而，过长且重复的推理链条（CoT）现象普遍存在。本文提出ConciseR，一种两阶段强化学习方法，第一阶段通过Group Relative Policy Optimization优化推理能力，第二阶段利用Length-aware Group Relative Policy Optimization提升表达简洁性。实验表明，ConciseR在多个基准测试中超越现有最先进的推理模型，同时生成更简洁的推理链条。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.21178 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种两阶段强化学习框架ConciseR，提升大型语言模型推理效率并减少冗余。</p><br /><br /><p><strong>摘要：</strong> 随着大型语言模型（LLMs）在推理能力上的发展，扩展生成长度成为研究热点。然而，过长且重复的推理链条（CoT）现象普遍存在。本文提出ConciseR，一种两阶段强化学习方法，第一阶段通过Group Relative Policy Optimization优化推理能力，第二阶段利用Length-aware Group Relative Policy Optimization提升表达简洁性。实验表明，ConciseR在多个基准测试中超越现有最先进的推理模型，同时生成更简洁的推理链条。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.21178" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 09:29:51 GMT</pubDate>
 <pubDate>Tue, 27 May 2025 09:29:51 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +274,8 @@
 <link>https://arxiv.org/abs/2505.20286</link>
 <guid>https://arxiv.org/abs/2505.20286</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种极简设计的通用智能代理Alita，显著提升跨领域适应性和推理能力。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为Alita的通用智能代理，其设计理念强调“简单即至高精妙”，通过极简的预定义组件与强大的自演化能力，实现了高效的开放式任务执行。Alita仅配备一个用于直接问题求解的基本组件，摒弃了传统复杂工具和工作流的设计，从而大幅提升了通用性和扩展性。此外，通过生成任务相关的模型上下文协议（MCPs），Alita能够自主构建和优化外部能力，进一步增强了其推理能力。在GAIA基准测试中，Alita取得了75.15%的pass@1和87.27%的pass@3的高准确率，分别在Mathvista和PathVQA上达到了74.00%和52.00%的pass@1成绩，展现出卓越的性能表现。未来更多细节将在GitHub项目页面更新。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.20286 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种极简设计的通用智能代理Alita，显著提升跨领域适应性和推理能力。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种名为Alita的通用智能代理，其设计理念强调“简单即至高精妙”，通过极简的预定义组件与强大的自演化能力，实现了高效的开放式任务执行。Alita仅配备一个用于直接问题求解的基本组件，摒弃了传统复杂工具和工作流的设计，从而大幅提升了通用性和扩展性。此外，通过生成任务相关的模型上下文协议（MCPs），Alita能够自主构建和优化外部能力，进一步增强了其推理能力。在GAIA基准测试中，Alita取得了75.15%的pass@1和87.27%的pass@3的高准确率，分别在Mathvista和PathVQA上达到了74.00%和52.00%的pass@1成绩，展现出卓越的性能表现。未来更多细节将在GitHub项目页面更新。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.20286" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 26 May 2025 13:58:53 GMT</pubDate>
 <pubDate>Mon, 26 May 2025 13:58:53 GMT</pubDate>
 </item>
 <item>
@@ -69,11 +283,8 @@
 <link>https://arxiv.org/abs/2505.20052</link>
 <guid>https://arxiv.org/abs/2505.20052</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究提出多任务预训练策略显著提高蛋白质语言模型的性能。</p><br><br><p><strong>摘要：</strong> 蛋白质语言模型（PLMs）在检测蛋白质序列复杂模式方面表现出色，但单一预训练任务可能限制其信息捕捉能力。尽管添加数据模态或监督目标可提升模型表现，但通常仍集中于去噪处理。本研究开发了Ankh3模型，通过联合优化掩码语言建模和基于蛋白质序列的序列完成两项任务，证明PLMs可以从蛋白质序列中学习到更丰富且可泛化的表征。实验表明，在二级结构预测、荧光性、GB1适应性和接触预测等下游任务上，该模型表现优异，多任务集成使其对蛋白质特性有更全面的理解，从而实现更稳健和精确的预测。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.20052 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究提出多任务预训练策略显著提高蛋白质语言模型的性能。</p><br /><br /><p><strong>摘要：</strong> 蛋白质语言模型（PLMs）在检测蛋白质序列复杂模式方面表现出色，但单一预训练任务可能限制其信息捕捉能力。尽管添加数据模态或监督目标可提升模型表现，但通常仍集中于去噪处理。本研究开发了Ankh3模型，通过联合优化掩码语言建模和基于蛋白质序列的序列完成两项任务，证明PLMs可以从蛋白质序列中学习到更丰富且可泛化的表征。实验表明，在二级结构预测、荧光性、GB1适应性和接触预测等下游任务上，该模型表现优异，多任务集成使其对蛋白质特性有更全面的理解，从而实现更稳健和精确的预测。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.20052" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 26 May 2025 10:41:10 GMT</pubDate>
 <pubDate>Mon, 26 May 2025 10:41:10 GMT</pubDate>
 </item>
 <item>
@@ -81,11 +292,8 @@
 <link>https://arxiv.org/abs/2505.20036</link>
 <guid>https://arxiv.org/abs/2505.20036</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究提出新的蛋白质相互作用数据集及架构，显著提升亲和力预测性能。</p><br><br><p><strong>摘要：</strong> 蛋白质-蛋白质相互作用(PPIs)对细胞过程至关重要，但利用蛋白质语言模型(PLMs)进行序列驱动的PPI结合亲和力预测仍面临挑战。本文通过构建高质量PPB-Affinity数据集并评估四种适应性架构(嵌入级联、序列级联、分层池化、池化注意力加法)，采用全微调及轻量级ConvBERT头方法，测试了多种领先PLMs。实验表明，分层池化和池化注意力加法架构优于传统方法，Spearman相关性提升高达12%，凸显复杂架构设计的重要性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.20036 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究提出新的蛋白质相互作用数据集及架构，显著提升亲和力预测性能。</p><br /><br /><p><strong>摘要：</strong> 蛋白质-蛋白质相互作用(PPIs)对细胞过程至关重要，但利用蛋白质语言模型(PLMs)进行序列驱动的PPI结合亲和力预测仍面临挑战。本文通过构建高质量PPB-Affinity数据集并评估四种适应性架构(嵌入级联、序列级联、分层池化、池化注意力加法)，采用全微调及轻量级ConvBERT头方法，测试了多种领先PLMs。实验表明，分层池化和池化注意力加法架构优于传统方法，Spearman相关性提升高达12%，凸显复杂架构设计的重要性。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.20036" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 26 May 2025 10:23:08 GMT</pubDate>
 <pubDate>Mon, 26 May 2025 10:23:08 GMT</pubDate>
 </item>
 <item>
@@ -93,11 +301,8 @@
 <link>https://arxiv.org/abs/2505.19954</link>
 <guid>https://arxiv.org/abs/2505.19954</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出结合文本报告生成与大语言模型的透明诊断框架。</p><br><br><p><strong>摘要：</strong> 本文针对神经退行性痴呆的鉴别诊断难题，提出了一种融合模块化MRI文本报告生成与现代大语言模型（LLMs）的新框架。该框架通过将3D T1加权脑部MRI转换为放射学报告，并利用强化学习优化LLMs的诊断推理能力，从而在保持高预测性能的同时增强诊断透明度。不同于事后解释方法，该框架在推理过程中生成因果相关的诊断理由，支持临床医生的理解与决策。实验表明，该方法在诊断准确性上媲美现有深度学习方法，同时提供可解释的诊断依据。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.19954 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出结合文本报告生成与大语言模型的透明诊断框架。</p><br /><br /><p><strong>摘要：</strong> 本文针对神经退行性痴呆的鉴别诊断难题，提出了一种融合模块化MRI文本报告生成与现代大语言模型（LLMs）的新框架。该框架通过将3D T1加权脑部MRI转换为放射学报告，并利用强化学习优化LLMs的诊断推理能力，从而在保持高预测性能的同时增强诊断透明度。不同于事后解释方法，该框架在推理过程中生成因果相关的诊断理由，支持临床医生的理解与决策。实验表明，该方法在诊断准确性上媲美现有深度学习方法，同时提供可解释的诊断依据。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.19954" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 26 May 2025 09:18:32 GMT</pubDate>
 <pubDate>Mon, 26 May 2025 09:18:32 GMT</pubDate>
 </item>
 <item>
@@ -105,11 +310,8 @@
 <link>https://arxiv.org/abs/2505.19650</link>
 <guid>https://arxiv.org/abs/2505.19650</guid>
 <content:encoded><![CDATA[
-
-  Multimodal information retrieval (MIR) faces inherent challenges due to the heterogeneity of data sources and the complexity of cross-modal alignment. While previous studies have identified modal gaps in feature spaces, a systematic approach to address these challenges remains unexplored. In this work, we introduce UNITE, a universal framework that tackles these challenges through two critical yet underexplored aspects: data curation and modality-aware training configurations. Our work provides the first comprehensive analysis of how modality-specific data properties influence downstream task performance across diverse scenarios. Moreover, we propose Modal-Aware Masked Contrastive Learning (MAMCL) to mitigate the competitive relationships among the instances of different modalities. Our framework achieves state-of-the-art results on multiple multimodal retrieval benchmarks, outperforming existing methods by notable margins. Through extensive experiments, we demonstrate that strategic modality curation and tailored training protocols are pivotal for robust cross-modal representation learning. This work not only advances MIR performance but also provides a foundational blueprint for future research in multimodal systems. Our project is available at https://friedrichor.github.io/projects/UNITE.
-
+Multimodal information retrieval (MIR) faces inherent challenges due to the heterogeneity of data sources and the complexity of cross-modal alignment. While previous studies have identified modal gaps in feature spaces, a systematic approach to address these challenges remains unexplored. In this work, we introduce UNITE, a universal framework that tackles these challenges through two critical yet underexplored aspects: data curation and modality-aware training configurations. Our work provides the first comprehensive analysis of how modality-specific data properties influence downstream task performance across diverse scenarios. Moreover, we propose Modal-Aware Masked Contrastive Learning (MAMCL) to mitigate the competitive relationships among the instances of different modalities. Our framework achieves state-of-the-art results on multiple multimodal retrieval benchmarks, outperforming existing methods by notable margins. Through extensive experiments, we demonstrate that strategic modality curation and tailored training protocols are pivotal for robust cross-modal representation learning. This work not only advances MIR performance but also provides a foundational blueprint for future research in multimodal systems. Our project is available at https://friedrichor.github.io/projects/UNITE.
 ]]></content:encoded>
-<pubDate>Mon, 26 May 2025 04:09:44 GMT</pubDate>
 <pubDate>Mon, 26 May 2025 04:09:44 GMT</pubDate>
 </item>
 <item>
@@ -117,11 +319,8 @@
 <link>https://arxiv.org/abs/2505.19641</link>
 <guid>https://arxiv.org/abs/2505.19641</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出SynLogic框架，生成大规模逻辑推理数据，提升大语言模型的推理能力。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为SynLogic的数据合成框架及相应数据集，该框架能够大规模生成多样化的逻辑推理数据，涵盖35种不同的逻辑推理任务。SynLogic的独特之处在于其可控性，可以调整数据难度和数量，且所有生成的数据均可以通过简单规则验证，非常适合强化学习中的可验证奖励机制。实验结果显示，基于SynLogic训练的模型在逻辑推理任务上达到领先水平，并显著提升了其他领域如数学和编程任务的训练效率和泛化能力。此外，将SynLogic数据与其他领域的任务数据混合训练，进一步提高了模型的综合表现。这些成果表明SynLogic是一个重要的资源，有助于推动大语言模型的广泛推理能力发展。SynLogic的数据合成管道及相关数据集已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.19641 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出SynLogic框架，生成大规模逻辑推理数据，提升大语言模型的推理能力。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种名为SynLogic的数据合成框架及相应数据集，该框架能够大规模生成多样化的逻辑推理数据，涵盖35种不同的逻辑推理任务。SynLogic的独特之处在于其可控性，可以调整数据难度和数量，且所有生成的数据均可以通过简单规则验证，非常适合强化学习中的可验证奖励机制。实验结果显示，基于SynLogic训练的模型在逻辑推理任务上达到领先水平，并显著提升了其他领域如数学和编程任务的训练效率和泛化能力。此外，将SynLogic数据与其他领域的任务数据混合训练，进一步提高了模型的综合表现。这些成果表明SynLogic是一个重要的资源，有助于推动大语言模型的广泛推理能力发展。SynLogic的数据合成管道及相关数据集已开源。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.19641" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 26 May 2025 03:59:36 GMT</pubDate>
 <pubDate>Mon, 26 May 2025 03:59:36 GMT</pubDate>
 </item>
 <item>
@@ -129,11 +328,8 @@
 <link>https://arxiv.org/abs/2505.19433</link>
 <guid>https://arxiv.org/abs/2505.19433</guid>
 <content:encoded><![CDATA[
-
-  Post-training compression reduces the computational and memory costs of large language models (LLMs), enabling resource-efficient deployment. However, existing compression benchmarks only focus on language modeling (e.g., perplexity) and natural language understanding tasks (e.g., GLUE accuracy), ignoring the agentic capabilities - workflow, tool use/function call, long-context understanding and real-world application. We introduce the Agent Compression Benchmark (ACBench), the first comprehensive benchmark for evaluating how compression impacts LLMs' agentic abilities. ACBench spans (1) 12 tasks across 4 capabilities (e.g., WorfBench for workflow generation, Needle-in-Haystack for long-context retrieval), (2) quantization (GPTQ, AWQ) and pruning (Wanda, SparseGPT), and (3) 15 models, including small (Gemma-2B), standard (Qwen2.5 7B-32B), and distilled reasoning LLMs (DeepSeek-R1-Distill). Our experiments reveal compression tradeoffs: 4-bit quantization preserves workflow generation and tool use (1%-3% drop) but degrades real-world application accuracy by 10%-15%. We introduce ERank, Top-k Ranking Correlation and Energy to systematize analysis. ACBench provides actionable insights for optimizing LLM compression in agentic scenarios. The code can be found in https://github.com/pprp/ACBench.
-
+Post-training compression reduces the computational and memory costs of large language models (LLMs), enabling resource-efficient deployment. However, existing compression benchmarks only focus on language modeling (e.g., perplexity) and natural language understanding tasks (e.g., GLUE accuracy), ignoring the agentic capabilities - workflow, tool use/function call, long-context understanding and real-world application. We introduce the Agent Compression Benchmark (ACBench), the first comprehensive benchmark for evaluating how compression impacts LLMs' agentic abilities. ACBench spans (1) 12 tasks across 4 capabilities (e.g., WorfBench for workflow generation, Needle-in-Haystack for long-context retrieval), (2) quantization (GPTQ, AWQ) and pruning (Wanda, SparseGPT), and (3) 15 models, including small (Gemma-2B), standard (Qwen2.5 7B-32B), and distilled reasoning LLMs (DeepSeek-R1-Distill). Our experiments reveal compression tradeoffs: 4-bit quantization preserves workflow generation and tool use (1%-3% drop) but degrades real-world application accuracy by 10%-15%. We introduce ERank, Top-k Ranking Correlation and Energy to systematize analysis. ACBench provides actionable insights for optimizing LLM compression in agentic scenarios. The code can be found in https://github.com/pprp/ACBench.
 ]]></content:encoded>
-<pubDate>Sun, 25 May 2025 22:49:07 GMT</pubDate>
 <pubDate>Sun, 25 May 2025 22:49:07 GMT</pubDate>
 </item>
 <item>
@@ -141,11 +337,8 @@
 <link>https://arxiv.org/abs/2505.18657</link>
 <guid>https://arxiv.org/abs/2505.18657</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>本文探讨多模态大型语言模型中的模态偏差问题并提出缓解策略。</p><br><br><p><strong>摘要：</strong> 近年来，多模态大型语言模型（MLLMs）在整合文本、图像等多种模态方面取得了显著进展。然而，这些模型深受模态偏差影响，往往过度依赖语言而忽视视觉等其他模态的信息。本文首先诊断了当前MLLMs中模态偏差的表现形式，接着提出了系统性的研究路线图，并分析了导致模态偏差的关键因素。通过实验验证，我们发现数据特性、主干网络能力不平衡以及训练目标设计不当均加剧了模态偏差现象。为解决这些问题，我们建议采用平衡的训练策略和优化模型架构，促进跨模态信息的有效融合。此外，我们呼吁跨学科合作以推动MLLMs领域的进一步发展，为实现通用人工智能提供支持。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.18657 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">本文探讨多模态大型语言模型中的模态偏差问题并提出缓解策略。</p><br /><br /><p><strong>摘要：</strong> 近年来，多模态大型语言模型（MLLMs）在整合文本、图像等多种模态方面取得了显著进展。然而，这些模型深受模态偏差影响，往往过度依赖语言而忽视视觉等其他模态的信息。本文首先诊断了当前MLLMs中模态偏差的表现形式，接着提出了系统性的研究路线图，并分析了导致模态偏差的关键因素。通过实验验证，我们发现数据特性、主干网络能力不平衡以及训练目标设计不当均加剧了模态偏差现象。为解决这些问题，我们建议采用平衡的训练策略和优化模型架构，促进跨模态信息的有效融合。此外，我们呼吁跨学科合作以推动MLLMs领域的进一步发展，为实现通用人工智能提供支持。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.18657" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Sat, 24 May 2025 07:49:31 GMT</pubDate>
 <pubDate>Sat, 24 May 2025 07:49:31 GMT</pubDate>
 </item>
 <item>
@@ -153,11 +346,8 @@
 <link>https://arxiv.org/abs/2505.17952</link>
 <guid>https://arxiv.org/abs/2505.17952</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>AlphaMed无需使用昂贵的有监督微调数据，在公共数据集上通过强化学习实现顶级医学问答性能。</p><br><br><p><strong>摘要：</strong> 本文介绍了一个名为AlphaMed的医学领域大型语言模型（LLM），该模型展示了仅通过强化学习（RL）即可实现复杂推理能力的可能性。传统方法通常依赖于从闭源模型（如GPT-4o）蒸馏出的有监督链式思维（CoT）数据进行微调，而AlphaMed则完全避免了这一过程，而是利用基于简单规则的奖励机制，在公开的多选题问答数据集上训练。实验结果显示，AlphaMed在六个医学问答基准测试中取得了最先进的成果，甚至超过了规模更大的闭源模型，例如DeepSeek-V3-671B和Claude-3.5-Sonnet。为了深入理解这一成功的原因，我们围绕三个问题进行了系统分析：1）是否可以通过简单的规则激励推理而不依赖蒸馏的CoT监督？2）数据的数量和多样性如何影响推理能力？3）问题难度如何塑造推理的产生与泛化？研究发现，数据的信息量是推理表现的关键驱动因素，而基于多选题问答数据的极简主义强化学习方法在没有CoT监督的情况下也能有效诱导推理。此外，不同基准测试中的表现差异揭示了当前评估标准的局限性，强调了开发更具挑战性和推理导向的医学问答基准的重要性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.17952 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">AlphaMed无需使用昂贵的有监督微调数据，在公共数据集上通过强化学习实现顶级医学问答性能。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一个名为AlphaMed的医学领域大型语言模型（LLM），该模型展示了仅通过强化学习（RL）即可实现复杂推理能力的可能性。传统方法通常依赖于从闭源模型（如GPT-4o）蒸馏出的有监督链式思维（CoT）数据进行微调，而AlphaMed则完全避免了这一过程，而是利用基于简单规则的奖励机制，在公开的多选题问答数据集上训练。实验结果显示，AlphaMed在六个医学问答基准测试中取得了最先进的成果，甚至超过了规模更大的闭源模型，例如DeepSeek-V3-671B和Claude-3.5-Sonnet。为了深入理解这一成功的原因，我们围绕三个问题进行了系统分析：1）是否可以通过简单的规则激励推理而不依赖蒸馏的CoT监督？2）数据的数量和多样性如何影响推理能力？3）问题难度如何塑造推理的产生与泛化？研究发现，数据的信息量是推理表现的关键驱动因素，而基于多选题问答数据的极简主义强化学习方法在没有CoT监督的情况下也能有效诱导推理。此外，不同基准测试中的表现差异揭示了当前评估标准的局限性，强调了开发更具挑战性和推理导向的医学问答基准的重要性。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.17952" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 23 May 2025 10:27:37 GMT</pubDate>
 <pubDate>Fri, 23 May 2025 10:27:37 GMT</pubDate>
 </item>
 <item>
@@ -165,11 +355,8 @@
 <link>https://arxiv.org/abs/2505.17190</link>
 <guid>https://arxiv.org/abs/2505.17190</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出热带注意力机制，提升算法推理在分布外数据上的表现。</p><br><br><p><strong>摘要：</strong> 动态规划(DP)算法在组合优化问题中通过最大值、最小值及经典加法进行递归运算，其相关值函数对应于最大半环中的凸多面体。然而，现有的神经算法推理模型依赖于softmax归一化的点积注意力，这种平滑的指数加权方式会模糊这些尖锐的多面体结构，并在分布外(OOD)设置下失效。本文引入了一种新型的热带注意力机制，该机制原生运行于热带几何的最大半环中。我们证明了热带注意力可以近似动态规划类型的组合算法的热带电路。此外，实验表明，使用热带变换器在算法推理任务中增强了长度泛化和值泛化的经验OOD性能，同时在对抗攻击下保持稳定。我们的研究还提出了对抗攻击泛化作为神经算法推理基准测试的第三个维度。结果表明，热带注意力恢复了softmax所缺失的尖锐且尺度不变的推理能力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.17190 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出热带注意力机制，提升算法推理在分布外数据上的表现。</p><br /><br /><p><strong>摘要：</strong> 动态规划(DP)算法在组合优化问题中通过最大值、最小值及经典加法进行递归运算，其相关值函数对应于最大半环中的凸多面体。然而，现有的神经算法推理模型依赖于softmax归一化的点积注意力，这种平滑的指数加权方式会模糊这些尖锐的多面体结构，并在分布外(OOD)设置下失效。本文引入了一种新型的热带注意力机制，该机制原生运行于热带几何的最大半环中。我们证明了热带注意力可以近似动态规划类型的组合算法的热带电路。此外，实验表明，使用热带变换器在算法推理任务中增强了长度泛化和值泛化的经验OOD性能，同时在对抗攻击下保持稳定。我们的研究还提出了对抗攻击泛化作为神经算法推理基准测试的第三个维度。结果表明，热带注意力恢复了softmax所缺失的尖锐且尺度不变的推理能力。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.17190" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 22 May 2025 14:01:25 GMT</pubDate>
 <pubDate>Thu, 22 May 2025 14:01:25 GMT</pubDate>
 </item>
 <item>
@@ -177,11 +364,8 @@
 <link>https://arxiv.org/abs/2505.17005</link>
 <guid>https://arxiv.org/abs/2505.17005</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种结合内部知识与外部检索的新框架，提升大语言模型推理能力。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为R1-Searcher++的新框架，旨在通过结合大型语言模型（LLMs）的内部知识与外部信息源，解决现有检索增强生成（RAG）方法中存在的成本高、泛化性差等问题。该框架采用两阶段训练策略：首先进行初步格式学习的SFT冷启动阶段，随后进入强化学习阶段，用于动态知识获取。在强化学习阶段，通过结果监督促进探索，引入奖励机制以利用内部知识，并结合记忆机制持续吸收检索到的信息，从而丰富模型的内部知识库。实验结果显示，R1-Searcher++在多个任务上优于传统RAG及推理方法，同时实现了高效的检索增强推理。代码已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.17005 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种结合内部知识与外部检索的新框架，提升大语言模型推理能力。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种名为R1-Searcher++的新框架，旨在通过结合大型语言模型（LLMs）的内部知识与外部信息源，解决现有检索增强生成（RAG）方法中存在的成本高、泛化性差等问题。该框架采用两阶段训练策略：首先进行初步格式学习的SFT冷启动阶段，随后进入强化学习阶段，用于动态知识获取。在强化学习阶段，通过结果监督促进探索，引入奖励机制以利用内部知识，并结合记忆机制持续吸收检索到的信息，从而丰富模型的内部知识库。实验结果显示，R1-Searcher++在多个任务上优于传统RAG及推理方法，同时实现了高效的检索增强推理。代码已开源。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.17005" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 22 May 2025 13:58:26 GMT</pubDate>
 <pubDate>Thu, 22 May 2025 13:58:26 GMT</pubDate>
 </item>
 <item>
@@ -189,11 +373,8 @@
 <link>https://arxiv.org/abs/2505.15561</link>
 <guid>https://arxiv.org/abs/2505.15561</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究显示位置偏差对LLM利用相关信息和抵御干扰信息的影响。</p><br><br><p><strong>摘要：</strong> 本文探讨了位置偏差如何影响检索增强生成（Retrieval Augmented Generation）中大型语言模型（LLM）利用相关文档的能力及受到干扰文档影响的程度。通过在三个基准测试上的大量实验表明，最先进的检索管道虽旨在检索相关文档，但往往会将高度干扰性的文档排在前10位，超过60%的查询包含至少一个高干扰性文档。尽管位置偏差在受控环境中被认为非常显著，但在实际场景中其影响较小，因为相关和干扰文档均被惩罚。此外，研究发现试图根据LLM位置偏好重新排列文档的复杂策略并不优于随机排序。这些发现揭示了位置偏差的实际影响及其应对策略的有效性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.15561 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究显示位置偏差对LLM利用相关信息和抵御干扰信息的影响。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了位置偏差如何影响检索增强生成（Retrieval Augmented Generation）中大型语言模型（LLM）利用相关文档的能力及受到干扰文档影响的程度。通过在三个基准测试上的大量实验表明，最先进的检索管道虽旨在检索相关文档，但往往会将高度干扰性的文档排在前10位，超过60%的查询包含至少一个高干扰性文档。尽管位置偏差在受控环境中被认为非常显著，但在实际场景中其影响较小，因为相关和干扰文档均被惩罚。此外，研究发现试图根据LLM位置偏好重新排列文档的复杂策略并不优于随机排序。这些发现揭示了位置偏差的实际影响及其应对策略的有效性。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.15561" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 21 May 2025 10:18:01 GMT</pubDate>
 <pubDate>Wed, 21 May 2025 10:18:01 GMT</pubDate>
 </item>
 <item>
@@ -201,14 +382,10 @@
 <link>https://arxiv.org/abs/2505.14064</link>
 <guid>https://arxiv.org/abs/2505.14064</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>NOVA基准测试揭示了现有视觉语言模型在罕见脑MRI异常检测中的显著性能下降。</p><br><br><p><strong>摘要：</strong> 随着部署的模型越来越多地遇到训练数据之外的输入，如何有效进行分布外检测和开放世界识别成为重要研究方向。然而，现有的基准测试往往忽略了对真正罕见或未知条件的评估，导致模型的实际表现被高估。为了解决这一问题，本文提出了NOVA基准测试，该测试集包含了900个真实的脑部MRI扫描图像，涵盖了281种罕见病理类型及多样化的采集协议。每个案例不仅提供了详细的临床描述，还通过双盲专家标注了病灶区域。NOVA作为纯评估基准，从未用于模型训练，因此能够对模型的分布外泛化能力进行极限测试。实验结果显示，领先的视觉语言模型（如GPT-4o、Gemini 2.0 Flash和Qwen2.5-VL-72B）在NOVA上的表现大幅下滑，表明其在异常定位、视觉描述和诊断推理方面仍存在不足。NOVA为推动模型在未知异常检测方面的进步提供了一个严格的测试平台。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.14064 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">NOVA基准测试揭示了现有视觉语言模型在罕见脑MRI异常检测中的显著性能下降。</p><br /><br /><p><strong>摘要：</strong> 随着部署的模型越来越多地遇到训练数据之外的输入，如何有效进行分布外检测和开放世界识别成为重要研究方向。然而，现有的基准测试往往忽略了对真正罕见或未知条件的评估，导致模型的实际表现被高估。为了解决这一问题，本文提出了NOVA基准测试，该测试集包含了900个真实的脑部MRI扫描图像，涵盖了281种罕见病理类型及多样化的采集协议。每个案例不仅提供了详细的临床描述，还通过双盲专家标注了病灶区域。NOVA作为纯评估基准，从未用于模型训练，因此能够对模型的分布外泛化能力进行极限测试。实验结果显示，领先的视觉语言模型（如GPT-4o、Gemini 2.0 Flash和Qwen2.5-VL-72B）在NOVA上的表现大幅下滑，表明其在异常定位、视觉描述和诊断推理方面仍存在不足。NOVA为推动模型在未知异常检测方面的进步提供了一个严格的测试平台。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.14064" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 20 May 2025 04:10:57 GMT</pubDate>
-<pubDate>Tue, 20 May 2025 04:10:57 GMT</pubDate>
 </item>
-
 <item>
 <title>基于神经元分析的大语言模型多语言对齐研究</title>
 <link>https://arxiv.org/abs/2505.21505</link>
@@ -9055,159 +9232,6 @@ Sequential Recommendation (SeqRec) aims to predict the next item by capturing se
 We introduce ORIGEN, the first zero-shot method for 3D orientation grounding in text-to-image generation across multiple objects and diverse categories. While previous work on spatial grounding in image generation has mainly focused on 2D positioning, it lacks control over 3D orientation. To address this, we propose a reward-guided sampling approach using a pretrained discriminative model for 3D orientation estimation and a one-step text-to-image generative flow model. While gradient-ascent-based optimization is a natural choice for reward-based guidance, it struggles to maintain image realism. Instead, we adopt a sampling-based approach using Langevin dynamics, which extends gradient ascent by simply injecting random noise--requiring just a single additional line of code. Additionally, we introduce adaptive time rescaling based on the reward function to accelerate convergence. Our experiments show that ORIGEN outperforms both training-based and test-time guidance methods across quantitative metrics and user studies.
 ]]></content:encoded>
 <pubDate>Fri, 28 Mar 2025 03:23:12 GMT</pubDate>
-</item>
-<item>
-<title>Tracktention Layer：提升视频预测中的时间一致性</title>
-<link>https://arxiv.org/abs/2503.19904</link>
-<guid>https://arxiv.org/abs/2503.19904</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本研究提出Tracktention Layer以增强视频预测中的时间一致性。</p><br /><br /><p><strong>摘要：</strong> 视频预测中的时间一致性至关重要，以确保输出的连贯性和去除伪影。传统方法如时间注意力和3D卷积在应对剧烈物体运动时存在困难，并且可能无法捕捉动态场景中的长程时间依赖。为了解决这个问题，本文提出了一种新颖的Tracktention Layer结构组件，它通过点轨迹明确集成运动信息。Tracktention Layer通过这些运动线索来增强时间对齐，有效处理复杂物体运动，并在时间上保持一致的特征表示。此方法计算效率高，可无缝集成到现有模型（如视觉Transformer）中，且仅需微小修改。它还可用于将图像模型升级为最先进的视频模型，有时甚至超越原生设计用于视频预测的模型。实验结果显示，在视频深度预测和视频着色任务中，增添Tracktention Layer的模型在时间一致性上明显优于基线对照。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.19904" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 25 Mar 2025 13:58:48 GMT</pubDate>
-</item>
-<item>
-<title>无训练的测试时领域适应框架SemLA在开放词汇语义分割中的应用</title>
-<link>https://arxiv.org/abs/2503.21780</link>
-<guid>https://arxiv.org/abs/2503.21780</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">SemLA是一个无训练的测试时领域适应框架，提升了开放词汇语义分割的适应性。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了SemLA，一个新颖的无训练框架，旨在在测试时实现领域适应，提升开放词汇语义分割模型的性能。SemLA依托基于LoRA的适配器库，并通过CLIP嵌入进行索引，能够根据目标领域在嵌入空间中的近邻动态合并最相关的适配器，从而无需额外训练便构建出针对具体输入的定制模型。该方法有效地扩展了适应性，增强了模型的可解释性，并在保护数据隐私方面具有优势。针对10个标准数据集构建的20领域基准测试的全面实验显示，SemLA在多样化的设置下展现了卓越的适应性与性能，建立了开放词汇语义分割领域适应的新标准。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.21780" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 27 Mar 2025 13:59:58 GMT</pubDate>
-</item>
-<item>
-<title>LOCATEdit：基于图的文本引导图像编辑方法</title>
-<link>https://arxiv.org/abs/2503.21541</link>
-<guid>https://arxiv.org/abs/2503.21541</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">LOCATEdit通过图形化方法提升图像编辑的准确性和一致性。</p><br /><br /><p><strong>摘要：</strong> TEXT-guided image editing 旨在根据自然语言指令修改图像的特定区域，同时保持整体结构和背景的完整性。现有方法依赖于从扩散模型生成的交叉注意力图来识别需要修改的目标区域，但由于这些机制侧重于语义相关性，往往无法维持图像的完整性，导致缺乏空间一致性和产生编辑伪影。本文提出的LOCATEdit则通过基于图的方法增强交叉注意力图，利用自注意力所产生的块关系，确保图像区域间的平滑一致性，限制修改仅在指定区域，同时保留周围的结构。LOCATEdit在PIE-Bench上表现优于现有基线方法，在多项编辑任务中展现出卓越的性能和有效性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.21541" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 27 Mar 2025 10:32:17 GMT</pubDate>
-</item>
-<item>
-<title>Embodied Reasoner：提升交互式体态搜索任务的推理能力</title>
-<link>https://arxiv.org/abs/2503.21696</link>
-<guid>https://arxiv.org/abs/2503.21696</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">Embodied Reasoner 在交互式体态搜索任务中展现出卓越的推理能力。</p><br /><br /><p><strong>摘要：</strong> 近期的深度推理模型在数学和编码任务上表现出了杰出的推理能力，但在需要通过图像和动作交替轨迹与环境持续交互的体态领域尚待探索。为此，我们提出了 Embodied Reasoner 模型，旨在扩展到交互式体态搜索任务。与主要依赖逻辑推理的数学推理不同，体态场景需要空间理解、时间推理以及基于交互历史的持续自我反思。我们合成了包含 9.3k 个连贯观察-思考-行动轨迹的训练数据，涵盖 64k 张交互图像和 90k 种多样的思维过程。通过模仿学习、自我探索和自我校正等三阶段训练流程，模型显著提升了能力，评估结果显示其在复杂长时间任务中，超过了 OpenAI o1、o3-mini 和 Claude-3.7 等先进视觉推理模型，表现更佳。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.21696" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 27 Mar 2025 13:00:51 GMT</pubDate>
-</item>
-<item>
-<title>大语言模型在科学发现中的潜力与新基准</title>
-<link>https://arxiv.org/abs/2503.21248</link>
-<guid>https://arxiv.org/abs/2503.21248</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文介绍了评估大语言模型在科学发现中的研究假设生成能力的新基准。</p><br /><br /><p><strong>摘要：</strong> 大语言模型（LLMs）在科学研究中展现了潜力，但其发现高质量研究假设的能力尚未经过检验。为此，本文提出第一个大规模基准，以评估LLMs在科学发现中的表现，涵盖灵感检索、假设构建和假设排名等子任务。我们开发了一个自动化框架，提取12个学科科学论文中的关键组成部分，包括研究问题、背景调查、灵感和假设，并通过专家验证确保其准确性。为避免数据污染，我们仅关注2024年发表的论文，以确保与LLMs预训练数据的重叠最小。评估结果显示，LLMs在灵感检索方面表现良好，表明它们能够发现新颖的知识关联。这使得LLMs有潜力作为“研究假设矿”，通过自动生成创新假设，促进科学发现的自动化，减少人类干预。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.21248" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 27 Mar 2025 04:09:15 GMT</pubDate>
-</item>
-<item>
-<title>FinAudio: 金融领域音频语言模型评估基准</title>
-<link>https://arxiv.org/abs/2503.20990</link>
-<guid>https://arxiv.org/abs/2503.20990</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">FinAudio是首个用于评估音频语言模型在金融领域表现的基准。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了FinAudio，这是第一个专为评估音频大型语言模型（AudioLLMs）在金融场景中的能力而设计的基准。随着音频任务（如对话、音频理解和自动语音识别）性能的显著提升，金融领域中，包括收益电话会议和首席执行官演讲在内的音频数据，成为了金融分析和投资决策的重要资源。然而，至今缺乏财务情境下评估AudioLLMs的基准。本文定义了三个基于金融领域独特特征的任务，并策划了两个短音频和两个长音频数据集，同时开发了一种新数据集用于金融音频摘要，构成了FinAudio基准。在我们的评估中，评测了七种流行的AudioLLMs，并揭示了它们在金融领域的局限性，提供了改进AudioLLMs的见解。所有数据集和代码将被公开发布。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.20990" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 26 Mar 2025 17:07:51 GMT</pubDate>
-</item>
-<item>
-<title>Video-R1: 基于多模态大语言模型的视频推理探索</title>
-<link>https://arxiv.org/abs/2503.21776</link>
-<guid>https://arxiv.org/abs/2503.21776</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出Video-R1，通过T-GRPO算法提升视频推理能力，克服数据稀缺和时序建模问题。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了Video-R1，这是首次系统探索在多模态大语言模型（MLLMs）中应用R1范式进行视频推理。直接在视频推理上应用GRPO算法进行强化学习训练面临两个主要挑战：缺乏视频推理的时序建模以及高质量视频推理数据稀缺。为了解决这些问题，提出了T-GRPO算法，该算法鼓励模型利用视频中的时序信息进行推理。此外，我们在训练过程中还引入高质量的图像推理数据。构建了两个数据集：用于SFT冷启动的Video-R1-COT-165k和用于强化学习训练的Video-R1-260k，均包含图像和视频数据。实验结果表明，Video-R1在视频推理基准测试如VideoMMMU和VSI-Bench上取得显著提升，并在MVBench和TempCompass等一般视频基准测试中表现优异。特别是在视频空间推理基准VSI-bench上，Video-R1-7B模型达到了35.8%的准确率，超过商业专有模型GPT-4o。所有代码、模型和数据均已发布。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.21776" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 27 Mar 2025 13:59:51 GMT</pubDate>
-</item>
-<item>
-<title>优化步长调度的扩散模型提高生成效率</title>
-<link>https://arxiv.org/abs/2503.21774</link>
-<guid>https://arxiv.org/abs/2503.21774</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出了一种优化步长调度的方法，显著提升扩散模型的生成效率。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种名为最优步长蒸馏的动态规划框架，旨在通过从参考轨迹中提取理论最优的步长调度，以解决扩散模型在采样过程中因子步长离散化不佳而导致的计算密集性问题。通过将步长优化重构为递归误差最小化，该方法保证了全局离散化界限，并充分利用最优子结构。这些蒸馏出的调度在不同架构、ODE求解器和噪声调度中展现出强大的鲁棒性。实验结果表明，该方法使文本到图像的生成速度提高了10倍，同时保持了99.4%的性能。本研究的代码已在GitHub上发布，供进一步研究和应用。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.21774" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 27 Mar 2025 13:59:46 GMT</pubDate>
-</item>
-<item>
-<title>视频生成中的物理认知进展及其挑战</title>
-<link>https://arxiv.org/abs/2503.21765</link>
-<guid>https://arxiv.org/abs/2503.21765</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文综述了视频生成中的物理认知进展及未来研究方向。</p><br /><br /><p><strong>摘要：</strong> 随着扩散模型的快速发展，视频生成取得了显著进展。但其在物理认知方面的不足逐渐受到重视，生成的内容常常违反物理基本法则。本文旨在填补这一领域系统概述的缺失，讨论物理认知在视频生成中的演进过程，并提出一个三层次的分类：1) 基本模式感知生成，2) 物理知识的被动认知生成，3) 世界模拟的主动认知。我们将重点强调该领域的关键挑战，并概述未来研究的潜在方向，旨在推动学术界和工业界对可解释、可控、物理一致的视频生成范式的讨论，为生成模型从“视觉模仿”向“人类般物理理解”的新阶段迈进提供指导。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.21765" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 27 Mar 2025 13:58:33 GMT</pubDate>
-</item>
-<item>
-<title>Lumina-Image 2.0：先进的文本生成图像框架</title>
-<link>https://arxiv.org/abs/2503.21758</link>
-<guid>https://arxiv.org/abs/2503.21758</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">Lumina-Image 2.0通过统一架构和高效训练显著提升文本生成图像性能。</p><br /><br /><p><strong>摘要：</strong> Lumina-Image 2.0是一种进阶的文本生成图像（T2I）框架，较之前的Lumina-Next取得了显著进展。该框架基于两个关键原则：统一性和效率。通过使用统一的架构（Unified Next-DiT），将文本和图像标记视为联合序列，从而实现自然的跨模态交互，并允许无缝的任务扩展。此外，Lumina-Image 2.0引入了统一的标注系统（Unified Captioner, UniCap），专门设计用于T2I生成任务，能够生成全面且准确的描述，加快收敛速度并增强提示的遵循性。在效率方面，我们开发了多阶段进阶训练策略和推理加速技术，而不降低图像质量。经过广泛的评价，Lumina-Image 2.0在学术基准和公共文本生成图像领域展现了强劲的性能，且仅用2.6B参数，显示出其可扩展性和设计效率。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.21758" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 27 Mar 2025 13:57:07 GMT</pubDate>
-</item>
-<item>
-<title>推进视频生成模型的内在真实性评估</title>
-<link>https://arxiv.org/abs/2503.21755</link>
-<guid>https://arxiv.org/abs/2503.21755</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">VBench-2.0旨在评估视频生成模型的内在真实度，超越表面视觉效果。</p><br /><br /><p><strong>摘要：</strong> 视频生成技术已从产生不现实的输出发展到生成视觉上令人信服且时间上连贯的视频。为了评估这些模型，VBench等基准被开发出来，衡量每帧美学、时间一致性和基本提示遵循等因素。然而，这些仅代表表面真实性，未能保证生成视频遵循现实原则。为了实现真正的“世界模型”，需要关注内在真实度，以确保生成视频遵循物理定律、常识推理、解剖正确性与组成完整性。为此，我们提出了VBench-2.0，它自动评估视频生成模型的内在真实度，包括人类符合度、可控性、创造性、物理与常识等五个关键维度，进一步细分为更细致的能力。我们的评估框架整合了前沿的VLM和LLM等通用工具，以及专门针对视频生成的异常检测方法，旨在推进视频生成模型的标准向内在真实度发展。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.21755" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 27 Mar 2025 13:57:01 GMT</pubDate>
-</item>
-<item>
-<title>LeX-Art: 高质量文本-图像合成的完整解决方案</title>
-<link>https://arxiv.org/abs/2503.21749</link>
-<guid>https://arxiv.org/abs/2503.21749</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">LeX-Art系统性地提升文本-图像合成质量和渲染真实感。</p><br /><br /><p><strong>摘要：</strong> LeX-Art 是一套全面的高质量文本-图像合成工具，旨在系统性地弥合提示表达力和文本渲染保真度之间的差距。通过以数据为中心的方法，我们构建了一个基于 Deepseek-R1 的高质量数据合成管道，策划了 LeX-10K 数据集，包含10,000幅高分辨率和美学精炼的1024×1024图像。此外，我们开发了 LeX-Enhancer，一个强大的提示增强模型，并训练了两个文本到图像模型，LeX-FLUX 和 LeX-Lumina，取得了最先进的文本渲染性能。为系统评估视觉文本生成，我们推出了 LeX-Bench，一个评估保真度、美学和一致性的基准，辅之以对文本准确性评估的新指标 Pairwise Normalized Edit Distance（PNED）。实验结果显示，LeX-Lumina 在 CreateBench 上实现了79.81%的 PNED 增益，而 LeX-FLUX 在颜色、位置和字体准确性上均超越基线。我们的代码、模型、数据集和演示版本均已公开。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.21749" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 27 Mar 2025 13:56:15 GMT</pubDate>
-</item>
-<item>
-<title>ReaRAG：增强准确性的推理模型</title>
-<link>https://arxiv.org/abs/2503.21729</link>
-<guid>https://arxiv.org/abs/2503.21729</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">ReaRAG通过增强事实性与推理能力，提升多跳问答表现。</p><br /><br /><p><strong>摘要：</strong> 大型推理模型（LRMs）在推理能力方面表现出色，但主要依赖参数知识，导致事实准确性受限。尽管一些近期研究为基于强化学习的LRMs增加了检索能力，但这些模型仍存在过度思考和推理缺乏稳健性的问题，从而降低了其在问答任务中的效果。为此，我们提出了ReaRAG，一种增强事实性的推理模型，能够在避免过多迭代的情况下探索多样的查询。该解决方案包括一个新的数据构建框架，并为推理链长度设定上限。我们首先利用LRM生成深思熟虑的推理，然后从预定义的动作空间（搜索和结束）中选择一个动作。在搜索动作中，针对RAG引擎执行查询，结果作为观测返回，以指导后续的推理步骤。该过程重复进行，直至选择结束动作。得益于ReaRAG的强大推理能力，我们的方法在多跳问答方面超越了现有基准，进一步的分析突显了其强大的反思能力，可以识别错误并优化推理路径。我们的研究在有效结合稳健推理与检索增强生成的同时，提高了LRMs的事实性。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.21729" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 27 Mar 2025 13:44:18 GMT</pubDate>
-</item>
-<item>
-<title>基于规则的强化学习提升多模态大语言模型的GUI动作预测能力</title>
-<link>https://arxiv.org/abs/2503.21620</link>
-<guid>https://arxiv.org/abs/2503.21620</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">研究显示规则基础的强化学习提升了多模态模型在GUI动作预测中的表现。</p><br /><br /><p><strong>摘要：</strong> 本文首次探讨如何通过规则基础的强化学习（RL）提升多模态大语言模型（MLLMs）在图形用户界面（GUI）动作预测任务中的推理能力。我们构建了一个包含136个挑战性任务的高质量小型数据集，涵盖移动设备上的五种常见动作类型。此外，引入统一的基于规则的动作奖励，该奖励适用于基于策略的算法（如组相对策略优化，GRPO）。实验结果表明，所提出的数据高效模型UI-R1-3B在领域内（ID）和领域外（OOD）任务上均实现了显著改善。在ID基准AndroidControl上，动作类型的准确率提升了15%，而定位准确率提高了10.3%；在OOD GUI定位基准ScreenSpot-Pro上，我们的模型超越了基准模型6.0%，并在与更大模型（如OS-Atlas-7B）进行比较时展现了竞争力，这些模型是在76K数据上通过监督微调（SFT）训练的。这些结果凸显了基于规则的强化学习在推动GUI理解与控制方面的潜力，预示着未来研究的新方向。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.21620" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 27 Mar 2025 11:39:30 GMT</pubDate>
-</item>
-<item>
-<title>智能代理时代的到来：大语言模型驱动下的研究综述</title>
-<link>https://arxiv.org/abs/2503.21460</link>
-<guid>https://arxiv.org/abs/2503.21460</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本综述系统阐述了大语言模型代理的设计与演进。</p><br /><br /><p><strong>摘要：</strong> 随着大语言模型的革命性进展，智能代理时代已经来临。大语言模型（LLM）代理以目标驱动的行为和动态适应能力，可能成为通向人工通用智能的重要途径。本综述通过以方法论为中心的分类法，系统性地分析了LLM代理系统，揭示了代理设计原则与其在复杂环境中涌现行为之间的基本联系。我们统一了零散的研究线索，提供了统一的架构视角，探讨了代理的构建、合作及其随时间演变的过程，同时还关注了评估方法、工具应用、实际挑战及多样的应用领域。通过对这一快速发展领域的最新进展进行梳理，我们为研究者提供了理解LLM代理的结构化分类，并识别未来研究的有希望方向。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.21460" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 27 Mar 2025 08:50:17 GMT</pubDate>
-</item>
-<item>
-<title>OlymMATH: 新的奥林匹克数学基准测试大规模推理模型</title>
-<link>https://arxiv.org/abs/2503.21380</link>
-<guid>https://arxiv.org/abs/2503.21380</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">OlymMATH是一个新数学基准，旨在检验大型模型的复杂推理能力。</p><br /><br /><p><strong>摘要：</strong> 近年来，大型推理模型的发展使得现有的数学推理评估基准显得饱和，亟需更加严谨和具有挑战性的评估框架。为此，我们推出了OlymMATH，这是一个新颖的奥林匹克级数学基准，专为严格测试大型语言模型的复杂推理能力而设计。OlymMATH包含200道经过仔细筛选并手动验证的问题，提供英文和中文两种版本，系统地分为两大难度层次：AIME级别的问题（简单），以及更具挑战性的问题（困难），旨在推动当前最先进模型的极限。基准覆盖四个核心数学领域，且每道题目都有可验证的数值解，以实现客观、基于规则的评估。实证结果表明，OlymMATH所带来的挑战显著，最先进的模型在困难子集上的准确率明显有限。此外，此基准还有助于全面评估数学推理能力，填补了主流数学推理基准未涉及的双语评估维度。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.21380" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 27 Mar 2025 07:20:17 GMT</pubDate>
-</item>
-<item>
-<title>基于音频输入的实时互动视频生成框架</title>
-<link>https://arxiv.org/abs/2503.21144</link>
-<guid>https://arxiv.org/abs/2503.21144</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出一种新颖框架，支持实时互动视频生成，增强表情与上半身动作的同步。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种新颖的实时互动视频生成框架，旨在克服现有技术在头部动作与身体动作同步生成中的局限。该框架分为两个主要阶段：第一阶段采用高效的层次化运动扩散模型，基于音频输入生成多样的面部表情，并实现头部与身体动作的同步；第二阶段则专注于生成包含上半身动作和手势的视频，使用显式手部控制信号来生成更细致的手部动作，并对面部进行细化处理以提高视频的真实感和表现力。我们的方案在4090 GPU上以最高512 * 768分辨率和30fps的速度支持实时互动视频聊天，实验结果显示该方法能够生成富有表现力的肖像视频，展现自然的上半身动作。</p><br /><br /><p><em>使用 gpt-4o-mini 生成 </em></p><a href="https://arxiv.org/abs/2503.21144" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 27 Mar 2025 00:18:53 GMT</pubDate>
 </item>
 </channel>
 </rss>
