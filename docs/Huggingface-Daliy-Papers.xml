@@ -5,15 +5,49 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>通过大规模知识库CHIMERA探索科学创新中的概念重组</title>
+<link>https://arxiv.org/abs/2505.20779</link>
+<guid>https://arxiv.org/abs/2505.20779</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究者创建了CHIMERA，一个基于科学文献的大规模概念重组知识库。</p><br><br><p><strong>摘要：</strong> 人类创新的一个显著特征是重组过程——通过整合现有机制和概念的元素来创造原创想法。本文提出了一种新方法，自动挖掘科学文献并构建了一个名为CHIMERA的知识库，该知识库包含了大量重组实例。CHIMERA可以用来大规模探索科学家如何跨领域重组概念并汲取灵感，或者用于训练机器学习模型以预测新的跨学科创意方向。为了构建这个知识库，我们提出了从科学论文摘要中提取重组信息的新任务，收集了数百份人工标注的高质量摘要数据集，并利用其训练基于大型语言模型（LLM）的提取模型。该模型应用于AI领域的大量论文，生成了超过28,000个重组实例的知识库。我们分析了CHIMERA在AI各子领域中的重组特性，并利用该知识库训练了一个科学假设生成模型，预测现实中研究人员感到启发的新重组方向。我们的数据和代码已公开发布。关键词：ADs</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.20779 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 27 May 2025 02:36:04 GMT</pubDate>
+<pubDate>Tue, 27 May 2025 02:36:04 GMT</pubDate>
+</item>
+<item>
+<title>基于多模态漫画理解的基准与模型开发</title>
+<link>https://arxiv.org/abs/2505.20298</link>
+<guid>https://arxiv.org/abs/2505.20298</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究提出漫画理解的两个新基准并开发专用模型。</p><br><br><p><strong>摘要：</strong> 本文介绍了一个针对日本漫画（manga）这种复合叙事形式的多模态理解研究。通过构建MangaOCR和MangaVQA两个新基准，分别用于页面内文本识别和基于视觉问答的情境理解评估，其中MangaVQA包含526对高质量问题-答案对。基于这些基准，我们开发了MangaLMM模型，该模型是在开源多模态模型Qwen2.5-VL基础上微调而成，能够同时处理两项任务。实验表明，此模型在理解漫画方面表现优异，并且与GPT-4o和Gemini 2.5等专有模型进行了对比分析，为提升大型多模态模型在漫画领域的应用奠定了坚实基础。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.20298 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 13:59:59 GMT</pubDate>
+<pubDate>Mon, 26 May 2025 13:59:59 GMT</pubDate>
+</item>
+<item>
+<title>Influence Distillation: 优化大型语言模型训练的数据选择框架</title>
+<link>https://arxiv.org/abs/2505.19051</link>
+<guid>https://arxiv.org/abs/2505.19051</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种基于二阶信息的新型数据选择方法，显著提升LLM训练效率。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为Influence Distillation的创新框架，用于高效选择大型语言模型（LLMs）的训练数据。该方法通过利用二阶信息来为训练样本分配最优权重，从而指导模型在目标域上的性能表现。我们为梯度下降和Adam优化器推导出这些最优权重，并通过引入基于标志样本的近似方法来降低计算成本。实验表明，该方法在Tulu V2数据集上进行指令微调时，对GSM8k、SQuAD和MMLU等任务的表现达到了或超过了当前最佳水平，同时加快了数据选择速度高达3.5倍。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.19051 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 25 May 2025 05:08:00 GMT</pubDate>
+<pubDate>Sun, 25 May 2025 05:08:00 GMT</pubDate>
+</item>
+
+<item>
 <title>Sherlock：通过自纠正提升视觉语言模型推理能力</title>
 <link>https://arxiv.org/abs/2505.22651</link>
 <guid>https://arxiv.org/abs/2505.22651</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种名为Sherlock的新框架，显著提升了视觉语言模型的推理能力。</p><br><br><p><strong>摘要：</strong> 本文探讨了如何通过引入自纠正机制来增强视觉语言模型（VLMs）的推理能力。研究发现现有VLMs在处理复杂多模态任务时存在对推理错误敏感、需要大量标注数据等问题。为解决这些问题，我们开发了Sherlock框架，该框架利用轨迹级自纠正目标、基于视觉扰动的偏好数据构建方法以及动态beta值调优，使得模型能够在仅使用少量标注数据的情况下实现自我改进。实验结果显示，在八个基准测试中，Sherlock的直接生成准确率为64.1%，经过自纠正后达到65.4%，优于其他对比模型，且所需标注数据量不到其20%。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.22651 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种名为Sherlock的新框架，显著提升了视觉语言模型的推理能力。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了如何通过引入自纠正机制来增强视觉语言模型（VLMs）的推理能力。研究发现现有VLMs在处理复杂多模态任务时存在对推理错误敏感、需要大量标注数据等问题。为解决这些问题，我们开发了Sherlock框架，该框架利用轨迹级自纠正目标、基于视觉扰动的偏好数据构建方法以及动态beta值调优，使得模型能够在仅使用少量标注数据的情况下实现自我改进。实验结果显示，在八个基准测试中，Sherlock的直接生成准确率为64.1%，经过自纠正后达到65.4%，优于其他对比模型，且所需标注数据量不到其20%。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.22651" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 28 May 2025 13:58:03 GMT</pubDate>
 <pubDate>Wed, 28 May 2025 13:58:03 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +55,8 @@
 <link>https://arxiv.org/abs/2505.22457</link>
 <guid>https://arxiv.org/abs/2505.22457</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出未来事件预测任务，利用视频片段自我监督信号提升时间推理能力。</p><br><br><p><strong>摘要：</strong> 当前多模态大模型（MLMMs）在处理视频输入时缺乏有效的时间推理学习任务。现有的视频问答任务依赖人工标注或更强的模型，而视频描述则常混淆时间推理与空间信息。为解决这一问题，我们提出了未来事件预测（NEP），该任务利用视频未来片段作为丰富的自我监督信号，鼓励模型进行时间推理。我们构建了一个包含33,000个自动提取视频片段的数据集V1-33K，覆盖多样现实场景。此外，我们研究了多种视频指令微调策略对时间推理的影响，并引入FutureBench评估对未来事件预测的连贯性。实验表明，NEP是一种可扩展且有效的训练范式，可显著提升MLMMs的时间推理能力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.22457 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出未来事件预测任务，利用视频片段自我监督信号提升时间推理能力。</p><br /><br /><p><strong>摘要：</strong> 当前多模态大模型（MLMMs）在处理视频输入时缺乏有效的时间推理学习任务。现有的视频问答任务依赖人工标注或更强的模型，而视频描述则常混淆时间推理与空间信息。为解决这一问题，我们提出了未来事件预测（NEP），该任务利用视频未来片段作为丰富的自我监督信号，鼓励模型进行时间推理。我们构建了一个包含33,000个自动提取视频片段的数据集V1-33K，覆盖多样现实场景。此外，我们研究了多种视频指令微调策略对时间推理的影响，并引入FutureBench评估对未来事件预测的连贯性。实验表明，NEP是一种可扩展且有效的训练范式，可显著提升MLMMs的时间推理能力。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.22457" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 28 May 2025 11:13:34 GMT</pubDate>
 <pubDate>Wed, 28 May 2025 11:13:34 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +64,8 @@
 <link>https://arxiv.org/abs/2505.22232</link>
 <guid>https://arxiv.org/abs/2505.22232</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>JQL通过轻量级标注器提升多语言数据集质量。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为JQL的系统性方法，用于高效创建大规模且高质量的多语言数据集。传统多语言数据集依赖启发式过滤方法，限制了跨语言迁移性和扩展性。JQL利用预训练多语言嵌入将大型语言模型的标注能力转化为轻量级标注器，这些标注器即使面对训练时未见过的语言和脚本也能表现出强大的多语言和跨语言性能。实验结果显示，在35种语言上的评估表明，JQL的标注流水线显著优于当前的启发式过滤方法如Fineweb2，提升了下游模型训练质量和数据保留率。这项研究为多语言数据集的构建提供了实用见解和宝贵资源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.22232 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">JQL通过轻量级标注器提升多语言数据集质量。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种名为JQL的系统性方法，用于高效创建大规模且高质量的多语言数据集。传统多语言数据集依赖启发式过滤方法，限制了跨语言迁移性和扩展性。JQL利用预训练多语言嵌入将大型语言模型的标注能力转化为轻量级标注器，这些标注器即使面对训练时未见过的语言和脚本也能表现出强大的多语言和跨语言性能。实验结果显示，在35种语言上的评估表明，JQL的标注流水线显著优于当前的启发式过滤方法如Fineweb2，提升了下游模型训练质量和数据保留率。这项研究为多语言数据集的构建提供了实用见解和宝贵资源。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.22232" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 28 May 2025 07:06:54 GMT</pubDate>
 <pubDate>Wed, 28 May 2025 07:06:54 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +73,8 @@
 <link>https://arxiv.org/abs/2505.22203</link>
 <guid>https://arxiv.org/abs/2505.22203</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究发现现有规则验证器存在误判问题，而模型验证器易受攻击，影响RL训练性能。</p><br><br><p><strong>摘要：</strong> 本文以数学推理为例，对多种验证器在静态评估及强化学习训练中的表现进行了全面分析。研究显示，当前开源的基于规则的验证器在多个常用数学数据集中无法识别等价但格式不同的答案，导致显著的假阴性率，从而损害了强化学习的训练效果，且这一问题随着策略模型增强愈发严重。随后，我们探索了基于模型的验证器作为解决方案的可能性。尽管静态评估表明这类验证器具有更高的准确性，但在实际强化学习训练中，它们容易受到攻击，表现为将某些响应模式误分类为正确（即假阳性），这被优化策略模型利用，造成人为抬高的奖励。我们的研究揭示了规则验证器和模型验证器各自的风险，为构建更稳健的强化学习奖励系统提供了重要参考。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.22203 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究发现现有规则验证器存在误判问题，而模型验证器易受攻击，影响RL训练性能。</p><br /><br /><p><strong>摘要：</strong> 本文以数学推理为例，对多种验证器在静态评估及强化学习训练中的表现进行了全面分析。研究显示，当前开源的基于规则的验证器在多个常用数学数据集中无法识别等价但格式不同的答案，导致显著的假阴性率，从而损害了强化学习的训练效果，且这一问题随着策略模型增强愈发严重。随后，我们探索了基于模型的验证器作为解决方案的可能性。尽管静态评估表明这类验证器具有更高的准确性，但在实际强化学习训练中，它们容易受到攻击，表现为将某些响应模式误分类为正确（即假阳性），这被优化策略模型利用，造成人为抬高的奖励。我们的研究揭示了规则验证器和模型验证器各自的风险，为构建更稳健的强化学习奖励系统提供了重要参考。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.22203" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 28 May 2025 06:28:41 GMT</pubDate>
 <pubDate>Wed, 28 May 2025 06:28:41 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +82,8 @@
 <link>https://arxiv.org/abs/2505.22202</link>
 <guid>https://arxiv.org/abs/2505.22202</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究预训练语言模型是否能通过学习表示进行抽象推理。</p><br><br><p><strong>摘要：</strong> 本文探讨了预训练的语言模型是否可以通过其已学得的表示被提升到抽象推理空间中，从而能够在句子层面而非原始令牌序列上进行推理。我们提出了一种框架，该框架将预训练的令牌级语言模型适应到句子空间中，通过自回归预测下一个句子的连续嵌入来进行操作。实验评估了两种嵌入范式：基于表面意义的语义嵌入和基于上下文预测的上下文嵌入。在数学、逻辑、常识和规划四个领域内，上下文嵌入在连续推理模式下的表现接近链式思维方法，但推理时的浮点运算减少了平均一半。此外，我们还展示了可扩展性和模块化适配的早期迹象，并引入了一个名为SentenceLens的诊断工具来可视化潜在轨迹。最终结果表明，预训练的语言模型可以在潜在嵌入空间中有效地过渡到抽象的结构化推理。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.22202 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究预训练语言模型是否能通过学习表示进行抽象推理。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了预训练的语言模型是否可以通过其已学得的表示被提升到抽象推理空间中，从而能够在句子层面而非原始令牌序列上进行推理。我们提出了一种框架，该框架将预训练的令牌级语言模型适应到句子空间中，通过自回归预测下一个句子的连续嵌入来进行操作。实验评估了两种嵌入范式：基于表面意义的语义嵌入和基于上下文预测的上下文嵌入。在数学、逻辑、常识和规划四个领域内，上下文嵌入在连续推理模式下的表现接近链式思维方法，但推理时的浮点运算减少了平均一半。此外，我们还展示了可扩展性和模块化适配的早期迹象，并引入了一个名为SentenceLens的诊断工具来可视化潜在轨迹。最终结果表明，预训练的语言模型可以在潜在嵌入空间中有效地过渡到抽象的结构化推理。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.22202" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 28 May 2025 06:28:35 GMT</pubDate>
 <pubDate>Wed, 28 May 2025 06:28:35 GMT</pubDate>
 </item>
 <item>
@@ -69,11 +91,8 @@
 <link>https://arxiv.org/abs/2505.22129</link>
 <guid>https://arxiv.org/abs/2505.22129</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究揭示扩散模型适配全景图像生成的关键机制并提出高效框架UniPano。</p><br><br><p><strong>摘要：</strong> 最近文本到图像扩散模型（如Stable Diffusion）的成功激发了将其应用于全景图像生成的研究。尽管已有工作展示了通过低秩适应技术改造预训练扩散模型生成全景图像的可行性，但透视图与全景图之间的显著领域差距引发对背后机制的疑问。本文假设并验证了可训练组件在适应全景数据时表现出不同行为，并隐藏了利用预训练模型先验知识的内在机制。分析表明，注意力模块中的查询和键矩阵负责可在两个领域间共享的通用信息，而值矩阵和输出权重矩阵则更专注于将预训练知识适应到全景域。基于这些见解，我们提出了名为UniPano的简单框架，不仅性能超越现有方法，还大幅减少了内存使用和训练时间，为端到端高分辨率全景生成提供了优雅的基线。此外，该框架在效率和效果上均优于先前的双分支方法。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.22129 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究揭示扩散模型适配全景图像生成的关键机制并提出高效框架UniPano。</p><br /><br /><p><strong>摘要：</strong> 最近文本到图像扩散模型（如Stable Diffusion）的成功激发了将其应用于全景图像生成的研究。尽管已有工作展示了通过低秩适应技术改造预训练扩散模型生成全景图像的可行性，但透视图与全景图之间的显著领域差距引发对背后机制的疑问。本文假设并验证了可训练组件在适应全景数据时表现出不同行为，并隐藏了利用预训练模型先验知识的内在机制。分析表明，注意力模块中的查询和键矩阵负责可在两个领域间共享的通用信息，而值矩阵和输出权重矩阵则更专注于将预训练知识适应到全景域。基于这些见解，我们提出了名为UniPano的简单框架，不仅性能超越现有方法，还大幅减少了内存使用和训练时间，为端到端高分辨率全景生成提供了优雅的基线。此外，该框架在效率和效果上均优于先前的双分支方法。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.22129" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 28 May 2025 04:54:04 GMT</pubDate>
 <pubDate>Wed, 28 May 2025 04:54:04 GMT</pubDate>
 </item>
 <item>
@@ -81,11 +100,8 @@
 <link>https://arxiv.org/abs/2505.22019</link>
 <guid>https://arxiv.org/abs/2505.22019</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种结合视觉感知的强化学习框架，提升复杂视觉信息的推理能力。</p><br><br><p><strong>摘要：</strong> 现有的基于文本的检索增强生成（RAG）方法难以有效处理视觉相关信息，而当前基于视觉的RAG方法受限于固定管道且模型基础能力激活不足，导致推理效果不佳。本文引入VRAG-RL，这是一种专为复杂视觉信息推理设计的新型强化学习框架。通过该框架，视觉语言模型（VLMs）借助视觉感知标记与搜索引擎交互，自主采样单轮或多轮推理轨迹，并基于这些样本进行持续优化。框架揭示了RAG领域中强化学习的关键限制，包括多模态RAG方法对图像的整合不足及查询表述能力欠缺等问题。为解决这些问题，我们定义了一个针对视觉丰富输入定制的动作空间，并采用融合查询重写和检索性能的奖励机制。最终，VRAG-RL优化了VLMs在RAG任务中的表现，使其更贴近实际应用需求。代码已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.22019 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种结合视觉感知的强化学习框架，提升复杂视觉信息的推理能力。</p><br /><br /><p><strong>摘要：</strong> 现有的基于文本的检索增强生成（RAG）方法难以有效处理视觉相关信息，而当前基于视觉的RAG方法受限于固定管道且模型基础能力激活不足，导致推理效果不佳。本文引入VRAG-RL，这是一种专为复杂视觉信息推理设计的新型强化学习框架。通过该框架，视觉语言模型（VLMs）借助视觉感知标记与搜索引擎交互，自主采样单轮或多轮推理轨迹，并基于这些样本进行持续优化。框架揭示了RAG领域中强化学习的关键限制，包括多模态RAG方法对图像的整合不足及查询表述能力欠缺等问题。为解决这些问题，我们定义了一个针对视觉丰富输入定制的动作空间，并采用融合查询重写和检索性能的奖励机制。最终，VRAG-RL优化了VLMs在RAG任务中的表现，使其更贴近实际应用需求。代码已开源。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.22019" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 28 May 2025 02:30:51 GMT</pubDate>
 <pubDate>Wed, 28 May 2025 02:30:51 GMT</pubDate>
 </item>
 <item>
@@ -93,11 +109,8 @@
 <link>https://arxiv.org/abs/2505.21960</link>
 <guid>https://arxiv.org/abs/2505.21960</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种新的时间无关统一编码器TiUE，显著提升文本到图像扩散模型的推理速度。</p><br><br><p><strong>摘要：</strong> 本文针对现有文本到图像(T2I)扩散模型在推理速度和图像质量之间存在的权衡问题，分析发现UNet编码器存在冗余计算，并指出解码器更能捕捉丰富的语义信息。基于此，我们首次引入了名为TiUE的时间无关统一编码器，用于学生模型UNet架构，通过共享多个解码器时间步的编码特征实现并行采样，大幅降低推理时间复杂度。此外，还加入了KL散度项来正则化噪声预测，进一步提高生成图像的感知真实性和多样性。实验表明，TiUE在保持计算效率的同时，生成的结果比现有最先进的方法（如LCM、SD-Turbo和SwiftBrushv2）更加多样化且逼真。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.21960 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种新的时间无关统一编码器TiUE，显著提升文本到图像扩散模型的推理速度。</p><br /><br /><p><strong>摘要：</strong> 本文针对现有文本到图像(T2I)扩散模型在推理速度和图像质量之间存在的权衡问题，分析发现UNet编码器存在冗余计算，并指出解码器更能捕捉丰富的语义信息。基于此，我们首次引入了名为TiUE的时间无关统一编码器，用于学生模型UNet架构，通过共享多个解码器时间步的编码特征实现并行采样，大幅降低推理时间复杂度。此外，还加入了KL散度项来正则化噪声预测，进一步提高生成图像的感知真实性和多样性。实验表明，TiUE在保持计算效率的同时，生成的结果比现有最先进的方法（如LCM、SD-Turbo和SwiftBrushv2）更加多样化且逼真。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.21960" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 28 May 2025 00:23:22 GMT</pubDate>
 <pubDate>Wed, 28 May 2025 00:23:22 GMT</pubDate>
 </item>
 <item>
@@ -105,11 +118,8 @@
 <link>https://arxiv.org/abs/2505.21887</link>
 <guid>https://arxiv.org/abs/2505.21887</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>SVRPBench引入首个捕捉城市尺度车辆路径随机动态的开放基准。</p><br><br><p><strong>摘要：</strong> SVRPBench是第一个面向实际物流场景的开放基准，通过模拟时间依赖性拥堵、对数正态延迟、概率事故及基于实证的时间窗口等条件，涵盖了超过500个实例，最多包含1000个客户。该基准测试显示，最先进的强化学习求解器如POMO和AM在分布偏移下性能下降超过20%，而经典和元启发式方法则表现稳健。为了促进可重复研究，项目团队公开了数据集和评估工具包。SVRPBench呼吁社区开发能够超越合成假设并在真实世界不确定性中适应的求解器。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.21887 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">SVRPBench引入首个捕捉城市尺度车辆路径随机动态的开放基准。</p><br /><br /><p><strong>摘要：</strong> SVRPBench是第一个面向实际物流场景的开放基准，通过模拟时间依赖性拥堵、对数正态延迟、概率事故及基于实证的时间窗口等条件，涵盖了超过500个实例，最多包含1000个客户。该基准测试显示，最先进的强化学习求解器如POMO和AM在分布偏移下性能下降超过20%，而经典和元启发式方法则表现稳健。为了促进可重复研究，项目团队公开了数据集和评估工具包。SVRPBench呼吁社区开发能够超越合成假设并在真实世界不确定性中适应的求解器。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.21887" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 22:03:31 GMT</pubDate>
 <pubDate>Tue, 27 May 2025 22:03:31 GMT</pubDate>
 </item>
 <item>
@@ -117,11 +127,8 @@
 <link>https://arxiv.org/abs/2505.21191</link>
 <guid>https://arxiv.org/abs/2505.21191</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究揭示大语言模型微调后指令执行能力提升背后的稀疏计算机制。</p><br><br><p><strong>摘要：</strong> 本研究通过设计HexaInst数据集和SPARCOM分析框架，系统性地探索了大语言模型（LLMs）微调过程中指令特定稀疏组件的变化。这些组件包括密集模型中的神经元及Mixture-of-Experts架构中的专家节点。研究发现，这些稀疏组件不仅具有功能普遍性和独特性，还对指令执行起着至关重要的作用。通过实验验证，该工作深入剖析了微调如何重塑LLMs的计算机制，为可信的大语言模型开发提供了理论支持。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.21191 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究揭示大语言模型微调后指令执行能力提升背后的稀疏计算机制。</p><br /><br /><p><strong>摘要：</strong> 本研究通过设计HexaInst数据集和SPARCOM分析框架，系统性地探索了大语言模型（LLMs）微调过程中指令特定稀疏组件的变化。这些组件包括密集模型中的神经元及Mixture-of-Experts架构中的专家节点。研究发现，这些稀疏组件不仅具有功能普遍性和独特性，还对指令执行起着至关重要的作用。通过实验验证，该工作深入剖析了微调如何重塑LLMs的计算机制，为可信的大语言模型开发提供了理论支持。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.21191" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 09:40:28 GMT</pubDate>
 <pubDate>Tue, 27 May 2025 09:40:28 GMT</pubDate>
 </item>
 <item>
@@ -129,11 +136,8 @@
 <link>https://arxiv.org/abs/2505.21060</link>
 <guid>https://arxiv.org/abs/2505.21060</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种利用前馈重建模型实现秒级3D场景风格化的创新方法。</p><br><br><p><strong>摘要：</strong> 本文解决了在保持多视角一致性的同时快速将风格图像应用于3D场景的问题。传统方法通常需要密集的视角输入图像且计算成本高，而我们利用前馈重建模型实现了在不到一秒的时间内对未定位稀疏视图场景图像进行风格化处理。通过引入分支架构分离结构建模与外观渲染，有效防止风格迁移扭曲底层3D场景结构。此外，通过适配身份损失，我们的模型能够在新型视图合成任务中进行预训练，从而在微调用于风格化时仍保留原始重建能力。实验表明，该方法不仅在风格与场景外观融合上表现优异，而且在多视角一致性和效率方面超越现有技术。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.21060 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种利用前馈重建模型实现秒级3D场景风格化的创新方法。</p><br /><br /><p><strong>摘要：</strong> 本文解决了在保持多视角一致性的同时快速将风格图像应用于3D场景的问题。传统方法通常需要密集的视角输入图像且计算成本高，而我们利用前馈重建模型实现了在不到一秒的时间内对未定位稀疏视图场景图像进行风格化处理。通过引入分支架构分离结构建模与外观渲染，有效防止风格迁移扭曲底层3D场景结构。此外，通过适配身份损失，我们的模型能够在新型视图合成任务中进行预训练，从而在微调用于风格化时仍保留原始重建能力。实验表明，该方法不仅在风格与场景外观融合上表现优异，而且在多视角一致性和效率方面超越现有技术。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.21060" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 07:47:15 GMT</pubDate>
 <pubDate>Tue, 27 May 2025 07:47:15 GMT</pubDate>
 </item>
 <item>
@@ -141,11 +145,8 @@
 <link>https://arxiv.org/abs/2505.21582</link>
 <guid>https://arxiv.org/abs/2505.21582</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>结合大型语言模型的代理式辅导系统AITEE显著提升了电气工程教育中的个性化学习效果。</p><br><br><p><strong>摘要：</strong> 本文介绍了一个名为AITEE的代理式智能辅导系统，专门针对电气工程教育设计。该系统通过手绘和数字电路支持，结合图相似性度量与增强型Spice仿真技术，为学生提供个性化的学习支持。AITEE采用苏格拉底式对话引导学生自主学习，实验显示其在特定领域知识应用上优于基线方法，证明了代理式导师在规模化、个性化和高效教育中的潜力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.21582 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">结合大型语言模型的代理式辅导系统AITEE显著提升了电气工程教育中的个性化学习效果。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一个名为AITEE的代理式智能辅导系统，专门针对电气工程教育设计。该系统通过手绘和数字电路支持，结合图相似性度量与增强型Spice仿真技术，为学生提供个性化的学习支持。AITEE采用苏格拉底式对话引导学生自主学习，实验显示其在特定领域知识应用上优于基线方法，证明了代理式导师在规模化、个性化和高效教育中的潜力。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.21582" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 06:07:05 GMT</pubDate>
 <pubDate>Tue, 27 May 2025 06:07:05 GMT</pubDate>
 </item>
 <item>
@@ -153,11 +154,8 @@
 <link>https://arxiv.org/abs/2505.20715</link>
 <guid>https://arxiv.org/abs/2505.20715</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出MUSEG方法，通过时间戳感知的多片段定位增强视频时间理解。</p><br><br><p><strong>摘要：</strong> 视频时间理解对多模态大语言模型（MLLMs）进行视频事件推理至关重要。尽管近期在一般视频理解上取得进展，但现有MLLMs在细粒度时间推理方面仍面临挑战。虽然强化学习（RL）最近被探索用于解决此问题，但现有RL方法效果有限。本研究提出MUSEG，一种新颖的基于RL的方法，通过引入时间戳感知的多片段定位来增强时间理解。MUSEG使MLLMs能够将查询与多个相关视频片段对齐，从而促进更全面的时间推理。为了实现有效的学习，我们设计了一个定制的RL训练方案，采用分阶段奖励逐步引导模型进行时间定位推理。广泛的实验表明，MUSEG在时间定位和时间敏感的视频问答任务上显著优于现有方法，并在多样化的时间理解场景中表现出良好的泛化能力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.20715 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出MUSEG方法，通过时间戳感知的多片段定位增强视频时间理解。</p><br /><br /><p><strong>摘要：</strong> 视频时间理解对多模态大语言模型（MLLMs）进行视频事件推理至关重要。尽管近期在一般视频理解上取得进展，但现有MLLMs在细粒度时间推理方面仍面临挑战。虽然强化学习（RL）最近被探索用于解决此问题，但现有RL方法效果有限。本研究提出MUSEG，一种新颖的基于RL的方法，通过引入时间戳感知的多片段定位来增强时间理解。MUSEG使MLLMs能够将查询与多个相关视频片段对齐，从而促进更全面的时间推理。为了实现有效的学习，我们设计了一个定制的RL训练方案，采用分阶段奖励逐步引导模型进行时间定位推理。广泛的实验表明，MUSEG在时间定位和时间敏感的视频问答任务上显著优于现有方法，并在多样化的时间理解场景中表现出良好的泛化能力。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.20715" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 00:50:07 GMT</pubDate>
 <pubDate>Tue, 27 May 2025 00:50:07 GMT</pubDate>
 </item>
 <item>
@@ -165,11 +163,8 @@
 <link>https://arxiv.org/abs/2505.20411</link>
 <guid>https://arxiv.org/abs/2505.20411</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种自动化方法生成大规模真实交互式软件工程任务数据集。</p><br><br><p><strong>摘要：</strong> 大型语言模型（LLM）驱动的软件工程代理在多种任务中展现出潜力，但面临高质量训练数据稀缺及静态基准过时两大挑战。现有数据集规模小且多样性不足，难以反映真实世界场景。为此，本文设计了一套自动化可扩展的流水线，从GitHub仓库提取真实交互式Python软件工程任务，构建了包含超过21,000个任务的SWE-rebench数据集。此外，通过该方法持续收集的新鲜任务，建立了无污染的软件工程代理基准，揭示某些模型性能可能因数据污染而被高估的现象。这一研究为LLM在软件工程中的应用提供了坚实基础。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.20411 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种自动化方法生成大规模真实交互式软件工程任务数据集。</p><br /><br /><p><strong>摘要：</strong> 大型语言模型（LLM）驱动的软件工程代理在多种任务中展现出潜力，但面临高质量训练数据稀缺及静态基准过时两大挑战。现有数据集规模小且多样性不足，难以反映真实世界场景。为此，本文设计了一套自动化可扩展的流水线，从GitHub仓库提取真实交互式Python软件工程任务，构建了包含超过21,000个任务的SWE-rebench数据集。此外，通过该方法持续收集的新鲜任务，建立了无污染的软件工程代理基准，揭示某些模型性能可能因数据污染而被高估的现象。这一研究为LLM在软件工程中的应用提供了坚实基础。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.20411" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 26 May 2025 14:01:00 GMT</pubDate>
 <pubDate>Mon, 26 May 2025 14:01:00 GMT</pubDate>
 </item>
 <item>
@@ -177,11 +172,8 @@
 <link>https://arxiv.org/abs/2505.19075</link>
 <guid>https://arxiv.org/abs/2505.19075</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出UniR模块，通过轻量化推理增强大语言模型的推理能力。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为UniR（Universal Reasoner）的新型推理模块，它是一种轻量级、可组合且即插即用的推理模块，可以与任何冻结的大语言模型（LLM）结合，赋予其专门的推理能力。UniR将奖励分解为独立的推理模块，通过预定义的奖励进行训练，从而将轨迹级别的信号转化为令牌级别的指导。实验结果显示，在数学推理和机器翻译任务上，UniR显著优于现有的基于参数高效微调的方法，尤其是在Llama3.2模型上的表现。此外，UniR展示了强大的弱到强泛化能力，训练在小模型上的推理模块可以有效引导更大的LLM。这使得UniR成为一种成本效益高、适应性强且稳健的解决方案，用于增强LLMs的推理能力而不损害其核心能力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.19075 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出UniR模块，通过轻量化推理增强大语言模型的推理能力。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种名为UniR（Universal Reasoner）的新型推理模块，它是一种轻量级、可组合且即插即用的推理模块，可以与任何冻结的大语言模型（LLM）结合，赋予其专门的推理能力。UniR将奖励分解为独立的推理模块，通过预定义的奖励进行训练，从而将轨迹级别的信号转化为令牌级别的指导。实验结果显示，在数学推理和机器翻译任务上，UniR显著优于现有的基于参数高效微调的方法，尤其是在Llama3.2模型上的表现。此外，UniR展示了强大的弱到强泛化能力，训练在小模型上的推理模块可以有效引导更大的LLM。这使得UniR成为一种成本效益高、适应性强且稳健的解决方案，用于增强LLMs的推理能力而不损害其核心能力。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.19075" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Sun, 25 May 2025 06:19:10 GMT</pubDate>
 <pubDate>Sun, 25 May 2025 06:19:10 GMT</pubDate>
 </item>
 <item>
@@ -189,11 +181,8 @@
 <link>https://arxiv.org/abs/2505.18600</link>
 <guid>https://arxiv.org/abs/2505.18600</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种模型不可知的框架Chain-of-Zoom，实现极端放大倍率下的高质量图像超分辨率。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为Chain-of-Zoom (CoZ) 的新框架，旨在解决现有单一图像超分辨率(SISR)模型在高倍率放大时性能下降的问题。CoZ通过将SISR分解为一系列中间尺度状态的自回归链，并结合多尺度感知提示，利用现有的骨干超分辨率模型多次重用来实现极高分辨率的图像重建，而无需额外训练。为了应对高倍率放大时视觉线索减弱的问题，CoZ在每次缩放步骤中引入由视觉语言模型生成的多尺度感知文本提示。此外，通过广义奖励策略优化方法对提示提取器进行微调，使其更符合人类偏好。实验表明，基于标准4倍扩散模型的CoZ能够在保持高水平感知质量和保真度的情况下实现超过256倍的放大效果。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.18600 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种模型不可知的框架Chain-of-Zoom，实现极端放大倍率下的高质量图像超分辨率。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种名为Chain-of-Zoom (CoZ) 的新框架，旨在解决现有单一图像超分辨率(SISR)模型在高倍率放大时性能下降的问题。CoZ通过将SISR分解为一系列中间尺度状态的自回归链，并结合多尺度感知提示，利用现有的骨干超分辨率模型多次重用来实现极高分辨率的图像重建，而无需额外训练。为了应对高倍率放大时视觉线索减弱的问题，CoZ在每次缩放步骤中引入由视觉语言模型生成的多尺度感知文本提示。此外，通过广义奖励策略优化方法对提示提取器进行微调，使其更符合人类偏好。实验表明，基于标准4倍扩散模型的CoZ能够在保持高水平感知质量和保真度的情况下实现超过256倍的放大效果。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.18600" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Sat, 24 May 2025 04:50:08 GMT</pubDate>
 <pubDate>Sat, 24 May 2025 04:50:08 GMT</pubDate>
 </item>
 <item>
@@ -201,11 +190,8 @@
 <link>https://arxiv.org/abs/2505.18149</link>
 <guid>https://arxiv.org/abs/2505.18149</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种无需训练的并行解码策略First Finish Search，显著提升大语言模型推理性能。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为First Finish Search（FFS）的新颖训练自由并行解码策略，该策略通过同时启动多个独立样本并在任意一个完成时立即返回，有效提升了大型语言模型在推理阶段的表现。研究发现，对于推理任务而言，较短的解码路径比较长的路径更可能产生正确的答案。FFS在四个不同的推理模型和四个数据集上的实验表明，它能够在保持较低计算成本的同时显著提高准确性。例如，在AIME数据集上，使用DeepSeek-R1模型时，FFS达到了82.23%的准确率，相比单次运行提升了15%，几乎达到OpenAI o4-mini的水平。此外，理论分析解释了为何提前停止于最短路径通常会得到正确答案，并指出了早停可能不适用的情况。这一研究揭示了简单推理时间扩展策略的巨大潜力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.18149 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种无需训练的并行解码策略First Finish Search，显著提升大语言模型推理性能。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种名为First Finish Search（FFS）的新颖训练自由并行解码策略，该策略通过同时启动多个独立样本并在任意一个完成时立即返回，有效提升了大型语言模型在推理阶段的表现。研究发现，对于推理任务而言，较短的解码路径比较长的路径更可能产生正确的答案。FFS在四个不同的推理模型和四个数据集上的实验表明，它能够在保持较低计算成本的同时显著提高准确性。例如，在AIME数据集上，使用DeepSeek-R1模型时，FFS达到了82.23%的准确率，相比单次运行提升了15%，几乎达到OpenAI o4-mini的水平。此外，理论分析解释了为何提前停止于最短路径通常会得到正确答案，并指出了早停可能不适用的情况。这一研究揭示了简单推理时间扩展策略的巨大潜力。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.18149" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 23 May 2025 13:57:43 GMT</pubDate>
 <pubDate>Fri, 23 May 2025 13:57:43 GMT</pubDate>
 </item>
 <item>
@@ -213,11 +199,8 @@
 <link>https://arxiv.org/abs/2505.17870</link>
 <guid>https://arxiv.org/abs/2505.17870</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>通过在训练中引入标注的虚假数据集，生成式AI可增强对虚假信息的识别能力。</p><br><br><p><strong>摘要：</strong> 本文提出一种新颖的生成式人工智能模型训练框架，借鉴生物免疫概念，将经过标注的少量虚假信息作为“疫苗”，通过定期注入到模型微调过程中，以提高模型识别并拒绝误导性陈述的能力，同时保持对真实信息的准确性。这种框架不同于传统方法，它直接利用事实核查过的虚假数据而非输入扰动或通用反馈信号。研究显示，经过免疫处理的模型生成虚假信息的比例显著低于基线模型。此外，文章还探讨了相关的伦理安全措施和治理机制，以确保虚假数据的安全使用。这一创新方法为实现AI系统与事实性的对齐提供了积极的解决方案。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.17870 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">通过在训练中引入标注的虚假数据集，生成式AI可增强对虚假信息的识别能力。</p><br /><br /><p><strong>摘要：</strong> 本文提出一种新颖的生成式人工智能模型训练框架，借鉴生物免疫概念，将经过标注的少量虚假信息作为“疫苗”，通过定期注入到模型微调过程中，以提高模型识别并拒绝误导性陈述的能力，同时保持对真实信息的准确性。这种框架不同于传统方法，它直接利用事实核查过的虚假数据而非输入扰动或通用反馈信号。研究显示，经过免疫处理的模型生成虚假信息的比例显著低于基线模型。此外，文章还探讨了相关的伦理安全措施和治理机制，以确保虚假数据的安全使用。这一创新方法为实现AI系统与事实性的对齐提供了积极的解决方案。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.17870" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 23 May 2025 09:20:23 GMT</pubDate>
 <pubDate>Fri, 23 May 2025 09:20:23 GMT</pubDate>
 </item>
 <item>
@@ -225,14 +208,10 @@
 <link>https://arxiv.org/abs/2505.15813</link>
 <guid>https://arxiv.org/abs/2505.15813</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>BraInCoRL通过提示学习在无需微调的情况下预测新对象和刺激的神经反应。</p><br><br><p><strong>摘要：</strong> 理解高等视觉皮层的功能表示是计算神经科学中的基本问题。尽管大规模数据集上的预训练人工神经网络在人类神经反应表征上表现出显著的对齐性，但学习视觉皮层的图像可计算模型需要个体水平的大规模功能磁共振成像（fMRI）数据集。高昂的数据获取成本限制了编码器对新受试者和刺激物的泛化能力。本文提出BraInCoRL方法，采用上下文学习的方式，在少量样本示例下预测体素级神经反应，而无需针对新受试者和刺激进行额外的微调。该方法利用可变数量上下文图像刺激的Transformer架构，学习多个受试者的归纳偏置。通过联合条件化图像特征和体素激活，模型直接生成性能更好的高等视觉皮层体素级模型。实验表明，BraInCoRL在低数据环境下优于现有体素级编码器设计，并在全新图像测试中表现出良好的扩展特性。此外，该模型还能推广到全新的视觉fMRI数据集，展示出对语义相关刺激的关注，提升了神经信号的可解释性，并实现了自然语言查询到体素选择性的可解释映射。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.15813 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">BraInCoRL通过提示学习在无需微调的情况下预测新对象和刺激的神经反应。</p><br /><br /><p><strong>摘要：</strong> 理解高等视觉皮层的功能表示是计算神经科学中的基本问题。尽管大规模数据集上的预训练人工神经网络在人类神经反应表征上表现出显著的对齐性，但学习视觉皮层的图像可计算模型需要个体水平的大规模功能磁共振成像（fMRI）数据集。高昂的数据获取成本限制了编码器对新受试者和刺激物的泛化能力。本文提出BraInCoRL方法，采用上下文学习的方式，在少量样本示例下预测体素级神经反应，而无需针对新受试者和刺激进行额外的微调。该方法利用可变数量上下文图像刺激的Transformer架构，学习多个受试者的归纳偏置。通过联合条件化图像特征和体素激活，模型直接生成性能更好的高等视觉皮层体素级模型。实验表明，BraInCoRL在低数据环境下优于现有体素级编码器设计，并在全新图像测试中表现出良好的扩展特性。此外，该模型还能推广到全新的视觉fMRI数据集，展示出对语义相关刺激的关注，提升了神经信号的可解释性，并实现了自然语言查询到体素选择性的可解释映射。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.15813" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 21 May 2025 13:59:41 GMT</pubDate>
-<pubDate>Wed, 21 May 2025 13:59:41 GMT</pubDate>
 </item>
-
 <item>
 <title>WebDancer: Towards Autonomous Information Seeking Agency</title>
 <link>https://arxiv.org/abs/2505.22648</link>
@@ -9061,177 +9040,6 @@ Inference-time scaling can enhance the reasoning capabilities of large language 
 We address the task of video chaptering, i.e., partitioning a long video timeline into semantic units and generating corresponding chapter titles. While relatively underexplored, automatic chaptering has the potential to enable efficient navigation and content retrieval in long-form videos. In this paper, we achieve strong chaptering performance on hour-long videos by efficiently addressing the problem in the text domain with our 'Chapter-Llama' framework. Specifically, we leverage a pretrained large language model (LLM) with large context window, and feed as input (i) speech transcripts and (ii) captions describing video frames, along with their respective timestamps. Given the inefficiency of exhaustively captioning all frames, we propose a lightweight speech-guided frame selection strategy based on speech transcript content, and experimentally demonstrate remarkable advantages. We train the LLM to output timestamps for the chapter boundaries, as well as free-form chapter titles. This simple yet powerful approach scales to processing one-hour long videos in a single forward pass. Our results demonstrate substantial improvements (e.g., 45.3 vs 26.7 F1 score) over the state of the art on the recent VidChapters-7M benchmark. To promote further research, we release our code and models at our project page.
 ]]></content:encoded>
 <pubDate>Mon, 31 Mar 2025 13:41:29 GMT</pubDate>
-</item>
-<item>
-<title>CodeARC: Benchmarking Reasoning Capabilities of LLM Agents for Inductive Program Synthesis</title>
-<link>https://arxiv.org/abs/2503.23145</link>
-<guid>https://arxiv.org/abs/2503.23145</guid>
-<content:encoded><![CDATA[
-Inductive program synthesis, or programming by example, requires synthesizing functions from input-output examples that generalize to unseen inputs. While large language model agents have shown promise in programming tasks guided by natural language, their ability to perform inductive program synthesis is underexplored. Existing evaluation protocols rely on static sets of examples and held-out tests, offering no feedback when synthesized functions are incorrect and failing to reflect real-world scenarios such as reverse engineering. We propose CodeARC, the Code Abstraction and Reasoning Challenge, a new evaluation framework where agents interact with a hidden target function by querying it with new inputs, synthesizing candidate functions, and iteratively refining their solutions using a differential testing oracle. This interactive setting encourages agents to perform function calls and self-correction based on feedback. We construct the first large-scale benchmark for general-purpose inductive program synthesis, featuring 1114 functions. Among 18 models evaluated, o3-mini performs best with a success rate of 52.7%, highlighting the difficulty of this task. Fine-tuning LLaMA-3.1-8B-Instruct on curated synthesis traces yields up to a 31% relative performance gain. CodeARC provides a more realistic and challenging testbed for evaluating LLM-based program synthesis and inductive reasoning.
-]]></content:encoded>
-<pubDate>Sat, 29 Mar 2025 12:50:39 GMT</pubDate>
-</item>
-<item>
-<title>GeometryCrafter: Consistent Geometry Estimation for Open-world Videos with Diffusion Priors</title>
-<link>https://arxiv.org/abs/2504.01016</link>
-<guid>https://arxiv.org/abs/2504.01016</guid>
-<content:encoded><![CDATA[
-Despite remarkable advancements in video depth estimation, existing methods exhibit inherent limitations in achieving geometric fidelity through the affine-invariant predictions, limiting their applicability in reconstruction and other metrically grounded downstream tasks. We propose GeometryCrafter, a novel framework that recovers high-fidelity point map sequences with temporal coherence from open-world videos, enabling accurate 3D/4D reconstruction, camera parameter estimation, and other depth-based applications. At the core of our approach lies a point map Variational Autoencoder (VAE) that learns a latent space agnostic to video latent distributions for effective point map encoding and decoding. Leveraging the VAE, we train a video diffusion model to model the distribution of point map sequences conditioned on the input videos. Extensive evaluations on diverse datasets demonstrate that GeometryCrafter achieves state-of-the-art 3D accuracy, temporal consistency, and generalization capability.
-]]></content:encoded>
-<pubDate>Tue, 01 Apr 2025 13:58:03 GMT</pubDate>
-</item>
-<item>
-<title>When To Solve, When To Verify: Compute-Optimal Problem Solving and Generative Verification for LLM Reasoning</title>
-<link>https://arxiv.org/abs/2504.01005</link>
-<guid>https://arxiv.org/abs/2504.01005</guid>
-<content:encoded><![CDATA[
-Scaling test-time compute has emerged as a key strategy for enhancing the reasoning capabilities of large language models (LLMs), particularly in tasks like mathematical problem-solving. A traditional approach, Self-Consistency (SC), generates multiple solutions to a problem and selects the most common answer via majority voting. Another common method involves scoring each solution with a reward model (verifier) and choosing the best one. Recent advancements in Generative Reward Models (GenRM) reframe verification as a next-token prediction task, enabling inference-time scaling along a new axis. Specifically, GenRM generates multiple verification chains-of-thought to score each solution. Under a limited inference budget, this introduces a fundamental trade-off: should you spend the budget on scaling solutions via SC or generate fewer solutions and allocate compute to verification via GenRM? To address this, we evaluate GenRM against SC under a fixed inference budget. Interestingly, we find that SC is more compute-efficient than GenRM for most practical inference budgets across diverse models and datasets. For instance, GenRM first matches SC after consuming up to 8x the inference compute and requires significantly more compute to outperform it. Furthermore, we derive inference scaling laws for the GenRM paradigm, revealing that compute-optimal inference favors scaling solution generation more aggressively than scaling the number of verifications. Our work provides practical guidance on optimizing test-time scaling by balancing solution generation and verification. The code is available at https://github.com/nishadsinghi/sc-genrm-scaling.
-]]></content:encoded>
-<pubDate>Tue, 01 Apr 2025 13:41:57 GMT</pubDate>
-</item>
-<item>
-<title>Agent S2: A Compositional Generalist-Specialist Framework for Computer Use Agents</title>
-<link>https://arxiv.org/abs/2504.00906</link>
-<guid>https://arxiv.org/abs/2504.00906</guid>
-<content:encoded><![CDATA[
-Computer use agents automate digital tasks by directly interacting with graphical user interfaces (GUIs) on computers and mobile devices, offering significant potential to enhance human productivity by completing an open-ended space of user queries. However, current agents face significant challenges: imprecise grounding of GUI elements, difficulties with long-horizon task planning, and performance bottlenecks from relying on single generalist models for diverse cognitive tasks. To this end, we introduce Agent S2, a novel compositional framework that delegates cognitive responsibilities across various generalist and specialist models. We propose a novel Mixture-of-Grounding technique to achieve precise GUI localization and introduce Proactive Hierarchical Planning, dynamically refining action plans at multiple temporal scales in response to evolving observations. Evaluations demonstrate that Agent S2 establishes new state-of-the-art (SOTA) performance on three prominent computer use benchmarks. Specifically, Agent S2 achieves 18.9% and 32.7% relative improvements over leading baseline agents such as Claude Computer Use and UI-TARS on the OSWorld 15-step and 50-step evaluation. Moreover, Agent S2 generalizes effectively to other operating systems and applications, surpassing previous best methods by 52.8% on WindowsAgentArena and by 16.52% on AndroidWorld relatively. Code available at https://github.com/simular-ai/Agent-S.
-]]></content:encoded>
-<pubDate>Tue, 01 Apr 2025 11:40:27 GMT</pubDate>
-</item>
-<item>
-<title>Any2Caption:Interpreting Any Condition to Caption for Controllable Video Generation</title>
-<link>https://arxiv.org/abs/2503.24379</link>
-<guid>https://arxiv.org/abs/2503.24379</guid>
-<content:encoded><![CDATA[
-To address the bottleneck of accurate user intent interpretation within the current video generation community, we present Any2Caption, a novel framework for controllable video generation under any condition. The key idea is to decouple various condition interpretation steps from the video synthesis step. By leveraging modern multimodal large language models (MLLMs), Any2Caption interprets diverse inputs--text, images, videos, and specialized cues such as region, motion, and camera poses--into dense, structured captions that offer backbone video generators with better guidance. We also introduce Any2CapIns, a large-scale dataset with 337K instances and 407K conditions for any-condition-to-caption instruction tuning. Comprehensive evaluations demonstrate significant improvements of our system in controllability and video quality across various aspects of existing video generation models. Project Page: https://sqwu.top/Any2Cap/
-]]></content:encoded>
-<pubDate>Mon, 31 Mar 2025 13:59:01 GMT</pubDate>
-</item>
-<item>
-<title>Harnessing the Reasoning Economy: A Survey of Efficient Reasoning for Large Language Models</title>
-<link>https://arxiv.org/abs/2503.24377</link>
-<guid>https://arxiv.org/abs/2503.24377</guid>
-<content:encoded><![CDATA[
-Recent advancements in Large Language Models (LLMs) have significantly enhanced their ability to perform complex reasoning tasks, transitioning from fast and intuitive thinking (System 1) to slow and deep reasoning (System 2). While System 2 reasoning improves task accuracy, it often incurs substantial computational costs due to its slow thinking nature and inefficient or unnecessary reasoning behaviors. In contrast, System 1 reasoning is computationally efficient but leads to suboptimal performance. Consequently, it is critical to balance the trade-off between performance (benefits) and computational costs (budgets), giving rise to the concept of reasoning economy. In this survey, we provide a comprehensive analysis of reasoning economy in both the post-training and test-time inference stages of LLMs, encompassing i) the cause of reasoning inefficiency, ii) behavior analysis of different reasoning patterns, and iii) potential solutions to achieve reasoning economy. By offering actionable insights and highlighting open challenges, we aim to shed light on strategies for improving the reasoning economy of LLMs, thereby serving as a valuable resource for advancing research in this evolving area. We also provide a public repository to continually track developments in this fast-evolving field.
-]]></content:encoded>
-<pubDate>Mon, 31 Mar 2025 13:58:07 GMT</pubDate>
-</item>
-<item>
-<title>Exploring the Effect of Reinforcement Learning on Video Understanding: Insights from SEED-Bench-R1</title>
-<link>https://arxiv.org/abs/2503.24376</link>
-<guid>https://arxiv.org/abs/2503.24376</guid>
-<content:encoded><![CDATA[
-Recent advancements in Chain of Thought (COT) generation have significantly improved the reasoning capabilities of Large Language Models (LLMs), with reinforcement learning (RL) emerging as an effective post-training approach. Multimodal Large Language Models (MLLMs) inherit this reasoning potential but remain underexplored in tasks requiring both perception and logical reasoning. To address this, we introduce SEED-Bench-R1, a benchmark designed to systematically evaluate post-training methods for MLLMs in video understanding. It includes intricate real-world videos and complex everyday planning tasks in the format of multiple-choice questions, requiring sophisticated perception and reasoning. SEED-Bench-R1 assesses generalization through a three-level hierarchy: in-distribution, cross-environment, and cross-environment-task scenarios, equipped with a large-scale training dataset with easily verifiable ground-truth answers. Using Qwen2-VL-Instruct-7B as a base model, we compare RL with supervised fine-tuning (SFT), demonstrating RL's data efficiency and superior performance on both in-distribution and out-of-distribution tasks, even outperforming SFT on general video understanding benchmarks like LongVideoBench. Our detailed analysis reveals that RL enhances visual perception but often produces less logically coherent reasoning chains. We identify key limitations such as inconsistent reasoning and overlooked visual cues, and suggest future improvements in base model reasoning, reward modeling, and RL robustness against noisy signals.
-]]></content:encoded>
-<pubDate>Mon, 31 Mar 2025 13:55:23 GMT</pubDate>
-</item>
-<item>
-<title>AdaMMS: Model Merging for Heterogeneous Multimodal Large Language Models with Unsupervised Coefficient Optimization</title>
-<link>https://arxiv.org/abs/2503.23733</link>
-<guid>https://arxiv.org/abs/2503.23733</guid>
-<content:encoded><![CDATA[
-Recently, model merging methods have demonstrated powerful strengths in combining abilities on various tasks from multiple Large Language Models (LLMs). While previous model merging methods mainly focus on merging homogeneous models with identical architecture, they meet challenges when dealing with Multimodal Large Language Models (MLLMs) with inherent heterogeneous property, including differences in model architecture and the asymmetry in the parameter space. In this work, we propose AdaMMS, a novel model merging method tailored for heterogeneous MLLMs. Our method tackles the challenges in three steps: mapping, merging and searching. Specifically, we first design mapping function between models to apply model merging on MLLMs with different architecture. Then we apply linear interpolation on model weights to actively adapt the asymmetry in the heterogeneous MLLMs. Finally in the hyper-parameter searching step, we propose an unsupervised hyper-parameter selection method for model merging. As the first model merging method capable of merging heterogeneous MLLMs without labeled data, extensive experiments on various model combinations demonstrated that AdaMMS outperforms previous model merging methods on various vision-language benchmarks.
-]]></content:encoded>
-<pubDate>Mon, 31 Mar 2025 01:13:02 GMT</pubDate>
-</item>
-<item>
-<title>Discovering Knowledge Deficiencies of Language Models on Massive Knowledge Base</title>
-<link>https://arxiv.org/abs/2503.23361</link>
-<guid>https://arxiv.org/abs/2503.23361</guid>
-<content:encoded><![CDATA[
-Large language models (LLMs) possess impressive linguistic capabilities but often fail to faithfully retain factual knowledge, leading to hallucinations and unreliable outputs. Understanding LLMs' knowledge deficiencies by exhaustively evaluating against full-scale knowledge bases is computationally prohibitive, especially for closed-weight models. We propose stochastic error ascent (SEA), a scalable and efficient framework for discovering knowledge deficiencies (errors) in closed-weight LLMs under a strict query budget. Rather than naively probing all knowledge candidates, SEA formulates error discovery as a stochastic optimization process: it iteratively retrieves new high-error candidates by leveraging the semantic similarity to previously observed failures. To further enhance search efficiency and coverage, SEA employs hierarchical retrieval across document and paragraph levels, and constructs a relation directed acyclic graph to model error propagation and identify systematic failure modes. Empirically, SEA uncovers 40.7x more knowledge errors than Automated Capability Discovery and 26.7% more than AutoBencher, while reducing the cost-per-error by 599x and 9x, respectively. Human evaluation confirms the high quality of generated questions, while ablation and convergence analyses validate the contribution of each component in SEA. Further analysis on the discovered errors reveals correlated failure patterns across LLM families and recurring deficits, highlighting the need for better data coverage and targeted fine-tuning in future LLM development.
-]]></content:encoded>
-<pubDate>Sun, 30 Mar 2025 04:33:56 GMT</pubDate>
-</item>
-<item>
-<title>ManipTrans: Efficient Dexterous Bimanual Manipulation Transfer via Residual Learning</title>
-<link>https://arxiv.org/abs/2503.21860</link>
-<guid>https://arxiv.org/abs/2503.21860</guid>
-<content:encoded><![CDATA[
-Human hands play a central role in interacting, motivating increasing research in dexterous robotic manipulation. Data-driven embodied AI algorithms demand precise, large-scale, human-like manipulation sequences, which are challenging to obtain with conventional reinforcement learning or real-world teleoperation. To address this, we introduce ManipTrans, a novel two-stage method for efficiently transferring human bimanual skills to dexterous robotic hands in simulation. ManipTrans first pre-trains a generalist trajectory imitator to mimic hand motion, then fine-tunes a specific residual module under interaction constraints, enabling efficient learning and accurate execution of complex bimanual tasks. Experiments show that ManipTrans surpasses state-of-the-art methods in success rate, fidelity, and efficiency. Leveraging ManipTrans, we transfer multiple hand-object datasets to robotic hands, creating DexManipNet, a large-scale dataset featuring previously unexplored tasks like pen capping and bottle unscrewing. DexManipNet comprises 3.3K episodes of robotic manipulation and is easily extensible, facilitating further policy training for dexterous hands and enabling real-world deployments.
-]]></content:encoded>
-<pubDate>Thu, 27 Mar 2025 13:50:30 GMT</pubDate>
-</item>
-<item>
-<title>DSO: Aligning 3D Generators with Simulation Feedback for Physical Soundness</title>
-<link>https://arxiv.org/abs/2503.22677</link>
-<guid>https://arxiv.org/abs/2503.22677</guid>
-<content:encoded><![CDATA[
-Most 3D object generators focus on aesthetic quality, often neglecting physical constraints necessary in applications. One such constraint is that the 3D object should be self-supporting, i.e., remains balanced under gravity. Prior approaches to generating stable 3D objects used differentiable physics simulators to optimize geometry at test-time, which is slow, unstable, and prone to local optima. Inspired by the literature on aligning generative models to external feedback, we propose Direct Simulation Optimization (DSO), a framework to use the feedback from a (non-differentiable) simulator to increase the likelihood that the 3D generator outputs stable 3D objects directly. We construct a dataset of 3D objects labeled with a stability score obtained from the physics simulator. We can then fine-tune the 3D generator using the stability score as the alignment metric, via direct preference optimization (DPO) or direct reward optimization (DRO), a novel objective, which we introduce, to align diffusion models without requiring pairwise preferences. Our experiments show that the fine-tuned feed-forward generator, using either DPO or DRO objective, is much faster and more likely to produce stable objects than test-time optimization. Notably, the DSO framework works even without any ground-truth 3D objects for training, allowing the 3D generator to self-improve by automatically collecting simulation feedback on its own outputs.
-]]></content:encoded>
-<pubDate>Fri, 28 Mar 2025 13:59:53 GMT</pubDate>
-</item>
-<item>
-<title>ActionStudio: A Lightweight Framework for Data and Training of Large Action Models</title>
-<link>https://arxiv.org/abs/2503.22673</link>
-<guid>https://arxiv.org/abs/2503.22673</guid>
-<content:encoded><![CDATA[
-Action models are essential for enabling autonomous agents to perform complex tasks. However, training large action models remains challenging due to the diversity of agent environments and the complexity of agentic data. Despite growing interest, existing infrastructure provides limited support for scalable, agent-specific fine-tuning. We present ActionStudio, a lightweight and extensible data and training framework designed for large action models. ActionStudio unifies heterogeneous agent trajectories through a standardized format, supports diverse training paradigms including LoRA, full fine-tuning, and distributed setups, and integrates robust preprocessing and verification tools. We validate its effectiveness across both public and realistic industry benchmarks, demonstrating strong performance and practical scalability. We open-sourced code and data at https://github.com/SalesforceAIResearch/xLAM to facilitate research in the community.
-]]></content:encoded>
-<pubDate>Fri, 28 Mar 2025 13:58:33 GMT</pubDate>
-</item>
-<item>
-<title>AvatarArtist: Open-Domain 4D Avatarization</title>
-<link>https://arxiv.org/abs/2503.19906</link>
-<guid>https://arxiv.org/abs/2503.19906</guid>
-<content:encoded><![CDATA[
-This work focuses on open-domain 4D avatarization, with the purpose of creating a 4D avatar from a portrait image in an arbitrary style. We select parametric triplanes as the intermediate 4D representation and propose a practical training paradigm that takes advantage of both generative adversarial networks (GANs) and diffusion models. Our design stems from the observation that 4D GANs excel at bridging images and triplanes without supervision yet usually face challenges in handling diverse data distributions. A robust 2D diffusion prior emerges as the solution, assisting the GAN in transferring its expertise across various domains. The synergy between these experts permits the construction of a multi-domain image-triplane dataset, which drives the development of a general 4D avatar creator. Extensive experiments suggest that our model, AvatarArtist, is capable of producing high-quality 4D avatars with strong robustness to various source image domains. The code, the data, and the models will be made publicly available to facilitate future studies..
-]]></content:encoded>
-<pubDate>Tue, 25 Mar 2025 13:59:03 GMT</pubDate>
-</item>
-<item>
-<title>PAVE: Patching and Adapting Video Large Language Models</title>
-<link>https://arxiv.org/abs/2503.19794</link>
-<guid>https://arxiv.org/abs/2503.19794</guid>
-<content:encoded><![CDATA[
-Pre-trained video large language models (Video LLMs) exhibit remarkable reasoning capabilities, yet adapting these models to new tasks involving additional modalities or data types (e.g., audio or 3D information) remains challenging. In this paper, we present PAVE, a flexible framework for adapting pre-trained Video LLMs to downstream tasks with side-channel signals, such as audio, 3D cues, or multi-view videos. PAVE introduces lightweight adapters, referred to as "patches," which add a small number of parameters and operations to a base model without modifying its architecture or pre-trained weights. In doing so, PAVE can effectively adapt the pre-trained base model to support diverse downstream tasks, including audio-visual question answering, 3D reasoning, multi-view video recognition, and high frame rate video understanding. Across these tasks, PAVE significantly enhances the performance of the base model, surpassing state-of-the-art task-specific models while incurring a minor cost of ~0.1% additional FLOPs and parameters. Further, PAVE supports multi-task learning and generalizes well across different Video LLMs. Our code is available at https://github.com/dragonlzm/PAVE.
-]]></content:encoded>
-<pubDate>Tue, 25 Mar 2025 12:02:37 GMT</pubDate>
-</item>
-<item>
-<title>Understanding Co-speech Gestures in-the-wild</title>
-<link>https://arxiv.org/abs/2503.22668</link>
-<guid>https://arxiv.org/abs/2503.22668</guid>
-<content:encoded><![CDATA[
-Co-speech gestures play a vital role in non-verbal communication. In this paper, we introduce a new framework for co-speech gesture understanding in the wild. Specifically, we propose three new tasks and benchmarks to evaluate a model's capability to comprehend gesture-text-speech associations: (i) gesture-based retrieval, (ii) gestured word spotting, and (iii) active speaker detection using gestures. We present a new approach that learns a tri-modal speech-text-video-gesture representation to solve these tasks. By leveraging a combination of global phrase contrastive loss and local gesture-word coupling loss, we demonstrate that a strong gesture representation can be learned in a weakly supervised manner from videos in the wild. Our learned representations outperform previous methods, including large vision-language models (VLMs), across all three tasks. Further analysis reveals that speech and text modalities capture distinct gesture-related signals, underscoring the advantages of learning a shared tri-modal embedding space. The dataset, model, and code are available at: https://www.robots.ox.ac.uk/~vgg/research/jegal
-]]></content:encoded>
-<pubDate>Fri, 28 Mar 2025 13:55:52 GMT</pubDate>
-</item>
-<item>
-<title>Unicorn: Text-Only Data Synthesis for Vision Language Model Training</title>
-<link>https://arxiv.org/abs/2503.22655</link>
-<guid>https://arxiv.org/abs/2503.22655</guid>
-<content:encoded><![CDATA[
-Training vision-language models (VLMs) typically requires large-scale, high-quality image-text pairs, but collecting or synthesizing such data is costly. In contrast, text data is abundant and inexpensive, prompting the question: can high-quality multimodal training data be synthesized purely from text? To tackle this, we propose a cross-integrated three-stage multimodal data synthesis framework, which generates two datasets: Unicorn-1.2M and Unicorn-471K-Instruction. In Stage 1: Diverse Caption Data Synthesis, we construct 1.2M semantically diverse high-quality captions by expanding sparse caption seeds using large language models (LLMs). In Stage 2: Instruction-Tuning Data Generation, we further process 471K captions into multi-turn instruction-tuning tasks to support complex reasoning. Finally, in Stage 3: Modality Representation Transfer, these textual captions representations are transformed into visual representations, resulting in diverse synthetic image representations. This three-stage process enables us to construct Unicorn-1.2M for pretraining and Unicorn-471K-Instruction for instruction-tuning, without relying on real images. By eliminating the dependency on real images while maintaining data quality and diversity, our framework offers a cost-effective and scalable solution for VLMs training. Code is available at https://github.com/Yu-xm/Unicorn.git.
-]]></content:encoded>
-<pubDate>Fri, 28 Mar 2025 13:43:00 GMT</pubDate>
-</item>
-<item>
-<title>Entropy-Based Adaptive Weighting for Self-Training</title>
-<link>https://arxiv.org/abs/2503.23913</link>
-<guid>https://arxiv.org/abs/2503.23913</guid>
-<content:encoded><![CDATA[
-The mathematical problem-solving capabilities of large language models have become a focal point of research, with growing interests in leveraging self-generated reasoning paths as a promising way to refine and enhance these models. These paths capture step-by-step logical processes while requiring only the correct answer for supervision. The self-training method has been shown to be effective in reasoning tasks while eliminating the need for external models and manual annotations. However, optimizing the use of self-generated data for model training remains an open challenge. In this work, we propose Entropy-Based Adaptive Weighting for Self-Training (EAST), an adaptive weighting strategy designed to prioritize uncertain data during self-training. Specifically, EAST employs a mapping function with a tunable parameter that controls the sharpness of the weighting, assigning higher weights to data where the model exhibits greater uncertainty. This approach guides the model to focus on more informative and challenging examples, thereby enhancing its reasoning ability. We evaluate our approach on GSM8K and MATH benchmarks. Empirical results show that, while the vanilla method yields virtually no improvement (0%) on MATH, EAST achieves around a 1% gain over backbone model. On GSM8K, EAST attains a further 1-2% performance boost compared to the vanilla method.
-]]></content:encoded>
-<pubDate>Mon, 31 Mar 2025 06:04:35 GMT</pubDate>
-</item>
-<item>
-<title>MeshCraft: Exploring Efficient and Controllable Mesh Generation with Flow-based DiTs</title>
-<link>https://arxiv.org/abs/2503.23022</link>
-<guid>https://arxiv.org/abs/2503.23022</guid>
-<content:encoded><![CDATA[
-In the domain of 3D content creation, achieving optimal mesh topology through AI models has long been a pursuit for 3D artists. Previous methods, such as MeshGPT, have explored the generation of ready-to-use 3D objects via mesh auto-regressive techniques. While these methods produce visually impressive results, their reliance on token-by-token predictions in the auto-regressive process leads to several significant limitations. These include extremely slow generation speeds and an uncontrollable number of mesh faces. In this paper, we introduce MeshCraft, a novel framework for efficient and controllable mesh generation, which leverages continuous spatial diffusion to generate discrete triangle faces. Specifically, MeshCraft consists of two core components: 1) a transformer-based VAE that encodes raw meshes into continuous face-level tokens and decodes them back to the original meshes, and 2) a flow-based diffusion transformer conditioned on the number of faces, enabling the generation of high-quality 3D meshes with a predefined number of faces. By utilizing the diffusion model for the simultaneous generation of the entire mesh topology, MeshCraft achieves high-fidelity mesh generation at significantly faster speeds compared to auto-regressive methods. Specifically, MeshCraft can generate an 800-face mesh in just 3.2 seconds (35times faster than existing baselines). Extensive experiments demonstrate that MeshCraft outperforms state-of-the-art techniques in both qualitative and quantitative evaluations on ShapeNet dataset and demonstrates superior performance on Objaverse dataset. Moreover, it integrates seamlessly with existing conditional guidance strategies, showcasing its potential to relieve artists from the time-consuming manual work involved in mesh creation.
-]]></content:encoded>
-<pubDate>Sat, 29 Mar 2025 05:21:50 GMT</pubDate>
-</item>
-<item>
-<title>Decoupling Angles and Strength in Low-rank Adaptation</title>
-<link>https://arxiv.org/abs/2503.18225</link>
-<guid>https://arxiv.org/abs/2503.18225</guid>
-<content:encoded><![CDATA[
-Parameter-Efficient FineTuning (PEFT) methods have recently gained significant popularity thanks to the widespread availability of large-scale pretrained models. These methods allow for quick adaptation to downstream tasks with minimal computational cost. However, popular finetuning methods such as LoRA exhibit limited robustness when it comes to hyperparameter choices or extended training regimes, preventing optimal out-of-the-box performance. In contrast, bounded approaches, such as ETHER, provide greater robustness but are limited to extremely low-rank adaptations and fixed-strength transformations, reducing their adaptation expressive power. In this work, we propose Decoupled Low-rank Adaptation (DeLoRA), a novel finetuning method that normalizes and scales learnable low-rank matrices. By bounding the distance of the transformation, DeLoRA effectively decouples the angular learning from the adaptation strength, enhancing robustness without compromising performance. Through evaluations on subject-driven image generation, natural language understanding, and instruction tuning, we show that DeLoRA matches or surpasses performance of competing PEFT methods, while exhibiting stronger robustness. Code is available at https://github.com/ExplainableML/DeLoRA.
-]]></content:encoded>
-<pubDate>Sun, 23 Mar 2025 18:00:56 GMT</pubDate>
 </item>
 </channel>
 </rss>
