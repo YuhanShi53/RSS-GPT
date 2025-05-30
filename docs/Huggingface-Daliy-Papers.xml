@@ -5,15 +5,169 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>零样本嫁接技术降低视觉语言模型训练成本</title>
+<link>https://arxiv.org/abs/2505.22664</link>
+<guid>https://arxiv.org/abs/2505.22664</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>通过小模型迁移策略降低视觉语言模型训练成本。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为“零样本嫁接”的方法，用于减少视觉语言模型（VLMs）的训练开销。传统方法通常将大型语言模型（LLMs）作为解码器，但这种方法计算负担重且成本高昂。为了解决这个问题，研究者们设计了小型“替代模型”，这些模型继承了目标LLM的浅层网络并共享相同的嵌入空间和表示语言。经过替代模型训练的视觉编码器可以直接迁移到更大的模型上。实验结果显示，这种嫁接方法不仅在某些基准测试中表现优于直接使用小模型，甚至可以达到与完整解码器训练相当的效果。此外，当以Llama-70B作为解码器时，该方法可使总体训练成本降低约45%。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.22664 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 28 May 2025 13:59:59 GMT</pubDate>
+<pubDate>Wed, 28 May 2025 13:59:59 GMT</pubDate>
+</item>
+<item>
+<title>FastTD3：加速人形机器人强化学习训练的高效算法</title>
+<link>https://arxiv.org/abs/2505.22642</link>
+<guid>https://arxiv.org/abs/2505.22642</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>FastTD3通过简单修改显著提升人形机器人在多环境中的训练速度。</p><br><br><p><strong>摘要：</strong> 强化学习在机器人领域取得了显著进展，但其复杂性和长时间训练仍是主要瓶颈。本文介绍了一种名为FastTD3的新算法，它通过并行模拟、大批次更新、分布式批评者及精心调优的超参数，在HumanoidBench、IsaacLab和MuJoCo Playground等环境中大幅缩短了人形机器人训练时间，某些任务仅需不到3小时即可完成，且训练过程稳定。此外，我们还提供了FastTD3的轻量化实现，以促进机器人领域的强化学习研究。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.22642 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 28 May 2025 13:55:26 GMT</pubDate>
+<pubDate>Wed, 28 May 2025 13:55:26 GMT</pubDate>
+</item>
+<item>
+<title>PISCES：一种精确擦除语言模型概念知识的新框架</title>
+<link>https://arxiv.org/abs/2505.22586</link>
+<guid>https://arxiv.org/abs/2505.22586</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出PISCES框架，通过直接编辑参数空间中的方向，有效擦除语言模型中的特定概念。</p><br><br><p><strong>摘要：</strong> 现有方法在擦除大型语言模型中的不当知识时存在粗略、浅显或无效的问题。本文提出PISCES框架，利用解缠模型将MLP向量分解为可解释特征，并通过自动化可解释技术定位并移除目标概念相关的特征。实验表明，PISCES在Gemma 2和Llama 3.1上对多种概念的擦除效果优于领先方法，将目标概念的准确率降至7.7%，同时显著提高了擦除特异性和鲁棒性，分别提升了31%和38%。整体来看，基于特征的参数内编辑为语言模型中概念知识的更精确和可靠擦除提供了新途径。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.22586 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 28 May 2025 12:58:23 GMT</pubDate>
+<pubDate>Wed, 28 May 2025 12:58:23 GMT</pubDate>
+</item>
+<item>
+<title>HLIP：一种针对3D医学影像的语言-图像预训练框架</title>
+<link>https://arxiv.org/abs/2505.21862</link>
+<guid>https://arxiv.org/abs/2505.21862</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>HLIP通过分层注意力机制提升了3D医学影像语言-图像预训练的效果。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为HLIP（Hierarchical attention for Language-Image Pre-training）的可扩展预训练框架，用于3D医学影像。HLIP采用轻量级分层注意力机制，模仿放射学数据的自然层次结构（切片、扫描和研究）。该方法在Rad-ChestCT基准测试上展示了强泛化能力，在CT-RATE数据集上预训练后，宏观AUC提高了4.3%。此外，HLIP的计算效率允许直接在未经处理的数据集上进行训练。它在脑部MRI和头部CT数据集上的表现达到当前最佳水平，例如在Pub-Brain-5基准上平衡准确率提升32.4%，在RSNA和CQ500头部CT基准上分别提高1.4%和6.9%的宏观AUC。这些结果表明，HLIP使得直接在未经处理的临床数据集上进行预训练成为3D医学影像领域的一种可行且有效的方法。相关代码已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.21862 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 27 May 2025 21:16:34 GMT</pubDate>
+<pubDate>Tue, 27 May 2025 21:16:34 GMT</pubDate>
+</item>
+<item>
+<title>DORI基准测试：多模态系统物体方向感知能力评估</title>
+<link>https://arxiv.org/abs/2505.21649</link>
+<guid>https://arxiv.org/abs/2505.21649</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>DORI基准测试揭示现有视觉语言模型在物体方向理解上的局限性。</p><br><br><p><strong>摘要：</strong> 本文介绍了名为DORI（辨别性方向推理智能）的新基准测试，专门用于评估物体方向感知能力。DORI通过四个维度（正面对齐、旋转变换、相对方向关系和典型方向理解）来衡量模型的表现。经过对11个数据集的精细设计任务分析，发现最先进的视觉语言模型在粗粒度任务上的准确率仅为54.2%，而在细粒度方向判断上仅为33.0%，且在涉及参考框架转换或复合旋转的任务中表现明显下降。这些结果表明现有模型在内部三维空间表示方面存在严重缺陷，提示需要改进方向表示机制。DORI作为首个针对多模态系统方向意识的诊断框架，具有提升机器人控制、3D场景重建及人机物理交互的重要意义。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.21649 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 27 May 2025 14:22:44 GMT</pubDate>
+<pubDate>Tue, 27 May 2025 14:22:44 GMT</pubDate>
+</item>
+<item>
+<title>Prot2Token: A Unified Framework for Protein Modeling via Next-Token Prediction</title>
+<link>https://arxiv.org/abs/2505.20589</link>
+<guid>https://arxiv.org/abs/2505.20589</guid>
+<content:encoded><![CDATA[
+
+  The diverse nature of protein prediction tasks has traditionally necessitated specialized models, hindering the development of broadly applicable and computationally efficient Protein Language Models (PLMs). In this work, we introduce Prot2Token, a unified framework that overcomes these challenges by converting a wide spectrum of protein-related predictions, from sequence-level properties and residue-specific attributes to complex inter-protein interactions, into a standardized next-token prediction format. At its core, Prot2Token employs an autoregressive decoder, conditioned on embeddings from pre-trained protein encoders and guided by learnable task tokens, to perform diverse predictions. This architecture uniquely facilitates multi-task learning, enabling a single model to master numerous tasks with improved efficiency. We present extensive experimental validation across a variety of benchmarks, demonstrating Prot2Tokens strong predictive power in different types of protein-prediction tasks. Key results include significant speedups (e.g., near 1000x over AlphaFold2 with MSA) and performance often matching or exceeding specialized approaches. Beyond that, we introduce an auxiliary self-supervised decoder pre-training approach to improve spatially sensitive task performance. Prot2Token thus offers a significant step towards a versatile, high-throughput paradigm for protein modeling, promising to accelerate biological discovery and the development of novel therapeutics. The code is available at https://github.com/mahdip72/prot2token .
+
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 19:50:36 GMT</pubDate>
+<pubDate>Mon, 26 May 2025 19:50:36 GMT</pubDate>
+</item>
+<item>
+<title>HoPE：提升视觉语言模型长上下文能力的混合位置嵌入方法</title>
+<link>https://arxiv.org/abs/2505.20444</link>
+<guid>https://arxiv.org/abs/2505.20444</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出HoPE，一种针对长视频理解的混合位置嵌入方法。</p><br><br><p><strong>摘要：</strong> 视觉语言模型(VLMs)在多模态任务中取得了显著进展，但在长上下文场景（如长视频）中的表现通常会下降。尽管旋转位置嵌入(RoPE)已被广泛用于大语言模型(LLMs)的长度泛化，但将其扩展到捕捉视频复杂的时空依赖关系仍是一个未解决的挑战。现有方法通常通过不同的频率分配策略来编码三维位置信息，但这些策略主要基于启发式方法，缺乏深入的理论分析。本研究首先探讨了不同分配策略对VLMs长上下文能力的影响，发现当前的多模态RoPE无法可靠地捕获扩展上下文中的语义相似性。为此，我们提出了HoPE，这是一种混合位置嵌入方法，旨在提高VLMs的长上下文能力。HoPE引入了一种混合频率分配策略，以在任意长的上下文中进行可靠的语义建模，并采用动态时间缩放机制，促进在不同上下文长度下的稳健学习和灵活推理。广泛的实验表明，在四个视频基准上的长视频理解和检索任务中，HoPE始终优于现有方法，证明了其有效性。代码已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.20444 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 26 May 2025 14:37:40 GMT</pubDate>
+<pubDate>Mon, 26 May 2025 14:37:40 GMT</pubDate>
+</item>
+<item>
+<title>大型语言模型在真实文本因果推理中的挑战</title>
+<link>https://arxiv.org/abs/2505.18931</link>
+<guid>https://arxiv.org/abs/2505.18931</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究显示顶级大型语言模型在真实文本因果推理上表现不佳。</p><br><br><p><strong>摘要：</strong> 理解并推断文本中的因果关系是人类认知的核心方面，也是推动大型语言模型（LLMs）向通用人工智能发展的关键。现有研究多集中于合成文本中明确提到的简单因果关系，未能反映现实任务的复杂性。本文探讨了LLMs是否能在真实世界文本中推断因果关系，并开发了一个来自实际学术文献的数据集，涵盖多样化的文本长度、因果关系复杂性及领域。这是首个针对此任务的真实世界数据集。实验表明，最先进的LLMs在该基准测试中面临重大挑战，最佳模型的平均F1分数仅为0.477。分析揭示了常见问题，如隐含信息的理解困难、区分相关因果因素与上下文细节的能力不足，以及连接分散在长文本中的因果相关信息的难题。通过系统地识别这些缺陷，本研究为LLMs因果推理能力的进一步发展提供了有针对性的见解。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.18931 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sat, 24 May 2025 21:50:05 GMT</pubDate>
+<pubDate>Sat, 24 May 2025 21:50:05 GMT</pubDate>
+</item>
+<item>
+<title>个性化安全评估：大语言模型的安全性改进</title>
+<link>https://arxiv.org/abs/2505.18882</link>
+<guid>https://arxiv.org/abs/2505.18882</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究提出个性化安全概念，通过PENGUIN基准测试验证其有效性。</p><br><br><p><strong>摘要：</strong> 大语言模型通常对相同提示提供相同或相似的响应，在高风险应用场景中可能带来严重安全隐患，因为用户的风险状况差异很大。现有安全性评估主要依赖上下文独立指标（如事实性、偏见或毒性），而忽视了相同响应对不同背景用户的潜在风险差异。本文引入个性化安全概念，并构建PENGUIN基准，包含七个敏感领域的14,000个场景及其上下文版本。评估显示，个性化用户信息可提升安全性评分43.2%，证明个性化方法的有效性。然而，并非所有上下文属性对安全增强同等重要，为此开发RAISE框架，无需重新训练模型即可通过两阶段策略获取用户特定背景，显著提升了六种基础模型的安全评分最高达31.6%，同时平均仅需两次用户查询。研究强调在关键领域中选择性信息收集的重要性，并提供了个性化大语言模型响应的实用解决方案，为适应个体用户情境的安全研究奠定了基础。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.18882 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sat, 24 May 2025 17:37:10 GMT</pubDate>
+<pubDate>Sat, 24 May 2025 17:37:10 GMT</pubDate>
+</item>
+<item>
+<title>面向企业专用领域的可扩展硬负采样框架</title>
+<link>https://arxiv.org/abs/2505.18366</link>
+<guid>https://arxiv.org/abs/2505.18366</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种针对企业专用数据的硬负采样框架，显著提升检索性能。</p><br><br><p><strong>摘要：</strong> 本文探讨了企业搜索系统因语义不匹配和术语重叠导致检索准确性下降的问题，这些问题严重影响了知识管理、客户服务等下游应用的表现。为解决这一挑战，我们提出了一种专门针对企业专用数据的可扩展硬负采样框架。该方法通过动态选择语义上具有挑战性但上下文无关的文档，增强了部署的重新排名模型。我们的方法结合了多种嵌入模型，执行降维操作，并独特地选择了硬负样本，保证了计算效率和语义精确性。在私有企业语料库（云服务领域）上的评估显示，与最先进的基线和其他负采样技术相比，MRR@3提升了15%，MRR@10提升了19%。此外，在公共领域特定数据集（FiQA、Climate Fever、TechQA）上的进一步验证表明，该方法具有广泛的适用性和实际应用价值。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.18366 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 23 May 2025 16:51:20 GMT</pubDate>
+<pubDate>Fri, 23 May 2025 16:51:20 GMT</pubDate>
+</item>
+<item>
+<title>Transformer架构中的Token缩减：超越效率导向的潜力</title>
+<link>https://arxiv.org/abs/2505.18227</link>
+<guid>https://arxiv.org/abs/2505.18227</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出Token缩减在大型生成模型中应超越效率策略，成为生成建模的基本原则。</p><br><br><p><strong>摘要：</strong> 在Transformer架构中，Token作为从原始数据中衍生的离散单元，通过将输入分割为固定长度块形成，并映射到嵌入向量以支持并行注意力计算。然而，由于自注意力机制的二次计算复杂性，Token缩减通常被用作提高效率的手段。本文认为，在大型生成模型的时代，Token缩减不应仅限于此，而是应在生成建模中发挥根本性作用。具体而言，Token缩减可以促进多模态集成与对齐、减少过度思考和幻觉现象、维持长输入一致性，并提升训练稳定性等。本文重新定义了Token缩减的意义，提出了包括算法设计、强化学习引导的Token缩减、上下文学习中的Token优化等未来方向，并强调其对推动新模型架构和学习策略的重要性，以增强鲁棒性、提高可解释性并更好地实现生成建模目标。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.18227 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 23 May 2025 07:30:30 GMT</pubDate>
+<pubDate>Fri, 23 May 2025 07:30:30 GMT</pubDate>
+</item>
+<item>
+<title>Few Shot Domain Adapting Graph：高效文档理解模型</title>
+<link>https://arxiv.org/abs/2505.17330</link>
+<guid>https://arxiv.org/abs/2505.17330</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种高效视觉丰富文档理解的Few-Shot模型FS-DAG。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为Few Shot Domain Adapting Graph（FS-DAG）的模型架构，专门用于在少量样本条件下进行视觉丰富文档理解（VRDU）。该模型通过模块化框架结合领域特定及语言/视觉特定的骨干网络，在有限的数据下适应多种文档类型。FS-DAG对实际部署中的挑战如OCR错误、拼写错误和领域转换具有鲁棒性。实验表明，FS-DAG在信息抽取任务上表现出显著的收敛速度和性能提升，同时参数量低于90M，非常适合资源受限的复杂场景。此外，研究强调了开发更小、更高效的模型而不牺牲性能的重要性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.17330 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 22 May 2025 18:53:58 GMT</pubDate>
+<pubDate>Thu, 22 May 2025 18:53:58 GMT</pubDate>
+</item>
+<item>
+<title>强化学习提升大语言模型多轮推理能力的研究</title>
+<link>https://arxiv.org/abs/2505.11821</link>
+<guid>https://arxiv.org/abs/2505.11821</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>通过引入细粒度的回合级优势估计策略，显著提升了大语言模型的多轮推理能力。</p><br><br><p><strong>摘要：</strong> 本文研究了利用强化学习增强大型语言模型（LLM）推理能力的方法，特别关注多轮工具使用场景，将其建模为马尔可夫决策过程（MDP）。现有方法在多步决策中的回合级信用分配存在困难，限制了其在多轮推理任务中的表现。为此，我们提出了一种细粒度的回合级优势估计策略，用于更精确地分配信用。该策略可融入多种强化学习算法，如组相对偏好优化（GRPO）。实验评估显示，在多轮推理和基于搜索的工具使用任务中，采用GRPO实现的MDP框架及回合级信用分配显著提高了LLM代理在复杂决策环境下的性能，工具执行成功率达到100%，精确答案匹配准确率达50%，远超基线模型的表现。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.11821 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sat, 17 May 2025 00:09:46 GMT</pubDate>
+<pubDate>Sat, 17 May 2025 00:09:46 GMT</pubDate>
+</item>
+
+<item>
 <title>通过大规模知识库CHIMERA探索科学创新中的概念重组</title>
 <link>https://arxiv.org/abs/2505.20779</link>
 <guid>https://arxiv.org/abs/2505.20779</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究者创建了CHIMERA，一个基于科学文献的大规模概念重组知识库。</p><br><br><p><strong>摘要：</strong> 人类创新的一个显著特征是重组过程——通过整合现有机制和概念的元素来创造原创想法。本文提出了一种新方法，自动挖掘科学文献并构建了一个名为CHIMERA的知识库，该知识库包含了大量重组实例。CHIMERA可以用来大规模探索科学家如何跨领域重组概念并汲取灵感，或者用于训练机器学习模型以预测新的跨学科创意方向。为了构建这个知识库，我们提出了从科学论文摘要中提取重组信息的新任务，收集了数百份人工标注的高质量摘要数据集，并利用其训练基于大型语言模型（LLM）的提取模型。该模型应用于AI领域的大量论文，生成了超过28,000个重组实例的知识库。我们分析了CHIMERA在AI各子领域中的重组特性，并利用该知识库训练了一个科学假设生成模型，预测现实中研究人员感到启发的新重组方向。我们的数据和代码已公开发布。关键词：ADs</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.20779 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究者创建了CHIMERA，一个基于科学文献的大规模概念重组知识库。</p><br /><br /><p><strong>摘要：</strong> 人类创新的一个显著特征是重组过程——通过整合现有机制和概念的元素来创造原创想法。本文提出了一种新方法，自动挖掘科学文献并构建了一个名为CHIMERA的知识库，该知识库包含了大量重组实例。CHIMERA可以用来大规模探索科学家如何跨领域重组概念并汲取灵感，或者用于训练机器学习模型以预测新的跨学科创意方向。为了构建这个知识库，我们提出了从科学论文摘要中提取重组信息的新任务，收集了数百份人工标注的高质量摘要数据集，并利用其训练基于大型语言模型（LLM）的提取模型。该模型应用于AI领域的大量论文，生成了超过28,000个重组实例的知识库。我们分析了CHIMERA在AI各子领域中的重组特性，并利用该知识库训练了一个科学假设生成模型，预测现实中研究人员感到启发的新重组方向。我们的数据和代码已公开发布。关键词：ADs</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.20779" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 02:36:04 GMT</pubDate>
 <pubDate>Tue, 27 May 2025 02:36:04 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +175,8 @@
 <link>https://arxiv.org/abs/2505.20298</link>
 <guid>https://arxiv.org/abs/2505.20298</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究提出漫画理解的两个新基准并开发专用模型。</p><br><br><p><strong>摘要：</strong> 本文介绍了一个针对日本漫画（manga）这种复合叙事形式的多模态理解研究。通过构建MangaOCR和MangaVQA两个新基准，分别用于页面内文本识别和基于视觉问答的情境理解评估，其中MangaVQA包含526对高质量问题-答案对。基于这些基准，我们开发了MangaLMM模型，该模型是在开源多模态模型Qwen2.5-VL基础上微调而成，能够同时处理两项任务。实验表明，此模型在理解漫画方面表现优异，并且与GPT-4o和Gemini 2.5等专有模型进行了对比分析，为提升大型多模态模型在漫画领域的应用奠定了坚实基础。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.20298 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究提出漫画理解的两个新基准并开发专用模型。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一个针对日本漫画（manga）这种复合叙事形式的多模态理解研究。通过构建MangaOCR和MangaVQA两个新基准，分别用于页面内文本识别和基于视觉问答的情境理解评估，其中MangaVQA包含526对高质量问题-答案对。基于这些基准，我们开发了MangaLMM模型，该模型是在开源多模态模型Qwen2.5-VL基础上微调而成，能够同时处理两项任务。实验表明，此模型在理解漫画方面表现优异，并且与GPT-4o和Gemini 2.5等专有模型进行了对比分析，为提升大型多模态模型在漫画领域的应用奠定了坚实基础。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.20298" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 26 May 2025 13:59:59 GMT</pubDate>
 <pubDate>Mon, 26 May 2025 13:59:59 GMT</pubDate>
 </item>
 <item>
@@ -33,14 +184,10 @@
 <link>https://arxiv.org/abs/2505.19051</link>
 <guid>https://arxiv.org/abs/2505.19051</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种基于二阶信息的新型数据选择方法，显著提升LLM训练效率。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为Influence Distillation的创新框架，用于高效选择大型语言模型（LLMs）的训练数据。该方法通过利用二阶信息来为训练样本分配最优权重，从而指导模型在目标域上的性能表现。我们为梯度下降和Adam优化器推导出这些最优权重，并通过引入基于标志样本的近似方法来降低计算成本。实验表明，该方法在Tulu V2数据集上进行指令微调时，对GSM8k、SQuAD和MMLU等任务的表现达到了或超过了当前最佳水平，同时加快了数据选择速度高达3.5倍。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.19051 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种基于二阶信息的新型数据选择方法，显著提升LLM训练效率。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种名为Influence Distillation的创新框架，用于高效选择大型语言模型（LLMs）的训练数据。该方法通过利用二阶信息来为训练样本分配最优权重，从而指导模型在目标域上的性能表现。我们为梯度下降和Adam优化器推导出这些最优权重，并通过引入基于标志样本的近似方法来降低计算成本。实验表明，该方法在Tulu V2数据集上进行指令微调时，对GSM8k、SQuAD和MMLU等任务的表现达到了或超过了当前最佳水平，同时加快了数据选择速度高达3.5倍。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.19051" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Sun, 25 May 2025 05:08:00 GMT</pubDate>
-<pubDate>Sun, 25 May 2025 05:08:00 GMT</pubDate>
 </item>
-
 <item>
 <title>Sherlock：通过自纠正提升视觉语言模型推理能力</title>
 <link>https://arxiv.org/abs/2505.22651</link>
@@ -9013,33 +9160,6 @@ The reproduction of state-of-the-art multimodal LLM pre-training faces barriers 
 Visual token reduction lowers inference costs caused by extensive image features in large vision-language models (LVLMs). Unlike relevant studies that prune tokens in self-attention-only LVLMs, our work uniquely addresses cross-attention-based models, which achieve superior performance. We identify that the key-value (KV) cache size for image tokens in cross-attention layers significantly exceeds that of text tokens in self-attention layers, posing a major compute bottleneck. To mitigate this issue, we exploit the sparse nature in cross-attention maps to selectively prune redundant visual features. Our Trimmed Llama effectively reduces KV cache demands without requiring additional training. By benefiting from 50%-reduced visual features, our model can reduce inference latency and memory usage while achieving benchmark parity.
 ]]></content:encoded>
 <pubDate>Tue, 01 Apr 2025 05:10:32 GMT</pubDate>
-</item>
-<item>
-<title>Recitation over Reasoning: How Cutting-Edge Language Models Can Fail on Elementary School-Level Reasoning Problems?</title>
-<link>https://arxiv.org/abs/2504.00509</link>
-<guid>https://arxiv.org/abs/2504.00509</guid>
-<content:encoded><![CDATA[
-The rapid escalation from elementary school-level to frontier problems of the difficulty for LLM benchmarks in recent years have weaved a miracle for researchers that we are only inches away from surpassing human intelligence. However, is the LLMs' remarkable reasoning ability indeed comes from true intelligence by human standards, or are they simply reciting solutions witnessed during training at an Internet level? To study this problem, we propose RoR-Bench, a novel, multi-modal benchmark for detecting LLM's recitation behavior when asked simple reasoning problems but with conditions subtly shifted, and conduct empirical analysis on our benchmark. Surprisingly, we found existing cutting-edge LLMs unanimously exhibits extremely severe recitation behavior; by changing one phrase in the condition, top models such as OpenAI-o1 and DeepSeek-R1 can suffer 60% performance loss on elementary school-level arithmetic and reasoning problems. Such findings are a wake-up call to the LLM community that compels us to re-evaluate the true intelligence level of cutting-edge LLMs.
-]]></content:encoded>
-<pubDate>Tue, 01 Apr 2025 03:57:58 GMT</pubDate>
-</item>
-<item>
-<title>Inference-Time Scaling for Complex Tasks: Where We Stand and What Lies Ahead</title>
-<link>https://arxiv.org/abs/2504.00294</link>
-<guid>https://arxiv.org/abs/2504.00294</guid>
-<content:encoded><![CDATA[
-Inference-time scaling can enhance the reasoning capabilities of large language models (LLMs) on complex problems that benefit from step-by-step problem solving. Although lengthening generated scratchpads has proven effective for mathematical tasks, the broader impact of this approach on other tasks remains less clear. In this work, we investigate the benefits and limitations of scaling methods across nine state-of-the-art models and eight challenging tasks, including math and STEM reasoning, calendar planning, NP-hard problems, navigation, and spatial reasoning. We compare conventional models (e.g., GPT-4o) with models fine-tuned for inference-time scaling (e.g., o1) through evaluation protocols that involve repeated model calls, either independently or sequentially with feedback. These evaluations approximate lower and upper performance bounds and potential for future performance improvements for each model, whether through enhanced training or multi-model inference systems. Our extensive empirical analysis reveals that the advantages of inference-time scaling vary across tasks and diminish as problem complexity increases. In addition, simply using more tokens does not necessarily translate to higher accuracy in these challenging regimes. Results from multiple independent runs with conventional models using perfect verifiers show that, for some tasks, these models can achieve performance close to the average performance of today's most advanced reasoning models. However, for other tasks, a significant performance gap remains, even in very high scaling regimes. Encouragingly, all models demonstrate significant gains when inference is further scaled with perfect verifiers or strong feedback, suggesting ample potential for future improvements.
-]]></content:encoded>
-<pubDate>Mon, 31 Mar 2025 19:40:28 GMT</pubDate>
-</item>
-<item>
-<title>Chapter-Llama: Efficient Chaptering in Hour-Long Videos with LLMs</title>
-<link>https://arxiv.org/abs/2504.00072</link>
-<guid>https://arxiv.org/abs/2504.00072</guid>
-<content:encoded><![CDATA[
-We address the task of video chaptering, i.e., partitioning a long video timeline into semantic units and generating corresponding chapter titles. While relatively underexplored, automatic chaptering has the potential to enable efficient navigation and content retrieval in long-form videos. In this paper, we achieve strong chaptering performance on hour-long videos by efficiently addressing the problem in the text domain with our 'Chapter-Llama' framework. Specifically, we leverage a pretrained large language model (LLM) with large context window, and feed as input (i) speech transcripts and (ii) captions describing video frames, along with their respective timestamps. Given the inefficiency of exhaustively captioning all frames, we propose a lightweight speech-guided frame selection strategy based on speech transcript content, and experimentally demonstrate remarkable advantages. We train the LLM to output timestamps for the chapter boundaries, as well as free-form chapter titles. This simple yet powerful approach scales to processing one-hour long videos in a single forward pass. Our results demonstrate substantial improvements (e.g., 45.3 vs 26.7 F1 score) over the state of the art on the recent VidChapters-7M benchmark. To promote further research, we release our code and models at our project page.
-]]></content:encoded>
-<pubDate>Mon, 31 Mar 2025 13:41:29 GMT</pubDate>
 </item>
 </channel>
 </rss>
