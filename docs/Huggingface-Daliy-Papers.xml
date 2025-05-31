@@ -5,15 +5,49 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>GSO基准测试：评估语言模型在高性能软件开发中的能力</title>
+<link>https://arxiv.org/abs/2505.23671</link>
+<guid>https://arxiv.org/abs/2505.23671</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究提出GSO基准测试，评估语言模型在优化代码性能上的表现。</p><br><br><p><strong>摘要：</strong> 本文介绍了一个名为GSO的新基准测试，用于评估语言模型在开发高性能软件方面的表现。通过自动化管道生成并执行性能测试，从10个代码库的历史提交记录中提取出102个优化任务，涵盖多个领域和编程语言。实验中，代理被要求提高代码运行效率，并与专家开发者的表现进行对比。定量分析显示，领先的语言模型表现不佳，成功率不足5%，且随着推理时间扩展改善有限。定性分析揭示了主要失败模式，如对低级语言处理困难、懒惰优化策略及瓶颈定位挑战。本研究还公开了基准测试代码及相关数据，以促进未来研究。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.23671 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 29 May 2025 13:14:55 GMT</pubDate>
+<pubDate>Thu, 29 May 2025 13:14:55 GMT</pubDate>
+</item>
+<item>
+<title>Yet Another Quantization Algorithm (YAQA) 改进大语言模型后量化性能</title>
+<link>https://arxiv.org/abs/2505.22988</link>
+<guid>https://arxiv.org/abs/2505.22988</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新算法YAQA，显著提升大语言模型后量化压缩效果。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为Yet Another Quantization Algorithm (YAQA) 的新型自适应舍入算法，用于优化大规模语言模型（LLMs）的后训练量化（PTQ）。传统方法通过独立最小化立即激活误差来量化线性层，但忽略了后续层的影响，导致优化目标局部化。YAQA利用每一层线性层相对于全模型KL散度的Hessian矩阵的Kronecker分解近似值，从而更好地捕获全局影响。该算法由两部分组成：可高效计算的大规模LLMs层间Hessian的Kronecker分解近似，以及与具体量化器无关的具有理论保证的舍入方法。实验表明，在多种模型和量化器上，YAQA可将KL散度降低约30%，同时在下游任务上达到最先进的性能。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.22988 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 28 May 2025 21:53:00 GMT</pubDate>
+<pubDate>Wed, 28 May 2025 21:53:00 GMT</pubDate>
+</item>
+<item>
+<title>Toward Reliable Biomedical Hypothesis Generation: Evaluating Truthfulness and Hallucination in Large Language Models</title>
+<link>https://arxiv.org/abs/2505.14599</link>
+<guid>https://arxiv.org/abs/2505.14599</guid>
+<content:encoded><![CDATA[
+
+  Large language models (LLMs) have shown significant potential in scientific disciplines such as biomedicine, particularly in hypothesis generation, where they can analyze vast literature, identify patterns, and suggest research directions. However, a key challenge lies in evaluating the truthfulness of generated hypotheses, as verifying their accuracy often requires substantial time and resources. Additionally, the hallucination problem in LLMs can lead to the generation of hypotheses that appear plausible but are ultimately incorrect, undermining their reliability. To facilitate the systematic study of these challenges, we introduce TruthHypo, a benchmark for assessing the capabilities of LLMs in generating truthful biomedical hypotheses, and KnowHD, a knowledge-based hallucination detector to evaluate how well hypotheses are grounded in existing knowledge. Our results show that LLMs struggle to generate truthful hypotheses. By analyzing hallucinations in reasoning steps, we demonstrate that the groundedness scores provided by KnowHD serve as an effective metric for filtering truthful hypotheses from the diverse outputs of LLMs. Human evaluations further validate the utility of KnowHD in identifying truthful hypotheses and accelerating scientific discovery. Our data and source code are available at https://github.com/Teddy-XiongGZ/TruthHypo.
+
+]]></content:encoded>
+<pubDate>Tue, 20 May 2025 12:49:40 GMT</pubDate>
+<pubDate>Tue, 20 May 2025 12:49:40 GMT</pubDate>
+</item>
+
+<item>
 <title>MMSI-Bench: A Benchmark for Multi-Image Spatial Intelligence</title>
 <link>https://arxiv.org/abs/2505.23764</link>
 <guid>https://arxiv.org/abs/2505.23764</guid>
 <content:encoded><![CDATA[
-
-  Spatial intelligence is essential for multimodal large language models (MLLMs) operating in the complex physical world. Existing benchmarks, however, probe only single-image relations and thus fail to assess the multi-image spatial reasoning that real-world deployments demand. We introduce MMSI-Bench, a VQA benchmark dedicated to multi-image spatial intelligence. Six 3D-vision researchers spent more than 300 hours meticulously crafting 1,000 challenging, unambiguous multiple-choice questions from over 120,000 images, each paired with carefully designed distractors and a step-by-step reasoning process. We conduct extensive experiments and thoroughly evaluate 34 open-source and proprietary MLLMs, observing a wide gap: the strongest open-source model attains roughly 30% accuracy and OpenAI's o3 reasoning model reaches 40%, while humans score 97%. These results underscore the challenging nature of MMSI-Bench and the substantial headroom for future research. Leveraging the annotated reasoning processes, we also provide an automated error analysis pipeline that diagnoses four dominant failure modes, including (1) grounding errors, (2) overlap-matching and scene-reconstruction errors, (3) situation-transformation reasoning errors, and (4) spatial-logic errors, offering valuable insights for advancing multi-image spatial intelligence. Project page: https://runsenxu.com/projects/MMSI_Bench .
-
+Spatial intelligence is essential for multimodal large language models (MLLMs) operating in the complex physical world. Existing benchmarks, however, probe only single-image relations and thus fail to assess the multi-image spatial reasoning that real-world deployments demand. We introduce MMSI-Bench, a VQA benchmark dedicated to multi-image spatial intelligence. Six 3D-vision researchers spent more than 300 hours meticulously crafting 1,000 challenging, unambiguous multiple-choice questions from over 120,000 images, each paired with carefully designed distractors and a step-by-step reasoning process. We conduct extensive experiments and thoroughly evaluate 34 open-source and proprietary MLLMs, observing a wide gap: the strongest open-source model attains roughly 30% accuracy and OpenAI's o3 reasoning model reaches 40%, while humans score 97%. These results underscore the challenging nature of MMSI-Bench and the substantial headroom for future research. Leveraging the annotated reasoning processes, we also provide an automated error analysis pipeline that diagnoses four dominant failure modes, including (1) grounding errors, (2) overlap-matching and scene-reconstruction errors, (3) situation-transformation reasoning errors, and (4) spatial-logic errors, offering valuable insights for advancing multi-image spatial intelligence. Project page: https://runsenxu.com/projects/MMSI_Bench .
 ]]></content:encoded>
-<pubDate>Thu, 29 May 2025 13:59:52 GMT</pubDate>
 <pubDate>Thu, 29 May 2025 13:59:52 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +55,8 @@
 <link>https://arxiv.org/abs/2505.23759</link>
 <guid>https://arxiv.org/abs/2505.23759</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究显示，视觉语言模型在解码简单视觉线索时表现良好，但在抽象推理方面存在不足。</p><br><br><p><strong>摘要：</strong> 字谜（Rebus puzzles）是一种通过图像、空间排列和符号替代来编码语言的视觉谜题，对当前的视觉语言模型（VLMs）提出了独特的挑战。不同于传统的图像描述或问答任务，字谜的解答需要多模态抽象、符号推理以及对文化、语音及语言双关的理解。本文构建了一个由多样化的英文字谜组成的基准测试集，涵盖从简单的图画替代到依赖空间提示的复杂谜题。通过对多种VLMs的性能分析，我们发现尽管这些模型在解析简单视觉线索时表现出一定的能力，但在涉及抽象推理、横向思维以及理解视觉隐喻的任务上仍存在显著困难。这项研究揭示了现有VLMs在跨模态任务上的局限性及其未来改进的方向。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.23759 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究显示，视觉语言模型在解码简单视觉线索时表现良好，但在抽象推理方面存在不足。</p><br /><br /><p><strong>摘要：</strong> 字谜（Rebus puzzles）是一种通过图像、空间排列和符号替代来编码语言的视觉谜题，对当前的视觉语言模型（VLMs）提出了独特的挑战。不同于传统的图像描述或问答任务，字谜的解答需要多模态抽象、符号推理以及对文化、语音及语言双关的理解。本文构建了一个由多样化的英文字谜组成的基准测试集，涵盖从简单的图画替代到依赖空间提示的复杂谜题。通过对多种VLMs的性能分析，我们发现尽管这些模型在解析简单视觉线索时表现出一定的能力，但在涉及抽象推理、横向思维以及理解视觉隐喻的任务上仍存在显著困难。这项研究揭示了现有VLMs在跨模态任务上的局限性及其未来改进的方向。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.23759" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 29 May 2025 13:59:47 GMT</pubDate>
 <pubDate>Thu, 29 May 2025 13:59:47 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +64,8 @@
 <link>https://arxiv.org/abs/2505.23738</link>
 <guid>https://arxiv.org/abs/2505.23738</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种基于关键帧的动物舞蹈视频生成方法，结合图优化和扩散模型实现。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种基于关键帧的框架，用于生成与音乐同步且符合编舞意识的动物舞蹈视频。该框架通过将舞蹈合成建模为图优化问题，寻找满足指定编舞模式的最佳关键帧结构，这些模式可以从参考舞蹈视频中自动估计。此外，还引入了一种镜像姿态图像生成方法，以捕捉舞蹈中的对称性。通过视频扩散模型生成中间帧，在仅提供六个输入关键帧的情况下，可以生成长达30秒的跨多种动物和音乐轨道的舞蹈视频。这一方法展示了从文本到图像提示或GPT-4生成的关键帧开始，实现高质量动物舞蹈视频的强大能力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.23738 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种基于关键帧的动物舞蹈视频生成方法，结合图优化和扩散模型实现。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种基于关键帧的框架，用于生成与音乐同步且符合编舞意识的动物舞蹈视频。该框架通过将舞蹈合成建模为图优化问题，寻找满足指定编舞模式的最佳关键帧结构，这些模式可以从参考舞蹈视频中自动估计。此外，还引入了一种镜像姿态图像生成方法，以捕捉舞蹈中的对称性。通过视频扩散模型生成中间帧，在仅提供六个输入关键帧的情况下，可以生成长达30秒的跨多种动物和音乐轨道的舞蹈视频。这一方法展示了从文本到图像提示或GPT-4生成的关键帧开始，实现高质量动物舞蹈视频的强大能力。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.23738" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 29 May 2025 13:58:02 GMT</pubDate>
 <pubDate>Thu, 29 May 2025 13:58:02 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +73,8 @@
 <link>https://arxiv.org/abs/2505.23734</link>
 <guid>https://arxiv.org/abs/2505.23734</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出ZPressor模块，压缩多视角输入至紧凑潜在状态Z，显著提高3DGS模型的扩展能力。</p><br><br><p><strong>摘要：</strong> 本文分析了基于前馈的3D Gaussian Splatting (3DGS) 模型在处理多视角输入时面临的扩展性限制问题，即随着输入视图数量增加，性能下降或内存消耗过高。我们基于信息瓶颈原理设计了ZPressor，这是一种轻量级且架构无关的模块，用于高效压缩多视角输入到一个保留关键场景信息的紧凑潜在状态Z。具体来说，ZPressor通过将视图划分为锚点集和支持集，并利用交叉注意力机制，将支持视图的信息压缩到锚点视图中，从而构建压缩后的潜在状态Z。实验表明，集成ZPressor后，多个最先进的前馈3DGS模型在适度输入视图下性能得到提升，在密集视图设置下的鲁棒性也有所增强。该方法在DL3DV-10K和RealEstate10K两个大规模基准数据集上表现优异，同时在80GB GPU上实现了超过100个480P分辨率输入视图的处理能力。相关视频结果、代码及训练模型已公开发布。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.23734 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出ZPressor模块，压缩多视角输入至紧凑潜在状态Z，显著提高3DGS模型的扩展能力。</p><br /><br /><p><strong>摘要：</strong> 本文分析了基于前馈的3D Gaussian Splatting (3DGS) 模型在处理多视角输入时面临的扩展性限制问题，即随着输入视图数量增加，性能下降或内存消耗过高。我们基于信息瓶颈原理设计了ZPressor，这是一种轻量级且架构无关的模块，用于高效压缩多视角输入到一个保留关键场景信息的紧凑潜在状态Z。具体来说，ZPressor通过将视图划分为锚点集和支持集，并利用交叉注意力机制，将支持视图的信息压缩到锚点视图中，从而构建压缩后的潜在状态Z。实验表明，集成ZPressor后，多个最先进的前馈3DGS模型在适度输入视图下性能得到提升，在密集视图设置下的鲁棒性也有所增强。该方法在DL3DV-10K和RealEstate10K两个大规模基准数据集上表现优异，同时在80GB GPU上实现了超过100个480P分辨率输入视图的处理能力。相关视频结果、代码及训练模型已公开发布。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.23734" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 29 May 2025 13:57:04 GMT</pubDate>
 <pubDate>Thu, 29 May 2025 13:57:04 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +82,8 @@
 <link>https://arxiv.org/abs/2505.23678</link>
 <guid>https://arxiv.org/abs/2505.23678</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>ViGoRL通过视觉定位强化学习提升语言模型的视觉推理能力。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为ViGoRL（Visually Grounded Reinforcement Learning）的视觉语言模型，该模型通过强化学习将每一步推理明确锚定到特定的视觉坐标上，从而实现空间推理路径的生成。ViGoRL受到人类视觉决策的启发，能够指导视觉注意力聚焦于相关区域。在一系列视觉推理基准测试中，包括SAT-2、BLINK、V*bench等任务，ViGoRL的表现显著优于传统的监督微调和缺乏显式定位机制的常规强化学习基线。特别是在需要精细探索的任务中，多轮强化学习框架结合动态缩放功能进一步提升了模型性能。此外，研究表明，显式定位不仅提高了模型在局部元素定位和视觉搜索上的表现，还增强了其他视觉行为，如区域探索和子目标设定。最后，人类评估表明，ViGoRL的视觉参考不仅空间准确，而且有助于理解模型的推理过程。这些结果表明，视觉引导的强化学习是一种强大的方法，可以赋予模型通用的视觉推理能力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.23678 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">ViGoRL通过视觉定位强化学习提升语言模型的视觉推理能力。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种名为ViGoRL（Visually Grounded Reinforcement Learning）的视觉语言模型，该模型通过强化学习将每一步推理明确锚定到特定的视觉坐标上，从而实现空间推理路径的生成。ViGoRL受到人类视觉决策的启发，能够指导视觉注意力聚焦于相关区域。在一系列视觉推理基准测试中，包括SAT-2、BLINK、V*bench等任务，ViGoRL的表现显著优于传统的监督微调和缺乏显式定位机制的常规强化学习基线。特别是在需要精细探索的任务中，多轮强化学习框架结合动态缩放功能进一步提升了模型性能。此外，研究表明，显式定位不仅提高了模型在局部元素定位和视觉搜索上的表现，还增强了其他视觉行为，如区域探索和子目标设定。最后，人类评估表明，ViGoRL的视觉参考不仅空间准确，而且有助于理解模型的推理过程。这些结果表明，视觉引导的强化学习是一种强大的方法，可以赋予模型通用的视觉推理能力。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.23678" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 29 May 2025 13:20:26 GMT</pubDate>
 <pubDate>Thu, 29 May 2025 13:20:26 GMT</pubDate>
 </item>
 <item>
@@ -69,11 +91,8 @@
 <link>https://arxiv.org/abs/2505.22944</link>
 <guid>https://arxiv.org/abs/2505.22944</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种结合多种运动类型的统一视频生成控制框架。</p><br><br><p><strong>摘要：</strong> 本文提出了一种用于视频生成的统一运动控制框架，该框架通过轻量级运动注入器将用户定义的轨迹投影到预训练图像到视频生成模型的潜在空间中，实现了相机移动、对象级平移和精细局部运动的无缝集成。与以往针对不同运动类型采用独立模块的方法不同，我们的方法通过单一框架实现了对局部形变、物体整体运动、虚拟相机动态或其组合的精确控制。实验表明，该方法在多个视频运动控制任务上表现出色，包括风格化运动效果、动态视点变化及局部运动操作，同时在可控性和视觉质量上显著优于现有方法和商业解决方案，且兼容多种先进的视频生成模型。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.22944 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种结合多种运动类型的统一视频生成控制框架。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种用于视频生成的统一运动控制框架，该框架通过轻量级运动注入器将用户定义的轨迹投影到预训练图像到视频生成模型的潜在空间中，实现了相机移动、对象级平移和精细局部运动的无缝集成。与以往针对不同运动类型采用独立模块的方法不同，我们的方法通过单一框架实现了对局部形变、物体整体运动、虚拟相机动态或其组合的精确控制。实验表明，该方法在多个视频运动控制任务上表现出色，包括风格化运动效果、动态视点变化及局部运动操作，同时在可控性和视觉质量上显著优于现有方法和商业解决方案，且兼容多种先进的视频生成模型。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.22944" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 28 May 2025 19:49:18 GMT</pubDate>
 <pubDate>Wed, 28 May 2025 19:49:18 GMT</pubDate>
 </item>
 <item>
@@ -81,11 +100,8 @@
 <link>https://arxiv.org/abs/2505.21784</link>
 <guid>https://arxiv.org/abs/2505.21784</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出AIDSAFE方法，利用多智能体协作生成高质量的安全推理链，显著提升大模型的安全性。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为AIDSAFE的新方法，旨在解决现有安全措施如过度拒绝和越狱漏洞的问题。AIDSAFE通过多智能体迭代推敲的方式生成嵌入安全政策的链式思维（CoT）数据集，同时引入数据精炼阶段以消除重复、冗余及误导性思维。实验表明，基于AIDSAFE生成的CoT进行监督微调可大幅提升开源大模型的安全泛化能力和越狱鲁棒性，同时保持良好的实用性和拒绝精度。此外，为了满足对齐阶段的偏好数据需求，该方法还设计了一种补充方案，通过信念增强技术创建区分选择和拒绝样本的CoT数据。最终评估显示，AIDSAFE生成的CoT在政策遵守度和推理质量方面表现出色。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.21784 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出AIDSAFE方法，利用多智能体协作生成高质量的安全推理链，显著提升大模型的安全性。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种名为AIDSAFE的新方法，旨在解决现有安全措施如过度拒绝和越狱漏洞的问题。AIDSAFE通过多智能体迭代推敲的方式生成嵌入安全政策的链式思维（CoT）数据集，同时引入数据精炼阶段以消除重复、冗余及误导性思维。实验表明，基于AIDSAFE生成的CoT进行监督微调可大幅提升开源大模型的安全泛化能力和越狱鲁棒性，同时保持良好的实用性和拒绝精度。此外，为了满足对齐阶段的偏好数据需求，该方法还设计了一种补充方案，通过信念增强技术创建区分选择和拒绝样本的CoT数据。最终评估显示，AIDSAFE生成的CoT在政策遵守度和推理质量方面表现出色。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.21784" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 17:34:40 GMT</pubDate>
 <pubDate>Tue, 27 May 2025 17:34:40 GMT</pubDate>
 </item>
 <item>
@@ -93,11 +109,8 @@
 <link>https://arxiv.org/abs/2505.21190</link>
 <guid>https://arxiv.org/abs/2505.21190</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出支持单次与纵向评估的胸部X光报告生成基准数据集及评价方法。</p><br><br><p><strong>摘要：</strong> 现有放射学报告评估方法局限于单一报告环境且依赖粗略指标，无法捕捉精细临床语义和时间依赖性。本文引入LUNGUAGE，这是一个结构化胸部X光报告生成基准数据集，支持单次报告评估和跨多个研究的患者级别纵向评估。数据集包含1,473份由专家注释的胸片报告，其中80份具有纵向注释以捕获疾病进展。此外，开发了一个两阶段框架将生成的报告转换为细粒度的结构化表示，实现纵向解释。同时，提出了LUNGUAGESCORE，一种可解释的指标，在实体、关系和属性层面比较结构化输出的同时建模患者时间线的一致性。这些贡献建立了首个针对序列放射学报告的基准数据集、结构化框架和评估指标，实证结果显示LUNGUAGESCORE有效支持结构化报告评估。相关代码已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.21190 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出支持单次与纵向评估的胸部X光报告生成基准数据集及评价方法。</p><br /><br /><p><strong>摘要：</strong> 现有放射学报告评估方法局限于单一报告环境且依赖粗略指标，无法捕捉精细临床语义和时间依赖性。本文引入LUNGUAGE，这是一个结构化胸部X光报告生成基准数据集，支持单次报告评估和跨多个研究的患者级别纵向评估。数据集包含1,473份由专家注释的胸片报告，其中80份具有纵向注释以捕获疾病进展。此外，开发了一个两阶段框架将生成的报告转换为细粒度的结构化表示，实现纵向解释。同时，提出了LUNGUAGESCORE，一种可解释的指标，在实体、关系和属性层面比较结构化输出的同时建模患者时间线的一致性。这些贡献建立了首个针对序列放射学报告的基准数据集、结构化框架和评估指标，实证结果显示LUNGUAGESCORE有效支持结构化报告评估。相关代码已开源。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.21190" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 27 May 2025 09:40:00 GMT</pubDate>
 <pubDate>Tue, 27 May 2025 09:40:00 GMT</pubDate>
 </item>
 <item>
@@ -105,11 +118,8 @@
 <link>https://arxiv.org/abs/2505.20099</link>
 <guid>https://arxiv.org/abs/2505.20099</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>综述大型语言模型与知识图谱结合解决复杂问答任务的方法及挑战。</p><br><br><p><strong>摘要：</strong> 近年来，大型语言模型（LLMs）在问答（QA）任务中表现出色，但由于推理能力不足、知识过时及幻觉问题，在处理复杂QA任务时面临挑战。一些研究尝试将LLMs与知识图谱（KGs）相结合，以克服这些限制。本文提出了一种新的结构化分类法，根据QA类型和KG在与LLMs集成时的角色对方法进行分类。我们系统性地回顾了相关领域的最新进展，并从优势、局限性和KG需求等方面比较分析了这些方法。此外，我们还探讨了这些方法如何应对不同类型复杂QA的主要挑战，并总结了现有研究的成果、评估指标和基准数据集，同时指出了开放的问题与未来机会。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.20099 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">综述大型语言模型与知识图谱结合解决复杂问答任务的方法及挑战。</p><br /><br /><p><strong>摘要：</strong> 近年来，大型语言模型（LLMs）在问答（QA）任务中表现出色，但由于推理能力不足、知识过时及幻觉问题，在处理复杂QA任务时面临挑战。一些研究尝试将LLMs与知识图谱（KGs）相结合，以克服这些限制。本文提出了一种新的结构化分类法，根据QA类型和KG在与LLMs集成时的角色对方法进行分类。我们系统性地回顾了相关领域的最新进展，并从优势、局限性和KG需求等方面比较分析了这些方法。此外，我们还探讨了这些方法如何应对不同类型复杂QA的主要挑战，并总结了现有研究的成果、评估指标和基准数据集，同时指出了开放的问题与未来机会。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.20099" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 26 May 2025 11:08:23 GMT</pubDate>
 <pubDate>Mon, 26 May 2025 11:08:23 GMT</pubDate>
 </item>
 <item>
@@ -117,11 +127,8 @@
 <link>https://arxiv.org/abs/2505.18962</link>
 <guid>https://arxiv.org/abs/2505.18962</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出系统1.5推理方法，显著提高大语言模型推理效率。</p><br><br><p><strong>摘要：</strong> 当前基于链式思维（CoT）的大语言模型推理面临效率低下的问题，而潜在空间推理虽提高了效率，但未能区分关键推理步骤与辅助步骤，导致计算资源利用不充分。本文提出系统1.5推理框架，通过潜在空间中的动态捷径路径，在推理步骤间动态分配计算资源。该框架包括模型深度捷径（DS）和步骤捷径（SS），前者允许非关键标记提前退出轻量级适配器分支，后者则跨解码步骤重用隐藏状态以跳过简单步骤。通过两阶段自蒸馏过程训练，系统1.5推理在GSM8K等推理任务上展现了卓越性能，推理速度提升超过20倍，平均减少92.31%的标记生成，同时保持与传统CoT微调方法相当的推理效果。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.18962 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出系统1.5推理方法，显著提高大语言模型推理效率。</p><br /><br /><p><strong>摘要：</strong> 当前基于链式思维（CoT）的大语言模型推理面临效率低下的问题，而潜在空间推理虽提高了效率，但未能区分关键推理步骤与辅助步骤，导致计算资源利用不充分。本文提出系统1.5推理框架，通过潜在空间中的动态捷径路径，在推理步骤间动态分配计算资源。该框架包括模型深度捷径（DS）和步骤捷径（SS），前者允许非关键标记提前退出轻量级适配器分支，后者则跨解码步骤重用隐藏状态以跳过简单步骤。通过两阶段自蒸馏过程训练，系统1.5推理在GSM8K等推理任务上展现了卓越性能，推理速度提升超过20倍，平均减少92.31%的标记生成，同时保持与传统CoT微调方法相当的推理效果。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.18962" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Sat, 24 May 2025 23:35:49 GMT</pubDate>
 <pubDate>Sat, 24 May 2025 23:35:49 GMT</pubDate>
 </item>
 <item>
@@ -129,14 +136,10 @@
 <link>https://arxiv.org/abs/2505.18142</link>
 <guid>https://arxiv.org/abs/2505.18142</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究揭示视觉分词器和VAE在保存细节特征上的局限性，并提出评估文本与人脸重建性能的新基准。</p><br><br><p><strong>摘要：</strong> 本文探讨了视觉分词器和变分自编码器（VAE）在图像压缩过程中丢失细节信息的问题，特别是在处理小尺度的文本和人脸图像时的局限性。尽管这些技术通过提供高效的图像压缩和量化表示推动了视觉生成与多模态建模的发展，但它们在减少计算负担的同时也限制了视觉生成质量的上限。为了评估这一上限，我们聚焦于文本和面部特征的重建质量，因为这些特征通常具有密集纹理、易塌陷且对人类视觉高度敏感的特点。我们收集并整理了来自现有数据集的高质量文本和人脸图像，并采用成熟的OCR和人脸识别模型进行评估，这种方法不仅准确而且轻量级，仅需2GB内存和4分钟即可完成。通过我们的基准测试，分析了不同图像分词器和VAE在各种尺度下的重建质量。结果显示，现代视觉分词器在保存细粒度特征方面仍有不足，尤其是在小尺度下表现欠佳。此外，我们将此评估框架扩展到视频领域，对多种视频分词器进行了综合分析，并证明传统指标无法准确反映人脸和文本的重建效果，而我们提出的指标则是一个有效的补充。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.18142 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究揭示视觉分词器和VAE在保存细节特征上的局限性，并提出评估文本与人脸重建性能的新基准。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了视觉分词器和变分自编码器（VAE）在图像压缩过程中丢失细节信息的问题，特别是在处理小尺度的文本和人脸图像时的局限性。尽管这些技术通过提供高效的图像压缩和量化表示推动了视觉生成与多模态建模的发展，但它们在减少计算负担的同时也限制了视觉生成质量的上限。为了评估这一上限，我们聚焦于文本和面部特征的重建质量，因为这些特征通常具有密集纹理、易塌陷且对人类视觉高度敏感的特点。我们收集并整理了来自现有数据集的高质量文本和人脸图像，并采用成熟的OCR和人脸识别模型进行评估，这种方法不仅准确而且轻量级，仅需2GB内存和4分钟即可完成。通过我们的基准测试，分析了不同图像分词器和VAE在各种尺度下的重建质量。结果显示，现代视觉分词器在保存细粒度特征方面仍有不足，尤其是在小尺度下表现欠佳。此外，我们将此评估框架扩展到视频领域，对多种视频分词器进行了综合分析，并证明传统指标无法准确反映人脸和文本的重建效果，而我们提出的指标则是一个有效的补充。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.18142" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Fri, 23 May 2025 13:52:16 GMT</pubDate>
-<pubDate>Fri, 23 May 2025 13:52:16 GMT</pubDate>
 </item>
-
 <item>
 <title>REOrder：通过优化补丁顺序提升视觉Transformer性能</title>
 <link>https://arxiv.org/abs/2505.23751</link>
@@ -9037,105 +9040,6 @@ Multimodal large language models (MLLMs) excel in vision-language tasks but also
 Autonomous agents powered by foundation models have seen widespread adoption across various real-world applications. However, they remain highly vulnerable to malicious instructions and attacks, which can result in severe consequences such as privacy breaches and financial losses. More critically, existing guardrails for LLMs are not applicable due to the complex and dynamic nature of agents. To tackle these challenges, we propose ShieldAgent, the first guardrail agent designed to enforce explicit safety policy compliance for the action trajectory of other protected agents through logical reasoning. Specifically, ShieldAgent first constructs a safety policy model by extracting verifiable rules from policy documents and structuring them into a set of action-based probabilistic rule circuits. Given the action trajectory of the protected agent, ShieldAgent retrieves relevant rule circuits and generates a shielding plan, leveraging its comprehensive tool library and executable code for formal verification. In addition, given the lack of guardrail benchmarks for agents, we introduce ShieldAgent-Bench, a dataset with 3K safety-related pairs of agent instructions and action trajectories, collected via SOTA attacks across 6 web environments and 7 risk categories. Experiments show that ShieldAgent achieves SOTA on ShieldAgent-Bench and three existing benchmarks, outperforming prior methods by 11.3% on average with a high recall of 90.1%. Additionally, ShieldAgent reduces API queries by 64.7% and inference time by 58.2%, demonstrating its high precision and efficiency in safeguarding agents.
 ]]></content:encoded>
 <pubDate>Wed, 26 Mar 2025 13:58:40 GMT</pubDate>
-</item>
-<item>
-<title>Real-is-Sim: Bridging the Sim-to-Real Gap with a Dynamic Digital Twin for Real-World Robot Policy Evaluation</title>
-<link>https://arxiv.org/abs/2504.03597</link>
-<guid>https://arxiv.org/abs/2504.03597</guid>
-<content:encoded><![CDATA[
-Recent advancements in behavior cloning have enabled robots to perform complex manipulation tasks. However, accurately assessing training performance remains challenging, particularly for real-world applications, as behavior cloning losses often correlate poorly with actual task success. Consequently, researchers resort to success rate metrics derived from costly and time-consuming real-world evaluations, making the identification of optimal policies and detection of overfitting or underfitting impractical. To address these issues, we propose real-is-sim, a novel behavior cloning framework that incorporates a dynamic digital twin (based on Embodied Gaussians) throughout the entire policy development pipeline: data collection, training, and deployment. By continuously aligning the simulated world with the physical world, demonstrations can be collected in the real world with states extracted from the simulator. The simulator enables flexible state representations by rendering image inputs from any viewpoint or extracting low-level state information from objects embodied within the scene. During training, policies can be directly evaluated within the simulator in an offline and highly parallelizable manner. Finally, during deployment, policies are run within the simulator where the real robot directly tracks the simulated robot's joints, effectively decoupling policy execution from real hardware and mitigating traditional domain-transfer challenges. We validate real-is-sim on the PushT manipulation task, demonstrating strong correlation between success rates obtained in the simulator and real-world evaluations. Videos of our system can be found at https://realissim.rai-inst.com.
-]]></content:encoded>
-<pubDate>Fri, 04 Apr 2025 13:05:56 GMT</pubDate>
-</item>
-<item>
-<title>Delineate Anything: Resolution-Agnostic Field Boundary Delineation on Satellite Imagery</title>
-<link>https://arxiv.org/abs/2504.02534</link>
-<guid>https://arxiv.org/abs/2504.02534</guid>
-<content:encoded><![CDATA[
-The accurate delineation of agricultural field boundaries from satellite imagery is vital for land management and crop monitoring. However, current methods face challenges due to limited dataset sizes, resolution discrepancies, and diverse environmental conditions. We address this by reformulating the task as instance segmentation and introducing the Field Boundary Instance Segmentation - 22M dataset (FBIS-22M), a large-scale, multi-resolution dataset comprising 672,909 high-resolution satellite image patches (ranging from 0.25 m to 10 m) and 22,926,427 instance masks of individual fields, significantly narrowing the gap between agricultural datasets and those in other computer vision domains. We further propose Delineate Anything, an instance segmentation model trained on our new FBIS-22M dataset. Our proposed model sets a new state-of-the-art, achieving a substantial improvement of 88.5% in mAP@0.5 and 103% in mAP@0.5:0.95 over existing methods, while also demonstrating significantly faster inference and strong zero-shot generalization across diverse image resolutions and unseen geographic regions. Code, pre-trained models, and the FBIS-22M dataset are available at https://lavreniuk.github.io/Delineate-Anything.
-]]></content:encoded>
-<pubDate>Thu, 03 Apr 2025 08:37:04 GMT</pubDate>
-</item>
-<item>
-<title>MedSAM2: Segment Anything in 3D Medical Images and Videos</title>
-<link>https://arxiv.org/abs/2504.03600</link>
-<guid>https://arxiv.org/abs/2504.03600</guid>
-<content:encoded><![CDATA[
-Medical image and video segmentation is a critical task for precision medicine, which has witnessed considerable progress in developing task or modality-specific and generalist models for 2D images. However, there have been limited studies on building general-purpose models for 3D images and videos with comprehensive user studies. Here, we present MedSAM2, a promptable segmentation foundation model for 3D image and video segmentation. The model is developed by fine-tuning the Segment Anything Model 2 on a large medical dataset with over 455,000 3D image-mask pairs and 76,000 frames, outperforming previous models across a wide range of organs, lesions, and imaging modalities. Furthermore, we implement a human-in-the-loop pipeline to facilitate the creation of large-scale datasets resulting in, to the best of our knowledge, the most extensive user study to date, involving the annotation of 5,000 CT lesions, 3,984 liver MRI lesions, and 251,550 echocardiogram video frames, demonstrating that MedSAM2 can reduce manual costs by more than 85%. MedSAM2 is also integrated into widely used platforms with user-friendly interfaces for local and cloud deployment, making it a practical tool for supporting efficient, scalable, and high-quality segmentation in both research and healthcare environments.
-]]></content:encoded>
-<pubDate>Fri, 04 Apr 2025 13:13:37 GMT</pubDate>
-</item>
-<item>
-<title>MegaMath: Pushing the Limits of Open Math Corpora</title>
-<link>https://arxiv.org/abs/2504.02807</link>
-<guid>https://arxiv.org/abs/2504.02807</guid>
-<content:encoded><![CDATA[
-Mathematical reasoning is a cornerstone of human intelligence and a key benchmark for advanced capabilities in large language models (LLMs). However, the research community still lacks an open, large-scale, high-quality corpus tailored to the demands of math-centric LLM pre-training. We present MegaMath, an open dataset curated from diverse, math-focused sources through following practices: (1) Revisiting web data: We re-extracted mathematical documents from Common Crawl with math-oriented HTML optimizations, fasttext-based filtering and deduplication, all for acquiring higher-quality data on the Internet. (2) Recalling Math-related code data: We identified high quality math-related code from large code training corpus, Stack-V2, further enhancing data diversity. (3) Exploring Synthetic data: We synthesized QA-style text, math-related code, and interleaved text-code blocks from web data or code data. By integrating these strategies and validating their effectiveness through extensive ablations, MegaMath delivers 371B tokens with the largest quantity and top quality among existing open math pre-training datasets.
-]]></content:encoded>
-<pubDate>Thu, 03 Apr 2025 13:52:07 GMT</pubDate>
-</item>
-<item>
-<title>Slow-Fast Architecture for Video Multi-Modal Large Language Models</title>
-<link>https://arxiv.org/abs/2504.01328</link>
-<guid>https://arxiv.org/abs/2504.01328</guid>
-<content:encoded><![CDATA[
-Balancing temporal resolution and spatial detail under limited compute budget remains a key challenge for video-based multi-modal large language models (MLLMs). Existing methods typically compress video representations using predefined rules before feeding them into the LLM, resulting in irreversible information loss and often ignoring input instructions. To address this, we propose a novel slow-fast architecture that naturally circumvents this trade-off, enabling the use of more input frames while preserving spatial details. Inspired by how humans first skim a video before focusing on relevant parts, our slow-fast design employs a dual-token strategy: 1) "fast" visual tokens -- a compact set of compressed video features -- are fed into the LLM alongside text embeddings to provide a quick overview; 2) "slow" visual tokens -- uncompressed video features -- are cross-attended by text embeddings through specially designed hybrid decoder layers, enabling instruction-aware extraction of relevant visual details with linear complexity. We conduct systematic exploration to optimize both the overall architecture and key components. Experiments show that our model significantly outperforms self-attention-only baselines, extending the input capacity from 16 to 128 frames with just a 3% increase in computation, and achieving a 16% average performance improvement across five video understanding benchmarks. Our 7B model achieves state-of-the-art performance among models of similar size. Furthermore, our slow-fast architecture is a plug-and-play design that can be integrated into other video MLLMs to improve efficiency and scalability.
-]]></content:encoded>
-<pubDate>Tue, 01 Apr 2025 23:24:58 GMT</pubDate>
-</item>
-<item>
-<title>SPF-Portrait: Towards Pure Portrait Customization with Semantic Pollution-Free Fine-tuning</title>
-<link>https://arxiv.org/abs/2504.00396</link>
-<guid>https://arxiv.org/abs/2504.00396</guid>
-<content:encoded><![CDATA[
-Fine-tuning a pre-trained Text-to-Image (T2I) model on a tailored portrait dataset is the mainstream method for text-driven customization of portrait attributes. Due to Semantic Pollution during fine-tuning, existing methods struggle to maintain the original model's behavior and achieve incremental learning while customizing target attributes. To address this issue, we propose SPF-Portrait, a pioneering work to purely understand customized semantics while eliminating semantic pollution in text-driven portrait customization. In our SPF-Portrait, we propose a dual-path pipeline that introduces the original model as a reference for the conventional fine-tuning path. Through contrastive learning, we ensure adaptation to target attributes and purposefully align other unrelated attributes with the original portrait. We introduce a novel Semantic-Aware Fine Control Map, which represents the precise response regions of the target semantics, to spatially guide the alignment process between the contrastive paths. This alignment process not only effectively preserves the performance of the original model but also avoids over-alignment. Furthermore, we propose a novel response enhancement mechanism to reinforce the performance of target attributes, while mitigating representation discrepancy inherent in direct cross-modal supervision. Extensive experiments demonstrate that SPF-Portrait achieves state-of-the-art performance. Project webpage: https://spf-portrait.github.io/SPF-Portrait/
-]]></content:encoded>
-<pubDate>Mon, 31 Mar 2025 23:37:30 GMT</pubDate>
-</item>
-<item>
-<title>TransMamba: Flexibly Switching between Transformer and Mamba</title>
-<link>https://arxiv.org/abs/2503.24067</link>
-<guid>https://arxiv.org/abs/2503.24067</guid>
-<content:encoded><![CDATA[
-Transformers are the cornerstone of modern large language models, but their quadratic computational complexity limits efficiency in long-sequence processing. Recent advancements in Mamba, a state space model (SSM) with linear complexity, offer promising efficiency gains but suffer from unstable contextual learning and multitask generalization. This paper proposes TransMamba, a novel framework that unifies Transformer and Mamba through shared parameter matrices (e.g., QKV and CBx), and thus could dynamically switch between attention and SSM mechanisms at different token lengths and layers. We design the Memory converter to bridge Transformer and Mamba by converting attention outputs into SSM-compatible states, ensuring seamless information flow at TransPoints where the transformation happens. The TransPoint scheduling is also thoroughly explored for further improvements. We conducted extensive experiments demonstrating that TransMamba achieves superior training efficiency and performance compared to baselines, and validated the deeper consistency between Transformer and Mamba paradigms, offering a scalable solution for next-generation sequence modeling.
-]]></content:encoded>
-<pubDate>Mon, 31 Mar 2025 09:26:24 GMT</pubDate>
-</item>
-<item>
-<title>APIGen-MT: Agentic Pipeline for Multi-Turn Data Generation via Simulated Agent-Human Interplay</title>
-<link>https://arxiv.org/abs/2504.03601</link>
-<guid>https://arxiv.org/abs/2504.03601</guid>
-<content:encoded><![CDATA[
-Training effective AI agents for multi-turn interactions requires high-quality data that captures realistic human-agent dynamics, yet such data is scarce and expensive to collect manually. We introduce APIGen-MT, a two-phase framework that generates verifiable and diverse multi-turn agent data. In the first phase, our agentic pipeline produces detailed task blueprints with ground-truth actions, leveraging a committee of LLM reviewers and iterative feedback loops. These blueprints are then transformed into complete interaction trajectories through simulated human-agent interplay. We train a family of models -- the xLAM-2-fc-r series with sizes ranging from 1B to 70B parameters. Our models outperform frontier models such as GPT-4o and Claude 3.5 on tau-bench and BFCL benchmarks, with the smaller models surpassing their larger counterparts, particularly in multi-turn settings, while maintaining superior consistency across multiple trials. Comprehensive experiments demonstrate that our verified blueprint-to-details approach yields high-quality training data, enabling the development of more reliable, efficient, and capable agents. We open-source both the synthetic data collected and the trained xLAM-2-fc-r models to advance research in AI agents. Models are available on HuggingFace at https://huggingface.co/collections/Salesforce/xlam-2-67ef5be12949d8dcdae354c4 and project website is https://apigen-mt.github.io
-]]></content:encoded>
-<pubDate>Fri, 04 Apr 2025 13:13:57 GMT</pubDate>
-</item>
-<item>
-<title>HumanDreamer-X: Photorealistic Single-image Human Avatars Reconstruction via Gaussian Restoration</title>
-<link>https://arxiv.org/abs/2504.03536</link>
-<guid>https://arxiv.org/abs/2504.03536</guid>
-<content:encoded><![CDATA[
-Single-image human reconstruction is vital for digital human modeling applications but remains an extremely challenging task. Current approaches rely on generative models to synthesize multi-view images for subsequent 3D reconstruction and animation. However, directly generating multiple views from a single human image suffers from geometric inconsistencies, resulting in issues like fragmented or blurred limbs in the reconstructed models. To tackle these limitations, we introduce HumanDreamer-X, a novel framework that integrates multi-view human generation and reconstruction into a unified pipeline, which significantly enhances the geometric consistency and visual fidelity of the reconstructed 3D models. In this framework, 3D Gaussian Splatting serves as an explicit 3D representation to provide initial geometry and appearance priority. Building upon this foundation, HumanFixer is trained to restore 3DGS renderings, which guarantee photorealistic results. Furthermore, we delve into the inherent challenges associated with attention mechanisms in multi-view human generation, and propose an attention modulation strategy that effectively enhances geometric details identity consistency across multi-view. Experimental results demonstrate that our approach markedly improves generation and reconstruction PSNR quality metrics by 16.45% and 12.65%, respectively, achieving a PSNR of up to 25.62 dB, while also showing generalization capabilities on in-the-wild data and applicability to various human reconstruction backbone models.
-]]></content:encoded>
-<pubDate>Fri, 04 Apr 2025 11:35:14 GMT</pubDate>
-</item>
-<item>
-<title>Comprehensive Relighting: Generalizable and Consistent Monocular Human Relighting and Harmonization</title>
-<link>https://arxiv.org/abs/2504.03011</link>
-<guid>https://arxiv.org/abs/2504.03011</guid>
-<content:encoded><![CDATA[
-This paper introduces Comprehensive Relighting, the first all-in-one approach that can both control and harmonize the lighting from an image or video of humans with arbitrary body parts from any scene. Building such a generalizable model is extremely challenging due to the lack of dataset, restricting existing image-based relighting models to a specific scenario (e.g., face or static human). To address this challenge, we repurpose a pre-trained diffusion model as a general image prior and jointly model the human relighting and background harmonization in the coarse-to-fine framework. To further enhance the temporal coherence of the relighting, we introduce an unsupervised temporal lighting model that learns the lighting cycle consistency from many real-world videos without any ground truth. In inference time, our temporal lighting module is combined with the diffusion models through the spatio-temporal feature blending algorithms without extra training; and we apply a new guided refinement as a post-processing to preserve the high-frequency details from the input image. In the experiments, Comprehensive Relighting shows a strong generalizability and lighting temporal coherence, outperforming existing image-based human relighting and harmonization methods.
-]]></content:encoded>
-<pubDate>Thu, 03 Apr 2025 16:10:50 GMT</pubDate>
-</item>
-<item>
-<title>EvMic: Event-based Non-contact sound recovery from effective spatial-temporal modeling</title>
-<link>https://arxiv.org/abs/2504.02402</link>
-<guid>https://arxiv.org/abs/2504.02402</guid>
-<content:encoded><![CDATA[
-When sound waves hit an object, they induce vibrations that produce high-frequency and subtle visual changes, which can be used for recovering the sound. Early studies always encounter trade-offs related to sampling rate, bandwidth, field of view, and the simplicity of the optical path. Recent advances in event camera hardware show good potential for its application in visual sound recovery, because of its superior ability in capturing high-frequency signals. However, existing event-based vibration recovery methods are still sub-optimal for sound recovery. In this work, we propose a novel pipeline for non-contact sound recovery, fully utilizing spatial-temporal information from the event stream. We first generate a large training set using a novel simulation pipeline. Then we designed a network that leverages the sparsity of events to capture spatial information and uses Mamba to model long-term temporal information. Lastly, we train a spatial aggregation block to aggregate information from different locations to further improve signal quality. To capture event signals caused by sound waves, we also designed an imaging system using a laser matrix to enhance the gradient and collected multiple data sequences for testing. Experimental results on synthetic and real-world data demonstrate the effectiveness of our method.
-]]></content:encoded>
-<pubDate>Thu, 03 Apr 2025 04:51:17 GMT</pubDate>
 </item>
 </channel>
 </rss>
