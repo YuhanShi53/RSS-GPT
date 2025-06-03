@@ -5,15 +5,289 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>RoboMaster：一种基于协作轨迹建模的多对象交互视频扩散模型</title>
+<link>https://arxiv.org/abs/2506.01943</link>
+<guid>https://arxiv.org/abs/2506.01943</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出RoboMaster框架，解决现有方法无法有效捕捉多对象交互的问题。</p><br><br><p><strong>摘要：</strong> 近期视频扩散模型在生成机器人决策数据方面展现了巨大潜力，但现有的轨迹导向方法主要针对单个物体运动，难以捕获复杂操作中的多物体交互。此问题源于重叠区域的多特征纠缠，导致视觉保真度下降。为解决这一局限性，我们提出了RoboMaster框架，通过协作轨迹公式化建模物体间动力学。不同于以往分解物体的方法，我们将其交互过程分解为三个子阶段：预交互、交互和后交互，分别利用主导物体（如机械臂或操作对象）的特征进行建模。此外，为了确保视频中物体的主体语义一致性，我们引入了外观和形状感知的潜在表示。在Bridge V2数据集上的实验及野外评估表明，该方法优于现有技术，达到了轨迹控制视频生成的新高度。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.01943 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 02 Jun 2025 13:57:06 GMT</pubDate>
+<pubDate>Mon, 02 Jun 2025 13:57:06 GMT</pubDate>
+</item>
+<item>
+<title>Beyond the 80/20 Rule: High-Entropy Minority Tokens Drive Effective Reinforcement Learning for LLM Reasoning</title>
+<link>https://arxiv.org/abs/2506.01939</link>
+<guid>https://arxiv.org/abs/2506.01939</guid>
+<content:encoded><![CDATA[
+
+  Reinforcement Learning with Verifiable Rewards (RLVR) has emerged as a powerful approach to enhancing the reasoning capabilities of Large Language Models (LLMs), while its mechanisms are not yet well understood. In this work, we undertake a pioneering exploration of RLVR through the novel perspective of token entropy patterns, comprehensively analyzing how different tokens influence reasoning performance. By examining token entropy patterns in Chain-of-Thought (CoT) reasoning, we observe that only a small fraction of tokens exhibit high entropy, and these tokens act as critical forks that steer the model toward diverse reasoning pathways. Furthermore, studying how entropy patterns evolve during RLVR training reveals that RLVR largely adheres to the base model's entropy patterns, primarily adjusting the entropy of high-entropy tokens. These findings highlight the significance of high-entropy tokens (i.e., forking tokens) to RLVR. We ultimately improve RLVR by restricting policy gradient updates to forking tokens and uncover a finding even beyond the 80/20 rule: utilizing only 20% of the tokens while maintaining performance comparable to full-gradient updates on the Qwen3-8B base model and significantly surpassing full-gradient updates on the Qwen3-32B (+11.04 on AIME'25 and +7.71 on AIME'24) and Qwen3-14B (+4.79 on AIME'25 and +5.21 on AIME'24) base models, highlighting a strong scaling trend. In contrast, training exclusively on the 80% lowest-entropy tokens leads to a marked decline in performance. These findings indicate that the efficacy of RLVR primarily arises from optimizing the high-entropy tokens that decide reasoning directions. Collectively, our results highlight the potential to understand RLVR through a token-entropy perspective and optimize RLVR by leveraging high-entropy minority tokens to further improve LLM reasoning.
+
+]]></content:encoded>
+<pubDate>Mon, 02 Jun 2025 13:54:39 GMT</pubDate>
+<pubDate>Mon, 02 Jun 2025 13:54:39 GMT</pubDate>
+</item>
+<item>
+<title>STORM框架：任务型对话系统中的非对称信息处理与意图形成建模</title>
+<link>https://arxiv.org/abs/2506.01881</link>
+<guid>https://arxiv.org/abs/2506.01881</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>STORM框架通过UserLLM和AgentLLM协作，解决任务型对话系统中意图定义不明确的问题。</p><br><br><p><strong>摘要：</strong> 任务型对话系统面临用户表达看似完整却缺乏必要结构信息的问题，这源于用户需求不明晰且系统需要精确意图定义。当前基于大型语言模型的代理无法有效区分语法完整与语境触发的表达，缺乏协作意图形成框架。我们提出STORM框架，通过UserLLM（全内部访问）与AgentLLM（仅可观察行为）之间的对话动态建模，生成捕捉表达轨迹和潜在认知转变的注释语料库，从而系统分析协作理解的发展。STORM的主要贡献包括：(1)形式化对话系统中的非对称信息处理；(2)建模意图形成并追踪协作理解演化；(3)设计衡量内部认知改进及任务表现的评估指标。实验显示，在特定场景下适度不确定性（40%-60%）优于完全透明性，模型特定模式表明需重新考虑人机协作中的最优信息完整性。这些发现有助于理解非对称推理动态，并为校准不确定性的对话系统设计提供指导。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.01881 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 02 Jun 2025 13:11:10 GMT</pubDate>
+<pubDate>Mon, 02 Jun 2025 13:11:10 GMT</pubDate>
+</item>
+<item>
+<title>ShapeLLM-Omni：一种支持文本与3D资产双向交互的原生大型语言模型</title>
+<link>https://arxiv.org/abs/2506.01853</link>
+<guid>https://arxiv.org/abs/2506.01853</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出了一种可理解和生成3D资产的原生大型语言模型ShapeLLM-Omni。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为ShapeLLM-Omni的新型原生三维大型语言模型，该模型能够处理文本与三维资产之间的双向交互任务。首先，通过训练一个基于3D矢量量化变分自编码器（VQVAE），实现了对三维物体的有效离散化表示及其高效重构。在此基础上，构建了一个大规模连续训练数据集3D-Alpaca，用于生成、理解和编辑3D内容，为后续研究提供了丰富的资源。最后，在3D-Alpaca数据集上对Qwen-2.5-vl-7B-Instruct模型进行了指令微调，进一步增强了模型的多模态能力。这项工作为扩展多模态模型的基本三维功能奠定了基础，有助于推动三维原生人工智能的发展。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.01853 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 02 Jun 2025 12:40:50 GMT</pubDate>
+<pubDate>Mon, 02 Jun 2025 12:40:50 GMT</pubDate>
+</item>
+<item>
+<title>通过强化学习提升大语言模型处理复杂指令的能力</title>
+<link>https://arxiv.org/abs/2506.01413</link>
+<guid>https://arxiv.org/abs/2506.01413</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究提出一种结合分解与强化学习的方法，有效提升大语言模型处理复杂指令的能力。</p><br><br><p><strong>摘要：</strong> 现有大型语言模型（LLMs）在面对复杂指令时面临挑战，尤其是在多重约束并行、链式及分支结构组织的情况下。尽管链式思维（CoT）被普遍认为可以改善LLMs能力，但传统CoT方法由于简单的重复指令模式导致性能下降。为解决此问题，本文提出了一种系统性方法，通过激励测试时计算扩展的推理过程来增强LLMs的指令处理能力。首先，我们基于现有分类对复杂指令进行分解，并提出可重现的数据获取方法；其次，利用基于可验证规则的奖励信号进行强化学习，专门培养模型的指令跟随推理能力。通过样本对比优化CoT执行，同时采用专家行为克隆技术引导快速思维LLMs向技能型推理器转变。在七个综合基准测试中的广泛评估显示，该方法使1.5B规模的LLM取得了相当于8B规模LLM的性能，提升了11.74%。相关代码和数据已公开。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.01413 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 02 Jun 2025 04:11:44 GMT</pubDate>
+<pubDate>Mon, 02 Jun 2025 04:11:44 GMT</pubDate>
+</item>
+<item>
+<title>Scaling with Gradient Grouping (SGG): 改进大规模语言模型优化的新方法</title>
+<link>https://arxiv.org/abs/2506.01049</link>
+<guid>https://arxiv.org/abs/2506.01049</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种通过动态分组和特定缩放提升自适应学习率估计的优化器包装器SGG。</p><br><br><p><strong>摘要：</strong> 训练大规模语言模型面临参数规模大和架构异构性等挑战，现有的自适应优化器如AdamW在梯度变化处理上仍显不足，导致训练不稳定、收敛缓慢且与参数高效微调技术兼容性差。本文介绍了一种名为Scaling with Gradient Grouping (SGG) 的优化器包装器，通过动态分组和分组特定缩放改进自适应学习率估计。SGG首先将每一层中的梯度统计分为若干簇，然后对各参数应用簇特定的缩放以校准学习率，从而在维持每参数精确适应的同时施加集体群组约束。实验表明，SGG与现有优化器无缝集成，在多种大规模语言模型基准测试中表现出一致性增益和更快收敛速度，适用于不同模型大小。此外，SGG在不同批量大小和学习率下均表现稳定，成为大规模语言模型优化的稳健选择。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.01049 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 01 Jun 2025 11:30:37 GMT</pubDate>
+<pubDate>Sun, 01 Jun 2025 11:30:37 GMT</pubDate>
+</item>
+<item>
+<title>Temporal In-Context Fine-Tuning for Versatile Control of Video Diffusion Models</title>
+<link>https://arxiv.org/abs/2506.00996</link>
+<guid>https://arxiv.org/abs/2506.00996</guid>
+<content:encoded><![CDATA[
+
+  Recent advances in text-to-video diffusion models have enabled high-quality video synthesis, but controllable generation remains challenging, particularly under limited data and compute. Existing fine-tuning methods for conditional generation often rely on external encoders or architectural modifications, which demand large datasets and are typically restricted to spatially aligned conditioning, limiting flexibility and scalability. In this work, we introduce Temporal In-Context Fine-Tuning (TIC-FT), an efficient and versatile approach for adapting pretrained video diffusion models to diverse conditional generation tasks. Our key idea is to concatenate condition and target frames along the temporal axis and insert intermediate buffer frames with progressively increasing noise levels. These buffer frames enable smooth transitions, aligning the fine-tuning process with the pretrained model's temporal dynamics. TIC-FT requires no architectural changes and achieves strong performance with as few as 10-30 training samples. We validate our method across a range of tasks, including image-to-video and video-to-video generation, using large-scale base models such as CogVideoX-5B and Wan-14B. Extensive experiments show that TIC-FT outperforms existing baselines in both condition fidelity and visual quality, while remaining highly efficient in both training and inference. For additional results, visit https://kinam0252.github.io/TIC-FT/
+
+]]></content:encoded>
+<pubDate>Sun, 01 Jun 2025 08:57:43 GMT</pubDate>
+<pubDate>Sun, 01 Jun 2025 08:57:43 GMT</pubDate>
+</item>
+<item>
+<title>大型语言模型在多选题中的局限性及改进方法</title>
+<link>https://arxiv.org/abs/2506.00643</link>
+<guid>https://arxiv.org/abs/2506.00643</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究发现当前大型语言模型在识别所有正确答案时存在显著不足。</p><br><br><p><strong>摘要：</strong> 大型语言模型（LLMs）在单选题评估中表现良好，但在实际应用中需要识别所有正确答案的能力却未得到充分研究。本研究引入了SATA-BENCH，这是首个专注于评估LLMs在跨领域多选题上的表现的基准，包括阅读理解、法律和生物医学等领域。通过对27个开源和专有模型的测试显示，最强模型也只能达到41.8%的精确匹配率，揭示了LLMs在这方面的不足。问题主要源于选择偏差和计数偏差两个核心挑战。为解决这些问题，我们提出了Choice Funnel解码策略，该策略结合了令牌去偏和自适应阈值化，使模型在精确匹配上提高了高达29%，同时降低了超过64%的推理成本。本研究揭示了当前LLMs的根本局限性，并提出了一种新的诊断和改进多答案推理的框架。我们发布了SATA-BENCH和Choice Funnel，以促进LLMs在现实多答案应用场景中的稳健发展。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.00643 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sat, 31 May 2025 13:14:21 GMT</pubDate>
+<pubDate>Sat, 31 May 2025 13:14:21 GMT</pubDate>
+</item>
+<item>
+<title>通过后训练技术提升大型语言模型在多智能体系统中的经济推理能力</title>
+<link>https://arxiv.org/abs/2506.00577</link>
+<guid>https://arxiv.org/abs/2506.00577</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究显示后训练技术可有效增强大型语言模型在多智能体经济推理场景中的表现。</p><br><br><p><strong>摘要：</strong> 本文探讨了监督微调(SFT)和基于可验证奖励的强化学习(RLVR)是否能有效提升大型语言模型(LLMs)在多智能体系统(MAS)中的泛化能力。以经济学推理作为测试平台，研究团队开发了Recon，一款基于70亿参数的开源LLM，该模型经过精心策划的2100个高质量经济学推理问题的数据集后训练而成。实验结果显示，在经济学推理基准测试和多智能体游戏中，Recon展现出显著增强的结构化推理能力和经济理性。这些发现表明领域对齐的后训练方法在提升推理能力和模型对齐方面具有巨大潜力，同时揭示了SFT和RL在塑造模型行为中的重要作用。相关代码已公开。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.00577 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sat, 31 May 2025 10:22:40 GMT</pubDate>
+<pubDate>Sat, 31 May 2025 10:22:40 GMT</pubDate>
+</item>
+<item>
+<title>ARIA：通过意图空间奖励聚合提升语言模型强化学习效能</title>
+<link>https://arxiv.org/abs/2506.00539</link>
+<guid>https://arxiv.org/abs/2506.00539</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出ARIA方法，解决开放域语言环境中奖励稀疏问题，显著提升强化学习效果。</p><br><br><p><strong>摘要：</strong> 大型语言模型(LLMs)使智能体能够通过自然语言交互执行复杂推理和决策。然而，在开放域语言行动环境（如谈判或问答游戏）中，动作空间可能被表述为令牌联合分布，导致动作空间呈指数级增长。这种情况下采样动作会导致极端的奖励稀疏性，增加奖励方差，阻碍有效强化学习(RL)。为了解决这个问题，我们提出了ARIA方法，即通过在意图空间中聚合奖励，实现高效且有效的语言智能体训练。ARIA旨在将自然语言动作从高维联合令牌分布空间投影到低维意图空间，其中语义相似的动作被聚类并分配共享奖励。这种意图感知的奖励聚合通过密集化奖励信号降低了奖励方差，促进了更好的策略优化。大量实验表明，ARIA不仅显著减少了策略梯度方差，还在四个下游任务中平均带来了9.95%的性能提升，始终优于离线和在线RL基线。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.00539 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sat, 31 May 2025 08:54:49 GMT</pubDate>
+<pubDate>Sat, 31 May 2025 08:54:49 GMT</pubDate>
+</item>
+<item>
+<title>LoHoVLA：一种针对长时序任务的统一视觉语言动作框架</title>
+<link>https://arxiv.org/abs/2506.00411</link>
+<guid>https://arxiv.org/abs/2506.00411</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新的统一视觉语言动作框架LoHoVLA，提升长时序任务中的表现。</p><br><br><p><strong>摘要：</strong> 本文针对具身代理在处理长时序任务时面临的挑战，提出了一种名为LoHoVLA的新型统一视觉语言动作框架。该框架结合了大型预训练视觉语言模型作为主干网络，用于同时生成子任务的语言描述和机器人动作预测的令牌，从而实现高效的任务分解与动作规划。此外，LoHoVLA引入了一种分层闭环控制机制，以缓解高阶规划和低阶控制中的误差问题。为了验证框架的有效性，构建了一个包含20种长时序任务及1000个专家演示样本的数据集LoHoSet。实验结果显示，LoHoVLA在Ravens模拟器中显著优于现有的分层方法和标准视觉语言动作模型，展示了统一架构在提升可泛化具身智能方面的潜力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.00411 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sat, 31 May 2025 02:01:03 GMT</pubDate>
+<pubDate>Sat, 31 May 2025 02:01:03 GMT</pubDate>
+</item>
+<item>
+<title>MagiCodec：一种基于Transformer的高效音频编解码器</title>
+<link>https://arxiv.org/abs/2506.00385</link>
+<guid>https://arxiv.org/abs/2506.00385</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新型单层Transformer音频编解码器，提升编码语义表达同时保持高重建质量。</p><br><br><p><strong>摘要：</strong> 神经音频编解码器近年来在将原始音频波形高效映射为离散标记表示方面取得了显著进展，但现有编解码器多侧重于重建质量，而忽视了对下游模型可用性的优化。针对这一瓶颈，本文提出了MagiCodec，这是一种新颖的单层、流式Transformer架构的音频编解码器。通过引入多阶段训练流程，包括高斯噪声注入和潜在正则化技术，MagiCodec旨在增强生成代码的语义表达能力，同时保持高水平的重建精度。实验表明，MagiCodec在重建质量和下游任务性能上均优于现有最先进方法，其生成的标记表现出类似自然语言的Zipf分布，提升了与基于语言模型的生成架构的兼容性。此外，我们还分析了频率域中噪声注入的效果，证明其有助于抑制高频成分并促进稳健的标记化过程。源代码和预训练模型已公开发布。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.00385 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sat, 31 May 2025 00:31:02 GMT</pubDate>
+<pubDate>Sat, 31 May 2025 00:31:02 GMT</pubDate>
+</item>
+<item>
+<title>基于YODAS扩展的Open Whisper-style Speech Models V4</title>
+<link>https://arxiv.org/abs/2506.00338</link>
+<guid>https://arxiv.org/abs/2506.00338</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>通过整合大规模网络爬取数据集YODAS提升OWSM模型性能。</p><br><br><p><strong>摘要：</strong> Open Whisper-style Speech Models (OWSM)项目利用学术资源开发了一系列完全开源的语音基础模型，但其训练数据量不足。本研究通过引入Creative Commons许可的YODAS数据集增强OWSM，但由于YODAS的野性数据特性（如语言标签错误和音频文本错配），带来了诸多挑战。为此，我们开发了一套可扩展的数据清洗流水线，最终获得涵盖75种语言的166,000小时语音数据集。基于此清洗后的数据训练的新版OWSM v4模型，在多语言基准测试中显著超越旧版本，甚至在多个场景中达到或超过了工业前沿模型Whisper和MMS的表现。我们将公开发布清理后的YODAS数据、预训练模型及相关脚本，均通过ESPnet工具包提供支持。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.00338 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 30 May 2025 21:44:44 GMT</pubDate>
+<pubDate>Fri, 30 May 2025 21:44:44 GMT</pubDate>
+</item>
+<item>
+<title>MiCRo：基于大规模二元偏好数据的学习框架提升个性化奖励建模</title>
+<link>https://arxiv.org/abs/2505.24846</link>
+<guid>https://arxiv.org/abs/2505.24846</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>MiCRo通过两阶段框架增强个性化奖励建模，无需显式细粒度标注。</p><br><br><p><strong>摘要：</strong> 奖励建模是应用强化学习从人类反馈（RLHF）构建安全基础模型的关键步骤，但在利用Bradley-Terry（BT）模型时，假设单一全局奖励函数无法捕捉人类偏好的多样性。这种简化限制了大语言模型（LLMs）支持个性化和多元对齐的能力。理论上，当人类偏好符合多样子群的混合分布时，单一BT模型存在不可减少的误差。尽管已有解决方案如多目标学习结合细粒度注释有所改善，但成本高昂且受限于预定义属性，未能充分反映人类价值观的丰富性。本文提出MiCRo，一种两阶段框架，在不依赖显式细粒度注释的情况下，通过大规模二元偏好数据提升个性化偏好学习。第一阶段引入上下文感知的混合建模方法捕获多样化的人类偏好；第二阶段整合在线路由策略，动态调整混合权重以解决歧义，实现高效可扩展的偏好适配。多项偏好数据集上的实验表明，MiCRo有效捕捉多样化的人类偏好并显著提升下游个性化性能。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.24846 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 30 May 2025 13:44:28 GMT</pubDate>
+<pubDate>Fri, 30 May 2025 13:44:28 GMT</pubDate>
+</item>
+<item>
+<title>Reasoning Gym：基于可验证奖励的强化学习环境库</title>
+<link>https://arxiv.org/abs/2505.24760</link>
+<guid>https://arxiv.org/abs/2505.24760</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新的推理环境库，支持生成无限复杂度训练数据。</p><br><br><p><strong>摘要：</strong> Reasoning Gym (RG) 是一种专为强化学习设计的推理环境库，提供超过100个跨多个领域的数据生成器和验证器，涵盖代数、算术、几何、逻辑等多个领域。与传统固定的数据集不同，RG 的创新之处在于可以通过程序化生成方式提供几乎无限的训练数据，并且可以根据需求调整复杂度。这种特性使得模型可以在不同的难度等级下进行持续评估。实验结果表明，RG 在评估和提升推理模型方面具有显著效果。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.24760 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 30 May 2025 12:20:18 GMT</pubDate>
+<pubDate>Fri, 30 May 2025 12:20:18 GMT</pubDate>
+</item>
+<item>
+<title>基于视频的3D几何大语言模型在场景理解中的应用</title>
+<link>https://arxiv.org/abs/2505.24625</link>
+<guid>https://arxiv.org/abs/2505.24625</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种无需3D输入的视频到3D几何大语言模型，提升场景理解和空间推理能力。</p><br><br><p><strong>摘要：</strong> 本研究通过引入视频到3D几何大语言模型（VG LLM），使多模态大语言模型能够在没有全面3D数据输入的情况下直接理解3D场景。我们设计了一个3D视觉几何编码器，从视频序列中提取3D先验信息，并将其与视觉标记结合输入到多模态大语言模型中。实验表明，该方法在多个3D场景理解和空间推理任务中表现优异，尤其是在VSI-Bench评估中，我们的4B参数模型甚至超过了现有的最先进方法Gemini-1.5-Pro。这一进展显著降低了对复杂3D数据的需求，提升了模型的通用性和效率。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.24625 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 30 May 2025 10:16:41 GMT</pubDate>
+<pubDate>Fri, 30 May 2025 10:16:41 GMT</pubDate>
+</item>
+<item>
+<title>统一预算感知学习率调度器UBA的研究</title>
+<link>https://arxiv.org/abs/2505.24452</link>
+<guid>https://arxiv.org/abs/2505.24452</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种理论支持的预算感知学习率调度器UBA，优化多种架构和任务的训练表现。</p><br><br><p><strong>摘要：</strong> 随着计算成本的增加和资源限制，预算迭代训练成为实现最优学习的关键需求。然而，现有的学习率调度设计主要基于经验法则，缺乏理论依据，且需要大量试错，导致效率低下。本研究提出了统一预算感知（UBA）调度器，这是一种理论上成立的学习率调度方法，在不同的网络架构和任务中均优于常用调度方案。通过构建新的预算感知优化框架，UBA消除了对每种网络进行数值优化的需求，并通过理论分析建立了超参数φ与条件数之间的联系。此外，我们证明了不同φ值下的收敛性，并提供了选择φ的实用指南。实验结果显示，UBA在多种视觉和语言任务中表现出色，适用于不同规模的网络架构和训练迭代预算。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.24452 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 30 May 2025 06:38:03 GMT</pubDate>
+<pubDate>Fri, 30 May 2025 06:38:03 GMT</pubDate>
+</item>
+<item>
+<title>VisualSphinx：首个大规模合成视觉逻辑推理训练数据集</title>
+<link>https://arxiv.org/abs/2505.23977</link>
+<guid>https://arxiv.org/abs/2505.23977</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出首个大规模合成视觉逻辑推理数据集VisualSphinx，提升视觉语言模型的逻辑推理能力。</p><br><br><p><strong>摘要：</strong> 现有的视觉语言模型在多模态推理方面表现不足，主要由于缺乏大规模且结构良好的训练数据集。为解决这一问题，本文提出了VisualSphinx，这是一个专门针对视觉逻辑推理设计的大规模合成训练数据集。通过引入一种基于规则的图像合成管道，该方法可以从基础问题中提取并扩展出谜题规则，并生成具有定位答案的合成图像。实验表明，利用VisualSphinx训练的视觉语言模型在逻辑推理任务中表现出更高的逻辑连贯性和可读性，并且在代数推理、算术推理和几何推理等其他推理任务中也显示出显著性能提升。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.23977 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 29 May 2025 16:08:36 GMT</pubDate>
+<pubDate>Thu, 29 May 2025 16:08:36 GMT</pubDate>
+</item>
+<item>
+<title>Cora：一种基于语义对应的新图像编辑框架</title>
+<link>https://arxiv.org/abs/2505.23907</link>
+<guid>https://arxiv.org/abs/2505.23907</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Cora通过引入对应感知噪声校正和插值注意力图改进图像编辑效果。</p><br><br><p><strong>摘要：</strong> 图像编辑在计算机图形学、视觉和视觉特效领域至关重要，但涉及显著结构变化的编辑仍具挑战性。现有方法常产生纹理不相关等伪影或难以保留源图像的关键属性。本文提出Cora框架，通过语义对应实现精确的纹理转移并生成新内容，同时提供对生成与保留平衡的控制。实验表明，Cora在多种编辑任务中表现优异，用户研究进一步验证其优越性。关键词：图像编辑、语义对应、扩散模型。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.23907 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 29 May 2025 14:00:56 GMT</pubDate>
+<pubDate>Thu, 29 May 2025 14:00:56 GMT</pubDate>
+</item>
+<item>
+<title>Jigsaw-R1: A Study of Rule-based Visual Reinforcement Learning with Jigsaw Puzzles</title>
+<link>https://arxiv.org/abs/2505.23590</link>
+<guid>https://arxiv.org/abs/2505.23590</guid>
+<content:encoded><![CDATA[
+
+  The application of rule-based reinforcement learning (RL) to multimodal large language models (MLLMs) introduces unique challenges and potential deviations from findings in text-only domains, particularly for perception-heavy tasks. This paper provides a comprehensive study of rule-based visual RL, using jigsaw puzzles as a structured experimental framework. Jigsaw puzzles offer inherent ground truth, adjustable difficulty, and demand complex decision-making, making them ideal for this study. Our research reveals several key findings: Firstly, we find that MLLMs, initially performing near to random guessing on the simplest jigsaw puzzles, achieve near-perfect accuracy and generalize to complex, unseen configurations through fine-tuning. Secondly, training on jigsaw puzzles can induce generalization to other visual tasks, with effectiveness tied to specific task configurations. Thirdly, MLLMs can learn and generalize with or without explicit reasoning, though open-source models often favor direct answering. Consequently, even when trained for step-by-step reasoning, they can ignore the thinking process in deriving the final answer. Fourthly, we observe that complex reasoning patterns appear to be pre-existing rather than emergent, with their frequency increasing alongside training and task difficulty. Finally, our results demonstrate that RL exhibits more effective generalization than Supervised Fine-Tuning (SFT), and an initial SFT cold start phase can hinder subsequent RL optimization. Although these observations are based on jigsaw puzzles and may vary across other visual tasks, this research contributes a valuable piece of jigsaw to the larger puzzle of collective understanding rule-based visual RL and its potential in multimodal learning. The code is available at: https://github.com/zifuwanggg/Jigsaw-R1.
+
+]]></content:encoded>
+<pubDate>Thu, 29 May 2025 12:01:22 GMT</pubDate>
+<pubDate>Thu, 29 May 2025 12:01:22 GMT</pubDate>
+</item>
+<item>
+<title>VAU-R1: Advancing Video Anomaly Understanding via Reinforcement Fine-Tuning</title>
+<link>https://arxiv.org/abs/2505.23504</link>
+<guid>https://arxiv.org/abs/2505.23504</guid>
+<content:encoded><![CDATA[
+
+  Video Anomaly Understanding (VAU) is essential for applications such as smart cities, security surveillance, and disaster alert systems, yet remains challenging due to its demand for fine-grained spatio-temporal perception and robust reasoning under ambiguity. Despite advances in anomaly detection, existing methods often lack interpretability and struggle to capture the causal and contextual aspects of abnormal events. This limitation is further compounded by the absence of comprehensive benchmarks for evaluating reasoning ability in anomaly scenarios. To address both challenges, we introduce VAU-R1, a data-efficient framework built upon Multimodal Large Language Models (MLLMs), which enhances anomaly reasoning through Reinforcement Fine-Tuning (RFT). Besides, we propose VAU-Bench, the first Chain-of-Thought benchmark tailored for video anomaly reasoning, featuring multiple-choice QA, detailed rationales, temporal annotations, and descriptive captions. Empirical results show that VAU-R1 significantly improves question answering accuracy, temporal grounding, and reasoning coherence across diverse contexts. Together, our method and benchmark establish a strong foundation for interpretable and reasoning-aware video anomaly understanding. Our code is available at https://github.com/GVCLab/VAU-R1.
+
+]]></content:encoded>
+<pubDate>Thu, 29 May 2025 10:48:10 GMT</pubDate>
+<pubDate>Thu, 29 May 2025 10:48:10 GMT</pubDate>
+</item>
+<item>
+<title>From Token to Action: State Machine Reasoning to Mitigate Overthinking in Information Retrieval</title>
+<link>https://arxiv.org/abs/2505.23059</link>
+<guid>https://arxiv.org/abs/2505.23059</guid>
+<content:encoded><![CDATA[
+
+  Chain-of-Thought (CoT) prompting enables complex reasoning in large language models (LLMs), including applications in information retrieval (IR). However, it often leads to overthinking, where models produce excessively long and semantically redundant traces with little or no benefit. We identify two key challenges in IR: redundant trajectories that revisit similar states and misguided reasoning that diverges from user intent. To address these, we propose State Machine Reasoning (SMR), a transition-based reasoning framework composed of discrete actions (Refine, Rerank, Stop) that support early stopping and fine-grained control. Experiments on the BEIR and BRIGHT benchmarks show that SMR improves retrieval performance (nDCG@10) by 3.4% while reducing token usage by 74.4%. It generalizes across LLMs and retrievers without requiring task-specific tuning, offering a practical alternative to conventional CoT reasoning. The code and details are available at https://github.com/ldilab/SMR.
+
+]]></content:encoded>
+<pubDate>Thu, 29 May 2025 00:04:25 GMT</pubDate>
+<pubDate>Thu, 29 May 2025 00:04:25 GMT</pubDate>
+</item>
+<item>
+<title>DyePack：通过后门攻击检测大语言模型对基准测试集的依赖</title>
+<link>https://arxiv.org/abs/2505.23001</link>
+<guid>https://arxiv.org/abs/2505.23001</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出DyePack框架，利用后门攻击检测训练中是否使用过基准测试集。</p><br><br><p><strong>摘要：</strong> 开放基准对于评估和改进大型语言模型至关重要，但其易访问性使其容易受到测试集污染的影响。本文介绍了一种名为DyePack的框架，它通过后门攻击在不访问模型损失、logits或内部细节的情况下识别出是否在训练过程中使用了基准测试集。DyePack的设计包括多个具有随机目标的后门，可精确计算误报率(FPR)，从而有效防止错误指控并提供确凿证据。我们在三个数据集上的五种模型上进行了评估，涵盖了多项选择题和开放式生成任务，结果显示DyePack在多种任务中均成功检测到受污染模型，并保证了极低的误报率。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.23001 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 28 May 2025 22:22:14 GMT</pubDate>
+<pubDate>Wed, 28 May 2025 22:22:14 GMT</pubDate>
+</item>
+
+<item>
 <title>多模态大模型强化学习框架提升泛化能力</title>
 <link>https://arxiv.org/abs/2505.24871</link>
 <guid>https://arxiv.org/abs/2505.24871</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>多模态语言模型通过强化学习实现跨领域优化。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种针对多模态大型语言模型（MLLMs）的强化学习框架，名为RLVR，通过整合多种具有可验证答案的视觉语言任务数据集进行后训练。该框架解决了多数据集训练过程中目标冲突的问题，提出了优化的数据混合策略。实验表明，采用这种策略的多领域强化学习显著提升了模型的泛化能力和推理性能，在分布外基准测试中的准确率平均提高了5.24%，相较均匀数据混合的模型提升了20.74%。此外，该研究还开发了在线强化学习模块，支持不同领域的可验证奖励机制。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.24871 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">多模态语言模型通过强化学习实现跨领域优化。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种针对多模态大型语言模型（MLLMs）的强化学习框架，名为RLVR，通过整合多种具有可验证答案的视觉语言任务数据集进行后训练。该框架解决了多数据集训练过程中目标冲突的问题，提出了优化的数据混合策略。实验表明，采用这种策略的多领域强化学习显著提升了模型的泛化能力和推理性能，在分布外基准测试中的准确率平均提高了5.24%，相较均匀数据混合的模型提升了20.74%。此外，该研究还开发了在线强化学习模块，支持不同领域的可验证奖励机制。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.24871" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 30 May 2025 13:59:38 GMT</pubDate>
 <pubDate>Fri, 30 May 2025 13:59:38 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +295,8 @@
 <link>https://arxiv.org/abs/2505.24869</link>
 <guid>https://arxiv.org/abs/2505.24869</guid>
 <content:encoded><![CDATA[
-
-  Recent advances in test-time optimization have led to remarkable reasoning capabilities in Large Language Models (LLMs), enabling them to solve highly complex problems in math and coding. However, the reasoning capabilities of multimodal LLMs (MLLMs) still significantly lag, especially for complex video-language tasks. To address this issue, we present SiLVR, a Simple Language-based Video Reasoning framework that decomposes complex video understanding into two stages. In the first stage, SiLVR transforms raw video into language-based representations using multisensory inputs, such as short clip captions and audio/speech subtitles. In the second stage, language descriptions are fed into a powerful reasoning LLM to solve complex video-language understanding tasks. To handle long-context multisensory inputs, we use an adaptive token reduction scheme, which dynamically determines the temporal granularity with which to sample the tokens. Our simple, modular, and training-free video reasoning framework achieves the best-reported results on Video-MME (long), Video-MMMU (comprehension), Video-MMLU, CGBench, and EgoLife. Furthermore, our empirical study focused on video reasoning capabilities shows that, despite not being explicitly trained on video, strong reasoning LLMs can effectively aggregate multisensory input information from video, speech, and audio for complex temporal, causal, long-context, and knowledge acquisition reasoning tasks in video. Code is available at https://github.com/CeeZh/SILVR.
-
+Recent advances in test-time optimization have led to remarkable reasoning capabilities in Large Language Models (LLMs), enabling them to solve highly complex problems in math and coding. However, the reasoning capabilities of multimodal LLMs (MLLMs) still significantly lag, especially for complex video-language tasks. To address this issue, we present SiLVR, a Simple Language-based Video Reasoning framework that decomposes complex video understanding into two stages. In the first stage, SiLVR transforms raw video into language-based representations using multisensory inputs, such as short clip captions and audio/speech subtitles. In the second stage, language descriptions are fed into a powerful reasoning LLM to solve complex video-language understanding tasks. To handle long-context multisensory inputs, we use an adaptive token reduction scheme, which dynamically determines the temporal granularity with which to sample the tokens. Our simple, modular, and training-free video reasoning framework achieves the best-reported results on Video-MME (long), Video-MMMU (comprehension), Video-MMLU, CGBench, and EgoLife. Furthermore, our empirical study focused on video reasoning capabilities shows that, despite not being explicitly trained on video, strong reasoning LLMs can effectively aggregate multisensory input information from video, speech, and audio for complex temporal, causal, long-context, and knowledge acquisition reasoning tasks in video. Code is available at https://github.com/CeeZh/SILVR.
 ]]></content:encoded>
-<pubDate>Fri, 30 May 2025 13:59:19 GMT</pubDate>
 <pubDate>Fri, 30 May 2025 13:59:19 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +304,8 @@
 <link>https://arxiv.org/abs/2505.24785</link>
 <guid>https://arxiv.org/abs/2505.24785</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>EXP-Bench评估AI代理在设计、执行和分析完整研究实验中的表现。</p><br><br><p><strong>摘要：</strong> 本文介绍了EXP-Bench，这是一个用于评估AI代理在完整研究实验中能力的新基准。EXP-Bench从顶级AI研究论文及其开源代码中提取并结构化关键实验细节，创建了461个复杂的任务。通过测试基于大型语言模型的领先AI代理，发现其在单个实验方面（如设计或实施正确性）偶尔可达20-35%，但整体可执行实验的成功率仅为0.5%。EXP-Bench揭示了现有AI代理在科学研究自动化中的瓶颈，并为未来改进提供了方向。该基准已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.24785 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">EXP-Bench评估AI代理在设计、执行和分析完整研究实验中的表现。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了EXP-Bench，这是一个用于评估AI代理在完整研究实验中能力的新基准。EXP-Bench从顶级AI研究论文及其开源代码中提取并结构化关键实验细节，创建了461个复杂的任务。通过测试基于大型语言模型的领先AI代理，发现其在单个实验方面（如设计或实施正确性）偶尔可达20-35%，但整体可执行实验的成功率仅为0.5%。EXP-Bench揭示了现有AI代理在科学研究自动化中的瓶颈，并为未来改进提供了方向。该基准已开源。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.24785" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 30 May 2025 12:46:29 GMT</pubDate>
 <pubDate>Fri, 30 May 2025 12:46:29 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +313,8 @@
 <link>https://arxiv.org/abs/2505.24025</link>
 <guid>https://arxiv.org/abs/2505.24025</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出DINO-R1，首个利用强化学习增强视觉基础模型推理能力的方法。</p><br><br><p><strong>摘要：</strong> 本文介绍了DINO-R1，这是首个尝试通过强化学习激励视觉基础模型上下文推理能力的工作。DINO-R1引入了组相对查询优化（GRQO），这是一种专为基于查询的表示模型设计的新型强化风格训练策略，通过组归一化的对齐质量计算查询级奖励。此外，还应用了KL正则化来稳定物体分布，减少训练不稳定性。这种联合优化实现了跨查询的密集且表达性监督，同时减轻了过拟合和分布漂移问题。基于Grounding-DINO，我们训练了一系列DINO-R1家族模型，这些模型集成了视觉提示编码器和视觉引导的查询选择机制。在COCO、LVIS和ODinW上的广泛实验表明，DINO-R1显著优于监督微调基线，在开放词汇和闭集视觉提示场景中表现出强大的泛化能力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.24025 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出DINO-R1，首个利用强化学习增强视觉基础模型推理能力的方法。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了DINO-R1，这是首个尝试通过强化学习激励视觉基础模型上下文推理能力的工作。DINO-R1引入了组相对查询优化（GRQO），这是一种专为基于查询的表示模型设计的新型强化风格训练策略，通过组归一化的对齐质量计算查询级奖励。此外，还应用了KL正则化来稳定物体分布，减少训练不稳定性。这种联合优化实现了跨查询的密集且表达性监督，同时减轻了过拟合和分布漂移问题。基于Grounding-DINO，我们训练了一系列DINO-R1家族模型，这些模型集成了视觉提示编码器和视觉引导的查询选择机制。在COCO、LVIS和ODinW上的广泛实验表明，DINO-R1显著优于监督微调基线，在开放词汇和闭集视觉提示场景中表现出强大的泛化能力。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.24025" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 29 May 2025 17:58:06 GMT</pubDate>
 <pubDate>Thu, 29 May 2025 17:58:06 GMT</pubDate>
 </item>
 <item>
@@ -57,14 +322,10 @@
 <link>https://arxiv.org/abs/2505.23856</link>
 <guid>https://arxiv.org/abs/2505.23856</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>OmNIGUARD显著提升了多语言和跨模态有害提示的检测准确率。</p><br><br><p><strong>摘要：</strong> 随着大型语言模型（LLMs）的能力不断提升，其潜在的有害滥用问题引发了广泛关注。现有检测方法存在不足，尤其容易受到利用模型能力不匹配的攻击影响。为解决这一挑战，本文提出OmNIGUARD，这是一种用于检测多种语言和模态下有害提示的方法。OmNIGUARD通过识别模型内部表示中跨语言或跨模态对齐的部分，构建出一种语言无关或模态无关的分类器。实验结果显示，在多语言环境下，OmNIGUARD比最强基线提高了11.57%的分类准确率；在基于图像的提示检测中提高了20.44%；并且在音频提示检测中达到了新的最佳性能。此外，由于重用了生成过程中计算的嵌入，OmNIGUARD还具有很高的效率，大约比下一个最快的基线快120倍。代码和数据已公开发布。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.23856 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">OmNIGUARD显著提升了多语言和跨模态有害提示的检测准确率。</p><br /><br /><p><strong>摘要：</strong> 随着大型语言模型（LLMs）的能力不断提升，其潜在的有害滥用问题引发了广泛关注。现有检测方法存在不足，尤其容易受到利用模型能力不匹配的攻击影响。为解决这一挑战，本文提出OmNIGUARD，这是一种用于检测多种语言和模态下有害提示的方法。OmNIGUARD通过识别模型内部表示中跨语言或跨模态对齐的部分，构建出一种语言无关或模态无关的分类器。实验结果显示，在多语言环境下，OmNIGUARD比最强基线提高了11.57%的分类准确率；在基于图像的提示检测中提高了20.44%；并且在音频提示检测中达到了新的最佳性能。此外，由于重用了生成过程中计算的嵌入，OmNIGUARD还具有很高的效率，大约比下一个最快的基线快120倍。代码和数据已公开发布。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.23856" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Thu, 29 May 2025 01:25:27 GMT</pubDate>
-<pubDate>Thu, 29 May 2025 01:25:27 GMT</pubDate>
 </item>
-
 <item>
 <title>ReasonGen-R1：结合推理与强化学习的生成视觉模型</title>
 <link>https://arxiv.org/abs/2505.24875</link>
@@ -9019,51 +9280,6 @@ Generating naturalistic and nuanced listener motions for extended interactions r
 We present OLMoTrace, the first system that traces the outputs of language models back to their full, multi-trillion-token training data in real time. OLMoTrace finds and shows verbatim matches between segments of language model output and documents in the training text corpora. Powered by an extended version of infini-gram (Liu et al., 2024), our system returns tracing results within a few seconds. OLMoTrace can help users understand the behavior of language models through the lens of their training data. We showcase how it can be used to explore fact checking, hallucination, and the creativity of language models. OLMoTrace is publicly available and fully open-source.
 ]]></content:encoded>
 <pubDate>Wed, 09 Apr 2025 13:59:35 GMT</pubDate>
-</item>
-<item>
-<title>GenDoP: Auto-regressive Camera Trajectory Generation as a Director of Photography</title>
-<link>https://arxiv.org/abs/2504.07083</link>
-<guid>https://arxiv.org/abs/2504.07083</guid>
-<content:encoded><![CDATA[
-Camera trajectory design plays a crucial role in video production, serving as a fundamental tool for conveying directorial intent and enhancing visual storytelling. In cinematography, Directors of Photography meticulously craft camera movements to achieve expressive and intentional framing. However, existing methods for camera trajectory generation remain limited: Traditional approaches rely on geometric optimization or handcrafted procedural systems, while recent learning-based methods often inherit structural biases or lack textual alignment, constraining creative synthesis. In this work, we introduce an auto-regressive model inspired by the expertise of Directors of Photography to generate artistic and expressive camera trajectories. We first introduce DataDoP, a large-scale multi-modal dataset containing 29K real-world shots with free-moving camera trajectories, depth maps, and detailed captions in specific movements, interaction with the scene, and directorial intent. Thanks to the comprehensive and diverse database, we further train an auto-regressive, decoder-only Transformer for high-quality, context-aware camera movement generation based on text guidance and RGBD inputs, named GenDoP. Extensive experiments demonstrate that compared to existing methods, GenDoP offers better controllability, finer-grained trajectory adjustments, and higher motion stability. We believe our approach establishes a new standard for learning-based cinematography, paving the way for future advancements in camera control and filmmaking. Our project website: https://kszpxxzmc.github.io/GenDoP/.
-]]></content:encoded>
-<pubDate>Wed, 09 Apr 2025 13:56:01 GMT</pubDate>
-</item>
-<item>
-<title>Missing Premise exacerbates Overthinking: Are Reasoning Models losing Critical Thinking Skill?</title>
-<link>https://arxiv.org/abs/2504.06514</link>
-<guid>https://arxiv.org/abs/2504.06514</guid>
-<content:encoded><![CDATA[
-We find that the response length of reasoning LLMs, whether trained by reinforcement learning or supervised learning, drastically increases for ill-posed questions with missing premises (MiP), ending up with redundant and ineffective thinking. This newly introduced scenario exacerbates the general overthinking issue to a large extent, which we name as the MiP-Overthinking. Such failures are against the ``test-time scaling law'' but have been widely observed on multiple datasets we curated with MiP, indicating the harm of cheap overthinking and a lack of critical thinking. Surprisingly, LLMs not specifically trained for reasoning exhibit much better performance on the MiP scenario, producing much shorter responses that quickly identify ill-posed queries. This implies a critical flaw of the current training recipe for reasoning LLMs, which does not encourage efficient thinking adequately, leading to the abuse of thinking patterns. To further investigate the reasons behind such failures, we conduct fine-grained analyses of the reasoning length, overthinking patterns, and location of critical thinking on different types of LLMs. Moreover, our extended ablation study reveals that the overthinking is contagious through the distillation of reasoning models' responses. These results improve the understanding of overthinking and shed novel insights into mitigating the problem.
-]]></content:encoded>
-<pubDate>Tue, 08 Apr 2025 21:25:27 GMT</pubDate>
-</item>
-<item>
-<title>FantasyTalking: Realistic Talking Portrait Generation via Coherent Motion Synthesis</title>
-<link>https://arxiv.org/abs/2504.04842</link>
-<guid>https://arxiv.org/abs/2504.04842</guid>
-<content:encoded><![CDATA[
-Creating a realistic animatable avatar from a single static portrait remains challenging. Existing approaches often struggle to capture subtle facial expressions, the associated global body movements, and the dynamic background. To address these limitations, we propose a novel framework that leverages a pretrained video diffusion transformer model to generate high-fidelity, coherent talking portraits with controllable motion dynamics. At the core of our work is a dual-stage audio-visual alignment strategy. In the first stage, we employ a clip-level training scheme to establish coherent global motion by aligning audio-driven dynamics across the entire scene, including the reference portrait, contextual objects, and background. In the second stage, we refine lip movements at the frame level using a lip-tracing mask, ensuring precise synchronization with audio signals. To preserve identity without compromising motion flexibility, we replace the commonly used reference network with a facial-focused cross-attention module that effectively maintains facial consistency throughout the video. Furthermore, we integrate a motion intensity modulation module that explicitly controls expression and body motion intensity, enabling controllable manipulation of portrait movements beyond mere lip motion. Extensive experimental results show that our proposed approach achieves higher quality with better realism, coherence, motion intensity, and identity preservation. Ours project page: https://fantasy-amap.github.io/fantasy-talking/.
-]]></content:encoded>
-<pubDate>Mon, 07 Apr 2025 04:56:01 GMT</pubDate>
-</item>
-<item>
-<title>DDT: Decoupled Diffusion Transformer</title>
-<link>https://arxiv.org/abs/2504.05741</link>
-<guid>https://arxiv.org/abs/2504.05741</guid>
-<content:encoded><![CDATA[
-Diffusion transformers have demonstrated remarkable generation quality, albeit requiring longer training iterations and numerous inference steps. In each denoising step, diffusion transformers encode the noisy inputs to extract the lower-frequency semantic component and then decode the higher frequency with identical modules. This scheme creates an inherent optimization dilemma: encoding low-frequency semantics necessitates reducing high-frequency components, creating tension between semantic encoding and high-frequency decoding. To resolve this challenge, we propose a new \color{ddtD}ecoupled \color{ddtD}iffusion \color{ddtT}ransformer~(\color{ddtDDT}), with a decoupled design of a dedicated condition encoder for semantic extraction alongside a specialized velocity decoder. Our experiments reveal that a more substantial encoder yields performance improvements as model size increases. For ImageNet 256times256, Our DDT-XL/2 achieves a new state-of-the-art performance of {1.31 FID}~(nearly 4times faster training convergence compared to previous diffusion transformers). For ImageNet 512times512, Our DDT-XL/2 achieves a new state-of-the-art FID of 1.28. Additionally, as a beneficial by-product, our decoupled architecture enhances inference speed by enabling the sharing self-condition between adjacent denoising steps. To minimize performance degradation, we propose a novel statistical dynamic programming approach to identify optimal sharing strategies.
-]]></content:encoded>
-<pubDate>Tue, 08 Apr 2025 03:17:45 GMT</pubDate>
-</item>
-<item>
-<title>HybriMoE: Hybrid CPU-GPU Scheduling and Cache Management for Efficient MoE Inference</title>
-<link>https://arxiv.org/abs/2504.05897</link>
-<guid>https://arxiv.org/abs/2504.05897</guid>
-<content:encoded><![CDATA[
-The Mixture of Experts (MoE) architecture has demonstrated significant advantages as it enables to increase the model capacity without a proportional increase in computation. However, the large MoE model size still introduces substantial memory demands, which usually requires expert offloading on resource-constrained platforms and incurs significant overhead. Hybrid CPU-GPU inference has been proposed to leverage CPU computation to reduce expert loading overhead but faces major challenges: on one hand, the expert activation patterns of MoE models are highly unstable, rendering the fixed mapping strategies in existing works inefficient; on the other hand, the hybrid CPU-GPU schedule for MoE is inherently complex due to the diverse expert sizes, structures, uneven workload distribution, etc. To address these challenges, in this paper, we propose HybriMoE, a hybrid CPU-GPU inference framework that improves resource utilization through a novel CPU-GPU scheduling and cache management system. HybriMoE introduces (i) a dynamic intra-layer scheduling strategy to balance workloads across CPU and GPU, (ii) an impact-driven inter-layer prefetching algorithm, and (iii) a score-based caching algorithm to mitigate expert activation instability. We implement HybriMoE on top of the kTransformers framework and evaluate it on three widely used MoE-based LLMs. Experimental results demonstrate that HybriMoE achieves an average speedup of 1.33times in the prefill stage and 1.70times in the decode stage compared to state-of-the-art hybrid MoE inference framework. Our code is available at: https://github.com/PKU-SEC-Lab/HybriMoE.
-]]></content:encoded>
-<pubDate>Tue, 08 Apr 2025 06:47:37 GMT</pubDate>
 </item>
 </channel>
 </rss>
