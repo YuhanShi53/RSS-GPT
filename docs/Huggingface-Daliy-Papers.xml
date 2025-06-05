@@ -5,15 +5,37 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>Subject Fidelity Optimization：一种提升零样本主体驱动生成主体保真度的新框架</title>
+<link>https://arxiv.org/abs/2506.03621</link>
+<guid>https://arxiv.org/abs/2506.03621</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出Subject Fidelity Optimization框架，通过对比学习增强生成模型的主体保真度。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为Subject Fidelity Optimization（SFO）的新颖比较学习框架，用于零样本主体驱动生成任务，旨在提高生成结果的主体保真度。不同于仅依赖正样本目标的传统监督微调方法，SFO引入合成负样本，并通过成对比较引导模型优先选择正样本。此外，为了生成有区分度且信息丰富的负样本，我们提出了条件退化负采样（CDNS），该方法通过故意破坏视觉和文本线索来实现，无需昂贵的人工标注。同时，我们重新加权扩散时间步长，使微调集中在主体细节显现的中间阶段。实验表明，结合CDNS的SFO在主体保真度和文本对齐方面显著优于现有基线模型。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.03621 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 04 Jun 2025 02:59:25 GMT</pubDate>
+<pubDate>Wed, 04 Jun 2025 02:59:25 GMT</pubDate>
+</item>
+<item>
+<title>基于推理控制场的大规模推理模型可控长链推理研究</title>
+<link>https://arxiv.org/abs/2506.00189</link>
+<guid>https://arxiv.org/abs/2506.00189</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出推理控制场方法提升大规模推理模型的长链推理能力。</p><br><br><p><strong>摘要：</strong> 本文针对大规模推理模型（LRMs）在长链推理中面临的欠思考与过度思考问题，提出了推理控制场（RCF），这是一种测试时通过注入结构化控制信号引导推理的新方法。RCF允许模型根据给定条件调整推理努力以解决复杂任务。此外，我们构建了Control-R-4K数据集，其中包含带有详细推理过程及对应控制字段的难题。为了进一步增强推理控制，我们还提出了条件蒸馏微调（CDF）方法，训练模型（如Control-R-32B）在测试时有效调整推理努力。实验表明，该方法在AIME2024和MATH500等基准测试中达到了最先进的性能，并实现了可控的长链推理过程。这项工作为测试时可扩展推理提供了一个有效的范例。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.00189 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 30 May 2025 15:59:44 GMT</pubDate>
+<pubDate>Fri, 30 May 2025 15:59:44 GMT</pubDate>
+</item>
+
+<item>
 <title>PoseFuse3D-KI：基于3D人体引导的可控关键帧插值框架</title>
 <link>https://arxiv.org/abs/2506.03119</link>
 <guid>https://arxiv.org/abs/2506.03119</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出PoseFuse3D-KI框架，结合3D人体引导信号改进视频插值效果。</p><br><br><p><strong>摘要：</strong> 现有关键帧插值方法主要依赖预训练的视频扩散先验，但缺乏三维几何引导，在处理复杂的人体运动时难以生成可信的结果，且对合成动态的控制有限。本文引入PoseFuse3D Keyframe Interpolator (PoseFuse3D-KI)，这是一种创新框架，通过将三维人体引导信号整合到扩散过程中实现以人为中心的关键帧插值(CHKI)。PoseFuse3D包含一个新颖的SMPL-X编码器，可将三维几何形状转换至二维潜在条件空间，并结合融合网络将这些三维线索与二维姿态嵌入相结合。为了评估该方法，我们构建了CHKI-Video数据集，其中标注了二维姿态和三维SMPL-X参数。实验表明，PoseFuse3D-KI在CHKI-Video上显著优于现有最先进方法，PSNR提升了9%，LPIPS降低了38%。此外，全面的消融研究证明了PoseFuse3D模型在提高插值保真度方面的有效性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.03119 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出PoseFuse3D-KI框架，结合3D人体引导信号改进视频插值效果。</p><br /><br /><p><strong>摘要：</strong> 现有关键帧插值方法主要依赖预训练的视频扩散先验，但缺乏三维几何引导，在处理复杂的人体运动时难以生成可信的结果，且对合成动态的控制有限。本文引入PoseFuse3D Keyframe Interpolator (PoseFuse3D-KI)，这是一种创新框架，通过将三维人体引导信号整合到扩散过程中实现以人为中心的关键帧插值(CHKI)。PoseFuse3D包含一个新颖的SMPL-X编码器，可将三维几何形状转换至二维潜在条件空间，并结合融合网络将这些三维线索与二维姿态嵌入相结合。为了评估该方法，我们构建了CHKI-Video数据集，其中标注了二维姿态和三维SMPL-X参数。实验表明，PoseFuse3D-KI在CHKI-Video上显著优于现有最先进方法，PSNR提升了9%，LPIPS降低了38%。此外，全面的消融研究证明了PoseFuse3D模型在提高插值保真度方面的有效性。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.03119" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 13:50:05 GMT</pubDate>
 <pubDate>Tue, 03 Jun 2025 13:50:05 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +43,8 @@
 <link>https://arxiv.org/abs/2506.02678</link>
 <guid>https://arxiv.org/abs/2506.02678</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种无需复杂标注的动态比例训练方法，显著减少推理输出的令牌数并保持准确性。</p><br><br><p><strong>摘要：</strong> 大型语言模型（LLMs）通过强化学习和扩展的链式思维技术取得了显著进展，但高效的语言推理，特别是在极长输出的推理阶段，仍然是研究领域的关注焦点。本文提出了一种动态比例训练管道，该方法不依赖复杂的注释或多个模型之间的插值。通过持续平衡模型系统-1和系统-2数据的权重，减少了冗余推理过程，同时保留了推理能力。我们在DeepSeek-R1-Distill-7B和DeepSeek-R1-Distill-14B模型上验证了这种方法，并在不同难度级别的基准测试中进行了评估。实验结果显示，该方法将输出令牌数减少了近40%，同时保持了推理的准确性。我们的代码和数据将在近期公开。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.02678 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种无需复杂标注的动态比例训练方法，显著减少推理输出的令牌数并保持准确性。</p><br /><br /><p><strong>摘要：</strong> 大型语言模型（LLMs）通过强化学习和扩展的链式思维技术取得了显著进展，但高效的语言推理，特别是在极长输出的推理阶段，仍然是研究领域的关注焦点。本文提出了一种动态比例训练管道，该方法不依赖复杂的注释或多个模型之间的插值。通过持续平衡模型系统-1和系统-2数据的权重，减少了冗余推理过程，同时保留了推理能力。我们在DeepSeek-R1-Distill-7B和DeepSeek-R1-Distill-14B模型上验证了这种方法，并在不同难度级别的基准测试中进行了评估。实验结果显示，该方法将输出令牌数减少了近40%，同时保持了推理的准确性。我们的代码和数据将在近期公开。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.02678" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 03 Jun 2025 05:23:41 GMT</pubDate>
 <pubDate>Tue, 03 Jun 2025 05:23:41 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +52,8 @@
 <link>https://arxiv.org/abs/2506.02281</link>
 <guid>https://arxiv.org/abs/2506.02281</guid>
 <content:encoded><![CDATA[
-
-  Current Reinforcement Fine-tuning (RFT) paradigms for Large Language Models (LLMs) suffer from sample inefficiency due to the redundant exposure of identical queries under uniform data sampling. While previous work has explored curriculum learning via heuristic difficulty metrics, these strategies exhibit limitations by neglecting the intrinsic learning signals generated by the model itself, thus leading to suboptimal training regimes. In this paper, we identify a model-inherent signal termed angle concentration that effectively reflects an LLM's capacity to learn from specific data. We theoretically and empirically demonstrate a correlation between the angular distribution of token hidden state vectors and the resulting gradient, revealing a learning preference for data exhibiting higher angle concentration. Inspired by this finding, we propose GAIN-RL, a Gradient-driven Angle-Informed Navigated RL framework. By leveraging the model's intrinsic angle concentration signal, GAIN-RL dynamically selects training data in each epoch, ensuring consistently impactful gradient updates and thus significantly enhancing overall training efficiency. Empirical evaluations show that GAIN-RL (GRPO) achieves over a 2.5x acceleration in training efficiency across diverse mathematical and coding tasks and varying model scales. Furthermore, GAIN-RL (GRPO)'s efficient sampling yields data-efficient training, achieving better performance with half the original data compared to vanilla GRPO with full training data. Code is realsed at https://github.com/wangqinsi1/GAINRL/tree/main.
-
+Current Reinforcement Fine-tuning (RFT) paradigms for Large Language Models (LLMs) suffer from sample inefficiency due to the redundant exposure of identical queries under uniform data sampling. While previous work has explored curriculum learning via heuristic difficulty metrics, these strategies exhibit limitations by neglecting the intrinsic learning signals generated by the model itself, thus leading to suboptimal training regimes. In this paper, we identify a model-inherent signal termed angle concentration that effectively reflects an LLM's capacity to learn from specific data. We theoretically and empirically demonstrate a correlation between the angular distribution of token hidden state vectors and the resulting gradient, revealing a learning preference for data exhibiting higher angle concentration. Inspired by this finding, we propose GAIN-RL, a Gradient-driven Angle-Informed Navigated RL framework. By leveraging the model's intrinsic angle concentration signal, GAIN-RL dynamically selects training data in each epoch, ensuring consistently impactful gradient updates and thus significantly enhancing overall training efficiency. Empirical evaluations show that GAIN-RL (GRPO) achieves over a 2.5x acceleration in training efficiency across diverse mathematical and coding tasks and varying model scales. Furthermore, GAIN-RL (GRPO)'s efficient sampling yields data-efficient training, achieving better performance with half the original data compared to vanilla GRPO with full training data. Code is realsed at https://github.com/wangqinsi1/GAINRL/tree/main.
 ]]></content:encoded>
-<pubDate>Mon, 02 Jun 2025 17:40:38 GMT</pubDate>
 <pubDate>Mon, 02 Jun 2025 17:40:38 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +61,8 @@
 <link>https://arxiv.org/abs/2506.01265</link>
 <guid>https://arxiv.org/abs/2506.01265</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究揭示上下文学习在长文本生成任务中的不足，并提出LongGuide提升模型表现。</p><br><br><p><strong>摘要：</strong> 上下文学习（ICL）是预训练大语言模型的一项重要能力，但在长文本生成任务如摘要生成中表现欠佳。本文通过实证与理论分析表明，仅依赖示例无法有效教会模型生成所需的语言和格式分布。为此，我们提出了LongGuide，它生成两种指导流：度量指南（MGs）和输出约束指南（OCGs），用于优化模型性能。实验显示，LongGuide显著提升了多种开源与闭源模型的表现，同时具备泛化性和与其他提示优化器的协同效应。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.01265 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究揭示上下文学习在长文本生成任务中的不足，并提出LongGuide提升模型表现。</p><br /><br /><p><strong>摘要：</strong> 上下文学习（ICL）是预训练大语言模型的一项重要能力，但在长文本生成任务如摘要生成中表现欠佳。本文通过实证与理论分析表明，仅依赖示例无法有效教会模型生成所需的语言和格式分布。为此，我们提出了LongGuide，它生成两种指导流：度量指南（MGs）和输出约束指南（OCGs），用于优化模型性能。实验显示，LongGuide显著提升了多种开源与闭源模型的表现，同时具备泛化性和与其他提示优化器的协同效应。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.01265" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Sun, 01 Jun 2025 22:35:24 GMT</pubDate>
 <pubDate>Sun, 01 Jun 2025 22:35:24 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +70,8 @@
 <link>https://arxiv.org/abs/2506.01004</link>
 <guid>https://arxiv.org/abs/2506.01004</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种无需训练的视频语义混合方法MoCA-Video。</p><br><br><p><strong>摘要：</strong> MoCA-Video（Motion-Aware Concept Alignment in Video）是一种无需训练的框架，旨在弥合图像领域语义混合与视频之间的差距。通过将用户提供的参考图像的语义特征注入到视频中的特定对象，同时保持原始运动和视觉背景，该方法利用对角去噪调度和类别无关分割技术，在潜在空间中检测和跟踪对象并精确控制混合对象的空间位置。此外，通过引入基于动量的语义校正和伽马残差噪声稳定技术确保帧间时间一致性。实验表明，MoCA-Video在SSIM、LPIPS等标准指标上表现优异，并提出了新的CASS（概念对齐偏移分数）度量方法，即使没有训练或微调，其性能也显著优于现有基线模型。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.01004 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种无需训练的视频语义混合方法MoCA-Video。</p><br /><br /><p><strong>摘要：</strong> MoCA-Video（Motion-Aware Concept Alignment in Video）是一种无需训练的框架，旨在弥合图像领域语义混合与视频之间的差距。通过将用户提供的参考图像的语义特征注入到视频中的特定对象，同时保持原始运动和视觉背景，该方法利用对角去噪调度和类别无关分割技术，在潜在空间中检测和跟踪对象并精确控制混合对象的空间位置。此外，通过引入基于动量的语义校正和伽马残差噪声稳定技术确保帧间时间一致性。实验表明，MoCA-Video在SSIM、LPIPS等标准指标上表现优异，并提出了新的CASS（概念对齐偏移分数）度量方法，即使没有训练或微调，其性能也显著优于现有基线模型。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.01004" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Sun, 01 Jun 2025 09:28:04 GMT</pubDate>
 <pubDate>Sun, 01 Jun 2025 09:28:04 GMT</pubDate>
 </item>
 <item>
@@ -69,11 +79,8 @@
 <link>https://arxiv.org/abs/2506.00227</link>
 <guid>https://arxiv.org/abs/2506.00227</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出了一种基于扩散技术的可控汽车碰撞视频生成模型Ctrl-Crash。</p><br><br><p><strong>摘要：</strong> 近年来，视频扩散技术取得了显著进展，但在生成逼真的汽车碰撞场景方面仍面临挑战，主要由于大多数驾驶数据集中此类事件稀缺。为了提升交通安全研究，需要真实且可控的事故模拟。本文介绍的Ctrl-Crash是一种可控制的汽车碰撞视频生成模型，它通过边界框、碰撞类型及初始图像帧等信号进行条件生成。该方法支持反事实场景生成，使得输入的微小变化可以导致完全不同的碰撞结果。此外，在推理阶段，我们利用无分类器引导机制，对每种条件信号独立调节缩放比例，以实现精细控制。实验表明，Ctrl-Crash在定量视频质量指标（如FVD和JEDi）及定性物理真实性的人类评估中均达到最先进的性能，超越了先前基于扩散的方法。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.00227 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出了一种基于扩散技术的可控汽车碰撞视频生成模型Ctrl-Crash。</p><br /><br /><p><strong>摘要：</strong> 近年来，视频扩散技术取得了显著进展，但在生成逼真的汽车碰撞场景方面仍面临挑战，主要由于大多数驾驶数据集中此类事件稀缺。为了提升交通安全研究，需要真实且可控的事故模拟。本文介绍的Ctrl-Crash是一种可控制的汽车碰撞视频生成模型，它通过边界框、碰撞类型及初始图像帧等信号进行条件生成。该方法支持反事实场景生成，使得输入的微小变化可以导致完全不同的碰撞结果。此外，在推理阶段，我们利用无分类器引导机制，对每种条件信号独立调节缩放比例，以实现精细控制。实验表明，Ctrl-Crash在定量视频质量指标（如FVD和JEDi）及定性物理真实性的人类评估中均达到最先进的性能，超越了先前基于扩散的方法。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.00227" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 30 May 2025 17:04:38 GMT</pubDate>
 <pubDate>Fri, 30 May 2025 17:04:38 GMT</pubDate>
 </item>
 <item>
@@ -81,14 +88,10 @@
 <link>https://arxiv.org/abs/2505.22704</link>
 <guid>https://arxiv.org/abs/2505.22704</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出REAL框架，利用程序分析指导反馈提高大模型代码安全性与可维护性。</p><br><br><p><strong>摘要：</strong> 当前基于大型语言模型（LLMs）的代码生成技术（即vibe coding）在生产环境中应用广泛，但无法充分保障代码质量，特别是在安全性和可维护性方面存在显著不足。传统方法如监督微调和基于规则的后处理需要大量人工标注或易碎的启发式规则，难以实现规模化应用。本文提出REAL框架，采用强化学习方法，借助程序分析检测安全缺陷和可维护性问题，同时结合单元测试确保功能正确性，从而激励模型生成高质量代码。与现有方法不同，REAL无需依赖特定提示或参考代码，实现了无手动干预的自动化监督。实验表明，REAL在多个数据集和模型规模上的功能与代码质量评估中均优于最先进的方法，有效弥合了原型开发与生产级代码之间的差距，使LLMs能够在速度和质量之间取得平衡。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.22704 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出REAL框架，利用程序分析指导反馈提高大模型代码安全性与可维护性。</p><br /><br /><p><strong>摘要：</strong> 当前基于大型语言模型（LLMs）的代码生成技术（即vibe coding）在生产环境中应用广泛，但无法充分保障代码质量，特别是在安全性和可维护性方面存在显著不足。传统方法如监督微调和基于规则的后处理需要大量人工标注或易碎的启发式规则，难以实现规模化应用。本文提出REAL框架，采用强化学习方法，借助程序分析检测安全缺陷和可维护性问题，同时结合单元测试确保功能正确性，从而激励模型生成高质量代码。与现有方法不同，REAL无需依赖特定提示或参考代码，实现了无手动干预的自动化监督。实验表明，REAL在多个数据集和模型规模上的功能与代码质量评估中均优于最先进的方法，有效弥合了原型开发与生产级代码之间的差距，使LLMs能够在速度和质量之间取得平衡。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.22704" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 28 May 2025 13:57:47 GMT</pubDate>
-<pubDate>Wed, 28 May 2025 13:57:47 GMT</pubDate>
 </item>
-
 <item>
 <title>MERIT与Coral：多条件语义检索的新突破</title>
 <link>https://arxiv.org/abs/2506.03144</link>
@@ -9025,69 +9028,6 @@ Effective denoising is crucial in low-dose CT to enhance subtle structures and l
 <div><p style="color: gray;">NodeRAG通过引入异构图结构优化检索增强生成性能。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种名为NodeRAG的新框架，该框架以图为中心，通过引入异构图结构，实现了图算法在检索增强生成（RAG）工作流中的无缝整合。与现有方法相比，NodeRAG不仅提升了索引时间、查询时间和存储效率，还在多跳基准测试和开放式一对一评估中展现出更优的问题回答能力。此外，NodeRAG在使用最少检索标记的情况下，表现出了显著的优势，尤其是在GraphRAG和LightRAG等方法的基础上进一步优化了性能。NodeRAG的代码已开源，可在GitHub上获取。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.11544" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 15 Apr 2025 14:24:00 GMT</pubDate>
-</item>
-<item>
-<title>构建透明图像与视频理解研究的开放性感知语言模型</title>
-<link>https://arxiv.org/abs/2504.13180</link>
-<guid>https://arxiv.org/abs/2504.13180</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">研究提出通过开源框架构建透明的感知语言模型用于图像和视频理解。</p><br /><br /><p><strong>摘要：</strong> 视觉语言模型在计算机视觉领域至关重要，但许多高性能模型仍为闭源状态，限制了科学进展。尽管学术界尝试通过黑盒模型蒸馏生成训练数据取得显著基准成果，但缺乏对教师模型及其数据来源的了解阻碍了真正的科学进步。本文提出在完全开源且可复现的框架下构建感知语言模型（PLM），以推动图像和视频理解领域的透明研究。我们分析了标准训练管道，并探索大规模合成数据，发现特别是在详细视频理解方面存在关键的数据缺口。为此，我们发布了包含280万个细粒度视频问答对的人类标注实例以及时空定位的视频描述。此外，我们推出了PLM-VideoBench，这是一个评估具有挑战性的视频理解任务的工具包，重点关注对视频“什么”、“哪里”、“何时”和“如何”的推理能力。我们的工作通过提供数据、训练方法、代码和模型实现了完全的可复现性。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.13180" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 17 Apr 2025 13:59:56 GMT</pubDate>
-</item>
-<item>
-<title>Complex-Edit：基于指令的图像编辑模型综合评估基准</title>
-<link>https://arxiv.org/abs/2504.13143</link>
-<guid>https://arxiv.org/abs/2504.13143</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出Complex-Edit基准，评估指令复杂性对图像编辑模型的影响。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一个名为Complex-Edit的综合基准，用于系统性评估基于指令的图像编辑模型在不同复杂度指令下的表现。通过利用GPT-4o大规模自动生成多样化编辑指令，我们设计了一套“编辑链”管道来构建复杂的编辑任务。此外，还引入了一系列指标和基于视觉语言模型的自动化评估流程，以支持大规模性能评估。研究发现开源模型显著落后于闭源模型，且随着指令复杂性的增加，模型在保留输入图像关键元素和整体美学质量方面的能力显著下降。此外，将复杂指令分解为原子步骤执行会降低性能，而Best-of-N策略能提升直接编辑和逐步方法的效果。有趣的是，训练中使用合成数据会导致模型生成的图像显得更加人工化，这种现象在GPT-4o输出中也有所体现。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.13143" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 17 Apr 2025 13:51:59 GMT</pubDate>
-</item>
-<item>
-<title>基于Vision Transformer的无人机跟踪中抗遮挡表示学习</title>
-<link>https://arxiv.org/abs/2504.09228</link>
-<guid>https://arxiv.org/abs/2504.09228</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出一种新方法增强单流ViT模型在航拍跟踪中的遮挡鲁棒性。</p><br /><br /><p><strong>摘要：</strong> 本文针对使用视觉Transformer(ViT)主干网络的单流架构在实时无人机跟踪中的不足，即缺乏有效处理遮挡的策略，提出了一种基于ViT学习抗遮挡表示（ORR）的新方法。通过引入随机屏蔽操作模拟目标遮挡，使ViT模型具备更强的目标遮挡鲁棒性，构建了名为ORTrack的框架。此外，为满足实时应用需求，设计了自适应特征知识蒸馏（AFKD）方法，生成高效的学生模型ORTrack-D，既保留了ORTrack的性能，又提高了效率。在多个基准数据集上的实验验证了该方法的有效性和领先性能，代码已开源。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.09228" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Sat, 12 Apr 2025 10:06:50 GMT</pubDate>
-</item>
-<item>
-<title>70% Size, 100% Accuracy: Lossless LLM Compression for Efficient GPU Inference via Dynamic-Length Float</title>
-<link>https://arxiv.org/abs/2504.11651</link>
-<guid>https://arxiv.org/abs/2504.11651</guid>
-<content:encoded><![CDATA[
-Large Language Models (LLMs) have grown rapidly in size, creating significant challenges for efficient deployment on resource-constrained hardware. In this paper, we introduce Dynamic-Length Float (DFloat11), a lossless compression framework that reduces LLM size by 30% while preserving outputs that are bit-for-bit identical to the original model. DFloat11 is motivated by the low entropy in the BFloat16 weight representation of LLMs, which reveals significant inefficiency in existing storage format. By applying entropy coding, DFloat11 assigns dynamic-length encodings to weights based on frequency, achieving near information-optimal compression without any loss of precision. To facilitate efficient inference with dynamic-length encodings, we develop a custom GPU kernel for fast online decompression. Our design incorporates the following: (i) decomposition of memory-intensive lookup tables (LUTs) into compact LUTs that fit in GPU SRAM, (ii) a two-phase kernel for coordinating thread read/write positions using lightweight auxiliary variables, and (iii) transformer-block-level decompression to minimize latency. Experiments on recent models, including Llama-3.1, Qwen-2.5, and Gemma-3, validates our hypothesis that DFloat11 achieves around 30% model size reduction while preserving bit-for-bit exact outputs. Compared to a potential alternative of offloading parts of an uncompressed model to the CPU to meet memory constraints, DFloat11 achieves 1.9-38.8x higher throughput in token generation. With a fixed GPU memory budget, DFloat11 enables 5.3-13.17x longer context lengths than uncompressed models. Notably, our method enables lossless inference of Llama-3.1-405B, an 810GB model, on a single node equipped with 8x80GB GPUs. Our code and models are available at https://github.com/LeanModels/DFloat11.
-]]></content:encoded>
-<pubDate>Tue, 15 Apr 2025 18:38:38 GMT</pubDate>
-</item>
-<item>
-<title>Perception Encoder：通过视觉-语言对比学习实现多任务通用编码器</title>
-<link>https://arxiv.org/abs/2504.13181</link>
-<guid>https://arxiv.org/abs/2504.13181</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">仅靠对比视觉-语言训练即可生成适用于多种下游任务的强大通用嵌入。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了名为Perception Encoder（PE）的最先进图像和视频理解编码器，该编码器通过简单的视觉-语言学习进行训练。传统视觉编码器依赖于针对具体任务定制的各种预训练目标，而我们发现，经过精心调校的图像预训练方法和稳健的视频数据引擎优化后，仅基于对比视觉-语言训练就能产生适用于分类、描述、定位等所有这些下游任务的强大通用嵌入。然而，这些嵌入隐藏在网络的中间层中，为此我们提出了两种对齐方法：用于多模态语言建模的语言对齐和用于密集预测的空间对齐。结合核心对比检查点，PE模型家族在零样本图像和视频分类与检索、文档问答、图像问答、视频问答以及检测、深度估计和跟踪等空间任务上均取得了最先进的性能。为了促进进一步研究，我们将发布我们的模型、代码以及一个包含合成和人工注释视频的新颖数据集。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.13181" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 17 Apr 2025 13:59:57 GMT</pubDate>
-</item>
-<item>
-<title>MetaSynth：通过元提示增强合成数据多样性以实现领域自适应</title>
-<link>https://arxiv.org/abs/2504.12563</link>
-<guid>https://arxiv.org/abs/2504.12563</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">MetaSynth通过元提示生成多样化合成数据，成功将大型语言模型适配到金融和生物医学领域。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了利用合成数据进行领域自适应的问题，特别是针对小型语言模型Phi-3.5和Phi-4，这些模型依赖由大型语言模型生成的合成数据。然而，合成数据的低多样性限制了其在改进其他模型方面的应用。为解决这一问题，我们提出了MetaSynth方法，该方法通过元提示机制，让多个“专家”大型语言模型协同生成数据，从而提高合成数据的多样性。实验表明，仅使用2500万token的MetaSynth生成的合成数据，就能有效将已训练好的大型语言模型（Mistral-7B-v0.3）适配到金融和生物医学两个特定领域，同时不影响其在通用任务中的性能。此外，通过七种自动化指标评估，MetaSynth生成的合成数据的多样性接近大型语言模型预训练语料库。持续预训练Mistral-7B-v0.3模型显示，在金融领域提升了4.08%，在生物医学领域提升了13.75%的表现。相比之下，使用模板提示生成的数据即使包含真实数据示例，也会导致模型性能下降。研究结果表明，使用MetaSynth生成的少量多样化合成数据即可实现有效的领域自适应。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.12563" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 16 Apr 2025 21:25:15 GMT</pubDate>
-</item>
-<item>
-<title>基于学习的跨相机色彩恒常性方法</title>
-<link>https://arxiv.org/abs/2504.07959</link>
-<guid>https://arxiv.org/abs/2504.07959</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出一种无需重新训练即可适应新相机的跨相机色彩校正学习方法。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种基于学习的方法，用于解决计算色彩恒常性（即白平衡）问题中的跨相机适应性挑战。该方法利用图像信号处理器(ISP)中预校准的颜色校正矩阵(CCM)，将标准空间的颜色映射到相机的原始颜色空间，并通过编码生成紧凑的相机指纹嵌入(CFE)，从而实现对未知相机的适应。为了防止训练过程中因相机数量有限导致的过拟合，引入了一种相机间数据插值增强技术。实验结果表明，该方法在多个数据集和网络结构上实现了最先进的跨相机色彩恒常性性能，同时保持轻量化且仅依赖于ISP中已有的数据。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.07959" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 10 Apr 2025 13:59:31 GMT</pubDate>
 </item>
 </channel>
 </rss>
