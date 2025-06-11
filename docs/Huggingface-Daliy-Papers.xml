@@ -5,15 +5,37 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>基于正交匹配追踪的预训练语言模型跨分词器移植方法</title>
+<link>https://arxiv.org/abs/2506.06607</link>
+<guid>https://arxiv.org/abs/2506.06607</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种无需微调的正交匹配追踪方法，实现大型语言模型的跨分词器迁移。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种无需微调的预训练大型语言模型（LLMs）的分词器移植方法，通过正交匹配追踪（OMP）重建未见令牌嵌入。该方法将词汇外令牌近似为共享令牌的稀疏线性组合，在两个具有挑战性的跨分词器任务中展示了最佳的零样本性能保存能力。与其他零样本方法相比，OMP在多个基准测试中表现出色，且有效解决了大分词器差异问题。此外，该技术支持预训练权重的直接重用，适用于跨分词器的知识蒸馏、推测解码、集成、合并及领域特定词汇适应。我们还将此方法集成到开源工具mergekit-tokensurgeon中，用于后处理词汇对齐。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.06607 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 06 Jun 2025 20:51:27 GMT</pubDate>
+<pubDate>Fri, 06 Jun 2025 20:51:27 GMT</pubDate>
+</item>
+<item>
+<title>NetPress: Dynamically Generated LLM Benchmarks for Network Applications</title>
+<link>https://arxiv.org/abs/2506.03231</link>
+<guid>https://arxiv.org/abs/2506.03231</guid>
+<content:encoded><![CDATA[
+
+  Despite growing interest in domain-specific benchmarking of large language models (LLMs) and agents, current evaluations remain limited to static, small-scale datasets, especially in high-stakes tasks like network operations that demand reliability for deployments. We present NetPress, an automated benchmark generation framework for evaluating LLM agents in network applications. NetPress introduces a unified abstraction with state and action, enabling dynamic generation of diverse query sets along with corresponding ground truths. At runtime, users can specify benchmark configurations to generate millions of queries on the fly. In addition to dynamic benchmark construction, NetPress integrates with network emulators to provide realistic environment feedback, supporting comprehensive evaluation across correctness, safety, and latency. We instantiate NetPress on three representative applications, revealing interesting fine-grained differences in agent behavior that static, correctness-only benchmarks often miss. NetPress moves LLM evaluation toward realistic, scalable testing in infrastructure-centric domains, helping close the gap between benchmark performance and real-world deployment readiness. Code is available at https://github.com/Froot-NetSys/NetPress.
+
+]]></content:encoded>
+<pubDate>Tue, 03 Jun 2025 10:04:22 GMT</pubDate>
+<pubDate>Tue, 03 Jun 2025 10:04:22 GMT</pubDate>
+</item>
+
+<item>
 <title>无需权重更新的动态视图合成</title>
 <link>https://arxiv.org/abs/2506.08004</link>
 <guid>https://arxiv.org/abs/2506.08004</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>通过重新设计预训练视频扩散模型的噪声初始化阶段实现高保真动态视图合成。</p><br><br><p><strong>摘要：</strong> 本文将动态视图合成问题视为无监督训练中的逆问题，提出了一种不需权重更新或辅助模块的方法。我们首先指出由零终端信噪比（SNR）调度引起的确定性反转基本障碍，并通过引入新的噪声表示方法——K阶递归噪声表示（K-order Recursive Noise Representation）解决该问题。此表示法具有闭合形式表达，可精确高效地对齐VAE编码与DDIM反演潜在变量。此外，针对相机运动导致的新可见区域，我们提出随机潜在调制（Stochastic Latent Modulation），在潜在空间上进行基于可见性的采样以完成被遮挡区域。实验表明，通过结构化潜在变量操作可以在噪声初始化阶段有效执行动态视图合成。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.08004 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">通过重新设计预训练视频扩散模型的噪声初始化阶段实现高保真动态视图合成。</p><br /><br /><p><strong>摘要：</strong> 本文将动态视图合成问题视为无监督训练中的逆问题，提出了一种不需权重更新或辅助模块的方法。我们首先指出由零终端信噪比（SNR）调度引起的确定性反转基本障碍，并通过引入新的噪声表示方法——K阶递归噪声表示（K-order Recursive Noise Representation）解决该问题。此表示法具有闭合形式表达，可精确高效地对齐VAE编码与DDIM反演潜在变量。此外，针对相机运动导致的新可见区域，我们提出随机潜在调制（Stochastic Latent Modulation），在潜在空间上进行基于可见性的采样以完成被遮挡区域。实验表明，通过结构化潜在变量操作可以在噪声初始化阶段有效执行动态视图合成。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.08004" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 09 Jun 2025 13:59:47 GMT</pubDate>
 <pubDate>Mon, 09 Jun 2025 13:59:47 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +43,8 @@
 <link>https://arxiv.org/abs/2506.07982</link>
 <guid>https://arxiv.org/abs/2506.07982</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>新基准tau^2-bench通过双控环境模拟真实场景，评估对话AI代理的推理与用户引导能力。</p><br><br><p><strong>摘要：</strong> 现有的对话AI代理评估基准多局限于单一控制环境，即仅AI代理可操作工具与外界交互，而用户作为被动的信息提供者。这种设置与现实世界中的应用场景（如技术支持）存在差异，在这些场景中用户需主动参与改变共享世界的状态。为弥合这一差距，本文提出了tau^2-bench，该基准具有四个关键贡献：首先，构建了一个新颖的电信双控领域，建模为Dec-POMDP，允许AI代理和用户共同利用工具在共享动态环境中行动，测试代理的协调与沟通能力；其次，开发了一种组合任务生成器，从原子组件编程生成多样化且可验证的任务，确保领域覆盖度和可控复杂性；第三，设计了一个紧密耦合环境的可靠用户模拟器，其行为受制于工具和可观测状态，提高仿真保真度；最后，通过多种消融分析细致评估代理性能，包括区分推理错误与沟通/协调错误。实验表明，当代理从无用户环境切换到双控环境时，性能显著下降，凸显出引导用户面临的挑战。总体而言，tau^2-bench为需要有效推理并引导用户行为的代理提供了受控测试平台。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.07982 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">新基准tau^2-bench通过双控环境模拟真实场景，评估对话AI代理的推理与用户引导能力。</p><br /><br /><p><strong>摘要：</strong> 现有的对话AI代理评估基准多局限于单一控制环境，即仅AI代理可操作工具与外界交互，而用户作为被动的信息提供者。这种设置与现实世界中的应用场景（如技术支持）存在差异，在这些场景中用户需主动参与改变共享世界的状态。为弥合这一差距，本文提出了tau^2-bench，该基准具有四个关键贡献：首先，构建了一个新颖的电信双控领域，建模为Dec-POMDP，允许AI代理和用户共同利用工具在共享动态环境中行动，测试代理的协调与沟通能力；其次，开发了一种组合任务生成器，从原子组件编程生成多样化且可验证的任务，确保领域覆盖度和可控复杂性；第三，设计了一个紧密耦合环境的可靠用户模拟器，其行为受制于工具和可观测状态，提高仿真保真度；最后，通过多种消融分析细致评估代理性能，包括区分推理错误与沟通/协调错误。实验表明，当代理从无用户环境切换到双控环境时，性能显著下降，凸显出引导用户面临的挑战。总体而言，tau^2-bench为需要有效推理并引导用户行为的代理提供了受控测试平台。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.07982" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 09 Jun 2025 13:52:18 GMT</pubDate>
 <pubDate>Mon, 09 Jun 2025 13:52:18 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +52,8 @@
 <link>https://arxiv.org/abs/2506.07971</link>
 <guid>https://arxiv.org/abs/2506.07971</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种基于控制论的视频多模态大语言模型自适应框架，显著提升模型性能。</p><br><br><p><strong>摘要：</strong> 现有的多模态大语言模型在处理长视频或复杂视频时面临计算需求高、鲁棒性差和准确性有限的问题，尤其是参数较少的模型。为解决这些问题，我们提出了名为CyberV的创新框架，该框架受到控制论原理的启发，将视频多模态大语言模型重新设计为具备自监测、自修正和动态资源分配能力的自适应系统。具体而言，CyberV引入了一个由多模态大语言模型推理系统、传感器和控制器组成的控制环路。传感器监控推理过程并收集中间解释，控制器则决定何时触发自修正并生成反馈以指导下一轮推理。此框架无需重新训练或添加额外组件即可增强冻结的多模态大语言模型。实验结果显示，在VideoMMMU基准上，CyberV使Qwen2.5-VL-7B提升了8.3%，InternVL3-8B提升了5.5%，甚至超过了竞争性的专有模型GPT-4o。当应用于Qwen2.5-VL-72B时，性能提升达10.0%，达到接近人类专家的表现。此外，该方法在VideoMME和WorldSense等通用基准测试中也显示出一致的改进，证明了其在提高动态视频理解方面模型的鲁棒性和准确性方面的有效性及泛化能力。相关代码已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.07971 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种基于控制论的视频多模态大语言模型自适应框架，显著提升模型性能。</p><br /><br /><p><strong>摘要：</strong> 现有的多模态大语言模型在处理长视频或复杂视频时面临计算需求高、鲁棒性差和准确性有限的问题，尤其是参数较少的模型。为解决这些问题，我们提出了名为CyberV的创新框架，该框架受到控制论原理的启发，将视频多模态大语言模型重新设计为具备自监测、自修正和动态资源分配能力的自适应系统。具体而言，CyberV引入了一个由多模态大语言模型推理系统、传感器和控制器组成的控制环路。传感器监控推理过程并收集中间解释，控制器则决定何时触发自修正并生成反馈以指导下一轮推理。此框架无需重新训练或添加额外组件即可增强冻结的多模态大语言模型。实验结果显示，在VideoMMMU基准上，CyberV使Qwen2.5-VL-7B提升了8.3%，InternVL3-8B提升了5.5%，甚至超过了竞争性的专有模型GPT-4o。当应用于Qwen2.5-VL-72B时，性能提升达10.0%，达到接近人类专家的表现。此外，该方法在VideoMME和WorldSense等通用基准测试中也显示出一致的改进，证明了其在提高动态视频理解方面模型的鲁棒性和准确性方面的有效性及泛化能力。相关代码已开源。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.07971" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 09 Jun 2025 13:45:18 GMT</pubDate>
 <pubDate>Mon, 09 Jun 2025 13:45:18 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +61,8 @@
 <link>https://arxiv.org/abs/2506.07564</link>
 <guid>https://arxiv.org/abs/2506.07564</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出SAFEFLOW框架，强化多模态代理的信息流控制与安全性。</p><br><br><p><strong>摘要：</strong> 近年来，大型语言模型（LLMs）和视觉语言模型（VLMs）的进步推动了复杂推理与工具使用的自主代理的发展。然而，现有代理框架仍存在脆弱性问题，缺乏安全的信息流动机制、可靠性以及多代理协作能力。本文引入SAFEFLOW，一种协议级框架，用于构建可信的LLM/VLM驱动代理。该框架通过细粒度的信息流控制（IFC），精确追踪代理间交换数据的来源、完整性和保密性。此外，它通过事务执行、冲突解决和共享状态的安全调度，在并发多代理环境中确保全局一致性。为了增强鲁棒性，SAFEFLOW还引入了写前日志记录、回滚和安全缓存等机制。通过构建SAFEFLOWBENCH基准套件验证其性能，实验表明，即使在敌对环境下，基于SAFEFLOW的代理也能保持优异的任务表现和安全保障，显著优于当前最先进的方法。这一成果奠定了构建原则性、鲁棒且安全的代理生态系统的基石，推动可靠自治领域的前沿发展。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.07564 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出SAFEFLOW框架，强化多模态代理的信息流控制与安全性。</p><br /><br /><p><strong>摘要：</strong> 近年来，大型语言模型（LLMs）和视觉语言模型（VLMs）的进步推动了复杂推理与工具使用的自主代理的发展。然而，现有代理框架仍存在脆弱性问题，缺乏安全的信息流动机制、可靠性以及多代理协作能力。本文引入SAFEFLOW，一种协议级框架，用于构建可信的LLM/VLM驱动代理。该框架通过细粒度的信息流控制（IFC），精确追踪代理间交换数据的来源、完整性和保密性。此外，它通过事务执行、冲突解决和共享状态的安全调度，在并发多代理环境中确保全局一致性。为了增强鲁棒性，SAFEFLOW还引入了写前日志记录、回滚和安全缓存等机制。通过构建SAFEFLOWBENCH基准套件验证其性能，实验表明，即使在敌对环境下，基于SAFEFLOW的代理也能保持优异的任务表现和安全保障，显著优于当前最先进的方法。这一成果奠定了构建原则性、鲁棒且安全的代理生态系统的基石，推动可靠自治领域的前沿发展。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.07564" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 09 Jun 2025 05:04:37 GMT</pubDate>
 <pubDate>Mon, 09 Jun 2025 05:04:37 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +70,8 @@
 <link>https://arxiv.org/abs/2506.06658</link>
 <guid>https://arxiv.org/abs/2506.06658</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种通过自我适应迭代提升视频模型性能的方法解决未知任务。</p><br><br><p><strong>摘要：</strong> 本文针对基于演示训练的视频生成模型在解决机器人任务时泛化能力不足的问题，提出了Self-Adapting Improvement Loop (SAIL) 方法。该方法利用互联网规模预训练的视频模型进行领域内适应，收集自我产生的轨迹数据，并迭代更新领域内视频模型，从而持续提升特定任务的性能。研究将SAIL应用于MetaWorld任务集及真实机械臂的两个操作任务中，发现即使初始领域内演示质量较低或未经过筛选的数据，模型仍能在多个迭代后显著改善对新任务的表现。这表明通过互联网规模数据的适应性学习与在线经验累积，可以逐步构建高性能的视频模型以应对未知的机器人任务挑战。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.06658 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种通过自我适应迭代提升视频模型性能的方法解决未知任务。</p><br /><br /><p><strong>摘要：</strong> 本文针对基于演示训练的视频生成模型在解决机器人任务时泛化能力不足的问题，提出了Self-Adapting Improvement Loop (SAIL) 方法。该方法利用互联网规模预训练的视频模型进行领域内适应，收集自我产生的轨迹数据，并迭代更新领域内视频模型，从而持续提升特定任务的性能。研究将SAIL应用于MetaWorld任务集及真实机械臂的两个操作任务中，发现即使初始领域内演示质量较低或未经过筛选的数据，模型仍能在多个迭代后显著改善对新任务的表现。这表明通过互联网规模数据的适应性学习与在线经验累积，可以逐步构建高性能的视频模型以应对未知的机器人任务挑战。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.06658" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Sat, 07 Jun 2025 00:34:37 GMT</pubDate>
 <pubDate>Sat, 07 Jun 2025 00:34:37 GMT</pubDate>
 </item>
 <item>
@@ -69,11 +79,8 @@
 <link>https://arxiv.org/abs/2506.05598</link>
 <guid>https://arxiv.org/abs/2506.05598</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种通过用户交互生成合成人格以提升个性化奖励模型准确性的方法。</p><br><br><p><strong>摘要：</strong> 近期对大型语言模型多样对齐的需求推动了适应不同用户偏好的研究，但现有个性化奖励模型大多依赖额外的身份信息。本文介绍SynthesizeMe方法，通过用户交互生成合成人格，用于个性化奖励建模。该方法首先生成并验证解释用户偏好的推理，然后从这些推理中诱导出合成人格，并筛选出有意义的用户交互以构建个性化提示。实验表明，使用SynthesizeMe生成的提示可将Chatbot Arena上的个性化LLM作为评委的准确性提高4.4%，并与奖励模型结合在PersonalRewardBench上达到最佳性能。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.05598 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种通过用户交互生成合成人格以提升个性化奖励模型准确性的方法。</p><br /><br /><p><strong>摘要：</strong> 近期对大型语言模型多样对齐的需求推动了适应不同用户偏好的研究，但现有个性化奖励模型大多依赖额外的身份信息。本文介绍SynthesizeMe方法，通过用户交互生成合成人格，用于个性化奖励建模。该方法首先生成并验证解释用户偏好的推理，然后从这些推理中诱导出合成人格，并筛选出有意义的用户交互以构建个性化提示。实验表明，使用SynthesizeMe生成的提示可将Chatbot Arena上的个性化LLM作为评委的准确性提高4.4%，并与奖励模型结合在PersonalRewardBench上达到最佳性能。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.05598" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 05 Jun 2025 17:23:16 GMT</pubDate>
 <pubDate>Thu, 05 Jun 2025 17:23:16 GMT</pubDate>
 </item>
 <item>
@@ -81,11 +88,8 @@
 <link>https://arxiv.org/abs/2506.04651</link>
 <guid>https://arxiv.org/abs/2506.04651</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究显示，通过多角色协作，LLM可以自主改进策略规划能力。</p><br><br><p><strong>摘要：</strong> 本文探讨了大型语言模型（LLMs）在面对需要长期战略规划的任务时的表现，并提出了一种多角色协作的自适应架构。该架构由分析者、研究者、编码者和玩家四个角色组成，共同迭代优化游戏策略。实验基于《卡坦岛》桌游展开，利用开源框架Catanatron评估了从基础游戏代理到能够自我重写代码的复杂系统。结果显示，相较于人工设计的静态代理，由LLMs驱动的自演化代理在Claude 3.7和GPT-4o等模型的支持下，展现出更强的适应性和策略调整能力，证明了LLMs在持续学习和策略优化方面的潜力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.04651 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究显示，通过多角色协作，LLM可以自主改进策略规划能力。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了大型语言模型（LLMs）在面对需要长期战略规划的任务时的表现，并提出了一种多角色协作的自适应架构。该架构由分析者、研究者、编码者和玩家四个角色组成，共同迭代优化游戏策略。实验基于《卡坦岛》桌游展开，利用开源框架Catanatron评估了从基础游戏代理到能够自我重写代码的复杂系统。结果显示，相较于人工设计的静态代理，由LLMs驱动的自演化代理在Claude 3.7和GPT-4o等模型的支持下，展现出更强的适应性和策略调整能力，证明了LLMs在持续学习和策略优化方面的潜力。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.04651" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 05 Jun 2025 01:45:24 GMT</pubDate>
 <pubDate>Thu, 05 Jun 2025 01:45:24 GMT</pubDate>
 </item>
 <item>
@@ -93,11 +97,8 @@
 <link>https://arxiv.org/abs/2506.00258</link>
 <guid>https://arxiv.org/abs/2506.00258</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究显示当前多模态大语言模型在隐含推理任务中常忽视潜在问题，但简单干预可显著提升表现。</p><br><br><p><strong>摘要：</strong> 多模态大语言模型（MLLMs）在开放性真实环境中应用时面临输入混乱、定义不清等问题。不同于精心设计的基准测试，这些场景中指令可能涉及缺失对象、矛盾事实或请求不可行操作。研究通过构建包含四种实际失败模式的诊断工具包，评估六种模型如o3和GPT-4o，发现尽管模型具备必要的感知和推理能力，却常常未能揭示隐藏问题。进一步研究表明，显式提示表明这些能力存在但常被用户合规性压制。实验表明，简单的推理阶段干预，例如谨慎的角色提示及提出澄清问题，能显著提高模型性能。研究揭示了当前MLLMs在推理能力和行为合规性之间的持续差距，并提出了使模型在非约束环境下更加可信的实用策略。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.00258 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究显示当前多模态大语言模型在隐含推理任务中常忽视潜在问题，但简单干预可显著提升表现。</p><br /><br /><p><strong>摘要：</strong> 多模态大语言模型（MLLMs）在开放性真实环境中应用时面临输入混乱、定义不清等问题。不同于精心设计的基准测试，这些场景中指令可能涉及缺失对象、矛盾事实或请求不可行操作。研究通过构建包含四种实际失败模式的诊断工具包，评估六种模型如o3和GPT-4o，发现尽管模型具备必要的感知和推理能力，却常常未能揭示隐藏问题。进一步研究表明，显式提示表明这些能力存在但常被用户合规性压制。实验表明，简单的推理阶段干预，例如谨慎的角色提示及提出澄清问题，能显著提高模型性能。研究揭示了当前MLLMs在推理能力和行为合规性之间的持续差距，并提出了使模型在非约束环境下更加可信的实用策略。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.00258" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 30 May 2025 17:47:28 GMT</pubDate>
 <pubDate>Fri, 30 May 2025 17:47:28 GMT</pubDate>
 </item>
 <item>
@@ -105,14 +106,10 @@
 <link>https://arxiv.org/abs/2505.23760</link>
 <guid>https://arxiv.org/abs/2505.23760</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究提出通过Hessian矩阵条件数分析模型免疫性，并设计算法实现对线性和非线性模型的有效免疫。</p><br><br><p><strong>摘要：</strong> 本文旨在探讨如何在预训练阶段构建对有害任务难以微调但仍保留其他任务效用的模型，即模型免疫技术。尽管先前研究表明文本到图像模型可以通过免疫处理，但免疫发生的条件及免疫模型的精确定义尚不明确。为此，我们提出了一个基于Hessian矩阵条件数的框架，用于分析线性模型的免疫性。在此基础上，设计了一种带有正则化项的算法，以控制预训练后模型的条件数。实验结果表明，该算法不仅适用于线性模型，也能有效应用于非线性深度网络的免疫处理。这项研究为模型免疫提供了理论基础和实践方法，同时代码已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2505.23760 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究提出通过Hessian矩阵条件数分析模型免疫性，并设计算法实现对线性和非线性模型的有效免疫。</p><br /><br /><p><strong>摘要：</strong> 本文旨在探讨如何在预训练阶段构建对有害任务难以微调但仍保留其他任务效用的模型，即模型免疫技术。尽管先前研究表明文本到图像模型可以通过免疫处理，但免疫发生的条件及免疫模型的精确定义尚不明确。为此，我们提出了一个基于Hessian矩阵条件数的框架，用于分析线性模型的免疫性。在此基础上，设计了一种带有正则化项的算法，以控制预训练后模型的条件数。实验结果表明，该算法不仅适用于线性模型，也能有效应用于非线性深度网络的免疫处理。这项研究为模型免疫提供了理论基础和实践方法，同时代码已开源。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.23760" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Thu, 29 May 2025 13:59:48 GMT</pubDate>
-<pubDate>Thu, 29 May 2025 13:59:48 GMT</pubDate>
 </item>
-
 <item>
 <title>无需重训的视觉Transformer测试时异常值抑制方法</title>
 <link>https://arxiv.org/abs/2506.08010</link>
@@ -9031,87 +9028,6 @@ Large language models (LLMs) have achieved impressive performance across various
 <div><p style="color: gray;">提出一种利用大型语言模型生成软件特定技能集的新方法。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种结合图神经网络的离线模拟框架，用于生成经过验证的脚本集合，从而解决传统实时代码生成中存在的问题。该框架通过任务创建和技能生成两个组件实现，其中任务创建采用自顶向下和自底向上的方法，而技能生成则利用执行反馈进行优化和验证。实验表明，在Adobe Illustrator中使用该框架可显著提高自动化成功率，减少响应时间和运行时标记成本。这是首次将软件脚本接口作为大型语言模型系统测试平台的尝试，为满足专业软件领域用户需求提供了有价值的见解。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.20406" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 29 Apr 2025 00:03:37 GMT</pubDate>
-</item>
-<item>
-<title>空间语音翻译技术：让听觉空间语言无缝转换</title>
-<link>https://arxiv.org/abs/2504.18715</link>
-<guid>https://arxiv.org/abs/2504.18715</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出一种新型听戴设备技术，实现实时空间语音翻译并保持方向和音质。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种名为空间语音翻译的新概念，旨在通过智能听戴设备将佩戴者周围环境中的语音实时翻译成母语，同时保持各发言人的声音方向和独特音色。该技术解决了盲源分离、定位、实时情感翻译及双耳渲染等多个技术难题，并在苹果M2芯片上实现了实时推理。实验表明，尽管存在干扰，我们的模型在BLEU评分上达到22.01，优于现有模型。用户研究进一步验证了系统在真实世界混响环境中的有效性。这一成果标志着将空间感知融入语音翻译领域的第一步。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.18715" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 25 Apr 2025 17:58:56 GMT</pubDate>
-</item>
-<item>
-<title>基于深度学习的城市多目标多摄像头车辆跟踪框架</title>
-<link>https://arxiv.org/abs/2505.00534</link>
-<guid>https://arxiv.org/abs/2505.00534</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出了一种高效的深度学习框架解决城市交通多摄像头下的车辆跟踪问题。</p><br /><br /><p><strong>摘要：</strong> 随着智能交通系统中网络摄像头数量的增加，视觉传感器在交通监控、管理和优化中的作用愈发重要。然而，在大规模城市交通场景中实现非重叠摄像头间的车辆目标跟踪与匹配面临诸多挑战，如车辆属性多样性、遮挡、光照变化及阴影等。本文提出了一种名为MO-MCT的高效且经济的深度学习框架，该框架结合Mask R-CNN进行目标检测，利用迁移学习实现跨摄像头车辆再识别，并通过适当的损失函数和距离度量应对各种复杂情况。最终方案采用ResNet-152进行特征提取，并结合Deep SORT算法进行车辆跟踪。该框架在AI City Challenge第5赛道的数据集上进行了评估，涵盖46路摄像头视频流，取得了优秀的性能表现，IDF1得分为0.8289，精确率和召回率分别为0.9026和0.8527。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.00534" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 01 May 2025 10:00:25 GMT</pubDate>
-</item>
-<item>
-<title>通过自我生成示例提升大语言模型的序列决策性能</title>
-<link>https://arxiv.org/abs/2505.00234</link>
-<guid>https://arxiv.org/abs/2505.00234</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">研究显示，通过积累成功经验自动生成示例可显著提高大语言模型在决策任务中的表现。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了大型语言模型（LLM）代理通过学习自身在类似任务上的成功经验来自我提升性能的可能性。与依赖特定任务的知识工程方法不同，我们专注于构建和完善一个由自身生成的示例数据库。实验表明，简单累积训练任务中的成功轨迹即可显著提升三个基准测试的表现：ALFWorld（从73%提升到89%）、Wordcraft（从55%提升到64%）以及InterCode-SQL（从75%提升到79%），相当于初始代理在每项任务允许两到三次尝试时的表现。进一步地，我们引入了两种扩展策略：一是基于种群训练的数据库级选择，二是根据实际效用对单个轨迹进行示例级选择。这些改进使ALFWorld的性能达到了91%，接近采用特定任务组件和提示符的复杂方法。我们的研究证明，自动构建轨迹数据库是一种有吸引力的替代方案，可以避免劳动密集型的知识工程。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.00234" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 30 Apr 2025 20:48:12 GMT</pubDate>
-</item>
-<item>
-<title>强化学习增强大型语言模型在高功率火箭设计中的应用研究</title>
-<link>https://arxiv.org/abs/2504.19394</link>
-<guid>https://arxiv.org/abs/2504.19394</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">强化学习提升的LLMs在高功率火箭设计优化中超越人类专家。</p><br /><br /><p><strong>摘要：</strong> 本文通过RocketBench基准测试评估大型语言模型（LLMs）在高功率火箭设计中的能力，涉及目标高度优化及精确着陆挑战两个任务。尽管最先进的LLMs展现了强大的基础工程知识，但在结合仿真结果迭代设计时表现不佳，最终性能低于人类水平。然而，通过强化学习增强后，一款7B参数模型不仅优于顶级基础模型，还超过了人类专家的表现。这一研究表明，强化学习训练的LLMs可成为复杂工程优化的有效工具，有望推动工程领域的发展。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.19394" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Sun, 27 Apr 2025 19:59:39 GMT</pubDate>
-</item>
-<item>
-<title>基于双层推理过程的文本到图像生成模型T2I-R1</title>
-<link>https://arxiv.org/abs/2505.00703</link>
-<guid>https://arxiv.org/abs/2505.00703</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出一种结合强化学习的推理增强型文本到图像生成模型T2I-R1。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种名为T2I-R1的新模型，该模型通过强化学习和双层链式思维推理过程改进了文本到图像的生成能力。T2I-R1在两个生成阶段引入了两种链式思维策略：语义级用于高级提示规划，令牌级用于低级像素处理。此外，我们提出了BiCoT-GRPO方法，以集成奖励优化这两个推理层级。实验结果显示，在T2I-CompBench和WISE基准测试中，T2I-R1分别提升了13%和19%，甚至超越了最先进的FLUX模型。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.00703" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 01 May 2025 13:59:46 GMT</pubDate>
-</item>
-<item>
-<title>基于两阶段框架提升大型语言模型数学解题批评能力的研究</title>
-<link>https://arxiv.org/abs/2505.00662</link>
-<guid>https://arxiv.org/abs/2505.00662</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出一种两阶段框架以增强大型语言模型在数学问题中的批评能力。</p><br /><br /><p><strong>摘要：</strong> 随着大型语言模型（LLMs）的快速发展，如何提供准确且可扩展的反馈成为了一个紧迫的问题。本研究专注于提高LLMs在数学解题中的批评能力，现有的批评模型对每一步的批评过于浅显，导致判断准确性低且难以提供足够的反馈。为解决这一问题，我们提出了一个新颖有效的两阶段框架。第一阶段利用Qwen2.5-72B-Instruct生成4500份长篇批评作为监督微调的种子数据；第二阶段通过强化学习进一步优化模型，使用人类标注的数据或通过蒙特卡洛采样获得的自动标注数据。最终开发出的批评模型不仅在多种错误识别基准上显著优于现有模型，还通过更详细的反馈帮助生成器修正错误。此外，该模型在数学解题批评任务中表现出色，为LLMs的自动化监督提供了新的可能性。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.00662" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 01 May 2025 13:03:17 GMT</pubDate>
-</item>
-<item>
-<title>KeySync: A Robust Approach for Leakage-free Lip Synchronization in High Resolution</title>
-<link>https://arxiv.org/abs/2505.00497</link>
-<guid>https://arxiv.org/abs/2505.00497</guid>
-<content:encoded><![CDATA[
-Lip synchronization, known as the task of aligning lip movements in an existing video with new input audio, is typically framed as a simpler variant of audio-driven facial animation. However, as well as suffering from the usual issues in talking head generation (e.g., temporal consistency), lip synchronization presents significant new challenges such as expression leakage from the input video and facial occlusions, which can severely impact real-world applications like automated dubbing, but are often neglected in existing works. To address these shortcomings, we present KeySync, a two-stage framework that succeeds in solving the issue of temporal consistency, while also incorporating solutions for leakage and occlusions using a carefully designed masking strategy. We show that KeySync achieves state-of-the-art results in lip reconstruction and cross-synchronization, improving visual quality and reducing expression leakage according to LipLeak, our novel leakage metric. Furthermore, we demonstrate the effectiveness of our new masking approach in handling occlusions and validate our architectural choices through several ablation studies. Code and model weights can be found at https://antonibigata.github.io/KeySync.
-]]></content:encoded>
-<pubDate>Thu, 01 May 2025 08:56:17 GMT</pubDate>
-</item>
-<item>
-<title>交互生成视频技术综述及其在多领域的应用与挑战</title>
-<link>https://arxiv.org/abs/2504.21853</link>
-<guid>https://arxiv.org/abs/2504.21853</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">定义交互生成视频(IGV)，并探讨其在游戏、具身AI和自动驾驶中的应用。</p><br /><br /><p><strong>摘要：</strong> 本文首次明确交互生成视频(IGV)的概念，即通过生成技术和互动特性创造高质量视频内容，支持用户通过控制信号和反馈进行互动。IGV已在多个领域崭露头角，包括允许虚拟世界无限探索的游戏、提供物理感知环境合成的具身AI训练场景，以及为自动驾驶提供闭环模拟测试的系统。为了指导未来研究，我们提出了一套全面的框架，将理想中的IGV系统分解为五个核心模块：生成、控制、记忆、动力学和智能。同时，针对实现这些模块的技术挑战进行了系统分析，如实现实时生成、开放域控制、长期一致性维护、精确物理模拟及因果推理集成等。这项工作旨在推动IGV技术向更复杂和实用化的方向发展。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.21853" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 30 Apr 2025 13:59:02 GMT</pubDate>
-</item>
-<item>
-<title>AdaR1: From Long-CoT to Hybrid-CoT via Bi-Level Adaptive Reasoning Optimization</title>
-<link>https://arxiv.org/abs/2504.21659</link>
-<guid>https://arxiv.org/abs/2504.21659</guid>
-<content:encoded><![CDATA[
-Recently, long-thought reasoning models achieve strong performance on complex reasoning tasks, but often incur substantial inference overhead, making efficiency a critical concern. Our empirical analysis reveals that the benefit of using Long-CoT varies across problems: while some problems require elaborate reasoning, others show no improvement, or even degraded accuracy. This motivates adaptive reasoning strategies that tailor reasoning depth to the input. However, prior work primarily reduces redundancy within long reasoning paths, limiting exploration of more efficient strategies beyond the Long-CoT paradigm. To address this, we propose a novel two-stage framework for adaptive and efficient reasoning. First, we construct a hybrid reasoning model by merging long and short CoT models to enable diverse reasoning styles. Second, we apply bi-level preference training to guide the model to select suitable reasoning styles (group-level), and prefer concise and correct reasoning within each style group (instance-level). Experiments demonstrate that our method significantly reduces inference costs compared to other baseline approaches, while maintaining performance. Notably, on five mathematical datasets, the average length of reasoning is reduced by more than 50%, highlighting the potential of adaptive strategies to optimize reasoning efficiency in large language models. Our code is coming soon at https://github.com/StarDewXXX/AdaR1
-]]></content:encoded>
-<pubDate>Wed, 30 Apr 2025 10:01:45 GMT</pubDate>
 </item>
 </channel>
 </rss>
