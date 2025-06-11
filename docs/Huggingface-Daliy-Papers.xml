@@ -5,15 +5,145 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>DiscoVLA：针对视频文本检索的CLIP参数高效适配方法</title>
+<link>https://arxiv.org/abs/2506.08887</link>
+<guid>https://arxiv.org/abs/2506.08887</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出DiscoVLA方法，同时减少图像到视频的视觉、语言及对齐三方面差异。</p><br><br><p><strong>摘要：</strong> 本文研究了CLIP模型在视频文本检索中的参数高效适应问题，发现从图像级到视频级迁移时存在视觉、语言和对齐三大关键差异。现有方法主要关注视觉差异，忽视了语言和对齐方面的改进。为此，我们提出了DiscoVLA（Discrepancy Reduction in Vision, Language, and Alignment），通过引入图像-视频特征融合来解决视觉和语言差异，并利用伪图像描述生成学习细粒度的图像级对齐，同时采用图像到视频对齐蒸馏提升视频级对齐效果。实验表明，DiscoVLA在MSRVTT数据集上的R@1指标比现有方法高出1.5%，达到50.5%。代码已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.08887 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Jun 2025 11:16:40 GMT</pubDate>
+<pubDate>Tue, 10 Jun 2025 11:16:40 GMT</pubDate>
+</item>
+<item>
+<title>自回归视频扩散模型的新训练范式：Self Forcing</title>
+<link>https://arxiv.org/abs/2506.08009</link>
+<guid>https://arxiv.org/abs/2506.08009</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出Self Forcing方法解决视频生成中的曝光偏差问题。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为Self Forcing的新型训练范式，专门针对自回归视频扩散模型设计，旨在解决长期存在的曝光偏差问题。传统方法在推理过程中依赖于真实的上下文帧，而Self Forcing通过在训练时利用之前自动生成的输出进行条件生成，显著提高了生成序列的整体质量。该方法采用整体视频级别的损失函数，而非传统的逐帧目标函数，同时结合了几步扩散模型和随机梯度截断策略，有效平衡了计算成本与性能。此外，引入滚动键值缓存机制进一步提升了效率，使得该方法能够在单GPU上实现亚秒级延迟的实时流媒体视频生成，且生成质量可媲美甚至超越更为复杂和非因果的扩散模型。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.08009 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 09 Jun 2025 13:59:55 GMT</pubDate>
+<pubDate>Mon, 09 Jun 2025 13:59:55 GMT</pubDate>
+</item>
+<item>
+<title>Aligning Text, Images, and 3D Structure Token-by-Token</title>
+<link>https://arxiv.org/abs/2506.08002</link>
+<guid>https://arxiv.org/abs/2506.08002</guid>
+<content:encoded><![CDATA[
+
+  Creating machines capable of understanding the world in 3D is essential in assisting designers that build and edit 3D environments and robots navigating and interacting within a three-dimensional space. Inspired by advances in language and image modeling, we investigate the potential of autoregressive models for a new modality: structured 3D scenes. To this end, we propose a unified LLM framework that aligns language, images, and 3D scenes and provide a detailed ''cookbook'' outlining critical design choices for achieving optimal training and performance addressing key questions related to data representation, modality-specific objectives, and more. We evaluate performance across four core 3D tasks -- rendering, recognition, instruction-following, and question-answering -- and four 3D datasets, synthetic and real-world. We extend our approach to reconstruct complex 3D object shapes by enriching our 3D modality with quantized shape encodings, and show our model's effectiveness on real-world 3D object recognition tasks. Project webpage: https://glab-caltech.github.io/kyvo/
+
+]]></content:encoded>
+<pubDate>Mon, 09 Jun 2025 13:59:37 GMT</pubDate>
+<pubDate>Mon, 09 Jun 2025 13:59:37 GMT</pubDate>
+</item>
+<item>
+<title>Squeeze3D：基于隐式先验知识的高效3D数据压缩框架</title>
+<link>https://arxiv.org/abs/2506.07932</link>
+<guid>https://arxiv.org/abs/2506.07932</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种利用已有3D生成模型的隐式先验知识进行高比率压缩的新框架。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为Squeeze3D的创新框架，该框架通过可训练映射网络连接已有的编码器和生成模型的潜在空间，利用这些模型学习到的隐式先验知识实现对网格、点云及辐射场等3D数据的极高压缩比。实验表明，Squeeze3D在保持视觉质量的同时，对纹理网格的压缩比可达2187倍，对点云为55倍，对辐射场为619倍。此外，由于不涉及对象特定网络的训练，其压缩和解压延迟极小。Squeeze3D适用于多种现有预训练3D编码器和生成模型，并支持不同格式的3D数据。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.07932 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 09 Jun 2025 12:52:10 GMT</pubDate>
+<pubDate>Mon, 09 Jun 2025 12:52:10 GMT</pubDate>
+</item>
+<item>
+<title>大型语言模型在不等式证明中的挑战与研究进展</title>
+<link>https://arxiv.org/abs/2506.07927</link>
+<guid>https://arxiv.org/abs/2506.07927</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究提出新方法提升不等式证明能力，发现顶级模型在严谨推理上仍有显著差距。</p><br><br><p><strong>摘要：</strong> 不等式证明作为科学与数学领域的重要工具，考验着高级推理能力。然而，现有数据集的局限性阻碍了大型语言模型（LLMs）在此领域的进步。为此，研究者引入了一种新的任务形式，将不等式证明分解为可自动验证的子任务——边界估计与关系预测，并构建了一个名为IneqMath的专业级不等式数据集。该数据集包含丰富的解题步骤与定理注释，旨在推动模型性能提升。此外，研究设计了一种结合最终答案判断与逐步判断的评估框架，用于检测推理缺陷。对29个领先LLMs的测试显示，尽管顶级模型如o1在最终答案准确性上有一定表现，但在逐步推理验证下整体准确率不足10%，较仅考虑最终答案时下降了65.5%。这一发现揭示了当前LLMs在严谨证明构建上的脆弱性和局限性。研究进一步表明，单纯增加模型规模或计算资源并不能显著提高证明正确性，而是需要探索如定理引导推理及自我优化等新方向。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.07927 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 09 Jun 2025 12:43:38 GMT</pubDate>
+<pubDate>Mon, 09 Jun 2025 12:43:38 GMT</pubDate>
+</item>
+<item>
+<title>Frame Guidance：无需训练的可控视频生成引导方法</title>
+<link>https://arxiv.org/abs/2506.07177</link>
+<guid>https://arxiv.org/abs/2506.07177</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种基于帧级信号的无需训练的可控视频生成引导方法Frame Guidance。</p><br><br><p><strong>摘要：</strong> 扩散模型的进步显著提升了视频质量，但许多现有方法依赖于针对特定任务微调大规模视频模型，随着模型规模增长变得不切实际。本文介绍Frame Guidance，这是一种无需训练即可实现可控视频生成的引导方法，基于帧级信号如关键帧、风格参考图像、草图或深度图等。为实现实用的无需训练引导，我们提出了一种简单的潜在处理方法以大幅减少内存使用，并采用一种新颖的潜在优化策略以实现全局一致的视频生成。Frame Guidance能够在多种任务上有效控制，包括关键帧引导、风格化和循环生成，且无需任何训练，兼容所有视频模型。实验结果显示，该方法可以为广泛的任务和输入信号生成高质量的可控视频。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.07177 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 08 Jun 2025 10:54:41 GMT</pubDate>
+<pubDate>Sun, 08 Jun 2025 10:54:41 GMT</pubDate>
+</item>
+<item>
+<title>大型语言模型中的地缘政治偏见研究</title>
+<link>https://arxiv.org/abs/2506.06751</link>
+<guid>https://arxiv.org/abs/2506.06751</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究发现大型语言模型存在显著的地缘政治偏见，且简单去偏方法效果有限。</p><br><br><p><strong>摘要：</strong> 本文探讨了大型语言模型（LLMs）在解释具有国家视角冲突的历史事件时所表现出的地缘政治偏见（涉及美国、英国、苏联和中国）。我们构建了一个包含中立事件描述及多国对立观点的新数据集，实验结果显示这些模型倾向于支持特定的国家叙事。尽管尝试了简单的去偏提示，但其对减少偏见的效果十分有限。此外，通过操控参与者标签的实验表明，模型对归因高度敏感，有时会放大偏见或检测到不一致性，尤其是在标签被替换的情况下。本研究揭示了LLMs中的国家叙事偏见，挑战了简单去偏方法的有效性，并为未来地缘政治偏见研究提供了框架和数据集。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.06751 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sat, 07 Jun 2025 06:45:17 GMT</pubDate>
+<pubDate>Sat, 07 Jun 2025 06:45:17 GMT</pubDate>
+</item>
+<item>
+<title>异构Mixture-of-Adapters方法提升大语言模型参数高效微调性能</title>
+<link>https://arxiv.org/abs/2506.05928</link>
+<guid>https://arxiv.org/abs/2506.05928</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出异构MoA方法解决现有MoE-LoRA的表征塌陷和负载不均问题。</p><br><br><p><strong>摘要：</strong> 最近的研究将低秩适配（LoRA）与专家混合（MoE）结合，进一步提升大语言模型（LLM）参数高效微调（PEFT）方法的性能。然而，现有的同构MoE-LoRA架构常面临表征塌陷和专家负载失衡的问题。为应对这些挑战，本文提出了异构Mixture-of-Adapter（MoA）方法，通过动态整合结构多样的PEFT适配器专家，利用互补的表示能力促进专家专业化，从而增强预训练知识向下游任务的有效迁移。MoA支持两种变体：Soft MoA实现细粒度集成，Sparse MoA则基于贡献稀疏激活适配器专家。实验表明，异构MoA在性能和参数效率上均优于同构MoE-LoRA方法。该项目已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.05928 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 06 Jun 2025 05:54:19 GMT</pubDate>
+<pubDate>Fri, 06 Jun 2025 05:54:19 GMT</pubDate>
+</item>
+<item>
+<title>基于大型语言模型的知识增强金融推理模型RKEFino1</title>
+<link>https://arxiv.org/abs/2506.05700</link>
+<guid>https://arxiv.org/abs/2506.05700</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出结合监管知识的金融推理模型RKEFino1，提升数字合规报告的准确性。</p><br><br><p><strong>摘要：</strong> 本文针对大型语言模型(LLMs)在数字监管报告(DRR)中的应用挑战，提出了RKEFino1模型，该模型通过微调Fino1，在XBRL、CDM和MOF等领域的专业知识基础上进行增强。研究设计了基于知识的问答(QA)任务、数学推理QA任务以及覆盖句子和表格中财务实体的数值命名实体识别(NER)任务。实验结果表明，RKEFino1在合规相关的金融任务中表现出色且具有良好的泛化能力。目前，该模型已发布在Hugging Face平台上供公众使用。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.05700 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 05 Jun 2025 23:02:52 GMT</pubDate>
+<pubDate>Thu, 05 Jun 2025 23:02:52 GMT</pubDate>
+</item>
+<item>
+<title>基于证据性引导的检索增强生成模型ECoRAG</title>
+<link>https://arxiv.org/abs/2506.05167</link>
+<guid>https://arxiv.org/abs/2506.05167</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新框架ECoRAG，提升LLMs在开放域问答中的性能。</p><br><br><p><strong>摘要：</strong> 大型语言模型（LLMs）在开放域问答（ODQA）中通过检索增强生成（RAG）利用外部文档表现优异，但现有压缩方法未能有效过滤非证据性信息，限制了性能。本文提出ECoRAG框架，通过基于证据性的文档压缩提升LLMs性能，确保答案生成由正确证据支持，并在必要时补充更多内容。实验表明，ECoRAG在多个ODQA任务中超越现有压缩方法，同时显著降低延迟并减少令牌使用量。代码已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.05167 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 05 Jun 2025 11:43:49 GMT</pubDate>
+<pubDate>Thu, 05 Jun 2025 11:43:49 GMT</pubDate>
+</item>
+<item>
+<title>基于预操作批评机制的多模态大语言模型在GUI自动化中的应用</title>
+<link>https://arxiv.org/abs/2506.04614</link>
+<guid>https://arxiv.org/abs/2506.04614</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新的预操作批评机制显著提升了GUI自动化任务的成功率和效率。</p><br><br><p><strong>摘要：</strong> 近年来，多模态大型语言模型（MLLMs）被广泛应用于图形用户界面（GUI）自动化等多模态推理任务。不同于一般的离线多模态任务，GUI自动化需要在线交互环境中逐步决策，对每一步决策的准确性要求较高。为了提高决策可靠性，我们引入了一种预操作批评机制，通过预测行动的潜在结果和正确性提供反馈。具体而言，提出了建议感知梯度相对策略优化（S-GRPO）策略构建预操作批评模型GUI-Critic-R1，并引入新颖的建议奖励以增强反馈的可靠性。此外，开发了一种基于推理引导的数据收集管道，创建GUI-Critic-Train和GUI-Critic-Test，填补了现有GUI批评数据的空白。静态实验表明，GUI-Critic-R1在批评准确性上优于当前的MLLMs；动态评估进一步证明了该模型在成功率和操作效率方面的优越性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.04614 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 05 Jun 2025 00:12:36 GMT</pubDate>
+<pubDate>Thu, 05 Jun 2025 00:12:36 GMT</pubDate>
+</item>
+
+<item>
 <title>基于正交匹配追踪的预训练语言模型跨分词器移植方法</title>
 <link>https://arxiv.org/abs/2506.06607</link>
 <guid>https://arxiv.org/abs/2506.06607</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出一种无需微调的正交匹配追踪方法，实现大型语言模型的跨分词器迁移。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种无需微调的预训练大型语言模型（LLMs）的分词器移植方法，通过正交匹配追踪（OMP）重建未见令牌嵌入。该方法将词汇外令牌近似为共享令牌的稀疏线性组合，在两个具有挑战性的跨分词器任务中展示了最佳的零样本性能保存能力。与其他零样本方法相比，OMP在多个基准测试中表现出色，且有效解决了大分词器差异问题。此外，该技术支持预训练权重的直接重用，适用于跨分词器的知识蒸馏、推测解码、集成、合并及领域特定词汇适应。我们还将此方法集成到开源工具mergekit-tokensurgeon中，用于后处理词汇对齐。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.06607 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出一种无需微调的正交匹配追踪方法，实现大型语言模型的跨分词器迁移。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种无需微调的预训练大型语言模型（LLMs）的分词器移植方法，通过正交匹配追踪（OMP）重建未见令牌嵌入。该方法将词汇外令牌近似为共享令牌的稀疏线性组合，在两个具有挑战性的跨分词器任务中展示了最佳的零样本性能保存能力。与其他零样本方法相比，OMP在多个基准测试中表现出色，且有效解决了大分词器差异问题。此外，该技术支持预训练权重的直接重用，适用于跨分词器的知识蒸馏、推测解码、集成、合并及领域特定词汇适应。我们还将此方法集成到开源工具mergekit-tokensurgeon中，用于后处理词汇对齐。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.06607" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 06 Jun 2025 20:51:27 GMT</pubDate>
 <pubDate>Fri, 06 Jun 2025 20:51:27 GMT</pubDate>
 </item>
 <item>
@@ -21,14 +151,10 @@
 <link>https://arxiv.org/abs/2506.03231</link>
 <guid>https://arxiv.org/abs/2506.03231</guid>
 <content:encoded><![CDATA[
-
-  Despite growing interest in domain-specific benchmarking of large language models (LLMs) and agents, current evaluations remain limited to static, small-scale datasets, especially in high-stakes tasks like network operations that demand reliability for deployments. We present NetPress, an automated benchmark generation framework for evaluating LLM agents in network applications. NetPress introduces a unified abstraction with state and action, enabling dynamic generation of diverse query sets along with corresponding ground truths. At runtime, users can specify benchmark configurations to generate millions of queries on the fly. In addition to dynamic benchmark construction, NetPress integrates with network emulators to provide realistic environment feedback, supporting comprehensive evaluation across correctness, safety, and latency. We instantiate NetPress on three representative applications, revealing interesting fine-grained differences in agent behavior that static, correctness-only benchmarks often miss. NetPress moves LLM evaluation toward realistic, scalable testing in infrastructure-centric domains, helping close the gap between benchmark performance and real-world deployment readiness. Code is available at https://github.com/Froot-NetSys/NetPress.
-
+Despite growing interest in domain-specific benchmarking of large language models (LLMs) and agents, current evaluations remain limited to static, small-scale datasets, especially in high-stakes tasks like network operations that demand reliability for deployments. We present NetPress, an automated benchmark generation framework for evaluating LLM agents in network applications. NetPress introduces a unified abstraction with state and action, enabling dynamic generation of diverse query sets along with corresponding ground truths. At runtime, users can specify benchmark configurations to generate millions of queries on the fly. In addition to dynamic benchmark construction, NetPress integrates with network emulators to provide realistic environment feedback, supporting comprehensive evaluation across correctness, safety, and latency. We instantiate NetPress on three representative applications, revealing interesting fine-grained differences in agent behavior that static, correctness-only benchmarks often miss. NetPress moves LLM evaluation toward realistic, scalable testing in infrastructure-centric domains, helping close the gap between benchmark performance and real-world deployment readiness. Code is available at https://github.com/Froot-NetSys/NetPress.
 ]]></content:encoded>
 <pubDate>Tue, 03 Jun 2025 10:04:22 GMT</pubDate>
-<pubDate>Tue, 03 Jun 2025 10:04:22 GMT</pubDate>
 </item>
-
 <item>
 <title>无需权重更新的动态视图合成</title>
 <link>https://arxiv.org/abs/2506.08004</link>
@@ -9010,24 +9136,6 @@ Large language models (LLMs) have achieved impressive performance across various
 <div><p style="color: gray;">提出一种基于扩散模型的图像修复方法PixelHacker，显著提升复杂结构和语义的一致性。</p><br /><br /><p><strong>摘要：</strong> 图像修复是图像编辑与生成领域的重要研究方向。现有最先进的方法虽引入新颖的注意力机制和轻量化架构，但在处理复杂结构（如纹理、形状、空间关系）和语义一致性（如颜色一致性、对象恢复及逻辑正确性）时仍存在不足，导致伪影和不恰当生成。为解决这一问题，我们设计了一种简单而有效的修复范式——潜在类别引导，并提出了名为PixelHacker的扩散模型。该方法通过构建包含1400万图像-掩码对的大规模数据集，分别编码前景和背景表示，并将其特征注入去噪过程中，最终实现优异的修复效果。实验表明，PixelHacker在Places2、CelebA-HQ和FFHQ等数据集上全面超越现有最先进方法，在结构和语义一致性方面表现突出。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.20438" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 29 Apr 2025 01:28:36 GMT</pubDate>
-</item>
-<item>
-<title>Context Organizer (CORG): 处理跨文档知识关系的新框架</title>
-<link>https://arxiv.org/abs/2505.00023</link>
-<guid>https://arxiv.org/abs/2505.00023</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出一种新框架CORG，有效处理跨文档复杂知识关系并提升性能。</p><br /><br /><p><strong>摘要：</strong> 在现实世界的语料库中，知识经常在文档间重复出现，但由于命名模糊、过时信息或错误等原因，常常存在不一致性，导致上下文之间形成复杂的相互关系。以往研究表明，语言模型难以应对这些复杂性，通常只能单独关注单一因素。我们把这种关系分为分散、模糊、反事实和重复四类。分析表明，没有单一方法可以同时解决所有这些关系。为此，我们提出了Context Organizer（CORG），该框架将多个上下文组织成独立处理的组，从而让模型高效找到所有相关答案并实现去模糊化。CORG由图构造器、重排序器和聚合器三个关键组件组成。实验结果显示，CORG在性能和效率上均优于现有分组方法，并达到与计算密集型单上下文方法相当的结果。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.00023" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 24 Apr 2025 22:40:48 GMT</pubDate>
-</item>
-<item>
-<title>基于离线模拟框架的软件特定技能集生成方法</title>
-<link>https://arxiv.org/abs/2504.20406</link>
-<guid>https://arxiv.org/abs/2504.20406</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出一种利用大型语言模型生成软件特定技能集的新方法。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了一种结合图神经网络的离线模拟框架，用于生成经过验证的脚本集合，从而解决传统实时代码生成中存在的问题。该框架通过任务创建和技能生成两个组件实现，其中任务创建采用自顶向下和自底向上的方法，而技能生成则利用执行反馈进行优化和验证。实验表明，在Adobe Illustrator中使用该框架可显著提高自动化成功率，减少响应时间和运行时标记成本。这是首次将软件脚本接口作为大型语言模型系统测试平台的尝试，为满足专业软件领域用户需求提供了有价值的见解。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2504.20406" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 29 Apr 2025 00:03:37 GMT</pubDate>
 </item>
 </channel>
 </rss>
