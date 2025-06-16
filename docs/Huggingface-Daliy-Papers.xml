@@ -4,6 +4,186 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>多维线性循环神经网络在长距离依赖任务中的表现</title>
+<link>https://arxiv.org/abs/2506.11997</link>
+<guid>https://arxiv.org/abs/2506.11997</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>扩展线性RNN至多维结构，提出pLSTM模型，适用于复杂图结构数据。</p><br><br><p><strong>摘要：</strong> 本文提出了一种新型的多维线性循环神经网络（pLSTM），通过引入Source、Transition和Mark门，使其能够处理一般有向无环图（DAG）上的数据。pLSTM不仅能够并行化操作，还解决了长距离依赖问题，采用定向传播模式和扩散分布模式。实验表明，pLSTM在合成箭头指向外推任务及分子图和计算机视觉基准测试中表现出色，尤其在处理更大图像时优于Transformer模型。代码和数据集已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.11997 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 13 Jun 2025 13:51:37 GMT</pubDate>
+<pubDate>Fri, 13 Jun 2025 13:51:37 GMT</pubDate>
+</item>
+<item>
+<title>大型语言模型在编程竞赛中的表现评估</title>
+<link>https://arxiv.org/abs/2506.11928</link>
+<guid>https://arxiv.org/abs/2506.11928</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究显示大型语言模型在编程竞赛中仍显著落后于人类专家。</p><br><br><p><strong>摘要：</strong> 近期报道声称大型语言模型（LLMs）在编程竞赛中已超越顶尖人类选手。然而，本研究通过分析国际算法竞赛奖牌得主的经验，重新审视这一说法，探讨LLMs与人类专家的区别及现有局限。我们引入LiveCodeBench Pro基准测试，涵盖来自Codeforces、ICPC和IOI的问题，并由金牌得主对问题进行分类和错误代码分析。结果显示，即使是最前沿的模型，在中等难度问题上的pass@1仅为53%，而在难题上则为0%，远不及人类专家。尽管LLMs在实现类问题上表现良好，但在复杂算法推理和案例分析方面存在明显不足，且常给出错误的自信解释。高绩效主要依赖于代码精确性而非更强的推理能力。因此，LiveCodeBench Pro不仅揭示了LLMs与人类大师水平之间的显著差距，还提供了详细的诊断工具，以指导未来代码型LLM推理能力的改进。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.11928 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 13 Jun 2025 12:29:09 GMT</pubDate>
+<pubDate>Fri, 13 Jun 2025 12:29:09 GMT</pubDate>
+</item>
+<item>
+<title>基于扩散模型的对齐新视角图像与几何生成框架</title>
+<link>https://arxiv.org/abs/2506.11924</link>
+<guid>https://arxiv.org/abs/2506.11924</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种通过扭曲与填补方法生成对齐的新视角图像与几何的扩散模型框架。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种基于扩散模型的框架，该框架通过扭曲与填补的方法实现对齐的新视角图像和几何生成。不同于以往需要密集姿态图像或受限于域内视图的姿态嵌入生成模型的方法，我们的方法利用现成的几何预测器预测参考图像所看到的部分几何形状，并将新视角合成表述为图像和几何的填补任务。为了确保生成图像和几何之间的精确对齐，我们提出了跨模态注意力蒸馏，在训练和推理过程中将图像扩散分支的注意力图注入到并行的几何扩散分支中。这种多任务方法实现了协同效应，促进了具有几何鲁棒性的图像合成以及定义良好的几何预测。此外，我们引入了基于邻近性的网格条件化，以整合深度和法线线索，插值点云并过滤掉错误预测的几何形状对生成过程的影响。实证研究表明，我们的方法在多种未见场景下实现了高保真的外推视角合成，无论是图像还是几何，并且在插值设置下提供了竞争性的重建质量，还生成了几何对齐的彩色点云以实现全面的3D补全。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.11924 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 13 Jun 2025 12:19:00 GMT</pubDate>
+<pubDate>Fri, 13 Jun 2025 12:19:00 GMT</pubDate>
+</item>
+<item>
+<title>FourierAttention：一种高效的大语言模型长上下文处理方法</title>
+<link>https://arxiv.org/abs/2506.11886</link>
+<guid>https://arxiv.org/abs/2506.11886</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种无需训练的FourierAttention框架，提升大语言模型长上下文处理能力。</p><br><br><p><strong>摘要：</strong> 随着上下文长度的增长，大语言模型面临日益增加的记忆需求，现有压缩方法往往牺牲精度或引入计算开销。本文提出FourierAttention，这是一种无需训练的框架，通过利用Transformer头维度的异构角色，在较低维度优先处理局部上下文的同时，较高维度捕捉远距离依赖。通过将对长上下文不敏感的维度投影到正交傅里叶基上，FourierAttention用固定长度的频谱系数近似其时间演化过程。实验表明，FourierAttention在LongBench和Needle-In-A-Haystack数据集上的长上下文准确性达到最佳。此外，还设计了一个定制的Triton内核FlashFourierAttention，优化内存使用并通过流线型读写操作实现高效部署，性能不受影响。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.11886 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 13 Jun 2025 11:35:54 GMT</pubDate>
+<pubDate>Fri, 13 Jun 2025 11:35:54 GMT</pubDate>
+</item>
+<item>
+<title>Configurable Preference Tuning (CPT): 动态调整AI行为的新框架</title>
+<link>https://arxiv.org/abs/2506.11702</link>
+<guid>https://arxiv.org/abs/2506.11702</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>引入CPT框架，使语言模型可根据人类指令动态调整行为。</p><br><br><p><strong>摘要：</strong> 现有的AI对齐模型通常基于固定的单一偏好集，限制了适应性。本文提出Configurable Preference Tuning (CPT)，一种新颖的框架，允许语言模型根据显式的人类可解释指令动态调整行为。CPT通过利用基于结构化细粒度量表生成的合成偏好数据，这些量表定义了如写作风格等期望属性，从而实现这一目标。通过在这些量表引导的偏好上微调，LLM能够在推理时响应系统提示调整输出，而无需重新训练。这种方法不仅提供了细粒度控制，还为建模更细腻和情境依赖的人类反馈提供了机制。研究中的多个实验资源，包括训练代码、生成的数据集和微调模型，已公开发布。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.11702 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 13 Jun 2025 08:17:38 GMT</pubDate>
+<pubDate>Fri, 13 Jun 2025 08:17:38 GMT</pubDate>
+</item>
+<item>
+<title>Duo：通过高斯扩散改进离散扩散模型以提升文本生成性能</title>
+<link>https://arxiv.org/abs/2506.10892</link>
+<guid>https://arxiv.org/abs/2506.10892</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Duo通过引入课程学习和一致性蒸馏技术，显著提升了离散扩散模型的训练效率和采样速度。</p><br><br><p><strong>摘要：</strong> 离散均匀状态扩散模型因其自我校正能力而具有快速文本生成的潜力，但通常表现不如自回归模型和掩码扩散模型。本研究通过利用高斯扩散过程的洞察，提出了一种名为Duo的新方法，通过课程学习策略和离散一致性蒸馏技术，大幅提高了训练速度和采样效率。实验结果显示，采用课程学习后，Duo在零样本困惑度上超越了自回归模型，在7个基准中的3个上表现优异；而离散一致性蒸馏则使扩散语言模型的采样速度加快了两个数量级。这项工作有效缩小了离散扩散模型与更先进模型之间的性能差距。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.10892 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Jun 2025 12:55:35 GMT</pubDate>
+<pubDate>Thu, 12 Jun 2025 12:55:35 GMT</pubDate>
+</item>
+<item>
+<title>通过视觉描述幻觉批评提升视觉语言模型的感知能力</title>
+<link>https://arxiv.org/abs/2506.10128</link>
+<guid>https://arxiv.org/abs/2506.10128</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出ViCrit任务，通过检测图像描述中的细微错误提升视觉语言模型的感知能力。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为ViCrit（视觉描述幻觉批评）的强化学习代理任务，旨在提升视觉语言模型（VLMs）在视觉感知方面的表现。ViCrit任务通过在人类编写的图像描述中注入微妙的合成视觉幻觉错误，训练模型定位这些错误。此方法不仅保留了视觉感知的全部难度，还提供了易于计算且明确的二元奖励机制。实验表明，使用ViCrit任务训练的模型在多种视觉语言基准测试中取得了显著改进，这些改进不仅限于自然图像数据，还能推广到抽象图像推理和视觉数学等领域。此外，为了促进评估，我们还推出了ViCrit-Bench，这是一个类别平衡的诊断基准，系统性地探测了不同图像领域和错误类型的感知错误。总体而言，我们的研究证明了细粒度幻觉批评是一种有效且可泛化的视觉感知增强目标。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.10128 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 11 Jun 2025 15:16:54 GMT</pubDate>
+<pubDate>Wed, 11 Jun 2025 15:16:54 GMT</pubDate>
+</item>
+<item>
+<title>对抗性用户对政策合规AI代理的威胁及防御策略研究</title>
+<link>https://arxiv.org/abs/2506.09600</link>
+<guid>https://arxiv.org/abs/2506.09600</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究政策合规AI代理在客户服务中的安全性和鲁棒性。</p><br><br><p><strong>摘要：</strong> 随着任务导向型基于大型语言模型（LLM）的智能体在受政策约束领域的应用增加，如退款资格或取消规则等，如何保证这些智能体始终遵守相关政策并拒绝违规请求成为一大挑战。本文提出了一种新的威胁模型，关注试图利用政策合规智能体谋取个人利益的恶意用户。为解决这一问题，我们开发了CRAFT，一个多智能体红队系统，通过采用基于政策感知的说服策略，在客户服务质量评估场景下有效削弱政策合规智能体的表现，超越了传统的越狱方法。此外，基于现有的tau-bench基准，我们引入了tau-break，一个专门用于评估智能体对操纵性用户行为的稳健性的补充基准。最后，我们测试了几种简单但有效的防御措施，虽然提供了一定程度的保护，但仍需更强有力的研究驱动的安全保障来抵御潜在的攻击。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.09600 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 11 Jun 2025 06:59:47 GMT</pubDate>
+<pubDate>Wed, 11 Jun 2025 06:59:47 GMT</pubDate>
+</item>
+<item>
+<title>InterSyn：基于自评估迭代精炼的大规模多模态数据集</title>
+<link>https://arxiv.org/abs/2506.09427</link>
+<guid>https://arxiv.org/abs/2506.09427</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出InterSyn数据集和SynJudge评估模型，提升多模态模型生成能力。</p><br><br><p><strong>摘要：</strong> 近年来大型多模态模型（LMMs）在多模态理解和生成方面取得显著进展，但生成紧密交织的图文输出仍具挑战性，主要受限于现有训练数据集的规模、质量和指导丰富度。为此，我们引入InterSyn数据集，利用自评估与迭代精炼（SEIR）方法构建，提供多轮指令驱动的图文对话，具备丰富的对象多样性和严格的自动化质量优化，适合作为下一代指令跟随型LMMs的训练数据。同时，针对缺乏可靠评估工具的问题，我们开发了SynJudge自动评估模型，从文本内容、图像内容、图像质量和图文协同四个维度量化评估多模态输出。实验表明，SEIR方法显著提高了数据集质量，而基于InterSyn训练的LMMs在所有评估指标上均表现更优，验证了InterSyn在推动多模态系统发展中的价值。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.09427 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 11 Jun 2025 02:21:20 GMT</pubDate>
+<pubDate>Wed, 11 Jun 2025 02:21:20 GMT</pubDate>
+</item>
+<item>
+<title>SkillBlender：一种用于人形机器人灵活操控的分层强化学习框架</title>
+<link>https://arxiv.org/abs/2506.09366</link>
+<guid>https://arxiv.org/abs/2506.09366</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新的分层强化学习框架SkillBlender，实现人形机器人的多样化操控。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为SkillBlender的新框架，旨在解决现有方法在处理人形机器人多任务适应性时存在的问题。通过预训练无任务特定条件的基础技能并动态混合这些技能，SkillBlender能够在最小化任务特定奖励工程的情况下完成复杂的操控任务。同时，我们还开发了一个名为SkillBench的模拟基准，包含三种机器人形态、四种基础技能及八个挑战性任务，用于科学评估。实验表明，SkillBlender显著优于其他基线模型，在准确性与可行性方面表现出色。未来，我们的代码和基准将开源供社区使用。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.09366 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Jun 2025 23:24:26 GMT</pubDate>
+<pubDate>Tue, 10 Jun 2025 23:24:26 GMT</pubDate>
+</item>
+<item>
+<title>基于自精炼框架的无标注数据增强ASR性能研究</title>
+<link>https://arxiv.org/abs/2506.11130</link>
+<guid>https://arxiv.org/abs/2506.11130</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种利用无标注数据提升语音识别性能的自精炼框架。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为自精炼框架的方法，通过仅使用无标注数据即可提升自动语音识别（ASR）系统的性能。该框架首先利用现有的ASR模型对无标注语音生成伪标签，然后使用这些伪标签训练高保真的文本到语音（TTS）系统。接着，将合成的语音文本对反馈至原始ASR系统，完成闭合循环的自我改进过程。此方法在台湾华语语音上进行了验证，在6000小时无标注语音、少量文本数据及AI模型生成的合成内容的支持下，成功将Whisper-large-v2模型转化为专门化的Twister模型。结果显示，Twister在普通话基准测试中的错误率降低了20%，而在普通话-英语混合代码转换基准测试中的错误率降低了50%。这一框架不仅优于传统的伪标签自蒸馏方法，还为低资源或特定领域ASR性能提升提供了实际可行的路径。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.11130 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Jun 2025 13:30:32 GMT</pubDate>
+<pubDate>Tue, 10 Jun 2025 13:30:32 GMT</pubDate>
+</item>
+<item>
+<title>基于二值注意力掩码的图像预测方法</title>
+<link>https://arxiv.org/abs/2506.08915</link>
+<guid>https://arxiv.org/abs/2506.08915</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种利用二值注意力掩码提升图像预测鲁棒性的新方法。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种基于注意力机制的方法，通过学习得到的二值注意力掩码，确保只有被关注的图像区域影响最终预测结果。这种方法旨在解决对象感知中的上下文干扰问题，尤其是在物体出现在分布外背景时可能导致的偏差表示。为了应对这一挑战，我们提出了一个双阶段框架：第一阶段处理完整图像以发现对象部分并确定任务相关的区域；第二阶段利用输入注意力掩码限制其感受野到这些区域，从而实现聚焦分析同时过滤掉潜在的虚假信息。两个阶段联合训练，使第二阶段能够优化第一阶段的表现。大量实验表明，该方法显著提高了对虚假相关性和分布外背景的鲁棒性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.08915 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Jun 2025 11:41:22 GMT</pubDate>
+<pubDate>Tue, 10 Jun 2025 11:41:22 GMT</pubDate>
+</item>
+<item>
+<title>Dense Retrievers Can Fail on Simple Queries: Revealing The Granularity Dilemma of Embeddings</title>
+<link>https://arxiv.org/abs/2506.08592</link>
+<guid>https://arxiv.org/abs/2506.08592</guid>
+<content:encoded><![CDATA[
+
+  This work focuses on an observed limitation of text encoders: embeddings may not be able to recognize fine-grained entities or events within the semantics, resulting in failed dense retrieval on even simple cases. To examine such behaviors, we first introduce a new evaluation dataset in Chinese, named CapRetrieval, whose passages are image captions, and queries are phrases inquiring entities or events in various forms. Zero-shot evaluation suggests that encoders may fail on these fine-grained matching, regardless of training sources or model sizes. Aiming for enhancement, we proceed to finetune encoders with our proposed data generation strategies, which obtains the best performance on CapRetrieval. Within this process, we further identify an issue of granularity dilemma, a challenge for embeddings to express fine-grained salience while aligning with overall semantics. Our dataset, code and models in this work are publicly released at https://github.com/lxucs/CapRetrieval.
+
+]]></content:encoded>
+<pubDate>Tue, 10 Jun 2025 05:00:33 GMT</pubDate>
+<pubDate>Tue, 10 Jun 2025 05:00:33 GMT</pubDate>
+</item>
+<item>
+<title>U-CoT+: 一种高效灵活的有害模因检测框架</title>
+<link>https://arxiv.org/abs/2506.08477</link>
+<guid>https://arxiv.org/abs/2506.08477</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新框架U-CoT+，通过文本描述和指导优化有害模因检测效率与灵活性。</p><br><br><p><strong>摘要：</strong> 有害模因的检测对维护在线环境的完整性至关重要，但现有方法在资源效率、灵活性和可解释性方面存在局限性。本文介绍了一种名为U-CoT+的新框架，该框架通过开发高保真的模因到文本转换管道，将视觉模因转化为细节保留的文本描述，从而实现对复杂原始视觉内容的高效分解与分类。此设计解耦了模因解释与分类过程，使基于通用大型语言模型的有害模因检测更加高效。进一步结合针对性的人类指导准则，在零样本思维链提示下引导模型推理，增强了框架的适应性和可解释性。实验验证了该框架的有效性，表明其在低资源条件下利用小型语言模型进行有害模因检测具有广阔潜力。相关代码和数据已公开。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.08477 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Jun 2025 02:10:45 GMT</pubDate>
+<pubDate>Tue, 10 Jun 2025 02:10:45 GMT</pubDate>
+</item>
+<item>
+<title>基于Reg-GRPO的视频大型语言模型增强视频推理能力的研究</title>
+<link>https://arxiv.org/abs/2506.07464</link>
+<guid>https://arxiv.org/abs/2506.07464</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究提出一种改进的强化学习算法Reg-GRPO，显著提升视频大型语言模型的推理性能。</p><br><br><p><strong>摘要：</strong> 近期研究表明，基于强化学习的后训练方法可以有效增强大型语言模型的推理能力，其中Group Relative Policy Optimization (GRPO)表现出色。然而，GRPO在视频大型语言模型（Video LLMs）中的应用尚未深入探索。本文研究了GRPO应用于Video LLMs时存在的两个主要问题：对安全措施的依赖及优势消失的问题。为解决这些问题，我们提出了DeepVideo-R1，这是一种结合了Reg-GRPO（回归形式的GRPO）和难度感知数据增强策略的视频大型语言模型。Reg-GRPO将GRPO目标重新定义为回归任务，直接预测优势值，从而消除了对安全措施如裁剪和最小函数的需求，使模型政策指导更加直接。此外，我们设计了一种难度感知的数据增强策略，在可解难度级别动态扩充训练样本，产生多样化且信息丰富的奖励信号。实验表明，DeepVideo-R1在多个视频推理基准测试中显著提升了视频推理性能。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.07464 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 09 Jun 2025 02:15:54 GMT</pubDate>
+<pubDate>Mon, 09 Jun 2025 02:15:54 GMT</pubDate>
+</item>
 
 <item>
 <title>HeadHunter: 针对扩散模型注意力扰动的细粒度控制方法</title>
