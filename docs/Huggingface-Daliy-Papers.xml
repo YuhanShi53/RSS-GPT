@@ -5,15 +5,229 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>离散扩散语言模型与多模态语言模型综述</title>
+<link>https://arxiv.org/abs/2506.13759</link>
+<guid>https://arxiv.org/abs/2506.13759</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>离散扩散模型在并行生成和推理加速方面优于自回归模型。</p><br><br><p><strong>摘要：</strong> 本文系统性回顾了离散扩散语言模型（dLLMs）和离散扩散多模态语言模型（dMLLMs），这些模型采用多令牌并行解码范式，与自回归模型相比具有生成速度快、可控性强等优势。文章追溯了dLLMs和dMLLMs的历史发展，总结了训练与推理的关键技术，并分析了其在语言、视觉-语言及生物领域的应用前景。此外，本文还讨论了未来研究方向和部署挑战，强调了这些模型在学术界和工业界的快速发展趋势。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.13759 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 16 Jun 2025 13:59:08 GMT</pubDate>
+<pubDate>Mon, 16 Jun 2025 13:59:08 GMT</pubDate>
+</item>
+<item>
+<title>预算引导：通过轻量级预测控制大语言模型推理长度</title>
+<link>https://arxiv.org/abs/2506.13752</link>
+<guid>https://arxiv.org/abs/2506.13752</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出预算引导方法，有效控制大语言模型推理长度并提升效率。</p><br><br><p><strong>摘要：</strong> 近期深度大型语言模型通常通过大量推理来提高性能，但这种方法可能导致过高的推理成本且性能提升有限。因此，在有限的推理预算下控制推理长度至关重要，但具有挑战性。本文提出了一种名为预算引导的新方法，无需对语言模型进行微调即可指导其推理过程达到目标预算。该方法引入了一个轻量级预测器，在每次生成下一个令牌时预测剩余推理长度的伽马分布。这一信号被用于以软方式、令牌级别的方式指导生成过程，确保整体推理符合指定的预算限制。实验表明，预算引导方法在数学基准测试中显著提高了令牌效率，例如在MATH-500基准测试中，与基线方法相比，在严格预算下准确率提高了26%，同时仅使用全推理模型63%的令牌即保持竞争力。此外，该方法在更广泛的任务领域表现出色，并展现出估计问题难度等新能力。相关代码已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.13752 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 16 Jun 2025 13:57:05 GMT</pubDate>
+<pubDate>Mon, 16 Jun 2025 13:57:05 GMT</pubDate>
+</item>
+<item>
+<title>Test3R：通过测试时学习显著提升3D重建几何精度</title>
+<link>https://arxiv.org/abs/2506.13750</link>
+<guid>https://arxiv.org/abs/2506.13750</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出Test3R技术，利用图像三元组优化网络，大幅提升3D重建几何一致性。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为Test3R的简单但有效的测试时学习技术，用于增强密集匹配方法在3D重建中的几何准确性。传统方法依赖于成对点图回归，但存在全局几何一致性不足的问题。Test3R通过使用图像三元组(I_1, I_2, I_3)，分别生成基于(I_1, I_2)和(I_1, I_3)的重建，并在测试时通过自监督目标优化网络，即最大化这两重建之间的几何一致性。这种方法确保了模型输出的跨对一致性，无论输入如何。实验结果显示，Test3R在3D重建和多视图深度估计任务上显著优于现有最先进的方法，且具有广泛的适用性和几乎零成本的特点。此外，该技术易于与其他模型集成，并在测试时仅需极小的训练开销和参数量。相关代码已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.13750 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 16 Jun 2025 13:56:22 GMT</pubDate>
+<pubDate>Mon, 16 Jun 2025 13:56:22 GMT</pubDate>
+</item>
+<item>
+<title>Ego-R1框架：通过强化学习实现超长时间第一人称视频推理</title>
+<link>https://arxiv.org/abs/2506.13654</link>
+<guid>https://arxiv.org/abs/2506.13654</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出Ego-R1框架，利用工具链式推理解决超长时第一人称视频理解问题。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为Ego-R1的新框架，用于处理长达数天甚至数周的第一人称视频推理。该框架通过结构化的工具链式思维（CoTT）过程实现推理，由经过强化学习训练的Ego-R1智能体协调操作。受到人类解决问题策略的启发，CoTT将复杂的推理分解为模块化步骤，每一步调用特定工具完成子问题求解，如时间检索和多模态理解。为了训练该智能体，设计了包含监督微调（SFT）和强化学习（RL）两个阶段的训练范式，并构建了Ego-R1 Data数据集，其中包括Ego-CoTT-25K用于SFT，Ego-QA-4.4K用于RL。此外，Ego-R1智能体在新创建的一周视频问答基准Ego-R1 Bench上进行了评估，该基准包含来自混合来源的人类验证问答对。实验结果表明，Ego-R1智能体能够有效应对理解超长第一人称视频的独特挑战，时间覆盖范围从几小时显著扩展到一周。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.13654 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 16 Jun 2025 12:17:08 GMT</pubDate>
+<pubDate>Mon, 16 Jun 2025 12:17:08 GMT</pubDate>
+</item>
+<item>
+<title>MiniMax-M1：全球首个开放权重大规模混合注意力推理模型发布</title>
+<link>https://arxiv.org/abs/2506.13585</link>
+<guid>https://arxiv.org/abs/2506.13585</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>MiniMax-M1是一款支持超长上下文处理的高效混合注意力推理模型。</p><br><br><p><strong>摘要：</strong> MiniMax-M1是全球首款开放权重、大规模混合注意力推理模型，由混合专家（MoE）架构与闪电注意力机制驱动，基于MiniMax-Text-01升级而来，总参数达4560亿，单token激活459亿参数，上下文长度可达100万tokens，是DeepSeek R1的8倍。该模型通过大规模强化学习训练，在复杂任务如软件工程和工具利用方面表现出色。此外，提出的CISPO算法进一步提升了强化学习效率，使M1仅用512块H800 GPU完成训练仅需三周，成本仅为$534,700。实验显示，MiniMax-M1在标准基准测试中与强开源模型相比表现相当甚至更优。MiniMax-M1已在GitHub上开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.13585 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 16 Jun 2025 11:08:02 GMT</pubDate>
+<pubDate>Mon, 16 Jun 2025 11:08:02 GMT</pubDate>
+</item>
+<item>
+<title>结构化提示对大型语言模型文本分析能力的影响研究</title>
+<link>https://arxiv.org/abs/2506.13172</link>
+<guid>https://arxiv.org/abs/2506.13172</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究显示，结构化提示可有效引导大型语言模型进行复杂文本分析。</p><br><br><p><strong>摘要：</strong> 本研究设计并评估了一组概念验证的结构化工作流提示，旨在引导大型语言模型（LLMs）完成高阶语义和语言分析任务，如检测学术论文总结中的未经证实主张（信息完整性）及模糊代词引用（语言清晰度）。通过在Gemini Pro 2.5 Pro和ChatGPT Plus o3两款前沿模型上进行多轮系统性评估，发现模型在信息完整性任务上的表现因语法角色差异而异，且在仅提供摘要而非全文的情况下，ChatGPT表现出色，而Gemini性能显著下降。这一研究揭示了结构化提示在复杂文本分析中的潜力，同时强调了模型性能高度依赖于模型类型、任务性质及上下文条件，需进行严谨的特定模型测试。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.13172 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 16 Jun 2025 03:34:31 GMT</pubDate>
+<pubDate>Mon, 16 Jun 2025 03:34:31 GMT</pubDate>
+</item>
+<item>
+<title>基于提示的大型语言模型时间序列预测方法</title>
+<link>https://arxiv.org/abs/2506.12953</link>
+<guid>https://arxiv.org/abs/2506.12953</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究显示无需重训即可让大型语言模型高效进行时间序列预测。</p><br><br><p><strong>摘要：</strong> 近期大型语言模型（LLMs）的进步为准确且高效的时间序列分析提供了新的可能性，但以往研究通常需要大量微调或忽略了时间序列间的相关性。本文探索了一种简单灵活的基于提示的方法，使LLMs能够在不进行大规模重新训练或不依赖复杂外部架构的情况下完成时间序列预测。通过利用时间序列分解、基于块的标记化以及基于相似性的邻居增强等专门提示方法，我们发现可以提升LLM的预测质量，同时保持模型的简洁性和对数据预处理的需求最小化。为此，我们提出了PatchInstruct方法，该方法使LLMs能够做出精确有效的预测。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.12953 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 15 Jun 2025 15:42:58 GMT</pubDate>
+<pubDate>Sun, 15 Jun 2025 15:42:58 GMT</pubDate>
+</item>
+<item>
+<title>PersonaFeedback：评估大型语言模型个性化能力的新基准</title>
+<link>https://arxiv.org/abs/2506.12915</link>
+<guid>https://arxiv.org/abs/2506.12915</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出新基准PersonaFeedback，用于评估LLMs根据用户画像生成个性化响应的能力。</p><br><br><p><strong>摘要：</strong> 随着大型语言模型（LLMs）通用能力的提升，如何构建能提供个性化服务的系统成为重要研究课题。然而，缺乏高质量的个性化评估基准阻碍了这一领域的发展。本文介绍PersonaFeedback，这是一个直接评估LLMs生成个性化响应能力的新基准，它通过显式用户画像进行测试，而非依赖隐式推断。该基准包含8298个人类注释的测试案例，分为易、中、难三个层级。实验结果显示，即使是最先进的LLMs在难度较高的测试中也表现不佳，甚至人类评估者也可能难以区分细微差异。此外，分析表明当前的检索增强框架并非个性化任务的默认解决方案。所有数据、注释协议和评估流程都将公开，以促进未来的研究。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.12915 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 15 Jun 2025 13:19:19 GMT</pubDate>
+<pubDate>Sun, 15 Jun 2025 13:19:19 GMT</pubDate>
+</item>
+<item>
+<title>面向用户界面教学视频的多模态摘要新基准</title>
+<link>https://arxiv.org/abs/2506.12623</link>
+<guid>https://arxiv.org/abs/2506.12623</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究提出针对UI教学视频的多模态摘要新基准，填补现有数据集空白。</p><br><br><p><strong>摘要：</strong> 本文聚焦于教学视频的多模态摘要生成问题，旨在通过文本指令和关键帧为用户提供高效技能学习方式。然而，现有视频摘要数据集主要关注通用语义层面的视频总结，无法满足提供逐步可执行说明的需求。为此，我们构建了一个名为MS4UI的新数据集，包含2413个UI教学视频，总时长达167小时，并对视频进行分割、文本摘要及视频摘要的手动标注。实验表明，目前最先进的多模态摘要方法在UI教学视频摘要任务上表现不佳，强调了开发新方法的重要性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.12623 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sat, 14 Jun 2025 16:39:32 GMT</pubDate>
+<pubDate>Sat, 14 Jun 2025 16:39:32 GMT</pubDate>
+</item>
+<item>
+<title>大型语言模型中的表示对齐及其跨语言控制方法</title>
+<link>https://arxiv.org/abs/2506.12450</link>
+<guid>https://arxiv.org/abs/2506.12450</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究显示大型语言模型具有自然出现的表示对齐能力，并提出了一种新的跨语言控制方法。</p><br><br><p><strong>摘要：</strong> 本文探讨了大型语言模型（LLMs）中自然出现的表示对齐现象，特别是在中间层的表现，以及这种对齐对分离语言特定信息和语言无关信息的意义。通过实证研究，我们验证了这种对齐的存在，并将其与显式设计的对齐模型进行比较分析，展示了其在不损害语义的情况下实现语言特定操作的潜力。基于这些发现，我们提出了推理时语言控制（ITLC），一种利用潜在注入的新方法，以实现精确的跨语言控制并减轻LLMs中的语言混淆问题。实验表明，ITLC在保持目标语言语义完整性的同时展现出强大的跨语言控制能力，并有效缓解了现有大规模LLMs中存在的跨语言语言混淆问题，从而导致语言生成的一致性不足。本研究加深了我们对LLMs表示对齐的理解，并为提高其跨语言性能提供了实用解决方案。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.12450 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sat, 14 Jun 2025 07:09:50 GMT</pubDate>
+<pubDate>Sat, 14 Jun 2025 07:09:50 GMT</pubDate>
+</item>
+<item>
+<title>大型语言模型人格解读：基于Supernova Event Dataset的事件提取与基准测试</title>
+<link>https://arxiv.org/abs/2506.12189</link>
+<guid>https://arxiv.org/abs/2506.12189</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>通过新数据集评估多种语言模型的人格特质及事件提取能力。</p><br><br><p><strong>摘要：</strong> 本文提出了一种新颖的方法，利用Supernova Event Dataset来分析大型语言模型（LLMs）的人格特质及其对文本中关键事件提取和排序的能力。该数据集涵盖了传记、历史事件、新闻报道及科学发现等多样化内容。研究对象包括小型模型（如Phi-4、Orca 2、Qwen 2.5）和强大的大型模型（如Claude 3.7、Gemini 2.5、OpenAI o3）。通过让另一款LLM作为裁判，根据模型对事件的选择和分类推断其人格特征。研究揭示了各模型的独特人格特质，例如Orca 2专注于人际动态的情感推理，而Qwen 2.5则表现出战略性分析风格。此外，在处理科学发现事件时，Claude Sonnet 3.7侧重概念框架构建，Gemini 2.5 Pro强调实证验证，o3倾向于逐步因果推理。这项工作提高了模型的可解释性，使其更适合广泛多样的应用场景。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.12189 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 13 Jun 2025 15:31:52 GMT</pubDate>
+<pubDate>Fri, 13 Jun 2025 15:31:52 GMT</pubDate>
+</item>
+<item>
+<title>DeepResearch Bench：LLM驱动的研究代理能力评估基准</title>
+<link>https://arxiv.org/abs/2506.11763</link>
+<guid>https://arxiv.org/abs/2506.11763</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出DeepResearch Bench基准用于评估基于LLM的研究代理能力。</p><br><br><p><strong>摘要：</strong> 深度研究代理（DRAs）作为大型语言模型（LLMs）驱动的代理类别，能够通过多步骤网络探索、目标检索和高级合成将海量在线信息转化为高质量的研究报告。然而，目前缺乏系统评估这些代理能力的综合基准。为填补这一空白，我们发布了DeepResearch Bench，包含由22个领域专家设计的100项博士级研究任务。由于评估DRAs复杂且耗时，我们提出了两种新方法，一种是参考导向法，采用自适应标准评估生成报告的质量；另一种框架则通过有效引用数量和总体引用准确性来衡量信息检索能力。DeepResearch Bench及相关组件已开源，以推动实用LLM代理的发展。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.11763 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 13 Jun 2025 09:17:32 GMT</pubDate>
+<pubDate>Fri, 13 Jun 2025 09:17:32 GMT</pubDate>
+</item>
+<item>
+<title>科学家首次考试（SFE）基准评测科学多模态大语言模型</title>
+<link>https://arxiv.org/abs/2506.10521</link>
+<guid>https://arxiv.org/abs/2506.10521</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>新基准SFE评估科学多模态大语言模型的认知能力，发现当前顶级模型表现欠佳。</p><br><br><p><strong>摘要：</strong> 随着科学研究对复杂多模态推理的需求增加，科学多模态大语言模型（MLLMs）被寄予厚望，可以显著提升科学发现的效率。然而，现有的科学基准主要集中在评估MLLMs的知识理解能力，对其感知和推理能力的评估不足。为弥补这一缺陷，我们提出了科学家的首次考试（SFE）基准，通过科学信号感知、科学属性理解和科学比较推理三个相互关联的层面来评估MLLMs的科学认知能力。SFE包含830个由专家验证的视觉问答对，涵盖五个高价值学科中的66个多模态任务。实验结果显示，最先进的GPT-o3和InternVL-3模型在SFE上的得分分别为34.08%和26.52%，表明这些模型在科学领域还有很大的改进空间。我们希望SFE提供的见解能够促进人工智能辅助科学发现的发展。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.10521 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Jun 2025 05:29:16 GMT</pubDate>
+<pubDate>Thu, 12 Jun 2025 05:29:16 GMT</pubDate>
+</item>
+<item>
+<title>ALE-Bench：评估AI系统在算法工程中的表现</title>
+<link>https://arxiv.org/abs/2506.09050</link>
+<guid>https://arxiv.org/abs/2506.09050</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>新基准ALE-Bench用于评估AI在优化问题中的性能。</p><br><br><p><strong>摘要：</strong> 本文介绍了一个名为ALE-Bench的新基准，旨在评估人工智能系统在解决诸如包裹配送路径规划、机组排班、工厂生产计划及电网平衡等复杂优化问题时的表现。该基准基于AtCoder启发式竞赛的实际任务构建，包含计算上难以处理且无已知精确解的问题。不同于短期通过/失败的编码测试，ALE-Bench强调长时间跨度内的迭代式解决方案改进。研究采用的软件框架支持交互式代理架构，允许利用运行反馈和可视化工具。实验表明，尽管前沿的大语言模型在特定问题上表现出色，但与人类相比，在跨问题的一致性及长期问题解决能力方面仍存在显著差距。这一发现凸显了设立此类基准的重要性，以推动未来AI技术的发展。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.09050 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Jun 2025 13:59:56 GMT</pubDate>
+<pubDate>Tue, 10 Jun 2025 13:59:56 GMT</pubDate>
+</item>
+<item>
+<title>NoWait：高效多模态推理的插件式解决方案</title>
+<link>https://arxiv.org/abs/2506.08343</link>
+<guid>https://arxiv.org/abs/2506.08343</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究提出NoWait方法，通过抑制自省信号提升大模型推理效率。</p><br><br><p><strong>摘要：</strong> 近期大规模推理模型的进步虽实现了复杂分步推理，但常伴随冗长和重复输出的问题，降低了效率。本研究探讨显式自我反思是否对高级推理必要，并提出了名为NoWait的方法，在推理过程中抑制诸如“等一下”、“嗯”之类的自省标记。实验结果显示，NoWait在文本、视觉及视频推理的十个基准测试中，将五种R1系列模型的推理轨迹长度减少了27%-51%，且不影响模型实用性。这一简单有效的方法为多模态推理提供了高效的实用型解决方案。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.08343 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 09 Jun 2025 21:54:04 GMT</pubDate>
+<pubDate>Mon, 09 Jun 2025 21:54:04 GMT</pubDate>
+</item>
+<item>
+<title>BridgeVLA：一种高效的三维视觉-语言-动作模型</title>
+<link>https://arxiv.org/abs/2506.07961</link>
+<guid>https://arxiv.org/abs/2506.07961</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出了一种结合3D信号的新型VLA模型BridgeVLA，显著提升了机器人操作学习的效率。</p><br><br><p><strong>摘要：</strong> 近年来，利用预训练的视觉-语言模型(VLMs)构建视觉-语言-动作(VLA)模型成为机器人操作学习的有效方法之一，但现有方法对3D信号的利用不足，导致样本效率低下。本文提出了BridgeVLA，通过将3D输入投影到多个2D图像上并与VLM骨干对齐，同时利用2D热图进行动作预测，统一了输入与输出空间。此外，还设计了一种可扩展的预训练方法，在下游策略学习前赋予VLM骨干预测2D热图的能力。实验表明，BridgeVLA在三个模拟基准测试中均优于当前最先进的基线方法，尤其在RLBench、COLOSSEUM和GemBench中表现优异。在真实机器人实验中，BridgeVLA不仅在多种分布外设置中表现出稳健的泛化能力，还实现了极高的样本效率。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.07961 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 09 Jun 2025 13:36:34 GMT</pubDate>
+<pubDate>Mon, 09 Jun 2025 13:36:34 GMT</pubDate>
+</item>
+<item>
+<title>From Real to Synthetic: Synthesizing Millions of Diversified and Complicated User Instructions with Attributed Grounding</title>
+<link>https://arxiv.org/abs/2506.03968</link>
+<guid>https://arxiv.org/abs/2506.03968</guid>
+<content:encoded><![CDATA[
+
+  The pursuit of diverse, complex, and large-scale instruction data is crucial for automatically aligning large language models (LLMs). While there are methods capable of generating synthetic instructions at scale, they either suffer from limited grounding sources, leading to a narrow distribution, or rely on trivial extensions that fail to produce meaningful trajectories in terms of complexity. In contrast, instructions that benefit efficient alignment are typically crafted with cognitive insights and grounded in real-world use cases. In this paper, we synthesize such instructions using attributed grounding, which involves 1) a top-down attribution process that grounds a selective set of real instructions to situated users, and 2) a bottom-up synthesis process that leverages web documents to first generate a situation, then a meaningful instruction. This framework allows us to harvest diverse and complex instructions at scale, utilizing the vast range of web documents. Specifically, we construct a dataset of 1 million instructions, called SynthQuestions, and demonstrate that models trained on it achieve leading performance on several common benchmarks, with improvements that continually scale with more web corpora. Data, models and codes will be available at https://github.com/Ignoramus0817/SynthQuestions.
+
+]]></content:encoded>
+<pubDate>Wed, 04 Jun 2025 10:00:47 GMT</pubDate>
+<pubDate>Wed, 04 Jun 2025 10:00:47 GMT</pubDate>
+</item>
+<item>
+<title>构建AI代理行为科学：从模型到行为的系统性研究</title>
+<link>https://arxiv.org/abs/2506.06366</link>
+<guid>https://arxiv.org/abs/2506.06366</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出AI代理行为科学，强调观察、干预与理论指导。</p><br><br><p><strong>摘要：</strong> 近年来，大型语言模型的进步推动了具备人类行为特征的AI代理发展，这些行为不仅依赖模型架构，还受具体情境中的环境、社会线索及交互反馈影响。本文提出AI代理行为科学这一新视角，聚焦于观察行为、设计实验验证假设及基于理论解释AI的行为、适应性和交互过程。通过整合个体代理、多代理及人机交互的研究成果，该视角被应用于提升AI的公平性、安全性、可解释性、责任性和隐私保护等特性。本研究统一现有发现并规划未来方向，将AI代理行为科学定位为传统模型驱动方法的重要补充，为评估和管理日益自主的AI系统提供必要工具。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.06366 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 04 Jun 2025 04:12:32 GMT</pubDate>
+<pubDate>Wed, 04 Jun 2025 04:12:32 GMT</pubDate>
+</item>
+
+<item>
 <title>Avey：一种突破注意力与循环机制的新神经基础架构</title>
 <link>https://arxiv.org/abs/2506.11305</link>
 <guid>https://arxiv.org/abs/2506.11305</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出了一种不依赖注意力和循环的新神经架构Avey，显著提升长序列处理能力。</p><br><br><p><strong>摘要：</strong> Transformer虽在语言模型领域广泛应用，但受限于固定上下文窗口和二次复杂度问题。本文提出Avey架构，通过排名器与自回归处理器协作，仅关注相关token，实现任意长度序列的有效处理。实验表明，Avey在短距离NLP基准测试中表现优异，尤其擅长捕捉长距离依赖关系。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.11305 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出了一种不依赖注意力和循环的新神经架构Avey，显著提升长序列处理能力。</p><br /><br /><p><strong>摘要：</strong> Transformer虽在语言模型领域广泛应用，但受限于固定上下文窗口和二次复杂度问题。本文提出Avey架构，通过排名器与自回归处理器协作，仅关注相关token，实现任意长度序列的有效处理。实验表明，Avey在短距离NLP基准测试中表现优异，尤其擅长捕捉长距离依赖关系。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.11305" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 12 Jun 2025 17:11:06 GMT</pubDate>
 <pubDate>Thu, 12 Jun 2025 17:11:06 GMT</pubDate>
 </item>
 <item>
@@ -21,14 +235,10 @@
 <link>https://arxiv.org/abs/2506.09038</link>
 <guid>https://arxiv.org/abs/2506.09038</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究显示，大型语言模型在面对不确定问题时的拒绝回答能力亟待提升。</p><br><br><p><strong>摘要：</strong> 尽管大型语言模型（LLMs）在复杂问题求解上取得了显著进展，但在处理不确定或无法回答的问题时仍存在明显不足。本文介绍了一个名为AbstentionBench的新基准，用于评估20个多样化数据集中的拒绝回答能力，涵盖未知答案、表述不清、错误前提、主观解释及过时信息等问题。实验结果显示，即使是最新推理型LLMs在拒绝回答方面的表现也远不如预期，甚至在经过推理微调后，该能力反而下降了24%。尽管精心设计的系统提示可以在一定程度上改善这一状况，但并未解决模型根本无法有效处理不确定性的问题。本研究旨在通过发布AbstentionBench推动LLMs可靠性的进一步发展。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.09038 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究显示，大型语言模型在面对不确定问题时的拒绝回答能力亟待提升。</p><br /><br /><p><strong>摘要：</strong> 尽管大型语言模型（LLMs）在复杂问题求解上取得了显著进展，但在处理不确定或无法回答的问题时仍存在明显不足。本文介绍了一个名为AbstentionBench的新基准，用于评估20个多样化数据集中的拒绝回答能力，涵盖未知答案、表述不清、错误前提、主观解释及过时信息等问题。实验结果显示，即使是最新推理型LLMs在拒绝回答方面的表现也远不如预期，甚至在经过推理微调后，该能力反而下降了24%。尽管精心设计的系统提示可以在一定程度上改善这一状况，但并未解决模型根本无法有效处理不确定性的问题。本研究旨在通过发布AbstentionBench推动LLMs可靠性的进一步发展。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.09038" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 10 Jun 2025 13:57:30 GMT</pubDate>
-<pubDate>Tue, 10 Jun 2025 13:57:30 GMT</pubDate>
 </item>
-
 <item>
 <title>大型语言模型对反馈的吸收能力研究</title>
 <link>https://arxiv.org/abs/2506.11930</link>
@@ -9010,24 +9220,6 @@ We present MiMo-7B, a large language model born for reasoning tasks, with optimi
 <div><p style="color: gray;">引入知识协同推理代理IKEA减少大语言模型幻觉并优化知识检索。</p><br /><br /><p><strong>摘要：</strong> 大语言模型（LLMs）中常见的幻觉问题可通过检索增强生成（RAG）策略缓解，但现有方法常未能充分利用内部知识，导致冗余检索和推理延迟。本文提出了一种名为IKEA的高效自适应搜索代理，通过识别自身知识边界优先利用内部知识，并仅在必要时求助外部检索。这一改进通过知识边界感知奖励函数和训练数据实现，显著提升了多领域知识推理任务的表现，降低了检索频率并增强了泛化能力，超越了现有基线方法。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.07596" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Mon, 12 May 2025 10:21:57 GMT</pubDate>
-</item>
-<item>
-<title>Unified Continuous Generative Models</title>
-<link>https://arxiv.org/abs/2505.07447</link>
-<guid>https://arxiv.org/abs/2505.07447</guid>
-<content:encoded><![CDATA[
-Recent advances in continuous generative models, including multi-step approaches like diffusion and flow-matching (typically requiring 8-1000 sampling steps) and few-step methods such as consistency models (typically 1-8 steps), have demonstrated impressive generative performance. However, existing work often treats these approaches as distinct paradigms, resulting in separate training and sampling methodologies. We introduce a unified framework for training, sampling, and analyzing these models. Our implementation, the Unified Continuous Generative Models Trainer and Sampler (UCGM-{T,S}), achieves state-of-the-art (SOTA) performance. For example, on ImageNet 256x256 using a 675M diffusion transformer, UCGM-T trains a multi-step model achieving 1.30 FID in 20 steps and a few-step model reaching 1.42 FID in just 2 steps. Additionally, applying UCGM-S to a pre-trained model (previously 1.26 FID at 250 steps) improves performance to 1.06 FID in only 40 steps. Code is available at: https://github.com/LINs-lab/UCGM.
-]]></content:encoded>
-<pubDate>Mon, 12 May 2025 07:15:39 GMT</pubDate>
-</item>
-<item>
-<title>基于注意力影响机制的弱监督大规模推理数据选择方法</title>
-<link>https://arxiv.org/abs/2505.07293</link>
-<guid>https://arxiv.org/abs/2505.07293</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出一种无需监督信号的训练自由方法提升大模型推理能力。</p><br /><br /><p><strong>摘要：</strong> 本文聚焦于通过收集推理密集型预训练数据来增强大型语言模型（LLMs）的复杂推理能力。传统方法依赖于有监督分类器进行数据标注，容易引入领域特定偏差。鉴于注意力头对上下文推理的重要性，我们提出了AttentionInfluence方法，这是一种无需训练且高效的无监督数据选择策略。该方法利用小型预训练语言模型通过简单的注意力头屏蔽操作充当强大的数据选择器。实验中，我们在SmolLM语料库上应用此方法，结合选定的73B令牌子集，预训练了一个7B参数的密集模型，显著提升了多个知识密集型和推理密集型基准测试（如MMLU、AGIEval-en等）的表现，增幅在1.4pp至3.5pp之间。这验证了从弱到强的有效扩展特性，为推理导向的数据选择提供了一条有前景且可扩展的路径。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.07293" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 12 May 2025 03:25:51 GMT</pubDate>
 </item>
 </channel>
 </rss>
