@@ -4,6 +4,54 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>SonicVerse：融合多任务特征检测的音乐描述生成模型</title>
+<link>https://arxiv.org/abs/2506.15154</link>
+<guid>https://arxiv.org/abs/2506.15154</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种结合音频特征检测的音乐描述生成模型，提升音乐AI研究。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为SonicVerse的多任务音乐描述生成模型，该模型不仅生成音乐片段的描述，还通过集成关键检测、人声检测等辅助任务捕捉低级声学细节和高级音乐属性。其创新之处在于基于投影的架构，将音频输入转化为语言标记的同时进行特征检测。此框架不仅能为短音乐片段生成丰富的描述，还能通过时间信息链式生成长音乐片段的详细描述。为训练模型，作者扩展了MusicBench数据集，使用MIRFLEX标注音乐特征，最终实验表明，这种方法显著提升了生成描述的质量和细节水平。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.15154 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 18 Jun 2025 01:51:36 GMT</pubDate>
+<pubDate>Wed, 18 Jun 2025 01:51:36 GMT</pubDate>
+</item>
+<item>
+<title>Revisiting Reinforcement Learning for LLM Reasoning from A Cross-Domain Perspective</title>
+<link>https://arxiv.org/abs/2506.14965</link>
+<guid>https://arxiv.org/abs/2506.14965</guid>
+<content:encoded><![CDATA[
+
+  Reinforcement learning (RL) has emerged as a promising approach to improve large language model (LLM) reasoning, yet most open efforts focus narrowly on math and code, limiting our understanding of its broader applicability to general reasoning. A key challenge lies in the lack of reliable, scalable RL reward signals across diverse reasoning domains. We introduce Guru, a curated RL reasoning corpus of 92K verifiable examples spanning six reasoning domains--Math, Code, Science, Logic, Simulation, and Tabular--each built through domain-specific reward design, deduplication, and filtering to ensure reliability and effectiveness for RL training. Based on Guru, we systematically revisit established findings in RL for LLM reasoning and observe significant variation across domains. For example, while prior work suggests that RL primarily elicits existing knowledge from pretrained models, our results reveal a more nuanced pattern: domains frequently seen during pretraining (Math, Code, Science) easily benefit from cross-domain RL training, while domains with limited pretraining exposure (Logic, Simulation, and Tabular) require in-domain training to achieve meaningful performance gains, suggesting that RL is likely to facilitate genuine skill acquisition. Finally, we present Guru-7B and Guru-32B, two models that achieve state-of-the-art performance among open models RL-trained with publicly available data, outperforming best baselines by 7.9% and 6.7% on our 17-task evaluation suite across six reasoning domains. We also show that our models effectively improve the Pass@k performance of their base models, particularly on complex tasks less likely to appear in pretraining data. We release data, models, training and evaluation code to facilitate general-purpose reasoning at: https://github.com/LLM360/Reasoning360
+
+]]></content:encoded>
+<pubDate>Tue, 17 Jun 2025 16:24:00 GMT</pubDate>
+<pubDate>Tue, 17 Jun 2025 16:24:00 GMT</pubDate>
+</item>
+<item>
+<title>基于迭代精化的图表到代码生成方法</title>
+<link>https://arxiv.org/abs/2506.14837</link>
+<guid>https://arxiv.org/abs/2506.14837</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种基于结构化指令的迭代精化方法提升图表到代码生成性能。</p><br><br><p><strong>摘要：</strong> 多模态大型语言模型（MLLMs）因其强大的视觉理解能力而备受关注，但在图表到代码生成任务上表现欠佳。这项任务不仅需要精确的视觉理解，还需要将视觉元素准确转化为结构化代码。本文提出的{ChartIR}通过区分视觉理解和代码翻译两个子任务，设计描述和差异两种结构化指令，将视觉特征转化为语言表示，从而优化后续代码翻译过程。此外，该方法将整个生成流程分解为初始代码生成和迭代精化两个阶段，逐步提升最终输出质量。实验结果显示，无论是在开源模型Qwen2-VL还是闭源模型GPT-4o上，{ChartIR}均优于其他方法。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.14837 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 15 Jun 2025 10:10:16 GMT</pubDate>
+<pubDate>Sun, 15 Jun 2025 10:10:16 GMT</pubDate>
+</item>
+<item>
+<title>EmoNet-Voice：基于新基准的数据集推动语音情感识别发展</title>
+<link>https://arxiv.org/abs/2506.09827</link>
+<guid>https://arxiv.org/abs/2506.09827</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>EmoNet-Voice推出包含大规模预训练数据集和专家标注的新基准，提升AI语音情感识别能力。</p><br><br><p><strong>摘要：</strong> 随着文本转语音及音频生成模型的进步，评估AI系统情感理解能力的需求愈发迫切。然而，当前的语音情感识别（SER）数据集存在情感粒度不足、隐私问题或依赖演员表演等局限性。本文介绍EmoNet-Voice，一种新的语音情感检测资源，它包括EmoNet-Voice Big（涵盖超过4500小时的跨语言、多情绪语音数据）和EmoNet-Voice Bench（具有人工专家注释的新型基准数据集）。该资源旨在通过精细的情感分类评估SER模型，并利用先进的语音生成技术创建模拟演员表演的合成音频片段，同时由心理学专家验证并标注感知强度。此外，我们提出Empathic Insight Voice模型，在情感识别上达到与人类专家高度一致的新标准。我们的研究发现表明，高唤醒情绪如愤怒比低唤醒状态如专注更容易被检测到。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.09827 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 11 Jun 2025 11:06:59 GMT</pubDate>
+<pubDate>Wed, 11 Jun 2025 11:06:59 GMT</pubDate>
+</item>
 
 <item>
 <title>基于视觉Transformer的寿命预测模型</title>
