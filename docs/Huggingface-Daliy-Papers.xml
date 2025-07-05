@@ -4,19 +4,16 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+
 <item>
 <title>基于文本描述的多器官医学分割模型CRISP-SAM2</title>
 <link>https://arxiv.org/abs/2506.23121</link>
 <guid>https://arxiv.org/abs/2506.23121</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>CRISP-SAM2提升多器官医学图像分割精度与细节表现。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为CRISP-SAM2的新模型，用于改进多器官医学图像分割。该模型通过跨模态交互和语义提示机制，增强对视觉信息的理解，并减少对几何提示的依赖。此外，引入了相似性排序自更新策略和掩码优化过程，以提高局部细节的准确性。实验结果表明，CRISP-SAM2在多个公开数据集上优于现有模型，显示出其在解决当前分割模型不足方面的有效性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2506.23121 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">CRISP-SAM2提升多器官医学图像分割精度与细节表现。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种名为CRISP-SAM2的新模型，用于改进多器官医学图像分割。该模型通过跨模态交互和语义提示机制，增强对视觉信息的理解，并减少对几何提示的依赖。此外，引入了相似性排序自更新策略和掩码优化过程，以提高局部细节的准确性。实验结果表明，CRISP-SAM2在多个公开数据集上优于现有模型，显示出其在解决当前分割模型不足方面的有效性。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.23121" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Sun, 29 Jun 2025 03:05:27 GMT</pubDate>
-<pubDate>Sun, 29 Jun 2025 03:05:27 GMT</pubDate>
 </item>
-
 <item>
 <title>视觉语言分割中的幻觉评估基准研究</title>
 <link>https://arxiv.org/abs/2506.21546</link>
@@ -9007,15 +9004,6 @@ Reward models are central to aligning LLMs with human preferences, but they are 
 Large multimodal models (LMMs) now excel on many vision language benchmarks, however, they still struggle with human centered criteria such as fairness, ethics, empathy, and inclusivity, key to aligning with human values. We introduce HumaniBench, a holistic benchmark of 32K real-world image question pairs, annotated via a scalable GPT4o assisted pipeline and exhaustively verified by domain experts. HumaniBench evaluates seven Human Centered AI (HCAI) principles: fairness, ethics, understanding, reasoning, language inclusivity, empathy, and robustness, across seven diverse tasks, including open and closed ended visual question answering (VQA), multilingual QA, visual grounding, empathetic captioning, and robustness tests. Benchmarking 15 state of the art LMMs (open and closed source) reveals that proprietary models generally lead, though robustness and visual grounding remain weak points. Some open-source models also struggle to balance accuracy with adherence to human-aligned principles. HumaniBench is the first benchmark purpose built around HCAI principles. It provides a rigorous testbed for diagnosing alignment gaps and guiding LMMs toward behavior that is both accurate and socially responsible. Dataset, annotation prompts, and evaluation code are available at: https://vectorinstitute.github.io/HumaniBench
 ]]></content:encoded>
 <pubDate>Fri, 16 May 2025 13:09:44 GMT</pubDate>
-</item>
-<item>
-<title>Streamline Without Sacrifice - Squeeze out Computation Redundancy in LMM</title>
-<link>https://arxiv.org/abs/2505.15816</link>
-<guid>https://arxiv.org/abs/2505.15816</guid>
-<content:encoded><![CDATA[
-Large multimodal models excel in multimodal tasks but face significant computational challenges due to excessive computation on visual tokens. Unlike token reduction methods that focus on token-level redundancy, we identify and study the computation-level redundancy on vision tokens to ensure no information loss. Our key insight is that vision tokens from the pretrained vision encoder do not necessarily require all the heavy operations (e.g., self-attention, FFNs) in decoder-only LMMs and could be processed more lightly with proper designs. We designed a series of experiments to discover and progressively squeeze out the vision-related computation redundancy. Based on our findings, we propose ProxyV, a novel approach that utilizes proxy vision tokens to alleviate the computational burden on original vision tokens. ProxyV enhances efficiency without compromising performance and can even yield notable performance gains in scenarios with more moderate efficiency improvements. Furthermore, the flexibility of ProxyV is demonstrated through its combination with token reduction methods to boost efficiency further. The code will be made public at this https://github.com/penghao-wu/ProxyV URL.
-]]></content:encoded>
-<pubDate>Wed, 21 May 2025 13:59:52 GMT</pubDate>
 </item>
 </channel>
 </rss>
