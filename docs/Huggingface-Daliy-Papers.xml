@@ -4,19 +4,16 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+
 <item>
 <title>基于动态分块机制的端到端语言模型研究</title>
 <link>https://arxiv.org/abs/2507.07955</link>
 <guid>https://arxiv.org/abs/2507.07955</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>H-Nets实现端到端语言建模，提升数据效率与性能。</p><br><br><p><strong>摘要：</strong> 本文提出一种新的动态分块机制，通过将内容和上下文依赖的分割策略与模型联合学习，构建了一个显式的分层网络（H-Net），从而替代传统的分词-语言模型-反分词流程。实验表明，H-Nets在计算和数据匹配的情况下，优于基于BPE分词的Transformer模型，并且多级分层结构进一步提升了性能，表现出更好的数据扩展性。预训练的H-Nets在字符层面更具鲁棒性，无需启发式规则或监督即可学习有意义的分块策略。在中文、代码和DNA序列等分词较弱的语言和模态中，H-Nets表现出显著的数据效率提升，展示了端到端模型从原始数据中学习和扩展的潜力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2507.07955 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">H-Nets实现端到端语言建模，提升数据效率与性能。</p><br /><br /><p><strong>摘要：</strong> 本文提出一种新的动态分块机制，通过将内容和上下文依赖的分割策略与模型联合学习，构建了一个显式的分层网络（H-Net），从而替代传统的分词-语言模型-反分词流程。实验表明，H-Nets在计算和数据匹配的情况下，优于基于BPE分词的Transformer模型，并且多级分层结构进一步提升了性能，表现出更好的数据扩展性。预训练的H-Nets在字符层面更具鲁棒性，无需启发式规则或监督即可学习有意义的分块策略。在中文、代码和DNA序列等分词较弱的语言和模态中，H-Nets表现出显著的数据效率提升，展示了端到端模型从原始数据中学习和扩展的潜力。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2507.07955" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Thu, 10 Jul 2025 13:39:37 GMT</pubDate>
-<pubDate>Thu, 10 Jul 2025 13:39:37 GMT</pubDate>
 </item>
-
 <item>
 <title>基于Re-Bottleneck的神经音频编码器结构优化</title>
 <link>https://arxiv.org/abs/2507.07867</link>
@@ -9007,15 +9004,6 @@ This paper introduces InfantAgent-Next, a generalist agent capable of interactin
 As the marginal cost of scaling computation (data and parameters) during model pre-training continues to increase substantially, test-time scaling (TTS) has emerged as a promising direction for improving generative model performance by allocating additional computation at inference time. While TTS has demonstrated significant success across multiple language tasks, there remains a notable gap in understanding the test-time scaling behaviors of image and video generative models (diffusion-based or flow-based models). Although recent works have initiated exploration into inference-time strategies for vision tasks, these approaches face critical limitations: being constrained to task-specific domains, exhibiting poor scalability, or falling into reward over-optimization that sacrifices sample diversity. In this paper, we propose Evolutionary Search (EvoSearch), a novel, generalist, and efficient TTS method that effectively enhances the scalability of both image and video generation across diffusion and flow models, without requiring additional training or model expansion. EvoSearch reformulates test-time scaling for diffusion and flow models as an evolutionary search problem, leveraging principles from biological evolution to efficiently explore and refine the denoising trajectory. By incorporating carefully designed selection and mutation mechanisms tailored to the stochastic differential equation denoising process, EvoSearch iteratively generates higher-quality offspring while preserving population diversity. Through extensive evaluation across both diffusion and flow architectures for image and video generation tasks, we demonstrate that our method consistently outperforms existing approaches, achieves higher diversity, and shows strong generalizability to unseen evaluation metrics. Our project is available at the website https://tinnerhrhe.github.io/evosearch.
 ]]></content:encoded>
 <pubDate>Fri, 23 May 2025 04:25:46 GMT</pubDate>
-</item>
-<item>
-<title>RePrompt：通过强化学习增强文本到图像生成的提示</title>
-<link>https://arxiv.org/abs/2505.17540</link>
-<guid>https://arxiv.org/abs/2505.17540</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出一种新框架RePrompt，通过强化学习优化文本到图像生成的提示质量。</p><br /><br /><p><strong>摘要：</strong> 现有文本到图像生成模型在处理简略提示时难以准确反映用户意图，尽管有研究尝试利用大型语言模型（LLMs）改进提示，但这些方法常因缺乏视觉语义和现实世界构图的充分基础而产生风格化或不真实的图像。受语言模型推理进展的启发，我们提出了RePrompt，这是一种新的重新提示框架，通过强化学习引入显式的推理过程到提示优化中。不同于依赖手工规则或风格重写，我们的方法训练一个语言模型生成结构化的自我反思提示，目标是优化图像级结果。定制的奖励模型从人类偏好、语义对齐和视觉构图方面评估生成的图像，为细化提示生成提供间接监督。该方法实现了端到端训练而无需人工标注数据。实验表明，在GenEval和T2I-Compbench基准测试中，RePrompt显著提升了多种文本到图像生成模型的空间布局忠实度和组合泛化能力，达到了新的技术水平。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2505.17540" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 23 May 2025 02:44:26 GMT</pubDate>
 </item>
 </channel>
 </rss>
