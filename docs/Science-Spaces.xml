@@ -4,6 +4,24 @@
 <title>科学空间|Scientific Spaces</title>
 <link>https://kexue.fm/</link>
 
+<item>
+<title>矩阵r次方根和逆r次方根的高效计算</title>
+<link>https://spaces.ac.cn/archives/11175</link>
+<guid>https://spaces.ac.cn/archives/11175</guid>
+<content:encoded><![CDATA[
+
+  <p>上一篇文章<a href="https://kexue.fm/archives/11158" target="_blank">《矩阵平方根和逆平方根的高效计算》</a>中，笔者从$\newcommand{mcsgn}{\mathop{\text{mcsgn}}}\mcsgn$算子出发，提出了一种很漂亮的矩阵平方根和逆平方根的计算方法。比较神奇的是，该方案经过化简之后，最终公式已经看不到最初$\mcsgn$形式的样子。这不禁引发了更深层的思考：该方案更本质的工作原理是什么？是否有推广到任意$r$次方根的可能性？</p><p>沿着这个角度进行分析后，笔者惊喜地发现，我们可以从一个更简单的角度去理解之前的迭代算法，并且在新角度下可以很轻松推广到任意$r$次方根和逆$r$次方根的计算。接下来我们将分享这一过程。</p><h2>前情回顾</h2><p>设$\boldsymbol{G}\in\mathbb{R}^{m\times n}$是任意矩阵，$\boldsymbol{P}\in\mathbb{R}^{n\times n}$是任意特征值都在$[0,1]$内的矩阵，上一篇文章给出：<br />
+\begin{gather}<br />
+\boldsymbol{G}_0 = \boldsymbol{G}, \quad \boldsymbol{P}_0 = \boldsymbol{P} \notag\\[6pt]<br />
+\boldsymbol{G}_{t+1} = \boldsymbol{G}_t(a_{t+1}\boldsymbol{I} + b_{t+1}\boldsymbol{P}_t + c_{t+1}\boldsymbol{P}_t^2) \label{eq:r2-rsqrt}\\[6pt]<br />
+\boldsymbol{P}_{t+1} = (a_{t+1}\boldsymbol{I} + b_{t+1}\boldsymbol{P}_t + c_{t+1}\boldsymbol{P}_t^2)^2\boldsymbol{P}_t \label{eq:r3-rsqrt}\\[6pt]<br />
+\lim_{t\to\infty} \boldsymbol{G}_t = \boldsymbol{G}\boldsymbol{P}^{-1/2}\notag<br />
+\end{gather}</p><p class="more"><a href="https://spaces.ac.cn/archives/11175" title="矩阵r次方根和逆r次方根的高效计算">[...]</a></p>
+
+]]></content:encoded>
+<pubDate>Mon, 21 Jul 2025 21:28:00 +0800</pubDate>
+<pubDate>Mon, 21 Jul 2025 21:28:00 +0800</pubDate>
+</item>
 
 <item>
 <title>矩阵的算术平方根与逆平方根计算</title>
