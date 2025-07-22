@@ -4,6 +4,294 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>基于去噪的潜在令牌化器设计研究</title>
+<link>https://arxiv.org/abs/2507.15856</link>
+<guid>https://arxiv.org/abs/2507.15856</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新型去噪令牌化器，提升生成模型效果。</p><br><br><p><strong>摘要：</strong> 本文探讨了视觉令牌化器在生成建模中的有效性问题，指出现代生成模型都具有从噪声或遮蔽输入中重建清晰信号的训练目标，这一过程称为去噪。受此启发，作者提出将令牌化器嵌入直接与下游去噪目标对齐，使潜在嵌入在严重干扰下仍易于重建。为此，引入了Latent Denoising Tokenizer（l-DeTok），该令牌化器通过插值噪声和随机遮蔽来重建清晰图像。实验表明，在ImageNet 256x256数据集上，l-DeTok在六种代表性生成模型中均优于标准令牌化器。研究强调去噪是令牌化器设计的重要原则，希望为未来设计提供新思路。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2507.15856 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 21 Jul 2025 13:59:56 GMT</pubDate>
+<pubDate>Mon, 21 Jul 2025 13:59:56 GMT</pubDate>
+</item>
+<item>
+<title>基于概念驱动的视频目标分割框架SeC及其性能评估</title>
+<link>https://arxiv.org/abs/2507.15852</link>
+<guid>https://arxiv.org/abs/2507.15852</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>SeC提升视频目标分割效果，实现更高精度。</p><br><br><p><strong>摘要：</strong> 本文提出一种基于概念驱动的视频目标分割框架SeC，旨在解决传统方法在处理视觉变化、遮挡和复杂场景时的不足。SeC利用大视觉语言模型构建高阶、以对象为中心的表示，增强语义理解能力，并在推理过程中动态调整计算资源。为评估该方法，研究者还构建了SeCVOS基准数据集，包含160个精心标注的多场景视频。实验表明，SeC在SeCVOS上比SAM 2.1提升了11.8个百分点，成为当前最先进的概念感知视频目标分割方法。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2507.15852 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 21 Jul 2025 13:59:02 GMT</pubDate>
+<pubDate>Mon, 21 Jul 2025 13:59:02 GMT</pubDate>
+</item>
+<item>
+<title>GUI-G^2：基于高斯分布的图形用户界面定位奖励框架</title>
+<link>https://arxiv.org/abs/2507.15846</link>
+<guid>https://arxiv.org/abs/2507.15846</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>GUI-G^2通过高斯分布提升GUI交互的精确性与鲁棒性。</p><br><br><p><strong>摘要：</strong> 本文提出一种名为GUI Gaussian Grounding Rewards (GUI-G^2) 的新型奖励框架，用于改进图形用户界面（GUI）中的自然语言指令定位任务。传统方法依赖二值奖励，导致信号稀疏且忽略空间连续性。而GUI-G^2通过将GUI元素建模为连续高斯分布，引入了两种协同机制：高斯点奖励用于精确定位，覆盖奖励用于评估空间对齐度。此外，该框架还包含自适应方差机制，以处理不同尺寸的界面元素。实验表明，GUI-G^2在多个基准测试中显著优于现有方法，特别是在ScreenSpot-Pro上提升了24.7%。研究显示，连续建模增强了模型对界面变化的鲁棒性和对未知布局的泛化能力，为GUI交互任务提供了新的范式。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2507.15846 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 21 Jul 2025 13:53:42 GMT</pubDate>
+<pubDate>Mon, 21 Jul 2025 13:53:42 GMT</pubDate>
+</item>
+<item>
+<title>基于大语言模型的经济政策模拟框架</title>
+<link>https://arxiv.org/abs/2507.15815</link>
+<guid>https://arxiv.org/abs/2507.15815</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>LLM Economist通过代理建模实现经济政策设计与评估。</p><br><br><p><strong>摘要：</strong> 文章提出了一种名为LLM Economist的新框架，利用基于代理的建模方法，在具有层级决策的战略环境中设计和评估经济政策。底层由有限理性的工人代理组成，这些代理基于美国人口普查数据生成，以最大化文本定义的效用函数。上层的规划代理则通过上下文强化学习提出分段线性边际税率方案。该框架具备优化异质效用、生成大规模真实人口代理以及完全用自然语言表达机制设计的能力。实验表明，该框架在一百个交互代理中能够接近斯塔克尔伯格均衡，提升社会福利，并在去中心化治理下通过定期投票进一步提高效果。结果证明，基于大语言模型的代理可以共同建模、模拟和治理复杂经济系统。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2507.15815 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 21 Jul 2025 13:21:14 GMT</pubDate>
+<pubDate>Mon, 21 Jul 2025 13:21:14 GMT</pubDate>
+</item>
+<item>
+<title>基于熵感知的强化学习方法提升大语言模型推理能力</title>
+<link>https://arxiv.org/abs/2507.15778</link>
+<guid>https://arxiv.org/abs/2507.15778</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出Archer方法提升LLM推理性能。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为Archer的熵感知强化学习方法，旨在提升大语言模型（LLM）的推理能力。传统RLVR方法对所有token应用相同的训练信号，而忽略了低熵知识类token与高熵推理类token的不同作用。Archer通过双token约束和同步更新机制，对推理token施加较弱的KL正则化和较高的裁剪阈值以鼓励探索，同时对知识token施加强约束以保持事实准确性。实验结果表明，该方法在多个数学推理和代码生成基准上表现优异，达到或超过同规模模型的最先进水平。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2507.15778 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 21 Jul 2025 12:34:01 GMT</pubDate>
+<pubDate>Mon, 21 Jul 2025 12:34:01 GMT</pubDate>
+</item>
+<item>
+<title>TokensGen：基于压缩标记的长视频生成框架</title>
+<link>https://arxiv.org/abs/2507.15728</link>
+<guid>https://arxiv.org/abs/2507.15728</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>TokensGen通过压缩标记提升长视频生成的连贯性与稳定性。</p><br><br><p><strong>摘要：</strong> 本文提出TokensGen，一种两阶段框架，旨在解决长视频生成中的记忆瓶颈和长期不一致问题。该方法将长视频生成分解为内片段语义控制、长期一致性控制和片段间平滑过渡三个核心任务。首先训练To2V模型，利用文本和视频标记生成短视频；其次引入T2To模型，一次性生成所有标记以确保全局一致性；最后在推理阶段采用自适应FIFO-Diffusion策略实现片段间的无缝连接。实验表明，该方法在保持计算效率的同时显著提升了长视频的时间和内容连贯性，为叙事、电影制作和沉浸式模拟提供了可扩展的解决方案。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2507.15728 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 21 Jul 2025 11:37:33 GMT</pubDate>
+<pubDate>Mon, 21 Jul 2025 11:37:33 GMT</pubDate>
+</item>
+<item>
+<title>基于数据混合代理的持续预训练方法</title>
+<link>https://arxiv.org/abs/2507.15640</link>
+<guid>https://arxiv.org/abs/2507.15640</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出数据混合代理模型，提升语言模型在新领域的表现。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为Data Mixing Agent的端到端框架，用于在持续预训练中优化源领域和目标领域数据的混合比例，以避免模型遗忘原有能力。该方法通过强化学习从大量数据混合轨迹中学习通用的重加权策略，无需人工设定。实验表明，该方法在数学推理任务中优于现有基线，并能跨领域、跨模型泛化。此外，它在代码生成等不同任务中也表现出良好的适应性，且在较少源领域数据的情况下仍能保持高性能。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2507.15640 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 21 Jul 2025 10:01:54 GMT</pubDate>
+<pubDate>Mon, 21 Jul 2025 10:01:54 GMT</pubDate>
+</item>
+<item>
+<title>基于离散SDF的3D高斯点云逆渲染方法</title>
+<link>https://arxiv.org/abs/2507.15629</link>
+<guid>https://arxiv.org/abs/2507.15629</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种离散SDF增强的3D高斯点云逆渲染方法。</p><br><br><p><strong>摘要：</strong> 本文提出一种基于离散符号距离场（SDF）的3D高斯点云逆渲染方法，旨在解决传统方法在几何约束应用上的不足。通过将SDF编码到每个高斯中，并利用SDF到透明度的转换实现高效渲染，避免了光线追踪计算。为保证离散样本与真实SDF的一致性，引入基于投影的对齐损失。实验表明，该方法在光照重建质量上优于现有方法，且无需额外内存和复杂优化设计。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2507.15629 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 21 Jul 2025 09:52:33 GMT</pubDate>
+<pubDate>Mon, 21 Jul 2025 09:52:33 GMT</pubDate>
+</item>
+<item>
+<title>Being-H0：基于人类视频的多模态机器人操作模型</title>
+<link>https://arxiv.org/abs/2507.15597</link>
+<guid>https://arxiv.org/abs/2507.15597</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Being-H0通过人类视频训练，提升机器人操作能力。</p><br><br><p><strong>摘要：</strong> Being-H0是一种新型的视觉-语言-动作模型（VLA），利用大规模人类视频进行训练，旨在解决现有模型在复杂操作任务中的不足。该模型采用物理指令微调方法，结合大规模预训练、三维空间对齐和任务适配，提升了机器人在真实环境中的表现。同时，研究团队构建了一个包含多种数据源的大规模数据集，以支持模型训练与优化。实验表明，Being-H0在手部运动生成和指令遵循方面表现出色，并具备良好的扩展性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2507.15597 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 21 Jul 2025 09:19:09 GMT</pubDate>
+<pubDate>Mon, 21 Jul 2025 09:19:09 GMT</pubDate>
+</item>
+<item>
+<title>PhysGym：评估大语言模型科学发现能力的新基准</title>
+<link>https://arxiv.org/abs/2507.15550</link>
+<guid>https://arxiv.org/abs/2507.15550</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>PhysGym用于评估大语言模型在物理环境中的科学推理能力。</p><br><br><p><strong>摘要：</strong> 本文介绍了PhysGym，一个用于评估基于大语言模型的科学推理能力的新基准套件和仿真平台。该平台通过控制提供给代理的先验知识水平，使研究人员能够分析模型在不同问题复杂度下的表现。PhysGym包含一系列交互式模拟，要求代理主动探测环境、在约束条件下收集数据并提出关于物理规律的假设。平台提供了标准化的评估协议和指标，用于衡量假设的准确性和模型的真实性。实验结果展示了该基准在区分不同先验知识和任务复杂度下的模型能力方面的有效性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2507.15550 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 21 Jul 2025 08:28:10 GMT</pubDate>
+<pubDate>Mon, 21 Jul 2025 08:28:10 GMT</pubDate>
+</item>
+<item>
+<title>GR-3：通用机器人策略的进展与ByteMini集成</title>
+<link>https://arxiv.org/abs/2507.15493</link>
+<guid>https://arxiv.org/abs/2507.15493</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>GR-3具备强大泛化能力，适用于多种任务和环境。</p><br><br><p><strong>摘要：</strong> 本文介绍了GR-3，一种大规模视觉-语言-动作（VLA）模型，具有在新物体、环境和抽象指令中进行泛化的出色能力。GR-3可通过少量人类轨迹数据高效微调，实现快速适应新场景。它还能处理长时序和精细操作任务，包括双臂操作和移动任务。该模型通过多阶段训练方法实现，包括网络规模的视觉-语言数据联合训练、VR设备收集的人类轨迹数据微调以及机器人轨迹数据的模仿学习。同时，文章介绍了与GR-3集成的ByteMini机器人，展示了其在多种任务中的灵活性和可靠性。实验表明，GR-3在多个挑战性任务中优于现有方法。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2507.15493 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 21 Jul 2025 06:54:13 GMT</pubDate>
+<pubDate>Mon, 21 Jul 2025 06:54:13 GMT</pubDate>
+</item>
+<item>
+<title>Stitch：实现语音模型同步思考与回答的新方法</title>
+<link>https://arxiv.org/abs/2507.15375</link>
+<guid>https://arxiv.org/abs/2507.15375</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Stitch让语音模型在说话时同步生成内部思考过程。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为Stitch的新方法，用于改进语音语言模型（SLMs）的性能。传统SLMs在生成回应前缺乏内部思考过程，而人类在交流前通常会进行内部推理。Stitch通过交替生成未发声的推理片段和语音回应片段，实现了在语音输出过程中同步进行内部思考。这种方法有效减少了额外延迟，同时在数学推理数据集上比基线模型高出15%的性能，并在非推理任务中表现相当。项目页面提供了相关演示和动画。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2507.15375 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 21 Jul 2025 04:30:03 GMT</pubDate>
+<pubDate>Mon, 21 Jul 2025 04:30:03 GMT</pubDate>
+</item>
+<item>
+<title>基于知识投影的网页信息检索数据合成框架WebShaper</title>
+<link>https://arxiv.org/abs/2507.15061</link>
+<guid>https://arxiv.org/abs/2507.15061</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>WebShaper提升IS代理性能，实现更精准的信息检索。</p><br><br><p><strong>摘要：</strong> 文章提出了一种名为WebShaper的数据合成框架，旨在解决信息检索（IS）代理训练数据不足的问题。该框架通过集合论对IS任务进行形式化，并引入知识投影（KP）概念，以精确控制推理结构。WebShaper通过多步骤扩展过程生成复杂任务，提升了IS代理在GAIA和WebWalkerQA基准测试中的表现，达到了当前开源IS代理的最先进水平。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2507.15061 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 20 Jul 2025 13:53:37 GMT</pubDate>
+<pubDate>Sun, 20 Jul 2025 13:53:37 GMT</pubDate>
+</item>
+<item>
+<title>视频理解测试：评估视频大语言模型的准确性和鲁棒性</title>
+<link>https://arxiv.org/abs/2507.15028</link>
+<guid>https://arxiv.org/abs/2507.15028</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>视频大语言模型在视频理解上与人类存在显著差距。</p><br><br><p><strong>摘要：</strong> 文章提出了一种名为Video-TT的视频理解测试，用于评估视频大语言模型（video LLMs）在真实视频中的表现是否接近人类。该测试包含1000个YouTube Shorts视频，每个视频配有1个开放性问题和4个对抗性问题，以检验模型在视觉和叙事复杂性方面的理解能力。实验结果表明，当前视频大语言模型在准确性和鲁棒性方面与人类仍有明显差距。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2507.15028 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 20 Jul 2025 12:30:33 GMT</pubDate>
+<pubDate>Sun, 20 Jul 2025 12:30:33 GMT</pubDate>
+</item>
+<item>
+<title>RLVR在推理边界扩展中的局限性研究</title>
+<link>https://arxiv.org/abs/2507.14843</link>
+<guid>https://arxiv.org/abs/2507.14843</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>RLVR可能限制AI发现新解，而非真正扩展推理能力。</p><br><br><p><strong>摘要：</strong> 本文探讨了强化学习与可验证奖励（RLVR）在提升AI解决复杂逻辑任务中的作用。研究指出，RLVR受限于基础模型的初始概率分布，仅能对已有高奖励输出进行优化，而难以发现全新的解决方案。同时，RLVR在提高精度的同时，可能会缩小探索范围，导致遗漏原本可被基础模型找到的正确答案。实验表明，在更大的采样预算下，RLVR的实证支持范围反而缩小。此外，尽管RLVR增加了逐标记的不确定性，但最终答案的多样性却下降，表明其可能局限于少数答案。研究建议未来需通过显式探索机制或混合策略来突破这一限制。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2507.14843 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 20 Jul 2025 03:04:08 GMT</pubDate>
+<pubDate>Sun, 20 Jul 2025 03:04:08 GMT</pubDate>
+</item>
+<item>
+<title>开源数学推理语言模型MiroMind-M1的开发与性能评估</title>
+<link>https://arxiv.org/abs/2507.14683</link>
+<guid>https://arxiv.org/abs/2507.14683</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>MiroMind-M1系列模型在数学推理任务中表现优异。</p><br><br><p><strong>摘要：</strong> 本文介绍了MiroMind-M1系列开源推理语言模型，旨在提升数学推理任务的透明度和可复现性。该模型基于Qwen-2.5架构，在719,000个经过验证的数学推理问题上进行监督微调，并在62,000个挑战性问题上进行强化学习训练。为提高训练效率，作者提出了一种上下文感知的多阶段策略优化算法。实验结果显示，MiroMind-M1在AIME24、AIME25和MATH等基准测试中达到或超越现有开源模型的性能，并具有更高的token效率。研究团队还公开了完整的模型、数据集及训练配置，以支持后续研究和社区发展。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2507.14683 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sat, 19 Jul 2025 12:21:23 GMT</pubDate>
+<pubDate>Sat, 19 Jul 2025 12:21:23 GMT</pubDate>
+</item>
+<item>
+<title>长推理下大推理模型性能下降现象研究</title>
+<link>https://arxiv.org/abs/2507.14417</link>
+<guid>https://arxiv.org/abs/2507.14417</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>长推理导致大模型性能下降，揭示五种失败模式。</p><br><br><p><strong>摘要：</strong> 本文构建了评估任务，发现延长大推理模型的推理长度会降低性能，呈现出测试时计算与准确率之间的反向关系。评估任务涵盖四种类型：带干扰项的计数任务、含虚假特征的回归任务、约束跟踪的演绎任务以及高级AI风险。研究发现了五种模型在长时间推理中的失败模式，包括Claude模型被无关信息分散注意力、OpenAI o系列模型过度依赖问题框架、模型从合理先验转向虚假相关性、所有模型在复杂演绎任务中难以保持专注，以及推理延长可能加剧不良行为。研究强调了在不同推理长度下评估模型的重要性，以识别和解决这些失败模式。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2507.14417 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 18 Jul 2025 20:06:13 GMT</pubDate>
+<pubDate>Fri, 18 Jul 2025 20:06:13 GMT</pubDate>
+</item>
+<item>
+<title>基于单值反馈的多轮强化学习方法提升语言模型推理能力</title>
+<link>https://arxiv.org/abs/2507.14295</link>
+<guid>https://arxiv.org/abs/2507.14295</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>多轮强化学习结合单值反馈提升模型推理与修正能力。</p><br><br><p><strong>摘要：</strong> 本文探讨了多轮问题解决对大型推理模型（LRMs）的重要性，并指出传统强化学习方法在多轮任务中表现不足。研究提出一种基于单值反馈的强化学习框架（UFO），利用简单的用户反馈（如“再试一次”）来改进模型的多轮推理能力。实验表明，该方法不仅保持了单轮性能，还提升了多轮推理准确率高达14%。此外，通过设计合理的奖励机制，模型在减少回答轮次的同时，也能在出错时产生更细致和多样化的推理过程。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2507.14295 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 18 Jul 2025 14:07:38 GMT</pubDate>
+<pubDate>Fri, 18 Jul 2025 14:07:38 GMT</pubDate>
+</item>
+<item>
+<title>自动化生成高质量图像编辑数据集提升AI图像处理能力</title>
+<link>https://arxiv.org/abs/2507.14119</link>
+<guid>https://arxiv.org/abs/2507.14119</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>自动化管道生成高精度图像编辑数据，提升AI图像处理效果。</p><br><br><p><strong>摘要：</strong> 文章介绍了一种自动化、模块化的图像编辑数据挖掘系统，能够跨领域、多分辨率、多风格地生成高质量的图像编辑三元组。该系统基于公开生成模型，无需人工干预，通过任务调优的Gemini验证器直接评估指令遵循度和美学质量，无需分割或定位模型。通过逆向和组合引导方法，数据量扩大约2.2倍，为大规模训练提供支持。研究团队发布了NHR-Edit数据集和Bagel-NHR-Edit模型，显著提升了图像编辑任务的性能。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2507.14119 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 18 Jul 2025 13:50:00 GMT</pubDate>
+<pubDate>Fri, 18 Jul 2025 13:50:00 GMT</pubDate>
+</item>
+<item>
+<title>基于不确定性引导的渐进学习框架在CT图像分类中的应用</title>
+<link>https://arxiv.org/abs/2507.14102</link>
+<guid>https://arxiv.org/abs/2507.14102</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>UGPL提升CT图像分类准确率，优于现有方法。</p><br><br><p><strong>摘要：</strong> 本文提出一种名为UGPL的不确定性引导渐进学习框架，用于提高CT图像的分类准确性。该方法通过全局到局部的分析策略，首先识别诊断模糊区域，再对关键区域进行详细分析。利用证据深度学习量化预测不确定性，并通过非极大值抑制机制提取具有空间多样性的信息片段。结合自适应融合机制，UGPL能够有效整合上下文信息与细粒度特征。实验表明，UGPL在三个CT数据集上分别提升了3.29%、2.46%和8.08%的准确率，证明其在肾脏异常、肺癌和新冠检测中的有效性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2507.14102 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 18 Jul 2025 13:30:56 GMT</pubDate>
+<pubDate>Fri, 18 Jul 2025 13:30:56 GMT</pubDate>
+</item>
+<item>
+<title>PhyWorldBench：评估视频生成模型物理模拟能力的基准测试</title>
+<link>https://arxiv.org/abs/2507.13428</link>
+<guid>https://arxiv.org/abs/2507.13428</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出PhyWorldBench，用于评估视频生成模型的物理真实性。</p><br><br><p><strong>摘要：</strong> 本文介绍了PhyWorldBench，这是一个用于评估视频生成模型在物理现象模拟方面表现的全面基准。该基准涵盖从基础物理规律到复杂物体交互等多个层次的物理场景，并引入了“反物理”类别以测试模型在违反现实物理规则时的逻辑一致性。研究团队评估了12个先进的文本到视频生成模型，分析它们在不同物理场景下的表现，识别出模型在遵循真实物理规律方面的关键挑战，并提出了优化提示词以提升物理真实性的建议。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2507.13428 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 17 Jul 2025 13:54:09 GMT</pubDate>
+<pubDate>Thu, 17 Jul 2025 13:54:09 GMT</pubDate>
+</item>
+<item>
+<title>基于流式处理的4D时空几何重建方法</title>
+<link>https://arxiv.org/abs/2507.11539</link>
+<guid>https://arxiv.org/abs/2507.11539</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种实时4D几何重建模型，提升推理速度与空间一致性。</p><br><br><p><strong>摘要：</strong> 本文提出一种流式4D视觉几何变换器，借鉴自回归大语言模型的设计理念。该模型采用因果Transformer架构，通过时间因果注意力机制和历史键值缓存实现高效的在线长期4D重建。为提升训练效率，引入从密集双向视觉几何接地Transformer（VGGT）中知识蒸馏的方法，并支持迁移高效注意力算子（如FlashAttention）。实验表明，该模型在保持性能的同时显著提升了在线场景下的推理速度，为可扩展的交互式4D视觉系统提供了新路径。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2507.11539 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 15 Jul 2025 13:59:57 GMT</pubDate>
+<pubDate>Tue, 15 Jul 2025 13:59:57 GMT</pubDate>
+</item>
+<item>
+<title>RoMaP：基于3D高斯编辑的精准局部3D内容修改方法</title>
+<link>https://arxiv.org/abs/2507.11061</link>
+<guid>https://arxiv.org/abs/2507.11061</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>RoMaP实现精准3D高斯局部编辑，提升3D内容质量与灵活性。</p><br><br><p><strong>摘要：</strong> 本文提出RoMaP框架，解决3D高斯点云局部编辑中的挑战。通过引入3D-Geometry Aware Label Prediction模块生成鲁棒的3D掩码，结合正则化SDS损失函数，有效提升局部编辑精度和上下文一致性。实验表明，RoMaP在重建和生成场景中均达到最先进的3D局部编辑效果，为更灵活、可靠的3D内容创作提供支持。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2507.11061 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 15 Jul 2025 03:54:11 GMT</pubDate>
+<pubDate>Tue, 15 Jul 2025 03:54:11 GMT</pubDate>
+</item>
+<item>
+<title>基于几何引导的弱监督自蒸馏框架GeoDistill用于跨视角定位</title>
+<link>https://arxiv.org/abs/2507.10935</link>
+<guid>https://arxiv.org/abs/2507.10935</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>GeoDistill提升跨视角定位精度与鲁棒性。</p><br><br><p><strong>摘要：</strong> 本文提出GeoDistill，一种基于几何引导的弱监督自蒸馏框架，用于提升跨视角定位的性能。该方法通过教师-学生模型结构，利用视场角（FoV）掩码生成有限视场图像，使学生模型专注于关键特征如车道线，忽略无纹理区域。实验表明，GeoDistill在不同框架下均显著提升定位效果，并引入一种无需精确平面位置标注的相对方向估计网络，为实际应用提供高效解决方案。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2507.10935 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 14 Jul 2025 23:00:15 GMT</pubDate>
+<pubDate>Mon, 14 Jul 2025 23:00:15 GMT</pubDate>
+</item>
 
 <item>
 <title>基于4D扩散模型的高保真人体视角合成方法</title>
