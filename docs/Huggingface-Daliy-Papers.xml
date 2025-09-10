@@ -5,15 +5,49 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>复杂检索任务评估与大语言模型影响研究</title>
+<link>https://arxiv.org/abs/2509.07253</link>
+<guid>https://arxiv.org/abs/2509.07253</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>复杂检索任务评估显示LLM增强效果有限。</p><br><br><p><strong>摘要：</strong> 本文探讨了复杂检索任务的挑战，指出当前检索模型在处理多部分、多约束的自然语言查询时表现不佳。尽管人们期望搜索系统能处理更具体的信息请求，但现有评估资源有限且缺乏现实场景。为此，作者构建了一个多样且真实的复杂检索任务集，并对多个先进检索模型进行了基准测试。同时研究了基于大语言模型的查询扩展和重写对检索质量的影响。结果显示，即使最佳模型在平均nDCG@10和R@100指标上也仅达到0.346和0.587，表明检索模型仍有较大提升空间。此外，虽然LLM增强有助于弱模型，但最强模型在使用重写技术后性能反而下降。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2509.07253 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 08 Sep 2025 18:11:10 GMT</pubDate>
+<pubDate>Mon, 08 Sep 2025 18:11:10 GMT</pubDate>
+</item>
+<item>
+<title>基于直接对齐和语义相对偏好优化的扩散模型改进方法</title>
+<link>https://arxiv.org/abs/2509.06942</link>
+<guid>https://arxiv.org/abs/2509.06942</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出Direct-Align和SRPO提升扩散模型的图像质量与美学表现。</p><br><br><p><strong>摘要：</strong> 本文针对扩散模型在对齐人类偏好时存在的计算成本高和依赖离线奖励微调的问题，提出了Direct-Align方法，通过预定义噪声先验实现任意时间步的图像恢复，避免晚期优化过拟合。同时引入语义相对偏好优化（SRPO），将奖励信号与文本条件结合，支持在线调整奖励，减少对离线微调的依赖。实验表明，该方法显著提升了FLUX.1.dev模型的人类评估真实感和美学质量。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2509.06942 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 08 Sep 2025 13:54:08 GMT</pubDate>
+<pubDate>Mon, 08 Sep 2025 13:54:08 GMT</pubDate>
+</item>
+<item>
+<title>基于强化学习的大型语言模型推理机制研究</title>
+<link>https://arxiv.org/abs/2509.03646</link>
+<guid>https://arxiv.org/abs/2509.03646</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>RL提升LLM推理能力，揭示其分层结构与优化策略。</p><br><br><p><strong>摘要：</strong> 本文探讨了强化学习（RL）如何增强大型语言模型（LLM）的复杂推理能力，并揭示了其成功背后的机制。研究发现，诸如‘顿悟’、‘长度扩展’和熵动态等现象实际上是推理层次结构的体现，类似于人类认知中战略规划与执行步骤的分离。文章提出了一种两阶段动态学习过程：初期注重低级技能的改进，后期转向高级战略规划的探索。现有RL算法如GRPO存在优化压力分散的问题，为此作者提出了HIerarchy-Aware Credit Assignment (HICRA)算法，专注于高影响的规划标记，显著提升了性能。同时，验证了语义熵作为衡量战略探索的更优指标。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2509.03646 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 03 Sep 2025 14:52:49 GMT</pubDate>
+<pubDate>Wed, 03 Sep 2025 14:52:49 GMT</pubDate>
+</item>
+
+<item>
 <title>Delta L Normalization：提升RLVR中动态生成长度的损失聚合方法</title>
 <link>https://arxiv.org/abs/2509.07558</link>
 <guid>https://arxiv.org/abs/2509.07558</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>提出Delta L Normalization方法，解决RLVR训练中的梯度方差问题。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为Delta L Normalization的简单而有效的损失聚合方法，旨在应对强化学习与可验证奖励（RLVR）中动态生成长度带来的挑战。由于响应长度在训练过程中变化较大，导致梯度方差高且优化不稳定。尽管已有方法如GRPO、DAPO和Dr. GRPO尝试通过不同的损失归一化项来缓解这一问题，但仍然存在估计偏差或梯度方差高的问题。通过对不同长度对策略损失的影响进行理论和实证分析，作者将问题重新建模为寻找最小方差无偏估计器。实验表明，Delta L Normalization不仅提供无偏的策略损失估计，还在理论上最小化了梯度方差，并在多种模型规模、最大长度和任务中表现出色。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2509.07558 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">提出Delta L Normalization方法，解决RLVR训练中的梯度方差问题。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种名为Delta L Normalization的简单而有效的损失聚合方法，旨在应对强化学习与可验证奖励（RLVR）中动态生成长度带来的挑战。由于响应长度在训练过程中变化较大，导致梯度方差高且优化不稳定。尽管已有方法如GRPO、DAPO和Dr. GRPO尝试通过不同的损失归一化项来缓解这一问题，但仍然存在估计偏差或梯度方差高的问题。通过对不同长度对策略损失的影响进行理论和实证分析，作者将问题重新建模为寻找最小方差无偏估计器。实验表明，Delta L Normalization不仅提供无偏的策略损失估计，还在理论上最小化了梯度方差，并在多种模型规模、最大长度和任务中表现出色。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2509.07558" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 09 Sep 2025 05:52:34 GMT</pubDate>
 <pubDate>Tue, 09 Sep 2025 05:52:34 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +55,8 @@
 <link>https://arxiv.org/abs/2509.06830</link>
 <guid>https://arxiv.org/abs/2509.06830</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>Curia在多个放射学任务中表现优于或等同于放射科医生。</p><br><br><p><strong>摘要：</strong> 本文介绍了Curia，一个基于大型医院多年积累的150,000例横断面影像数据（130 TB）训练的放射学基础模型。该模型在19个外部验证任务中表现出色，能够准确识别器官、检测如脑出血和心肌梗死等病变，并在肿瘤分期中预测结果。Curia在跨模态和低数据环境下展现出显著的临床性能，其表现与放射科医生及现有基础模型相当甚至更优。研究团队已公开模型权重以促进进一步发展。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2509.06830 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">Curia在多个放射学任务中表现优于或等同于放射科医生。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了Curia，一个基于大型医院多年积累的150,000例横断面影像数据（130 TB）训练的放射学基础模型。该模型在19个外部验证任务中表现出色，能够准确识别器官、检测如脑出血和心肌梗死等病变，并在肿瘤分期中预测结果。Curia在跨模态和低数据环境下展现出显著的临床性能，其表现与放射科医生及现有基础模型相当甚至更优。研究团队已公开模型权重以促进进一步发展。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2509.06830" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 08 Sep 2025 12:04:12 GMT</pubDate>
 <pubDate>Mon, 08 Sep 2025 12:04:12 GMT</pubDate>
 </item>
 <item>
@@ -33,14 +64,10 @@
 <link>https://arxiv.org/abs/2509.01624</link>
 <guid>https://arxiv.org/abs/2509.01624</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>Q-Sched提升扩散模型生成质量并减少计算成本。</p><br><br><p><strong>摘要：</strong> 本文提出Q-Sched，一种基于后训练量化的新型方法，通过修改扩散模型的调度器而非模型权重，实现高保真图像生成。该方法在减少模型规模的同时保持全精度准确性，并引入JAQ损失函数，结合文本-图像兼容性和图像质量指标进行优化。实验表明，Q-Sched在多个模型上均取得显著性能提升，且无需全精度校准即可完成量化，适用于资源受限场景。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2509.01624 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">Q-Sched提升扩散模型生成质量并减少计算成本。</p><br /><br /><p><strong>摘要：</strong> 本文提出Q-Sched，一种基于后训练量化的新型方法，通过修改扩散模型的调度器而非模型权重，实现高保真图像生成。该方法在减少模型规模的同时保持全精度准确性，并引入JAQ损失函数，结合文本-图像兼容性和图像质量指标进行优化。实验表明，Q-Sched在多个模型上均取得显著性能提升，且无需全精度校准即可完成量化，适用于资源受限场景。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2509.01624" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Mon, 01 Sep 2025 13:09:22 GMT</pubDate>
-<pubDate>Mon, 01 Sep 2025 13:09:22 GMT</pubDate>
 </item>
-
 <item>
 <title>基于强化学习的并行思维框架提升大语言模型推理能力</title>
 <link>https://arxiv.org/abs/2509.07980</link>
@@ -9013,33 +9040,6 @@ The rapid advancements of AI agents have ignited the long-held ambition of lever
 <div><p style="color: gray;">提出一种新型记忆机制提升视频生成环境探索能力。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种新的记忆机制，用于构建能够交互式探索环境的视频生成器。现有方法要么通过扩展2D视图重建3D几何导致误差累积，要么依赖短上下文窗口难以维持场景连贯性。为此，作者引入了Surfel-Indexed View Memory (VMem)，通过基于3D表面元素（surfels）对过去视图进行几何索引，实现高效检索相关视图。该方法在生成新视图时仅关注关键视图，从而以较低计算成本保持场景一致性与相机控制能力。实验表明，在长时场景合成基准测试中，该方法优于现有技术。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.18903" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Mon, 23 Jun 2025 13:59:56 GMT</pubDate>
-</item>
-<item>
-<title>基于统一离散语义表示的多模态框架Tar</title>
-<link>https://arxiv.org/abs/2506.18898</link>
-<guid>https://arxiv.org/abs/2506.18898</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">Tar通过共享语义空间实现视觉与文本的统一理解和生成。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种多模态框架Tar，旨在通过共享的离散语义表示统一视觉理解和生成。核心是Text-Aligned Tokenizer (TA-Tok)，它利用大型语言模型（LLM）词汇的文本对齐代码本将图像转换为离散标记。Tar通过扩展词汇表将视觉和文本整合到统一空间中，支持跨模态输入和输出，无需特定模态设计。研究还引入了适应规模的编码和解码方法，以及生成性解码器以提高视觉输出质量。为了满足不同的解码需求，采用了两种互补的解码器：快速自回归模型和基于扩散的模型。实验表明，Tar在多个基准测试中表现优异，收敛更快、训练效率更高。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.18898" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 23 Jun 2025 13:59:14 GMT</pubDate>
-</item>
-<item>
-<title>ReasonFlux-PRM：一种新型轨迹感知的奖励模型框架</title>
-<link>https://arxiv.org/abs/2506.18896</link>
-<guid>https://arxiv.org/abs/2506.18896</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">ReasonFlux-PRM提升大模型推理轨迹评估效果。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种新型轨迹感知的奖励模型（ReasonFlux-PRM），用于更精准地评估大语言模型在推理过程中的中间步骤。与以往仅依赖最终输出的奖励模型不同，ReasonFlux-PRM结合了步骤级和轨迹级监督，能够对结构化思维链数据进行细粒度奖励分配。该模型支持离线和在线两种设置，适用于模型蒸馏、强化学习和测试时的缩放优化。实验结果表明，ReasonFlux-PRM-7B在多个基准任务中表现优于现有强基线模型，并实现了显著的性能提升。此外，作者还发布了轻量版ReasonFlux-PRM-1.5B，适用于资源受限场景。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.18896" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 23 Jun 2025 13:59:02 GMT</pubDate>
-</item>
-<item>
-<title>通用光度立体技术中的光照与表面法线耦合问题研究</title>
-<link>https://arxiv.org/abs/2506.18882</link>
-<guid>https://arxiv.org/abs/2506.18882</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">解决光照与表面法线耦合难题，提升复杂表面几何细节恢复质量。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了通用光度立体（PS）技术在任意光照条件下恢复高质量表面法线所面临的两大挑战。首先，光照变化与表面法线特征之间存在深度耦合，导致观察到的亮度变化难以区分是由于光照变化还是表面朝向变化。其次，复杂表面上的高频几何细节难以保留，自阴影、多次反射和细微法线变化使传统特征处理方法难以准确捕捉。文章分析了这些问题，并指出其对现有方法如SDM-UniPS和Uni MS-PS的限制。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.18882" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 23 Jun 2025 13:53:11 GMT</pubDate>
 </item>
 </channel>
 </rss>
