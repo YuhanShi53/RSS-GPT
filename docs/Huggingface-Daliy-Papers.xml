@@ -5,15 +5,49 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>Delta L Normalization：提升RLVR中动态生成长度的损失聚合方法</title>
+<link>https://arxiv.org/abs/2509.07558</link>
+<guid>https://arxiv.org/abs/2509.07558</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出Delta L Normalization方法，解决RLVR训练中的梯度方差问题。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为Delta L Normalization的简单而有效的损失聚合方法，旨在应对强化学习与可验证奖励（RLVR）中动态生成长度带来的挑战。由于响应长度在训练过程中变化较大，导致梯度方差高且优化不稳定。尽管已有方法如GRPO、DAPO和Dr. GRPO尝试通过不同的损失归一化项来缓解这一问题，但仍然存在估计偏差或梯度方差高的问题。通过对不同长度对策略损失的影响进行理论和实证分析，作者将问题重新建模为寻找最小方差无偏估计器。实验表明，Delta L Normalization不仅提供无偏的策略损失估计，还在理论上最小化了梯度方差，并在多种模型规模、最大长度和任务中表现出色。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2509.07558 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 09 Sep 2025 05:52:34 GMT</pubDate>
+<pubDate>Tue, 09 Sep 2025 05:52:34 GMT</pubDate>
+</item>
+<item>
+<title>Curia：基于大规模医学影像数据的放射学基础模型</title>
+<link>https://arxiv.org/abs/2509.06830</link>
+<guid>https://arxiv.org/abs/2509.06830</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Curia在多个放射学任务中表现优于或等同于放射科医生。</p><br><br><p><strong>摘要：</strong> 本文介绍了Curia，一个基于大型医院多年积累的150,000例横断面影像数据（130 TB）训练的放射学基础模型。该模型在19个外部验证任务中表现出色，能够准确识别器官、检测如脑出血和心肌梗死等病变，并在肿瘤分期中预测结果。Curia在跨模态和低数据环境下展现出显著的临床性能，其表现与放射科医生及现有基础模型相当甚至更优。研究团队已公开模型权重以促进进一步发展。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2509.06830 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 08 Sep 2025 12:04:12 GMT</pubDate>
+<pubDate>Mon, 08 Sep 2025 12:04:12 GMT</pubDate>
+</item>
+<item>
+<title>Q-Sched：通过调整扩散模型调度器实现高效量化生成</title>
+<link>https://arxiv.org/abs/2509.01624</link>
+<guid>https://arxiv.org/abs/2509.01624</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Q-Sched提升扩散模型生成质量并减少计算成本。</p><br><br><p><strong>摘要：</strong> 本文提出Q-Sched，一种基于后训练量化的新型方法，通过修改扩散模型的调度器而非模型权重，实现高保真图像生成。该方法在减少模型规模的同时保持全精度准确性，并引入JAQ损失函数，结合文本-图像兼容性和图像质量指标进行优化。实验表明，Q-Sched在多个模型上均取得显著性能提升，且无需全精度校准即可完成量化，适用于资源受限场景。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2509.01624 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 01 Sep 2025 13:09:22 GMT</pubDate>
+<pubDate>Mon, 01 Sep 2025 13:09:22 GMT</pubDate>
+</item>
+
+<item>
 <title>基于强化学习的并行思维框架提升大语言模型推理能力</title>
 <link>https://arxiv.org/abs/2509.07980</link>
 <guid>https://arxiv.org/abs/2509.07980</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>Parallel-R1通过强化学习实现并行思维，提升模型推理性能。</p><br><br><p><strong>摘要：</strong> 本文提出Parallel-R1，一个基于强化学习的框架，用于在复杂现实任务中实现并行思维。与以往依赖监督微调的方法不同，该框架采用渐进式课程学习，先通过监督微调在简单任务上培养并行思维能力，再通过强化学习在更难任务上进行探索和泛化。实验结果表明，Parallel-R1在多个数学基准测试中表现出色，比直接使用强化学习训练的顺序思维模型提升了8.4%的准确率。进一步分析显示，模型在早期阶段利用并行思维作为探索策略，后期则用于多角度验证。最重要的是，该研究验证了并行思维作为中期训练探索工具的有效性，使模型在RL后达到更高的性能上限，在AIME25上比基线模型提升了42.9%。相关代码和数据已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2509.07980 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">Parallel-R1通过强化学习实现并行思维，提升模型推理性能。</p><br /><br /><p><strong>摘要：</strong> 本文提出Parallel-R1，一个基于强化学习的框架，用于在复杂现实任务中实现并行思维。与以往依赖监督微调的方法不同，该框架采用渐进式课程学习，先通过监督微调在简单任务上培养并行思维能力，再通过强化学习在更难任务上进行探索和泛化。实验结果表明，Parallel-R1在多个数学基准测试中表现出色，比直接使用强化学习训练的顺序思维模型提升了8.4%的准确率。进一步分析显示，模型在早期阶段利用并行思维作为探索策略，后期则用于多角度验证。最重要的是，该研究验证了并行思维作为中期训练探索工具的有效性，使模型在RL后达到更高的性能上限，在AIME25上比基线模型提升了42.9%。相关代码和数据已开源。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2509.07980" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 09 Sep 2025 13:59:35 GMT</pubDate>
 <pubDate>Tue, 09 Sep 2025 13:59:35 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +55,8 @@
 <link>https://arxiv.org/abs/2509.07979</link>
 <guid>https://arxiv.org/abs/2509.07979</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>VIRAL增强多模态模型视觉推理能力，提升任务表现。</p><br><br><p><strong>摘要：</strong> 本文提出VIRAL方法，通过将多模态大语言模型的内部视觉表示与预训练视觉基础模型对齐，解决现有模型在视觉密集型任务中的不足。该方法保留输入中的关键视觉细节，并补充额外视觉知识，从而提升模型处理复杂视觉输入的能力。实验表明，VIRAL在多个多模态基准任务中均取得显著改进，并通过消融实验验证了其设计的有效性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2509.07979 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">VIRAL增强多模态模型视觉推理能力，提升任务表现。</p><br /><br /><p><strong>摘要：</strong> 本文提出VIRAL方法，通过将多模态大语言模型的内部视觉表示与预训练视觉基础模型对齐，解决现有模型在视觉密集型任务中的不足。该方法保留输入中的关键视觉细节，并补充额外视觉知识，从而提升模型处理复杂视觉输入的能力。实验表明，VIRAL在多个多模态基准任务中均取得显著改进，并通过消融实验验证了其设计的有效性。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2509.07979" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 09 Sep 2025 13:59:14 GMT</pubDate>
 <pubDate>Tue, 09 Sep 2025 13:59:14 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +64,8 @@
 <link>https://arxiv.org/abs/2509.07969</link>
 <guid>https://arxiv.org/abs/2509.07969</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>Mini-o3通过多轮推理实现高效视觉搜索。</p><br><br><p><strong>摘要：</strong> 本文提出Mini-o3，一个能够进行深度多轮推理的视觉搜索系统，解决了现有开源方法在复杂任务中推理模式单一、交互轮次有限的问题。该系统基于三个关键组件：Visual Probe Dataset数据集、迭代数据收集管道以及过轮遮蔽策略，有效提升了模型在视觉搜索任务中的表现。实验表明，Mini-o3能生成多样化的推理路径，并在推理时自然扩展到更多轮次，显著提高准确率。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2509.07969 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">Mini-o3通过多轮推理实现高效视觉搜索。</p><br /><br /><p><strong>摘要：</strong> 本文提出Mini-o3，一个能够进行深度多轮推理的视觉搜索系统，解决了现有开源方法在复杂任务中推理模式单一、交互轮次有限的问题。该系统基于三个关键组件：Visual Probe Dataset数据集、迭代数据收集管道以及过轮遮蔽策略，有效提升了模型在视觉搜索任务中的表现。实验表明，Mini-o3能生成多样化的推理路径，并在推理时自然扩展到更多轮次，显著提高准确率。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2509.07969" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 09 Sep 2025 13:54:21 GMT</pubDate>
 <pubDate>Tue, 09 Sep 2025 13:54:21 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +73,8 @@
 <link>https://arxiv.org/abs/2509.07968</link>
 <guid>https://arxiv.org/abs/2509.07968</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>SimpleQA Verified优化了LLM事实性评估，提升准确性与可靠性。</p><br><br><p><strong>摘要：</strong> 文章介绍了SimpleQA Verified，这是一个由1000个提示组成的基准测试，用于评估大型语言模型的简短事实性。该基准测试针对OpenAI的SimpleQA存在的噪声标签、主题偏差和问题重复等问题进行了改进。通过多阶段过滤流程，包括去重、主题平衡和来源核对，确保了数据集的可靠性和挑战性。在该新基准上，Gemini 2.5 Pro取得了55.6的F1分数，表现优于其他先进模型。研究为社区提供了更精确的工具来跟踪模型事实性进展并减少幻觉。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2509.07968 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">SimpleQA Verified优化了LLM事实性评估，提升准确性与可靠性。</p><br /><br /><p><strong>摘要：</strong> 文章介绍了SimpleQA Verified，这是一个由1000个提示组成的基准测试，用于评估大型语言模型的简短事实性。该基准测试针对OpenAI的SimpleQA存在的噪声标签、主题偏差和问题重复等问题进行了改进。通过多阶段过滤流程，包括去重、主题平衡和来源核对，确保了数据集的可靠性和挑战性。在该新基准上，Gemini 2.5 Pro取得了55.6的F1分数，表现优于其他先进模型。研究为社区提供了更精确的工具来跟踪模型事实性进展并减少幻觉。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2509.07968" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 09 Sep 2025 13:53:58 GMT</pubDate>
 <pubDate>Tue, 09 Sep 2025 13:53:58 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +82,8 @@
 <link>https://arxiv.org/abs/2509.07414</link>
 <guid>https://arxiv.org/abs/2509.07414</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>通过自博弈提升语言模型性能，无需额外数据。</p><br><br><p><strong>摘要：</strong> 本文提出一种基于自博弈的强化学习方法，使大型语言模型在无需新增数据的情况下持续提升性能。该方法将模型能力视为竞争游戏中表现，并通过模型与自身对弈（即语言自博弈）来优化策略。实验表明，Llama-3.2-3B-Instruct模型在指令遵循任务中，仅通过自博弈即可显著提升表现，效果优于依赖数据的方法。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2509.07414 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">通过自博弈提升语言模型性能，无需额外数据。</p><br /><br /><p><strong>摘要：</strong> 本文提出一种基于自博弈的强化学习方法，使大型语言模型在无需新增数据的情况下持续提升性能。该方法将模型能力视为竞争游戏中表现，并通过模型与自身对弈（即语言自博弈）来优化策略。实验表明，Llama-3.2-3B-Instruct模型在指令遵循任务中，仅通过自博弈即可显著提升表现，效果优于依赖数据的方法。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2509.07414" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 09 Sep 2025 01:51:34 GMT</pubDate>
 <pubDate>Tue, 09 Sep 2025 01:51:34 GMT</pubDate>
 </item>
 <item>
@@ -69,11 +91,8 @@
 <link>https://arxiv.org/abs/2509.07301</link>
 <guid>https://arxiv.org/abs/2509.07301</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>CASTLE通过前瞻键提升语言模型性能。</p><br><br><p><strong>摘要：</strong> 文章提出了一种名为CASTLE的新型因果注意力机制，该机制在标准因果注意力基础上，通过动态更新每个标记的键（keys）来整合后续信息，同时保持自回归特性。这些更新后的键被称为前瞻键，能够在不破坏顺序性的前提下提升模型对上下文的理解能力。尽管机制看似顺序处理，但作者通过数学等价性证明实现了并行训练，提高了效率。实验表明，CASTLE在多个语言建模基准上优于传统因果注意力，有效降低了验证困惑度，并提升了下游任务的表现。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2509.07301 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">CASTLE通过前瞻键提升语言模型性能。</p><br /><br /><p><strong>摘要：</strong> 文章提出了一种名为CASTLE的新型因果注意力机制，该机制在标准因果注意力基础上，通过动态更新每个标记的键（keys）来整合后续信息，同时保持自回归特性。这些更新后的键被称为前瞻键，能够在不破坏顺序性的前提下提升模型对上下文的理解能力。尽管机制看似顺序处理，但作者通过数学等价性证明实现了并行训练，提高了效率。实验表明，CASTLE在多个语言建模基准上优于传统因果注意力，有效降低了验证困惑度，并提升了下游任务的表现。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2509.07301" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 08 Sep 2025 20:15:23 GMT</pubDate>
 <pubDate>Mon, 08 Sep 2025 20:15:23 GMT</pubDate>
 </item>
 <item>
@@ -81,11 +100,8 @@
 <link>https://arxiv.org/abs/2509.07295</link>
 <guid>https://arxiv.org/abs/2509.07295</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>RecA方法提升多模态模型图像生成和编辑质量。</p><br><br><p><strong>摘要：</strong> 文章提出了一种名为Reconstruction Alignment (RecA)的后训练方法，用于提升统一多模态模型（UMMs）的生成性能。该方法利用视觉理解编码器的嵌入作为密集的“文本提示”，在无需依赖稀疏文本描述的情况下提供丰富的监督信号。通过让模型基于自身的视觉嵌入重建输入图像，RecA实现了理解和生成之间的对齐。实验表明，RecA在多种类型的UMMs中均表现出色，显著提升了图像生成和编辑任务的性能，且仅需少量计算资源即可达到优于大型开源模型的效果。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2509.07295 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">RecA方法提升多模态模型图像生成和编辑质量。</p><br /><br /><p><strong>摘要：</strong> 文章提出了一种名为Reconstruction Alignment (RecA)的后训练方法，用于提升统一多模态模型（UMMs）的生成性能。该方法利用视觉理解编码器的嵌入作为密集的“文本提示”，在无需依赖稀疏文本描述的情况下提供丰富的监督信号。通过让模型基于自身的视觉嵌入重建输入图像，RecA实现了理解和生成之间的对齐。实验表明，RecA在多种类型的UMMs中均表现出色，显著提升了图像生成和编辑任务的性能，且仅需少量计算资源即可达到优于大型开源模型的效果。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2509.07295" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 08 Sep 2025 19:59:32 GMT</pubDate>
 <pubDate>Mon, 08 Sep 2025 19:59:32 GMT</pubDate>
 </item>
 <item>
@@ -93,11 +109,8 @@
 <link>https://arxiv.org/abs/2509.06951</link>
 <guid>https://arxiv.org/abs/2509.06951</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>F1通过视觉预见提升动态环境下的任务执行能力。</p><br><br><p><strong>摘要：</strong> 本文提出F1，一种基于视觉-语言-动作（VLA）的预训练框架，旨在解决动态视觉环境中执行语言条件任务的挑战。F1通过引入视觉预见生成机制，将未来视觉状态作为显式规划目标，从而将动作生成转化为基于预见的逆动力学问题。该框架采用混合Transformer架构，包含感知、预见生成和控制模块，提升了模型在复杂场景中的鲁棒性和泛化能力。通过在包含330k轨迹的广泛数据集上进行三阶段训练，F1在真实任务和模拟基准测试中均表现出色，显著提升了任务成功率和泛化能力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2509.06951 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">F1通过视觉预见提升动态环境下的任务执行能力。</p><br /><br /><p><strong>摘要：</strong> 本文提出F1，一种基于视觉-语言-动作（VLA）的预训练框架，旨在解决动态视觉环境中执行语言条件任务的挑战。F1通过引入视觉预见生成机制，将未来视觉状态作为显式规划目标，从而将动作生成转化为基于预见的逆动力学问题。该框架采用混合Transformer架构，包含感知、预见生成和控制模块，提升了模型在复杂场景中的鲁棒性和泛化能力。通过在包含330k轨迹的广泛数据集上进行三阶段训练，F1在真实任务和模拟基准测试中均表现出色，显著提升了任务成功率和泛化能力。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2509.06951" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 08 Sep 2025 13:58:30 GMT</pubDate>
 <pubDate>Mon, 08 Sep 2025 13:58:30 GMT</pubDate>
 </item>
 <item>
@@ -105,11 +118,8 @@
 <link>https://arxiv.org/abs/2509.06923</link>
 <guid>https://arxiv.org/abs/2509.06923</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>SEELE通过动态调整问题难度提升RLVR效率。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为SEELE的新颖监督辅助强化学习框架，旨在解决传统RLVR方法在探索效率上的不足。该框架通过量化损失下降速度与回放准确率之间的关系，动态调整问题难度以保持在高效区域。SEELE通过为每个训练样本添加提示（部分解决方案）来增强训练数据，并根据模型能力实时调整提示长度。实验表明，SEELE在六个数学推理基准测试中表现优于现有方法，分别提升了11.8和10.5个百分点。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2509.06923 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">SEELE通过动态调整问题难度提升RLVR效率。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种名为SEELE的新颖监督辅助强化学习框架，旨在解决传统RLVR方法在探索效率上的不足。该框架通过量化损失下降速度与回放准确率之间的关系，动态调整问题难度以保持在高效区域。SEELE通过为每个训练样本添加提示（部分解决方案）来增强训练数据，并根据模型能力实时调整提示长度。实验表明，SEELE在六个数学推理基准测试中表现优于现有方法，分别提升了11.8和10.5个百分点。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2509.06923" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 08 Sep 2025 13:36:21 GMT</pubDate>
 <pubDate>Mon, 08 Sep 2025 13:36:21 GMT</pubDate>
 </item>
 <item>
@@ -117,14 +127,10 @@
 <link>https://arxiv.org/abs/2509.06818</link>
 <guid>https://arxiv.org/abs/2509.06818</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>UMO框架提升多身份图像定制的一致性与可扩展性。</p><br><br><p><strong>摘要：</strong> 文章介绍了一种名为UMO的统一多身份优化框架，旨在解决图像定制中多参考图像导致的身份混淆问题。通过“多对多匹配”范式，UMO将多身份生成转化为全局分配优化问题，并利用扩散模型上的强化学习提升多身份一致性。研究还构建了一个包含合成和真实数据的可扩展定制数据集，并提出新的身份混淆度量指标。实验表明，UMO显著提升了身份一致性并减少了身份混淆，在开源方法中达到最新水平。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2509.06818 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">UMO框架提升多身份图像定制的一致性与可扩展性。</p><br /><br /><p><strong>摘要：</strong> 文章介绍了一种名为UMO的统一多身份优化框架，旨在解决图像定制中多参考图像导致的身份混淆问题。通过“多对多匹配”范式，UMO将多身份生成转化为全局分配优化问题，并利用扩散模型上的强化学习提升多身份一致性。研究还构建了一个包含合成和真实数据的可扩展定制数据集，并提出新的身份混淆度量指标。实验表明，UMO显著提升了身份一致性并减少了身份混淆，在开源方法中达到最新水平。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2509.06818" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Mon, 08 Sep 2025 11:54:55 GMT</pubDate>
-<pubDate>Mon, 08 Sep 2025 11:54:55 GMT</pubDate>
 </item>
-
 <item>
 <title>SFR-DeepResearch: Towards Effective Reinforcement Learning for Autonomously Reasoning Single Agents</title>
 <link>https://arxiv.org/abs/2509.06283</link>
@@ -9034,96 +9040,6 @@ The rapid advancements of AI agents have ignited the long-held ambition of lever
 <div><p style="color: gray;">解决光照与表面法线耦合难题，提升复杂表面几何细节恢复质量。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了通用光度立体（PS）技术在任意光照条件下恢复高质量表面法线所面临的两大挑战。首先，光照变化与表面法线特征之间存在深度耦合，导致观察到的亮度变化难以区分是由于光照变化还是表面朝向变化。其次，复杂表面上的高频几何细节难以保留，自阴影、多次反射和细微法线变化使传统特征处理方法难以准确捕捉。文章分析了这些问题，并指出其对现有方法如SDM-UniPS和Uni MS-PS的限制。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.18882" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Mon, 23 Jun 2025 13:53:11 GMT</pubDate>
-</item>
-<item>
-<title>基于Commutative Vector Quantization的长上下文大语言模型优化方法</title>
-<link>https://arxiv.org/abs/2506.18879</link>
-<guid>https://arxiv.org/abs/2506.18879</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出Commutative Vector Quantization技术，显著降低KV缓存内存占用。</p><br /><br /><p><strong>摘要：</strong> 本文针对大语言模型在处理长上下文时KV缓存导致的内存瓶颈问题，提出了一种名为Commutative Vector Quantization (CommVQ) 的量化方法。该方法通过轻量级编码器和码本对KV缓存进行加法量化压缩，并利用矩阵乘法解码。为降低解码计算成本，设计了与RoPE兼容的码本，并通过EM算法训练。实验表明，该方法在保持高精度的同时，将FP16 KV缓存大小减少了87.5%，并支持1位量化，使LLaMA-3.1 8B模型在单块RTX 4090 GPU上实现128K上下文长度的推理。代码已开源。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.18879" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 23 Jun 2025 13:50:11 GMT</pubDate>
-</item>
-<item>
-<title>OmniGen2：一种多功能生成模型的开源实现</title>
-<link>https://arxiv.org/abs/2506.18871</link>
-<guid>https://arxiv.org/abs/2506.18871</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">OmniGen2是一个多功能生成模型，支持文本到图像等多种任务。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了OmniGen2，一个开源的多功能生成模型，旨在为多种生成任务提供统一解决方案，包括文本到图像、图像编辑和上下文生成。与前代版本相比，OmniGen2采用独立的解码路径和非共享参数设计，提升了生成效果并保留了原始文本生成能力。文章还描述了用于训练OmniGen2的数据构建流程、针对图像生成的反射机制以及新提出的OmniContext基准测试。尽管参数规模较小，OmniGen2在多个任务上表现优异，并已公开模型、代码和数据集以促进后续研究。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.18871" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 23 Jun 2025 13:38:54 GMT</pubDate>
-</item>
-<item>
-<title>Phantom-Data数据集提升文本到视频生成的准确性</title>
-<link>https://arxiv.org/abs/2506.18851</link>
-<guid>https://arxiv.org/abs/2506.18851</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">Phantom-Data提升文本到视频生成的一致性与准确性。</p><br /><br /><p><strong>摘要：</strong> 近年来，文本到视频生成取得了显著进展，但现有模型在忠实遵循文本指令方面仍面临挑战，尤其是‘复制粘贴问题’。该问题源于传统的成对训练方式，导致主体身份与背景属性混淆。为解决此问题，研究者提出了Phantom-Data，这是首个通用的跨对主体到视频一致性数据集，包含约一百万对身份一致的数据。该数据集通过三阶段流程构建：主体检测、跨上下文主体检索以及先验引导的身份验证。实验表明，使用Phantom-Data训练可显著提升提示对齐度和视觉质量，同时保持身份一致性与传统方法相当。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.18851" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 23 Jun 2025 13:11:56 GMT</pubDate>
-</item>
-<item>
-<title>无需合成数据的超长文本生成方法研究</title>
-<link>https://arxiv.org/abs/2506.18841</link>
-<guid>https://arxiv.org/abs/2506.18841</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">基于强化学习的超长文本生成方法超越传统微调技术。</p><br /><br /><p><strong>摘要：</strong> 本文提出一种无需依赖合成数据的超长文本生成方法，通过强化学习训练模型，提升其生成长文本的质量和结构控制能力。实验表明，该方法在多个基准测试中表现优异，优于传统的监督微调方法，并且在性能上超越了更大规模的模型。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.18841" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 23 Jun 2025 12:59:02 GMT</pubDate>
-</item>
-<item>
-<title>基于扩散模型的动态新视角合成方法ViDAR</title>
-<link>https://arxiv.org/abs/2506.18792</link>
-<guid>https://arxiv.org/abs/2506.18792</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">ViDAR利用扩散模型生成多视角监督信号，提升动态场景的视图合成质量。</p><br /><br /><p><strong>摘要：</strong> 本文提出ViDAR，一种基于扩散模型的4D重建框架，用于从单目视频中生成高质量动态新视角。通过个性化扩散模型生成伪多视角监督信号，结合场景特定特征，ViDAR能够恢复精细外观细节并减少单目模糊带来的伪影。为解决扩散监督的时空不一致性，引入扩散感知损失函数和相机位姿优化策略，使合成视图与场景几何对齐。在极端视角变化的DyCheck基准上，ViDAR在视觉质量和几何一致性方面均优于现有方法，并在动态区域表现显著提升。项目页面提供更多信息。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.18792" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 23 Jun 2025 12:01:15 GMT</pubDate>
-</item>
-<item>
-<title>ReDit：通过奖励抖动提升大语言模型训练效率</title>
-<link>https://arxiv.org/abs/2506.18631</link>
-<guid>https://arxiv.org/abs/2506.18631</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">ReDit通过添加随机噪声改善离散奖励，提升模型训练效率和性能。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种名为ReDit的方法，用于解决大语言模型在使用离散奖励时出现的梯度异常、优化不稳定和收敛缓慢问题。ReDit通过向离散奖励信号中添加简单随机噪声，使训练过程中持续提供探索性梯度，从而实现更平滑的梯度更新和更快的收敛速度。实验表明，ReDit在多种任务中表现优异，仅需约10%的训练步数即可达到与传统GRPO相当的性能，并在相似训练时间内仍能提升4%的性能。可视化结果和理论分析进一步验证了该方法的有效性。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.18631" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 23 Jun 2025 09:36:24 GMT</pubDate>
-</item>
-<item>
-<title>基于自回归模型的多视角图像生成方法</title>
-<link>https://arxiv.org/abs/2506.18527</link>
-<guid>https://arxiv.org/abs/2506.18527</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出MV-AR方法，实现多视角图像一致性生成。</p><br /><br /><p><strong>摘要：</strong> 本文针对3D内容创作中多视角图像生成的挑战，提出了一种基于自回归模型的多视角图像生成方法（MV-AR）。该方法通过自回归模型逐步生成一致的多视角图像，并利用前序视图提取有效参考信息。为适应多种提示条件，设计了统一模型架构并引入条件注入模块，支持文本、相机姿态、图像和形状等多种输入。采用渐进式训练策略提升模型性能，并通过“Shuffle View”数据增强技术缓解数据不足问题。实验表明，MV-AR在多种条件下均能生成高质量且一致的多视角图像，性能与主流扩散模型相当。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.18527" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 23 Jun 2025 07:28:37 GMT</pubDate>
-</item>
-<item>
-<title>SlimMoE：高效压缩大型Mixture of Experts模型的方法</title>
-<link>https://arxiv.org/abs/2506.18349</link>
-<guid>https://arxiv.org/abs/2506.18349</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">SlimMoE通过分阶段压缩提升MoE模型效率。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种名为SlimMoE的多阶段压缩框架，用于将大型Mixture of Experts (MoE)模型转换为更小、高效的版本，而无需从头开始训练。该方法通过逐步减少参数数量并利用中间阶段的知识迁移，有效缓解了单次剪枝导致的性能下降问题。使用该框架，作者将Phi 3.5-MoE模型压缩为Phi-mini-MoE和Phi-tiny-MoE，分别仅需400B个token进行训练，且可在单块GPU上微调，适用于资源受限环境。实验表明，这些压缩模型在性能上优于同类模型，并与更大的模型相当。研究证明，结构化剪枝结合分阶段蒸馏是构建高质量紧凑MoE模型的有效路径。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.18349" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 23 Jun 2025 03:15:59 GMT</pubDate>
-</item>
-<item>
-<title>基于大语言模型的自适应用户画像框架LettinGo</title>
-<link>https://arxiv.org/abs/2506.18309</link>
-<guid>https://arxiv.org/abs/2506.18309</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">LettinGo提升推荐系统的准确性和灵活性。</p><br /><br /><p><strong>摘要：</strong> 本文提出LettinGo，一种基于大语言模型的自适应用户画像生成框架。传统嵌入式画像缺乏可解释性，而现有方法受限于固定格式。LettinGo通过多阶段流程，结合直接偏好优化（DPO）和下游任务反馈，生成多样且适应性强的用户画像，显著提升推荐系统的准确性、灵活性和上下文感知能力。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.18309" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 23 Jun 2025 01:51:52 GMT</pubDate>
-</item>
-<item>
-<title>无需验证器的强化学习框架提升大语言模型推理能力</title>
-<link>https://arxiv.org/abs/2506.18254</link>
-<guid>https://arxiv.org/abs/2506.18254</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">RLPR通过LLM自身概率评分实现无验证器强化学习，提升推理性能。</p><br /><br /><p><strong>摘要：</strong> 本文提出RLPR，一种无需依赖领域特定验证器的强化学习框架，利用大语言模型（LLM）生成答案时的token概率作为奖励信号，从而提升模型在多个通用领域和数学领域的推理能力。研究发现，处理概率奖励的高方差是关键，因此引入prob-to-reward和稳定化方法以确保奖励的准确性与稳定性。实验表明，RLPR在四个通用领域和三个数学基准测试中均表现优异，显著优于现有方法如VeriFree和General-Reasoner。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2506.18254" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Sun, 22 Jun 2025 22:56:36 GMT</pubDate>
 </item>
 </channel>
 </rss>
