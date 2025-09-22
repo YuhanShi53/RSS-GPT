@@ -4,6 +4,114 @@
 <title>Huggingface Daily Papers</title>
 <link>https://huggingface.co/papers</link>
 
+<item>
+<title>基于RPG的代码仓库生成框架ZeroRepo提升代码生成效率</title>
+<link>https://arxiv.org/abs/2509.16198</link>
+<guid>https://arxiv.org/abs/2509.16198</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>ZeroRepo通过RPG实现高效代码仓库生成，性能显著优于现有方法。</p><br><br><p><strong>摘要：</strong> 本文提出一种名为ZeroRepo的代码仓库生成框架，利用Repository Planning Graph（RPG）统一规划与实现层级，以显式蓝图替代自然语言描述，提高代码生成的连贯性和可靠性。该框架分为三个阶段：提案级规划、实现级优化和图引导代码生成。在RepoCraft基准测试中，ZeroRepo生成的代码量约为最强基线Claude Code的3.9倍，功能覆盖率达81.5%，表现优于其他基线。RPG有效建模复杂依赖关系，支持逐步提升的规划能力，增强大模型对代码仓库的理解。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2509.16198 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 19 Sep 2025 13:58:14 GMT</pubDate>
+<pubDate>Fri, 19 Sep 2025 13:58:14 GMT</pubDate>
+</item>
+<item>
+<title>Manzano：一种统一的多模态大语言模型框架</title>
+<link>https://arxiv.org/abs/2509.16197</link>
+<guid>https://arxiv.org/abs/2509.16197</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Manzano通过混合图像编码器实现视觉与文本的高效统一处理。</p><br><br><p><strong>摘要：</strong> 本文介绍了Manzano，一种统一的多模态大语言模型框架，能够同时处理视觉内容的理解与生成。该模型通过耦合混合图像分词器和精心设计的训练策略，显著减少了理解与生成之间的性能权衡。其架构包含一个共享的视觉编码器，连接两个轻量级适配器，分别用于生成连续嵌入和离散标记。一个统一的自回归语言模型预测文本和图像标记的高层语义，随后由辅助扩散解码器将图像标记转换为像素。实验表明，Manzano在统一模型中表现优异，且在文本丰富的评估中具有竞争力，验证了混合分词器设计的有效性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2509.16197 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 19 Sep 2025 13:58:00 GMT</pubDate>
+<pubDate>Fri, 19 Sep 2025 13:58:00 GMT</pubDate>
+</item>
+<item>
+<title>构建高性能多模态奖励模型的系统研究与BaseReward基准</title>
+<link>https://arxiv.org/abs/2509.16127</link>
+<guid>https://arxiv.org/abs/2509.16127</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文系统研究多模态奖励模型构建方法并提出BaseReward基准。</p><br><br><p><strong>摘要：</strong> 本文针对多模态大语言模型（MLLM）与人类偏好对齐的挑战，系统研究了多模态奖励模型（MRM）的构建方法。通过实验分析，文章探讨了奖励建模范式、奖励头结构、训练策略、数据集选择、模型架构等关键组件，并提出了BaseReward这一高效且强大的多模态奖励模型基准。BaseReward基于Qwen2.5-VL架构，采用优化的双层奖励头设计，并在高质量多模态和文本偏好数据上进行训练。实验结果表明，BaseReward在多个主流基准测试中达到新的SOTA，同时在实际强化学习场景中也表现出色，为下一代MLLM的奖励模型开发提供了实证指导。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2509.16127 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 19 Sep 2025 12:25:26 GMT</pubDate>
+<pubDate>Fri, 19 Sep 2025 12:25:26 GMT</pubDate>
+</item>
+<item>
+<title>基于视觉-语言-动作模型的强化学习方法提升真实世界任务成功率</title>
+<link>https://arxiv.org/abs/2509.15937</link>
+<guid>https://arxiv.org/abs/2509.15937</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>VLAC模型提升真实世界任务成功率至90%以上。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为VLAC的通用过程奖励模型，基于InternVL架构并利用大规模异构数据集进行训练。该模型通过对比观察和语言目标输出密集的进展变化和完成信号，无需任务特定奖励工程，支持一次性上下文迁移至未见过的任务和环境。VLAC结合了视觉-语言数据、机器人和人类轨迹数据，增强了感知、对话和推理能力，并能拒绝无关提示、检测退化或停滞。通过提示控制，单一模型可交替生成奖励和动作标记，统一了评价者和策略。部署在异步现实强化学习循环中，结合多级人工干预协议，显著提升了探索效率和早期学习稳定性。在四个不同的现实操作任务中，VLAC将成功率从约30%提升至约90%，结合人工干预进一步提高样本效率并达到100%的成功率。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2509.15937 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 19 Sep 2025 08:44:29 GMT</pubDate>
+<pubDate>Fri, 19 Sep 2025 08:44:29 GMT</pubDate>
+</item>
+<item>
+<title>基于Blink-Think-Link框架的人机交互自动化研究</title>
+<link>https://arxiv.org/abs/2509.15566</link>
+<guid>https://arxiv.org/abs/2509.15566</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出BTL框架，模拟人机交互认知过程。</p><br><br><p><strong>摘要：</strong> 本文针对AI驱动的人机界面交互自动化中的核心挑战，提出了一种名为Blink-Think-Link（BTL）的脑启发框架，该框架模仿人类在与图形界面交互时的认知过程，将交互分解为三个阶段：Blink（快速识别与注意）、Think（高层次推理与决策）、Link（生成可执行命令）。同时，文章引入了两项关键技术：Blink数据生成和BTL奖励机制，用于提升交互模型的准确性与效率。基于此框架开发的BTL-UI模型在多项基准测试中表现出色，验证了该方法的有效性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2509.15566 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 19 Sep 2025 00:03:44 GMT</pubDate>
+<pubDate>Fri, 19 Sep 2025 00:03:44 GMT</pubDate>
+</item>
+<item>
+<title>Lynx：基于单张图像的个性化视频生成模型</title>
+<link>https://arxiv.org/abs/2509.15496</link>
+<guid>https://arxiv.org/abs/2509.15496</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Lynx实现高保真个性化视频生成。</p><br><br><p><strong>摘要：</strong> 本文介绍了Lynx，一个基于开源Diffusion Transformer（DiT）基础模型的个性化视频生成系统。通过引入两个轻量级适配器——ID-adapter和Ref-adapter，Lynx在保持身份一致性的同时，提升了视频的时空连贯性和视觉真实性。ID-adapter利用Perceiver Resampler将ArcFace提取的面部嵌入转换为身份标记，而Ref-adapter则通过跨注意力机制注入细粒度特征。在包含40个受试者和20个无偏提示的基准数据集上进行评估，Lynx展示了出色的面部相似度、提示遵循能力和视频质量，推动了个性化视频生成技术的发展。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2509.15496 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 18 Sep 2025 20:31:57 GMT</pubDate>
+<pubDate>Thu, 18 Sep 2025 20:31:57 GMT</pubDate>
+</item>
+<item>
+<title>基于单目RGB视频的动态场景相机参数优化方法</title>
+<link>https://arxiv.org/abs/2509.15123</link>
+<guid>https://arxiv.org/abs/2509.15123</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种无需先验信息的动态场景相机优化方法。</p><br><br><p><strong>摘要：</strong> 本文提出一种新颖的方法，用于在动态场景中仅依赖单个RGB视频进行更准确和高效的相机参数优化。该方法包含三个关键组件：（1）基于块的跟踪滤波器，建立鲁棒且稀疏的关联关系；（2）考虑异常值的联合优化，通过自适应降权移动异常点实现高效优化；（3）两阶段优化策略，平衡损失函数中的Softplus限制与凸极小值以提升稳定性和速度。实验在多个真实和合成数据集上验证了该方法的有效性，证明其在仅使用RGB视频作为监督信号的情况下能够更准确地估计相机参数。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2509.15123 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 18 Sep 2025 12:29:07 GMT</pubDate>
+<pubDate>Thu, 18 Sep 2025 12:29:07 GMT</pubDate>
+</item>
+<item>
+<title>动态角色扮演代理框架与视频数据集构建</title>
+<link>https://arxiv.org/abs/2509.15233</link>
+<guid>https://arxiv.org/abs/2509.15233</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>引入动态角色描述，提升角色扮演代理的交互能力。</p><br><br><p><strong>摘要：</strong> 本文提出一种基于视频模态的动态角色扮演代理（RPAs）框架，通过引入动态角色描述来增强代理的感知和交互能力。研究构建了Role-playing-Video60k数据集，包含60k视频和700k对话，用于训练和评估。该框架结合了动态和静态角色描述，其中动态描述通过自适应时间采样视频帧生成，而静态描述则由对话和输入视频摘要组成。实验表明，该方法在多个指标上表现优异，验证了动态角色描述在RPAs中的重要性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2509.15233 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 16 Sep 2025 22:50:54 GMT</pubDate>
+<pubDate>Tue, 16 Sep 2025 22:50:54 GMT</pubDate>
+</item>
+<item>
+<title>基于文本的WhisTLE方法提升ASR模型领域适应性</title>
+<link>https://arxiv.org/abs/2509.10452</link>
+<guid>https://arxiv.org/abs/2509.10452</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>WhisTLE通过文本适配显著降低语音识别错误率。</p><br><br><p><strong>摘要：</strong> 本文提出WhisTLE，一种基于文本的深度监督自适应方法，用于改进预训练语音识别模型在未知领域中的表现。该方法利用变分自编码器建模文本到编码器输出的映射，并通过微调解码器提升性能，可结合文本到语音适配。实验表明，WhisTLE在多个数据集和模型上均优于现有方法，相对减少12.3%的词错误率。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2509.10452 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 12 Sep 2025 13:59:09 GMT</pubDate>
+<pubDate>Fri, 12 Sep 2025 13:59:09 GMT</pubDate>
+</item>
 
 <item>
 <title>基于对象视角的多轮指令图像编辑评估框架EdiVal-Agent</title>
