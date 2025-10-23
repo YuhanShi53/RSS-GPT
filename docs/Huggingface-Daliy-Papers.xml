@@ -5,15 +5,37 @@
 <link>https://huggingface.co/papers</link>
 
 <item>
+<title>无需训练的视频分割方法DecAF</title>
+<link>https://arxiv.org/abs/2510.19592</link>
+<guid>https://arxiv.org/abs/2510.19592</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>DecAF提升视频分割精度，无需重新训练模型。</p><br><br><p><strong>摘要：</strong> 本文提出了一种无需训练的视频分割方法DecAF，通过将视频推理分割任务转化为视频问答任务，并利用rollout机制提取注意力图。为了提高注意力图的质量，DecAF引入了对比性物体-背景融合和互补视频帧融合机制，以抑制无关激活并增强目标区域的提示信息。此外，还采用注意力引导的SAM2提示来生成精细分割掩码。该方法在不进行模型微调的情况下，在多个视频目标分割基准测试中表现出色，性能接近基于训练的方法。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2510.19592 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 22 Oct 2025 09:42:59 GMT</pubDate>
+<pubDate>Wed, 22 Oct 2025 09:42:59 GMT</pubDate>
+</item>
+<item>
+<title>Transformer语言模型的注入性与可逆性研究</title>
+<link>https://arxiv.org/abs/2510.15511</link>
+<guid>https://arxiv.org/abs/2510.15511</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Transformer模型在初始化后具有注入性，可逆重建输入文本。</p><br><br><p><strong>摘要：</strong> 本文挑战了传统观点，证明Transformer语言模型在将离散输入序列映射到连续表示时是注入性的，即不同输入不会映射到相同输出，从而保证输入可以被精确恢复。通过数学证明和大规模实验验证，作者发现六种最先进的语言模型在数以十亿计的测试中均未出现冲突。此外，他们提出了SipIt算法，能够高效且准确地从隐藏激活中重建原始输入文本，展示了模型的实际可逆性。该研究揭示了注入性是语言模型的一个基本且可利用的特性，对模型透明度、可解释性和安全部署具有重要意义。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2510.15511 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 17 Oct 2025 06:25:30 GMT</pubDate>
+<pubDate>Fri, 17 Oct 2025 06:25:30 GMT</pubDate>
+</item>
+
+<item>
 <title>Transformer算法学习能力与图连通性研究</title>
 <link>https://arxiv.org/abs/2510.19753</link>
 <guid>https://arxiv.org/abs/2510.19753</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>Transformer在图连通性任务中依赖启发式而非通用算法。</p><br><br><p><strong>摘要：</strong> 本文研究了Transformer在图连通性任务中的学习机制，发现其往往依赖于脆弱的启发式方法而非通用算法。通过分析简化版的解耦Transformer模型，作者证明了L层模型能够处理直径不超过3^L的图，并实现类似邻接矩阵幂运算的算法。研究还表明，训练数据是否在模型容量范围内决定了模型是学习正确算法还是基于节点度的简单启发式。实验进一步验证了限制训练数据在模型容量内可促使Transformer学习精确算法。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2510.19753 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">Transformer在图连通性任务中依赖启发式而非通用算法。</p><br /><br /><p><strong>摘要：</strong> 本文研究了Transformer在图连通性任务中的学习机制，发现其往往依赖于脆弱的启发式方法而非通用算法。通过分析简化版的解耦Transformer模型，作者证明了L层模型能够处理直径不超过3^L的图，并实现类似邻接矩阵幂运算的算法。研究还表明，训练数据是否在模型容量范围内决定了模型是学习正确算法还是基于节点度的简单启发式。实验进一步验证了限制训练数据在模型容量内可促使Transformer学习精确算法。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2510.19753" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 22 Oct 2025 12:43:32 GMT</pubDate>
 <pubDate>Wed, 22 Oct 2025 12:43:32 GMT</pubDate>
 </item>
 <item>
@@ -21,11 +43,8 @@
 <link>https://arxiv.org/abs/2510.19492</link>
 <guid>https://arxiv.org/abs/2510.19492</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>MIAs与文本检测方法共享信号，具有强可迁移性。</p><br><br><p><strong>摘要：</strong> 本文研究了成员推理攻击（MIAs）和机器生成文本检测之间的方法可迁移性。尽管两者目标不同，但它们都依赖于语言模型的概率分布。理论分析表明，两种任务的最优度量是相同的，且方法对这一度量的逼近程度与其可迁移性直接相关。实验结果显示，跨任务性能高度相关，例如原本用于文本检测的Binoculars方法在MIAs任务中也表现优异。研究强调了两个领域之间加强协作的重要性，并引入了MINT评估套件以支持统一评估。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2510.19492 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">MIAs与文本检测方法共享信号，具有强可迁移性。</p><br /><br /><p><strong>摘要：</strong> 本文研究了成员推理攻击（MIAs）和机器生成文本检测之间的方法可迁移性。尽管两者目标不同，但它们都依赖于语言模型的概率分布。理论分析表明，两种任务的最优度量是相同的，且方法对这一度量的逼近程度与其可迁移性直接相关。实验结果显示，跨任务性能高度相关，例如原本用于文本检测的Binoculars方法在MIAs任务中也表现优异。研究强调了两个领域之间加强协作的重要性，并引入了MINT评估套件以支持统一评估。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2510.19492" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 22 Oct 2025 07:39:01 GMT</pubDate>
 <pubDate>Wed, 22 Oct 2025 07:39:01 GMT</pubDate>
 </item>
 <item>
@@ -33,11 +52,8 @@
 <link>https://arxiv.org/abs/2510.19430</link>
 <guid>https://arxiv.org/abs/2510.19430</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>GigaBrain-0通过世界模型生成数据提升机器人VLA模型性能。</p><br><br><p><strong>摘要：</strong> 本文介绍GigaBrain-0，一种利用世界模型生成数据（如视频生成、真实到真实转换、人体迁移等）的视觉-语言-动作（VLA）基础模型。该模型减少了对真实机器人数据的依赖，提高了跨任务泛化能力，并通过RGBD输入建模和具身思维链监督增强了策略鲁棒性。实验表明，GigaBrain-0在精细操作、长时序和移动操作任务中表现出色，且支持轻量级版本在边缘设备上运行。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2510.19430 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">GigaBrain-0通过世界模型生成数据提升机器人VLA模型性能。</p><br /><br /><p><strong>摘要：</strong> 本文介绍GigaBrain-0，一种利用世界模型生成数据（如视频生成、真实到真实转换、人体迁移等）的视觉-语言-动作（VLA）基础模型。该模型减少了对真实机器人数据的依赖，提高了跨任务泛化能力，并通过RGBD输入建模和具身思维链监督增强了策略鲁棒性。实验表明，GigaBrain-0在精细操作、长时序和移动操作任务中表现出色，且支持轻量级版本在边缘设备上运行。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2510.19430" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Wed, 22 Oct 2025 05:57:13 GMT</pubDate>
 <pubDate>Wed, 22 Oct 2025 05:57:13 GMT</pubDate>
 </item>
 <item>
@@ -45,11 +61,8 @@
 <link>https://arxiv.org/abs/2510.19028</link>
 <guid>https://arxiv.org/abs/2510.19028</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究评估大模型在人际关系推断任务中的表现。</p><br><br><p><strong>摘要：</strong> 本文介绍了SCRIPTS数据集，该数据集包含1000条英语和韩语对话，用于评估大语言模型在人际互动中的社会推理能力。通过分析模型对对话中人物关系（如朋友、姐妹、恋人）的判断，研究发现当前主流模型在英语任务中表现较好（75-80%），但在韩语任务中表现显著下降（58-69%）。此外，模型在10-25%的情况下选择了不相关的社会关系，表明其存在明显局限性。研究还发现，传统的思维链提示方法在一般推理中有效，但在社会推理中效果有限，甚至可能加剧社会偏见。这表明需要进一步开发更具社会意识的语言模型。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2510.19028 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究评估大模型在人际关系推断任务中的表现。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了SCRIPTS数据集，该数据集包含1000条英语和韩语对话，用于评估大语言模型在人际互动中的社会推理能力。通过分析模型对对话中人物关系（如朋友、姐妹、恋人）的判断，研究发现当前主流模型在英语任务中表现较好（75-80%），但在韩语任务中表现显著下降（58-69%）。此外，模型在10-25%的情况下选择了不相关的社会关系，表明其存在明显局限性。研究还发现，传统的思维链提示方法在一般推理中有效，但在社会推理中效果有限，甚至可能加剧社会偏见。这表明需要进一步开发更具社会意识的语言模型。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2510.19028" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 21 Oct 2025 15:12:47 GMT</pubDate>
 <pubDate>Tue, 21 Oct 2025 15:12:47 GMT</pubDate>
 </item>
 <item>
@@ -57,11 +70,8 @@
 <link>https://arxiv.org/abs/2510.18941</link>
 <guid>https://arxiv.org/abs/2510.18941</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>ProfBench用于评估大语言模型在专业领域的表现。</p><br><br><p><strong>摘要：</strong> 本文介绍了ProfBench，一个由超过7000个响应-标准对组成的基准测试集，由具有专业背景的专家进行评估，涵盖物理、化学、金融和咨询等领域。研究通过构建高效且经济的LLM-Judges来评估这些标准，降低了评估成本并减少了自我提升偏差。结果显示，即使是最先进的模型如GPT-5-high也只能达到65.9%的总体性能，同时揭示了专有模型与开源模型之间的性能差异，并探讨了扩展思维在处理复杂专业任务中的作用。数据和代码已公开。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2510.18941 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">ProfBench用于评估大语言模型在专业领域的表现。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了ProfBench，一个由超过7000个响应-标准对组成的基准测试集，由具有专业背景的专家进行评估，涵盖物理、化学、金融和咨询等领域。研究通过构建高效且经济的LLM-Judges来评估这些标准，降低了评估成本并减少了自我提升偏差。结果显示，即使是最先进的模型如GPT-5-high也只能达到65.9%的总体性能，同时揭示了专有模型与开源模型之间的性能差异，并探讨了扩展思维在处理复杂专业任务中的作用。数据和代码已公开。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2510.18941" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 21 Oct 2025 13:59:44 GMT</pubDate>
 <pubDate>Tue, 21 Oct 2025 13:59:44 GMT</pubDate>
 </item>
 <item>
@@ -69,11 +79,8 @@
 <link>https://arxiv.org/abs/2510.18940</link>
 <guid>https://arxiv.org/abs/2510.18940</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>NeuroAda实现高效微调，仅需0.02%参数即可达到最佳效果。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为NeuroAda的新型参数高效微调（PEFT）方法，旨在解决现有方法在内存效率与模型表达能力之间的权衡问题。NeuroAda通过选择重要参数并引入旁路连接，在微调过程中仅更新这些旁路连接，而保持原始模型参数不变，从而实现高内存效率和细粒度适应。实验结果显示，NeuroAda在23个任务中表现出色，仅使用0.02%的可训练参数，同时减少高达60%的CUDA内存占用。该方法为高效模型微调提供了新的思路。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2510.18940 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">NeuroAda实现高效微调，仅需0.02%参数即可达到最佳效果。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种名为NeuroAda的新型参数高效微调（PEFT）方法，旨在解决现有方法在内存效率与模型表达能力之间的权衡问题。NeuroAda通过选择重要参数并引入旁路连接，在微调过程中仅更新这些旁路连接，而保持原始模型参数不变，从而实现高内存效率和细粒度适应。实验结果显示，NeuroAda在23个任务中表现出色，仅使用0.02%的可训练参数，同时减少高达60%的CUDA内存占用。该方法为高效模型微调提供了新的思路。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2510.18940" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 21 Oct 2025 13:59:24 GMT</pubDate>
 <pubDate>Tue, 21 Oct 2025 13:59:24 GMT</pubDate>
 </item>
 <item>
@@ -81,11 +88,8 @@
 <link>https://arxiv.org/abs/2510.18840</link>
 <guid>https://arxiv.org/abs/2510.18840</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>SeeTok通过视觉方式处理文本，提升语言模型性能。</p><br><br><p><strong>摘要：</strong> 本文提出一种名为SeeTok的新方法，将文本转化为图像进行处理，利用预训练的多模态大语言模型来解析这些图像。相比传统的子词分词方式，SeeTok在三种语言任务中表现优异，且所需标记数量减少4.43倍，计算量降低70.5%。此外，该方法在跨语言泛化、抗排版噪声和语言层次结构处理方面也表现出色。SeeTok标志着从符号化分词向更接近人类视觉阅读方式的转变，为构建更自然、认知启发的语言模型提供了新方向。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2510.18840 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">SeeTok通过视觉方式处理文本，提升语言模型性能。</p><br /><br /><p><strong>摘要：</strong> 本文提出一种名为SeeTok的新方法，将文本转化为图像进行处理，利用预训练的多模态大语言模型来解析这些图像。相比传统的子词分词方式，SeeTok在三种语言任务中表现优异，且所需标记数量减少4.43倍，计算量降低70.5%。此外，该方法在跨语言泛化、抗排版噪声和语言层次结构处理方面也表现出色。SeeTok标志着从符号化分词向更接近人类视觉阅读方式的转变，为构建更自然、认知启发的语言模型提供了新方向。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2510.18840" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 21 Oct 2025 13:34:48 GMT</pubDate>
 <pubDate>Tue, 21 Oct 2025 13:34:48 GMT</pubDate>
 </item>
 <item>
@@ -93,11 +97,8 @@
 <link>https://arxiv.org/abs/2510.18927</link>
 <guid>https://arxiv.org/abs/2510.18927</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>BAPO提升离策略RL的稳定性与效率。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为BAPO的新型离策略强化学习方法，旨在解决传统方法在使用旧数据训练时出现的策略熵下降、优化不稳定等问题。通过理论和实证分析，作者发现了两个关键问题：负优势样本主导梯度更新以及PPO类方法中的固定裁剪机制抑制了熵的增加。基于此，BAPO动态调整裁剪边界，平衡正负贡献，保持策略多样性并稳定训练过程。实验表明，BAPO在多个离策略场景中表现优异，尤其在AIME 2024和AIME 2025基准测试中超越了多个开源和商用模型。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2510.18927 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">BAPO提升离策略RL的稳定性与效率。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种名为BAPO的新型离策略强化学习方法，旨在解决传统方法在使用旧数据训练时出现的策略熵下降、优化不稳定等问题。通过理论和实证分析，作者发现了两个关键问题：负优势样本主导梯度更新以及PPO类方法中的固定裁剪机制抑制了熵的增加。基于此，BAPO动态调整裁剪边界，平衡正负贡献，保持策略多样性并稳定训练过程。实验表明，BAPO在多个离策略场景中表现优异，尤其在AIME 2024和AIME 2025基准测试中超越了多个开源和商用模型。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2510.18927" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 21 Oct 2025 08:55:04 GMT</pubDate>
 <pubDate>Tue, 21 Oct 2025 08:55:04 GMT</pubDate>
 </item>
 <item>
@@ -105,11 +106,8 @@
 <link>https://arxiv.org/abs/2510.18917</link>
 <guid>https://arxiv.org/abs/2510.18917</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>RIR-Mega提供大规模模拟房间脉冲响应数据，支持语音处理研究。</p><br><br><p><strong>摘要：</strong> 本文介绍了RIR-Mega，一个包含大量模拟房间脉冲响应（RIR）的数据集，采用简洁的元数据格式，并提供验证工具和基准模型。该数据集包含36,000个训练样本和4,000个验证样本，通过轻量级特征和随机森林模型可实现高精度的RT60预测。部分数据托管于Hugging Face用于快速测试，完整数据存档于Zenodo。数据与代码公开，支持研究的可重复性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2510.18917 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">RIR-Mega提供大规模模拟房间脉冲响应数据，支持语音处理研究。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了RIR-Mega，一个包含大量模拟房间脉冲响应（RIR）的数据集，采用简洁的元数据格式，并提供验证工具和基准模型。该数据集包含36,000个训练样本和4,000个验证样本，通过轻量级特征和随机森林模型可实现高精度的RT60预测。部分数据托管于Hugging Face用于快速测试，完整数据存档于Zenodo。数据与代码公开，支持研究的可重复性。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2510.18917" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Tue, 21 Oct 2025 02:53:14 GMT</pubDate>
 <pubDate>Tue, 21 Oct 2025 02:53:14 GMT</pubDate>
 </item>
 <item>
@@ -117,11 +115,8 @@
 <link>https://arxiv.org/abs/2510.18909</link>
 <guid>https://arxiv.org/abs/2510.18909</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>ODiS算法通过正交分解提升数据质量与多样性，优化大语言模型训练效果。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为Orthogonal Diversity-Aware Selection (ODiS) 的数据选择算法，旨在解决传统基于分数的选择方法在大语言模型预训练数据筛选中的局限性。该方法通过多维度评估数据（如语言质量、知识质量和理解难度），利用主成分分析（PCA）对维度进行去相关处理，生成正交的评价维度，并为每个维度训练基于RoBERTa的评分器，从而实现大规模数据的高效筛选。实验表明，ODiS选择的数据在不同维度间重合度低于2%，且模型在下游任务中表现显著优于其他基线方法，验证了正交多样性感知数据选择的重要性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2510.18909 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">ODiS算法通过正交分解提升数据质量与多样性，优化大语言模型训练效果。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种名为Orthogonal Diversity-Aware Selection (ODiS) 的数据选择算法，旨在解决传统基于分数的选择方法在大语言模型预训练数据筛选中的局限性。该方法通过多维度评估数据（如语言质量、知识质量和理解难度），利用主成分分析（PCA）对维度进行去相关处理，生成正交的评价维度，并为每个维度训练基于RoBERTa的评分器，从而实现大规模数据的高效筛选。实验表明，ODiS选择的数据在不同维度间重合度低于2%，且模型在下游任务中表现显著优于其他基线方法，验证了正交多样性感知数据选择的重要性。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2510.18909" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 20 Oct 2025 23:37:31 GMT</pubDate>
 <pubDate>Mon, 20 Oct 2025 23:37:31 GMT</pubDate>
 </item>
 <item>
@@ -129,11 +124,8 @@
 <link>https://arxiv.org/abs/2510.17932</link>
 <guid>https://arxiv.org/abs/2510.17932</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>Chart2Code是首个分层图表到代码任务基准，挑战多模态模型能力。</p><br><br><p><strong>摘要：</strong> 本文介绍了Chart2Code，这是一个用于评估大型多模态模型（LMMs）在图表理解和代码生成方面能力的新基准。该基准从用户角度出发，涵盖三种任务层级：图表复现、图表编辑和长表转图表生成，旨在逐步提升任务难度。Chart2Code包含2023个任务，覆盖22种图表类型，并配有多层次评估指标，以衡量代码正确性和图表视觉质量。研究者对25个最先进的LMM进行了测试，结果显示即使是最先进的模型如GPT-5在代码生成和图表质量评估上也仅达到0.57和0.22的平均得分，表明该基准具有较高难度。作者希望这一基准能推动多模态推理的发展，并促进更强大、通用的LMM模型的开发。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2510.17932 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">Chart2Code是首个分层图表到代码任务基准，挑战多模态模型能力。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了Chart2Code，这是一个用于评估大型多模态模型（LMMs）在图表理解和代码生成方面能力的新基准。该基准从用户角度出发，涵盖三种任务层级：图表复现、图表编辑和长表转图表生成，旨在逐步提升任务难度。Chart2Code包含2023个任务，覆盖22种图表类型，并配有多层次评估指标，以衡量代码正确性和图表视觉质量。研究者对25个最先进的LMM进行了测试，结果显示即使是最先进的模型如GPT-5在代码生成和图表质量评估上也仅达到0.57和0.22的平均得分，表明该基准具有较高难度。作者希望这一基准能推动多模态推理的发展，并促进更强大、通用的LMM模型的开发。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2510.17932" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Mon, 20 Oct 2025 11:11:56 GMT</pubDate>
 <pubDate>Mon, 20 Oct 2025 11:11:56 GMT</pubDate>
 </item>
 <item>
@@ -141,11 +133,8 @@
 <link>https://arxiv.org/abs/2510.15731</link>
 <guid>https://arxiv.org/abs/2510.15731</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>研究发现扩散语言模型存在动态注意力下沉现象。</p><br><br><p><strong>摘要：</strong> 本文对基于扩散的语言模型（DLMs）的注意力模式进行了实证分析，重点研究了注意力下沉现象。尽管DLMs在效率和性能上表现出色，但其内部机制仍不明确。研究发现，DLMs同样存在注意力下沉，但与自回归模型（ARMs）有所不同：DLMs的注意力下沉位置会随生成过程动态变化，且对注意力下沉的遮蔽影响较小，表明其具有更高的鲁棒性。这一发现揭示了扩散模型与传统模型在注意力分配上的本质差异。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2510.15731 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">研究发现扩散语言模型存在动态注意力下沉现象。</p><br /><br /><p><strong>摘要：</strong> 本文对基于扩散的语言模型（DLMs）的注意力模式进行了实证分析，重点研究了注意力下沉现象。尽管DLMs在效率和性能上表现出色，但其内部机制仍不明确。研究发现，DLMs同样存在注意力下沉，但与自回归模型（ARMs）有所不同：DLMs的注意力下沉位置会随生成过程动态变化，且对注意力下沉的遮蔽影响较小，表明其具有更高的鲁棒性。这一发现揭示了扩散模型与传统模型在注意力分配上的本质差异。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2510.15731" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Fri, 17 Oct 2025 11:23:58 GMT</pubDate>
 <pubDate>Fri, 17 Oct 2025 11:23:58 GMT</pubDate>
 </item>
 <item>
@@ -153,11 +142,8 @@
 <link>https://arxiv.org/abs/2510.15050</link>
 <guid>https://arxiv.org/abs/2510.15050</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>DRIFT提升多模态模型推理能力，成本更低。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为DRIFT的轻量级方法，用于增强多模态大语言模型（MLLMs）的推理能力。该方法通过在梯度空间中注入推理知识，避免破坏多模态对齐，无需大规模数据或计算资源。实验表明，DRIFT在MathVista和MathVerse等多模态推理基准上优于传统方法，且成本显著降低。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2510.15050 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">DRIFT提升多模态模型推理能力，成本更低。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种名为DRIFT的轻量级方法，用于增强多模态大语言模型（MLLMs）的推理能力。该方法通过在梯度空间中注入推理知识，避免破坏多模态对齐，无需大规模数据或计算资源。实验表明，DRIFT在MathVista和MathVerse等多模态推理基准上优于传统方法，且成本显著降低。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2510.15050" target="_blank">查看原文</a></div>
 ]]></content:encoded>
-<pubDate>Thu, 16 Oct 2025 14:06:46 GMT</pubDate>
 <pubDate>Thu, 16 Oct 2025 14:06:46 GMT</pubDate>
 </item>
 <item>
@@ -165,14 +151,10 @@
 <link>https://arxiv.org/abs/2510.15015</link>
 <guid>https://arxiv.org/abs/2510.15015</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>DeLeaker通过干预注意力图有效缓解语义泄漏。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为DeLeaker的轻量级、无需优化的推理阶段方法，用于缓解文本到图像生成模型中的语义泄漏问题。该方法通过动态调整注意力图来抑制不同实体间的过度交互，同时增强每个实体的身份特征。为了支持系统评估，研究者还引入了SLIM数据集和自动评估框架。实验表明，DeLeaker在多个基准测试中优于现有方法，且在不牺牲图像质量的前提下有效减少了语义泄漏。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://arxiv.org/abs/2510.15015 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">DeLeaker通过干预注意力图有效缓解语义泄漏。</p><br /><br /><p><strong>摘要：</strong> 本文提出了一种名为DeLeaker的轻量级、无需优化的推理阶段方法，用于缓解文本到图像生成模型中的语义泄漏问题。该方法通过动态调整注意力图来抑制不同实体间的过度交互，同时增强每个实体的身份特征。为了支持系统评估，研究者还引入了SLIM数据集和自动评估框架。实验表明，DeLeaker在多个基准测试中优于现有方法，且在不牺牲图像质量的前提下有效减少了语义泄漏。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2510.15015" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Thu, 16 Oct 2025 13:39:21 GMT</pubDate>
-<pubDate>Thu, 16 Oct 2025 13:39:21 GMT</pubDate>
 </item>
-
 <item>
 <title>olmOCR 2：基于强化学习的高性能OCR系统</title>
 <link>https://arxiv.org/abs/2510.19817</link>
@@ -9046,132 +9028,6 @@ Hidden license conflicts in the open-source AI ecosystem pose serious legal and 
 <div><p style="color: gray;">MARS2 2025聚焦多模态推理与大模型应用，推动领域发展。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了MARS2 2025挑战赛，旨在通过大规模基准测试促进多模态机器学习和大语言模型（LLMs）的发展。该挑战赛聚焦现实世界和专业场景，发布了两个定制数据集Lens和AdsQA，分别支持日常场景和广告视频的推理任务。共有40多个基线模型参与，并设置了三个竞赛赛道。最终有76支团队注册，40多份有效提交进入排名。所有数据集、代码和排名均公开在MARS2官网和GitHub页面，方便研究人员参考与使用。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2509.14142" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Wed, 17 Sep 2025 12:21:34 GMT</pubDate>
-</item>
-<item>
-<title>Wan-Animate：统一角色动画与替换框架</title>
-<link>https://arxiv.org/abs/2509.14055</link>
-<guid>https://arxiv.org/abs/2509.14055</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">Wan-Animate可精准复制视频中角色动作和表情生成高质量角色视频。</p><br /><br /><p><strong>摘要：</strong> Wan-Animate是一个统一的角色动画与替换框架，能够根据给定的角色图像和参考视频，精确复制视频中的表情和动作，生成高保真角色视频。同时，它还能将动画角色无缝融入参考视频，保持场景的光照和色彩一致性。该框架基于Wan模型构建，采用改进的输入范式以区分参考条件和生成区域，实现多任务统一表示。通过空间对齐的骨骼信号和隐式面部特征，提升生成视频的可控性和表现力。此外，引入Relighting LoRA模块增强环境融合效果，实验结果表明其性能达到当前最佳水平，并计划开源模型权重和源代码。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2509.14055" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 17 Sep 2025 11:00:57 GMT</pubDate>
-</item>
-<item>
-<title>SAIL-VL2：新一代多模态基础模型的突破与应用</title>
-<link>https://arxiv.org/abs/2509.14033</link>
-<guid>https://arxiv.org/abs/2509.14033</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">SAIL-VL2在多模态任务中表现卓越，具备强大推理能力。</p><br /><br /><p><strong>摘要：</strong> SAIL-VL2是一款面向多模态理解与推理的开放基础模型，作为SAIL-VL的升级版本，在2B和8B参数规模下均取得了最先进的性能。其核心创新包括大规模数据优化管道、渐进式训练框架以及高效的稀疏专家混合架构。这些改进显著提升了模型在图像和视频任务中的表现，尤其在复杂推理任务中表现出色。SAIL-VL2在106个数据集上展现出竞争力，并在MMMU和MathVista等挑战性基准测试中取得领先。此外，它在OpenCompass排行榜上位列4B参数规模下的开源模型首位，为多模态研究提供了高效且可扩展的基础。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2509.14033" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 17 Sep 2025 10:34:02 GMT</pubDate>
-</item>
-<item>
-<title>THOR：一种基于强化学习的工具集成优化方法提升大语言模型数学推理能力</title>
-<link>https://arxiv.org/abs/2509.13761</link>
-<guid>https://arxiv.org/abs/2509.13761</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">THOR提升LLM数学推理，通过工具集成与强化学习实现精准优化。</p><br /><br /><p><strong>摘要：</strong> 本文提出THOR（Tool-Integrated Hierarchical Optimization via RL），旨在解决大语言模型在数学推理中的高精度任务挑战。通过TIRGen构建高质量的工具集成推理数据集，并采用强化学习策略进行细粒度的层次优化，同时引入自校正机制以动态修正推理路径。该方法在多个数学和代码基准测试中表现出色，提升了不同模型的推理能力。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2509.13761" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Wed, 17 Sep 2025 03:16:12 GMT</pubDate>
-</item>
-<item>
-<title>基于zELO方法的高效检索模型训练与应用</title>
-<link>https://arxiv.org/abs/2509.12541</link>
-<guid>https://arxiv.org/abs/2509.12541</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">zELO方法提升多领域检索性能，超越现有模型。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了名为zELO的新训练方法，该方法通过分析排序任务与Thurstone模型的静态等价性来优化检索性能。基于zELO方法，使用无监督数据训练了zerank-1和zerank-1-small等先进开源重排序模型，在金融、法律、代码和STEM等多个领域取得了最高检索成绩，优于封闭源代码的商业模型。这些模型在跨领域和私有数据集上也表现出色，展示了强大的零样本能力。训练数据包含112,000个查询及每个查询100个文档，整个训练过程在不到10,000 H100小时的端到端训练中完成。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2509.12541" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 15 Sep 2025 20:44:08 GMT</pubDate>
-</item>
-<item>
-<title>多模态大语言模型输出偏好被图像操控的安全风险研究</title>
-<link>https://arxiv.org/abs/2509.12521</link>
-<guid>https://arxiv.org/abs/2509.12521</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">研究揭示多模态模型响应可被图像操控，存在隐蔽安全风险。</p><br /><br /><p><strong>摘要：</strong> 本文揭示了多模态大语言模型（MLLMs）在实际应用中面临的新安全风险：攻击者可以通过精心设计的图像任意操控模型的输出偏好。该方法称为Preference Hijacking (Phi)，能够在不修改模型的情况下，在推理阶段实现对模型响应的隐蔽操控。研究还提出了一种通用的劫持扰动，可嵌入不同图像中，使模型向攻击者指定的方向偏移。实验结果表明该方法在多个任务中均有效，相关代码已公开。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2509.12521" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 15 Sep 2025 19:55:57 GMT</pubDate>
-</item>
-<item>
-<title>基于元模仿学习的通用四旋翼控制策略研究</title>
-<link>https://arxiv.org/abs/2509.11481</link>
-<guid>https://arxiv.org/abs/2509.11481</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">RAPTOR方法实现四旋翼控制的零样本适应。</p><br /><br /><p><strong>摘要：</strong> 本文提出RAPTOR方法，用于训练一种高度适应性的四旋翼控制基础策略。该方法通过元模仿学习，利用1000个不同四旋翼的强化学习教师策略，将它们蒸馏为一个单一的自适应学生策略。实验表明，仅需3层神经网络（2084个参数）即可实现对多种四旋翼平台的零样本适应，包括不同重量、电机类型、框架类型和飞行控制器的设备。该策略在轨迹跟踪、室内外环境、风扰动等多种条件下表现出色。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2509.11481" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Sun, 14 Sep 2025 20:05:40 GMT</pubDate>
-</item>
-<item>
-<title>基于数字信号处理的虚拟模拟建模与优化方法</title>
-<link>https://arxiv.org/abs/2509.10706</link>
-<guid>https://arxiv.org/abs/2509.10706</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">数字压缩器通过牛顿-拉夫森法优化，成功模拟LA-2A放大器。</p><br /><br /><p><strong>摘要：</strong> 本文提出一种利用前馈数字压缩器并通过牛顿-拉夫森方法优化参数来模拟模拟音平放大器的方法。该方法结合了数字信号处理算法与神经网络的优势，具有更高的计算效率和更少的参数数量。研究展示了数字压缩器能够准确逼近目标设备Teletronix LA-2A的行为，并对不同计算海森矩阵的方法进行了比较。同时，利用现代GPU的并行算法实现高效训练，最终模型以VST插件形式开源发布。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2509.10706" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 12 Sep 2025 17:48:30 GMT</pubDate>
-</item>
-<item>
-<title>结构化数据合成评估框架 Struct-Bench 的提出</title>
-<link>https://arxiv.org/abs/2509.10696</link>
-<guid>https://arxiv.org/abs/2509.10696</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">Struct-Bench 提供结构化数据合成评估标准，提升隐私保护数据生成质量。</p><br /><br /><p><strong>摘要：</strong> 本文介绍了 Struct-Bench，一个用于评估包含自然语言的结构化数据合成集的框架和基准。该框架要求用户提供数据集结构的上下文无关文法（CFG）表示，并包含5个真实数据集和2个合成数据集，均附有CFG标注。研究表明，这些数据集对最先进的差分隐私合成方法仍具挑战性。Struct-Bench 还提供了参考实现和排行榜，为研究者提供标准化的评估平台，以改进隐私保护的数据生成技术。文章还通过案例研究展示了如何利用 Struct-Bench 提升结构化数据的合成质量。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2509.10696" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 12 Sep 2025 17:18:13 GMT</pubDate>
-</item>
-<item>
-<title>SP4D：基于单目输入生成RGB与运动部件视频的框架</title>
-<link>https://arxiv.org/abs/2509.10687</link>
-<guid>https://arxiv.org/abs/2509.10687</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">SP4D通过双分支扩散模型生成RGB与运动部件视频。</p><br /><br /><p><strong>摘要：</strong> 本文提出Stable Part Diffusion 4D (SP4D)，一种从单目输入生成配对RGB和运动部件视频的框架。SP4D不依赖外观语义线索，而是学习生成与物体关节一致且跨视角和时间保持一致的运动部件。该框架采用双分支扩散模型，同时生成RGB帧和对应的部件分割图，并引入空间颜色编码方案以简化架构并支持不同部件数量。BiDiFuse模块增强跨分支一致性，实验表明SP4D在多种场景中表现优异，适用于动画和运动相关任务。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2509.10687" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Fri, 12 Sep 2025 16:39:43 GMT</pubDate>
-</item>
-<item>
-<title>ROOM模拟框架提升支气管镜手术训练数据生成</title>
-<link>https://arxiv.org/abs/2509.13177</link>
-<guid>https://arxiv.org/abs/2509.13177</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">ROOM生成逼真支气管镜数据，提升医疗机器人训练效果。</p><br /><br /><p><strong>摘要：</strong> 本文介绍ROOM（Realistic Optical Observation in Medicine）模拟框架，用于生成逼真的支气管镜训练数据。该框架利用患者CT扫描生成多模态传感器数据，包括RGB图像、深度图、表面法线、光流和点云等。通过在多视角姿态估计和单目深度估计任务中验证，ROOM展示了其在医学机器人领域中的挑战性和实用性。研究还表明，ROOM生成的数据可用于优化现有深度估计模型，并支持导航等下游应用。该框架有望在临床难以获取的多样化患者解剖结构和操作场景中实现大规模数据生成。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2509.13177" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 16 Sep 2025 11:30:02 GMT</pubDate>
-</item>
-<item>
-<title>ReSum：突破上下文限制的大型语言模型网络代理新范式</title>
-<link>https://arxiv.org/abs/2509.13313</link>
-<guid>https://arxiv.org/abs/2509.13313</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">ReSum提升LLM网络代理处理复杂查询的能力。</p><br /><br /><p><strong>摘要：</strong> 本文提出ReSum范式，通过周期性上下文摘要实现无限探索，克服了传统方法如ReAct在处理多实体、高不确定性复杂查询时因上下文窗口限制导致的效率问题。ReSum-GRPO进一步结合分段轨迹训练和优势广播，提升代理的总结条件推理能力。实验表明，ReSum在多个基准测试中平均提升4.5%，ReSum-GRPO训练后的WebResummer-30B在中文和英文浏览任务中表现优于现有开源模型。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2509.13313" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 16 Sep 2025 13:57:22 GMT</pubDate>
-</item>
-<item>
-<title>基于Agentic CPT的深度研究代理模型AgentFounder性能提升</title>
-<link>https://arxiv.org/abs/2509.13310</link>
-<guid>https://arxiv.org/abs/2509.13310</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">提出Agentic CPT方法提升深度研究代理模型性能。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了大型语言模型在自主工具使用和多步骤推理方面的进展，指出当前基于通用基础模型的后训练方法在代理任务中表现不佳。研究发现，缺乏稳健的代理基础模型导致后训练过程中需同时学习多种代理行为并对其对齐，造成优化矛盾。为此，作者首次将Agentic Continual Pre-training（Agentic CPT）引入深度研究代理训练流程，构建了名为AgentFounder的代理基础模型。在10个基准测试中，AgentFounder-30B表现出色，尤其在BrowseComp-en、BrowseComp-zh和HLE任务中取得了显著成绩。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2509.13310" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 16 Sep 2025 13:57:19 GMT</pubDate>
-</item>
-<item>
-<title>WebSailor提升开源模型信息检索能力</title>
-<link>https://arxiv.org/abs/2509.13305</link>
-<guid>https://arxiv.org/abs/2509.13305</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">WebSailor方法提升开源模型信息检索能力。</p><br /><br /><p><strong>摘要：</strong> 文章探讨了超越人类认知局限在大型语言模型训练中的重要性，指出像DeepResearch这样的专有代理系统在复杂信息搜索任务中表现出超人类能力。研究认为，这种成功源于一种开放源代码模型所缺乏的高级推理模式，即在海量信息中系统性地减少极端不确定性。基于这一发现，作者提出了WebSailor，这是一种完整的后训练方法，通过结构化采样、信息混淆生成高不确定性任务，并结合DUPO算法进行高效代理强化学习训练。该方法显著提升了开源代理在复杂信息搜索任务中的表现，接近专有代理水平，缩小了能力差距。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2509.13305" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Tue, 16 Sep 2025 13:57:03 GMT</pubDate>
-</item>
-<item>
-<title>高效自动化定理证明模型的优化研究</title>
-<link>https://arxiv.org/abs/2509.12603</link>
-<guid>https://arxiv.org/abs/2509.12603</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">本文提出优化方法，降低ATP模型计算成本。</p><br /><br /><p><strong>摘要：</strong> 本文研究了自动化定理证明（ATP）模型在测试阶段的扩展策略，指出当前主流方法存在计算开销过大的问题。作者提出两种互补方法：动态链式思维切换机制和可训练前缀的多样化并行强化学习，以减少token使用和采样次数，同时保持性能。实验表明，EconProver在miniF2F和ProofNet数据集上仅需12%的计算成本即可达到基线方法的性能，为轻量级ATP模型部署提供了可行方案。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://arxiv.org/abs/2509.12603" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Mon, 15 Sep 2025 23:00:13 GMT</pubDate>
 </item>
 </channel>
 </rss>
