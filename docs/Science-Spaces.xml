@@ -4,6 +4,21 @@
 <title>科学空间|Scientific Spaces</title>
 <link>https://kexue.fm/</link>
 
+<item>
+<title>DeltaNet的核心逆矩阵的元素总是在[-1, 1]内</title>
+<link>https://spaces.ac.cn/archives/11563</link>
+<guid>https://spaces.ac.cn/archives/11563</guid>
+<content:encoded><![CDATA[
+
+  <p>从<a href="https://kexue.fm/archives/11033" target="_blank">《线性注意力简史：从模仿、创新到反哺》</a>中我们可以看到，DeltaNet的并行形式涉及到了形如$(\boldsymbol{I} + \boldsymbol{K}\boldsymbol{K}^{\top}\odot \boldsymbol{M}^-)^{-1}$的逆矩阵。近日读者 <a href="https://kexue.fm/archives/11486/comment-page-1#comment-29143" target="_blank">@Arch123</a> 提出，通过实验可观察到该逆矩阵的元素总是在$[-1, 1]$内，问是否可以从数学上证实或证伪它。</p><p>在这篇文章中，我们将通过两种不同的方式证明这个结论是严格成立的。</p><h2>问题描述</h2><p>首先，我们准确地重述一下问题。设有矩阵$\boldsymbol{K}=[\boldsymbol{k}_1,\boldsymbol{k}_2,\cdots,\boldsymbol{k}_n]^{\top}\in\mathbb{R}^{n\times d}$，其中每个$\boldsymbol{k}_i\in\mathbb{R}^{d\times 1}$是模长不超过1的列向量，$\boldsymbol{M}\in\mathbb{R}^{n\times n}$是一个下三角的掩码矩阵，定义为<br />
+\begin{equation}M_{i,j} = \left\{\begin{aligned} &1, &amp;i \geq j \\ &0, &amp;i < j\end{aligned}\right.\end{equation}<br />
+$\boldsymbol{I}$是单位阵，$\boldsymbol{M}^- = \boldsymbol{M} - \boldsymbol{I}$。我们要证明的是：<br />
+\begin{equation}(\boldsymbol{I} + \boldsymbol{K}\boldsymbol{K}^{\top}\odot \boldsymbol{M}^-)^{-1}\quad\in\quad [-1, 1]^{n\times n}\end{equation}</p><p class="more"><a href="https://spaces.ac.cn/archives/11563" title="DeltaNet的核心逆矩阵的元素总是在[-1, 1]内">[...]</a></p>
+
+]]></content:encoded>
+<pubDate>Mon, 26 Jan 2026 10:47:00 +0800</pubDate>
+<pubDate>Mon, 26 Jan 2026 10:47:00 +0800</pubDate>
+</item>
 
 <item>
 <title>从优化视角看特征各向同性的重要性</title>
