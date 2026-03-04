@@ -55,7 +55,7 @@
 <a href="https://www.buymeacoffee.com/yinan" target="_blank"><img src="https://cdn.buymeacoffee.com/buttons/v2/default-yellow.png" alt="Buy Me A Coffee" style="height: 60px !important;width: 217px !important;" ></a>
 
 - https://nikonrumors.com/feed -> https://YuhanShi53.github.io/RSS-GPT/Nikon-Rumors.xml
-- https://rsshub.app/huggingface/daily-papers -> https://YuhanShi53.github.io/RSS-GPT/Huggingface-Daliy-Papers.xml
+- https://papers.takara.ai/api/feed -> https://YuhanShi53.github.io/RSS-GPT/Huggingface-Daliy-Papers.xml
 - https://sspai.com/feed -> https://YuhanShi53.github.io/RSS-GPT/Sspai.xml
 - https://spaces.ac.cn/feed -> https://YuhanShi53.github.io/RSS-GPT/Science-Spaces.xml
 - https://openai.com/news/rss.xml -> https://YuhanShi53.github.io/RSS-GPT/Openai.xml
