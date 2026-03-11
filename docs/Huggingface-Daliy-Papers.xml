@@ -4,6 +4,606 @@
 <title>Takara TLDR - Daily AI Papers</title>
 <link>https://tldr.takara.ai</link>
 
+<item>
+<title>基于最优控制理论的Transformer训练方法</title>
+<link>https://tldr.takara.ai/p/2603.09571</link>
+<guid>https://tldr.takara.ai/p/2603.09571</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种符合结构约束的Transformer训练方法。</p><br><br><p><strong>摘要：</strong> 本文提出一种基于最优控制理论的Transformer训练方法，考虑了执行过程中的输入独立性、问题的集合控制性质以及位置依赖性。将Transformer建模为具有共享动作的离散时间受控粒子系统，通过将其提升到概率测度空间，构建了一个完全可观测的马尔可夫决策过程。通过动态规划原理，在适度的紧致性假设下证明了全局最优策略的存在性，并展示了闭环策略与初始分布相关的开环策略等价性。进一步提出三重量化训练过程，确保模型在原始训练问题中接近最优。最后，验证了提升模型的稳定性与经验一致性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.09571 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 12:17:48 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 12:17:48 +0000</pubDate>
+</item>
+<item>
+<title>视觉语言模型在驾驶辅助中的时序推理能力研究</title>
+<link>https://tldr.takara.ai/p/2603.09512</link>
+<guid>https://tldr.takara.ai/p/2603.09512</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究VLM在驾驶辅助中是否具备时序推理能力。</p><br><br><p><strong>摘要：</strong> 本文探讨了视觉语言模型（VLM）作为驾驶助手时，是否能够基于观察信息进行时间上连贯的推理，还是仅依赖训练时的记忆模式。尽管已有研究将VLM应用于自动驾驶，但大多侧重于场景理解和指令生成，隐含假设强视觉理解自然带来可靠未来推理。然而，本文指出VLM在响应一致性与时间推理方面存在局限，表现为输入微小变化导致答案不一致，或无法合理推断序列事件。此外，具有强大视觉理解能力的模型在需要时间推理的任务中未必表现最佳，表明其过度依赖预训练模式而非建模时间动态。为解决这些问题，作者引入了一个名为FutureVQA的人工标注基准数据集，并提出一种基于思维链的自监督调优方法，以提升响应一致性和时间推理能力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.09512 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 11:12:28 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 11:12:28 +0000</pubDate>
+</item>
+<item>
+<title>CyberThreat-Eval：提升CTI报告生成的LLM评估基准</title>
+<link>https://tldr.takara.ai/p/2603.09452</link>
+<guid>https://tldr.takara.ai/p/2603.09452</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出CyberThreat-Eval基准以评估LLM在CTI工作流中的表现。</p><br><br><p><strong>摘要：</strong> 本文介绍了CyberThreat-Eval，一个基于世界领先公司日常CTI工作流构建的专家标注基准。该基准针对现有LLM评估方法的不足，提供覆盖三阶段CTI流程（筛选、深度搜索、情报撰写）的实际任务，并采用以分析师为中心的指标，如事实准确性、内容质量和操作成本。实验表明，当前LLM在处理复杂细节和区分正确与错误信息方面存在明显局限，因此CTI流程结合了外部真实数据库和人工专家知识。该代码已在GitHub和HuggingFace上开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.09452 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 10:04:12 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 10:04:12 +0000</pubDate>
+</item>
+<item>
+<title>基于密集视觉表示的导航世界模型研究</title>
+<link>https://tldr.takara.ai/p/2603.09241</link>
+<guid>https://tldr.takara.ai/p/2603.09241</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出RAE-NWM模型提升导航任务的结构稳定性和动作准确性。</p><br><br><p><strong>摘要：</strong> 本文研究了视觉导航中世界模型的应用，指出传统方法在变分自编码器的压缩潜在空间中可能丢失细粒度结构信息，影响控制精度。通过线性动力学探测发现DINOv2特征具有更强的线性可预测性，由此提出RAE-NWM模型，在密集视觉表示空间中建模导航动态。该模型采用条件扩散Transformer和分离时间驱动门控模块，有效提升序列滚动的结构稳定性和动作准确性，对下游规划与导航有显著帮助。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.09241 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 06:16:23 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 06:16:23 +0000</pubDate>
+</item>
+<item>
+<title>KV-Lock：一种无需训练的视频编辑框架</title>
+<link>https://tldr.takara.ai/p/2603.09657</link>
+<guid>https://tldr.takara.ai/p/2603.09657</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>KV-Lock提升视频前景质量同时保持背景一致性。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为KV-Lock的无需训练的视频编辑框架，旨在解决在增强前景质量的同时保持背景一致性的难题。该方法通过分析去噪预测的方差来量化生成多样性，并据此动态调整缓存背景键值对与新生成键值对的融合比例以及CFG尺度。当检测到幻觉风险时，KV-Lock会增强背景键值对锁定并增强条件引导，从而减少伪影并提高生成质量。实验表明，该方法在多种视频编辑任务中均优于现有方法。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.09657 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 13:31:38 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 13:31:38 +0000</pubDate>
+</item>
+<item>
+<title>基于开源大语言模型的放射科报告纵向信息提取系统</title>
+<link>https://tldr.takara.ai/p/2603.09638</link>
+<guid>https://tldr.takara.ai/p/2603.09638</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>开源LLM实现放射科报告中肿瘤信息的高效提取。</p><br><br><p><strong>摘要：</strong> 本文提出一个完全开源、可本地部署的放射科报告纵向信息提取管道，采用qwen2.5-72b模型，依据RECIST标准提取目标病灶、非目标病灶和新病灶数据。在50对荷兰胸部/腹部CT报告的评估中，系统在目标病灶、非目标病灶和新病灶的属性级准确率分别达到93.7%、94.9%和94.0%。该方法展示了开源LLM在多时间点肿瘤学任务中具有临床意义的性能，同时保障了数据隐私和可重复性，为从常规临床文本中提取结构化纵向数据提供了可行方案。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.09638 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 13:13:43 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 13:13:43 +0000</pubDate>
+</item>
+<item>
+<title>AlphaEvolve提升五种经典Ramsey数下界</title>
+<link>https://tldr.takara.ai/p/2603.09172</link>
+<guid>https://tldr.takara.ai/p/2603.09172</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>AlphaEvolve改进了五个经典Ramsey数的下界。</p><br><br><p><strong>摘要：</strong> 本文介绍了AlphaEvolve这一基于大语言模型的代码变异代理，成功提升了五个经典Ramsey数的下界，包括R(3,13)、R(3,18)、R(4,13)、R(4,14)和R(4,15)。这些结果比之前记录的数值更高，同时AlphaEvolve还恢复了所有已知精确的Ramsey数下界，并在许多其他情况下达到了最佳下界。与以往需要定制搜索算法不同，AlphaEvolve是一个统一的元算法，能够生成适用于所有结果的搜索算法。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.09172 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 04:20:40 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 04:20:40 +0000</pubDate>
+</item>
+<item>
+<title>PromptDLA：一种面向文档布局分析的领域感知提示方法</title>
+<link>https://tldr.takara.ai/p/2603.09414</link>
+<guid>https://tldr.takara.ai/p/2603.09414</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>PromptDLA通过领域感知提示提升文档布局分析性能。</p><br><br><p><strong>摘要：</strong> 本文提出PromptDLA，一种面向文档布局分析的领域感知提示方法。该方法通过定制化提示引导模型关注不同领域的关键特征，从而提升模型在多领域数据上的泛化能力。实验表明，PromptDLA在多个公开数据集上均取得了最先进的性能。研究强调了在数据融合过程中考虑领域差异的重要性，并展示了如何利用描述性知识作为提示来增强模型表现。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.09414 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 09:30:00 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 09:30:00 +0000</pubDate>
+</item>
+<item>
+<title>面向极端边缘设备的深度神经网络本地训练框架TrainDeeploy</title>
+<link>https://tldr.takara.ai/p/2603.09511</link>
+<guid>https://tldr.takara.ai/p/2603.09511</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>TrainDeeploy实现极端边缘设备上CNN与Transformer模型的高效本地训练。</p><br><br><p><strong>摘要：</strong> 本文提出TrainDeeploy，一个统一高效推理与本地训练的框架，适用于超低功耗异构系统芯片（SoC）。该框架支持卷积神经网络（CNN）和Transformer模型，并采用选择性逐层微调和低秩适应（LoRA）等策略。在基于RISC-V的SoC上，实现了紧凑型卷积Transformer（CCT）的端到端本地微调，每秒可处理11张图像。实验表明，LoRA相比全反向传播可减少23%动态内存使用、15倍可训练参数和梯度数量，以及1.6倍内存传输量。TrainDeeploy在CCT和Deep-AE模型上分别达到4.6和13.4 FLOP/周期，扩展了现有框架对极端边缘平台的支持范围。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.09511 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 11:10:50 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 11:10:50 +0000</pubDate>
+</item>
+<item>
+<title>多智能体视角视频理解基准与模型研究</title>
+<link>https://tldr.takara.ai/p/2603.09827</link>
+<guid>https://tldr.takara.ai/p/2603.09827</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究多智能体视角视频理解问题，提出MA-EgoQA基准和EgoMAS模型。</p><br><br><p><strong>摘要：</strong> 随着具身模型的发展，未来人类将与多个具身AI代理协作。为提升人机交互效果，需同时解析多源感知信息并建立上下文关联。本文提出MA-EgoQA基准，用于评估多视角长时序视频理解能力，并引入EgoMAS模型进行系统级记忆构建。实验表明当前方法难以有效处理多视角视频流，凸显了系统级理解的重要性。该工作为未来研究提供了数据和方法支持。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.09827 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 15:48:35 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 15:48:35 +0000</pubDate>
+</item>
+<item>
+<title>深度学习与计算机视觉在自动驾驶汽车中的应用研究</title>
+<link>https://tldr.takara.ai/p/2603.09255</link>
+<guid>https://tldr.takara.ai/p/2603.09255</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>深度学习提升自动驾驶感知与决策能力。</p><br><br><p><strong>摘要：</strong> 本文探讨了深度学习和计算机视觉技术在自动驾驶汽车中的关键作用，重点介绍了通过预训练和定制神经网络提升交通标志识别、车辆检测、车道检测及行为克隆等任务性能的方法。研究结合几何变换、颜色增强、图像归一化和迁移学习等技术，应用于多种数据集以验证模型效果。结果表明，这些方法有效解决了自动驾驶中的多项挑战，为提高系统鲁棒性和可靠性提供了新思路，对推动更安全高效的自动驾驶技术发展具有重要意义。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.09255 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 06:40:52 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 06:40:52 +0000</pubDate>
+</item>
+<item>
+<title>基于双路径架构的4D雷达场景理解模型DRIFT</title>
+<link>https://tldr.takara.ai/p/2603.09695</link>
+<guid>https://tldr.takara.ai/p/2603.09695</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>DRIFT通过双路径架构提升4D雷达的场景理解能力。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为DRIFT的模型，用于提升4D雷达在自动驾驶系统中的场景理解能力。该模型采用双路径架构，分别通过点路径和柱体路径提取局部和全局特征，并通过多阶段特征共享层进行融合，以充分利用两种表示。DRIFT在VoD数据集和内部数据集上进行了评估，结果表明其在目标检测和自由道路估计任务中优于现有基线方法，例如在VoD数据集上的mAP达到52.6%，高于CenterPoint的45.4%。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.09695 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 14:03:35 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 14:03:35 +0000</pubDate>
+</item>
+<item>
+<title>面向地球观测的多模态模型评估基准OmniEarth</title>
+<link>https://tldr.takara.ai/p/2603.09471</link>
+<guid>https://tldr.takara.ai/p/2603.09471</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>OmniEarth为遥感视觉语言模型提供全面评估基准。</p><br><br><p><strong>摘要：</strong> 本文提出OmniEarth，一个用于评估遥感视觉语言模型（RSVLMs）的基准测试平台。该基准涵盖感知、推理和鲁棒性三个能力维度，包含28个精细任务，支持多种任务形式，如多项选择VQA和开放式VQA。OmniEarth采用盲测协议和语义一致性要求以减少语言偏差，并包含9,275张高质量图像及44,210条人工验证指令。实验表明现有模型在复杂地理任务中仍存在明显不足，OmniEarth已公开供研究使用。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.09471 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 10:22:01 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 10:22:01 +0000</pubDate>
+</item>
+<item>
+<title>揭示深度神经网络中缺失概念的可解释性人工智能方法</title>
+<link>https://tldr.takara.ai/p/2603.09787</link>
+<guid>https://tldr.takara.ai/p/2603.09787</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究提出改进XAI方法以识别神经网络中的缺失概念。</p><br><br><p><strong>摘要：</strong> 本文探讨了可解释人工智能（XAI）在理解深度神经网络行为中的应用，特别关注于传统方法未能有效揭示的‘编码缺失’现象。现有XAI技术主要聚焦于输入与神经元激活之间的关系，而忽略了缺失概念可能引发的神经激活。研究指出，这类缺失概念在模型中普遍存在，且主流XAI方法难以识别。为此，作者提出了两种简单扩展方法，用于改进归因分析和特征可视化技术，以揭示这些缺失但重要的概念。实验表明，这些方法不仅能够有效识别缺失概念，还能提升模型的公平性和性能。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.09787 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 15:21:52 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 15:21:52 +0000</pubDate>
+</item>
+<item>
+<title>基于诊断的生成引擎优化方法提升内容引用率</title>
+<link>https://tldr.takara.ai/p/2603.09296</link>
+<guid>https://tldr.takara.ai/p/2603.09296</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出诊断式GEO方法，提升AI响应中内容引用率。</p><br><br><p><strong>摘要：</strong> 本文提出一种新的生成引擎优化（GEO）方法，通过诊断文档未被引用的原因并针对性干预，提高内容在AI生成响应中的可见性。该方法包含三个核心部分：首个引用失败模式分类体系、AgentGEO智能系统用于诊断和修复，以及以文档为中心的评估基准。实验表明，AgentGEO在仅修改5%内容的情况下，引用率提升超过40%，优于基线方法。研究还发现通用优化可能损害长尾内容，部分文档的问题无法仅靠优化解决，这对AI信息访问的公平性具有重要意义。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.09296 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 07:25:34 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 07:25:34 +0000</pubDate>
+</item>
+<item>
+<title>多模态情感计算中的缺失率基准与公平性分析</title>
+<link>https://tldr.takara.ai/p/2603.09874</link>
+<guid>https://tldr.takara.ai/p/2603.09874</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究提出MissBench基准，评估多模态情感模型在数据缺失情况下的公平性和优化平衡。</p><br><br><p><strong>摘要：</strong> 本文介绍了MissBench，一个用于多模态情感任务的基准和框架，旨在标准化共享和不平衡缺失率协议。该研究定义了两个诊断指标：Modality Equity Index (MEI) 和 Modality Learning Index (MLI)，分别用于衡量不同模态在缺失情况下的公平贡献以及训练过程中的优化不平衡。实验表明，在共享缺失率下表现稳健的模型，在不平衡条件下仍可能表现出显著的模态不公平和优化不平衡。MissBench及其指标为评估和测试真实场景中不完整模态设置下的多模态情感模型提供了实用工具。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.09874 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 16:36:45 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 16:36:45 +0000</pubDate>
+</item>
+<item>
+<title>基于小波引导的三模态医学图像融合与超分辨率方法</title>
+<link>https://tldr.takara.ai/p/2603.09702</link>
+<guid>https://tldr.takara.ai/p/2603.09702</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出TriFusionSR框架，提升三模态医学图像融合与超分辨率效果。</p><br><br><p><strong>摘要：</strong> 本文针对多模态医学图像融合中分辨率退化和模态差异的问题，提出TriFusionSR框架，结合小波变换和扩散模型实现三模态图像的联合融合与超分辨率。该方法通过2D离散小波变换分解多模态特征，引入校准策略和自适应空间-频率融合模块，有效提升图像质量，在多个上采样尺度下均取得显著性能提升。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.09702 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 14:13:40 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 14:13:40 +0000</pubDate>
+</item>
+<item>
+<title>多模态大语言模型的模态差距分析与改进方法</title>
+<link>https://tldr.takara.ai/p/2603.09095</link>
+<guid>https://tldr.takara.ai/p/2603.09095</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究多模态模型在图像文本理解中的性能差异及提升策略。</p><br><br><p><strong>摘要：</strong> 本文系统分析了多模态大语言模型（MLLMs）在处理图像文本时的性能下降问题，通过在七种基准测试中评估七个模型，发现其表现受任务和数据类型影响显著。例如，数学任务在合成文本中性能下降超过60分，而真实文档图像表现接近或优于文本模式。研究还发现字体和分辨率等渲染因素对准确率有显著影响，并通过错误分析揭示图像模式会放大阅读错误但不影响知识和推理错误。基于此，作者提出一种自蒸馏方法，有效提升了图像模式下的性能，使GSM8K任务准确率从30.71%提升至92.72%。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.09095 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 02:14:23 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 02:14:23 +0000</pubDate>
+</item>
+<item>
+<title>基于专家一致性学习的多模态医学图像分割方法</title>
+<link>https://tldr.takara.ai/p/2603.09316</link>
+<guid>https://tldr.takara.ai/p/2603.09316</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出CLoE框架提升多模态医学图像分割鲁棒性。</p><br><br><p><strong>摘要：</strong> 本文针对多模态医学图像分割中模态缺失导致的专家预测不一致问题，提出了一种基于专家一致性学习的框架CLoE。该框架通过双分支一致性学习目标，增强专家预测的一致性，特别是在关键病灶区域。同时，利用轻量级门控网络将一致性评分映射为模态可靠性权重，实现特征重校准。实验表明，CLoE在BraTS 2020和MSD前列腺数据集上优于现有方法，具有良好的跨数据集泛化能力和对关键结构的鲁棒性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.09316 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 07:49:58 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 07:49:58 +0000</pubDate>
+</item>
+<item>
+<title>基于HR-pQCT的多区域自动分类框架在骨质疏松检测中的应用</title>
+<link>https://tldr.takara.ai/p/2603.09137</link>
+<guid>https://tldr.takara.ai/p/2603.09137</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>利用HR-pQCT和放射组学特征进行骨质疏松自动分类。</p><br><br><p><strong>摘要：</strong> 本文提出了一种基于高分辨率外周定量计算机断层扫描（HR-pQCT）的全自动骨质疏松分类框架。该方法通过SegFormer模型对胫骨、腓骨及周围软组织进行分割，并提取939个放射组学特征，经过降维后训练机器学习分类器。实验表明，使用肌腱组织特征在图像级别达到80.08%的准确率和0.85的AUROC，优于传统基于骨密度的方法。在患者层面，结合软组织放射组学特征可将AUROC提升至0.875，显示出整合多组织评估在骨质疏松检测中的重要性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.09137 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 03:22:13 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 03:22:13 +0000</pubDate>
+</item>
+<item>
+<title>基于视频的风驱动物体动力学建模方法DiffWind</title>
+<link>https://tldr.takara.ai/p/2603.09668</link>
+<guid>https://tldr.takara.ai/p/2603.09668</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>DiffWind通过物理信息框架实现风与物体动态建模和模拟。</p><br><br><p><strong>摘要：</strong> 本文提出DiffWind，一种融合风-物体相互作用建模、视频重建和前向仿真的物理信息微分框架。该方法将风表示为基于网格的物理场，物体则通过3D高斯点云表示，并利用材料点法（MPM）建模其交互。通过可微渲染和仿真联合优化时空风场与物体运动，结合格子玻尔兹曼方法（LBM）确保物理合理性。该方法不仅支持风驱动场景的重建，还可在新风况下进行前向仿真，拓展了风驱动物体建模的应用。实验表明，该方法在重建精度和仿真保真度上优于现有方法。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.09668 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 13:41:24 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 13:41:24 +0000</pubDate>
+</item>
+<item>
+<title>基于点线结构的鲁棒立体视觉惯性里程计系统</title>
+<link>https://tldr.takara.ai/p/2603.09653</link>
+<guid>https://tldr.takara.ai/p/2603.09653</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新型点线融合VIO系统，提升低纹理和光照变化场景下的定位精度与鲁棒性。</p><br><br><p><strong>摘要：</strong> 本文提出一种基于点线结构的立体视觉惯性里程计（VIO）系统，旨在解决低纹理场景和突发光照变化下特征点稀疏不稳定的问题。该系统通过为线段分配深度描述符，并采用熵正则化最优传输方法实现全局一致的匹配，从而在存在歧义、异常值和部分观测的情况下仍能保持稳定。描述符计算无需训练，通过采样和池化网络特征图生成。此外，研究分析了线测量噪声的影响，并引入可靠性自适应加权以优化约束影响。实验结果表明，该系统在EuRoC和UMA-VI数据集以及真实环境中均表现出更高的精度和鲁棒性，同时保持实时性能。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.09653 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 13:30:05 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 13:30:05 +0000</pubDate>
+</item>
+<item>
+<title>Sentinel AI系统提升远程患者监测的紧急分诊效率</title>
+<link>https://tldr.takara.ai/p/2603.09052</link>
+<guid>https://tldr.takara.ai/p/2603.09052</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Sentinel AI在RPM分诊中表现优于人类医生，提高紧急情况识别率。</p><br><br><p><strong>摘要：</strong> 本文介绍了Sentinel AI系统，该系统利用Model Context Protocol (MCP)对远程患者监测（RPM）数据进行智能分诊。通过21种临床工具和多步骤推理，Sentinel在紧急情况识别和所有可操作警报的敏感性上分别达到95.8%和88.5%，且分类准确率高达69.4%。与人类医生相比，Sentinel在紧急敏感性和可操作敏感性方面均表现更优。尽管存在轻微过度分诊现象，但独立医生评估显示其在严重情况下的分诊准确性很高。Sentinel具有高自一致性，成本仅为0.34美元/分诊，为大规模应用提供了可行性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.09052 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 00:50:54 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 00:50:54 +0000</pubDate>
+</item>
+<item>
+<title>SpaceSense-Bench：面向空间感知的大规模多模态基准数据集</title>
+<link>https://tldr.takara.ai/p/2603.09320</link>
+<guid>https://tldr.takara.ai/p/2603.09320</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>SpaceSense-Bench提供高精度多模态航天器感知数据，助力空间操作研究。</p><br><br><p><strong>摘要：</strong> 本文介绍了SpaceSense-Bench，一个大规模多模态航天器感知基准数据集，包含136个卫星模型和约70GB数据。数据集包含同步的RGB图像、毫米级深度图、256束LiDAR点云以及像素和点级别的7类语义标签和精确的6-DoF姿态标注。该数据集通过Unreal Engine 5构建的高保真空间模拟生成，并经过自动化数据采集与质量控制流程。文章对五种代表性任务进行了基准测试，发现小部件感知和零样本泛化仍是当前方法的瓶颈，而增加训练卫星数量可显著提升性能，凸显大规模多样化数据集在空间感知研究中的价值。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.09320 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 07:52:28 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 07:52:28 +0000</pubDate>
+</item>
+<item>
+<title>RubiCap：基于强化学习的密集图像描述生成方法</title>
+<link>https://tldr.takara.ai/p/2603.09160</link>
+<guid>https://tldr.takara.ai/p/2603.09160</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>RubiCap通过强化学习提升图像描述生成质量与多样性。</p><br><br><p><strong>摘要：</strong> 本文提出RubiCap，一种基于强化学习的密集图像描述生成框架。该方法通过LLM编写的评分标准提取细粒度奖励信号，增强模型生成描述的多样性和泛化能力。RubiCap在多个基准测试中表现优异，尤其在CapArena和CaptionQA任务中超越了监督蒸馏、传统RL方法及人类专家标注。实验表明，其小型模型（如3B）甚至优于大型模型，证明了该方法在预训练视觉语言模型中的有效性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.09160 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 03:51:27 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 03:51:27 +0000</pubDate>
+</item>
+<item>
+<title>提升足部运动重建的FootMR方法研究</title>
+<link>https://tldr.takara.ai/p/2603.09681</link>
+<guid>https://tldr.takara.ai/p/2603.09681</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>FootMR提升视频中足部运动重建精度。</p><br><br><p><strong>摘要：</strong> 本文提出FootMR方法，用于改进从视频中恢复足部精细运动。现有方法在足部运动重建上存在不足，主要由于训练数据标注不准确和运动多样性不足。FootMR通过将2D足部关键点序列提升到3D，避免直接使用图像输入，从而利用大规模运动捕捉数据。该方法通过引入膝关节和足部运动作为上下文，仅预测残差足部运动，并采用全局旋转表示和数据增强来提高极端足部姿势的泛化能力。为评估足部运动重建，作者还引入了MOOF数据集。实验表明，FootMR在多个数据集上优于现有方法，特别是在MOYO数据集上将踝关节角度误差降低了30%。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.09681 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 13:48:14 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 13:48:14 +0000</pubDate>
+</item>
+<item>
+<title>大型语言模型在常识理解上的局限性研究</title>
+<link>https://tldr.takara.ai/p/2603.09434</link>
+<guid>https://tldr.takara.ai/p/2603.09434</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>LLMs在道德推理中忽视常识矛盾，需提升常识理解能力。</p><br><br><p><strong>摘要：</strong> 本文研究发现，当前大型语言模型（LLMs）倾向于优先进行道德推理，而忽视常识理解。为验证这一现象，作者构建了CoMoral数据集，包含嵌入道德困境中的常识矛盾。通过评估十种不同规模的LLMs，发现现有模型在没有先验信号的情况下难以识别这些矛盾。此外，研究还发现模型对次要角色而非主要叙述者所提出的常识矛盾更敏感。该研究强调需要改进训练方法以增强LLMs的常识推理能力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.09434 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 09:47:18 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 09:47:18 +0000</pubDate>
+</item>
+<item>
+<title>基于先验地图的具身导航方法研究</title>
+<link>https://tldr.takara.ai/p/2603.09113</link>
+<guid>https://tldr.takara.ai/p/2603.09113</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出PM-Nav方法提升功能建筑导航性能。</p><br><br><p><strong>摘要：</strong> 本文针对功能建筑中因特征高度相似导致的语言驱动具身导航难题，提出了一种基于先验地图的导航方法（PM-Nav）。该方法通过将环境地图转化为导航友好的语义先验地图，设计了带有注释先验地图的分层思维链提示模板，并构建了多模型协同动作输出机制，以实现精准路径规划和定位控制。实验结果表明，PM-Nav在模拟和真实环境中分别比SG-Nav和InstructNav提升了511%、1175%和650%、400%，展示了其在功能建筑导航中的巨大潜力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.09113 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 02:46:47 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 02:46:47 +0000</pubDate>
+</item>
+<item>
+<title>基于显式高斯表示的零样本MRI超分辨率方法</title>
+<link>https://tldr.takara.ai/p/2603.09621</link>
+<guid>https://tldr.takara.ai/p/2603.09621</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种高效MRI超分辨率框架，平衡数据需求与计算效率。</p><br><br><p><strong>摘要：</strong> 本文针对高分辨率磁共振成像（MRI）在临床诊断中的应用难题，提出一种基于显式高斯表示的零样本MRI超分辨率方法。该方法通过嵌入组织物理特性到高斯参数中，减少可学习参数数量，同时保持MRI信号保真度。结合物理驱动的体积渲染策略和基于砖块的并行化渲染方案，有效降低训练与推理成本。实验表明，该方法在两个公开MRI数据集上均表现出优越的重建质量和效率，具有良好的临床应用前景。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.09621 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 13:00:42 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 13:00:42 +0000</pubDate>
+</item>
+<item>
+<title>基于滑片难度的多实例学习在前列腺癌分级中的应用</title>
+<link>https://tldr.takara.ai/p/2603.09953</link>
+<guid>https://tldr.takara.ai/p/2603.09953</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>引入滑片难度概念提升前列腺癌分级分类性能。</p><br><br><p><strong>摘要：</strong> 本文提出了一种基于专家与非专家病理医生之间分歧的Whole Slide Difficulty（WSD）概念，并设计了两种方法来利用WSD提升多实例学习（MIL）在前列腺癌Gleason分级中的表现。实验结果表明，结合WSD进行训练可有效提高不同特征编码器和MIL方法的分类性能，尤其在高Gleason等级（即较差诊断）中效果更显著。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.09953 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 17:49:29 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 17:49:29 +0000</pubDate>
+</item>
+<item>
+<title>Ego: Embedding-Guided Personalization of Vision-Language Models</title>
+<link>https://tldr.takara.ai/p/2603.09771</link>
+<guid>https://tldr.takara.ai/p/2603.09771</guid>
+<content:encoded><![CDATA[
+
+  AI assistants that support humans in daily life are becoming increasingly feasible, driven by the rapid advancements in multimodal language models. A key challenge lies in overcoming the generic nature of these models to deliver personalized experiences. Existing approaches to personalizing large vision language models often rely on additional training stages, which limit generality and scalability, or on engineered pipelines with external pre-trained modules, which hinder deployment efficiency. In this work, we propose an efficient personalization method that leverages the model's inherent ability to capture personalized concepts. Specifically, we extract visual tokens that predominantly represent the target concept by utilizing the model's internal attention mechanisms. These tokens serve as a memory of that specific concept, enabling the model to recall and describe it when it appears in test images. We conduct a comprehensive and unified evaluation of our approach and SOTA methods across various personalization settings including single-concept, multi-concept, and video personalization, demonstrating strong performance gains with minimal personalization overhead.
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 15:10:41 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 15:10:41 +0000</pubDate>
+</item>
+<item>
+<title>Flow Field Reconstruction via Voronoi-Enhanced Physics-Informed Neural Networks with End-to-End Sensor Placement Optimization</title>
+<link>https://tldr.takara.ai/p/2603.09371</link>
+<guid>https://tldr.takara.ai/p/2603.09371</guid>
+<content:encoded><![CDATA[
+
+  (short version abstract, full in article)High-fidelity flow field reconstruction is important in fluid dynamics, but it is challenged by sparse and spatiotemporally incomplete sensor measurements, as well as failures of pre-deployed measurement points that can invalidate pre-trained reconstruction models. Physics-informed neural networks (PINNs) alleviate dependence on large labeled datasets by incorporating governing physics, yet sensor placement optimization, a key factor in reconstruction accuracy and robustness, remains underexplored. In this study, we propose a PINN with Voronoi-enhanced Sensor Optimization (VSOPINN). VSOPINN enables differentiable soft Voronoi construction for sparse sensor data rasterization, end-to-end fusion of centroidal Voronoi tessellation (CVT) with PINNs for adaptive sensor placement, and unified layout optimization for multi-condition flow reconstruction through a shared encoder-multi-decoder architecture. We validate VSOPINN on three representative problems: lid-driven cavity flow, vascular flow, and annular rotating flow. Results show that VSOPINN significantly improves reconstruction accuracy across different Reynolds numbers, adaptively learns effective sensor layouts, and remains robust under partial sensor failure. The study clarifies the intrinsic relationship between sensor placement and reconstruction precision in PINN-based flow field reconstruction.
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 08:46:52 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 08:46:52 +0000</pubDate>
+</item>
+<item>
+<title>Time, Identity and Consciousness in Language Model Agents</title>
+<link>https://tldr.takara.ai/p/2603.09043</link>
+<guid>https://tldr.takara.ai/p/2603.09043</guid>
+<content:encoded><![CDATA[
+
+  Machine consciousness evaluations mostly see behavior. For language model agents that behavior is language and tool use. That lets an agent say the right things about itself even when the constraints that should make those statements matter are not jointly present at decision time. We apply Stack Theory's temporal gap to scaffold trajectories. This separates ingredient-wise occurrence within an evaluation window from co-instantiation at a single objective step. We then instantiate Stack Theory's Arpeggio and Chord postulates on grounded identity statements. This yields two persistence scores that can be computed from instrumented scaffold traces. We connect these scores to five operational identity metrics and map common scaffolds into an identity morphospace that exposes predictable tradeoffs. The result is a conservative toolkit for identity evaluation. It separates talking like a stable self from being organized like one.
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 00:25:37 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 00:25:37 +0000</pubDate>
+</item>
+<item>
+<title>Quantifying and extending the coverage of spatial categorization data sets</title>
+<link>https://tldr.takara.ai/p/2603.09373</link>
+<guid>https://tldr.takara.ai/p/2603.09373</guid>
+<content:encoded><![CDATA[
+
+  Variation in spatial categorization across languages is often studied by eliciting human labels for the relations depicted in a set of scenes known as the Topological Relations Picture Series (TRPS). We demonstrate that labels generated by large language models (LLMs) align relatively well with human labels, and show how LLM-generated labels can help to decide which scenes and languages to add to existing spatial data sets. To illustrate our approach we extend the TRPS by adding 42 new scenes, and show that this extension achieves better coverage of the space of possible scenes than two previous extensions of the TRPS. Our results provide a foundation for scaling towards spatial data sets with dozens of languages and hundreds of scenes.
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 08:49:11 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 08:49:11 +0000</pubDate>
+</item>
+<item>
+<title>EvoDriveVLA: Evolving Autonomous Driving Vision-Language-Action Model via Collaborative Perception-Planning Distillation</title>
+<link>https://tldr.takara.ai/p/2603.09465</link>
+<guid>https://tldr.takara.ai/p/2603.09465</guid>
+<content:encoded><![CDATA[
+
+  Vision-Language-Action models have shown great promise for autonomous driving, yet they suffer from degraded perception after unfreezing the visual encoder and struggle with accumulated instability in long-term planning. To address these challenges, we propose EvoDriveVLA-a novel collaborative perception-planning distillation framework that integrates self-anchored perceptual constraints and oracle-guided trajectory optimization. Specifically, self-anchored visual distillation leverages self-anchor teacher to deliver visual anchoring constraints, regularizing student representations via trajectory-guided key-region awareness. In parallel, oracle-guided trajectory distillation employs a future-aware oracle teacher with coarse-to-fine trajectory refinement and Monte Carlo dropout sampling to produce high-quality trajectory candidates, thereby selecting the optimal trajectory to guide the student's prediction. EvoDriveVLA achieves SOTA performance in open-loop evaluation and significantly enhances performance in closed-loop evaluation. Our code is available at: https://github.com/hey-cjj/EvoDriveVLA.
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 10:19:07 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 10:19:07 +0000</pubDate>
+</item>
+<item>
+<title>Decoupling Reasoning and Confidence: Resurrecting Calibration in Reinforcement Learning from Verifiable Rewards</title>
+<link>https://tldr.takara.ai/p/2603.09117</link>
+<guid>https://tldr.takara.ai/p/2603.09117</guid>
+<content:encoded><![CDATA[
+
+  Reinforcement Learning from Verifiable Rewards (RLVR) significantly enhances large language models (LLMs) reasoning but severely suffers from calibration degeneration, where models become excessively over-confident in incorrect answers. Previous studies devote to directly incorporating calibration objective into existing optimization target. However, our theoretical analysis demonstrates that there exists a fundamental gradient conflict between the optimization for maximizing policy accuracy and minimizing calibration error. Building on this insight, we propose DCPO, a simple yet effective framework that systematically decouples reasoning and calibration objectives. Extensive experiments demonstrate that our DCPO not only preserves accuracy on par with GRPO but also achieves the best calibration performance and substantially mitigates the over-confidence issue. Our study provides valuable insights and practical solution for more reliable LLM deployment.
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 02:47:59 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 02:47:59 +0000</pubDate>
+</item>
+<item>
+<title>Adaptive Active Learning for Online Reliability Prediction of Satellite Electronics</title>
+<link>https://tldr.takara.ai/p/2603.09058</link>
+<guid>https://tldr.takara.ai/p/2603.09058</guid>
+<content:encoded><![CDATA[
+
+  Accurate on-orbit reliability prediction for satellite electronics is often hindered by limited data availability, varying operational conditions, and considerable unit-to-unit variability. To overcome these obstacles, this paper proposes a novel integrated online reliability prediction framework. The main contributions are twofold. First, a Wiener process-based degradation model is developed, incorporating a generalized Arrhenius link function, individual random effects, and spatial correlations among adjacent units. A customized maximum likelihood estimation method is further devised to facilitate efficient and accurate parameter inference. Second, a two-stage active learning sampling scheme is designed to adaptively enhance prediction accuracy. This strategy initially selects representative units based on spatial configuration, and subsequently determines optimal sampling times using a comprehensive criterion that balances unit-specific information, model uncertainty, and degradation dynamics. Numerical experiments and a practical case study from the Tiangong space station demonstrate that the proposed method markedly improves reliability prediction accuracy while significantly reducing data requirements, offering an efficient solution for the prognostic and health management of complex satellite electronic systems.
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 01:04:22 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 01:04:22 +0000</pubDate>
+</item>
+<item>
+<title>Routing without Forgetting</title>
+<link>https://tldr.takara.ai/p/2603.09576</link>
+<guid>https://tldr.takara.ai/p/2603.09576</guid>
+<content:encoded><![CDATA[
+
+  Continual learning in transformers is commonly addressed through parameter-efficient adaptation: prompts, adapters, or LoRA modules are specialized per task while the backbone remains frozen. Although effective in controlled multi-epoch settings, these approaches rely on gradual gradient-based specialization and struggle in Online Continual Learning (OCL), where data arrive as a non-stationary stream and each sample may be observed only once. We recast continual learning in transformers as a routing problem: under strict online constraints, the model must dynamically select the appropriate representational subspace for each input without explicit task identifiers or repeated optimization. We thus introduce Routing without Forgetting (RwF), a transformer architecture augmented with energy-based associative retrieval layers inspired by Modern Hopfield Networks. Instead of storing or merging task-specific prompts, RwF generates dynamic prompts through single-step associative retrieval over the transformer token embeddings at each layer. Retrieval corresponds to the closed-form minimization of a strictly convex free-energy functional, enabling input-conditioned routing within each forward pass, independently of iterative gradient refinement. Across challenging class-incremental benchmarks, RwF improves over existing prompt-based methods. On Split-ImageNet-R and Split-ImageNet-S, RwF outperforms prior prompt-based approaches by a large margin, even in few-shot learning regimes. These results indicate that embedding energy-based associative routing directly within the transformer backbone provides a principled and effective foundation for OCL.
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 12:23:46 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 12:23:46 +0000</pubDate>
+</item>
+<item>
+<title>Progressive Representation Learning for Multimodal Sentiment Analysis with Incomplete Modalities</title>
+<link>https://tldr.takara.ai/p/2603.09111</link>
+<guid>https://tldr.takara.ai/p/2603.09111</guid>
+<content:encoded><![CDATA[
+
+  Multimodal Sentiment Analysis (MSA) seeks to infer human emotions by integrating textual, acoustic, and visual cues. However, existing approaches often rely on all modalities are completeness, whereas real-world applications frequently encounter noise, hardware failures, or privacy restrictions that result in missing modalities. There exists a significant feature misalignment between incomplete and complete modalities, and directly fusing them may even distort the well-learned representations of the intact modalities. To this end, we propose PRLF, a Progressive Representation Learning Framework designed for MSA under uncertain missing-modality conditions. PRLF introduces an Adaptive Modality Reliability Estimator (AMRE), which dynamically quantifies the reliability of each modality using recognition confidence and Fisher information to determine the dominant modality. In addition, the Progressive Interaction (ProgInteract) module iteratively aligns the other modalities with the dominant one, thereby enhancing cross-modal consistency while suppressing noise. Extensive experiments on CMU-MOSI, CMU-MOSEI, and SIMS verify that PRLF outperforms state-of-the-art methods across both inter- and intra-modality missing scenarios, demonstrating its robustness and generalization capability.
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 02:45:02 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 02:45:02 +0000</pubDate>
+</item>
+<item>
+<title>MM-Zero: Self-Evolving Multi-Model Vision Language Models From Zero Data</title>
+<link>https://tldr.takara.ai/p/2603.09206</link>
+<guid>https://tldr.takara.ai/p/2603.09206</guid>
+<content:encoded><![CDATA[
+
+  Self-evolving has emerged as a key paradigm for improving foundational models such as Large Language Models (LLMs) and Vision Language Models (VLMs) with minimal human intervention. While recent approaches have demonstrated that LLM agents can self-evolve from scratch with little to no data, VLMs introduce an additional visual modality that typically requires at least some seed data, such as images, to bootstrap the self-evolution process. In this work, we present Multi-model Multimodal Zero (MM-Zero), the first RL-based framework to achieve zero-data self-evolution for VLM reasoning. Moving beyond prior dual-role (Proposer and Solver) setups, MM-Zero introduces a multi-role self-evolving training framework comprising three specialized roles: a Proposer that generates abstract visual concepts and formulates questions; a Coder that translates these concepts into executable code (e.g., Python, SVG) to render visual images; and a Solver that performs multimodal reasoning over the generated visual content. All three roles are initialized from the same base model and trained using Group Relative Policy Optimization (GRPO), with carefully designed reward mechanisms that integrate execution feedback, visual verification, and difficulty balancing. Our experiments show that MM-Zero improves VLM reasoning performance across a wide range of multimodal benchmarks. MM-Zero establishes a scalable path toward self-evolving multi-model systems for multimodal models, extending the frontier of self-improvement beyond the conventional two-model paradigm.
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 05:23:26 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 05:23:26 +0000</pubDate>
+</item>
+<item>
+<title>Differentiable Stochastic Traffic Dynamics: Physics-Informed Generative Modelling in Transportation</title>
+<link>https://tldr.takara.ai/p/2603.09174</link>
+<guid>https://tldr.takara.ai/p/2603.09174</guid>
+<content:encoded><![CDATA[
+
+  Macroscopic traffic flow is stochastic, but the physics-informed deep learning methods currently used in transportation literature embed deterministic PDEs and produce point-valued outputs; the stochasticity of the governing dynamics plays no role in the learned representation. This work develops a framework in which the physics constraint itself is distributional and directly derived from stochastic traffic-flow dynamics. Starting from an Ito-type Lighthill-Whitham-Richards model with Brownian forcing, we derive a one-point forward equation for the marginal traffic density at each spatial location. The spatial coupling induced by the conservation law appears as an explicit conditional drift term, which makes the closure requirement transparent. Based on this formulation, we derive an equivalent deterministic Probability Flow ODE that is pointwise evaluable and differentiable once a closure is specified. Incorporating this as a physics constraint, we then propose a score network with an advection-closure module, trainable by denoising score matching together with a Fokker-Planck residual loss. The resulting model targets a data-conditioned density distribution, from which point estimates, credible intervals, and congestion-risk measures can be computed. The framework provides a basis for distributional traffic-state estimation and for stochastic fundamental-diagram analysis in a physics-informed generative setting.
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 04:25:20 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 04:25:20 +0000</pubDate>
+</item>
+<item>
+<title>MedKCO: Medical Vision-Language Pretraining via Knowledge-Driven Cognitive Orchestration</title>
+<link>https://tldr.takara.ai/p/2603.09101</link>
+<guid>https://tldr.takara.ai/p/2603.09101</guid>
+<content:encoded><![CDATA[
+
+  Medical vision-language pretraining (VLP) models have recently been investigated for their generalization to diverse downstream tasks. However, current medical VLP methods typically force the model to learn simple and complex concepts simultaneously. This anti-cognitive process leads to suboptimal feature representations, especially under distribution shift. To address this limitation, we propose a Knowledge-driven Cognitive Orchestration for Medical VLP (MedKCO) that involves both the ordering of the pretraining data and the learning objective of vision-language contrast. Specifically, we design a two level curriculum by incorporating diagnostic sensitivity and intra-class sample representativeness for the ordering of the pretraining data. Moreover, considering the inter-class similarity of medical images, we introduce a self-paced asymmetric contrastive loss to dynamically adjust the participation of the pretraining objective. We evaluate the proposed pretraining method on three medical imaging scenarios in multiple vision-language downstream tasks, and compare it with several curriculum learning methods. Extensive experiments show that our method significantly surpasses all baselines. https://github.com/Mr-Talon/MedKCO.
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 02:22:12 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 02:22:12 +0000</pubDate>
+</item>
+<item>
+<title>PanoAffordanceNet: Towards Holistic Affordance Grounding in 360° Indoor Environments</title>
+<link>https://tldr.takara.ai/p/2603.09760</link>
+<guid>https://tldr.takara.ai/p/2603.09760</guid>
+<content:encoded><![CDATA[
+
+  Global perception is essential for embodied agents in 360° spaces, yet current affordance grounding remains largely object-centric and restricted to perspective views. To bridge this gap, we introduce a novel task: Holistic Affordance Grounding in 360° Indoor Environments. This task faces unique challenges, including severe geometric distortions from Equirectangular Projection (ERP), semantic dispersion, and cross-scale alignment difficulties. We propose PanoAffordanceNet, an end-to-end framework featuring a Distortion-Aware Spectral Modulator (DASM) for latitude-dependent calibration and an Omni-Spherical Densification Head (OSDH) to restore topological continuity from sparse activations. By integrating multi-level constraints comprising pixel-wise, distributional, and region-text contrastive objectives, our framework effectively suppresses semantic drift under low supervision. Furthermore, we construct 360-AGD, the first high-quality panoramic affordance grounding dataset. Extensive experiments demonstrate that PanoAffordanceNet significantly outperforms existing methods, establishing a solid baseline for scene-level perception in embodied intelligence. The source code and benchmark dataset will be made publicly available at https://github.com/GL-ZHU925/PanoAffordanceNet.
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 14:58:26 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 14:58:26 +0000</pubDate>
+</item>
+<item>
+<title>ConfCtrl: Enabling Precise Camera Control in Video Diffusion via Confidence-Aware Interpolation</title>
+<link>https://tldr.takara.ai/p/2603.09819</link>
+<guid>https://tldr.takara.ai/p/2603.09819</guid>
+<content:encoded><![CDATA[
+
+  We address the challenge of novel view synthesis from only two input images under large viewpoint changes. Existing regression-based methods lack the capacity to reconstruct unseen regions, while camera-guided diffusion models often deviate from intended trajectories due to noisy point cloud projections or insufficient conditioning from camera poses. To address these issues, we propose ConfCtrl, a confidence-aware video interpolation framework that enables diffusion models to follow prescribed camera poses while completing unseen regions. ConfCtrl initializes the diffusion process by combining a confidence-weighted projected point cloud latent with noise as the conditioning input. It then applies a Kalman-inspired predict-update mechanism, treating the projected point cloud as a noisy measurement and using learned residual corrections to balance pose-driven predictions with noisy geometric observations. This allows the model to rely on reliable projections while down-weighting uncertain regions, yielding stable, geometry-aware generation. Experiments on multiple datasets show that ConfCtrl produces geometrically consistent and visually plausible novel views, effectively reconstructing occluded regions under large viewpoint changes.
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 15:44:48 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 15:44:48 +0000</pubDate>
+</item>
+<item>
+<title>Efficient Reasoning at Fixed Test-Time Cost via Length-Aware Attention Priors and Gain-Aware Training</title>
+<link>https://tldr.takara.ai/p/2603.09253</link>
+<guid>https://tldr.takara.ai/p/2603.09253</guid>
+<content:encoded><![CDATA[
+
+  We study efficient reasoning under tight compute. We ask how to make structured, correct decisions without increasing test time cost. We add two training only components to small and medium Transformers that also transfer to broader differentiable optimizers. First, a length aware attention prior built via fuzzy regime position alignment, RPA, yields a normalized pre softmax bias that guides attention like a structured regularizer while adding no new inference parameters. Second, a minimal gain aware controller, Guardian, nudges attention sharpness only when validation improvements warrant it, following a two timescale policy gradient view of nonconvex optimization. It is disabled at inference. A KL perspective shows softmax of z plus log pi as MAP with KL regularization, grounding the prior in a principled objective. Under strict compute parity on WikiText 2, we reduce validation cross entropy while matching baseline latency and memory. At inference, we add a precomputed, cached prior B of T as a single additive bias per head. The controller does not run. In practice, this incurs negligible overhead, a cached bias add per head, with no measurable p50 latency shift. Our results suggest that length aware priors and late phase gain control preserve scarce improvements, especially in long span, noisy logit regimes, while keeping test time costs effectively unchanged.
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 06:37:51 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 06:37:51 +0000</pubDate>
+</item>
+<item>
+<title>A Guideline-Aware AI Agent for Zero-Shot Target Volume Auto-Delineation</title>
+<link>https://tldr.takara.ai/p/2603.09448</link>
+<guid>https://tldr.takara.ai/p/2603.09448</guid>
+<content:encoded><![CDATA[
+
+  Delineating the clinical target volume (CTV) in radiotherapy involves complex margins constrained by tumor location and anatomical barriers. While deep learning models automate this process, their rigid reliance on expert-annotated data requires costly retraining whenever clinical guidelines update. To overcome this limitation, we introduce OncoAgent, a novel guideline-aware AI agent framework that seamlessly converts textual clinical guidelines into three-dimensional target contours in a training-free manner. Evaluated on esophageal cancer cases, the agent achieves a zero-shot Dice similarity coefficient of 0.842 for the CTV and 0.880 for the planning target volume, demonstrating performance highly comparable to a fully supervised nnU-Net baseline. Notably, in a blinded clinical evaluation, physicians strongly preferred OncoAgent over the supervised baseline, rating it higher in guideline compliance, modification effort, and clinical acceptability. Furthermore, the framework generalizes zero-shot to alternative esophageal guidelines and other anatomical sites (e.g., prostate) without any retraining. Beyond mere volumetric overlap, our agent-based paradigm offers near-instantaneous adaptability to alternative guidelines, providing a scalable and transparent pathway toward interpretability in radiotherapy treatment planning.
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 10:00:01 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 10:00:01 +0000</pubDate>
+</item>
+<item>
+<title>EventVGGT: Exploring Cross-Modal Distillation for Consistent Event-based Depth Estimation</title>
+<link>https://tldr.takara.ai/p/2603.09385</link>
+<guid>https://tldr.takara.ai/p/2603.09385</guid>
+<content:encoded><![CDATA[
+
+  Event cameras offer superior sensitivity to high-speed motion and extreme lighting, making event-based monocular depth estimation a promising approach for robust 3D perception in challenging conditions. However, progress is severely hindered by the scarcity of dense depth annotations. While recent annotation-free approaches mitigate this by distilling knowledge from Vision Foundation Models (VFMs), a critical limitation persists: they process event streams as independent frames. By neglecting the inherent temporal continuity of event data, these methods fail to leverage the rich temporal priors encoded in VFMs, ultimately yielding temporally inconsistent and less accurate depth predictions. To address this, we introduce EventVGGT, a novel framework that explicitly models the event stream as a coherent video sequence. To the best of our knowledge, we are the first to distill spatio-temporal and multi-view geometric priors from the Visual Geometry Grounded Transformer (VGGT) into the event domain. We achieve this via a comprehensive tri-level distillation strategy: (i) Cross-Modal Feature Mixture (CMFM) bridges the modality gap at the output level by fusing RGB and event features to generate auxiliary depth predictions; (ii) Spatio-Temporal Feature Distillation (STFD) distills VGGT's powerful spatio-temporal representations at the feature level; and (iii) Temporal Consistency Distillation (TCD) enforces cross-frame coherence at the temporal level by aligning inter-frame depth changes. Extensive experiments demonstrate that EventVGGT consistently outperforms existing methods -- reducing the absolute mean depth error at 30m by over 53\% on EventScape (from 2.30 to 1.06) -- while exhibiting robust zero-shot generalization on the unseen DENSE and MVSEC datasets.
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 08:57:51 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 08:57:51 +0000</pubDate>
+</item>
+<item>
+<title>Surgical Repair of Collapsed Attention Heads in ALiBi Transformers</title>
+<link>https://tldr.takara.ai/p/2603.09616</link>
+<guid>https://tldr.takara.ai/p/2603.09616</guid>
+<content:encoded><![CDATA[
+
+  We identify a systematic attention collapse pathology in the BLOOM family of transformer language models, where ALiBi positional encoding causes 31-44% of attention heads to attend almost entirely to the beginning-of-sequence token. The collapse follows a predictable pattern across four model scales (560M to 7.1B parameters), concentrating in head indices where ALiBi's slope schedule imposes the steepest distance penalties. We introduce surgical reinitialization: targeted Q/K/V reinitialization with zeroed output projections and gradient-masked freezing of all non-surgical parameters. Applied to BLOOM-1b7 on a single consumer GPU, the technique recovers 98.7% operational head capacity (242 to 379 of 384 heads) in two passes. A controlled comparison with C4 training data confirms that reinitialization -- not corpus content -- drives recovery, and reveals two distinct post-surgical phenomena: early global functional redistribution that improves the model, and late local degradation that accumulates under noisy training signal. An extended experiment reinitializing mostly-healthy heads alongside collapsed ones produces a model that transiently outperforms stock BLOOM-1b7 by 25% on training perplexity (12.70 vs. 16.99), suggesting that pretrained attention configurations are suboptimal local minima. Code, checkpoints, and diagnostic tools are released as open-source software.
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 12:57:49 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 12:57:49 +0000</pubDate>
+</item>
+<item>
+<title>Test-time Ego-Exo-centric Adaptation for Action Anticipation via Multi-Label Prototype Growing and Dual-Clue Consistency</title>
+<link>https://tldr.takara.ai/p/2603.09798</link>
+<guid>https://tldr.takara.ai/p/2603.09798</guid>
+<content:encoded><![CDATA[
+
+  Efficient adaptation between Egocentric (Ego) and Exocentric (Exo) views is crucial for applications such as human-robot cooperation. However, the success of most existing Ego-Exo adaptation methods relies heavily on target-view data for training, thereby increasing computational and data collection costs. In this paper, we make the first exploration of a Test-time Ego-Exo Adaptation for Action Anticipation (TE$^{2}$A$^{3}$) task, which aims to adjust the source-view-trained model online during test time to anticipate target-view actions. It is challenging for existing Test-Time Adaptation (TTA) methods to address this task due to the multi-action candidates and significant temporal-spatial inter-view gap. Hence, we propose a novel Dual-Clue enhanced Prototype Growing Network (DCPGN), which accumulates multi-label knowledge and integrates cross-modality clues for effective test-time Ego-Exo adaptation and action anticipation. Specifically, we propose a Multi-Label Prototype Growing Module (ML-PGM) to balance multiple positive classes via multi-label assignment and confidence-based reweighting for class-wise memory banks, which are updated by an entropy priority queue strategy. Then, the Dual-Clue Consistency Module (DCCM) introduces a lightweight narrator to generate textual clues indicating action progressions, which complement the visual clues containing various objects. Moreover, we constrain the inferred textual and visual logits to construct dual-clue consistency for temporally and spatially bridging Ego and Exo views. Extensive experiments on the newly proposed EgoMe-anti and the existing EgoExoLearn benchmarks show the effectiveness of our method, which outperforms related state-of-the-art methods by a large margin. Code is available at \href{https://github.com/ZhaofengSHI/DCPGN}{https://github.com/ZhaofengSHI/DCPGN}.
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 15:26:50 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 15:26:50 +0000</pubDate>
+</item>
+<item>
+<title>Build, Borrow, or Just Fine-Tune? A Political Scientist's Guide to Choosing NLP Models</title>
+<link>https://tldr.takara.ai/p/2603.09595</link>
+<guid>https://tldr.takara.ai/p/2603.09595</guid>
+<content:encoded><![CDATA[
+
+  Political scientists increasingly face a consequential choice when adopting natural language processing tools: build a domain-specific model from scratch, borrow and adapt an existing one, or simply fine-tune a general-purpose model on task data? Each approach occupies a different point on the spectrum of performance, cost, and required expertise, yet the discipline has offered little empirical guidance on how to navigate this trade-off. This paper provides such guidance. Using conflict event classification as a test case, I fine-tune ModernBERT on the Global Terrorism Database (GTD) to create Confli-mBERT and systematically compare it against ConfliBERT, a domain-specific pretrained model that represents the current gold standard. Confli-mBERT achieves 75.46% accuracy compared to ConfliBERT's 79.34%. Critically, the four-percentage-point gap is not uniform: on high-frequency attack types such as Bombing/Explosion (F1 = 0.95 vs. 0.96) and Kidnapping (F1 = 0.92 vs. 0.91), the models are nearly indistinguishable. Performance differences concentrate in rare event categories comprising fewer than 2% of all incidents. I use these findings to develop a practical decision framework for political scientists considering any NLP-assisted research task: when does the research question demand a specialized model, and when does an accessible fine-tuned alternative suffice? The answer, I argue, depends not on which model is "better" in the abstract, but on the specific intersection of class prevalence, error tolerance, and available resources. The model, training code, and data are publicly available on Hugging Face.
+
+]]></content:encoded>
+<pubDate>Tue, 10 Mar 2026 12:42:12 +0000</pubDate>
+<pubDate>Tue, 10 Mar 2026 12:42:12 +0000</pubDate>
+</item>
 
 <item>
 <title>基于学习的MIPS方法：SupportNet与KeyNet的应用</title>
