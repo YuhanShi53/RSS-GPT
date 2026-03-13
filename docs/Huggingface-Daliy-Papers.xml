@@ -4,6 +4,607 @@
 <title>Takara TLDR - Daily AI Papers</title>
 <link>https://tldr.takara.ai</link>
 
+<item>
+<title>基于多维情感信号的原油价格预测研究</title>
+<link>https://tldr.takara.ai/p/2603.11408</link>
+<guid>https://tldr.takara.ai/p/2603.11408</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>多维情感信号提升原油期货收益预测准确性。</p><br><br><p><strong>摘要：</strong> 本文研究了利用大语言模型提取的多维情感信号是否能提高周度WTI原油期货收益的预测能力。通过2020年至2025年的能源行业新闻文章，构建了涵盖相关性、极性、强度、不确定性和前瞻性五个维度的情感指标，并结合GPT-4o、Llama 3.2-3b、FinBERT和AlphaVantage等模型进行分析。结果表明，将GPT-4o与FinBERT结合可获得最佳预测效果，说明大语言模型与传统金融情感模型具有互补性。SHAP分析进一步显示，强度和不确定性特征是关键预测因子，表明新闻情感的预测价值超越了简单极性分析。研究结果表明，多维情感测量有助于提升商品收益预测和能源市场风险监控。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.11408 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 00:42:08 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 00:42:08 +0000</pubDate>
+</item>
+<item>
+<title>基于注意力机制的后门样本检测方法BackdoorIDS</title>
+<link>https://tldr.takara.ai/p/2603.11664</link>
+<guid>https://tldr.takara.ai/p/2603.11664</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种无需训练的后门样本检测方法BackdoorIDS。</p><br><br><p><strong>摘要：</strong> 本文提出BackdoorIDS，一种无需训练、在推理阶段即可检测预训练视觉编码器中后门样本的方法。该方法基于注意力劫持和恢复现象，在逐步输入掩码过程中，后门图像会先关注恶意触发特征，随后注意力转移至正常内容，导致嵌入向量发生显著变化。通过密度聚类分析嵌入序列，若形成多个簇则判定为后门样本。实验表明，BackdoorIDS在多种攻击类型、数据集和模型架构中均表现优异，且无需重新训练，具有良好的兼容性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.11664 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 08:32:19 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 08:32:19 +0000</pubDate>
+</item>
+<item>
+<title>基于Transformer的DeepHistoViT在组织病理学图像分类中的应用</title>
+<link>https://tldr.takara.ai/p/2603.11403</link>
+<guid>https://tldr.takara.ai/p/2603.11403</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>DeepHistoViT在癌症组织病理学图像分类中表现优异。</p><br><br><p><strong>摘要：</strong> 本文提出了一种基于Transformer的DeepHistoViT框架，用于自动化分类组织病理学图像。该模型通过集成注意力机制，能够捕捉细粒度的细胞结构，并提高诊断相关区域的可解释性。在三个公开数据集（肺癌、结肠癌和急性淋巴细胞白血病）上进行了评估，结果显示其分类准确率、精确率、召回率、F1分数和ROC-AUC均达到或接近100%。这些结果表明，Transformer架构在组织病理学图像分析中具有显著优势，DeepHistoViT有望作为辅助病理诊断工具，提升临床决策效率。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.11403 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 00:29:19 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 00:29:19 +0000</pubDate>
+</item>
+<item>
+<title>新型特征提取库Nyxus提升大规模图像数据处理效率</title>
+<link>https://tldr.takara.ai/p/2603.12016</link>
+<guid>https://tldr.takara.ai/p/2603.12016</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Nyxus提升图像数据分析效率与可扩展性。</p><br><br><p><strong>摘要：</strong> 现代成像设备产生的海量图像数据对计算能力提出了更高要求。传统图像分析算法在处理大规模数据时效率不足，且难以在准确性和鲁棒性之间取得平衡。深度学习虽提升了区域分割的准确性，但各领域特征提取工具的多样化使性能比较变得复杂。为此，研究者开发了名为Nyxus的新特征提取库，该库专为2D和3D图像数据设计，支持跨CPU和GPU的高效计算，并覆盖多个生物医学领域。Nyxus提供了多种使用方式，包括Python包、命令行工具、Napari插件及OCI容器，适用于不同技能水平的用户。此外，Nyxus还支持程序化调整特征集，以优化计算效率或覆盖范围，适用于新型机器学习和深度学习应用。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.12016 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 14:58:07 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 14:58:07 +0000</pubDate>
+</item>
+<item>
+<title>基于Transformer的多变量时间序列概率预测框架EnTransformer</title>
+<link>https://tldr.takara.ai/p/2603.11909</link>
+<guid>https://tldr.takara.ai/p/2603.11909</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>EnTransformer通过引入随机噪声和能量评分目标，提升多变量时间序列预测性能。</p><br><br><p><strong>摘要：</strong> 本文提出EnTransformer，一种结合生成模型与Transformer架构的多变量时间序列概率预测框架。该方法通过注入随机噪声并优化能量评分目标，直接学习条件预测分布，无需参数假设。EnTransformer在多个基准数据集上表现优异，能够生成一致的多变量预测轨迹，并有效捕捉长时序依赖和跨序列交互。实验结果表明，该模型在概率预测校准性和准确性方面均优于现有基准模型。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.11909 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 13:25:21 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 13:25:21 +0000</pubDate>
+</item>
+<item>
+<title>ELIT：一种可动态调整计算资源的扩散Transformer机制</title>
+<link>https://tldr.takara.ai/p/2603.12245</link>
+<guid>https://tldr.takara.ai/p/2603.12245</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>ELIT提升生成质量并优化计算资源分配。</p><br><br><p><strong>摘要：</strong> 本文提出ELIT，一种与扩散Transformer（DiT）兼容的机制，通过引入可学习的潜在接口序列，实现输入图像大小与计算量的解耦。ELIT利用轻量级读写交叉注意力层，将信息在空间标记和潜在标记之间传递，并优先处理重要区域。训练中通过随机丢弃尾部潜在标记，使模型生成按重要性排序的表示。推理时可根据计算约束动态调整潜在标记数量，从而提升生成质量并优化资源分配。实验显示，ELIT在多个数据集和架构上均取得显著提升。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.12245 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 17:57:04 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 17:57:04 +0000</pubDate>
+</item>
+<item>
+<title>多模态基准数据集CoMMET评估大语言模型的心智理论能力</title>
+<link>https://tldr.takara.ai/p/2603.11915</link>
+<guid>https://tldr.takara.ai/p/2603.11915</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出多模态基准CoMMET评估LLM的心智理论能力。</p><br><br><p><strong>摘要：</strong> 本文提出了一种新的多模态基准数据集CoMMET，用于评估大型语言模型（LLMs）在心智理论（ToM）方面的能力。该数据集扩展了传统评测范围，涵盖更广泛的心理状态，并引入多轮对话测试，是首个在多轮对话场景中评估ToM的多模态数据集。通过全面评估不同家族和规模的LLMs，研究分析了现有模型的优势与不足，并指出了未来改进方向，有助于深入理解现代LLMs的社会认知能力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.11915 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 13:29:42 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 13:29:42 +0000</pubDate>
+</item>
+<item>
+<title>基于风险可控的多视角驾驶场景生成方法</title>
+<link>https://tldr.takara.ai/p/2603.11534</link>
+<guid>https://tldr.takara.ai/p/2603.11534</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出RiskMV-DPO方法，实现高风险驾驶场景的自动生成。</p><br><br><p><strong>摘要：</strong> 本文提出RiskMV-DPO，一种物理驱动、风险可控的多视角驾驶场景生成框架。该方法通过整合目标风险等级与物理风险建模，自动生成多样化且高风险的动态轨迹，作为扩散视频生成的几何锚点。为保证时空一致性和几何真实性，引入了几何-外观对齐模块和区域感知直接偏好优化策略。实验表明，RiskMV-DPO在nuScenes数据集上显著提升了3D检测性能并改善了视觉质量，为具身智能的安全开发提供了可扩展工具链。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.11534 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 04:44:12 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 04:44:12 +0000</pubDate>
+</item>
+<item>
+<title>基于神经网络的高维非线性结构系统不确定性建模研究</title>
+<link>https://tldr.takara.ai/p/2603.12012</link>
+<guid>https://tldr.takara.ai/p/2603.12012</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出三种元模型框架用于处理结构系统中的不确定性。</p><br><br><p><strong>摘要：</strong> 本文针对高维非线性动态结构系统在自然灾害下的不确定性建模问题，提出了三种元模型框架，分别结合多层感知机（MLP）、消息传递神经网络（MPNN）和自编码器（AE）与长短期记忆网络（LSTM）进行结构响应预测。这些框架通过蒙特卡洛dropout和负对数似然损失函数来处理不确定性，并在两个案例研究中验证了其有效性。结果表明，MLP-LSTM在低维系统中表现最佳，而MPNN-LSTM和AE-LSTM在更复杂的钢框架模型中更具优势。同时，预测方差与实际误差之间的一致性表明这些框架适用于主动学习策略和模型置信度评估。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.12012 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 14:56:04 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 14:56:04 +0000</pubDate>
+</item>
+<item>
+<title>AutoGaze：提升长时高分辨率视频理解的轻量级模块</title>
+<link>https://tldr.takara.ai/p/2603.12254</link>
+<guid>https://tldr.takara.ai/p/2603.12254</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>AutoGaze通过减少冗余图像块提升视频处理效率和效果。</p><br><br><p><strong>摘要：</strong> 本文提出AutoGaze，一种用于多模态大语言模型的轻量级模块，旨在解决长时高分辨率视频处理中的冗余问题。AutoGaze通过自回归方式选择最少的多尺度图像块，在保证信息完整性的前提下，将视觉标记减少4倍至100倍，使视频处理速度提升最多19倍。该方法在VideoMME等视频基准测试中取得优异成绩，并引入了首个高分辨率、长视频问答基准HLVid，验证了其有效性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.12254 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 17:58:52 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 17:58:52 +0000</pubDate>
+</item>
+<item>
+<title>基于扩散模型的可组合内在概念提取方法</title>
+<link>https://tldr.takara.ai/p/2603.11795</link>
+<guid>https://tldr.takara.ai/p/2603.11795</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出CI-ICE任务与HyperExpress方法，实现图像中可组合概念的准确提取。</p><br><br><p><strong>摘要：</strong> 本文针对无监督概念提取中存在的无法提取可组合内在概念的问题，提出了一个新的任务——可组合且可解释的内在概念提取（CI-ICE）。该任务利用基于扩散的文本到图像模型，从单张图像中提取对象级和属性级的概念，并通过这些概念的组合重建原始概念。为实现这一目标，作者提出了一种名为HyperExpress的方法，该方法通过两个核心方面解决CI-ICE任务：一是利用双曲空间的层次建模能力进行概念解耦，二是引入概念级优化方法以保持复杂的概念间关系并确保概念的可组合性。实验表明，该方法在提取可组合的内在概念方面表现优异。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.11795 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 10:56:05 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 10:56:05 +0000</pubDate>
+</item>
+<item>
+<title>日本病理报告写作中大语言模型的性能评估</title>
+<link>https://tldr.takara.ai/p/2603.11597</link>
+<guid>https://tldr.takara.ai/p/2603.11597</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>评估七种开源大语言模型在病理报告写作中的表现。</p><br><br><p><strong>摘要：</strong> 本文评估了七种开源大语言模型在支持日语病理报告写作中的性能，从三个角度进行分析：（A）按照预定义格式生成和提取病理诊断文本，（B）修正日语病理报告中的拼写错误，（C）由病理科医生和临床医生对模型生成的解释性文本进行主观评价。结果显示，思维型模型和医学专业模型在需要推理的结构化报告任务和拼写修正中表现出优势，但解释性文本的偏好因评估者而异。尽管不同任务中模型的实用性有所差异，研究结果表明开源大语言模型在有限但具有临床意义的场景中可辅助日语病理报告写作。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.11597 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 06:40:04 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 06:40:04 +0000</pubDate>
+</item>
+<item>
+<title>FLUX.1中潜在空间颜色表示的解释与控制方法</title>
+<link>https://tldr.takara.ai/p/2603.12261</link>
+<guid>https://tldr.takara.ai/p/2603.12261</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>FLUX.1潜在空间颜色结构可被解释并用于颜色控制。</p><br><br><p><strong>摘要：</strong> 本文研究了FLUX.1变分自编码器潜在空间中的颜色表示，揭示了其反映色相、饱和度和明度的结构。通过验证，该潜在颜色子空间（LCS）能够预测并直接控制图像颜色，提出了一种无需训练的完全基于封闭形式潜在空间操作的方法。该方法为图像生成中的颜色控制提供了新思路，相关代码已公开。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.12261 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 17:59:48 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 17:59:48 +0000</pubDate>
+</item>
+<item>
+<title>基于数字孪生的水下自主对接深度强化学习方法</title>
+<link>https://tldr.takara.ai/p/2603.12020</link>
+<guid>https://tldr.takara.ai/p/2603.12020</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>深度强化学习提升水下自主对接成功率与适应性。</p><br><br><p><strong>摘要：</strong> 本文提出一种基于高保真数字孪生环境的自主水下对接方法，利用Stonefish模拟器构建多进程强化学习框架，加速训练过程并引入真实AUV动力学、碰撞模型和传感器噪声。采用PPO算法训练六自由度控制策略，通过距离、姿态、动作平滑性和自适应碰撞惩罚构建奖励机制。实验表明，在仿真中成功率达到90%以上，并在物理测试中验证了从仿真到现实的迁移有效性，DRL控制器展现出如俯仰制动和偏航振荡等自适应行为。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.12020 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 15:01:25 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 15:01:25 +0000</pubDate>
+</item>
+<item>
+<title>生成式AI技术与社会系统的协同演进研究</title>
+<link>https://tldr.takara.ai/p/2603.11842</link>
+<guid>https://tldr.takara.ai/p/2603.11842</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>生成式AI推动创新，但面临技术、伦理和治理挑战。</p><br><br><p><strong>摘要：</strong> 本文通过系统文献综述分析了2023年以来的28篇相关研究，指出生成式AI虽具有提升生产力和创新的潜力，但其应用受到技术不可靠性、社会伦理风险及治理空白等多重因素的制约。研究强调技术子系统与社会子系统之间的不匹配问题，并提出IS（信息科学）研究应从分析影响转向主动塑造技术与组织流程、社会价值观及监管制度的共同演进，关注人机协作、情境验证、概率系统设计原则及适应性治理。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.11842 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 12:06:25 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 12:06:25 +0000</pubDate>
+</item>
+<item>
+<title>儿童手写动态与学习特征的关系研究</title>
+<link>https://tldr.takara.ai/p/2603.11519</link>
+<guid>https://tldr.takara.ai/p/2603.11519</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>手写动态可反映儿童发展和个体差异，尤其在年级预测中表现显著。</p><br><br><p><strong>摘要：</strong> 本文通过分析日本小学生至初中生的大规模在线手写数据，探讨手写动态是否能编码学生特征。研究比较了三种手写特征：基本统计描述符、基于熵的变异性度量以及sigma-lognormal模型参数。这些特征被用于年级预测、性别分类和学业表现分类任务，并采用线性回归、逻辑回归和随机森林模型进行评估。结果表明，手写动态包含与发育阶段和个体差异相关的信息，尤其是在年级预测任务中表现突出。研究证实了手写运动模式随儿童成长逐渐趋于对数正态分布的组织方式。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.11519 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 04:05:23 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 04:05:23 +0000</pubDate>
+</item>
+<item>
+<title>轻量级实时边缘分割模型PicoSAM3在传感器上的应用</title>
+<link>https://tldr.takara.ai/p/2603.11917</link>
+<guid>https://tldr.takara.ai/p/2603.11917</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>PicoSAM3实现高精度实时边缘分割，适用于智能设备。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为PicoSAM3的轻量级可提示视觉分割模型，专为边缘计算和传感器端部署设计。该模型仅包含130万参数，结合密集CNN架构、区域提示编码、高效通道注意力机制，并通过SAM2和SAM3进行知识蒸馏，显著提升了分割性能。在COCO和LVIS数据集上分别达到65.45%和64.01%的mIoU，优于现有同类模型。量化后的INT8版本在Sony IMX500传感器上实现11.82毫秒的实时推理，满足内存和算子限制。实验表明，从大模型蒸馏可提升14.5%的mIoU，证明了在传感器端实现高质量、灵活提示分割的可行性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.11917 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 13:31:43 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 13:31:43 +0000</pubDate>
+</item>
+<item>
+<title>基于自回归扩散模型的实时人类动画生成方法</title>
+<link>https://tldr.takara.ai/p/2603.11746</link>
+<guid>https://tldr.takara.ai/p/2603.11746</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出Neighbor Forcing和ConvKV机制提升实时动画生成效率与质量。</p><br><br><p><strong>摘要：</strong> 本文针对自回归扩散模型在实时人类动画生成中的效率问题，提出了Neighbor Forcing方法，通过传播时间相邻帧作为潜在邻居，实现更稳定的学习信号。同时引入结构化ConvKV记忆机制，压缩注意力键值对，实现常数内存推理和无限视频生成。实验表明该方法在训练收敛性、生成质量和推理效率方面均优于现有方法，支持20 FPS实时流式推理。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.11746 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 09:49:58 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 09:49:58 +0000</pubDate>
+</item>
+<item>
+<title>基于流匹配的虚拟试穿框架PROMO提升图像编辑效率与质量</title>
+<link>https://tldr.takara.ai/p/2603.11675</link>
+<guid>https://tldr.takara.ai/p/2603.11675</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>PROMO通过流匹配技术实现高效高质的虚拟试穿，提升图像编辑性能。</p><br><br><p><strong>摘要：</strong> 本文提出一种名为PROMO的虚拟试穿框架，采用流匹配DiT架构，并结合潜在多模态条件拼接和自参考机制，有效降低推理开销。该方法在标准基准测试中表现出色，在保持高质量的同时提升了速度，证明了流匹配变压器在虚拟试穿任务中的有效性。PROMO不仅适用于虚拟试穿，还可扩展到更广泛的图像编辑任务，具有良好的通用性和训练效率。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.11675 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 08:41:05 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 08:41:05 +0000</pubDate>
+</item>
+<item>
+<title>OmniForcing：实现高效多模态流式生成的扩散模型蒸馏框架</title>
+<link>https://tldr.takara.ai/p/2603.11647</link>
+<guid>https://tldr.takara.ai/p/2603.11647</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>OmniForcing解决多模态扩散模型延迟问题，提升实时生成效率。</p><br><br><p><strong>摘要：</strong> 本文提出OmniForcing，一种将离线双流双向扩散模型蒸馏为高质量流式自回归生成器的框架。针对传统方法在因果蒸馏中因模态时间不对称和令牌稀疏性导致的训练不稳定问题，引入了非对称块因果对齐与零截断全局前缀，以防止多模态同步漂移。同时通过音频Sink Token机制和Identity RoPE约束解决音频令牌稀疏性引发的梯度爆炸问题。最后采用联合自强制蒸馏策略，使模型在长序列生成中动态修正跨模态误差。OmniForcing在单GPU上实现约25 FPS的流式生成，保持与双向教师模型相当的多模态同步性和视觉质量。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.11647 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 08:17:36 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 08:17:36 +0000</pubDate>
+</item>
+<item>
+<title>基于因果自编码与治疗条件的反事实估计方法</title>
+<link>https://tldr.takara.ai/p/2603.11565</link>
+<guid>https://tldr.takara.ai/p/2603.11565</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>CAETC方法提升反事实估计效果，适用于多种时间序列模型。</p><br><br><p><strong>摘要：</strong> 本文提出一种名为因果自编码与治疗条件（CAETC）的新方法，用于解决观测数据中时间依赖性混杂偏差的问题。该方法基于对抗性表示学习，利用自编码架构学习部分可逆且治疗不变的表示，并通过治疗特定条件进行结果预测。该设计不依赖于底层序列模型，可应用于LSTM或TCN等现有架构。实验表明，CAETC在合成、半合成和真实数据上均优于现有方法，显著提升了反事实估计的准确性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.11565 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 05:37:56 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 05:37:56 +0000</pubDate>
+</item>
+<item>
+<title>GraphRAG安全漏洞分析与知识演化污染攻击研究</title>
+<link>https://tldr.takara.ai/p/2603.11501</link>
+<guid>https://tldr.takara.ai/p/2603.11501</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>KEPo攻击方法有效破坏GraphRAG系统安全性。</p><br><br><p><strong>摘要：</strong> 本文针对GraphRAG系统提出了一种新型知识演化污染攻击（KEPo），该方法通过生成有毒事件并伪造知识演化路径，将恶意信息注入知识图谱中，从而误导大语言模型产生有害响应。KEPo在单目标和多目标攻击场景中均表现出色，实验结果表明其攻击成功率显著高于现有方法，揭示了GraphRAG系统的潜在安全风险。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.11501 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 03:40:30 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 03:40:30 +0000</pubDate>
+</item>
+<item>
+<title>Video Streaming Thinking：一种实时视频理解的新范式</title>
+<link>https://tldr.takara.ai/p/2603.12262</link>
+<guid>https://tldr.takara.ai/p/2603.12262</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出VST范式，实现视频流中同步推理，提升响应效率与理解能力。</p><br><br><p><strong>摘要：</strong> 本文提出Video Streaming Thinking（VST），一种支持边观看边思考的视频理解新范式。该方法在视频流中激活推理机制，通过摊销大语言模型的推理延迟，实现了及时理解和连贯认知，同时保持实时响应。研究还引入了VST-SFT和VST-RL后训练流程，结合视频知识图谱生成高质量的问答对，增强多证据推理和持续注意力。实验表明，VST-7B在多个在线基准测试中表现优异，相比现有方法响应速度提升15.7倍，且在多种视频理解任务中展现出强大泛化能力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.12262 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 17:59:51 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 17:59:51 +0000</pubDate>
+</item>
+<item>
+<title>基于有效电阻的图神经网络拓扑重连方法</title>
+<link>https://tldr.takara.ai/p/2603.11944</link>
+<guid>https://tldr.takara.ai/p/2603.11944</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>有效电阻重连提升图神经网络长程依赖建模能力。</p><br><br><p><strong>摘要：</strong> 本文针对图神经网络在捕捉长程依赖时面临的过压缩问题，提出一种基于有效电阻的拓扑重连策略（ERR）。该方法通过全局有效电阻检测结构瓶颈，迭代添加高电阻节点对之间的边，同时移除低电阻边，以增强通信路径并控制图密度。实验表明，ERR在保持边数不变的情况下提升了信息传播效率，并与PairNorm等归一化技术结合进一步优化性能。研究还分析了重连对消息传递和嵌入表示演化的影响，揭示了过压缩与过平滑之间的权衡关系。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.11944 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 13:55:48 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 13:55:48 +0000</pubDate>
+</item>
+<item>
+<title>基于神经微分方程的动态场景预测方法</title>
+<link>https://tldr.takara.ai/p/2603.12078</link>
+<guid>https://tldr.takara.ai/p/2603.12078</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Node-RF通过神经微分方程实现场景动态的长期外推。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为Node-RF的方法，结合神经微分方程（NODEs）和动态神经辐射场（NeRF），以实现对场景动态的连续时间、时空表示。该方法能够在不增加内存成本的情况下，超越观测轨迹进行长期预测。从视觉输入中，Node-RF通过ODE求解器学习隐式场景状态，并通过微积分传播特征嵌入。NeRF渲染器根据计算出的嵌入生成任意视角，实现长距离外推。实验表明，Node-RF可以在不依赖显式模型的情况下表征抽象系统行为，识别未来预测的关键点。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.12078 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 15:48:12 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 15:48:12 +0000</pubDate>
+</item>
+<item>
+<title>基于最小最大优化的鲁棒强化学习方法研究</title>
+<link>https://tldr.takara.ai/p/2603.12110</link>
+<guid>https://tldr.takara.ai/p/2603.12110</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出MMDDPG方法提升强化学习在干扰下的鲁棒性。</p><br><br><p><strong>摘要：</strong> 本文针对强化学习在面对外部干扰和模型不确定性时性能不稳定的问题，提出了一种基于最小最大优化的深度确定性策略梯度方法（MMDDPG）。该方法通过用户策略与对抗扰动策略之间的博弈，使用户策略在最小化目标函数的同时，对抗策略则最大化该函数。为稳定这种交互，引入了分数目标函数以平衡任务性能和扰动强度，防止过激扰动并促进稳健学习。实验结果表明，MMDDPG在MuJoCo环境中对力扰动和模型参数变化表现出显著增强的鲁棒性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.12110 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 16:15:06 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 16:15:06 +0000</pubDate>
+</item>
+<item>
+<title>基于3D手部关键点的视角可控视频生成方法</title>
+<link>https://tldr.takara.ai/p/2603.11755</link>
+<guid>https://tldr.takara.ai/p/2603.11755</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新型框架，实现视角可控的高质量视频生成。</p><br><br><p><strong>摘要：</strong> 本文针对虚拟现实和具身AI中的视角可控视频生成问题，提出一种新方法。该方法通过使用稀疏的3D手部关键点作为控制信号，解决现有方法在3D一致性、运动不一致和跨身体泛化方面的不足。研究引入了一个高效的控制模块，能够处理遮挡问题并保留完整的3D信息。同时，构建了一个包含百万级高质量视角视频数据集的自动化标注流程，并建立了跨身体基准测试集。实验表明，该方法在生成高保真视频和跨身体泛化方面均优于现有技术。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.11755 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 10:02:23 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 10:02:23 +0000</pubDate>
+</item>
+<item>
+<title>利用多核CPU并行化解决3D打印对象排列与调度问题</title>
+<link>https://tldr.takara.ai/p/2603.12224</link>
+<guid>https://tldr.takara.ai/p/2603.12224</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>通过并行化算法提升3D打印效率。</p><br><br><p><strong>摘要：</strong> 本文提出一种利用现代多核CPU计算能力来解决顺序3D打印中的对象排列与调度问题的方法。通过将原有CEGAR-SEQ算法并行化，采用多种对象排列策略，如将对象放置在打印板角落或根据高度进行调度，从而提高打印效率。实验表明，该方法Portfolio-CEGAR-SEQ在使用较少打印板的情况下，能够更高效地处理多个打印任务。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.12224 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 17:48:14 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 17:48:14 +0000</pubDate>
+</item>
+<item>
+<title>基于逆向神经算子的隐式ODE参数恢复方法</title>
+<link>https://tldr.takara.ai/p/2603.11854</link>
+<guid>https://tldr.takara.ai/p/2603.11854</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>INO通过两阶段框架高效恢复稀疏观测下的ODE参数。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为逆向神经算子（INO）的两阶段框架，用于从稀疏、部分观测中恢复隐藏的常微分方程（ODE）参数。第一阶段使用带有交叉注意力机制的条件傅里叶神经算子（C-FNO），通过频谱正则化抑制高频伪影，重建完整的ODE轨迹。第二阶段通过摊销漂移模型（ADM）在参数空间中学习加权速度场，将随机参数初始化引导至真实值，避免了梯度反传带来的雅可比不稳定性问题。实验表明，在真实世界的刚性大气化学基准数据（POLLU，25个参数）和合成基因调控网络（GRN，40个参数）上，INO在参数恢复精度上优于基于梯度和摊销的基线方法，且推理时间仅需0.23秒，比迭代梯度下降快487倍。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.11854 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 12:20:23 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 12:20:23 +0000</pubDate>
+</item>
+<item>
+<title>语言模型的正确性偏好源于压缩与一致性原则</title>
+<link>https://tldr.takara.ai/p/2603.11749</link>
+<guid>https://tldr.takara.ai/p/2603.11749</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>语言模型偏好正确陈述，因压缩与一致性原则影响。</p><br><br><p><strong>摘要：</strong> 本文提出“压缩-一致性原则”，解释为何语言模型在训练数据质量混杂时仍偏好正确陈述。研究通过小规模GPT-2风格字符级Transformer模型，在合成数学语料库上测试发现，模型在随机错误设置中强烈倾向于正确补全，准确率高达83.1%。当错误具有逻辑一致性但不正确时，偏好显著减弱。实验还表明，嵌入验证步骤可恢复对正确的偏好，而增加一致规则数量则提升准确性。结果表明，所谓的“真理偏见”更多是压缩压力和内部一致性偏好所致，而非内在追求真理。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.11749 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 09:52:38 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 09:52:38 +0000</pubDate>
+</item>
+<item>
+<title>Delayed Backdoor Attacks: Exploring the Temporal Dimension as a New Attack Surface in Pre-Trained Models</title>
+<link>https://tldr.takara.ai/p/2603.11949</link>
+<guid>https://tldr.takara.ai/p/2603.11949</guid>
+<content:encoded><![CDATA[
+
+  Backdoor attacks against pre-trained models (PTMs) have traditionally operated under an ``immediacy assumption,'' where malicious behavior manifests instantly upon trigger occurrence. This work revisits and challenges this paradigm by introducing \textit{\textbf{Delayed Backdoor Attacks (DBA)}}, a new class of threats in which activation is temporally decoupled from trigger exposure. We propose that this \textbf{temporal dimension} is the key to unlocking a previously infeasible class of attacks: those that use common, everyday words as triggers. To examine the feasibility of this paradigm, we design and implement a proof-of-concept prototype, termed \underline{D}elayed Backdoor Attacks Based on \underline{N}onlinear \underline{D}ecay (DND). DND embeds a lightweight, stateful logic module that postpones activation until a configurable threshold is reached, producing a distinct latency phase followed by a controlled outbreak. We derive a formal model to characterize this latency behavior and propose a dual-metric evaluation framework (ASR and ASR$_{delay}$) to empirically measure the delay effect. Extensive experiments on four (natural language processing)NLP benchmarks validate the core capabilities of DND: it remains dormant for a controllable duration, sustains high clean accuracy ($\ge$94\%), and achieves near-perfect post-activation attack success rates ($\approx$99\%, The average of other methods is below 95\%.). Moreover, DND exhibits resilience against several state-of-the-art defenses. This study provides the first empirical evidence that the temporal dimension constitutes a viable yet unprotected attack surface in PTMs, underscoring the need for next-generation, stateful, and time-aware defense mechanisms.
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 13:57:11 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 13:57:11 +0000</pubDate>
+</item>
+<item>
+<title>Temporal Straightening for Latent Planning</title>
+<link>https://tldr.takara.ai/p/2603.12231</link>
+<guid>https://tldr.takara.ai/p/2603.12231</guid>
+<content:encoded><![CDATA[
+
+  Learning good representations is essential for latent planning with world models. While pretrained visual encoders produce strong semantic visual features, they are not tailored to planning and contain information irrelevant -- or even detrimental -- to planning. Inspired by the perceptual straightening hypothesis in human visual processing, we introduce temporal straightening to improve representation learning for latent planning. Using a curvature regularizer that encourages locally straightened latent trajectories, we jointly learn an encoder and a predictor. We show that reducing curvature this way makes the Euclidean distance in latent space a better proxy for the geodesic distance and improves the conditioning of the planning objective. We demonstrate empirically that temporal straightening makes gradient-based planning more stable and yields significantly higher success rates across a suite of goal-reaching tasks.
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 17:49:47 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 17:49:47 +0000</pubDate>
+</item>
+<item>
+<title>Manifold-Optimal Guidance: A Unified Riemannian Control View of Diffusion Guidance</title>
+<link>https://tldr.takara.ai/p/2603.11509</link>
+<guid>https://tldr.takara.ai/p/2603.11509</guid>
+<content:encoded><![CDATA[
+
+  Classifier-Free Guidance (CFG) serves as the de facto control mechanism for conditional diffusion, yet high guidance scales notoriously induce oversaturation, texture artifacts, and structural collapse. We attribute this failure to a geometric mismatch: standard CFG performs Euclidean extrapolation in ambient space, inadvertently driving sampling trajectories off the high-density data manifold. To resolve this, we present Manifold-Optimal Guidance (MOG), a framework that reformulates guidance as a local optimal control problem. MOG yields a closed-form, geometry-aware Riemannian update that corrects off-manifold drift without requiring retraining. Leveraging this perspective, we further introduce Auto-MOG, a dynamic energy-balancing schedule that adaptively calibrates guidance strength, effectively eliminating the need for manual hyperparameter tuning. Extensive validation demonstrates that MOG yields superior fidelity and alignment compared to baselines, with virtually no added computational overhead.
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 03:51:32 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 03:51:32 +0000</pubDate>
+</item>
+<item>
+<title>AS-Bridge: A Bidirectional Generative Framework Bridging Next-Generation Astronomical Surveys</title>
+<link>https://tldr.takara.ai/p/2603.11928</link>
+<guid>https://tldr.takara.ai/p/2603.11928</guid>
+<content:encoded><![CDATA[
+
+  The upcoming decade of observational cosmology will be shaped by large sky surveys, such as the ground-based LSST at the Vera C. Rubin Observatory and the space-based Euclid mission. While they promise an unprecedented view of the Universe across depth, resolution, and wavelength, their differences in observational modality, sky coverage, point-spread function, and scanning cadence make joint analysis beneficial, but also challenging. To facilitate joint analysis, we introduce A(stronomical)S(urvey)-Bridge, a bidirectional generative model that translates between ground- and space-based observations. AS-Bridge learns a diffusion model that employs a stochastic Brownian Bridge process between the LSST and Euclid observations. The two surveys have overlapping sky regions, where we can explicitly model the conditional probabilistic distribution between them. We show that this formulation enables new scientific capabilities beyond single-survey analysis, including faithful probabilistic predictions of missing survey observations and inter-survey detection of rare events. These results establish the feasibility of inter-survey generative modeling. AS-Bridge is therefore well-positioned to serve as a complementary component of future LSST-Euclid joint data pipelines, enhancing the scientific return once data from both surveys become available. Data and code are available at \href{https://github.com/ZHANG7DC/AS-Bridge}{https://github.com/ZHANG7DC/AS-Bridge}.
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 13:41:42 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 13:41:42 +0000</pubDate>
+</item>
+<item>
+<title>O3N: Omnidirectional Open-Vocabulary Occupancy Prediction</title>
+<link>https://tldr.takara.ai/p/2603.12144</link>
+<guid>https://tldr.takara.ai/p/2603.12144</guid>
+<content:encoded><![CDATA[
+
+  Understanding and reconstructing the 3D world through omnidirectional perception is an inevitable trend in the development of autonomous agents and embodied intelligence. However, existing 3D occupancy prediction methods are constrained by limited perspective inputs and predefined training distribution, making them difficult to apply to embodied agents that require comprehensive and safe perception of scenes in open world exploration. To address this, we present O3N, the first purely visual, end-to-end Omnidirectional Open-vocabulary Occupancy predictioN framework. O3N embeds omnidirectional voxels in a polar-spiral topology via the Polar-spiral Mamba (PsM) module, enabling continuous spatial representation and long-range context modeling across 360°. The Occupancy Cost Aggregation (OCA) module introduces a principled mechanism for unifying geometric and semantic supervision within the voxel space, ensuring consistency between the reconstructed geometry and the underlying semantic structure. Moreover, Natural Modality Alignment (NMA) establishes a gradient-free alignment pathway that harmonizes visual features, voxel embeddings, and text semantics, forming a consistent "pixel-voxel-text" representation triad. Extensive experiments on multiple models demonstrate that our method not only achieves state-of-the-art performance on QuadOcc and Human360Occ benchmarks but also exhibits remarkable cross-scene generalization and semantic scalability, paving the way toward universal 3D world modeling. The source code will be made publicly available at https://github.com/MengfeiD/O3N.
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 16:45:42 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 16:45:42 +0000</pubDate>
+</item>
+<item>
+<title>Hybrid Energy-Aware Reward Shaping: A Unified Lightweight Physics-Guided Methodology for Policy Optimization</title>
+<link>https://tldr.takara.ai/p/2603.11600</link>
+<guid>https://tldr.takara.ai/p/2603.11600</guid>
+<content:encoded><![CDATA[
+
+  Deep reinforcement learning excels in continuous control but often requires extensive exploration, while physics-based models demand complete equations and suffer cubic complexity. This study proposes Hybrid Energy-Aware Reward Shaping (H-EARS), unifying potential-based reward shaping with energy-aware action regularization. H-EARS constrains action magnitude while balancing task-specific and energy-based potentials via functional decomposition, achieving linear complexity O(n) by capturing dominant energy components without full dynamics. We establish a theoretical foundation including: (1) functional independence for separate task/energy optimization; (2) energy-based convergence acceleration; (3) convergence guarantees under function approximation; and (4) approximate potential error bounds. Lyapunov stability connections are analyzed as heuristic guides. Experiments across baselines show improved convergence, stability, and energy efficiency. Vehicle simulations validate applicability in safety-critical domains under extreme conditions. Results confirm that integrating lightweight physics priors enhances model-free RL without complete system models, enabling transfer from lab research to industrial applications.
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 06:47:01 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 06:47:01 +0000</pubDate>
+</item>
+<item>
+<title>Causal Prosody Mediation for Text-to-Speech:Counterfactual Training of Duration, Pitch, and Energy in FastSpeech2</title>
+<link>https://tldr.takara.ai/p/2603.11683</link>
+<guid>https://tldr.takara.ai/p/2603.11683</guid>
+<content:encoded><![CDATA[
+
+  We propose a novel causal prosody mediation framework for expressive text-to-speech (TTS) synthesis. Our approach augments the FastSpeech2 architecture with explicit emotion conditioning and introduces counterfactual training objectives to disentangle emotional prosody from linguistic content. By formulating a structural causal model of how text (content), emotion, and speaker jointly influence prosody (duration, pitch, energy) and ultimately the speech waveform, we derive two complementary loss terms: an Indirect Path Constraint (IPC) to enforce that emotion affects speech only through prosody, and a Counterfactual Prosody Constraint (CPC) to encourage distinct prosody patterns for different emotions. The resulting model is trained on multi-speaker emotional corpora (LibriTTS, EmoV-DB, VCTK) with a combined objective that includes standard spectrogram reconstruction and variance prediction losses alongside our causal losses. In evaluations on expressive speech synthesis, our method achieves significantly improved prosody manipulation and emotion rendering, with higher mean opinion scores (MOS) and emotion accuracy than baseline FastSpeech2 variants. We also observe better intelligibility (low WER) and speaker consistency when transferring emotions across speakers. Extensive ablations confirm that the causal objectives successfully separate prosody attribution, yielding an interpretable model that allows controlled counterfactual prosody editing (e.g. "same utterance, different emotion") without compromising naturalness. We discuss the implications for identifiability in prosody modeling and outline limitations such as the assumption that emotion effects are fully captured by pitch, duration, and energy. Our work demonstrates how integrating causal learning principles into TTS can improve controllability and expressiveness in generated speech.
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 08:48:01 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 08:48:01 +0000</pubDate>
+</item>
+<item>
+<title>An Automatic Text Classification Method Based on Hierarchical Taxonomies, Neural Networks and Document Embedding: The NETHIC Tool</title>
+<link>https://tldr.takara.ai/p/2603.11770</link>
+<guid>https://tldr.takara.ai/p/2603.11770</guid>
+<content:encoded><![CDATA[
+
+  This work describes an automatic text classification method implemented in a software tool called NETHIC, which takes advantage of the inner capabilities of highly-scalable neural networks combined with the expressiveness of hierarchical taxonomies. As such, NETHIC succeeds in bringing about a mechanism for text classification that proves to be significantly effective as well as efficient. The tool had undergone an experimentation process against both a generic and a domain-specific corpus, outputting promising results. On the basis of this experimentation, NETHIC has been now further refined and extended by adding a document embedding mechanism, which has shown improvements in terms of performance on the individual networks and on the whole hierarchical model.
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 10:24:14 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 10:24:14 +0000</pubDate>
+</item>
+<item>
+<title>SPEGC: Continual Test-Time Adaptation via Semantic-Prompt-Enhanced Graph Clustering for Medical Image Segmentation</title>
+<link>https://tldr.takara.ai/p/2603.11492</link>
+<guid>https://tldr.takara.ai/p/2603.11492</guid>
+<content:encoded><![CDATA[
+
+  In medical image segmentation tasks, the domain gap caused by the difference in data collection between training and testing data seriously hinders the deployment of pre-trained models in clinical practice. Continual Test-Time Adaptation (CTTA) aims to enable pre-trained models to adapt to continuously changing unlabeled domains, providing an effective approach to solving this problem. However, existing CTTA methods often rely on unreliable supervisory signals, igniting a self-reinforcing cycle of error accumulation that culminates in catastrophic performance degradation. To overcome these challenges, we propose a CTTA via Semantic-Prompt-Enhanced Graph Clustering (SPEGC) for medical image segmentation. First, we design a semantic prompt feature enhancement mechanism that utilizes decoupled commonality and heterogeneity prompt pools to inject global contextual information into local features, alleviating their susceptibility to noise interference under domain shift. Second, based on these enhanced features, we design a differentiable graph clustering solver. This solver reframes global edge sparsification as an optimal transport problem, allowing it to distill a raw similarity matrix into a refined and high-order structural representation in an end-to-end manner. Finally, this robust structural representation is used to guide model adaptation, ensuring predictions are consistent at a cluster-level and dynamically adjusting decision boundaries. Extensive experiments demonstrate that SPEGC outperforms other state-of-the-art CTTA methods on two medical image segmentation benchmarks. The source code is available at https://github.com/Jwei-Z/SPEGC-for-MIS.
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 03:22:43 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 03:22:43 +0000</pubDate>
+</item>
+<item>
+<title>LABSHIELD: A Multimodal Benchmark for Safety-Critical Reasoning and Planning in Scientific Laboratories</title>
+<link>https://tldr.takara.ai/p/2603.11987</link>
+<guid>https://tldr.takara.ai/p/2603.11987</guid>
+<content:encoded><![CDATA[
+
+  Artificial intelligence is increasingly catalyzing scientific automation, with multimodal large language model (MLLM) agents evolving from lab assistants into self-driving lab operators. This transition imposes stringent safety requirements on laboratory environments, where fragile glassware, hazardous substances, and high-precision laboratory equipment render planning errors or misinterpreted risks potentially irreversible. However, the safety awareness and decision-making reliability of embodied agents in such high-stakes settings remain insufficiently defined and evaluated. To bridge this gap, we introduce LABSHIELD, a realistic multi-view benchmark designed to assess MLLMs in hazard identification and safety-critical reasoning. Grounded in U.S. Occupational Safety and Health Administration (OSHA) standards and the Globally Harmonized System (GHS), LABSHIELD establishes a rigorous safety taxonomy spanning 164 operational tasks with diverse manipulation complexities and risk profiles. We evaluate 20 proprietary models, 9 open-source models, and 3 embodied models under a dual-track evaluation framework. Our results reveal a systematic gap between general-domain MCQ accuracy and Semi-open QA safety performance, with models exhibiting an average drop of 32.0% in professional laboratory scenarios, particularly in hazard interpretation and safety-aware planning. These findings underscore the urgent necessity for safety-centric reasoning frameworks to ensure reliable autonomous scientific experimentation in embodied laboratory contexts. The full dataset will be released soon.
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 14:38:13 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 14:38:13 +0000</pubDate>
+</item>
+<item>
+<title>WORKSWORLD: A Domain for Integrated Numeric Planning and Scheduling of Distributed Pipelined Workflows</title>
+<link>https://tldr.takara.ai/p/2603.12214</link>
+<guid>https://tldr.takara.ai/p/2603.12214</guid>
+<content:encoded><![CDATA[
+
+  This work pursues automated planning and scheduling of distributed data pipelines, or workflows. We develop a general workflow and resource graph representation that includes both data processing and sharing components with corresponding network interfaces for scheduling. Leveraging these graphs, we introduce WORKSWORLD, a new domain for numeric domain-independent planners designed for permanently scheduled workflows, like ingest pipelines. Our framework permits users to define data sources, available workflow components, and desired data destinations and formats without explicitly declaring the entire workflow graph as a goal. The planner solves a joint planning and scheduling problem, producing a plan that both builds the workflow graph and schedules its components on the resource graph. We empirically show that a state-of-the-art numeric planner running on commodity hardware with one hour of CPU time and 30GB of memory can solve linear-chain workflows of up to 14 components across eight sites.
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 17:34:04 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 17:34:04 +0000</pubDate>
+</item>
+<item>
+<title>Efficient Generative Modeling with Unitary Matrix Product States Using Riemannian Optimization</title>
+<link>https://tldr.takara.ai/p/2603.12026</link>
+<guid>https://tldr.takara.ai/p/2603.12026</guid>
+<content:encoded><![CDATA[
+
+  Tensor networks, which are originally developed for characterizing complex quantum many-body systems, have recently emerged as a powerful framework for capturing high-dimensional probability distributions with strong physical interpretability. This paper systematically studies matrix product states (MPS) for generative modeling and shows that unitary MPS, which is a tensor-network architecture that is both simple and expressive, offers clear benefits for unsupervised learning by reducing ambiguity in parameter updates and improving efficiency. To overcome the inefficiency of standard gradient-based MPS training, we develop a Riemannian optimization approach that casts probabilistic modeling as an optimization problem with manifold constraints, and further derive an efficient space-decoupling algorithm. Experiments on Bars-and-Stripes and EMNIST datasets demonstrate fast adaptation to data structure, stable updates, and strong performance while maintaining the efficiency and expressive power of MPS.
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 15:05:03 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 15:05:03 +0000</pubDate>
+</item>
+<item>
+<title>Locating Demographic Bias at the Attention-Head Level in CLIP's Vision Encoder</title>
+<link>https://tldr.takara.ai/p/2603.11793</link>
+<guid>https://tldr.takara.ai/p/2603.11793</guid>
+<content:encoded><![CDATA[
+
+  Standard fairness audits of foundation models quantify that a model is biased, but not where inside the network the bias resides. We propose a mechanistic fairness audit that combines projected residual-stream decomposition, zero-shot Concept Activation Vectors, and bias-augmented TextSpan analysis to locate demographic bias at the level of individual attention heads in vision transformers. As a feasibility case study, we apply this pipeline to the CLIP ViT-L-14 encoder on 42 profession classes of the FACET benchmark, auditing both gender and age bias. For gender, the pipeline identifies four terminal-layer heads whose ablation reduces global bias (Cramer's V: 0.381 -> 0.362) while marginally improving accuracy (+0.42%); a layer-matched random control confirms that this effect is specific to the identified heads. A single head in the final layer contributes to the majority of the reduction in the most stereotyped classes, and class-level analysis shows that corrected predictions shift toward the correct occupation. For age, the same pipeline identifies candidate heads, but ablation produces weaker and less consistent effects, suggesting that age bias is encoded more diffusely than gender bias in this model. These results provide preliminary evidence that head-level bias localisation is feasible for discriminative vision encoders and that the degree of localisability may vary across protected attributes.
+  keywords: Bias . CLIP . Mechanistic Interpretability . Vision Transformer . Fairness
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 10:54:26 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 10:54:26 +0000</pubDate>
+</item>
+<item>
+<title>Multi-Agent Collaboration for Automated Design Exploration on High Performance Computing Systems</title>
+<link>https://tldr.takara.ai/p/2603.11515</link>
+<guid>https://tldr.takara.ai/p/2603.11515</guid>
+<content:encoded><![CDATA[
+
+  Today's scientific challenges, from climate modeling to Inertial Confinement Fusion design to novel material design, require exploring huge design spaces. In order to enable high-impact scientific discovery, we need to scale up our ability to test hypotheses, generate results, and learn from them rapidly. We present MADA (Multi-Agent Design Assistant), a Large Language Model (LLM) powered multi-agent framework that coordinates specialized agents for complex design workflows. A Job Management Agent (JMA) launches and manages ensemble simulations on HPC systems, a Geometry Agent (GA) generates meshes, and an Inverse Design Agent (IDA) proposes new designs informed by simulation outcomes. While general purpose, we focus development and validation on Richtmyer--Meshkov Instability (RMI) suppression, a critical challenge in Inertial Confinement Fusion. We evaluate on two complementary settings: running a hydrodynamics simulations on HPC systems, and using a pre-trained machine learning surrogate for rapid design exploration. Our results demonstrate that the MADA system successfully executes iterative design refinement, automatically improving designs toward optimal RMI suppression with minimal manual intervention. Our framework reduces cumbersome manual workflow setup, and enables automated design exploration at scale. More broadly, it demonstrates a reusable pattern for coupling reasoning, simulation, specialized tools, and coordinated workflows to accelerate scientific discovery.
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 04:01:27 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 04:01:27 +0000</pubDate>
+</item>
+<item>
+<title>Large Language Models for Biomedical Article Classification</title>
+<link>https://tldr.takara.ai/p/2603.11780</link>
+<guid>https://tldr.takara.ai/p/2603.11780</guid>
+<content:encoded><![CDATA[
+
+  This work presents a systematic and in-depth investigation of the utility of large language models as text classifiers for biomedical article classification. The study uses several small and mid-size open source models, as well as selected closed source ones, and is more comprehensive than most prior work with respect to the scope of evaluated configurations: different types of prompts, output processing methods for generating both class and class probability predictions, as well as few-shot example counts and selection methods. The performance of the most successful configurations is compared to that of conventional classification algorithms. The obtained average PR AUC over 15 challenging datasets above 0.4 for zero-shot prompting and nearly 0.5 for few-shot prompting comes close to that of the naïve Bayes classifier (0.5), the random forest algorithm (0.5 with default settings or 0.55 with hyperparameter tuning) and fine-tuned transformer models (0.5). These results confirm the utility of large language models as text classifiers for non-trivial domains and provide practical recommendations of the most promising setups, including in particular using output token probabilities for class probability prediction.
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 10:39:10 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 10:39:10 +0000</pubDate>
+</item>
+<item>
+<title>EVATok: Adaptive Length Video Tokenization for Efficient Visual Autoregressive Generation</title>
+<link>https://tldr.takara.ai/p/2603.12267</link>
+<guid>https://tldr.takara.ai/p/2603.12267</guid>
+<content:encoded><![CDATA[
+
+  Autoregressive (AR) video generative models rely on video tokenizers that compress pixels into discrete token sequences. The length of these token sequences is crucial for balancing reconstruction quality against downstream generation computational cost. Traditional video tokenizers apply a uniform token assignment across temporal blocks of different videos, often wasting tokens on simple, static, or repetitive segments while underserving dynamic or complex ones. To address this inefficiency, we introduce $\textbf{EVATok}$, a framework to produce $\textbf{E}$fficient $\textbf{V}$ideo $\textbf{A}$daptive $\textbf{Tok}$enizers. Our framework estimates optimal token assignments for each video to achieve the best quality-cost trade-off, develops lightweight routers for fast prediction of these optimal assignments, and trains adaptive tokenizers that encode videos based on the assignments predicted by routers. We demonstrate that EVATok delivers substantial improvements in efficiency and overall quality for video reconstruction and downstream AR generation. Enhanced by our advanced training recipe that integrates video semantic encoders, EVATok achieves superior reconstruction and state-of-the-art class-to-video generation on UCF-101, with at least 24.4% savings in average token usage compared to the prior state-of-the-art LARP and our fixed-length baseline.
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 17:59:59 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 17:59:59 +0000</pubDate>
+</item>
+<item>
+<title>Deep Learning Network-Temporal Models For Traffic Prediction</title>
+<link>https://tldr.takara.ai/p/2603.11475</link>
+<guid>https://tldr.takara.ai/p/2603.11475</guid>
+<content:encoded><![CDATA[
+
+  Time series analysis is critical for emerging net- work intelligent control and management functions. However, existing statistical-based and shallow machine learning models have shown limited prediction capabilities on multivariate time series. The intricate topological interdependency and complex temporal patterns in network data demand new model approaches. In this paper, based on a systematic multivariate time series model study, we present two deep learning models aiming for learning both temporal patterns and network topological correlations at the same time: a customized network-temporal graph attention network (GAT) model and a fine-tuned multi-modal large language model (LLM) with a clustering overture. Both models are studied against an LSTM model that already outperforms the statistical methods. Through extensive training and performance studies on a real-world network dataset, the LLM-based model demonstrates superior overall prediction and generalization performance, while the GAT model shows its strength in reducing prediction variance across the time series and horizons. More detailed analysis also reveals important insights into correlation variability and prediction distribution discrepancies over time series and different prediction horizons.
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 02:56:19 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 02:56:19 +0000</pubDate>
+</item>
+<item>
+<title>AstroSplat: Physics-Based Gaussian Splatting for Rendering and Reconstruction of Small Celestial Bodies</title>
+<link>https://tldr.takara.ai/p/2603.11969</link>
+<guid>https://tldr.takara.ai/p/2603.11969</guid>
+<content:encoded><![CDATA[
+
+  Image-based surface reconstruction and characterization are crucial for missions to small celestial bodies (e.g., asteroids), as it informs mission planning, navigation, and scientific analysis. Recent advances in Gaussian splatting enable high-fidelity neural scene representations but typically rely on a spherical harmonic intensity parameterization that is strictly appearance-based and does not explicitly model material properties or light-surface interactions. We introduce AstroSplat, a physics-based Gaussian splatting framework that integrates planetary reflectance models to improve the autonomous reconstruction and photometric characterization of small-body surfaces from in-situ imagery. The proposed framework is validated on real imagery taken by NASA's Dawn mission, where we demonstrate superior rendering performance and surface reconstruction accuracy compared to the typical spherical harmonic parameterization.
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 14:15:29 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 14:15:29 +0000</pubDate>
+</item>
+<item>
+<title>Deactivating Refusal Triggers: Understanding and Mitigating Overrefusal in Safety Alignment</title>
+<link>https://tldr.takara.ai/p/2603.11388</link>
+<guid>https://tldr.takara.ai/p/2603.11388</guid>
+<content:encoded><![CDATA[
+
+  Safety alignment aims to ensure that large language models (LLMs) refuse harmful requests by post-training on harmful queries paired with refusal answers. Although safety alignment is widely adopted in industry, the overrefusal problem where aligned LLMs also reject benign queries after safety alignment post-training, remains insufficiently studied. Such an issue degrades the usability of safety alignment in real-world applications. In this paper, we examine how overrefusal arises under safety alignment, and propose a mitigation strategy inspired by our findings. We define refusal triggers as linguistic cues in the training data that elicit refusal responses, safety alignment encourages LLMs to associate refusal triggers within a training sample with refusal responses, leading aligned LLMs to refuse harmful queries. However, the refusal triggers include not only harmful linguistic cues but also non-harmful cues, therefore causing overrefusal to benign queries. Building on this mechanistic analysis, we propose a method that explicitly considers refusal triggers in the safety alignment fine-tuning. Empirical results demonstrate that our approach achieves a more favorable trade-off between defense against jailbreak attacks and responsiveness to benign queries, outperforming prior methods. Warning: this paper contains harmful and biased sentences.
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 00:07:19 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 00:07:19 +0000</pubDate>
+</item>
+<item>
+<title>OSM-based Domain Adaptation for Remote Sensing VLMs</title>
+<link>https://tldr.takara.ai/p/2603.11804</link>
+<guid>https://tldr.takara.ai/p/2603.11804</guid>
+<content:encoded><![CDATA[
+
+  Vision-Language Models (VLMs) adapted to remote sensing rely heavily on domain-specific image-text supervision, yet high-quality annotations for satellite and aerial imagery remain scarce and expensive to produce. Prevailing pseudo-labeling pipelines address this gap by distilling knowledge from large frontier models, but this dependence on large teachers is costly, limits scalability, and caps achievable performance at the ceiling of the teacher. We propose OSMDA: a self-contained domain adaptation framework that eliminates this dependency. Our key insight is that a capable base VLM can serve as its own annotation engine: by pairing aerial images with rendered OpenStreetMap (OSM) tiles, we leverage optical character recognition and chart comprehension capabilities of the model to generate captions enriched by OSM's vast auxiliary metadata. The model is then fine-tuned on the resulting corpus with satellite imagery alone, yielding OSMDA-VLM, a domain-adapted VLM that requires no manual labeling and no stronger external model. We conduct exhaustive evaluations spanning 10 benchmarks across image-text-to-text tasks and comparing against 9 competitive baselines. When equally mixed with real data, our method achieves state-of-the-art results, while being substantially cheaper to train than teacher-dependent alternatives. These results suggest that, given a strong foundation model, alignment with crowd-sourced geographic data is a practical and scalable path towards remote sensing domain adaptation. Dataset and model weights will be made publicly available.
+
+]]></content:encoded>
+<pubDate>Thu, 12 Mar 2026 11:08:30 +0000</pubDate>
+<pubDate>Thu, 12 Mar 2026 11:08:30 +0000</pubDate>
+</item>
 
 <item>
 <title>基于时空解耦的自监督视频去噪方法F2R</title>
