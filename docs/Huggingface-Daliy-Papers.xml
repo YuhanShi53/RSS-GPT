@@ -4,6 +4,464 @@
 <title>Takara TLDR - Daily AI Papers</title>
 <link>https://tldr.takara.ai</link>
 
+<item>
+<title>基于图增强的检索融合方法优化研究</title>
+<link>https://tldr.takara.ai/p/2603.28886</link>
+<guid>https://tldr.takara.ai/p/2603.28886</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>图增强检索通过校准提升多跳问答效果。</p><br><br><p><strong>摘要：</strong> 本文提出PhaseGraph方法，通过百分位归一化（PIT）将向量和图得分映射到统一尺度，实现更稳定的融合。在MuSiQue和2WikiMultiHopQA数据集上的实验表明，校准后的融合显著提升了最后一步检索效果，验证了分数可比性在多跳问答中的重要性。理论分析还表明，基于百分位的校准比最小-最大归一化更稳健，而玻尔兹曼加权与线性融合在校准后表现相当。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.28886 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 30 Mar 2026 18:13:01 +0000</pubDate>
+<pubDate>Mon, 30 Mar 2026 18:13:01 +0000</pubDate>
+</item>
+<item>
+<title>The Spectral Edge Thesis: A Mathematical Framework for Intra-Signal Phase Transitions in Neural Network Training</title>
+<link>https://tldr.takara.ai/p/2603.28964</link>
+<guid>https://tldr.takara.ai/p/2603.28964</guid>
+<content:encoded><![CDATA[
+
+  We develop the spectral edge thesis: phase transitions in neural network training -- grokking, capability gains, loss plateaus -- are controlled by the spectral gap of the rolling-window Gram matrix of parameter updates. In the extreme aspect ratio regime (parameters $P \sim 10^8$, window $W \sim 10$), the classical BBP detection threshold is vacuous; the operative structure is the intra-signal gap separating dominant from subdominant modes at position $k^* = \mathrm{argmax}\, σ_j/σ_{j+1}$.
+  From three axioms we derive: (i) gap dynamics governed by a Dyson-type ODE with curvature asymmetry, damping, and gradient driving; (ii) a spectral loss decomposition linking each mode's learning contribution to its Davis--Kahan stability coefficient; (iii) the Gap Maximality Principle, showing that $k^*$ is the unique dynamically privileged position -- its collapse is the only one that disrupts learning, and it sustains itself through an $α$-feedback loop requiring no assumption on the optimizer. The adiabatic parameter $\mathcal{A} = \|ΔG\|_F / (η\, g^2)$ controls circuit stability: $\mathcal{A} \ll 1$ (plateau), $\mathcal{A} \sim 1$ (phase transition), $\mathcal{A} \gg 1$ (forgetting).
+  Tested across six model families (150K--124M parameters): gap dynamics precede every grokking event (24/24 with weight decay, 0/24 without), the gap position is optimizer-dependent (Muon: $k^*=1$, AdamW: $k^*=2$ on the same model), and 19/20 quantitative predictions are confirmed. The framework is consistent with the edge of stability, Tensor Programs, Dyson Brownian motion, the Lottery Ticket Hypothesis, and neural scaling laws.
+
+]]></content:encoded>
+<pubDate>Mon, 30 Mar 2026 20:10:22 +0000</pubDate>
+<pubDate>Mon, 30 Mar 2026 20:10:22 +0000</pubDate>
+</item>
+<item>
+<title>生成性摩擦：重新定义人机协作中的创造力</title>
+<link>https://tldr.takara.ai/p/2603.27550</link>
+<guid>https://tldr.takara.ai/p/2603.27550</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>文章提出生成性摩擦概念，鼓励用户主动参与AI创作过程。</p><br><br><p><strong>摘要：</strong> 文章探讨了AI生成内容可能引发的设计固化问题，并提出‘生成性摩擦’的概念。通过在AI输出中引入碎片化、延迟和模糊等干扰因素，促使用户从被动接受转向主动参与。研究发现，不同用户对摩擦的反应存在差异，这种差异被称为‘摩擦倾向’。高摩擦倾向用户将摩擦视为创造机会，而低倾向用户则感到阻碍。文章强调生成性摩擦与保护性摩擦的区别，并为AI工具设计提供新的方向，以平衡AI辅助与用户自主性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.27550 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 29 Mar 2026 07:06:22 +0000</pubDate>
+<pubDate>Sun, 29 Mar 2026 07:06:22 +0000</pubDate>
+</item>
+<item>
+<title>大型语言模型中过度自信的机制分析与干预</title>
+<link>https://tldr.takara.ai/p/2604.01457</link>
+<guid>https://tldr.takara.ai/p/2604.01457</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究揭示了大模型过度自信的内部机制并提出干预方法。</p><br><br><p><strong>摘要：</strong> 本文对大型语言模型中过度自信的现象进行了电路级机制分析，通过三个维度：将口头自信作为可微分的内部信号、识别导致过度自信的电路结构、以及利用这些发现进行推理时的校准。研究发现，在中间到后期层中，少量MLP块和注意力头在最终标记位置持续生成自信膨胀信号。进一步实验表明，针对这些电路的推理时干预能显著改善模型的校准效果。研究结果表明，大模型的口头过度自信是由可识别的内部电路驱动的，可通过针对性干预加以缓解。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2604.01457 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 01 Apr 2026 23:06:58 +0000</pubDate>
+<pubDate>Wed, 01 Apr 2026 23:06:58 +0000</pubDate>
+</item>
+<item>
+<title>神经形态工程在生物医学中的发展与应用</title>
+<link>https://tldr.takara.ai/p/2603.27716</link>
+<guid>https://tldr.takara.ai/p/2603.27716</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>神经形态工程在生物医学中快速发展，推动新技术变革。</p><br><br><p><strong>摘要：</strong> 神经形态工程在过去四十年中逐渐成熟，并在当前经历快速增长，具有改变生物医学工程和神经技术的潜力。2024年10月举行的NPBH研讨会汇聚了来自不同领域的专家，共同探讨该领域的现状、挑战及未来发展方向。会议资料如视频、录音、幻灯片等已公开发布于相关网站。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.27716 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 29 Mar 2026 14:36:58 +0000</pubDate>
+<pubDate>Sun, 29 Mar 2026 14:36:58 +0000</pubDate>
+</item>
+<item>
+<title>基于结构化语言描述的视觉-语言导航方法研究</title>
+<link>https://tldr.takara.ai/p/2603.27577</link>
+<guid>https://tldr.takara.ai/p/2603.27577</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出SOL-Nav框架提升导航模型泛化能力与效率。</p><br><br><p><strong>摘要：</strong> 本文提出SOL-Nav，一种将第一视角视觉信息转化为结构化语言描述的导航框架，以提高视觉-语言导航（VLN）模型的效率和泛化能力。该方法通过将RGB-D图像划分为网格，提取每个单元的语义、颜色和深度信息生成结构化文本，并将其与语言指令结合输入预训练语言模型。实验表明，SOL-Nav在标准VLN基准数据集（如R2R、RxR）及真实场景中表现优异，显著降低模型规模和数据依赖性，充分发挥预训练语言模型的推理与表征能力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.27577 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 29 Mar 2026 08:34:05 +0000</pubDate>
+<pubDate>Sun, 29 Mar 2026 08:34:05 +0000</pubDate>
+</item>
+<item>
+<title>提升多模态大语言模型安全性的CASAR方法</title>
+<link>https://tldr.takara.ai/p/2604.00310</link>
+<guid>https://tldr.takara.ai/p/2604.00310</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>CASA方法有效提升多模态大模型安全性，降低攻击成功率。</p><br><br><p><strong>摘要：</strong> 本文提出一种名为CASA（Classification Augmented with Safety Attention）的条件解码策略，用于增强多模态大语言模型（MLLMs）的安全性。该方法通过内部表示预测二进制安全标记，在生成响应前检测恶意查询。CASA引入了专门的安全注意力模块，无需依赖外部分类器或辅助头，也无需对不同模态进行特定的安全微调。实验结果显示，CASA在多个基准测试中将平均攻击成功率降低了超过97%，同时保持了在正常输入上的强大实用性，经自动化和人工评估验证。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2604.00310 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 31 Mar 2026 23:19:50 +0000</pubDate>
+<pubDate>Tue, 31 Mar 2026 23:19:50 +0000</pubDate>
+</item>
+<item>
+<title>基于运动的舞蹈检索框架DANCEMATCH</title>
+<link>https://tldr.takara.ai/p/2604.00927</link>
+<guid>https://tldr.takara.ai/p/2604.00927</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>DANCEMATCH实现高效舞蹈检索与运动指纹分析。</p><br><br><p><strong>摘要：</strong> 本文提出DANCEMATCH，一个端到端的运动驱动舞蹈检索框架，旨在通过原始视频直接识别语义相似的舞蹈编排。与依赖连续嵌入的传统方法不同，DANCEMATCH构建了紧凑且离散的运动特征，捕捉舞蹈的时空结构，并支持大规模高效检索。系统结合骨骼运动量化和时空Transformer，将人体姿态编码为结构化运动词汇，并引入DANCE RETRIEVAL ENGINE进行子线性检索和重排序。此外，研究者发布了DANCETYPESBENCHMARK数据集，用于促进可复现的研究。实验表明，该方法在多种舞蹈风格中表现稳健，具有良好的泛化能力，为运动指纹分析和定量舞蹈分析奠定了基础。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2604.00927 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 01 Apr 2026 14:06:59 +0000</pubDate>
+<pubDate>Wed, 01 Apr 2026 14:06:59 +0000</pubDate>
+</item>
+<item>
+<title>RTLSeek：基于强化学习的RTL设计多样性生成方法</title>
+<link>https://tldr.takara.ai/p/2603.27630</link>
+<guid>https://tldr.takara.ai/p/2603.27630</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>RTLSeek提升RTL设计的正确性与多样性。</p><br><br><p><strong>摘要：</strong> 本文提出RTLSeek，一种基于规则的多样性导向强化学习后训练范式，用于提升RTL设计的正确性和多样性。该方法结合专家知识与EDA反馈，采用三阶段框架最大化有限数据的利用效率。实验表明，RTLSeek在RTLLM基准测试中优于现有方法，且通过扩大设计空间探索提升了RTL质量，验证了“生成越多，结果越好”的原则。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.27630 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 29 Mar 2026 11:01:02 +0000</pubDate>
+<pubDate>Sun, 29 Mar 2026 11:01:02 +0000</pubDate>
+</item>
+<item>
+<title>基于单张图像的3D场景生成方法Extend3D</title>
+<link>https://tldr.takara.ai/p/2603.29387</link>
+<guid>https://tldr.takara.ai/p/2603.29387</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种无需训练的3D场景生成方法，提升场景完整性与细节质量。</p><br><br><p><strong>摘要：</strong> 本文提出Extend3D，一种无需训练的3D场景生成方法，基于对象中心的3D生成模型。为克服固定大小潜在空间的限制，文章扩展了潜在空间的x和y方向，并通过重叠块的方式应用生成模型进行分块生成，同时在每一步进行耦合。为了确保图像与潜在块的空间对齐，使用单目深度估计器生成点云作为初始场景，并通过SDEdit迭代优化遮挡区域。研究发现，在3D重构过程中将结构不完整视为噪声可实现更好的3D补全，称为“欠去噪”。此外，为提升子场景生成效果，引入3D感知优化目标以提高几何结构和纹理保真度。实验表明，该方法优于现有方法。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.29387 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 31 Mar 2026 07:55:04 +0000</pubDate>
+<pubDate>Tue, 31 Mar 2026 07:55:04 +0000</pubDate>
+</item>
+<item>
+<title>Neural Harmonic Textures：提升视角合成的神经表示方法</title>
+<link>https://tldr.takara.ai/p/2604.01204</link>
+<guid>https://tldr.takara.ai/p/2604.01204</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出Neural Harmonic Textures，提升视角合成效果。</p><br><br><p><strong>摘要：</strong> 本文提出Neural Harmonic Textures，一种基于神经表示的新方法，用于改进视角合成和重建任务。该方法在每个原始图元周围设置虚拟支架，并在其上锚定潜在特征向量。这些特征在光线交点处进行插值，并通过周期性激活函数处理，将alpha混合转化为谐波分量的加权和。最终通过小型神经网络进行解码，显著降低计算成本。该方法在实时视角合成中表现优异，同时弥补了基于图元与神经场方法之间的差距，并可无缝集成到现有图元基础的流水线中，还展示了其在2D图像拟合和语义重建中的通用性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2604.01204 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 01 Apr 2026 17:48:22 +0000</pubDate>
+<pubDate>Wed, 01 Apr 2026 17:48:22 +0000</pubDate>
+</item>
+<item>
+<title>提升大语言模型推理行为控制的稳定性方法</title>
+<link>https://tldr.takara.ai/p/2604.02113</link>
+<guid>https://tldr.takara.ai/p/2604.02113</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>通过稳定性过滤提升推理行为控制效果。</p><br><br><p><strong>摘要：</strong> 本文提出一种基于稳定性的方法，用于改进大语言模型中推理行为的控制。传统方法依赖关键词匹配检测行为边界，但发现大部分边界行为不稳定，无法重复生成目标行为。研究构建了一个概率模型，将内在推理行为视为上下文相关的随机事件，并提出稳定性过滤机制，仅保留能持续产生目标行为的边界。结合内容子空间投影去除噪声后，该方法在MATH-500数据集上达到0.784准确率，优于现有最佳基线。该方法可跨同架构模型迁移，提升多个模型性能。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2604.02113 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 02 Apr 2026 14:48:56 +0000</pubDate>
+<pubDate>Thu, 02 Apr 2026 14:48:56 +0000</pubDate>
+</item>
+<item>
+<title>基于深度学习的风力涡轮机叶片图像高效压缩框架</title>
+<link>https://tldr.takara.ai/p/2603.29927</link>
+<guid>https://tldr.takara.ai/p/2603.29927</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种结合分割与双模式压缩的深度学习框架，提升风力涡轮机图像处理效率。</p><br><br><p><strong>摘要：</strong> 本文针对风力涡轮机巡检中高分辨率图像传输效率低的问题，提出一种端到端的深度学习框架，实现叶片区域的精准分割与双模式（有损和无损）压缩。该框架包含一个改进的分割网络BU-Netv2+P，用于精确识别叶片区域；一个基于超先验的自编码器用于有损压缩；以及一个带有分层模型的扩展位回编码器，实现无损重建。此外，通过重用背景编码比特，消除了位回编码的顺序依赖，实现了并行化高效压缩。实验表明，该框架在大规模风力涡轮机数据集上表现出色，为自动化检测提供了实用解决方案。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.29927 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 31 Mar 2026 16:01:23 +0000</pubDate>
+<pubDate>Tue, 31 Mar 2026 16:01:23 +0000</pubDate>
+</item>
+<item>
+<title>AReS：一种高效的封闭式服务模型重编程方法</title>
+<link>https://tldr.takara.ai/p/2604.01474</link>
+<guid>https://tldr.takara.ai/p/2604.01474</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>AReS通过本地预训练编码器提升API调用效率与性能。</p><br><br><p><strong>摘要：</strong> 本文提出一种名为AReS的高效封闭式服务模型重编程方法，以解决传统Zeroth-Order Optimization（ZOO）方法在现代API（如GPT-4o）中因输入扰动不敏感而导致的优化困难和高成本问题。AReS通过单次API交互对本地预训练编码器进行初始化，并仅微调其轻量级层，随后在本地模型上进行白盒重编程，从而减少后续API调用。实验表明，AReS在GPT-4o上比零样本基线提升27.8%，并在多个数据集上优于现有方法，同时将API调用减少超过99.99%。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2604.01474 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 01 Apr 2026 23:31:09 +0000</pubDate>
+<pubDate>Wed, 01 Apr 2026 23:31:09 +0000</pubDate>
+</item>
+<item>
+<title>基于多模态Transformer的心力衰竭短期死亡率预测研究</title>
+<link>https://tldr.takara.ai/p/2604.01924</link>
+<guid>https://tldr.takara.ai/p/2604.01924</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>多模态Transformer在心衰短期死亡率预测中表现最佳。</p><br><br><p><strong>摘要：</strong> 本文评估了基于Transformer的模型在法国心力衰竭患者中的短期死亡率预测效果，比较了纯文本、纯结构化数据、多模态以及大语言模型（LLM）的方法。结果显示，结合实体级表示的临床文本比仅使用CLS嵌入更有效，而监督式多模态融合在文本和结构化变量上的表现最佳。相比之下，大语言模型在不同模态和解码策略下的表现不一致，纯文本提示优于结构化或多模态输入。研究指出，具备实体感知的多模态Transformer是短期心衰预后的可靠解决方案，而当前LLM提示在临床决策支持中仍存在局限。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2604.01924 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 02 Apr 2026 11:41:36 +0000</pubDate>
+<pubDate>Thu, 02 Apr 2026 11:41:36 +0000</pubDate>
+</item>
+<item>
+<title>基于智能体的超表面逆向设计框架</title>
+<link>https://tldr.takara.ai/p/2604.01480</link>
+<guid>https://tldr.takara.ai/p/2604.01480</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种可进化技能的智能体框架提升超表面逆向设计效率。</p><br><br><p><strong>摘要：</strong> 本文提出了一种基于智能体的超表面逆向设计框架，通过上下文级技能演化解决传统方法在任务间知识复用不足的问题。该框架结合代码生成代理、可演化的技能构件和基于物理仿真的确定性评估器，能够在不修改模型权重或底层物理求解器的情况下，迭代优化求解策略。实验表明，该框架显著提升了任务成功率和性能指标，并展现出一定的跨任务知识迁移能力，为更自主和易用的逆向设计流程提供了可行路径。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2604.01480 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 01 Apr 2026 23:35:40 +0000</pubDate>
+<pubDate>Wed, 01 Apr 2026 23:35:40 +0000</pubDate>
+</item>
+<item>
+<title>提升多模态大模型推理能力的LoT框架</title>
+<link>https://tldr.takara.ai/p/2604.01280</link>
+<guid>https://tldr.takara.ai/p/2604.01280</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>LoT框架提升多模态大模型在知识密集型问题中的推理表现。</p><br><br><p><strong>摘要：</strong> 本文提出一种无需训练的推理阶段框架LoT，用于提升多模态大语言模型（MLLM）在知识密集型问题中的表现。该框架通过分析模型注意力模式，识别与查询相关的视觉区域和文本信息，并通过轻量提示标记突出这些证据，引导模型重新关注关键信息。实验结果显示，LoT在多个基于知识的VQA基准测试中均取得显著提升，且在无文本上下文的视觉任务中也表现出色，无需额外训练或结构修改。代码将公开发布。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2604.01280 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 01 Apr 2026 18:00:08 +0000</pubDate>
+<pubDate>Wed, 01 Apr 2026 18:00:08 +0000</pubDate>
+</item>
+<item>
+<title>语言代理推理长度对性能的影响研究</title>
+<link>https://tldr.takara.ai/p/2604.02155</link>
+<guid>https://tldr.takara.ai/p/2604.02155</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>推理长度影响语言代理性能，短推理提升准确率，长推理反而降低。</p><br><br><p><strong>摘要：</strong> 本文研究了语言代理在执行任务前的推理长度对其性能的影响。通过在200个任务上测试不同推理长度（0-512 tokens），发现短推理（32 tokens）能显著提升准确率，而长推理（256 tokens）则导致性能下降。分析表明，短推理有助于正确选择功能，而长推理容易产生错误或幻觉。研究还提出一种结构化短推理方法FR-CoT，有效减少功能幻觉并提高可靠性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2604.02155 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 02 Apr 2026 15:25:13 +0000</pubDate>
+<pubDate>Thu, 02 Apr 2026 15:25:13 +0000</pubDate>
+</item>
+<item>
+<title>基于Transformer的自适应多阶段非边缘剪枝框架提升边缘检测效率</title>
+<link>https://tldr.takara.ai/p/2603.27661</link>
+<guid>https://tldr.takara.ai/p/2603.27661</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出Amped框架，提升边缘检测精度与效率。</p><br><br><p><strong>摘要：</strong> 本文提出一种名为Amped的自适应多阶段非边缘剪枝框架，用于提升边缘检测的计算效率和精度。该框架通过早期识别并移除高置信度的非边缘区域，显著降低计算量，同时保持较高的检测准确率。此外，作者还设计了一个简单高效的Transformer模型Streamline Edge Detector (SED)，在保持高性能的同时，实现了高达86.5%的ODS F-measure，并将计算量减少了40%。该方法为实际应用提供了良好的平衡，具有广泛的部署潜力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.27661 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 29 Mar 2026 12:26:35 +0000</pubDate>
+<pubDate>Sun, 29 Mar 2026 12:26:35 +0000</pubDate>
+</item>
+<item>
+<title>自动语音识别在濒危语言Ikema文档中的应用</title>
+<link>https://tldr.takara.ai/p/2603.26248</link>
+<guid>https://tldr.takara.ai/p/2603.26248</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>ASR技术有效提升濒危语言Ikema的转录效率。</p><br><br><p><strong>摘要：</strong> 本文研究了自动语音识别（ASR）在濒危语言Ikema中的应用。Ikema是日本冲绳的一种严重濒危语言，仅约1300名使用者，且多为60岁以上老人。研究团队构建了一个基于实地录音的语音语料库，并训练出一个字符错误率低至15%的ASR模型。通过评估发现，ASR的引入显著减少了语音转录的时间和认知负担，为濒危语言的规模化技术文档提供了可行路径。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.26248 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 27 Mar 2026 10:12:26 +0000</pubDate>
+<pubDate>Fri, 27 Mar 2026 10:12:26 +0000</pubDate>
+</item>
+<item>
+<title>基于动态系统的驾驶员注意力建模方法</title>
+<link>https://tldr.takara.ai/p/2603.28319</link>
+<guid>https://tldr.takara.ai/p/2603.28319</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新的注意力建模方法，提升汽车安全中的视觉分析。</p><br><br><p><strong>摘要：</strong> 本文提出一种基于自回归动态系统的驾驶员注意力建模方法，通过显式建模原始注视轨迹，结合环境变化和历史注视信息，提高对复杂环境中注意力转移的模拟精度。研究引入了以注视为中心的图结构和对象密度网络，用于捕捉注意力的随机性和对象依赖性。同时，发布了Focus100数据集，包含30名参与者观看第一视角驾驶视频的原始注视数据。该方法无需固定点过滤，生成更自然的注视轨迹和显著图，为动态环境中人类注意力的时间建模提供了新思路。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.28319 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 30 Mar 2026 11:41:11 +0000</pubDate>
+<pubDate>Mon, 30 Mar 2026 11:41:11 +0000</pubDate>
+</item>
+<item>
+<title>基于物理的神经网络框架用于热力耦合本构模型发现</title>
+<link>https://tldr.takara.ai/p/2603.28707</link>
+<guid>https://tldr.takara.ai/p/2603.28707</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种物理驱动的神经网络框架用于发现热力耦合本构模型。</p><br><br><p><strong>摘要：</strong> 本文提出了一种基于物理的神经网络框架，用于在完全耦合的热力学中发现本构模型。与传统基于Helmholtz自由能的公式不同，该方法采用内能和耗散势作为主要本构函数，以变形和熵表示。这种方法避免了混合凸性-凹性条件的强制，并有助于一致地纳入热力学原理。文章重点研究了无方向性和内部变量的材料。尽管公式以熵为基准，但温度被作为独立观测量处理，熵通过本构关系内部推断，从而实现无需熵数据的热力学一致性建模。网络的热力学可行性通过构造保证，内能和耗散势由输入凸神经网络表示，确保凸性和符合第二定律。对象性、材料对称性和归一化通过不变量表示和零锚定公式直接嵌入架构中。该框架在合成和实验数据集上进行了验证，包括纯热问题和软组织及填充橡胶的完全耦合热力学响应。结果表明，学习到的模型准确捕捉了底层本构行为。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.28707 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 30 Mar 2026 17:26:13 +0000</pubDate>
+<pubDate>Mon, 30 Mar 2026 17:26:13 +0000</pubDate>
+</item>
+<item>
+<title>自然语言处理与人类语言能力理解的关系研究</title>
+<link>https://tldr.takara.ai/p/2603.27809</link>
+<guid>https://tldr.takara.ai/p/2603.27809</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>NLP发展未显著提升对人类语言处理的理解。</p><br><br><p><strong>摘要：</strong> 本文探讨了计算机自然语言处理（NLP）与语言学及认知科学中对人类语言能力的理解之间的关系。文章回顾了NLP从早期发展到大语言模型时代的演变，并对比分析了各个主要范式与人类语言能力理论的异同。尽管当前聊天机器人在语言能力上表现出色，但作者指出，语言技术的发展并未显著加深我们对人类心智如何处理自然语言的认识。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.27809 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 29 Mar 2026 18:44:12 +0000</pubDate>
+<pubDate>Sun, 29 Mar 2026 18:44:12 +0000</pubDate>
+</item>
+<item>
+<title>当前AI在神经外科手术工具检测中的局限性研究</title>
+<link>https://tldr.takara.ai/p/2603.27341</link>
+<guid>https://tldr.takara.ai/p/2603.27341</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>AI在神经外科工具检测中仍存在显著挑战，难以通过单纯扩大模型规模提升性能。</p><br><br><p><strong>摘要：</strong> 本文探讨了当前先进AI模型在神经外科手术工具检测任务中的表现。尽管采用了多千亿参数的视觉语言模型并进行了大量训练，结果仍显示其在该任务中表现不佳。研究还发现，增加模型规模和训练时间带来的性能提升有限，表明某些障碍无法仅靠计算资源解决。文章分析了这些限制的主要原因，并提出了潜在解决方案，强调数据和标注的可用性可能并非唯一瓶颈。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.27341 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sat, 28 Mar 2026 17:18:40 +0000</pubDate>
+<pubDate>Sat, 28 Mar 2026 17:18:40 +0000</pubDate>
+</item>
+<item>
+<title>混合量子-经典机器学习在工业缺陷检测中的应用</title>
+<link>https://tldr.takara.ai/p/2603.28995</link>
+<guid>https://tldr.takara.ai/p/2603.28995</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>混合量子-经典模型在工业缺陷分类中表现优异。</p><br><br><p><strong>摘要：</strong> 本文研究了两种混合量子-经典机器学习方法，用于对铝TIG焊接图像中的缺陷进行分类，并与传统深度学习模型进行比较。通过卷积神经网络提取特征向量，将高维像素空间降维。第一种方法使用参数化量子特征映射编码特征，并利用变分量子线性求解器计算量子核矩阵；第二种方法则采用角度编码并在变分量子电路中训练模型。实验结果显示，虽然传统CNN模型表现稳定，但混合模型在二分类和多分类任务中也表现出色，表明其在工业质量检测中的应用潜力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.28995 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 30 Mar 2026 20:48:51 +0000</pubDate>
+<pubDate>Mon, 30 Mar 2026 20:48:51 +0000</pubDate>
+</item>
+<item>
+<title>对比不同CoT轨迹对模型推理能力的影响研究</title>
+<link>https://tldr.takara.ai/p/2604.01702</link>
+<guid>https://tldr.takara.ai/p/2604.01702</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>不同CoT轨迹影响模型推理性能，优化轨迹选择可提升表现。</p><br><br><p><strong>摘要：</strong> 本文对比了由两个模型生成的CoT轨迹对模型推理能力的影响。尽管两模型在训练损失上表现相近，但基于DeepSeek-R1-0528数据训练的模型在推理基准测试中表现较差。分析发现，gpt-oss-120b的推理路径更收敛且演绎性强，而DeepSeek-R1-0528则偏向发散和分支多的探索模式。这种差异导致模型易陷入冗余分支，影响解题效率。通过过滤高频分支轨迹，实验显示模型性能显著提升，AIME25等基准测试中最高提升达5.1%。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2604.01702 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 02 Apr 2026 07:00:54 +0000</pubDate>
+<pubDate>Thu, 02 Apr 2026 07:00:54 +0000</pubDate>
+</item>
+<item>
+<title>Syn4Seg：提升少样本语义分割的生成增强框架</title>
+<link>https://tldr.takara.ai/p/2603.27206</link>
+<guid>https://tldr.takara.ai/p/2603.27206</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Syn4Seg通过合成数据增强提升少样本语义分割性能。</p><br><br><p><strong>摘要：</strong> 本文提出Syn4Seg，一个基于生成模型的少样本语义分割框架，旨在解决标注稀缺情况下新类别覆盖不足和伪标签质量低的问题。该方法通过构建去重的嵌入提示库扩大新类别的图像覆盖，并采用两阶段伪标签优化策略，先过滤低一致性区域，再结合全局与局部统计信息重新标注不确定像素。最后通过约束SAM更新仅对边界带和未标记像素进行细化，以提高轮廓精度。实验表明，Syn4Seg在PASCAL-5i和COCO-20i数据集上均取得显著提升，验证了合成数据在少样本语义分割中的有效性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.27206 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sat, 28 Mar 2026 09:22:50 +0000</pubDate>
+<pubDate>Sat, 28 Mar 2026 09:22:50 +0000</pubDate>
+</item>
+<item>
+<title>人机协同控制在AI辅助编程教育中的教学方法研究</title>
+<link>https://tldr.takara.ai/p/2604.00281</link>
+<guid>https://tldr.takara.ai/p/2604.00281</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>文章提出一种基于系统工程的人机协同教学方法，提升AI辅助编程的可控性。</p><br><br><p><strong>摘要：</strong> 本文探讨了大型语言模型在计算机科学教育中的应用，指出当前AI辅助编程工具存在目标漂移问题。作者主张将人机协同控制视为稳定的教学问题，而非通向AI自主的过渡阶段。通过引入系统工程和控制理论的概念，文章提出了一种新的本科计算机实验课程设计，强调规划与执行分离，并在实验中引入概念对齐的漂移以支持错误诊断与恢复。研究还进行了三组对比实验，验证了结构化规划的有效性，为未来AI工具下的教学提供了理论基础和方法指导。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2604.00281 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 31 Mar 2026 22:14:02 +0000</pubDate>
+<pubDate>Tue, 31 Mar 2026 22:14:02 +0000</pubDate>
+</item>
+<item>
+<title>基于VAR模型的文本引导图像编辑方法研究</title>
+<link>https://tldr.takara.ai/p/2603.28367</link>
+<guid>https://tldr.takara.ai/p/2603.28367</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种改进的文本引导图像编辑框架，提升结构一致性与编辑质量。</p><br><br><p><strong>摘要：</strong> 本文针对基于视觉自回归（VAR）模型的文本引导图像编辑方法存在的两个关键问题——可编辑标记的精确定位和编辑结果的结构一致性——提出了一种新的解决方案。通过分析VAR模型中的中间特征分布，作者引入了从粗到细的标记定位策略，设计了特征注入机制以增强结构一致性，并开发了基于强化学习的自适应特征注入方案，以优化编辑质量和结构保留。实验表明，该方法在局部和全局编辑任务中均优于现有技术。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.28367 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 30 Mar 2026 12:35:33 +0000</pubDate>
+<pubDate>Mon, 30 Mar 2026 12:35:33 +0000</pubDate>
+</item>
+<item>
+<title>结构与语义支架对神经多样性学习者阅读理解的影响研究</title>
+<link>https://tldr.takara.ai/p/2603.28370</link>
+<guid>https://tldr.takara.ai/p/2603.28370</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究探讨不同阅读支架对特殊需求学生的阅读效果影响。</p><br><br><p><strong>摘要：</strong> 本研究基于建构-整合模型和条件性支架视角，考察结构型与语义型支架在监督式包容性阅读环境中的作用。通过四种文本模态（原始文本、分句文本、带图示的分句文本、带图示和关键词标签的分句文本）对比，发现不同学生对支架的反应存在异质性。部分学生表现出分句和图示带来的益处，而另一些则因视觉支架引入而出现协调成本增加。体验评分显示模态间差异有限，但临床复杂性与理解难度感知有关。学生反馈多要求更简洁的用词和更多视觉支持。研究结果表明，没有单一最优支架，强调需要可调节的支架设计，并为人类与AI在包容性阅读中的协同调控提供设计启示。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2603.28370 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 30 Mar 2026 12:38:41 +0000</pubDate>
+<pubDate>Mon, 30 Mar 2026 12:38:41 +0000</pubDate>
+</item>
+<item>
+<title>AI-Mediated Explainable Regulation for Justice</title>
+<link>https://tldr.takara.ai/p/2604.00237</link>
+<guid>https://tldr.takara.ai/p/2604.00237</guid>
+<content:encoded><![CDATA[
+
+  Present practice of deciding on regulation faces numerous problems that make adopted regulations static, unexplained, unduly influenced by powerful interest groups, and stained with a perception of illegitimacy. These well-known problems with the regulatory process can lead to injustice and have substantial negative effects on society and democracy. We discuss a new approach that utilizes distributed artificial intelligence (AI) to make a regulatory recommendation that is explainable and adaptable by design. We outline the main components of a system that can implement this approach and show how it would resolve the problems with the present regulatory system. This approach models and reasons about stakeholder preferences with separate preference models, while it aggregates these preferences in a value sensitive way. Such recommendations can be updated due to changes in facts or in values and are inherently explainable. We suggest how stakeholders can make their preferences known to the system and how they can verify whether they were properly considered in the regulatory decision. The resulting system promises to support regulatory justice, legitimacy, and compliance.
+
+]]></content:encoded>
+<pubDate>Tue, 31 Mar 2026 21:00:42 +0000</pubDate>
+<pubDate>Tue, 31 Mar 2026 21:00:42 +0000</pubDate>
+</item>
+<item>
+<title>KMM-CP: Practical Conformal Prediction under Covariate Shift via Selective Kernel Mean Matching</title>
+<link>https://tldr.takara.ai/p/2603.26415</link>
+<guid>https://tldr.takara.ai/p/2603.26415</guid>
+<content:encoded><![CDATA[
+
+  Uncertainty quantification is essential for deploying machine learning models in high-stakes domains such as scientific discovery and healthcare. Conformal Prediction (CP) provides finite-sample coverage guarantees under exchangeability, an assumption often violated in practice due to distribution shift. Under covariate shift, restoring validity requires importance weighting, yet accurate density-ratio estimation becomes unstable when training and test distributions exhibit limited support overlap. We propose KMM-CP, a conformal prediction framework based on Kernel Mean Matching (KMM) for covariate-shift correction. We show that KMM directly controls the bias-variance components governing conformal coverage error by minimizing RKHS moment discrepancy under explicit weight constraints, and establish asymptotic coverage guarantees under mild conditions. We then introduce a selective extension that identifies regions of reliable support overlap and restricts conformal correction to this subset, further improving stability in low-overlap regimes. Experiments on molecular property prediction benchmarks with realistic distribution shifts show that KMM-CP reduces coverage gap by over 50% compared to existing approaches. The code is available at https://github.com/siddharthal/KMM-CP.
+
+]]></content:encoded>
+<pubDate>Fri, 27 Mar 2026 13:44:42 +0000</pubDate>
+<pubDate>Fri, 27 Mar 2026 13:44:42 +0000</pubDate>
+</item>
+<item>
+<title>Look, Compare and Draw: Differential Query Transformer for Automatic Oil Painting</title>
+<link>https://tldr.takara.ai/p/2603.27720</link>
+<guid>https://tldr.takara.ai/p/2603.27720</guid>
+<content:encoded><![CDATA[
+
+  This work introduces a new approach to automatic oil painting that emphasizes the creation of dynamic and expressive brushstrokes. A pivotal challenge lies in mitigating the duplicate and common-place strokes, which often lead to less aesthetic outcomes. Inspired by the human painting process, \ie, observing, comparing, and drawing, we incorporate differential image analysis into a neural oil painting model, allowing the model to effectively concentrate on the incremental impact of successive brushstrokes. To operationalize this concept, we propose the Differential Query Transformer (DQ-Transformer), a new architecture that leverages differentially derived image representations enriched with positional encoding to guide the stroke prediction process. This integration enables the model to maintain heightened sensitivity to local details, resulting in more refined and nuanced stroke generation. Furthermore, we incorporate adversarial training into our framework, enhancing the accuracy of stroke prediction and thereby improving the overall realism and fidelity of the synthesized paintings. Extensive qualitative evaluations, complemented by a controlled user study, validate that our DQ-Transformer surpasses existing methods in both visual realism and artistic authenticity, typically achieving these results with fewer strokes. The stroke-by-stroke painting animations are available on our project website.
+
+]]></content:encoded>
+<pubDate>Sun, 29 Mar 2026 14:52:10 +0000</pubDate>
+<pubDate>Sun, 29 Mar 2026 14:52:10 +0000</pubDate>
+</item>
+<item>
+<title>Article and Comment Frames Shape the Quality of Online Comments</title>
+<link>https://tldr.takara.ai/p/2603.27889</link>
+<guid>https://tldr.takara.ai/p/2603.27889</guid>
+<content:encoded><![CDATA[
+
+  Framing theory posits that how information is presented shapes audience responses, but computational work has largely ignored audience reactions. While recent work showed that article framing systematically shapes the content of reader responses, this paper asks: Does framing also affect response quality? Analyzing 1M comments across 2.7K news articles, we operationalize quality as comment health (constructive, good-faith contributions). We find that article frames significantly predict comment health while controlling for topic, and that comments that adopt the article frame are healthier than those that depart from it. Further, unhealthy top-level comments tend to generate more unhealthy responses, independent of the frame being used in the comment. Our results establish a link between framing theory and discourse quality, laying the groundwork for downstream applications. We illustrate this potential with a proactive frame-aware LLM- based system to mitigate unhealthy discourse
+
+]]></content:encoded>
+<pubDate>Sun, 29 Mar 2026 22:01:27 +0000</pubDate>
+<pubDate>Sun, 29 Mar 2026 22:01:27 +0000</pubDate>
+</item>
+<item>
+<title>Adaptive Delayed-Update Cyclic Algorithm for Variational Inequalities</title>
+<link>https://tldr.takara.ai/p/2603.29128</link>
+<guid>https://tldr.takara.ai/p/2603.29128</guid>
+<content:encoded><![CDATA[
+
+  Cyclic block coordinate methods are a fundamental class of first-order algorithms, widely used in practice for their simplicity and strong empirical performance. Yet, their theoretical behavior remains challenging to explain, and setting their step sizes -- beyond classical coordinate descent for minimization -- typically requires careful tuning or line-search machinery. In this work, we develop $\texttt{ADUCA}$ (Adaptive Delayed-Update Cyclic Algorithm), a cyclic algorithm addressing a broad class of Minty variational inequalities with monotone Lipschitz operators. $\texttt{ADUCA}$ is parameter-free: it requires no global or block-wise Lipschitz constants and uses no per-epoch line search, except at initialization. A key feature of the algorithm is using operator information delayed by a full cycle, which makes the algorithm compatible with parallel and distributed implementations, and attractive due to weakened synchronization requirements across blocks. We prove that $\texttt{ADUCA}$ attains (near) optimal global oracle complexity as a function of target error $ε>0,$ scaling with $1/ε$ for monotone operators, or with $\log^2(1/ε)$ for operators that are strongly monotone.
+
+]]></content:encoded>
+<pubDate>Tue, 31 Mar 2026 01:23:21 +0000</pubDate>
+<pubDate>Tue, 31 Mar 2026 01:23:21 +0000</pubDate>
+</item>
+<item>
+<title>PRISM: Differentiable Analysis-by-Synthesis for Fixel Recovery in Diffusion MRI</title>
+<link>https://tldr.takara.ai/p/2604.00250</link>
+<guid>https://tldr.takara.ai/p/2604.00250</guid>
+<content:encoded><![CDATA[
+
+  Diffusion MRI microstructure fitting is nonconvex and often performed voxelwise, which limits fiber peak recovery in narrow crossings. This work introduces PRISM, a differentiable analysis-by-synthesis framework that fits an explicit multi-compartment forward model end-to-end over spatial patches. The model combines cerebrospinal fluid (CSF), gray matter, up to K white-matter fiber compartments (stick-and-zeppelin), and a restricted compartment, with explicit fiber directions and soft model selection via repulsion and sparsity priors. PRISM supports a fast MSE objective and a Rician negative log-likelihood (NLL) that jointly learns sigma without oracle information. A lightweight nuisance calibration module (smooth bias field and per-measurement scale/offset) is included for robustness and regularized to identity in clean-data tests. On synthetic crossing-fiber data (SNR=30; five methods, 16 crossing angles), PRISM achieves 3.5 degrees best-match angular error with 95% recall, which is 1.9x lower than the best baseline (MSMT-CSD, 6.8 degrees, 83% recall); in NLL mode with learned sigma, error drops to 2.3 degrees with 99% recall, resolving crossings down to 20 degrees. On the DiSCo1 phantom (NLL mode), PRISM improves connectivity correlation over CSD baselines at all four tracking angles (best r=.934 at 25 degrees vs. .920 for MSMT-CSD). Whole-brain HCP fitting (~741k voxels, MSE mode) completes in ~12 min on a single GPU with near-identical results across random seeds.
+
+]]></content:encoded>
+<pubDate>Tue, 31 Mar 2026 21:22:49 +0000</pubDate>
+<pubDate>Tue, 31 Mar 2026 21:22:49 +0000</pubDate>
+</item>
+<item>
+<title>GEAKG: Generative Executable Algorithm Knowledge Graphs</title>
+<link>https://tldr.takara.ai/p/2603.27922</link>
+<guid>https://tldr.takara.ai/p/2603.27922</guid>
+<content:encoded><![CDATA[
+
+  In the context of algorithms for problem solving, procedural knowledge -- the know-how of algorithm design and operator composition -- remains implicit in code, lost between runs, and must be re-engineered for each new domain. Knowledge graphs (KGs) have proven effective for organizing declarative knowledge, yet current KG paradigms provide limited support for representing procedural knowledge as executable, learnable graph structures. We introduce \textit{Generative Executable Algorithm Knowledge Graphs} (GEAKG), a class of KGs whose nodes store executable operators, whose edges encode learned composition patterns, and whose traversal generates solutions. A GEAKG is \emph{generative} (topology and operators are synthesized by a Large Language Model), \emph{executable} (every node is runnable code), and \emph{transferable} (learned patterns generalize zero-shot across domains). The framework is domain-agnostic at the engine level: the same three-layer architecture and Ant Colony Optimization (ACO)-based learning engine can be instantiated across domains, parameterized by a pluggable ontology (\texttt{RoleSchema}). Two case studies -- sharing no domain-specific framework code -- provide concrete evidence for this framework hypothesis: (1)~Neural Architecture Search across 70 cross-dataset transfer pairs on two tabular benchmarks, and (2)~Combinatorial Optimization, where knowledge learned on the Traveling Salesman Problem transfers zero-shot to scheduling and assignment domains. Taken together, the results support that algorithmic expertise can be explicitly represented, learned, and transferred as executable knowledge graphs.
+
+]]></content:encoded>
+<pubDate>Mon, 30 Mar 2026 00:42:48 +0000</pubDate>
+<pubDate>Mon, 30 Mar 2026 00:42:48 +0000</pubDate>
+</item>
+<item>
+<title>PReD: An LLM-based Foundation Multimodal Model for Electromagnetic Perception, Recognition, and Decision</title>
+<link>https://tldr.takara.ai/p/2603.28183</link>
+<guid>https://tldr.takara.ai/p/2603.28183</guid>
+<content:encoded><![CDATA[
+
+  Multimodal Large Language Models have demonstrated powerful cross-modal understanding and reasoning capabilities in general domains. However, in the electromagnetic (EM) domain, they still face challenges such as data scarcity and insufficient integration of domain knowledge. This paper proposes PReD, the first foundation model for the EM domain that covers the intelligent closed-loop of "perception, recognition, decision-making." We constructed a high-quality multitask EM dataset, PReD-1.3M, and an evaluation benchmark, PReD-Bench. The dataset encompasses multi-perspective representations such as raw time-domain waveform, frequency-domain spectrograms, and constellation diagrams, covering typical features of communication and radar signals. It supports a range of core tasks, including signal detection, modulation recognition, parameter estimation, protocol recognition, radio frequency fingerprint recognition, and anti-jamming decision-making. PReD adopts a multi-stage training strategy that unifies multiple tasks for EM signals. It achieves closed-loop optimization from end-to-end signal understanding to language-driven reasoning and decision-making, significantly enhancing EM domain expertise while maintaining general multimodal capabilities. Experimental results show that PReD achieves state-of-the-art performance on PReD-Bench constructed from both open-source and self-collected signal datasets. These results collectively validate the feasibility and potential of vision-aligned foundation models in advancing the understanding and reasoning of EM signals.
+
+]]></content:encoded>
+<pubDate>Mon, 30 Mar 2026 08:47:02 +0000</pubDate>
+<pubDate>Mon, 30 Mar 2026 08:47:02 +0000</pubDate>
+</item>
 
 <item>
 <title>多模态故事生成框架VstoryGen提升叙事一致性与电影感</title>
