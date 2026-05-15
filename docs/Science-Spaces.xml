@@ -4,19 +4,16 @@
 <title>科学空间|Scientific Spaces</title>
 <link>https://kexue.fm/</link>
 
+
 <item>
 <title>DeepSeek V4的tid2eid是怎么来的？</title>
 <link>https://spaces.ac.cn/archives/11750</link>
 <guid>https://spaces.ac.cn/archives/11750</guid>
 <content:encoded><![CDATA[
-
-  <p>训过MoE的同学都知道，如果把整个模型的MLP部分都换成MoE，那么靠近Embedding的前几层MoE往往很难实现负载均衡。对此，<a href="https://arxiv.org/abs/2412.19437" target="_blank">DeepSeek V3</a>，包括我们的<a href="https://arxiv.org/abs/2507.20534" target="_blank">Kimi K2</a>，采取的应对策略是“first_k_dense”——顾名思义，就是前$k$层不用MoE而用常规的Dense型GLU。到了<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf" target="_blank">DeepSeek V4</a>，这个策略改成了“first_k_hash”。</p><p>这里的“hash”指的是“Hash Routing”，提出自<a href="https://arxiv.org/abs/2106.04426" target="_blank">《Hash Layers For Large Sparse Models》</a>，它通过一张事先确定的映射表tid2eid来为每个Token分配Expert。本文来探讨一下如何生成这个tid2eid。</p><p class="more"><a href="https://spaces.ac.cn/archives/11750" title="DeepSeek V4的tid2eid是怎么来的？">[...]</a></p>
-
+<p>训过MoE的同学都知道，如果把整个模型的MLP部分都换成MoE，那么靠近Embedding的前几层MoE往往很难实现负载均衡。对此，<a href="https://arxiv.org/abs/2412.19437" target="_blank">DeepSeek V3</a>，包括我们的<a href="https://arxiv.org/abs/2507.20534" target="_blank">Kimi K2</a>，采取的应对策略是“first_k_dense”——顾名思义，就是前$k$层不用MoE而用常规的Dense型GLU。到了<a href="https://huggingface.co/deepseek-ai/DeepSeek-V4-Pro/blob/main/DeepSeek_V4.pdf" target="_blank">DeepSeek V4</a>，这个策略改成了“first_k_hash”。</p><p>这里的“hash”指的是“Hash Routing”，提出自<a href="https://arxiv.org/abs/2106.04426" target="_blank">《Hash Layers For Large Sparse Models》</a>，它通过一张事先确定的映射表tid2eid来为每个Token分配Expert。本文来探讨一下如何生成这个tid2eid。</p><p class="more"><a href="https://spaces.ac.cn/archives/11750" title="DeepSeek V4的tid2eid是怎么来的？">[...]</a></p>
 ]]></content:encoded>
 <pubDate>Fri, 15 May 2026 10:52:00 +0800</pubDate>
-<pubDate>Fri, 15 May 2026 10:52:00 +0800</pubDate>
 </item>
-
 <item>
 <title>FID作为生成模型损失函数的可行性探讨</title>
 <link>https://spaces.ac.cn/archives/11738</link>
