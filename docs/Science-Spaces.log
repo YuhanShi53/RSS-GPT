@@ -18510,3 +18510,18 @@ Existing_entries: 105
 Fetching from https://spaces.ac.cn/feed
 append_entries: 0
 Finish: 2026-05-15 02:40:02.249781
+------------------------------------------------------
+Started: 2026-05-15 08:43:34.849716
+Existing_entries: 105
+Fetching from https://spaces.ac.cn/feed
+Json decode failed:
+{
+  "title": "MoE模型中前几层负载均衡策略的优化",
+  "short_summary": "探讨如何生成tid2eid映射表以优化MoE模型前几层的负载均衡。",
+  "summary": "文章讨论了在将整个模型的MLP部分替换为MoE时，靠近Embedding的前几层难以实现负载均衡的问题。为了解决这一问题，早期采用的是"first_k_dense"策略，即前k层使用常规Dense型GLU。后来改为"first_k_hash"，利用Hash Routing通过预设的tid2eid映射表为每个Token分配Expert。本文重点分析了如何生成该映射表，以提升模型效率和性能。",
+  "keyword": ["MoE", "负载均衡", "Hash Routing"]
+}Summarization failed, append the original article
+error: Expecting ',' delimiter: line 4 column 83 (char 173). Line: 406.
+Append: [DeepSeek V4的tid2eid是怎么来的？](https://spaces.ac.cn/archives/11750)
+append_entries: 1
+Finish: 2026-05-15 08:43:39.205802
