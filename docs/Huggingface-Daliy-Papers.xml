@@ -4,6 +4,608 @@
 <title>Takara TLDR - Daily AI Papers</title>
 <link>https://tldr.takara.ai</link>
 
+<item>
+<title>EvoPool：基于进化多智能体的高效标注框架</title>
+<link>https://tldr.takara.ai/p/2606.01617</link>
+<guid>https://tldr.takara.ai/p/2606.01617</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>EvoPool通过进化机制提升专业领域标注效率与精度。</p><br><br><p><strong>摘要：</strong> 本文提出EvoPool，一个受达尔文进化启发的多智能体框架，用于在高成本标注任务中提升模型性能。该框架通过三个专业代理生成可执行标注代码，利用小验证集提供适应度信号，并通过确定性门控筛选有效、多样且具有边际贡献的标注器。EvoAgg通过结合语义特征和标注器投票特征，将投票结果映射为软训练标签。实验表明，EvoPool在多个专业任务中显著优于现有LLM标注方法，且运行成本极低。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.01617 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 03:10:37 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 03:10:37 +0000</pubDate>
+</item>
+<item>
+<title>基于几何校正的视觉定位方法FlatVPR</title>
+<link>https://tldr.takara.ai/p/2606.01734</link>
+<guid>https://tldr.takara.ai/p/2606.01734</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>FlatVPR通过线性插值提升视觉定位精度与地图轻量化。</p><br><br><p><strong>摘要：</strong> 本文提出一种名为FlatVPR的新颖几何校正方法，旨在解决视觉定位（VPR）中地图轻量化与定位精度之间的权衡问题。该方法通过强制特征流形结构，使相邻锚点间的描述符可通过线性插值得到准确重建。尽管现有模型如DINOv2-ViT-S/14提供鲁棒语义特征，但其潜在流形存在显著曲率，导致物理空间中的均匀运动在特征空间中表现为高度非线性轨迹。为此，研究引入残差变换对原始特征进行调整，并通过数学基础的Pullback Flatness Loss最小化中间特征与相邻锚点线段的偏差，从而减少流形曲率。实验表明，在NCLT数据集上，该方法在极端稀疏锚点条件下仍能显著提升性能。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.01734 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 05:56:59 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 05:56:59 +0000</pubDate>
+</item>
+<item>
+<title>基于扩散模型的超低比特率图像压缩方法SPRDiff</title>
+<link>https://tldr.takara.ai/p/2606.01608</link>
+<guid>https://tldr.takara.ai/p/2606.01608</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>SPRDiff提升超低比特率图像压缩的感知与像素级保真度。</p><br><br><p><strong>摘要：</strong> 现有极端压缩方法难以在率失真感知之间取得平衡，通常更注重视觉真实感而牺牲像素级精度。为解决这一问题，本文提出SPRDiff，一种基于扩散模型的压缩方法，结合语义和像素表示以提升超低比特率下的重建质量。该方法采用三编码器架构，利用高保真特征补偿冻结VAE编码器的限制，并引入感知失真重建模块，生成结构保留且具备语义与像素级条件信号的粗略重建。实验表明，SPRDiff在低于0.03 bpp的比特率下优于现有方法，在保持感知质量和像素级一致性方面表现优异。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.01608 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 02:59:31 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 02:59:31 +0000</pubDate>
+</item>
+<item>
+<title>基于真实噪声合成的扩散MRI参数估计研究</title>
+<link>https://tldr.takara.ai/p/2606.02044</link>
+<guid>https://tldr.takara.ai/p/2606.02044</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>真实噪声合成提升扩散MRI参数估计准确性。</p><br><br><p><strong>摘要：</strong> 本文研究了扩散MRI在噪声环境下参数估计的挑战，指出模拟数据与实际信号之间的噪声特征差异会导致协变量偏移问题。为此，作者提出了一种真实噪声合成（RNS）框架，结合瑞利分布期望和有效噪声方差，以提高参数估计的准确性。实验表明，忽略噪声效应会导致低信噪比下的系统性偏差，而引入RNS可显著减少偏差并提升精度。该方法对噪声估计的准确性敏感，但对回归架构不敏感，适用于高b值或高空间分辨率的低信噪比场景。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.02044 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 10:35:33 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 10:35:33 +0000</pubDate>
+</item>
+<item>
+<title>MT-EditFlow：提升多轮图像编辑性能的强化学习框架</title>
+<link>https://tldr.takara.ai/p/2606.01985</link>
+<guid>https://tldr.takara.ai/p/2606.01985</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>MT-EditFlow优化多轮图像编辑，提升模型稳定性与性能。</p><br><br><p><strong>摘要：</strong> 本文提出MT-EditFlow，一种基于流匹配的强化学习框架，用于解决多轮图像编辑中的失败问题。传统模型在多轮编辑中容易因单次失败或误差累积而失效。MT-EditFlow通过引入多轮视角和多奖励机制，有效优化奖励信号，提升编辑成功率和稳定性。实验表明，该方法在多个基础模型上表现优异，尤其在FLUX.1-Kontext-dev上提升了6.85分，优于当前最先进的开源模型。MT-EditFlow为更自然的人机协作提供了可靠基础。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.01985 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 09:46:10 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 09:46:10 +0000</pubDate>
+</item>
+<item>
+<title>MetricScenes数据集提升单目几何估计的尺度准确性</title>
+<link>https://tldr.takara.ai/p/2606.02379</link>
+<guid>https://tldr.takara.ai/p/2606.02379</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出MetricScenes数据集解决单目几何估计中的尺度低估问题。</p><br><br><p><strong>摘要：</strong> 本文针对单目几何估计中普遍存在的尺度崩溃问题，提出一个新的度量基准数据集MetricScenes。该数据集来源于多种真实场景，包括互联网照片和立体图像，通过现有方法估计相机位姿和初始深度图，并利用地理标签和已知的立体相机基线恢复绝对尺度。同时，采用新的两阶段泊松补全方法提升深度图质量。在该数据集上微调MoGe-2模型显著缓解了尺度崩溃问题，在开放场景中实现了更高的度量精度，同时保持了标准基准上的领先性能。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.02379 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 15:28:13 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 15:28:13 +0000</pubDate>
+</item>
+<item>
+<title>SentGuard：一种实时句子级流式安全防护方法</title>
+<link>https://tldr.takara.ai/p/2606.02041</link>
+<guid>https://tldr.takara.ai/p/2606.02041</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>SentGuard实现实时句子级安全检测，提升模型输出安全性。</p><br><br><p><strong>摘要：</strong> 随着大语言模型生成长文本的能力增强，实时安全防护变得尤为重要。现有方法在响应级别或标记级别进行干预，各有局限。为此，研究者提出SentGuard，一种与生成过程并行运行的句子级流式防护机制。该方法通过轻量缓冲区将流式标记分组为句子块，并仅释放经过验证的块，从而在保持低误报率的同时，在两个句子内检测出90.5%的不安全情况。研究还构建了StreamSafe基准，用于评估不同安全风险的演变。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.02041 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 10:30:08 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 10:30:08 +0000</pubDate>
+</item>
+<item>
+<title>Beyond Isolated Behaviors: Hierarchical User Modeling for LLM Personalization</title>
+<link>https://tldr.takara.ai/p/2606.02300</link>
+<guid>https://tldr.takara.ai/p/2606.02300</guid>
+<content:encoded><![CDATA[
+
+  Large Language Models (LLMs) have demonstrated remarkable capabilities across diverse domains, yet personalizing their outputs to individual users remains an open challenge. Existing approaches predominantly adopt a flat behavioral paradigm, aggregating user behaviors without an explicit account of how they are organized into deeper behavioral structures. In this work, we draw on Pierre Bourdieu's Theory of Practice to propose PHF (Practice-Habitus-Field), a sociologically grounded framework that reconceptualizes LLM personalization through three hierarchical levels: individual behaviors as practices, their temporal accumulation into stable dispositions as habitus, and shared regularities across similar users as fields. We instantiate PHF through $\mathrm{PHF}_{\text{Compass}}$, a lightweight and model-agnostic implementation based on a frozen LLM. Experiments on the Language Model Personalization (LaMP) benchmark demonstrate consistent improvements across diverse tasks, while further analyses validate the interpretability and extensibility of the learned behavioral structures.
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 14:23:17 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 14:23:17 +0000</pubDate>
+</item>
+<item>
+<title>轻量级Transformer架构LALE在遥感图像分割中的应用</title>
+<link>https://tldr.takara.ai/p/2606.02092</link>
+<guid>https://tldr.takara.ai/p/2606.02092</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>LALE在效率与性能间取得平衡，适用于遥感图像分割。</p><br><br><p><strong>摘要：</strong> 本文提出一种名为LALE的轻量级Transformer架构，用于遥感图像分割。该架构通过分层设计，在高分辨率下使用轻量级ConvMixer提取局部特征，低分辨率下使用Transformer捕捉全局上下文，从而在保持高效的同时提升模型性能。结合全MLP多尺度解码器和RMSNorm、StarReLU等技术，进一步降低计算和参数量。在大规模ARAS400k数据集上，LALE在参数、存储、计算量等方面均优于CNN、Transformer及混合模型，最小版本仅1.6M参数，性能接近最佳基线UPerNet。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.02092 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 11:18:49 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 11:18:49 +0000</pubDate>
+</item>
+<item>
+<title>智能系统监测与故障分类方法研究</title>
+<link>https://tldr.takara.ai/p/2606.02494</link>
+<guid>https://tldr.takara.ai/p/2606.02494</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>文章提出一种针对智能系统的监测方法，区分结构缺陷与任务错误。</p><br><br><p><strong>摘要：</strong> 本文探讨了进入生产阶段的智能系统中，结构缺陷是主要故障来源，而任务级错误难以检测。作者提出了一种基于三个维度（质量、适用性、效率）和三个监控范围（运行内、跨运行、结构性）的监测与分类方法，利用方差作为特征信号。通过合成测试环境验证，发现不同监控范围对应不同类型的故障，且任务级错误被结构缺陷掩盖。该方法将97%的故障自动分类，仅2%需人工检查，并建议随着集成缺陷的解决，监控重点应从结构分析转向错误检测和可靠性跟踪。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.02494 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 17:01:53 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 17:01:53 +0000</pubDate>
+</item>
+<item>
+<title>AI生成的虚构作者及其在学术出版中的影响</title>
+<link>https://tldr.takara.ai/p/2606.02184</link>
+<guid>https://tldr.takara.ai/p/2606.02184</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>AI生成的虚构作者被广泛用于学术文档，影响了真实学术出版物。</p><br><br><p><strong>摘要：</strong> 文章揭示了AI语言模型生成的虚构人物如Elena Vasquez和Marcus Chen被用作火山专家、宇航员、小说主角等角色，这些人物从未真实存在。研究发现，这些AI生成的角色并非随机出现，而是形成有规律的组合，且不同模型家族有不同的角色配对。这些虚构作者出现在多个学术平台上，如Zenodo和ResearchGate，甚至拥有真实的DOI标识符，导致虚假出版物被学术系统收录。这些行为可作为模型发布时间的可靠时间标记。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.02184 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 12:38:56 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 12:38:56 +0000</pubDate>
+</item>
+<item>
+<title>基于时间感知扩散的生成推荐框架TDPM</title>
+<link>https://tldr.takara.ai/p/2606.01670</link>
+<guid>https://tldr.takara.ai/p/2606.01670</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>TDPM通过时间感知扩散提升生成推荐效果。</p><br><br><p><strong>摘要：</strong> 本文提出一种新的生成推荐框架TDPM，通过在SID令牌上设计时间感知扩散机制来解决传统扩散模型对所有物品统一处理的不足。该方法将用户偏好分解为长期稳定的周期偏好和近期事件触发的点偏好，并在扩散过程中引入时间因素。实验表明，TDPM在HR@20和NDCG@20指标上分别提升了29.21%和25.45%，优于现有基准模型。消融实验进一步验证了时间感知扩散的重要性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.01670 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 04:27:49 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 04:27:49 +0000</pubDate>
+</item>
+<item>
+<title>AI音乐追踪：从二元分类到多阶段评估的转变</title>
+<link>https://tldr.takara.ai/p/2606.01686</link>
+<guid>https://tldr.takara.ai/p/2606.01686</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>文章提出AI音乐追踪概念，推动音乐制作中的AI评估向更细致方向发展。</p><br><br><p><strong>摘要：</strong> 随着Suno和Udio等生成平台达到人类级别的音频质量，AI在音乐制作流程中的应用已从简单的曲目生成扩展到人声合成、编曲和专业母带处理。然而，当前的检测研究仍局限于‘AI或人类’的二元分类，无法反映现实中的混合生产流程。实际中，AI工具常用于优化或母带处理人类作品，而人类工程师也会对AI生成内容进行后期处理以确保专业质量。此外，用户还可能通过对抗手段绕过AI检测。为此，本文提出了“AI音乐追踪”概念，并引入HAIM数据集，用于识别音乐制作中不同阶段的AI介入情况，旨在推动领域从二元分类转向更精细的结构化评估。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.01686 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 04:51:12 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 04:51:12 +0000</pubDate>
+</item>
+<item>
+<title>ProbRes：一种基于波动率动态的时序概率校准方法</title>
+<link>https://tldr.takara.ai/p/2606.02117</link>
+<guid>https://tldr.takara.ai/p/2606.02117</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>ProbRes通过建模波动率动态提升时序预测的准确性与可靠性。</p><br><br><p><strong>摘要：</strong> ProbRes是一种后处理的概率校准方法，旨在通过显式学习波动率动态来改进时间序列的概率预测。该方法在训练过程中采用两个与架构无关的模块，分别建模条件均值和条件波动率，并在推理阶段通过重采样标准化残差生成预测分布。ProbRes适用于单变量和多变量时间序列，在多种误差分布下表现出良好的鲁棒性。理论分析和实验结果表明，ProbRes能够准确捕捉预测分布并生成校准良好的预测区间。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.02117 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 11:49:03 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 11:49:03 +0000</pubDate>
+</item>
+<item>
+<title>HDP-FL中基于隐私感知混洗的防御机制研究</title>
+<link>https://tldr.takara.ai/p/2606.02563</link>
+<guid>https://tldr.takara.ai/p/2606.02563</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出IntraShuffler防御框架，提升HDP-FL隐私安全性。</p><br><br><p><strong>摘要：</strong> 本文研究了在联邦学习中使用异构差分隐私（HDP）时，服务器可能通过梯度更新进行隐私推断的问题。为应对这一风险，作者提出IntraShuffler，一个针对HDP-FL设计的中间件防御框架。该框架通过将客户端按隐私需求分组并进行参数级混洗，有效破坏梯度结构，同时保持对隐私预算的感知聚合。实验表明，IntraShuffler可降低梯度可恢复性60%以上，并显著降低隐私推断准确率，同时保持模型性能。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.02563 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 17:54:10 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 17:54:10 +0000</pubDate>
+</item>
+<item>
+<title>多视角视频中人类、场景与相机的统一重建方法</title>
+<link>https://tldr.takara.ai/p/2606.02350</link>
+<guid>https://tldr.takara.ai/p/2606.02350</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出TROPHIES框架实现人类、场景与相机的全局一致4D重建。</p><br><br><p><strong>摘要：</strong> 本文提出一种新的任务——从多视角视频中统一重建人类、场景和相机，以解决传统方法在几何一致性、运动稳定性及物理轨迹对齐方面的不足。作者设计了TROPHIES框架，包含人类分支和场景分支，通过时间与空间推理建模人类，并利用人类感知注意力重建静态场景。同时引入全局对齐与优化模块，确保尺度一致性和跨视角时间连贯性。实验表明，TROPHIES在EgoHuman和EgoExo4D数据集上优于现有方法，在全局保真度和人景一致性方面表现优异。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.02350 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 15:00:18 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 15:00:18 +0000</pubDate>
+</item>
+<item>
+<title>基于Drifting Preference Optimization的一步文本到图像生成器微调方法</title>
+<link>https://tldr.takara.ai/p/2606.02521</link>
+<guid>https://tldr.takara.ai/p/2606.02521</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出DrPO方法提升一步文本到图像生成器的对齐效果。</p><br><br><p><strong>摘要：</strong> 本文提出Drifting Preference Optimization (DrPO)，一种用于确定性一步文本到图像生成器的在线偏好微调方法。该方法通过从当前生成器中采样候选图像，利用目标奖励进行排序，并结合高分和低分样本合成特征空间更新方向。更新方向由非参数偶极子偏好场和冻结基础生成器的参考漂移组成，通过分离的特征空间回归目标进行优化。DrPO仅在排序时使用目标奖励，因此可以支持大规模、黑盒或不可微奖励，同时推理仍为单次生成器调用。实验表明，DrPO在SD-Turbo和SDXL-Turbo上优于无梯度奖励的基线方法，并显著降低了HPSv3训练计算量。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.02521 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 17:31:49 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 17:31:49 +0000</pubDate>
+</item>
+<item>
+<title>CRePE与PHO：提升大语言模型剪枝效率的新方法</title>
+<link>https://tldr.takara.ai/p/2606.01544</link>
+<guid>https://tldr.takara.ai/p/2606.01544</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>CRePE结合2D上下文和自适应系数提升模型剪枝效果，PHO优化超参数显著缩短搜索时间。</p><br><br><p><strong>摘要：</strong> 本文提出CRePE方法，通过引入二维局部邻域信息和自适应系数，提升后训练剪枝（PTP）的性能。CRePE在多种模型和稀疏度设置中表现优于现有方法。然而，寻找最优自适应系数需要大量困惑度评估，耗时约11小时。为此，作者提出PHO方法，无需重复困惑度测量，将搜索时间缩短至约20分钟。此外，PHO找到的超参数配置具有良好的泛化能力，可应用于不同模型。最后，验证了CRePE可与其他技术如通道排列、非均匀稀疏分配和再剪枝方法结合使用。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.01544 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 01:44:31 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 01:44:31 +0000</pubDate>
+</item>
+<item>
+<title>基于语言理解边界的强化学习框架提升多语言推理能力</title>
+<link>https://tldr.takara.ai/p/2606.02465</link>
+<guid>https://tldr.takara.ai/p/2606.02465</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Luar框架通过选择性翻译提升多语言推理性能。</p><br><br><p><strong>摘要：</strong> 本文提出一种名为Luar的强化学习框架，旨在解决语言模型在非英语输入上的推理缺陷。该框架通过训练模型在直接理解和翻译后推理之间进行选择，仅在必要时调用翻译，从而提高多语言推理的准确性。实验表明，Luar在多个多语言推理基准上优于传统方法，尤其在低资源语言上表现显著提升。分析还显示，Luar能够避免不必要的翻译，并扩展到未见过的低资源语言。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.02465 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 16:37:18 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 16:37:18 +0000</pubDate>
+</item>
+<item>
+<title>CARTE：评估大语言模型在法国区域知识推理能力的基准测试</title>
+<link>https://tldr.takara.ai/p/2606.01995</link>
+<guid>https://tldr.takara.ai/p/2606.01995</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>CARTE基准测试评估大语言模型在法国区域知识上的推理能力。</p><br><br><p><strong>摘要：</strong> 本文介绍了CARTE 1（Culturally Anchored Regional-Territorial Evaluation），这是一个用于评估大语言模型（LLMs）在法国范围内进行精细推理能力的多选题基准测试。与以往侧重国家层面文化理解的基准不同，CARTE关注法国国内各地区的差异，涵盖13个主要地区和14个主题领域，如文化、语言、人口等。研究还引入了CARTE-LV子集，专门用于评估法语地区的语言差异。通过在少量示例设置下对27个参数规模从1B到12B的LLMs进行测试，发现模型在不同地区和规模上表现存在显著差异，表明预训练覆盖存在系统性不足，且对国内差异的鲁棒性有限。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.01995 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 09:50:50 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 09:50:50 +0000</pubDate>
+</item>
+<item>
+<title>构建循环经济本体网络以提升资源循环性</title>
+<link>https://tldr.takara.ai/p/2606.02253</link>
+<guid>https://tldr.takara.ai/p/2606.02253</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>构建CEON以促进跨行业信息共享，提升资源循环利用。</p><br><br><p><strong>摘要：</strong> 文章提出通过构建循环经济本体网络（CEON）来增强资源循环利用的可持续性。CEON旨在解决循环经济领域中跨行业概念定义不一致的问题，支持语义互操作性，从而促进不同行业间的信息共享和数据文档化。研究展示了在建筑、电子和纺织等行业的实际应用场景，证明了CEON在提升资源循环性和数据标准化方面的潜力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.02253 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 13:42:45 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 13:42:45 +0000</pubDate>
+</item>
+<item>
+<title>基于文本嵌入模型的智能体特质评估方法</title>
+<link>https://tldr.takara.ai/p/2606.02536</link>
+<guid>https://tldr.takara.ai/p/2606.02536</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>通过文本嵌入模型评估智能体行为特质，准确率达91.2%</p><br><br><p><strong>摘要：</strong> 本文提出一种基于文本嵌入模型的智能体特质评估方法，通过分析技能文件、内存文件和行为配置文件的差异来衡量智能体的行为倾向。研究采用线性模型对“前”与“后”的文件差异进行训练，获得特质向量，并通过投影计算任意技能修改的得分。在68个敏感数据获取倾向的标注数据集上，该方法在留一法交叉验证下达到91.2%的分类准确率和0.82的斯皮尔曼等级相关系数。研究还构建了一个代理间协议，使一个智能体可通过可信中介评估另一个智能体的技能文件更新。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.02536 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 17:40:31 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 17:40:31 +0000</pubDate>
+</item>
+<item>
+<title>基于脉冲学习的低秩稀疏视觉提示方法</title>
+<link>https://tldr.takara.ai/p/2606.01945</link>
+<guid>https://tldr.takara.ai/p/2606.01945</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出LoRSP框架，实现高效视觉提示学习。</p><br><br><p><strong>摘要：</strong> 本文提出一种基于脑启发脉冲学习的低秩稀疏视觉提示方法（LoRSP），旨在解决现有视觉提示方法中冗余扰动、泛化能力弱和能耗高的问题。通过引入脉冲神经网络机制，LoRSP利用稀疏脉冲输出生成动态低秩稀疏提示，提升模型在不同下游任务中的适应能力。实验表明，该方法在多个视觉基准上表现优异，且参数量更少。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.01945 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 09:08:34 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 09:08:34 +0000</pubDate>
+</item>
+<item>
+<title>TalkTag：一种用于口语转录中形态句法错误标注的轻量级工具</title>
+<link>https://tldr.takara.ai/p/2606.01820</link>
+<guid>https://tldr.takara.ai/p/2606.01820</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>TalkTag实现口语转录中形态句法错误的自动化标注。</p><br><br><p><strong>摘要：</strong> 本文介绍TalkTag，一个基于大语言模型的轻量级工具，用于自动化口语转录中的形态句法错误标注。该工具在数据稀缺的情况下，利用儿童叙事数据进行训练，验证了低资源环境下语言分析的可行性。评估结果显示，TalkTag在保持高精度的同时，能够有效识别语言歧义导致的复杂标注情况。该系统为手动错误标注提供了可扩展的替代方案，并为形态句法错误标注提供了实用支持。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.01820 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 07:34:24 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 07:34:24 +0000</pubDate>
+</item>
+<item>
+<title>异步自适应一阶优化方法在非凸函数中的收敛性分析</title>
+<link>https://tldr.takara.ai/p/2606.01787</link>
+<guid>https://tldr.takara.ai/p/2606.01787</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究异步自适应优化方法在非凸函数中的收敛性。</p><br><br><p><strong>摘要：</strong> 本文引入了一类新的异步自适应一阶优化方法，包括多种流行算法的异步变体，并考虑了使用动量和/或不精确归一化的版本。在完全随机设置下，分析了该类方法在非凸函数上的收敛性，结果表明在合理假设下，其收敛速度为O(1/√t)（忽略对数因子）。数值实验表明，这些异步自适应算法在异构大规模机器学习系统中具有很高的实用性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.01787 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 07:08:32 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 07:08:32 +0000</pubDate>
+</item>
+<item>
+<title>基于大模型的分块引导生成方法提升推理性能</title>
+<link>https://tldr.takara.ai/p/2606.01682</link>
+<guid>https://tldr.takara.ai/p/2606.01682</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>使用大模型引导小模型生成，提升推理准确性与效率。</p><br><br><p><strong>摘要：</strong> 本文提出一种无需训练的分块引导生成方法，利用大语言模型作为过程评分器，在每一步生成中对固定长度的候选块进行评分，从而避免小模型在错误路径上继续生成。该方法通过两种选择规则——似然引导选择（LGS）和对比引导选择（CGS），有效减少长度偏差影响，并在多个数学推理任务中表现出色，优于多数投票和基于奖励模型的PRM引导搜索。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.01682 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 04:43:36 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 04:43:36 +0000</pubDate>
+</item>
+<item>
+<title>机器人学习中世界与任务的结构化分解方法</title>
+<link>https://tldr.takara.ai/p/2606.02027</link>
+<guid>https://tldr.takara.ai/p/2606.02027</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出一种机器人学习的世界与任务分解方法，提升泛化能力。</p><br><br><p><strong>摘要：</strong> 本文研究了机器人学习中世界与任务的结构化分解方法。作者认为，将世界因素（如环境和系统属性）与任务因素（如任务逻辑）分离是实现泛化的核心。通过贝叶斯模型证据的形式化表达，该方法在保持高似然的同时减少任务参数的复杂度。研究采用AICON框架与紧凑策略结合，利用梯度作为接口传递世界与任务结构信息，从而实现低维学习并保持结构泛化。实验表明，该方法在多种机器人任务中优于端到端基线和分析启发式方法，具备零样本泛化和真实硬件迁移能力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.02027 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 10:16:07 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 10:16:07 +0000</pubDate>
+</item>
+<item>
+<title>基于动态认知地图与空间断言代码的视觉语言模型空间推理方法</title>
+<link>https://tldr.takara.ai/p/2606.02459</link>
+<guid>https://tldr.takara.ai/p/2606.02459</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新型空间推理框架，提升VLM在复杂任务中的表现。</p><br><br><p><strong>摘要：</strong> 本文针对视觉语言模型（VLM）在空间推理任务中的局限性，提出了一种受鸽子导航启发的新型代理流程。该方法引入了动态认知地图和空间断言代码（SAC），通过持续记忆场景布局并验证中间推理步骤，提供密集奖励信号，从而提升模型性能。实验表明，在MindCube基准测试中，该方法取得了80.5%的总体准确率，优于现有最佳方法29.5个百分点。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.02459 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 16:30:56 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 16:30:56 +0000</pubDate>
+</item>
+<item>
+<title>SECUREVENT：面向分布式事件系统的混合AI安全监控架构</title>
+<link>https://tldr.takara.ai/p/2606.01741</link>
+<guid>https://tldr.takara.ai/p/2606.01741</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>SECUREVENT结合AI与传统安全机制，提升事件系统安全性。</p><br><br><p><strong>摘要：</strong> 本文提出SECUREVENT，一种用于分布式事件系统的混合AI/ML安全监控架构。该架构融合了传统安全措施如认证传输、主题级授权和签名事件，以及在线异常检测、图感知行为特征、复杂事件策略规则、联邦学习和对抗性ML治理。通过合成事件流攻击的原型测试，展示了混合AI与CEP监控在提高召回率的同时保持低误报率的能力。文章强调，机器学习并非替代加密和访问控制机制，而是在事件流、身份、模式和时间关系过于动态时，模型驱动的安全监控是必要的补充。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.01741 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 06:04:16 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 06:04:16 +0000</pubDate>
+</item>
+<item>
+<title>2-bit量化推理的稳定性改进与性能提升</title>
+<link>https://tldr.takara.ai/p/2606.02011</link>
+<guid>https://tldr.takara.ai/p/2606.02011</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>2-bit量化推理存在生成不稳定问题，通过优化提升准确率。</p><br><br><p><strong>摘要：</strong> 本文研究了大型推理模型（LRMs）在2-bit量化推理中的性能问题，发现虽然低比特量化能降低解码成本，但会导致生成过程不稳定，增加总token数量。通过分析Qwen3模型在数学和常识基准上的推理轨迹，作者指出准确性下降与生成过程中的失败密切相关。为解决这些问题，引入了FP16规划和循环救援机制，有效提升了模型的准确率。实验结果显示，在MATH-500数据集上，该方法显著提高了Qwen3-8B和Qwen3-32B的准确率，证明了极端低比特推理在处理生成病理时的可行性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.02011 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 10:04:09 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 10:04:09 +0000</pubDate>
+</item>
+<item>
+<title>Error Bounds for a Diffusion Model-Based Drift Estimator</title>
+<link>https://tldr.takara.ai/p/2606.02115</link>
+<guid>https://tldr.takara.ai/p/2606.02115</guid>
+<content:encoded><![CDATA[
+
+  Parameter estimation in stochastic differential equations is a classical statistical problem of much importance in many scientific fields. Recent work of Tapia Costa et al. (2026) introduced a novel technique for estimating the drift when the diffusion parameter is known, using discrete samples from multiple trajectories. Their method treats drift estimation as a denoising problem, and leverages tools from (conditional) score-matching diffusion models. Although their experiments showed promising results across different drift classes, the question of theoretical guarantees for their estimator was left unanswered. In this note, we address this gap by exploiting techniques from diffusion model theory. More concretely, we derive an explicit risk bound for the time-averaged mean-squared error of said drift estimator. Our bound decomposes the risk into the (i) Euler-Maruyama discretization, (ii) score/denoiser approximation, (iii) noise initialization, and (iv) sampling variance, revealing the trade-offs between the different hyperparameters and sources of error in the estimator.
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 11:47:34 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 11:47:34 +0000</pubDate>
+</item>
+<item>
+<title>ATLAS: Agentic Test-time Learning-to-Allocate Scaling</title>
+<link>https://tldr.takara.ai/p/2606.01667</link>
+<guid>https://tldr.takara.ai/p/2606.01667</guid>
+<content:encoded><![CDATA[
+
+  Test-time scaling has become a major way to improve large language model reasoning, but its orchestration has remained designer-engineered: a fixed sample budget, a fixed refinement loop, a fixed scoring rule, or a fixed search policy decides how compute is spent, leaving the model in charge of solving but not of orchestration. We introduce ATLAS, an agentic test-time scaling framework in which an LLM orchestrator owns the control loop end-to-end. Through a single action, explore, which dispatches a fresh independent solver on the original problem, the orchestrator decides whether to gather more evidence, when to stop, and how to synthesize the final answer; the action space is extensible, with each explore call optionally specifying solver, reasoning effort, or prompting strategy. We evaluate ATLAS on four benchmarks covering scientific question answering, code generation, and multimodal reasoning under a Claude Sonnet 4.6 backbone, where it reaches 56.00% on HLE-Verified, 82.29% on LiveCodeBench, 85.75% on GPQA-Diamond, and 23.71% on BabyVision while using far fewer API calls than fixed-workflow baselines. A multi-model extension, ATLAS-MM, that exposes solver choice as an additional action dimension further improves HLE-Verified to 60.00% and LiveCodeBench to 85.63%, with consistent gains on GPQA-Diamond and BabyVision. Ablations replacing the orchestrator's direct synthesis with a separate integrator degrade or fail to improve accuracy on three of four benchmarks, consistent with the role of stateful evidence management in producing the gains.
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 04:19:50 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 04:19:50 +0000</pubDate>
+</item>
+<item>
+<title>Rethinking the Role of Positional Encoding: Sliding-Window Transformers without PE Remain Turing Complete</title>
+<link>https://tldr.takara.ai/p/2606.01532</link>
+<guid>https://tldr.takara.ai/p/2606.01532</guid>
+<content:encoded><![CDATA[
+
+  Positional encoding (PE) is widely viewed as necessary for transformers to process ordered sequences: without them, the next-token map appears permutation-invariant in its context tokens. This intuition underlies all prior universality results, which rely on positional information to prove that transformers with chain-of-thought can perform arbitrary computation, i.e., they are Turing complete. We revisit this belief in the regime most relevant to long-form reasoning, where generation proceeds through a finite sliding context window. Our opening perception is that the window mechanism itself (mildly) breaks the permutation symmetry. To distill and precisely capture the degree of this added expressiveness, we introduce an abstract autoregressive model, the HIST model, in which each update depends only on constant-size internal state and the token-count histogram within the current window. We prove that this HIST model is Turing complete by showing that the evolution of the window can reveal the token that has just left the window, which suffices to simulate Turing-complete Post machines. We then construct a sliding-window transformer over a constant-size token alphabet, without PE, and show that it can simulate the HIST model. Our result demonstrates that positional encodings are not indispensable for transformers to perform universal computation: The window sliding itself already breaks permutation symmetry and captures sufficient positional information.
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 01:28:42 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 01:28:42 +0000</pubDate>
+</item>
+<item>
+<title>RoboDream: Compositional World Models for Scalable Robot Data Synthesis</title>
+<link>https://tldr.takara.ai/p/2606.02577</link>
+<guid>https://tldr.takara.ai/p/2606.02577</guid>
+<content:encoded><![CDATA[
+
+  Scaling robot learning requires large-scale, diverse demonstrations, yet real-world data collection via teleoperation remains prohibitively expensive and time-consuming. While video diffusion models offer a promising avenue for data scaling, existing generative approaches are often limited to superficial visual augmentation, or suffer from embodiment hallucinations that yield physically infeasible motions. We present a generalizable embodiment-centric world model that achieves scalable data generation by synthesizing photorealistic demonstrations with novel objects, in novel scenes, and from novel viewpoints. Our approach anchors generation to rendered robot motion while conditioning on explicit scene and object priors, effectively decoupling trajectory execution from environment synthesis. This formulation has the potential to unlock two powerful data scaling capabilities: (1) retrieval and rebirth, which repurposes existing trajectories into entirely new contexts without new motion data; and (2) prop-free teleoperation, where operators manipulate empty air and the model hallucinates the target objects and scene afterwards, eliminating reset time. We demonstrate with real-world experiments that our generated data consistently improves downstream policy performance and significantly reduces real-world data requirements across diverse manipulation tasks.
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 17:59:38 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 17:59:38 +0000</pubDate>
+</item>
+<item>
+<title>Evolutionary Discovery of Bivariate Bicycle Codes with LLM-Guided Search</title>
+<link>https://tldr.takara.ai/p/2606.02418</link>
+<guid>https://tldr.takara.ai/p/2606.02418</guid>
+<content:encoded><![CDATA[
+
+  Quantum LDPC code discovery requires searching large algebraic design spaces while reliably certifying the parameters and equivalence classes of any candidates found. We introduce an LLM-guided evolutionary workflow in which language models mutate Python programs that generate bivariate-bicycle and perturbed bivariate-bicycle code ansätze. Across five campaigns, the system performed approximately 1{,}650 evolutionary iterations, screened about $2 \times 10^5$ candidate codes, and required ${\sim}140$ hours of computation and ${\sim}$US\$400 in LLM inference cost. Candidate codes are evaluated through a staged validation pipeline combining $\mathrm{GF}(2)$ rank computation, distance estimation and certification, mixed-integer linear programming, BLISS Tanner-graph deduplication, decomposability analysis, and local-Clifford equivalence checks. At block length $n \leq 360$, the workflow identifies 465 distinct candidate codes: 97 CSS bivariate-bicycle codes and 368 non-CSS perturbed variants. The CSS search recovers known high-performing codes and finds new finite-length representatives, including an indecomposable [[288,16,12]] code and higher-weight codes with up to $k = 50$ at distance $d = 8$. The non-CSS search produces perturbed codes matching the gross-code figure of merit at [[144,12,12]], along with additional high-distance candidates reported as certified values or upper bounds according to MILP status. Overall, these results show that LLM-guided program evolution can serve as a practical tool for structured quantum-code discovery when paired with independent evaluation.
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 15:58:52 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 15:58:52 +0000</pubDate>
+</item>
+<item>
+<title>Towards Resolving Optimization Conflicts Between Image- and Text-Based Person Re-Identification</title>
+<link>https://tldr.takara.ai/p/2606.02242</link>
+<guid>https://tldr.takara.ai/p/2606.02242</guid>
+<content:encoded><![CDATA[
+
+  The joint optimization of image-based (I2I) and text-based (T2I) person re-identification (ReID) is hindered by modality discrepancies and conflicting training objectives, leading to suboptimal shared representations. While I2I ReID focuses on identity-level invariance across images of the same person, T2I ReID is driven by instance-specific textual descriptions tied to unique visual traits. This paper explores the fundamental difference between two ReID tasks and their optimization processes for effective training. Since I2I and T2I ReID are often studied separately, the loss functions optimized for one retrieval setting may negatively affect the representation quality required by the other. Motivated by these findings, we propose a decoupled two-stage training pipeline for learning a shared representation across image and text modalities. The pipeline is based on a single vision encoder that supports both I2I and T2I retrieval while avoiding cross-task interference during training. We provide extensive experiments across multiple configurations, varying domain mixing procedures, learning strategies, and task objectives. We observed that I2I ReID pre-training positively impacts the generalization ability to T2I data. Besides, we find that incorporating textual supervision during the vision encoder training stage enhances both I2I and T2I performance. We believe our insights provide a meaningful step toward unified ReID systems and cross-modal retrieval overall.
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 13:37:55 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 13:37:55 +0000</pubDate>
+</item>
+<item>
+<title>Agent Operating Systems (AOS): Integrating Agentic Control Planes into, and Beyond, Traditional Operating Systems</title>
+<link>https://tldr.takara.ai/p/2606.01508</link>
+<guid>https://tldr.takara.ai/p/2606.01508</guid>
+<content:encoded><![CDATA[
+
+  Traditional operating systems were designed around deterministic programs, explicit control flow, and human initiated workflows. Their core abstractions processes, threads, system calls, files, and permissions assume bounded behavior and predictable interaction patterns. Agentic AI systems introduce a different execution model: long-lived, goal-directed entities that reason probabilistically, invoke tools dynamically, and adapt behavior based on feedback. While agents can be implemented as user-space applications today, their execution characteristics stress OS boundaries in scheduling, memory and state management, security, observability, and governance. This paper introduces the concept of an Agent Operating System (AOS), a systems architecture that integrates an agentic control plane into existing operating systems or, in some models, subsumes selected OS responsibilities over time. We provide a precise definition of an AOS, explicit assumptions and non-goals, and a structured decomposition of AOS responsibilities into schedulers, context and memory management, tool and capability registries, policy and trust enforcement, and observability and audit. We analyze limitations of classical OS abstractions for agent workloads, propose integration models from user-space runtimes to distributed control planes, and map AOS concepts onto Linux and Windows primitives. We present security and safety implications, including agent specific threat models, and define evaluation criteria that emphasize deterministic enforcement, auditability, and operator comprehensibility. The objective is not to replace operating systems wholesale, but to establish a rigorous systems foundation for agentic computation that remains controllable, accountable, and secure at scale.
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 00:08:03 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 00:08:03 +0000</pubDate>
+</item>
+<item>
+<title>Two-Fidelity Best-Action Identification for Stochastic Minimax Tree</title>
+<link>https://tldr.takara.ai/p/2606.01708</link>
+<guid>https://tldr.takara.ai/p/2606.01708</guid>
+<content:encoded><![CDATA[
+
+  We study fixed-confidence best-action identification (BAI) in stochastic minimax trees. This problem is increasingly relevant in modern AI planning, where deep minimax search and Monte Carlo Tree Search (MCTS) with language model long rollouts face a fundamental tradeoff: heuristic evaluations are cheap but biased, while accurate rollouts are reliable but prohibitively expensive. We propose 2FFS, a two-fidelity tree-search algorithm that brings multi-fidelity flat bandit ideas into trees. The algorithm combines minimax-style fast expansion with MCTS-style stochastic sampling, adaptively deciding when to exploit cheap biased evaluations and when to invoke expensive accurate evaluations for local certification. We prove fixed-confidence correctness, establish finite stopping for exact identification, and give a polynomial-depth cost upper bound for general-depth trees. Across numerical stochastic-tree experiments, 2FFS uses substantially fewer samples and computational operations comparing to existing BAI-MCTS baseline.
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 05:21:40 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 05:21:40 +0000</pubDate>
+</item>
+<item>
+<title>GJDNet: Robust Graph Neural Networks via Joint Disentangled Learning Against Adversarial Attacks</title>
+<link>https://tldr.takara.ai/p/2606.01560</link>
+<guid>https://tldr.takara.ai/p/2606.01560</guid>
+<content:encoded><![CDATA[
+
+  Graph Neural Networks (GNNs) are vulnerable to adversarial attacks, which inherently invert connectivity patterns by introducing disassortative edges in assortative graphs and assortative edges in disassortative graphs. This structural inversion creates structure-feature mismatches that disrupt neighborhood aggregation across different graph types. However, we find that existing defenses are limited, as they either treat neighborhoods as monolithic under fixed assortativity assumptions or rely on standard softmax classifiers that fail to account for perturbation-induced representation shifts. To further exploit this observation, we adopt a robustness perspective that jointly disentangles node representations and decision spaces, isolating perturbation effects while enforcing well-separated decision regions. Based on this principle, we propose Graph Joint Disentanglement Network (GJDNet), a unified framework for robust node classification across diverse graph assortativity regimes. GJDNet enhances robustness at both representation and decision levels: it employs feature-driven soft structural disentanglement with skewness-aware neighbor filtering to suppress perturbation-induced structure-feature mismatches, and introduces a Spherical Decision Boundary (SDB) to promote intra-class compactness and inter-class separation in the embedding space, thereby stabilizing decision boundaries under perturbations. Theoretical analysis provides insights into the effectiveness of the proposed disentangled representation and decision mechanisms, while extensive experiments demonstrate that GJDNet consistently achieves strong robustness across graphs with different connectivity regimes.
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 02:05:40 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 02:05:40 +0000</pubDate>
+</item>
+<item>
+<title>WALL-WM: Carving World Action Modeling at the Event Joints</title>
+<link>https://tldr.takara.ai/p/2606.01955</link>
+<guid>https://tldr.takara.ai/p/2606.01955</guid>
+<content:encoded><![CDATA[
+
+  WALL-WM is a World Action Model that shifts video-action learning from chunk-centric optimization to event-grounded Vision-Language-Action pretraining, using semantically coherent action events as the atomic unit of learning. Existing WAMs commonly initialize from multimodal or video foundation models and then optimize fixed-length action chunks conditioned directly on the current observation and instruction. Although convenient, this chunk-centric formulation creates a fundamental granularity mismatch. Language describes semantic goals and events, vision evolves through continuous scene dynamics, and actions operate at control-level timescales; forcing all three into the same fixed-length prediction window turns VLA training into short-horizon correlation fitting. WALL-WM addresses this mismatch by organizing both supervision and data around semantic events. Specifically, it pairs event-grounded VLA pretraining with a data ecosystem built from event-level captions and cluster-balanced sampling, enabling scalable learning over diverse behaviors, scenes, and task structures. From the same event-pretrained backbone, WALL-WM supports two complementary inference modes. The event mode consumes next-event descriptions and enables variable-length execution chunks, while the unified mode uses a VLM with Staircase Decoding to condition conventional fixed-length chunk inference while preserving a gradient-continuous VLA path. Together with Muon-optimizer-based large-scale pretraining infrastructure, WALL-WM provides a practical scale-up recipe for general-purpose WAMs. Experiments show that WALL-WM generalizes broadly across language, scenes, and tasks, achieving state-of-the-art performance in large-scale real-world generalization evaluation.
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 09:14:51 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 09:14:51 +0000</pubDate>
+</item>
+<item>
+<title>Edge-aware Decoding for Neural Asymmetric Routing</title>
+<link>https://tldr.takara.ai/p/2606.02136</link>
+<guid>https://tldr.takara.ai/p/2606.02136</guid>
+<content:encoded><![CDATA[
+
+  Neural asymmetric routing models increasingly encode directionality through matrix representations and asymmetry-aware attention. The final routing action, however, is not a node in isolation but a directed transition chosen under the current partial route. This creates a representation--decision mismatch: pairwise cost information may be encoded upstream while the final candidate logit is still largely parameterized as context--node compatibility. We propose a decoder-design principle for neural asymmetric routing: the final score should explicitly expose transition-level quantities suggested by the problem's cost-to-go structure. We instantiate this principle with an edge-aware decoder that adds candidate-specific terms for the current directed edge, return-to-start closure, and static lightweight lookahead, while keeping the representation backbone fixed. On a controlled SVD/Sinkhorn asymmetric backbone, the decoder improves over the RADAR reference when trained on ATSP-100 and evaluated zero-shot on ATSP-100/200/500/1000, reducing the ATSP-1000 gap from $4.13\%$ to $2.73\%$. On ACVRP, the same score-level modification shows the same qualitative trend under a richer routing state. ATSP ablations and directed-transition diagnostics sharpen the mechanism: the strongest evidence concerns sensitivity to the current directed edge, while closure and static lookahead act as heuristic continuation cues. The results support a mechanism study: a key decoder-side signal in neural asymmetric routing is decision-time exposure of transition-level edge information.
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 12:03:59 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 12:03:59 +0000</pubDate>
+</item>
+<item>
+<title>GloResNet: A lightweight 3D CNN with global topological features for preterm brain injury prediction</title>
+<link>https://tldr.takara.ai/p/2606.02498</link>
+<guid>https://tldr.takara.ai/p/2606.02498</guid>
+<content:encoded><![CDATA[
+
+  This study introduces an automated deep learning framework for predicting brain injury (BI) in preterm infants from T2-weighted MRI (dHCP dataset). We propose GloResNet, a lightweight 3D CNN based on ResNet-10, pretrained on MedicalNet to address data scarcity. A global manifold mapping strategy first resamples each 3D volume to 128x128x128 and then applies subject-wise z-score intensity normalization, thereby preserving global topology while standardizing appearance. Training integrates mixup, class weighting, and test-time augmentation for robustness. In 5-fold cross-validation, GloResNet achieved 75.18% average accuracy (peak 81.82%), with specificity 0.81 and sensitivity 0.76. Results demonstrate that a topology-aware lightweight CNN has the capability to effectively predict neonatal BI, offering a non-invasive screening tool. The source code of this paper can be obtained from the GitHub repository: https://github.com/ICL-SUST/GloResNet-Preterm-Brain
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 17:04:43 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 17:04:43 +0000</pubDate>
+</item>
+<item>
+<title>Expressivity of congruence-based architectures for DNNs on positive-definite matrices</title>
+<link>https://tldr.takara.ai/p/2606.02490</link>
+<guid>https://tldr.takara.ai/p/2606.02490</guid>
+<content:encoded><![CDATA[
+
+  This work studies neural architectures for classifying symmetric positive-definite matrices, focusing on congruence-like layers, in which the input matrix is multiplied on the left and right by a (possibly rectangular) weight matrix $W$ and its transpose. Such layers lie at the core of the celebrated SPDNet and have also been employed independently for dimensionality reduction on positive-definite data. We show that the (semi)-orthogonality constraint commonly imposed on $W$ limits the expressivity of these layers: for certain activation functions, the resulting architecture collapses to a one-hidden-layer equivalent. This lack of expressivity follows from a loss of spectral diversity in congruence-like layers for semi-orthogonal $W$ and is a direct consequence of Poincaré's separation theorem. We then examine the choice of the final classifier, comparing several Riemannian classifiers and discussing their compatibility with the feature maps produced by congruence-like layers.
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 17:01:08 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 17:01:08 +0000</pubDate>
+</item>
+<item>
+<title>Provable Data Scaling Law for Meta Learning via Complexity Minimization</title>
+<link>https://tldr.takara.ai/p/2606.02008</link>
+<guid>https://tldr.takara.ai/p/2606.02008</guid>
+<content:encoded><![CDATA[
+
+  Pre-training has become a fundamental paradigm in modern machine learning, with one of its key empirical benefits being reduced downstream sample complexity as the scale of pre-training data increases. However, existing theoretical frameworks for pre-training do not fully explain this phenomenon. In this paper, we introduce complexity minimization, a novel meta-representation learning framework designed to enable theoretical analysis of this scaling behavior, which learns representations by evaluating the downstream model complexity best suited to each domain and minimizing the worst-case such complexity across source domains. Our end-to-end theoretical analysis, spanning pre-training through downstream regression, shows that this framework provably captures this scaling behavior; in particular, we show that the error rate of few-shot adaptation improves as the amount of meta-training data grows. Empirically, we demonstrate that incorporating complexity regularization into existing meta-learning methods consistently improves downstream sample efficiency.
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 10:02:29 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 10:02:29 +0000</pubDate>
+</item>
+<item>
+<title>Dynamic Trust-Aware Sparse Communication Topology for LLM-Based Multi-Agent Consensus</title>
+<link>https://tldr.takara.ai/p/2606.01828</link>
+<guid>https://tldr.takara.ai/p/2606.01828</guid>
+<content:encoded><![CDATA[
+
+  Large language model-driven multi-agent systems enhance the reliability of complex reasoning tasks through multi-round deliberation, role specialization, and cross-validation. However, existing multi-agent debate and collaboration frameworks typically adopt fully connected communication, causing the number of messages, token costs, and end-to-end latency to grow approximately quadratically with the number of agents; although fixed sparse topologies reduce overhead, they cannot adapt communication relationships to different task instances or intermediate reasoning states, making them prone either to preserving low-value interactions or to losing critical error-correction information. To address this problem, this paper proposes DySCo (Dynamic Sparse Consensus), a dynamic trust-aware sparse consensus mechanism. In each round of reasoning, DySCo estimates the value of communication edges based on agent reliability, answer divergence, and task relevance, and selects a small number of high-value edges for message exchange under budget constraints; it then aggregates the answers of different agents through dynamic trust weights and terminates the discussion early once consensus stabilizes. This mechanism replaces universal broadcasting with on-demand communication, thereby reducing communication overhead while preserving essential cross-validation information. We further present analyses of communication complexity and consensus stability, and evaluate the performance of DySCo on mathematical reasoning, logical reasoning, and factual question-answering tasks.
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 07:42:33 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 07:42:33 +0000</pubDate>
+</item>
+<item>
+<title>OpenWebRL: Demystifying Online Multi-turn Reinforcement Learning for Visual Web Agents</title>
+<link>https://tldr.takara.ai/p/2606.02031</link>
+<guid>https://tldr.takara.ai/p/2606.02031</guid>
+<content:encoded><![CDATA[
+
+  Building capable visual web agents requires long-horizon reasoning, precise grounding, and robust interaction with dynamic real-world websites. Despite rapid progress, the strongest systems remain largely proprietary, while open agents still depend heavily on supervised post-training over large collections of curated web trajectories. This dependence creates a major scalability bottleneck: high-quality demonstrations are expensive to collect, and static datasets offer limited coverage of the diverse, ever-changing open web. Although online RL has shown promise for text-based agents, its potential for training visual web agents directly on live websites remains largely underexplored. In this paper, we introduce OpenWebRL, an open framework for training visual web agents with online multi-turn RL on real websites. OpenWebRL covers the full training pipeline, including scalable live-browser infrastructure, supervised initialization, multimodal context management, trajectory-level success judging, and efficient multi-turn policy optimization. Using this framework, we train OpenWebRL-4B, which establishes a new open-source state of the art on challenging live-web benchmarks. With only 0.4K initialization trajectories and 2.2K open-ended RL training tasks, OpenWebRL-4B achieves 67.0% success on Online-Mind2Web and 64.0% on DeepShop, outperforming prior open agents of similar or larger scale and remaining competitive with proprietary systems including OpenAI CUA and Gemini CUA. Beyond strong benchmark performance, we systematically study the key design choices that make online RL effective for visual web agents, and analyze how RL improves agentic reasoning. Overall, our work offers a practical path toward building more capable, reproducible, and cost-efficient open web agents. We will release our training data, models, and code to support future research.
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 10:20:10 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 10:20:10 +0000</pubDate>
+</item>
+<item>
+<title>Multilinguality of Large Language Models From a Structural Perspective</title>
+<link>https://tldr.takara.ai/p/2606.01800</link>
+<guid>https://tldr.takara.ai/p/2606.01800</guid>
+<content:encoded><![CDATA[
+
+  Large language models (LLMs) have excelled in processing multiple languages through pre- and post-training on multilingual data, even though English dominates the training data. Prior work focusing on token representations has revealed how those LLMs process non-English text. Although these analyses have provided insightful findings, they fail to capture a structural view, which is an inherent property of language. In this study, we explore the multilinguality of LLMs through representational structural analysis. Our findings reveal that low-resource languages are structurally more different from English than high- and mid-resource languages, and that language-specific post-training alters their structures while preserving inter-language relationships.
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 07:18:09 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 07:18:09 +0000</pubDate>
+</item>
+<item>
+<title>The Lie We Tell: Correcting the Euclidean Fallacy in Vision Language Action Policies via Score Matching on Tangent Space</title>
+<link>https://tldr.takara.ai/p/2606.01847</link>
+<guid>https://tldr.takara.ai/p/2606.01847</guid>
+<content:encoded><![CDATA[
+
+  Diffusion-based Vision-Language-Action policies achieve remarkable success in robotic manipulation, yet commit a fundamental geometric error we term the $\textbf{Euclidean Fallacy}$: representing SE(3) poses as flat $\mathbb{R}^{12}$ vectors. This approximation induces (1) manifold drift violating SO(3) constraints, (2) broken equivariance under coordinate transformations, and (3) non-geodesic trajectories with excessive kinematic cost. We introduce $\textbf{Lie Diffuser Actor (LDA)}$, a diffusion framework operating intrinsically on SE(3). Our method injects noise through left-invariant SDEs, predicts scores in the tangent space, and retracts samples via the exponential map. This formulation eliminates manifold drift by construction while guaranteeing coordinate-frame equivariance and geodesic optimality. On CALVIN ABC$\rightarrow$D, LDA improves average task length from $3.27$ to $3.51$ ($+7.3\%$). We further validate our method on real robot and the results show that our methodology outperforms the baseline on majority tasks.
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 07:59:29 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 07:59:29 +0000</pubDate>
+</item>
+<item>
+<title>Evidence-Gated LLM Priors for Multi-Objective Bayesian Optimization</title>
+<link>https://tldr.takara.ai/p/2606.01730</link>
+<guid>https://tldr.takara.ai/p/2606.01730</guid>
+<content:encoded><![CDATA[
+
+  Large language models (LLMs) are increasingly used as heuristic advisors for black-box optimization, yet their suggestions and self-reported confidence are not necessarily calibrated to downstream objective values. This issue becomes more pronounced in multi-objective Bayesian optimization, where different objectives may require different expert knowledge and where an LLM expert can be useful for one objective but misleading for another.
+  We study how to use LLM-generated expert priors in discrete multi-objective Bayesian optimization without blindly trusting them. We propose an objective-wise reputation-market mechanism that treats each expert-objective pair as a falsifiable prior source. Expert weights are updated online from observed objective feedback, discounted over time, and gated by market-level trust. We then introduce a decoupled counterfactual gate that can use the LLM prior without confidence, use it with confidence, or abstain from the LLM prior entirely.
+  Across controlled synthetic stress tests and three molecule optimization benchmarks with \qwenflash{}-generated expert priors, we find that dynamic objective-wise calibration improves robustness over fixed LLM priors. However, raw LLM confidence is not reliably beneficial: on ESOL, confidence is positively correlated with prediction error; on FreeSolv, confidence can help; and on Lipophilicity, ignoring confidence remains strongest. Our fixed three-arm counterfactual gate improves over the first counterfactual variant on ESOL and FreeSolv, while an attempted margin portfolio exposes a useful negative result: margin selection should be acquisition-aware rather than based only on one-step prior error.
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 05:50:16 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 05:50:16 +0000</pubDate>
+</item>
+<item>
+<title>Spectral Audit of In-Context Operator Networks</title>
+<link>https://tldr.takara.ai/p/2606.02427</link>
+<guid>https://tldr.takara.ai/p/2606.02427</guid>
+<content:encoded><![CDATA[
+
+  Existing evaluations of neural operators and in-context operator learning rely primarily on prediction error, but accurate output prediction does not guarantee the correct local dynamical structure. A model may match solutions while exhibiting incorrect sensitivities, distorted frequency response, spurious mode coupling, or unstable tangent behavior. We introduce a Jacobian-based spectral audit for in-context operator learning. For a fixed prompt, we differentiate the network output with respect to the query function and view the resulting Jacobian as a learned tangent operator. Projecting it onto Fourier modes, we obtain a local spectral characterization of the inferred operator, including frequency-dependent gains, phase structure, and cross-mode coupling. The audit complements standard prediction metrics by testing whether the model reproduces local mechanisms of the underlying PDE operator rather than only outputs. Across benchmarks, the audit reveals distinct operator-level phenomena, including phase transport, viscosity-dependent damping, nonlinear mode coupling, and reaction--diffusion stability structure. It also detects failures partially hidden by prediction-error metrics, including high-frequency degradation, incorrect phase recovery, and prompt--operator inconsistencies. Corrupted or internally inconsistent prompts lead to degraded tangent-operator structure even when pointwise predictions remain partially accurate. Our results suggest that prediction accuracy and local operator fidelity are distinct properties of learned neural operators. Our framework also provides a diagnostic for stability, sensitivity, and operator consistency.
+
+]]></content:encoded>
+<pubDate>Mon, 01 Jun 2026 16:04:21 +0000</pubDate>
+<pubDate>Mon, 01 Jun 2026 16:04:21 +0000</pubDate>
+</item>
 
 <item>
 <title>Archon：统一多模态数字人类生成模型</title>
