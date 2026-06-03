@@ -4,6 +4,22 @@
 <title>科学空间|Scientific Spaces</title>
 <link>https://kexue.fm/</link>
 
+<item>
+<title>为什么官方版Muon比MuP版多出一个max(1, ⋅)？</title>
+<link>https://spaces.ac.cn/archives/11772</link>
+<guid>https://spaces.ac.cn/archives/11772</guid>
+<content:encoded><![CDATA[
+
+  <p>在文章<a href="https://kexue.fm/archives/11416" target="_blank">《Muon优化器指南：快速上手与关键细节》</a>中，我们罗列了Muon的几个版本，它们的区别是学习率的矩阵形状相关的缩放因子不同，其中“官方版（KellerJordan版）”只比“MuP版”多出了一个$\max(1,\cdot)$的截断操作。本文就来专门讨论一下，这个截断操作是怎么来的呢？</p><h2>几个版本</h2><p>Muon的更新规则，可以统一地写成<br />
+\begin{equation}\begin{aligned}\newcommand{msign}{\mathop{\text{msign}}}<br />
+\boldsymbol{M}_t =&\, \beta \boldsymbol{M}_{t-1} + \boldsymbol{G}_t \\[5pt]<br />
+\boldsymbol{W}_t =&\, \boldsymbol{W}_{t-1} - \eta_t (\alpha \msign(\boldsymbol{M}_t) + \lambda \boldsymbol{W}_{t-1})<br />
+\end{aligned}\end{equation}</p><p class="more"><a href="https://spaces.ac.cn/archives/11772" title="为什么官方版Muon比MuP版多出一个max(1, ⋅)？">[...]</a></p>
+
+]]></content:encoded>
+<pubDate>Wed, 03 Jun 2026 15:19:00 +0800</pubDate>
+<pubDate>Wed, 03 Jun 2026 15:19:00 +0800</pubDate>
+</item>
 
 <item>
 <title>奇异值熵与模型参数优化关系研究</title>
