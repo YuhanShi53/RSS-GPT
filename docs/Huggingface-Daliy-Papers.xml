@@ -4,6 +4,486 @@
 <title>Takara TLDR - Daily AI Papers</title>
 <link>https://tldr.takara.ai</link>
 
+<item>
+<title>基于验证期诊断的潜在世界模型闭环性能预测研究</title>
+<link>https://tldr.takara.ai/p/2607.01736</link>
+<guid>https://tldr.takara.ai/p/2607.01736</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>通过ROF指标提升世界模型闭环性能预测效果。</p><br><br><p><strong>摘要：</strong> 本文研究如何仅通过验证期诊断来预测学习到的潜在世界模型在下游闭环任务中的表现。在LunarLander v3环境中，作者训练了一个RSSM世界模型，并使用CEM-MPC返回值作为闭环性能的基准。通过评估40个指标，发现奖励可观测性分数（ROF）是最强的单一预测指标。进一步结合三个结构正则化项，提出了复合奖励可观测性分数（CROF），用于离线选择最佳检查点。实验表明，基于CROF选择的世界模型在模型强化学习中优于无模型基线，且所需真实环境交互显著减少，同时还能驱动强大的零样本CEM-MPC策略。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.01736 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 02 Jul 2026 05:46:03 +0000</pubDate>
+<pubDate>Thu, 02 Jul 2026 05:46:03 +0000</pubDate>
+</item>
+<item>
+<title>AF3AD：一种用于3D点云异常检测的合成框架</title>
+<link>https://tldr.takara.ai/p/2606.29181</link>
+<guid>https://tldr.takara.ai/p/2606.29181</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>AF3AD通过生成伪异常数据提升3D点云异常检测效果。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为Anomaly Factory 3D (AF3AD) 的模块化框架，用于在3D点云中检测和定位缺陷。由于正常数据占主导，异常样本稀缺且多样，AF3AD通过从正常点云中合成多样化的伪异常来扩展训练数据。该框架采用基于局部PCA坐标系的参数化变形模型，结合空间衰减、各向异性、方向门控和法向/切向位移场，实现多种几何缺陷的模拟。实验表明，AF3AD可以与不同检测方法结合，并在AnomalyShapeNet和Real3D-AD数据集上提升了物体级和点级的检测与定位性能。AF3AD作为独立的合成工具，有助于推动多种3D异常检测方法的发展。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.29181 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 28 Jun 2026 03:55:44 +0000</pubDate>
+<pubDate>Sun, 28 Jun 2026 03:55:44 +0000</pubDate>
+</item>
+<item>
+<title>Device Passport：提升生物信号模型跨布局迁移能力的新通道嵌入方法</title>
+<link>https://tldr.takara.ai/p/2607.00249</link>
+<guid>https://tldr.takara.ai/p/2607.00249</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究新通道嵌入方法提升生物信号模型跨设备迁移性能。</p><br><br><p><strong>摘要：</strong> 本文探讨了在缺乏大规模特定布局数据的情况下，如何通过改进通道嵌入技术来提升生物信号基础模型的跨布局迁移能力。作者提出了一种名为Device Passport的新方法，该方法结合通道的功能活动和元数据进行学习，与以往仅依赖功能信息或元数据的方法不同。实验结果显示，Device Passport在多个跨布局任务中表现优异，特别是在耳部脑电图应用中优于现有最强基线模型，表明通道嵌入设计对生物信号模型的再利用具有重要意义。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.00249 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 30 Jun 2026 22:58:09 +0000</pubDate>
+<pubDate>Tue, 30 Jun 2026 22:58:09 +0000</pubDate>
+</item>
+<item>
+<title>基于知识蒸馏的3D大模型压缩研究</title>
+<link>https://tldr.takara.ai/p/2607.01851</link>
+<guid>https://tldr.takara.ai/p/2607.01851</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>通过知识蒸馏压缩3D大模型，提升在资源受限环境下的部署能力。</p><br><br><p><strong>摘要：</strong> 本文研究了如何通过知识蒸馏压缩大型3D基础模型MASt3R，以适应如月球探测等计算资源受限的应用场景。实验中，从一个6.88亿参数的MASt3R教师模型出发，将其密集几何预测蒸馏到多种轻量学生模型中。为解决教师与学生之间的维度不匹配问题，提出了一种结构化SVD初始化方法，有效提升了收敛速度和性能。实验结果显示，压缩后的学生模型在保持高重建精度的同时，模型大小减少了7倍，甚至优于直接使用稀疏标注训练的基线模型。研究还揭示了关于几何基础模型蒸馏的关键原则和实践见解，如卷积编码器不如Transformer架构，保留编码器容量比扩大解码器更重要，特征级蒸馏优于仅输出监督，SVD初始化有助于优化稳定性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.01851 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 02 Jul 2026 08:11:32 +0000</pubDate>
+<pubDate>Thu, 02 Jul 2026 08:11:32 +0000</pubDate>
+</item>
+<item>
+<title>阿拉伯语-俄语科学翻译基准研究</title>
+<link>https://tldr.takara.ai/p/2606.30943</link>
+<guid>https://tldr.takara.ai/p/2606.30943</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>构建阿拉伯语-俄语科学翻译基准，提升科研交流效率。</p><br><br><p><strong>摘要：</strong> 本文介绍了阿拉伯语与俄语之间的科学翻译基准，包含约27,000句对的混合平行语料库，涵盖科学摘要和通用领域文本。研究对三种多语言模型进行了LoRA微调，其中Qwen2.5-7B模型在QLoRA（秩8）下表现最佳，BLEU得分为23.15，BERTScore为0.906。实验表明，零样本基线需通过领域微调提升性能，而少量示例提示无效。研究释放了模型、语料库和评估代码，旨在降低语言障碍，促进阿拉伯语和俄语科研人员的知识共享，助力可持续发展和创新基础设施建设。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.30943 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 29 Jun 2026 21:53:34 +0000</pubDate>
+<pubDate>Mon, 29 Jun 2026 21:53:34 +0000</pubDate>
+</item>
+<item>
+<title>基于医学先验的超声图像分类框架</title>
+<link>https://tldr.takara.ai/p/2607.01648</link>
+<guid>https://tldr.takara.ai/p/2607.01648</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种结合医学先验的双分支超声分类框架，提升诊断准确性和可解释性。</p><br><br><p><strong>摘要：</strong> 本文针对超声图像分类中临床先验信息不足导致的泛化能力差和可解释性弱的问题，提出一种属性引导的双分支框架。该框架包含一个基础分支和一个引入领域无关医学属性的属性引导分支，通过自适应决策模块融合两者的输出，实现更准确和可解释的分类结果。实验表明，该方法可无缝集成到多种模型中，显著提升性能且开销低。代码已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.01648 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 02 Jul 2026 03:20:12 +0000</pubDate>
+<pubDate>Thu, 02 Jul 2026 03:20:12 +0000</pubDate>
+</item>
+<item>
+<title>基于多级分布熵的机器学习入侵检测系统研究</title>
+<link>https://tldr.takara.ai/p/2606.29797</link>
+<guid>https://tldr.takara.ai/p/2606.29797</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>多级分布熵方法提升入侵检测性能，无需原始数据。</p><br><br><p><strong>摘要：</strong> 本文提出一种名为多级分布熵（MDE）的分析框架，通过流级别汇总统计信息，在三个层次上提取可解释的熵特征，包括流内高斯微分熵、跨方向Jensen-Shannon散度和TCP标志模式香农熵。该方法无需原始数据或训练集即可实现高效的入侵检测。在多个基准数据集上的实验表明，仅使用熵特征即可达到与传统特征相当的性能，且在操作指标报告中揭示了聚合F1值可能掩盖的失败模式。此外，研究还发现时间漂移下模型表现下降的问题，并通过SHAP分析验证了熵特征的可重复性和领域一致性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.29797 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 29 Jun 2026 05:19:21 +0000</pubDate>
+<pubDate>Mon, 29 Jun 2026 05:19:21 +0000</pubDate>
+</item>
+<item>
+<title>基于对称群的等变庞加莱残差网络研究</title>
+<link>https://tldr.takara.ai/p/2607.00556</link>
+<guid>https://tldr.takara.ai/p/2607.00556</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>等变庞加莱残差网络提升超平面优化效率与空间对齐性。</p><br><br><p><strong>摘要：</strong> 本文提出等变庞加莱残差网络，结合双曲几何与离散对称群（C4和D4），解决传统超平面网络在空间变换中参数冗余和信号消失的问题。通过几何安全张量重塑、左正则排列和联合方向庞加莱中点批量归一化，有效减少优化空间，加速收敛，同时满足庞加莱球边界约束并保持空间-群等变性。实验表明该方法显著提升了模型性能。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.00556 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 01 Jul 2026 07:44:28 +0000</pubDate>
+<pubDate>Wed, 01 Jul 2026 07:44:28 +0000</pubDate>
+</item>
+<item>
+<title>DeadPool：高效容错的大型语言模型训练方法</title>
+<link>https://tldr.takara.ai/p/2607.01646</link>
+<guid>https://tldr.takara.ai/p/2607.01646</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>DeadPool实现零开销训练与快速故障恢复。</p><br><br><p><strong>摘要：</strong> 本文提出DeadPool，一种用于大型语言模型（LLM）训练的高效容错机制。传统方法在无故障执行时有显著开销或在故障恢复时耗时过长，而DeadPool通过热切换技术，在不中断任务的情况下用备用节点替换故障节点。其核心包括非关键路径的内存检查点机制和运行时通信器重建协议，使检查点与计算并行执行，从而实现无开销的正常训练。在永久性节点故障时，利用内存检查点进行最小化重新计算，恢复时间小于40秒。实验表明，DeadPool在大规模GPU集群和大参数模型中均表现优异。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.01646 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 02 Jul 2026 03:17:58 +0000</pubDate>
+<pubDate>Thu, 02 Jul 2026 03:17:58 +0000</pubDate>
+</item>
+<item>
+<title>OPINE-World：基于对象中心程序模型的高效环境学习代理</title>
+<link>https://tldr.takara.ai/p/2607.01531</link>
+<guid>https://tldr.takara.ai/p/2607.01531</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>OPINE-World通过在线交互学习高效环境模型，提升任务适应能力。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为 OPINE-World 的 LLM 代理，它能够通过在线交互学习对象中心的程序化世界模型。该代理结合两个协作的智能体，一个在环境中行动，另一个通过回放验证和基于模型的规划生成代码模型，并利用一种称为“本体误差”的贝叶斯度量来引导探索。OPINE-World 在 ARC-AGI-3 基准测试中表现出色，无需每局单独训练即可解决 25 个游戏中的 20 个，动作效率得分为 78.4，优于人类基准。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.01531 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 01 Jul 2026 23:04:47 +0000</pubDate>
+<pubDate>Wed, 01 Jul 2026 23:04:47 +0000</pubDate>
+</item>
+<item>
+<title>轻量级零样本异常检测框架LiZAD在工业生产中的应用</title>
+<link>https://tldr.takara.ai/p/2607.01949</link>
+<guid>https://tldr.takara.ai/p/2607.01949</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>LiZAD实现高效零样本异常检测，适用于边缘设备。</p><br><br><p><strong>摘要：</strong> 在现代高通量工业生产线中，产品配置和视觉特征频繁变化，使得为每个新场景收集和标注数据变得不切实际。因此，零样本异常检测（ZSAD）成为一种理想方案，可在无需目标特定样本训练的情况下进行缺陷检测。然而，现有ZSAD方法计算成本高，难以部署在资源受限的设备上。为此，研究者提出LiZAD：一个专为边缘设备设计的轻量级ZSAD框架。该框架结合DINOv3的密集且空间感知的视觉特征与MobileCLIP2的高效文本嵌入，通过低内存可训练投影头将特征映射到共享潜在空间。相比六种最先进的ZSAD模型，LiZAD在内存、参数和延迟方面分别减少了61.5%、74.6%和3.02倍，同时仅比最佳模型平均P-AUROC下降6.4%。该方法已在NVIDIA Jetson NX和Jetson AGX设备上成功部署，并在维罗纳大学工业计算机工程实验室的真实生产线上进行了测试。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.01949 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 02 Jul 2026 09:40:42 +0000</pubDate>
+<pubDate>Thu, 02 Jul 2026 09:40:42 +0000</pubDate>
+</item>
+<item>
+<title>基于Realsee3D数据集的全景3D重建方法Argus</title>
+<link>https://tldr.takara.ai/p/2606.30047</link>
+<guid>https://tldr.takara.ai/p/2606.30047</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Argus实现高精度全景3D重建，提升相机姿态与深度估计性能。</p><br><br><p><strong>摘要：</strong> 由于缺乏大规模全景RGB-D训练数据，全景数据的度量前馈3D重建仍处于探索阶段。本文提出Realsee3D数据集，包含10,000个室内场景（1,000个真实、9,000个合成）和299,000个全景视角，并引入Argus网络进行度量全景3D重建。Argus通过学习的共视模块选择最优参考视角以避免全局位姿漂移，并通过分解双向像素到世界映射来增强多任务学习中的几何一致性。在Realsee3D基准测试中，Argus在相机姿态估计、深度估计和点云重建方面均取得最先进的度量性能。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.30047 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 29 Jun 2026 09:39:17 +0000</pubDate>
+<pubDate>Mon, 29 Jun 2026 09:39:17 +0000</pubDate>
+</item>
+<item>
+<title>文本嵌入相似性度量的几何条件研究</title>
+<link>https://tldr.takara.ai/p/2606.29571</link>
+<guid>https://tldr.takara.ai/p/2606.29571</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>嵌入空间的几何结构决定相似性度量选择。</p><br><br><p><strong>摘要：</strong> 本文通过全面实验证明，文本嵌入的几何结构决定了哪种相似性度量更有效。当嵌入方差均匀分布时，余弦相似度表现最佳；而当方差集中在少数方向（即各向异性）时，基于排名或L1的度量效果更优。实验覆盖19种编码器和19种无参数相似性度量，结果显示，单一主方向的方差占比可预测替代度量的效果，相关性高达0.95。通过去除主方向，余弦相似度性能恢复，表明几何结构是关键因素。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.29571 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 28 Jun 2026 19:24:59 +0000</pubDate>
+<pubDate>Sun, 28 Jun 2026 19:24:59 +0000</pubDate>
+</item>
+<item>
+<title>基于聚类的语义分块对RAG系统性能的影响研究</title>
+<link>https://tldr.takara.ai/p/2607.01852</link>
+<guid>https://tldr.takara.ai/p/2607.01852</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究比较不同分块方法对RAG系统性能的影响。</p><br><br><p><strong>摘要：</strong> 本文评估了基于聚类的语义分块在长篇结构化学术论文中的检索和回答质量，与固定大小分块和递归分块方法进行对比。研究使用RAGAs框架进行测试，发现基于忠实度的评估指标在此设置中可靠性有限。固定问题与文档特定问题的表现差异较大，可能与文档格式和预处理有关。实验结果表明，在所测试配置下，基于聚类的分块方法并未优于更简单的策略。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.01852 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 02 Jul 2026 08:12:35 +0000</pubDate>
+<pubDate>Thu, 02 Jul 2026 08:12:35 +0000</pubDate>
+</item>
+<item>
+<title>评估大语言模型在非对话规划中的心智理论能力</title>
+<link>https://tldr.takara.ai/p/2606.31916</link>
+<guid>https://tldr.takara.ai/p/2606.31916</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究大语言模型在非对话场景中理解他人信念的能力。</p><br><br><p><strong>摘要：</strong> 本文提出一种新的评估方法NCP-ToM，用于测试大语言模型在非对话情境下通过行动影响他人信念的能力。研究采用新框架NCP-ExploreToM，让模型通过移动物体或引导角色完成任务目标。评估结果显示，GPT-5在80%的任务中表现优异，且优于人类参与者，但在不同情境下的鲁棒性仍不及人类。所有模型在处理真实信念任务时表现优于虚假信念任务，这为模型对齐提供了积极信号。研究强调了对自主社会代理进行代理评估的重要性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.31916 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 30 Jun 2026 16:22:12 +0000</pubDate>
+<pubDate>Tue, 30 Jun 2026 16:22:12 +0000</pubDate>
+</item>
+<item>
+<title>不确定性感知深度学习在汽车雷达到达方向估计中的应用研究</title>
+<link>https://tldr.takara.ai/p/2606.31473</link>
+<guid>https://tldr.takara.ai/p/2606.31473</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>比较两种不确定性建模方法在雷达DOA估计中的性能与适用性。</p><br><br><p><strong>摘要：</strong> 本文研究了不确定性感知的深度学习方法在汽车雷达到达方向（DOA）估计中的应用，重点分析了基于圆统计学的冯·米塞斯（VM）集成模型与基于正态逆伽马分布的证据深度学习（EDL）框架。VM集成模型通过参数（mu, kappa）生成可解释的不确定性，适用于方向几何结构；而EDL则提供更平滑的不确定性变化和稍优的排名一致性。实验表明，在正常条件下，VM集成模型具有更低的不确定性，并对严重扰动更敏感，而EDL在不确定性分布上更为稳定。此外，VM集成模型可通过闭式VM似然直接整合到关联模块中，实现统一的目标检测与跟踪流程。研究揭示了几何一致性与统计泛化之间的权衡。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.31473 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 30 Jun 2026 10:49:45 +0000</pubDate>
+<pubDate>Tue, 30 Jun 2026 10:49:45 +0000</pubDate>
+</item>
+<item>
+<title>基于动态支持区间的高斯直方图损失在强化学习中的应用</title>
+<link>https://tldr.takara.ai/p/2607.01880</link>
+<guid>https://tldr.takara.ai/p/2607.01880</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出动态学习支持区间的高斯直方图损失方法，提升RL性能。</p><br><br><p><strong>摘要：</strong> 本文研究了高斯直方图损失（HL-Gauss）在深度强化学习中的应用，该方法将价值估计转化为分类问题。传统方法需要预先定义固定支持区间，但在非平稳和随机的RL任务中存在困难。本文提出一种动态学习支持上下界的方法，在学习价值分布的同时优化支持区间，理论分析表明该方法能更紧地约束均方贝尔曼误差。实验显示该方法在多数连续控制任务中表现优于传统HL-Gauss方法，且无需预设支持区间。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.01880 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 02 Jul 2026 08:34:42 +0000</pubDate>
+<pubDate>Thu, 02 Jul 2026 08:34:42 +0000</pubDate>
+</item>
+<item>
+<title>基于双像素与视觉Transformer的深度估计方法</title>
+<link>https://tldr.takara.ai/p/2607.01900</link>
+<guid>https://tldr.takara.ai/p/2607.01900</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>FoundDP提升双像素深度估计的结构一致性和精度。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为FoundDP的统一框架，将双像素（DP）深度估计与单目深度基础模型的全局结构先验相结合。该方法通过DP获取度量尺度，并利用视觉Transformer（ViT）特征恢复弱视差区域的结构一致性。为确保在DP成像条件下可靠的度量引导，作者识别并缓解了ViT特征因DP散焦模糊导致的退化问题，从而实现更稳定的度量引导深度估计。实验表明，FoundDP在合成和真实DP基准数据集上均表现出色，特别是在视差可观察性较低的情况下，显著提升了结构保真度和度量准确性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.01900 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 02 Jul 2026 08:57:38 +0000</pubDate>
+<pubDate>Thu, 02 Jul 2026 08:57:38 +0000</pubDate>
+</item>
+<item>
+<title>多器官病理报告生成框架PriOrGen缓解长尾偏差</title>
+<link>https://tldr.takara.ai/p/2607.00499</link>
+<guid>https://tldr.takara.ai/p/2607.00499</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出PriOrGen框架解决多器官病理报告生成中的长尾偏差问题。</p><br><br><p><strong>摘要：</strong> 本文针对数字病理学中自动化病理报告生成的挑战，提出了一种名为PriOrGen的新框架，以解决现有方法在多器官场景下的偏差问题。研究指出，现有方法存在视觉表示偏差和文本解码偏差，导致对尾部器官的诊断不可靠。PriOrGen通过两个创新模块：视觉原型锚定瓶颈模块和元报告锚定库模块，分别优化视觉特征提取和文本生成过程，有效缓解了长尾分布带来的影响。实验表明，该方法在多器官数据集上表现出色，优于现有先进方法。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.00499 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 01 Jul 2026 06:31:39 +0000</pubDate>
+<pubDate>Wed, 01 Jul 2026 06:31:39 +0000</pubDate>
+</item>
+<item>
+<title>基于互信息的多目标探索与偏好优化方法</title>
+<link>https://tldr.takara.ai/p/2607.01392</link>
+<guid>https://tldr.takara.ai/p/2607.01392</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出MI-EPO框架，提升语言模型与多维偏好的对齐效果。</p><br><br><p><strong>摘要：</strong> 本文提出一种基于互信息的多目标探索与偏好优化方法（MI-EPO），通过最大化生成响应、偏好反馈和偏好向量之间的联合条件互信息，统一多目标探索与对齐过程。该方法引入概率路由机制，自然分解目标对齐与偏好感知探索，鼓励模型生成与不同偏好条件相一致且可区分的响应。实验表明，MI-EPO在安全对齐和助手任务中显著提升了响应与偏好向量的对齐效果，增强了输出的可控性，并实现了多个目标间的稳定权衡。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.01392 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 01 Jul 2026 18:50:14 +0000</pubDate>
+<pubDate>Wed, 01 Jul 2026 18:50:14 +0000</pubDate>
+</item>
+<item>
+<title>WorldOdysseyBench：多维度评估交互式世界模型的基准测试</title>
+<link>https://tldr.takara.ai/p/2606.31672</link>
+<guid>https://tldr.takara.ai/p/2606.31672</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出WorldOdysseyBench，全面评估交互式世界模型的稳定性与真实性。</p><br><br><p><strong>摘要：</strong> 本文提出WorldOdysseyBench，一个用于评估交互式世界模型（IWMs）长期稳定性的开放世界基准测试。该基准涵盖四个维度：动作、视觉、物理和记忆，并引入了针对每个维度的创新评估方法。例如，动作维度通过逐帧评估揭示轨迹级评估无法发现的失败；视觉维度通过分段漂移度量捕捉序列中非单调的崩溃现象；物理维度通过可控性门控评估机械、光学和3D一致性；记忆维度则通过解耦动作协议评估场景和主体记忆。测试案例覆盖自然、城市和室内场景，包含第一人称和第三人称视角，持续交互时间从10秒到60秒不等。评估显示，现有模型在所有维度上均表现不佳，表明IWMs仍需进一步发展以实现真实部署。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.31672 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 30 Jun 2026 13:51:44 +0000</pubDate>
+<pubDate>Tue, 30 Jun 2026 13:51:44 +0000</pubDate>
+</item>
+<item>
+<title>评估前沿AI系统在儿童安全风险中的识别能力</title>
+<link>https://tldr.takara.ai/p/2606.29685</link>
+<guid>https://tldr.takara.ai/p/2606.29685</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出CAREBench基准，用于评估AI系统在儿童安全风险发生前的识别能力。</p><br><br><p><strong>摘要：</strong> 文章探讨了如何评估前沿AI系统在儿童安全风险发生前的识别能力。现有的儿童安全评估主要针对儿童性虐待材料，但许多安全问题在AI帮助成年人操纵、冒充、追踪或孤立未成年人时就已经开始。为此，作者提出了CAREBench（Child AI Risk Evaluation）基准，涵盖12类风险，如诱骗、身份冒充、隐私侵犯等。该基准通过家长和临床专家的标注，评估AI是否能在风险行为显性化之前进行识别、拒绝、缓和或引导。对7个前沿模型的测试显示失败率从2%到58%不等，表明AI在儿童安全保护方面仍存在显著漏洞。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.29685 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 29 Jun 2026 01:17:41 +0000</pubDate>
+<pubDate>Mon, 29 Jun 2026 01:17:41 +0000</pubDate>
+</item>
+<item>
+<title>PedNStream：基于Link Transmission Model的大规模行人网络仿真框架</title>
+<link>https://tldr.takara.ai/p/2607.01021</link>
+<guid>https://tldr.takara.ai/p/2607.01021</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>PedNStream是一个高效且适用于控制的行人网络仿真工具。</p><br><br><p><strong>摘要：</strong> 本文介绍了PedNStream，一个基于Link Transmission Model（LTM）的宏观行人网络仿真框架。该工具通过引入随机链接动态来捕捉扩散和活动引起的变异，并采用基于效用的路由选择方法以适应不确定和干预驱动的环境。PedNStream具备模块化结构和内置控制器接口，支持如闸门控制、流量分离和路线引导等干预措施。文章通过合成场景和真实网络实验验证了其性能，包括排队形成、溢流、拥堵消散和自适应重路由等功能，并展示了其在闭环控制中的应用和可扩展性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.01021 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 01 Jul 2026 14:54:25 +0000</pubDate>
+<pubDate>Wed, 01 Jul 2026 14:54:25 +0000</pubDate>
+</item>
+<item>
+<title>多秘书问题中加性后悔的下界分析</title>
+<link>https://tldr.takara.ai/p/2607.02150</link>
+<guid>https://tldr.takara.ai/p/2607.02150</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究多秘书问题中的加性后悔下界，证明对某些分布需至少 (log T)^2 的后悔。</p><br><br><p><strong>摘要：</strong> 本文研究多秘书问题中加性后悔的下界，即在线策略收益与离线最优收益之间的差距。已有研究表明，在有界密度分布且支持集连续的情况下，后悔上界为 O(log T)，而在支持集存在间隙的情况下，上界为 O((log T)^2)。然而，是否需要额外的对数因子仍不清楚。本文证明在临界容量下混合两个分离均匀分布时，最优后悔至少为 (log T)^2，因此现有上界在最简情形下是紧致的。该框架还给出了支持集边缘密度趋于零的分布的匹配下界，证明过程使用了 Bellman 证书，将下界转化为显式证书构造，揭示了支持集间隙为何导致更大后悔。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.02150 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 02 Jul 2026 13:26:29 +0000</pubDate>
+<pubDate>Thu, 02 Jul 2026 13:26:29 +0000</pubDate>
+</item>
+<item>
+<title>CooperScene：面向真实世界部署的协同自动驾驶数据集</title>
+<link>https://tldr.takara.ai/p/2606.31219</link>
+<guid>https://tldr.takara.ai/p/2606.31219</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>CooperScene提供高保真协同自动驾驶数据，支持多智能体实际性能评估。</p><br><br><p><strong>摘要：</strong> 本文介绍了CooperScene，一个高保真的协同自动驾驶数据集，旨在反映真实世界的C-V2X通信特性。该数据集涵盖多种场景，包括交叉口、高速公路匝道和停车场，包含三辆联网自动驾驶汽车和一个路侧单元，所有设备均配备多模传感器和商用C-V2X通信设备。数据集提供全局一致的3D标注，覆盖59,000帧，总计344,000个物体，并具备厘米级定位、精确标定和符合3GPP标准的通信协议。CooperScene为多智能体协同系统的实际性能评估提供了严格的基准。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.31219 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 30 Jun 2026 06:57:27 +0000</pubDate>
+<pubDate>Tue, 30 Jun 2026 06:57:27 +0000</pubDate>
+</item>
+<item>
+<title>Dynamo：无需训练的视觉语言模型适应框架</title>
+<link>https://tldr.takara.ai/p/2606.30185</link>
+<guid>https://tldr.takara.ai/p/2606.30185</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Dynamo提升视觉推理性能，无需重新训练模型。</p><br><br><p><strong>摘要：</strong> Dynamo是一个无需训练的框架，通过在少量标注数据上运行，使冻结的视觉语言模型（VLM）适应视觉推理任务。该框架通过分析自身正确与错误尝试，逐步发展出可复用的推理技能和可执行的视觉工具，并将这些能力存入持久化库中。实验表明，Dynamo在四个视觉推理基准测试中提升了所有20个模型-基准组合的直接推理准确率，且在已知工具集的情况下，能有效选择工具以进一步提升性能。相比任务特定的强化学习方法，Dynamo在计算成本更低的情况下显著缩小了性能差距，并可与强化学习方法结合使用。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.30185 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 29 Jun 2026 11:59:01 +0000</pubDate>
+<pubDate>Mon, 29 Jun 2026 11:59:01 +0000</pubDate>
+</item>
+<item>
+<title>基于利润的反事实解释框架PBCE</title>
+<link>https://tldr.takara.ai/p/2607.01610</link>
+<guid>https://tldr.takara.ai/p/2607.01610</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出PBCE框架，以利润最大化替代传统反事实解释方法。</p><br><br><p><strong>摘要：</strong> 本文针对现有反事实解释方法在目标设定和距离度量上的不足，提出基于利润最大化（PBCE）的反事实解释框架。该框架无需外生指定目标值，而是直接以利润作为优化目标，并将距离项重新解释为修改产品属性的成本，从而提供更具经济意义的解释。此方法适用于管理与营销场景，有助于提升模型可解释性并支持数据驱动决策。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.01610 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 02 Jul 2026 02:28:35 +0000</pubDate>
+<pubDate>Thu, 02 Jul 2026 02:28:35 +0000</pubDate>
+</item>
+<item>
+<title>静脉识别数据增强评估与AGVBench基准研究</title>
+<link>https://tldr.takara.ai/p/2607.02271</link>
+<guid>https://tldr.takara.ai/p/2607.02271</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>静脉识别数据增强效果评估及安全性能分析。</p><br><br><p><strong>摘要：</strong> 本文介绍了AGVBench，一个用于评估30种数据增强策略在五组公开手掌和手指静脉数据集上的表现的基准平台。研究涵盖了传统CNN、视觉Transformer和专用静脉识别模型。结果显示，多图像混合方法（如MixUp、PuzzleMix、StarMixup）在识别性能上表现最佳，但存在对抗攻击脆弱性问题。研究还发现几何变换常导致识别性能下降，且不同数据集间增强效果差异显著。这表明仅关注准确率不足以评估生物特征增强的有效性。AGVBench提供了标准化协议，支持可复现的研究和可靠、安全、鲁棒的静脉识别系统设计。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.02271 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 02 Jul 2026 14:55:24 +0000</pubDate>
+<pubDate>Thu, 02 Jul 2026 14:55:24 +0000</pubDate>
+</item>
+<item>
+<title>自主网络中AI决策的运行时验证框架研究</title>
+<link>https://tldr.takara.ai/p/2607.02210</link>
+<guid>https://tldr.takara.ai/p/2607.02210</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出Guard Rail Validation框架以确保AI在自主网络中的安全决策。</p><br><br><p><strong>摘要：</strong> 本文针对完全自主电信网络中AI/ML代理在无人工干预下做出实时决策的风险，提出了一种名为Guard Rail Validation (GRV) 的标准化运行时验证框架。该框架通过多维评估（如操作范围、服务关键性、可逆性等）确定决策的关键性等级，并根据等级应用不同级别的验证机制，包括执行日志记录、边界检查、独立代理验证或多代理共识。此外，该框架还支持跨代理冲突检测和关键性加权优先级解决，以及符合监管要求的运行时合规日志记录。文章展示了该架构、算法流程、O-RAN部署模型，并评估了其对已知AI/ML攻击的威胁覆盖能力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.02210 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 02 Jul 2026 14:21:26 +0000</pubDate>
+<pubDate>Thu, 02 Jul 2026 14:21:26 +0000</pubDate>
+</item>
+<item>
+<title>LLM数学推理中的策略多样性研究</title>
+<link>https://tldr.takara.ai/p/2606.29985</link>
+<guid>https://tldr.takara.ai/p/2606.29985</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究提出策略级多样性，揭示传统度量的不足。</p><br><br><p><strong>摘要：</strong> 本文探讨了大语言模型在数学推理中的多样性问题，指出现有度量主要关注表层变化，而非解题策略的差异。作者引入了策略级多样性概念，通过人工校准的LLM评判框架发现，传统度量无法准确反映策略多样性，且在多样性感知的强化学习中导致策略多样性下降。研究还发现，策略多样化的候选集有助于测试时的性能提升，但训练过程中优化评判器多样性奖励会导致模型利用特定偏好，而非真正拓展策略。该工作为实现更接近人类的多样化推理提供了新方向。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2606.29985 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 29 Jun 2026 08:59:22 +0000</pubDate>
+<pubDate>Mon, 29 Jun 2026 08:59:22 +0000</pubDate>
+</item>
+<item>
+<title>ReMAP-PET: Beyond Visual Understanding -- Learning Region-Guided Metabolic Alignment Semantics from Brain PET</title>
+<link>https://tldr.takara.ai/p/2606.29577</link>
+<guid>https://tldr.takara.ai/p/2606.29577</guid>
+<content:encoded><![CDATA[
+
+  Positron Emission Tomography (PET) reveals brain metabolism and is clinically central to neurodegenerative disease assessment, yet existing 3D brain foundation models treat PET as generic volumetric data, missing the structured regional metabolic information that distinguishes it from structural neuroimaging. To address these limitations, we propose ReMAP-PET, a framework that moves beyond visual encoding by supervising a partially-tuned MedicalNet 3D ResNet-50 with brain regional standardized uptake value ratio (SUVR) profiles through joint regression and contrastive objectives, enabling the encoder to learn the metabolic semantics underlying PET modality. On 1015 paired PET--SUVR samples, ReMAP-PET achieves 0.070 SUVR MAE and 77.8% PET SUVR Recall@1, substantially outperforming five frozen pretrained baselines. We further connect the metabolic embedding to clinical language via contrastive alignment with frozen BioClinicalBERT and demonstrate end-to-end PET-to-report generation through SUVR-constrained verbalization. Linear probing on diagnostic classification and cognitive regression tasks confirms that the embeddings retain clinically relevant information without task-specific fine-tuning. Our results show that grounding PET encoders in regional metabolic semantics -- rather than treating PET as generic volumetric data -- yields representations that are structured, interpretable, and language-compatible, pointing to a new direction for metabolic-aware PET understanding.
+
+]]></content:encoded>
+<pubDate>Sun, 28 Jun 2026 19:43:03 +0000</pubDate>
+<pubDate>Sun, 28 Jun 2026 19:43:03 +0000</pubDate>
+</item>
+<item>
+<title>Embracing Intra-Class Heterogeneity for Semi-Supervised Medical Image Segmentation: From Diversity to Precision</title>
+<link>https://tldr.takara.ai/p/2607.02051</link>
+<guid>https://tldr.takara.ai/p/2607.02051</guid>
+<content:encoded><![CDATA[
+
+  Due to the scarcity of expert-annotated data, Semi-Supervised Medical Image Segmentation (SSMIS) has emerged as a promising approach. Many anatomical structures in medical images exhibit significant intra-class heterogeneity, with different regions showing heterogeneous intensity patterns within the same structure. However, existing methods inadequately exploit this intensity-manifested intra-class heterogeneity, resulting in uniform structural representations and imprecise segmentation. Furthermore, the scarcity of labeled data makes it more difficult to effectively capture such complex heterogeneity. To address this, we propose Multiple Prototype Contrastive Learning (MPCL), an SSMIS framework that possesses better diversity and better precision. It consists of three novel designs: First, we provide structural representations with better diversity and propose Intensity-aligned Heterogeneous Prototype Generation (IHPG) that effectively models intra-class heterogeneity by generating multiple prototypes aligned with intensity characteristics. Second, we further enhance more diverse structural representations and build a solid foundation for more precise segmentation through Prototypical Space Optimization (PSO) that systematically optimizes a more discriminative and generalizable prototypical space. Finally, we achieve segmentation results with better precision through Dual-branch Knowledge Alignment (DKA) that efficiently promotes intra-class heterogeneity knowledge transfer from prototypical space to the segmentation network. Extensive experiments on three medical image datasets with significant intra-class heterogeneity demonstrate that MPCL significantly outperforms existing methods, especially under extremely limited labeled data.
+
+]]></content:encoded>
+<pubDate>Thu, 02 Jul 2026 11:26:11 +0000</pubDate>
+<pubDate>Thu, 02 Jul 2026 11:26:11 +0000</pubDate>
+</item>
+<item>
+<title>FacePlex: Full-Duplex Joint Speech-Facial Motion Generation for Conversational Avatars</title>
+<link>https://tldr.takara.ai/p/2606.30145</link>
+<guid>https://tldr.takara.ai/p/2606.30145</guid>
+<content:encoded><![CDATA[
+
+  Natural face-to-face conversation requires real-time speech generation together with synchronized facial motion. Existing systems only partially address this problem: speech-only full-duplex models can generate speech in real time but do not produce facial motion, while audio-driven facial motion models animate a face from already available audio rather than jointly generating speech and motion online. To bridge this gap, we first formalize full-duplex joint speech-facial motion generation, where speech tokens and facial motion tokens are produced together every step. Building on this formulation, we propose FacePlex, a unified streaming framework with two key components. First, Rolling Flow Matching adapts flow matching to online motion generation by committing new motion frames at each streaming step. Second, Rolling Cross-Attention couples the streaming audio queue with the motion queue, allowing speech and facial motion to condition each other as generation progresses. Through extensive experiments, ablation studies, and a user study, we show that FacePlex enables full-duplex joint speech-facial motion generation under online streaming constraints, while achieving stronger lip-sync quality and motion fidelity than audio-driven facial motion baselines.
+
+]]></content:encoded>
+<pubDate>Mon, 29 Jun 2026 11:22:50 +0000</pubDate>
+<pubDate>Mon, 29 Jun 2026 11:22:50 +0000</pubDate>
+</item>
+<item>
+<title>HealthAgentBench: A Unified Benchmark Suite of Realistic Agentic Healthcare Environments for Challenging Frontier AI Agents</title>
+<link>https://tldr.takara.ai/p/2606.31179</link>
+<guid>https://tldr.takara.ai/p/2606.31179</guid>
+<content:encoded><![CDATA[
+
+  As AI agents become increasingly capable of complex, long-horizon reasoning, rigorous and holistic evaluation is essential for measuring progress toward real-world healthcare applications. We introduce HealthAgentBench, a suite of 54 agentic healthcare tasks across 7 categories each with its unique environment. The benchmark suite spans diverse workflows throughout the patient journey and a broad range of modalities. Each task is designed to replicate an end-to-end clinical workflow: given minimal instructions, an agent must explore raw healthcare data, operate within a complex environment, and execute multi-step solutions that go beyond naive prompting. A final task success rate is reported to provide a single, interpretable metric for HealthAgentBench overall performance for each agent. Evaluating frontier agents on HealthAgentBench, we find that overall task success rate remains low, underscoring the difficulty of the suite. The strongest and the most cost effective agent, Codex GPT-5.5, achieves only approximately 42% success rate. Beyond aggregate performance, HealthAgentBench reveals nuanced strengths and weaknesses across task categories. Frontier agents show promise in automatically developing research modeling pipelines over EHR data, but medical imaging remains especially challenging, particularly for Claude Code models, while Codex GPT-5.5 shows emerging capability. Tasks that combine large search spaces with compositional reasoning requirements remain difficult for all current agents. Together, these results suggest that HealthAgentBench provides a challenging and realistic benchmark with substantial room for future progress. We release our benchmark at https://github.com/microsoft/HealthAgentBench.
+
+]]></content:encoded>
+<pubDate>Tue, 30 Jun 2026 06:09:01 +0000</pubDate>
+<pubDate>Tue, 30 Jun 2026 06:09:01 +0000</pubDate>
+</item>
+<item>
+<title>DL-VINS-Factory: A Modular Framework for Learned Visual Front-Ends in Visual-Inertial SLAM</title>
+<link>https://tldr.takara.ai/p/2607.01757</link>
+<guid>https://tldr.takara.ai/p/2607.01757</guid>
+<content:encoded><![CDATA[
+
+  Deep-learning features excel in visual matching, yet their practical value in tightly coupled visual-inertial SLAM (VI-SLAM) remains insufficiently characterized. We present DL-VINS-Factory, a unified framework that integrates learned feature extractors (ALIKED, RaCo, SuperPoint, XFeat) with either Lucas--Kanade (LK) optical-flow tracking or LightGlue (LG) descriptor matching. All front-ends share a sliding-window Ceres back-end, with optional AnyLoc DINOv2-VLAD loop closure, and 4-DoF pose-graph optimization. We benchmark the system across the four datasets covering indoor, unstructured outdoor, aggressive-motion, and visually degraded conditions. Results show that learned front-ends are viable for real-time embedded VI-SLAM, but are not universally superior to classical tracking. Relative to the corresponding GFTT+LK baseline, ALIKED+LG reduces EuRoC ATE by $5\%$ in monocular odometry and by $7\%$ in stereo with loop-closure. On NTU-VIRAL, where aggressive aerial motion increases inter-frame viewpoint change, ALIKED+LG stereo reduces loop-closed ATE by $12\%$. In Botanic Garden dataset, optical-flow tracking remains preferable, but learned keypoints still improve over the baseline GFTT, in which SuperPoint+LK reduces grayscale camera ATE by $29\%$, while RaCo+LK reduces RGB camera ATE by $38\%$. On SubT-MRS, learned front-ends display varying degree of improvement based on individual cases. With TensorRT acceleration on a Jetson AGX Orin, all valid configurations run in real time between $29$--$47$ FPS in monocular mode and $18$--$33$ FPS in stereo mode for the EuRoC and NTU-VIRAL datasets. AnyLoc further confirms roughly $2$--$7\times$ more valid loops than BRIEF+DBoW2. The implementation is open-sourced at https://github.com/limshoonkit/DL-VINS-Factory-ROS2/.
+
+]]></content:encoded>
+<pubDate>Thu, 02 Jul 2026 06:17:33 +0000</pubDate>
+<pubDate>Thu, 02 Jul 2026 06:17:33 +0000</pubDate>
+</item>
+<item>
+<title>SHOVIR: A Benchmark for Evaluating Vision Shortcut Learning in Radiology Report Generation</title>
+<link>https://tldr.takara.ai/p/2606.30201</link>
+<guid>https://tldr.takara.ai/p/2606.30201</guid>
+<content:encoded><![CDATA[
+
+  Current evaluation protocols for Vision-Language Models (VLMs) in Radiology Report Generation (RRG) rely on report-level metrics that measure lexical overlap or aggregate clinical correctness. However, such metrics do not test whether individual diagnostic statements stem from the actual pathological evidence visible in the image. This allows models to achieve competitive scores by exploiting learned priors or spurious correlations, a failure mode we refer to as vision shortcut. We introduce SHOVIR, a benchmark for evaluating vision shortcut behavior in RRG. SHOVIR extends two spatially annotated chest X-ray datasets, MIMIC-CXR and PadChest-GR, with per-box CheXpert labels, and defines image-level and disease-level occlusion experiments that contrast baseline performance on clean images against localized, region-specific perturbations. Comparing predictions across these conditions isolates two failure modes at the disease-class level: direct shortcuts, where a finding persists after its visual evidence is removed, and contextual shortcuts, where detection degrades once co-occurring pathologies are occluded despite the target region remaining intact. Benchmarking eight state-of-the-art VLMs, we find that shortcut behavior varies substantially across architectures and datasets. Models achieving the highest baseline report quality do not necessarily rank highest in spatial grounding, revealing that clinically fluent generation can coexist with shallow reliance on visual evidence. These findings expose a blind spot in current RRG evaluation and motivate region-aware assessment protocols.
+
+]]></content:encoded>
+<pubDate>Mon, 29 Jun 2026 12:17:35 +0000</pubDate>
+<pubDate>Mon, 29 Jun 2026 12:17:35 +0000</pubDate>
+</item>
+<item>
+<title>From SRA to Self-Flow: Data Augmentation or Self-Supervision?</title>
+<link>https://tldr.takara.ai/p/2607.02508</link>
+<guid>https://tldr.takara.ai/p/2607.02508</guid>
+<content:encoded><![CDATA[
+
+  Representation alignment has become an effective way to accelerate diffusion transformer training and improve generation quality. Recent self-alignment methods, such as SRA and Self-Flow, further remove the dependency on external pretrained encoders by constructing alignment within the diffusion model itself. However, the mechanism behind the improvement from SRA to Self-Flow, dual-time scheduling, remains under-examined: Self-Flow attributes its gain to interactions between tokens at different noise levels, where cleaner tokens help infer noisier ones. In this work, we revisit this explanation and ask whether the gain instead comes from data augmentation along the noise dimension. To disentangle these factors, we introduce Attention Separation, which preserves the same dual-timestep input as Self-Flow while blocking attention between tokens assigned to different noise levels. Surprisingly, removing such interaction does not degrade performance and can even improve it, suggesting that the improvement from SRA to Self-Flow mainly comes from data augmentation. Furthermore,We show that Attention Separation itself provides an augmentation effect by splitting a single image into multiple effective training parts to expand the training data. Based on these observations, we combine self-representation alignment with dual-timestep and attention-separation augmentation, and demonstrate the effectiveness of this design on ImageNet.
+
+]]></content:encoded>
+<pubDate>Thu, 02 Jul 2026 17:59:25 +0000</pubDate>
+<pubDate>Thu, 02 Jul 2026 17:59:25 +0000</pubDate>
+</item>
+<item>
+<title>Generic Expert Coverage for Pruning SparseMixture-of-Experts Language Models</title>
+<link>https://tldr.takara.ai/p/2607.01710</link>
+<guid>https://tldr.takara.ai/p/2607.01710</guid>
+<content:encoded><![CDATA[
+
+  Sparsely activated Mixture-of-Experts (MoE) language models contain substantial structured redundancy among routed experts, but pruning them without downstream calibration data remains challenging. Existing expert-pruning methods typically rely on a single aggregated importance score, which can bias the retained set toward experts favored by dominant calibration patterns. We propose \textbf{Generic TB-Coverage}, a coverage-aware expert pruning method that uses only generic text corpora (WikiText2 and C4) for calibration. Instead of collapsing expert utility into one score, our method profiles per-expert utility separately on each corpus and enforces a fixed-budget coverage rule that preserves high-utility experts from each corpus before constructing the final pruning mask. Across Qwen1.5-MoE-A2.7B and DeepSeek-MoE-16B-Base at 25\%, 50\%, and 75\% retention budgets, our method improves average accuracy on six common zero-shot benchmarks over random pruning, REAP, and ExpertSparsity, while also reducing perplexity degradation on WikiText2 and C4. The gains are largest under aggressive pruning (25\% and 50\% retain), suggesting that preserving cross-corpus expert coverage is an effective generic-data prior for MoE pruning. Our improvements hold with fixed pruning budgets and no downstream calibration data.
+
+]]></content:encoded>
+<pubDate>Thu, 02 Jul 2026 05:02:18 +0000</pubDate>
+<pubDate>Thu, 02 Jul 2026 05:02:18 +0000</pubDate>
+</item>
+<item>
+<title>Bi-NAS: Towards Effective and Personalized Explanation for Recommender Systems via Bi-Level Neural Architecture Search</title>
+<link>https://tldr.takara.ai/p/2607.01387</link>
+<guid>https://tldr.takara.ai/p/2607.01387</guid>
+<content:encoded><![CDATA[
+
+  Recommender systems are vital in helping users navigate vast amounts of information, offering personalized suggestions and effective explanations for these recommendations. While previous efforts have attempted to provide such explanations, evaluating their effectiveness across various scenarios remains a challenge. Enhancing these explanations is essential for improving user engagement, trust, and decision-making. To facilitate effective explanations within the recommender system, we propose a Bi-level Neural Architecture Search (Bi-NAS) framework to optimize explanations. This approach simultaneously refines cross-attention mechanisms and feature interaction functions by exploring both intra-layer and inter-layer design spaces. Furthermore, we integrate Large Language Models (LLMs) to enhance explanation generation, leveraging zero-shot prompting to produce more effective and personalized justifications. By aligning user feature preferences with item quality scores, our approach ensures that explanations reflect both user intent and item attributes, improving transparency and reasoning depth. Extensive evaluations on four real-world datasets demonstrate that Bi-NAS not only boosts recommendation accuracy but also significantly improves the effectiveness of explanations for recommender systems, providing users with clear and reliable insights into the suggestions they receive.
+
+]]></content:encoded>
+<pubDate>Wed, 01 Jul 2026 18:47:42 +0000</pubDate>
+<pubDate>Wed, 01 Jul 2026 18:47:42 +0000</pubDate>
+</item>
+<item>
+<title>STEMGym: Benchmarking Sequential Decision-Making under Dose Budgets in Autonomous Electron Microscopy</title>
+<link>https://tldr.takara.ai/p/2606.29592</link>
+<guid>https://tldr.takara.ai/p/2606.29592</guid>
+<content:encoded><![CDATA[
+
+  A central premise of autonomous scientific imaging is that smarter navigation, whether Bayesian, RL-based, or otherwise adaptive, is the principal lever for sample-efficient acquisition. We present evidence to the contrary in scanning transmission electron microscopy (STEM), an atomic-resolution imaging modality whose every measurement deposits damaging electron dose. We introduce STEMGym, an open-source Gymnasium benchmark of 15 physics-simulated STEM worlds spanning five materials, three difficulty levels, and four characterisation tasks, scored by the Dose-Efficiency Curve area (DEC-AUC), a single scalar capturing the information-vs-dose Pareto frontier. Across 33 agent configurations under realistic dose budgets, the dominant determinant of dose efficiency is the analyst (perception) pipeline, not the navigator: pairing a trained CNN analyst with naïve raster scanning raises DEC-AUC by 5.5x over a CNN-free raster baseline (0.287 vs.\ 0.052), while substituting Bayesian or adaptive finite-state-machine navigation for raster yields no statistically significant further gain. Production-tier vision-language models further underperform task-specific CNNs by {\sim}13x on crystallographic defect analysis. By decoupling perception, navigation, and planning under a unified dose budget, STEMGym reframes where ML effort should be invested in autonomous electron microscopy and provides the measurement infrastructure to test it.
+
+]]></content:encoded>
+<pubDate>Sun, 28 Jun 2026 20:23:03 +0000</pubDate>
+<pubDate>Sun, 28 Jun 2026 20:23:03 +0000</pubDate>
+</item>
 
 <item>
 <title>多单位歧视性拍卖中投标者的重复竞价策略研究</title>
