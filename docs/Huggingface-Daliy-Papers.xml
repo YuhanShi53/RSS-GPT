@@ -4,6 +4,466 @@
 <title>Takara TLDR - Daily AI Papers</title>
 <link>https://tldr.takara.ai</link>
 
+<item>
+<title>1: N人脸识别中1一致性方法的性能评估</title>
+<link>https://tldr.takara.ai/p/2607.12903</link>
+<guid>https://tldr.takara.ai/p/2607.12903</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>1一致性方法在多种场景下表现优于传统阈值方法。</p><br><br><p><strong>摘要：</strong> 本文研究了1: N人脸识别中的关键问题，即判断某个探针是否属于已注册人员。传统基于匹配分数阈值的方法在不同图像质量和画廊结构下表现不稳定。作者提出了一种基于多个独立训练匹配器排名一致性的方法——1一致性，该方法在36种不同场景下进行了测试。实验结果显示，1一致性在无需调整的情况下，其准确率可达到与理想阈值方法相当的水平，尤其在图像质量下降时，其正确识别率仍保持在97-100%。相比而言，理想阈值方法虽然在某些情况下能提高MP召回率，但1一致性更擅长于减少MA误识率，具有更高的实用性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.12903 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 14 Jul 2026 15:38:08 +0000</pubDate>
+<pubDate>Tue, 14 Jul 2026 15:38:08 +0000</pubDate>
+</item>
+<item>
+<title>基于大语言模型的智能推荐系统设计与实践</title>
+<link>https://tldr.takara.ai/p/2607.09988</link>
+<guid>https://tldr.takara.ai/p/2607.09988</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出一种融合LLM的智能推荐系统，提升内容发现效率。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种基于大语言模型（LLM）的智能推荐系统，用于连接电视（CTV）内容发现。该系统解决了传统推荐系统在处理多样化上下文信号（如热门话题、新闻事件等）时的不足，利用LLM的推理能力自然整合不同结构和格式的信息，减少人工特征工程的需求。尽管LLM在检索效率、个性化精度和可扩展性方面仍存在短板，作者采用代理架构，结合LLM与传统机器学习方法，优化各子任务的处理方式。本文重点介绍了如何克服LLM在推荐系统中的实际限制，特别是推理延迟问题，并分享了构建混合系统的经验与教训。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.09988 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 10 Jul 2026 21:28:43 +0000</pubDate>
+<pubDate>Fri, 10 Jul 2026 21:28:43 +0000</pubDate>
+</item>
+<item>
+<title>MESHA：一种应对策略性线性老虎机的最优臂识别算法</title>
+<link>https://tldr.takara.ai/p/2607.14706</link>
+<guid>https://tldr.takara.ai/p/2607.14706</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>MESHA有效解决策略性线性老虎机中的最优臂识别问题。</p><br><br><p><strong>摘要：</strong> 本文提出并分析了MESHA，一种用于策略性线性老虎机中最佳臂识别（BAI）的算法。在该场景中，每个臂可能通过虚假报告特征向量来最大化被识别为最佳臂的概率。MESHA采用朴素均匀采样规则和分阶段的格里姆触发条件（GTC），以减少策略行为的影响并剔除严重偏离真实特征的臂。研究证明，在任意纳什均衡下，任何臂都会尝试通过GTC检查以提高被识别概率，并推导出MESHA在固定预算T下的失败概率上界。实验表明，基于G-最优设计的现有算法在该策略环境中会失效，而MESHA优于基于OD采样规则和无特征依赖基线的算法，验证了其有效性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.14706 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 16 Jul 2026 08:08:58 +0000</pubDate>
+<pubDate>Thu, 16 Jul 2026 08:08:58 +0000</pubDate>
+</item>
+<item>
+<title>基于语义与结构的KG质量评估方法研究</title>
+<link>https://tldr.takara.ai/p/2607.10212</link>
+<guid>https://tldr.takara.ai/p/2607.10212</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新的KG质量评估指标，提升自动构建知识图谱的准确性。</p><br><br><p><strong>摘要：</strong> 本文提出一种新颖的、可解释的度量方法，用于评估自动提取的知识图谱（KG）的质量。该方法通过比较提取的图与理想图之间的相似性，衡量其在实体完整性、关系保留和语义忠实性方面的表现。框架包含两个部分：实体级评估关注完整性、分辨率和连通性；关系级评估则通过词法相似性、依存句法对齐和轻量级否定处理来判断谓词保留和多重性。实验表明，该指标能有效识别现有指标忽略的遗漏、冗余和结构偏差，并在多个数据集上验证了其可靠性。此外，该方法具有可扩展性和模型无关性，为标准化评估提供了基础。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.10212 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sat, 11 Jul 2026 08:45:15 +0000</pubDate>
+<pubDate>Sat, 11 Jul 2026 08:45:15 +0000</pubDate>
+</item>
+<item>
+<title>基于运动一致性的异步无人机检测与跟踪框架ASUMOT</title>
+<link>https://tldr.takara.ai/p/2607.11303</link>
+<guid>https://tldr.takara.ai/p/2607.11303</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>ASUMOT提升无人机异步跟踪精度与效率。</p><br><br><p><strong>摘要：</strong> 本文提出ASUMOT，一种基于运动一致性的异步无人机检测与跟踪框架，直接在原始事件数据上运行。该方法通过建模每个无人机为一组运动一致的事件块，结合局部运动一致性估计、轻量级多任务验证和运动一致性聚类，有效解决长距离无人机目标碎片化、噪声干扰等问题。研究还引入了ES-UAV基准数据集，实验表明ASUMOT在保持异步处理优势的同时提升了准确率与效率。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.11303 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 13 Jul 2026 09:19:41 +0000</pubDate>
+<pubDate>Mon, 13 Jul 2026 09:19:41 +0000</pubDate>
+</item>
+<item>
+<title>InCarEmo：多模态驾驶情绪识别与状态监测数据集</title>
+<link>https://tldr.takara.ai/p/2607.14683</link>
+<guid>https://tldr.takara.ai/p/2607.14683</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>引入InCarEmo数据集以提升驾驶情绪识别与状态监测能力。</p><br><br><p><strong>摘要：</strong> 本文介绍了InCarEmo，一个用于车内情绪识别和驾驶状态监控的多模态数据集。该数据集包含RGB和红外视频、车内音频及对话文本，覆盖多种光照条件和驾驶场景。InCarEmo支持情绪识别、疲劳检测和分心监测三项任务，并提供中英文基准以支持跨语言评估。研究展示了多模态融合的优势，同时指出了在真实噪声和低光条件下仍存在的挑战。目标是为更安全、更具同理心的驾驶员-车辆交互奠定基础。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.14683 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 16 Jul 2026 07:44:42 +0000</pubDate>
+<pubDate>Thu, 16 Jul 2026 07:44:42 +0000</pubDate>
+</item>
+<item>
+<title>基于原型的ProtoPointNet在牙科咬合分类中的应用</title>
+<link>https://tldr.takara.ai/p/2607.12335</link>
+<guid>https://tldr.takara.ai/p/2607.12335</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>ProtoPointNet通过原型匹配实现牙科咬合分类，提升可解释性。</p><br><br><p><strong>摘要：</strong> 本文提出ProtoPointNet，一种基于原型的模型，用于从注册的上颌-下颌口腔弓对中进行牙科咬合分类。每个点通过14维描述符进行编码，结合局部表面几何、曲率和显式上下颌位移与间隙信息，揭示咬合关系。共享多任务点云主干学习轴向特定的原型头，用于矢状左、矢状右、垂直、横面和中线分类。为应对有限临床数据，采用辅助监督和编码器冻结交接方式训练原型。在Bits2Bites数据集上，ProtoPointNet取得平均测试宏F1值0.724和AUROC 0.825，尤其在垂直和矢状左分类中表现最佳。原型激活区域与解剖学合理区域一致，支持原型推理作为透明的3D分类替代方法。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.12335 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 14 Jul 2026 04:30:09 +0000</pubDate>
+<pubDate>Tue, 14 Jul 2026 04:30:09 +0000</pubDate>
+</item>
+<item>
+<title>基于统计分析的摄像机完整性监测方法研究</title>
+<link>https://tldr.takara.ai/p/2607.14760</link>
+<guid>https://tldr.takara.ai/p/2607.14760</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出一种低误报率的摄像机完整性监测方法。</p><br><br><p><strong>摘要：</strong> 本文研究了一种针对低功耗摄像机传感器故障的完整性监测方法，重点检测纹理坍塌和光照突变两种故障模式。该方法通过比较亮度和局部梯度统计与干净参考数据，结合结构光排斥和快速亮度抑制机制，在保证低误报率的同时实现有效故障检测。实验结果显示，该方法在多个基准数据集上表现出色，尤其在控制序列中达到0.822的平衡准确率，并在公开数据集上取得最高部分AUC值。研究强调该方法应被视为可审计的传感器健康子系统，而非通用的摄像机篡改分类器。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.14760 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 16 Jul 2026 09:45:19 +0000</pubDate>
+<pubDate>Thu, 16 Jul 2026 09:45:19 +0000</pubDate>
+</item>
+<item>
+<title>ARC-AGI作为人类流体智力测量的初步验证</title>
+<link>https://tldr.takara.ai/p/2607.11263</link>
+<guid>https://tldr.takara.ai/p/2607.11263</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>ARC-AGI与图形流体智力显著相关，支持其作为流体智力测量工具。</p><br><br><p><strong>摘要：</strong> 本文研究了ARC-AGI作为人类流体智力（gf）测量工具的效度。通过100名参与者的实验，发现ARC-AGI具有良好的心理测量特性，并与图形推理测试结果高度相关（ρ = .63）。尽管与图形原创性关联较弱，但研究结果为ARC-AGI作为流体智力测量工具提供了初步支持。研究还建议将AI基准纳入人类认知能力的理论框架，以促进跨学科合作和系统评估。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.11263 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 13 Jul 2026 08:45:45 +0000</pubDate>
+<pubDate>Mon, 13 Jul 2026 08:45:45 +0000</pubDate>
+</item>
+<item>
+<title>大型语言模型在信任与安全工作流中的部署证据研究</title>
+<link>https://tldr.takara.ai/p/2607.13078</link>
+<guid>https://tldr.takara.ai/p/2607.13078</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>LLM在信任与安全任务中部署证据不足，需加强实证研究。</p><br><br><p><strong>摘要：</strong> 本文探讨了将大型语言模型（LLM）应用于欺诈检测、内容审核等信任与安全流程中的实际证据问题。通过分析49个相关来源，发现欺诈领域的证据较少，而内容审核领域在延迟、成本、公平性等方面有更多公开数据。研究提出了一个用于分类和评估LLM角色的框架FORTE，并提供了一个最小部署证据清单，以支持未来LLM在信任与安全任务中的有效部署。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.13078 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 12 Jul 2026 22:34:02 +0000</pubDate>
+<pubDate>Sun, 12 Jul 2026 22:34:02 +0000</pubDate>
+</item>
+<item>
+<title>EdgeFaaS：一种支持异构资源的边缘计算框架</title>
+<link>https://tldr.takara.ai/p/2607.14489</link>
+<guid>https://tldr.takara.ai/p/2607.14489</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出EdgeFaaS框架以解决边缘计算中的异构与分布式问题。</p><br><br><p><strong>摘要：</strong> 本文介绍了EdgeFaaS，一种新型基于函数的边缘计算框架，旨在有效利用物联网、边缘和云中的异构资源。该框架通过函数虚拟化和存储虚拟化抽象分布式资源，并提供一致的虚拟接口。EdgeFaaS支持多种边缘计算工作流，并允许用户灵活配置以探索不同权衡。文章通过视频分析、联邦学习和音频分类等实际案例验证了其有效性，展示了在真实分布式设备上的部署与评估。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.14489 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 16 Jul 2026 02:05:46 +0000</pubDate>
+<pubDate>Thu, 16 Jul 2026 02:05:46 +0000</pubDate>
+</item>
+<item>
+<title>基于学习的3D场景图系统Hydra++提升场景重建质量</title>
+<link>https://tldr.takara.ai/p/2607.09455</link>
+<guid>https://tldr.takara.ai/p/2607.09455</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Hydra++通过形状估计提升3D场景图重建精度。</p><br><br><p><strong>摘要：</strong> 本文提出Hydra++，一个将基于学习的对象形状估计器集成到3D场景图管道中的系统。该系统采用类别无关的形状估计和重投影掩码一致性检查，以提高场景图构建的准确性。在默认CRISP配置下，Hydra++支持在线场景图构建，并评估了SAM3D等较慢估计器的泛化与延迟权衡。此外，为应对户外环境中的稀疏和噪声深度测量问题，Hydra++支持混合LiDAR-相机配置，提升了大规模场景重建质量。实验表明，Hydra++在仿真和真实户外校园场景中均有效提升了对象和场景级重建质量。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.09455 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 10 Jul 2026 14:24:16 +0000</pubDate>
+<pubDate>Fri, 10 Jul 2026 14:24:16 +0000</pubDate>
+</item>
+<item>
+<title>评估大语言模型在后端服务生成中的能力</title>
+<link>https://tldr.takara.ai/p/2607.11042</link>
+<guid>https://tldr.takara.ai/p/2607.11042</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>LLMs在生成可部署后端服务中表现有限，需进一步优化。</p><br><br><p><strong>摘要：</strong> 文章探讨了大语言模型（LLMs）在代理编程环境中生成完整后端服务的能力。通过BackendForge基准测试，研究发现尽管LLMs能够实现部分API行为，但在生成完整、可部署的服务方面仍面临挑战。测试结果显示，在基础测试环境下，GPT-5.5成功率达到55.4%，但在最终测试环境下仅28.6%。这表明当前LLMs在处理复杂系统时仍存在局限性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.11042 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 13 Jul 2026 03:13:21 +0000</pubDate>
+<pubDate>Mon, 13 Jul 2026 03:13:21 +0000</pubDate>
+</item>
+<item>
+<title>构建物理智能的联合进化路线图</title>
+<link>https://tldr.takara.ai/p/2607.11689</link>
+<guid>https://tldr.takara.ai/p/2607.11689</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>文章提出物理智能的联合进化路线，推动通用人工智能发展。</p><br><br><p><strong>摘要：</strong> 文章探讨了实现通用人工智能的关键路径，强调了世界动作模型（WAMs）在连接干预与预测结果中的作用。尽管已有进展，但模型间存在不兼容、任务标准不统一等问题。作者提出一个以“具身大脑”为核心的联合进化路线，旨在整合多模态信息、比较干预方案，并通过物理约束实现模型输出的验证与重用。文章还提到共享协议和闭环后训练机制，以构建模块化的物理智能系统，提升智能体的适应性和自我改进能力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.11689 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 13 Jul 2026 15:22:56 +0000</pubDate>
+<pubDate>Mon, 13 Jul 2026 15:22:56 +0000</pubDate>
+</item>
+<item>
+<title>大语言模型在上下文干扰下的预测不稳定现象研究</title>
+<link>https://tldr.takara.ai/p/2607.12963</link>
+<guid>https://tldr.takara.ai/p/2607.12963</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>上下文干扰导致大语言模型预测不稳定，影响部分样本性能。</p><br><br><p><strong>摘要：</strong> 随着大语言模型能力的提升，它们被广泛应用于包含长而无关上下文的场景中。研究表明，在整体准确率上，先进模型对任务无关上下文表现出一定的鲁棒性，但在个别样本上却存在显著的预测不稳定性。即使是无意义的伪词，也能在某些样本上明显改变模型的预测结果，既可能降低也可能提高性能。这种双面影响在多种模型和数据集上普遍存在，但受影响的样本具有高度模型依赖性。研究还发现，这种不稳定性受上下文类型、长度、测试时计算资源和模型发展阶段的影响。该研究揭示了由上下文引发的尾部风险，强调了对语言模型进行逐例可靠性评估的重要性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.12963 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 14 Jul 2026 17:01:12 +0000</pubDate>
+<pubDate>Tue, 14 Jul 2026 17:01:12 +0000</pubDate>
+</item>
+<item>
+<title>基于BERT的多领域对话状态跟踪框架</title>
+<link>https://tldr.takara.ai/p/2607.16021</link>
+<guid>https://tldr.takara.ai/p/2607.16021</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出一种可扩展的多领域对话状态跟踪框架，利用BERT实现零样本泛化。</p><br><br><p><strong>摘要：</strong> 对话状态跟踪（DST）是任务导向型对话系统的核心组件，用于估计用户信念并为后续模块提供输入。随着对话系统如Google Assistant、Siri和Alexa的广泛应用，对系统可扩展性的需求日益增加，尤其是在数据稀缺的领域。本文提出了一种新的多领域对话状态跟踪框架，利用预训练的BERT模型实现零样本泛化，无需额外训练即可快速适应新领域。该模型在最近发布的基于模式的对话（SGD）数据集上进行了评估，结果表明其性能显著优于之前的基线模型。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.16021 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 17 Jul 2026 14:56:55 +0000</pubDate>
+<pubDate>Fri, 17 Jul 2026 14:56:55 +0000</pubDate>
+</item>
+<item>
+<title>基于最优停止理论的思维链剪枝方法OS-Pruner</title>
+<link>https://tldr.takara.ai/p/2607.11089</link>
+<guid>https://tldr.takara.ai/p/2607.11089</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>OS-Pruner有效减少推理步骤，提升效率且不影响准确率。</p><br><br><p><strong>摘要：</strong> 本文提出OS-Pruner，一种轻量级的思维链剪枝框架，将思维链剪枝建模为最优停止问题。通过优化显式效用函数，在最终答案准确率与生成长度之间进行权衡，使模型能够动态判断推理终止点。该方法在多个推理基准测试中实现了20%-60%的生成长度减少，同时保持了较高的准确率。OS-Pruner在训练和推理过程中均保持轻量，并提供用户对推理成本与准确率之间平衡的精细控制。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.11089 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 13 Jul 2026 04:57:22 +0000</pubDate>
+<pubDate>Mon, 13 Jul 2026 04:57:22 +0000</pubDate>
+</item>
+<item>
+<title>基于图卷积网络的乳腺超声分类中图像编码器的影响研究</title>
+<link>https://tldr.takara.ai/p/2607.12054</link>
+<guid>https://tldr.takara.ai/p/2607.12054</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>图像编码器影响乳腺超声分类中的图结构与性能表现。</p><br><br><p><strong>摘要：</strong> 本文研究了不同图像编码器对基于图卷积网络（GCN）的乳腺超声分类效果的影响。通过构建余弦相似度k近邻图，并使用单层GCN进行分类，结果表明高容量编码器能提升图同质性和分类性能，包括准确率、AUC、灵敏度、特异性和F1分数。实验还发现测试集图同质性与分类准确率呈强线性相关，表明编码器对图结构的优化是性能提升的关键因素。该研究强调了编码器选择在图基分类中的重要性，并指出图同质性是连接表示质量与分类性能的关键指标。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.12054 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 13 Jul 2026 18:14:16 +0000</pubDate>
+<pubDate>Mon, 13 Jul 2026 18:14:16 +0000</pubDate>
+</item>
+<item>
+<title>基于仿真的光伏预测模型鲁棒性评估框架</title>
+<link>https://tldr.takara.ai/p/2607.12954</link>
+<guid>https://tldr.takara.ai/p/2607.12954</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究提出一种光伏预测模型的鲁棒性评估框架。</p><br><br><p><strong>摘要：</strong> 本文针对光伏预测中数值天气预测误差的时空相关性和物理耦合特性，提出了一种基于仿真的物理约束鲁棒性评估框架。通过虚拟光伏功率作为受控变量，隔离了电站层面的混杂因素。评估了六种机器学习和深度序列模型在动态天气扰动下的表现，结果表明序列模型在中高干扰条件下表现出更强的噪声过滤和时间韧性。SHAP和IG分析显示，在特定案例中预测依赖从被污染的未来预报转向更稳定的过去观测和确定性物理先验。最后通过帕累托分析将结果转化为工程上的鲁棒性评估和模型选择建议。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.12954 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 14 Jul 2026 16:48:07 +0000</pubDate>
+<pubDate>Tue, 14 Jul 2026 16:48:07 +0000</pubDate>
+</item>
+<item>
+<title>SPARC-Net：解决刚性和冲击主导问题的物理信息神经网络框架</title>
+<link>https://tldr.takara.ai/p/2607.11310</link>
+<guid>https://tldr.takara.ai/p/2607.11310</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>SPARC-Net提升PINN在复杂PDE问题中的准确性。</p><br><br><p><strong>摘要：</strong> 本文提出SPARC-Net，一种针对物理信息神经网络（PINN）在刚性和冲击主导问题中表现不佳的统一架构和训练框架。SPARC-Net通过自适应多尺度谱编码器、门控残差主干、自适应激活函数和硬约束输出假设，有效解决了谱偏差、多目标优化不平衡、时间因果性破坏和离散点不足等问题。实验表明，在多个基准测试中，SPARC-Net显著优于传统PINN，误差大幅降低。研究还包含多组实验验证、统计分析和与其他基线方法的比较。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.11310 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 13 Jul 2026 09:23:17 +0000</pubDate>
+<pubDate>Mon, 13 Jul 2026 09:23:17 +0000</pubDate>
+</item>
+<item>
+<title>推荐系统中异构代理的对比与优化研究</title>
+<link>https://tldr.takara.ai/p/2607.09908</link>
+<guid>https://tldr.takara.ai/p/2607.09908</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究不同推荐代理在成本约束下的性能对比与优化策略。</p><br><br><p><strong>摘要：</strong> 本文探讨了推荐系统中多种异构代理（如协同过滤、序列模型、基于内容的检索器和LLM重排序器）在任务感知下的排名问题。通过RouteRec框架，比较了请求级硬选择与项级学习聚合的效果。实验表明，在MovieLens-1M数据集上，虽然全质量最优解有较大提升空间，但在无泄漏的5折交叉验证下，硬选择仍低于BM25，而选择性调用LLM并未带来显著提升。相比之下，项级聚合方法表现更优，尤其在仅使用低成本代理时已接近BM25，而混合所有代理的聚合方法在HR@10上达到0.295，其中70.2%的调用为LLM。研究指出，请求级选择过于粗略，项级聚合更具前景。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.09908 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 10 Jul 2026 18:58:52 +0000</pubDate>
+<pubDate>Fri, 10 Jul 2026 18:58:52 +0000</pubDate>
+</item>
+<item>
+<title>基于CMS数据的暗物质与Z玻色子关联搜索</title>
+<link>https://tldr.takara.ai/p/2607.13771</link>
+<guid>https://tldr.takara.ai/p/2607.13771</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究暗物质与Z玻色子关联产生的信号，未发现明显暗物质证据。</p><br><br><p><strong>摘要：</strong> 本文利用CMS实验2015D运行数据，对暗物质与轻子衰变Z玻色子的关联信号进行搜索。通过提取40个运动学变量并构建37维特征向量，采用五种神经流模型对标准模型背景和暗物质信号进行建模。通过事件级似然比检验，对不同媒介类型的暗物质信号强度设置置信度上限。结果显示，观测到的限制弱于预期，主要由于高MET背景建模偏差所致。这是首次在μμ和ee通道中同时应用神经流似然比评分方法进行单Z暗物质搜索。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.13771 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 15 Jul 2026 12:31:23 +0000</pubDate>
+<pubDate>Wed, 15 Jul 2026 12:31:23 +0000</pubDate>
+</item>
+<item>
+<title>反馈驱动系统稳定性与结构干预的分析</title>
+<link>https://tldr.takara.ai/p/2607.14185</link>
+<guid>https://tldr.takara.ai/p/2607.14185</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究反馈系统饱和机制及结构干预对系统逃逸的影响。</p><br><br><p><strong>摘要：</strong> 本文探讨了反馈驱动系统在重复内部反馈下性能下降的原因，并提出了一种三层操作框架来分析知识状态的演化。通过引入结构参数和转移核，文章定义了观测等价类和吸引子等概念，并分析了结构干预如何产生可检测的核差异。基于Lyapunov漂移条件，研究揭示了稳定动态下的收敛特性，并提出了通过干预诱导吸引子位移和KL下界来衡量逃逸概率的方法。案例研究展示了反馈强度与对齐度对质量提升逃逸的影响，为跨领域诊断提供了操作性连接。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.14185 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 15 Jul 2026 15:06:15 +0000</pubDate>
+<pubDate>Wed, 15 Jul 2026 15:06:15 +0000</pubDate>
+</item>
+<item>
+<title>LLM代理在工具可靠性变化时的适应性研究</title>
+<link>https://tldr.takara.ai/p/2607.13396</link>
+<guid>https://tldr.takara.ai/p/2607.13396</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究LLM代理在工具可靠性变化时如何调整工具选择。</p><br><br><p><strong>摘要：</strong> 本文探讨了当LLM代理在持续会话中遇到可靠工具无声变化时的应对策略。通过借鉴认知心理学中的集转换概念，研究构建了一个包含冗余工具技能库的基准测试框架，其中多个工具可解决相同任务但具有不同的隐藏可靠性。评估框架通过分枝时间表在隐藏边界切换可靠工具组，并为每次切换配对无切换对照组。研究发现，代理默认会在每个边界后几轮内形成固定模式，调用分布集中在少数离散值上。通过计算每个代理轨迹的集转换准确率，评估其在每次可靠性变化后是否能正确路由到目标工具组。实验测试了开源LLM代理，并发现不同代理在相同流程中表现出不同的失败模式。此外，工具集的呈现方式（竞争或互补）也影响了路由动态。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.13396 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 15 Jul 2026 02:49:05 +0000</pubDate>
+<pubDate>Wed, 15 Jul 2026 02:49:05 +0000</pubDate>
+</item>
+<item>
+<title>统一速度与数据终点预测的生成模型方法</title>
+<link>https://tldr.takara.ai/p/2607.12171</link>
+<guid>https://tldr.takara.ai/p/2607.12171</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>SC-Flow结合速度与终点预测提升生成质量。</p><br><br><p><strong>摘要：</strong> 本文研究了基于修正流的生成模型中，通过预测瞬时速度或数据终点进行去噪的不同效果。研究发现，预测数据终点提供明确的训练信号，而预测速度则保持采样动态稳定。受此启发，作者提出SC-Flow方法，通过轻量一致性损失，使网络同时预测速度和终点，提升模型性能。该方法无需大幅修改架构，计算开销小，在图像生成任务中显著提升了优化稳定性与生成质量。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.12171 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 13 Jul 2026 21:31:45 +0000</pubDate>
+<pubDate>Mon, 13 Jul 2026 21:31:45 +0000</pubDate>
+</item>
+<item>
+<title>ExaGEMM：面向CPU的低比特矩阵乘法优化框架</title>
+<link>https://tldr.takara.ai/p/2607.14622</link>
+<guid>https://tldr.takara.ai/p/2607.14622</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>ExaGEMM提升低比特矩阵乘法效率，适用于ML推理。</p><br><br><p><strong>摘要：</strong> ExaGEMM是一个针对CPU原生低比特矩阵乘法（GEMM）的代码设计与探索框架，通过寄存器内查找表执行实现高效计算。该方法利用现有SIMD数据路径，仅需新增寄存器选择/反馈机制，并通过分析模型优化参数化内核和SIMD指令集支持，大幅减少候选空间。实验表明，ExaGEMM在多个ML模型和CPU目标上相比纯软件方案提升了13.29倍的延迟性能，尤其对混合精度大语言模型工作负载效果显著。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.14622 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 16 Jul 2026 06:38:49 +0000</pubDate>
+<pubDate>Thu, 16 Jul 2026 06:38:49 +0000</pubDate>
+</item>
+<item>
+<title>基于图神经网络的隐式水分子机器学习势能模型TWIN</title>
+<link>https://tldr.takara.ai/p/2607.10887</link>
+<guid>https://tldr.takara.ai/p/2607.10887</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>TWIN模型实现高效准确的生物分子模拟。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种名为TWIN的隐式水分子机器学习势能模型，该模型完全由等变图神经网络参数化，并仅使用从头算和实验标签进行训练。TWIN在药物分子、肽和蛋白质的跨体系迁移性方面表现优异，其在从头算和实验晶体学及NMR基准测试中均优于以往的机器学习隐式溶剂或粗粒度模型。同时，TWIN在保持与DFT显式溶剂模型相当精度的前提下，实现了两个数量级的速度提升，为水环境中生物分子的高效从头算建模提供了新途径。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.10887 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 12 Jul 2026 19:29:24 +0000</pubDate>
+<pubDate>Sun, 12 Jul 2026 19:29:24 +0000</pubDate>
+</item>
+<item>
+<title>基于预测散度的强化学习掩码方法改进</title>
+<link>https://tldr.takara.ai/p/2607.10848</link>
+<guid>https://tldr.takara.ai/p/2607.10848</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出预测散度掩码提升LLM强化学习稳定性。</p><br><br><p><strong>摘要：</strong> 本文针对大语言模型强化学习中信任区域掩码的优化问题，提出了一种基于预测散度的掩码方法。传统PPO方法依赖采样令牌重要性比作为方向准则，但该方法存在与实际散度变化不一致的问题。作者引入预测散度掩码，通过预测下一步策略梯度对散度的影响来改进方向判断。针对离散softmax策略，推导出闭式解，并设计了两种轻量级top-K估计器以适应实际部署需求。实验表明，该方法在不同模型规模和精度设置下均能有效提升训练效果。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.10848 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 12 Jul 2026 17:20:44 +0000</pubDate>
+<pubDate>Sun, 12 Jul 2026 17:20:44 +0000</pubDate>
+</item>
+<item>
+<title>AMID：自动化医学影像模型开发的多智能体框架</title>
+<link>https://tldr.takara.ai/p/2607.10522</link>
+<guid>https://tldr.takara.ai/p/2607.10522</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>AMID提升医学影像模型开发效率与准确性。</p><br><br><p><strong>摘要：</strong> 本文介绍了AMID，一个用于医学影像模型开发的自主多智能体框架。AMID通过数据条件方法规划和验证引导的两阶段优化，将任务特定的医学影像模型开发从手动工程转变为可代理的工作流程。该框架在20个医学影像挑战任务中表现出色，超越了通用机器学习工程系统，并在多个任务中接近或达到人类设计的解决方案水平。结果表明，AMID能够有效生成高性能且可审计的模型输出。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.10522 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 12 Jul 2026 00:54:06 +0000</pubDate>
+<pubDate>Sun, 12 Jul 2026 00:54:06 +0000</pubDate>
+</item>
+<item>
+<title>基于条件泛化理论的评分设计评估框架</title>
+<link>https://tldr.takara.ai/p/2607.11981</link>
+<guid>https://tldr.takara.ai/p/2607.11981</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究提出一种新的条件泛化框架，用于评估AI评分设计的可靠性。</p><br><br><p><strong>摘要：</strong> 本文提出了一种基于条件泛化理论的评分设计评估框架，旨在解决传统G-或D-研究可能忽略测量负担异质性的问题。该框架包含三个组成部分：首先，将自动化评分配置视为可接受的测量条件；其次，通过分析D-研究投影与实际配置扫描进行对比，评估设计适配性；最后，根据熵定义的响应子群进行证据条件化。研究以实时二语写作自动作文评分为例，结果显示整体可靠性较高（Phi约0.76），但在不同熵子群中可靠性略有下降，表明不同子群需要不同的决策研究条件。该框架提供了一种可迁移的工作流程，用于评估非均匀可靠性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.11981 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 13 Jul 2026 08:32:03 +0000</pubDate>
+<pubDate>Mon, 13 Jul 2026 08:32:03 +0000</pubDate>
+</item>
+<item>
+<title>Ptolemy's Equant Equates to a Universal Dynamical Clock via Machine Learning</title>
+<link>https://tldr.takara.ai/p/2607.15472</link>
+<guid>https://tldr.takara.ai/p/2607.15472</guid>
+<content:encoded><![CDATA[
+
+  Oscillatory dynamics arise ubiquitously in nonlinear systems, yet identifying a physically interpretable phase and phase dynamics in nonlinear, high-dimensional oscillations remains a central unresolved problem. Here we establish the principle of a universal dynamical clock, a physical perspective in which oscillations of arbitrary dimensionality and geometry are equivalently represented as uniform rotation through an equant-induced nonlinear viewing coordinate, inspired by Ptolemy's equant and formalised through an areal-uniformity principle reminiscent of Kepler's second law. Using a machine-learning framework, we demonstrate the existence of such an equant for a broad class of oscillatory dynamics and construct the associated dynamical clock and phase dynamics under additive forces, including noise, periodic perturbations, and coupling. Its value in uncovering new physical rules and phenomena is demonstrated by four findings: (i) collective oscillations in Escherichia coli populations obey a previously unexplained superlinear scaling law, resolving a long-standing open problem posed in 2004; (ii) the response mechanisms of engineered genetic circuits to changes in gene expression and environmental conditions; (iii) a classical-mechanics counterpart of the Berry geometric phase emerges naturally from the phase of the dynamical clock; and (iv) optimal equant non-uniformity provides a geometric early-warning signal for critical transitions and enables prediction of critical parameters. By providing operational and system-agnostic phase dynamics that can be constructed directly from data, the dynamical clock enables principled classification, comparison, and control of oscillatory systems, and offers a new route to understanding how specific dynamical regimes support distinct functional behaviours in networked systems.
+
+]]></content:encoded>
+<pubDate>Thu, 16 Jul 2026 21:42:33 +0000</pubDate>
+<pubDate>Thu, 16 Jul 2026 21:42:33 +0000</pubDate>
+</item>
+<item>
+<title>GSM-Plus-BN: A Perturbation-Based Benchmark for Bangla Mathematical Reasoning in Large Language Models</title>
+<link>https://tldr.takara.ai/p/2607.13248</link>
+<guid>https://tldr.takara.ai/p/2607.13248</guid>
+<content:encoded><![CDATA[
+
+  The evaluation of mathematical reasoning in large language models (LLMs) has predominantly focused on high-resource languages like English. This has created a significant barrier to the equitable development and deployment of AI in linguistically diverse regions such as Bangladesh, where over 230 million people speak Bengali. Despite this global significance, there has been minimal prior work on mathematical reasoning in Bengali and no existing research that systematically benchmarks a perturbated Bengali mathematical dataset, leaving a critical void in assessing model robustness and true comprehension beyond pattern recognition. This study addresses this gap by introducing GSM-Plus-BN, a novel perturbated Bengali mathematical dataset derived from the English GSM-Plus benchmark and verified by human translators. We evaluate six open-source LLMs Qwen3-32B, Llama-3.1-8B-Instant, Llama-3.3-70B-Versatile, Llama-4-Scout-17B-16E-Instruct, GPT-OSS-120B, and GPT-OSS-20B using a benchmark of 9,000 evaluation samples comprising 1,000 seed questions and 8,000 perturbed variants under both Standard Prompting and Chain-of-Thought (CoT) Prompting. Experimental results show that GPT-OSS-20B achieves the highest seed question accuracy of 96.08% under Standard Prompting, while larger models such as Llama-3.3-70B and GPT-OSS-120B demonstrate superior robustness across perturbation types. Furthermore, CoT prompting substantially improves reasoning for most models compared to Standard Prompting, yet a notable performance gap persists across all models relative to their English benchmarks, underscoring the inherent difficulty of perturbed Bengali text. This research makes a foundational contribution by providing GSM-PLUS-BN as a new resource and baseline for future Bengali mathematical reasoning research.
+
+]]></content:encoded>
+<pubDate>Tue, 14 Jul 2026 20:23:27 +0000</pubDate>
+<pubDate>Tue, 14 Jul 2026 20:23:27 +0000</pubDate>
+</item>
+<item>
+<title>Unlocking Parallelism in Autoregressive Language Models via Speculative Decoding with Progressive Tree Drafting</title>
+<link>https://tldr.takara.ai/p/2607.10661</link>
+<guid>https://tldr.takara.ai/p/2607.10661</guid>
+<content:encoded><![CDATA[
+
+  Speculative decoding has significantly accelerated Large Language Model (LLM) inference by alleviating memory-bound bottlenecks. However, traditional speculative decoding typically relies on auxiliary draft modules, incurring significant training and communication overhead. Although recent methods attempt to generate drafts within the target model itself, they often fail to fully exploit its latent parallel capacity due to a lack of structural coordination. In this paper, we propose \textbf{Progressive Tree Drafting (PTD)}, which employs a structured, guided parallel drafting strategy to harness the model's parallel potential. By coupling a progressive tree structure with a stepwise pruning mechanism, PTD actively guides the LLM to explore multiple semantic paths in a single forward pass, ensuring both draft diversity and coherence. Experiments demonstrate that PTD achieves up to $2\times$ decoding speedup across various benchmarks while remaining training-free and model-agnostic. Our code is available at: https://github.com/MINE-USTC/PTD.
+
+]]></content:encoded>
+<pubDate>Sun, 12 Jul 2026 09:10:34 +0000</pubDate>
+<pubDate>Sun, 12 Jul 2026 09:10:34 +0000</pubDate>
+</item>
+<item>
+<title>A multi-scale feature enhanced graph neural network for fluid dynamics prediction in complex geometries</title>
+<link>https://tldr.takara.ai/p/2607.11672</link>
+<guid>https://tldr.takara.ai/p/2607.11672</guid>
+<content:encoded><![CDATA[
+
+  Industrial design in fields such as vehicle and aerospace engineering often relies on large-scale numerical simulations to evaluate fluid dynamics performance, which can incur substantial computational costs. Deep neural networks have shown promise in improving simulation efficiency, especially graph neural networks (GNNs), which demonstrate great potential due to their flexibility with unstructured data. However, GNNs face challenges when dealing with tasks involving complex geometries and large-scale meshes. In this paper, we propose the Multi-scale Feature Enhanced Graph Neural Network (ME-GNN) to tackle these challenges. ME-GNN employs a graph neural network with a two-step message-passing mechanism to capture detailed local features effectively. Additionally, it integrates an Attention U-Net with uniform grid discretization, enabling the extraction of both fine and coarse features. The model also utilizes K-hop sampling to construct subgraphs, facilitating efficient training on large datasets while preserving detailed local features. We evaluated ME-GNN on three benchmark datasets and achieved state-of-the-art results: a relative L2 error of 0.0196 for the velocity field and 0.0556 for the surface pressure on ShapeNet-Car, a normalized mean squared error of 0.0033 for the flow field on AirfRANS, and a relative L2 error of 0.1416 for the surface pressure on DrivAerNet.
+
+]]></content:encoded>
+<pubDate>Mon, 13 Jul 2026 15:13:41 +0000</pubDate>
+<pubDate>Mon, 13 Jul 2026 15:13:41 +0000</pubDate>
+</item>
+<item>
+<title>Action Map Policy: Learning 3D Closed-loop Manipulation via Pixel Classification</title>
+<link>https://tldr.takara.ai/p/2607.10706</link>
+<guid>https://tldr.takara.ai/p/2607.10706</guid>
+<content:encoded><![CDATA[
+
+  The action space poses a major challenge in robot learning, since it is often high-dimensional, can span long time horizons, and frequently admits multi-modal optimal solutions. A good choice of action representation and loss function can help to address these concerns, but there are often trade offs. We propose Action Map Policy (AMP), which casts 3D closed-loop manipulation policy learning as a classification problem in image space. While classification has been an effective formulation in generative language models, applying it to robot action learning is difficult because naively discretizing high-dimensional continuous actions explodes the token vocabulary. Our key idea is to project 3D actions onto the camera image planes and treat each pixel location as a discrete class, thus controlling dimensionality while retaining multi-modality. This method supports millimeter-level precision for high-dimensional actions without requiring a prohibitively large vocabulary, while preserving fine-grained pixel-wise visual signals. Furthermore, it can predict the entire action chunk in a single forward pass, avoiding complex noise scheduling and iterative denoising while achieving substantially faster inference than diffusion policies. Experiments on various manipulation tasks show that AMP outperforms strong baselines, achieving higher success rates, faster inference, and enhanced spatial reasoning.
+
+]]></content:encoded>
+<pubDate>Sun, 12 Jul 2026 10:58:06 +0000</pubDate>
+<pubDate>Sun, 12 Jul 2026 10:58:06 +0000</pubDate>
+</item>
+<item>
+<title>The Refusal Residue: When Probes Catch Alignment Faking and When They Don't</title>
+<link>https://tldr.takara.ai/p/2607.13346</link>
+<guid>https://tldr.takara.ai/p/2607.13346</guid>
+<content:encoded><![CDATA[
+
+  Alignment faking is dangerous because a model can appear compliant under monitoring while preserving behavior it would reveal when unmonitored. When no scratchpad is visible, behavior alone cannot distinguish strategic from genuine compliance. We ask whether hidden states reveal what outputs hide.
+  We run a 13-model sweep for naturally-emerging faking, then probe and steer hidden states on the two models that fake. Natural faking appears only in Qwen3-32B (+18.2pp) and Llama-3.1-8B (+24.4pp at n=10, p<10^-15), while explicit scratchpad self-reports are rare (a Claude Opus 4 judge flags faking reasoning in 1.4% of Qwen and 0.0% of Llama compliant scratchpads). Both fakers show an asymmetric refusal residue: monitored compliance shifts toward refusal (d=0.32 Qwen, d=0.33 Llama, both p<0.0001), while refusal representations do not move (p=1.00).
+  Per-sample detection is model-conditional. Under leakage-free leave-one-query-out probing, detection survives on Llama (AUROC 0.87) but collapses to chance on Qwen (0.43), and cross-model transfer is null. Steering over 2,000 runs barely changes compliance (|h|<0.08), so the detected direction can flag faking but does not by itself control it.
+  Standard residualized probing leaks across folds and reaches AUROC 0.63 on a control where no faking can occur; naive linear probes reach a meaningless AUROC 1.0; and conventional MLPs overstate detectability by 0.2-0.3 AUROC. For future alignment-faking detection work, we release a five-control measurement framework: multi-token extraction, refuse-vs-refuse confound checks, per-fold residualization, leave-one-query-out evaluation, and orthogonality-constrained probing.
+
+]]></content:encoded>
+<pubDate>Wed, 15 Jul 2026 00:11:42 +0000</pubDate>
+<pubDate>Wed, 15 Jul 2026 00:11:42 +0000</pubDate>
+</item>
+<item>
+<title>An Agentic AI Scientific Community for Automated Neural Operator Discovery</title>
+<link>https://tldr.takara.ai/p/2607.12122</link>
+<guid>https://tldr.takara.ai/p/2607.12122</guid>
+<content:encoded><![CDATA[
+
+  We present an agentic approach to autonomous neural operator discovery based on an AI scientific community, which consists of a swarm of virtual laboratories that interact under a citation-based economy of influence. Highly-cited labs found new labs that follow their research direction and replace non-performing labs. Each virtual lab contains three agents: an LLM planner that proposes an architecture, a numerical worker that trains and measures it, and an LLM reviewer that participates in cross-lab peer review. All labs share a common vocabulary consisting of DeepONet (branch-trunk), Fourier, Transformer (attention), wavelet, and residual convolutional neural operator building blocks. We evaluate the neural operator AI scientific community on five problems, namely piecewise regression, the linear advection and Burgers 1D PDEs, and the Navier-Stokes and Darcy flow 2D PDEs, while repeating the simulation three times for each problem. The results show that the neural operator AI scientific community is capable of discovering high-accuracy, low-parameter-count neural operator architectures. All 9,623 LLM calls are logged and audited, which reveals that the virtual lab LLM planners choose to hybridize in 99.8% of their logged decisions, consistently returning multi-family hybrids. Moreover, we conducted an ablation study by replacing the LLM agents in each lab by rule-based alternatives, which caused the scientific community to collapse to non-hybridized single-family stacks in several cases, showing that LLM agency is needed to preserve diversity. The results suggest a no-free-lunch theorem for neural operators: there is no universal winner. The code, configurations, and the complete LLM transcripts are released at https://github.com/luislootx/AI-SC.
+
+]]></content:encoded>
+<pubDate>Mon, 13 Jul 2026 20:07:47 +0000</pubDate>
+<pubDate>Mon, 13 Jul 2026 20:07:47 +0000</pubDate>
+</item>
+<item>
+<title>Hierarchical $\mathcal{F}$-Clustering: Approximation and Hardness of Clustering into Trees and Bounded Diameter Graphs</title>
+<link>https://tldr.takara.ai/p/2607.13217</link>
+<guid>https://tldr.takara.ai/p/2607.13217</guid>
+<content:encoded><![CDATA[
+
+  Consider the following variation on the Hierarchical Clustering problem: Usually, while building a hierarchical clustering, one recursively partitions the data until each cluster becomes a singleton. We relax the halting condition of the recursive process to stop whenever the remaining cluster is a graph belonging to a class $\mathcal{F}$. We call this problem Hierarchical $\mathcal{F}$-Clustering and we measure the quality of any solution using adapted Dasgupta's clustering objective. We study two natural choices of $\mathcal{F}$: trees and graphs of bounded diameter.
+  We present the first polynomial time $\mathcal{O}(\log n\cdot\log\log n)$ and $\mathcal{O}(\log n)$-approximation algorithms for clustering into trees and bounded diameter graphs respectively. Our main technical contribution is a framework for approximating such problems based on linear programming. In fact, we characterize graphs classes $\mathcal{F}$ for which our approach can be applied and show that it includes both trees and bounded diameter graphs. However, our ideas are not limited to them and might be useful for other structures as well. Broadly speaking, our framework applies whenever the corresponding flat clustering problem, which we call $p_{\mathcal{F}}$-Partitioning, admits a natural ILP formulation together with a rounding procedure with provable approximation guarantees. Intuitively, given a set of vertices called terminals, the problem is to find an edge set whose removal results in satisfying certain vertex-dependent structural predicate for each terminal. We then use these ingredients to build clustering trees with the aforementioned approximation guarantees. To complement these results, we show that both Hierarchical Clustering into trees and into bounded diameter graphs cannot be approximated within any constant factor under the Small Set Expansion Hypothesis.
+
+]]></content:encoded>
+<pubDate>Tue, 14 Jul 2026 19:25:12 +0000</pubDate>
+<pubDate>Tue, 14 Jul 2026 19:25:12 +0000</pubDate>
+</item>
 
 <item>
 <title>对比先验对模型泛化与加速的影响研究</title>
