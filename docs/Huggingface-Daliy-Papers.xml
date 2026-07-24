@@ -4,6 +4,610 @@
 <title>Takara TLDR - Daily AI Papers</title>
 <link>https://tldr.takara.ai</link>
 
+<item>
+<title>REFACT：一种自适应事实重述引用框架提升大语言模型推理准确性</title>
+<link>https://tldr.takara.ai/p/2607.20833</link>
+<guid>https://tldr.takara.ai/p/2607.20833</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>REFACT提升长文本问答和反事实真实性，减少token消耗。</p><br><br><p><strong>摘要：</strong> 本文提出REFACT，一种自适应事实重述引用框架，用于提升大语言模型在复杂任务中的推理能力。该方法通过训练模型判断何时需要上下文支持以及以何种粒度重述源事实，避免了无依据的推理和随意复制事实的问题。REFACT采用两阶段SFT-to-RL优化流程，通过引用效用奖励机制确保引用事实的完整性、可追溯性和答案充分性。实验表明，REFACT在LongBench、LV-Eval和ConFiQA数据集上提升了长上下文问答和反事实真实性，同时显著减少了token消耗。分析显示，REFACT在更少重述事实的情况下保留了更多答案相关证据，使推理过程更加密集而非冗长。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.20833 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 01:41:17 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 01:41:17 +0000</pubDate>
+</item>
+<item>
+<title>MagicMakeup：基于扩散Transformer的区域可控高保真妆容迁移框架</title>
+<link>https://tldr.takara.ai/p/2607.20924</link>
+<guid>https://tldr.takara.ai/p/2607.20924</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>MagicMakeup实现高保真妆容迁移，提升区域控制与身份保留。</p><br><br><p><strong>摘要：</strong> 本文提出MagicMakeup，一种基于扩散Transformer的区域可控、高保真的妆容迁移框架。针对现有方法在区域控制、妆容真实性和身份保留方面的不足，MagicMakeup通过空间约束和概念解耦进行改进。引入Token-Aligned Region Gating，实现像素掩码与注意力对齐，提升区域编辑精度；设计Cross-Modal Perception Guidance，增强文本与图像特征的跨模态感知。同时构建1024x1024分辨率的数据集，建立合成与真实场景的统一基准。实验表明，MagicMakeup在多种风格、种族和姿态下均表现出色，显著提升妆容迁移的可控性与真实性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.20924 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 05:00:14 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 05:00:14 +0000</pubDate>
+</item>
+<item>
+<title>低秩适配器的压缩与隐私泄露分析</title>
+<link>https://tldr.takara.ai/p/2607.21351</link>
+<guid>https://tldr.takara.ai/p/2607.21351</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>低秩适配器存储数据量远低于参数数量预测。</p><br><br><p><strong>摘要：</strong> 本文研究了低秩适配器（LoRA）在冻结基础模型上的存储特性，发现其写入模型的数据量以比特为单位衡量时，比全微调更少，且与参数数量的预测不符。适配器每可训练参数仅存储几比特数据，远低于完整模型的容量。但其存储能力主要取决于参数位置，而非数量。将相同参数预算从注意力层转移到MLP层，存储容量几乎翻倍；若移除基础模型结构，存储能力则显著下降。应用于Qwen2.5的实际微调中，适配器写入的比特数与隐私泄露呈正相关，而监督学习和强化学习在记录秘密信息上存在明显差异。通过测量微调过程中的写入内容，可以将传统假设转化为可设计对抗的量化指标。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.21351 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 14:16:43 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 14:16:43 +0000</pubDate>
+</item>
+<item>
+<title>无需训练的图像编辑框架PC-Edit</title>
+<link>https://tldr.takara.ai/p/2607.21318</link>
+<guid>https://tldr.takara.ai/p/2607.21318</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>PC-Edit实现无监督图像对象替换与背景保留。</p><br><br><p><strong>摘要：</strong> 本文提出PC-Edit，一种无需训练的图像编辑框架，用于在不依赖用户指定编辑区域的情况下进行对象替换。该方法通过对比源提示和目标提示下的图像标记注意力输出，直接捕捉由文本条件信息引起的语义差异。PC-Edit在反演过程中识别源擦除区域，在去噪过程中识别目标出现区域，从而有效消除源对象残留并自然形成目标对象。此外，该框架在每一步采样中结合区域发现与背景保护，通过估计当前编辑区域并在后续块中注入缓存的源K/V特征，确保无关内容的保留。实验表明，PC-Edit在PIE-Bench和EditRegion-Bench数据集上表现最佳。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.21318 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 13:42:03 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 13:42:03 +0000</pubDate>
+</item>
+<item>
+<title>基于多模态情感动态的面部识别方法研究</title>
+<link>https://tldr.takara.ai/p/2607.21347</link>
+<guid>https://tldr.takara.ai/p/2607.21347</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>多模态情感动态提升面部识别性能。</p><br><br><p><strong>摘要：</strong> 本文提出一种基于多模态情感动态的面部识别方法，通过利用音频和视觉信息中的情感动态特征，提高在非受限环境下的识别准确性。研究引入了质量感知自适应融合（QAFF）技术，以应对视频输入质量的不稳定性，并在Aff-wild2数据集上取得了优于基线模型的性能。此外，实验表明该方法在没有身份特定训练的情况下也能有效编码身份信息，在AFEW-VA和YTF数据集上表现优异，证明了多模态情感估计作为辅助生物特征识别的可行性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.21347 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 14:14:13 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 14:14:13 +0000</pubDate>
+</item>
+<item>
+<title>基于Petri网的并发状态库API测试生成方法</title>
+<link>https://tldr.takara.ai/p/2607.21530</link>
+<guid>https://tldr.takara.ai/p/2607.21530</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出一种基于Petri网的并发API测试生成方法。</p><br><br><p><strong>摘要：</strong> 本文针对并发状态库API测试中形式化场景设计与低成本测试实现之间的差距，提出了一种基于Petri网的测试生成方法。该方法将API资源、生命周期条件和因果依赖表示为带颜色的令牌和转换，生成合法的深度状态、近合法以及部分顺序的并发场景，并将其作为LLM代码合成的约束中间表示。通过局部忠实性契约和结构修复循环，在测试实现过程中保持建模意图，同时通过Petri引导的调度形状优先探索高冲突并发结构。最后，分层语义断言用于区分代码生成失败与API行为违规。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.21530 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 17:15:53 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 17:15:53 +0000</pubDate>
+</item>
+<item>
+<title>基于子图滤波学习的图信号处理框架</title>
+<link>https://tldr.takara.ai/p/2607.21263</link>
+<guid>https://tldr.takara.ai/p/2607.21263</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出子图滤波学习框架，提升图信号处理效率。</p><br><br><p><strong>摘要：</strong> 本文提出一种基于子图滤波学习（SFL）的系统性框架，用于在部分观测条件下近似完整的图滤波器。该方法将SFL建模为统计学习问题，通过距离感知拉普拉斯构造建立子图滤波代数，定义了结构化且可控的滤波器类别以实现有效逼近。研究还建立了最小二乘损失下的性能风险边界，量化了所学算子对受限环境映射的逼近效果。实验表明，该框架在真实数据集上优于多项式滤波、分布无关算子和直接数值滤波学习基线。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.21263 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 12:36:05 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 12:36:05 +0000</pubDate>
+</item>
+<item>
+<title>基于阶段诊断的视觉问答系统分析与优化</title>
+<link>https://tldr.takara.ai/p/2607.21155</link>
+<guid>https://tldr.takara.ai/p/2607.21155</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究提出CRAG-MM-Diagnostics，分析KI-VQA系统瓶颈并提升准确率。</p><br><br><p><strong>摘要：</strong> 本文针对知识密集型视觉问答（KI-VQA）系统进行深入分析，指出其主要瓶颈在于知识检索与推理。研究引入CRAG-MM-Diagnostics诊断基准，通过分阶段数据标注，揭示了视觉定位、目标识别和知识获取等环节的问题。实验表明，现有模型在目标识别和图像检索中存在不足，为此提出融合视觉定位的双模态RAG框架，显著提升了GPT-5和Qwen的准确率。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.21155 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 10:37:01 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 10:37:01 +0000</pubDate>
+</item>
+<item>
+<title>将Pearl的因果理论引入概率逻辑编程</title>
+<link>https://tldr.takara.ai/p/2607.21208</link>
+<guid>https://tldr.takara.ai/p/2607.21208</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文将Pearl的因果理论应用于概率逻辑编程，提出形式化因果语义。</p><br><br><p><strong>摘要：</strong> 本文探讨了如何将Pearl的因果理论引入概率逻辑编程（PLP）。作者指出，Pearl的因果模型主要基于贝叶斯网络，限制于无环因果关系。为克服这一局限，文章提出一种不依赖时间概念的哲学基础，并构建了适用于PLP的因果语义及干预机制。研究显示，该语义与分层ProbLog程序的P-log语义一致，但在非分层情况下及其他PLP形式中可能存在差异。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.21208 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 11:21:39 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 11:21:39 +0000</pubDate>
+</item>
+<item>
+<title>基于文本的人体检索：多粒度范式与跨模态对齐框架</title>
+<link>https://tldr.takara.ai/p/2607.21057</link>
+<guid>https://tldr.takara.ai/p/2607.21057</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出多粒度文本人体检索框架，提升实际场景下的检索性能。</p><br><br><p><strong>摘要：</strong> 本文针对文本人体检索中查询粒度不确定的问题，提出一种新的多粒度检索范式。首先构建了包含五个粒度层级的高质量数据集UFine6926-MG，并设计了多粒度文本标注工具。其次，提出了MG-Eval评估基准，以更真实地反映实际场景中的语义需求。最后，提出CMAM框架，通过跨模态多粒度对齐与匹配机制，有效处理查询不确定性，显著提升了不同粒度下的检索效果。该研究为实际应用中的高效人体检索系统奠定了基础。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.21057 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 08:42:25 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 08:42:25 +0000</pubDate>
+</item>
+<item>
+<title>基于令牌级别的AI生成文本检测方法</title>
+<link>https://tldr.takara.ai/p/2607.21458</link>
+<guid>https://tldr.takara.ai/p/2607.21458</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种新的令牌级AI生成文本检测方法。</p><br><br><p><strong>摘要：</strong> 本文针对人机协作写作中对细粒度检测方法的需求，提出了一种基于令牌级别的AI生成文本检测方法。该方法通过平滑相邻令牌的得分来降低其变异性，并利用自适应Lepski型规则选择带宽，以适应局部作者结构。该方法无需令牌级别的标注数据即可实现，理论分析表明其在估计底层信号方面具有良好的均方误差表现。实验结果显示，该方法在合成数据集和真实数据集中均优于多种基线方法，并已部署为公开网站供使用。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.21458 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 16:01:16 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 16:01:16 +0000</pubDate>
+</item>
+<item>
+<title>基于正弦递归的隐式神经表示谱增强方法</title>
+<link>https://tldr.takara.ai/p/2607.21485</link>
+<guid>https://tldr.takara.ai/p/2607.21485</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>正弦递归提升隐式神经表示的频谱性能。</p><br><br><p><strong>摘要：</strong> 本文研究了正弦递归作为隐式神经表示（INRs）中谐波频谱增强的迭代机制。分析表明，正弦激活函数会产生谐波线谱，解释了递归展开如何扩展有效频谱支持。作者提出一个共享的正弦块，通过迭代优化潜在表示来实现这一原理。实验验证了该方法在图像和3D表示任务中的有效性，结果表明其在RGB图像基准上优于前馈基线，参数更少、优化步骤更少，并在超分辨率、NeRF和SDF任务中表现出良好的迁移能力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.21485 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 16:26:51 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 16:26:51 +0000</pubDate>
+</item>
+<item>
+<title>Texture++：一种高效的纹理超分辨率框架</title>
+<link>https://tldr.takara.ai/p/2607.21504</link>
+<guid>https://tldr.takara.ai/p/2607.21504</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Texture++提升低分辨率纹理质量，增强资产细节与一致性。</p><br><br><p><strong>摘要：</strong> 文章提出Texture++，一种用于纹理超分辨率的新框架。该方法通过在多个渲染视角中进行超分辨率处理并融合结果，提升低分辨率纹理的细节和连贯性。研究引入了自适应视角选择策略和基于四叉树的纹理区域组织方法，以整合分散的纹理并提供需要优化的区域掩码。最后，设计了一个基于扩散的超分辨率模型，用于增强指定区域的纹理分辨率，并与周围区域无缝融合。实验表明，该方法在细节和一致性方面优于现有技术。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.21504 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 16:52:10 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 16:52:10 +0000</pubDate>
+</item>
+<item>
+<title>未来表面重建基准 FutureSurf 的提出与评估</title>
+<link>https://tldr.takara.ai/p/2607.21471</link>
+<guid>https://tldr.takara.ai/p/2607.21471</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>FutureSurf 提供未来表面重建的基准测试，揭示现有方法的局限性。</p><br><br><p><strong>摘要：</strong> 本文提出了 FutureSurf，一个用于评估未来时间表面重建的基准和数据集。该数据集通过精确的未来地面真实数据和可验证控制，支持对方法在预测未来几何结构方面的性能进行评估。实验表明，即使在理论上可预测的情况下，现有方法仍存在显著误差，且未来表面精度与渲染质量无直接关联。该研究为未来表面重建提供了新的评估框架，并公开了数据集、评分代码和相关资源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.21471 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 16:14:59 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 16:14:59 +0000</pubDate>
+</item>
+<item>
+<title>大语言模型在知识竞赛中的表现评估</title>
+<link>https://tldr.takara.ai/p/2607.21445</link>
+<guid>https://tldr.takara.ai/p/2607.21445</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究评估大语言模型在知识竞赛中的表现，发现其在文化类题目上较弱。</p><br><br><p><strong>摘要：</strong> 本文通过设计多语言基准测试 TriviaRoomQA，评估大语言模型在各类知识竞赛中的表现。测试涵盖288个主题，包含3,300道多语言选择题及5,340道法语专属题目。研究分析了来自欧亚北美30个模型的表现，发现模型在历史、地理等知识密集型题目中表现较好，但在流行文化如名人、音乐、电影等题目上表现较差。此外，模型在不同语言中的表现存在差异，表明事实知识获取并非完全依赖语言能力。研究揭示了现有学术基准未覆盖的知识空白。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.21445 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 15:52:00 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 15:52:00 +0000</pubDate>
+</item>
+<item>
+<title>Naju：突破长序列记忆跟踪的递归模型</title>
+<link>https://tldr.takara.ai/p/2607.21000</link>
+<guid>https://tldr.takara.ai/p/2607.21000</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Naju模型在长序列记忆跟踪中同时实现强保留与有效覆盖。</p><br><br><p><strong>摘要：</strong> 本文提出Naju模型，用于解决长序列记忆跟踪中的两个矛盾需求：长期存储绑定的近无损保持和旧信息的主动覆盖。传统方法往往只能在其中一方面表现良好，而Naju通过分解递归更新为显式的离散极点、独立写入增益和输入依赖的写入/读取映射，实现了更优的解耦设计。该模型在保持Schur稳定性的同时，避免了对稳定性的额外正则化。实验表明，Naju在4倍训练长度下仍能保持强劲的性能，在多个基准测试中表现出优于Mamba的长程记忆能力，并在语言建模和多查询关联回忆任务中表现优异。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.21000 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 07:34:07 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 07:34:07 +0000</pubDate>
+</item>
+<item>
+<title>基于概率残差学习的因果贝叶斯推荐模型</title>
+<link>https://tldr.takara.ai/p/2607.20863</link>
+<guid>https://tldr.takara.ai/p/2607.20863</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出PRL模型提升推荐系统性能与可解释性。</p><br><br><p><strong>摘要：</strong> 现代推荐系统多依赖深度学习模型，但存在黑箱性和计算复杂度高的问题。为解决这一问题，本文提出概率残差学习（PRL）模型，通过建模真实值与基础预测之间的残差，实现对现有系统的针对性优化。PRL通过概率分组用户进行局部残差建模，引入影响用户和物品表示的领域级混杂因素，并利用do-演算聚合不同群组的残差预测。实验表明，PRL可兼容多种深度学习推荐系统，提升性能并自动发现有意义的用户群组。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.20863 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 02:39:12 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 02:39:12 +0000</pubDate>
+</item>
+<item>
+<title>病理视觉语言模型评估新挑战与PathBind基准发布</title>
+<link>https://tldr.takara.ai/p/2607.21065</link>
+<guid>https://tldr.takara.ai/p/2607.21065</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>病理VLM评估存在三方面问题，PathBind基准提升评估准确性。</p><br><br><p><strong>摘要：</strong> 本文指出当前病理视觉语言模型（VLM）评估中存在三个关键问题：视觉证据并非总是必要、领域训练提升准确率但未增强视觉绑定、实体级注意力分散且查询相关性弱。为解决这些问题，研究者提出PathBind基准，包含2,600个样本，涵盖VQA、PTA和Grounding任务，并通过自动化筛选和专家评审提高质量。对18个VLM的测试表明，现有模型在答案性能与视觉语义绑定之间仍存在显著差距。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.21065 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 08:59:11 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 08:59:11 +0000</pubDate>
+</item>
+<item>
+<title>视觉时空推理基准ViSTR-Bench的提出与评估</title>
+<link>https://tldr.takara.ai/p/2607.20868</link>
+<guid>https://tldr.takara.ai/p/2607.20868</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出ViSTR-Bench，用于评估多模态大模型的时空推理能力。</p><br><br><p><strong>摘要：</strong> 本文介绍了视觉时空推理基准ViSTR-Bench，旨在系统评估多模态大语言模型在动态场景中进行定性推理的能力。该基准基于时间强调、推理导向和定性评估原则，涵盖运动感知、空间关系、结果预测和物理动态四个维度，包含15个子任务和1340个高质量视频问答对。实验表明，尽管当前模型具备较强的视频理解能力，但在复杂时空推理方面仍存在显著瓶颈，远未达到人类水平。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.20868 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 02:49:24 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 02:49:24 +0000</pubDate>
+</item>
+<item>
+<title>基于正则化反卷积与半监督交叉学习的声学阻抗成像方法</title>
+<link>https://tldr.takara.ai/p/2607.20989</link>
+<guid>https://tldr.takara.ai/p/2607.20989</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出RD-SCL框架，提升声学阻抗成像精度与效率。</p><br><br><p><strong>摘要：</strong> 本文针对地下声学阻抗成像中的严重不适定问题，提出了一种新的框架RD-SCL，结合正则化反卷积与半监督交叉学习。该框架通过可微分的一阶Tikhonov反卷积算子动态估计波形，无需辅助网络或固定先验波形，提供稳定的物理引导反馈。在此基础上设计对称交叉学习机制，增强标记与未标记数据预测的一致性，有效利用大量未标记数据。实验表明，RD-SCL在SEAM和Marmousi 2基准测试中优于现有方法，具有更低的计算成本和良好的性能表现。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.20989 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 07:13:01 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 07:13:01 +0000</pubDate>
+</item>
+<item>
+<title>TRISHUL：一种增强联邦参数高效微调鲁棒性的谱控框架</title>
+<link>https://tldr.takara.ai/p/2607.20914</link>
+<guid>https://tldr.takara.ai/p/2607.20914</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>TRISHUL提升联邦PEFT在非IID数据下的性能与稳定性。</p><br><br><p><strong>摘要：</strong> 本文提出TRISHUL，一种用于增强联邦参数高效微调（PEFT）鲁棒性的谱控框架。该方法通过共享冻结的多头低秩基，实现精确的紧凑核心更新聚合，并在上传前应用核范数近端收缩以抑制客户端特定的高秩谱分量。同时，利用从预训练层容量推导出的凹形水分配预算规则，非均匀分配适应头。TRISHUL在视觉和语言基准测试中，如CIFAR-100、SVHN、20 Newsgroups、MRQA和GLUE，优于联邦LoRA基线，尤其在更强异质性下表现更优。其计算开销小，不增加额外通信。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.20914 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 04:49:38 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 04:49:38 +0000</pubDate>
+</item>
+<item>
+<title>基于部分验证的最优证据选择框架BoE研究</title>
+<link>https://tldr.takara.ai/p/2607.20950</link>
+<guid>https://tldr.takara.ai/p/2607.20950</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>BoE在部分验证下优化候选选择，提升模型输出质量。</p><br><br><p><strong>摘要：</strong> 本文提出一种名为Best-of-Evidence (BoE) 的推理时间选择框架，用于在部分验证条件下优化模型输出。与传统BoN方法不同，BoE不依赖完整候选评估，而是通过构建可复用声明的带符号候选-因子图，并分配有限预算进行证据操作来改变最终选择。该方法在医学视觉问答任务中进行了实验，结果显示BoE可以在可靠、对比和决策相关的证据支持下提升固定候选池的选择效果，并揭示了影响普遍提升的通道质量和候选生成限制。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.20950 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 06:03:59 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 06:03:59 +0000</pubDate>
+</item>
+<item>
+<title>基于可验证奖励的代码生成优化框架CudaPerf</title>
+<link>https://tldr.takara.ai/p/2607.20908</link>
+<guid>https://tldr.takara.ai/p/2607.20908</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>CudaPerf通过结合执行奖励与结构奖励提升代码生成性能。</p><br><br><p><strong>摘要：</strong> 本文提出CudaPerf，一个结合可验证执行奖励和结构代码感知奖励的强化学习框架，用于优化代码生成。该框架分为离线排序模块和在线强化学习训练阶段，通过统一奖励信号同时优化正确性、性能和结构效率。研究还构建了一个包含2.9k个C到CUDA及1k个PyTorch到CUDA程序的数据集，实验表明CudaPerf在多个基准测试中显著优于现有方法，分别提升了5倍和3.32倍的速度，以及17%和7%的正确率。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.20908 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 04:06:41 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 04:06:41 +0000</pubDate>
+</item>
+<item>
+<title>无配对跨模态知识蒸馏方法UnDA的提出与评估</title>
+<link>https://tldr.takara.ai/p/2607.21546</link>
+<guid>https://tldr.takara.ai/p/2607.21546</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>UnDA通过结构对齐提升跨模态知识迁移效果。</p><br><br><p><strong>摘要：</strong> 本文提出一种名为UnDA的无配对跨模态知识蒸馏框架，旨在解决真实场景中配对临床数据获取困难的问题。该方法引入了与主干网络无关的对齐模块，通过基于注意力的池化机制提取语义结构化的类别标记。同时，采用不确定性加权最优传输（UCT-OT）动态调整特征对齐权重，抑制噪声干扰。此外，每类的ProtoNCE目标保持稳定的原型记忆，增强全局判别性。实验表明，在严格无配对设置下，该方法在目标模态的分割任务中提升了准确率和边界精度，证明了跨异构数据源的知识迁移可行性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.21546 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 17:33:29 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 17:33:29 +0000</pubDate>
+</item>
+<item>
+<title>DONDO：面向非洲语言的开源自动语音识别模型</title>
+<link>https://tldr.takara.ai/p/2607.21540</link>
+<guid>https://tldr.takara.ai/p/2607.21540</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>DONDO是面向非洲语言的开源ASR模型，覆盖27种语言。</p><br><br><p><strong>摘要：</strong> DONDO是一组基于w2v-BERT 2.0的开源自动语音识别（ASR）基础模型，支持27种非洲语言。该模型包含21个单语模型和5个多语种模型，主要通过宗教文本进行微调。研究提出了一种分阶段的学习率衰减微调方法，并引入轻量级的语言条件机制，使多语种模型在推理时可针对特定语言进行调整。实验结果显示，多语种模型的平均词错误率（WER）为10-13%，接近单语模型性能。所有模型已在Hugging Face上开源，供自由微调和商业使用。这些语言覆盖约一亿母语使用者，加上二语使用者则更多。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.21540 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 17:25:08 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 17:25:08 +0000</pubDate>
+</item>
+<item>
+<title>Lumera：基于单张图像的光照感知3D场景重建与解析</title>
+<link>https://tldr.takara.ai/p/2607.20889</link>
+<guid>https://tldr.takara.ai/p/2607.20889</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Lumera实现单图驱动的3D场景重建与光照解析，提升场景可编辑性。</p><br><br><p><strong>摘要：</strong> Lumera是一个用于从单张图像中进行光照感知、引擎原生3D场景解析的基准和参考流程。它基于2,513个UE5项目构建，包含大量组件、对象实例、参数化光源和相机视角。Lumera-Box和Lumera-Light分别用于物体检测和光源解析，表现出优秀的整体检测、几何、语义和布局性能。尽管在光源定位方面仍有不足，但Lumera为可编辑3D场景提供了新的目标和研究方向。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.20889 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 03:26:02 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 03:26:02 +0000</pubDate>
+</item>
+<item>
+<title>GLAM-SLAM：一种实时、可扩展的单目SLAM系统</title>
+<link>https://tldr.takara.ai/p/2607.21416</link>
+<guid>https://tldr.takara.ai/p/2607.21416</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>GLAM-SLAM实现高效、实时的单目SLAM，适用于大规模户外场景。</p><br><br><p><strong>摘要：</strong> 现有基于高斯溅射的单目SLAM系统在长序列、实时性或GPU内存方面存在限制。为解决这些问题，本文提出GLAM-SLAM，一种实时、解耦的高斯溅射SLAM系统，适用于大规模户外场景。该系统采用鲁棒的特征SLAM前端进行轻量级跟踪，并通过结构化的稀疏锚点网格实现可扩展建图，确保长期序列中的场景一致性。为满足3D高斯溅射的密集初始化需求，引入基于几何的流密度锚定策略。此外，通过将建图视为多场景问题，提出场景划分策略，利用MLP初始化引入强空间归纳偏差，生成局部高斯分布。实验在KITTI、Oxford RobotCar和Málaga数据集上进行，结果表明其重建质量比第二名提升15%，同时保持实时性能和可扩展性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.21416 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 15:22:42 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 15:22:42 +0000</pubDate>
+</item>
+<item>
+<title>SPORD方法提升电商供应链规划效率与透明度</title>
+<link>https://tldr.takara.ai/p/2607.21354</link>
+<guid>https://tldr.takara.ai/p/2607.21354</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>SPORD方法优化电商供应链规划，提升执行效率和信任度。</p><br><br><p><strong>摘要：</strong> 文章介绍了SPORD（Simulation-Propose-then-OR-Dispose）方法，用于解决电商企业在供应链规划中面临的三大障碍：模型碎片化、计算复杂性高以及执行信任不足。该方法通过模拟生成有效路径，并由整数规划选择最优方案，显著提高了计算效率和操作可行性。JD.com的NetSim平台部署后，优化了20,000多家供应商的端到端服务，跨区域履约率下降，碳排放减少。SPORD使模拟从监控转向主动规划，增强了管理层的信任与合作。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.21354 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 14:18:01 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 14:18:01 +0000</pubDate>
+</item>
+<item>
+<title>神经网络最优训练的算法新进展</title>
+<link>https://tldr.takara.ai/p/2607.20811</link>
+<guid>https://tldr.takara.ai/p/2607.20811</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究提出新的算法，提升线性与ReLU激活函数网络的训练效率。</p><br><br><p><strong>摘要：</strong> 本文探讨了线性与ReLU激活函数神经网络的最优训练问题，提出了新的算法以提升其计算效率。针对ReLU网络，研究证明了所有隐藏层节点出度为1的架构在多项式时间内可解，超越了先前的算法成果。对于线性网络，研究首次识别出满足新型数据吞吐条件的可多项式时间求解的网络结构，为神经网络训练复杂性研究提供了新方向。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.20811 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 00:44:44 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 00:44:44 +0000</pubDate>
+</item>
+<item>
+<title>随机化KV缓存淘汰机制与错误证书研究</title>
+<link>https://tldr.takara.ai/p/2607.21475</link>
+<guid>https://tldr.takara.ai/p/2607.21475</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>随机化缓存淘汰提升错误可追溯性，增强系统可靠性。</p><br><br><p><strong>摘要：</strong> 文章探讨了确定性KV缓存淘汰机制的局限性，指出其无法准确识别被删除内容的影响。通过引入随机化淘汰策略，结合泊松采样和Hájek校正，实现了更可靠的错误证书。实验表明，该方法在不损失精度的情况下，有效区分了缓存引起的故障与固有故障，并优于基于输出置信度的调度方式。尽管部分预设假设未被验证，但随机化机制显著提升了系统的可解释性和故障定位能力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2607.21475 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 16:16:59 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 16:16:59 +0000</pubDate>
+</item>
+<item>
+<title>MIRROR: Learning from the Other View for Multi-Modal Reasoning</title>
+<link>https://tldr.takara.ai/p/2607.21552</link>
+<guid>https://tldr.takara.ai/p/2607.21552</guid>
+<content:encoded><![CDATA[
+
+  Unlike large language models (LLMs) that exhibit strong reasoning capabilities, vision-language models (VLMs) struggle with visual reasoning, even on geometry problems that admit equivalent text, diagram, and combined diagram+text views. We show that these views often elicit different behaviors: a model may solve a problem from text but fail on the corresponding diagram, or succeed visually while failing textually. This inconsistency suggests that different views expose complementary reasoning paths and failure modes that standard multimodal post-training does not fully exploit. To study and exploit this phenomenon, we construct ODA-Data, a high-quality paired multimodal geometry dataset with text-dominant, image-dominant, and combined image+text views of the same problems, together with splits for training and evaluating modality-dependent reasoning behaviors. We then develop Modality-Informed Reciprocal Reasoning Optimization (MIRROR), a reinforcement learning approach for improving multimodal reasoning via self supervision. For each problem, MIRROR evaluates the model under all views, selects the best-performing view as a teacher, and trains other views with a reverse-KL objective towards the teacher. Across reasoning benchmarks that evaluate on geometry problems, MIRROR improves over standard RL and yields more accurate and consistent behavior across modalities
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 17:35:56 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 17:35:56 +0000</pubDate>
+</item>
+<item>
+<title>SlerpFlow: Spherical Trajectory Correction for Rectified Flow Inversion</title>
+<link>https://tldr.takara.ai/p/2607.21326</link>
+<guid>https://tldr.takara.ai/p/2607.21326</guid>
+<content:encoded><![CDATA[
+
+  Rectified-flow-based diffusion transformers, particularly FLUX, have demonstrated outstanding performance in high-quality image generation. However, achieving fast and accurate inversion--transforming images back to latent noise for faithful reconstruction and editing--remains a challenging bottleneck due to the discretization errors of linear solvers. This paper introduces SlerpFlow, a straightforward yet highly effective zero-shot approach that unlocks the full potential of FLUX for high-fidelity inversion and editing. Unlike existing approaches (e.g., RF-Solver) that rely on complex numerical approximations such as high-order Taylor expansions to correct trajectory errors, we present a geometric view based on the Manifold Hypothesis: the empirically observed trajectory curvature is not a numerical artifact, but rather serves as a necessary "centripetal force" that constrains the flow to remain on the data manifold. Guided by this insight, SlerpFlow integrates Spherical Linear Interpolation (Slerp) to rectify flow velocity directions on the hypersphere, strictly adhering to the intrinsic curvature of the latent space. Crucially, by caching the corrected velocity for subsequent steps, SlerpFlow achieves high-precision inversion while maintaining the computational efficiency of a first-order Euler solver. Extensive experiments on FLUX-based reconstruction and editing tasks demonstrate that SlerpFlow improves reconstruction fidelity and achieves stronger semantic alignment in editing without requiring additional training. Code is available at https://github.com/0answer0/SlerpFlow.
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 13:55:21 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 13:55:21 +0000</pubDate>
+</item>
+<item>
+<title>Surprisal Theory is Tautological (without Rational Grounding)</title>
+<link>https://tldr.takara.ai/p/2607.21574</link>
+<guid>https://tldr.takara.ai/p/2607.21574</guid>
+<content:encoded><![CDATA[
+
+  Surprisal theory holds that the human processing difficulty of a linguistic unit in context is an affine function of its surprisal under some language model. I argue this claim is a tautology without further constraint: for any non-negative difficulty measure over units in context, there exists a language model whose surprisal is an affine function of it under mild technical conditions. Therefore, because any pattern of difficulty is consistent with some language model, without an additional constraint on the language model, surprisal theory makes no falsifiable predictions. The tautology was long obscured by an assumption implicit in two decades of psycholinguistic work---that the relevant language model is the distribution that generated the training corpus, so that improving corpus fit improves predictions of human behavior. Recent empirical work has undermined this assumption, demonstrating that better corpus models can be worse predictors of processing difficulty. I conclude that breaking the tautology requires a rationalist intervention, i.e., the relevant language model must be derived from a non-empirically motivated model of the comprehender, which could be based on, for instance, memory constraints or processing goals, and that, thus, does not depend on the behavioral data surprisal theory is meant to explain.
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 17:54:37 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 17:54:37 +0000</pubDate>
+</item>
+<item>
+<title>Semantic-Aware Task Clustering for Constructive and Cooperative Multi-Tasking</title>
+<link>https://tldr.takara.ai/p/2607.21426</link>
+<guid>https://tldr.takara.ai/p/2607.21426</guid>
+<content:encoded><![CDATA[
+
+  Cooperative multi-task semantic communication (CMT-SemCom) improves task execution performance by leveraging shared representations. However, as we demonstrated in [1], cooperative multi-tasking can be either constructive or destructive, depending on the semantic relationships among tasks. To ensure constructive cooperation, we propose a semantic-aware task clustering method for CMT-SemCom. We have formulated a sequential multi-stage optimization problem in which semantically aligned tasks are clustered once after a short initial training phase, and then end-to-end (E2E) joint training is conducted exclusively within the discovered groups. Specifically, the problem decomposes into two stages: (i) a semantic clustering problem leveraging hierarchical density-based spatial clustering, and (ii) an intra-cluster E2E CMT-SemCom learning problem. Simulation results demonstrate that the proposed framework effectively mitigates destructive cooperation and negative transfer, yielding accuracy gains compared to unclustered multi-tasking and individual training baselines.
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 15:29:39 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 15:29:39 +0000</pubDate>
+</item>
+<item>
+<title>Profiling Lightweight Large Language Models</title>
+<link>https://tldr.takara.ai/p/2607.20806</link>
+<guid>https://tldr.takara.ai/p/2607.20806</guid>
+<content:encoded><![CDATA[
+
+  Lightweight large language models (LLMs) are increasingly being deployed locally on personal computers and are expected to play a growing role in resource-constrained edge and mobile environments. In such settings, energy consumption, execution time, and memory usage directly affect practical usability, yet existing evaluations of LLM efficiency largely rely on proxy descriptors such as parameter count or FLOPs, often decoupled from task precision. This paper introduces a PTME-based experimental framework for the precision-aware profiling of lightweight LLM inference, jointly measuring Precision, execution Time, peak Memory usage, and Energy consumption through direct hardware-level measurements. The methodology is applied to a representative set of lightweight LLMs executed locally under edge-class resource envelopes on a controlled desktop platform, using benchmarks spanning code generation, mathematical reasoning, and multi-task understanding. We find that static proxy descriptors approximate inference cost well but fail to predict precision. Tightening the resource envelope increases cost without affecting precision, amplifying execution time more strongly than energy and penalizing larger models the most. Moreover, no single model dominates across all PTME dimensions, and a Pareto analysis reveals non-dominated configurations that would be hidden by accuracy-only or efficiency-only assessments, providing practical guidance for selecting models under different resource envelopes. These results show that selecting lightweight LLMs by size, FLOPs, latency, or accuracy alone can select the wrong deployment candidate; PTME profiling exposes configurations that preserve useful accuracy at lower physical cost.
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 00:24:22 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 00:24:22 +0000</pubDate>
+</item>
+<item>
+<title>Towards Faithful Graph Explanations with Synergistic Edge Effects via Granular Balls</title>
+<link>https://tldr.takara.ai/p/2607.21381</link>
+<guid>https://tldr.takara.ai/p/2607.21381</guid>
+<content:encoded><![CDATA[
+
+  Instance-level explanations aim to reveal the rationale behind a model's decisions for a specific graph. Previous methods explain graph neural networks (GNNs) by selecting important edges to induce subgraphs, where edge importance is assessed by perturbing each edge and observing changes in the model predictions. However, they often neglect the synergistic effects among edges, which are crucial for accurately characterizing edge importance. To address this issue, we propose SeeExplainer, a parameter-free explainer to interpret GNNs. Specifically, we first introduce a granular-ball graph refinement mechanism that decomposes a graph into several disjoint granular-balls with no fixed size, and utilize them as nodes to construct a structural graph. This process can better capture the synergistic effects among edges. Then, we perturb nodes and edges in the structural graph to generate explanatory subgraphs based on their respective contributions. Experiments on several graph classification datasets of different networks show that SeeExplainer outperforms state-of-the-art baselines.
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 14:44:51 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 14:44:51 +0000</pubDate>
+</item>
+<item>
+<title>M$^3$-Gen: Interpretable Multimodal Generation of Gene Expression Profiles Using Clinical and Imaging Data</title>
+<link>https://tldr.takara.ai/p/2607.21343</link>
+<guid>https://tldr.takara.ai/p/2607.21343</guid>
+<content:encoded><![CDATA[
+
+  Integrating heterogeneous biomedical data, including clinical metadata, histopathology images, and molecular profiles, is crucial for comprehensive disease understanding. However, gene expression data acquisition remains constrained by high costs and privacy concerns, limiting its use in multimodal research and AI-driven applications. We present MultiModal Molecular Generation (M$^3$-Gen), a novel framework for the generation of gene expression profiles by conditioning a Generative Adversarial Network on histopathology images and clinical metadata. M$^3$-Gen learns a unified latent representation from the clinical variables and the images, leveraging contrastive learning, and exploits the embeddings of the two modalities to guide a generative model in producing biologically coherent gene expression profiles. Evaluations on the TCGA dataset demonstrate that M$^3$-Gen generates realistic and functionally meaningful gene expression data. Importantly, by integrating multiple modalities in an attention-based mechanism, M$^3$-Gen provides intrinsic explainability: it allows the identification of which regions of the histopathology images most strongly influenced the generation of specific gene expression profiles, making the model's decisions interpretable by design.
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 14:12:58 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 14:12:58 +0000</pubDate>
+</item>
+<item>
+<title>DTIF: Robust Loop Closure Detection via Delaunay Triangle Topology in Complex Forests</title>
+<link>https://tldr.takara.ai/p/2607.21138</link>
+<guid>https://tldr.takara.ai/p/2607.21138</guid>
+<content:encoded><![CDATA[
+
+  Accurate forest inventory and large-scale mapping are essential for ecosystem monitoring and sustainable forest management. Multiple low-cost edge platforms enable efficient large-area data acquisition, but merging independently constructed local maps in GNSS-denied understory environments still requires initialization-free loop closure detection and global registration. This task is challenging because low-cost LiDAR point clouds are sparse and noisy, while repetitive trunk layouts and the lack of distinctive geometric landmarks lead to severe perceptual aliasing and false correspondences. To address these issues, we propose DTIF (Delaunay Triangulation in Forests), a lightweight trunk-topology-based framework for forest loop closure detection and global registration. Tree trunks are first extracted as stable landmarks and encoded using a Delaunay topology for compact scene representation. Candidate submaps are then screened using edge-length and radius statistics, followed by edge--radius consistency verification and strong/weak vertex support aggregation to construct weighted vertex correspondences. Finally, topology-derived reliability weights are incorporated into a decoupled robust pose estimator that separately estimates yaw, horizontal translation, and elevation translation under gravity alignment. Experiments on simulated and real-world forest datasets demonstrate that DTIF achieves accurate registration with low computational overhead, providing a favorable balance among robustness, efficiency, and deployability on resource-constrained edge platforms.
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 10:16:56 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 10:16:56 +0000</pubDate>
+</item>
+<item>
+<title>Neural solutions of coupled ghost and gluon Dyson--Schwinger equations in Landau gauge</title>
+<link>https://tldr.takara.ai/p/2607.21548</link>
+<guid>https://tldr.takara.ai/p/2607.21548</guid>
+<content:encoded><![CDATA[
+
+  The coupled ghost and gluon Dyson--Schwinger equations (DSEs) of four-dimensional Landau-gauge Yang--Mills (YM) theory are solved with a neural representation trained only from renormalized equation residuals. The neural and fixed-point solutions agree at the percent level and remain stable under changes of initialization, network size, integration grid, and infrared boundary condition. Variations of the three-gluon vertex model produce substantially larger effects than the neural error. The MiniMOM ultraviolet running and the sign change of the gluon Schwinger function are also reproduced within the limitations of the truncation.
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 17:35:18 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 17:35:18 +0000</pubDate>
+</item>
+<item>
+<title>Mean-to-Score Discrete Diffusion: Posterior-Mean Denoisers for Score Entropy</title>
+<link>https://tldr.takara.ai/p/2607.21372</link>
+<guid>https://tldr.takara.ai/p/2607.21372</guid>
+<content:encoded><![CDATA[
+
+  Score Entropy Discrete Diffusion (SEDD) parameterizes discrete reverse processes with unconstrained positive score ratios. While positivity guarantees nonnegative reverse jump rates, it does not ensure Bayes realizability: ratios at a noisy state need not be jointly induced by any clean-token posterior under the forward kernel. The score-entropy loss has the correct population optimum but does not enforce this constraint away from it. In a trained pure-uniform SEDD checkpoint, roughly one quarter of complete score vectors violate the coordinate box, while more than half lie inside it yet remain materially incompatible with any valid posterior. Such violations can produce negative pre-normalization weights in finite-step sampling. Projecting raw scores onto the bridge polytope removes all observed negative weights and improves external generative PPL from $203.6$ to $175.1$ without changing the sampler. We introduce \emph{mean-to-score} (M2S), which predicts a clean-token posterior mean and converts it to the score through an exact kernel-dependent linear map. The construction applies to any known coordinate-wise continuous-time Markov chain (CTMC) satisfying a mild support condition. For uniform corruption, it maps the probability simplex onto the bridge polytope; for absorbing-mask corruption, the resulting objective recovers MD4 exactly. In a controlled 28.4M-parameter CIFAR-10 comparison, M2S lowers test BPD from $3.173$ to $3.129$ and FID-50k from $\CifarSEDDFID$ to $\CifarMtwoSFID$. A 170M-parameter M2S model trained on about 262B OpenWebText token slots outperforms the evaluated pure-uniform SEDD, GIDD, and Neural CTMC checkpoints at every tested sampling budget, reaching generative PPL $143.3$ at 128 steps versus $183.6$ for the strongest pure-uniform baseline.
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 14:37:30 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 14:37:30 +0000</pubDate>
+</item>
+<item>
+<title>Towards a Certifying Grounder</title>
+<link>https://tldr.takara.ai/p/2607.21199</link>
+<guid>https://tldr.takara.ai/p/2607.21199</guid>
+<content:encoded><![CDATA[
+
+  Grounding, the translation of high-level theories into equivalent quantifier-free formulas, is a crucial step in declarative solving, yet it has so far escaped the proof-logging revolution. When this grounding step is not certifying, there is no way of knowing that the obtained solutions actually correspond to the original problem specification, resulting in a trust gap. 
+  In this paper, we close the trust gap between the user's high-level specification and the solver's low-level input by introducing a novel certifying grounding framework for first-order logic model expansion (FOX) over finite domains. We present CertiFOX, a framework consisting of: (1) a proof format for grounding derivations, (2) GroundFOX, a certifying grounder operating on theories in Grounding Normal Form (GNF)--a new normal form designed for compact, domain-aware grounding--and (3) CheckFOX, an independent proof checker.
+  Our approach guarantees that the grounder's output is equivalent to the input specification, setting the stage for trustworthy end-to-end certified solving pipelines for declarative languages. Experimental evaluation confirms that CertiFOX is a feasible approach. The GroundFOX grounder is broadly comparable with other grounders, and proof checking with CheckFOX adds overhead within a small constant factor of grounding time.
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 11:19:24 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 11:19:24 +0000</pubDate>
+</item>
+<item>
+<title>DINO-VPT: Hierarchical Visual Prompt Tuning for Joint Physical-Digital Face Anti-Spoofing</title>
+<link>https://tldr.takara.ai/p/2607.20900</link>
+<guid>https://tldr.takara.ai/p/2607.20900</guid>
+<content:encoded><![CDATA[
+
+  With the increasing diversity of spoofing attacks, there is a growing demand for unified Face Anti-Spoofing (FAS) models capable of detecting both physical and digital threats. While existing Vision-Language Models (VLMs) demonstrate high generalization in this context, they heavily rely on complex multimodal fusion and external text encoders. In this paper, we propose DINO-VPT, a lightweight, vision-only framework leveraging hierarchical visual prompt tuning. By dynamically injecting prompts conditioned on input features via a Prompt Routing Network (PRN), our method effectively disentangles diverse spoofing artifacts without requiring multimodal fusion. Evaluations on the UniAttackData benchmark demonstrate that DINO-VPT achieves higher accuracy than state-of-the-art VLM-based methods. Our results indicate that a properly structured vision-only architecture can achieve state-of-the-art performance in unified FAS without the need for multimodal supervision.
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 03:51:22 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 03:51:22 +0000</pubDate>
+</item>
+<item>
+<title>Representing Entity Importance in AI Knowledge Systems: A Dual-Signal Framework of Audience Evaluation and Structural Authority</title>
+<link>https://tldr.takara.ai/p/2607.20925</link>
+<guid>https://tldr.takara.ai/p/2607.20925</guid>
+<content:encoded><![CDATA[
+
+  AI knowledge systems require representations of entity importance for retrieval, recommendation, evidence selection, and knowledge-intensive reasoning. Yet importance is often reduced to a single score derived from either human response or graph structure. Such compression may discard distinctions that matter when an AI system must choose among entities for different tasks. This study introduces an interpretable dual-signal representation in which each entity is characterized by an audience-evaluation dimension and a structural-authority dimension.
+  The framework is evaluated using movie entities as an empirical validation domain. IMDb non-commercial datasets provide a rating-based audience ranking, Wikidata supports entity alignment, and English Wikipedia hyperlinks form the knowledge network on which PageRank estimates structural authority. Experiments on 482 entities and 13,690 directed relationships reveal a statistically significant but weak association between the two dimensions (Spearman rho = 0.2275, p < 0.001). Their overlap is only 10% in the top 10 and 34% in the top 100, while entity-level divergence occurs in both directions.
+  The results show that audience evaluation and structural authority are non-redundant signals and should not automatically be collapsed into a single scalar notion of importance. The contribution is not a new ranking algorithm or learned embedding, but a minimal knowledge-representation framework and an empirical test of its dimensional necessity. The findings support task-aware AI knowledge systems that preserve distinct importance signals before applying context-specific selection or aggregation.
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 05:06:09 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 05:06:09 +0000</pubDate>
+</item>
+<item>
+<title>Automated Synthesis and Adversarial Validation of Executable Causal Research Pipelines</title>
+<link>https://tldr.takara.ai/p/2607.21173</link>
+<guid>https://tldr.takara.ai/p/2607.21173</guid>
+<content:encoded><![CDATA[
+
+  While automated research systems promise to accelerate empirical analysis, they are prone to silent failures: instances in which analysis code executes successfully yet relies on invalid causal assumptions. We present the Artificial Intelligence (AI)-based Epidemiology Research Assistant (ARA), a framework that makes these failures visible by explicitly encoding causal design principles, study-specific assumptions, and methodological constraints. ARA integrates protocol construction, synthetic data generation, and adversarial validation into a unified pipeline. The framework translates natural language research questions into structured causal protocols and executable analysis code by first constructing a protocol and then generating synthetic datasets using Structural Causal Models (SCMs) with known ground-truth effects. This synthetic-data step can also support pipeline development when access to confidential data, such as medical data, is restricted. The generated analysis is then evaluated under controlled violations of identification assumptions. We evaluate ARA on the Automated Causal Reasoning Benchmark, assessing recovery of identification strategies, causal quantities, treatment and outcome variables, and consistency between generated code and approved protocol. Protocol construction and adversarial validation did not consistently improve numerical agreement with benchmark estimates compared with standard LLM-based generation. However, they changed the failure mode: instead of silently returning causal estimates, ARA often surfaced protocol concerns, diagnostic failures, incomplete inference, or downgraded non-causal interpretations. These findings suggest that validity-first automated science systems should be evaluated not only by answer accuracy, but also by whether they indicate when causal claims are unwarranted.
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 10:59:16 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 10:59:16 +0000</pubDate>
+</item>
+<item>
+<title>GroupVideo: Multi-Identity Customized Text-to-Video Generation</title>
+<link>https://tldr.takara.ai/p/2607.21027</link>
+<guid>https://tldr.takara.ai/p/2607.21027</guid>
+<content:encoded><![CDATA[
+
+  Current identity customized video generation methodologies are predominantly limited to single-identity scenarios, as the lack of explicit identity separation mechanisms often leads to identity confusion in multi-identity settings. Existing multi-identity approaches, which directly extend single-identity frameworks by concatenating face images as input conditions, frequently result in unnatural facial expressions and motions, manifesting as the "copy-paste" phenomenon. To overcome these limitations, we introduce GroupVideo, a novel framework that leverages multiple individual photographs to generate identitycustomized video. Built upon Video Diffusion Transformers, GroupVideo incorporates multimodal identity alignment: visual alignment jointly encodes multiple face images to provide robust identity references, while semantic alignment introduces a semantic perceiver to enhance the naturalness of motions. An ID localization module with spatial guidance is introduced to address identity blending and enhance identity fidelity, along with bounding box constraints and mask regularization loss, to focus on facial regions and improve training efficiency. In response to the shortage of multi-ID video datasets, we have curated a comprehensive high-quality dataset of 20,000 videos, thereby establishing a crucial resource to advance future research in multi-ID video generation. Extensive experiments demonstrate that GroupVideo outperforms existing methods in generating multi-character videos with consistent identities and natural motions.
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 08:09:04 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 08:09:04 +0000</pubDate>
+</item>
+<item>
+<title>Streaming Multi-Agent Autoregressive Diffusion Model with World State Registers</title>
+<link>https://tldr.takara.ai/p/2607.21594</link>
+<guid>https://tldr.takara.ai/p/2607.21594</guid>
+<content:encoded><![CDATA[
+
+  Multi-agent interactive world models should not only generate consistent observations, but also maintain world states that persist across agents and evolve across views. Existing autoregressive video diffusion pipelines carry forward observation history as conditioning context, which makes shared state difficult to maintain in multi-agent and multi-view settings. We present WorldWeaver (W^2), a streaming multi-agent video diffusion model that augments rollout with cross-agent world state registers: learnable tokens that store shared world information, track individual agent status, and are dynamically updated after each generated chunk. We ground these registers with supervision signals spanning individual agent status, global state views including bird's-eye views, and scene text. We further improve the architecture with a Mixture-of-Transformers design that uses separate weights for world state modeling and visual frame modeling. Extensive experiments in two-agent Minecraft video generation show that explicit world-state modeling improves logical consistency and generation quality.
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 17:59:58 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 17:59:58 +0000</pubDate>
+</item>
+<item>
+<title>MVEI &amp; EmObserver: Empowering MLLM-Oriented Visual Emotional Intelligence via Emotion Statement Judgement</title>
+<link>https://tldr.takara.ai/p/2607.21061</link>
+<guid>https://tldr.takara.ai/p/2607.21061</guid>
+<content:encoded><![CDATA[
+
+  Affective Image Content Analysis (AICA) aims to recognize and understand emotions elicited by visual content, representing an indispensable step toward Artificial General Intelligence (AGI). However, despite the rapid progress of Multimodal Large Language Models (MLLMs), systematic evaluation of their visual emotional intelligence remains largely absent from recent model releases. We attribute this gap to a structural mismatch between conventional AICA paradigms and the open-ended, instruction-driven nature of MLLMs, where further analysis reveals four major limitations: omission of plausible responses, limited emotion taxonomies, neglect of contextual factors, and labor-intensive annotation. To overcome these barriers, we introduce Emotion Statement Judgement (ESJ), a statement-verification formulation that preserves the expressiveness of the input space while constraining outputs to discriminative judgements. We further develop INSETS, a labor-efficient pipeline that instantiates ESJ at scale by constructing INSETS-462k and supporting MVEI, a rigorously refined benchmark spanning sentiment polarity, emotion interpretation, scene context, and perception subjectivity. Beyond evaluation, we build EmObserver, an emotion-oriented MLLM optimized on ESJ through an elaborate multi-stage recipe. Extensive evaluation of broad-spectrum MLLMs on MVEI reveals fine-grained insights into current artificial visual emotional intelligence, while experiments on multiple AICA benchmarks demonstrate the accuracy, generalization, and reasoning faithfulness of EmObserver. Collectively, these results establish ESJ as a practical formulation, MVEI as a comprehensive benchmark, and EmObserver as an advanced baseline for advancing MLLM-oriented visual emotional intelligence. Code will be released at: https://github.com/wdqqdw/EmObserver.
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 08:52:11 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 08:52:11 +0000</pubDate>
+</item>
+<item>
+<title>WAT3R: Feedforward Underwater 3D Reconstruction</title>
+<link>https://tldr.takara.ai/p/2607.21023</link>
+<guid>https://tldr.takara.ai/p/2607.21023</guid>
+<content:encoded><![CDATA[
+
+  Reliable feedforward underwater 3D reconstruction remains challenging due to severe light attenuation and backscattering, which degrade visual quality and disrupt feature consistency across views, leading to inaccurate multi-view geometry. To address this issue, we propose WAT3R, a feed-forward framework for reconstructing 3D scenes directly from underwater images. By leveraging degradation adaptation as a geometry-constrained process, WAT3R integrates a lightweight neural adaptation module to flexibly account for these underwater imaging effects, thereby improving multi-view reconstruction quality. Implemented in a single forward pass, WAT3R directly and efficiently outputs pixel-aligned 3D point maps and camera poses from underwater videos, allowing a high-quality underwater 3D reconstruction. Experiments conducted on the FLSea, SQUID, and USOD10K datasets show that our method consistently outperforms state-of-the-art approaches on 3D reconstruction tasks, including multi-view/monocular depth estimation and camera pose estimation.
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 08:07:43 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 08:07:43 +0000</pubDate>
+</item>
+<item>
+<title>Gradient Concentration, Not Weight Saliency, Explains Representation-Level Class Unlearning</title>
+<link>https://tldr.takara.ai/p/2607.21353</link>
+<guid>https://tldr.takara.ai/p/2607.21353</guid>
+<content:encoded><![CDATA[
+
+  Machine unlearning aims to remove the influence of specific training data while preserving model utility. Many state-of-the-art approaches pursue this goal by restricting the forgetting update to a subset of parameters selected through gradient-based saliency. Although such methods are widely adopted, the actual contribution of saliency-based weight selection to representation-level forgetting remains unclear. In this work, we perform the first controlled ablation of the saliency masking mechanism used by SalUn. Using a matched-compute experimental design on CIFAR-10 and CIFAR-100 with ResNet-18, we compare saliency-based masking against random masks of equal sparsity and unconstrained updates, while keeping the unlearning objective, optimization schedule, and computational budget fixed. Across multiple representation-level evaluations, including linear probing, prototype recovery, and layer-wise CKA, the three configurations exhibit statistically equivalent representation-level recoverability. We find that forget gradients are strongly concentrated in the final network layers (approximately 92% of the squared gradient energy on CIFAR-10) before any mask is applied, causing all masking strategies to operate within the same representational subspace. Furthermore, saliency masks show limited class specificity (specificity index 0.09-0.11), selecting highly overlapping parameter subsets across different forget classes. Our findings suggest that, in the studied setting, representation-level forgetting is primarily governed by gradient concentration and representation geometry rather than by the specific identity of saliency-selected weights. More broadly, the results support a growing body of evidence indicating that effective representation-level unlearning requires objectives that act directly on latent representations rather than on increasingly sophisticated weight-selection strategies.
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 14:17:51 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 14:17:51 +0000</pubDate>
+</item>
+<item>
+<title>Agentic coding without the cloud: evaluating open-weight large language models on longitudinal data preparation tasks</title>
+<link>https://tldr.takara.ai/p/2607.21482</link>
+<guid>https://tldr.takara.ai/p/2607.21482</guid>
+<content:encoded><![CDATA[
+
+  Large language models (LLMs) and agents are now widely used tools in code development, with data typically sent to third-party cloud-based models. Their adoption in research using personal data is constrained by governance requirements that typically prohibit data transmission to external services. Locally deployable open-weight models offer an alternative since sensitive data never leave the local environment. We introduce an open-source framework for evaluating the efficacy of AI agents powered by open-weight LLMs on one of the most persistent bottlenecks in research on longitudinal population studies: data preparation. The framework comprises: a curated ground-truth dataset (cleaning scripts preparing six sweeps of data from a British cohort study), task definitions encompassing tasks such as category harmonization and multi-wave merging, and automated routines for evaluating the LLM-produced R code and outputted data. We benchmark LLMs across the (consumer grade) deployment spectrum to assess their efficacy in 20 data preparation tasks (creation of 102 variables). Current state-of-the-art, 31-35B parameter models almost saturated our benchmark ("average task completion" up to 87.9%). The performance of open-weight LLMs running on consumer-grade hardware shows promise of a viable path toward AI-assisted data preparation in governance-restricted research settings. Our framework is publicly available at: https://github.com/UCL-ARC/RRBench.
+
+]]></content:encoded>
+<pubDate>Thu, 23 Jul 2026 16:23:42 +0000</pubDate>
+<pubDate>Thu, 23 Jul 2026 16:23:42 +0000</pubDate>
+</item>
 
 <item>
 <title>基于条件期望的广义时序差分强化学习框架</title>
