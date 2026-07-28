@@ -15378,3 +15378,21 @@ Summarized using qwen-turbo
 Append: [修正第6.5节的代码错误](https://sebastianraschka.com/blog/2026/reasoning-model-listing-6-5-correction.html)
 append_entries: 0
 Finish: 2026-07-28 13:53:38.171087
+------------------------------------------------------
+Started: 2026-07-28 19:15:29.253005
+Existing_entries: 287
+Fetching from https://sebastianraschka.com/rss_feed.xml
+Token length: 2829
+Summarized using qwen-turbo
+Append: [Kimi K3架构分析与技术观察](https://sebastianraschka.com/blog/2026/kimi-k3-architecture-notes.html)
+Json decode failed:
+{
+  "title": "《从零构建推理模型》第6.5节修正说明",
+  "short_summary": "书中第6.5节代码有小错误，需将torch.manual_seed(0)改为torch.manual_seed(5)",
+  "summary": "本文是关于《从零构建推理模型》一书中第6.5节的修正说明。作者Sebastian Raschka指出，在第198页的代码中，有一处小错误：原代码中的"torch.manual_seed(0)"应更正为"torch.manual_seed(5)"。这一修改虽小，但对复现书中第6.5节生成的响应及后续章节中的对数概率输出至关重要。若使用"torch.manual_seed(0)"，虽然代码本身正确，但数值结果可能有所不同，容易引起混淆。该错误将在下一次印刷中修正。作者对此表示歉意，并希望此说明能节省读者的调试时间。",
+  "keyword": "书籍修正, PyTorch, 代码错误"
+}Summarization failed, append the original article
+error: Expecting ',' delimiter: line 4 column 90 (char 206). Line: 406.
+Append: [Correction for Listing 6.5 in Build a Reasoning Model From Scratch](https://sebastianraschka.com/blog/2026/reasoning-model-listing-6-5-correction.html)
+append_entries: 2
+Finish: 2026-07-28 19:15:35.391078
