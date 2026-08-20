@@ -4,6 +4,608 @@
 <title>Takara TLDR - Daily AI Papers</title>
 <link>https://tldr.takara.ai</link>
 
+<item>
+<title>深度学习模型在智能电表能耗预测中的性能评估</title>
+<link>https://tldr.takara.ai/p/2608.18675</link>
+<guid>https://tldr.takara.ai/p/2608.18675</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>深度学习模型在能耗预测中优于传统方法，但计算成本需权衡。</p><br><br><p><strong>摘要：</strong> 本文对九种现代深度学习时间序列预测模型进行了实证基准测试，涵盖线性、MLP、卷积和Transformer架构。通过两个公开的智能电表数据集评估了模型性能，重点分析了历史输入长度、预测范围和模型架构对预测准确性的影响。研究发现，延长历史上下文可提高精度，但存在饱和点；预测范围越长，准确率越低。同时，轻量级模型在计算成本较低的情况下仍能保持较高性能。此外，模型选择对大多数人口群体影响有限，仅在长预测范围和异质数据集中差异显著。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.18675 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 08:27:48 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 08:27:48 +0000</pubDate>
+</item>
+<item>
+<title>TestifAI：高效评估深度学习模型多扰动鲁棒性的框架</title>
+<link>https://tldr.takara.ai/p/2608.18900</link>
+<guid>https://tldr.takara.ai/p/2608.18900</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>TestifAI通过低阶测试预测高阶扰动下的模型鲁棒性，提升测试效率。</p><br><br><p><strong>摘要：</strong> 随着人工智能在安全关键领域的广泛应用，其潜在风险也日益增加。为确保模型行为的稳定性，需要对深度学习模型进行充分测试。然而，现有测试框架难以系统地探索和总结多种扰动组合下的鲁棒性。为此，本文提出TestifAI，一个高效的深度学习测试框架，能够根据用户定义的语义扰动空间（如图像模糊、亮度和缩放）和严重程度级别，查询任意组合下的模型鲁棒性。TestifAI引入部分模型拓扑技术，通过少量扰动测试结果推断多扰动空间中的模型行为，从而避免执行指数级增长的测试任务。实验表明，TestifAI能够在减少60%-80%推理次数的情况下，以低于7%的误差率预测三到四扰动组合的测试结果。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.18900 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 13:25:50 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 13:25:50 +0000</pubDate>
+</item>
+<item>
+<title>卷积序列标注器中归一化层对全局上下文的影响</title>
+<link>https://tldr.takara.ai/p/2608.18576</link>
+<guid>https://tldr.takara.ai/p/2608.18576</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>归一化层可提供全局上下文，影响模型性能与解释性。</p><br><br><p><strong>摘要：</strong> 本文研究了卷积序列标注器中归一化层对模型上下文范围的影响。传统观点认为模型的感知范围由卷积结构决定，但研究发现，归一化层在推理时通过序列统计信息构建了一条跨越整个序列的路径，提供了全局上下文。这种路径具有闭合形式表达，并在合成任务中表现出接近全序列最优的效果。实验表明，关闭该路径后，扩大感受野的价值显著提升。此外，该路径还影响了模型的可解释性，导致对模型组件贡献的误判。当标签变化频繁时，这种影响减弱。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.18576 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 06:16:13 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 06:16:13 +0000</pubDate>
+</item>
+<item>
+<title>基于单通道EEG的紧凑型睡眠阶段分类模型NanoSleep</title>
+<link>https://tldr.takara.ai/p/2608.18571</link>
+<guid>https://tldr.takara.ai/p/2608.18571</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>NanoSleep在保证精度的同时实现高效睡眠阶段分类。</p><br><br><p><strong>摘要：</strong> 本文提出NanoSleep，一种用于单通道脑电图（EEG）睡眠阶段分类的紧凑型混合时间卷积网络。该模型结合了可学习的Sinc卷积前端、多尺度时域与频域特征提取器、带有通道校准的门控扩张时间卷积主干以及序列级解码的条件随机场。此外，采用加权校准焦点损失解决类别不平衡问题。在Sleep-EDF和Sleep-EDF-Expanded数据集上的实验表明，NanoSleep在准确性和效率之间取得了良好平衡，适用于可穿戴设备和资源受限的临床应用。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.18571 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 06:08:24 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 06:08:24 +0000</pubDate>
+</item>
+<item>
+<title>欧盟2030年减排目标面临严峻挑战</title>
+<link>https://tldr.takara.ai/p/2608.18690</link>
+<guid>https://tldr.takara.ai/p/2608.18690</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>欧盟2030年减排目标可能无法实现，需加强干预。</p><br><br><p><strong>摘要：</strong> 文章分析了欧盟2030年减排55%的目标是否可行，通过深度学习对欧盟27国的经济和社会数据进行预测。结果显示，按当前趋势发展，2030年排放量将比目标高出35%，仅少数国家符合承诺。电力部门因可再生能源发展而有所改善，但交通部门进展缓慢，占总排放量的三分之一以上，反映出成员国整体结构惯性。研究呼吁加强政策干预和更新能源信息。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.18690 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 08:41:35 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 08:41:35 +0000</pubDate>
+</item>
+<item>
+<title>CamWorldQA：相机控制世界视频生成的感知质量评估基准</title>
+<link>https://tldr.takara.ai/p/2608.18710</link>
+<guid>https://tldr.takara.ai/p/2608.18710</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出CamWorldQA基准和CWQA模型，提升相机控制视频质量评估。</p><br><br><p><strong>摘要：</strong> 本文介绍了CamWorldQA，首个针对相机控制世界视频生成的感知质量评估基准。该基准包含720个由6种生成方法从20个源视频生成的视频，覆盖6种相机轨迹，并通过主观实验获得人类评分。同时，作者提出CWQA模型，采用三个互补分支提取空间、时间运动和光流特征，联合预测质量分数。实验表明，CWQA在CamWorldQA数据集上优于现有方法。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.18710 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 09:10:02 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 09:10:02 +0000</pubDate>
+</item>
+<item>
+<title>LLM错误修正的系统性操作问题与改进方案</title>
+<link>https://tldr.takara.ai/p/2608.19125</link>
+<guid>https://tldr.takara.ai/p/2608.19125</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>LLM错误修正缺乏系统性操作机制，需建立持久化和监控体系。</p><br><br><p><strong>摘要：</strong> 文章指出，当前LLM在对话中被纠正的错误通常无法持久保存，导致相同错误重复出现。作者认为这是操作流程的问题而非工具问题，现有的持久化机制已存在，但缺乏有效的管理规范，如版本控制、追溯性、错误复发监测和规则淘汰等。作者从系统工程角度，将LLM架构映射到传统系统结构，并指出其在随机生成、概率配置和缺乏验证阶段等方面的不足，提出包含七个原则的操作规范，以错误循环为核心。通过实际案例说明该机制的有效性，并提出相应的评估框架和实验研究需求。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.19125 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 17:18:53 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 17:18:53 +0000</pubDate>
+</item>
+<item>
+<title>基于物理的可变率信道压缩方法GCNO提升无线系统性能</title>
+<link>https://tldr.takara.ai/p/2608.18522</link>
+<guid>https://tldr.takara.ai/p/2608.18522</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>GCNO通过提取主要传播路径实现高效信道反馈。</p><br><br><p><strong>摘要：</strong> 本文提出了一种基于物理模型的可变率信道压缩方法——Gramian Chebyshev Neural Operator (GCNO)，旨在解决大规模天线阵列带来的信道反馈成本过高的问题。GCNO通过识别每个信道中主导的传播路径，而不是像传统神经压缩器那样将信道矩阵转换为固定长度的代码，从而提高反馈效率。该方法利用收发信道结构定位路径方向，结合一阶泰勒修正优化路径位置，并通过最小二乘法恢复路径的复数强度。GCNO无需路径标签进行训练，基站可通过解析方式重建信道，而非依赖学习解码器。实验表明，在三种射线追踪环境中，GCNO在相同数据量下具有更高的重建精度，或在相同精度下使用更小的数据量，并能适应未见过的天线数量而无需重新训练。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.18522 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 04:16:47 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 04:16:47 +0000</pubDate>
+</item>
+<item>
+<title>基于σ-代数的动态系统降维方法研究</title>
+<link>https://tldr.takara.ai/p/2608.18918</link>
+<guid>https://tldr.takara.ai/p/2608.18918</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>新方法通过σ-代数提升动态系统降维效率，避免线性遮蔽问题。</p><br><br><p><strong>摘要：</strong> 本文研究了动态系统降维方法，指出传统基于谱的方法在处理由多个弱耦合组件构成的系统时可能面临指数级模式需求或完全忽略某些组件的问题。作者提出一种基于σ-代数的评分机制，以更高效地捕捉组件间的结构关系，并引入χ²散度作为优化准则，确保能够完整保留系统的谱信息。该方法在多个基准系统上验证有效，相较于传统方法在低秩情况下表现更优，且能从少量标签中预测被遮蔽组件。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.18918 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 13:49:51 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 13:49:51 +0000</pubDate>
+</item>
+<item>
+<title>隐私与仇恨言论检测的权衡研究</title>
+<link>https://tldr.takara.ai/p/2608.19006</link>
+<guid>https://tldr.takara.ai/p/2608.19006</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究探讨了仇恨言论检测与隐私保护之间的平衡难题。</p><br><br><p><strong>摘要：</strong> 本文指出，仇恨言论检测（HSD）系统在提升检测性能的同时，可能无意中泄露用户身份信息，从而威胁隐私。作者提出隐私-HSD权衡的概念，并测试了多种文本隐私化方法及新提出的AgnoSpeech技术，证明在隐私与检测之间取得平衡虽具挑战性但可行。研究强调需要更多关注隐私与HSD之间的相互影响，以保障在线参与的安全性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.19006 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 15:07:42 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 15:07:42 +0000</pubDate>
+</item>
+<item>
+<title>基于视觉搜索的无人机图像目标定位方法研究</title>
+<link>https://tldr.takara.ai/p/2608.18996</link>
+<guid>https://tldr.takara.ai/p/2608.18996</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出GrabVG框架提升无人机图像目标定位准确率。</p><br><br><p><strong>摘要：</strong> 本文针对无人机图像中目标定位问题，提出一种受人类视觉搜索启发的新框架GrabVG。该框架将定位过程分为预注意假设搜索和图注意力特征绑定两个阶段，通过知识蒸馏引导的提案生成和文本感知的假设过滤，减少背景干扰和语义不匹配。随后构建稀疏图结构，结合语言引导的视觉线索和实例间拓扑关系，实现高效的时空推理与精准定位。实验表明，GrabVG在AerialVG和AerialSense数据集上表现出色，准确率显著优于现有方法。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.18996 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 15:00:02 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 15:00:02 +0000</pubDate>
+</item>
+<item>
+<title>基于神经锚点的少次重复脑信号图像检索方法</title>
+<link>https://tldr.takara.ai/p/2608.19128</link>
+<guid>https://tldr.takara.ai/p/2608.19128</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出NEAR框架提升少次重复脑信号图像检索性能。</p><br><br><p><strong>摘要：</strong> 本文针对脑信号图像检索中因重复次数少导致的准确率下降问题，提出一种基于神经锚点的检索框架（NEAR）。该方法通过将高重复次数的中心信号作为锚点，利用去噪器和小网络分别优化查询信号和候选图像的对齐，从而提升少次重复下的检索效果。实验表明，在多个脑成像数据集上，NEAR在仅一次或四次重复的情况下显著提升了Top-1准确率，减少了对重复采集的依赖，推动了神经检索技术的实际应用。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.19128 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 17:23:30 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 17:23:30 +0000</pubDate>
+</item>
+<item>
+<title>视觉语言模型在对抗攻击下的脆弱性研究</title>
+<link>https://tldr.takara.ai/p/2608.18938</link>
+<guid>https://tldr.takara.ai/p/2608.18938</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究揭示VLM易受视觉输入扰动影响，提出高效攻击方法。</p><br><br><p><strong>摘要：</strong> 本文研究了视觉语言模型（VLMs）在对抗攻击下的脆弱性，特别是在针对多模态对齐的逃避攻击中。作者提出了基于梯度的攻击方法，仅对视觉编码器进行优化，降低了计算成本并保持攻击效果。实验表明，微小且人眼难以察觉的扰动可显著改变模型生成的文本描述。研究覆盖多个开源VLM模型，强调了提升多模态AI系统鲁棒性和安全性的必要性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.18938 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 14:06:31 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 14:06:31 +0000</pubDate>
+</item>
+<item>
+<title>CoMVS-GS：结合多视图立体与高斯泼溅的高效表面重建框架</title>
+<link>https://tldr.takara.ai/p/2608.18413</link>
+<guid>https://tldr.takara.ai/p/2608.18413</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>CoMVS-GS提升弱观测区域的几何重建精度。</p><br><br><p><strong>摘要：</strong> 本文提出CoMVS-GS，一种结合多视图立体（MVS）与高斯泼溅（Gaussian Splatting）的通用表面重建框架。该方法通过从密集多视图立体点初始化高斯原语，提供更强的几何先验，减少早期优化中的歧义。同时引入PatchMatch-3DGS互监督机制，通过高斯渲染深度和法线初始化PatchMatch优化，并利用优化后的深度监督高斯优化，提升弱约束区域的几何准确性。此外，采用Delaunay图割网格化方法替代体素融合，降低对体素分辨率的敏感性，同时保持可见性一致的表面证据。实验表明，CoMVS-GS在对象级重建中表现优异，提升了户外场景的几何精度和网格紧凑性，同时保持高质量渲染。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.18413 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 00:46:19 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 00:46:19 +0000</pubDate>
+</item>
+<item>
+<title>基于多视角时序深度学习的脑膜侧支自动评分框架X-LMC</title>
+<link>https://tldr.takara.ai/p/2608.18986</link>
+<guid>https://tldr.takara.ai/p/2608.18986</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>X-LMC实现DSA图像中脑膜侧支的自动化评分，提升评估效率与一致性。</p><br><br><p><strong>摘要：</strong> 本文提出X-LMC，一种基于时间分辨双平面数字减影血管造影（DSA）的自动脑膜侧支（LMC）评分框架。该方法利用DINOv2骨干网络提取空间特征，通过跨视图注意力模块融合不同视角信息，并采用递归网络建模对比剂动态变化。在134例M1段闭塞患者的多中心数据集上，X-LMC在五折交叉验证中表现优于静态架构和现有时序基线，QWK得分为0.398，宏F1得分为0.711，接近临床医生间一致性（QWK: 0.314）。研究展示了多视角时序深度学习在捕捉侧支特异性对比剂动力学方面的潜力，为卒中患者血流动力学表型分析提供了可重复的基础。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.18986 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 14:51:45 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 14:51:45 +0000</pubDate>
+</item>
+<item>
+<title>基于运动刚性的自监督LiDAR场景流方法RVLoss</title>
+<link>https://tldr.takara.ai/p/2608.18864</link>
+<guid>https://tldr.takara.ai/p/2608.18864</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出RVLoss提升LiDAR场景流估计的运动一致性。</p><br><br><p><strong>摘要：</strong> LiDAR场景流估计旨在计算连续扫描点云之间的运动。现有方法多采用Chamfer损失，但缺乏对运动刚性的约束，导致对象内部运动不一致。本文提出RVLoss，通过两阶段投票机制引入运动刚性设计，提升点云运动的一致性。该方法可无缝集成到现有网络中，在Argoverse2数据集上表现优于基线模型20%，并在多个数据集上验证了其有效性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.18864 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 12:36:12 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 12:36:12 +0000</pubDate>
+</item>
+<item>
+<title>多语言医学语音识别模型的内部表示分析</title>
+<link>https://tldr.takara.ai/p/2608.18825</link>
+<guid>https://tldr.takara.ai/p/2608.18825</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究多语言医学语音识别模型的内部表示变化及性能优化。</p><br><br><p><strong>摘要：</strong> 本文探讨了在多语言医学场景下，Whisper模型经过适应后内部表示的变化。通过对比不同微调策略，发现微调能显著提升医学语音识别性能，但最佳模型取决于具体适应设置。研究还揭示了英语医学微调对编码器表示的主导影响，以及多语言延续在保留适配表示空间方面的作用。此外，领域和语言信息在各层中仍可高度恢复，而线性可恢复的错误预测线索随着WER降低而减弱。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.18825 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 11:29:30 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 11:29:30 +0000</pubDate>
+</item>
+<item>
+<title>LT-Mem：一种支持长期机器人操作的时空记忆框架</title>
+<link>https://tldr.takara.ai/p/2608.19059</link>
+<guid>https://tldr.takara.ai/p/2608.19059</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>LT-Mem通过结构化记忆实现跨会话对象识别与历史追踪。</p><br><br><p><strong>摘要：</strong> 本文提出LT-Mem，一种基于动态感知和时序推理的机器人记忆框架，用于解决长期环境中对象历史丢失的问题。该框架通过多会话SLAM提供空间对齐的实例级3D感知，并结合确定性证据评分和动态策略，管理对象记忆的更新、保留与多假设存储。其Tri-Memory结构（实时、差异、元）可同时保存当前状态和事件历史，支持纵向对象中心推理。研究还构建了LT-VQA数据集进行评估，实验表明LT-Mem在多项指标上优于基线方法，且计算效率更高。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.19059 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 15:56:53 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 15:56:53 +0000</pubDate>
+</item>
+<item>
+<title>动态好奇心框架提升低空无人机目标定位效率</title>
+<link>https://tldr.takara.ai/p/2608.18673</link>
+<guid>https://tldr.takara.ai/p/2608.18673</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>动态调整奖励机制提升无人机目标搜索效率。</p><br><br><p><strong>摘要：</strong> 文章提出了一种名为DynCur-Geo的动态好奇心框架，用于改进低空无人机在受限视野和稀疏反馈条件下的目标搜索能力。该框架通过根据剩余目标距离调整预测误差内在奖励，有效平衡了探索与目标收敛之间的关系。同时，引入距离感知门控和基于潜力的奖励塑造，提升了搜索效率。实验表明，在多种场景下，该方法优于现有基线方法。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.18673 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 08:24:49 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 08:24:49 +0000</pubDate>
+</item>
+<item>
+<title>多源记忆融合基准与系统MemFuse的提出</title>
+<link>https://tldr.takara.ai/p/2608.18704</link>
+<guid>https://tldr.takara.ai/p/2608.18704</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出MemFuseBench和MemFuse，提升多源信息整合能力。</p><br><br><p><strong>摘要：</strong> 本文针对传统记忆系统在多源信息整合方面的不足，提出了MemFuseBench基准和MemFuse系统。MemFuseBench通过场景到传感器的流程生成多源带标签的观察数据，支持对时间推理、跨源证据融合和抗噪能力的评估。MemFuse则通过事件层和聚类层结构，保留来源证据并组织相关事件，在检索时保持溯源性。实验表明，MemFuse在三种LLM设置下表现最佳，尤其在需要跨源融合的问题上效果显著。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.18704 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 09:04:07 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 09:04:07 +0000</pubDate>
+</item>
+<item>
+<title>基于少量正常图像的工业异常检测校准方法SPARC</title>
+<link>https://tldr.takara.ai/p/2608.18585</link>
+<guid>https://tldr.takara.ai/p/2608.18585</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>SPARC通过少量正常图像提升工业异常检测性能。</p><br><br><p><strong>摘要：</strong> 本文提出一种名为SPARC的少样本校准方法，用于提高工业异常检测器在部署环境下的性能。该方法利用少量已验证的正常图像，在不依赖梯度更新或特定检测器调整的情况下，通过空间索引特征投影对检测器进行修正。实验表明，SPARC在多个易受分布偏移影响的基准测试中显著提升了图像AUROC和AU-PRO指标，证明其有效性。同时，控制实验进一步验证了该方法的结构优势。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.18585 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 06:25:35 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 06:25:35 +0000</pubDate>
+</item>
+<item>
+<title>非洲语言机器翻译资源与小模型性能提升研究</title>
+<link>https://tldr.takara.ai/p/2608.18655</link>
+<guid>https://tldr.takara.ai/p/2608.18655</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>TranslatePsy-AfriSLM提升非洲语言翻译性能。</p><br><br><p><strong>摘要：</strong> 文章探讨了人工智能在非洲语言中的应用困境，指出当前大型语言模型在非洲语言机器翻译中表现不佳，主要由于缺乏高质量的平行数据。为此，研究团队推出了TranslatePsy-AfriSLM，包含19种撒哈拉以南非洲语言的平行数据、定制化合成数据以及优化的小型语言模型。实验表明，通过质量估计过滤可显著减少训练数据量而不影响质量，且合成数据在效率与质量上表现优异。基于此数据集训练的模型在性能上超越了更大规模的模型。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.18655 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 08:00:40 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 08:00:40 +0000</pubDate>
+</item>
+<item>
+<title>Harness Continual Learning：在冻结模型下持续优化代理状态</title>
+<link>https://tldr.takara.ai/p/2608.19013</link>
+<guid>https://tldr.takara.ai/p/2608.19013</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出HCL范式，实现冻结模型下的持续学习与行为保留。</p><br><br><p><strong>摘要：</strong> 本文提出Harness Continual Learning（HCL）的新范式，允许代理在不更新模型参数的情况下通过优化提示、记忆、工具等组件实现持续学习。HCL通过Task Interface、Experience Memory、Capability Map和Adaptive Router四个执行面向组件构建，并引入Guarded Harness Evolution机制以分离更新生成与状态提交。实验表明，该方法在文本推理、多模态感知和开放世界交互任务中表现出显著的性能提升和失败恢复能力。组件消融实验验证了各部分的贡献，同时揭示了HCL中的行为遗忘现象及稳定性与可塑性的可调平衡。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.19013 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 15:12:31 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 15:12:31 +0000</pubDate>
+</item>
+<item>
+<title>基于合成意识的强化学习方法在分子优化中的应用</title>
+<link>https://tldr.takara.ai/p/2608.19121</link>
+<guid>https://tldr.takara.ai/p/2608.19121</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>PGFS++提升分子属性同时保持输出多样性。</p><br><br><p><strong>摘要：</strong> 本文提出一种新的合成意识强化学习方法PGFS++，用于早期药物发现中的分子优化。相比之前的PGFS+，PGFS++通过可训练的嵌入查找表表示反应模板和第二反应物，并结合更有效的评分函数和强化学习算法，显著提升了分子目标属性。然而，PGFS+存在奖励劫持问题，导致输出多样性下降。为解决此问题，PGFS++针对每个输入分子生成特定的合成路径，确保分子结构相似性、明确的合成路线和目标属性的提升，实验表明其在保持高输出多样性的同时有效改善了分子性能。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.19121 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 17:17:31 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 17:17:31 +0000</pubDate>
+</item>
+<item>
+<title>S-JEPA中软GMM后验对编码器表示的影响研究</title>
+<link>https://tldr.takara.ai/p/2608.19084</link>
+<guid>https://tldr.takara.ai/p/2608.19084</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>S-JEPA通过软GMM后验提升编码器性能，非最大概率映射影响学习效果。</p><br><br><p><strong>摘要：</strong> S-JEPA采用软高斯混合模型（GMM）后验代替硬聚类标签以保留不确定性。研究测试了仅使用概率值是否足够，或是否还需考虑非最大概率值对应的GMM组件。通过两种对照实验（FIXED-RANDPERM和UNIFORM-TAIL），发现REAL SOFT在两个冻结编码器读数上表现优于对照组，能够更好地恢复原始GMM尾部，并提升短时间尺度的谱动态可访问性。随着更多帧保留原始映射，两种读数均有所改善。研究结果表明，软目标的概率结构并非唯一决定因素，非最大概率值到GMM组件的映射同样重要。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.19084 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 16:32:52 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 16:32:52 +0000</pubDate>
+</item>
+<item>
+<title>提升长视频时空推理能力的StateTrace框架</title>
+<link>https://tldr.takara.ai/p/2608.18532</link>
+<guid>https://tldr.takara.ai/p/2608.18532</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>StateTrace提升视频模型对隐藏状态的时空推理能力。</p><br><br><p><strong>摘要：</strong> 现有视频语言模型在视频理解方面表现强劲，但在处理目标物体长时间不可见时存在困难，容易将‘不可见’误认为‘未知’。为此，研究者提出了StateTrace框架，通过构建可复用的时空状态记忆，提升视频大模型对隐藏状态的推理能力。该框架能有效追踪物体轨迹、关系及状态变化，并在推理时提取相关状态演化路径，帮助模型明确判断物体消失原因、状态变化及是否持续存在。研究还构建了HSR-Bench基准测试，包含1,427个视频问答样本，实验表明StateTrace显著提升了多个视频模型的表现。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.18532 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 04:31:56 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 04:31:56 +0000</pubDate>
+</item>
+<item>
+<title>优化算法在有限规模下的行为与理论预测的差异</title>
+<link>https://tldr.takara.ai/p/2608.18910</link>
+<guid>https://tldr.takara.ai/p/2608.18910</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究显示优化算法在有限规模下表现优于理论预测。</p><br><br><p><strong>摘要：</strong> 文章探讨了硬组合优化问题中算法在不同规模下的表现，特别是在有限规模和高约束密度下的行为。尽管理论分析表明在极端情况下算法无法超越朴素启发式方法，但实际实验显示，在中间复杂度区域，局部算法仍能取得显著优于理论预测的结果。这表明，即使在理论上可能失败的情况下，算法设计仍然具有重要价值。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.18910 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 13:40:11 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 13:40:11 +0000</pubDate>
+</item>
+<item>
+<title>基于LLM的可解释推荐系统优化方法</title>
+<link>https://tldr.takara.ai/p/2608.18531</link>
+<guid>https://tldr.takara.ai/p/2608.18531</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>通过预生成解释降低LLM推荐系统的成本和延迟。</p><br><br><p><strong>摘要：</strong> 本文提出一种优化工业级可解释推荐系统的方法，通过将生成解释的过程与选择过程分离，提前生成并存储解释候选池，从而在请求时仅需轻量级CPU处理，显著降低延迟和成本。实验对比了多种离线池选择器和知识图谱路径选择器，在多个数据集上验证了该方法的有效性，结果显示LambdaRank在F1指标上优于其他方法，而KG路径方法在避免模板崩溃方面表现优异。研究还表明，选择器和生成器可以独立评估，整体构建成本较低。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.18531 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 04:29:04 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 04:29:04 +0000</pubDate>
+</item>
+<item>
+<title>面向德语自然语言生成的体验质量评估研究</title>
+<link>https://tldr.takara.ai/p/2608.18888</link>
+<guid>https://tldr.takara.ai/p/2608.18888</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出TextQ-German数据集用于德语NLG的体验质量评估。</p><br><br><p><strong>摘要：</strong> 本文介绍了TextQ-German，一个从用户体验（QoE）角度出发的德语自然语言生成（NLG）评估数据集，涵盖自动摘要和机器翻译任务。通过众包研究收集德语用户的质量评分，并识别相关感知质量维度。研究开发了基于Transformer、语言特征和混合方法的QoE预测模型，其中混合模型在多数实验中表现优于纯Transformer基线，而仅使用语言特征即可接近微调语言模型的性能。数据集还包含LLM生成文本的QoE评分标注，验证表明模型具有良好的泛化能力。该工作为NLG评估提供了公开资源和基准，有助于提升系统与人类质量感知的一致性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.18888 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 13:15:51 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 13:15:51 +0000</pubDate>
+</item>
+<item>
+<title>改进的潜在世界模型在决策度量对齐中的应用</title>
+<link>https://tldr.takara.ai/p/2608.18746</link>
+<guid>https://tldr.takara.ai/p/2608.18746</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究改进潜在世界模型的决策度量对齐，提升控制效果。</p><br><br><p><strong>摘要：</strong> 该研究探讨了基于JEPA的潜在世界模型在模型预测控制中的应用，重点分析了潜在距离与真实成本之间的决策度量对齐问题。作者提出Plan-Real Spearman和CEM-stage Spearman两种评估指标，用于衡量潜在空间与真实任务进展的排名一致性。研究发现，编码器失真、终端滚动误差和候选样本间距是影响对齐的关键因素。为解决这一问题，提出了DA-LeWM模型，通过引入逆动力学和演示条件下的目标-动作头来增强性能。实验表明，DA-LeWM在收敛速度和在线成功率上优于传统LeWM，同时保持了相似的探测分数，证明了动作条件目标对提升潜在空间几何结构的有效性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.18746 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 09:56:39 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 09:56:39 +0000</pubDate>
+</item>
+<item>
+<title>Off-Manifold Collapse in Guided Protein Language Models</title>
+<link>https://tldr.takara.ai/p/2608.18597</link>
+<guid>https://tldr.takara.ai/p/2608.18597</guid>
+<content:encoded><![CDATA[
+
+  Protein language models are widely used priors for protein sequence design, and a growing body of work controls them at inference time as an alternative to fine-tuning. Such guidance faces a dilemma: mild enough to preserve natural activation statistics, it barely moves the property; strong enough to move it, the generations become progressively harder to fold. We show the failure has a specific and cheaply detectable signature, an off-manifold collapse of the model's own representations. Guided activations fall toward a region statistically indistinguishable from random amino-acid input, and the sequences degenerate to low complexity, yet the property oracle being optimized can still score these generations as a success. The optimized oracle can therefore fail to witness the collapse and, for solubility, can actively reward it, whereas structure and composition expose the failure. Because the failure is already visible in a finished candidate, we detect it at the output rather than modify the generator. We introduce a cheap density prior over natural protein activations and keep only the candidates that remain typical under it, a training-free post-hoc step we call Mahalanobis filtering. At matched guidance settings it improves both the property score and the structural plausibility of the sequences it keeps at negligible cost, without touching the generator, and transfers across different guidance methods. We release the activation statistic at https://huggingface.co/Shuibai12138/off-manifold-collapse-plm
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 06:40:05 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 06:40:05 +0000</pubDate>
+</item>
+<item>
+<title>EgoHRV: Continuous Heart Rate Variability Estimation from Egocentric Systems for Autonomic Response and Skill Assessment</title>
+<link>https://tldr.takara.ai/p/2608.18711</link>
+<guid>https://tldr.takara.ai/p/2608.18711</guid>
+<content:encoded><![CDATA[
+
+  Egocentric vision systems capture human behavior from visible cues, but overlook physiological indicators of autonomic states such as stress, engagement, and attention. Heart rate variability (HRV) is a widely used noninvasive marker of autonomic regulation under stress. HRV reflects small timing differences between successive heartbeats and has so far been out of reach for egocentric platforms, where motion and noise in gaze video mask exactly this fine-grained timing. We propose EgoHRV, a method that estimates HRV as well as heart rate (HR) from the gaze cameras that are already integrated into egocentric headsets. Our pipeline combines a 3D backbone with a novel low--high decomposition module that extracts the blood volume pulse (BVP) signal from gaze video. Our cross-domain pretraining aligns the frequency-domain representations of contact-based and camera-derived signals. This alignment gives EgoHRV the temporal precision to recover HRV from the subtle fluctuations in gaze video. EgoHRV achieves state-of-the-art accuracy for HR and HRV estimation from egocentric video, and its uncertainty-aware design improves downstream behavioral modeling. Integrating our HRV estimates and confidence measures into EgoExo4D's proficiency estimator raises accuracy by 17.8%. Beyond skill, continuous HRV estimation also opens egocentric systems to stress- and arousal-aware estimation tasks. Code: https://github.com/eth-siplab/EgoHRV
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 09:10:24 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 09:10:24 +0000</pubDate>
+</item>
+<item>
+<title>SkillForge: Self-Distilling Agents for Project-Specific Issue Resolution</title>
+<link>https://tldr.takara.ai/p/2608.18933</link>
+<guid>https://tldr.takara.ai/p/2608.18933</guid>
+<content:encoded><![CDATA[
+
+  Large language model (LLM) based agents have demonstrated remarkable proficiency in automated software issue resolution, yet they often struggle to resolve issues in a specific repository because they lack project-specific knowledge. Existing self-evolving approaches acquire such knowledge from repository history or online repair trajectories, but they either depend on available historical issue-resolution signals or incur substantial per-issue test-time exploration cost. In this paper, we propose SkillForge, a self-distillation framework that proactively acquires project-specific knowledge from the repository itself. Instead of waiting for real issues to expose project-specific knowledge gaps, SkillForge synthesizes project-specific issues by re-implementing test-covered core functionalities of the repository. By resolving these synthetic issues, SkillForge distills reusable project-specific knowledge into entity-grounded skills and associates them with relevant repository entities for future issue resolution. Extensive experiments using both open-source and closed-source models show that SkillForge consistently improves issue resolution performance over strong baselines. These results demonstrate that proactively acquiring project-specific knowledge before solving real issues substantially improves downstream software issue resolution.
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 14:01:13 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 14:01:13 +0000</pubDate>
+</item>
+<item>
+<title>FM-Bench: A Benchmark for Long-Horizon Management with Competing Agents</title>
+<link>https://tldr.takara.ai/p/2608.18423</link>
+<guid>https://tldr.takara.ai/p/2608.18423</guid>
+<content:encoded><![CDATA[
+
+  Language model agents now execute bounded tasks reliably. Whether they can sustain effective decision-making over long horizons, where actions have cumulative consequences and the environment responds to their choices, remains largely unmeasured. FM-Bench (Football Management Benchmark) measures this. An LLM agent runs a football club for 20 in-game years through 26 tools and roughly 340 to 400 decision stops. It drafts a squad on the same budget as every rival, trades players, negotiates contracts, invests in facilities and youth, sets lineups, and answers to a board that can fire it, while a deterministic engine accumulates every year into one final score with no LLM judge or human rater. The solo track plays each of 15 frontier models against a frozen scripted world, and the Arena places the same models plus a scripted anchor in one shared 20-year world; to our knowledge, the first head-to-head evaluation at this scale. We measure six behavioral capabilities behind the score. Across three seeds, all 15 models complete every horizon while the blind scripted baselines die out in most of theirs, and claude-fable-5 tops the solo board on mean score and the Arena, where the title nonetheless rotates among ten models. Neither scale, price, nor vendor predicts the order; the order settles only late in the horizon, and the best first-play human lands only at the bottom of the model board. What separates the models is managerial behavior rather than computation. Higher-scoring models reduce slow-payoff investment near the end, keep cash invested rather than idle, and open renewals well before the deadline, while token spend predicts nothing. No model learns the market's hidden prices from hundreds of rejected bids, and self-managed memory fails in two opposite modes: an archive that only grows or a plan rewritten every season. Code is available at https://github.com/Analogy-AI/fm-bench.
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 01:33:36 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 01:33:36 +0000</pubDate>
+</item>
+<item>
+<title>To Go Far, Go Together: Diverse Preferences Induce a Curriculum for Reward Optimization</title>
+<link>https://tldr.takara.ai/p/2608.18770</link>
+<guid>https://tldr.takara.ai/p/2608.18770</guid>
+<content:encoded><![CDATA[
+
+  Learning a reward model from human feedback and optimizing a policy against it is one approach to aligning AI systems with individual users. From a fairness perspective, existing work improves such alignment by developing data-efficient and accurate reward models that capture minority preferences despite scarce data. We push this line of inquiry one step further and argue that data-efficient and accurate per-user reward models are not sufficient: users whose reward models are difficult to \textit{optimize} at the policy level can become a new underserved group. We start from the observation that one user's reward model can be easy to optimize from the initial policy while another's is not. We argue that, given a sufficiently diverse user population, a curriculum naturally emerges between easy- and hard-to-optimize reward models. Building on this insight, we propose CurriPO, which grows a tree-structured curriculum to accommodate diverse user-specific objectives, covering the population in a single traversal. Specifically, CurriPO automatically constructs a curriculum over diverse user reward models, allowing it to branch from the existing curriculum and reuse reward models previously incorporated into the curriculum. To the best of our knowledge, this is the first work to explicitly exploit multi-user structure to address optimization in AI alignment. Extensive experiments on personalized continuous control in a simulated environment show that CurriPO achieves $1.2$--$2.1\times$ the population satisfaction of the strongest baseline while substantially reducing training time. Additional analysis attributes much of this improvement to the users left underserved by conventional optimization.
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 10:28:09 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 10:28:09 +0000</pubDate>
+</item>
+<item>
+<title>Change Point--Aware Evaluation and Re-Calibration of PPG-Based Blood Pressure Estimation</title>
+<link>https://tldr.takara.ai/p/2608.18639</link>
+<guid>https://tldr.takara.ai/p/2608.18639</guid>
+<content:encoded><![CDATA[
+
+  Non-invasive continuous blood pressure (BP) monitoring using photoplethysmography (PPG) is a promising alternative to cuff-based measurements. However, existing PPG-based BP estimation studies predominantly rely on aggregated performance metrics (e.g., mean absolute error) computed over entire evaluation intervals, which can obscure model failures during rapid BP fluctuations and limit clinical relevance. In this work, we propose a fluctuation-aware evaluation framework for PPG-based BP estimation based on time-series change point detection. Instead of heuristic BP thresholding (e.g., $Δ\mathrm{BP} > 10\mathrm{mmHg}$), we identify BP change points by capturing abrupt distributional shifts in BP trajectories and evaluate estimation performance specifically during these fluctuation periods. Our analysis shows that several state-of-the-art models exhibit substantial performance degradation around BP change points, and that periodic test-time calibration is insufficient to handle such dynamic BP variations. To address this limitation, we introduce a targeted re-calibration framework triggered by detected BP change points, improving robustness without modifying model architectures. To the best of our knowledge, this is the first systematic evaluation of PPG-based BP estimation from a BP change point perspective, highlighting the importance of fluctuation-aware evaluation and calibration for real-world continuous BP monitoring.
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 07:37:45 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 07:37:45 +0000</pubDate>
+</item>
+<item>
+<title>Comment-level Topic Drift Analysis in the Reddit Corpus</title>
+<link>https://tldr.takara.ai/p/2608.19133</link>
+<guid>https://tldr.takara.ai/p/2608.19133</guid>
+<content:encoded><![CDATA[
+
+  We present a novel application of embedding-based dynamic topic modeling techniques to detect and quantify topic drift at the comment level in a massive corpus. By leveraging pretrained language models to generate contextualized semantic embeddings for short text, we analyzed 12.7 billion Reddit comments spanning 2006 to 2022. Using unsupervised methods on these embeddings, we identify dynamically evolving topic clusters over time. Our primary contribution is a methodology for analysis of semantic drift and discourse evolution in the embedding space itself. We also demonstrate modifications to existing methods that enable this analysis at scale, and we propose and demonstrate a null model comparison test to filter spurious dynamics. Key findings suggest that politically and socially contentious topics exhibit significant directional drift in embedding space, with inter-topic distances changing systematically over time beyond what the null model can explain, whereas domains such as music and sports remain comparatively stable.
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 17:27:25 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 17:27:25 +0000</pubDate>
+</item>
+<item>
+<title>Teach a Molmo2Fish: Towards interactive fish tracking with natural language guidance</title>
+<link>https://tldr.takara.ai/p/2608.18602</link>
+<guid>https://tldr.takara.ai/p/2608.18602</guid>
+<content:encoded><![CDATA[
+
+  Computer vision is increasingly used to automate recognition tasks in large ecological datasets, but more complex tasks such as multi-object tracking continue to pose challenges. As researchers seek to incorporate vision models in ecology workflows, various lines of research have explored how to make imperfect predictions useful through human-in-the-loop processes. We propose a new approach to working with imperfect tracking predictions through an interactive prediction correction workflow taking place as a conversation with a multimodal large language model, which we tailor to a sonar fish tracking dataset as an initial proof of concept. We investigate the performance of the tool, Molmo2Fish, across guided and unguided tasks, correcting its own predicted tracks and external tracks. We find that Molmo2Fish achieves high performance on fish tracking and track correction tasks, but there is still much room to improve on incorporating natural language guidance. The code and data are publicly available at https://github.com/tidalove/molmo2fish.
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 06:44:42 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 06:44:42 +0000</pubDate>
+</item>
+<item>
+<title>A Unifying Relational Perspective on Expressive Lottery Tickets</title>
+<link>https://tldr.takara.ai/p/2608.18819</link>
+<guid>https://tldr.takara.ai/p/2608.18819</guid>
+<content:encoded><![CDATA[
+
+  Graph neural networks (GNNs) are widely used, but how parameter sparsity affects the expressivity of relational (RGNNs) and temporal (TGNNs) variants is poorly understood. The Strong Expressive Lottery Ticket Hypothesis (SELTH) posits the existence of sparse GNNs that preserve Weisfeiler-Leman (WL) expressivity on static graphs. We generalize this existence result to a probabilistic statement for multi-relational and temporal domains via the relational WL (RWL). We prove that sufficiently parameterized RGNNs contain sparse subnetworks that maintain 1-RWL expressivity and derive a lower bound on the probability that a random pruning yields such a subnetwork. We show that common TGNNs and cross-graph message passing schemes admit RGNN reformulations such that they inherit these guarantees and, moreover, that the expressivity of a sparse RGNN is connected to its optimization behavior under common update regimes. Experiments instantiate the bound, compare it to empirical probabilities on synthetic data, and study how pre-training expressivity relates to optimization and prediction quality metrics on temporal and molecular benchmarks.
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 11:16:14 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 11:16:14 +0000</pubDate>
+</item>
+<item>
+<title>CDGP: Contrastive Dual Gaussian Processes for Weakly Supervised Anomaly Segmentation</title>
+<link>https://tldr.takara.ai/p/2608.18614</link>
+<guid>https://tldr.takara.ai/p/2608.18614</guid>
+<content:encoded><![CDATA[
+
+  Industrial visual inspection must both decide whether a product is defective and localize the defect, yet pixel-level masks are costly to collect at scale. Most anomaly-segmentation methods learn only from defect-free images and score deviations from normality. A true defect and an unusual-but-normal region, however, can both deviate substantially and receive similarly high scores. We propose Contrastive Dual Gaussian Processes (CDGP), a weakly supervised framework that models normal and anomaly inducing-variable predictive distributions over dense tokens. Its posterior-dominance statistic standardizes their predictive-mean difference by the joint predictive uncertainty, providing both spatial evidence and image-level confidence. This evidence complements hierarchical normal-reconstruction residuals for fine localization. All calibration uses training data only, without human pixel annotations or test-time fitting. Across MVTec AD~2, KSDD2, and VisA, CDGP ranks first among the evaluated methods on all MVTec AD~2 localization metrics and is first-place or competitive on KSDD2 and VisA. Factorized and matched linear-head controls delimit the contribution and scope of the linear-kernel Gaussian process (GP) formulation.
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 07:02:00 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 07:02:00 +0000</pubDate>
+</item>
+<item>
+<title>Impact of Iterative Fine-Tuning on Transcription Accuracy in Complex Historical Sanskrit Manuscripts</title>
+<link>https://tldr.takara.ai/p/2608.18696</link>
+<guid>https://tldr.takara.ai/p/2608.18696</guid>
+<content:encoded><![CDATA[
+
+  Digitizing the text from handwritten historical manuscripts is required to make them easily accessible, preservable, and to enable historical scholars to study them in new ways. Historical manuscripts, however, often exhibit complex heterogeneous layouts and non-standard appearance due to period-specific writing styles, page textures, camera noise, and other nuisance factors, making them difficult to perform OCR on. To tackle this challenge, we introduce a local traditional OCR pipeline, which can be iteratively fine-tuned on the target manuscript at the layout-level and the appearance-level. By adapting to the target manuscript distribution, the proposed Traditional OCR pipeline makes better predictions on subsequent pages, causing iterative reduction in human annotation effort, which is expensive and time-consuming as it requires historical domain expertise. Using this pipeline, we digitize text from three complex historical Sanskrit manuscripts and introduce a dataset with granular layout-level annotations, along with Unicode annotations in the standard PAGE-XML format. We demonstrate quantitative gains due to iterative fine-tuning of the proposed traditional OCR pipeline, and also benchmark the performance of leading Multi-Modal Large Language Models on the introduced Dataset. Code and dataset are available at: https://github.com/flame-cai/gnn-synthetic-layout-historical/.
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 08:50:45 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 08:50:45 +0000</pubDate>
+</item>
+<item>
+<title>Interpretable AI predicts a 2026 summer dry anomaly in central China</title>
+<link>https://tldr.takara.ai/p/2608.19163</link>
+<guid>https://tldr.takara.ai/p/2608.19163</guid>
+<content:encoded><![CDATA[
+
+  Seasonal precipitation anomalies are largely regulated by atmospheric circulation, which dynamical models predict with greater reliability than precipitation itself. Here, we employ a deep learning model that translates dynamical circulation predictions into precipitation estimates. Predictions initialized from March to May consistently indicate a dry anomaly over central China in summer 2026. Retrospective evaluations revealed higher predictive skill in the analogue years, which also tended to feature central equatorial Pacific warming persisting from the preceding winter into summer. This warming favors an anomalous cyclonic circulation over the western North Pacific-South China Sea-South China region, which induces northerly winds and moisture divergence that jointly suppress rainfall over central China. Supporting this mechanism, layer-wise relevance propagation (LRP) independently identifies these northerly winds as the dominant driver of the prediction among all model inputs. Perturbation tests supported this attribution: removing LRP-identified features effectively eliminates the dry anomaly. Our framework thus provides physically interpretable explanations for AI-derived regional climate projections, facilitating evidence-based assessment before observational data become available.
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 17:43:49 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 17:43:49 +0000</pubDate>
+</item>
+<item>
+<title>Institutional Books - Enriched Text: A customizable multilingual open-source pipeline for denoising, deduplicating, and annotating OCR text at scale</title>
+<link>https://tldr.takara.ai/p/2608.19026</link>
+<guid>https://tldr.takara.ai/p/2608.19026</guid>
+<content:encoded><![CDATA[
+
+  Released in 2025, Institutional Books: Harvard Library (IB-HL) is a collection of 983,004 volumes (242B o200k_base tokens), originally digitized through Harvard Library's participation in the Google Books Library project. As researchers and developers have begun to use IB-HL, a tension has emerged between standard large-scale preprocessing practices and the goals of careful information stewardship. Many existing pipelines optimize for web text: as a result, they tend to aggressively filter, deduplicate, restrict by language, and sometimes discard meaningful metadata. Meanwhile, researchers seeking to use IB-HL duplicate effort while performing similar processing and analysis.
+  We describe an approach that we call Enriched Text. Instead of producing a single 'complete' stream of tokens, we normalize the text while preserving metadata through annotations. We separate endmatter, detect per-paragraph language, identify clusters of duplicate paragraphs, and compute per-paragraph bits-per-byte scores. We provide this information through HTML-like annotations layered on top of the text. By parsing these annotations, users can tailor the output to their own needs instead of accepting a global editorial decision on content. The pipeline applies to all $\approx$250 languages in the collection.
+  This report describes this project's goals, implementation, and design rationale. The release includes IB-HL-ET (an enriched-text version of IB-HL containing 217B o200k_base tokens across 983,003 volumes, organized into 1.39B annotated subtopic paragraphs) and the pipeline that produced it. These serve to make the collection easier for machines to parse and for humans to study.
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 15:20:54 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 15:20:54 +0000</pubDate>
+</item>
+<item>
+<title>A Critical Synthesis of Uncertainty Quantification and Foundation Models for Semantic Segmentation</title>
+<link>https://tldr.takara.ai/p/2608.18709</link>
+<guid>https://tldr.takara.ai/p/2608.18709</guid>
+<content:encoded><![CDATA[
+
+  Foundation models are increasingly breaking what seemed to be impossible not long ago by enabling unprecedented accuracy and cross-domain generalization. Yet their lack of interpretability, tendency to be overconfident, and sensitivity to real-world domain shifts pose critical challenges for safety- and mission-critical applications. Uncertainty quantification (UQ) offers a principled way to address these issues, but its integration into segmentation foundation models has yet to be explored. In this paper we present the first systematic evaluation of UQ methods applied to a foundation model for semantic segmentation. We fine-tune a lightweight DPT decoder on top of the pretrained SAM2 encoder to establish a simple yet competitive baseline and benchmark four representative UQ approaches - Monte Carlo Dropout, Deep Sub-Ensemble, Test-Time Augmentation, and Evidential Deep Learning - across Cityscapes, NYUv2, and two challenging out-of-domain settings. Our analysis compares segmentation accuracy, calibration, uncertainty quality, and inference time, revealing clear trade-offs between predictive performance, reliability, and computational cost. These results highlight both the promise and the current limitations of uncertainty-aware foundation models, pointing to the need for future work that jointly optimizes accuracy, robustness, and efficiency for real-world deployment.
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 09:09:42 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 09:09:42 +0000</pubDate>
+</item>
+<item>
+<title>Budget-First Tariff Recommendation (BFTR): A Complete Algorithmic Framework for Telecom Plan Recommendation without Overcharging</title>
+<link>https://tldr.takara.ai/p/2608.18723</link>
+<guid>https://tldr.takara.ai/p/2608.18723</guid>
+<content:encoded><![CDATA[
+
+  Telecom operators traditionally offer predefined tariff grids, forcing users to choose from a limited set of plans. This paper proposes BFTR (Budget-First Tariff Recommendation), a complete algorithmic framework integrating eight Budget-First strategies, including two original hybrid approaches: Recursive Hybrid (conditional interpolation) and Knapsack-First Hybrid (priority knapsack). Unlike existing approaches that adjust prices upward to guarantee a minimum margin, BFTR guarantees the absence of overcharging by systematically aligning the final price with the catalog reference price. We mathematically formalize each strategy, prove the existence of an offer for any positive budget, and prove that the price deviation (surcharge) is zero for all strategies that do not use interpolation with correction. A detailed comparative analysis confronts BFTR to ten main existing tariff models on ten dimensions. Experiments on a dataset of 974 customers inspired by the Nigerian MTN market show that: (i) Recursive Hybrid is optimal for the customer (100% budget used, 29.9 GB volume, utility 0.946, 0% overcharging), (ii) Piecewise offers the highest volume (39.7 GB) with 0% overcharging, (iii) Power Law provides an excellent compromise (99.9% budget, 38.1 GB, 0% overcharging). All strategies achieve a zero surcharge, confirming the theoretical guarantees. A sensitivity analysis on the weighting parameter alpha (0.2 - volume priority, 0.5 - balance, 0.8 - budget priority) shows that utility rankings evolve logically. Execution times (< 10 ms) and very low failure rates (0% for robust strategies) confirm the operational viability of the system. The formal proof of the absence of overcharging constitutes a major theoretical contribution.
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 09:24:06 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 09:24:06 +0000</pubDate>
+</item>
+<item>
+<title>DART-SD: Diamond-topology Aware Retrieval and Tuning for Self-Distillation of Multi-Turn Tool-Calling Agents</title>
+<link>https://tldr.takara.ai/p/2608.18524</link>
+<guid>https://tldr.takara.ai/p/2608.18524</guid>
+<content:encoded><![CDATA[
+
+  Equipping Large Language Models (LLMs) with multi-turn tool-calling capabilities is essential for building autonomous agents. However, progress is fundamentally limited by the reliance on full-length trajectory imitation. For tasks involving multiple order-independent sub-goals, the optimal solution space forms a vast combinatorial diamond lattice. Forcing this rich topology into monolithic trajectories causes a severe topological collapse, indiscriminately penalizing valid alternative explorations and severely degrading policy diversity. To address this, we propose DART-SD (Diamond-topology Aware Retrieval and Tuning for Self-Distillation), a novel framework that shifts the paradigm from global forcing to topology-guided localized correction. DART-SD first models the execution process as a converging Interaction-State Transition Graph (ISTG), faithfully capturing the inherent diamond topology of successful and failed exploratory paths. During autonomous rollouts, the framework identifies the Critical Topological Breakpoint (CTB) and retrieves success-supported recovery references. Finally, we introduce a progressive self-distillation paradigm through CTB-guided localized supervision, ensuring that the training loss is calculated exclusively on the generated recovery steps while strictly protecting the valid reasoning prefix from destructive gradient updates. Experiments on complex multi-turn tool-calling benchmarks demonstrate that DART-SD significantly outperforms traditional full-trajectory baselines.
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 04:19:21 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 04:19:21 +0000</pubDate>
+</item>
+<item>
+<title>SIDScope: A Diagnostic Resource for Semantic-ID Interfaces in Generative Recommendation</title>
+<link>https://tldr.takara.ai/p/2608.18779</link>
+<guid>https://tldr.takara.ai/p/2608.18779</guid>
+<content:encoded><![CDATA[
+
+  Semantic-ID mappings are reusable interfaces between item tokenizers and generative recommenders, yet released mappings rarely state whether they are coherent, what structure they expose, how generated paths resolve, or what must be revalidated after a refresh. SIDScope is a source-traced diagnostic resource for these decisions. It normalizes item-to-code artifacts, verifies provenance and joins, profiles mapping structure, compares paired revisions, and accounts for path-to-item outcomes in generated traces. Across nine source-traced tokenizer exports from seven families on Amazon and Yelp data - eight executable routes plus one auditable snapshot - SIDScope reveals that interface health is multi-signal rather than scalar. Its central finding is mechanism-conditional: prefix alignment strongly tracks held-out candidate exposure when retrieval consumes SID prefixes, then weakens as scoring becomes prefix-independent. Trained trace accounting exposes a second hidden gap: a valid target path can survive without uniquely retrieving the target item by 1.2-3.0 percentage points. A refresh case establishes a third: repairing the mapping does not by itself restore an inherited generator; model reuse requires a separate handoff check. The package provides frozen evidence summaries, conformance reports, trace labels, table builders, and CPU-only verifiers. It supports decisions about artifact readiness, interface risks, and revalidation before model reuse.
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 10:35:12 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 10:35:12 +0000</pubDate>
+</item>
+<item>
+<title>FinRCA-Bench: Benchmarking Evidence Retrieval and Reasoning for Financial AI Systems</title>
+<link>https://tldr.takara.ai/p/2608.18534</link>
+<guid>https://tldr.takara.ai/p/2608.18534</guid>
+<content:encoded><![CDATA[
+
+  Large language models are increasingly used to support financial operations, but their apparent reasoning performance can depend on whether they receive the right evidence. In financial reconciliation, the evidence needed for diagnosis is distributed across invoices, purchase orders, approvals, allocations, payments, ledger entries, and bank activity, linked by transactional relationships rather than textual similarity. End-to-end accuracy can therefore conflate evidence access with reasoning quality. We introduce FinRCA-Bench, a deterministic synthetic benchmark of 2,250 accounts-payable-to-bank reconciliation cases spanning 14 operational tables, including 1,500 injected failures across 15 causal categories and 750 legitimate or hard-negative cases. Root-cause labels and record-level evidence contracts are hidden from the model, allowing retrieval to be evaluated independently of answer correctness. We compare Rules/SQL, classical machine learning, dense semantic retrieval, deterministic relational expansion, and Typed Provenance Graph Retrieval (TPGR), a typed traversal restricted to persisted transaction relationships. Rules/SQL reaches 84.97% held-out exact accuracy and classical ML reaches 95.44%. Holding the reasoning model, prompt, and generation settings fixed while changing only retrieval increases macro required-record recall from 0.83% to 77.70% and exact 16-class accuracy from 2.05% to 72.44%. Structural retrieval failures outnumber reasoning failures with sufficient retrieval by 95 to 15; 254 correct predictions occur despite incomplete retrieval, and strict returned-evidence contract accuracy is only 5.72%. On FinRCA-Bench, retrieval architecture strongly shapes observed AI-system performance, and a correct root-cause label is a weak proxy for an auditable diagnosis.
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 04:36:01 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 04:36:01 +0000</pubDate>
+</item>
+<item>
+<title>When Safety Overrides Vision: Exploring Dynamics between Vision Influence and Safety Alignment in Vision-Language Models</title>
+<link>https://tldr.takara.ai/p/2608.18628</link>
+<guid>https://tldr.takara.ai/p/2608.18628</guid>
+<content:encoded><![CDATA[
+
+  Aligned vision-language models (VLMs) are designed to balance grounded visual reasoning with safe generation behavior. However, we observe a striking phenomenon: under safety-constrained instruction, models frequently abstain from answering questions that remain correctly answerable under default instruction despite receiving identical image-question inputs. This raises a fundamental question: does safety alignment suppress perceptual grounding itself, or does visual evidence remain internally available while generation is redirected toward abstention? In this work, we investigate the internal decoding dynamics underlying safety-induced abstention in aligned VLMs. Across multiple architectures and multimodal benchmarks, we show that abstained generations remain consistently influenced by visual evidence throughout decoding, indicating that perceptual grounding is largely preserved despite refusal behavior. We further demonstrate that, although the representational organization of refusal differs substantially across architectures, safety-constrained instruction consistently alters late-stage hidden-state dynamics toward refusal-oriented decoding. Finally, through targeted activation-level interventions, we show that suppressing refusal-related representations reliably restores grounded answering behavior across models without retraining or modifying visual inputs. Together, these findings reveal a previously underexplored failure mode in aligned VLMs: safety alignment can override grounded visual expression even when perceptual evidence remains internally preserved.
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 07:22:15 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 07:22:15 +0000</pubDate>
+</item>
+<item>
+<title>Falcon Perception-HD: High Density Perception via Reinforcement Learning</title>
+<link>https://tldr.takara.ai/p/2608.18881</link>
+<guid>https://tldr.takara.ai/p/2608.18881</guid>
+<content:encoded><![CDATA[
+
+  Autoregressive perception models trained to localize visual entities under the open-vocabulary setting are mostly trained using Supervised fine-tuning (SFT) with maximum likelihood, yet it optimizes a proxy objective (per-token cross-entropy) that is fundamentally misaligned with perception metrics such as precision and recall. In this paper, we explore post-training reinforcement learning (RL), specifically GRPO, to directly align these models with their evaluation metrics. Building up on the recently introduced Falcon Perception, we design an RL framework that addresses perception-specific challenges: reward design for set-structured outputs and multi-head sampling control. We discover multiple benefits from RL for perception: first, RL unlocks state-of-the-art performance in very dense scenes (up to 500 objects per scene), a regime where most existing systems degrade sharply or collapse; furthermore it fixes common issues in autoregressive perception models like mask repetitions and removes almost entirely the need for NMS and coordinate deduplication, which improve both performance and efficiency and remove the need for hyperparameters tuning; overall, we notice improvements on all levels of difficulties in referring expression segmentation (on PBench and SACO-Gold), and we find an elegant way to preserve the knowledge of whether an object exists or not (as evaluated by MCC) without training on negative samples. We show that a simple reward that penalizes false negatives and positives is sufficient. We develop two hybrid self-annotation pipelines, respectively tailored for difficult referring expressions and very dense scenes, and show their benefits on RL-training. Model weights are released as a Falcon Perception revision~\footnote{https://huggingface.co/tiiuae/Falcon-Perception}. Datasets will be published.
+
+]]></content:encoded>
+<pubDate>Wed, 19 Aug 2026 13:01:00 +0000</pubDate>
+<pubDate>Wed, 19 Aug 2026 13:01:00 +0000</pubDate>
+</item>
 
 <item>
 <title>基于查询传播不稳定性与多样性的视频目标跟踪主动学习方法</title>
