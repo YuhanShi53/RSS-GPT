@@ -4,6 +4,438 @@
 <title>Takara TLDR - Daily AI Papers</title>
 <link>https://tldr.takara.ai</link>
 
+<item>
+<title>文本到图像模型中角色关联的上下文敏感性研究</title>
+<link>https://tldr.takara.ai/p/2608.29847</link>
+<guid>https://tldr.takara.ai/p/2608.29847</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究揭示文本到图像模型中的角色视觉属性具有上下文稳定性。</p><br><br><p><strong>摘要：</strong> 本文探讨了文本到图像模型如何将人物职业（角色）与视觉属性进行关联，并分析这些关联在不同上下文中的稳定性。研究引入了ContextBias框架和ContextBench基准，通过大量实验发现，即使在语义无关的上下文中，角色相关的视觉特征仍高度存在，且跨角色属性集中度增加。研究还发现，场景构图和摄像角度对上下文更敏感，表明传统无上下文评估难以检测这种刻板印象的持续性，强调了在偏见评估中引入受控上下文变化的重要性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.29847 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 30 Aug 2026 15:23:07 +0000</pubDate>
+<pubDate>Sun, 30 Aug 2026 15:23:07 +0000</pubDate>
+</item>
+<item>
+<title>大规模模型微调策略的系统评估</title>
+<link>https://tldr.takara.ai/p/2609.01244</link>
+<guid>https://tldr.takara.ai/p/2609.01244</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究不同微调参数对模型性能的影响。</p><br><br><p><strong>摘要：</strong> 本文系统评估了监督微调过程中关键参数如学习率、批量大小、LoRA与全量微调、训练轮数、优化器选择等对模型表现的影响。通过在一个统一框架下进行多组实验，覆盖Qwen3和Llama两个模型家族，以及多个真实客户数据集，分析了这些参数在不同模型规模、数据集和优化方法下的变化趋势。研究还探讨了LoRA与全量微调的权衡、验证损失与下游任务质量的关系、以及几何感知优化器的效果，所有结论均附带不确定性度量。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.01244 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 01 Sep 2026 13:44:21 +0000</pubDate>
+<pubDate>Tue, 01 Sep 2026 13:44:21 +0000</pubDate>
+</item>
+<item>
+<title>基于因果潜在空间的共言手势生成模型Puppeteer</title>
+<link>https://tldr.takara.ai/p/2609.00369</link>
+<guid>https://tldr.takara.ai/p/2609.00369</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Puppeteer实现与语音同步且与物体相关的手势生成。</p><br><br><p><strong>摘要：</strong> 本文提出Puppeteer，一个注重姿态约束和物体关联的共言手势生成模型。该模型在因果潜在空间中运行，将长手势分解为结构化原始动作，并通过条件扩散生成物理一致的手势。它结合语音信号、动作历史、初始姿态和物体几何信息，提升手势的时空一致性与多样性。研究还引入新的评估指标和SceneGes数据集，以支持物体相关手势生成。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.00369 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 31 Aug 2026 21:02:54 +0000</pubDate>
+<pubDate>Mon, 31 Aug 2026 21:02:54 +0000</pubDate>
+</item>
+<item>
+<title>ObserverBench：评估内部估计器在干预任务中的有效性</title>
+<link>https://tldr.takara.ai/p/2609.03026</link>
+<guid>https://tldr.takara.ai/p/2609.03026</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究提出ObserverBench框架，评估内部估计器在控制和安全任务中的表现。</p><br><br><p><strong>摘要：</strong> 本文介绍了ObserverBench，一个用于测试内部估计器（观察者）是否适合干预、控制或安全任务的基准框架。该框架固定模型、信息边界、允许动作、决策规则等，分别报告估计准确性和所选动作导致的损失。实验表明，即使估计准确，也可能选择较差动作。在GPT-2-small和Qwen2.5-7B等模型上，观察者预测效果更准确但未必选择最优动作；基于动作损失训练的观察者能选择更低损失动作。在安全分类任务中，AUROC可能与实际部署损失不一致，最佳信息源因模型而异。该框架提供固定任务合同、基线和表格提交方式，用于评估可解释性方法的效果。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.03026 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 02 Sep 2026 18:01:17 +0000</pubDate>
+<pubDate>Wed, 02 Sep 2026 18:01:17 +0000</pubDate>
+</item>
+<item>
+<title>TopGQ：一种高效的图神经网络量化框架</title>
+<link>https://tldr.takara.ai/p/2608.30394</link>
+<guid>https://tldr.takara.ai/p/2608.30394</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>TopGQ降低图神经网络量化开销，提升实用性。</p><br><br><p><strong>摘要：</strong> 现有图神经网络（GNN）量化方法存在较大的量化开销，限制了其在实际场景中的应用。为此，本文提出TopGQ，一个准确的后训练GNN量化框架，通过双轴尺度吸收技术，在邻接矩阵中合并维度以实现激活量化的外向和内向维度。同时引入TopPIN作为节点局部结构的代理，用于在量化过程中对拓扑相似的节点进行分组。实验表明，TopGQ在保持精度的同时，将量化时间减少了数量级。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.30394 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 31 Aug 2026 07:49:03 +0000</pubDate>
+<pubDate>Mon, 31 Aug 2026 07:49:03 +0000</pubDate>
+</item>
+<item>
+<title>基于跨层注意力漂移的物体幻觉检测方法CADMP</title>
+<link>https://tldr.takara.ai/p/2609.02028</link>
+<guid>https://tldr.takara.ai/p/2609.02028</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出CADMP框架，用于检测视觉语言模型中的物体幻觉。</p><br><br><p><strong>摘要：</strong> 尽管大型视觉语言模型（LVLMs）取得了进展，但物体幻觉仍是其可靠部署的主要障碍。现有检测方法多依赖单层注意力机制，忽视了跨层演化的特征。本文提出CADMP，结合相邻层跨模态注意力漂移与预测敏感性，通过量化连续注意力图的分布变化，捕捉视觉定位的突变。随后，选择最大漂移区域并测量掩码后的预测概率变化，以验证预测是否依赖于视觉证据。该方法在多个基准和开源模型上表现出色，实验表明其具有良好的检测性能。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.02028 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 02 Sep 2026 02:58:09 +0000</pubDate>
+<pubDate>Wed, 02 Sep 2026 02:58:09 +0000</pubDate>
+</item>
+<item>
+<title>多模态大语言模型对语调线索的依赖与讽刺检测研究</title>
+<link>https://tldr.takara.ai/p/2608.30204</link>
+<guid>https://tldr.takara.ai/p/2608.30204</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>多模态模型在讽刺检测中依赖错误的语调特征，导致误报率上升。</p><br><br><p><strong>摘要：</strong> 本文研究多模态大语言模型（MLLMs）在讽刺检测任务中是否利用语调线索进行语用推理。通过对比Qwen2.5-Omni和Qwen3-Omni在中英文下的五种模态条件，发现添加音频信息反而增加了误报率，而模型错误主要集中在特定的语调模式上，如音高升高和停顿不规则。实验进一步验证了这种语调特征与实际讽刺标志的差异，并在Gemini 3 Flash Preview上重复了类似结果，表明这一现象可能具有普遍性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.30204 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 31 Aug 2026 03:34:35 +0000</pubDate>
+<pubDate>Mon, 31 Aug 2026 03:34:35 +0000</pubDate>
+</item>
+<item>
+<title>用户上下文对大语言模型判断的影响研究</title>
+<link>https://tldr.takara.ai/p/2609.03218</link>
+<guid>https://tldr.takara.ai/p/2609.03218</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>用户上下文影响大语言模型对同一证据的解释，而非证据选择。</p><br><br><p><strong>摘要：</strong> 本文研究了用户上下文（如角色、记忆和资料）如何影响大语言模型（LLMs）的判断。通过分析3575份SEC文件，实验发现大多数上下文影响来自模型对相同证据的不同解释，而非检索到的不同证据。研究还测试了两种缓解策略：将投资者心态作为用户资料而非助手角色表达，以及区分基于证据和个性化的输出。这两种方法虽能减少影响，但无法完全消除，并且效果因模型而异。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.03218 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 02 Sep 2026 23:28:42 +0000</pubDate>
+<pubDate>Wed, 02 Sep 2026 23:28:42 +0000</pubDate>
+</item>
+<item>
+<title>自动驾驶车辆决策公平性研究：基于语言模型的偏见测试</title>
+<link>https://tldr.takara.ai/p/2609.00192</link>
+<guid>https://tldr.takara.ai/p/2609.00192</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究发现自动驾驶系统在行人让行决策中存在多种偏见。</p><br><br><p><strong>摘要：</strong> 本文探讨了自动驾驶车辆（AVs）在决策过程中可能存在的偏见问题，特别是基于通用‘常识’模型的决策系统是否继承了人类驾驶中的偏见。通过引入两种新的偏见测试方法——‘所有其他条件相同’测试和‘自我一致性’测试，研究发现大型语言模型（LLMs）和视觉-语言模型（VLMs）在行人让行决策中受到性别、种族、宗教、残疾状况、年龄、肤色和社会经济地位等因素的影响。尽管不同模型的偏见类型和程度各异，但研究揭示了共同模式，并对‘常识’模型范式提出了质疑，强调需要重新审视该范式或解决下游偏见问题。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.00192 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 31 Aug 2026 18:11:49 +0000</pubDate>
+<pubDate>Mon, 31 Aug 2026 18:11:49 +0000</pubDate>
+</item>
+<item>
+<title>基于零样本分割的3D城市模型立面开口重建方法</title>
+<link>https://tldr.takara.ai/p/2608.29992</link>
+<guid>https://tldr.takara.ai/p/2608.29992</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种无需标注数据的3D城市模型立面重建方法。</p><br><br><p><strong>摘要：</strong> 本文提出了一种端到端的代理驱动管道，用于3D城市模型中立面开口的LoD3重建，直接生成符合CityGML标准的输出。与依赖大量手动标注数据的现有方法不同，该方法采用零样本分割策略，显著减少标注工作量并保持良好性能。研究还引入了新的评估指标Facade Feature Distance（FFD），通过视觉Transformer提取的高层次特征空间衡量重建质量，更全面地反映语义正确性和建筑布局。该方法为自动化生成和分析语义丰富的3D城市模型提供了实用且可扩展的解决方案。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.29992 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 30 Aug 2026 19:37:01 +0000</pubDate>
+<pubDate>Sun, 30 Aug 2026 19:37:01 +0000</pubDate>
+</item>
+<item>
+<title>构建层次化图像风格定义与大规模风格数据集</title>
+<link>https://tldr.takara.ai/p/2609.01423</link>
+<guid>https://tldr.takara.ai/p/2609.01423</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出层次化图像风格定义，构建大规模风格数据集MegaStyle++-8M。</p><br><br><p><strong>摘要：</strong> 本文探讨了图像风格的定义问题，提出一种从整体风格身份到细粒度视觉属性的层次化风格定义，以提供更结构化、可迁移和可解释的风格表示。基于此定义，改进了MegaStyle的数据标注流程，构建了包含15万种整体风格身份、100万个细粒度风格提示和800万张风格化图像的大规模风格数据集MegaStyle++-8M。实验表明，该层次化定义显著扩展了风格空间的多样性与语义广度，并能准确捕捉参考图像的内在视觉风格。相关数据集和代码已开源，旨在为研究和建模多样化的图像风格提供可扩展的基础。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.01423 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 01 Sep 2026 15:37:09 +0000</pubDate>
+<pubDate>Tue, 01 Sep 2026 15:37:09 +0000</pubDate>
+</item>
+<item>
+<title>基于同群比较的移动网络能耗异常检测方法</title>
+<link>https://tldr.takara.ai/p/2609.03809</link>
+<guid>https://tldr.takara.ai/p/2609.03809</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种无监督能耗异常检测方法，提升移动网络能效。</p><br><br><p><strong>摘要：</strong> 本文针对移动网络运营商能耗管理中的挑战，提出了一种基于同群相对比较的无监督方法。该方法通过构建能量感知的最小失真嵌入模型，识别出能耗异常的基站。该模型能够捕捉结构和运营相似站点之间的能耗差异，并通过嵌入空间中的位移来突出异常站点。实验结果表明，该方法优于传统异常检测技术，为大规模移动网络能效优化提供了有效支持。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.03809 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 03 Sep 2026 13:14:13 +0000</pubDate>
+<pubDate>Thu, 03 Sep 2026 13:14:13 +0000</pubDate>
+</item>
+<item>
+<title>评估视觉语言模型在重复错误前提下的修正与合作行为</title>
+<link>https://tldr.takara.ai/p/2609.03331</link>
+<guid>https://tldr.takara.ai/p/2609.03331</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究视觉语言模型在持续错误前提下的响应能力。</p><br><br><p><strong>摘要：</strong> 本文提出FPCO-Dialog基准，用于评估视觉语言模型（VLMs）在面对持续错误前提时的修正和合作行为。该基准包含1080张图像和10800个问题回合，按视觉复杂度、物体类别和错误前提类型进行分层。通过10轮对话协议，测试模型在正确前缀后对重复错误指代的反应。研究评估了20个商业和开源VLM，并使用CorrTP@K指标衡量错误前提下的修正率。结果揭示了模型间在整体修正倾向、逐轮动态及不同错误前提类型上的系统性差异。数据集、评估协议、模型输出、检测标签和代码均已公开。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.03331 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 03 Sep 2026 03:35:29 +0000</pubDate>
+<pubDate>Thu, 03 Sep 2026 03:35:29 +0000</pubDate>
+</item>
+<item>
+<title>CARVE：一种可变长度的掩码扩散语言模型推理方法</title>
+<link>https://tldr.takara.ai/p/2608.30922</link>
+<guid>https://tldr.takara.ai/p/2608.30922</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>CARVE提升掩码扩散模型的生成效率与准确性。</p><br><br><p><strong>摘要：</strong> 本文提出CARVE，一种无需重新训练的可变长度算法，用于改进掩码扩散语言模型的推理过程。CARVE从较短的响应画布开始，在解码过程中通过插入额外的[MASK]位置来扩展响应。它通过测试候选扩展画布并验证模型在原始画布未解决位置上的预测是否保持稳定，决定是否保留新增的掩码。该方法通过降低Jensen-Shannon散度来确保扩展的稳定性，而非依赖置信度启发式。实验表明，CARVE在代码生成和数学推理任务中均优于固定长度基线，同时降低了推理成本。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.30922 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 31 Aug 2026 15:00:30 +0000</pubDate>
+<pubDate>Mon, 31 Aug 2026 15:00:30 +0000</pubDate>
+</item>
+<item>
+<title>工程填料压实特性数据集与预测模型研究</title>
+<link>https://tldr.takara.ai/p/2609.03337</link>
+<guid>https://tldr.takara.ai/p/2609.03337</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文发布大规模实验室压实数据集并构建预测模型。</p><br><br><p><strong>摘要：</strong> 本文介绍了一个包含2,854个实验室压实测试的公开数据集，涵盖162个来源组和四种击实能量等级。所有数据均经过严格审计，排除了不符合零空隙条件的数据。研究发现最优饱和度为0.815，变异系数为11%。通过分类体系和压实标准估计参数，并构建了预测模型，其R²值在不同验证方式下分别为0.824和0.784。结果表明，击实能量在某些条件下具有决定性影响，但整体影响较小。模型用于筛选而非最终验收。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.03337 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 03 Sep 2026 03:53:13 +0000</pubDate>
+<pubDate>Thu, 03 Sep 2026 03:53:13 +0000</pubDate>
+</item>
+<item>
+<title>基于固定时间点的运动员监测数据建模方法研究</title>
+<link>https://tldr.takara.ai/p/2609.03790</link>
+<guid>https://tldr.takara.ai/p/2609.03790</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究提出一种新的运动员会话建模方法，解决伤病标签不匹配问题。</p><br><br><p><strong>摘要：</strong> 本文针对运动员监测数据与伤病信息之间的时间粒度不匹配问题，提出了一种基于固定时间点的建模方法。该方法在每个固定时间点构建一个运动员-会话表示，避免了将会话级标签直接分配给每一分钟数据带来的误导。研究使用2020年SoccerMon数据，分析了48名精英女子足球运动员的3743个运动员-会话数据，评估了多种表示方法和模型性能，结果显示不同方法在不同时间点的表现存在较大差异，且不确定性较高。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.03790 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 03 Sep 2026 13:00:23 +0000</pubDate>
+<pubDate>Thu, 03 Sep 2026 13:00:23 +0000</pubDate>
+</item>
+<item>
+<title>PURGE框架：解决大视觉语言模型中的虚假关联问题</title>
+<link>https://tldr.takara.ai/p/2608.29996</link>
+<guid>https://tldr.takara.ai/p/2608.29996</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>PURGE框架有效减少LVLM中的虚假关联错误，提升模型可靠性。</p><br><br><p><strong>摘要：</strong> 本文提出PURGE框架，用于构建、评估和缓解大视觉语言模型（LVLMs）中由虚假对象-背景关联引起的错误。该框架包含结构化数据集构建和分区感知去关联两个部分，通过控制对象相关证据和背景线索的分布，实现对模型依赖捷径的诊断与优化。实验表明，PURGE在多个基准测试中有效降低幻觉和虚假关联驱动的错误，同时保持或提升整体性能，为LVLM提供可靠的评估和优化方案。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.29996 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 30 Aug 2026 19:42:47 +0000</pubDate>
+<pubDate>Sun, 30 Aug 2026 19:42:47 +0000</pubDate>
+</item>
+<item>
+<title> Urdu基准测试揭示多语言模型对齐的跨文化挑战</title>
+<link>https://tldr.takara.ai/p/2608.30065</link>
+<guid>https://tldr.takara.ai/p/2608.30065</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究提出首个基于乌尔都语的3H对齐基准，揭示多语言模型在文化适配中的不足。</p><br><br><p><strong>摘要：</strong> 本文介绍了Pak3H1，这是首个经过人工验证且具有文化背景的乌尔都语3H（帮助性、无害性和诚实性）对齐基准。该基准包括三个子集：PakAlpaca（帮助性）、PakBeaverTails（无害性）和PakTruthfulQA（诚实性）。研究通过多阶段流程进行人工文化适配和字典引导的后期编辑，确保本地化内容的准确性与真实性。零样本评估显示，不同语言模型在本地化情境下表现出系统性的对齐差距，表明当前对齐方法在跨语言应用中存在结构性缺陷，强调了人类引导本地化的必要性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.30065 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 30 Aug 2026 22:12:03 +0000</pubDate>
+<pubDate>Sun, 30 Aug 2026 22:12:03 +0000</pubDate>
+</item>
+<item>
+<title>FP4张量核心优化注意力计算与训练加速</title>
+<link>https://tldr.takara.ai/p/2609.04105</link>
+<guid>https://tldr.takara.ai/p/2609.04105</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>FP4张量核心提升注意力计算效率，但需优化softmax转换和依赖关系。</p><br><br><p><strong>摘要：</strong> 文章探讨了Blackwell的4-bit浮点（FP4）张量核心在注意力计算中的应用，指出其矩阵乘积缩小后，softmax转换和片上依赖关系成为性能瓶颈。为解决这一问题，研究提出Direct-P方法用于非因果推理，并引入因果路径直接传递前向量化到反向传播。Direct-P将得分直接映射为FP4概率，在NVIDIA GB200上实现比bfloat16（BF16）高2.13倍的前向吞吐量。因果路径通过保存的量化查询和键重建概率，并使用8-bit浮点（FP8）梯度操作数，使单GPU 80亿参数更新加速1.14倍。分布式训练保留FP8概率和值，但所有测试的MXFP4概率/值训练轨迹均发散。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.04105 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 03 Sep 2026 17:12:35 +0000</pubDate>
+<pubDate>Thu, 03 Sep 2026 17:12:35 +0000</pubDate>
+</item>
+<item>
+<title>VeriPhy：一种可审计的物理验证系统</title>
+<link>https://tldr.takara.ai/p/2609.03153</link>
+<guid>https://tldr.takara.ai/p/2609.03153</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>VeriPhy通过物理验证确保生成视频的可靠性。</p><br><br><p><strong>摘要：</strong> 文章介绍了VeriPhy，一个用于验证生成视频物理可靠性的系统。该系统通过文本规划器将提示转化为物理义务，并在执行过程中仅调用预定义的低级专家模块进行观察和测量。每个操作返回带有溯源证据的记录，这些记录被解析为支持、矛盾或未知三种状态，确保所有结论均可追溯。评估显示，VeriPhy在149个片段上的表现优于现有方法，且其决策过程具有可审计性，可用于反馈改进生成过程。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.03153 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 02 Sep 2026 20:36:45 +0000</pubDate>
+<pubDate>Wed, 02 Sep 2026 20:36:45 +0000</pubDate>
+</item>
+<item>
+<title>基于长上下文教师模型的序列级知识蒸馏提升法律意见摘要的论点覆盖</title>
+<link>https://tldr.takara.ai/p/2608.29884</link>
+<guid>https://tldr.takara.ai/p/2608.29884</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>使用教师模型进行序列级蒸馏提升法律意见摘要的论点覆盖效果。</p><br><br><p><strong>摘要：</strong> 本文提出一种简单、无需标注且数据高效的策略，通过从具备长上下文能力的教师模型中进行序列级知识蒸馏，来提升长篇法律意见摘要中的论点显著性覆盖。实验表明，在不同规模的学生模型上，蒸馏方法在法律意见摘要任务中优于基于专家撰写摘要的微调方法。研究还发现，仅需约10个训练摘要即可获得显著提升，证明了教师生成监督的高数据效率。此外，摘要蒸馏已足够有效，尽管推理链蒸馏与摘要蒸馏结合时能提供边际收益，但其单独使用已具竞争力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.29884 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 30 Aug 2026 16:27:09 +0000</pubDate>
+<pubDate>Sun, 30 Aug 2026 16:27:09 +0000</pubDate>
+</item>
+<item>
+<title>基于图神经网络的比特币地址聚类优化方法</title>
+<link>https://tldr.takara.ai/p/2609.01942</link>
+<guid>https://tldr.takara.ai/p/2609.01942</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种基于图神经网络的比特币地址聚类优化方法。</p><br><br><p><strong>摘要：</strong> 本文针对比特币用户行为分析中地址归属不明确的问题，提出一种基于图神经网络对比嵌入的聚类优化方法。该方法通过引入对比学习，提升现有启发式聚类结果的准确性，减少不同用户地址被错误合并的情况。研究还发布了包含大量聚类的比特币交易图数据集，并提出了与启发式方法一致的地址嵌入学习方法。通过分层聚类，实现了对原有聚类的更细致分析，并提供了一种量化判断可疑合并的标准。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.01942 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 01 Sep 2026 23:15:38 +0000</pubDate>
+<pubDate>Tue, 01 Sep 2026 23:15:38 +0000</pubDate>
+</item>
+<item>
+<title>基于Persona选择与实现框架的稳定行为生成方法</title>
+<link>https://tldr.takara.ai/p/2608.29798</link>
+<guid>https://tldr.takara.ai/p/2608.29798</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出R$^2$A框架提升Persona行为一致性</p><br><br><p><strong>摘要：</strong> 文章指出同一Persona行为在不同情境下可能产生正负效果，导致静态Persona提取表现不稳定。为此，作者提出Persona Selection--Realization Framework，将行为生成分解为Persona选择和实现两个阶段，并定义了选择差距和实现差距。基于此框架，提出R$^2$A方法，通过结构化Who--How--What表示进行Persona表征学习，并在运行时对齐阶段利用任务反馈优化行为选择和轨迹实现。实验表明，R$^2$A在12个评估场景中优于基线模型和静态Persona提取方法，且表征学习对稳定Persona策略学习至关重要。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.29798 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 30 Aug 2026 13:55:09 +0000</pubDate>
+<pubDate>Sun, 30 Aug 2026 13:55:09 +0000</pubDate>
+</item>
+<item>
+<title>基于序列的抗菌肽活性预测方法超越现有模型</title>
+<link>https://tldr.takara.ai/p/2608.30337</link>
+<guid>https://tldr.takara.ai/p/2608.30337</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>简单序列方法在多标签抗菌肽预测中表现优于复杂模型。</p><br><br><p><strong>摘要：</strong> 本文提出一种基于序列的简单方法，在ESCPE基准测试中达到77.8%的mAP-5，优于之前最佳的72.1%。该方法结合330个可解释的序列描述符与TabPFN模型，无需结构信息和梯度训练即可实现高效预测。实验表明，该方法在远程同源序列中效果更显著，并且不依赖单一特征家族。此外，通过建模标签依赖性，该方法在稀有活性预测和优先级排序方面表现出优势。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.30337 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 31 Aug 2026 06:50:09 +0000</pubDate>
+<pubDate>Mon, 31 Aug 2026 06:50:09 +0000</pubDate>
+</item>
+<item>
+<title>DisCo：一种基于技能的自主研究代理</title>
+<link>https://tldr.takara.ai/p/2609.02749</link>
+<guid>https://tldr.takara.ai/p/2609.02749</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>DisCo通过技能提升机器学习研究效率。</p><br><br><p><strong>摘要：</strong> 文章介绍了一种名为DisCo的自主研究代理，它能够创建并利用技能进行机器学习研究。该代理通过两种方式提炼技能：任务无关的通用技能和任务相关的特定技能。DisCo从大量ML仓库中提炼出5000多个验证过的技能，并将其组织为20个领域和178个能力家族。实验结果显示，与未使用技能的代理相比，DisCo在多个基准测试中表现显著提升，证明了技能的有效性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.02749 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 02 Sep 2026 15:49:41 +0000</pubDate>
+<pubDate>Wed, 02 Sep 2026 15:49:41 +0000</pubDate>
+</item>
+<item>
+<title>ESPO：解决提示膨胀问题的高效优化方法</title>
+<link>https://tldr.takara.ai/p/2609.04197</link>
+<guid>https://tldr.takara.ai/p/2609.04197</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>ESPO优化方法提升NLP任务准确率并减少提示长度。</p><br><br><p><strong>摘要：</strong> 本文提出ESPO（Error-Structured Prompt Optimization），旨在解决如GEPA等进化提示优化器的提示膨胀问题。通过诊断、提议和选择三个阶段，ESPO在七个公开NLP基准测试中平均准确率提升3.76个百分点，同时使提示长度减少47%。实验表明，ESPO在多个模型上表现优于现有方法，尤其在Qwen3 GSM8K任务中提升显著。研究还提供了理论分析，验证了各阶段对测试误差的贡献。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.04197 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 03 Sep 2026 17:59:37 +0000</pubDate>
+<pubDate>Thu, 03 Sep 2026 17:59:37 +0000</pubDate>
+</item>
+<item>
+<title>SpanCalib-VLM：结合多模态序列标注与生成模型的幻觉检测方法</title>
+<link>https://tldr.takara.ai/p/2608.29974</link>
+<guid>https://tldr.takara.ai/p/2608.29974</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>SpanCalib-VLM融合生成与判别模型，提升视觉语言模型幻觉检测效果。</p><br><br><p><strong>摘要：</strong> 本文提出 SpanCalib-VLM，一种结合多模态序列标注器和生成式视觉语言模型的混合系统，用于检测大型视觉语言模型中的幻觉。该系统通过交叉注意力机制将 XLM-RoBERTa-Large 与 SigLIP 视觉编码器融合，并利用生成模型的候选片段进行重新评分。实验结果显示，在 SHROOM-Visions 英文数据集上，该方法实现了 0.41 的皮尔逊校准相关性、0.39 的总体 IoU 和 70.7% 的检测准确率。模型代码和权重已公开。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.29974 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Sun, 30 Aug 2026 19:00:31 +0000</pubDate>
+<pubDate>Sun, 30 Aug 2026 19:00:31 +0000</pubDate>
+</item>
+<item>
+<title>多尺度卫星图像补全方法Genesis</title>
+<link>https://tldr.takara.ai/p/2609.02683</link>
+<guid>https://tldr.takara.ai/p/2609.02683</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出多尺度图像补全任务及生成模型Genesis，实现跨尺度一致的卫星图像金字塔。</p><br><br><p><strong>摘要：</strong> 文章指出当前卫星图像生成模型仅在单一尺度或范围上操作，无法生成跨尺度和空间一致的完整图像金字塔。为此，作者提出多尺度图像补全任务，并引入Genesis模型，结合垂直超分辨率和水平遮罩扩展两个模块，生成全局一致、无缝衔接的多尺度图像。为评估该任务，研究者构建了dense500数据集并设计了相应的评估指标。实验表明，Genesis在多个子任务中表现优异，能够从稀疏种子图像生成高质量的多分辨率地图。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.02683 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 02 Sep 2026 14:53:21 +0000</pubDate>
+<pubDate>Wed, 02 Sep 2026 14:53:21 +0000</pubDate>
+</item>
+<item>
+<title>基于计算机视觉的卫星降雨数据异常检测系统</title>
+<link>https://tldr.takara.ai/p/2609.01514</link>
+<guid>https://tldr.takara.ai/p/2609.01514</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>开发了用于检测卫星降雨数据异常的系统，提升数据可靠性。</p><br><br><p><strong>摘要：</strong> 本文介绍了用于检测全球卫星降雨产品中异常值的系统。随着小型卫星技术的发展，越来越多的私营部门参与卫星数据获取，但数据验证仍显不足。该系统利用预训练的计算机视觉模型，并结合有限的人工标注数据，有效识别异常情况。测试结果显示，该方法在区分正常轨道与含异常数据的轨道方面表现优异，且具备可解释性和迭代优化能力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.01514 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 01 Sep 2026 16:43:27 +0000</pubDate>
+<pubDate>Tue, 01 Sep 2026 16:43:27 +0000</pubDate>
+</item>
+<item>
+<title>6G网络中基于LLM代理的认知信道与系统韧性设计</title>
+<link>https://tldr.takara.ai/p/2609.01779</link>
+<guid>https://tldr.takara.ai/p/2609.01779</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>6G网络依赖LLM代理管理RAN，需通过认知信道提升系统韧性。</p><br><br><p><strong>摘要：</strong> 未来6G网络将依赖大型语言模型（LLM）代理来管理无线接入网络（RAN）。然而，现有架构假设代理间消息传递的是客观事实，实际上消息是发送者推理的主观结论，可能传播AI幻觉并引发不可见的级联故障。为解决此问题，文章提出基于心智理论（ToM）的框架，将代理交互建模为细胞层上的认知信道，并推导出五条设计原则：消息是发送者隐藏推理的证据、信任是连续的信噪比、网络一致性可通过层拉普拉斯算子计算、代理建模应限制在两层以节省计算资源、可信容量由目标对齐决定。实验验证了该框架的有效性，表明认知信噪比能识别幻觉节点，仅两层ToM可恢复正确操作，谱隙决定系统能否在近实时内达成一致。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.01779 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 01 Sep 2026 18:49:44 +0000</pubDate>
+<pubDate>Tue, 01 Sep 2026 18:49:44 +0000</pubDate>
+</item>
+<item>
+<title>Fairness in multi-class multi-group classification problems via contextial coherent risk measures</title>
+<link>https://tldr.takara.ai/p/2608.30223</link>
+<guid>https://tldr.takara.ai/p/2608.30223</guid>
+<content:encoded><![CDATA[
+
+  We propose a new design of fair classifiers for multi-class classification problems in the presence of vector-valued sensitive attributes. In that scenario each sensitive attribute has multiple values and forms several groups relevant to the fairness consideration. Naturally those groups are overlapping and one should also analyze the interaction of factors. Additionally, the decision makers aided by the classification should not violate individual rights at the expense of satisfying fairness metrics at the group level. We propose an approach using the theory and methods of coherent measures of risk aiming at resolving the fairness challenges. Further, we propose a specialized numerical method for solving the resulting optimization problem. The method scales well with the increase of the number of observations. Additionally, we note that the obtained classifier is robust with respect to corrupted data or to situation when data is scarce. We demonstrate the advantages of the proposed framework in comparison to the support-vector machine framework and other methods handling fairness.
+
+]]></content:encoded>
+<pubDate>Mon, 31 Aug 2026 04:11:21 +0000</pubDate>
+<pubDate>Mon, 31 Aug 2026 04:11:21 +0000</pubDate>
+</item>
+<item>
+<title>ProbeMatchDTI: Probe-Driven Multi-Scale Biochemical Pattern Matching for Drug-Target Interaction Prediction</title>
+<link>https://tldr.takara.ai/p/2609.02549</link>
+<guid>https://tldr.takara.ai/p/2609.02549</guid>
+<content:encoded><![CDATA[
+
+  Drug-target interaction (DTI) prediction is an important task in AI-driven drug discovery. Although recent biochemical representation learning methods have improved DTI prediction, their passive feature aggregation tends to favor dominant molecular patterns while suppressing weak yet binding-relevant signals, such as functional groups and residue-context patterns, limiting the modeling of multi-scale biochemical correspondences. To address this issue, we propose ProbeMatchDTI, a pattern-probe-driven framework comprising IterProbe and BindingProbe. IterProbe explicitly retains contextual states across refinement depths and uses learnable probes to select them at each position before cross-entity matching, thereby preserving weak biochemical patterns and strengthening associations among functional groups, local motifs, and molecular scaffolds. BindingProbe then characterizes cross-entity drug-protein complementarity at local biochemical-unit and whole-pair levels, jointly modeling fine-grained interactions and multi-scale correspondences while preserving weaker binding-relevant associations. Extensive experiments demonstrate the superiority of ProbeMatchDTI, achieving 2.0% and 0.5% higher AUC-ROC on BindingDB and DrugBank, respectively. Feature-level pattern analyses further characterize its probe-driven behavior in cross-scale biochemical pattern matching. We further connect ProbeMatchDTI predictions with an evidence-guided downstream drug-discovery workflow, demonstrating their utility for candidate refinement and validation planning. Our code is available at https://github.com/developer-hq/ProbeMatchDTI
+
+]]></content:encoded>
+<pubDate>Wed, 02 Sep 2026 13:00:50 +0000</pubDate>
+<pubDate>Wed, 02 Sep 2026 13:00:50 +0000</pubDate>
+</item>
+<item>
+<title>When Models Edit Too Much: On the Fidelity of Minimal Code Edits</title>
+<link>https://tldr.takara.ai/p/2609.04061</link>
+<guid>https://tldr.takara.ai/p/2609.04061</guid>
+<content:encoded><![CDATA[
+
+  Large language models (LLMs) are increasingly used to edit existing code, but correctness alone is not enough: useful repairs should also be minimal, reviewable, and faithful to the original implementation. We study over-editing, the tendency of a model to rewrite code beyond what is required to fix a bug. We construct an evaluation framework from 400 BigCodeBench problems by injecting controlled AST-level corruptions into reference solutions, giving each repair task a known minimal patch. Across frontier LLMs, over-editing is widespread even among strong models like GPT-5.5: high Pass@1 can coexist with unnecessarily large edits and added cognitive complexity. A preservation instruction substantially reduces this behavior, lowering average excess Levenshtein distance from 0.195 to 0.131, reducing added cognitive complexity by 26.6%, and increasing Pass@1 by 2.3 points. However, these gains do not simply follow from a larger reasoning budget or larger models. We next ask whether minimal editing can be learned directly during post-training. We observe that supervised fine-tuning overfits to seen corruption patterns, whereas reinforcement learning gives the best out-of-domain edit-fidelity and performance-retention trade-off. These results position edit fidelity as a distinct axis of code-repair quality and show that it can be measured and learned.
+
+]]></content:encoded>
+<pubDate>Thu, 03 Sep 2026 16:36:05 +0000</pubDate>
+<pubDate>Thu, 03 Sep 2026 16:36:05 +0000</pubDate>
+</item>
+<item>
+<title>Conditioning Degenerate Diffusion Models</title>
+<link>https://tldr.takara.ai/p/2609.04090</link>
+<guid>https://tldr.takara.ai/p/2609.04090</guid>
+<content:encoded><![CDATA[
+
+  Current conditioned generative models heavily rely on score functions for guidance during training. When the generative model is a diffusion process with a singular diffusion coefficient and the underlying (conditional) densities either do not exist or are not smooth, we use causal optimal transport to define \emph{approximate} loss functions that identify a minimum-entropy control for guidance under minimal assumptions. Our approach relies on causal optimal transport and its characterization through the predictable representation property of (conditioned) diffusion processes whose associated martingale problem is well posed, à la Üstünel.
+
+]]></content:encoded>
+<pubDate>Thu, 03 Sep 2026 17:00:44 +0000</pubDate>
+<pubDate>Thu, 03 Sep 2026 17:00:44 +0000</pubDate>
+</item>
+<item>
+<title>Automated Event Log Generation from Unstructured Text Using Finetuned LLMs</title>
+<link>https://tldr.takara.ai/p/2609.01320</link>
+<guid>https://tldr.takara.ai/p/2609.01320</guid>
+<content:encoded><![CDATA[
+
+  Process mining (PM) provides a powerful framework for discovering and optimizing operational processes from event data. However, the efficacy of PM techniques is strictly predicated on the availability of structured event logs. Thus far, event logs have often been laboriously created by domain and process mining experts. This costly effort causes large portions of organizational knowledge, including incident tickets, manuals, and textual reports, to remain underutilized. We address this bottleneck by investigating the efficacy of Large Language Models (LLMs) as automated data translators. We propose a scalable framework that leverages LLMs as data translators to bridge the gap between unstructured textual resources and structured event data. We finetune LLMs on a newly created text-to-log dataset, demonstrating that the resulting models can extract high-fidelity event logs from unstructured resources. Our results show that this finetuning approach outperforms few-shot or zero-shot prompting by a large amount, highlighting finetuning as a necessary pre-condition for generating reliable event data. We conclude that our method provides a promising pipeline for making previously unused data available to process mining ecosystems, effectively expanding the possibilities of using PM to further investigate organizational workflows.
+
+]]></content:encoded>
+<pubDate>Tue, 01 Sep 2026 14:39:37 +0000</pubDate>
+<pubDate>Tue, 01 Sep 2026 14:39:37 +0000</pubDate>
+</item>
+<item>
+<title>Matched Queries for Curvature and Density at Branching Junctions</title>
+<link>https://tldr.takara.ai/p/2609.01319</link>
+<guid>https://tldr.takara.ai/p/2609.01319</guid>
+<content:encoded><![CDATA[
+
+  At a junction, a score field can reveal weighted tangent rays, yet these first-order quantities do not determine how individual branches bend or how their densities change away from the center. Recovering this missing information is necessary for describing local continuation beyond a single point, but finite observations must separate branchwise second-order effects while allowing error in the estimated center. We address this inverse problem using matched score queries at noise scales $σ$ and $λσ$. For a finite union of $C^{2,α}$ half-branches in $\mathbb{R}^D$, the normalized score has the expansion $F_σ=F_0+σG+O(σ^{1+α})$. Matched subtraction cancels the tangent contribution and exposes $G$, which depends linearly on branchwise curvature and log-density slope. Given tangent directions and weights on distinct rays, $G$ uniquely identifies all $sD$ branch parameters, and $sD$ scalar component observations are necessary. An $O(σ^2)$ center error introduces $D$ translation modes, leading to $(s+1)D$ observations under full-rank calibration, except for a translation-invariant full line. We also establish a perturbation bound and a conditional kernel-density-estimation rate. Experiments reproduce the predicted population and $N^{-1/5}$ trends and remain full rank up to $D=20$ with 16 supplied branches. In end-to-end tests for $D=3$--$5$, a known-count first-order frontend yields full rank in all 135 population systems and a median relative jet error of 0.132. With strong first-order error, matched responses reduce median parameter error by a factor of 49.4 relative to naive tangent subtraction.
+
+]]></content:encoded>
+<pubDate>Tue, 01 Sep 2026 14:38:59 +0000</pubDate>
+<pubDate>Tue, 01 Sep 2026 14:38:59 +0000</pubDate>
+</item>
 
 <item>
 <title>基于分解的3D场景重建方法提升网格精度与可编辑性</title>
