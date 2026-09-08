@@ -4,6 +4,478 @@
 <title>Takara TLDR - Daily AI Papers</title>
 <link>https://tldr.takara.ai</link>
 
+<item>
+<title>Turing-20B-A2B：高效长文本处理的专家混合语言模型</title>
+<link>https://tldr.takara.ai/p/2608.30567</link>
+<guid>https://tldr.takara.ai/p/2608.30567</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Turing-20B-A2B在保持低延迟的同时实现强大长文本处理能力。</p><br><br><p><strong>摘要：</strong> Turing-20B-A2B是一款具有200亿参数的专家混合语言模型，每token激活约20亿参数，专为长上下文和低延迟应用设计。该模型采用动态top-k量化路由机制，实现令牌自适应的专家分配，同时保持专家利用率均衡和计算预算可控。部署时引入受限容量路由以优化提示预填充，训练阶段则保留无丢弃路由。此外，模型结合闪电注意力与少量全注意力层，提升长上下文建模效率。通过三阶段渐进式预训练，模型上下文长度扩展至128K，并进一步通过YaRN技术扩展至512K。尽管活跃参数预算有限，Turing-20B-A2B在基础模型阶段表现出超越Qwen3-8B Base的综合能力，接近Qwen3.5-9B Base，同时保持优异的长上下文性能和良好的预填充延迟扩展性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.30567 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 31 Aug 2026 10:42:35 +0000</pubDate>
+<pubDate>Mon, 31 Aug 2026 10:42:35 +0000</pubDate>
+</item>
+<item>
+<title>LatentPress：一种高效的连续记忆令牌压缩方法</title>
+<link>https://tldr.takara.ai/p/2609.01507</link>
+<guid>https://tldr.takara.ai/p/2609.01507</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>LatentPress通过连续记忆令牌实现高效上下文压缩，提升模型推理速度与性能。</p><br><br><p><strong>摘要：</strong> LatentPress是一种新型的上下文压缩方法，它将对话历史和长文档转换为连续记忆令牌，供冻结解码器直接读取，无需文本重建。该方法仅需训练一个适配器，参数量仅为解码器的0.1%。在LongMemEval任务中，LatentPress在7.7倍压缩率下达到0.504的准确率，优于文本摘要和OCR压缩方法。在LongBench-QA任务中，其在4-8倍压缩率下表现接近原始上下文，且写作和阅读速度显著提升。实验验证了其在跨域任务中的有效性，展示了连续软令牌作为机器接口的潜力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.01507 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 01 Sep 2026 16:38:15 +0000</pubDate>
+<pubDate>Tue, 01 Sep 2026 16:38:15 +0000</pubDate>
+</item>
+<item>
+<title>多粒度文档理解中的相互增强效应研究</title>
+<link>https://tldr.takara.ai/p/2609.00756</link>
+<guid>https://tldr.takara.ai/p/2609.00756</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究多粒度任务间的相互增强效果，验证联合训练与条件训练的有效性。</p><br><br><p><strong>摘要：</strong> 本文探讨了在多模态文档理解中，细粒度字段提取与粗粒度文档层面任务之间的相互增强效应。通过三个数据集（两个收据和一个扫描商业表单）进行实验，比较了单一任务、联合训练和条件训练的效果。研究构建了Doc-MRE标注层，将字段级标注与文档级特征配对，并通过预注册和盲注释验证其有效性。结果显示，条件训练在两个数据集上显著优于单一任务模型，而联合训练则表现不佳。此外，通过控制实验发现，条件训练主要依赖于提示结构而非内容，且在某些情况下能避免标签分布崩溃。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.00756 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 01 Sep 2026 05:39:33 +0000</pubDate>
+<pubDate>Tue, 01 Sep 2026 05:39:33 +0000</pubDate>
+</item>
+<item>
+<title>荷兰语言模型中的性别刻板印象分析与数据集构建</title>
+<link>https://tldr.takara.ai/p/2609.02651</link>
+<guid>https://tldr.takara.ai/p/2609.02651</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究揭示荷兰语言模型中对跨性别群体的显著偏见。</p><br><br><p><strong>摘要：</strong> 本文针对荷兰语言模型中的性别刻板印象进行研究，构建了一个基于英文WinoQueer基准的荷兰语数据集，并通过在线调查验证了其文化相关性。研究发现，尽管整体偏见评分接近中性，但某些模型在跨性别和非二元身份上表现出高达97%的刻板印象偏好，而对同性恋相关句子的偏见则较低。这表明需要更加注重文化背景的数据集来评估和减少语言模型中的偏见，以保护边缘化群体。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.02651 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 02 Sep 2026 14:25:50 +0000</pubDate>
+<pubDate>Wed, 02 Sep 2026 14:25:50 +0000</pubDate>
+</item>
+<item>
+<title>语音预处理与数据集构建对阿尔茨海默病检测的影响研究</title>
+<link>https://tldr.takara.ai/p/2609.00276</link>
+<guid>https://tldr.takara.ai/p/2609.00276</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>语音预处理可能影响阿尔茨海默病检测模型的泛化能力。</p><br><br><p><strong>摘要：</strong> 本文研究了语音增强和数据集优化在阿尔茨海默病检测中的作用。实验表明，虽然增强后的数据集在特定领域表现更好，但在跨领域评估中会降低模型的鲁棒性。训练与测试数据的增强匹配可以部分缓解这一问题，但无法完全消除。大型音频语言模型也表现出类似趋势，增强数据会导致类别不平衡和预测偏差。这表明，更‘干净’的数据集并不一定更适合实际应用中的阿尔茨海默病检测。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.00276 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 31 Aug 2026 19:19:00 +0000</pubDate>
+<pubDate>Mon, 31 Aug 2026 19:19:00 +0000</pubDate>
+</item>
+<item>
+<title>人工智能在招聘中的发展与评估框架</title>
+<link>https://tldr.takara.ai/p/2609.04286</link>
+<guid>https://tldr.takara.ai/p/2609.04286</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>AI在招聘中从简历匹配转向多阶段流程，提升决策质量。</p><br><br><p><strong>摘要：</strong> 本文综述了人工智能在招聘领域的演进过程，从早期的简历匹配和行为排序，发展到基于神经网络的人岗匹配、大语言模型组件以及具备工具使用能力的招聘代理。通过系统化的文献分析，文章梳理了40篇代表性研究，并结合工业和法律资料进行综合探讨。研究指出，招聘AI正经历三个关键转变：从相似性判断到双向适配性评估、从单一模型到复合工作流、从离线预测到证据与效率对齐的评估。文章还强调了行为标签混淆、数据隐私限制、输出评分掩盖流程问题等现存挑战，并提出一个基于证据的评估框架，以实现更可审计、可控和公平的招聘系统。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.04286 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 03 Sep 2026 08:46:03 +0000</pubDate>
+<pubDate>Thu, 03 Sep 2026 08:46:03 +0000</pubDate>
+</item>
+<item>
+<title>LLM在处理上下文冲突中的表现与改进方法</title>
+<link>https://tldr.takara.ai/p/2609.03148</link>
+<guid>https://tldr.takara.ai/p/2609.03148</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究LLM处理上下文冲突的能力及改进方法。</p><br><br><p><strong>摘要：</strong> 本文探讨了大语言模型（LLM）在面对上下文内部冲突时的表现，提出了一种六类上下文冲突的分类体系，并构建了包含5,781个样本的ContextConflict数据集，涵盖推理和摘要任务。实验表明，当前模型在解决此类冲突上仍有不足。研究还揭示了模型对早期证据的偏好是冲突解决的主要障碍，并提出了一种无需训练、无需标签的激活引导方法，有效提升了模型在推理任务中的准确性和摘要任务的质量。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.03148 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 02 Sep 2026 20:30:15 +0000</pubDate>
+<pubDate>Wed, 02 Sep 2026 20:30:15 +0000</pubDate>
+</item>
+<item>
+<title>联邦学习中的隐私与鲁棒性框架研究</title>
+<link>https://tldr.takara.ai/p/2609.03064</link>
+<guid>https://tldr.takara.ai/p/2609.03064</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>本文提出DP-BR-FedAvg框架，提升联邦学习的隐私与鲁棒性。</p><br><br><p><strong>摘要：</strong> 本文探讨了联邦学习在数据隐私和对抗攻击方面的挑战，并提出了一种结合差分隐私和鲁棒聚合的框架DP-BR-FedAvg。该框架在模拟跨机构分类任务中表现出色，在面对恶意客户端时仍能保持较高的模型性能，同时有效控制单个客户的隐私泄露。实验表明，隐私保护和鲁棒性机制之间存在相互作用，系统设计需综合考虑两者的影响。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.03064 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 02 Sep 2026 18:36:30 +0000</pubDate>
+<pubDate>Wed, 02 Sep 2026 18:36:30 +0000</pubDate>
+</item>
+<item>
+<title>基于上下文学习的Conformal Relevance框架提升NLP任务的简洁性</title>
+<link>https://tldr.takara.ai/p/2609.03005</link>
+<guid>https://tldr.takara.ai/p/2609.03005</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出Conformal Relevance框架，提升NLP任务的简洁性和覆盖性。</p><br><br><p><strong>摘要：</strong> 本文提出一种名为Conformal Relevance的框架，用于提升自然语言处理任务中内容检索的简洁性和覆盖性。该框架利用上下文学习示例选择和集成方法构建评分函数，在保证覆盖性的前提下减少冗余信息。与传统依赖人工设计提示的方法不同，该方法只需少量人工输入即可实现性能优化。研究在七个NLP任务上验证了该框架的有效性，并从理论上分析了集成对最差情况句子评分的影响，提出了互补条件和集成改进的饱和边界。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.03005 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 02 Sep 2026 18:00:01 +0000</pubDate>
+<pubDate>Wed, 02 Sep 2026 18:00:01 +0000</pubDate>
+</item>
+<item>
+<title>英语借词性别分布的固定后缀依赖分析</title>
+<link>https://tldr.takara.ai/p/2609.03930</link>
+<guid>https://tldr.takara.ai/p/2609.03930</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究发现英语借词在性别分布上存在显著差异，女性词更依赖固定后缀。</p><br><br><p><strong>摘要：</strong> 本研究通过提出固定后缀依赖比率（FSDR）来量化不同性别中英语借词对固定派生后缀的依赖程度，并区分形态锚定与自由选择。通过对1832个拉脱维亚名词的分析，发现女性借词更依赖固定后缀，而男性借词则更多出现在自由选择区域。这种模式具有借词特异性，并在现代用法中更加明显。FSDR为测试默认性别提供了量化框架，并揭示了语言接触下男性默认性如何被激活和强化。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.03930 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 03 Sep 2026 14:41:34 +0000</pubDate>
+<pubDate>Thu, 03 Sep 2026 14:41:34 +0000</pubDate>
+</item>
+<item>
+<title>BASIN：一种结构感知的推理路径选择方法</title>
+<link>https://tldr.takara.ai/p/2609.00738</link>
+<guid>https://tldr.takara.ai/p/2609.00738</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>BASIN提升LLM推理路径多样性，改善搜索效率。</p><br><br><p><strong>摘要：</strong> 本文提出BASIN方法，用于改进大语言模型在推理过程中的路径选择。BASIN通过将推理状态分组为不同的基底，并惩罚重复访问相同策略，从而在固定计算预算下重新分配搜索路径，提高探索不同推理路径的效果。实验表明，BASIN在Game of 24和MuSR任务中分别提升了22pp和6.7pp。此外，QA-BASIN通过保留高质量基底进一步增强鲁棒性。作者还引入冗余差距Δ来衡量正确与错误预测之间的搜索差异，证明BASIN能有效提升搜索质量。代码已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.00738 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 01 Sep 2026 05:15:59 +0000</pubDate>
+<pubDate>Tue, 01 Sep 2026 05:15:59 +0000</pubDate>
+</item>
+<item>
+<title>动态引导扩散框架在多变量时间序列预测中的应用</title>
+<link>https://tldr.takara.ai/p/2609.02068</link>
+<guid>https://tldr.takara.ai/p/2609.02068</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出DynG-Diff框架提升多变量时间序列预测性能。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为DynG-Diff的变量敏感动态引导扩散框架，用于改进概率多变量时间序列预测。该方法采用两阶段分离训练策略，利用无条件扩散主干模型建模多变量时间序列的联合分布，并引入轻量级状态感知策略网络，根据实时噪声状态和一步去噪估计自适应推断变量可靠性，输出动态引导强度矩阵。通过将动态权重数学上定义为观测分布的局部精度，该框架在推理过程中对高置信度变量进行精确引导，同时过滤异常噪声干扰。实验表明，该方法在真实世界基准数据集上表现出色，优于现有条件扩散模型，并在严重观测损坏下展现出更强的鲁棒性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.02068 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 02 Sep 2026 03:50:39 +0000</pubDate>
+<pubDate>Wed, 02 Sep 2026 03:50:39 +0000</pubDate>
+</item>
+<item>
+<title>文明框架与外交协议：解决AI通信中的时间权重效应</title>
+<link>https://tldr.takara.ai/p/2609.03425</link>
+<guid>https://tldr.takara.ai/p/2609.03425</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出文明框架与外交协议，解决AI通信中的时间权重问题。</p><br><br><p><strong>摘要：</strong> 文章介绍了文明框架和外交协议，旨在解决AI系统之间通信中因时间顺序导致的权威失衡问题。该框架将文明作为可识别实体，而非单个代理，并通过异步消息传递和承诺状态确保一致性。研究发现，在没有验证的情况下，先到达的错误信息会获得54.2%的响应，而后续信息仅占31.6%。实验还展示了指令级来源标注和密封答案准确性等次级结果，但所有结果均被标记为探索性，因工具使用检查未满足预算条件。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.03425 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 03 Sep 2026 06:31:56 +0000</pubDate>
+<pubDate>Thu, 03 Sep 2026 06:31:56 +0000</pubDate>
+</item>
+<item>
+<title>基于背部标记的猪个体追踪方法BMCTrack-d</title>
+<link>https://tldr.takara.ai/p/2609.03463</link>
+<guid>https://tldr.takara.ai/p/2609.03463</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>BMCTrack-d通过背部标记实现猪个体追踪，提升复杂环境下的跟踪精度。</p><br><br><p><strong>摘要：</strong> 本文提出BMCTrack-d，一种基于检测的追踪方法，利用猪的背部标记实现个体识别与追踪。该方法在侧视摄像头设置下，面对快速移动、严重遮挡和低分辨率等挑战，通过神经网络分类器预测猪的身份，并引入时间一致性检查和去重机制以提高识别可靠性。实验表明，BMCTrack-d在高阶跟踪准确率上优于两个基线模型，证明了其在复杂环境下进行个体猪监控的有效性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.03463 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 03 Sep 2026 07:20:03 +0000</pubDate>
+<pubDate>Thu, 03 Sep 2026 07:20:03 +0000</pubDate>
+</item>
+<item>
+<title>基于拉格朗日视角的生成模型推导与流场分析</title>
+<link>https://tldr.takara.ai/p/2609.00198</link>
+<guid>https://tldr.takara.ai/p/2609.00198</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>从粒子视角推导生成模型，揭示流场几何特性。</p><br><br><p><strong>摘要：</strong> 本文提出一种基于拉格朗日视角的生成模型推导方法，不同于传统的欧拉方法，该方法通过分析连续去噪器的局部泰勒展开，引入目标身份守恒条件，推导出一个准线性对流偏微分方程。通过特征线法求解该方程，可得到流匹配中的直线轨迹。该几何视角表明，去噪器的雅可比矩阵是轨迹曲率的主要来源，解释了直线流为何允许大步长生成，并说明了经验模型需要蒸馏以平滑特征线的原因。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.00198 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 31 Aug 2026 18:13:33 +0000</pubDate>
+<pubDate>Mon, 31 Aug 2026 18:13:33 +0000</pubDate>
+</item>
+<item>
+<title>基于条件编码的神经视频压缩方法改进</title>
+<link>https://tldr.takara.ai/p/2609.03520</link>
+<guid>https://tldr.takara.ai/p/2609.03520</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出结合可变形时间对齐与差异感知空间选择融合的方法提升视频压缩性能。</p><br><br><p><strong>摘要：</strong> 在基于条件编码的神经视频压缩中，时间上下文的质量直接影响压缩效果。现有方法主要依赖传播的参考特征构建上下文，但在复杂运动、遮挡和高频纹理区域容易受到运动估计和局部对齐错误的影响，导致时间信息不准确。为此，本文提出一种结合可变形时间对齐和差异感知空间选择融合的方法。通过引入上下文感知的时间对齐模块生成互补的时间上下文，同时利用差异感知的空间选择融合模块自适应地选择可靠的时间信息并抑制对齐错误。实验表明，该方法在率失真性能上优于DCVC-DC。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.03520 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 03 Sep 2026 08:20:19 +0000</pubDate>
+<pubDate>Thu, 03 Sep 2026 08:20:19 +0000</pubDate>
+</item>
+<item>
+<title>基于教师模型的RLVR奖励塑造方法Cliff</title>
+<link>https://tldr.takara.ai/p/2609.02817</link>
+<guid>https://tldr.takara.ai/p/2609.02817</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Cliff通过识别推理过程中的首次错误提升RLVR性能。</p><br><br><p><strong>摘要：</strong> 本文提出了一种名为Cliff的奖励塑造策略，用于改进强化学习与验证奖励（RLVR）方法。该方法利用预训练的语言模型作为教师，识别每个推理过程中的首次错误，并将整个推理过程分解为正确前缀和错误后缀。随后，Cliff通过分配正向优势和负反馈来增强模型的学习效果。实验表明，Cliff在12个不同场景中均表现出色，优于现有的on-policy distillation和标准GRPO方法。此外，研究还分析了“真实标签”在Cliff中的作用及训练动态，证明其是一种简单、通用且有效的RLVR优化方法。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.02817 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 02 Sep 2026 17:03:42 +0000</pubDate>
+<pubDate>Wed, 02 Sep 2026 17:03:42 +0000</pubDate>
+</item>
+<item>
+<title>HyGRAIL：结合图神经网络与大语言模型的科学假设发现框架</title>
+<link>https://tldr.takara.ai/p/2609.02056</link>
+<guid>https://tldr.takara.ai/p/2609.02056</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>HyGRAIL通过结合GNN和LLM提升科学假设发现效率与准确性。</p><br><br><p><strong>摘要：</strong> 文章介绍了一种名为HyGRAIL的科学假设发现框架，该框架结合了图神经网络（GNN）和大语言模型（LLM），旨在解决科学知识图谱中缺失链接的问题。HyGRAIL首先利用GNN对候选假设进行评分，并识别出需要进一步验证的模糊区域，仅将这些不确定的假设传递给LLM进行深入审查。在审查过程中，系统从知识图谱中检索节点关联和多跳关系路径，并将其转化为自然语言证据。最终，LLM根据这些证据和验证标准对假设进行判断。实验表明，HyGRAIL在MatKG数据集上取得了最佳F1分数0.429，同时显著降低了LLM调用频率。消融实验也证明了图谱证据的重要性以及简洁、双面证据的有效性。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.02056 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 02 Sep 2026 03:34:21 +0000</pubDate>
+<pubDate>Wed, 02 Sep 2026 03:34:21 +0000</pubDate>
+</item>
+<item>
+<title>利用遥感数据与基础模型进行丹麦树种制图</title>
+<link>https://tldr.takara.ai/p/2609.03480</link>
+<guid>https://tldr.takara.ai/p/2609.03480</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>基于遥感数据和基础模型实现丹麦高分辨率树种地图制图。</p><br><br><p><strong>摘要：</strong> 本文通过整合国家森林清查样地和遥感数据，评估基础模型在大规模森林特征描述中的潜力。研究比较了手动工程化的光谱-时间特征与基于EO基础模型（如TESSERA和AlphaEarth）生成的嵌入向量，并结合冠层高度信息进行树种分类。实验表明，基于STF的MLP模型在纯林和混交林中分别获得0.843和0.653的宏F1分数，而TESSERA嵌入向量在训练样本较少时表现更优。多年观测数据显著提升分类精度，且Sentinel-1后向散射、光谱指数和冠层高度数据具有互补性。最终生成的10米分辨率丹麦树种地图准确率达79.9%，为森林监测和生态研究提供重要资源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.03480 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 03 Sep 2026 07:37:29 +0000</pubDate>
+<pubDate>Thu, 03 Sep 2026 07:37:29 +0000</pubDate>
+</item>
+<item>
+<title>Qwen-Drive-1.0：面向自动驾驶的视觉语言基础模型</title>
+<link>https://tldr.takara.ai/p/2609.00111</link>
+<guid>https://tldr.takara.ai/p/2609.00111</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>Qwen-Drive-1.0是面向自动驾驶的视觉语言基础模型，具备3D感知与规划能力。</p><br><br><p><strong>摘要：</strong> Qwen-Drive-1.0是一个面向自动驾驶的视觉语言基础模型，整合了3D感知、视觉问答和运动规划功能。它通过一个外部鸟瞰图感知头实现3D目标检测、语义占用预测和BEV地图分割，为3D场景结构提供可解释的接口。同时，通过共享的VLM表示生成未来车辆轨迹，并采用分阶段训练方法，在保持通用视觉理解的同时提升驾驶能力。实验表明其在3D感知和驾驶场景理解方面表现优异，且在多种评估设置中展现出强大的运动规划性能。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.00111 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 31 Aug 2026 17:59:54 +0000</pubDate>
+<pubDate>Mon, 31 Aug 2026 17:59:54 +0000</pubDate>
+</item>
+<item>
+<title>指数随机图模型中r-团结构的渐近性质</title>
+<link>https://tldr.takara.ai/p/2608.30869</link>
+<guid>https://tldr.takara.ai/p/2608.30869</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>研究指数随机图模型中r-团结构的渐近行为。</p><br><br><p><strong>摘要：</strong> 本文研究了一个指数随机图模型，该模型对具有更少r-团的图赋予更高的概率。在顶点数趋于无穷时，该模型生成的图几乎必然可以划分为r-1个大小相近的子集，子集间的边密度接近1/2，而每个子集内部的边密度则趋近于零。这些结构特性与权重参数w无关，只要w为正。此外，该结论还被扩展到多个不同团尺寸的情况，每种团尺寸都有独立的权重。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2608.30869 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Mon, 31 Aug 2026 14:31:57 +0000</pubDate>
+<pubDate>Mon, 31 Aug 2026 14:31:57 +0000</pubDate>
+</item>
+<item>
+<title>SHELF：评估大语言模型在图书馆任务中的性能基准</title>
+<link>https://tldr.takara.ai/p/2609.03047</link>
+<guid>https://tldr.takara.ai/p/2609.03047</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>SHELF为图书馆任务提供可控基准数据和评估方法。</p><br><br><p><strong>摘要：</strong> 文章介绍了SHELF，一个用于评估大语言模型在图书馆任务中表现的Python系统。它基于图书馆分类法生成大量模拟文档，并提供分类、聚类、检索等任务。实验对比了多种方法，发现主题分类效果较好，而类型分类效果较差。SHELF还能独立变化书目属性并生成未见过的文档，其代码和数据已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.03047 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 02 Sep 2026 18:17:41 +0000</pubDate>
+<pubDate>Wed, 02 Sep 2026 18:17:41 +0000</pubDate>
+</item>
+<item>
+<title>PCoMoE：一种基于路径组合的高效Mixture-of-Experts推理框架</title>
+<link>https://tldr.takara.ai/p/2609.01024</link>
+<guid>https://tldr.takara.ai/p/2609.01024</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>PCoMoE提升LLM推理速度与准确率，通过路径组合优化专家计算。</p><br><br><p><strong>摘要：</strong> 本文提出PCoMoE，一种基于路径组合的Mixture-of-Experts（MoE）推理框架。传统MoE架构在推理过程中受限于粗粒度的专家选择机制，导致计算冗余未被充分挖掘。PCoMoE通过引入路径级计算形式、兼容性感知的逐层剪枝策略以及硬件友好的执行引擎，实现了更细粒度的计算优化。实验表明，该方法在保持低开销的前提下，提升了1.31倍的推理速度，并提高了10%的模型准确率。代码已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.01024 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 01 Sep 2026 10:21:10 +0000</pubDate>
+<pubDate>Tue, 01 Sep 2026 10:21:10 +0000</pubDate>
+</item>
+<item>
+<title>面向复杂企业模式的自然语言到SQL系统研究</title>
+<link>https://tldr.takara.ai/p/2609.04641</link>
+<guid>https://tldr.takara.ai/p/2609.04641</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出新型NL2SQL基准与架构，提升复杂结构查询处理能力。</p><br><br><p><strong>摘要：</strong> 本文针对自然语言到SQL（NL2SQL）系统在学术基准上的快速发展，指出其在面对实际企业数据库中图状、半结构化、深度嵌套结构时的不足。为此，作者提出了DevRev NL2SQL基准，包含900个经过验证的查询，以及用于评估分析推理深度的语义深度评分（SDS）。同时，设计了一种成本感知的单次生成代理架构，其模式选择、元数据检索和错误修复组件专门针对此类复杂结构进行优化。实验结果显示，该系统在DevRev NL2SQL基准上达到91.7%的答案正确率，比次优基线高出54.6个百分点；在Spider 2.0 Snowflake公开数据集上也表现出色。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.04641 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Fri, 04 Sep 2026 02:20:53 +0000</pubDate>
+<pubDate>Fri, 04 Sep 2026 02:20:53 +0000</pubDate>
+</item>
+<item>
+<title>基于PLAX超声心动图预测左心室射血分数的首个公开资源</title>
+<link>https://tldr.takara.ai/p/2609.02969</link>
+<guid>https://tldr.takara.ai/p/2609.02969</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>首次公开PLAX超声预测EF的数据集与模型，MAE达6.86%</p><br><br><p><strong>摘要：</strong> 本文介绍了首个公开可用的资源，用于从胸骨旁长轴（PLAX）超声心动图中预测左心室射血分数（EF）。由于缺乏PLAX-EF数据集，研究者通过结合临床记录与超声视频的时间相关性、微调视图分类器和代理标注，创建了一个包含25,000多个PLAX视频的标记数据集。基于此，训练出首个可复现的PLAX EF模型，MAE为6.86%，接近临床标准A4C方法的性能。进一步研究表明，将PLAX与A4C预测结果进行融合可提升至6.37% MAE，显示出多视角整合的价值。研究已发布数据、模型及演示代码供后续研究使用。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.02969 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 02 Sep 2026 09:13:36 +0000</pubDate>
+<pubDate>Wed, 02 Sep 2026 09:13:36 +0000</pubDate>
+</item>
+<item>
+<title>基于多链交易图的区块链地址合规评分系统</title>
+<link>https://tldr.takara.ai/p/2609.03036</link>
+<guid>https://tldr.takara.ai/p/2609.03036</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种基于交易图的区块链地址合规评分方法，提升无标签地址识别能力。</p><br><br><p><strong>摘要：</strong> 本文介绍了一种部署的区块链地址合规评分系统，该系统通过分析多链交易图中地址的位置来评估其合规性，而非依赖黑名单。系统构建了一个包含835,330,427个地址和15,826,261,934条边的跨五条EVM链的统一图，并采用共享的归纳编码器与链级归一化处理。通过精确的量化阈值设定，可提前预知警报数量。实验结果显示，该系统在无目标链标签的情况下，对Base、Arbitrum和Gnosis链的正样本召回率分别达到0.8598、0.8182和0.9967。此外，系统在静态回放测试中表现出色，且具备高效的在线推理能力。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.03036 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 02 Sep 2026 18:08:07 +0000</pubDate>
+<pubDate>Wed, 02 Sep 2026 18:08:07 +0000</pubDate>
+</item>
+<item>
+<title>基于DIFFINT的可解释异常检测方法</title>
+<link>https://tldr.takara.ai/p/2609.03878</link>
+<guid>https://tldr.takara.ai/p/2609.03878</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>DIFFINT通过结构化潜在空间实现可解释异常检测，性能优异。</p><br><br><p><strong>摘要：</strong> 本文提出DIFFINT，一种基于深度自编码器的异常检测方法，其潜在空间被设计为一组软轴对齐区间，无需离散化或二值化即可直接从原始数值数据中学习。每个潜在单元对应特征空间中的一个可读超矩形，实例通过其在各区间的强弱程度进行编码，重建误差作为异常得分。该方法保持了可微表示学习的优势，同时提供了可检查的内部结构。实验表明，DIFFINT在48个ADBench基准上优于22种基线方法，在ROC-AUC和AUPR两个指标上均取得最佳平均排名，且是唯一可解释的领先方法。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.03878 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Thu, 03 Sep 2026 14:05:27 +0000</pubDate>
+<pubDate>Thu, 03 Sep 2026 14:05:27 +0000</pubDate>
+</item>
+<item>
+<title>基于情感导向控制的对话响应生成方法</title>
+<link>https://tldr.takara.ai/p/2609.02133</link>
+<guid>https://tldr.takara.ai/p/2609.02133</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>EmoStance通过情感导向控制提升对话响应的共情能力。</p><br><br><p><strong>摘要：</strong> 本文提出EmoStance，一种基于情感导向控制的对话响应生成方法。该方法利用多标注者表情符号分布作为弱情感-态度证据，构建潜在控制空间以模拟倾听者立场。研究构建了EmojiDialogue数据集，并通过源端情感表达建模、对话上下文与角色预测响应方向，结合连续前缀嵌入引导冻结指令调优的语言模型。实验表明，EmoStance在盲测中取得62.2%的决定性胜率，尤其在情境特异性和感知响应度方面表现突出，同时与外部知识方法具有互补性。相关代码和数据已开源。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.02133 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 02 Sep 2026 05:43:14 +0000</pubDate>
+<pubDate>Wed, 02 Sep 2026 05:43:14 +0000</pubDate>
+</item>
+<item>
+<title>基于强化学习的重排序器蒸馏方法研究</title>
+<link>https://tldr.takara.ai/p/2609.01947</link>
+<guid>https://tldr.takara.ai/p/2609.01947</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>提出一种两阶段蒸馏框架提升重排序器性能。</p><br><br><p><strong>摘要：</strong> 本文提出一种基于强化学习的两阶段重排序器蒸馏框架。第一阶段通过离线策略优化增强教师模型，第二阶段通过学生模型采样排名并接收教师提供的软奖励，实现知识迁移与探索结合。实验表明，在分布偏移情况下，该方法在MAIR-11和MAIR-Full数据集上均优于传统蒸馏方法，且在保持高性能的同时具备良好的效率优势。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.01947 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Tue, 01 Sep 2026 23:36:19 +0000</pubDate>
+<pubDate>Tue, 01 Sep 2026 23:36:19 +0000</pubDate>
+</item>
+<item>
+<title>基于生成与重建平衡的高保真场景高斯点云渲染方法</title>
+<link>https://tldr.takara.ai/p/2609.02747</link>
+<guid>https://tldr.takara.ai/p/2609.02747</guid>
+<content:encoded><![CDATA[
+
+  <div><p style=color:gray;>InceptionGS通过平衡重建与生成提升大规模场景的渲染质量。</p><br><br><p><strong>摘要：</strong> 文章提出了一种名为InceptionGS的方法，用于解决大规模场景数字化中因视图稀缺导致的渲染不一致问题。该方法通过结合重建和生成技术，在初始高斯点云基础上修复因视图不足而出现问题的区域，同时保留其他区域的质量。实验表明，该方法在处理无结构图像和提升高保真高斯点云方面表现出色。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.02747 target="_blank">查看原文</a></div>
+
+]]></content:encoded>
+<pubDate>Wed, 02 Sep 2026 15:48:15 +0000</pubDate>
+<pubDate>Wed, 02 Sep 2026 15:48:15 +0000</pubDate>
+</item>
+<item>
+<title>HalluPeer: A Taxonomy-driven Benchmark for Detecting Hallucinations in Scientific Peer Reviews</title>
+<link>https://tldr.takara.ai/p/2609.03580</link>
+<guid>https://tldr.takara.ai/p/2609.03580</guid>
+<content:encoded><![CDATA[
+
+  The growing scale of academic peer review has motivated the use of Large Language Models (LLMs) as review assistants, yet LLMs can generate fluent but unsupported claims that undermine review reliability. Existing hallucination benchmarks are not designed for peer review, where verification requires grounding claims in long, technical papers. We introduce HalluPeer, a benchmark for detecting hallucinations in scientific peer reviews, providing aligned triples of paper content, human-written reviews, and hallucination-injected reviews, annotated for detection, classification, and localization. Our pipeline induces a peer-review-specific hallucination taxonomy, identifies review contexts, and injects hallucinations with automated filtering. Experiments on 12K papers and 38K reviews show that existing detectors struggle to separate hallucinations from legitimate critique, while evaluation on authentic reviews demonstrates that HalluPeer-defined hallucination patterns occur in real peer reviews, highlighting the critical need for source-aware verification. Our project page can be found in https://github.com/Lin-TzuLing/HalluPeer.git
+
+]]></content:encoded>
+<pubDate>Thu, 03 Sep 2026 09:27:54 +0000</pubDate>
+<pubDate>Thu, 03 Sep 2026 09:27:54 +0000</pubDate>
+</item>
+<item>
+<title>A Removal Based Approach to Improve LLM Faithfulness at Test-Time</title>
+<link>https://tldr.takara.ai/p/2609.04343</link>
+<guid>https://tldr.takara.ai/p/2609.04343</guid>
+<content:encoded><![CDATA[
+
+  Large language models (LLMs) are increasingly used for consequential decisions, making their explanations an important tool for auditing model behavior. Unfortunately, these explanations can be unfaithful, failing to reflect the actual reasoning underlying the model's decisions. We consider a setting in which an LLM provides both an answer and an explanation in response to a question. We identify two distinct dimensions of unfaithful explanations: incompleteness, meaning that the explanation omits factors that influence the answer, and unsoundness, meaning that the explanation cites factors that did not influence the model's answer. Existing approaches to improving LLM faithfulness include training-time methods, which require access to model weights and extensive computational resources, and test-time methods that largely focus on addressing unsoundness. We introduce a test-time approach that directly targets incompleteness. We remove from the input the concepts not credited in the model's explanation and re-query the model on the reduced input. This eliminates unmentioned influences while preserving the influence of mentioned concepts. Across two datasets, multiple model families, and two independent faithfulness metrics, our approach improves explanation faithfulness compared to both standard prompting and prompting to encourage faithfulness. Our method is model-agnostic and can be applied at inference time without modifying model parameters, providing a flexible mechanism for reducing hidden influences and improving the reliability and safety of LLM-assisted decision making.
+
+]]></content:encoded>
+<pubDate>Thu, 03 Sep 2026 18:09:26 +0000</pubDate>
+<pubDate>Thu, 03 Sep 2026 18:09:26 +0000</pubDate>
+</item>
+<item>
+<title>Commit-first LLM judging inherits the judge's own errors</title>
+<link>https://tldr.takara.ai/p/2609.00088</link>
+<guid>https://tldr.takara.ai/p/2609.00088</guid>
+<content:encoded><![CDATA[
+
+  LLM judges, models that score another system's output, can be gamed by the systems they score. Recent work identifies one defence that works: the judge solves the task itself first and commits to that answer, then accepts a candidate only if the two match. We call this commit-first judging, and ask whether shipped software implements it, and what it costs.
+  We audit the default judge configurations of eight widely used evaluation frameworks. Of the 24 configurations in scope, none implement it. Nine implement a variant the literature measures as ineffective, and share one ancestor prompt, traceable through a copied typographical error.
+  In a controlled experiment, an ordinary best-of-N search with no access to correct answers optimises code against one of these configurations, used exactly as documented. On an interval merging task the judge accepted 90 of 96 candidates in one seed and 93 of 96 in the other; every accepted candidate passed every test the search could see and failed a held-out suite it could not. The judge identified the defective line and cited it as grounds for a perfect score. Commit-first judging removed the effect: 0 of 96 in both seeds. On a second task it made matters worse in both seeds: the judge's committed answer was wrong, and in one seed the population converged on it. This is our main finding. Commit-first judging does not remove the anchor that gets gamed, it moves it from the candidate to the judge's own answer, so evaluation is only as good as the judge is at the task. That precondition is cheap to measure in advance, and is task local rather than scale dependent: a smaller judge solved a task the frontier judge failed and resisted gaming where it did not.
+  We also validate our own instruments: five of fifteen claims in our criteria were wrong against verbatim sources, and two held-out checks were unjustified by their specifications.
+
+]]></content:encoded>
+<pubDate>Mon, 31 Aug 2026 12:14:14 +0000</pubDate>
+<pubDate>Mon, 31 Aug 2026 12:14:14 +0000</pubDate>
+</item>
+<item>
+<title>Beyond .WAV: Design and Software Verification of VocalCap, a Traceable Browser-Based Audio Capture System for Vocal Biomarker Research</title>
+<link>https://tldr.takara.ai/p/2609.03320</link>
+<guid>https://tldr.takara.ai/p/2609.03320</guid>
+<content:encoded><![CDATA[
+
+  Remote voice studies often retain a final audio file with limited evidence about how it was captured, transferred, processed, and accepted. This paper presents VocalCap, an institution-controlled, browser-based system for self-guided capture of voice and related acoustic signals by participants without technical training. A versioned protocol drives the workflow. Each accepted recording retains a browser-native object, a client-lossless Float32 WAV derived from the same MediaStream, and a server-canonical mono PCM16 WAV, linked to evidence of capture execution, technical quality, byte-level integrity, recovery, and transformation provenance. IndexedDB preserves accepted browser artifacts until server confirmation, while session completion requires successful verification of every task and artifact. Software tests challenged the acquisition contracts with malformed or altered objects, exact-zero interruptions, channel-topology variants, and interrupted or repeated operations. A post hoc technical audit of 39 consented pilot recordings found 25 sample-identical stereo files and 14 files with signal confined to the left channel. Topology-aware active-channel selection limited the canonical root-mean-square level difference to less than 0.001 dB in all 14 affected files; equal-weight stereo averaging would have introduced approximately 6.02 dB of attenuation. Production end-to-end verification completed two five-task profiles in Chromium and WebKit, yielding 10 accepted recordings and 30 retained artifacts that passed server-side integrity and format checks. The results verify VocalCap's software behavior under the tested browser-engine conditions. Device-level acoustic agreement, target-population usability, clinical validity, and biomarker performance remain subjects for separate studies.
+
+]]></content:encoded>
+<pubDate>Thu, 03 Sep 2026 03:15:13 +0000</pubDate>
+<pubDate>Thu, 03 Sep 2026 03:15:13 +0000</pubDate>
+</item>
+<item>
+<title>Cross-dataset transportability of pediatric chest X-ray deep learning across three countries: discrimination, calibration, operating-point failure, and limited-label recovery</title>
+<link>https://tldr.takara.ai/p/2609.05140</link>
+<guid>https://tldr.takara.ai/p/2609.05140</guid>
+<content:encoded><![CDATA[
+
+  Background and Objective: External evaluation of medical-imaging AI is often collapsed into discrimination. We evaluated a computational protocol that separately tests discrimination, probability calibration, fixed operatingpoint transport, shortcut-associated signal, and limited-label recoverability for pediatric pneumonia classification across datasets from three countries. Methods: After exact-duplicate removal, 5,824 Guangzhou radiographs supported leakage-controlled source development and internal testing. A frozen three-seed DenseNet121 dual-view ensemble was evaluated zero-shot on BDCXR-3257 from Bangladesh (n = 3, 257) and an untouched harmonized VinDr-PCXR/PediCXR test cohort from Vietnam (n = 1, 077). Matched seed-42 variants tested architectural robustness. Secondary BDCXR analyses used a fixed 651-image adaptation pool and 2,606-image hold-out; 163, 326, and 651 labels represented 5%, 10%, and 20% of complete BDCXR. Results: Internal AUROC was 0.976 with 95.1% sensitivity. BDCXR and VinDr-PCXR AUROC were 0.798 and 0.742, while frozen-threshold sensitivity fell to 6.2% and 0%. Source-to-BDCXR AUROC degradation occurred for a full-image baseline (0.961 to 0.749), ungated dual-view model (0.977 to 0.766), and gated MixStyle model (0.966 to 0.789). With 163 BDCXR labels, Platt recalibration preserved AUROC while increasing held-out sensitivity to 88.3%, but specificity was 47.9% and the alert rate was 78.5%. Two hundred repeated 163-label fits confirmed sensitivity recovery but substantial specificity variability. Conclusions: Cross-dataset shifts across countries affected ranking, probability alignment, and source-defined decision behavior differently. Transport studies should evaluate these components separately and quantify the operational burden of apparent recovery.
+
+]]></content:encoded>
+<pubDate>Fri, 04 Sep 2026 13:39:48 +0000</pubDate>
+<pubDate>Fri, 04 Sep 2026 13:39:48 +0000</pubDate>
+</item>
+<item>
+<title>SurfSpec: Enhancing Off-Target-Agnostic Specificity by Bounding Pocket-Ligand Geometric Mismatch</title>
+<link>https://tldr.takara.ai/p/2609.02963</link>
+<guid>https://tldr.takara.ai/p/2609.02963</guid>
+<content:encoded><![CDATA[
+
+  Lead optimization in structure-based drug design aims to improve target binding while avoiding unintended interactions with off-target pockets. However, existing affinity-driven methods do not explicitly control specificity, whereas current specificity-aware approaches commonly require prior knowledge of off-target structures. We address off-target-agnostic specificity-aware lead optimization by analyzing the geometric mismatch between a ligand and the target pocket. We provide a conservative specificity lower bound for geometrically separated off-targets without requiring access to off-target structures. By metricizing pocket--ligand mismatch, the triangle inequality shows that reducing target--ligand mismatch improves a conservative lower bound on mismatch to a separated off-target class, which can be translated into a specificity lower bound through an empirical geometry--affinity calibration. Motivated by this analysis, we introduce SurfSpec, an off-target-agnostic lead optimization framework that iteratively grows ligands toward under-occupied regions of the target pocket surface. SurfSpec alternates between linker generation toward selected target-surface patches, which provides geometric pseudo-labels, and refinement under a pocket-conditioned ligand prior, which restores these pseudo-labels into valid ligands. On the CrossDocked2020 test set, SurfSpec reduces geometric mismatch and outperforms evaluated off-target-agnostic lead optimization baselines in empirical specificity, while maintaining competitive target-affinity improvement.
+
+]]></content:encoded>
+<pubDate>Wed, 02 Sep 2026 05:59:12 +0000</pubDate>
+<pubDate>Wed, 02 Sep 2026 05:59:12 +0000</pubDate>
+</item>
+<item>
+<title>Act More, Decide Less: Skill-Guided Adaptive Action Chunking for Long-Horizon LLM Agents</title>
+<link>https://tldr.takara.ai/p/2609.02042</link>
+<guid>https://tldr.takara.ai/p/2609.02042</guid>
+<content:encoded><![CDATA[
+
+  Large language model (LLM) agents for long-horizon interactive tasks typically follow a ReAct-style protocol, issuing one primitive action per LLM round. While this enables frequent replanning, it is inefficient for long-horizon tasks where many rounds are spent on routine action sequences. A natural alternative is to let the agent emit variable-length action chunks. However, naively training such policies with standard reinforcement learning fails: the agent either collapses to single-action behavior or over-commits to excessively long sequences. Both failures share a common root cause: the inability to learn chunk boundaries. We propose SPACE, which addresses this challenge by distilling chunk-boundary supervision from trajectory-induced programmatic skills. We induce two-level programmatic skills from successful trajectories, where subskill boundaries serve as direct chunk-boundary supervision. This temporal structure is then distilled into a primitive-chunk policy via hybrid on-/off-policy optimization with chunk-aware credit assignment. Experiments on ALFWorld and ScienceWorld show that SPACE improves success rates by 7.0%-31.3% over the strongest baseline in each setting while reducing average LLM decision rounds by up to 78.9%.
+
+]]></content:encoded>
+<pubDate>Wed, 02 Sep 2026 03:17:11 +0000</pubDate>
+<pubDate>Wed, 02 Sep 2026 03:17:11 +0000</pubDate>
+</item>
+<item>
+<title>Scalable Context Orchestration for Serving LLMs Over Voice</title>
+<link>https://tldr.takara.ai/p/2609.04288</link>
+<guid>https://tldr.takara.ai/p/2609.04288</guid>
+<content:encoded><![CDATA[
+
+  Voice AI applications are gaining popularity as advances in large language models (LLMs) enable more natural and accessible spoken interactions. Serving these applications requires accounting not only for what users say, but also for how they speak (e.g., speaking rate) and the conditions under which their audio is captured and transmitted (e.g., background noise and packet loss). However, existing LLM systems represent conversation context as a flat, growing sequence of messages, leaving voice-specific context implicit in the audio. As a result, they can generate responses that are poorly aligned with user preferences, degrade interaction quality under adverse environmental conditions, and incur high costs over long voice sessions.
+  We present llmovoice, a context-management middleware that explicitly models voice context and orchestrates its use. At each turn, llmovoice constructs a bounded voice context from the current user input, relevant interaction history, and explicit paralinguistic and environmental states. It then uses the serving LLM to reason over this context and generate runtime directives that guide how the system responds. We evaluate llmovoice on real-world voice applications and benchmarks. It reduces speaking-rate alignment error by 52.4%, lowers the false-interruption rate from 46.0% to 0.9% under packet loss, and reduces model usage cost by 79.2%. For long sessions, llmovoice reduces per-turn cost by up to 24.9 times while retaining up to 98.7% of baseline answer quality.
+
+]]></content:encoded>
+<pubDate>Thu, 03 Sep 2026 09:27:00 +0000</pubDate>
+<pubDate>Thu, 03 Sep 2026 09:27:00 +0000</pubDate>
+</item>
+<item>
+<title>Impact of Data Loss in Postprocessing on Training and Inference of Quantum Neural Networks</title>
+<link>https://tldr.takara.ai/p/2609.05060</link>
+<guid>https://tldr.takara.ai/p/2609.05060</guid>
+<content:encoded><![CDATA[
+
+  As quantum hardware scales to larger devices, the classical software layers that interface with it must evolve in step. Postprocessing routines developed and tested primarily in simulator settings can encode assumptions that no longer hold on utility-scale devices, leading to data loss that can be difficult to detect from high-level model outputs alone. We present a case study of \texttt{SamplerQNN}, the sampling-based quantum neural network class in the Qiskit Machine Learning library. Here, the postprocessing method applies a filter that assumes measurement bit-strings are in virtual qubit space. On our quantum hardware runs, where bit-strings span over 100 physical qubits, this filter led to the loss of 85 to 99.6\% of valid measurement shots, depending on the transpiler's qubit placement. The resulting probability vector is unnormalised, allowing distorted prediction and loss values to propagate through the model without an API-level warning. We demonstrate the impact across five experiments on two IBM backends: for inference, accuracy drops from 0.94 to 0.39 on the same raw measurements; for training, the loss signal is compressed by 22 to 27$\times$, substantially reducing the sensitivity of the optimiser to the objective landscape. The behaviour arises in all released versions of the library (0.8.4 to 0.9.0). We implemented a layout-based marginalisation fix, merged into the GitHub codebase as Pull Request \#1041, that makes \texttt{SamplerQNN} postprocessing forward-compatible with current and upcoming hardware.
+
+]]></content:encoded>
+<pubDate>Fri, 04 Sep 2026 12:22:13 +0000</pubDate>
+<pubDate>Fri, 04 Sep 2026 12:22:13 +0000</pubDate>
+</item>
 
 <item>
 <title>多语言大模型作者归属基准测试研究</title>
