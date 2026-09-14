@@ -4,19 +4,16 @@
 <title>Takara TLDR - Daily AI Papers</title>
 <link>https://tldr.takara.ai</link>
 
+
 <item>
 <title>基于DINOv3的多模态医学影像分类框架研究</title>
 <link>https://tldr.takara.ai/p/2609.11380</link>
 <guid>https://tldr.takara.ai/p/2609.11380</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>DINOv3在医学影像分类中表现优异，优于其他特征方法。</p><br><br><p><strong>摘要：</strong> 本文探讨了将自然图像基础模型DINOv3应用于多模态医学影像的挑战，并提出了一种统一的基于补丁的框架。该框架通过训练-free 注册、自动定位和掩码过滤补丁提取，实现从原始多模态影像中提取特征。以肝纤维化分期为例，比较了四种补丁级特征表示方法：手工Radiomics特征、ResNet学习特征、SAM-Med2D预训练特征和冻结的DINOv3特征。所有模型使用相同的轻量级MLP头，并在刚性和非刚性配准设置下进行评估。实验结果显示，基于DINOv3的框架在S1和S4类别的分类准确率分别达到78.4%和75.8%，显著优于其他基线方法。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.11380 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">DINOv3在医学影像分类中表现优异，优于其他特征方法。</p><br /><br /><p><strong>摘要：</strong> 本文探讨了将自然图像基础模型DINOv3应用于多模态医学影像的挑战，并提出了一种统一的基于补丁的框架。该框架通过训练-free 注册、自动定位和掩码过滤补丁提取，实现从原始多模态影像中提取特征。以肝纤维化分期为例，比较了四种补丁级特征表示方法：手工Radiomics特征、ResNet学习特征、SAM-Med2D预训练特征和冻结的DINOv3特征。所有模型使用相同的轻量级MLP头，并在刚性和非刚性配准设置下进行评估。实验结果显示，基于DINOv3的框架在S1和S4类别的分类准确率分别达到78.4%和75.8%，显著优于其他基线方法。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://tldr.takara.ai/p/2609.11380" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Thu, 10 Sep 2026 11:16:26 +0000</pubDate>
-<pubDate>Thu, 10 Sep 2026 11:16:26 +0000</pubDate>
 </item>
-
 <item>
 <title>固定样本量下pass@k评估的可识别性与外推限制</title>
 <link>https://tldr.takara.ai/p/2609.09245</link>
@@ -9051,15 +9048,6 @@ Recent advances in diffusion models and Transformer architectures have led to si
 <div><p style="color: gray;">文章探讨无分布风险控制在器官分割中的应用效果。</p><br /><br /><p><strong>摘要：</strong> 本文研究了无分布风险控制方法在冷冻分割任务中的应用，通过校准各器官的阈值来确保召回率。实验使用AMOS训练的nnU-Net模型，并将其迁移至RAOS数据集，评估了局部重新认证成本。结果表明，虽然AMOS控制通过，但部分器官在迁移后超过设定的α=0.10阈值。较小的校准集可能掩盖阈值过保守或无效的问题。对比了两种风险控制方法——风险控制预测集（RCPS）和符合性风险控制（CRC），发现RCPS在群体均值风险控制上表现更优，而CRC则在个体案例尾部风险上表现较差。此外，Waudby-Smith-Ramdas (WSR) 赌博界在六种一级器官中仅需25个局部案例即可重新认证，而Hoeffding-Bentkus (HB) 需要30-40个案例。CRC需要10-15个案例，但个体案例尾部风险较重。二级器官在25个案例下无法满足精度标准。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://tldr.takara.ai/p/2608.18193" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Tue, 18 Aug 2026 15:01:53 +0000</pubDate>
-</item>
-<item>
-<title>基于语言模型的行人模拟器行为优化研究</title>
-<link>https://tldr.takara.ai/p/2608.19778</link>
-<guid>https://tldr.takara.ai/p/2608.19778</guid>
-<content:encoded><![CDATA[
-<div><p style="color: gray;">通过调整语言模型行人行为，提升模拟结果与实际目的地分布匹配度。</p><br /><br /><p><strong>摘要：</strong> 本文研究如何利用语言模型优化行人模拟器的行为规则。由于隐私限制，只能获取区域设备计数和出行流向等聚合数据，无法获得个体轨迹。为此，作者通过迭代比例拟合方法，将模型的目的地分布重新加权以匹配实际观测到的出行流向。为解决微调导致主要目的地类别膨胀的问题，采用低秩适配器对重新采样的轨迹进行训练，使最终结果更接近目标分布。实验表明，该方法在棒球比赛的移动网络数据上有效降低了目的地比例误差25%。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://tldr.takara.ai/p/2608.19778" target="_blank">查看原文</a></div>
-]]></content:encoded>
-<pubDate>Thu, 20 Aug 2026 08:23:24 +0000</pubDate>
 </item>
 </channel>
 </rss>
