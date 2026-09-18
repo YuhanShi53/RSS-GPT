@@ -4,19 +4,16 @@
 <title>Takara TLDR - Daily AI Papers</title>
 <link>https://tldr.takara.ai</link>
 
+
 <item>
 <title>对抗补丁对视觉-语言-动作策略的持久影响研究</title>
 <link>https://tldr.takara.ai/p/2609.19669</link>
 <guid>https://tldr.takara.ai/p/2609.19669</guid>
 <content:encoded><![CDATA[
-
-  <div><p style=color:gray;>对抗补丁在移除后仍能持续影响视觉-语言-动作策略，及时干预有助于恢复。</p><br><br><p><strong>摘要：</strong> 本文研究了对抗补丁对视觉-语言-动作（VLA）策略的影响，发现其不仅会导致即时动作错误，还会在补丁移除后产生持久状态效应。通过引入状态恢复协议，研究区分了这些影响，并测试了不同控制条件下的可恢复性。实验表明，在移除补丁后，仅有36.2%的LIBERO-Long任务可以恢复，而其他控制组则表现出更高的恢复率。此外，研究还评估了一种恢复适配器，其在延迟干预时效果显著下降，说明及时干预对于恢复至关重要。</p><br><br><p><em>使用 qwen-turbo 生成 </em></p><a href=https://tldr.takara.ai/p/2609.19669 target="_blank">查看原文</a></div>
-
+<div><p style="color: gray;">对抗补丁在移除后仍能持续影响视觉-语言-动作策略，及时干预有助于恢复。</p><br /><br /><p><strong>摘要：</strong> 本文研究了对抗补丁对视觉-语言-动作（VLA）策略的影响，发现其不仅会导致即时动作错误，还会在补丁移除后产生持久状态效应。通过引入状态恢复协议，研究区分了这些影响，并测试了不同控制条件下的可恢复性。实验表明，在移除补丁后，仅有36.2%的LIBERO-Long任务可以恢复，而其他控制组则表现出更高的恢复率。此外，研究还评估了一种恢复适配器，其在延迟干预时效果显著下降，说明及时干预对于恢复至关重要。</p><br /><br /><p><em>使用 qwen-turbo 生成 </em></p><a href="https://tldr.takara.ai/p/2609.19669" target="_blank">查看原文</a></div>
 ]]></content:encoded>
 <pubDate>Thu, 17 Sep 2026 04:14:19 +0000</pubDate>
-<pubDate>Thu, 17 Sep 2026 04:14:19 +0000</pubDate>
 </item>
-
 <item>
 <title>基于预测的按需注意力机制提升长上下文推理效率</title>
 <link>https://tldr.takara.ai/p/2609.20734</link>
@@ -9051,15 +9048,6 @@ Prohibitive computational and environmental costs impede the scalable deployment
 Uniform stability controls how much one training example can change the loss at any test point. A new logarithmic-free upper bound shows that a $γ$-uniformly stable algorithm with loss in $[0,L]$ has generalization gap at most $O \left(γ\log(1/δ) +L\sqrt{\frac{\log(1/δ)}{n}}\right)$ with probability $1-δ$. Whether an actual bounded-loss learning algorithm can realize the linear dependence on $\log(1/δ)$ has remained open. The known construction realizes it only for auxiliary weakly dependent random variables whose pointwise range grows with $n$. The known learning lower bound holds only at constant probability. We close this gap. For every $n$, stability level $γ$, and loss bound $L$, we construct one deterministic $γ$-uniformly stable learning problem whose tail satisfies, simultaneously for $1\le p\le c n$, $\mathbb P \left( R(A_S)-R_S(A_S) \ge c'\min \left\{L,γp+L\sqrt{p/n}\right\} \right)\ge e^{-p}.$ The construction is ordinary bounded absolute-loss regression with constant labels. Its key is a multiscale collection of rare Rademacher features. A coordinatewise ramp is stable in sup norm, while an odd symmetrized maximum converts a unique extreme feature into a gap of order $γp$ without violating the loss bound. Geometrically spaced ramps put all confidence levels into the same problem. Together with the logarithmic-free upper bound, this determines the optimal high-probability and moment dependence of uniform stability up to universal constants.
 ]]></content:encoded>
 <pubDate>Tue, 25 Aug 2026 05:53:31 +0000</pubDate>
-</item>
-<item>
-<title>From Numerical Simulators of PDEs to Neural Emulators and Back</title>
-<link>https://tldr.takara.ai/p/2608.24547</link>
-<guid>https://tldr.takara.ai/p/2608.24547</guid>
-<content:encoded><![CDATA[
-Simulation is central to modern engineering and science, but the cost of numerical solvers for partial differential equations (PDEs) remains a bottleneck whenever fast or many-query evaluations are required. Neural emulators trained on solver-generated data promise significant speedups, yet they are usually framed as opaque alternatives to the very methods that produce their training signal. This thesis argues the two paradigms are more alike than different: neural architectures mirror classical discretizations, their errors are amenable to the same spectral analysis, and insight flows profitably in both directions. We approach the relationship by disentangling the multiple roles a solver plays in the emulator learning pipeline. Mode-wise Fourier analysis then provides a common language in which solver errors, architectural inductive biases, and training objectives can all be read off simultaneously. Taken together, this allows synthesizing three contributions. (1) APEBench, a comprehensive benchmarking suite for autoregressive neural emulators of PDEs that uses fast differentiable pseudo-spectral solvers in JAX. (2) Progressively Refined Differentiable Physics, an investigation of the effect of unconverged solvers on surrogate training. (3) Neural Emulator Superiority, an analysis of the influence of numerical errors and architectural inductive biases.
-]]></content:encoded>
-<pubDate>Tue, 25 Aug 2026 13:34:15 +0000</pubDate>
 </item>
 </channel>
 </rss>
